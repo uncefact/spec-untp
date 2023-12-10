@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32.6px" height="32.9192185px" viewBox="0 0 32.6 32.9192185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ESG Traceability Software</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="UN-CRM---Home" transform="translate(-1001.200000, -619.200000)" stroke="#009EDB" stroke-width="1.6">
+            <g id="ESG-Traceability-Software" transform="translate(1002.000000, 620.000000)">
+                <path d="M11.6425217,31.3191489 C12.759455,29.7193137 13.3967601,27.8283702 13.4782609,25.8723404" id="Path"></path>
+                <path d="M19.3574783,31.3191489 C18.240545,29.7193137 17.6032399,27.8283702 17.5217391,25.8723404" id="Path"></path>
+                <line x1="9.43478261" y1="31.3191489" x2="21.5652174" y2="31.3191489" id="Path"></line>
+                <line x1="0" y1="21.787234" x2="31" y2="21.787234" id="Path"></line>
+                <rect id="Rectangle" x="0" y="0" width="31" height="25.8723404" rx="1.36170213"></rect>
+                <polyline id="Path" points="22.2391304 6.80851064 15.5 13.6170213 12.8043478 10.893617"></polyline>
+                <path d="M21.5652174,11.5744681 C21.5646929,14.3119167 19.7670438,16.7169524 17.161086,17.4666596 C14.5551283,18.2163668 11.7730844,17.1288618 10.3452471,14.8023381 C8.91740992,12.4758145 9.19018207,9.47470214 11.0135224,7.44979491 C12.8368626,5.42488767 15.7684168,4.8674413 18.1956522,6.08408511" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
