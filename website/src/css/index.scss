@@ -69,12 +69,14 @@ $home-content__max-width: 1200px;
     text-align: center;
   }
 
-  &__image {
-    margin: 0 0 10px 0;
+  &__head {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px 0;
+  }
 
-    @media screen and (min-width: 997px) {
-      margin: 0 0 27px 0;
-    }
+  &__image {
+    margin: 0 15px 0 0;
   }
 
   &__icon {
@@ -85,6 +87,7 @@ $home-content__max-width: 1200px;
   &__title {
     font-weight: 500;
     font-size: 22px;
+    margin: 0;
   }
 
   &__description {

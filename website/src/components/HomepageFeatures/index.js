@@ -4,7 +4,7 @@ import clsx from 'clsx';
 const FeatureList = [
   {
     title: 'Regulators',
-    Svg: require('@site/static/img/crm-producers.svg').default,
+    Svg: require('@site/static/img/regulators.svg').default,
     description: (
       <>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -13,7 +13,7 @@ const FeatureList = [
   },
   {
     title: 'Industry',
-    Svg: require('@site/static/img/esg-standards-and-certifiers.svg').default,
+    Svg: require('@site/static/img/industry.svg').default,
     description: (
       <>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -22,7 +22,7 @@ const FeatureList = [
   },
   {
     title: 'Software Providers',
-    Svg: require('@site/static/img/esg-traceability-software-platforms.svg').default,
+    Svg: require('@site/static/img/software-providers.svg').default,
     description: (
       <>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -31,7 +31,7 @@ const FeatureList = [
   },
   {
     title: 'Certifiers',
-    Svg: require('@site/static/img/esg-traceability-software-platforms.svg').default,
+    Svg: require('@site/static/img/certifiers.svg').default,
     description: (
       <>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -43,11 +43,13 @@ const FeatureList = [
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--3 home-feature')}>
-      <div className="home-feature__image">
-        <Svg className="home-feature__icon" role="img" />
-      </div>
       <div className="home-feature__content">
-        <h3 className="home-feature__title">{title}</h3>
+        <div className="home-feature__head">
+          <div className="home-feature__image">
+            <Svg className="home-feature__icon" role="img" />
+          </div>
+          <h3 className="home-feature__title">{title}</h3>
+        </div>
         <p className="home-feature__description">{description}</p>
       </div>
     </div>
