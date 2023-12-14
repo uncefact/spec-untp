@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
-title: ToR
+sidebar_position: 2
+title: Trust Graphs
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Terms of Reference
+# Trust Graphs

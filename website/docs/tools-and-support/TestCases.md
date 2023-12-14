@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
-title: ToR
+sidebar_position: 3
+title: Test Cases
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Terms of Reference
+# Test Cases

@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
-title: ToR
+sidebar_position: 2
+title: Traceability Events
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Terms of Reference
+# Traceability Events
