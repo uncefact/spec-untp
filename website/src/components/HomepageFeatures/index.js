@@ -7,7 +7,7 @@ const FeatureList = [
     Svg: require('@site/static/img/regulators.svg').default,
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Combat greenwashing and uplift export market access.
       </>
     ),
   },
@@ -16,7 +16,7 @@ const FeatureList = [
     Svg: require('@site/static/img/industry.svg').default,
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Meet supply chain due dilligence obligations for you and your customers.
       </>
     ),
   },
@@ -25,7 +25,7 @@ const FeatureList = [
     Svg: require('@site/static/img/software-providers.svg').default,
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Empower your customers to participate in sustainable digitises supply chains.
       </>
     ),
   },
@@ -34,7 +34,7 @@ const FeatureList = [
     Svg: require('@site/static/img/certifiers.svg').default,
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Provide digitally verifiable trust of ESG compliance.
       </>
     ),
   },

@@ -59,7 +59,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      slackLink: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
+      slackLink: 'hhttps://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
       colorMode: {
         disableSwitch: true,
       },
