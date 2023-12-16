@@ -25,7 +25,7 @@ const FeatureList = [
     Svg: require('@site/static/img/software-providers.svg').default,
     description: (
       <>
-        Empower your customers to participate in sustainable digitises supply chains.
+        Empower your customers to participate in sustainable digitised supply chains.
       </>
     ),
   },
