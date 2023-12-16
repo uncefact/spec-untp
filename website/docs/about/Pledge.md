@@ -1,10 +1,10 @@
 ---
-sidebar_position: 25
-title: FAQ
+sidebar_position: 20
+title: Pledge
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Frequently Asked Questions
+# Sustainability Pledge

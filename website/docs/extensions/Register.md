@@ -1,10 +1,11 @@
 ---
-sidebar_position: 25
-title: FAQ
+sidebar_position: 15
+title: Register
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Frequently Asked Questions
+
+# Extensionsn Register

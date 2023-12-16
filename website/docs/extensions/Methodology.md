@@ -1,10 +1,11 @@
 ---
-sidebar_position: 25
-title: FAQ
+sidebar_position: 10
+title: Methodology
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Frequently Asked Questions
+
+# Extensionsn Methodology

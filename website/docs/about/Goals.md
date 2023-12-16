@@ -1,10 +1,10 @@
 ---
-sidebar_position: 25
-title: FAQ
+sidebar_position: 2
+title: Goals
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Frequently Asked Questions
+# Goals & Success Measures
