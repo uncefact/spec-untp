@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2
-title: DID Moethods
+sidebar_position: 25
+title: Vocabularies
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# DID Methods
+# Sustainability Vocabulary

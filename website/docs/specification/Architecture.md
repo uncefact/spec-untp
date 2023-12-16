@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
-title: Link Resolution
+title: Architecture
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Link Resolution
+# Architecture

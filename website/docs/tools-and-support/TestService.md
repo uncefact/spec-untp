@@ -1,10 +1,10 @@
 ---
-sidebar_position: 30
-title: Trust Graphs
+sidebar_position: 10
+title: Test Service
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Trust Graphs
+# Test Service

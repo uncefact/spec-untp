@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
-title: Sustainability Vocabulary
+title: Governance
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Sustainability Vocabulary
+# Governance

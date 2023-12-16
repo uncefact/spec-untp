@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2
-title: VC Interoperability
+sidebar_position: 20
+title: Identifiers
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# VC Interoperability
+# Identifiers
