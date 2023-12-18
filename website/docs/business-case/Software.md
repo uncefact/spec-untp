@@ -1,6 +1,6 @@
 ---
-sidebar_position: 10
-title: Methodology
+sidebar_position: 25
+title: For Software Vendors
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
@@ -8,4 +8,4 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 
-# Extensions Methodology
+# For Software Vendors

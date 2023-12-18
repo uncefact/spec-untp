@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: Register
+title: For Standards Organisations
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
@@ -8,4 +8,4 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 
-# Extensions Register
+# For Standards Organisations
