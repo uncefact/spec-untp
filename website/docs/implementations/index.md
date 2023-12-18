@@ -1,6 +1,6 @@
 ---
-sidebar_position: 6
-title: Implementations
+sidebar_position: 9
+title: Implementations Register
 ---
 
-# Implementations
+# Implementations Register
