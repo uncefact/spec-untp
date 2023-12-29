@@ -1,6 +1,6 @@
 ---
-sidebar_position: 10
-title: Methodology
+sidebar_position: 15
+title: Extensions Register
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
@@ -8,4 +8,4 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 
-# Extensions Methodology
+# Extensions Register

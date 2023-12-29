@@ -29,7 +29,7 @@ The evidence from multiple research activities is that greenwashing is already e
 To win the race to the top, fake claims need to be hard to make. The best way to achieve that is to make supply chains traceable and transparent so that unsustainable practices have nowhere to hide. But, to have any impact, the traceability and transparency measures must be implemented at scale. 
 
 
-## The United Nations Transparency Protocol (UNTP) 
+## Challenges 
 
 The world's supply chains must reach to the point where digital verifiable traceability and transparency information are available to meet regulatory compliance, satisfy investors, and motivate consumers for the majority of products on the market. However, achieving transparency at that scale presents some challenges.
 
@@ -37,6 +37,10 @@ The world's supply chains must reach to the point where digital verifiable trace
 * **Coping with a growing mountain of ESG standards and regulations.** The current count of ESG standards and regulations around the world runs into the thousands. Some are specific to particular commodities, jurisdictions, or ESG criteria and some cover multiple dimensions. There is very significant overlap between them and very little formal mutual recognition. The consequence is that it becomes very challenging for supply chain actors that sell to multiple export markets to know which criteria matter and how to demonstrate compliance. There is a risk that too much of the available ESG incentive is spent on demonstrating compliance and too little is left for implementing more sustainable practices. The UNTP does not add to the complexity by defining more ESG standards. Rather it seeks to minimise cost of cost of compliance by making it simpler to test on-site ESG processes and data against multiple ESG criteria. Essentially this is about implementing a sustainable practice once and then re-using it to satisfy multiple overlapping criteria.
 * **Protecting confidential information.** "Sunlight is the best auditor" and so verifiable transparency is the best greenwashing counter-measure. However, increased supply chain transparency for ESG purposes also risks exposure of commercially sensitive information. A viable transparency protocol must allow supply chain actors to share ESG evidence whilst protecting sensitive information. Rather than dictate what must be shared and what should not, the UNTP includes a suite of confidentiality measures that allow every supply chain actor to choose their own balance between confidentiality and transparency. The basic principle is that actors should be empowered to share only what delivers value.
 * **Making a business case for implementation.** Each supply chain actor (or their software provider) will need to make a viable business case for implementation of the UNTP. The transparency incentives discussed in this section represent the benefit side of the equation. To keep the cost side as low as practical, UNTP has a strong "keep it simple" focus and offers a suite of implementation tools to further reduce cost. Some sample business case templates are provided to help actors make their case for action.
+
+## The United Nations Transparency Protocol (UNTP)
+
+The UNTP provides a solution to the transparency challenges facing the world's supply chains. By implementing a simple protcool that can be supported by existing business systems, stakeholders will realise immediate benefits and will become visible contributors to the sustainability of global supply chains.
 
 ![Transparency Challenges](TransparencyChallenges.png)
 
