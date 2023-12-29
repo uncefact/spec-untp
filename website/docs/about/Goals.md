@@ -126,20 +126,18 @@ The adoption of UNTP by hundreds of millions of micro (under 5 employees) and sm
 
 Although reduced greenwashing and improved sustainability are the ultimate goals of UNTP, the most direct measure of success is uptake. Therefore, UNTP will measure uptake by counting the number of pledges (i.e. promises to implement) and the number of successfully completed conformity tests (i.e. actual implementations). For UNTP to achieve it's goals, uptake will need to exceed the minimum thresholds shown in the uptake trajectory below.
 
-
-| Stakeholder type | 2024|| 2026 || 2028 || 2030 ||
-| | pledge| implement | pledge| implement | pledge| implement | pledge| implement|
+| Stakeholder type | 2024 pledge| 2024 implement | 2026 pledge| 2026 implement | 2028 pledge| 2028 implement | 2030 pledge| 2030 implement|
 | -- | -- | -- | -- | -- | -- |-- | -- | -- |
-|Regulators| |  |  |  |  | |  |  |
-|ESG Standards |  |  |  |  |  | |  |  |
-|Accreditation & certification|  |  |  |  |  | |  |  |
-|Producers & manufacturers|  |  |  |  |  | |  |  |
-|Brands & retailers|  |  |  |  |  | |  |  |
-|Recyclers & refurbishers|  |  |  |  |  | |  |  |
-|Transport & logistics| |  |  |  |  | |  |  |
-|Financial institutions|  |  |  |  |  | |  |  |
-|Member associations|  |  |  |  |  | |  |  |
-|Software developers|  |  |  |  |  | |  |  |
-|Service providers|  |  |  |  |  | |  |  |
+|Regulators|10 | 0 | 20 | 10 | 50 | 20 | 200 | 100 |
+|ESG Standards |10 | 0 | 20 | 10 | 50 | 20 | 200 | 100 |
+|Accreditation & certification| 20 | 2 | 50 | 25 | 100 | 50 | 300 | 150 |
+|Producers & manufacturers| 50 | 10 | 500 | 100 | 2,000 | 1,000| 10,000 | 5,000 |
+|Brands & retailers| 50 | 10 | 500 | 100 | 2,000 | 1,000| 10,000 | 5,000 |
+|Recyclers & refurbishers|10 | 0 | 20 | 10 | 50 | 20 | 200 | 100 |
+|Transport & logistics| 20 | 2 | 50 | 25 | 100 | 50 | 300 | 150 |
+|Financial institutions|10 | 0 | 20 | 10 | 50 | 20 | 200 | 100 |
+|Member associations| 20 | 10 | 200 | 100 | 1,000 | 500| 3,000 | 1,500 |
+|Software developers| 20 | 2 | 50 | 25 | 100 | 50 | 300 | 150 |
+|Service providers| 20 | 2 | 50 | 25 | 100 | 50 | 300 | 150 |
 
-
+Actual progress towards these targets will be tracked via the [Implementations](../implementations/index.md) pages.
