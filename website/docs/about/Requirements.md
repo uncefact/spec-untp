@@ -15,9 +15,9 @@ IETF
 
 |ID | Requirement Statement | Solution Mapping|
 |---|---|---|
-|GV.01|UNTP development MUST me managed via a transparent and consensus-driven process that is open to contributions from all stakeholders - so that implementers can have confidence that the UNTP will meet their requirements. | [Governance](governance.md) |
-|GV.02|The UNTP IP MUST be owned by the UN and be permanently free to access and free to use - so that implementers can have confidence that there will never be any fees for use or IP infringement claims. | [Governance](governance.md) |
-|GV.03|New versions of UNTP SHOULD be backwards compatible with earlier versions and each version MUST remain active and supported for a minimum of 2 years - so that implementers can have confidence in the durability of their investment.| [Governance](governance.md) |
+|GV.01|UNTP development MUST me managed via a transparent and consensus-driven process that is open to contributions from all stakeholders - so that implementers can have confidence that the UNTP will meet their requirements. | [Governance](Governance.md) |
+|GV.02|The UNTP IP MUST be owned by the UN and be permanently free to access and free to use - so that implementers can have confidence that there will never be any fees for use or IP infringement claims. | [Governance](Governance.md) |
+|GV.03|New versions of UNTP SHOULD be backwards compatible with earlier versions and each version MUST remain active and supported for a minimum of 2 years - so that implementers can have confidence in the durability of their investment.| [Governance](Governance.md) |
 |GV.04|UNTP implementation tools including reference implementations and test services MUST be available under open source and royalty free licensing - so that implementers can confidently use the tools to minimise their own implementation costs | [Tools & Support](../tools-and-support/index.md)|
 |GV.05|The UNTP MUST define a non-breaking extensions methodology - so that UNTP can be extended to meet specific jurisdictional or industry requirements and so that implementers of a registered extension can be confident that their implementation is interoperable with UNTP core. | [Extensions](../extensions/index.md)|
 |GV.06|Industry and/or jurisdictional extensions to the UNTP SHOULD also be governed via an open process and released under royalty free license terms - so that implementers of extensions can have same fees & IP confidence as with UNTP core.|[Extensions](../extensions/index.md)|
