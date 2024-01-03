@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: For Standards Organisations
+title: For Industry Associations
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
@@ -8,4 +8,4 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 
-# For Standards Organisations
+# For Industry Associations

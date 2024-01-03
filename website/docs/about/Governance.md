@@ -7,4 +7,11 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Governance
+# Governance & Roadmap
+
+
+protocol : UN ODP
+tools : GPL3
+lifecycle : 
+versions : Semver
+

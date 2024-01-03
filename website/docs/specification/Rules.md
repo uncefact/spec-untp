@@ -1,5 +1,5 @@
 ---
-sidebar_position: 26
+sidebar_position: 52
 title: ESG Rules
 ---
 

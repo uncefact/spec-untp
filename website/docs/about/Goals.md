@@ -128,7 +128,7 @@ Although reduced greenwashing and improved sustainability are the ultimate goals
 
 | Stakeholder type | 2024 pledge| 2024 implement | 2026 pledge| 2026 implement | 2028 pledge| 2028 implement | 2030 pledge| 2030 implement|
 | -- | -- | -- | -- | -- | -- |-- | -- | -- |
-|Regulators|10 | 0 | 20 | 10 | 50 | 20 | 200 | 100 |
+|Regulators|10 | 1 | 20 | 10 | 50 | 20 | 200 | 100 |
 |ESG Standards |10 | 0 | 20 | 10 | 50 | 20 | 200 | 100 |
 |Accreditation & certification| 20 | 2 | 50 | 25 | 100 | 50 | 300 | 150 |
 |Producers & manufacturers| 50 | 10 | 500 | 100 | 2,000 | 1,000| 10,000 | 5,000 |
