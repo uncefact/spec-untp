@@ -8,3 +8,5 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 # Architecture
+
+![Architecture Overview](ArchitectureOverview.png)
