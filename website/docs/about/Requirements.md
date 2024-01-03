@@ -9,7 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 # UNTP Business Requirements
 
-IETF 
+
 
 ## Governance Requirements
 
@@ -40,7 +40,7 @@ IETF
 
 |ID | Name| Requirement Statement | Solution Mapping|
 |---|---|---|---|
-|TT.01| Data carriers| The UNTP MUST define consistent methods for the discovery of data about products from both new and existing data carriers such as ID bar codes, 2D matrix, QR codes, and RFID tags - so that any party that has only a product batch ID or goods shipment ID can find ESG data about that product or shipment. |traceability |[Data Carriers](../specification/DataCarriers.md)
+|TT.01| Data carriers| The UNTP MUST define consistent methods for the discovery of data about products from both new and existing data carriers such as ID bar codes, 2D matrix, QR codes, and RFID tags - so that any party that has only a product batch ID or goods shipment ID can find ESG data about that product or shipment. |[Data Carriers](../specification/DataCarriers.md)
 |TT.02| item/batch granularity|The UNTP MUST provide data at the granularity of the individual items or batch in a shipment so that the downstream actor can easily aggregate their material inputs (e.g. scope 3 emissions) into their own ESG performance data.  |[Digital Product Passport](../specification/DigitalProductPassport.md)|
 |TT.03| end-to-end traceability|Subject to privacy & confidentiality constraints, the UNTP traceability model MUST be able to trace value chains from finished product to raw materials through any number of commercial boundaries (sale of goods), or logistics boundaries (consolidation & deconsolidation), and process boundaries (manufacturing transformation of inputs to different outputs) so that the provenance and ESG footprint of goods can be verified as the sum of component parts.|[Traceability Events](../specification/TraceabilityEvents.md)|
 |TT.04| Sustainability data| The UNTP MUST provide a simple and consistent way to access and verify all available sustainability metrics (eg carbon intensity, deforestation, water usage, fair work, etc) about a given product item or batch - so that product buyers can easily meet their sustainability and due diligence obligations|[Digital Product Passport](../specification/DigitalProductPassport.md), [Conformity Credential](../specification/ConformityCredential.md)|
@@ -54,7 +54,7 @@ IETF
 |ID | Name |Requirement Statement | Solution Mapping|
 |---|---|---|---|
 |TI.01| Trust anchors| Trust in truth of sustainability claims can be established by third party audits, or by attestation of trusted authorities, or by long standing evidence of sustainable behaviour. The UNTP MUST provide a mechanism to link ESG claims to any or all of these "trust anchors" so that downstream actors can have confidence that claimed ESG performance is true. | [Trust Anchors](../specification/TrustAnchors.md) |
-|TI.02| Identity integrity| Identifiers of businesses, locations, products, and shipments underpin the UNTP.  Therefore, the UNTP MUST provide a mechanism to verify that ESG claims made about products or locations or entities are made by actors that are genuine owners of the identifiers or their authorised delegates - so that downstream actors can be sure that ESG claims are made by parties genuinely authorised to do so.|  |
+|TI.02| Identity integrity| Identifiers of businesses, locations, products, and shipments underpin the UNTP.  Therefore, the UNTP MUST provide a mechanism to verify that ESG claims made about products or locations or entities are made by actors that are genuine owners of the identifiers or their authorised delegates - so that downstream actors can be sure that ESG claims are made by parties genuinely authorised to do so.| [Identifiers](../specification/Identifiers.md)  |
 |TI.03|Accreditation|Third party audits and assessments add trust. But if the verifier does not know the auditor / certifier then there's a risk that  define a mechanism to link third party certifiers to the accreditation authrority under which they perform their work so that downstream actors can trust the certificates even when they do not know the certifiers.| [Conformity](../specification/ConformityCredential.md)|
 |TI.04|Verification of documents| The UNTP MUST define standard and interoperable mechanisms to prevent spoofing or tampering of any documents issued by upstream actors so that downstream actors can be confident that ESG credentials were genuinely issued by the claimed identity and have not been altered in any way. |[Verifiable Credentials](../specification/VerifiableCredentials.md) |
 |TI.05|Verification of graphs| Evidence of ESG performance in supply chains is not concentrated in one document but rather is distributed along the entire value chain. The UNTP MUST define a mechanism to describe and verify the collection of evidence that is available from chains of linked documents so that downstream actors can verify the full ESG footprint and provenance data for any shipment. |[Trust graphs](../specification/TrustGraphs.md) |
@@ -83,9 +83,9 @@ IETF
 |CI.02|Entity ESG reporting compatibility  |UNTP conformant ESG data about products & shipments MUST be straightforward to map to entity level ESG reporting obligations so that UNTP transaction level ESG data can be easily aggregated to inform annual ESG reporting that conforms to standards like IFRS sustainability.  |[Vocabulary](../specification/Vocabularies.md) |
 |CI.03|ESG standards compatibility  |The UNTP MUST be able to support ESG claims against criteria from any ESG standard and MUST provide a mechanism to map those claims to a common vocabulary - so that implementers can align with standards of their choice and verifiers can make sense of the claims even when they are unfamiliar with specific standard criteria |[Vocabulary](../specification/Vocabularies.md), [ESG Rules](../specification/Rules.md) |
 |CI.04|Credential interoperability (VCs)  | The UNTP MUST provide the flexibility to support multiple credential standards such as W3C Verifiable Credentials and Hyperledger Airies Anoncreds - so that ESG data along a value chain can be verified even when different credential standards are adopted by different actors along the value chain.| |
-|CI.05|Blockchain | | |
-|CI.06|GS1 compatibility | | |
-|CI.07|Other registry compatibility  | | |
+|CI.05|Blockchain | Whilst some implementers MAY choose blockchain technologoes to underpin their solutions, the UNTP MUST NOT require the use of blockchain for conformant implementations - so that implementers that wish to avoid the costs and complexity of blockahin technologies are free to do so.| |
+|CI.06|GS1 compatibility |GS1 identifiers and standards are ubiquitous at the downstream consumer goods end of most supply chains. The UNTP MUST be compatible with GS1 standards but MUST NOT require the use of GS1 standards - so that supply chain actors that are already invested in GS1 identifiers and standards can maintain and build upon that investment |[GS1 Profile](../specification/GS1Binding.md) |
+|CI.07|Other registry compatibility  |The UNTP MUST define a mechanism to support existing identity registers so that implementers can continue to leverage existing business identifiers such as tax registration numbers, cadastral lot numbers, shipping container numbers, and so on under UNTP| [Identifiers](../specification/Identifiers.md), [Extensions](../extensions/index.md) |
 
 ## Implementation Requirements
 
