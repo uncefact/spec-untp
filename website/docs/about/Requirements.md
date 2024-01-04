@@ -9,9 +9,11 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 # UNTP Business Requirements
 
-
+This page provides a summary of the high level business requirements for UNTP, grouped into 7 catgories.  Each requirement is linked to the page(s) where the solution to the requirement is defined. 
 
 ## Governance Requirements
+
+This set of requirements aim to ensure that UNTP is goverened in an open and transparent manner, is freely avaialable to all, and is extensible to meet specific industry and jurisdictional needs. 
 
 |ID | Requirement Statement | Solution Mapping|
 |---|---|---|
@@ -26,6 +28,8 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Architectural Requirements
 
+This set of requirements aim to ensure that UNTP is scalable enough to achieve global implementations at a volume of global trade that is sufficient ot have a material impact on greenwashing - by building on top of existing industry systems and practices and using the simplest possible framework that meets the goals.
+
 |ID | Name| Requirement Statement | Solution Mapping|
 |---|---|---|---|
 |AR.01|Protocol over platform|The UNTP MUST define a standard protocol that is easily implemented by any business software system - so that every supply chain actor can continue to use their preferred business software without any need for upstream or downstream actors to agree on the use of shared platforms.| [Architecture](../specification/Architecture.md)|
@@ -37,6 +41,8 @@ import Disclaimer from '../\_disclaimer.mdx';
 |TT.07|Rules as code|The UNTP MUST define a mechanism to simplify the compliance assessment of entities, products, and processes against the fast growing set of ESG standards and regulations - so that any actor's investment in sustainable practices is easily tested against multiple criteria. |[ESG Rules](../specification/Rules.md) |
 
 ## Traceability & Transparency Requirements
+
+This set of requirements aim to ensure that UNTP provides the traceability and transparency data needed for each supply chain actor to confidently meet their due diligence obligations and customer epxections for verifiable evidence of sustainable practices.
 
 |ID | Name| Requirement Statement | Solution Mapping|
 |---|---|---|---|
@@ -51,6 +57,8 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Trust & Integrity Requirements
 
+This set of requirements aim to ensure that UNTP provides data that can be be trusted and is resilient to several greenwashing attack vectors.
+
 |ID | Name |Requirement Statement | Solution Mapping|
 |---|---|---|---|
 |TI.01| Trust anchors| Trust in truth of sustainability claims can be established by third party audits, or by attestation of trusted authorities, or by long standing evidence of sustainable behaviour. The UNTP MUST provide a mechanism to link ESG claims to any or all of these "trust anchors" so that downstream actors can have confidence that claimed ESG performance is true. | [Trust Anchors](../specification/TrustAnchors.md) |
@@ -63,6 +71,8 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 
 ## Security & Confidentiality Requirements
+
+This set of requirements aim to ensure that UNTP provides mechanisms to protect the security and confidentiality of supply chain data, allowing each actor to make their own choices about the balance between trceability & transparency.
 
 |ID | Name |Requirement Statement | Solution Mapping|
 |---|---|---|---|
@@ -77,6 +87,8 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Compatibility & Interoperability Requirements
 
+This set of requirements aim to ensure that UNTP is compatible with existing standards for technology, ESG criteria, and supply chain practices so that implementers can maximise the leverage of existing investments.
+
 |ID | Name |Requirement Statement | Solution Mapping|
 |---|---|---|---|
 |CI.01|National regulations compatibility |UNTP conformant data SHOULD be straightforward to map to national ESG regulations so that it can usefully provide the upstream B2B ESG evidence to support national B2C product conformance. |[Vocabulary](../specification/Vocabularies.md), [Extensions](../extensions/index.md)  |
@@ -89,15 +101,17 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Implementation Requirements
 
+This set of requirements aim to ensure that UNTP is implementable at the lowest possible cost, and that early implementers gain a marketing advantage, and that the impact of implementations can be tracked.
+
 |ID | Name | Requirement Statement | Solution Mapping|
 |---|---|---|---|
-|IM.01|Making a business case | | |
-|IM.02|Open source tools | | |
-|IM.03|Conformity testing | | |
-|IM.04|Implementaiton Support | | |
-|IM.05|Tracking implementations| | |
-|IM.06|Tracking extensions | | |
-|IM.07|Greenwashing KPIs| | |
+|IM.01|Making a business case |Every UNTP implementer will need confidence that the benefots of their implementation outweighs the cost. UNTP SHOULD provide a set of business case templates so that each stakholder type can fast-track their decision to proceed| [Business Case](../business-case/index.md)|
+|IM.02|Open source tools |The UNTP MUST include an open source reference implementation that any supply chain actor can embed into their solutions to help fast-track their implementation.| [Tools](../tools-and-support/Tools.md)|
+|IM.03|Conformity testing |the UNTP MUST include a conformance test suite and test service so that each implementer can self-assess their conformance and be confidenet that their implementations will be interoperable. |[Test cases](../tools-and-support/TestCases.md), [Test service](../tools-and-support/TestService.md) |
+|IM.04|Implementation Support |UNTP MUST provide mechanisms for implementers to get either community support or professional support so that they can minimise their implementation risk. | [Support](../tools-and-support/Support.md)|
+|IM.05|Tracking implementations|UNTP MUST provide a mechanism to track implementations so that uptake and impact can be measured and so that early implementers can publicise their solutions. | [Implementations](../implementations/index.md) |
+|IM.06|Tracking extensions |UNTP MUST provide a mechansim to track and publish industry & jurisdictional extensions so that new extensions can find and re-use relevant work. |[Extensions](../extensions/index.md)  |
+|IM.07|Greenwashing KPIs|Although uptake is a simple and concrete success measure, the real purpose of UNTP is to lift the value of sustainable practices by countering greenwashing. Therefore, UNTP MUST develop a set of KPIs that can be tracked to assess whether UNTP is having a material impact. | |
 
 
 
