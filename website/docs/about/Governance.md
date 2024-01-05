@@ -7,8 +7,6 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# UNTP Governance 
-
 ## Management process
 
 The UNTP development follows the same **[standard governance rules](https://github.com/uncefact/governance?tab=readme-ov-file#governance)** as any UN/CEFACT project. 
@@ -28,7 +26,7 @@ The UNTP includes a number of distinct and separately versioned components such 
 
 |UNTP Version| Status| Date| Componenets | Comment|
 |------|---|---|---|---|
-|0.0.0|![Raw](https://github.com/uncefact/governance/blob/main/images/raw.svg)| 2024-01-01| TBA | First raw documents|
+|0.0.0|Raw| 2024-01-01| TBA |Empty framework|
 | | | | | |
 
 
@@ -37,6 +35,7 @@ The UNTP includes a number of distinct and separately versioned components such 
 UNTP development [team meetings](https://us02web.zoom.us/j/85091806131) are held every fortnight from thursday 18 Jan at 7:00am UTC. Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
 |Meeting|Agenda|Summary|Recording|
+|---|---|---|---|
 |2024-01-18|kick-off| TBA | TBA |
 | | | | |
 
