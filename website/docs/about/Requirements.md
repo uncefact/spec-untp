@@ -15,15 +15,15 @@ This page provides a summary of the high level business requirements for UNTP, g
 
 This set of requirements aim to ensure that UNTP is goverened in an open and transparent manner, is freely avaialable to all, and is extensible to meet specific industry and jurisdictional needs. 
 
-|ID | Requirement Statement | Solution Mapping|
-|---|---|---|
-|GV.01|UNTP development MUST me managed via a transparent and consensus-driven process that is open to contributions from all stakeholders - so that implementers can have confidence that the UNTP will meet their requirements. | [Governance](Governance.md) |
-|GV.02|The UNTP IP MUST be owned by the UN and be permanently free to access and free to use - so that implementers can have confidence that there will never be any fees for use or IP infringement claims. | [Governance](Governance.md) |
-|GV.03|New versions of UNTP SHOULD be backwards compatible with earlier versions and each version MUST remain active and supported for a minimum of 2 years - so that implementers can have confidence in the durability of their investment.| [Governance](Governance.md) |
-|GV.04|UNTP implementation tools including reference implementations and test services MUST be available under open source and royalty free licensing - so that implementers can confidently use the tools to minimise their own implementation costs | [Tools & Support](../tools-and-support/index.md)|
-|GV.05|The UNTP MUST define a non-breaking extensions methodology - so that UNTP can be extended to meet specific jurisdictional or industry requirements and so that implementers of a registered extension can be confident that their implementation is interoperable with UNTP core. | [Extensions](../extensions/index.md)|
-|GV.06|Industry and/or jurisdictional extensions to the UNTP SHOULD also be governed via an open process and released under royalty free license terms - so that implementers of extensions can have same fees & IP confidence as with UNTP core.|[Extensions](../extensions/index.md)|
-|GV.07|UNTP MUST provide a mechanism for implementers to pledge their support and to register their implementations - so that implementers can choose to register both their sustainability commitment and conformant solutions for discovery by a global community of users and/or customers.|[Implementations](../implementations/index.md)|
+|ID | Name| Requirement Statement | Solution Mapping|
+|---|---|---|---|
+|GV.01|Consensus driven process|UNTP development MUST me managed via a transparent and consensus-driven process that is open to contributions from all stakeholders - so that implementers can have confidence that the UNTP will meet their requirements. | [Governance](Governance.md) |
+|GV.02|Freely available|The UNTP IP MUST be owned by the UN and be permanently free to access and free to use - so that implementers can have confidence that there will never be any fees for use or IP infringement claims. | [Governance](Governance.md) |
+|GV.03|Backwards compatible|New versions of UNTP SHOULD be backwards compatible with earlier versions and each version MUST remain active and supported for a minimum of 2 years - so that implementers can have confidence in the durability of their investment.| [Governance](Governance.md) |
+|GV.04|Open source|UNTP implementation tools including reference implementations and test services MUST be available under open source and royalty free licensing - so that implementers can confidently use the tools to minimise their own implementation costs | [Tools & Support](../tools-and-support/index.md)|
+|GV.05|Extensible|The UNTP MUST define a non-breaking extensions methodology - so that UNTP can be extended to meet specific jurisdictional or industry requirements and so that implementers of a registered extension can be confident that their implementation is interoperable with UNTP core. | [Extensions](../extensions/index.md)|
+|GV.06|Reusable extensions|Industry and/or jurisdictional extensions to the UNTP SHOULD also be governed via an open process and released under royalty free license terms - so that implementers of extensions can have same fees & IP confidence as with UNTP core.|[Extensions](../extensions/index.md)|
+|GV.07|Implementation pledge|UNTP MUST provide a mechanism for implementers to pledge their support and to register their implementations - so that implementers can choose to register both their sustainability commitment and conformant solutions for discovery by a global community of users and/or customers.|[Implementations](../implementations/index.md)|
 
 
 ## Architectural Requirements
@@ -111,7 +111,7 @@ This set of requirements aim to ensure that UNTP is implementable at the lowest 
 |IM.04|Implementation Support |UNTP MUST provide mechanisms for implementers to get either community support or professional support so that they can minimise their implementation risk. | [Support](../tools-and-support/Support.md)|
 |IM.05|Tracking implementations|UNTP MUST provide a mechanism to track implementations so that uptake and impact can be measured and so that early implementers can publicise their solutions. | [Implementations](../implementations/index.md) |
 |IM.06|Tracking extensions |UNTP MUST provide a mechansim to track and publish industry & jurisdictional extensions so that new extensions can find and re-use relevant work. |[Extensions](../extensions/index.md)  |
-|IM.07|Greenwashing KPIs|Although uptake is a simple and concrete success measure, the real purpose of UNTP is to lift the value of sustainable practices by countering greenwashing. Therefore, UNTP MUST develop a set of KPIs that can be tracked to assess whether UNTP is having a material impact. | |
+|IM.07|Greenwashing KPIs|Although uptake is a simple and concrete success measure, the real purpose of UNTP is to lift the value of sustainable practices by countering greenwashing. Therefore, UNTP MUST develop a set of greenwashing KPIs that can be tracked to assess whether UNTP is having a material impact. | Greenwashing KPIs|
 
 
 
