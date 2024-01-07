@@ -9,4 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 # Conformity Credential
 
-[Conformity Credential Schema](https://jargon.sh/user/unece/ConformityCredential/v/0.0.1)
+![Conformity Credential](ConformityCredential.svg)
+
+[Conformity Credential Documentation](https://jargon.sh/user/unece/ConformityCredential/v/working/artefacts/readme/render
+

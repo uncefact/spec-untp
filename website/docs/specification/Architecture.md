@@ -7,6 +7,17 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Architecture
+## Overview
 
-![Architecture Overview](ArchitectureOverview.png)
+
+## Principles
+
+
+## Each Actor
+
+![Architecture for issuer](Architecture-actor.png)
+
+## Entire Value Chain
+
+![Architecture for verifier](Architecture-chain.png)
+
