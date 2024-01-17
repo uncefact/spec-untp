@@ -36,8 +36,8 @@ UNTP development [team meetings](https://us02web.zoom.us/j/85091806131) are held
 
 |Meeting|Agenda|Summary|Recording|
 |---|---|---|---|
-|2024-01-18|kick-off| TBA | TBA |
-| | | | |
+|2024-01-11|kick-off| walked through this site and agreed to split into two groups (technical / policy) | [Zoom Recording](https://us02web.zoom.us/rec/share/RL7kxqtSgNDvUFl_bKQt7BMB4bqVMmSE30P0nBmGGEoXUQpSVmlZ025XplxLeExz.Q8PCoGtDjsBYx2R9) Passcode: Q=5K!qrN|
+|2024-01-18|Work through [issues list](https://github.com/uncefact/spec-untp/issues) | | |
 
 
 
