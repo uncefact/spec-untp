@@ -1,12 +1,13 @@
 # spec-untp
-UN Transparency Protocol 
+
+UN Transparency Protocol
 
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 To run it locally
 
-### Go to the wbsite folder
+### Go to the website folder
 
 ```
 cd website
