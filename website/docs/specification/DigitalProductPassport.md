@@ -9,7 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Overview
 
-The digital product passport (DPP) is issued by the shipper of goods and is the carrier of **product and sustainability information** for every serialised product item (or product batch) that is shipped between actors in the value chain. It is deliberately **simple and lightweight** and is designed to carry the minimum necessary data at the **granularity** needed by the receiver of goods - such as the scope 3 emissions in a product shipment. The passport contains links to **conformity credentials** which add trust to the ESG claims in the passport. The passport also contains links to **traceability events** which provide the "glue" to follow the linked-data trail (subject to confidentiality constraints) from finished product back to raw materials. The UNTP DPP does not conflict with national regulations such as the EU DPP.  In fact, it can usefully be conceptualised as the **upstream B2B feedstock** that provides the data and evidence needed for the issuing of high quality national level product passports.
+The digital product passport (DPP) is issued by the shipper of goods and is the carrier of **product and sustainability information** for every serialised product item (or product batch) that is shipped between actors in the value chain. It is deliberately **simple and lightweight** and is designed to carry the minimum necessary data at the **granularity** needed by the receiver of goods - such as the scope 3 emissions in a product shipment. The passport contains links to **conformity credentials** which add trust to the ESG claims in the passport. The passport also contains links to **traceability events** which provide the "glue" to follow the linked-data trail (subject to confidentiality constraints) from finished product back to raw materials. The UNTP DPP does not conflict with national regulations such as the EU DPP. In fact, it can usefully be conceptualised as the **upstream B2B feedstock** that provides the data and evidence needed for the issuing of high quality national level product passports.
 
 ## Conceptual Model
 
@@ -29,7 +29,7 @@ The digital product passport (DPP) is issued by the shipper of goods and is the 
 
 ## Sample File
 
-Sample DPP JSON for a packaged meat product. Includes render template.  [Human browsable rendered version](https://web.agtrace.showthething.com/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fagtrace-processor-verifiable-credentials.s3.ap-southeast-2.amazonaws.com%2F9359502000041%2F14713cf0-b81c-497c-a633-985cbb4bd5c4.json%22%7D%7D)
+Sample DPP JSON for a packaged meat product. Includes render template. [Human browsable rendered version](https://web.agtrace.showthething.com/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fagtrace-processor-verifiable-credentials.s3.ap-southeast-2.amazonaws.com%2F9359502000041%2F14713cf0-b81c-497c-a633-985cbb4bd5c4.json%22%7D%7D)
 
 ```
 {
@@ -110,7 +110,7 @@ Sample DPP JSON for a packaged meat product. Includes render template.  [Human b
   ],
   "credentialStatus": {
     "id": "https://api.vckit.showthething.com/credentials/status/revocation-list-2020/did_web_processor.agtrace.showthething.com/66",
-    "type": "RevocationList2020Status",
+    "type": "BitstringStatusListEntry",
     "revocationListIndex": 4,
     "revocationListCredential": "https://api.vckit.showthething.com/credentials/status/revocation-list-2020/did_web_processor.agtrace.showthething.com/66"
   },
@@ -124,6 +124,3 @@ Sample DPP JSON for a packaged meat product. Includes render template.  [Human b
   }
 }
 ```
-
-
-
