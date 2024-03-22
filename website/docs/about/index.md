@@ -48,7 +48,7 @@ The UNTP provides a solution to the transparency challenges facing the world's s
 
 * Short UNTP Presentation [PDF](../../files/Short-UNTP-Presentation.pdf) [PPT](../../files/Short-UNTP-Presentation.pptx)
 * Longer UNTP Presentation [PDF](../../files/UNTP-Presentation.pdf) [PPT](../../files/UNTP-Presentation.pptx)
-* Video presentation (15 mins) (Youtube)[https://youtu.be/dJFryZS2UII]
+* Video presentation (15 mins) [Youtube](https://youtu.be/dJFryZS2UII)
 
 
 
