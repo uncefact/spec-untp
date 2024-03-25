@@ -11,19 +11,36 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 The digital product passport (DPP) is issued by the shipper of goods and is the carrier of **product and sustainability information** for every serialised product item (or product batch) that is shipped between actors in the value chain. It is deliberately **simple and lightweight** and is designed to carry the minimum necessary data at the **granularity** needed by the receiver of goods - such as the scope 3 emissions in a product shipment. The passport contains links to **conformity credentials** which add trust to the ESG claims in the passport. The passport also contains links to **traceability events** which provide the "glue" to follow the linked-data trail (subject to confidentiality constraints) from finished product back to raw materials. The UNTP DPP does not conflict with national regulations such as the EU DPP. In fact, it can usefully be conceptualised as the **upstream B2B feedstock** that provides the data and evidence needed for the issuing of high quality national level product passports.
 
-## Requirements
-
-
 ## Conceptual Model
 
 ![Digital Product passport conceptual model](DigitalProductPassport.png)
+
+## Requirements
+
+The digital product passport is designed to meet the following detailed requirements as well as the more general [UNTP Requirements(https://uncefact.github.io/spec-untp/docs/about/Requirements)]
+
+|ID|Name|Requirement Statement|Solution Mapping|
+|--|--|--|--|
+|DPP-01|SKU or batch|The DPP should support use at either product level (ie SKU - Stock Keeping Unit identifiers) or at batch level or at individual serialised item level. |Claims are made at the passport level, which MUST have a related product (SKU) and MAY have a related batch|
+|DPP-02|Made in|The DPP should provide a simple structure to allow issuers to breakdown key value chain steps and assign them each a value fraction and country - so that domestic manufacure thresholds are easily assessed and met.|The DPP "processingProvenance" structure is designed to meet this need.|
+|DPP-03|Materials from|The DPP should provide a simple structure to allow issuers to breakdown the material composition of their products by mass fraction and origin country so that raw material provenance requirements are easily assessed and met.|The DPP "materialsProvenance" structure is designed to meet this need.|
+|DPP-04|Manufactured at|The DPP should provide a simple structure to describe the manufacturing facility at which the product was made. The facility identifier SHOULD be resolvable and verifiable and SHOULD link to cadastral boundary information.|The "Facility" structure incliding the locationEvidence credential property is designed to meet this need|
+|DPP-05|Batch|The DPP should allow issuers to identify specific manufacturing batch and individual product serial numbers in passports because this provides the maximum confidence in traceability & transparnency information|The "ProductBatch" class meets this need and allows both batch (array of) individual serial identifiers.|
+|DPP-06|Traceability|The DPP should provide a means to follow links to further DPPs and conformity credentials of constituent products so that (subject to confidentiality constraints), prevenance claims can be verified to any arbitrary depth upt o primary production|The links to EPCIS traceability event credentials from the productBatch class is designed to meet this need|
+|DPP-07|Product Info|The DPP should allow issuer to provide basic (but xtensible) product informatin including a product identifier linked to ownership evidence (anti-counterfeiting), product description, image, classification, and dimensions.|The "ProductInformation" class is designed to meet this need.|
+|DPP-08|Verifiable Party|The DPP should provide DPP issuer, product manufacturer, and facility operator identification inclding a name, a resolvable and verifiable identifier, and proof of ownership of the identifier|The Party structure inclding the 'identityEvidence" credential link meets this need|
+|DPP-09|Claims|The DPP MUST provide a means to include any number of conformity claims within one DPP so that it can provide simple single point to aggregate all claims about the product in one place|The "conformityClaims" array is designed to meet this need|
+|DPP-10|Conformity Topic|The DPP MUST provide a simple mechanism to express the sustainability/circularity/conformity topic for each claim so that similar claims can be grouped and the high level scope easily understood.|The ConformityTopic code list is designed to meet this need|
+|DPP-11|Metrics|The DPP MUST provide a simple mechanism to quantify a conformity claims (eg carbin intensity, water consumption, etc) and to express any accuracy range and also to compare the claimed value to a relevant benchmark such as a standard/regulation requirement or an industry average|The "Metric" class is designed to meet this need|
+|DPP-12|Criteria|The DPP MUST provide a means to refernece a standard or regulation as well as the specific criteria within that standard or regulation - so that claims can be understood inter terms of the criteria against which they are made.|The standardorRegulation property points to the standard document and the "criteria" property points to the specific rule or clause within that standard or regulation.|
+|DPP-13|Evidence|The DPP MUST provide a means to reference independent conformity assessments that support and verify the claims being made. The related evidence SHOULD be digitally verifiable but MAY be a simple document or web page. The confidenc elevel attached ot the evidence should be clear.|The "Evidence" class is designed to meet this need, together with the evidence type and assirance lvel code lists.|
+|DPP-14|Mass balance|Where the conformity evidence is not at the same granularity as the product that is the subject of the DPP (for example a facility level emissions certificate) then the DPP should allow the issuer to optionally attach evidence of the correct allocation to the individual product.|The massBalanceEvidence property of the Claim is designed to meet this need|
 
 
 ## Logical Model 
 
 
 ![Digital Product Passport data model](DigitalProductPassport.svg)
-
 
 
 ## Data Definitions
