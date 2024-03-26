@@ -422,7 +422,7 @@ Note - this sample describes the digital product passport payload only - ie the 
 
 |Project|DPP Version|Description|Credential|Rendered View|
 |--|--|--|--|--|
-|AATP |0.1.0|Packaged Meat DPP |[sample DPP VC](../../samples/au-agriculture/vc-dpp-0.1.0-au-meat-product.json) |[DPP VC Viewer](https://web.agtrace.showthething.com/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fagtrace-processor-verifiable-credentials.s3.ap-southeast-2.amazonaws.com%2F9359502000041%2F14713cf0-b81c-497c-a633-985cbb4bd5c4.json%22%7D%7D) |
+|AATP |0.1.0|Packaged Meat DPP |[sample DPP VC](../../samples/au-agriculture/vc-dpp-0.1.0-au-meat-product.json) |[DPP VC Viewer](https://web.agtrace.showthething.com/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fagtrace-processor-verifiable-credentials.s3.ap-southeast-2.amazonaws.com%2F9359502000041%2Fde0ff0c2-cec8-4cca-aa84-fac75c75103c.json%22%7D%7D) |
 
 
 
