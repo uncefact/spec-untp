@@ -289,9 +289,9 @@ https://vocabulary.uncefact.org/CountryId
 
 ## Schema
 
-|DPP Version|status|JSON-LD Context|JSON Schema|Open API 2.0|
+|DPP Version|status|JSON-LD Context|JSON Schema|
 |--|--|--|--|
-|0.3.0|Raw (not for implementation)|[DPP context](../../schema/digitalProductPassport.v0.3.0.JSONLDContext.jsonld)|[DPP schema](../../schema/digitalProductPassport.v0.3.0.JSONSchema.json)][DPP API](../../schema/digitalProductPassport.v0.3.0.OpenAPISpecification.json)|
+|0.3.0|Raw (not for implementation)|[DPP context](../../schema/digitalProductPassport.v0.3.0.JSONLDContext.jsonld)|[DPP schema](../../schema/digitalProductPassport.v0.3.0.JSONSchema.json)|
 
 ## Sample
 
