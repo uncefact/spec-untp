@@ -7,6 +7,15 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
+## Versions
+
+|DPP Version|Date|status|JSON-LD Context|JSON Schema|
+|--|--|--|--|
+|0.3.0|25-03-2024|Raw (not for implementation)|[DPP context](../../schema/digitalProductPassport.v0.3.0.JSONLDContext.jsonld)|[DPP schema](../../schema/digitalProductPassport.v0.3.0.JSONSchema.json)|
+|0.4.0|08-04-2024|Raw (for review)|[DPP context](../../schema/digitalProductPassport.v0.4.0.JSONLDContext.jsonld)|[DPP schema](../../schema/digitalProductPassport.v0.4.0.JSONSchema.json)|
+
+The current version of this specification is v0.4.0
+
 ## Overview
 
 The digital product passport (DPP) is issued by the shipper of goods and is the carrier of **product and sustainability information** for every serialised product item (or product batch) that is shipped between actors in the value chain. It is deliberately **simple and lightweight** and is designed to carry the minimum necessary data at the **granularity** needed by the receiver of goods - such as the scope 3 emissions in a product shipment. The passport contains links to **conformity credentials** which add trust to the ESG claims in the passport. The passport also contains links to **traceability events** which provide the "glue" to follow the linked-data trail (subject to confidentiality constraints) from finished product back to raw materials. The UNTP DPP does not conflict with national regulations such as the EU DPP. In fact, it can usefully be conceptualised as the **upstream B2B feedstock** that provides the data and evidence needed for the issuing of high quality national level product passports.
@@ -28,7 +37,7 @@ The digital product passport is designed to meet the following detailed requirem
 |DPP-05|Dimensions|The DPP must support the definision of key product dimensions such as length, width, height, weight, volume so that conformity claims made at the unit level (eg Co2 intensity in Kg/Kg) can be used to calculate actual values for the shipped product|Dimensions class|
 |DPP-06|Traceability|The DPP should provide a means to follow links to further DPPs and conformity credentials of constituent products so that (subject to confidentiality constraints), prevenance claims can be verified to any arbitrary depth upt o primary production|The links to EPCIS traceability event credentials from the productBatch class is designed to meet this need|
 |DPP-07|characteristics|The DPP should allow issuer to provide descriptive information about the product (image, description, etc) that is extensible to meet industry specific needs.|Characteristics property as an industry extnesion point|
-|DPP-08|Verifiable Party|The DPP should provide DPP issuer, product manufacturer, and facility operator identification inclding a name, a resolvable and verifiable identifier, and proof of ownership of the identifier|The Party structure inclding the 'identityEvidence" credential link meets this need|
+|DPP-08|Verifiable Party|The DPP should provide DPP issuer, product manufacturer, and facility operator identification inclding a name, a resolvable and verifiable identifier, and proof of ownership of the identifier|The Party structure inclding the "verification Evidence" property of the identifier class link meets this need|
 |DPP-09|Claims|The DPP MUST provide a means to include any number of conformity claims within one DPP so that it can provide simple single point to aggregate all claims about the product in one place|The "conformityClaims" array is designed to meet this need|
 |DPP-10|Conformity Topic|The DPP MUST provide a simple mechanism to express the sustainability/circularity/conformity topic for each claim so that similar claims can be grouped and the high level scope easily understood.|The ConformityTopic code list is designed to meet this need|
 |DPP-11|Metrics|The DPP MUST provide a simple mechanism to quantify a conformity claims (eg carbin intensity, water consumption, etc) and to express any accuracy range and also to compare the claimed value to a relevant benchmark such as a standard/regulation requirement or an industry average|The "Metric" class is designed to meet this need|
@@ -296,13 +305,6 @@ https://vocabulary.uncefact.org/CountryId
 |Unspecified |  conformity assessment by party with unspecified relationship |
 |3rdParty |  3rd party (independent) conformity assessment|
 
-
-## Schema
-
-|DPP Version|status|JSON-LD Context|JSON Schema|
-|--|--|--|--|
-|0.3.0|Raw (not for implementation)|[DPP context](../../schema/digitalProductPassport.v0.3.0.JSONLDContext.jsonld)|[DPP schema](../../schema/digitalProductPassport.v0.3.0.JSONSchema.json)|
-|0.4.0|Raw (for review)[DPP context](../../schema/digitalProductPassport.v0.4.0.JSONLDContext.jsonld)|[DPP schema](../../schema/digitalProductPassport.v0.4.0.JSONSchema.json)|
 
 ## Sample
 
