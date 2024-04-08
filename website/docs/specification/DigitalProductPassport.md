@@ -227,13 +227,8 @@ unit | Unit of measure drawn from the UNECE rec20 measure code list. | Code (uni
 
 > Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity.
 
-Property | Definition | Type
---- | --- | ---
 
-
-
-
-## Code Tables of [unece/DigitalProductPassport](/user/unece/DigitalProductPassport/v/working)
+## Code Tables
 
 ### conformityTopic
 
