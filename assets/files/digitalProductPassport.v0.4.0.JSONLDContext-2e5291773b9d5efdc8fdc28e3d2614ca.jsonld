@@ -1,0 +1,283 @@
+{
+    "@context": {
+        "issuedBy": {
+            "@context": {
+                "identifiers": {
+                    "@context": {
+                        "scheme": "xsd:string",
+                        "identiferValue": "xsd:string",
+                        "identifierURI": "xsd:string",
+                        "verificationEvidence": {
+                            "@context": {
+                                "format": "xsd:string",
+                                "assuranceLevel": "xsd:string",
+                                "credentialReference": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        }
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "name": "xsd:string"
+            },
+            "@id": "xsd:string"
+        },
+        "product": {
+            "@context": {
+                "productIdentifiers": {
+                    "@context": {
+                        "scheme": "xsd:string",
+                        "identiferValue": "xsd:string",
+                        "identifierURI": "xsd:string",
+                        "verificationEvidence": {
+                            "@context": {
+                                "format": "xsd:string",
+                                "assuranceLevel": "xsd:string",
+                                "credentialReference": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        }
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "batchIdentifiers": {
+                    "@context": {
+                        "scheme": "xsd:string",
+                        "identiferValue": "xsd:string",
+                        "identifierURI": "xsd:string",
+                        "verificationEvidence": {
+                            "@context": {
+                                "format": "xsd:string",
+                                "assuranceLevel": "xsd:string",
+                                "credentialReference": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        }
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "itemIdentifiers": {
+                    "@context": {
+                        "scheme": "xsd:string",
+                        "identiferValue": "xsd:string",
+                        "identifierURI": "xsd:string",
+                        "verificationEvidence": {
+                            "@context": {
+                                "format": "xsd:string",
+                                "assuranceLevel": "xsd:string",
+                                "credentialReference": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        }
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "classifications": {
+                    "@context": {
+                        "scheme": "xsd:string",
+                        "classifierValue": "xsd:string",
+                        "classifierName": "xsd:string",
+                        "classifierURL": "xsd:string"
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "modelName": "xsd:string",
+                "image": "xsd:string",
+                "description": "xsd:string",
+                "furtherInformation": "xsd:string",
+                "manufacturedDate": "xsd:string",
+                "dimensions": {
+                    "@context": {
+                        "weight": {
+                            "@context": {
+                                "value": "xsd:decimal",
+                                "unit": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        },
+                        "length": {
+                            "@context": {
+                                "value": "xsd:decimal",
+                                "unit": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        },
+                        "width": {
+                            "@context": {
+                                "value": "xsd:decimal",
+                                "unit": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        },
+                        "height": {
+                            "@context": {
+                                "value": "xsd:decimal",
+                                "unit": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        },
+                        "volume": {
+                            "@context": {
+                                "value": "xsd:decimal",
+                                "unit": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        }
+                    },
+                    "@id": "xsd:string"
+                },
+                "charcteristics": {
+                    "@context": {},
+                    "@id": "xsd:string"
+                },
+                "manufacturer": {
+                    "@context": {
+                        "identifiers": {
+                            "@context": {
+                                "scheme": "xsd:string",
+                                "identiferValue": "xsd:string",
+                                "identifierURI": "xsd:string",
+                                "verificationEvidence": {
+                                    "@context": {
+                                        "format": "xsd:string",
+                                        "assuranceLevel": "xsd:string",
+                                        "credentialReference": "xsd:string"
+                                    },
+                                    "@id": "xsd:string"
+                                }
+                            },
+                            "@id": "xsd:string",
+                            "@container": "@list"
+                        },
+                        "name": "xsd:string"
+                    },
+                    "@id": "xsd:string"
+                },
+                "manufacturedAt": {
+                    "@context": {
+                        "identifiers": {
+                            "@context": {
+                                "scheme": "xsd:string",
+                                "identiferValue": "xsd:string",
+                                "identifierURI": "xsd:string",
+                                "verificationEvidence": {
+                                    "@context": {
+                                        "format": "xsd:string",
+                                        "assuranceLevel": "xsd:string",
+                                        "credentialReference": "xsd:string"
+                                    },
+                                    "@id": "xsd:string"
+                                }
+                            },
+                            "@id": "xsd:string",
+                            "@container": "@list"
+                        },
+                        "name": "xsd:string",
+                        "location": "xsd:string",
+                        "operatedBy": {
+                            "@context": {
+                                "identifiers": {
+                                    "@context": {
+                                        "scheme": "xsd:string",
+                                        "identiferValue": "xsd:string",
+                                        "identifierURI": "xsd:string",
+                                        "verificationEvidence": {
+                                            "@context": {
+                                                "format": "xsd:string",
+                                                "assuranceLevel": "xsd:string",
+                                                "credentialReference": "xsd:string"
+                                            },
+                                            "@id": "xsd:string"
+                                        }
+                                    },
+                                    "@id": "xsd:string",
+                                    "@container": "@list"
+                                },
+                                "name": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        }
+                    },
+                    "@id": "xsd:string"
+                },
+                "materialsProvenance": {
+                    "@context": {
+                        "originCountry": "xsd:string",
+                        "materialType": {
+                            "@context": {
+                                "scheme": "xsd:string",
+                                "classifierValue": "xsd:string",
+                                "classifierName": "xsd:string",
+                                "classifierURL": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        },
+                        "massFraction": "xsd:decimal",
+                        "recycled": "xsd:boolean",
+                        "hazardous": "xsd:boolean"
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "conformityClaims": {
+                    "@context": {
+                        "topic": "xsd:string",
+                        "standardOrRegulation": "xsd:string",
+                        "criteriaReference": "xsd:string",
+                        "claimedValues": {
+                            "@context": {
+                                "name": "xsd:string",
+                                "value": "xsd:decimal",
+                                "accuracy": "xsd:decimal",
+                                "unit": "xsd:string"
+                            },
+                            "@id": "xsd:string",
+                            "@container": "@list"
+                        },
+                        "benchmarkValue": {
+                            "@context": {
+                                "name": "xsd:string",
+                                "value": "xsd:decimal",
+                                "accuracy": "xsd:decimal",
+                                "unit": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        },
+                        "benchmarkReference": "xsd:string",
+                        "conformance": "xsd:boolean",
+                        "conformityEvidence": {
+                            "@context": {
+                                "format": "xsd:string",
+                                "assuranceLevel": "xsd:string",
+                                "credentialReference": "xsd:string"
+                            },
+                            "@id": "xsd:string"
+                        }
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                },
+                "recyclingInstructions": "xsd:string",
+                "traceabilityInformation": {
+                    "@context": {
+                        "eventReference": "xsd:string",
+                        "eventType": "xsd:string"
+                    },
+                    "@id": "xsd:string",
+                    "@container": "@list"
+                }
+            },
+            "@id": "xsd:string"
+        },
+        "guaranteeOfOriginCredential": "xsd:string",
+        "trustScore": "xsd:decimal",
+        "sustainabilityScore": "xsd:decimal",
+        "@version": 1.1
+    },
+    "@id": "xsd:string"
+}
