@@ -11,9 +11,9 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 The primary goal of UNTP is to make significant reductions in the incidence of greenwashing by giving unsustainable behaviour nowhere to hide. This will also uplift the value of legitimate ESG credentials from supply chain actors that have implemented sustainable practices. UNTP will have achieved it's purpose when
 
-| Goals                         | Evidence and examples |
+| Goals                         | Description |
 | ----------------------------- | ----------- |
-| Most supply chain shipments are accompanied by verifiable ESG performance data. | In complex supply chains this means that each step and at every depth high quality verifiable product information accompanies products via a Digital Product Passport |
+| Most supply chain shipments are accompanied by verifiable ESG performance data. | In complex supply chains this means that at each supply chain step verifiable product and ESG information accompanies products via a Digital Product Passport. |
 | Greenwashing is a niche activity that is easily detected and quickly penalised by markets and regulators. | Businesses that chose not to share verifible information about their products are assumed to be doing the wrong things from an ESG perspective and therefore get lower prices for their products or lose access to markets. |
 | Products with the best sustainability characteristics enjoy the greatest market access and price uplift. | Sharing data about your products becomes a competitive advantage and your business choses to compete on the basis of high quality information. |
 
