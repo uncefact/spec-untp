@@ -27,6 +27,3 @@ One case deserves special mention: a URL encoded in a QR Code. Almost all smartp
 
 
 ## Resolvability
-
-
-## Verifiability 
