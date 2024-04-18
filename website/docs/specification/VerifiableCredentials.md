@@ -38,7 +38,7 @@ The VC basic profile is designed to be as simple, lightweight, and interoperable
 * MUST implement the [W3C VC Data Model v1.1](https://www.w3.org/TR/vc-data-model/) using the JSON-LD Compacted Document Form
 * SHOULD implement the [W3C VC Data Model v2.0](https://www.w3.org/TR/vc-data-model-2.0/) using the JSON-LD Compacted Document Form
 * MUST implement [W3C VC Bitstring Status List](https://www.w3.org/TR/vc-bitstring-status-list/) for credential status checks including revocation checks
-* MUST implement [W3C-DID-CORE](https://www.w3.org/TR/did-core/) using DID methods defined in [DID methods](did-methods)
+* MUST implement [W3C-DID-CORE](https://www.w3.org/TR/did-core/) using DID methods defined in [DID methods](#did-methods)
 * MUST implement the enveloping proof mechanism defined in [W3C VC JOSE / COSE](https://www.w3.org/TR/vc-jose-cose/) with JOSE (Section 3.1.1)
 * SHOULD implement the embedded proof mechanism defined in [W3 Data Integrity proof](https://www.w3.org/TR/vc-data-integrity/)
 
