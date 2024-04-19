@@ -29,6 +29,21 @@ The UNTP includes a number of distinct and separately versioned components such 
 |0.0.0|Raw| 2024-01-01| TBA |Empty framework|
 | | | | | |
 
+## Contribution Process
+In general we follow the standard GIT Pull Request process.
+
+1. Make your changes in the markdown file, then commit:
+![image](https://github.com/uncefact/spec-untp/assets/1311010/2ff55bd0-1e68-406b-a9b3-3f229d9921fb)
+
+2. Just click okay on this (we don’t have a commit message policy):
+![image](https://github.com/uncefact/spec-untp/assets/1311010/4fec84b8-1d1a-4a2a-a523-023d84940691)
+
+3. Then create a pull request for your change request. Here we do prefer a suitable title and a brief description of the change you are suggesting:
+![image](https://github.com/uncefact/spec-untp/assets/1311010/c88cbf4a-57d9-42e6-86cf-ad6b1c9bb200)
+
+4. We will process your PR in the next meeting. Note that you will not see your change on the website before that happens, and we have agreed to merge your PR.
+![image](https://github.com/uncefact/spec-untp/assets/1311010/feaa69f7-8bad-45a0-aa3e-e678f74edb94)
+
 
 ## Meetings
 
