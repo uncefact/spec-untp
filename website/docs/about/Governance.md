@@ -32,16 +32,19 @@ The UNTP includes a number of distinct and separately versioned components such 
 ## Contribution Process
 In general we follow the standard GIT Pull Request process.
 
-1. Make your changes in the markdown file, then commit:
+1. By far the easiest way is to start from the Edit feature, here:
+![image](https://github.com/uncefact/spec-untp/assets/1311010/4b1c7e3d-aed8-4a58-8cd6-d9969f5e8ceb)
+
+2. Make your changes in the markdown file, then commit:
 ![image](https://github.com/uncefact/spec-untp/assets/1311010/2ff55bd0-1e68-406b-a9b3-3f229d9921fb)
 
-2. Just click okay on this (we don’t have a commit message policy):
+3. Just click okay on this (we don’t have a commit message policy):
 ![image](https://github.com/uncefact/spec-untp/assets/1311010/4fec84b8-1d1a-4a2a-a523-023d84940691)
 
-3. Then create a pull request for your change request. Here we do prefer a suitable title and a brief description of the change you are suggesting:
+4. Then create a pull request for your change request. Here we do prefer a suitable title and a brief description of the change you are suggesting:
 ![image](https://github.com/uncefact/spec-untp/assets/1311010/c88cbf4a-57d9-42e6-86cf-ad6b1c9bb200)
 
-4. We will process your PR in the next meeting. Note that you will not see your change on the website before that happens, and we have agreed to merge your PR.
+5. We will process your PR in the next meeting. Note that you will not see your change on the website before that happens, and we have agreed to merge your PR.
 ![image](https://github.com/uncefact/spec-untp/assets/1311010/feaa69f7-8bad-45a0-aa3e-e678f74edb94)
 
 
