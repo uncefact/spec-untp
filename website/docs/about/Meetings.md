@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: Governance
+title: Meetings
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Design Patterns
+title: Best Practices
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
