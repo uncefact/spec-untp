@@ -1,6 +1,6 @@
 ---
-sidebar_position: 10
-title: Test Service
+sidebar_position: 30
+title: Test Services
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';

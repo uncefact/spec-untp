@@ -1,10 +1,11 @@
 ---
 sidebar_position: 15
-title: Tools
+title: For Industry Associations
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Implementation Tools
+
+# For Industry Associations
