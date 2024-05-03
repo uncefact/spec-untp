@@ -9,6 +9,12 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 The United Nations Transparency Protocol (UNTP) aims to support governments and industry with practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.
 
+## Presentations & Videos
+
+* Short UNTP Presentation [PDF](../../files/Short-UNTP-Presentation.pdf) [PPT](../../files/Short-UNTP-Presentation.pptx)
+* Longer UNTP Presentation [PDF](../../files/UNTP-Presentation.pdf) [PPT](../../files/UNTP-Presentation.pptx)
+* Video presentation (15 mins) [Youtube](https://youtu.be/dJFryZS2UII)
+
 ## Incentives for sustainable supply chains are increasing
 
 Incentives for sustainable supply chains are increasing fast. 
@@ -44,11 +50,7 @@ The UNTP provides a solution to the transparency challenges facing the world's s
 
 ![Transparency Challenges](TransparencyChallenges.png)
 
-## Presentations & Videos
 
-* Short UNTP Presentation [PDF](../../files/Short-UNTP-Presentation.pdf) [PPT](../../files/Short-UNTP-Presentation.pptx)
-* Longer UNTP Presentation [PDF](../../files/UNTP-Presentation.pdf) [PPT](../../files/UNTP-Presentation.pptx)
-* Video presentation (15 mins) [Youtube](https://youtu.be/dJFryZS2UII)
 
 
 
