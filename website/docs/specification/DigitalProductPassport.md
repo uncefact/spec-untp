@@ -307,194 +307,94 @@ Note - this sample describes the digital product passport payload only - ie the 
 
 ```
 {
-  "id": "http://example.com",
-  "issuedBy": {
-    "identifiers": [
-      {
-        "scheme": "http://example.com",
-        "identiferValue": "string",
-        "identifierURI": "http://example.com",
-        "verificationEvidence": {
-          "format": "w3c_vc",
-          "assuranceLevel": "Self",
-          "credentialReference": "http://example.com"
-        }
-      }
-    ],
-    "name": "string"
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://uncefact.org/untp/v1"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "UNTPDigitalProductPassportCredential"
+  ],
+  "id": "urn:untp:e5adbeg6-2n1s-4669-bd54-321d903re998",
+  "issuer": {
+    "type": "Organization",
+    "id": "did:web:brand-owner.example.com",
+    "name": "byACRE",
+    "url": "https://byacre.com"
   },
-  "product": {
-    "productIdentifiers": [
-      {
-        "scheme": "http://example.com",
-        "identiferValue": "string",
-        "identifierURI": "http://example.com",
-        "verificationEvidence": {
-          "format": "w3c_vc",
-          "assuranceLevel": "Self",
-          "credentialReference": "http://example.com"
+  "validFrom": "2023-06-22T10:00:00.000Z",
+  "credentialSubject": {
+    "type": "UNTPDigitalProductPassport",
+    "product": {
+      "type": "Product",
+      "id": "https://shop.byacre.com/nordic-pioneer",
+      "batchIdentifiers": [
+        "http://brand-owner.example.com/01/09520123456788/10/ABC123"
+      ],
+      "itemIdentifiers": [
+        "http://brand-owner.example.com/01/09520123456788/21/12345",
+        "http://brand-owner.example.com/01/09520123456788/21/12346"
+      ],
+      "classifications": [],
+      "modelName": "Nordic Pioneer",
+      "image": "https://shop.byacre.com/media/catalog/product/cache/9d07aaf2508b8b04f8893629eb80a40d/n/o/nordicpioneer-green-angled-byacre.jpg-.jpg",
+      "description": "Versatile, lightweight & innovative aluminum rollator walker",
+      "furtherInformation": "https://shop.byacre.com/nordic-pioneer",
+      "manufacturedDate": "2024-05-08",
+      "dimensions": {
+        "type": "Dimensions",
+        "weight": {
+          "value": 5.90,
+          "unit": "kg"
+        },
+        "length": {
+          "value": 69,
+          "unit": "cm"
+        },
+        "width": {
+          "value": 65.5,
+          "unit": "cm"
         }
-      }
-    ],
-    "batchIdentifiers": [
-      {
-        "scheme": "http://example.com",
-        "identiferValue": "string",
-        "identifierURI": "http://example.com",
-        "verificationEvidence": {
-          "format": "w3c_vc",
-          "assuranceLevel": "Self",
-          "credentialReference": "http://example.com"
-        }
-      }
-    ],
-    "itemIdentifiers": [
-      {
-        "scheme": "http://example.com",
-        "identiferValue": "string",
-        "identifierURI": "http://example.com",
-        "verificationEvidence": {
-          "format": "w3c_vc",
-          "assuranceLevel": "Self",
-          "credentialReference": "http://example.com"
-        }
-      }
-    ],
-    "classifications": [
-      {
-        "scheme": "http://example.com",
-        "classifierValue": "string",
-        "classifierName": "string",
-        "classifierURL": "http://example.com"
-      }
-    ],
-    "modelName": "string",
-    "image": "http://example.com",
-    "description": "string",
-    "furtherInformation": "http://example.com",
-    "manufacturedDate": "2019-08-24",
-    "dimensions": {
-      "weight": {
-        "value": 0,
-        "unit": "string"
       },
-      "length": {
-        "value": 0,
-        "unit": "string"
+      "manufacturer": {
+        "type": "Organization",
+        "id": "did:web:manufacturer.example.com",
+        "name": "Hitech Assembly, Inc.",
+        "location": "Manufacturered in the EU"
       },
-      "width": {
-        "value": 0,
-        "unit": "string"
-      },
-      "height": {
-        "value": 0,
-        "unit": "string"
-      },
-      "volume": {
-        "value": 0,
-        "unit": "string"
-      }
-    },
-    "charcteristics": {},
-    "manufacturer": {
-      "identifiers": [
+      "materialsProvenance": [
         {
-          "scheme": "http://example.com",
-          "identiferValue": "string",
-          "identifierURI": "http://example.com",
-          "verificationEvidence": {
-            "format": "w3c_vc",
-            "assuranceLevel": "Self",
-            "credentialReference": "http://example.com"
-          }
+          "type": "MaterialProvenance",
+          "originCountry": "EU",
+          "materialType": "EPP",
+          "massFraction": 0.6,
+          "recycled": true,
+          "hazardous": false
         }
       ],
-      "name": "string"
-    },
-    "manufacturedAt": {
-      "identifiers": [
+      "conformityClaims": [
         {
-          "scheme": "http://example.com",
-          "identiferValue": "string",
-          "identifierURI": "http://example.com",
-          "verificationEvidence": {
-            "format": "w3c_vc",
-            "assuranceLevel": "Self",
-            "credentialReference": "http://example.com"
-          }
+          "type": "LinkRole",
+          "target": "https://supplier.example.com/material/reuse-certificate",
+          "linkRelationship": "untpConformity"
+        },
+        {
+          "type": "LinkRole",
+          "target": "https://supplier.example.com/manufacturing/carbon-emissions-certificate",
+          "linkRelationship": "untpConformity"
         }
       ],
-      "name": "string",
-      "location": "http://example.com",
-      "operatedBy": {
-        "identifiers": [
-          {
-            "scheme": "http://example.com",
-            "identiferValue": "string",
-            "identifierURI": "http://example.com",
-            "verificationEvidence": {
-              "format": "w3c_vc",
-              "assuranceLevel": "Self",
-              "credentialReference": "http://example.com"
-            }
-          }
-        ],
-        "name": "string"
-      }
-    },
-    "materialsProvenance": [
-      {
-        "originCountry": "string",
-        "materialType": {
-          "scheme": "http://example.com",
-          "classifierValue": "string",
-          "classifierName": "string",
-          "classifierURL": "http://example.com"
-        },
-        "massFraction": 0,
-        "recycled": true,
-        "hazardous": true
-      }
-    ],
-    "conformityClaims": [
-      {
-        "topic": "environment.energy",
-        "standardOrRegulation": "http://example.com",
-        "criteriaReference": "http://example.com",
-        "claimedValues": [
-          {
-            "name": "string",
-            "value": 0,
-            "accuracy": 0,
-            "unit": "string"
-          }
-        ],
-        "benchmarkValue": {
-          "name": "string",
-          "value": 0,
-          "accuracy": 0,
-          "unit": "string"
-        },
-        "benchmarkReference": "http://example.com",
-        "conformance": true,
-        "conformityEvidence": {
-          "format": "w3c_vc",
-          "assuranceLevel": "Self",
-          "credentialReference": "http://example.com"
+      "recyclingInstructions": "http://brand-owner.example.com/nordic-pioneer/recycling",
+      "traceabilityInformation": [
+        {
+          "type": "UNTPEvent",
+          "eventReference": "http://manufacturer.example.com/293847293847",
+          "eventType": "aggregation"
         }
-      }
-    ],
-    "recyclingInstructions": "http://example.com",
-    "traceabilityInformation": [
-      {
-        "eventReference": "http://example.com",
-        "eventType": "aggregation"
-      }
-    ]
-  },
-  "guaranteeOfOriginCredential": "http://example.com",
-  "trustScore": 0,
-  "sustainabilityScore": 0
+      ]
+    },
+    "guaranteeOfOriginCredential": "https://supplier.example.com/manufacturing/certificate-of-origin"
+  }
 }
 ```
 
