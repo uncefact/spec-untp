@@ -96,4 +96,4 @@ Extensions of the schema are intended to provide impplemtors the ability to exte
 * Mass Balance
 
 ### Extension
-NOTE:  We expect that the pilots that are occuring will be added here.
+We expect that as the pilots that are currently in process we will be adding our learings here.
