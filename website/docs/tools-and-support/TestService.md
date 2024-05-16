@@ -1,4 +1,4 @@
-<img width="259" alt="image" src="https://github.com/uncefact/spec-untp/assets/1311010/46987c97-4142-4647-9041-dd9a99e09bda"><img width="205" alt="image" src="https://github.com/uncefact/spec-untp/assets/1311010/64af6842-f80e-4f3a-bbfb-8e9190803ca6">---
+---
 sidebar_position: 30
 title: Test Services
 ---
