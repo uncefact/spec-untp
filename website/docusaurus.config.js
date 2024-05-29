@@ -51,7 +51,7 @@ const config = {
             require.resolve('./src/css/index.scss'),
           ],
         },
-        googleAnalytics: {
+        gtag: {
           trackingID: 'G-9NBG7HW734',
           anonymizeIP: true,
         },
