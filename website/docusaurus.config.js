@@ -7,7 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'UN Transparency Protocol',
-  tagline: 'Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.',
+  tagline:
+    'Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -47,8 +48,12 @@ const config = {
         theme: {
           customCss: [
             require.resolve('./src/css/custom.scss'),
-            require.resolve('./src/css/index.scss')
-          ]
+            require.resolve('./src/css/index.scss'),
+          ],
+        },
+        gtag: {
+          trackingID: 'G-9NBG7HW734',
+          anonymizeIP: true,
         },
       }),
     ],
@@ -59,7 +64,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      slackLink: 'https://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
+      slackLink:
+        'https://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
       colorMode: {
         disableSwitch: true,
       },
@@ -73,10 +79,22 @@ const config = {
         },
         items: [
           {to: '/docs/about', label: 'About the UNTP', position: 'right'},
-          {to: '/docs/specification', label: 'The specification', position: 'right'},
-          {to: '/docs/tools-and-support', label: 'Tools and support', position: 'right'},
+          {
+            to: '/docs/specification',
+            label: 'The specification',
+            position: 'right',
+          },
+          {
+            to: '/docs/tools-and-support',
+            label: 'Tools and support',
+            position: 'right',
+          },
           {to: '/docs/extensions', label: 'Extensions', position: 'right'},
-          {to: '/docs/implementations', label: 'Implementations', position: 'right'},
+          {
+            to: '/docs/implementations',
+            label: 'Implementations',
+            position: 'right',
+          },
           {
             href: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
             position: 'right',
