@@ -1,0 +1,829 @@
+$id: https://platform.transmute.industries/marketplace/templates/urn:transmute:template:mill-test-report
+title: Mill Test Report
+tags:
+  - Steel
+  - CATAIR
+jurisdiction:
+  - Cross Border
+description: >-
+  A Mill Test Credential (MTC), or Mill Test Report (MTR), is issued by a manufacturer to certify the chemical and mechanical features of a product and its compliance to the applicable norms and technical specifications. Typically, Mill Test Credentials conform to the EN 10204 standard and are related to steel products. (Source: https://blog.projectmaterials.com/project-procurement/mill-test-Credential/)
+type: object
+properties:
+  "@context":
+    type: array
+    readOnly: true
+    const:
+      - https://www.w3.org/2018/credentials/v1
+      - https://w3id.org/traceability/v1
+    default:
+      - https://www.w3.org/2018/credentials/v1
+      - https://w3id.org/traceability/v1
+    items:
+      type: string
+      enum:
+        - https://www.w3.org/2018/credentials/v1
+        - https://w3id.org/traceability/v1
+  type:
+    type: array
+    readOnly: true
+    const:
+      - VerifiableCredential
+      - MillTestReportCredential
+    default:
+      - VerifiableCredential
+      - MillTestReportCredential
+    items:
+      type: string
+      enum:
+        - VerifiableCredential
+        - MillTestReportCredential
+  id:
+    type: string
+    format: uri
+    description: Mill test report identifier; this must be an Internationalized Resource Identifier such as an DID, URI, URL, or URN.
+  credentialSchema:
+    type: object
+    properties:
+      id:
+        title: Schema URL
+        description: The url of the schema file to validate the shape of the json object
+        type: string
+        format: uri
+        const: https://platform.transmute.industries/marketplace/templates/urn:transmute:template:mill-test-report
+      type:
+        title: Type
+        description: The type of validation to be run against the defined schema
+        const: JsonSchema
+    additionalProperties: false
+    required:
+      - type
+      - id
+  credentialStatus:
+    type: array
+    maxItems: 1
+    description: Revocation only.
+    items:
+      - type: object
+        properties:
+          id:
+            type: string
+            format: url
+            example: https://example.com/credentials/status/3#94567
+          type:
+            type: string
+            const: BitstringStatusListEntry
+          statusPurpose:
+            type: string
+            const: revocation
+          statusListIndex:
+            type: number
+            example: 94567
+          statusListCredential:
+            type: string
+            format: url
+            example: https://example.com/credentials/status/3
+        additionalProperties: false
+        required:
+          - type
+          - id
+          - statusPurpose
+          - statusListIndex
+          - statusListCredential
+  issuanceDate:
+    type: string
+    format: date-time
+  expirationDate:
+    type: string
+    format: date-time
+  issuer:
+    title: Issuer Organization
+    description: Mill Test Report issuing organization.
+    type: object
+    properties:
+      type:
+        type: array
+        readOnly: true
+        const:
+          - Organization
+        default:
+          - Organization
+        items:
+          type: string
+          enum:
+            - Organization
+      logo:
+        title: Logo of Issuing Organization
+        type: string
+        format: uri
+        maxLength: 512000
+        description: URI to a remote logo file, or a `data:` scheme URI of an encoded logo
+      id:
+        title: Issuer's Identifier
+        description: Issuing organization identifier, typically a Decentralized Identifier (DID).
+        type: string
+        format: uri
+      taxId:
+        title: Tax Id
+        description: The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the EORI in EU.
+        type: string
+      name:
+        title: Name
+        description: Issuing organization name.
+        type: string
+      url:
+        title: URL
+        description: Issuing organization's website URL.
+        type: string
+        format: uri
+      street:
+        title: Street
+        description: The street address expressed as free form text. The street address is printed on paper as the first lines below the name. For example, the name of the street and the number in the street, or the name of a building.
+        type: string
+      locality:
+        title: Locality
+        description: The locality in which the street address is, and which is in the region; for example, a city or town.
+        type: string
+      region:
+        title: State
+        description: Text specifying a province or state in abbreviated format; for example, NJ.
+        type: string
+      postalCode:
+        title: Postal Code
+        description: Text specifying the postal code for an address.
+        type: string
+      country:
+        title: Country
+        description: The two-letter ISO 3166-1 alpha-2 country code.
+        type: string
+      representativeName:
+        title: Representative Name
+        description: Name of the person issuing on behalf of the organization.
+        type: string
+      jobTitle:
+        title: Job Title
+        description: The job title of the person issuing on behalf of the organization.
+        type: string
+      email:
+        title: Email
+        description: Contact email.
+        type: string
+      phoneNumber:
+        title: Phone Number
+        description: Contact phone number.
+        type: string
+    additionalProperties: false
+    required:
+      - type
+      - id
+  credentialSubject:
+    title: Mill Test Report
+    description: Test results made by a manufacturer of a metal product.
+    type: object
+    properties:
+      type:
+        type: array
+        readOnly: true
+        const:
+          - MillTestReport
+        default:
+          - MillTestReport
+        items:
+          type: string
+          enum:
+            - MillTestReport
+      certificateNumber:
+        title: Certificate Number
+        description: Mill test report certificate number.
+        type: string
+      certification:
+        title: Certification
+        description: The type of certification conducted.
+        type: string
+      purchaseOrderNumber:
+        title: Purchase Order Number
+        description: Purchase order number.
+        type: string
+      shipmentDate:
+        title: Shipment Date
+        description: Date of shipping.
+        type: string
+        format: date
+        $linkedData:
+          term: shipmentDate
+          "@id": https://vocabulary.uncefact.org/DateTimePeriodFunctionCodeList#270
+      meansOfTransport:
+        title: Means of Transport
+        description: A means of transport, expressed as text, for this transport route.
+        type: string
+        enum:
+          - Road
+          - Rail
+          - Ocean
+        $linkedData:
+          term: meansOfTransport
+          "@id": https://vocabulary.uncefact.org/transportMeans
+      customer:
+        title: Customer
+        description: Bill to, buyer party.
+        type: object
+        properties:
+          type:
+            type: array
+            readOnly: true
+            const:
+              - Organization
+            default:
+              - Organization
+            items:
+              type: string
+              enum:
+                - Organization
+          id:
+            title: Identifier
+            description: Customers's identifier, typically a Decentralized Identifier (DID).
+            type: string
+            format: uri
+          name:
+            title: Name
+            description: Customer name.
+            type: string
+          taxId:
+            title: Tax Id
+            description: The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the EORI in EU.
+            type: string
+          plantOrSiteName:
+            title: Plant or Site Name
+            description: Name of Plant, Site or Unit.
+            type: string
+          street:
+            title: Street
+            description: The street address expressed as free form text. The street address is printed on paper as the first lines below the name. For example, the name of the street and the number in the street, or the name of a building.
+            type: string
+          locality:
+            title: Locality
+            description: The locality in which the street address is, and which is in the region; for example, a city or town.
+            type: string
+          region:
+            title: State
+            description: Text specifying a province or state in abbreviated format; for example, NJ.
+            type: string
+          postalCode:
+            title: Postal Code
+            description: Text specifying the postal code for an address.
+            type: string
+          country:
+            title: Country
+            description: The two-letter ISO 3166-1 alpha-2 country code.
+            type: string
+        additionalProperties: false
+        required:
+          - type
+          - name
+          - street
+          - locality
+          - country
+      productSpecification:
+        title: Product Specification
+        description: Specifications of product.
+        type: object
+        properties:
+          type:
+            type: array
+            readOnly: true
+            const:
+              - SteelProduct
+            default:
+              - SteelProduct
+            items:
+              type: string
+              enum:
+                - SteelProduct
+          standard:
+            title: Standard
+            description: Grading system standard.
+            type: string
+          grade:
+            title: Grade
+            description: Material grade.
+            type: string
+          heatTreatment:
+            title: Heat Treatment
+            description: Special heat treatments, depending on product specification.
+            type: string
+          surfaceTreatment:
+            title: Surface Treatment
+            description: Surface treatments, if applicable.
+            type: string
+          productDescription:
+            title: Product Description
+            description: Descriptive product name.
+            type: string
+        required:
+          - type
+          - standard
+          - grade
+          - productDescription
+      remarks:
+        title: Remarks
+        description: Additional attestation remarks.
+        type: string
+      inspections:
+        title: Inspections
+        description: Inspections certified by this Mill Test Report. Multiple inspections can be listed for different items, heats, etc.
+        type: array
+        minItems: 1
+        items:
+          title: Inspection
+          description: Inspections conducted as part of a Mill Test certification.
+          type: object
+          properties:
+            type:
+              type: array
+              readOnly: true
+              const:
+                - Inspection
+              default:
+                - Inspection
+              items:
+                type: string
+                enum:
+                  - Inspection
+            productIdentifier:
+              title: Product Identifier
+              description: Product identifier such as lot, part, coil, or serial number.
+              type: string
+            countryOfManufacture:
+              title: Country of Manufacture
+              description: Manufacturing country.
+              type: string
+            countryOfMeltAndPour:
+              title: Country of Melt and Pour
+              description: Country of original melt and pour.
+              type: string
+            meltPractice:
+              title: Melt Practice
+              description: Type of melting practice.
+              type: string
+            heatNumber:
+              title: Heat Number
+              description: Heat identification.
+              type: string
+            testNumber:
+              title: Test number
+              description: Identifier of test conducted.
+              type: string
+            length:
+              title: Length
+              description: Product length.
+              type: number
+            lengthUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            width:
+              title: Width
+              description: Product width.
+              type: number
+            widthUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            thickness:
+              title: Thickness
+              description: Product thickness.
+              type: number
+            thicknessUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            diameter:
+              title: Diameter
+              description: Product diameter.
+              type: number
+            diameterUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            pieces:
+              title: Pieces
+              description: The amount of units.
+              type: number
+            perUnitWeight:
+              title: Per Unit Weight
+              description: Nominal unit weight.
+              type: number
+            perUnitWeightUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            totalWeight:
+              title: Total Weight
+              description: Total product weight.
+              type: number
+            totalWeightUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+          additionalProperties: false
+          required:
+            - type
+            - productIdentifier
+            - heatNumber
+            - countryOfManufacture
+            - countryOfMeltAndPour
+      chemicalCompositions:
+        title: Chemical Compositions
+        description: Measured chemical composition; all values in W%.
+        type: array
+        minItems: 1
+        items:
+          title: Chemical Composition
+          description: Measured chemical composition; all values in W%.
+          type: object
+          properties:
+            type:
+              type: array
+              readOnly: true
+              const:
+                - ChemicalComposition
+              default:
+                - ChemicalComposition
+              items:
+                type: string
+                enum:
+                  - ChemicalComposition
+            productIdentifier:
+              title: Product Identifier
+              description: Product identifier such as lot, part, coil, or serial number.
+              type: string
+            c:
+              title: C
+              description: Carbon percentage content.
+              type: number
+            mn:
+              title: Mn
+              description: Manganese percentage content.
+              type: number
+            p:
+              title: P
+              description: Phosphorus percentage content.
+              type: number
+            s:
+              title: S
+              description: Sulphur percentage content.
+              type: number
+            si:
+              title: Si
+              description: Silicon percentage content.
+              type: number
+            al:
+              title: Al
+              description: Aluminum percentage content.
+              type: number
+            cu:
+              title: Cu
+              description: Copper percentage content.
+              type: number
+            ni:
+              title: Ni
+              description: Nickel percentage content.
+              type: number
+            cr:
+              title: Cr
+              description: Chromium percentage content.
+              type: number
+            mo:
+              title: Mo
+              description: Molybdenum percentage content.
+              type: number
+            sn:
+              title: Sn
+              description: Tin percentage content.
+              type: number
+            nbCb:
+              title: NbCb
+              description: Niobium (also known as Columbium) percentage content.
+              type: number
+            v:
+              title: V
+              description: Vanadium percentage content.
+              type: number
+            ti:
+              title: Ti
+              description: Titanium percentage content.
+              type: number
+            b:
+              title: B
+              description: Boron percentage content.
+              type: number
+            n:
+              title: N
+              description: Nitrogen percentage content.
+              type: number
+            ca:
+              title: Ca
+              description: Calcium percentage content.
+              type: number
+            pb:
+              title: Pb
+              description: Lead percentage content.
+              type: number
+            ce:
+              title: C.E.
+              description: Carbon Equivalent percentage content.
+              type: number
+          additionalProperties: false
+          required:
+            - type
+            - c
+            - mn
+            - p
+            - s
+            - si
+      mechanicalProperties:
+        title: Mechanical Properties
+        description: Mechanical property measurements.
+        type: array
+        minItems: 1
+        items:
+          title: Mechanical Properties
+          description: Mechanical property measurements.
+          type: object
+          properties:
+            type:
+              type: array
+              readOnly: true
+              const:
+                - MechanicalProperties
+              default:
+                - MechanicalProperties
+              items:
+                type: string
+                enum:
+                  - MechanicalProperties
+            productIdentifier:
+              title: Product Identifier
+              description: Product identifier such as lot, part, coil, or serial number.
+              type: string
+            tensile:
+              title: Tensile
+              description: Tensile strength.
+              type: number
+            tensileUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            yield:
+              title: Yield
+              description: Yield strength.
+              type: number
+            yieldUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            hardness:
+              title: Hardness
+              description: Material hardness.
+              type: number
+            hardnessUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            elongation:
+              title: Elongation
+              description: Elongation percentage.
+              type: number
+            elongationUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            charpy:
+              title: Charpy
+              description: Dynamic impact test.
+              type: number
+            charpyUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+            reduction:
+              title: Reduction
+              description: Reduction area.
+              type: number
+            reductionUnit:
+              title: Measurement Unit
+              description: >-
+                A string value indicating a Measurement Unit from UN/ECE Recommendation
+                20, Units of Measure used in International Trade, e.g., GRM = gram - see
+                <a
+                href="https://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_rev3_Annex3e.pdf">rec20_rev3</a>
+              type: string
+          additionalProperties: false
+          required:
+            - type
+    additionalProperties: false
+    required:
+      - customer
+      - certificateNumber
+      - purchaseOrderNumber
+      - certification
+      - productSpecification
+      - inspections
+      - chemicalCompositions
+      - mechanicalProperties
+additionalProperties: false
+required:
+  - "@context"
+  - type
+  - id
+  - credentialSchema
+  - credentialStatus
+  - issuanceDate
+  - issuer
+  - credentialSubject
+example: |-
+  {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://w3id.org/traceability/v1"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "MillTestReportCredential"
+    ],
+    "id": "urn:uuid:2e604860-b308-4ada-n1s3-4a22635befea",
+    "issuanceDate": "2022-06-06T08:10:00+00:00",
+    "credentialSchema": {
+      "type": "JsonSchema",
+      "id": "https://platform.transmute.industries/marketplace/templates/urn:transmute:template:mill-test-report"
+    },
+    "credentialStatus": [
+      {
+        "id": "https://example.com/credentials/status/3#94567",
+        "type": "BitstringStatusListEntry",
+        "statusPurpose": "revocation",
+        "statusListIndex": 94567,
+        "statusListCredential": "https://example.com/credentials/status/3"
+      }
+    ],
+    "issuer": {
+      "type": [
+        "Organization"
+      ],
+      "id": "did:web:organization.example.com",
+      "name": "Tall Steel, Inc",
+      "street": "1331 N 7th St",
+      "locality": "Phoenix",
+      "region": "Arizona",
+      "postalCode": "78599",
+      "country": "US",
+      "phoneNumber": "+1-675-555-6659"
+    },
+    "credentialSubject": {
+      "type": [
+        "MillTestReport"
+      ],
+      "certificateNumber": "202304215088",
+      "certification": "EN 10204.3.1",
+      "purchaseOrderNumber": "PO992765413",
+      "meansOfTransport": "Road",
+      "customer": {
+        "type": [
+          "Organization"
+        ],
+        "id": "did:web:rise-higher-construction.example.com",
+        "name": "Rise Higher Construction, Ltd.",
+        "plantOrSiteName": "Rise Warehouse West",
+        "street": "4423 Reeves Street",
+        "locality": "Baileys Harbor",
+        "region": "California",
+        "postalCode": "98200",
+        "country": "US"
+      },
+      "productSpecification": {
+        "type": [
+          "SteelProduct"
+        ],
+        "standard": "AISI/SAE",
+        "grade": "316",
+        "heatTreatment": "Min. 1900F, Quenched",
+        "surfaceTreatment": "Varnished",
+        "productDescription": "Stainless Steel Plate"
+      },
+      "remarks": "No Mercury, Lead or Sulfor. Free from radioactive contamination.",
+      "inspections": [
+        {
+          "type": [
+            "Inspection"
+          ],
+          "productIdentifier": "212900-34",
+          "length": 6000,
+          "lengthUnit": "MM",
+          "width": 2000,
+          "widthUnit": "MM",
+          "thickness": 60,
+          "thicknessUnit": "MM",
+          "pieces": 80,
+          "perUnitWeight": 3620,
+          "perUnitWeightUnit": "KG",
+          "totalWeight": 289600,
+          "totalWeightUnit": "KG",
+          "countryOfManufacture": "US",
+          "countryOfMeltAndPour": "US",
+          "meltPractice": "EAM",
+          "heatNumber": "61316",
+          "testNumber": "1205"
+        }
+      ],
+      "chemicalCompositions": [
+        {
+          "type": [
+            "ChemicalComposition"
+          ],
+          "productIdentifier": "212900-34",
+          "c": 0.0189,
+          "mn": 1.568,
+          "p": 0.035,
+          "s": 0.0128,
+          "si": 0.312,
+          "al": 0.004,
+          "cu": 0.4208,
+          "ni": 8.286,
+          "cr": 16.558,
+          "mo": 2.03,
+          "sn": 0.007,
+          "nbCb": 0.001,
+          "v": 0.004,
+          "ti": 0.003,
+          "b": 0.0014,
+          "n": 0.0074,
+          "ca": 0.0018,
+          "pb": 0.001,
+          "ce": 0.3882
+        }
+      ],
+      "mechanicalProperties": [
+        {
+          "type": [
+            "MechanicalProperties"
+          ],
+          "productIdentifier": "212900-34",
+          "tensile": 367.22,
+          "tensileUnit": "MPa",
+          "yield": 648.71,
+          "yieldUnit": "MPa",
+          "hardness": 86,
+          "hardnessUnit": "HRB",
+          "elongation": 32,
+          "elongationUnit": "%",
+          "charpy": 3.55,
+          "charpyUnit": "J",
+          "reduction": 40,
+          "reductionUnit": "%"
+        }
+      ]
+    }
+  }
