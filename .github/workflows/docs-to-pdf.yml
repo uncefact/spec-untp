@@ -28,3 +28,15 @@ jobs:
           git add docs-to-pdf.pdf
           git commit -m "chore: generate PDF file after update"
           git push origin main
+
+      - name: snapshot PR
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "chore: update PDF file"
+          delete-branch: true
+          title: "chore: update docs-to-pdf file"
+          body: |
+            Updates generate PDF file
+          base: "main"
+          branch: cpr/docs-to-pdf
+          draft: true
