@@ -22,13 +22,6 @@ jobs:
           npx docs-to-pdf --initialDocURLs="https://uncefact.github.io/spec-untp/docs/about/" \
           --contentSelector="article" \
           --paginationSelector="a.pagination-nav__link.pagination-nav__link--next"
-      - run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs-to-pdf.pdf
-          git commit -m "chore: generate PDF file after update"
-          git push origin main
-
       - name: snapshot PR
         uses: peter-evans/create-pull-request@v5
         with:
