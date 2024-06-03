@@ -1,7 +1,7 @@
 name: Docs to PDF
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   docs-to-pdf:
