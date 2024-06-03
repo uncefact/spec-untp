@@ -1,0 +1,29 @@
+name: Docs to PDF
+
+on:
+  workflow_call:
+
+jobs:
+  docs-to-pdf:
+    name: Generates PDF file from docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: Install dependencies
+        run: npm install -g docs-to-pdf
+
+      - name: Generate PDF
+        run: |
+          npx docs-to-pdf --initialDocURLs="https://uncefact.github.io/spec-untp/docs/about/" \
+          --contentSelector="article" \
+          --paginationSelector="a.pagination-nav__link.pagination-nav__link--next"
+      - run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: generate PDF file after update"
+          git push origin main
