@@ -282,7 +282,7 @@ https://vocabulary.uncefact.org/CountryId
 
 Note - this sample describes the digital product passport payload only - ie the subject of the verifiable credetial without the envelope. Needs some more realistic data.
 
-```
+```json
 {
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -324,7 +324,7 @@ Note - this sample describes the digital product passport payload only - ie the 
       "dimensions": {
         "type": "Dimensions",
         "weight": {
-          "value": 15.90,
+          "value": 15.9,
           "unit": "kg"
         },
         "length": {
@@ -375,6 +375,163 @@ Note - this sample describes the digital product passport payload only - ie the 
     "guaranteeOfOriginCredential": "https://supplier.example.com/manufacturing/certificate-of-origin"
   }
 }
+```
+
+## Schema
+
+```yaml
+title: UNTP Digital Product Passport Credential
+description: The digital product passport (DPP) is issued by the shipper of goods and is the carrier of product and sustainability information for every serialised product item (or product batch) that is shipped between actors in the value chain. It is deliberately simple and lightweight and is designed to carry the minimum necessary data at the granularity needed by the receiver of goods - such as the scope 3 emissions in a product shipment. The passport contains links to conformity credentials which add trust to the ESG claims in the passport. The passport also contains links to traceability events which provide the "glue" to follow the linked-data trail (subject to confidentiality constraints) from finished product back to raw materials. The UNTP DPP does not conflict with national regulations such as the EU DPP. In fact, it can usefully be conceptualised as the upstream B2B feedstock that provides the data and evidence needed for the issuing of high quality national level product passports.
+type: object
+properties:
+  '@context':
+    type: array
+    readOnly: true
+    const:
+      - https://www.w3.org/ns/credentials/v2
+      - https://uncefact.github.io/spec-untp/untp-v1
+    default:
+      - https://www.w3.org/ns/credentials/v2
+      - https://uncefact.github.io/spec-untp/untp-v1
+    items:
+      type: string
+      enum:
+        - https://www.w3.org/ns/credentials/v2
+        - https://uncefact.github.io/spec-untp/untp-v1
+  type:
+    type: array
+    readOnly: true
+    const:
+      - VerifiableCredential
+      - UNTPDigitalProductPassportCredential
+    default:
+      - VerifiableCredential
+      - UNTPDigitalProductPassportCredential
+    items:
+      type: string
+      enum:
+        - VerifiableCredential
+        - UNTPDigitalProductPassportCredential
+  id:
+    type: string
+    format: uri
+  credentialSchema:
+    type: object
+    properties:
+      id:
+        title: Schema URL
+        description: The url of the schema file to validate the shape of the json object
+        type: string
+        format: uri
+        const: https://uncefact.github.io/spec-untp/docs/specification/DigitalProductPassport
+      type:
+        title: Type
+        description: The type of validation to be run against the defined schema
+        const: JsonSchema
+    additionalProperties: false
+    required:
+      - type
+      - id
+  validFrom:
+    type: string
+    format: date-time
+  validTo:
+    type: string
+    format: date-time
+  issuer:
+    title: Issuer Organization
+    type: object
+    properties:
+      type:
+        type: array
+        readOnly: true
+        const:
+          - Organization
+        default:
+          - Organization
+        items:
+          type: string
+          enum:
+            - Organization
+      id:
+        title: Issuer's Identifier
+        description: Issuing organization identifier, typically a Decentralized Identifier (DID).
+        type: string
+      name:
+        title: Name
+        description: Issuing organization name.
+        type: string
+      street:
+        title: Street
+        description: The street address expressed as free form text. The street address is printed on paper as the first lines below the name. For example, the name of the street and the number in the street, or the name of a building.
+        type: string
+      locality:
+        title: Locality
+        description: The locality in which the street address is, and which is in the region; for example, a city or town.
+        type: string
+      region:
+        title: State
+        description: Text specifying a province or state in abbreviated format; for example, NJ.
+        type: string
+      postalCode:
+        title: Postal Code
+        description: Text specifying the postal code for an address.
+        type: string
+      country:
+        title: Country
+        description: The two-letter ISO 3166-1 alpha-2 country code.
+        type: string
+    additionalProperties: false
+    required:
+      - type
+      - id
+      - name
+  credentialSubject:
+    type: object
+    properties:
+      type:
+        type: array
+        readOnly: true
+        const:
+          - UNTPDigitalProductPassport
+        default:
+          - UNTPDigitalProductPassport
+        items:
+          type: string
+          enum:
+            - UNTPDigitalProductPassport
+      product:
+        title: Product
+        type: object
+        properties:
+          type:
+            type: array
+            readOnly: true
+            const:
+              - Product
+            default:
+              - Product
+            items:
+              type: string
+              enum:
+                - Product
+          modelName:
+            title: Model Name
+            description: Model name of the product.
+            type: string
+      guaranteeOfOriginCredential:
+        title: Guarantee of Origin Credential
+        type: string
+        format: uri
+    required:
+      - type
+required:
+  - '@context'
+  - type
+  - credentialSchema
+  - validFrom
+  - issuer
+  - credentialSubject
 ```
 
 ## Examples from pilot projects
