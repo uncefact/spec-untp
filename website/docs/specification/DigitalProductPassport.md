@@ -286,24 +286,27 @@ Note - this sample describes the digital product passport payload only - ie the 
 {
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
-    "https://uncefact.org/untp/v1"
+    "https://uncefact.github.io/spec-untp/untp-v1"
   ],
   "type": [
     "VerifiableCredential",
     "UNTPDigitalProductPassportCredential"
   ],
+  "credentialSchema": {
+    "type": "JsonSchema",
+    "id": "https://uncefact.github.io/spec-untp/docs/specification/DigitalProductPassport"
+  },
   "id": "urn:untp:e5adbeg6-2n1s-4669-bd54-321d903re998",
   "issuer": {
-    "type": "Organization",
+    "type": ["Organization"],
     "id": "did:web:zerowave.example.com",
-    "name": "Zero Wave Riding Co.",
-    "url": "https://zerowave.example.com"
+    "name": "Zero Wave Riding Co."
   },
   "validFrom": "2023-06-22T10:00:00.000Z",
   "credentialSubject": {
-    "type": "UNTPDigitalProductPassport",
+    "type": ["UNTPDigitalProductPassport"],
     "product": {
-      "type": "Product",
+      "type": ["Product"],
       "id": "https://shop.zerowave.example.com/cruizer",
       "batchIdentifiers": [
         "http://zerowave.example.com/01/09520123456788/10/ABC123"
