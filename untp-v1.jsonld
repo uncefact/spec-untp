@@ -1,0 +1,29 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@vocab": "https://uncefact.github.io/issuer-dependent#",
+        "id": "@id",
+        "type": "@type",
+        "UNTPDigitalProductPassportCredential": {
+            "@id": "https://uncefact.github.io/spec-untp/docs/specification/DigitalProductPassport",
+            "@context": {}
+        },
+        "UNTPDigitalProductPassport": {
+            "@id": "https://uncefact.github.io/spec-untp/docs/specification/DigitalProductPassport#sample",
+            "@context": {
+                "product": {
+                    "@id": "https://schema.org/model",
+                    "@type": "https://schema.org/ProductModel"
+                }
+            }
+        },
+        "Product": {
+            "@id": "https://schema.org/ProductModel",
+            "@context": {
+                "modelName": {
+                    "@id": "https://schema.org/model"
+                }
+            }
+        }
+    }
+}
