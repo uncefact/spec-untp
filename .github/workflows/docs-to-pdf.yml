@@ -23,7 +23,7 @@ jobs:
           --contentSelector="article" \
           --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" \
           --excludeSelectors=".breadcrumbs,.theme-edit-this-page" \
-          --outputPDFFilename="un-transparency-protocol.pdf" \
+          --outputPDFFilename="website/static/un-transparency-protocol.pdf" \
           --coverTitle="UN Transparency Protocol" \
           --coverImage="https://uncefact.github.io/spec-untp/img/home-hero.jpg"
       - name: snapshot PR
