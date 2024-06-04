@@ -21,7 +21,11 @@ jobs:
         run: |
           npx docs-to-pdf --initialDocURLs="https://uncefact.github.io/spec-untp/docs/about/" \
           --contentSelector="article" \
-          --paginationSelector="a.pagination-nav__link.pagination-nav__link--next"
+          --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" \
+          --excludeSelectors=".breadcrumbs,.theme-edit-this-page" \
+          --outputPDFFilename="un-transparency-protocol.pdf" \
+          --coverTitle="UN Transparency Protocol" \
+          --coverImage="https://uncefact.github.io/spec-untp/img/home-hero.jpg"
       - name: snapshot PR
         uses: peter-evans/create-pull-request@v5
         with:
