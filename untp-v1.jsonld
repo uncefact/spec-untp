@@ -24,6 +24,14 @@
                     "@id": "https://schema.org/model"
                 }
             }
+        },
+        "MaterialProvenance": {
+            "@id": "https://vocabulary.uncefact.org/SpecifiedMaterial",
+            "@context": {
+                "hazardous": {
+                    "@id": "https://vocabulary.uncefact.org/applicableHazardousMaterial"
+                }
+            }
         }
     }
 }
