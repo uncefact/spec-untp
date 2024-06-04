@@ -286,7 +286,7 @@ Note - this sample describes the digital product passport payload only - ie the 
 {
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
-    "https://uncefact.org/untp/v1"
+    "https://uncefact.github.io/spec-untp/untp-v1"
   ],
   "type": [
     "VerifiableCredential",
