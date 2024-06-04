@@ -13,6 +13,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 | ----------- | ---------- | ---------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | 0.3.0       | 25-03-2024 | Raw (not for implementation) | [DPP context](../../schema/digitalProductPassport.v0.3.0.JSONLDContext.jsonld) | [DPP schema](../../schema/digitalProductPassport.v0.3.0.JSONSchema.json) |
 | 0.4.0       | 08-04-2024 | Raw (for review)             | [DPP context](../../schema/digitalProductPassport.v0.4.0.JSONLDContext.jsonld) | [DPP schema](../../schema/digitalProductPassport.v0.4.0.JSONSchema.json) |
+| 0.5.0       | 04-06-2024 | Raw (for review)             | `https://uncefact.github.io/spec-untp/untp-v1.jsonld`                          | [DPP schema](../../schema/untp-digital-product-passport.0.5.0.json)      |
 
 The current version of this specification is v0.4.0
 

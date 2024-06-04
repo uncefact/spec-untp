@@ -1,0 +1,89 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://uncefact.github.io/spec-untp/untp-v1"
+  ],
+  "type": ["VerifiableCredential", "UNTPDigitalProductPassportCredential"],
+  "credentialSchema": {
+    "type": "JsonSchema",
+    "id": "https://uncefact.github.io/spec-untp/docs/specification/DigitalProductPassport"
+  },
+  "id": "urn:untp:e5adbeg6-2n1s-4669-bd54-321d903re998",
+  "issuer": {
+    "type": ["Organization"],
+    "id": "did:web:zerowave.example.com",
+    "name": "Zero Wave Riding Co."
+  },
+  "validFrom": "2023-06-22T10:00:00.000Z",
+  "credentialSubject": {
+    "type": ["UNTPDigitalProductPassport"],
+    "product": {
+      "type": ["Product"],
+      "id": "https://shop.zerowave.example.com/cruizer",
+      "batchIdentifiers": [
+        "http://zerowave.example.com/01/09520123456788/10/ABC123"
+      ],
+      "itemIdentifiers": [
+        "http://zerowave.example.com/01/09520123456788/21/12345",
+        "http://zerowave.example.com/01/09520123456788/21/12346"
+      ],
+      "modelName": "Cruizer",
+      "image": "https://shop.zerowave.example.com/media/cruizer.jpg",
+      "description": "12kW, 3.6 kWh self-propulsion surfboard",
+      "classifications": "eSurf",
+      "furtherInformation": "https://shop.zerowave.example.com/cruizer",
+      "manufacturedDate": "2024-05-08",
+      "dimensions": {
+        "type": "Dimensions",
+        "weight": {
+          "value": 15.9,
+          "unit": "kg"
+        },
+        "length": {
+          "value": 169,
+          "unit": "cm"
+        },
+        "width": {
+          "value": 65.5,
+          "unit": "cm"
+        }
+      },
+      "manufacturer": {
+        "type": "Organization",
+        "id": "did:web:hitech-assembly.example.com",
+        "name": "Hitech Assembly, Inc.",
+        "location": "Manufacturered in the EU"
+      },
+      "materialsProvenance": [
+        {
+          "type": "MaterialProvenance",
+          "originCountry": "EU",
+          "materialType": "EPP",
+          "massFraction": 0.6,
+          "recycled": true,
+          "hazardous": false
+        }
+      ],
+      "conformityClaims": [
+        {
+          "type": "LinkRole",
+          "target": "https://supplier.example.com/material/reuse-certificate",
+          "linkRelationship": "untpConformity"
+        },
+        {
+          "type": "LinkRole",
+          "target": "https://supplier.example.com/manufacturing/carbon-emissions-certificate",
+          "linkRelationship": "untpConformity"
+        }
+      ],
+      "recyclingInstructions": "http://brand-owner.example.com/cruizer/recycling",
+      "traceabilityInformation": [
+        {
+          "type": "UNTPAggregationEvent",
+          "id": "http://manufacturer.example.com/293847293847"
+        }
+      ]
+    },
+    "guaranteeOfOriginCredential": "https://supplier.example.com/manufacturing/certificate-of-origin"
+  }
+}
