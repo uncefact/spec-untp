@@ -1,0 +1,219 @@
+(Transcribed by TurboScribe.ai - Go Unlimited to remove this message)
+
+(0:00 - 0:43)
+It was missing, yeah. Now that's it. Yeah, excellent. 
+
+Steve asked me to run it, the meeting today, because he had other obligations. I forget what it was, but happy to do so. I propose we just go, normal process, so we go through pull requests, then through issues and issues in the order of least recently updated. 
+
+So we make sure to get to the stuff that's sort of stuck at the bottom. So without further ado, pull requests. There is one from Zachary.
+
+(0:43 - 1:10)
+Is Zachary on the call? Yeah, you are. Zach, this is a closed pull request. Do we want to just ignore it, kill it? Can you introduce what this is about? Yeah, so basically this was the first attempt that I made to add information about sort of what we see as our test architecture.
+
+(1:13 - 2:15)
+And Steve gave me feedback about things I need to do to update it, so I haven't done that yet. And so I think I put the pull request in a not submitted state, and while I went through the process of fixing based on the feedback that Steve gave me. Got it, okay. 
+
+You can also put it in draft. I don't even know what this date is. That's what I thought I did. 
+
+I thought I put it in draft, which is what I thought I was doing, but apparently not. But I will have updates to it by next week, for sure. Okay. 
+
+I would encourage you to, like, this is better than nothing. So sometimes we want to just merge it in, even if it's half-baked. But this is perfectly cool. 
+
+Where does this sit? Tools and support. I'll be back in a couple of minutes. I'm sorry.
+
+(2:16 - 2:31)
+Okay. Okay. Let's just leave this. 
+
+It's in draft, and we're looking forward to seeing the outcome next week. Okay. Issues. 
+
+We got a lot. We got 50 issues. We are very good at creating them.
+
+(2:32 - 2:58)
+Maybe less good at following up. I'm going to sort by least recently updated. You can follow along. 
+
+Where's the chat here? There, if you want to get to them yourself. Top one is selective disclosure use cases and requirements. We put this on parking lot, which probably means we don't want to spend time on it.
+
+(3:03 - 3:39)
+This is the kind of thing I might volunteer to do a demo of selective disclosure on the UN forum, because it's an interesting topic, more from a technology point of view than industry still. But otherwise, let's just keep it in the parking lot and move along. We have one here.
+
+(3:39 - 4:03)
+PDF generator. This is assigned to three people, none of which I believe are on the call. I don't know where the PDF generator capability would sit in this specification.
+
+(4:05 - 4:45)
+Does anyone have any comments to issue 40? I'm just going to copy this. I suspect I'll be writing that a lot of times. This seems a little far-fetched for a spec, in my opinion, but I'm going to be aggressive and put a pending close.
+
+(4:47 - 6:26)
+I think all that needs to be done here is for someone to identify if this suggestion works for turning the GitHub site into a PDF document. And then maybe put a note at the top of the document or a note somewhere so people can find that information. I see. 
+
+So it's this stuff, putting this in a PDF. Great point. Why not just go print, save as PDF? Isn't that what I think would do it? It's not my issue. 
+
+I'm just doing an interpretation job. All right. Moving on. 
+
+It could be they're also referring to the list of issues. Oh, no, it couldn't be. That would make no sense at all.
+
+(6:27 - 7:26)
+My camera started working. It woke up. It's beautiful. 
+
+We're seeing you. What I thought it was was a PDF version of a credential, which is also a thing, linking back to the data and all that good stuff. But I'm fairly sure you're right. 
+
+This is because UN needs the spec in PDF form. So that's very likely what it is. Okay. 
+
+Let's move along. The UN will need it in a Word format if they publish it. I'm not sure you have to check with them. 
+
+If there's any part of it that goes into a parliamentary document, it has to be in Word. But if it's just being put up on the website, then that's correct. It's a PDF.
+
+(7:34 - 8:16)
+Sorry. Good. Very good. 
+
+Moving on to 29. I shared the link. Do we have Michael on the call? I wonder if Stefano, you had a comment here.
+
+(8:17 - 9:40)
+Yeah, actually, it was an old comment, but in fact, still applicable, meaning that on this subject, I simply indicated that even considering, as Steve is mentioning, that we are hopefully tightening more and more between our initiative and the EU counter initiatives. Maybe there is an opportunity for us on this matter to align the right to repair latest regulations. So if we want to recall them into our document, this could be an opportunity to increase the alignment because anyway, regulations already indicate guidelines on this matter. 
+
+This was basically my comment. Okay. So this is not a technical... No. 
+
+...needed for this? Okay. Not really. Can you be convinced to volunteer to give it a go and suggest that verbiage? In a pull request? Yeah.
+
+(9:41 - 10:37)
+That's amazing. Thank you so much. And you are here. 
+
+Excellent. Thank you for that. Much appreciated. 
+
+Let's move on to issue 28. What depth? Ah, yeah, that's a good one. Right. 
+
+This made me... I had some philosophical thoughts on this about going upstream and downstream and we are more upstream, EU being more downstream focused. I don't know if that makes any logical sense. It does in my brain, but that's not exactly enough.
+
+(10:38 - 14:11)
+What else do we have? We have Chris here. Stefano, you again? And in this sense, I was simply indicating that in my view, considering our action, I would strongly look at both upstream and downstream. So the UNTP looking at both sides, which is also somehow related to what? I don't know. 
+
+Okay. I don't disagree. The original question is depth. 
+
+And we're kind of then saying depth both up and down now. I agree that there's no logical reason to have a limit to how many steps you can take. There is a practical limit. 
+
+It's difficult, but I don't see why we would set any such limits. I do question what does it mean to go downstream? If it is that second life and repair log and all those things, where does that data get stored? That's unclear to me. Well, and we had a conversation about this in a different forum around link resolution links in the digital product passport. 
+
+And the idea that we sort of were talking about was if I have a product ID and there is data stored about it via a digital link resolver, is there a model of a patent only of additional information as the world changes? And what we wondered about was using a digital link resolver endpoint as a, I'm just not remembering the context, but as a pointer as opposed to a fully resolvable URI. So, the digital link resolver points out to where the circularity information might exist. And as that gets updated in time, there's additional information link resolution. 
+
+And Bill, that might be a question for you in terms of would the specs support that kind of a model? Of course, the solutions to that problem. I think you're conflating the digital link, what's it called, data carrier side of things with the subsequent data that gets added. The idea was to use link resolution as a pointer.
+
+(14:13 - 16:27)
+So, you have a product, you have whatever, a loudspeaker, it's got a QR code, which links to a product passport. That's the digital link thingy. That passport can point to, has been issued at some point in time, and it can point upstream to it's manufactured there, it had these carbon emissions, all those things that kind of went into the product as it was built. 
+
+The credential is issued pointing backwards at that, but then appending more is issuing new claims about the product. I owned it, I sold it, I repaired it, all that stuff. And that can link back to the main digital product passport, but you can't really go the other way because then you would change the product passport. 
+
+That requires the owner of, the holder of that QR code, sorry, the holder of the GTN essentially, or however you do this, to update the credential. And that's just, I don't know, is that what you see? No. So, I think it's really important to elaborate at that level of detail. 
+
+So, the idea wouldn't be, because absolutely the holder of the GTN is not going to update the digital product passport 10 years down the line because their customer updated it. That's just not going to, that's not realistic. Maybe if we get a fully circular economy and manufacturers have full ownership through the life of the product, but that's a big policy change that's beyond the scope of what we're talking about here. 
+
+The idea that we were exploring was using a link resolution endpoint for append-only information as opposed to a fully resolvable URI so that the holder of the good could append to that point without changing the validity of the passport was the conceptual idea we were exploring. I don't know that we can, I'll have to dig out where that was. That's good.
+
+(16:28 - 16:55)
+Yeah, but we agree in the problem statement and the solution that would need to be. I don't, I do think there are tons of devils in those details. There are, absolutely. 
+
+And yeah, it was a problem that came up, I don't even remember now. Anyway, it's a discussion we're having with one of our pilots. And so, we'll explore solutions there and bring them back here.
+
+(16:57 - 17:39)
+Interesting. Sounds very good. The question I think for this group now is, what needs to be true to close this issue? And so, I did add a little bit to the goals section saying that the depth was a function of linked product passports through the supply chain in the goals. 
+
+Like it was, I'm wondering if that's enough or if we need more to close this ticket. Or if we want to open more tickets that sort of explore the broader. What's that out here? Yeah, it's about the UNTP, I think.
+
+(17:45 - 18:09)
+Yeah, goals. Where did I talk about? I guess it's down here. No, I think it was more at the top, actually. 
+
+But I don't remember what I said. It was on a different ticket that I kind of mentioned this one on. Okay.
+
+(18:12 - 18:27)
+Can you do a search and just look for the word depth? I think I got feedback to take the word depth out. That feedback came from me. Okay.
+
+(18:28 - 19:00)
+But the idea was... If it's gone, so much the better. The idea was, in terms of that one, was try to articulate the depth is not actually something that UNTP answers because depth is an emergent... It comes out of people linking together passports in downstream passports that they issue. It's a market-driven depth outcome as opposed to a definition in any given UNTP implementation.
+
+(19:01 - 19:38)
+Right. I think it's enough to say that you can link as far back as you need to on your application and as far... Well, as far back as your customer demands of the product you're selling to them, right? That will be the thing that drive behavior here. Back is easy. 
+
+Back is just a link. I demoed that several months ago. Forward is the hard part.
+
+(19:39 - 20:10)
+I just don't... I'm not going to dismiss it because I do see the requirement, but I will just... To me, there's no solution at all with any of what we have here. This is like... Yeah, no, I don't know. Maybe I'm just trying to shine away from the hard part.
+
+(20:11 - 20:26)
+That's probably what I'm doing. To close this, we need a proposed solution for supporting downstream. Oh, Joe, please.
+
+(20:26 - 20:43)
+No, just very quickly. I'm a little confused by this one, and Zach can probably help. When we talked about depth, my understanding, I might have got it completely wrong, was that we're talking about levels of detail in terms of the product makeup and the componentry of the product.
+
+(20:43 - 21:09)
+Is that what we're talking about here, Zach? That's what I thought. I guess, Nis, what's happened, though, is in the discussion, we've expanded the scope of this ticket. I'm wondering if we shouldn't... I think there's a good discussion about the level of detail in terms of componentry parts and what we're going to be tracking as part of the digital passport.
+
+(21:10 - 21:54)
+I think that sounds like a good thing. The problem is that the upstream probably doesn't know what the downstream needs. Isn't that the problem? Or is it a coordination thing that has to happen as part of the supply chain definition? Well, just not talking about the forward downstream, but in terms of depth, I think we shouldn't be setting any limits here because that depends on technology and technology will change.
+
+(21:55 - 22:09)
+It also depends from one product to another product. Exactly. The legal environment in terms of what you must track or what your client wants you to track.
+
+(22:09 - 22:36)
+So the point is that the downstream supply chain activities will have a level of detail that they're expecting to present, I would have thought. Yes, and I guess it will be for each customer to require a supplier upstream what they need, and then they will add up along the chain, I guess. That's exactly right, yeah.
+
+(22:37 - 23:16)
+But they can only do what they can do. They don't know how their product is going to be used. So all you can say is that this lithium was mined in Australia using... Well, I think, I mean, thinking about it, when you get to a downstream point where people want to issue information or attach information to a product, then all of a sudden that becomes upstream.
+
+(23:18 - 23:49)
+It's like the textile, the weaving, the manufacture of the textile for the cotton ginner, he's downstream. I don't know if that helps. And so they're passing information forward to the weaver, and when it gets to the weaver, it becomes downstream.
+
+(23:49 - 24:15)
+So when it gets to the retailer, everything that was before, the retailer for the weaver and the cotton ginner is all upstream. That's right. So I'm not sure if we're... For me, the issue is how do you pass all of the downstream information to the next... Yes.
+
+(24:16 - 24:35)
+Yes. So that they can incorporate it as their upstream information. Well, the idea is that the supplier and the manufacturer are issuing digital product passports about the product that they created.
+
+(24:35 - 24:43)
+So if I'm a miner, my product is a box of rocks. Ore. Yeah, ore.
+
+(24:44 - 25:27)
+Thank you, Joe. If I'm a refinery, it's a refined ore, right? And each tier will have their own sort of definition of a product passport that includes the information that their customer needs. Their customer will ask for information that their customers need, right? And so this is when we think about... And so what we'd anticipate is as a ore refinery, I ask the mine for high-quality country of origin, high-quality labor information.
+
+(25:27 - 26:13)
+And then I attach potentially a redacted version of the product passport that they gave me, or I run it through the transformation event to say, hey, I took 10 tons of ore, five from this mine, five from that mine, transformed them into two tons of refined mineral. And to those two passports, I create a new product passport, two tons of refined ore, and send that to my customer where I've attached my labor, my verified labor credentials, my audit, my mass balance, all those things. And then they take that, and they take that refined ore and turn it into anodes or cathodes.
+
+(26:14 - 26:59)
+And then they send it to their customer, and the process repeats. And we get a full digital traceability ecosystem when each customer requires high-quality information of their supplier. Right. 
+
+So in effect, what we're saying is we're going to provide links to product passports, which we're required to actually create the content of our product as we go forward, yeah? Yeah. So in effect, do we need terminology for linked product passports, or do we do? But that upstream, yes, for sure. I wonder, did I include that? Oh, we're here.
+
+(27:00 - 27:08)
+That was a really good picture, by the way. Yeah. Although it's upstream only from that point of view.
+
+(27:08 - 27:22)
+That's right. It's upstream from the data carrier. What I see, what I call downstream, I don't know how to make this connection, and where to put this, and how to make this connection.
+
+(27:22 - 27:45)
+That's because how would a second owner get to this repair information? That's sort of my question. This thing, I can demo that if you're interested. Yeah. 
+
+I do like secondary markets or something. That's kind of, yeah. Let's enable that.
+
+(27:45 - 28:23)
+We want to enable... Yeah. Nis, I guess what I think, I guess what I'm wondering is, is this ticket... Are we kind of trying to do too much in this one ticket? Right. Yes. 
+
+Yes. Because solving downstream right-to-repair solutions probably is a whole new ticket. We probably need... Yes. 
+
+I agree with you. And it's probably a series of tickets. I may just quickly have it.
+
+(28:25 - 28:55)
+I think the problem you're hitting on there with the second owner does, unless someone's got some brilliant idea that I and other people I know can't think of, the inevitable conclusion is you need a central registry that isn't the brand owners. You need the EU's registry. You need someone else's thing because you have to be able to discover this stuff even long after the person who created it has stopped caring.
+
+(28:56 - 29:04)
+I wish there were a way to avoid it, but I don't think there is. No. Well, there's the other way, which is the blockchain.
+
+(29:05 - 29:14)
+It's kind of where the blockchain folks, why they like this stuff. Yeah. But then you end up... Well, I don't need to tell you.
+
+(29:14 - 29:19)
+We're saying the same thing. Yeah. It doesn't... Going on a blockchain doesn't change it.
+
+(29:20 - 29:22)
+It's still a registry. Yeah. It is a registry.
+
+(29:22 - 29:59)
+Well, I mean, if I've understood correctly from what I've read, the legislative requirements for data product passports are going to require that a data product passport be available even like 30 years from now. I think it says even if the company goes out of business, and even if your database supplier or whatever goes out of business, and how are they going to do that other than...
+
+(This file is longer than 30 minutes. Go Unlimited at TurboScribe.ai to transcribe files up to 10 hours long.)
