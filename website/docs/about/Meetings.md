@@ -10,22 +10,28 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 # Meetings
 
-UNTP development [team meetings](https://us02web.zoom.us/j/85091806131) are held weekly at alternating times to accomodate participants from different timezones. The next meeting is at 21:00 UTC on Wednesday 5th of June 2024 - [join here](https://us02web.zoom.us/j/85091806131)
+UNTP development [team meetings](https://us02web.zoom.us/j/85091806131) are held weekly at alternating times to accomodate participants from different timezones. 
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
 Previous meeting dates, recordings, transcripts, and minutes are summarised below with the most recent meeting at the top.
 
+## Next Meeting
+
+The next meeting is 8am UTC 13th June 2024.  [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+
+## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-06-05| [The meeting focused on improving meeting participation, managing transcription and summary processes, handling JSON schema and JSON-LD context differences, addressing challenges with semantic interoperability, and establishing principles for managing context files.](#2024-06-05-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Vfcr6ZV7Bw0Z8uTKyM1_P8nLkpKaZU0VBLCH9Hlu4xRWbfD8tE5_gL6F87Ny7u3Y.jX5z3_867OAXwB3l)|[transcript](../../meetings/2024-06-05-Recording.txt) |
 |2024-05-30 | [The meeting focused on addressing pull requests, aligning with EU right-to-repair regulations, and discussing the challenges and strategies for maintaining and verifying digital product passports within the supply chain.](#2024-05-30-meeting-summary) | [video](https://us02web.zoom.us/rec/share/vd5oKvWwlRDVlxImzoovy7VsocYbTZgTf5bwKjPuruXUBhPvWJodg24FAD_MLqps.9E3v0xVpCeyefeqD) | [transcript](../../meetings/2024-05-30-Recording.txt)| 
 |2024-05-23| [The Working Group discussed updates to the digital product passport sample file, terminology adjustments, and the adoption of a "transparency graph" to better align with the VC data model and enhance data validation and provenance.](#2024-05-23-meeting-summary)|[video](https://us02web.zoom.us/rec/share/SdwSmtENQawZpdXpnurPv5wkP4L-mg2pjbRdzK1wi2itXXkgXbe6OBT4RqImwD5m.KKXfqVY1njdUt3ax)|[transcript](../../meetings/2024-05-23-Recording.txt) |
 |2024-05-16| [In the meeting, the team discussed updates to project examples and data models, alignment with international standards, and strategies for maintaining interoperability and accurate mappings in linked data while preparing for upcoming pilot implementations.](#2024-05-16-meeting-summary) |[video](https://us02web.zoom.us/rec/share/B4wZX-BYXPWg0tuDWSotj572qmUKWOHF0l4k2EFiLI_A7_V83gMATKN_-Nfx9sNR._aXbdvOi2fICOFRy)| [transcript](../../meetings/2024-05-16-Recording.txt)|
 |2024-05-09| [The meeting focused on aligning digital product passport models with the VC data model, removing scoring elements to simplify the structure, and discussing the implementation of trust graphs and multilingual support using governed overlays.](#2024-05-09-meeting-summary) |[video](https://us02web.zoom.us/rec/share/eABzv6OBR_sjL3y9LgHzaVgKchOM8oyZjdS2GnM63Lzanf1yr0kcEAAppJ9sPRDc.6883MbcV4-aA3GPY)| [transcript](../../meetings/2024-05-09-Recording.txt)|
 |2024-04-25 | [The meeting focused on reviewing and processing pull requests, assigning stale issues, and emphasizing broader collaboration within the group, with key discussions on traceability event schema updates and the verification of identifiers.](#2024-04-25-meeting-summary)|[video](https://us02web.zoom.us/rec/share/8QIKuM-X89PbBR7dVxag34wEhR6P2152HDkv0TwHNAj_nldDc_T73Ngkf3mKAU6T.SqXk0F1TscOaMYZ1)|[transcript](../../meetings/2024-04-24-Recording.txt) |
 |2024-04-18| [The April 18, 2024, meeting focused on streamlining specification sections, reviewing and merging several pull requests, and discussing key issues related to verification and trust graphs, with commitments to create examples and improve meeting efficiency.](#2024-04-18-meeting-summary)|[video](https://us02web.zoom.us/rec/share/yLKR1_JwcBlaKM2fSzd1eXZ05cSsD2Qyvnj0u4KjrRGaom6dDq_TM6aKPpe04Uct.anqfPC0BPiHwfb1u)| [transcript](../../meetings/2024-04-18-Recording.txt) |
-|2024-04-11| [The meeting focused on discussing industry use cases for the Digital Product Passport, trust and credential verification methods, and agreeing on future tasks and pilot projects, with an emphasis on more active use of Slack for ongoing discussions.](#2024-04-10-meeting-summary))|[video](https://us02web.zoom.us/rec/share/RaLiDGP2pyCmOAPFqpJRcEnF9ojg8WabMv1L2xuKSHoKlAJCyCW3F_AZcvyVPptx.N2Z6iGWG3RjymbqN)|[transcript](../../meetings/2024-04-10-Recording.txt)  |
+|2024-04-11| [The meeting focused on discussing industry use cases for the Digital Product Passport, trust and credential verification methods, and agreeing on future tasks and pilot projects, with an emphasis on more active use of Slack for ongoing discussions.](#2024-04-11-meeting-summary))|[video](https://us02web.zoom.us/rec/share/RaLiDGP2pyCmOAPFqpJRcEnF9ojg8WabMv1L2xuKSHoKlAJCyCW3F_AZcvyVPptx.N2Z6iGWG3RjymbqN)|[transcript](../../meetings/2024-04-10-Recording.txt)  |
 |2024-04-04| [The meeting focused on refining digital product passports and verifiable credentials, emphasizing interoperability, traceability, and the development of clear business requirements to guide technical decisions.](#2024-04-04-meeting-summary)|[video](https://us02web.zoom.us/rec/share/zVeXVEPoDTQ47d6_rczVyrNDGiD6Vc21fy64MkDh2a4165B59cZ4ZIqCA1oF2gMX.htabo2zwpxjDMvmI)| [transcript](../../meetings/2024-04-04-Recording.txt) |
 |2024-03-28| [The meeting focused on discussing and refining the digital product passport (DPP) structure, addressing the challenges of integrating claims and evidence at different levels, and planning further updates and reviews to ensure its practical implementation.](#2024-03-28-meeting-summary)| [video](https://us02web.zoom.us/rec/share/HrpLjWU_cLtjo-gHIAs9xjSRIm_NzfVhxzld18XPPYMQKSpwcWo_b_H_7RRrwiwD.QqsvfDxuKkcwmxZD?startTime=1711569572000)| [transcript](../../meetings/2024-03-27-Recording.txt)|
 |2024-03-14| [The team discussed the successful submission of the policy document, agreed on weekly meetings, reviewed technical specifications and PRs, and demonstrated GitHub contribution processes.](#2024-03-15-meeting-summary)|[video](https://us02web.zoom.us/rec/share/fdrIhDXrEvwLcB5v08kdraTfC_7ywRWeYFa-J-LTpGxnCDdxVM6iwyQze_P2BX_z.c7dLspw0q6KCGQ0e?startTime=1710399547000)|[transcript](../../meetings/2024-03-15-Recording.txt) |
@@ -34,6 +40,57 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-18| TBD|[video](https://us02web.zoom.us/rec/share/oPEDPSpZGLBBP5qykEBDaG5NxxMrQu_snm3NmiqZQuGhBVxlWv5bf-70jeuqMvd5.S_8jH8Vk8IW57B0X)| TBD|
 |2024-01-11|TBD | [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)| TBD|
 
+## 2024-06-05 Meeting Summary
+
+**Attendees:**
+- Steve (Speaker 1)
+- Virginia (Speaker 3)
+- Jason (Speaker 5)
+- Patrick (Speaker 2)
+- Marcus (Speaker 4)
+- Other unidentified speakers
+
+**Key Points Discussed:**
+
+1. **Meeting Organization and Participation:**
+   - Steve acknowledged the need to increase participation in meetings through better marketing.
+   - Reminded attendees that this is a UN meeting and contributions are considered UN IP.
+   - Steve mentioned that meetings are recorded and transcriptions are published.
+
+2. **Meeting Transcription and Summary Process:**
+   - Steve shared updates on how meeting transcriptions and summaries are managed.
+   - Introduced a table format for meeting summaries with video transcripts, text transcripts, GPT summaries, and one-sentence summaries for quick reference.
+
+3. **Pull Requests and JSON Schema vs. JSON-LD Context:**
+   - Discussion on handling pull requests and differences between JSON schema (structure) and JSON-LD context (meaning).
+   - Steve shared a detailed explanation and a diagram to clarify these differences, using examples like a verifiable credential describing a traceability event for a bale of cotton.
+
+4. **Challenges with JSON-LD Context and Semantic Interoperability:**
+   - Steve highlighted the challenges in mapping complex, abstracted data models to meaningful terms in a consistent way.
+   - Illustrated the difficulty with an example involving transport means and IMO numbers, emphasizing the problem with abstract structures in JSON-LD context files.
+
+5. **Discussion on Governance and Granularity:**
+   - Patrick and Marcus contributed to the discussion on how to manage the complexity and granularity of context files.
+   - Marcus suggested using catalog entries to manage multiple schemas and context files, which could help in maintaining semantic integrity and version control.
+   - The need for proper governance to ensure correct mappings and avoid wrong semantic interpretations was emphasized.
+
+6. **Principles for Managing Context Files:**
+   - Agreement on keeping context files small, semantically correct, and aligned with specific use cases.
+   - Steve proposed focusing on manageable granularity for context files, suggesting one context file per credential schema to simplify governance and changes.
+
+7. **Future Steps:**
+   - Plan to open an issue for further discussion on mapping complexity and balance.
+   - Aim to document guiding principles for UNTP governance and implementers.
+   - Acknowledgment that more discussion and iteration are needed to refine the approach.
+
+**Action Items:**
+- Steve to draft guiding principles for context file management.
+- Open an issue for further discussion on mapping complexity and balance.
+- Follow-up discussions to refine the approach based on feedback and further exploration.
+
+**Meeting Conclusion:**
+- Steve thanked everyone for their participation and contributions.
+- The meeting ended with an acknowledgment of the need for ongoing collaboration to address the challenges discussed.
 
 ## 2024-05-30 Meeting Summary
 

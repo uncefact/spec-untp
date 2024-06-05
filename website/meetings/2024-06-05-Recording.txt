@@ -1,0 +1,676 @@
+[Speaker 1]
+Good morning from Australia anyway, I know it's evening for Virginia and midday or something for Jason.
+
+[Speaker 3]
+You get a better picture when the camera's connected.
+
+[Speaker 5]
+I find the pictures better on my side when the camera is not connected.
+
+[Speaker 3]
+Are you back in Australia, Steve?
+
+[Speaker 6]
+I am, yes, still a bit jet lagged.
+
+[Speaker 1]
+All right, it's four minutes past. I think I need to do more marketing of these meetings to get a bit more participation. I'll start doing that.
+
+Let's get started. Thank you, everyone, for joining. Usual disclaimer, this is a UN meeting, and any contributions you make are UN IP, so please consider that when offering your thoughts and contributions.
+
+Second one, I'm recording the meeting and will transcribe it and publish it. As you've seen in my last message, I've finally tidied up all our meeting posts. If you object, please let me know.
+
+Otherwise, we'll get on with today's meeting.
+
+[Speaker 6]
+Let me first share screen. Go to Q&TP. Pull requests.
+
+Now, well, actually, just let me first start by just walking everyone through what I changed yesterday with the meetings page.
+
+[Speaker 1]
+So if you haven't seen it, I've basically got a table here of each meeting that we've done. The video transcript that's always been there, but also a text transcript of that video. So it's not exactly pretty, but everything we said is there.
+
+And also a chat GPT summary of the meeting, which did a surprisingly good job, which I was happy about. And then another GPT one-sentence summary of the summary, which I put here, so that you can quickly scroll through, see what each meeting was about, click on one of these, and get who attended in a bit more detail. And if you choose to, read the detailed transcript to watch the video.
+
+So I'll be doing that routinely after every meeting, and I hope that helps people catch up on the stuff that they missed.
+
+[Speaker 6]
+So that's that.
+
+[Speaker 1]
+Let's go and have a look at some pull requests. So these are basically requests from a member to add content. And you may have seen a post from this in the chat channel about what's the difference between a schema, JSON schema, that describes the structure of something, and a JSON-LD context and vocabulary that describes the meaning of something.
+
+And I wanted to share with you guys, some fairly deep dive that I've been into that and collect your thoughts about how we how we handle this. Did anyone have a chance to look at this video? Yeah, one.
+
+Okay. Let me I drew a little picture here that I wouldn't mind walking through. And getting your thoughts.
+
+[Speaker 5]
+So I did the same thing, but your picture is better.
+
+[Speaker 1]
+Yes. Okay, thank you. So, I know that it's quite confusing for people, particularly those that are not so technical about what is a JSON file, what is a JSON schema, even more so, that what is a JSON context, a JSON-LD context, and what's a reference vocabulary.
+
+How do all these things fit together. Some of you on the call will understand this very well and some won't be so familiar with it. And in my deep dive, I've encountered some issues that I want to get to and solicit your thoughts.
+
+But first of all, let's just reach the same page about what these things are for. So I'll start with a structured data object. In this case, a verifiable credential describing a traceability event about a bale of cotton.
+
+I've put a tiny little subject, a bit of content, sample content. The subject of the verifiable credential includes a data element called parent EPC. What does parent EPC mean?
+
+That actually comes from the GS1 standard, and it means parent product code of, for example, a pallet of cotton that contains various bales. And there's the identifier. So this is what you might find just in a traceability event that you discover when you're looking at a value chain.
+
+Oh, there's a bale of cotton, and it's got a parent product code of this GT. Now, how to use this data. There are two quite different descriptors.
+
+One is something we're probably fairly familiar with, which is a schema that says the purpose of the schema is to basically say any digital traceability event that's defined by UNTP should look like this. So this is a particular traceability event about a particular bale of cotton. This one is the schema for any traceability event.
+
+So it will say a traceability event should, if it's an aggregation event, must contain an element called parent EPC, for example. Everybody happy with that so far? That's the purpose of the schema, right?
+
+It's to define the structure of an instance and validate it.
+
+[Speaker 6]
+Does that make sense so far?
+
+[Speaker 3]
+Just out of curiosity, does it include, like, sequence or just lists of data that should be there somewhere?
+
+[Speaker 6]
+Does it include what?
+
+[Speaker 3]
+Sequence.
+
+[Speaker 1]
+Oh, sequence. Yeah, it's structure, but not sequence. Actually, that's one of the advantages of JSON over XML.
+
+So it might say, for example, that in, well, let's have a quick look at a, here is a traceability event, right? This is a graphical representation of a schema, right? But there's parent EPC in the aggregation event.
+
+So this is saying that an aggregation event must contain a parent EPC and a list of child EPCs. Or, sorry, may contain a parent EPC, child EPCs, and child quantity list, right? And that quantity list looks like this.
+
+And an aggravation event is an event. So it will also have event ID, event time, and so on and so forth. So that's basically a model of any traceability event, yeah?
+
+So that's a visual representation of this thing, the schema, right? And this thing is an actual traceability event about specific bale of cotton identified by gtin12345, yeah? Everybody happy so far?
+
+[Speaker 8]
+Yeah. Yeah.
+
+[Speaker 1]
+Okay. So, and a lot of data standards, especially CFAC data standards, kind of stop there, right? They say, here's a standard structure for an invoice or a purchase order or whatever.
+
+Here's the schema. This is how you validate the structure, right? Now, one of the challenges with this is, now imagine you're the U.S. Department of Customs and Border Protection. And you are receiving thousands or hundreds of thousands of these per day. And you're using them to construct a risk profile. And you want to understand the meaning of the content against some standard vocabulary that you adopt.
+
+And this thing, this parent EPC is defined by GS1 as the allowed term against the schema. But what does parent EPC really mean? It's actually, it's a product identifier, right?
+
+And if you look in the schema, you see parent EPC, child EPC, EPC class. You know, you see these terms in the schema defined by GS1. And they're all basically product identifiers, right?
+
+But they've used different terms because they have a bit of different context in the schema. But they're all product identifiers. So if I'm U.S. Department of Customs and Border Protection, and I'm pulling in event schemas and maybe invoices, and each different schema uses a different term for the thing I know as product identifier, then I've got to do some manual work to say, when I pull this schema in of this type, I look for EPC, parent EPC, and I say, oh, that's a product identifier. I'm going to put that into my risk matrix and graph and call it product identifier, right? So there's some mapping to do. Everybody's familiar with this, you know, in data warehousing, it's called ETL, extract, transform, load, right?
+
+You pull data in, you map it to something you know, and you build a bigger picture, which you're going to do some assessment over, right? Everybody familiar with that process? So the purpose of these parts of the schema, and by the way, even if this term was consistently always called GTIN or product identifier, whether you found it in an invoice or anything else, you would still have a difficulty for a machine to understand it consistently, right?
+
+Why? Because it's found in a different hierarchy or a different path. A machine doesn't necessarily know that when it finds product identifier inside transformation event, which is part of a traceability event, it means the same thing as finding product identifier inside an invoice line, right?
+
+There's nothing machine readable that says these two things mean the same thing, even if they use the same term. In this case, I've deliberately picked an example where the term is different, but even if it's the same term in a structured schema, a machine still doesn't know that the use of that term in two different hierarchies means the same thing, right? So somebody still got to do a mapping basically, right?
+
+[Speaker 5]
+Steve, Patrick has his hand up.
+
+[Speaker 2]
+Yeah, Patrick. Yeah, so in the last part, sorry if I'm skipping ahead, but there's a product class of product. Where in this document do we map this subject parent EPC being a property of a product?
+
+[Speaker 1]
+Yeah, I'm coming to that. And this is one of the challenges, right? It's in this context file.
+
+So in JSON-LD.
+
+[Speaker 6]
+Virginia also has her hand up. Sorry, go ahead, Virginia. You're on mute.
+
+[Speaker 3]
+What is the difference between the context definitions and codes? Like a code that also gives you the meaning?
+
+[Speaker 1]
+Yeah, so the purpose of linked data is to give universal meaning to terms. And so the answer is not much difference, by the way. It doesn't really matter whether a term is in the structure of a schema or an allowed value in a code list.
+
+It's still a, let's say, a three-letter code or two-letter code, AU. In ISO 3166, it means Australia, right? But AU just found somewhere in a schema might mean something else.
+
+Patrick?
+
+[Speaker 2]
+I think there's a distinction to be made between the key and the value. So here we see parent EPC, and then you have the GTIN code. The context will give you information about the key, so parent EPC, but won't give you information about GTIN 1, 2, 3, 4, 5.
+
+It should give you information about how to go get that information. So you refine this knowing that it's a GTIN, but now to get the meaning of the code, you would need to go get to the software that manages that code. So the context is really to give meaning of the keys that you use, not necessarily the values.
+
+Yes.
+
+[Speaker 3]
+Usually, you have a code list identifier and then a code.
+
+[Speaker 6]
+Yes, yes.
+
+[Speaker 3]
+So the code list identifier would tell you that AU means Australia.
+
+[Speaker 1]
+That's right, Virginia, and the assumption is that a developer at design time who's building that data extraction would read the schema or the message implementation guide or whatever and go, ah, yes, that code list describes the allowed values that are going to appear against this key called country, and these values have to come from ISO 3166, blah, blah, blah, right? Okay, Patrick.
+
+[Speaker 2]
+My question, so you mentioned there's a list of allowed values. What's the current way that, like how would someone discover this list? Is there a way for now to do this?
+
+[Speaker 1]
+Yeah. So can we come back to allowed values? Because I just want to, first of all, just talk about key mapping, right?
+
+So Patrick's correct that this context file is basically saying this key, we call it parent EPC. So there's a key and there's a value to use that language, right? There's the value.
+
+There's the key. The schema can only define the keys, right? It doesn't know that some machine is going to spit out an instance where the value is G1012345.
+
+The schema only says that in subject there has to be a parent EPC of a traceability event, right? So Patrick's obviously right that the purpose of the schema is to define the allowed keys and structure, right? What does a context file do?
+
+It maps the keys, not the values. So currently to some common understanding, right? So that when a machine processes this instance, it can do two things and say, all right, is it valid against the schema?
+
+So it doesn't have stuff in it that it shouldn't or it's the wrong structure. But also it can take this context file, which the context file itself doesn't define meaning, right? It's just think of it just like a map.
+
+It just says it's got all the keys that are in the instance, like parent EPC. And for each one, it says, look over there for meaning, right? And in this case, I've deliberately picked a non-UNCFAC vocabulary.
+
+But of course, UNCFAC has its own vocabularies. And I'll show you one in a minute. And this is where some governance group that's not the project team.
+
+So I've got these gray boxes here. It says our job is to say, what does a traceability event look like? How can we validate it structurally using a schema?
+
+And is there value in giving these keys universal meaning against our vocabularies or other vocabularies? In this case, schema.org says there is a product. And you can click on product now and have a look at it.
+
+[Speaker 6]
+Find schema.org. Sorry, we're having a bit of a discussion about this, but it's probably quite important to understand.
+
+[Speaker 1]
+Let's go and have a look at schema.org. So this is probably the web's, I don't know, probably by a factor of 10,000, the world's most popular vocabulary. Because it's the thing behind Google and the thing that gives you a consistent view of a recipe that, even though your search for apple pie hits 400 different websites, all with a different structure, they give you those cute little panels that all look consistent.
+
+Why? Because this standard vocabulary is behind the reasoning or presentation, consistent presentation of different data structures. And so this is schema.org's definition of a product. And it's a subclass of thing. And it's got all these properties. And one of these properties is a GTIN.
+
+So GS1 must have been talking to schema.org in order to put a thing like a GTIN in here. And so here's, if you like, not governed by us, governed by somebody else, a common standard for what stuff you find in products as measurement, as return policy, height, variant of. You can see all this stuff, right?
+
+Sorry, Patrick, go ahead.
+
+[Speaker 2]
+Yeah, I just wanted to point out, it's also interesting to see the reverse relationship. So if you go back to the schema.org and you click on the GTIN property, it will tell you on which type of objects it can appear on. One of them being a product, but there's a few other ones.
+
+[Speaker 1]
+Demand, offer, product. Yeah. So this is very common in semantic vocabularies, that a property is a kind of an equal class citizen to a class, right?
+
+So there's a universal definition of what GTIN means. And it's used, as far as schema.org is concerned, in demand, offer, and product. So if we look at demand, we'll find GTIN in here somewhere as well.
+
+And it says, what is a demand? Announcement by an organization of a person to seek a certain type of goods. So it's like an RFQ or something.
+
+Yeah, so in any way, the point is, I suppose, that there exists in the world, as we know, a bunch of reference vocabularies. Actually, let's have a look at another one while we're at it. Vocabulary.uncfact.org, a bit closer to home. We have this thing called the buy, ship, pay reference data model. And I can search in here for things like a consignment. And this is very similar to schema.org.
+
+There's a consignment. And it says it's got all these properties, allowance, charge, cargo insurance, et cetera, et cetera. And for any of these, we can have a look at that property.
+
+And we'll also see where it's used in consignment, consignment item, transport equipment. So here's UNCFAC's version of the same thing. And this is not specific to any message or any use or any credential.
+
+This is just the language of trade. And so this is a JSON-LD representation of our long-known-and-loved buy, ship, pay reference vocabulary. And codes, by the way.
+
+So even low codes are here. And other types of codelists, like various codelists. So they're all machine-readable.
+
+And one key thing about them is if you look at them, what linked data does is take a thing that you might read in a PDF and say, you know, let's have a look at a code.
+
+[Speaker 6]
+Accounting content.
+
+[Speaker 1]
+Address type codelist as well. Postal address, fiscal address, et cetera. There might be a PDF that says there's this thing called address type codelist.
+
+And these are the values you'll find in it. One, two, three, four, five, six. And it means, you know, three means physical address.
+
+So a human can read that and go, oh, yeah, I see. Address type codelist from UNECE has these allowed values. And if the value is three, it means address type codelist.
+
+But what linked data does is turn that into a permanent machine-readable URI. So if you say vocabulary.uncfac.org address type codelist number three, it means physical address. And so the linked data vocabularies are turning these human-readable definitions into, if you like, machine-permanent links.
+
+And this is what a context file does, right? It says the keys in this instance mean this thing. And that thing is a permalink, right?
+
+In this case, schema.org gtin, but it could say UNECE vocabulary something something, right? So the value of that in theory is that now I can, if I'm back to the U.S. border, I don't know why I'm picking U.S. Could be Australian customs or anybody else, right? But anybody who cares about pulling lots of snippets of data, whether they're in verifiable credentials or edifact messages or anywhere else, pulling snippets of data into their system to do some bigger analysis.
+
+And we've been talking historically about on these meetings about value chain graphs and saying the thing you really care about when you're looking about sustainability of a T-shirt isn't just the digital product passport of the T-shirt. It's the whole value chain. So we're also looking at graphs.
+
+And the whole purpose of this context file and these reference vocabularies is to make the assessment of those graphs quicker and easier. So we don't have 100,000 people around the world each saying, yeah, when I find parent EPC in a traceability event, it means gtin. And each person who's creating these graphs having to do that, we kind of do it for you by saying not only have we defined a structure schema, but for each tag, we've linked it to some universal meaning.
+
+This is the fundamental purpose of JSON-LD to say that this key thing here that somebody is creating, I probably should put that in some sort of color.
+
+[Speaker 6]
+Where's my color palette? Too many things on the screen.
+
+[Speaker 1]
+This is the thing that there are millions of, right? Lots of people around the world just issuing data sets. We define a schema that describes it.
+
+We also provide a context file that links it to standard vocabularies. And that means that somebody consuming millions of these things can, in a much more automated way, construct a graph of meaning.
+
+[Speaker 6]
+Yeah, questions.
+
+[Speaker 7]
+So here we are using gtin as an example. It could be UPC. It could be digital link.
+
+It could be.
+
+[Speaker 6]
+Yes. Yes.
+
+[Speaker 7]
+And that's what the schema, that's what the context file would be alluding to what ID we are using.
+
+[Speaker 1]
+Yes. Or what term, really? It's the meaning of.
+
+In structured data, you see these things like subject and parent EPC or maybe item or identifier or whatever would be better. And as a human, you can read that. But for a machine, that's a key found at a path somewhere in a hierarchy of a message.
+
+And it doesn't necessarily know, unless you tell it, what it means. We're used to thinking of processing these data or defining the processing rules at design time. So I have to spend effort as a developer to write code that says when I receive a UNC cross-industry invoice and I look in this structure and I find this thing, it means that.
+
+What linked data does is allow that step to be automated by saying what I care about and I understand these reference vocabularies. There could be thousands of schema using terms. But as long as I understand reference vocabularies and somebody gives me a mapping that says in my schema, the element found at the third level down in the hierarchy called item means this.
+
+Then I can automate all that mapping in theory. But this is the theory. We haven't got yet to the worms in the practice that I'm about to talk about that have put me down a rabbit hole.
+
+Patrick?
+
+[Speaker 2]
+Yeah. So just to think that the first one. So, yeah, I think something I think Manu said, it's like there's a complex situation and you can't decide when you design the system where you push with parts of the complexity.
+
+Right. So by using linked data, you alleviate some of the complexity for the end user or the verifying organization coding. And you instead put this complexity at the beginning of the issuing part so that later on they can find that information.
+
+Exactly. I wouldn't say it removes the complexity. It just moves it somewhere that's maybe a bit more efficient.
+
+[Speaker 1]
+Yes. It's doing once what otherwise thousands of different organizations would have to do. And in fact, you could argue that it's the same for schema.
+
+Right. We could just start issuing structured data sets like this cotton subject pair and EPC without a schema and say, you know, just read it and make sense of it. And you got to figure out whether it's structurally valid.
+
+But we're used to saying, and here's a schema for that invoice or purchase order so that you can make sure that before you start pulling the data out of it, at least it is an invoice and not a photo of a cat. Right. So this is the purpose of the scheme.
+
+The context file and reference vocabulary. This is the new stuff generally to typical data modelers and message designers. We're used to instances and schema and less used to semantic vocabularies and linking of semantic vocabularies.
+
+This is why I'm trying to go through this.
+
+[Speaker 2]
+So quickly, just so I think also something that's useful is the keyword type. So in the case of our subject here, so the keyword type is used in JSON LD to identify the product class. So on their subject at the same level of parent EPC, we could have the keyword type and then put product.
+
+And this would identify. I don't even think you need the at in the case of verifiable credential. This is not in the context.
+
+And something that is a bit of a convention is when you have a type like a class, it starts with a capital letter. And when you have. So I would put product with a capital letter.
+
+And when you have these or properties, they start with a lowercase letter. So that's a fairly common assumption. And if if you go on this schema or page, you're going to notice all the properties.
+
+They started with a lowercase as everything that's representing a class starts with an uppercase. So that is just a sort of general. And this is super relevant.
+
+I was just talking with Jason was here. You know, in our case, it was the conformity credential, for example, the issued to section. You might identify a type as to what is it you're issuing to.
+
+Is it an organization? Is it a person? Is it so on and so on?
+
+And then the values of that can be properties. So, yeah.
+
+[Speaker 1]
+So quick pause. Virginia's got a question. Yeah, I've just seen your hand up.
+
+Off you go.
+
+[Speaker 3]
+It's not actually a question. I think it might be. It might be an observation.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 3]
+When you're talking to two people who have worked for a long time in the fact that the existing standards. What could be helpful in terms of explaining how this works? Is to say that a context file is similar to a codeless identifier.
+
+But it can take it also contains a link. To the actual code list so that you can automate the processing of the code list. Even if you didn't ever hear of that code list before you receive the data.
+
+[Speaker 1]
+Yes. Not just codeless but keys. I mean, in any term in any structure.
+
+[Speaker 3]
+Yeah, but I'm just saying it has a similar function. Not that it is a codeless identifier, but you could. It has a similar function to a codeless identifier, but with a link that then goes to all the definitions that are in that code list.
+
+And you don't have to know or have previous access or planned access to that code list before you see the codeless identifier because it's a link.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 7]
+Sorry, go ahead.
+
+[Speaker 3]
+It's just to make a parallel to help people understand. To put it into their current existing reference.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 7]
+Yeah. What I was saying is this is a concept which has existed for a long time, right, like in the external world. I'll take an example.
+
+We used to say this is 850 5020 If you put that in your Digital file that was being exchanged immediately the machine or whatever could interpret. Okay, this is going to be the schema. This is the code list associated everything else followed.
+
+Right. So it's similar to that, that the context file is nothing but telling you what kind of schema and what kind of code list is being referenced similar to extra 850 5020 or Yeah.
+
+[Speaker 1]
+Yeah, maybe not almost. I think One way to try to understand is It's offering the consumer of the data, a tool that they can use at runtime, instead of design time. Imagine I'm Customs and Border Protection again and I'm consuming these things.
+
+We have for many years, obviously, defined things like What's a units of measure or country codes or all these code lists or a or even schema across industry invoice purchase order, etc. And so we have schema. We have BRS we have documents and the mindset is that somebody, a developer at the Customs Authority reads the schema knows the code lists and writes some sort of Rules to take the data out of it says, Ah, that's across industry invoice.
+
+Oh, that's a traceability event and put it in their bigger database. Right, so What this is trying to do is do that job for them once so that at runtime, they automate that so generally you got two jobs right when you're when you're consuming data. One is, is the data.
+
+Is it a valid invoice. That's what the schema is for. The second one is I've got invoices purchase orders, all kinds of things.
+
+And I'm constructing a big link data. Database right that I'm going to query for risk purposes or whatever. So this is beginning to automate the second job.
+
+Which previously has not been automated before right now not at runtime. Anyway, it's it's it needs developers to write code. And this is instead saying just use this context file in these reference vocabularies.
+
+And you can extract whether it's bill of lading number or whatever terms you're looking for wherever they they occur because they're tagged right so exactly the same way that Google produces those neat little recipe panels. If you, if you went to every recipe site. They all look different.
+
+How does Google pull them all together into a consistent set of panels. They're all structured data because they're all HTML. But they're all different.
+
+So it's, it's the use of these tags in structured data to give it consistent meaning that automates that second thing.
+
+[Speaker 2]
+Patrick is another very important use case for this. And let's say there's a scenario we take like BC gov and DHS, for example, that they both use a term like permittee and their credentials. However, for them, it means something different.
+
+So credentials that BC gov would issue would define the term permittee and their context and the same for DHS so that when the verifier gets that VC. Well, they can know what is the permittee and they don't wrongly assume that it means something that it could when it could mean something else. So in one system of permittee could be someone that's allowed to do something and another, it could be, I don't know, the owner of a resource.
+
+So, yeah.
+
+[Speaker 5]
+And that nicely takes us to what Steve what really wants to talk about, which is how we extend and manage.
+
+[Speaker 1]
+Actually, before we get to that. I had a close look at An existing Version of this. There is a W3C effort called traceability vocabulary.
+
+And it defines a context file and I don't know 30 or 40 schema and maps the terms in those schema to either schema.org or GS one or UNC fact vocabularies. And Here I want to get to one of my pain points and and see if particularly with people like Marcus, if he's still on the call, how we solve this right because what I've just presented Is kind of once you understand that you go, okay, that makes sense. That's fairly elegant, actually, you know, quite cool actually to to Define these mappings to standard vocabularies at runtime.
+
+Isn't that great for, you know, consumers who have to make graphs. We've basically invested once to save 1000 times that investment. Done by each consumer of collections of data.
+
+But here's the but People defining schema. Tend to be data modelers and like abstractions, because they like Third normal form databases and things like this. Right.
+
+And so let me, let me just keep this page and create a duplicate slide because I want to Say, what if it wasn't a simple a key value pair like this, but instead it had a what we see fairly frequently and see fact, something like this transport means Right. It's a abstract thing, meaning any Mode. A ship or or a truck or a train or a flight is a they're all transport means right and inside transport means you'd have something like I don't know if this is the right term, but you'll get the point.
+
+Mode. And you might have something like see. So now we go.
+
+Ah, all right. It's a it's a transport means mode see must be a ship. Right.
+
+And then we go something like this.
+
+[Speaker 3]
+Identify I think I think transport means is probably a code list.
+
+[Speaker 6]
+No, no, no, no, there is a no, it's not.
+
+[Speaker 1]
+Oh, I can show you in a minute where we can look it up on the CFAT vocabulary. It's a Yeah, and so transport means is a class which is reused to mean vessel truck, blah, blah, blah. And it has a number of properties and one of them is that I can't remember the term, but something like mode and it would value would be see or air or rail or whatever.
+
+And then we'll have something like identifier.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 1]
+Yeah. And it was an inside identifier will actually, it's not just a simple object right because you have to say, again, another structure. Something like, again, I'm not sure it's the right term, but the principle is the same scheme.
+
+So this is the code list type and you like might say something like I so I know IMO and then the value would be some IMO vessel number right like 786 Okay, so that's a pretty common Common Structured data thing that you might find in a CFAT standard message or, in fact, not just see fact A whole bunch of them. Right. There's this tendency to abstract Right now, what customs and border protection or somebody like that probably really cares about is they need a term.
+
+What we'd have here is in a reference vocabulary that is, I don't know, probably from DCSA, let's say, Would have a product class that said something like DCSA.org vessel.
+
+[Speaker 6]
+And would have IMO number.
+
+[Speaker 1]
+This will be very common to Right. What I really care about is the IMO number. Now, How would I write a context file.
+
+That maps this Set of keys to that. IMO number. In my view, the answer is I can't right because a context file doesn't know the key values.
+
+It just knows that I don't knows the keys. So I can't map transport means mode identifier scheme value. To IMO number because exactly the same structure could be a truck registration number.
+
+Yeah, so there's a collision of worldviews here between sort of graph modelers and ontologists and precise meaning and data modelers who like reusable abstractions. And when I look at schema at the trace vocabulary work done by the W3C team. And this is no criticism of any individual What I can see has happened is that there are many cases where it's not easy to map the thing in the schema to the thing in the vocabulary and someone has just picked a The closest thing Sometimes it's a structural mismatch.
+
+So someone maps a property to a class or a class to a property. Sometimes it's a meaning mismatch. So I couldn't find payment date.
+
+So I chose invoice date right when you do that. With the best of intent, you've just Defined the wrong meaning and potentially broken us customs risk rules right if they rely on that meaning. Right.
+
+And when you look at W3C trace vocabulary, I'd say about 20% of them are wrong. With the best of intent and it's partly because people defining these things tend to be technical people. And you actually need business knowledge to get this meaning.
+
+Right. And partly because if you have a rule that says I've got to map every key. And these are my reference vocabularies and my job is to map it.
+
+You will inevitably find cases where the mapping isn't correct. And so if you if your approach is I'll just pick the nearest thing you're probably doing a bigger disservice than not picking anything right so don't, you know, So this is the problem I have. So I'm finally got to it in with 10 minutes to go and Patrick's got his hand up.
+
+[Speaker 2]
+Right.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 2]
+Yeah, so I recently did the traceability implementation and I had a look of the vocab and I think the problem I see with that vocab is that it's a bit too ambitious. There's too much defined in it. Because the goal was to define many different actual verifiable credentials, instead of defining terms.
+
+Right. So you get in a place that well, you could have a similar term that meant to be used in two different ways. And to try to address this and to one vocabulary file, it's a problem.
+
+Like if you compare, for example, the citizenship vocab file, the W3C citizenship vocab with the traceability vocab, you will see clearly that the traceability vocab, you know, defines, it's a very ambitious. So if you just open the link, you'll see like the second link of the context, you can see it's gigantic, you know, so there for me there is a problem, a scalability issue with fitting every single credential under one context file. This is gigantic, you know, there is a lot of lines.
+
+This is why I think. Yeah.
+
+[Speaker 1]
+Look, here's an example. So this is from the W3C trace vocab. Somebody has said here, purchase date found in a structure means schema.org payment due date. Does it? What do you think?
+
+[Speaker 2]
+Well, if I was to receive a VC with this, I would say yes. I mean, it is what it's telling me to do. Right.
+
+So.
+
+[Speaker 8]
+Yes, but it's wrong, isn't it?
+
+[Speaker 2]
+Well, this is where you get this ambiguity. But if I. Yeah.
+
+So, yeah, I think we're on the same page for this.
+
+[Speaker 1]
+Yeah. So what I wanted to get to is what is our strategy for this, right? Because the reason I drew the gray boxes here that says these three things are governed by us, right?
+
+We're a project team. We're defining a digital product passport, standard traceability, events, and so on. We've got some schema.
+
+We're going to define some context files. What's not governed by us is external reference vocabularies. Whether or even if it's the CFAC one, it's still governed by CFAC, but not by our project team.
+
+It's the buy, ship, pay reference data model, for example, or the schema.org one or whatever. Right. And if you look back at these, what trace vocab has done is mapped every term to you can see schema.org, vocabularies, CFAC. There's maybe some others. Those are the two heavy, heavy used ones. Oh, Glyph.
+
+So basically, they've picked a few reference vocabularies and built a very large model. You can see here all the credentials they've done. Bank account credential, bill of lading credential, so on and so on.
+
+It goes on and on. There's actually 30 or 40 of them. It's a huge piece of work.
+
+Right. And the architectural intent is excellent. Right.
+
+Let's define a whole bunch of credentials. And let's give universal meaning to every data element found in the credential by mapping it to one of these few vocabularies. Right.
+
+But I've got a few questions for you. One is about granularity. Right.
+
+Should you have, if you're defining 40 or 50 credential types, should you have only one context file? What is the purpose of a context file? Right.
+
+It's this rule set that says the meaning of the tags in this particular credential mean that. And if I'm US customs, and I'm relying on or Australian customs or whatever, relying on these rule sets, and they change, I want to manage change probably at a finer granularity. Oh, somebody's changed the mapping for the invoice.
+
+Okay, let me look at that and see if I agree with it. Rather than somebody is defined one context file for 40 structures. And every time I change anything in one of those 40 structures, I've got to update the context file, right?
+
+So is the granularity right? In my mind, I don't think there should be one big context file for 40 schema, because it's changing every day. And the people relying on that context file for reliable mappings.
+
+Every day, they get a new one. And if I've got some risk control process that I need to have my people verify those mappings, you know, it's hard work. I think the granularity of the context should should be closer to the granularity of the thing that context is defining.
+
+Right. So I would have more like a one to one between a context file and a credential schema. And yeah, so that's one thing.
+
+What's the right granularity? And the second thing is, how do you deal with this problem? Right.
+
+[Speaker 3]
+But from the granularity standpoint, what you're saying, if I was a customs administration, and I was, you know, classifying and identifying these data using the context file, and the context file changes regularly, I need to have version control.
+
+[Speaker 1]
+Yes. And on this one. That's right.
+
+So this is the actual context file right for the trace vocabulary and that you know you can spend quite a long time scrolling through it's a big, big context file. And you see all these, there's a CBP summary, that's a custom border protection summary line item. It's got all these properties like add CVD number, and that links to W3C or something, you know.
+
+Yeah, there's a few things where they didn't find a standard vocabulary. So they created their own. That's a fair enough practice.
+
+Nothing wrong with that. And another case is they've mapped to schema.org. But this is a huge vocabulary file.
+
+It's a whole set of mappings, right. And if I make one big context file, then yeah, it's going to change frequently anytime I change any of these credentials. Yeah.
+
+Patrick.
+
+[Speaker 2]
+Yeah, so just to close the loop maybe here. So, for example, part of the work we're doing with traceability is we wanted to, you know, contribute a BC related credential petroleum and natural gas vital which is specific to BC. So the suggested approach is that we would then put a BC specific credential and a traceability vocab, which right away shows scalability issues, right?
+
+Like, it doesn't make sense to put every single credential used in your chain in one context file. Instead, context file should provide term definition that people can include in their credentials.
+
+[Speaker 1]
+I think there's, yes, there's, I'm going to get to Marcus in a minute. There's a natural granularity of these things that I think goes with the governance responsibility, right. So, and I think I spoke recently to Anil from DHS.
+
+And they recognize already that that trace vocabulary context file combines things which are US government standards, which things with things which are meant to be world standards, all in one big thing, right. So that already doesn't make sense because who governs US government standards answer US government, who governs. What is a world standard cross border invoice answer, not US government, it's UNC fact or GS one or some other organization right so so you're the granularity of your context files must add at the coarsest match the granularity of the governance group.
+
+Right. So, for sure, you would break that big context into two or three or four smaller context and say, here's your context file the US government here's your context file trace vocab group or whatever. But my, even beyond that, inside that I would still argue that if I'm a consumer of an invoice and even within one governance group when there are let's say 30 document types within that governance group.
+
+Don't I want to know when something's changed about the invoice and not be bothered if something's changed about another document that I don't care about. So shouldn't the granularity really be closer to the granularity of the of the thing you're describing with the context file. Right.
+
+So that's all about granularity and governance, I still don't even have an answer for how, when, when you've got basically a normalized abstracted data modeling view on the left, how you map that to a denormalized meaningful graph view on the right. In my view, this particular mapping which will be very common is impossible with not not with it's not impossible with the broader semantic web tools. But it is impossible with the JSON LD context.
+
+And yet we're going to find it quite often. So what do we do about it. And now I'm going to hand over to Marcus.
+
+[Speaker 4]
+Yes, Steve, can you hear me okay.
+
+[Speaker 1]
+I can.
+
+[Speaker 4]
+Thanks. Yeah, I really appreciate the complexity that you're dealing with here and good on you for explaining it this way. It's, it's very helpful.
+
+I think some of the work done by the. As an example only of what you can achieve by the DCAT US schema, the open open data metadata schema, and I dropped the links into the chat for you. If you, if you take a look at those links and we don't need to right now.
+
+It does explain how you can actually identify a catalog item, which refers to the schema which allows for multiple. If you like contexts to exist, and you can reference just one. And I think that second link, maybe the DCAT US schema link there that I had.
+
+If you scroll down there. It actually explains the in this example, the formality around catalog fields and then the context in terms of pointing to the JSON LD context. And so now you can using this type of approach actually look at a catalog entry, which then dives down from there into the schema that you're using and that allows you to use multiple schemas, you can even, you know, put a layer on top of that and profile the catalog.
+
+So that multiple catalog entries in a particular credential can be put together. Still machine readable. Yeah.
+
+And I think that I think that some inspection of that approach, you will find useful.
+
+[Speaker 1]
+So, so thank you, Marcus, because I think that helps with one of the challenges which is what's the right granularity of this mapping, and if I actually want to map the same instance to different vocabularies because let's say us gov cares about a different reference vocabulary to the rest of the world who cares about the UNC fact one, that's actually two different context files for the same instance. Right, this consumer wants this mapping and this that consumer wants the other mapping and catalog entries like Marcus described help help you do that. But I still, um, what one of the things we've got to do as a project team as well is separate skill sets and concerns and not impose on the majority of team members or users and understanding that needs a whole bunch of research and learning right so There is enormous value in the contribution of people familiar with semantic web and ontologies to do the kind of thing Marcus just described, but we've got to keep it somewhat separate from everyday job of saying well what's in a product passport or, you know, what is, what are these Things mean and I think you can see from the trace vocab what happens when you get Somebody doing a job that isn't their skill set and and that's because In that case, it's more like I don't have the business subject matter expertise to understand the meaning of these terms, but how do we do all this in such a way that we over time at value with rich semantics, but we keep it really simple for implementers to start with. And so I'm What I came to the conclusion, which I'll share with you that what we don't want is one huge context file for everything we do. And what we don't want is to do any wrong mappings.
+
+And I'd rather have no mapping or a mapping to our own definition of something then risk a wrong choice of a mapping to a universal definition and We need a way forward where we can just publish some schema with some initial mappings that are maybe a few but correct. And and not go down this rabbit hole of exploding complexity and wrong mappings and so on and so forth. And again, no blame on the trace vocab people because I think the concept is great.
+
+And you sometimes only learn these these pitfalls, but by actually doing these things and then going out. That was too big. Wasn't it, we've got the governance wrong.
+
+We got the granularity wrong. Let's have another go. So let's learn from their challenges and not repeat them and Yeah.
+
+[Speaker 2]
+Yeah, I think it's important to remember the traceability specification, the context in which it existed and the goal of that specification. So, Like, I think it was the result of the DHS SVIP program to sort of design this new digital supply chain platform and with something this complex. Yeah, you know, the chains, you're going to get it on the first round is slim and there was another component of the vocabulary was was just more technical interoperability and I think it was very successful and demonstrating Yes, yes, yes, that was.
+
+[Speaker 1]
+That's right. So, so that whole trace vocab is is meant to be the semantic interoperability bit, not the technical interoperability bit. And I think it it made a really valiant effort and with a nearly correct architecture and all I'm saying is, let's learn from the the challenges they encountered and not repeat them.
+
+I'm still not sure I know how to answer. And I know we're five minutes past time. So I this has gone on longer than I thought.
+
+[Speaker 5]
+But So Steve, I think there's some some guiding. I think where you're kind of landing here is we should articulate some guiding principles around small semantically correct mappings with extensions and governance to meet specific use cases. I think, I think we need to try and articulate those guiding principles that sort of govern UNTP and then we sort of test those principles against our objectives.
+
+And I think that's kind of Where, where, where I think we probably should take this conversation into the next steps.
+
+[Speaker 1]
+Yes. And one question I wanted to ask the group to is In this particular case, this call it collision of worldview that abstracted normalized data model to the meaningful term mapping, which I don't know any way to do with JSON LD context files. To me, this implies that when we're designing if that if the goal is to be able to make these meaningful mappings two things that the graph analyzer cares about.
+
+So, you know, DCS IMO number, for example, and being distinct from license plate number Then it means it actually impacts the way we think about how we design our schema. Right. If we If these two worlds remain apart and we define our schema in a very abstracted way like this transport means mode see identify a scheme, but instead of It's a vessel and it's I and has a property IMO number right if this schema on the left had been designed differently and hadn't used transport means but had used vessel.
+
+And instead of identify a scheme value said IMO, you know, you'd be able to do this mapping.
+
+[Speaker 3]
+So the question here is, is there But you would also have hundreds maybe individual I agreed, agreed.
+
+[Speaker 1]
+So, so, and I'm not suggesting we do that right because I'm what I'm asking and we won't get. Yeah, yeah. What is the right balance right Is the question here.
+
+And when we encounter something like this better not to map it. Well, you can't map it anyway, but and then to map it to something wrong, but Is there a part of our work on the left hand side here defining these standard schema that is influenced by what we know eventually needs to happen on the right hand side. I'm not sure of the answer to that.
+
+And exactly how much is interest because Virginia is right. Right. If you start putting too much meaning in keys, as opposed to values, then you get an explosion of complex schema.
+
+You just, you kind of just move the complexity from one place to another. Right. The complexity inevitably exists.
+
+What's the right balance between reusable structures and precise mappable semantic meaning I'm not sure other than let's be dwell on it and maybe write some comments in the in the chat. Right.
+
+[Speaker 5]
+But That's the point I wanted to get to So, Steve, do we open an issue to talk about this. The mapping complexity balance where we take this conversation and done looks like guidance to UNTP governance and implementers on where to get that right, or how to get that right. Yeah, that is that what we're I think so.
+
+Yeah.
+
+[Speaker 2]
+I have a hard time seeing the problem that you're mentioning. I think like having like two examples of the two. So, like, two different things you're explaining that with this this we're like, I'm not seeing right away that the problem that this cause maybe I'm just Okay, so Let's imagine we have a vocabulary item here called IMO number.
+
+[Speaker 1]
+Right. And this is the International Maritime Organization globally unique number assigned to a vessel. Yes.
+
+And that's that vocabulary item. It's a node in a graph is really, really important to me as US customs, for example, right. Yeah, I have to have to know that.
+
+So that's an anchor on the right here now. What I'm saying is, if my credential schema looks like this. I do not see how I can make a context file.
+
+It's not possible.
+
+[Speaker 2]
+Right.
+
+[Speaker 1]
+How do I map these terms transport means mode identifier scheme value which can be reused to also mean vehicle registration number or flight number Or vessel IMO number. Right. So at the time of defining the context file.
+
+There is no way to make that mapping. That's my challenge. And this will happen again and again.
+
+[Speaker 2]
+You're saying that this what we're seeing now is a bit too generic as a structure to I'm saying these kind of generic structures are extremely common.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 1]
+And these kind of requirements on the right hand side. I want to know flight number IMO number, etc, etc, are also extremely common and they're impossible to map with JSON LD in this is a if like a blocker that I don't know how to solve.
+
+[Speaker 7]
+Maybe I'm totally naive, but can't we include the mode or another level of context.
+
+[Speaker 1]
+Into the So there are ways in semantic web where you can write so different technologies where you can write queries. Yeah, like if You find transport means and the mode is see and you find an identifier with scheme IMO then take the value and map it to this right you so there are tools you can use to do that. Yes, you're correct.
+
+But I'm not aware that JSON LD context has any way to do that. So yes, conceptually feasible practically not possible with this chosen technology. I think we need to wrap the call up here and And leave people to think about this, particularly our friends in Canada and and we've got a bit of familiar familiarity of this and Just we're putting an all nighter.
+
+[Speaker 2]
+Sorry, I thought we're pulling an all nighter talking about this. Yes.
+
+[Speaker 1]
+I've been very strict.
+
+[Speaker 3]
+I think that people in Canada are okay, but the people in Europe, Spain. Are feeling tired.
+
+[Speaker 1]
+Yes. So let's leave it here. I think I've articulated the concern, I hope, and let's just have an issue about it and the discussion about it, but at the moment.
+
+My keep it simple rule means focus on these two things on the left, more than these things on the right. And when we do the things on the right, do them carefully and correctly. And if they're wrong, better, better not to do them better to not do it, then do it wrong.
+
+Is my thinking, right, that's a set of principles. But anyway, I We've gone, we've gone well over time and It's, but it's something I need to solve because I've got to publish some context files and links to vocabularies and the like, very soon for our three schema types.
+
+[Speaker 3]
+Context files are linked to the entire credential instance, you can or can you make a context file and say, okay, the context file is linked to the mode or something.
+
+[Speaker 1]
+So the credential instance will. I haven't shown it here, but it'll have a thing up here saying at context. So it's the credential instance that says, please use this context.
+
+[Speaker 3]
+Okay, so it's for the entire credential.
+
+[Speaker 1]
+Yeah, you can have more than one context in a credential. So, and this goes to the, you know, just basically architectural decisions right that the W3C trace vocab decided to have one context file for 40 or 50 credentials representing different things like US government reporting schema plus bills of lading and everything. That's probably the wrong granularity.
+
+So the granularity can be arbitrary and what is the right granularity is one of the questions. Right. And for the moment, just to keep it simple.
+
+My suggestion is one context file for one credential schema. Just because you manage change at the right granularity because both of those are inside this gray box on the left, which is under our control. They're not in the gray box on the right, which is someone else's control.
+
+Anyway, but let's leave it there because I've taken I've broken my own rule of never going over time. And I want to thank you all and carry on this conversation and another place. But thanks very much.
+
+Thanks.
+
+[Speaker 7]
+Thank you.
