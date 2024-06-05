@@ -1,0 +1,564 @@
+[Speaker 1]
+And also to remind everyone that your contributions made to the GitHub repository are contributions to United Nations IP, and if you don't want to contribute something to United Nations IP, then please don't. That doesn't mean you can't refer to other specifications, obviously, like GS1 and W3C stuff, but sort of unique content there is UNIP. With that, I think I'll hand over to our master of ceremonies, Nis, there's only one thing outside of the usual pull requests and issues, I just wanted to chat about a comment that I put in the Slack channel about streamlining the specification section too many headings.
+
+I don't know whether we do that now, Nis, or later, if you don't mind. Let's just go in the normal order. I just raised an issue copying your chat in there.
+
+We can assign, we can discuss on the issues that get captured. Things die in Slack. Yeah, that's correct.
+
+All right, so just a reminder of the ceremony, we go through pull requests, we merge together, we make sure that everyone is involved in the changes that are submitted, how it moves. We can object and discuss along the way, then we'll move over to issues. I hope we can spend a bunch of time there today and assign some people so we get some work done between meetings.
+
+But yeah, let's dive into pull requests. The first one, I'll just share some links in case you're not with us. Here is the pull request list.
+
+First one is 57. This is from Phil. I saw you're on, Phil.
+
+This is awesome. Thank you so much. I absolutely agree with everything that you have in here.
+
+Actually, Phil, would you care to just spend 10 seconds introducing your contributions?
+
+[Speaker 2]
+I just thought, oh, I need to just put something in. Let me have a look at where there are gaps and see what I can write. Oh, there's a thing about identify discoverability.
+
+And then four hours later, I thought, yeah, I just haven't managed to condense everything into a few paragraphs. It took a lot longer to write than I thought. But I hope it's covered a variety of stuff.
+
+I'm sure more can be added. As the pull request says, it's text offered to see what people think. It's always easier to shoot holes in what people have already written than start from a blank page.
+
+So, yes, I cover the general things. Talking about it isn't just the identifier. It's the data carrier.
+
+It's the pervasiveness of the scanners and the software that can understand it, which is as important as anything else.
+
+[Speaker 1]
+Amazing. I made one comment, which actually, Susanne, you're on. I referenced your article.
+
+There are emerging other ways to make the connection. And that's something we can always... I mean, I would never hold back against merging this.
+
+I think it's excellent. And I agree that we can build incrementally and add more to your point, Phil. This, I don't know, Susanne, if you have any thoughts on this, feel free to inject.
+
+But I'm not going to cold call you. Just thought I... I unfortunately haven't managed to read what Phil wrote.
+
+And so I don't even find it now because I'm not so used working with pull requests and so forth. So I don't even know where to look at. So Phil is referencing ISO standards.
+
+I haven't learned the number yet. 18.975, which is how GS1 digital links are constructed.
+
+[Speaker 2]
+Yeah, I have a slight advantage in that, in that unlike you, I've actually read it because I wrote it. So that's why I tend to mention 18.975. Susanne, you'll notice when you get there, it does specifically mention DIDS as well. And it will be your thing.
+
+You might want to add more, but it does mention DIDS.
+
+[Speaker 1]
+I agree on that. This discoverability. Okay.
+
+[Speaker 2]
+Ness, I just have a quick question. I thought, I thought the stuff with the, I did read through what Phil put in. I thought it was really good.
+
+I noticed the typo. I put a comma. I don't know what the process is here.
+
+I'm not, again, not a, you know, I'm still coming up to speed on the whole GitHub and all of this. But I put a question in the pull request. I don't know, you know, I mean, or a comment.
+
+[Speaker 1]
+It'll be fixed.
+
+[Speaker 2]
+Yeah. So, and yeah, obviously I'm just wondering, what is the right way, if you have a question about what's coming in in a pull request, what is the right way to note it somewhere?
+
+[Speaker 1]
+You can, you can add yourself as a reviewer and that will allow you to, to prevent or at least object. You can also add commits. That's what you would want to do here to fix this building mistake.
+
+And that would, that would give Phil, all right, Steve, you're sharing your screen. I'll just walk through for unfamiliar people. So just to remind everyone, there's a bunch of issues.
+
+And when we discuss stuff in an issue, hopefully it eventually ends up, the results of that discussion become basically a contribution in the form of a pull request. Let's look at Phil's one. You click on it and quite understandably, you look at that and you go, well, what exactly has Phil written?
+
+It's a bit hard to see, right? There is this button, this tab here called files changed. And it gives you a bit of a techie view of files changed, but there's a useful little item here, which is display the rich diff, which will kind of show you how it would look like if you accepted the contribution, right?
+
+So here's where it's easy to read now, right? And if you have some comment about it, like maybe you disagree with something or you want to suggest something else, you can hit this conversation button and just make your notes here, add a comment.
+
+[Speaker 2]
+Okay. So I did, I did do that. If you scroll up a little bit, Steve, you'll see.
+
+Just there.
+
+[Speaker 1]
+Oh yeah. Spelling mistake in important data carriers. Yeah.
+
+So what. Should I correct it or, and this is where I get into more. To correct it, then you have to make another commit to the same pull request.
+
+We can either get Phil to correct it now and do another commit in the next few minutes, or we can just merge this. And it's a correction that's outstanding to make in, in, you know, in the next update of the section. Okay.
+
+So, so if you don't mind, I would like to have a read and maybe make a comment on that because I didn't manage to do so yet. Sure. I, I would suggest that we merge and because to Phil's point, it's, I prefer that you merge things in and then you continue tweaking it.
+
+That's certainly possible after a pull request is merged. Yeah.
+
+[Speaker 2]
+It's better.
+
+[Speaker 1]
+Whenever the processes. Yeah. It's better with more smaller pull requests than big chunky ones that tend to collide and never get anywhere.
+
+[Speaker 2]
+I'm making the, I'm looking for the thing now and I'll, I'll, I'll fix it right now. Yeah. Immortant.
+
+[Speaker 1]
+Can you scroll down and just show the, edit the page and like, I think it's like pull requests sound complex and it feels hard, but it actually is really straightforward.
+
+[Speaker 2]
+Yeah.
+
+[Speaker 1]
+So another way to do that, right? So this would be another way to make a pull request, right? Let's pick something down here that nobody's touched for a while.
+
+Mass balance. Okay. You can just edit the page.
+
+Right. And get taken to a place where you can type to present it to a different third party, remove a full stop or something, preview your changes, commit changes, and just use the web browser. You don't have to use the, I'll just cancel those changes.
+
+Phil, I think we've already done it.
+
+[Speaker 2]
+Yeah. Great. Thank you.
+
+It's done. Thank you.
+
+[Speaker 1]
+Those that are a bit less familiar with this can always just write comments in, in tickets, you know, in issues. If you see an issue that is on a topic that you have a opinion about, like this one that just lessons learned from the digital credentials consortium, you can always just read and write your comments. And eventually then the...
+
+Can we, can we come back to issues because we're still in pull request land? Okay. If you don't mind.
+
+I'll let you screen share. Sure. Do you want to screen share?
+
+Okay. Yeah, I can screen share. Yeah.
+
+Go through the pull requests. I'll share mine with you too. So what I did was I, I just patched with that, that filling mistake.
+
+And yeah, you can, you can do that while the pull request is active. The problem with doing it now is the continuous integration is then triggered. So why don't we let this finish, come back to it and just continue with the pull request.
+
+When you do this live, you kind of have to wait for the robots to carry out their jobs.
+
+[Speaker 2]
+Can you just zoom in a little bit there on this?
+
+[Speaker 1]
+Yeah, sure. And I, if you're interested, I can show you how I did this. So you go in here, you find the, you find this spell mistake.
+
+You say edit file, you make the change you want to do and you commit the changes. That's what I just did. All right.
+
+Does that make sense? All right. I will just carry on with the next one.
+
+We'll come back to this. Oh, it's done now.
+
+[Speaker 2]
+There we go.
+
+[Speaker 1]
+All right. We talked about it. We corrected the spelling mistake.
+
+The continuous integration is completed. So this is the time we ask any objections to merging this pull request. I feel like we discussed it.
+
+So I'm just going to go ahead with the merge. Amazing. Next one up is from Zach.
+
+Update the goals. I failed to look at this myself. We can see here the changes that have been made.
+
+Oh, how is it here? Yeah. It's just a simplification based on the conversation a couple of weeks ago.
+
+Great. Is this addressing a specific issue?
+
+[Speaker 2]
+Issue number closes issue 53, which was clarify the depth question.
+
+[Speaker 1]
+Amazing. And what Zach is doing here, when you use the word closes or close or keywords like that, it actually closes that issue automatically. So we're going to see that happening.
+
+Any objections to merging Zach's pull request 59? All right. Let's do it.
+
+And what you'll see now is this is now closed. GitHub magic. Next is rather new from Steve.
+
+Uploading the verifiable credentials section with a whole bunch.
+
+[Speaker 2]
+Yes.
+
+[Speaker 1]
+I might quickly talk to this, if that's all right. So there was quite a long ticket on verifiable credentials. Discussing things like proof methods and rendering templates, and really what are the business requirements, and the fact that we're not here to reinvent technical specs.
+
+We're really just a point to existing ones that we think best fit our business requirements. So yeah, there was that long conversation there about business requirements and so on. So this pull request is basically reflecting some consensus around what we think the business requirements for our use of verifiable credentials is.
+
+And then breaking down into what does it mean for a VC basic profile, which basically more or less says what Nis said before, except I added data integrity proofs as I should. And that's a little bit offensive to leave the Canadians and the Americans to argue about that proof method discussion. And then I put something about did methods, which at the moment is super simple.
+
+It just says use did web, noting that there are some interesting did methods on the horizon that might solve some issues that are listed in the requirements, particularly around portability across web domains. And then I did put something about rendering templates, because it's quite important for UNTP, and pointed out the existing community specification, and said that somebody, I think it's Ashley, is going to update that with a, which is currently just an SVG method with an HTML rendering method, and talk about external templates with hash links to keep the credential light, but the integrity of the rendering strong. Anyway, so it's a bit like the last time I made a big change to the digital product passport page.
+
+Consider this kind of like a rebase line. I'm not saying it's final or true, but it's meaty content to basically continue discussions. So that's it for me.
+
+Michael, you got a comment?
+
+[Speaker 2]
+Yeah, it's a question. And again, it's just based on different standards, efforts, things like should, may, must.
+
+[Speaker 1]
+Ah, yes.
+
+[Speaker 2]
+Which particularly should and may. Is there a preferred format within the UN CFACT or within this world? Is there a preferred?
+
+[Speaker 1]
+I think should and may are the same. Yeah, I thought I was using the IETF. I forget which number it is that talks about, we should stick to that.
+
+I don't think the UN has its own version of that. And I thought there was a distinction between what you must do, you should do, and what you may do. But maybe it's just should and may.
+
+[Speaker 2]
+I mean, must and may. The ISO standards, and I guess therefore UN would, and I find this jarring every time I see it. They use shall to mean must.
+
+And I think the ISO documentation says shall means must. But our standards always say shall. And basically I write must and I have to go through and change them all to shall.
+
+So I conform with how style. So it is still the RFC 2119 must, should, may. But you just have to mentally translate must into shall.
+
+And you're probably right for the UN audience. But should and may mean the same thing.
+
+[Speaker 1]
+Okay, so what do we do? Fix it now or merge this and go through later and align with? I think that's an editorial review afterwards, I would suggest.
+
+Okay. Does anyone have any content objections? Excuse me, is that it?
+
+And all must must be shall is changed to shall?
+
+[Speaker 2]
+That's the way ISO does it. Now, obviously, this group can decide to do what the heck it likes. But that would be conformed with what the ISO people do.
+
+[Speaker 1]
+Yeah, I'm fine with this.
+
+[Speaker 2]
+It depends. Are we internet people? In which case we say must?
+
+Or are we fancy do hickey ISO people who in which case we have to say shall? I don't personally, as I say, my nature.
+
+[Speaker 1]
+I feel more like an internet person than an ISO person, honestly.
+
+[Speaker 2]
+It was really more, my question was really more around the may and should. Because again, they're the same, you know, or maybe they have different meanings. But it was quite different.
+
+Yeah, no, no, should should and may are quite different. Should is unless you've got a reason not to do this. May is if you want to add this feature, you can.
+
+But they are quite distinct. Okay. All right.
+
+Okay. Thanks, Phil.
+
+[Speaker 1]
+All right. Well, I'll tell you what, I'm going to add, do a pull request to the governance section where I define IETF style must should may and say, that's the way we'll work. Unless anyone has any objections.
+
+[Speaker 2]
+Yeah, that's something helpful. Very helpful. And I'm delighted to see in the chat.
+
+UNCVAC uses 2.1.1.9. So it's must, not shall.
+
+[Speaker 1]
+Ah, perfect. Okay.
+
+[Speaker 2]
+Thank you, Gerhard.
+
+[Speaker 1]
+Beautiful. All right. In which case, no fix, just merge.
+
+That's right. Unless we have any other objections to the content of this. I can't believe you snuck in data integrity proofs.
+
+I think I do have, I need to make comments about that. It is, it has many drawbacks. Yeah.
+
+So I snuck in three things, Nis. One was a must to 1.1 and a should to 2.0. Just because obviously everybody will move to 2.0. But I did a bit of a survey of all the implementations out there. And the majority are not yet on 2.0. And so we could probably change that quite soon. But I feel like not yet. And then I added the rendering method as a must. And then yeah, this whole issue of enveloping proofs versus embedded proofs.
+
+I didn't want to come down on either the Canadian side or the American side. So I just put this and said, I'm going to leave it to Nis and the Canadian team to argue it out in the next version. I have played with both and had a look.
+
+Functionally, they seem, they both work. And so it's beyond my skillset to go, this is why this one's better or that one's better. And so why don't you just...
+
+That's fair. And I agree that is, that's my argument to make. And I would say logically having these two is sort of, if you must do this, why would you do this?
+
+That logically doesn't quite make sense. Anyway, let's merge it and we can... One thing that's not super clear on this too is, and this is a question for the group, maybe a post-merge discussion is, there's a little bit further up if you scroll up, where in the kind of principles, I think just at the top of the requirements there, Key Design Principle League, in this decentralized world, the reality is when you're crawling a supply chain graph and discovering credentials, there'll be plenty you find that are not issued under the UNTP specification. You could encounter a driver's license that proves an identity and it could be an ISO MDL.
+
+You could encounter all kinds of things. And the general principle here is to be open and flexible in what you can discover, consume and verify, but quite as strict as possible in what you recommend you issue. In order to drive more consistency, right?
+
+And so should we be even bothering to list under the may or... I don't know whether it's a may or a should, but things like, well, as a verifier, you should choose or may choose to support ISO MDL and on creds, all these other things that are out there. Is that something we should just not even touch or should we distinguish between this kind of what you may or should be able to verify versus what you must issue?
+
+Yeah. You know what I mean? I love this sentence.
+
+I think that is very strong. And just a reminder that the more options we leave on the table, the less interoperability for the world. That is my agenda.
+
+And I'm an interoperability kind of guy, not just a logical conceptual pointing in some direction. But this is the hard discussion. That's exactly why this is a difficult discussion, because people have made investments into certainly technology and you don't want to change.
+
+You need to redo some work. So that's why it's hard. I like the distinction between issuance and verification.
+
+That's excellent. This sentence is enough, in my opinion. Phil?
+
+Any other?
+
+[Speaker 2]
+Yes, I agree with that sentence and the whole sentiment of being conservative in what you issue and forgiving in what you accept. We still haven't made a decision as to which particular flavor we might use. That's still a decision for later down the line.
+
+Those two that you've highlighted there are two of them. We do quite a lot of work with Life who are pushing the Cary ACDC world, which as far as I know, they're the only major player using it. Does that mean it's technically inferior?
+
+No. So that's another possibility. And there's other people.
+
+So this has been a topic for a while. Which one should you invest in? And from what I read at the moment, there is no clear winner yet.
+
+This document has the potential to move the needle. That's right. I personally don't have the technical depth of knowledge to make a pronouncement which one I prefer.
+
+So I'm intrigued to know. But I think the general principle of conservative out, relaxed in is a good one.
+
+[Speaker 1]
+Yeah. And some of those even more messy complexity is when you move to did methods, right? And we're keeping it.
+
+There's about 200 out there. Most of them are cryptocurrency Ponzi schemes. But there's a few that are real.
+
+And the one you described is actually a did method, not a VC proof method, right, Cary?
+
+[Speaker 2]
+Yes, but the ACDC that goes with it is the VC method that goes with it. So yeah, I think I've got that right.
+
+[Speaker 1]
+Yeah. So this is an interesting issue there. So this might be worth just a quick comment.
+
+The thing this is highlighted here. One of the challenges with did web, it's an obvious easy method that is completely open because it's just use the web. But if I, as a small or medium business, choose some hosted provider to create the did webs for me, then they'll be created on that hosting provider's web domain, usually.
+
+And if a year later, when I've got credentials out in the field, that maybe at a recycling point might still want to be verified and checked. And I decide, I'm sick of that hosting provider. I want to use this one.
+
+And therefore, my did web changes. And what do you do? How important is it that a did is portable across web domains?
+
+And so for the moment, I've said, think carefully about using a hosted web domain. And if you can use your own, doesn't mean you can't use a hosted service provider for all kinds of things, including VC issuing and verifying and so on. Just maybe think about managing your dids on your own domain.
+
+Certainly, that's the intention of did web. Yeah. Anyway, for now, that's it.
+
+[Speaker 2]
+I know there's some stuff coming.
+
+[Speaker 1]
+This is part of moving the needle. This is also opinionated, in my opinion, very good that we make a stance. And add to the gravity to hopefully have everyone adopt the same thing.
+
+We're making the world a better place. So I support this personally. I'm sorry.
+
+I might add just a side note. What did web represent is it started with this in the blockchain era. And that's sort of why all these different methods came around.
+
+Why the indirection of the dids got invented. The idea of a did resolver. In my opinion, this is opinionated.
+
+But the fact that did web seems to be winning really makes the idea of a did resolver somewhat. The world is sort of figuring out that maybe blockchains aren't needed for many of these use cases. And the web is the way to go.
+
+And then maybe the whole idea of dids aren't necessary. We could take a step further and move away from dids altogether. But that's another reason to keep it dead simple.
+
+Just use did web until the dust settles, right? Yes. I propose we merge this request.
+
+As people add insight, let's add more issues, add more commentary, and move this conversation forward. I agree. Any objections to merging?
+
+I'm hearing none. Let's do it. Okay.
+
+That was it for pull requests. And we are moving over to issues. The way we normally do it is least recently updated first.
+
+Let me share the link here. Because that ensures that things don't go stale for too long, we come back to it. The first one is number nine.
+
+And that's by me and assigned to me. And I haven't touched it at all. So yeah, I should be ashamed.
+
+And I sure am. I actually think we can close this now. This is what I'm suggesting is to not make any decisions.
+
+And we just merged a pull request that's quite opinionated. Maybe not quite as much as I'd want. But yeah, I believe we can close this now.
+
+I think that PR answers that issue really, doesn't it? So I'm happy to close it. What was the pull request?
+
+That was... I think it was 60. 60.
+
+Oops, there we go. Okay. Next is verifying linked data trust graphs.
+
+Steve, this is from you. So actually, we have done a little bit of playing with this. So this is the question first of how do you represent data in each credential so that you can join the dots?
+
+And the way we've approached this is to start with the simplest possible use case to start with, which is there's an identity credential issued by some register. In our case, we've got one called the National Growers Register, which is basically a grain farmer register. That issues an identity credential to say this NGR is that did.
+
+And then in the passport issued by that grower, they use their did, and we're able to link the issuer of their passport to the grower register. With a really, really simple identity credential and linked data. And so I don't know if Ash, you want to show that or...
+
+We take the action to put that in here and make a PR. And this would be in the informative section about examples, what you call them, design patterns. Yeah, yep.
+
+Well, isn't there, Steve, and this goes to some of the test architecture stuff that you and I've been working on, sort of a really simple trust graph that we think maybe we should demonstrate as a test as part of UNTP, but keep that as simple as possible. Because these trust graph verifications is really where we see that to be in a big part of the extension ecosystem. And we don't want to be building lots of these, because it has to do with sort of local and domain specific semantics.
+
+So that example you just used, which is a grain grower linked to a rain passport is very different than a general purpose, maybe data carrier linked to an identity, which we might want to articulate in the UNTP description, but we certainly wouldn't want to get a domain specific example at this level. No, no, but I think that the... So what Zack's saying is that there's not much you can say at generic level about trust graphs, because really it gets into industry specific and geography specific semantics.
+
+But I think there is, at UNTP level, a quite reasonable kind of couple of simple design patterns. And the two that spring to mind are, with regards to verifying graphs or link credentials, one is a passport or a conformity credential is issued by a DID, and there's a separate way to confirm who is that DID in terms of relation to some other authoritative register. Now, one of the authoritative registers is DNS, right?
+
+And so you can say, well, that DID is that web domain, and we all know who that is, but maybe we don't all know. Another one is, like Canada's going to be doing, their org book, which is their kind of British Columbia register of businesses, they're going to start listing DIDs that those businesses have that they verified as a kind of authoritative trust register. So there's a real simple, some random DID issues a thing, and some other more authoritative issuer says that random DID is this well-known identity.
+
+That pattern seems quite repeatable, right? And the other one is, I've made a conformity claim against some criteria in a standard, and there's a conformity credential that I'm pointing at as evidence to third party evidence to support my claim. And we need to have some, there's a common pattern there where you go, well, what's that conformity credential about the same scope, same topic, same criteria?
+
+Or have you pointed at a conformity credential attesting to the health of my cat when you're making claims about carbon intensity? I mean, they can both be technically valid, but not relevant with each other. So there's these two, I think, quite consistent patterns that we could put in trust graphs.
+
+And then let, then after that, it gets very industry specific, right? You're into Australian growers of meat and all kinds of stuff. But those two patterns feel like candidates for UNTP.
+
+So to close this, what we need to add a business friendly example, and maybe a diagram. I'd suggest the closure is to put those two examples, those two patterns in the trust graph section and make a PR and show these basically two patterns. And this is what the linked identities look like.
+
+And this is a design practice, right? Design pattern. Yeah.
+
+And the two, just to repeat is conformity linked to claim, conformity credential linked to claim and identity linked to claim. It's basically the two things are, are we talking about the same identity? And are we talking about the same criteria in a conformance, right?
+
+Those are the two things that you wanna join up across credentials. So if I'm speaking for a use case that we definitely would be having for the Global Battery Alliance, we could use a due diligence report that a company that produces a battery is receiving and it's receiving that due diligence report from a trusted auditor. The auditor is accredited by the GBA or something like that.
+
+Yeah. So that's the certifier is accredited. Yeah.
+
+Pattern. That's another one. And that's- It's, yeah, I think that, but if you have a due diligence report that is issued for a battery producer, then that's also conformity.
+
+Yes. But I'm just wondering, there's a third here, right? Taking on Suzanne's point, because there's two things you want, ideally want to check when you're, you're verifying a third party credential that is supporting a claim made in a passport, right?
+
+So manufacturer makes a passport and says, this battery is modern slavery free and has carbon intensity of three, right?
+
+[Speaker 2]
+Yeah.
+
+[Speaker 1]
+It says points over there to a third party auditor or certifier that says, yes, I've checked this battery and I assert that it's carbon intensity is three. So there's a point there where you want to go, are we talking about the same thing? So the carbon intensity claim, is it the same criteria?
+
+But then your point, Suzanne, is it's more than that because how do I know that certifier isn't just my brother?
+
+[Speaker 2]
+Yeah, exactly.
+
+[Speaker 1]
+Actually an authorized certifier, right? So now we're getting, so this accreditation pattern, it repeats consistently across the world, right? And it's already well-established in the product safety and product conformity world today.
+
+Everywhere. Yeah, and so why don't we add a third there about that particular accreditation or authority to act pattern, right? I think those are three patterns that are really common.
+
+Yeah, and I would love to see this as an example because that's where we will be starting, I think with digital product passports because the first will be coming for batteries and this is kind of data that needs to be verified and it's really important that it's verifiable, it's due diligence. So it would be really lovely if we could use that example. Okay, well, we'll commit before the next meeting to raise a PR with these three examples.
+
+Yep, and let me repeat the examples just to clarify for everybody. Same identity. Would you mind adding it on the issue, please?
+
+That would be even better. I will add it to the issue, but let me just say it out loud and then I'll add it to the issue directly after that. So same identity across different credentials.
+
+So identity linking. Conformity credential linked to claim. Well, there's criteria linking really, isn't it?
+
+It's making sure that conformity certificate is talking about the same thing you're claiming. So criteria linking, yep. And then the third pattern that we talked about is that the certifier of the conformity credential is accredited by a trusted third party.
+
+Yeah, it's really an authority. Trusted by an authority, yep. So that's taking you to the trust anchor.
+
+It might not be right, but let's knock out some examples, put up some little trust graphs, put it in a PR and we can all talk about it next time. What issue was that, Nies? Is it 10?
+
+I added the link. Yep, I'm adding it now. Amazing.
+
+I think I captured your point. Thank you for kind of summarizing for us. I've done samples of trust graphs.
+
+I don't mind working on this. But I also don't mind seeing someone else do it. I would like to see an assignee.
+
+Any volunteers? I'm happy, send it to me, Nies. Like I'm working on this in a number of different contexts and one of the places is steel certificates.
+
+So I'll work with you on that one too. Perfect. I absolutely look forward to that.
+
+Thank you for volunteering. I noticed Gerhard quietly got his hand up. Oh, I'm sorry.
+
+Yes, Gerhard. Yes, thank you. About conformity to claim.
+
+My question is that the idea of verifiable credentials is that everything goes automatically, as I understood. So no manual process behind this kind of verification. But when I have criteria that are checked by an assessment body, then these criteria could be used by someone as a claim.
+
+And when they match, then we have a good result. But the question is, how do we know that and how do we get people to use the correct criteria to get, in fact, the match results when a verifiable credential takes care of verifying the match between the claim made and the criteria that has been used during the assessment, which in fact comes from a regulation or a voluntary standard? That's my question.
+
+It's an excellent question, Gerhard. And I think this goes to an ambition that we should document. But the reality, and I can see how to do it, but the reality is to do it in an automated way would need some things in place that are generally not practiced today, right?
+
+And the first one is a regulator or a standards body that's describing the conformance criteria needs to describe them in a way that they can be permanently referenced, right? And essentially a URI, for example, how you calculate the carbon intensity of a cow or whatever, right? And that's something that most standards bodies don't do today.
+
+And then the next requirement is a certifying authority needs to actually issue the certificate as a digital verifiable credential. Most don't issue them as PDFs, right? So we're talking about a future state that doesn't reflect today's reality, but trying to describe a really simple pathway there.
+
+So I think if we say this and then we say, what does this mean for standards bodies? And what does this mean for certifiers? This is how you do it with simple examples.
+
+Maybe we'll move the needle. I don't know. But we still need to accommodate linking PDF certificates, right?
+
+So it must still be feasible and allowed to issue a digital product passport that points to a PDF certificate. So there is no automated trust graph verification. You just have to click on the thing and read it.
+
+And that's going to be 99.9%, isn't it, in the short term. But this is about how would we automate it. I hope that answers.
+
+Yes, it's something difficult because in the UNECE pilots, blockchain pilots, the suppliers uploaded certificates and they made claims. And the so-called certification assessment bodies had to view or read the certificates being uploaded along with the claims. And they had to verify or to state that it conforms.
+
+And in fact, the same still happens with this concept of verifiable credentials when the claims are not included. And only, as I understood, what can go automatically is the identification of the certificate that has been issued to a particular party. That's further.
+
+In the future, we can have something automated. But there must be some standardization about sustainability criteria. And all those certification bodies should try to make it happen in the future.
+
+Yes, but if we don't paint a feasible future, then we'll never get there.
+
+[Speaker 2]
+Yeah, yeah, yeah, yeah.
+
+[Speaker 1]
+But also, sorry, I know there's a couple of other hands up. I did have an interesting conversation with TUV Rhineland, one of the biggest certifiers, who made me switch the light bulb on that many of these big certifiers are actually seeing an opportunity to, if you like, endorse or reify or aggregate. So that they might go and look at a facility or a product that perhaps has a whole bunch of paper PDF certificates issued by some other certifier attesting to all kinds of things.
+
+They look at that and do the job of issuing a digital version that is like the summary, right? So I think actors will start to insert themselves to say, I can give you more digital value by looking at all this stuff and basically re-attesting to it in a verifiable digital way. I think that's likely to happen.
+
+Anyway, you know, I've said I'm very patient. Yeah, okay. Thank you.
+
+I think we kind of, I mean, for me, at least we're at the core of the discussions. That would, I love to participate. And I think we should really kind of paint a use case that everyone understands, because we might have different things in our heads at the moment using different terms.
+
+And then really check how we can implement this. For example, I don't know if I understood you correctly, Gerhard, but if you're saying you need some standardized credential, then I'm thinking of the TSM use case, for example, towards sustainable mining, where you can now issue a credential to a company saying that this company is conforming to the Towards Sustainable Mining standard. The Towards Sustainable Mining standard is already existing.
+
+It's understood. I'm not sure if it's really machine readable or, you know, kind of you have attributes of a machine readable in there. Maybe not.
+
+That's something that the standard would have work on. But then you would, as an auditor, issue a credential that uses the form of Towards Sustainable Mining. And that would be also semantically understandable.
+
+And then we can kind of automate everything. But that would be, I think, a really nice exercise if we could show such an example and always relate to, you know, a trusted issuer and a trusted auditor and so forth. And then also explain our patterns there.
+
+All right, Zach, and then let's move along. So I just wanted to summarize a couple of things. First, this kind of takes us back to the strict issuing and loose verifying sort of pattern, because in order to automate, you actually need to have relatively consistent data coming into your ecosystem.
+
+And so if and but the pattern of strict issuing but loose verifying gives us a transition pattern so that in the short term, people can issue what they want. It's a PDF. It's a screenshot of a picture of whatever it is.
+
+It doesn't matter. And so on the way in, we're flexible in how we receive information. But over time, as we get more and more consistent in how we issue information, we increase the automation of the verification pattern that we're describing.
+
+And what I anticipate is that over time, supply chain actors don't want to verify bad data. They will increasingly depend higher and higher quality and higher and higher consistency so that they can automate the data coming into their ecosystem. And that market demand is what will drive that consistency that I think we all know is required, but all sort of scratch our head about how we make happen.
+
+And so that kind of pattern that Steve described at the top of the discussion kind of is that transition pattern. And the market helps drive that sort of adoption of that more consistent issuing. Yeah.
+
+And the second thing sort of that I'd articulate, and that goes to Suzanne's point, which is I think we should bring a couple of use cases in, but we need to have enough of a pattern to test against. And so there's a little bit of a chicken and egg. Like, I agree we need the use cases, but we probably need the spec to be a little bit more fleshed out, a little bit more of these tickets answered, a little bit more progress on the components so that we can test against.
+
+And so I want to sort of call out Steve, Nis, Phil, in terms of moving this forward and just sort of ask other folks on the call to lean in a little bit, because we need a little bit more before we can really test scenarios. Zach, I think we can use Suzanne's suggestion towards sustainable mining because Nancy in British Columbia has already engaged the Mining Association of Canada, who has committed to implement digital verifiable credentials. And so we have exactly a sort of an understandable business scenario that would be a reflection of the three patents, because the identity one would be Canada's old book they're already implementing.
+
+So we can actually, I think, make it real pretty quick, all three of these patents using Canadian copper as an example. Yeah, but what's interesting about that, Steve, is we'd want to do that in the UN CRM project as an extension of this one, but we can kind of point back and forth in parallel. Sure, the actual specification would be abstract, but then point at CRM, but to test it, you know, a real-world scenario is always good, right?
+
+[Speaker 2]
+Yep. Just a very quick comment, and almost a sidebar, but we're talking here about CABs and their accreditors making their certificates more and more public. In those conversations you're having, Steve, are you finding that the resistance to them publishing their certificates is diminishing?
+
+Because I know that a lot of them are dead against publishing all their certs in one go. They put them behind some sort of weird thing where you have to log in as a person, and if you're logged in, then you can search for something and you can find it. They don't want to make them public because they think it's giving away their commercial secrets.
+
+It sounds as if we're making progress towards getting rid of that nonsense.
+
+[Speaker 1]
+My experience is exactly that, that there is less reluctance, but it is industry-specific and also actor-specific, right? And generally, mining is quite used to social license challenges and being quite public about their compliance. So it's actually easier to get a miner to publish their mining certificate and their Towards Sustainable Mining credentials than it is, for example, to get an organic cotton grower or something to publish their certificates.
+
+So it is sectorally different. It seems like we're not going to move on from this issue. So why don't we just go on?
+
+I will just inject, please add your comments on the issue. That's where they get captured and worked on. This is just talk we're doing here.
+
+Yeah. The last remark was about CABs and I lost it. Sorry, accreditors.
+
+Let's move to Sanne and see if you remember. Sorry. I don't know if that's already taken care of, but Phil, of course, is raising an important point here that for some information of the product passport, especially you can only have access to if you can authenticate as a certain person or institution.
+
+So I don't know if you've already captured that, that you come with your own kind of credential being, I don't know, the European permission or an auditor or so, and then it allows you to see the product passport and the due diligence reports. I don't know if that's captured somewhere already. That is another part of our work where we do have a section for that and some ideas.
+
+Yes. But it's a real problem. Yes.
+
+Yeah. I just want to, if I may, comment on... Let me see.
+
+It was Phil, I guess, about to make certificates public. I rather think that the standards are the value of a certification assessment body or the one who created the standard. And the certificate is just the outcome that it complies to or is conformant to the standard itself.
+
+So I don't think a certificate creates a lot of sensitive data. Oh, to go on. Depending on how you design it.
+
+Yeah, yeah, Gerhard's right, right? So the conformity credential design is specifically arranged around confidence that an identified product from an identified party meets an identified standard. The evidence behind that, what measurements did you make, the stuff that might be commercially sensitive is hidden, verifiable and auditable, but encrypted and not generally available, right?
+
+So it's a good pattern, I think, to say, keep all your underwear in the drawer, but just state independently conformance with the standard. And that is generally far less threatening for public disclosure. And that's part of our architecture in UNTP is to only state the things that really matter and evidence behind it can be a little bit more...
+
+[Speaker 2]
+...confidential, still auditable, but confidential. That makes perfect sense. And I fully understand why that evidence would be confidential.
+
+It's just that some caps, and it does depend on the sector, they want to keep the certificate itself, not difficult to find as such, but they don't want to basically, as they would say, publish their client list. That's the thing that seems to be a problem for some of these people. And so that inhibits some of them, even making the non-underwear drawer public.
+
+And so I wonder how much that's going to change. Yeah, we'll see. I think market pull will determine that.
+
+I agree.
+
+[Speaker 1]
+All right, well, we sort of got into the next issue, which was issue 18. I will encourage less talk and covering more issues. We have to do that next time.
+
+So if you don't mind, I'm going to be a little more bullish or a little harder on you to cut down on the chat next time, if you don't mind. Please add to issues. And we'll need to assign more names on issues so we get more work done next time.
+
+We're at top of the hour. So unless there's any closing remarks. Can I suggest next time we assign issues before, like we discuss them just to assign them as the action of the next one?
+
+Exactly. And it's my fault. I failed to kind of hold you back.
+
+But I will do a better job next time. We're all trying to bring everybody on the journey. It's okay.
+
+But we do need to start moving on this a little bit faster. Excellent. Thanks, everyone.
+
+And I'll see you next time. Thanks, everyone. Okay.
+
+Thanks, everyone. Thank you.

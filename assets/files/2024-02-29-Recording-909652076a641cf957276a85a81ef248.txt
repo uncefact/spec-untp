@@ -1,0 +1,597 @@
+[Speaker 5]
+Good morning, Brett. Hello, Steve. Long time no see.
+
+You're back safely?
+
+[Speaker 1]
+No, I'm still in Europe. Oh, are you? Flying back tomorrow.
+
+[Speaker 9]
+Okay.
+
+[Speaker 5]
+Hi, Steve. Hi, Brett. Hello, Steve.
+
+[Speaker 3]
+Camera off because I am in the car again. Sorry.
+
+[Speaker 9]
+Do you ever get out of the car?
+
+[Speaker 6]
+I don't know. I sleep in the car. I eat in the car.
+
+[Speaker 5]
+And there's Gerhard. Hi. Hi.
+
+Evening for you, I guess. Oh, yeah. I have another presentation coming up at midnight.
+
+Oh, have you? Yeah.
+
+[Speaker 4]
+Okay. Who's there now? No.
+
+Nobody else there to know. Okay. Let's wait a few minutes, I guess.
+
+[Speaker 7]
+Hello.
+
+[Speaker 9]
+Hello, everyone.
+
+[Speaker 4]
+Hello.
+
+[Speaker 1]
+Well, we may have one or two more join, but... Good morning. Good morning.
+
+All right. Well, thank you, everyone, for taking time in your day again to join another call. I thought I'd give you a quick update of the encounters in Europe, and then seek your feedback on simplifying section one of the recommendation document.
+
+Has anybody got anything else they'd like to put on the agenda? All right. So I'm still in Europe, just finishing a week holiday in Poland with my wife.
+
+But there was an intensive week a couple of weeks ago at GS1 and OECD and European Commission and so on. And one more participant. I thought I might give you a quick update on that.
+
+GS1 holds a global once a year forum in Brussels. And I did attend that and listen to a number of their customers. As I guess you all know, they're the guys behind their GTIMs and barcodes.
+
+And there's Rakesh.
+
+[Speaker 9]
+Hello.
+
+[Speaker 1]
+Hello, Nis. I think we've got a quorum. So I was saying I'll just give a quick update of Europe meetings, because it's relevant to REC 49 and the appetite for it.
+
+And then seek your feedback on some simplifying changes on the intro section of REC 49. So I spent a day and a half at the GS1 Global Forum and listened to some fairly, some of their major customers, talk about their challenges with due diligence and corporate disclosures, and generally looking to GS1 to recommend a pathway forward. And it does seem that the GS1 thinking about resolvable identifiers and all the stuff we're talking about is very well aligned with ours.
+
+And so there is an opportunity to work with them to basically tell the same story, GS1 to its customers and us to our government stakeholders, voice to industry, voice to government sort of thing, telling the same story. And there seems to be a good appetite to do that. So I want to approach the UNECE Secretariat to see how they feel about working more closely with GS1.
+
+In Paris at the OECD Textile and Leather Due Diligence Forum, a lot of the major brands, for example, I spoke to Adidas and some others, are also concerned about how they're going to meet their due diligence requirements. And particularly for the high volume brands, they struggle to get beyond tier two suppliers. Because when you're dealing with cotton and leather and things like that at volume, when you reach into the farm, it's too far away, even for a company the size of Adidas to influence farm behavior.
+
+And so they're really keen for a standard that they can push through their supply chain without dictating any particular solution. So a lot of the pain points that I was hearing are very well aligned with what we're doing. So it was quite comforting.
+
+I also caught up with, for those of you who are familiar with the European Digital Product Passport, there's a program called Surpass, which is like pilot projects. And they've just received a second tranche of funding to do 13 pilots, six in textile and leather, six in, I think, electronics and finished goods, and one in construction. And are keen for some of those pilots to include cross-border information feeding the European DPP.
+
+So they see a very complementary role for UNDP versus EUDPP. So, again, the door's open to work there. I also went to see DG Grow, which is the European Commission responsible for the Digital Product Passport, and got a very similar sense that they see this as complementary to their efforts and are keen to see end-to-end pilots.
+
+So it feels to me like it's quite a few moving parts all just dropping in place to test UNDP at scale quite soon. So that's relatively positive feedback, I think, that we got from everywhere. That's all on that.
+
+Any questions or comments or thoughts?
+
+[Speaker 6]
+I do have a question, Steve. Sorry for being a little late. Maybe you mentioned this earlier when you started giving a debrief.
+
+Did you talk to anybody in the DG Food or the agriculture, agri-food sector within the European Union? Did you meet with anybody in that as their interest? Yeah.
+
+[Speaker 1]
+So I did have a meeting with DG Agri, who is also interested in really more, I think, can they use the UNDP-like architecture for food traceability and transparency? Their timeline was a little more distant, but they were talking about can we do something in six months or so? So, yeah.
+
+Short answer.
+
+[Speaker 4]
+I have a comment or remark about new projects. I just searched for the chat box. Let me see.
+
+Yes. I put in a link. This one.
+
+And it's about a project UN Environment Programme is going to start. Ah, yes. And how does this relate to the UN DPP and the EU DPP?
+
+So how do we merge all these upcoming initiatives about DPP? It's not only around CERPAS, but also around other organisations. That's just some information I want to provide.
+
+[Speaker 1]
+I think that's the initiative that Virginia presented at last week, isn't it? I was in CS1 and Virginia presented. So if I gather right, there is some appetite to work with UNEP on this, where they will lead this cross-border environmental passport development, but ideally base it on UNDP as an industry extension.
+
+Was that right, Virginia? You're in a better position to give a summary.
+
+[Speaker 2]
+Well, there wasn't very much discussion after mine, but there seemed to be. I mean, it's hard to tell because in UN meetings, they will never say that they don't want to cooperate and work together. That would be unbelievable.
+
+So we have to wait and see. But I hope that what they decide to do is to base their work on the UNDP-TP.
+
+[Speaker 1]
+Yeah. So I think there was a follow-up meeting agreed though, right? At least.
+
+[Speaker 2]
+Yes.
+
+[Speaker 1]
+Okay. So it's not dead, but you're right.
+
+[Speaker 2]
+I'm sure that Maria-Theresa is going to follow up with this.
+
+[Speaker 1]
+Right. Okay. Yeah, there's, needless to say, no shortage of initiatives.
+
+And the challenge is one of herding cats as much as possible, to try to aggregate as many of them around a consistent architecture as possible. So that was mainly my mission last week in Europe, was to see if we could pull together, surpass the EUDPP and GS1 and others into something, a consistent approach. And there's a lot of appetite for it.
+
+And it felt like more than lip service. It was more than, yeah, sure. It was like, yes, let's do that.
+
+So it was comforting.
+
+[Speaker 9]
+I think the best vehicle has surpassed.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 2]
+I have to say also that UNEP is not very used to developing IT standards. So I think they- They ought to appreciate some help then. Yeah.
+
+[Speaker 1]
+All right. There was somebody who wanted to make a comment. Yes, Steve, so Peter here.
+
+[Speaker 8]
+I was just wondering if you observed any, I suppose, divergent paths when it comes to DID methods just in Europe?
+
+[Speaker 1]
+All right. No. To be honest, the discussion was more at a strategy level than a DID method level.
+
+But there is, of course, DID-EBSI, which is the European services blockchain infrastructure. But those guys are at pains to emphasize that they have no intention of forcing everyone onto DID-EBSI, and DID-WEB is also fine for them. Thank you.
+
+Yeah. There was a little bit of-I think the kind of blockchain skepticism is growing a bit. I didn't talk too much about it.
+
+But, yeah, there was a sense there that emerged for sure. All right. Let me share my screen because I want-I made a few-I think, Virginia, we still need to cut down Section 1.
+
+So I just wanted a quick zip through a few minor changes I've made and also solicit everyone's opinion on what are really the core recommendations. So I cut down some of the words in the introduction. So it's half a page.
+
+And target audience didn't really change. Purpose and benefits, again, just cut out a few words but without changing meaning. I modified this diagram, simplified it, as you suggested, Virginia.
+
+And also cut down the UN Transparency Protocol summary a little bit. So it's a bit under a page. And move recommendations up to above challenges.
+
+We could put them back again, but I want to make the challenges shorter. And here's where I wanted to seek your feedback. I read through the recommendations, and I was trying to think, really, is it the right grouping?
+
+And are we passing the right message? And I suggested some slight refocusing here where we break the recommendations into those things a government does kind of at the national policy agenda level, you know, stimulating the use of digital product passports and things like this. But really it's policy that impacts industry.
+
+And those things that a government does themselves, like building just anchor services. And then those things a government does for capacity building. So first of all, do you think that breakdown of sort of national policy versus government-specific implementation tasks versus capacity building is a reasonable breakdown for recommendations?
+
+Sounds all right. Sounds right from my point of view, yeah. Sounds good.
+
+Yeah, okay. Then when it comes to national policy, I might tweak the yellow words a little bit, but there are basically three things. One is about if you're running a digital product passport initiative, then base it on UNTP.
+
+So one is about passports. One is about the import compliance using the conformity credential. And the other one is about if you're negotiating trade agreements, then you may want to reference UNTP if those trade agreements contain sustainability clauses.
+
+Exactly. Those are the three kind of recommendation areas, Virginia?
+
+[Speaker 2]
+I think so. When you're finished going through this, I wanted to make a comment about the change in organization in terms of the location of the recommendations.
+
+[Speaker 1]
+All right, yeah. Well, that was a suggestion. I can't remember who made it that said you get down to page 10 before you get to recommendations and we might lose the audience, so I lifted them up.
+
+But we could also achieve the same thing by making the challenges shorter.
+
+[Speaker 2]
+No, this is structured sort of in the standard way that they structure the recommendations. And I think it's better to have something either at the very beginning or at the very end than in the middle, so to speak.
+
+[Speaker 9]
+Okay.
+
+[Speaker 2]
+Because from a logic standpoint, if your recommendations are supposed to meet the challenges, you should have the challenges first.
+
+[Speaker 3]
+Yeah, yeah. I am the one who made the remark you mentioned, and it was also one of my thinking to put that at the very beginning instead of at the end so that people know what we're talking about, and then they have all the rationale for it instead of having it at the end. So I would second Victoria's ideas to put it much more top on the document structure.
+
+[Speaker 2]
+Yeah, except that from the diplomat standpoint, they won't have any idea what UNTP is, which is all around in the recommendations until they've read the rest of the text.
+
+[Speaker 3]
+Right. But I'm just afraid that if they don't know what the recommendations are, they don't even read to that. So you need to get them hooked with some things, the recommendations, and then they will read the new following.
+
+[Speaker 2]
+Well, at least the ones who approve it will definitely read it. Because in UN meetings, they don't approve recommendations that are coming from them until they've read them.
+
+[Speaker 3]
+The one who approved, yes. But once the new protocol is written, it's just a wider audience and you want also a wider audience to know it. And then for this wider audience who is not attending the UN meetings where it's approved, it's good to have it at the beginning.
+
+I work in the UN and I work in the diplomatic circles.
+
+[Speaker 1]
+Right. Well, look, I'm happy to take advice on this, right? It's not my strength.
+
+So do you agree, Virginia? I think we might get kicked back from the secretariat who go, why are the recommendations at the beginning? They're always at the end.
+
+But I'll take two months.
+
+[Speaker 2]
+I mean, my personal preference is to have them after you've explained what's in them. And why it. So that you've given them enough information to understand what the recommendations are.
+
+And why you're making them. That's just. My preference, but I think we should also consult with Maria Teresa.
+
+Standard format for the recommendations that they.
+
+[Speaker 5]
+Steve, I agree with what Virginia was just saying, but. A query. Could you do that?
+
+Have the recommendations up the end, but. Somewhere in one of the earlier sections, just make them in as three dot points or something. And then, you know, refer to the recommendation section on page 31 or whatever.
+
+I know.
+
+[Speaker 1]
+So the recommendations will be on page. Five or six. We're only talking about section one, right?
+
+Still trying to get a concise. Section one. So.
+
+The question really is will people read through. The material there and. Still have the energy by the time they get to page, whatever it would be seven or eight.
+
+That's assuming we cut down the, the challenges, which I think that can do to. I don't know. Two pages from four.
+
+[Speaker 2]
+And it's like, if I get a document like this, and I really don't feel like reading the rest of it. And I think I'll understand it. I skipped to the end.
+
+I don't read through the whole thing and I don't not read the recommendations. I just get the part in the middle.
+
+[Speaker 1]
+All right. Well, So let's just go back to these recommendations then. So, so.
+
+Something about passports in a national economy. Basically dry. I'm tempted to.
+
+Emphasize a bit more. I think the. The use of passports in, in, in national economies for traceability and transparency.
+
+But are these are the three, do we agree? These are the three themes for national policy. One is about domestic passports.
+
+One is about imports. And the other one is about trade relationships and FTAs. Is there anything else?
+
+[Speaker 2]
+If you want to put in something about. If you want to be more. How can I put this?
+
+If you want to put in something more about. Using. Product passports.
+
+I think that would need to be a separate point. Because you can say that if you have a product passport require that it uses UNTP, but you can't say that. Tell them to require.
+
+[Speaker 1]
+Yeah, I'm not sure. It's the role of.
+
+[Speaker 2]
+You can say to encourage or something like that.
+
+[Speaker 1]
+Well, let's, let's get a quick vote. Should we. Should the wording be, if you're considering a passport.
+
+Then base it on UNTP or should the wording be, you should consider implementing. Product passports in your national economy.
+
+[Speaker 2]
+Separate ones. One that says consider. And then the second one, which says.
+
+So you'd have a. ABCD. Because you'd have one that says.
+
+Consider. And then the next one that says. If you do then require.
+
+[Speaker 1]
+Christophe.
+
+[Speaker 3]
+Yeah. Yeah. What I was saying is I was more in favor of the second one.
+
+And before we did. I said what you said. I encourage you to use a passport.
+
+If you consider to have one domestic and being also from Europe. And you see there was a lot of countries interacting together. The notion of domestic for Europe would be at least Europe and not national.
+
+So I think what we really want to say is. We should encourage. As a mean to ensure transparency and against greenwashing.
+
+Does that make sense?
+
+[Speaker 6]
+I can just build a little bit on that one. Steve. And I think that's one of the issues.
+
+I think also. Taking the European. If you build at the national level, I think this is doomed not to be adopted unless it's mandated, mandated by the commission, because it's going to end up with 27 different passports for Europe.
+
+And, you know, I'm not, I'm, I'm obviously taking the worst case. But I think that. That's the challenge.
+
+Is if it's only focused out of or if there's a strong focus at the national level. We may be creating a reason why people won't do it because it's I've got too many. I've got to conform with.
+
+[Speaker 1]
+Yeah. I mean, this is of course, going to the world, not just Europe. And I'm aware that.
+
+It's probably a number of governments sometimes even at state level considering passports, but different purposes, you know, Australia is considering one for recycling.
+
+[Speaker 6]
+Yeah. I understand. Yep.
+
+[Speaker 1]
+And so we're trying to.
+
+[Speaker 4]
+Yeah. Go ahead. Jerry.
+
+I just want to. If, if, if there are a few lines that, that. We expect diplomats, et cetera.
+
+We'll read. In, in the beginning of the document. Then I advise not to use, especially in the beginning or in this.
+
+Piece. Abbreviations. Because it makes stronger to talk about passports, especially.
+
+Diplomats, et cetera. They know about. Passports.
+
+The essence of it. Yes. All right.
+
+Brent. Yes.
+
+[Speaker 5]
+Just to comment on an earlier statement. I really wonder. About the wisdom of suggesting that every nation.
+
+Is going to do the same thing. I'm immensely sceptical about the prospects for, for such an outcome. But I do think it's important to make clear that we're proposing.
+
+A single template. And from that template. You know.
+
+Nations may, may draw. How they want to. Deliver.
+
+The specifics now. I'm in Europe. We'll have to fight its own battle in terms of.
+
+Agreeing or not agreeing on whether they all do the same thing, but. You know, at least Europe as a block has a, has a chance. Of doing so.
+
+I just, I just think we have to focus on the template, not. And not suggest that everyone will be doing. Identical thing because different nations have different requirements.
+
+[Speaker 2]
+I think that's covered by the second sentence in B. That says this, keeping in mind that the UNTP can be customized. For individual industries and national environments.
+
+[Speaker 1]
+Yeah. I mean, we can't tell nations what to do. We can only recommend.
+
+Right. But. What I'm hearing is let's recommend that.
+
+Digital product passports be used as a means to promote. Transparency and national economies. That's unspecific about the design of it.
+
+And then a second point that says, should you do that? We recommend you base it on UNTP. So that's not a dictator.
+
+You must use it, but for interoperability and scalability reasons. It'll make their life easier for their, their economy. Their economic actors.
+
+Sorry. Global traders themselves. A lot of them.
+
+All right. So then. Moving on to the.
+
+What will government agencies themselves have to do? Or we recommend that they do. I want to cut down some of these intro words a little bit, but.
+
+This is basically about acting as a trust actor. Right. So it's business.
+
+Registration authorities issuing. Business identity credentials. And.
+
+Compton authorities issuing permits and certificates. I wonder, is there a bit of duplication here when we start to talk about the. This.
+
+I don't know. So he is the one about. What some countries are calling guarantee of origin credentials.
+
+This is the the regulator. Inserting themselves at the export point to add trust and integrity to the export bundle. I wonder if we should use the word guarantee of origin there.
+
+Has anybody heard that used? Sorry.
+
+[Speaker 3]
+What would you like to put instead? I know.
+
+[Speaker 1]
+This is the recommendation that says dear regulator, you may want to consider issuing credentials at the point of export. A bit like a Department of Agriculture issues by the sanitary search today. There is an ongoing discussion here in Australia, and I don't know whether it's happening in other countries where.
+
+Agencies are trying to figure out what should they be doing at the export point to support sustainable produce. But moreover, when there are multiple sustainability criteria, let's say a shipment of red meat or something like this that has carbon footprint and biodiversity claims and so on and so forth. One question that arises is, should the issuer be the agency that's responsible for the sustainability concern or the commodity?
+
+So, you know, if it's a shipment of beef, is it the Department of Agriculture who basically endorses, if you like, carbon footprint, biosecurity, even though those two things are actually not Department of Agriculture concerns? Or is it clean energy regulator? There's this kind of matrix of responsibilities where an agency is responsible for the commodity, but is not responsible for some of the sustainability concerns.
+
+And I'm not sure it's very clear who should sort of hold the lead. Maybe the emergent thinking is if you're responsible for the commodity, then basically aggregate the other claims with it. Do you know what I'm saying?
+
+[Speaker 3]
+Yeah, I see what you're saying. And it reminds me of the discussion of where you put your safety regulators, whether you put the safety regulators of an industry in the industry or upon from the industry. It's going to be the same type of things because the credentials need to be credible for outside.
+
+In this perspective, even if the community is aggregating, the issuer of the ESG credentials should be a different department to raise credentials and legitimacy to the outside world, I guess.
+
+[Speaker 5]
+What's your question? Because you do say that the regulators can provide one or more certificates. So that leaves either option open, doesn't it?
+
+Yeah.
+
+[Speaker 1]
+I think the question is should we make any recommendations here or just leave it up to the regulators? No, why? Leave it alone.
+
+[Speaker 9]
+I agree.
+
+[Speaker 2]
+I think the wording's fine. I wouldn't change the guarantees. I wouldn't put that in.
+
+[Speaker 1]
+Okay. So then that's good. I added this capacity building one.
+
+There is one more action that economies need to do to make this work, and this is around issuers of identifiers. So government is an issuer of some identifiers, obviously, things like business identity and so on. GS1 is, for example, an issuer of product identifiers, and they're already moving.
+
+But the whole architecture depends a lot on resolvable identifiers. So given an idea of a thing, I can get more data about the thing. And what I realize is there isn't a recommendation here about identifier scheme owners and kind of the recommendation we make to them about making their scheme resolvable and verifiable.
+
+So GS1 is already doing it.
+
+[Speaker 2]
+Now that you raise that, I think it's even more than that. For example, certificates of origin are typically issued by Chambers of Commerce and not by government agencies. And then you have things like tier carnets, which are used and verified by customs, and tier carnets are also issued often by Chambers of Commerce, I believe, with the IRU being the trust anchor.
+
+So we may want to do something about non-government agencies that issue certificates and things that are used by customs.
+
+[Speaker 1]
+So the general case here is there may be some organizations that issue or manage identifiers that are not government agencies, but their participation. The one I'm thinking of is the one we encountered here in Australia, which is the National Livestock Identification Scheme. These are RFID tags in cow's ears.
+
+And to be able to resolve to a livestock passport, you need them to do something. It's not a big thing, but nevertheless, you need them to do it. Is it a recommendation to government to kind of survey the landscape, if you like, of identifiers and encourage scheme operators to make their identifiers resolvable?
+
+Is that the way we approach it?
+
+[Speaker 2]
+Yes, but I don't think that they would recognize, for example, certificates of origin as being identifiers. I think you have to make it a little more broader than just identifiers.
+
+[Speaker 1]
+Yeah, there's two separate things here we're talking about then, right? One is there are various credentials, like certificates of origin, issued by non-government parties. Should we be including something about that in this recommendation?
+
+That's question one. A separate question is because the architecture depends on resolvable identifiers, and when you move upstream, away from finished products where GS1 dominates, you very quickly encounter quite a diversity of identifier schemes, such as the Australian National Livestock Identification Scheme. And those scheme operators won't be aware of the dependency that this architecture has on them.
+
+And what's the avenue to raise that awareness? Is it through government? So we say create an inventory of important identifier schemes and promote the transition to making them resolvable, blah, blah, blah.
+
+Is that the approach?
+
+[Speaker 5]
+Yes, I think so.
+
+[Speaker 8]
+I'm wondering though, Steve, is that fit better on the technical recommendation side as opposed to the policy side? So the policy says you should have something like the UNTP, and then when you go into the implementation, you say, hey, the big thing to focus on here is resolvable identity. And I'm wondering if getting to that level of detail is beyond the scope of a policymaker.
+
+[Speaker 1]
+Yeah, I don't know. We could leave it out, but then its importance will get lost in the weeds of the technical details, right? Whereas is there something we should say to a policymaker without – maybe we can fix the language a bit, but about the importance of identifier schemes right up in the policy recommendations?
+
+It just feels like, you know, when I think about rolling these sort of things out, it's basically a roadblock.
+
+[Speaker 2]
+I would put in sort of a generic reference to information, non-government organizations that issue information, be it identifiers, be it certifications, that are used for border clearance.
+
+[Speaker 1]
+It's not just border clearance.
+
+[Speaker 2]
+Well, that are used in the context of product passports then. And I think that this H under capacity is about promoting implementation, not about – I mean, it may include some capacity building, but it's really about promoting implementation and understanding. I think there was a useful – But I wouldn't call it capacity building.
+
+I think that kind of downgrades its importance.
+
+[Speaker 5]
+Yeah, it's probably not capacity building. I just wanted to draw attention to a comment from Rakesh in the chat. I would be tempted to reword it as something like engage with relevant stakeholders to enable systems to continue interoperability with global markets.
+
+That sort of catches everything, I would think.
+
+[Speaker 3]
+I think there is a debate between promoting uptake and capacity building, because capacity building is something you ask people to do in order to be implemented. It's more practical in a way than promoting uptake. So I'm not saying that we should change the title back to capacity building, but at least within promoting uptake, it would be clear that capacity building is a very important means of promoting uptake.
+
+Not only talking, you should do what you should do, but here is how you will do it.
+
+[Speaker 2]
+No, I would leave it as promoting, and then one of the ways that you can promote is to do capacity building. Yeah, I'm fine with that. But it should definitely not be under capacity.
+
+[Speaker 3]
+Yeah, I'm fine with what you say, Virginia. I'm fine with that, yes.
+
+[Speaker 2]
+And I would make capacity building, I would make the implementation pledge first, and then capacity building second, in terms of importance of the recommendation.
+
+[Speaker 1]
+Yeah. Where do we put this identifier scheme thing? It's not really in promoting uptake.
+
+I think it's in the first section. I'll get rid of this. I'll just put dot, dot, dot there for now.
+
+It's up here.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+Let me just read through the chats. People have been making comments that I haven't read. What's this one, Nes?
+
+[Speaker 7]
+It's classic.
+
+[Speaker 1]
+Oh, competing standards, yeah, yeah. Yeah, yeah. Every time you try and make a universal one, you just made another one.
+
+Yep. Indeed. We're trying to get in there.
+
+I mean, I think there's a lot of this. We think it's a chaotic landscape at the moment, but I think it's only just beginning, really. With any luck, if people decide to copy something already done, it'll help.
+
+Somebody else? I'm just scrolling through the chat here. Anybody want to put their hand up and speak to their comment?
+
+[Speaker 7]
+Well, I was looking through Surpass, and it's just all over the place. It's very immature, and it's a lot of different agendas just all pouring in. That's my take on it.
+
+Very far from being something to pick up and implement. Nowhere near that. That's my assessment.
+
+If you disagree, I would love to kind of get pointers to where I'm wrong.
+
+[Speaker 1]
+No, I don't disagree. My understanding of the objective there is basically regulatory sandpit work. It's the European Commission throwing money to basically go nuts doing experiments and then learn from that to inform the regulation.
+
+In a way, it's laudable. It looks like chaos at the moment because everyone's going nuts doing their own thing, but they haven't yet defined a standard deliberately. They only just appointed Senelec to look at the data carrier technical stuff.
+
+They haven't even specified yet what the data model is for passports.
+
+[Speaker 7]
+It's a different approach from SVIP, which has a similar agenda, but a very different take on it. It's earlier days, I'd say.
+
+[Speaker 1]
+Yes. All right. Let me just go back to the document.
+
+Thank you. This is cartoon. Serpos is a pilot.
+
+[Speaker 9]
+Sure.
+
+[Speaker 1]
+Yeah, it's a collection of pilots, 13, right? Deliberately designed, I think, just to expose questions. I think it's a justifiable fear if I'm the EU of getting the regulation wrong and a strategy that says better to experiment and trip over your shoelaces and learn from that and then make regulation.
+
+Turn the other way around. But they haven't got much time left. All right.
+
+Sorry, just one quickly. The challenges and solution stuff. I think it's too long.
+
+One, two, three, four, and a bit pages with some of it still to go. I was going to have a crack at cutting this down to two pages, especially if we're going to insert it before the recommendations. Any thoughts on that?
+
+[Speaker 2]
+I just want to make a comment that, and you can check what it is with Maria-Theresa, but I know that they give to you a page limit, but the actual thing that they look at is the words, the number of words, because it's an issue for translation. And the page limit is a limit on how much they're going to have to translate.
+
+[Speaker 3]
+I read the document from scratch. I was annoyed not to know what we're talking about until I get to the recommendations. And when I get to all these pages of challenges, some of them being strong challenges and some of them being weak, I nearly gave up before going to the recommendations.
+
+So I think there is a point to reduce the challenges for this type of policy document so that it remains easily readable for most people and not only for the one who negotiates that at the UN.
+
+[Speaker 1]
+Yes. So if I can successfully cut the challenges down to two pages from four, or two or less, should we then insert them back before the recommendations or leave them after the recommendations?
+
+[Speaker 3]
+Any thoughts? My sense would be still to keep before. Now I understand Virginia's point that it's not the usual way to put it at the bottom.
+
+I think it's more acceptable to have them at the end if the challenge is reduced, yes.
+
+[Speaker 9]
+Okay.
+
+[Speaker 3]
+All right.
+
+[Speaker 1]
+Well, then I'll issue a new version of this with the two-page challenges with our updated structure of recommendations, just Section 1, for your review on Monday. And hopefully then we're basically done with Section 1 and Section 2 is fairly straightforward. It's mostly cut and paste.
+
+I've got nothing else, unless anyone else wants to bring anything up at this point. Where to from here, Steve? Rework Section 1 as discussed, make the challenges shorter, stick them back above the recommendations so the whole lot is maximum six, seven pages, and reissue it to you, to this team on Monday for a final review.
+
+By the end of next week, we need to give it to the Secretariat.
+
+[Speaker 9]
+Good.
+
+[Speaker 1]
+Okay. Then give everyone back 10 minutes, unless anyone's got anything they'd like to say.
+
+[Speaker 4]
+One question, Steve. When do we get the new version to read? I can commit to Monday.
+
+So Monday we receive it, and when can we react on it?
+
+[Speaker 1]
+So our next meeting is Thursday this time, before the Thursday meeting. I'm assuming that having been through this several iterations where I'm not expecting a lot of change over the Monday version, but I can incorporate any final change before giving it to the Secretariat on Friday. If I get it before Thursday.
+
+[Speaker 4]
+Okay. Okay.
+
+[Speaker 1]
+That's all. All right. So thank you, everyone.
+
+Thank you.
+
+[Speaker 4]
+Thanks, Steve. Thank you. Thank you.
+
+[Speaker 9]
+Bye-bye.
+
+[Speaker 4]
+Bye.

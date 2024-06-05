@@ -1,0 +1,691 @@
+[Speaker 9]
+It was missing, yeah. Now that's it.
+
+[Speaker 1]
+Yeah, excellent. Steve asked me to run it, the meeting today, because he had other obligations. I forget what it was, but happy to do so.
+
+I propose we just go, normal process, so we go through pull requests, then through issues and issues in the order of least recently updated. So we make sure to get to the stuff that's sort of stuck at the bottom. So without further ado, pull requests.
+
+There is one from Zachary. Is Zachary on the call? Yeah, you are.
+
+Zach, this is a closed pull request. Do we want to just ignore it, kill it? Can you introduce what this is about?
+
+[Speaker 2]
+Yeah, so basically this was the first attempt that I made to add information about sort of what we see as our test architecture. And Steve gave me feedback about things I need to do to update it, so I haven't done that yet. And so I think I put the pull request in a not submitted state, and while I went through the process of fixing based on the feedback that Steve gave me.
+
+[Speaker 1]
+Got it, okay. You can also put it in draft. I don't even know what this date is.
+
+That's what I thought I did.
+
+[Speaker 2]
+I thought I put it in draft, which is what I thought I was doing, but apparently not. But I will have updates to it by next week, for sure.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+I would encourage you to, like, this is better than nothing. So sometimes we want to just merge it in, even if it's half-baked. But this is perfectly cool.
+
+Where does this sit? Tools and support.
+
+[Speaker 2]
+I'll be back in a couple of minutes. I'm sorry.
+
+[Speaker 1]
+Okay. Okay. Let's just leave this.
+
+It's in draft, and we're looking forward to seeing the outcome next week. Okay. Issues.
+
+We got a lot. We got 50 issues. We are very good at creating them.
+
+Maybe less good at following up. I'm going to sort by least recently updated. You can follow along.
+
+Where's the chat here? There, if you want to get to them yourself. Top one is selective disclosure use cases and requirements.
+
+We put this on parking lot, which probably means we don't want to spend time on it. This is the kind of thing I might volunteer to do a demo of selective disclosure on the UN forum, because it's an interesting topic, more from a technology point of view than industry still. But otherwise, let's just keep it in the parking lot and move along.
+
+We have one here. PDF generator. This is assigned to three people, none of which I believe are on the call.
+
+I don't know where the PDF generator capability would sit in this specification. Does anyone have any comments to issue 40? I'm just going to copy this.
+
+I suspect I'll be writing that a lot of times. This seems a little far-fetched for a spec, in my opinion, but I'm going to be aggressive and put a pending close.
+
+[Speaker 3]
+I think all that needs to be done here is for someone to identify if this suggestion works for turning the GitHub site into a PDF document. And then maybe put a note at the top of the document or a note somewhere so people can find that information.
+
+[Speaker 1]
+I see. So it's this stuff, putting this in a PDF. Great point.
+
+Why not just go print, save as PDF? Isn't that what I think would do it?
+
+[Speaker 3]
+It's not my issue. I'm just doing an interpretation job.
+
+[Speaker 8]
+All right. Moving on.
+
+[Speaker 3]
+It could be they're also referring to the list of issues.
+
+[Speaker 1]
+Oh, no, it couldn't be. That would make no sense at all.
+
+[Speaker 3]
+My camera started working. It woke up.
+
+[Speaker 1]
+It's beautiful. We're seeing you. What I thought it was was a PDF version of a credential, which is also a thing, linking back to the data and all that good stuff.
+
+But I'm fairly sure you're right. This is because UN needs the spec in PDF form. So that's very likely what it is.
+
+Okay. Let's move along.
+
+[Speaker 3]
+The UN will need it in a Word format if they publish it. I'm not sure you have to check with them. If there's any part of it that goes into a parliamentary document, it has to be in Word.
+
+But if it's just being put up on the website, then that's correct. It's a PDF.
+
+[Speaker 1]
+Sorry. Good. Very good.
+
+Moving on to 29. I shared the link. Do we have Michael on the call?
+
+I wonder if Stefano, you had a comment here.
+
+[Speaker 6]
+Yeah, actually, it was an old comment, but in fact, still applicable, meaning that on this subject, I simply indicated that even considering, as Steve is mentioning, that we are hopefully tightening more and more between our initiative and the EU counter initiatives. Maybe there is an opportunity for us on this matter to align the right to repair latest regulations. So if we want to recall them into our document, this could be an opportunity to increase the alignment because anyway, regulations already indicate guidelines on this matter.
+
+This was basically my comment.
+
+[Speaker 1]
+Okay. So this is not a technical...
+
+[Speaker 6]
+No.
+
+[Speaker 1]
+...needed for this? Okay.
+
+[Speaker 6]
+Not really.
+
+[Speaker 1]
+Can you be convinced to volunteer to give it a go and suggest that verbiage? In a pull request?
+
+[Speaker 10]
+Yeah.
+
+[Speaker 1]
+That's amazing. Thank you so much.
+
+[Speaker 8]
+And you are here. Excellent. Thank you for that.
+
+Much appreciated.
+
+[Speaker 1]
+Let's move on to issue 28. What depth? Ah, yeah, that's a good one.
+
+Right. This made me... I had some philosophical thoughts on this about going upstream and downstream and we are more upstream, EU being more downstream focused.
+
+I don't know if that makes any logical sense. It does in my brain, but that's not exactly enough. What else do we have?
+
+We have Chris here. Stefano, you again?
+
+[Speaker 6]
+And in this sense, I was simply indicating that in my view, considering our action, I would strongly look at both upstream and downstream. So the UNTP looking at both sides, which is also somehow related to what? I don't know.
+
+[Speaker 1]
+Okay. I don't disagree. The original question is depth.
+
+And we're kind of then saying depth both up and down now. I agree that there's no logical reason to have a limit to how many steps you can take. There is a practical limit.
+
+It's difficult, but I don't see why we would set any such limits. I do question what does it mean to go downstream? If it is that second life and repair log and all those things, where does that data get stored?
+
+That's unclear to me.
+
+[Speaker 2]
+Well, and we had a conversation about this in a different forum around link resolution links in the digital product passport. And the idea that we sort of were talking about was if I have a product ID and there is data stored about it via a digital link resolver, is there a model of a patent only of additional information as the world changes? And what we wondered about was using a digital link resolver endpoint as a, I'm just not remembering the context, but as a pointer as opposed to a fully resolvable URI.
+
+So, the digital link resolver points out to where the circularity information might exist. And as that gets updated in time, there's additional information link resolution. And Bill, that might be a question for you in terms of would the specs support that kind of a model?
+
+[Speaker 1]
+Of course, the solutions to that problem. I think you're conflating the digital link, what's it called, data carrier side of things with the subsequent data that gets added.
+
+[Speaker 2]
+The idea was to use link resolution as a pointer.
+
+[Speaker 1]
+So, you have a product, you have whatever, a loudspeaker, it's got a QR code, which links to a product passport. That's the digital link thingy. That passport can point to, has been issued at some point in time, and it can point upstream to it's manufactured there, it had these carbon emissions, all those things that kind of went into the product as it was built.
+
+The credential is issued pointing backwards at that, but then appending more is issuing new claims about the product. I owned it, I sold it, I repaired it, all that stuff. And that can link back to the main digital product passport, but you can't really go the other way because then you would change the product passport.
+
+That requires the owner of, the holder of that QR code, sorry, the holder of the GTN essentially, or however you do this, to update the credential. And that's just, I don't know, is that what you see?
+
+[Speaker 2]
+No. So, I think it's really important to elaborate at that level of detail. So, the idea wouldn't be, because absolutely the holder of the GTN is not going to update the digital product passport 10 years down the line because their customer updated it.
+
+That's just not going to, that's not realistic. Maybe if we get a fully circular economy and manufacturers have full ownership through the life of the product, but that's a big policy change that's beyond the scope of what we're talking about here. The idea that we were exploring was using a link resolution endpoint for append-only information as opposed to a fully resolvable URI so that the holder of the good could append to that point without changing the validity of the passport was the conceptual idea we were exploring.
+
+I don't know that we can, I'll have to dig out where that was.
+
+[Speaker 1]
+That's good. Yeah, but we agree in the problem statement and the solution that would need to be. I don't, I do think there are tons of devils in those details.
+
+[Speaker 2]
+There are, absolutely. And yeah, it was a problem that came up, I don't even remember now. Anyway, it's a discussion we're having with one of our pilots.
+
+And so, we'll explore solutions there and bring them back here.
+
+[Speaker 1]
+Interesting. Sounds very good.
+
+[Speaker 2]
+The question I think for this group now is, what needs to be true to close this issue? And so, I did add a little bit to the goals section saying that the depth was a function of linked product passports through the supply chain in the goals. Like it was, I'm wondering if that's enough or if we need more to close this ticket.
+
+Or if we want to open more tickets that sort of explore the broader. What's that out here? Yeah, it's about the UNTP, I think.
+
+Yeah, goals. Where did I talk about?
+
+[Speaker 1]
+I guess it's down here.
+
+[Speaker 2]
+No, I think it was more at the top, actually. But I don't remember what I said. It was on a different ticket that I kind of mentioned this one on.
+
+Okay.
+
+[Speaker 3]
+Can you do a search and just look for the word depth?
+
+[Speaker 2]
+I think I got feedback to take the word depth out.
+
+[Speaker 3]
+That feedback came from me.
+
+[Speaker 2]
+Okay. But the idea was...
+
+[Speaker 3]
+If it's gone, so much the better.
+
+[Speaker 2]
+The idea was, in terms of that one, was try to articulate the depth is not actually something that UNTP answers because depth is an emergent... It comes out of people linking together passports in downstream passports that they issue. It's a market-driven depth outcome as opposed to a definition in any given UNTP implementation.
+
+[Speaker 3]
+Right. I think it's enough to say that you can link as far back as you need to on your application and as far...
+
+[Speaker 2]
+Well, as far back as your customer demands of the product you're selling to them, right? That will be the thing that drive behavior here.
+
+[Speaker 1]
+Back is easy. Back is just a link. I demoed that several months ago.
+
+Forward is the hard part. I just don't... I'm not going to dismiss it because I do see the requirement, but I will just...
+
+To me, there's no solution at all with any of what we have here. This is like... Yeah, no, I don't know.
+
+Maybe I'm just trying to shine away from the hard part. That's probably what I'm doing. To close this, we need a proposed solution for supporting downstream.
+
+[Speaker 4]
+Oh, Joe, please. No, just very quickly. I'm a little confused by this one, and Zach can probably help.
+
+When we talked about depth, my understanding, I might have got it completely wrong, was that we're talking about levels of detail in terms of the product makeup and the componentry of the product. Is that what we're talking about here, Zach?
+
+[Speaker 2]
+That's what I thought. I guess, Nis, what's happened, though, is in the discussion, we've expanded the scope of this ticket. I'm wondering if we shouldn't...
+
+[Speaker 4]
+I think there's a good discussion about the level of detail in terms of componentry parts and what we're going to be tracking as part of the digital passport. I think that sounds like a good thing. The problem is that the upstream probably doesn't know what the downstream needs.
+
+Isn't that the problem? Or is it a coordination thing that has to happen as part of the supply chain definition?
+
+[Speaker 3]
+Well, just not talking about the forward downstream, but in terms of depth, I think we shouldn't be setting any limits here because that depends on technology and technology will change. It also depends from one product to another product.
+
+[Speaker 10]
+Exactly.
+
+[Speaker 3]
+The legal environment in terms of what you must track or what your client wants you to track.
+
+[Speaker 4]
+So the point is that the downstream supply chain activities will have a level of detail that they're expecting to present, I would have thought.
+
+[Speaker 9]
+Yes, and I guess it will be for each customer to require a supplier upstream what they need, and then they will add up along the chain, I guess.
+
+[Speaker 4]
+That's exactly right, yeah. But they can only do what they can do. They don't know how their product is going to be used.
+
+So all you can say is that this lithium was mined in Australia using...
+
+[Speaker 3]
+Well, I think, I mean, thinking about it, when you get to a downstream point where people want to issue information or attach information to a product, then all of a sudden that becomes upstream. It's like the textile, the weaving, the manufacture of the textile for the cotton ginner, he's downstream. I don't know if that helps.
+
+And so they're passing information forward to the weaver, and when it gets to the weaver, it becomes downstream. So when it gets to the retailer, everything that was before, the retailer for the weaver and the cotton ginner is all upstream.
+
+[Speaker 4]
+That's right.
+
+[Speaker 3]
+So I'm not sure if we're... For me, the issue is how do you pass all of the downstream information to the next...
+
+[Speaker 10]
+Yes.
+
+[Speaker 3]
+Yes. So that they can incorporate it as their upstream information.
+
+[Speaker 2]
+Well, the idea is that the supplier and the manufacturer are issuing digital product passports about the product that they created. So if I'm a miner, my product is a box of rocks. Ore.
+
+[Speaker 10]
+Yeah, ore.
+
+[Speaker 2]
+Thank you, Joe. If I'm a refinery, it's a refined ore, right? And each tier will have their own sort of definition of a product passport that includes the information that their customer needs.
+
+Their customer will ask for information that their customers need, right? And so this is when we think about... And so what we'd anticipate is as a ore refinery, I ask the mine for high-quality country of origin, high-quality labor information.
+
+And then I attach potentially a redacted version of the product passport that they gave me, or I run it through the transformation event to say, hey, I took 10 tons of ore, five from this mine, five from that mine, transformed them into two tons of refined mineral. And to those two passports, I create a new product passport, two tons of refined ore, and send that to my customer where I've attached my labor, my verified labor credentials, my audit, my mass balance, all those things. And then they take that, and they take that refined ore and turn it into anodes or cathodes.
+
+And then they send it to their customer, and the process repeats. And we get a full digital traceability ecosystem when each customer requires high-quality information of their supplier.
+
+[Speaker 4]
+Right. So in effect, what we're saying is we're going to provide links to product passports, which we're required to actually create the content of our product as we go forward, yeah?
+
+[Speaker 11]
+Yeah.
+
+[Speaker 4]
+So in effect, do we need terminology for linked product passports, or do we do?
+
+[Speaker 1]
+But that upstream, yes, for sure. I wonder, did I include that?
+
+[Speaker 4]
+Oh, we're here. That was a really good picture, by the way. Yeah.
+
+Although it's upstream only from that point of view.
+
+[Speaker 1]
+That's right. It's upstream from the data carrier. What I see, what I call downstream, I don't know how to make this connection, and where to put this, and how to make this connection.
+
+That's because how would a second owner get to this repair information? That's sort of my question. This thing, I can demo that if you're interested.
+
+[Speaker 11]
+Yeah.
+
+[Speaker 4]
+I do like secondary markets or something. That's kind of, yeah.
+
+[Speaker 2]
+Let's enable that.
+
+[Speaker 4]
+We want to enable...
+
+[Speaker 2]
+Yeah. Nis, I guess what I think, I guess what I'm wondering is, is this ticket... Are we kind of trying to do too much in this one ticket?
+
+Right.
+
+[Speaker 1]
+Yes. Yes.
+
+[Speaker 2]
+Because solving downstream right-to-repair solutions probably is a whole new ticket. We probably need...
+
+[Speaker 10]
+Yes.
+
+[Speaker 2]
+I agree with you. And it's probably a series of tickets.
+
+[Speaker 5]
+I may just quickly have it. I think the problem you're hitting on there with the second owner does, unless someone's got some brilliant idea that I and other people I know can't think of, the inevitable conclusion is you need a central registry that isn't the brand owners. You need the EU's registry.
+
+You need someone else's thing because you have to be able to discover this stuff even long after the person who created it has stopped caring. I wish there were a way to avoid it, but I don't think there is.
+
+[Speaker 1]
+No. Well, there's the other way, which is the blockchain. It's kind of where the blockchain folks, why they like this stuff.
+
+[Speaker 5]
+Yeah. But then you end up... Well, I don't need to tell you.
+
+[Speaker 11]
+We're saying the same thing. Yeah.
+
+[Speaker 3]
+It doesn't...
+
+[Speaker 5]
+Going on a blockchain doesn't change it. It's still a registry. Yeah.
+
+It is a registry.
+
+[Speaker 3]
+Well, I mean, if I've understood correctly from what I've read, the legislative requirements for data product passports are going to require that a data product passport be available even like 30 years from now. I think it says even if the company goes out of business, and even if your database supplier or whatever goes out of business, and how are they going to do that other than some enormous unwieldy central registry? I'm not sure.
+
+But however they solve that, it might be a key to how to solve this problem because then you do have a central registry.
+
+[Speaker 5]
+Yeah. I think the European Commission is planning on running a central registry. The way it's been proposed by people, including me, is that it's kind of a registry of last resort.
+
+You don't want to use it, but you have to have that monster thing somewhere, or the equivalent. Yeah, exactly, Virginia.
+
+[Speaker 1]
+Can we close this issue with we should not be setting debt limits? We should let... The idea is that there should be competition in showing as far back as possible, and those who show further back would be more attractive.
+
+That's sort of the premise of UNTP to begin with.
+
+[Speaker 4]
+I think what's cool about this is that the market will decide, won't it? Yeah. I think that if you need to have a product passport that shows a certain thing, then it's going to be in the interest of the miners or the principal component or the creator of the principal component to actually provide a product passport that can be then linked to.
+
+So I think it's one of those things that you feel like you should be doing, but actually, you're better off not.
+
+[Speaker 1]
+Yeah, set the limit. Don't set the limit. Don't over-regulate this.
+
+Any objections to closing with this comment? Nope. Let's do it.
+
+Moving on then to 51.
+
+[Speaker 8]
+Where did the chat go? I'll just share the link. This is from Patrick.
+
+[Speaker 1]
+Okay. That's a good idea.
+
+[Speaker 2]
+So this goes to some of the sort of test stuff on the pull requests that didn't get merged today, but will be hopefully next week. And what we see is three tiers of validation, particularly as we start thinking about extensions. So basically, we call it three tiers of testing.
+
+So verification of the credential is kind of tier one. Tier two is verification of the schema. And tier three is verification of something we're describing as choreographies.
+
+And those are kind of like graph verification or sort of does the identity match the claim in the conformity credential match the claim in the product passport. And so that is a graph verification, and that's what we're exploring. Yeah, policy one.
+
+[Speaker 1]
+Yes. That's a good addition to the last part. I think you're glossing over verification.
+
+There are details. When I read this, I see that he's asking for more specifics on what exact steps are done. You look up the issuers public key.
+
+You verify the data against the signature. So it's like a signature check. Then there is the validity.
+
+Is it within valid from valid to? There is schema check. As you point out, there's status.
+
+Has it been suspended or revoked or something? What else? I think there's a few more things you can do.
+
+And then you get into policy at the end, which is more, I think, specific to... My policy may not be the same as your policy. An issue may be fine for me, but not for you.
+
+I think that doesn't... I really agree it's important, especially... Well, yeah, definitely.
+
+I don't think it would belong here, but I'm kind of keen to volunteer to do this.
+
+[Speaker 4]
+I think we're talking about two different things. I think that's right, that we have to do that verification of those various different contexts. But when we did all protocol definitions, when you're doing verification or you're doing validation, it's format, content, context.
+
+So whether, in fact, we want to use something similar here, it sort of says, yeah, the format, what it's actually being provided is correct. The content, which means that it's from the right party. It's got the right stuff in it.
+
+And then the contextual verification, I think, is where Tac was going with this, the graph.
+
+[Speaker 2]
+Yeah, I guess one of the questions I have...
+
+[Speaker 4]
+I'm not sure that's what this is asking for. I think this is a different topic. No.
+
+[Speaker 1]
+I do have a... Here. We've talked about policy in the past.
+
+Oh, wow, yeah. I think we want to separate policy from the common checks.
+
+[Speaker 2]
+Yeah, and I guess, Anish, one of the things we're kind of looking at there is using the W3C-BC unit test validator and some of that. And I'm wondering if that kind of gives us some guidance on those steps that you just described.
+
+[Speaker 1]
+Yeah, probably. I'm sure I'm reinventing the wheel there.
+
+[Speaker 2]
+Yeah, I think we should kind of make sure that we're kind of circling around stuff that people who've already spent a lot of time on this have already built. And if we need something extra, then let's add that.
+
+[Speaker 1]
+I'll just show you something, Phil, you'll like me for this. The DS1-BC spec has the policy side of this. I think it's quite inspirational.
+
+This is essentially what policy is. And it's different from the core verification of the BC spec. All right, let's move on.
+
+[Speaker 5]
+I didn't write it.
+
+[Speaker 1]
+No, I know. It's from the US.
+
+[Speaker 5]
+No, it's written by Kevin D in a Canadian.
+
+[Speaker 1]
+Yeah, yeah.
+
+[Speaker 8]
+Oh, right, right, right. Yeah, yeah. Did we get to 45, I think?
+
+[Speaker 1]
+Evidence for supported claims. Do we need pointers within a URI?
+
+[Speaker 10]
+Oh, yeah.
+
+[Speaker 1]
+I think this is just for the spec, is it? Oh, or is it within the credential?
+
+[Speaker 8]
+No, it seems like it's within the credentials.
+
+[Speaker 1]
+All right, how do we close this one? It seems very abstract to me, to be honest.
+
+[Speaker 2]
+I think maybe we need to ask Brice and Vladimir about how they want to close this.
+
+[Speaker 1]
+All right, so there is a credential. The assumption here is it's publicly available. Well, no, maybe not.
+
+But there's a credential. And if you have separate claims within that credential, he wants...
+
+[Speaker 2]
+So here's the pattern that I think we'll see a fair amount of. If I'm a miner and I've got a poor sustainable mining conformity credential, and that means that I have done all sorts of things from anti-slavery, a carbon, mine site remediation. I've done all the right things, but I've got one conformity credential that says, I'm a gold star mine.
+
+And the conformity process just issues me a PDF document of all the things that I did. Now, ideally, we help that conformity body issue credentials, but they don't yet. They issue me a PDF document.
+
+And I say, claim one is validated by this PDF, page two, section 3.3. This claim is validated by page four, section 4.3. Like that's kind of what they're trying to get to. And I do think in the short term, from my perspective, this maybe sits in kind of... I think we need to kind of leave an open...
+
+I think we probably need to not be too prescriptive at this point, because I don't know that we know enough about how people will actually use this scenario.
+
+[Speaker 1]
+It seems, honestly, it seems rather far-pitched. Maybe because I've never heard of this before. Come on.
+
+Okay, that doesn't work. So, one could link specifically to these claims with a fragment on it. That's what I'm seeing.
+
+[Speaker 2]
+Yeah, that's right. But the conformity credential is one conformity assessment process, right? Now, the better solution would be for the conformity assessment body to issue me detailed claims.
+
+VCs. Yeah, thanks. VCs that explicitly articulate my conformity with a specific product passport claim.
+
+But I think we're a ways away from that.
+
+[Speaker 3]
+Yeah, I mean, just... I think there are several certificates of conformity that cover different things that people might want to verify separately later. For example, I've forgotten the name of this organization that certifies that you're not using any dangerous chemicals in your manufacturing.
+
+And so, you get one certificate that covers all the dangerous chemicals that you might use. But then you have one client who wants you to prove a claim that you're not using chemical X. And so, you have to...
+
+They either have to accept this global certificate as being good for that one chemical, or you have to be able to refer to some reference inside of that original certificate.
+
+[Speaker 2]
+Yeah, and my sense is what the idea here is, in the discussion between Vladimir and Chris, is positive. But I think we probably need an even further abstraction where I can say in real text, look at PDF document, page 3, section 4.2.1, and potentially an appendix that says, here's all the chemicals that are covered by that piece. We may need to have pretty loose abstractions that are not ideal, but better than nothing.
+
+[Speaker 7]
+Sorry, Zach Peter here. Maybe we take it offline, but I do think there might be some value if you have a read of the work that we did with Jazz Ants and NARTA when we were mapping out certification and test claims against specific standards. And Virginia, you're quite right, is that many schemes issue certificates, or there are linked certifications in some cases.
+
+So, it's very, very common, but difficult to articulate. So, maybe we'll just share some of the, we'll share the data model that Roberto pulled together for that conformity ID work. It might be helpful just to map out a couple of scenarios.
+
+[Speaker 2]
+Yeah, well, we're hitting them pretty, yeah. I think, oh yeah, Chris does have that. However, that won't be the possible case.
+
+It's look at the PDF and read section 5.8. Yeah, so it does have that example. Yeah, Peter, it'd be helpful if you send those details through and I'll have a review.
+
+[Speaker 1]
+I've never had this come up before, working with credentials and graphs. I don't think anything is needed on this, but I might be wrong. I might be too shallow.
+
+Anyway, I asked Chris how we can close it. Any other comments, or do we want to move on?
+
+[Speaker 2]
+I think let's move on.
+
+[Speaker 1]
+52, here's the link. From Patrick again, he's assigned himself.
+
+[Speaker 8]
+Energy infrastructure, okay, that's a lot of stuff.
+
+[Speaker 1]
+Trust registries, yeah, there's a spec for that. Good, he found it. I looked at that in the past as well.
+
+Okay, let's move on. It's assigned already. So, that's good.
+
+Oh, Zach, this guy.
+
+[Speaker 2]
+Yeah, I haven't looked at what you put there yet, but I am in the next two weeks going to have this done because I have a steel, a conformity assessment body issuing credentials that I've got to show two weeks from now. Well, I'll share with you as we get this sorted out.
+
+[Speaker 1]
+That sounds good. I do want to make sure that we leverage each other's work.
+
+[Speaker 10]
+Yeah, yeah.
+
+[Speaker 1]
+It wouldn't take me long to submit a pull request with this. This is a schema, but I have examples for this as well. And examples are much easier to...
+
+[Speaker 2]
+Yeah, to make sense of. If you want to take that for a start, I'm happy to accept that from you.
+
+[Speaker 1]
+And where is it we add? We do have... No, not here.
+
+We do have examples in here, right? Well, I'll find it. I think there are some examples.
+
+Anyway, okay. I'll give it a go.
+
+[Speaker 2]
+Okay, that'd be super helpful and I'll watch for that.
+
+[Speaker 1]
+Discovery from Michael, 61. I think we did have...
+
+[Speaker 8]
+Didn't we discuss this?
+
+[Speaker 1]
+I think what he means is data carrier. Any comments on 61?
+
+[Speaker 3]
+Well, I think what he's asking... He has the impression that we're saying that if you have a product in your hand, then how do you link to the data? And he's assuming that we're saying that the only way to do that is through a physical something that's on the product or on the product packaging.
+
+Now, and then he's saying what happens if that physical link, the link is damaged or destroyed? Okay, is it possible to use, to undertake the discovery based on, say, information in a bill of lading or a bill of materials as opposed to something that's actually somehow physically associated with the product? That's what I'm understanding from this.
+
+[Speaker 5]
+It's an issue we struggle with a lot because barcodes are usually on the package, not on the thing itself, and you throw the packet away and you've lost the identifier. That's a real issue. So then you get into etching the barcode or making it physically part of the product, which in some cases is perfectly doable.
+
+It's perfectly doable with batteries and other big things, not so doable on small things. So it's a real issue. And if you have a magic solution, that'd be great.
+
+I don't think there is one. The identifier itself should persistently refer to the product, even if the data carrier, for whatever reason, doesn't persist. So in other words, there needs to be an independence between the product's identifier and the barcode, the RFID tag, or whatever.
+
+[Speaker 7]
+Well, Phil, is this in reference to image processing and the Amazon approach of identify a pet?
+
+[Speaker 5]
+That would be relevant, Peter, yes. Yes, anything like that. But as you know very well, it's difficult to put a persistent identifier on, I don't know, a child's toy.
+
+And even if we get into apparel, into textiles, so you sew it into a label, great. What do you do? You buy the garment, you find that the label itches, so you cut it off.
+
+That happens a lot. A lot of us do it, you know.
+
+[Speaker 3]
+No, and like you were saying, there are also products that are too small.
+
+[Speaker 10]
+Right.
+
+[Speaker 3]
+You know, like there's some electronic parts and things like that, you can't really put an identifier on it. So I think what he's asking is to have in the document something that allows alternatives to having a physical marker on the product. And currently he only sees the possibility to use a physical marker.
+
+[Speaker 4]
+Well, the question is you might also, yeah, you might associate, okay, whether you actually, in fact, and I see where you're coming from, Phil, you know, putting it on the actual product, the physical product, either that or you create a digital twin of the product and you actually sort of retain the information in a digital twin somehow. Now, obviously then reflecting that digital twin to the physical product, which as it changes, it's going to be an interesting challenge, right? It's a problem, yeah.
+
+So I'm not sure that Michael's even got a solution I think the challenge is, the case question is, you know, is there something we need to sort of flag for future enhancements to say it would be useful to have a discovery mechanism? Should the physical identifier, you know, be lost, yeah.
+
+[Speaker 5]
+I'm sorry, Joe, that goes back to what we were saying before about the much as we don't like it, I think we're inevitably pointing towards some sort of central registry or perhaps multiple registries that somehow interlink or whatever, but there needs to be something that is independent of the manufacturer and the product and everything else.
+
+[Speaker 4]
+I try to try to not discuss whether it's central or decentralized. There are all sorts of different options about how you store data. I think the challenge is really pretty much one, there is one, yeah.
+
+[Speaker 5]
+I agree, whether it's centralized or decentralized, but the key thing is that it's independent.
+
+[Speaker 4]
+Yes, and the problem is it becomes very, very big, very quickly.
+
+[Speaker 5]
+That is the problem, yeah.
+
+[Speaker 1]
+I think it's perfectly fair to dismiss and say this is not a problem we're tackling. That's what I would suggest we do with this. It doesn't sound like we are uncovering any solutions here that we can go with.
+
+[Speaker 4]
+I'm just wondering whether we keep arcing lot topics. We're just saying we're not dealing with this.
+
+[Speaker 3]
+Or maybe mention somewhere that this is a topic that someone needs to address eventually, even if we don't.
+
+[Speaker 4]
+We quit. Or Antiscope, just something that says this is currently Antiscope, and if you want to do something with it later, then you can.
+
+[Speaker 1]
+Honestly, I'm more aggressive. I would rather get rid of issues than just parking them and having this huge list. We can always look at closed issues.
+
+Okay, that's my preference.
+
+[Speaker 2]
+Do we want to add a tag of not addressing so we can close them? That's called closed.
+
+[Speaker 1]
+Intentionally not addressing. We can close it next time.
+
+[Speaker 4]
+This issue is intentionally closed.
+
+[Speaker 1]
+All right, we're out of time. I'm going to wrap it up. This was good.
+
+Thank you.
+
+[Speaker 4]
+That was good stuff, guys.
+
+[Speaker 2]
+Great work leading us through it. Thanks, Mick. Cheers, bye.
+
+[Speaker 9]
+Take care, guys.
+
+[Speaker 2]
+Thanks, everyone.
+
+[Speaker 3]
+Thank you.
+
+[Speaker 9]
+Bye-bye. See you next time.

@@ -1,0 +1,431 @@
+[Speaker 6]
+Good morning all.
+
+[Speaker 9]
+Good morning. Hello everybody.
+
+[Speaker 1]
+We'll give it a couple of minutes because I know Virginia is going to join.
+
+[Speaker 9]
+Hi Virginia, can you hear us? Yeah, I can hear you.
+
+[Speaker 1]
+Okay, well, this is ostensibly the technical meeting. I don't think there's been that much work on the technical website side of things in the last week, and we are under a lot of pressure to deliver the policy document in final draft as soon as possible. And I think most people on this call have been reading and contributing to Virginia's draft, rather than focusing on GitHub issues.
+
+So, with everyone's permission, I'd like to focus on the policy document draft today, more than running through GitHub tickets. We can come back to that once we've got this deadline behind us. So, just to remind everyone of how this deadline works, we're trying to get REC 49 in a state to be approved by the UN plenary in July, which means it needs to be finished public review by May, which means it needs to enter a two month public review by early March, which is now only two weeks away.
+
+So, this is what's driving the timing pressure. So, we received quite a bit of individual feedback on the first draft document of a week ago. And not only from everyone on the, most people on the call, but also from the UN Secretariat, who were keen to see, well, basically reminded us that these policy documents are targeted at member states and policy makers in member states.
+
+And so, all that stuff we put in there that was recommendations to industry actors, they thought would be better in section two. Right? And that we focus section one on really what are we recommending to member states.
+
+And that's why Virginia took some time to separate out and put into section two in the most recent draft that you got yesterday, I think. You'll have noticed that section one has changed to be shorter and to focus just on recommendations to policy makers in member states. And all that stuff that was there about brands and retailers and producers and so on is still there, but it's moved to section two.
+
+So, that's just why that happened. And I think we might have missed one or two contributions. For example, from John Pabon, who did some edits.
+
+I just had a quick look at what he did and we might use, we should use some of those improved language words in the sections he annotated. I want to use this session really for people to speak up about what they hold dear, because we're, in a few days, we're going to have to do a final iteration of section one and flesh out a bit of section two. And what I'm keen to avoid is that we do that and then we say, right, we think this is a collectively supported draft.
+
+And some of our important stakeholders on this call go, no, but that doesn't reflect my views and I don't support this document and so on. This is kind of a speak up if there's something that you think really important missing from whatever was sent out yesterday. My view is it still needs another round of streamlining language and making it clearer and more understandable.
+
+I did have an interesting opportunity yesterday to visit the World Trade Organization and talk to one or two of the member state delegates there, one of which is also a vice chair on the UN CFAC side of things, but he's a pure policymaker. And so explaining this thing to him was interesting, because it reveals their level of understanding and what you've got to say. And it did convince me further that we really got to distill the message to a smaller number of simpler points in section one and avoid any technical language.
+
+But I think to do all that, it needs a small number of editors. Yeah, I'll pull up the latest document, but I just really want to invite you to put your hand up and say what you need to say.
+
+[Speaker 2]
+I wanted to point out a few of the other changes that I made. First of all, I didn't want to start talking about UNTP and everything it could do before you explain what UNTP is. And so I added a section that's not typically in the recommendations that sort of explains this one, what UNTP is, because you can't talk about the challenges and how UNTP will meet the challenges unless you know what UNTP is.
+
+And then in the challenges part, I put it into a table so that, although I'm still going to reformat this table a little bit without changing the content, so that you can easily see, here's the challenge, here's what UNTP can do to meet the challenge without having to separate those two out of a paragraph.
+
+[Speaker 1]
+So let's just quickly walk through where this is at after Virginia's latest edit. So an introduction that talks about why Recommendation 49, what we're trying to achieve. Some words about the target audience and their needs.
+
+This whole race to the top, race to the bottom thing, which is really quite, I think, a fundamental message. That one did resonate with the WTO guy I was talking to yesterday. Quite well, actually.
+
+Then we've got a number of benefits. And then we get into what is UNTP, in fairly high-level words, focusing really on the obvious data carriers like passport, traceability events, and conformity credentials. And then these challenges and solutions.
+
+I think what we're after from the group here is, is this the right structure, storyline? There's a few bits of challenges and solutions here that we can simplify, I think. You mentioned this one somewhere about it being a bit of a stretch.
+
+Where is it? This one. The alignment of incentives.
+
+This one talks about two things. Distributing the incentives along the supply chain. Virginia made a comment that it might be a bit of a stretch of credulity for that one.
+
+I think you're right. We maybe simplify this to just the story about moving away from industry averages to differentiated products as a means to drive behavior. Because if you're just doing your calculations based on industry averages, then you've got no incentives at all.
+
+And it's a simple enough message to say that the whole point of the passport is a bundle of value, of differentiated value, from a supplier of goods that the buyer can use. So that's probably the key incentive story. Anyway, I don't want to talk too much.
+
+I just want to get a little bit of perspective from our group about feelings on this structure.
+
+[Speaker 2]
+That comment to the right about move to purposes, there used to be a section called goals. You see this comment? It says move to purpose, and you don't see what was moved.
+
+[Speaker 1]
+That's right. Yeah, I'm not too worried about Section 2, which now, by the way, has Virginia's added this roles and opportunities, which is basically all the stuff we had in Section 1 for all these different groups. So I'm reasonably comfortable that we can stick this in here, and it makes sense.
+
+John Pabon did send a document with some improved wording for all these, which we can reflect.
+
+[Speaker 2]
+So over the next few days. There were some other people who also made some comments. I forget whether it was Stefano or Leon, but I didn't make those because I was focusing on Section 1.
+
+[Speaker 1]
+Yes. As we said last week, the goal is to try to get Section 1 ready so that we can then focus on Section 2 over the next week. So I'm just going to go through hands up and get feedback to see if we can get to a position where we think, all right, it's the right structure.
+
+We've just got some refining to do. Joe, did you want to say something? I see Gerhard's got his hand up as well.
+
+[Speaker 7]
+Yeah, brilliant. We'll start with Joe. Thanks, Steve.
+
+I totally understand the focus on the national policy regulators. Is it that we have to focus on? Is that right?
+
+[Speaker 1]
+Yeah. So UN recommendations, they're written by the UN to the member states. And now member states obviously includes governments and industry, et cetera, et cetera.
+
+But really, it lands on the desk first of policy makers.
+
+[Speaker 7]
+All right. So in which case, would it make sense to have a picture that sort of tries to identify who are the stakeholders? The national bodies will obviously understand that they'll have to manage and manipulate their national industry bodies.
+
+But there will also be international bodies that need to be aware of this as well, right? So it's just the stakeholder mapping picture might be a useful thing so that we can say, this is focused on these guys. Then the next section, this is focused on these guys.
+
+And we can sort of make them aware of the different focuses for the different sections. Sorry. Makes sense?
+
+[Speaker 1]
+Yeah. Let me just, I'm going to make notes as we go.
+
+[Speaker 7]
+I mean, our intention is to show that all of these various different stakeholders do actually get benefits at some stage. So there'll be a table with what the outcomes and responsibilities and the benefits that will come to these people.
+
+[Speaker 2]
+I think, well, we talk a little bit about what's in section two and who are the other benefactors. But this is a recommendation, is actually a recommendation from, it's not a recommendation from the UN to member states. Well, it is from UN to member states, but it's from a UN body that consists of policymakers.
+
+So we're writing this document, but after it's published, it's going to be considered to be a recommendation from a group of national policymakers back to national governments. So that's why, that's why if you look now, if you look now at the beginning of the recommendation section, can you go to the, Steve, can you go to the recommendation section and the first paragraph up a little bit? Yeah, right there, the United Nations Center.
+
+So that's UNC fact and the country delegations in UNC fact at their, I'm not sure what session it is, so I left it blank, agreed to recommend that governments, so these are actions that governments can take, take the actions listed below. So another thing that I think it's important for people to focus on is what can governments do or would be willing to do, because sometimes there are things they can do that they won't be willing to do. And have we covered those most important, the most important things there?
+
+[Speaker 1]
+Yeah. Okay. Let's just get through a few other comments and then I want to also get Rakesh to say something about what he's put in the chat because I think there's some good points there.
+
+Gerhard, you have your hand up?
+
+[Speaker 3]
+Yes, yes, Steve. Good morning. I just wanted to comment on the chat of Brad.
+
+He mentioned something about can we use another word for protocol, but that's something too far. But what I have seen in the document itself, there are a lot of words that relate to protocol. We have reduction protocol, trust protocol, et cetera.
+
+Could we make a picture what is surrounding, for example, a transparency protocol so it gets more clear how this relates to all those other protocols?
+
+[Speaker 1]
+So there's a few points there, isn't there? One is, technical people use the word protocol all the time, like hypertext transfer protocol drives the web, right? And policy people use it to mean something else, which is basically bilateral agreements and between nations and things like that.
+
+[Speaker 2]
+It's even worse than that. The typical use of protocol are the rules about where do you sit people, who speaks first at meetings. When people start a meeting and they go and they say, in a high-level UN meeting and they start thanking people, there's a protocol ranking of who you thank in what sequence.
+
+This is what most diplomats who are in missions think of immediately when you talk about protocol. And then if you're talking about an intergovernmental agreement, a protocol is like an annex, like our annex with the guidelines. You have an intergovernmental agreement and then you have a protocol about a particular aspect of the agreement and how to implement it.
+
+[Speaker 1]
+I suppose the first order question for the group is, have we got the wrong name here or do we still use the word protocol but have some sort of one paragraph or even a sentence near the beginning that says when we say protocol, we mean technical convention or standard.
+
+[Speaker 9]
+I've already done that.
+
+[Speaker 1]
+Right. Does anybody have any strong thoughts about whether we should abandon the word protocol or just clarify what we mean by protocol?
+
+[Speaker 6]
+Steve, if I may, I was thinking that at the very end of the document, we already have the list of acronym and terms. We can simply indicate over there that protocol for us in the document has meaning as whatever you want to indicate. To me, that's very straightforward and simple eventually.
+
+[Speaker 2]
+Yeah. Maybe we should do that but you can't do that as a substitute for throughout the document making clear that a protocol refers to a set of terms because people rarely read the annex with the terms before they read the document.
+
+[Speaker 1]
+Yeah, that's right. I think what I'm hearing is we'll keep the name protocol. We'll clarify what we mean by protocol but we'll be a bit careful, as Gerhard said, about liberally sprinkling 20 different protocols all over the place so we can use the word specification or something like that when we mean a component and just strictly use the word protocol to mean the overall, if you like, approach.
+
+Yeah.
+
+[Speaker 5]
+I think just to reaffirm that, Steve, when we're talking about what the UNTP actually is for people who are implementing it, which is going to be like once we get past this state, it's actually really helpful that it's similar to a technical protocol because there's a fair amount of technical implementation associated with actually implementing the recommendation. Yes. Okay.
+
+[Speaker 9]
+All right.
+
+[Speaker 2]
+I do think it would be helpful if somebody could do, for me, a brief list of everything that's in the protocol. What are the different aspects that are covered? And then we could try to put a diagram about that in the section that describes the UNTP.
+
+[Speaker 1]
+Okay. I mean, that list is in Section 2, right? But it's not pulled together in a meaningful diagram.
+
+[Speaker 2]
+I was thinking about it, maybe, if I went through them.
+
+[Speaker 3]
+Yeah. It's like an ecosystem diagram.
+
+[Speaker 8]
+Sorry. Can I jump in here a bit about the word protocol? Sure.
+
+Actually, when you guys were discussing, I looked up the dictionary definition of protocol. Actually, there are four different meanings. One relates to official procedures.
+
+One relates to diplomatic, like what Steve said. The other one is formal record of scientific experiment. And the last one is actually in the area of computing.
+
+It says that it's a set of rules governing the exchange or transmission of data between devices. I thought as long as we put a footnote clarifying that we are referring to the letter, I thought that will be good enough.
+
+[Speaker 2]
+Actually, I think I copied that description into the text. Yeah. With a footnote to the origin, which is Encyclopedia Britannica, I think.
+
+[Speaker 10]
+Right.
+
+[Speaker 3]
+Yeah.
+
+[Speaker 9]
+I saw that somewhere. Okay.
+
+[Speaker 3]
+But we should add something about that it is not only rules, etc., but it's also about what do we want to make available. And that's about data. So is it only about the rules around transparency or is it also about what do we want to make transparent?
+
+[Speaker 2]
+No, I think you have a protocol that's about something and that's about what you want to make transparent, I think.
+
+[Speaker 8]
+But you know what is the definition in the Encyclopedia that you copied?
+
+[Speaker 2]
+I don't remember exactly. If you take the document and you look up Britannica, you'll find the footnote and then you can find the text, you know, if you do a search.
+
+[Speaker 1]
+Right. Rakesh seems to be a source of wisdom here. So there's another reference here.
+
+We'll have a look. Anyway, I think the overall agreement is we can stick with the word protocol. We just got to be very clear what it means in this context and we'll avoid overusing it for any other descriptions like components of the specification and so on.
+
+I'm good with that if everyone else is. Stefano, you still have your hand up. Is there something you wanted to say or is it left up from before?
+
+[Speaker 6]
+No, in fact, I wanted to add a couple of things as a general comment. Right. And one goes actually to what Joe mentioned before about the visual indication on the stakeholders.
+
+I was indeed thinking eventually to at the very beginning in the introduction to maybe specify now that we have this section one and section two. What is section one about and what is section two about? And what Joe mentioned about stakeholders may be visually going to help in this sense.
+
+In my view, I was thinking this was a good idea. So this was one comment I wanted to add eventually. And the other comment was more related to the email you sent Steve with the updated document.
+
+In my view, and how you opened today speak, meaning maybe there is a general wording adjustment that we have to do beyond this huge work that has been done to reshuffle by Virginia. And I was feeling because this is a huge basically target that we are trying to achieve. Very important.
+
+So I was thinking if at the very beginning of the document we should not have a kind of like strong statement, a wow statement to make really try to picture the big value beyond that. Possibly this is something that I still don't feel when I open the document and start to read. That's an opinion I wanted to share and I know you at the very beginning of the exercise you said we have some expert in compelling stories maybe to look for this wow target statement at the very beginning.
+
+I was thinking something like that.
+
+[Speaker 9]
+Yeah.
+
+[Speaker 1]
+So the fellow I was talking to at the WTO yesterday was the representative for Kyrgyzstan. The thing that switched his light on was the idea that all these emerging constraints, sustainability requirements, whether it's deforestation or carbon border adjustment or et cetera, et cetera, we're entering a phase where possibly sustainability concerns are bigger barriers than any tariffs, traditional tariffs. And what does this mean for member states and their trade strategy?
+
+And I think that even smaller economies like Kyrgyzstan build upon something like UNTP to differentiate its products. It's almost like the Switzerland of Central Asia, Kyrgyzstan, happy mountains, happy cows, you know, eating grass. And they have a trouble accessing markets because they don't have the compliance criteria set up.
+
+But maybe there's opportunities there. It's thinking and how we read this and seeing it as an opportunity to positively differentiate products in a market that's increasingly concerned by sustainability was the thing that attracted them the most. I think in the ideal world we really need to be arm in arm with the WTO on this where we somehow work together with them to show member states that this is a whole new world of trade constraints and barriers that need a different thinking to address.
+
+So I'm not exactly sure how to say that. But I'm going back to the WTO today and I'm hoping to convince them that maybe they do a publication that accompanies this that does talk about those sort of non-tariff barriers. Yeah, it's tricky.
+
+This hasn't been an easy journey, right? And fair enough, we'll have a think about so one takeaway I did get is that the Kyrgyzstan rep said I'm happy to read the document as if you haven't told me anything and see if I understand it and it motivates me and share it with some of these other delegates at the WTO. So we'll have a short period where we'll get a few readers who haven't been part of the group to give us feedback about whether it hits the mark.
+
+And I think that's quite valuable, right? So I want to try and get this even if it's not perfect and we still think there's things we can improve to get it to the point where we can send it to a few WTO delegates and say what do you think of this? Because that will tell us whether we're even close to the mark with section one, right?
+
+Virginia?
+
+[Speaker 2]
+I wanted to say that the description about a protocol is on page 8 and it's in the first paragraph of section 1.5. And then there's a description, there's a statement about what's included in this document at the end of the introduction where it says this recommendation looks at policies and more detailed information can be found in the implementation overview. And then in the target audience section, the second paragraph talks about all the other parties in addition to policy makers that hopefully will be able to implement and receive benefits from this recommendation. And that's where we would want probably to put a diagram if we have one about the different stakeholders.
+
+That's all.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+Sorry. I just ran away because I noticed my laptop's about to die and I've got to plug it in before I disappear.
+
+[Speaker 9]
+There you go.
+
+[Speaker 5]
+So while you're plugging that in, there's two things that I'd like to add. One is I agree we need a little bit more weight right at the beginning. So I think that's going to be important.
+
+So just tend to agree with that. The second thing is from my perspective in reading the structure and looking at this version compared to sort of last version, the key thing that I saw is that the recommendations section becomes the most important part because it's a recommendation to nation's paper. And one comment I'd make about recommendation, I think it's B, the second one is that's actually a recommendation back to the UN directorate because we're saying consider updating the sustainability pledge to expand it.
+
+That's not really a recommendation to nation's.
+
+[Speaker 2]
+And so sorry. That is a recommendation to nation's because it's something that the policy, it's not that the secretariat may prepare a draft, but it's member states that have to approve that decision. So it is the kind of thing that belongs in a recommendation to give governments.
+
+[Speaker 5]
+But I'm wondering about how to make it a more compelling recommendation that actually addresses the goals of the protocol. Because we need a sustainability pledge . I think that's what we're saying in the recommendation is.
+
+Whether it's an extension of the current one or a new one that is just UNTP and then we roll the old one in. I'm not sure what the right tactics are, but the recommendation is that nation's pledge and they get their industries to pledge. That's the recommendation.
+
+The tactics how we make that happen feels a little bit too heavy in that section and a little bit distracting.
+
+[Speaker 2]
+I think it's a good idea to reword it so that it puts, you know, we need to promote this by getting people to make pledges and then add because I mean, we can also have additional recommendations and then add on to that one way to do this would be to look at the existing pledge. There's a problem. I know from within the UN, they don't want to have too many pledges or things that have the same or almost the same name but are different.
+
+[Speaker 5]
+I agree with that completely. Because the way I anticipate a policymaker to review this document or read the first two or three lines and go, okay, I'm interested, what are the actual recommendations and they'll skip directly to that. Unless that section is clean and clear, then they might read more.
+
+So that's why, from my perspective, if I'm reading a recommendations paper, people send me recommendations all the time, mostly I go, what's the first couple of sentences say? I then look for the price. Does the recommendation match the price?
+
+And all the rest of the document is ignored if those three things don't make sense to me within the first two. I mean, I don't know if other people have similar experiences. But that's fine.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+There's a couple of points here. Just before, I'd really like to give Rakesh the floor briefly, but Gerhard mentioned that we use the term ESG a lot and should we instead generally throughout the document be talking about sustainability instead of ESG? Sort of mean the same thing, but is it a better language throughout the document?
+
+Is there a feeling one way or another? I'm quite sympathetic to that.
+
+[Speaker 2]
+Me too. I was thinking that when I was going through this, that this is a lot of, and plus ESG unfortunately has become a political thing in the US.
+
+[Speaker 1]
+All right. Okay. Then there's no dispute then.
+
+Let's prefer sustainability rather than ESG. Thank you, Gerhard. Rakesh, you made a few comments here earlier on in this chat about doing a better job, I think, of aligning with existing strategic objectives of countries and existing multilateral frameworks like G20, OECD, making a stronger case for alignment about how the UNTP helps achieve those objectives.
+
+Is that what I understood you mean by point one here?
+
+[Speaker 4]
+Yes, yes. That is to lay the groundwork echoing on to what we heard from Zachary. Perhaps for the governments who are still not convinced that they should also tell their manufacturers in their country to have a DPP and set up an infrastructure, they would look up and say, we are also signatories to the SDGs.
+
+Hold on, we got this G20 recommendation on circular economy topic. To achieve all of that, we need a digital public infrastructure framework, including for products. I got to look at it.
+
+And then also perhaps at the top, when we talk of policy developers, maybe to consider if we should elaborate a little bit on what kind or which specific departments within the policy-making field this would be relevant to. For example, in India, there is a ministry of corporate affairs which is interested because they are looking at disclosure of companies and they want the disclosure to have this transparency. At the same time, the ministry of finance is looking at it because they are looking at how to have guarantee of information which is recorded for securities trading and so on.
+
+And those two maybe have to work together. And then there is a ministry of trade who is looking at why they should have this infrastructure set up so they can increase outgoing trade. And then there is a ministry of environment who should be interested in this because they need this kind of data to set up circular economy systems.
+
+To know what kind of products are in circulation, what is coming in, what is in there and what they have to set up. Perhaps we should consider elaborating with some examples. Also, when we talk of private sector, in the target audience, maybe in parenthesis we should mention example industry associations.
+
+Or maybe also others. Because we see from the case of textiles and batteries, it is those associations which are driving these activities.
+
+[Speaker 2]
+We certainly have that in section two.
+
+[Speaker 1]
+Yeah. But I'm sympathetic to Rakesh's point about and the acid test is, is section one alone enough for a policy maker to go, this is important, I'm going to bother to read section two or I'm going to hand it to you. I think calling out those typical ministry responsibilities, because what you said about the corporate regulator in India, same thing in Australia.
+
+Our corporate regulator is thinking about how to mandate sustainability disclosures. And so on, right? So I wonder if you have half an hour spare, Rakesh, to just jot down your thoughts if you haven't done so already.
+
+Particularly around those two things, I think. How do we connect? What are the key OECD G20, blah, blah, blah, multilateral agreements that we can make a strong connection to?
+
+Anyone else who has ideas about that, I think it's important to put up there. And then, yeah, what are the typical...
+
+[Speaker 2]
+Also the specific agreements, if you have that, not just G20, but the G20's agreement on X. Sorry.
+
+[Speaker 4]
+Right. And another point which perhaps we should look at is, at the moment, the German development agency is funding capacity building program for policymakers in Cambodia, Vietnam, Bangladesh, Pakistan, on various resource efficiency topics. And what gets them interested is, they look at the developments on, for example, circularity standards or digital passport standards, for example, and they're thinking, uh-oh, if America and Europe and India and others come up with their own standards, this lack of harmonization creates even a bigger burden.
+
+So perhaps they should put their weight behind UNTP, because that could be maybe a harmonized standard and ease the burden on their industry. So perhaps somehow we emphasize why they should support it, because it will support harmonization and then harmonization leads to reduction of cost and burden.
+
+[Speaker 1]
+Yeah, there is a little, somewhere, I can't remember where exactly, in the document, a recommendation that nations who are considering national regulation like digital product passports and so on, build that regulation on top of UNTP, because for those two reasons, right, first of all, you get a head start and a lot of thought's been done for you and you just use it, and, secondarily, what you do should be more interoperable with what other nations do, that, therefore, enhances your competitive advantage as a nation.
+
+Is that the point you're making?
+
+[Speaker 4]
+Right. Yes, yes. From the other angle, I think policy makers and people will definitely have different reactions.
+
+One of the reactions of policy makers is, uh-oh, this is new, I don't want to touch it. I don't want to touch it, how it works. And when they say, I have to touch it, because at the moment there are non-harmonized developments, first of all, so I should get involved to ease burden, and, on the second hand, it is new.
+
+To go away with that notion that this is new, because transparency and traceability frameworks which cross boundaries have existed are already functioning. They function for meat, they function for fresh produce, they function for automotive components. So, it is not new.
+
+It is just talking of an industry standard which has more harmonization so that the interplay between industries will be captured and so on. But maybe in that solutions and challenges part, the table, perhaps somewhere we could mention this, that is one of the challenges. It is novel, it is new, I don't have the bandwidth to think about it.
+
+[Speaker 1]
+I have just written there in point four that we want to take away some fear. That was a comment made to me. I had a quick look and it looked complex.
+
+When it looks complex and scary, it is like that is going to be costly, I am not going there. Avoiding that fear.
+
+[Speaker 9]
+OK.
+
+[Speaker 1]
+do we have any so far is some good suggestions about what we should do. We will keep protocol. We will change ESG for sustainability throughout the document where reasonable.
+
+We will do a better anchoring to existing multilateral agreements up front. But generally that is all still more or less within the current structure. Has anybody got any strong feelings about whether the general structure needs to fundamentally change or are we talking about applying the discussion we have had to improve what is there.
+
+[Speaker 3]
+I want to give a comment on Rakesh's about the harmonisation and I think perhaps we could put something about the United Nations that in following this we move to a protocol that aligns with those goals as sustainability development and furthermore why we do this because we create something for the whole world. And I think we should emphasise this. It is also done already in the travel domain of the UN telling what kind of SDGs are supported by for example this transparency protocol or DPP or whatever you name it.
+
+And I think that triggers more people than why are they coming up with a new recommendation. It is in the line of expectations I would guess and make this feel like it is a result outcome of the higher goals of the UN. I don't know if that makes sense.
+
+[Speaker 9]
+I think I understood.
+
+[Speaker 1]
+Could you just write a paragraph after this call. Just restating what you said.
+
+[Speaker 3]
+Yes. And about this technical sometimes it is for people scary. It makes it sound difficult.
+
+Although you mentioned several times we have a simple solution so to speak. But in other words this first part technical is quite dominant for people when they read it. So perhaps we can downsize this technical term sometimes used and emphasize that we have a simple solution.
+
+We have one spot to go to. It is our transparency protocol and all the details around it. It is easy accessible, easy understandable, aligned with SDGs, et cetera.
+
+I think that will work better than perhaps introducing nice techniques and yeah, that most people do not understand. They just want something like UN is, trust, and give me some tools. In simple words, that substance which states the word trust.
+
+Because your whole document is about trust, is about evidence, and that's what the UN is, and perhaps we can make a link and it is all something that is embedded in all the things that the UN does that can be UNEP, that can be UNIDO. Everything we do is something that is around this.
+
+[Speaker 1]
+I understand the message you're trying to pass. I think it is an important message to pass. Picking the words and putting it in the right place and making them such that when a new word comes becomes new I think we've had a lot of valid input here today and we've just got to get another draft out and I think importantly maybe take the opportunity to test it on people outside this group.
+
+Examples of those real policy makers. Joe, did you want to say something?
+
+[Speaker 7]
+Just to give a plus one to go ahead there and just saying that if we're leveraging existing policy initiatives and so forth, I think also leveraging existing global technical initiatives is also worthwhile. If we're going to create something specific and new for this, I think it's not a good message, to your point, Steve. What we're trying to say there is this might look technical, but it's not.
+
+[Speaker 1]
+Even though there's tech stuff, I'll just put it in the right area.
+
+[Speaker 7]
+There's global initiatives we can leverage.
+
+[Speaker 1]
+It's basically saying we're not inventing new tech stuff, we're just using existing well-developed stuff.
+
+[Speaker 7]
+Global standards and global initiatives, I would say.
+
+[Speaker 5]
+I think there is a strong case to be made for reducing technical jargon and technical elements in this section one. Because our audience is not technical.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+Gehart, you've still got your hand up? Or is that a legacy? Or did you want to add something else?
+
+[Speaker 3]
+No, I do not have my hand up. Oh, sorry. Sorry.
+
+Yeah, you got to click to take it down. All right.
+
+[Speaker 1]
+Look, we're a few minutes away from our hour. What I've taken away is there's still more work to do, but we're in a broad consensus about the structure of section one. We've got some improvement of wording and a stronger tie to the existing global initiatives and agreements that will resonate with policymakers, to give more, to Zac's point, reason why I should keep reading.
+
+And then if we can, test it. So I'm good with what we've got so far. There's still more work to do, and hopefully we can send out an update on something like Monday.
+
+But I want to get to the point where I get emails back and say, essentially, good enough. We might have tinkering comments, but at the moment we're still not quite in the good enough point. So we've still got a bit of work to do to get there, but I feel like if we implement what we've heard today, I hope to get good enough on Monday.
+
+So look out for an email on Monday and give us a quick, by all means, bunch of comments, but the main message is you support it or you don't support it. It's good enough or not good enough. Any final comments from anyone?
+
+If not, we'll close it here. Thank you for your input and do another iteration.
+
+[Speaker 5]
+I want to say thank you to Virginia and Steve for driving this and getting us to where we are today. It's looking pretty good. There's comments and always improvement, but I want to thank the people doing the heavy lifting for pushing this forward.
+
+[Speaker 3]
+I think it's also very good, especially for technical people, but a little bit less technical and it will be a good document. You're right, Geha.
+
+[Speaker 1]
+Thank you all. Look out for a document on Monday and see you next week.
+
+[Speaker 9]
+Thank you all. Bye. Bye.
+
+Bye. Bye.

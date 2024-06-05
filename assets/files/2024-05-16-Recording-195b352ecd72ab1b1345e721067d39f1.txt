@@ -1,0 +1,468 @@
+[Speaker 1]
+Okay, second, quick reminder that your contributions to this project are UNIP. If you don't want to grant your IP to the UN, then don't contribute. And let's get on with today's agenda, which is, as usual, to look at any outstanding pool requests, then to invite people to discuss any tickets that they've been working on since the last call.
+
+And then I wanted to spend, or maybe we'll do it before the tickets and after the pool requests, a bit of a chat about the relationship between schema, context files and vocabularies. I've been banging my head about this for a little bit. And I think I've got some inspiration that I'd like to share with you and get your views.
+
+Anyway, let us move on. I will share my screen. Where's the share button?
+
+There. Stop.
+
+[Speaker 7]
+Share. And pool requests.
+
+[Speaker 1]
+Oh, no, wrong one. Wrong vocabulary, sorry. Pool requests.
+
+There we go. This one, just really simple, little typo, pool requests, which I imagine nobody's got any objections to merging. So I'll just merge on that, unless anyone objects.
+
+Thanks for the fix. The next one is NIST has, if you remember, we updated the passport and conformity credential and traceability events pages with content that looks... Where is it?
+
+[Speaker 7]
+I'll pull it up again.
+
+[Speaker 1]
+Which currently looks like this, right? They all look similar. Requirements, logical model, definitions, etc.
+
+And right at the bottom is this example, which currently is just generated from a schema and is a little bit too generic. Example.com and all that stuff. And it's really helpful to have more meaningful examples.
+
+And this is kind of design practice is to basically design from examples. And so what we've done is updated that example. And we can have a look at the file change.
+
+So from example.com, blah, blah, blah, to more realistic context, more alignment with the VC data model, more realistic IDs, brand owner, and so on. So I think that's a helpful update. It means that his example no longer quite aligns with the schema.
+
+So there's a bit of work to do to go back and update the schema and data model to align with the example. But I think this kind of example-driven consensus, followed by that looks right, make a schema from the example, is maybe not a bad way to go because it's very understandable. So...
+
+[Speaker 2]
+Steve, can I just ask... Yeah. Yeah.
+
+So presumably, buyacre.com is one of NIS's clients and he's got their agreement for this?
+
+[Speaker 1]
+That's a good question. I don't even know who buyacre.com is. Are they a real company?
+
+[Speaker 2]
+I assume so, because he's put that... Let me find out. I have a machine in front of me that will tell me.
+
+[Speaker 1]
+I was hoping he... It looks legitimately like... Look, there's a image.
+
+It's...
+
+[Speaker 4]
+It may be...
+
+[Speaker 2]
+That's a little tricky. Yeah. It's nice to have real examples.
+
+[Speaker 4]
+And Nordic Buyacre is an example.
+
+[Speaker 2]
+Yeah. But that's a real product by a real company, which is okay if, but only if, they agree with it. And what happens to your documentation when they go out of business or get bought up or whatever?
+
+[Speaker 1]
+Yeah, agreed. Oh, well, this will no doubt change again. So the second point, we can fix it.
+
+But the first point is we don't have assurance that he's got permission from Nordic Pioneer. So why don't we just... I'll write a comment on the PR to say, please confirm permission or change to some imaginary product before we merge this one.
+
+[Speaker 4]
+I think my two cents would be changed to an imaginary product. I think permissions could change and sound like a headache to keep.
+
+[Speaker 1]
+Yeah. Okay. We can do that.
+
+In general, I think it's a good idea to basically have more realistic examples. But yes, this may be a little too realistic.
+
+[Speaker 4]
+Completely agree. Completely on the realism, but even changing the URL to be something fictitious and not have the content look like it's been lifted from their website.
+
+[Speaker 1]
+Yes. Fair enough. It's a good point.
+
+Thank you for that. All right. So we'll hang on to that one and say a conversation.
+
+[Speaker 5]
+Just a thought as you're typing that, Steve, if we were planning ahead to have things like some sort of interoperability environment or something else, maybe we can think of an example that will be relevant to any such environment. Because if we just make something up, it won't necessarily be as realistic as you want it to be, for a real example. Maybe we can think about what we might use for interoperability experiments or sandboxes and so on.
+
+[Speaker 1]
+Yeah. I think there's almost like a maturity pathway where we manually created realistic looking examples like this. Then we create a schema based on it, and then we implement something in a pilot, and that gives you actual samples that you pull out of the pilot.
+
+And that's what we did with the Australian agriculture stuff. And we're just about to go into phase two of that same program, where we'll re-implement everything we did for phase one of the Australian agriculture thing, but with more updated models. So actually quite soon, we might replace these examples with ones that are actually out of the pilot.
+
+[Speaker 4]
+Steve, it's buyacre.com.
+
+[Speaker 3]
+I'm sorry. I have a question, Steve. Are there any product passports regulated in Australia for the products that you did with the cows and so on?
+
+[Speaker 1]
+They're not regulated. So in Australia, there is the usual corporate disclosures regulation, so not at product level, but at company level, that's coming into force. And there is in the emergence of the beginning of some thinking about regulation for very specific use cases like recycled packaging passports.
+
+The Department of Environment has some stuff going on, but there isn't yet the equivalent of the Europe-wide stuff.
+
+[Speaker 3]
+So I think as long as we call them digital product passports, which is the term from the European regulations, then why don't we take a product example from the European regulations and any of the product categories that we have there?
+
+[Speaker 1]
+We could. We could use... I mean, as long as it conforms to the UNTP data model, yeah, we could use any source that is authorized to use.
+
+And actually, more than one example is good. I think as we collect implementations, even pilots, and real snippets, example snippets come out of that, we can just add them, I think, as multiple samples. Does anybody disagree with that?
+
+Okay. All right. So this one's on hold until we sort that out.
+
+Zach lodged a...
+
+[Speaker 3]
+Sorry, my connection is really bad. I don't hear everything that you say.
+
+[Speaker 1]
+Okay. So I think I was saying, yes, a great idea to use European DPP examples. Obviously, it's better if the examples align with the UNTP data model and schema.
+
+And that will likely happen as more and more implementers build their test implementations. And so we should be putting multiple examples in there. There's no harm in having more than one.
+
+So this other PR is failing to build, so I can't release it yet. But this is from Zach starting to put some words around the test architecture, how you verify conformance. And this diagram is meant to convey the idea that there's a core UNTP, and then there's extensions like Australian agriculture, or critical raw materials from Canada, and so on.
+
+And that there's three layers, sort of technology interrupt testing, schema testing, and then, if you like, choreography business testing. And that UNTP is likely to have more focus on core verifiable credential interoperability, did methods and so on. And UNTP schema testing, and not much below that.
+
+And extensions will inherit all of that and not add much at all to the core technical stuff, maybe extend some schema. And really, most of the focus for extensions will be in the business choreography of whether it's red meat or lithium or whatever it is. That's the message of that.
+
+I don't know if he's written it up that well. I'll have a look. And then goes on to describe that.
+
+So I suppose the first question is, what do people think of this kind of idea of three tiers of conformance testing for UNTP implementations? So pure technical interrupt, and then document standards, or this is the DPP and the conformity credential and so on. Simple schema conformance, and then the next layer, some sort of business testing.
+
+And at the UNTP level, I can't think of much more than maybe one or two simple graphs, like confirming that the scope of a conformity claim in a passport matches the scope of the attestation in a conformity credential, that sort of thing. So that would be in that little blue box down there, link testing, he's called it. But when you get into, for example, the red meat industry, now you're talking about farms and feedlots and abattoirs and so on and all the language of that doesn't exist in UNTP.
+
+But that's where most of the testing will be, I think, in an industry extension. Any comments on that kind of high level test architecture?
+
+[Speaker 2]
+Yes, levels certainly make sense. A lot of use of the word testing there, how is this going to be tested? And how can you and will a test suite test each layer?
+
+Will we strongly recommend, you probably can't require, can we recommend that anyone building an extension also has the means to test it in some way? If it is the case that you have, if it's built on profiles, so maybe a shackle file that says that imposes cardinality and extensions in that way, if you have a tool that will understand shackles and input, then part of your definition of your extension is you provide a shackle file. Can we go as far as that?
+
+If not, if we can't go as far as actually providing at least a strong pointer to how you would test it. I suppose my general thing is quite every bit of work, not just this one, of course. If you can't test it, why is it a must?
+
+[Speaker 1]
+Yes, agreed. I think that's a principle, right? If you say must, then you have to have a way to test it.
+
+Even if you say should, you probably should have a way to test it. And I think generally also looking at these three layers, this technology layer by and large, I think he even does it down here, it's probably not for the UN to reinvent test suites at that level. So here he's pointing at the, there is a W3C version two verifiable credential data model test suite already.
+
+So we're basically saying go test against that. But we've added in UNTP, we care about these extensions here, right? Like selective reduction, I don't know, actually, that should be taken out, but particularly the rendering.
+
+And I think I need to review these extension bits.
+
+[Speaker 2]
+Yes, I'm just thinking, I'm just making a mental note to review anything about QR encryption, because I spent a lot of my time telling people there's no such thing as a secure QR code, or indeed an insecure one. They're just QR codes. The software that reads it may be insecure or secure.
+
+But the QR code is a dumb thing.
+
+[Speaker 1]
+Yes, it is. So I think this PR also needs some review before it's released. The starting point is, first of all, do we sort of, is there some consensus on these layers, and also this separation of core UNTP from extensions.
+
+And this idea, you know, you can see this kind of sort of shape here that says UNTP is going to have more testing at the technical interrupt schema testing and a little bit of link relation testing, whereas implementations, sorry, extensions are likely to almost do nothing at the technical interrupt level, might extend a schema, but will focus quite a lot on the business workflow of that industry. So that sort of conceptual architecture works for me.
+
+But I think we should be very clear here about, as Phil said, if you say must or should, then you must or should provide a corresponding way to test it. And I think that looks like this list of terms here just looks like a bit of random thought dump, and doesn't look quite right. So there's a bit of work to do to flesh this out a bit.
+
+So maybe if at the moment, we've got some consensus that that kind of shape of test architecture looks right, then we can fix the words a bit later.
+
+[Speaker 6]
+Yes, just a comment on the labels. I think we need to consider what we might call the last one other than link testing. Because when I see link testing, I think about testing the links in an HTML document to be sure that they go to actual addresses.
+
+And I think this is more like data relationship or testing, yes, or compatibility is not link testing. So that's all that I wanted to suggest.
+
+[Speaker 1]
+Yeah, it's more like the most minimal graph back to Phil's early comment about Shackle. I can imagine some really, really basic, simple graphs that are part of UNTP testing, and they get much richer when you get into a particular industry. So maybe we should call it graph testing and put some more words about this.
+
+I'm trying to find where do I comment on that conversation.
+
+[Speaker 7]
+We need to fix the wording in the diagram.
+
+[Speaker 1]
+We need to view lists of scope.
+
+[Speaker 6]
+And then if you use graph testing, I'd add somewhere a short paragraph about describing what you mean by graph testing.
+
+[Speaker 7]
+Of course, yeah.
+
+[Speaker 1]
+Okay. Anyway, so that's on hold. But it was perhaps a useful discussion.
+
+There's no more pull requests then. If I can beg five minutes now, just to see if we're on the same page about the linked data world. What I mean by that is let me pull up to I encounter, including in myself, by the way, I've had a bit of confusion about simple structured schema, like XML schema or JSON schema.
+
+This is JSON-LD as a linked data, and its relationship to semantic web stuff like RDF, and how all this plugs together is a common problem for people, including myself. And I think also a bit of a risk. There's a lot of value in this stuff.
+
+But if our specs basically end up demanding expert ontologists to do any implementation, then we're in a bit of trouble, right? It has to be simple and implementable. But there's some value in the linked data, right?
+
+And in my mind, the value is this. I'm just going to use the logical model of a passport here, where, for example, you see facility name. In a structured hierarchy, you can add a pass.
+
+And the machine knows that item is a pass product facility name. It doesn't really know what it means. And if you go to conformity credential, you might find the same thing.
+
+Where is facility? There it is. It's under conformity assessment.
+
+So the machine goes, that's a conformity attestation, conformity assessment facility. We know they're the same thing. They're the same thing.
+
+So to kind of type these J keys in a tree, when you find facility name, for example, it means this. And that's the whole point, as far as I understand, of JSON-LD and the context files. It's to be able to make assertions that data elements found, sort of sprinkled throughout structured data, or even sprinkled throughout a website in HTML, have this particular meaning.
+
+And so there's basically three things, three structures to get your head around. One is the actual instance, right? So the thing, like the instance that, you know, the sample down here, or Nis's better version of it.
+
+And in Nis's version, if we can find it, actually, we won't merge it yet, but it had a good, where did I put it? Too many.
+
+[Speaker 7]
+I've lost it. Never mind. Never mind.
+
+Let's just go back to this.
+
+[Speaker 1]
+The thing that JSON-LD lets us do, maybe there's an example, yeah, well, essentially is, here we go, is tag, what is the context file? So this is basically saying, in a separate file, most of these things like name, location, et cetera, in that file there, we can probably open that, points at some independent meaning. So for example, agricultural package here, he's defining some structure called agricultural package, and he says in there, there's a thing called packing date.
+
+And he said, there's a universal definition of that over there by GS1 called packaging date. And so wherever you find, it's basically a way to link any key in any structure, so anywhere throughout these documents, to a dictionary term. That's the whole point of it, right?
+
+And that means that when you make a graph out of multiple credentials, you can actually see that the thing called facility name out of this credential is the same as the thing called facility name out of that credential. And you can start to say, well, is that the same facility name then? And so there is value in this stuff, but it can be a bit complex to get your head around.
+
+And I'm trying to find a way forward where we extract just the value we need without overcomplicating all this. And I think I've seen challenges, and you can see it actually in this W3C link vocab. When your principle is, oh, we must have a vocabulary for everything in a schema, and every element in the instance has to point to a, has to have a JSON-LD context, which points to an established vocabulary.
+
+I think that's kind of the approach they've taken with the W3C trace vocab. And what ends up happening is you often find something that you need in your schema or in your instance that just doesn't exist yet in a standard vocabulary. So people start making inappropriate mappings, and you see a fair bit of that in the W3C trace vocab.
+
+And my suggestion is that it's better not to map something than to map something wrong or incorrectly. And our approach here should generally be, let's get the data model right that we want for a passport or a conformity credential driven by real samples, make a schema, keep the JSON-LD context really, really light. And basically, instead of saying we've got to have a full vocabulary in JSON-LD context for every element in every schema, we say, well, which ones are important?
+
+Which ones are we actually going to be, want to key across multiple instances? And just focus on those and do that later. Right?
+
+So the kind of workflow here is work through example files, make sure we understand their purpose and we agree a structure, make schema, make a JSON-LD context file with almost nothing in it to start with, and then start picking out the elements that we think are important to be able to match across instances and make sure we map them right to some reference vocabulary. And if that means 20% of the properties in this diagram in front of you are mapped to a standard vocabulary but mapped correctly, that's better than 100% where half of them are mapped wrong. Does everyone agree with that kind of approach?
+
+[Speaker 2]
+I think so, but I just want to check something. I certainly agree that we develop the data model that we think is right and then look for mappings. But I just want to clarify, it sounds to me as if you're saying that where there are no mappings, we don't need to define it as a linked data term.
+
+In other words, you'd have a complete mix of linked data and non-linked data in the same data file. I wouldn't think that's going to work, but I'm happy to basically redefine our model. You could even define the whole thing and then say this term in our data model here is an exact match for this term in schema.org, this term in whatever vocabulary you want, including obviously the JS one. But don't leave a term in our vocabulary that doesn't have a JSON-LD context that gives it a namespace.
+
+[Speaker 1]
+Yeah, in that case we would have a vocabulary or a namespace which is just within UNTP. So basically the approach would be, I suppose it goes to the granularity of the governance. If we're a team working on UNTP and we care about these three schema and we can, together with releasing schema, also release vocabularies that map everything in here.
+
+But when we want to map something to an external vocabulary, even if it's a UN1, because that's governed separately with another team, or a GS11 or a schema.org one, we do that quite carefully and only when it's accurate. And the rest of it is we keep within our governance. Is that what you're saying?
+
+[Speaker 2]
+Yes. And I think you also have to always bear in mind, why is it worth doing this in the first place? And I think increasingly it's easy to make the argument why.
+
+It used to be, back only a few years, all about search engine optimization, which was a very weak use case, certainly in terms of the kind of thing we're talking about here. But now it isn't. Now it's about feeding artificial intelligence.
+
+And search engines are massive AI bots. And the distinction between the two is becoming ever more blurred. What we're providing is machine understandable data.
+
+It's been done for a long time in lots of areas of research and some particular life sciences. But what we're trying to do here is provide the machine understandable, machine interpretable data. And for that you need defined semantics.
+
+You need to know when I say packaging date, I mean the same thing that they mean over there, which is the same thing as they mean over there. And so a machine will do that inference in a way that was always proposed and I suppose theorized right from the start of semantic web back at the turn of the century. God, don't I feel old using that term, turn of the century to mean 25 years ago.
+
+But I think now with the almost commonplace use of AI, I think that becomes more and more important. So here what we're saying is you look at a thing and you say, give me the DPP for this. And the machine will find it.
+
+And the machine will find it more accurately if we take the trouble to do these mappings and have these defined semantics.
+
+[Speaker 1]
+Yes. So thank you for bringing up the point of why are we talking about this in the first place? My intent was about being able to compare meaning across multiple instances, particularly with different schema, in order to draw graphs, which we know we need to draw in order to verify important relationships and things like this.
+
+And that's one of the core principles of UNTP, that we want to be able to pull together various credentials and elevate up content from them into a graph and make sense of that graph. And I don't know how you do that in any sort of automated way without solid linked data. But the counterbalance to that is you start to demand ontology skills and skills that are not commonplace.
+
+And what I've seen is some consequence of that is poor mapping that's clearly wrong. And so yeah, how we manage it so that we avoid the need for particular niche skills for implementers and make this simple, but valuable. We need a bit of a strategy around that, right?
+
+And what is the granularity of the JSON-LD file? I think it goes with governance, right? So here's a team working on UNTP with, so far anyway, three schema data models.
+
+There's probably one JSON-LD context file that matches, that maps to our project. And in there, we've defined the keys for everything. And in some of them, we've mapped to where it makes sense to schema.org or GS1 or UNC fact or whatever. But that's a bundle that we can manage. And for implementers, they don't have to reinvent that. They just basically use the examples in the schema and it should all work, right?
+
+Yes, that's true.
+
+[Speaker 2]
+The other thing that is worth bearing in mind is some people have enormous rushes of antibodies as soon as you mentioned the linked data part. And the way around that is that JSON-LD 1.1 allows you to keep the context file information completely separate from the JSON part, so you can process it. And the whole point about JSON-LD is you can process it purely as JSON.
+
+You don't have to be a linked data person. You can process it purely as JSON. And linked data, JSON-LD 1.1 allows you to link to the context file that turns JSON into JSON-LD purely at the HTTP layer with a particular link type so that you can be nice to developers who hate you because you use linked data at the same time as providing linked data information to people who want to make the kind of connections you're talking about.
+
+[Speaker 1]
+Yes. Okay. So that means a very few of us will make a well-architected JSON-LD context file at some point in this project that links to well-established vocabularies where correct and appropriate.
+
+And most developers don't have to worry about that. They look at the structure, they implement a product passport or a conformity credential or whatever according to the schema, only if they're working at the graph verification level. And even then, we might help them by saying here's a standard shackle shape and you don't have to worry too much about this.
+
+I want to try and basically do whatever we can to avoid any dependency on implementers having to understand all this, right? And I think you made the point well, Phil. As long as we keep that principle in mind, I think it's okay.
+
+I agree. All right. So would anybody else on the call...
+
+So my next steps will be just on this topic, to look at Nis's example, work with him to make it a non-proprietary example and update these models to reflect alignment with VCDM. And by the next call, we should have all three of these a bit more closer to be ready to implement. There's a bit of pressure from Australian agriculture and critical raw materials to have stuff ready to go fairly soon for pilots.
+
+It won't be final, but I'm going to go a week or so before they really start kicking off. So now back to issues. Has anyone got any issues that they've been working on over the last week or so that they would like to talk to?
+
+[Speaker 2]
+I went through mine yesterday. Two of them I tagged as bending close, meaning I think these can be closed because they're done. And one of them actually was also on exactly the topic we've just been talking about, about whether you link to schema at all, or whatever.
+
+We've talked about that. And I think given the consensus that has just been raised, I don't think there's any reason to keep that one open as well.
+
+[Speaker 1]
+All right. So these three here that are Phil Archer and pending closed, one is, are we going to put schema context? Yes.
+
+Is circularity in scope? Yes. Credential subject.
+
+What was that one?
+
+[Speaker 2]
+That was me getting caught up on a detail of the BCDM because I was concerned that the assertions in the credential were being made about the credential rather than the thing that has been credentialed, if that's even a word. And I was corrected. So I stand corrected.
+
+[Speaker 1]
+Okay. So I think all those will get closed by the update of the model that aligns with BCDM and so on that we'll do before. So I'm happy to close those when we've done that.
+
+Has anybody else got anything they want to talk to? Since I most recently updated.
+
+[Speaker 5]
+I can talk to number 78 if they're quickly, Steve, which is more to say that Harley and myself and possibly Joe, if he's around, we'll be having a chat some our time tomorrow morning. So hopefully we can resolve that issue and get to know each other a bit better as well.
+
+[Speaker 1]
+Yes. Okay. That's quite a long conversation here.
+
+[Speaker 5]
+I'm going to have a read through this. A lot of it was me kind of reasoning to myself, but also with Michael, Mike Shea and Nis helping along the way as well. Okay.
+
+[Speaker 4]
+Yeah, there's kind of an intersection with this. Sorry, who's that? So it's Michael here.
+
+And I'm in the process of typing in a response, John, to the issue on removing the two, was it the score? Cool.
+
+[Speaker 5]
+They're in issue number 92.
+
+[Speaker 4]
+92. Yeah. So I'm in the process of typing a counterpoint.
+
+Okay, cool. All right. Okay.
+
+[Speaker 7]
+Thank you. All right.
+
+[Speaker 1]
+Well, then by next time we meet, I will update those data models to align with and this is sample. I'll check with NIS to make sure, well, ideally to make it less use imaginary products and update that published schema, a published example.
+
+[Speaker 4]
+Maybe it's more imaginary companies, Steve, versus necessarily imaginary products. Yes. Right.
+
+But because if he has all the other information that's around a product, that can be used without getting into trouble. Changing the name of the company and using the other stuff so that it hangs together might be a good idea, but just making sure it's genericized enough that we don't end up in IP or copyright issues. Sure.
+
+[Speaker 1]
+All right. Well, in that case, I think by next time we meet, we should have pretty close to implementable three document types and schema and samples. And we'll be probably the most interesting next topic to talk about is these trust graphs.
+
+So perhaps we could look forward to an update presentation or something from Harley and John and perhaps NIS in the next call.
+
+[Speaker 7]
+Yeah, sure.
+
+[Speaker 5]
+In principle, yeah.
+
+[Speaker 1]
+In that case, I've got nothing else and we're 15 minutes early, but people always like time back in their diary. So if there's no objections, we'll close it here. Nope.
+
+Then thank you everyone for attending. Oh, I maybe give you a little update. I was invited to present at the Surpass kickoff two days ago.
+
+I'm quite deeply in the kind of technical part of B2B without too much knowledge, or not knowledge, there isn't much guidance from the European Commission yet about the content of a different types of product passport. And there was some talk from a standards group about, well, we need a common core upon which different product passports, industry specific passports can be built. So it started to sound like, Oh, that sounds a bit like UNTP.
+
+And then someone else piped up and said, well, one of the challenges making regulations around this particular economy that imposing them on the export is that you risk getting accused of creating a non-tariff barriers to trade and getting discussions in the WTO and so on. And wouldn't it be good to use, to align as much as possible with international standards. And so I came away from that with a general feeling that we do have an opportunity.
+
+Obviously, it's unlikely to be mandated from top down, but an opportunity to work quite closely with the EU commission or the Surpass people and other projects to have quite a good alignment because I think their architecture and thinking is very well aligned. And they're, if anything, a little bit behind us in terms of creating structured data models and standards and so on for those passports. And there seemed to be quite a good willingness to work together.
+
+It's kind of at the bottom, workers working together as opposed to top down mandates, but that's still a good thing. I thought, I just thought I'd update you on that. So we're getting some visibility, basically.
+
+Suzanne was there. She may want to comment. I don't know.
+
+[Speaker 3]
+Yeah, I don't know if you hear me, but they're not looking into data models yet, but they're looking into what data needs to be come into which product. So they will probably have the schema definitions earlier than we do have the data structures.
+
+[Speaker 1]
+Right. But I did get quite a few people, I think five or six reached out to me afterward and said, one of them was the person I think that was presenting on data standards and vocabularies and the idea of core and extensions. So we might see if we can join up a little bit, our efforts and theirs to try to be consistent as possible.
+
+[Speaker 3]
+Absolutely. I think we should do that because otherwise, if it doesn't fit together, I don't know what becomes meaningless. It's either the work there or the work here.
+
+So I think we definitely should do that. And to surpass as far as I know, I'm not really looking at the JTC 24, where they at maximum look at identifiers or data that is relevant across different product segments, because they're supposed to support JTC 24. So I assume something will happen there.
+
+They talk about interoperability, that that's their focus, but I've seen the application and I think interoperability will be difficult for them. Or maybe we can even support that part to make the pilots interoperable also, or to give them some reference to do. So let's see how it really goes there, because there's 13 different pilots with 13 different technology approaches, so kind of difficult.
+
+[Speaker 1]
+Yes, it does seem like they're throwing some money at different technology companies to do pilots with a limited amount, a bit more than surpass one, but a limited amount of common guidance on interoperability between them. But it's still useful work. But I think the most interesting bits were those JTC 24, the standards group that were starting to think, I think, in a very similar way to us.
+
+But the way I heard them, they put a calendar there that said basically, the rest of this year is research and discovery of what's out there. And then next year is developing some standards and so on. So with any luck, they'll have a closer look at what we're doing over the next few months as we start to do pilots.
+
+I hope that they'll look at what we're doing and use some of it. And if we keep in touch with them, then we can tailor it as necessary to meet their needs.
+
+[Speaker 3]
+Do you mean JTC 24? Because I'm part of JTC 24. I'm in working group one strategic and two identifiers.
+
+I think the standards that we will be using for identifying and data carry on so forth, there has to be a first proposal in August. So a lot of things will already be nailed down kind of in the next weeks.
+
+[Speaker 1]
+Okay, so then could we have a look at look out for gaps or differences? Is there anything different in the way we think about identifiers versus JTC 24? Are we heading down a fork here?
+
+Or are we coming together?
+
+[Speaker 3]
+Yeah, we have to do that. I don't know, Phil, if you're a part of it, but someone I mean, GS1 is actually leading the group. So I guess there's some communication inside of GS1.
+
+And I'll definitely also have an eye on it. And we can definitely discuss each week, you know, what's what's going on and yeah, discuss it.
+
+[Speaker 2]
+And GS1 corporately is involved in SERPAS and the SANS satellite work. I'm personally involved in neither. Although I do sometimes get calls asking me for what I think about certain things.
+
+I went yesterday as it happened. So yes, I'm sort of at least one step removed. I'm not right in the heart of it as you are, Suzanne.
+
+[Speaker 1]
+So I wonder if we should have a little standing item every couple of weeks or something like this about how are these other standards going? Are there divergences? Does it mean we need to change anything or even try to influence them to change something if we think their direction, you know, could, let's say could be improved?
+
+How do we how do we organize that liaison? I think it's going to just have to rely on people on this group that happened to be part of those groups.
+
+[Speaker 3]
+And we can do that. But there is also an official way to ask for a liaison to JTC24. I don't know if you can do that as the work because you have to be a legal entity.
+
+So is our working group a legal entity or can UNCFAC do it as a bigger organization or the UN?
+
+[Speaker 1]
+I don't know. I'm pretty sure the UN can do it. So if you can send me any tips or hints on that, I'll follow up with the UN secretariat and see if we can establish a formal liaison.
+
+[Speaker 3]
+Yeah. Yeah. That probably makes a lot of sense.
+
+And I have all the details how to do that.
+
+[Speaker 1]
+Perfect. Okay. Yeah.
+
+All right. Well, that was a good finishing discussion. I'm glad we had that because, yeah, I think it's important to keep our fingers on what else is going on and make sure we align our value.
+
+[Speaker 3]
+Yeah. Absolutely. And I mean, JTC24, maybe just one last word.
+
+JTC24 is not looking at supply chain topics. So they look at product passport issuance and standards, how to identify the passport, how to get to the passport, maybe how to verify the passport and so forth. But they're specific, specifically took out the upstream supply chain.
+
+So I think we need to understand how we get well connected to what's being defined in JTC24 with what we do for mainly upstream supply chain. And then we have to look at what we're doing with our product passport definitions here, if it makes sense or not, or if we define the product passport for pre-products of products need a passport under European law or the like. So we probably have to discuss that a bit as well.
+
+[Speaker 1]
+Yeah. Well, I mean, our primary intent is to define a data structure for sustainability claims with any product at any level in the supply chain, including upstream, as far as livestock and mining products, which is sort of a much deeper into the supply chain scope than European DPPs. But you wouldn't want an accidental misalignment in the way things are identified and discovered, or in some of the vocabulary and language of core constructs in a digital product passport.
+
+So if we can work to avoid accident, we may have intentional misalignment in some places because of different scope, but it will be silly to just not collaborate and publish stuff that does the same thing, but differently.
+
+[Speaker 3]
+Yeah. So what we need to achieve is that if the European commission standardizes the digital passport for the end products, even also chemistry, but let's take a tire and the tire needs a due diligence certificate. And this comes from the upstream supply chain that they can easily point to it and verify that due diligence certificate coming from up the supply chain.
+
+That's, in my view, needs to be the goal of how we can work together.
+
+[Speaker 1]
+Yeah. And that's exactly the diagram that Carolyn put together that shows how upstream information supporting the due diligence obligations of the downstream products are. That's a fairly clear strategic fit.
+
+But then it gets down to the nuts and bolts of interoperability because at some point, these upstream passports and credentials are inputs to downstream stuff. The more interoperable we can make it, the better. And that means a little bit more rolls up sleeves and collaboration with these other groups.
+
+So I look forward to your email and I'll see what I can find out about the UN's ability to be the liaison so that we can use that as an umbrella. I'm not sure how it works, but I'll find out.
+
+[Speaker 3]
+Super. Yeah. I'll send it right away.
+
+[Speaker 1]
+All right.
+
+[Speaker 3]
+Sorry for my noise.
+
+[Speaker 1]
+Unless anyone else got any comments. Thank you very much for your time today and see some of you next week and different group next week.
+
+[Speaker 3]
+Thanks, Steve. Thanks. Thanks, Stephen.
