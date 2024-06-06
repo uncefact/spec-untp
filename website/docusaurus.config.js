@@ -112,6 +112,11 @@ const config = {
       footer: {
         links: [
           {
+            label: 'PDF',
+            to: '/un-transparency-protocol.pdf',
+            target: '_blank',
+          },
+          {
             label: 'Terms and Conditions of Use',
             to: '/terms',
           },
@@ -127,7 +132,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-
 };
 
 module.exports = config;
