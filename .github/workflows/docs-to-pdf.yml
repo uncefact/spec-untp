@@ -1,11 +1,6 @@
 name: Docs to PDF
 
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - "website/static/un-transparency-protocol.pdf"
   workflow_dispatch:
   workflow_call:
 
