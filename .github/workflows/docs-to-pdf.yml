@@ -7,8 +7,20 @@ jobs:
   docs-to-pdf:
     name: Generates PDF file from docs
     runs-on: ubuntu-latest
+    permissions:
+      contents: 'write'
+      actions: 'read'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/create-github-app-token@v1
+        id: app-token
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ steps.app-token.outputs.token }}
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -37,3 +49,12 @@ jobs:
           base: "main"
           branch: cpr/docs-to-pdf
           draft: true
+
+
+      - name: commit dpf
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add website/static/un-transparency-protocol.pdf
+          git commit -m "chore: update PDF file"
+          git push
