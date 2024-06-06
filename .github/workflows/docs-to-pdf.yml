@@ -1,6 +1,7 @@
 name: Docs to PDF
 
 on:
+  workflow_call:
   workflow_dispatch:
 
 jobs:
@@ -8,8 +9,8 @@ jobs:
     name: Generates PDF file from docs
     runs-on: ubuntu-latest
     permissions:
-      contents: 'write'
-      actions: 'read'
+      contents: "write"
+      actions: "read"
     steps:
       - uses: actions/create-github-app-token@v1
         id: app-token
@@ -38,20 +39,8 @@ jobs:
           --outputPDFFilename="website/static/un-transparency-protocol.pdf" \
           --coverTitle="UN Transparency Protocol" \
           --coverImage="https://uncefact.github.io/spec-untp/img/home-hero.jpg"
-      - name: snapshot PR
-        uses: peter-evans/create-pull-request@v5
-        with:
-          commit-message: "chore: update PDF file"
-          delete-branch: true
-          title: "chore: update docs-to-pdf file"
-          body: |
-            Updates generate PDF file
-          base: "main"
-          branch: cpr/docs-to-pdf
-          draft: true
 
-
-      - name: commit dpf
+      - name: commit pdf
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
