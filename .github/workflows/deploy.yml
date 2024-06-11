@@ -53,5 +53,6 @@ jobs:
     secrets: inherit
     permissions:
       packages: read
+      actions: read
       id-token: write
       contents: write
