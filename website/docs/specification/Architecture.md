@@ -15,7 +15,7 @@ The architecture is the blueprint for all the components of the specification an
 
 The architecture principles that guide the UNTP design are 
 
-|Name||Principle|Rationale|
+|Name|Principle|Rationale|
 |--|--|--|
 |No dependency |UNTP should not require any collaboration or dependency between the issuer of DPPs and the consumer / verifier|Imposing such collaboration as a pre-requisite for action in a complex many-to-many ecosystem would essentially stall progress|
 |Unknown verifier |UNTP should not assume that that the consumer / verifier of UNTP data is known to the issuer, even when confidential data access is required|In a decentralised architecture with thousands of issuers, it would be impractical to register every authorised verifier with every issuer.|
