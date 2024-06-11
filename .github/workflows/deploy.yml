@@ -36,20 +36,22 @@ jobs:
           # https://github.com/actions/checkout/issues/13#issuecomment-724415212
           # The GH actions bot is used by default if you didn't specify the two fields.
           # You can swap them out with your own user credentials.
-  pdf:
-    name: Generate PDF
-    runs-on: ubuntu-latest
-    needs: deploy
-    steps:
-      - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
         id: changes
         with:
           filters: |
             pdf:
               - 'website/static/un-transparency-protocol.pdf'
-
-      # run only if some file in 'src' folder was changed
       - if: steps.changes.outputs.pdf == 'false'
-        id: generate
-        uses: ./.github/workflows/docs-to-pdf.yml
+        run: echo "pdf=false" >> "$GITHUB_OUTPUT"
+
+  pdf:
+    if: ${{needs.deploy.outputs.pdf}} == 'false'
+    needs:
+      - deploy
+    uses: ./.github/workflows/docs-to-pdf.yml
+    secrets: inherit
+    permissions:
+      packages: read
+      id-token: write
+      contents: write
