@@ -9,11 +9,11 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Versions
 
-| DPP Version | Date       | status                       | JSON-LD Context                                                                | JSON Schema                                                              |
-| ----------- | ---------- | ---------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| 0.3.0       | 25-03-2024 | Raw (not for implementation) | [DPP context](../../schema/digitalProductPassport.v0.3.0.JSONLDContext.jsonld) | [DPP schema](../../schema/digitalProductPassport.v0.3.0.JSONSchema.json) |
-| 0.4.0       | 08-04-2024 | Raw (for review)             | [DPP context](../../schema/digitalProductPassport.v0.4.0.JSONLDContext.jsonld) | [DPP schema](../../schema/digitalProductPassport.v0.4.0.JSONSchema.json) |
-| 0.5.0       | 04-06-2024 | Raw (for review)             | `https://uncefact.github.io/spec-untp/untp-v1.jsonld`                          | [DPP schema](../../schema/untp-digital-product-passport-schema.0.5.0.json)      |
+| DPP Version | Date       | status                       | JSON-LD Context                                                                | JSON Schema                                                                |
+| ----------- | ---------- | ---------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| 0.3.0       | 25-03-2024 | Raw (not for implementation) | [DPP context](../../schema/digitalProductPassport.v0.3.0.JSONLDContext.jsonld) | [DPP schema](../../schema/digitalProductPassport.v0.3.0.JSONSchema.json)   |
+| 0.4.0       | 08-04-2024 | Raw (for review)             | [DPP context](../../schema/digitalProductPassport.v0.4.0.JSONLDContext.jsonld) | [DPP schema](../../schema/digitalProductPassport.v0.4.0.JSONSchema.json)   |
+| 0.5.0       | 04-06-2024 | Raw (for review)             | `https://test.uncefact.org/vocabulary/untp/untp-v1.jsonld`                     | [DPP schema](../../schema/untp-digital-product-passport-schema.0.5.0.json) |
 
 The current version of this specification is v0.4.0
 
@@ -287,7 +287,7 @@ Note - this sample describes the digital product passport payload only - ie the 
 {
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
-    "https://uncefact.github.io/spec-untp/untp-v1"
+    "https://test.uncefact.org/vocabulary/untp/untp-v1"
   ],
   "type": [
     "VerifiableCredential",
@@ -390,15 +390,15 @@ properties:
     readOnly: true
     const:
       - https://www.w3.org/ns/credentials/v2
-      - https://uncefact.github.io/spec-untp/untp-v1
+      - https://test.uncefact.org/vocabulary/untp/untp-v1
     default:
       - https://www.w3.org/ns/credentials/v2
-      - https://uncefact.github.io/spec-untp/untp-v1
+      - https://test.uncefact.org/vocabulary/untp/untp-v1
     items:
       type: string
       enum:
         - https://www.w3.org/ns/credentials/v2
-        - https://uncefact.github.io/spec-untp/untp-v1
+        - https://test.uncefact.org/vocabulary/untp/untp-v1
   type:
     type: array
     readOnly: true
