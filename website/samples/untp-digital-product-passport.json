@@ -1,7 +1,7 @@
 {
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
-    "https://uncefact.github.io/spec-untp/untp-v1"
+    "https://test.uncefact.org/vocabulary/untp/untp-v1"
   ],
   "type": ["VerifiableCredential", "UNTPDigitalProductPassportCredential"],
   "credentialSchema": {
