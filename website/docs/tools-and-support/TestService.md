@@ -11,89 +11,38 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 There is a 3 tier testing architecture to help implementors ensure that they are issuing UNTP interoperable digital product passports.  This architecture also ensures that as implementors 'extend' the UN Transparecy Protocol they do that in a non-breaking fashion.
 
-<img width="901" alt="image" src="https://github.com/uncefact/spec-untp/assets/1311010/ec1e5806-f37e-4221-8992-03f0947e6989">
+![Architecture for issuer](3tiertestarchitecture.png)
 
 At each tier we articulate the specific testing for UNTP and for an extension.
 
-## Tier 1 - Technology Interoperability Testing
+## UNTP Testing (the blue sections in the diagram)
 
-### UNTP
-The core of UNTP testing at "Tier 1 - Technology Interoperability Testing" is that all digital product passports, conformity credentials, and traceability events are issued as verifiable credentials.  
+The UNTP testing is intended to provide implenentors the ability to validate that they have a complete valid reference implementation of UNTP.  This testing gives a starting point so that implenters know that their implemenation is starting as UNTP compliant and that any externsions that they make need to have validations added to ensure continued UNTP interoperability.
 
-#### Verifiable Credential Issuer and Verifier
-* W3C Core:
-  *    [W3C V2 VCDM test suite](https://github.com/w3c/vc-data-model-2.0-test-suite)
+### Tier 1: UNTP Test: Technology Interoperability Testing
 
-* W3C Extension:
-	* 	QR Link / Encryption
-	* 	Selective Redaction
-	* 	Rendering
-	* 	Graphs
+This testing is intended to provide implementers confidence that the technical implementation is correct.  It is primarily focused on W3C verifiable credential compliance.
 
-#### Digital Link Resolver
-* ISO Core:
-  * ID -> Link Types -> URL -> Object (Perf Measures)
-* Resolution Method
-  * ID Type -> Resolution Method
-* Storage API
-  * VC -> Store (with / without End?)
-* Carriers
-  * 1D/2D Barcodes/Matrix, QR, RFIT etc
+### Tier 2: UNTP Test: UNTP Schema Testing
 
-### Extension
-NONE: It is expected that all implementations of the UNTP and UNTP extensions will issue valid W3C verifiable credentials and will enable them to be discoverable via a Digital link resolver following the ISO specification.
+This tests that the schema that are being used to issue credentials are a valid UNTP schema.  This will enable an implementor to validate that they are starting with a valid UNTP set of schema.
 
-## Tier 2 - Schema Interoperability
+### Tier 3: UNTP Test: Trust Graph Testing
 
-### UNTP
-The core of UNTP testing is to ensure that the digital product passport, conformity credential and traceability event schema are valid and that the version of UNTP schema being used are clearly identified.
+This validates that the links between the different components of the UNTP schema (DPP, DTE, DCC) are validated.  It is anticipated that this is relatively simple at generic UNTP level, but will get more involved for each extension.
 
-#### Verifiable Credential Issuer and Verifier
-* UNTP Core:
-  *   Digital Product Passport Schema
-  *   Conformity Credential Schema
-  *   Traceability Event Schema
-  *   Identity Credential Schema
-* UNTP Vocabulary:
-  * Sustainability Topics	
-* UNTP Identifiers:
-  * GTIN?  … ?? …
+## Extension Testing (grey boxes)
 
-#### Digital Link Resolver
-* UNTP Link Types:
-  * Link type definitions
+UNTP has been designed so that each industry and jurisdicton can extend UNTP to meet their specific busines, governance and community needs.  In order to ensure that supply chain customers downstream can consume details from their upstream supply chain partners - it is important that extensions maintain UNTP compliance.  Extension testing is intended to provide that confidence to implementors.
 
-### Extension
-Extensions of the schema are intended to provide impplemtors the ability to extend the schema to meet the specific needs of thier industry, jurisdiction or business.  The test suite will ensure that the extensions that implemtors deploy don't break interoperability with UNTP.
+### Tier 1: Extension Test: Nothing?
 
-#### Verifiable Credential Issuer and Verifier
-* Extension Core:
-  * Digital Product Passport Schema
-  * Conformity Credential Schema
-  * Traceability Event Schema	
-  * Identity Credential Schema
+It is expected that there won't be changes at Tier 1 of the testing architecture for extensions.  This is because we are using W3C standards and if there are requirements for extenisons it is beyond the scope of UNTP to manage.  We are including it in the architecture to faciliate future unforeseen needs.
 
-* Extension Vocabulary:
-  * Sustainability Topics
-  * Local Standards
-  * Commodity Specifics
- 
-#### Digital Link Resolver
-* Extension  Identifiers:
-  * RFID, Country/Province/State Bus Identifiers, Location Identifiers etc	
+### Tier 2: Extension Test:  Extension Schema Testing
 
-## Tier 3 - Choreography Interoperability
+This testing is designed to ensure that as implementors are extending UNTP schema (DPP, DTE, DCC) to meet their specific needs that they are not breaking compatibility with UNTP and that they are able to provide the implementors of their extensions with confidence that their extension is correct.
 
-### UNTP Core
-* Traceability Linking
-  * EPCIS Presentations
-* Identity Relationships
-  * Linked ID Credentials
-  * Subject / Issuer
-* Claim Relationships
-  * Linked Conformity
-  * Scope Relationship
-* Mass Balance
+### Tier 3: Extension Test:  Choreography Testing (Trust Graph Validation)
 
-### Extension
-We expect that as the pilots that are currently in process we will be adding our learings here.
+This provides the ability for extendors to map the different credentials together to validate specific industry or regional scenarios.  In Australia NATA is the national accrecditor for laboratories - so the link from NATA to an accredited laboratory to a specific accreditation would be validated by a test in this component.
