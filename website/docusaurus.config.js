@@ -112,7 +112,7 @@ const config = {
       footer: {
         links: [
           {
-            label: 'PDF',
+            label: 'Print this specification as PDF',
             to: '/un-transparency-protocol.pdf',
             target: '_blank',
           },
