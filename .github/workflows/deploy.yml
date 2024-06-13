@@ -22,6 +22,8 @@ jobs:
         run: cd website && yarn install --frozen-lockfile
       - name: Build website
         run: cd website && yarn build
+      - name: copy jsonld file
+        run: cp website/*.jsonld website/build
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
