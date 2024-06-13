@@ -55,7 +55,7 @@ There are a large number of did methods listed in the [W3C did register](https:/
 
 To support uptake across supply supply chain actors with varying levels of technical maturity, human rendering of digital credentials is essential. A conformant implementation 
 
-* MUST implement the [VC HTML Rendering Method](https://w3c-ccg.github.io/vc-render-method/) using a hash-linked external rendering template.
+* MAY implement the [VC HTML Rendering Method](https://w3c-ccg.github.io/vc-render-method/) using a hash-linked external rendering template.
 * MAY implement other rendering methods (eg SVG or PDF)
 
 > Note that there is a pending update to the [rendering specification](https://w3c-ccg.github.io/vc-render-method/) to support HTMl rendering and hash-links.
