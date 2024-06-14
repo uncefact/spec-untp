@@ -10,7 +10,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 # Meetings
 
-UNTP development [team meetings](https://us02web.zoom.us/j/85091806131) are held weekly at alternating times to accomodate participants from different timezones. 
+UNTP development team meetings are held weekly at alternating times to accomodate participants from different timezones. 
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
@@ -18,12 +18,14 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meeting
 
-The next meeting is 8am UTC 13th June 2024.  [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+The next meeting is 9pm UTC 19th June 2024.  [Join here](https://us02web.zoom.us/j/85091806131).  
+The following meeting is 8am UTC 27 June 2024.  [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-06-13| [TThe meeting focused on reviewing and merging key pull requests, discussing the UNTP architecture and methodology, and planning actions for schema and context file alignment.](#2024-06-13-meeting-summary)|[video](https://us02web.zoom.us/rec/share/R6x_ui0ZMeb7JwlERt_Vj3Ag7YIt8fJ_2e-AXZt_0xeQLY5_oma5pguUYvKqvhaN.r97B1NuWbPqM1ec2)|[transcript](../../meetings/2024-06-13-Recording.txt) |
 |2024-06-05| [The meeting focused on improving meeting participation, managing transcription and summary processes, handling JSON schema and JSON-LD context differences, addressing challenges with semantic interoperability, and establishing principles for managing context files.](#2024-06-05-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Vfcr6ZV7Bw0Z8uTKyM1_P8nLkpKaZU0VBLCH9Hlu4xRWbfD8tE5_gL6F87Ny7u3Y.jX5z3_867OAXwB3l)|[transcript](../../meetings/2024-06-05-Recording.txt) |
 |2024-05-30 | [The meeting focused on addressing pull requests, aligning with EU right-to-repair regulations, and discussing the challenges and strategies for maintaining and verifying digital product passports within the supply chain.](#2024-05-30-meeting-summary) | [video](https://us02web.zoom.us/rec/share/vd5oKvWwlRDVlxImzoovy7VsocYbTZgTf5bwKjPuruXUBhPvWJodg24FAD_MLqps.9E3v0xVpCeyefeqD) | [transcript](../../meetings/2024-05-30-Recording.txt)| 
 |2024-05-23| [The Working Group discussed updates to the digital product passport sample file, terminology adjustments, and the adoption of a "transparency graph" to better align with the VC data model and enhance data validation and provenance.](#2024-05-23-meeting-summary)|[video](https://us02web.zoom.us/rec/share/SdwSmtENQawZpdXpnurPv5wkP4L-mg2pjbRdzK1wi2itXXkgXbe6OBT4RqImwD5m.KKXfqVY1njdUt3ax)|[transcript](../../meetings/2024-05-23-Recording.txt) |
@@ -39,6 +41,63 @@ The next meeting is 8am UTC 13th June 2024.  [Join here](https://us02web.zoom.us
 |2024-02-15|[The meeting focused on refining the policy document draft by incorporating feedback, simplifying technical language, and aligning with global frameworks to prepare for final review and public release.](#2024-02-15-meeting-summary)|[video](https://us02web.zoom.us/rec/share/FHQ1wz0jlb5cRl8mGeZXgYHE_jzbosvnTqBJCsxtxsdsGt_BJGiVx0gywOnj2vua.9B0mR7dX6nBcVzDg)|[transcript](../../meetings/2024-02-15-Recording.txt) |
 |2024-01-18| TBD|[video](https://us02web.zoom.us/rec/share/oPEDPSpZGLBBP5qykEBDaG5NxxMrQu_snm3NmiqZQuGhBVxlWv5bf-70jeuqMvd5.S_8jH8Vk8IW57B0X)| TBD|
 |2024-01-11|TBD | [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)| TBD|
+
+
+## 2024-06-13 Meeting Summary
+
+**Participants:**
+- Steve (Speaker 1)
+- Nis (Speaker 2)
+- Zach (Speaker 6)
+- Cliff (Speaker 2)
+- Patrick (Speaker 3)
+- Ksenia (Mentioned)
+- John (Speaker 5)
+- Suzanne (Speaker 3)
+
+**Key Points Discussed:**
+
+1. **Pull Requests Review:**
+   - **Testing Architecture PR by Zach:**
+     - Discussion on merging Zach's updated testing architecture, which simplifies the previous bullet-heavy document.
+     - Consensus to merge despite it being in draft to move forward.
+
+   - **Mill Test Report PR by Nis:**
+     - Addressed issue 19 regarding steel mill test reports conforming to schema.
+     - Decision to close and start fresh aligning with the layered architecture approach.
+
+   - **Digital Livestock Passport:**
+     - A practical extension example for the Australian digital livestock passport project.
+     - Closed PR without merging, left a comment on the required alignment.
+
+   - **Context and Schema Files by Nis:**
+     - Added basic context and schema definitions to aid in linked data implementation.
+     - Agreement on merging the PR despite the incomplete schema, with an action to improve alignment.
+
+   - **Reference Implementations by Zach:**
+     - Deferred merging Zach’s reference implementations pending more complete content.
+
+2. **Architecture Overview Discussion:**
+   - Presented a diagram outlining the components of the UNTP specifications.
+   - Discussed sections including Digital Identity Anchor, Decentralized Access and Control (DAC), and semantic understanding of data.
+   - Emphasis on practical guidance using existing technologies like GLEIF’s Verifiable Legal Entity Identifier and Trust Over IP’s Trust Registry Protocol.
+
+3. **Methodology for Model and Schema:**
+   - Addressed the collision of top-down (model-driven) and bottom-up (instance-driven) methodologies.
+   - Decision to use Nis’s practical instances to guide model updates and schema generation for alignment.
+
+4. **Additional Business:**
+   - Agreement on renaming “trust graph” to “transparency graph” to avoid confusion.
+   - Planned actions to update documentation, align naming conventions, and ensure completeness of the context and schema files.
+
+**Action Items:**
+- **Steve:** Update the jargon generator to produce schema and context files that align with Nis’s examples.
+- **Nis:** Assist with reviewing and validating the updated model-generated artifacts.
+- **Steve:** Merge the updated architecture overview and realign website content accordingly.
+- **John and Suzanne:** Continue contributions to decentralized access control and digital identity anchor discussions.
+- **Team:** Prepare for testing the digital product passport model in various industry contexts.
+
+The next meeting is scheduled in two weeks for further technical reviews and business discussions on the practical implementation of the digital product passport.
 
 ## 2024-06-05 Meeting Summary
 

@@ -1,0 +1,547 @@
+[Speaker 1]
+Right. Recording in progress. OK.
+
+All right. Well, today we have a number of pull requests to get through. So I suggest we get through those and then open up for a little bit of any discussion of issues and points to raise.
+
+So I'll start by sharing my screen. Where is it? There.
+
+Desktop one, share. And pull up pull requests. Well, I suppose we should start at the bottom, right, Nis?
+
+This is quite an old one that was put in place by Zach to describe the testing architecture. And we didn't merge it because it, I don't know, it had a lot of bullets in it that didn't seem to make much meaning. And I believe what he's done is now removed what was a kind of a scaffolding of more detailed testing and just, for the moment, described this testing architecture, where there's this idea that there are three layers of testing, technical, schema, and sort of process or graph.
+
+And at the UNTP level, the shape of testing looks like this, a fair bit of technical, a bit less schema, and even less graph. And for an extension, it's the other way around. And he's described them.
+
+I haven't, nobody's reviewed it yet. I'm sort of not unhappy with that as a starting point. That seems less of an issue than the list of bullets he had before.
+
+Does anybody have an issue with merging that? Intuitively, that looked OK to me, Steve. I mean, we could go through and read it, but at least it's a cleaner set of stuff.
+
+Where do I merge this? Oh, still a work in progress. Oh, I can't merge it.
+
+I don't think he's added it.
+
+[Speaker 2]
+Yeah, that's what I wanted to say. It's in draft. I was just, I guess we can merge it anyway.
+
+[Speaker 1]
+I think we can merge it anyway. Yeah, confirm merge. There we go.
+
+And close.
+
+[Speaker 6]
+All right. If anyone wants to be driven mad, Nis or Zach, I'm happy to hook up on anything testing related at any time.
+
+[Speaker 1]
+Ah, yes. OK, that's good to know. Zach has supposedly a charge of that, and we're hoping to reuse some of the work we're doing for Australian Agriculture Traceability Protocol.
+
+We're building a test harness. All right, do you want to talk to yours, Nis? Because the next couple of few are for you.
+
+[Speaker 2]
+Yeah, the first is a mill test report, and it's addressing a issue 19, which was asking for, yes, that was also Zach and I discussing, including a steel mill test report as a type of conforming schema. I don't know. I just copy pasted.
+
+Well, not entirely, but it's probably not fully embraced into how you align with our standard, but it's a starting point for sure.
+
+[Speaker 1]
+We have, since this PR was raised, we've had a little bit of discussion about what does an extension look like and what is a UNTP thing versus an extension and so on. And I wonder whether this has already passed its use by date, and we want to try to make a, as we discussed in our direct chat, Nis, this idea of this layered architecture where you have the W3C core verifiable credentials data model and a UNTP conformity credential extends that, reuses the core elements and extends it, and then the idea that a specific type of conformity credential, let's say a mill test report, extends it. I think that's quite a strong model, but then we'd want an example that was a genuine extension of UNTP as opposed to this one, which I think is taken from the W3C side, right? So how do you feel about not merging this one for now and coming, or either leaving it open and updating it, or what do you want to do, Cliff?
+
+[Speaker 2]
+Let's close it. I don't want to, I don't see myself updating. I'd rather start from fresh.
+
+[Speaker 1]
+Yeah, OK. And we might have, because I've got to for an Australian project, actually have to take the UNTP DPP and turn it into an Australian digital livestock passport with some extra attributes from Meat and Livestock Australia. I think they call it a common animal data model or something.
+
+So that'll be a really interesting experiment about the, so I'm just going to close this without merging it then. Does that work?
+
+[Speaker 2]
+I closed it already.
+
+[Speaker 1]
+Oh, OK.
+
+[Speaker 2]
+And I left a comment that says what it should look something like, if you try and go back.
+
+[Speaker 3]
+Oh.
+
+[Speaker 2]
+98. Yeah. So at the bottom, because that's what you're just referring to.
+
+So it should have something like this in corresponding context.
+
+[Speaker 1]
+Yes, yes. I think it's quite an elegant idea. Anyway, there's probably a fair bit of discussion we're all going to have to suffer through to get our heads around.
+
+It's taken me a year. So health warning. It takes a bit of getting your head around JSON-LD and how it works with context and semantics.
+
+But we'll come back to it. Let's just get through our business. So now there's two that are related.
+
+Do you want to?
+
+[Speaker 2]
+Yeah, let me.
+
+[Speaker 1]
+Should I press this?
+
+[Speaker 2]
+Yes. So 102, actually 102 and 108 are the exact same thing. It's just merging into the pages.
+
+That's what I thought, in order to be published on the website, is what I thought I would need to do. But according to Ksenia, who's not on the call, it should be merged into main. I propose we just merge both.
+
+What she said was, if we merge it into GH pages, it's just going to be overwritten. So I guess we can just do that. What it is is the context file that, let me step back a little bit.
+
+I sort of looked at our stuff a few weeks ago and started to worry that if people that do implement these sorts of technologies are actually trying to adopt our stuff, they're going to find that it doesn't work. I tried it, and it didn't work. So what this is, is not a complete context by any means.
+
+And what I have in the next four requests is also not a complete example, and it's not a complete schema. It's a pathfinder or a way to demonstrate what are the deliverables of this project, what I believe should be the format of our deliverables. So if you look at this context, if you go into the actual content of it, it only defines very few terms.
+
+And that's intentional. I didn't want to start a whole big thing. And hopefully, we can find some tools that will make us more efficient in defining it.
+
+But here you can see, I'm defining a context. OK.
+
+[Speaker 1]
+Sorry, I was just. Can you look? Where do you want to look?
+
+[Speaker 2]
+The file? Yeah. Change files.
+
+Yeah. So this is a context that defines vocab. It defines what a UNCP digital product passport credential is with an identifier.
+
+And that identifier is resolvable. And that's sort of, it's an important point of linked data that you can click right through and see what is the definition of a particular term, of all terms. It then defines the digital product passport, which is the subject type.
+
+It defines a product within the subject. And it defines material provenance. I picked these at random.
+
+There are many more actual terms in the example. But I just wanted to start somewhere. And the reason I went to material provenance was that it had a hazardous term.
+
+If you just scroll down a little bit, I used that to, I wanted to pick a term that is defined by the UN. So this is a link to our vocabulary that some of us worked on a few years ago. So once we've merged this in, and you can reference the context, that means you can expand the digital product passport into an RDF graph.
+
+I recorded a video about it. I'd be happy to show you. I have it ready also on my screen.
+
+So if we want to, we can dive in and kind of see it play out in real action. I might suggest we hold off on that. We go through the pull request.
+
+And then we can, hopefully, the CI will finish. We can actually use the context file in its correct place.
+
+[Speaker 4]
+Yeah, and there's a slide there. That was a really fabulous example. Thank you very much.
+
+I'd love to have a discussion with you on this particular topic when you have time.
+
+[Speaker 1]
+So can I just interject here and kind of highlight kind of almost like a methodology issue here that, at some point, we'll resolve and pick one. But what we have here is a little bit of a collision of methods. I started this.
+
+And I'm not suggesting one method is better than the other, just that we have a collision. So I started all this work with a modeling tool. It happens to be called Jargon that draws models like this.
+
+And from those models, generates things like all these definitions and schemas and so on. And that's one way to collaboratively work on the definition of things. Another way is you start with an actual sample instance, like this one down here.
+
+And this is produced. And you discuss over the instance what looks right. And then you say, right, now let's make a schema from this and so on.
+
+And I'm not saying one is better than the other. But Nisha's approach is make an instance, sample, and then start talking about schemas and stuff. And it makes sense to me.
+
+My approach has been make a model, generate schema, give that to my devs who are working on real projects and produce a real instance from that project and publish it here, right? It's kind of opposite approaches. And yeah, either of them can work.
+
+But when you try to put two together in one project, you have a bit of a collision, right? Because what's happened here is that Nisha's actually produced a much better example, right? No doubt about that, than what was there before that had just had string and decimal and stuff like that.
+
+But actually, the currently published example that doesn't align with the model, right? Because it's not generated from the model. Now, that's okay because it's kind of like instructions to go and update the model.
+
+But now we're adding not just an example, but also a context file and a schema also manually crafted by Nish and incomplete. They're really kind of examples of how it should look like rather than a complete schema or context file. So we're adding more things that bottom up, take a sample, make a schema, make a context file that's increasing the collision.
+
+So what I've committed to is that we would use Nish's example and schema and context file as, if you like, instructions for how the model should generate better artifacts. And the criteria for success is we can look at Nish's stuff, I can get the model improved and generate stuff. Then Nish looks at it and goes, yeah, that looks much better, that looks right.
+
+Then at least we've got one consistent method ongoing. Whether later on as a team, we say, forget about this model-driven thing, it's giving us more trouble than it's worth. And we revert to taking a complete example and working with that is another discussion.
+
+But what I'm proposing here is that we go ahead and merge Nish's changes. And that will mean that the page has stuff that is not aligned. And my commitment over the next week or so is to fix the model, get the model generator fixed and republish stuff that Nish can look at and go, I think that's much better.
+
+And then we'll be aligned again. So I just wanna give that kind of overview of what's happening here. And if so, in that kind of context, if I suppose the question for the group is, are we happy to merge Nish's, if you like, incomplete examples as a guidance of what a model should generate?
+
+And that just means we'll have a week or so of inconsistent stuff on the page. I don't think it's a big problem. Nobody's implementing yet anyway.
+
+It's not formally released. So I just wanna say.
+
+[Speaker 2]
+It's in the spirit of something is better than nothing. You're right that the diagram is, it does not correspond to the diagram. But I just repeat what I started saying.
+
+What we have now does not work. And that worries me. I'd rather have something that works, which is something incomplete that does work rather than what we have now, which it doesn't work at all.
+
+[Speaker 4]
+I understand that, Steve. And I've always had an axiom. All models are wrong, except for models that are generated from reality.
+
+And even they get wrong really quickly. So, I think this approve and push and keep going is a great idea. So, with no objections, we'll do that then.
+
+[Speaker 2]
+And like I said, 102 and 108, I'm not really sure how the continuous integration works, but I suggest we just push them both. It's the same. It's just merging into different branches.
+
+[Speaker 1]
+This one is from Zack and it's listing on a page just some reference implementations, but I've asked him to fix a few things.
+
+[Speaker 2]
+We're on 102 now, right? Let's do 102 first and do them in order.
+
+[Speaker 1]
+All right, all right. Let's merge this one then. Does it need approval or is it already approved?
+
+Merge pull request, all right.
+
+[Speaker 2]
+Patrick asked about name and description, which I'm not defining. I don't understand what he's saying. So, just want to make that, get that out of the way.
+
+And Ksenia has a comment that says, I'm merging and this is going to the wrong branch.
+
+[Speaker 1]
+All right, so that one's merged. And this one, we agree, same thing. Do you want to talk to this one?
+
+[Speaker 2]
+Well, this one is different because we did sort of talk about part of it, but not so much the schema. The schema is the shape of the JSON object, nevermind linked data at all. It's not about that.
+
+The schema says, in order to be a compliant digital product passport, you must include a product identifier and you must include a product description. I, some, you know, whatever it is. So, where the example has an example, product identifier, one, two, three, product description, battery-driven surfboard.
+
+The schema says those two are required. Others may be optional. Others may be complex objects that have an address for an organization.
+
+So, the shape of the JSON, the hierarchical JSON object is what you can describe with the schema. The schema is what goes into an API. It defines what a request or a response to an API call must look like or will look like when you get it back.
+
+You can also generate forms from it that you can fill in on online tools and so on and so forth. So, schemas are used all over the place. And I, in my opinion, schemas are the essential deliverable from this project would be schemas for the kinds of certificates we govern.
+
+[Speaker 1]
+But also, like the context, this is an example of a good schema, but an incomplete one and misaligned with the model, right? So, we'll be regenerating both. We're just seeking at the moment.
+
+Let's just publish it, shall we? Now, this one won't merge because there's the file missing, right?
+
+[Speaker 2]
+I think it will merge. There was a, I think there was a CI error on it, but that's only because it's referencing the context file, which didn't exist at this time. So, the CI, it's a CI problem that it checked all the links and the link is merged from somewhere else.
+
+So, we can bypass. It's a bad test on the CI.
+
+[Speaker 1]
+Okay.
+
+[Speaker 2]
+Over eager test on the CI. I have a comment about it.
+
+[Speaker 1]
+All right, can I take an action to merge that one later when I figure out to make sure the CI doesn't break?
+
+[Speaker 2]
+But, okay, all right.
+
+[Speaker 1]
+Well, unless you wanna merge it now.
+
+[Speaker 2]
+I have a comment that says CI fails on a broken link to a file which is part of this same pull request. So, it's a bad CI. I would just override it.
+
+That's my suggestion.
+
+[Speaker 1]
+Well, yeah, except that I routinely make pull requests with files attached and I don't get that error. So, I'm not sure why you're getting it and I don't. And I wanted to have a quick look at that before we break something now.
+
+[Speaker 2]
+All right.
+
+[Speaker 1]
+I don't know why. But we'll fix it and merge it tonight. Don't worry.
+
+Okay. So, this one, 105 from Zach. We won't merge tonight because I think he hasn't.
+
+Yeah, it's a list of open source tools and it was a bit incomplete and also referenced nothing. I've not got any objections to the GS1 link resolver but we're trying to, we're about to add some digital link resolver content here which is more generic than GS1. And we've got a UN project to make an open source digital link resolver that works for any identifier and I'd rather point to that.
+
+So, yeah, we'll hold this one. Zach's not here to defend it anyway. So, I suggest we hold it.
+
+I'm kind of keen to have a chat about this one. Update architecture and talk through a diagram that I wanted to show you. Should pop up here in a sec.
+
+Yeah, let's enlarge the screen. I've encountered some quite reasonable confusion about the collection of specs on UNTP and how they relate to each other and what they're for. And also maybe some emerging new stuff around business cases and community activation and so on.
+
+And so I thought I'd put this diagram together that tries to, and hopefully, I've tested on a few and got a bit of feedback but it seems to be okay, that is trying to position what is UNTP and all the bits of it, right? And there's a whole bunch of related texts to this and I'm just publishing a diagram but I just wanted to quickly run you through it and get your feedback, right? So, basically in the middle there is the noun and the stuff, the digital traceability event, digital product passport and digital conformity credential that the data element, data structures that are at the heart of UNTP.
+
+So that's the data. But there's other stuff in UNTP. We're not just defining a schema because we're also got a mechanism to find the data that's based on the ISO standard for digital link resolver and extending it a little bit with a few extra requirements and we'll be making an open source version of that.
+
+So it's, and in talking to stakeholders, this idea of how do you exchange the data is really quite a critical bit of UNTP because although it's fairly simple and obvious, most people seem to be thinking, oh, we're gonna make APIs and exchange data between actors and that gets very hard to scale, much better to publish and discover. So the DLR is all about publishing and discovering and finding the data. So it's an important part of the spec.
+
+And then securing the data. Down here, verifiable credentials profile. We've obviously talked about that in previous meetings and we've got a page there on that stuff.
+
+So not much to say there. This digital identity anchor is something that we've discussed recently about how do you connect an issuer or subject, for that matter, DID, to some identity that is some authoritative identity, such as my DID as an Australian business to my ABN as an Australian and my tax office issued business identifier, right? So this little credential here is basically about identity linking.
+
+And I think it deserves a little spec of its own. It's quite simple, but really important because it's the thing that gives identity trust to links DIDs to something trustworthy or meaningful, really. And then this one here, the decentralized access and control, I've just changed the name.
+
+This is the section we've got here called confidentiality. Where is it? Oh, it's actually in best practices.
+
+I think we might need to move it up and I'm gonna suggest we change some of these names based on this, if you're happy to. But another challenge that this whole decentralized architecture has, and particularly when it's a publish and discover model is what if the stuff you want to publish and to be discovered is not public information. It's accessible only to certain parties.
+
+And there are two patterns that at least in Europe are quite common. And I'm not even sure we've got a solution for it yet. Maybe Suzanne knows, but one is that there's a digital product passport and there's obviously some public information, but there's some information which is restricted to certain authorized roles, such as a customs authority or maybe an accredited recycling plant.
+
+And the question is in a decentralized architecture where let's say there's a thousand different places where a battery passport is hosted, you can't ask a customs authority or a recycling plant to register with a thousand websites and provide proof of identity. And you need a decentralized way for a hosting site that says I'm holding digital product passports to be able to say, ah, yes, you're one of those authorized roles. I don't know you, I haven't met you before, but you're one of those authorized roles.
+
+So I'll give you that data. And I think this identity credential serves a dual purpose. Not only does it link identities of issuers, but it's used by requesters to prove that they are, let's say a customs authority or a recycling plant.
+
+So this decentralized access control is a real challenge for having sensitive data that's available to certain roles where the hoster of the data has no a priori knowledge of who it is. And there's another use case in the European DPP that's really interesting, where the regulations talk about the idea that you've got a battery passport, for example, or any passport, but particularly batteries. And after it's released to market, finished, sold by the manufacturer and the retailer, the passport gets updated somehow with usage information, repair information, performance information, and then eventual recycling information.
+
+So who is authorized to update the passport and how do you pass that authorization is an interesting question, right? And we've got the similar use cases here where items move between actors.
+
+[Speaker 3]
+Do you want me to give you my ideas over the last four years about those topics?
+
+[Speaker 1]
+About this? Yeah, so I've spoken to several and there's a lot of different answers and sometimes no answers. And that tells me there's a gap to fill with some rules about how to do this.
+
+[Speaker 3]
+And on the access control part, is that of course, if you try to access this, you can work with existing access control mechanisms today because your credential sits somewhere on a credential store, that you have authentication mechanisms that are also used today to make it accessible fast. What's not so widely distributed is that you come with an identity credential, of course, and then the identity credential creates your role. And of course, this also, again, has to be issued by a trusted party.
+
+And how you identify that this is a trusted party, you put it on a trust list. Yes. And trust list implementations are also varying.
+
+So at Cerity, we did build a trust list that is sitting on an Ethereum blockchain, holding the identifiers of trusted parties, for example. That's situation number one.
+
+[Speaker 1]
+Yeah, okay.
+
+[Speaker 3]
+Situation number two, what was it again?
+
+[Speaker 1]
+When the owner of a product, the purchaser, so they're not really an authorized role as much as the consumer that's bought a thing or the repair site, and there's thousands or millions of those.
+
+[Speaker 3]
+Once the digital product passport is issued, it's not changing. But if you're using a decentralized identifier as the product identifier, you can easily add credentials to that identifier in the subject for repair, for everything that happens in life cycle. So then you can easily kind of connect those things together.
+
+[Speaker 1]
+Yeah, so I think when you say easily, my discussions with people around the world about how to do this.
+
+[Speaker 3]
+Of course, yeah. Yeah, it's actually- The potential is there with decentralized identifiers.
+
+[Speaker 1]
+It is, that's right. But it's not well understood.
+
+[Speaker 3]
+No, it's not well understood because there's only a handful of people that have the knowledge as this group. And yeah.
+
+[Speaker 1]
+Which is why I put that box there because I think it's an opportunity to show a way for decentralized access control to work. You're right, Susanne, obviously, if you can always use the normal, create an account, authenticate, and that system gives you an authorized role and you get access to data, but that doesn't scale very well when there's thousands of systems.
+
+[Speaker 3]
+Of course, that's absolutely clear. I fully understood, but that's what the technology is, what people have today and understand. So if the European Commission needs to get access to something, then maybe you have to create an account for people from the European Commission, which is called the same everywhere.
+
+I don't know, something practical. But of course, coming up with an identity credential that defines your role and is issued by a possible issuer, that's the way to go. And that's scaling.
+
+[Speaker 1]
+Yes. So that's the kind of content I want to put here. And you might've volunteered yourself to help with the decentralized access control page.
+
+But for me, it's a real gap that's not well understood how to address it. And I can see some solutions to it, and we have an opportunity to document them. So I think it's worthwhile doing.
+
+[Speaker 4]
+Steve.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 4]
+Steve, as you go to document that, so that second use case, I think there is actually a couple of use cases underneath that around, in particular, manual versus automated observation sample and actuator type scenarios where, what's a good example? John Deere tractors track usage. And they talk to usage on behalf of the person that bought that tractor.
+
+Yes. And then there are scenarios around, I bought this thing, and there's usage, disposal, et cetera, associated with that. I think they're two different use cases.
+
+That was the problem.
+
+[Speaker 1]
+Well, I think like every page that we've fleshed out in reasonable detail, we have to start with what are the requirements and use cases. And so we'll have a crack at that. And if you see any missing, I'd encourage you to shout out.
+
+But yeah, I see John wants to say something from SESU and actually that digital identity anchor is really a SESU, right? So go ahead.
+
+[Speaker 5]
+Thanks. Thanks for that advert even. Yes, indeed.
+
+That's why we call ourselves SESU. There's two things that sort of struck me as you were talking through the DIA and DAC kind of needs. One is on the DAC, there's a whole body, well, you're probably already aware of it through the Global Legal Entity Identifier Foundation, GLEIF, that does the identifiers for many trade parties and so on.
+
+They've got a VLI, Verifiable Legal Entity Identifier, which is a verifiable credential. I guess whatever we're doing probably needs to be sympathetic to, can accommodate or make use of that, I'd suggest. The other thing is on DACs where there's a trust registry protocol that's now in its sort of second phase of draft review out of Trust Over IP, which is tackling quite a few of the issues you're describing in the decentralized access control.
+
+[Speaker 1]
+So it's worth having to inspect to see if it's something- So again, that goes to a principle that it's ideally, this group doesn't reinvent good technology that already exists, just describes how to use it, right? So we should look at all that stuff. But it's clear that it's a very poorly understood area about how in a significantly decentralized world space, how you identify authorized roles and give them access and so on.
+
+So we may not invent any technology. I hope we don't, in fact, rather we give guidance on how to use what's out there, right? But there's definitely room for that box, I think.
+
+[Speaker 3]
+A comment on the last one. So Spherity, the company I work with, they have a contract with Bundesanzeiger Parlat who is a V-Line issuer for, I don't know, 18 countries of this world, potentially every country of this world. So that's understood.
+
+But the second part, what you mentioned, can you share a link there with access control and stuff? I don't know, what was the previous speaker? Sorry, I'm traveling, so I didn't see it.
+
+[Speaker 5]
+It's in the chat, Suzanne. So there's a link in the chat. If you can see that now or in the recording, then it's there.
+
+It's the GitHub link for Trust over IP and that's the specs in the link.
+
+[Speaker 3]
+Yeah, I see. It's Trust Registered Protocol, right?
+
+[Speaker 5]
+Yep.
+
+[Speaker 3]
+Oh, I know. You mean from Marcos Sabodello, the stuff?
+
+[Speaker 5]
+Yeah, yeah, yeah. Marcos is one of the main contributors, yes.
+
+[Speaker 3]
+Yeah, yeah, yeah, yeah. Of course. Yeah, I know that.
+
+Okay, great. Thank you.
+
+[Speaker 5]
+Cool.
+
+[Speaker 1]
+All right. Now, so that's Secure the Data and we've covered Find the Data, Secure the Data, Understand the Data. This is where we get into an area that always makes my hair stand on end and itch a bit because we're into semantic web territory.
+
+But one of our challenges, and I think, fortunately, the Understand the Data bit can, there's no strong dependency. That can improve over time and the other stuff can work without it while that gets better and better, right? But the challenge here is that in something like a digital product passport credential, for example, there's that little structure called claims.
+
+I can even pull it up. Let's have a look to show you what I mean. Claim, there we go.
+
+All right, so this is where you say this meat is 10 tons per ton or that these grains are deforestation-free or this lithium is mined without slave labor, all this sort of stuff, right? It's all in this abstract thing called a claim. So the structure is dead simple, but the meaning of what's in there is nightmarishly complicated, right?
+
+And this little thing here called criteria reference URI is meant to carry a reference to a section of a standard or some best practice or a part of a regulation that describes the rules by which, under which this claim is made, right? So for example, Meat and Livestock Australia carbon calculator rule set for red meat. And so in a digital product passport or digital livestock passport issued in Australia, you might get a claim value 10 tons per ton.
+
+And that URI would point to some Meat and Livestock Australia reference. Now, how does somebody on the other side of the world know what that means? This is where, where have the diagram gone?
+
+There's an opportunity to, not to map everything to everything, because that's an enormously nightmarish job, but to have a catalog of well-known vocabularies that a lot of people care about, like IFRS, GSR, GRI, and I should have put ESRS here. It's an obvious one. And be able to link when an extension like Australian agriculture says, oh, this is a criteria about carbon intensity and a calculation rule, link it to some more worldwide general vocabulary that says, this is about carbon accounting.
+
+This is, you know, basically, and this is essentially an ontology that we want to keep simple from the perspective of our own maintenance, but is a place where these mappings of meanings, not so much of the property names in our stuff, but the values lives. And so I'll put that there, drop it out there. We haven't done anything in this space yet other than invite Marcus to our team, but it's a placeholder for that challenge of how can we provide a mapping framework to globally meaningful vocabularies like these so that each implementer says it can map to them.
+
+And then a verifier can actually, even though they don't know what meat and livestock Australia, such and such criteria is, can know that it's a government trusted carbon calculator rule set for red meat or something like that, right? That'd be good and links up. So I don't know if we want to drill onto that anymore, but that's what that box is about.
+
+Does anybody want to say anything about that before I move on to these value that data ones?
+
+[Speaker 4]
+I like to object to it. Only Steve that we should revisit that in a bit of detail very shortly, but other than that, no.
+
+[Speaker 1]
+Yeah, I think I'd like to leave it there and let Marcus convince us that there's a value and also manageable, governable way to add this value in this area. Cause if we can do it, it's quite valuable. Anyway, lastly, onto value of the data, this should be quite straightforward, but these are obviously not specifications.
+
+These are more like just tools that help implementers. One, make a business case for themselves to implement. And there'll be a template for each role, like as a software vendor or as a buyer or supplier, et cetera.
+
+This purple one has had a lot of attention outside this group recently. When we're talking about pilots, what we've discovered is that very often, even a large actor doesn't want to move on a pilot unless other actors in their industry also do the same thing. And they're starting to appear, and we've got some slides on this that we'll publish, a kind of a repeatable pattern that I'm calling the community activation program, where you have some sort of industry association or member association, like Sustainable Markets Initiative or Mining Association of Canada or whatever, that has a bunch of members that are interested to collectively be consistent about how they do sustainability. Maybe has a bunch of, if you're more downstream, another challenge is a whole bunch of upstream suppliers that are maybe not very well-funded. So we have some regional development banks like ERDB and ADB and so on, offering grant and trade finance funding to help kickstart the flywheel of a community, which is really important, I think.
+
+And trust marks like Worldwide Fund for Nature adding sort of meaning to or trust to their claims. There's basically this idea of a community activation pattern that's repeatable, that brings together a certain set of roles to a community. And it's gonna get tested in two cases, critical raw materials and textiles.
+
+And if it works, it's actually quite a powerful way to incentivize a whole community at a time led by some sort of member association. And there's a lot of emerging content here. This is not technical specification, but it's useful material like business models and funding models and stuff like this to activate a whole community.
+
+So that's what that's about, that we have a page on it. This last one is about once somebody has made a business case and they're part of a community and balls are rolling, transactions are flying, how do you count them? And how do you track progress?
+
+How do we know that if we set a benchmark, some goal, let's say in 2030, we want 10 million UNTP digital product passports to be issued every day, how do we know? This is a simple reporting framework for post-implementation reporting that aggregates up so that we can get a view of actual success of what we're doing. And if you get zero numbers here for many years, we may as well pack up and go home.
+
+And if the numbers pick up, then we know it's worth staying, right? So that's what this one's about. So I've probably taken far too long talking through this, but do you think it's a useful structure to categorize things?
+
+Like there's the noun in the middle, the data to your comment, John, where's the verb for this one? There isn't a verb because that is the noun. The rest are verbs around it, like understand it, find it, secure it, and value it.
+
+I tested it on a few and it seems okay. Is this good enough to merge with descriptions? And if we agree to that, it might require a little bit, not much, but a little bit of renaming and restructuring the overall site so that there's nice clean consistency between what's on here and the headings on the website.
+
+So I'm open for comments. I think it's good.
+
+[Speaker 7]
+Likewise, I think it's good too. All right.
+
+[Speaker 4]
+You framed it really well, Steve, well done. Congratulations.
+
+[Speaker 1]
+Thank you. I will then go and say requests. Hopefully click merge then.
+
+I can find where the merge button is. Where is it? There.
+
+All right. Well, I think we've got through the ones that, there's one that needs more work, that one's building, that one I'll fix when we figure out this link reference-ness very quickly.
+
+[Speaker 2]
+Look at it. I don't, there's no problem with the CI.
+
+[Speaker 3]
+Oh, okay.
+
+[Speaker 2]
+Well, then we'll merge it now.
+
+[Speaker 3]
+Yeah.
+
+[Speaker 1]
+Look at that. We've cleaned out quite a few pull requests today. That's really satisfying when that happens.
+
+[Speaker 2]
+I thought I'd merge that one. That's because it was the wrong, I am just doing what Ksenia's, this is fixing it, putting it in the place where Ksenia wants it.
+
+[Speaker 1]
+Okay. So it goes to the website. I need to merge that one as well?
+
+[Speaker 2]
+Yes. I think we'll have to overwrite the other one now, delete the other one.
+
+[Speaker 1]
+Okay. All right. So we've just got one left that still needs some work and we're done with that.
+
+Does anybody have any burning issues? We've only got nine minutes left that they want to talk about in regards to open issues.
+
+[Speaker 5]
+I can quickly close, I think, on number 78, which is the one that was around the trust graph discussion. So I think that you, as a team, reached a resolution where you're not going to use the words trust graph, which makes the issue disappear. So that's all good, I think.
+
+So there's a- What did we say?
+
+[Speaker 1]
+Does it say what we will use there?
+
+[Speaker 5]
+Transparency graph is the one I can see in the dialogue is the last suggestion is transparency graph from Pat. Okay. If that's the consensus that I'm happy with, basically not using trust graph because it's kind of confusing.
+
+[Speaker 1]
+So that would mean then I have to do a PR to fix that, right? So maybe we close the ticket when I've done that. I'll put a PR to change that and I'll say closes your ticket.
+
+Yeah, perfect.
+
+[Speaker 5]
+Thanks.
+
+[Speaker 1]
+All right. Well then, by next time we meet, what I hope I've done is fix the jargon generator so that Nis is happy and we've republished schema and context files that are complete and work. Yeah.
+
+That's one thing. And based on our just, we've just accepted that architecture overview with all those names for those things. I'm going to do a PR, which it's not substantial change, but just aligns naming of the things in that architecture diagram with these kind of headings here, right?
+
+So that it's nice and clear that, oh, that thing in that box is that page there, right? And so I'll do that by next time as well. And I think that.
+
+[Speaker 7]
+Just a quick question, Steve. When we change from trust graphs to transparency graphs, do we have to do that everywhere?
+
+[Speaker 1]
+Probably. I'll have to do a search and find out where it is. Oh, there is one little, I don't want to talk about this too much here, but Nis, this is for you.
+
+Ash raised a ticket. I think we've still got a little bit of confusion in that kind of making it work context about how to deal with the fact that the model of a, you know, this model of a, let's say a digital product passport, this stuff, is inside the credential subject and how that works with that containment structure. I've got to understand the details that.
+
+If you look at my example, it has all that. Okay, all right. So then we may ping you for a little bit of assistance, but hopefully that next week generating properly will close previous, you know, the alignment with VCDM, the whole bunch of tickets, including the one Ashley just raised.
+
+[Speaker 2]
+But- Yeah, that came just five minutes before the meeting started. I didn't see it, but it's very long. If it's about the type of subject, look at the example we just merged.
+
+[Speaker 1]
+Okay. Yeah, there's some stuff in it, right? So it is a bit long.
+
+[Speaker 2]
+Yeah, it's very- Let's not discuss it now. Part of it is also the flavor of context files, I couldn't care less about it. I just only care about it working.
+
+That's the only thing I care about. So if it works, no worries.
+
+[Speaker 1]
+Okay, all right. Has anybody got anything else in the last four minutes? Otherwise we'll pack up a bit early and see you next time.
+
+Hopefully we get, we've been down quite a bit in some technical weeds and, you know, we're largely not a technical organization, the UN, more of a business organization. So hopefully one of the most useful exercises that I think is going to help us inform whether, for example, this digital product passport model works is testing its ability to meet product circularity data sheet requirements, GBA digital product, global digital battery passport requirements and our Australian livestock passport. So over the next couple of weeks, we've got basically going to test this in a few different contexts.
+
+And that no doubt will inform us that, oh, we've missed something or something needs to be improved. So we'll actually have a more of a business discussion finally about the meaning and structures that are required in a digital product passport to meet various real industry use cases, which is what I think gets, you know, back to our intent and more interesting. So hopefully that, thank you for that stuff you sent, Suzanne.
+
+I'm going to align with the GBA stuff. It's a good test.
+
+[Speaker 3]
+Super, yeah, looking forward to the discussion on it.
+
+[Speaker 1]
+All right. Well, in that case, if nobody's got anything else, I will say thank you very much, give you four minutes back and see you in two weeks time for this group or those that will stay up late in Europe, the one that's in the Canadian time next week.
+
+[Speaker 3]
+Thank you, Steve. Have a nice day, everyone.
+
+[Speaker 5]
+Yeah, thanks guys. Thanks, Steve. Thanks everyone.
+
+See you.
+
+[Speaker 4]
+Bye.
