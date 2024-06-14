@@ -377,203 +377,19 @@ https://vocabulary.uncefact.org/UnitMeasureCode
 
 ```
 {
-  "id": "http://example.com",
-  "assessorLevel": "Self",
-  "assessmentLevel": "GovtApproval",
-  "type": "certification",
-  "description": "string",
-  "scope": {
-    "id": "http://example.com",
-    "name": "string",
-    "trustmark": {
-      "fileHash": "string",
-      "fileLocation": "http://example.com",
-      "fileType": "string",
-      "EncryptionMethod": "none"
-    },
-    "issuingBody": {
-      "identifiers": [
-        {
-          "scheme": "http://example.com",
-          "identiferValue": "string",
-          "identifierURI": "http://example.com",
-          "verificationEvidence": {
-            "format": "w3c_vc",
-            "credentialReference": "http://example.com"
-          }
-        }
-      ],
-      "name": "string"
-    },
-    "dateOfIssue": "2019-08-24"
-  },
-  "issuedBy": {
-    "identifiers": [
-      {
-        "scheme": "http://example.com",
-        "identiferValue": "string",
-        "identifierURI": "http://example.com",
-        "verificationEvidence": {
-          "format": "w3c_vc",
-          "credentialReference": "http://example.com"
-        }
-      }
-    ],
-    "name": "string"
-  },
-  "issuedTo": {
-    "identifiers": [
-      {
-        "scheme": "http://example.com",
-        "identiferValue": "string",
-        "identifierURI": "http://example.com",
-        "verificationEvidence": {
-          "format": "w3c_vc",
-          "credentialReference": "http://example.com"
-        }
-      }
-    ],
-    "name": "string"
-  },
-  "validFrom": "2019-08-24",
-  "validTo": "2019-08-24",
-  "status": "string",
-  "assessments": [
-    {
-      "referenceStandard": {
-        "id": "http://example.com",
-        "name": "string",
-        "issuingBody": {
-          "identifiers": [
-            {
-              "scheme": "http://example.com",
-              "identiferValue": "string",
-              "identifierURI": "http://example.com",
-              "verificationEvidence": {
-                "format": "w3c_vc",
-                "credentialReference": "http://example.com"
-              }
-            }
-          ],
-          "name": "string"
-        },
-        "issueDate": "2019-08-24"
-      },
-      "referenceRegulation": {
-        "id": "http://example.com",
-        "name": "string",
-        "issuingBody": {
-          "identifiers": [
-            {
-              "scheme": "http://example.com",
-              "identiferValue": "string",
-              "identifierURI": "http://example.com",
-              "verificationEvidence": {
-                "format": "w3c_vc",
-                "credentialReference": "http://example.com"
-              }
-            }
-          ],
-          "name": "string"
-        },
-        "effectiveDate": "2019-08-24"
-      },
-      "assessmentCriterion": {
-        "id": "http://example.com",
-        "threshold": [
-          {
-            "name": "string",
-            "value": {
-              "value": 0,
-              "unit": "string"
-            },
-            "minimumValue": {
-              "value": 0,
-              "unit": "string"
-            },
-            "maximumValue": {
-              "value": 0,
-              "unit": "string"
-            }
-          }
-        ],
-        "name": "string"
-      },
-      "subjectProducts": [
-        {
-          "identifiers": [
-            {
-              "scheme": "http://example.com",
-              "identiferValue": "string",
-              "identifierURI": "http://example.com",
-              "verificationEvidence": {
-                "format": "w3c_vc",
-                "credentialReference": "http://example.com"
-              }
-            }
-          ],
-          "marking": "string",
-          "name": "string",
-          "classifications": [
-            {
-              "scheme": "http://example.com",
-              "classifierValue": "string",
-              "classifierName": "string",
-              "classifierURL": "http://example.com"
-            }
-          ],
-          "testedBatchId": "http://example.com",
-          "verfifiedByCAB": true
-        }
-      ],
-      "subjectFacilities": [
-        {
-          "identifiers": [
-            {
-              "scheme": "http://example.com",
-              "identiferValue": "string",
-              "identifierURI": "http://example.com",
-              "verificationEvidence": {
-                "format": "w3c_vc",
-                "credentialReference": "http://example.com"
-              }
-            }
-          ],
-          "name": "string",
-          "classifications": [
-            {
-              "scheme": "http://example.com",
-              "classifierValue": "string",
-              "classifierName": "string",
-              "classifierURL": "http://example.com"
-            }
-          ],
-          "geolocation": "http://example.com",
-          "verfifiedByCAB": true
-        }
-      ],
-      "measuredResults": [
-        {
-          "name": "string",
-          "value": {
-            "value": 0,
-            "unit": "string"
-          },
-          "minimumValue": {
-            "value": 0,
-            "unit": "string"
-          },
-          "maximumValue": {
-            "value": 0,
-            "unit": "string"
-          }
-        }
-      ],
-      "compliance": true,
-      "sustainabilityTopic": "environment.energy"
-    }
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://test.uncefact.org/spec-untp/untp-v1"
   ],
+  "type": ["VerifiableCredential", "ConformityCredential", "ExampleCredential"],
+  "id": "https://example.com/credentials/123",
+  "issuer": {
+    "id": "did:web:issuer.example.com"
+  },
+  "validFrom": "2022-04-01T00:00:00Z",
+  "validUntil": "2027-04-01T00:00:00Z",
   "evidence": {
+    "type": ["ConformityAttestationEvidence"],
     "evidenceRootHash": "string",
     "description": "string",
     "evidenceData": [
@@ -586,65 +402,237 @@ https://vocabulary.uncefact.org/UnitMeasureCode
     ],
     "decryptionKeyRequest": "http://example.com"
   },
-  "accreditation": {
-    "number": "string",
-    "authorityEvidence": {
-      "format": "w3c_vc",
-      "credentialReference": "http://example.com"
-    },
-    "trustmark": {
-      "fileHash": "string",
-      "fileLocation": "http://example.com",
-      "fileType": "string",
-      "EncryptionMethod": "none"
-    },
-    "authority": {
-      "identifiers": [
+  "credentialSubject": {
+    "type": ["Organization"],
+    "id": "did:web:producer.example.com",
+    "hasAttestation": {
+      "id": "http://example.com",
+      "assessorLevel": "Self",
+      "assessmentLevel": "GovtApproval",
+      "type": "certification",
+      "description": "string",
+      "scope": {
+        "id": "http://example.com",
+        "name": "string",
+        "trustmark": {
+          "fileHash": "string",
+          "fileLocation": "http://example.com",
+          "fileType": "string",
+          "EncryptionMethod": "none"
+        },
+        "issuingBody": {
+          "identifiers": [
+            {
+              "scheme": "http://example.com",
+              "identiferValue": "string",
+              "identifierURI": "http://example.com",
+              "verificationEvidence": {
+                "format": "w3c_vc",
+                "credentialReference": "http://example.com"
+              }
+            }
+          ],
+          "name": "string"
+        },
+        "dateOfIssue": "2019-08-24"
+      },
+      "assessments": [
         {
-          "scheme": "http://example.com",
-          "identiferValue": "string",
-          "identifierURI": "http://example.com",
-          "verificationEvidence": {
-            "format": "w3c_vc",
-            "credentialReference": "http://example.com"
-          }
+          "referenceStandard": {
+            "id": "http://example.com",
+            "name": "string",
+            "issuingBody": {
+              "identifiers": [
+                {
+                  "scheme": "http://example.com",
+                  "identiferValue": "string",
+                  "identifierURI": "http://example.com",
+                  "verificationEvidence": {
+                    "format": "w3c_vc",
+                    "credentialReference": "http://example.com"
+                  }
+                }
+              ],
+              "name": "string"
+            },
+            "issueDate": "2019-08-24"
+          },
+          "referenceRegulation": {
+            "id": "http://example.com",
+            "name": "string",
+            "issuingBody": {
+              "identifiers": [
+                {
+                  "scheme": "http://example.com",
+                  "identiferValue": "string",
+                  "identifierURI": "http://example.com",
+                  "verificationEvidence": {
+                    "format": "w3c_vc",
+                    "credentialReference": "http://example.com"
+                  }
+                }
+              ],
+              "name": "string"
+            },
+            "effectiveDate": "2019-08-24"
+          },
+          "assessmentCriterion": {
+            "id": "http://example.com",
+            "threshold": [
+              {
+                "name": "string",
+                "value": {
+                  "value": 0,
+                  "unit": "string"
+                },
+                "minimumValue": {
+                  "value": 0,
+                  "unit": "string"
+                },
+                "maximumValue": {
+                  "value": 0,
+                  "unit": "string"
+                }
+              }
+            ],
+            "name": "string"
+          },
+          "attestedProducts": [
+            {
+              "identifiers": [
+                {
+                  "scheme": "http://example.com",
+                  "identiferValue": "string",
+                  "identifierURI": "http://example.com",
+                  "verificationEvidence": {
+                    "format": "w3c_vc",
+                    "credentialReference": "http://example.com"
+                  }
+                }
+              ],
+              "marking": "string",
+              "name": "string",
+              "classifications": [
+                {
+                  "scheme": "http://example.com",
+                  "classifierValue": "string",
+                  "classifierName": "string",
+                  "classifierURL": "http://example.com"
+                }
+              ],
+              "testedBatchId": "http://example.com",
+              "verfifiedByCAB": true
+            }
+          ],
+          "attestedLocations": [
+            {
+              "type": [],
+              "identifiers": [
+                {
+                  "scheme": "http://example.com",
+                  "identiferValue": "string",
+                  "identifierURI": "http://example.com",
+                  "verificationEvidence": {
+                    "format": "w3c_vc",
+                    "credentialReference": "http://example.com"
+                  }
+                }
+              ],
+              "name": "string",
+              "classifications": [
+                {
+                  "scheme": "http://example.com",
+                  "classifierValue": "string",
+                  "classifierName": "string",
+                  "classifierURL": "http://example.com"
+                }
+              ],
+              "geolocation": "http://example.com",
+              "verfifiedByCAB": true
+            }
+          ],
+          "measuredResults": [
+            {
+              "name": "string",
+              "value": {
+                "value": 0,
+                "unit": "string"
+              },
+              "minimumValue": {
+                "value": 0,
+                "unit": "string"
+              },
+              "maximumValue": {
+                "value": 0,
+                "unit": "string"
+              }
+            }
+          ],
+          "compliance": true,
+          "sustainabilityTopic": "environment.energy"
         }
       ],
-      "name": "string"
-    }
-  },
-  "regulatoryApproval": {
-    "number": "string",
-    "authorityEvidence": {
-      "format": "w3c_vc",
-      "credentialReference": "http://example.com"
-    },
-    "trustmark": {
-      "fileHash": "string",
-      "fileLocation": "http://example.com",
-      "fileType": "string",
-      "EncryptionMethod": "none"
-    },
-    "authority": {
-      "identifiers": [
-        {
-          "scheme": "http://example.com",
-          "identiferValue": "string",
-          "identifierURI": "http://example.com",
-          "verificationEvidence": {
-            "format": "w3c_vc",
-            "credentialReference": "http://example.com"
-          }
+      "accreditation": {
+        "number": "string",
+        "authorityEvidence": {
+          "format": "w3c_vc",
+          "credentialReference": "http://example.com"
+        },
+        "trustmark": {
+          "fileHash": "string",
+          "fileLocation": "http://example.com",
+          "fileType": "string",
+          "EncryptionMethod": "none"
+        },
+        "authority": {
+          "identifiers": [
+            {
+              "scheme": "http://example.com",
+              "identiferValue": "string",
+              "identifierURI": "http://example.com",
+              "verificationEvidence": {
+                "format": "w3c_vc",
+                "credentialReference": "http://example.com"
+              }
+            }
+          ],
+          "name": "string"
         }
-      ],
-      "name": "string"
+      },
+      "regulatoryApproval": {
+        "number": "string",
+        "authorityEvidence": {
+          "format": "w3c_vc",
+          "credentialReference": "http://example.com"
+        },
+        "trustmark": {
+          "fileHash": "string",
+          "fileLocation": "http://example.com",
+          "fileType": "string",
+          "EncryptionMethod": "none"
+        },
+        "authority": {
+          "identifiers": [
+            {
+              "scheme": "http://example.com",
+              "identiferValue": "string",
+              "identifierURI": "http://example.com",
+              "verificationEvidence": {
+                "format": "w3c_vc",
+                "credentialReference": "http://example.com"
+              }
+            }
+          ],
+          "name": "string"
+        }
+      },
+      "certificate": {
+        "fileHash": "string",
+        "fileLocation": "http://example.com",
+        "fileType": "string",
+        "EncryptionMethod": "none"
+      }
     }
-  },
-  "certificate": {
-    "fileHash": "string",
-    "fileLocation": "http://example.com",
-    "fileType": "string",
-    "EncryptionMethod": "none"
   }
 }
 ```
