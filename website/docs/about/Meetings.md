@@ -16,15 +16,16 @@ Each meeting will generally work through open [issues](https://github.com/uncefa
 
 Previous meeting dates, recordings, transcripts, and minutes are summarised below with the most recent meeting at the top.
 
-## Next Meeting
+## Next Meetings
 
-The next meeting is 9pm UTC 19th June 2024.  [Join here](https://us02web.zoom.us/j/85091806131).  
-The following meeting is 8am UTC 27 June 2024.  [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+The next meeting is 8am UTC 27 June 2024.  [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+The following meeting is 9pm UTC 3rd July 2024.  [Join here](https://us02web.zoom.us/j/85091806131).  
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-06-19| [The meeting focused on aligning implementation tools and conformity credentials with VCDM, renaming digital link resolver to identity resolver, restructuring the site, and discussing the use of the Jargon tool for generating context files.](#2024-06-13-meeting-summary))| [video](https://us02web.zoom.us/rec/share/huqG1vXNf21SH4fXNDzPPR4fIqg-OI0X3y0CeMpwRIfw6w6vf3nho1dExIoqIGOb.9G_tdVSmRB-eufKg)| [transcript](../../meetings/2024-06-19-Recording.txt)|
 |2024-06-13| [TThe meeting focused on reviewing and merging key pull requests, discussing the UNTP architecture and methodology, and planning actions for schema and context file alignment.](#2024-06-13-meeting-summary)|[video](https://us02web.zoom.us/rec/share/R6x_ui0ZMeb7JwlERt_Vj3Ag7YIt8fJ_2e-AXZt_0xeQLY5_oma5pguUYvKqvhaN.r97B1NuWbPqM1ec2)|[transcript](../../meetings/2024-06-13-Recording.txt) |
 |2024-06-05| [The meeting focused on improving meeting participation, managing transcription and summary processes, handling JSON schema and JSON-LD context differences, addressing challenges with semantic interoperability, and establishing principles for managing context files.](#2024-06-05-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Vfcr6ZV7Bw0Z8uTKyM1_P8nLkpKaZU0VBLCH9Hlu4xRWbfD8tE5_gL6F87Ny7u3Y.jX5z3_867OAXwB3l)|[transcript](../../meetings/2024-06-05-Recording.txt) |
 |2024-05-30 | [The meeting focused on addressing pull requests, aligning with EU right-to-repair regulations, and discussing the challenges and strategies for maintaining and verifying digital product passports within the supply chain.](#2024-05-30-meeting-summary) | [video](https://us02web.zoom.us/rec/share/vd5oKvWwlRDVlxImzoovy7VsocYbTZgTf5bwKjPuruXUBhPvWJodg24FAD_MLqps.9E3v0xVpCeyefeqD) | [transcript](../../meetings/2024-05-30-Recording.txt)| 
@@ -42,6 +43,63 @@ The following meeting is 8am UTC 27 June 2024.  [Join here](https://us02web.zoom
 |2024-01-18| TBD|[video](https://us02web.zoom.us/rec/share/oPEDPSpZGLBBP5qykEBDaG5NxxMrQu_snm3NmiqZQuGhBVxlWv5bf-70jeuqMvd5.S_8jH8Vk8IW57B0X)| TBD|
 |2024-01-11|TBD | [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)| TBD|
 
+
+## 2024-06-19 Meeting Summary
+
+**Participants:**
+- Speaker 1 (Chair)
+- Speaker 2 (Patrick)
+- Speaker 3 (Zach)
+- Speaker 4 (Phil)
+- Speaker 5 (Steve)
+- Speaker 6 (Nis)
+- Speaker 7 (Juliet)
+- Speaker 8 (Dr. Wang)
+
+**Key Points Discussed:**
+
+1. **Implementation Tools and Reference Implementations:**
+   - Discussed the distinction between implementation tools and reference implementations.
+   - Emphasis on the need for a toolkit to help implementers test and ensure interoperability with UNTP.
+   - Concerns about long-term funding for test suites and the potential for community contributions.
+
+2. **Rendering Methods for Verifiable Credentials:**
+   - Debate on whether to mandate a specific rendering method.
+   - Agreement to use a “should” directive for rendering methods, specifying HTML as the primary method but allowing for additional methods.
+   - Adjustments to the wording to reflect this approach.
+
+3. **Conformity Credential Alignment:**
+   - Discussion on aligning conformity credentials with the VCDM (Verifiable Credential Data Model).
+   - Decision to manage status externally rather than within the credential to avoid reissuing credentials for status changes.
+   - Agreement on using existing VCDM fields where applicable and not duplicating fields within the credential.
+
+4. **Identity Resolver Naming:**
+   - Phil suggested renaming “digital link resolver” to “identity resolver” to avoid confusion and potential trademark issues.
+   - Agreement to adopt “identity resolver” as it better describes the function.
+
+5. **Site Restructure and Business Case Promotion:**
+   - Site restructuring to align with the five-pillar architecture model and updated component names.
+   - Elevated the business case section to highlight the importance of commercial incentives and funding for sustainable supply chains.
+
+6. **Versioning of Context Files:**
+   - Discussion on the appropriate granularity for context files.
+   - Consensus on having separate context files for each core data credential type to simplify management and maintainability.
+   - Emphasis on aligning versioning of data models, schemas, and context files.
+
+7. **Use of Jargon Tool for Model Generation:**
+   - Overview of the Jargon tool used for generating schemas and context files.
+   - Acknowledgment of the need for high-quality outputs and flexibility in tool usage.
+   - Open to reassessing the tool’s use based on implementation feedback.
+
+**Action Items:**
+- **Patrick and Nis:** Update the conformity credential model to align with VCDM fields and manage status externally.
+- **Zach:** Update the wording for rendering methods to reflect the new “should” directive.
+- **Steve:** Finalize and merge the PR for identity resolver renaming and site restructuring.
+- **Team:** Review and experiment with the Jargon tool to ensure it meets quality expectations for generating context files.
+
+**Next Steps:**
+- Finalize the updates to data models and context files before the next meeting.
+- Prepare for discussions on the content of digital product passports and business content in upcoming calls.
 
 ## 2024-06-13 Meeting Summary
 
