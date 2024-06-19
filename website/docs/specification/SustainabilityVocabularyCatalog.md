@@ -1,6 +1,6 @@
 ---
-sidebar_position: 25
-title: Vocabularies
+sidebar_position: 40
+title: Sustainability Vocabulary Catalog
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';

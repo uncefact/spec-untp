@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: For Industry Associations
+title: Value Assessment Framework
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
@@ -8,4 +8,6 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 
-# For Industry Associations
+# Ongoing Value Asessment 
+
+

@@ -1,6 +1,6 @@
 ---
-sidebar_position: 33
-title: Trust Anchors
+sidebar_position: 18
+title: Digital Identity Anchor
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';

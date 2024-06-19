@@ -82,7 +82,7 @@ Summary and detailed information about the content of each UNTP credential is av
 
 * [Digital Product passport (DPP)](DigitalProductPassport.md)
 * [Digital Conformity Credential (DCC)](ConformityCredential.md)
-* [Digital Traceability Event (DTE)](TraceabilityEvents.md)
+* [Digital Traceability Event (DTE)](DigitalTraceabilityEvents.md)
 
 ![Architecture for one product](Architecture-actor.png)
 
