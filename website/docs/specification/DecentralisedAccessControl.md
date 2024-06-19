@@ -1,6 +1,6 @@
 ---
-sidebar_position: 40
-title: Confidentiality
+sidebar_position: 30
+title: Decentralised Access Control
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';

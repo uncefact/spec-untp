@@ -1,11 +1,10 @@
 ---
-sidebar_position: 10
-title: For Certifiers
+sidebar_position: 20
+title: Help and support
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-
-# For Certifiers
+# Implementation Support
