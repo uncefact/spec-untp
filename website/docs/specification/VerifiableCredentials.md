@@ -54,7 +54,7 @@ There are a large number of did methods listed in the [W3C did register](https:/
 
 To support uptake across supply supply chain actors with varying levels of technical maturity, human rendering of digital credentials is essential. A conformant implementation
 
-- SHOULD implement consumer-oriented credential rendering such as HTML, SVG, PDF, or [VC HTML Rendering Method](https://w3c-ccg.github.io/vc-render-method/) using a hash-linked external rendering template.
+- SHOULD use the `renderMethod` property as defined in the [VC data model](https://www.w3.org/TR/vc-data-model-2.0/).
 
 # Presentations
 
