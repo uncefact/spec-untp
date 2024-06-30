@@ -1,0 +1,461 @@
+[Speaker 1]
+To the cloud. I love my new meeting minutes generator. All right, so very quickly, welcome everyone.
+
+As usual, your contributions to this project are UNIP, and if there are things that you don't want to contribute, then please don't. We, before the usual order of business, I thought I might just let everyone know, as you saw in a recent email, that the public review period for recommendation 49 has completed, and I sent around an email with the various comments. Some relatively, I mean, none that were really kind of, you've got to change this whole thing.
+
+Some were more substantive than others. Some were editorial. Quite a lot of comments from Gearheart, thank you.
+
+Many of which were editorial, but some substantive. I thought I might start by, so the timeline for this is because the plenary is UNCFAC plenary, that is, is two weeks away, and the secretariat wants to provide the member states with a version of REC 49 that reflects the public review comments. Basically got a weekend to do that.
+
+So all those comments that were received, we have to have a solid effort at a next draft and response to all the comments by Monday. So two questions. One, who is willing to help with that?
+
+And two, has anybody had a chance to read through the comments, and does anyone have any particular issues that they think are important to discuss as a team? I'm sorry, I haven't. I don't have the time.
+
+I'm really sorry, Steve. Believe me, I sympathize. Zach has already offered to help, so we are, and he at least is in the same time zone, so over the weekend we can do a bit.
+
+I feel really badly, but I have another deadline on Tuesday. Okay. And look, this is what I expected, but I thought I'd better ask, right?
+
+So it's okay. There's, I think, all up maybe 50 or 60 comments. Some of them are like two-second job to correct a spelling mistake and some need a bit of thinking.
+
+So what I might do, has anybody actually read through them and got some thoughts about responses? And if not, what I'd propose is that I did get a response, actually an email from, I forget, one of our team member read through them and said, I suggest we respond this way to some of those with about four or five comments. So we'll take that on board.
+
+If nobody else has any comments, then we'll just have a crack at it, but it might be nice if people are just keeping a little squint on the Slack channel in case there's a comment that, you know, I'm really kind of going, I don't know how to answer this, or I've got ideas, but, you know, let's have a bit of consensus. Then that UNTP Slack channel, I can post, hey team, what do you think of this? Yeah.
+
+Hey Gerhard, you've got a comment? Yes. Good morning, everyone.
+
+I just want to ask you to perhaps put the editorial aside and then concentrate on the ones that really matter. Yes. Because that makes it, and I don't know yet how much of them are in those four or five lists of comments.
+
+My quick review of them is that the Inditex and the Canadian, so for example, the Canadian mining, it's not the Canadian Mining Association, some other Canadian semi-government group had a comment like the title is about transparency, but the content seems mostly about traceability, right? That's a really kind of broad comment. And that's the kind of impression that someone's got from reading it, right?
+
+Which is actually not our intent, but, you know, reflecting things like that are quite tricky. Maybe it's more clarity in the introduction section or something, but, you know, so some of them won't be easy, I think, and all we'll probably do is have a first pass, because I think what the secretariat wants to do is not only give the member states something that at least reflects a majority of the feedback, because they're going to give, this is not for approval of the plenary, right? This is just for information of the plenary.
+
+And I think they're going to say to the member states, please feel free to have another round of comments, right? So it's not the end of the thing, when we reflect all the comments, it's the beginning of the next round, right? So from that perspective, I feel like, you know, we're not necessarily having to produce the final version this weekend, we're just doing our best job to make a reasonable effort at many of the comments, especially the substantive ones.
+
+And it is what it is on Monday, I think, it's best we can do, right? And one more question. I was the only one, I assume, that used the comment log, where you have the problem and the proposed solution or change.
+
+Did the others also edit a proposal for change? So the Canadians did fill in the comment log, but didn't always provide a proposal for change. And Inditex only annotated the document did not provide a comment log.
+
+So we have to extract those comments, put them in a comment log, and then make our own suggestion for change, accept or reject or whatever. Those are the three substantive ones. It's your list, and Inditex, and Canada.
+
+There's a few other minor ones.
+
+[Speaker 2]
+I'll take a first cut at creating that Inditex log first thing in the morning.
+
+[Speaker 1]
+Cool, yeah, because we need to post back a consolidated log, right? So, which is Gearheart's comments plus the Canadians, which we can just glue together because they're both in spreadsheets. And then somebody's got to take the Inditex ones and turn them into a spreadsheet and then publish his log.
+
+I wanted to do this by now, but I suppose like all of us, we're a bit snowed under. I was hoping to show you today an integrated comments log with what I thought were the most substantive issues at the top. And I just haven't done that yet.
+
+Guilty as charged. So, maybe what we'll do is, if you have a crack at that tomorrow, Zach, to make an integrated comments log, maybe during the day tomorrow, we can have a quick squint and sort of put the substantive ones towards the top. And then we'll send out at the end of the day, just the comments log with a substantive one sort of, I don't know, highlighted in red or something.
+
+And we might put a sentence that says, this is how we think we'll deal with this. Just shoot it out to you. You don't have to read it.
+
+You don't have to respond, but at least I'll have sent out something, which is, here's the complete list. Here's what we think are the scary ones. And here's a sentence on what we might do, right?
+
+So, hopefully we'll get that out by tomorrow evening. And then if you have any feelings or disagree or something, you can at least write the spreadsheet. No, you should answer it like this or something, right?
+
+And give it back to us over the weekend. Is that okay for everyone? Yes.
+
+It's a good approach to make a difference between the ones that matter and the editorial. And also group those comments that are quite the same together, perhaps. Yeah, that's a good idea.
+
+We'll try that. So, we'll have a good go at giving a consolidated list by this time tomorrow. And then over the weekend, we'll have a crack at it.
+
+And I'll just rely on you to offer your thoughts on the tricky ones. All right. So, that's REC 49.
+
+If nobody else has any comments they want to make regarding REC 49, we'll move on to UNTP. I just dropped a message in the channel. Steve, I'm happy to help out on Friday, the weekend, wherever I can.
+
+Yeah, okay. Right. So, we'll have three people in the same time zone.
+
+Cool. Australians. Yeah.
+
+Okay. Just a quick comment. I don't know if it's helpful or not.
+
+But in a lot of the other work that we've done, for example, in the textile traceability, we relabel some things as transparency and traceability, explaining that you can't have transparency until you have traceability. Yeah. I mean, at the kind of nirvana end.
+
+Yeah. Some people will say, well, you don't need supply chain full traceability for an actor in the supply chain to make some disclosures without evidence. Yeah.
+
+But I think that's a good way to position it, that we're looking for traceability to support transparency. By the way, one other thing the secretariat mentioned is that we've done a terrible job of maintaining the secretariat or the UNC fact project page. Because we're doing everything on GitHub.
+
+We've got this quite rich site on GitHub, and there was nothing on the project page. And they started to get some feedback from a few parties who are, because most of us on this call actually are not that familiar with the UNC fact project management anyway. So, it kind of didn't matter.
+
+We're all using GitHub, and we knew what we were doing. But there are many people who refer to the C fact pages and look for content, and it wasn't there. So, I've just pasted a link of content that I put up last night, which basically is a pretty rich description of what we're doing, but with lots of links to GitHub.
+
+So, at least if someone goes to that page, they see a fairly complete picture of what we're doing, including links to the REC 49 public draft and all the UNTP stuff. So, if you've got any comments on that, it took me a while to find the edit button on that page, but I found it and updated it. And I'm not sure everyone's got authority to update it.
+
+So, if you do have changes you want, you have to tell me and I'll update it. I'm just posting it there for information. All right.
+
+That's our UNC fact window into our project. So, all right. That said, our usual sequence of activities, I'm just going to find I'll start screen sharing.
+
+Am I screen sharing already? No, I'm not. Not yet.
+
+No. Okay. That, by the way, is the page I just sent you a link to.
+
+So, I put links to the public review of REC 49, links to all the relevant pages on our GitHub site, project milestones, some purpose stuff. And so, it was completely empty. Now, it's looking fairly healthy, particularly the comments log.
+
+Sorry, the meetings page. I think there was some fear that we were working in the dark, but we actually have probably one of the most transparent meeting publications of any project. We just weren't telling anyone.
+
+So, let's go to GitHub. So, normally we look at pull requests and there aren't any. So, nothing to look at.
+
+I did send a message recently that I've done a bit of refactoring of some of the data models. So, I might quickly show that and then we can move on to issues and things people want to talk about. So, let's see.
+
+These are currently just in a modeling tool. They'll come out of here and go on to GitHub independently of the modeling tool. But a few things I did were to pull out common things like party and identifier and so on that are in all of traceability events and conformity credentials and passports and stick them in a reusable space so that these other things import them.
+
+And then do some alignment with the verifiable credential data model to avoid confusion about issue or an issue by and so on. And remove colliding terms. There are a few protected terms in the verifiable credentials data model.
+
+And the way the VC data model works is there is a certain collection of terms that we can't if you're going to issue a verifiable credential, you mustn't duplicate those terms in the body of the credential. Otherwise, you'll have confusion. A classic one, for example, is type.
+
+So, we did have it in where is it? In conformity credential. We did have a term which was just type instead of attestation type.
+
+And that directly conflicts with the purpose of type in verifiable credential data model. So, basically, to cut a long story short, they're not really substantive changes. They are some naming changes and some alignment changes, which I feel like are good enough to take us to the next step for further iteration of actual business content.
+
+So, one other little thing to mention. Someone want to say something? Yes.
+
+I see you have issued by. Did you bring that? Ah, yeah.
+
+I thought you'd catch that. That is a mistake. And you're misunderstanding what this protected means.
+
+We're not we're not redefining the term issuer. This is the JSON schema. We're just saying you must provide an issuer, which is the issuer defined on verifiable credentials.
+
+This looks like a mistake to me. Yeah. So, that issued by went out for exactly that reason.
+
+And then it dropped back in again because perhaps we misinterpreted the wording of the spec, which when I read it, this is the VCDM spec, says that issuer is a URI, not a complex type. Right? And so.
+
+Who says it's a URI? The spec says it's a URI. Which spec?
+
+The VCDM spec. The W3C VCDM spec. I.
+
+Why don't we. I'm believing you're wrong. The issuer must be identified, but the way linked.
+
+So, and I don't want to make this a technical conversation because I think we're being dragged into too much. Yes, we have. And I'm pleased I'm out of it now.
+
+Me too. But having an object that has an at ID, which is what ID maps to is perfectly valid JSON linked data.
+
+[Speaker 2]
+I understand.
+
+[Speaker 1]
+And it is not conflicting with the. So, let's take offline because believe me, I'd be more than delighted to get rid of issued by and say, no, it's just issuer. Can you just have a quick look at the VCDM spec and check the type that's allowed?
+
+Don't do it. We don't need to do it right now. Happy to have this chat in Slack or something.
+
+And if you're happy that it's not, because I read it that says it must be a URI, not ID type, and we can put what you want. So, let's just take that offline and be more than happy to move that back before we publish. So, what I'd like to do is get that last little issue resolved with this about where that issued by goes.
+
+And then we'll republish all this stuff to GitHub and as a kind of a rebase line once we've solved that issued by thing. Does anybody have it? Once Nis is happy, either way, right?
+
+You either agree, oh, no, it is a URI. We'll have to have it separate or we confirm that we can move it in there. One way or another, we'll rebase line all the stuff that's published before the next meeting, if everyone's happy with that.
+
+I've put it in the chat, some backgrounds for some that want to read it. The value of issue of property must be either a URL or an object containing an ID property whose value is a URL. In either case, the issue is shared.
+
+Yeah. Okay. Anyway, we'll resolve that one and then republish things.
+
+One other new thing, and this closes a ticket that was raised a while ago, is this digital identity anchor credential. This is the thing that basically says this did here, issue a URI of did, is mapped to this, let's say, could be an Australian business number or a GS1 customer number or whatever it is. Some authorized register confirms that their customer, let's say an Australian business, is the owner of a particular did and issues a credential that links them.
+
+This is the thing that draws the trust graph, that allows an issuer of a credential to use some random did, but proves that they are this Australian business or that German company or whatever. Steve, a comment here from Susanne, should we look into a verifiable legal entity identifier here at this point? Yeah.
+
+I think that's one option. Interestingly, the VLAI merges these two, because it links permanently a did to a Glyph data entry. I think we need to make sure that this is not incompatible with VLAI, but I think- I also think so, because that's already getting up to speed to become relevant.
+
+Remember, this is an identity anchor. If the Australian government, let's say, which they are thinking of doing this, they're already doing it for people and they will do it for business, to say, here's a credential that says you are this Australian business. An Australian business, any one of the two million, should be able to use that credential with as much trust as a VLAI.
+
+I shouldn't have to go and get a VLAI in order to have a stronger digital identity. It goes to what authority actually goes through the registration process and is confident of the identity. This will get used too by, let's say, GS1 to say, this member really owns this prefix, or there's a lot of use cases for this beyond legal entity identification, even with legal entities.
+
+Then I don't understand the concept of digital identity anchor and identity anchor. Why do I need the two? That's just a class model.
+
+It's one credential. We can show an example. There might be in there a bit of a...
+
+Do we need this class model view? It's kind of confusing my thinking. You don't have to.
+
+We can just use the schema. We'll make examples. Examples are the best way to show these things.
+
+We'll publish an example. Some people like class models. Some people like examples.
+
+We should do both. Think of that as one thing that basically says, here's a verifiable credential as a context URI, an issuer, which will be a did, did of the authority. Let's say this is Australian government.
+
+That URI might be ato.gov.au. Sorry, did colon web colon ato.gov.au or something. This is one of the short list of trust routes. Issuing a credential about this identity anchor, which says this registered identity, like Australian business, go source, business number, such and such, has this verified did list.
+
+We've confirmed it. That's basically what it's saying. A verified did list, you mean it can have more than one did?
+
+Yeah. There's nothing in the decentralized architecture that says a business can't have 20 dids.
+
+[Speaker 2]
+Yeah, yeah, yeah.
+
+[Speaker 1]
+Fine. Makes it more complicated, but okay. Yeah.
+
+Yeah. Hopefully most of the time it's just one, but some of these dids, they might get rotated. One of the challenges with did web is that it's anchored to a URL that might not be yours, right?
+
+Drifting into another question, but this is simply to say an authority identified by that issuer URI asserts that this well-known identity from the register could be Australian business register or GLNs or whatever. Yeah, understood. Owns this did list.
+
+That's it. Yeah. Maybe we can link to a live credential because that's what's already happening and you can use it in all countries of the world.
+
+[Speaker 2]
+Bundesanzeiger Verlag is issuing VLIs worldwide and they're issuing it via the Serity wallet.
+
+[Speaker 1]
+Yeah. I think that's a great initiative. I just don't think we should lock all our identity anchoring into life.
+
+[Speaker 2]
+No, no.
+
+[Speaker 1]
+I agree. Maybe if we're writing an example, can we use the VLI to understand how this would work together? I think that's a good idea, right?
+
+So a test of whether this model is right is that we can use it. We can show an example as if it was like a country's tax registration register and use another one, say another example. Here's a VLI, how it would work.
+
+Here's another one, which is, it could be that if you've got a VLI, you don't need this, right? But you've got to be able to show how to link the VLI to an identity anchor. But let's say that the action to confirm that this is right is to test it with examples in at least three different contexts.
+
+Yeah, that would be cool. Yeah, because obviously you have a big fan base also in the Serity staff group.
+
+[Speaker 2]
+Maybe they can even provide it. Someone said that Serity people are kind of registered for this now, somehow, participating at meetings or not.
+
+[Speaker 1]
+Yeah, so I did get a request and I think I forgot to add them to the mailing list. Add them to the mailing list and give them this job. Okay, there's a good idea.
+
+All right. Okay, so that's a bunch of one new credential, which is a working draft, and then three refactored credentials subject to the discussion with NIST to make sure we don't needlessly duplicate issued by if we don't need to, then we'll rebaseline all this stuff. And that'll close a number of issues, including things like we shouldn't have performance scores in the DPP because I've taken them out of the model.
+
+So having shown that, I think we might ask if anyone would like to talk to any of their recent or old issues. Does anyone know NIST or anyone else have any feelings about- I suggest you sort by least recently updated and we go in the order in which they come. So anything that is stale, we can close it out or take action.
+
+Need to get a verifiable identity who is about all participants. I think you sorted it the other way around. Yes, that's what we just talked about.
+
+Coincidence, Steve, I think you just clicked on the wrong field. Try sort again. No, I sorted it least recently updated, right?
+
+As opposed to most. Yes, that's good. Because then anything that's kind of stuck in the bottom of the barrel, we surface that so it doesn't sit there and go stale forever.
+
+Okay. Yeah, the idea is to close out stuff that's hanging around for a while. Digital product passport sample file.
+
+Let's start from the top. I would suggest we just take them in order unless anyone has specific- Okay. And this one sounds like we just addressed it, doesn't it?
+
+With the whole live and whatnot. This one is potentially closed by that digital identity anchor, isn't it? Exactly.
+
+So why don't I put a comment here? Because I think Stephen Curran, he's in the Canadian time zone, so not on this call, is proposing a different method. So I'll send him a link to this and have a read and see what he thinks.
+
+Comment. Okay. So that's got action on it.
+
+Issues. Sort again by least recently updated. That one's gone.
+
+Criteria to have pledge accepted. Okay. Remember we talked a while ago about the idea that implementers pledge to implement and then they implement.
+
+I think I'd like to suggest that it's a bit risky to use the word pledge because it will get confused with the sustainability pledge page that UNECE is already running. And maybe this question is more about do we include on the implementers page anybody that says, I'm in the process of implementing or only those that have implemented? And forget about pledging because it risks confusion.
+
+Does anybody have any feelings about on this page, wherever it is, which is empty at the moment, but there's actually a few implementations in progress, including Harley's. Can't find that. So many links.
+
+[Speaker 2]
+Instead of using the word pledge, maybe you could use committing or committed.
+
+[Speaker 1]
+Yeah. Yeah. So there's this page here, which is an empty page, which is where somebody says, I'm going to implement this spec, and then they implement, then they test and we say, okay, a bit like the W3C test suites, right?
+
+We verified, or you've claimed that you've passed the test cases. You're listed here. Should we, first question is, do we only list people that have passed the test case or do we allow people to say, I'm working on it?
+
+I don't mind people saying I'm working on it, but they'd probably put a, I don't know what you end with. Yeah. I would agree on just ambition to implement should be enough.
+
+I don't even know if a test case belongs in this specification. There'll be some basic tests like, are you schema compliant? When you create a credential, does it expand properly?
+
+Yeah. Yeah. Not, not absolutely.
+
+You're not going to duplicate what is already W3C tests, right? You just say, go there, pass those tests and then come here and check schema compliance and stuff like that. Right.
+
+[Speaker 2]
+Okay.
+
+[Speaker 1]
+Yeah. So fairly lightweight tests, but it'd be good to, all right. So, so the action on this one then is let's drop the word pledge and instead template on that page, wherever it is.
+
+I really must learn to close tabs. We could put a, I know there's a few that would probably, even though it's not quite complete yet, could be willing to publicly put ambition up here. So it might be quite nice to get some content on here that gives evidence of life.
+
+What do people think? We're in a situation where probably sometime, I don't know, late July, the various three schema should be, and supporting context files, should be stable enough to do the next round of pilots. Not stable enough to say, this is ready for global implementation.
+
+But is there any reason not to allow early implementers to publish on this page that we're participating in pilots and we're going to implement the, you know, the beta version 0.5, for example? I think that's, I don't have a problem with that. I think it's probably a reasonable thing to do.
+
+Any thoughts? Yeah, agreed. Okay.
+
+Perhaps, Steve, in progress or ambition, when we create a list with implementers that has successfully done a test on schema compliance, et cetera, that's the end goal. But when they are in progress, perhaps we could list that they are in progress if they have already used those test services, but not ended in a success. Perhaps that could be also some kind of an indicator than only expressing ambition.
+
+Yeah, or we could put some time window. We'd have to kind of manage it. Whereas if somebody's, because what you, I guess what you're saying, Gerhard, is you don't want somebody to say, here's my brand.
+
+I have ambition. And like two years later, you're still waiting for the ambition to materialize.
+
+[Speaker 2]
+Exactly.
+
+[Speaker 1]
+Yeah, there has to be some time window. Any thoughts on that? Anyone?
+
+Is there some criteria to be listed as even ambition?
+
+[Speaker 2]
+I think it's a good idea. Either that or someone's going, you might want to put in some sort of alarm that says that this is still here. And this is two years old.
+
+Tell them to either update or get out.
+
+[Speaker 1]
+Perhaps also the login activity. And when somebody has not logged in for two years, then the only errators is himself. I would vote for keeping it rather loose for now, because it's still rather, it's not perfectly clear what you're actually signing up to do.
+
+So I think we're forced to keep it pretty loose for now and we can always tighten it up later. Yeah, I think so. Because in order to get listed, you'd have to make a PR and somebody would have to approve it that says, and so we've got to kind of, it's not a free for all that anyone in the world can just put their brand up there.
+
+It'd be part of possibly this weekly discussion where you say, Hey, we got another PR for an implement. Anybody know these guys? This sort of thing.
+
+It's kind of a nice problem to have that you have, let's say a hundred stated ambitions and you're tracking progress towards it. That would be like a itself, a measure of success of the spec, right? So let's cross the bridge of we've got a hundred stated ambitions and 20 of them are now a year old and nothing's happened at that point.
+
+And do we agree? Yes. I think you, well, you have to see how many you have, but in the end you might want to also have like separate pages for actual implementations and planned implementations.
+
+Yeah. All right. But it's simple and loose for now and we can tighten it as we have the problem of too much adoption.
+
+All right. He's recently updated. That's too often recently updated list.
+
+Digital product passport sample file. Oh, this one, I think it, it referred to an old revocation list and I think we fixed that. I think we all agree it's a bit string, right?
+
+Yes. Which isn't even completely unambiguous, unfortunately, but that's a different story. Yes.
+
+Let's not go there. That's for the other team, right? Yes.
+
+I don't want to go down another technical rabbit hole. So I think we can close this. All right.
+
+So back to issues again and sort by last recently updated, ah, automated policy execution. Oh, that's my, yeah. I think I promised to do a demo.
+
+I never got that. I never got on with that. So it's about, what this is about is once you have that trust graph build out, I think I did demo that on one of the first calls.
+
+Then you want to run through and say, what trust anchors do I choose in this particular use case? So it's a demo about that. Many ways you can do it.
+
+Yeah. Maybe we just need to write it in text rather than demo implementation. Yeah.
+
+There is someone on the call who has had a go at not only creating a trust graph, but putting a shackle rule validation over it. That's Harley. Is anyone interested in, maybe not this call, but perhaps the next one or the one after seeing that in action?
+
+For sure. Yeah. So then why don't we say, are you all right with that, Harley?
+
+I think you're on the call. Yeah, yeah, sir. I'm still here.
+
+That sounds good. So let's do it in two weeks time, because that's the one that can miss his time zone and back to this group. I won't be here in two weeks.
+
+All right. Actually, I'll be at the forum as well. Damn it.
+
+Okay. Four weeks. It's fine.
+
+Let's not stress about it. It's been sitting here for several months already. Okay.
+
+Yeah, that's all right. So four weeks from now, exactly, we'll get back into trust graphs and Harley will show a demo, and that'll trigger us to think about this issue. Can you assign Harley and remove me?
+
+I can't because I noticed he's not on the... I think you can assign him if he comments on it, but I can't.
+
+[Speaker 2]
+Yeah, that's right.
+
+[Speaker 1]
+I'm just logging in. I'll comment on it now. Yeah.
+
+[Speaker 2]
+And Harley, maybe in the meantime, we could build out a pull request of some of that work that we could start using in some of the testing and implementation guidance side of things. Yeah, definitely. Why don't you and I sort of take that offline and kind of talk about that as well?
+
+Yeah, sounds good. By the way, everybody, there were a bunch of tickets that had my name at the top of this list, and I added comments which said, oh, I expect to bring some pull requests in the next week or so, particularly around the reference implementation side of things and the testing side.
+
+[Speaker 1]
+So I updated them just before the call so that they dropped off the list and nobody would have to... And my name wouldn't be at the top of the list. You avoided the stream.
+
+Well done. Okay, well, you didn't avoid this one. Maintain versions and ensure that standards and references are long-term and stable.
+
+Okay, so I have a suggestion that... I drew a little diagram that maybe we can use, if you agree, to close this ticket, if I can find it here. Not wanting to go down the JSON-LD rabbit hole again, this is just saying that we think that we want, let's say a digital product, but it could be a conformity credential, to have some structure defined by a schema that this team defines and to have some meaning defined by a context that this team defines.
+
+And that context will reference terms in vocabulary, UNC fact at all, for sure, because there are a lot of them that are CFAQ-specific, and may reference terms in schema.org, GS1.org, and any others that we think are really valuable, universally understood mappings, right? So this is basically just stating that these two things are governed by us and versioned, and these things, obviously, are governed by somebody else, and we're just mapping to them. And Nissa said this before, that what we want to be able to say in these credentials is stuff like this, that an Australian livestock passport, for example, is a UN digital product passport, which itself is a verifiable credential.
+
+This layered inheritance of being able to extend a digital product passport to become a livestock passport, or, for example, a BC mines permit is a conformity credential, which is a verifiable credential. And that that is done, basically, by having this kind of extensions mechanism, where that livestock passport has its own additional context file that doesn't duplicate anything in the UNTP DPP context file. But there may be a few terms the Australian government thinks is important, and there are some international standards around livestock called ICAR, and so it may point to these.
+
+But basically, that's the way, this is the way that a community that we don't govern, they can always do their own thing, right? This is not under our governance framework. So we can't say, oh, you must harmonize with us, because they're just taking UNTP and using it.
+
+What we want to do is say, if you use it, please extend it this way, so that that livestock passport is interoperable with that basic digital product passport. So if I put this diagram up, and if anyone, if there's general consensus that this is kind of that version and extension architecture, then that might close Zach's ticket.
+
+[Speaker 2]
+Just two small comments. After digital product passport, put in parentheses DPP, and after digital livestock passport, put in parentheses DLP, because the first thing I looked at, I said, what's DLP? And it took me a minute to figure out it's the acronym for digital livestock passport.
+
+[Speaker 1]
+Okay, fair enough. Thank you. I can't, now I can't seem to escape my slideshow.
+
+[Speaker 2]
+Steve, before you escape your slideshow, on the right hand side, where you've got govern independently of UNTP, and you've got the three core standards there. Yeah. I think it would be appropriate to add an other under that without specifying exactly what it is.
+
+And my rationale is, for instance, the Australian data model actually determines Dublin core terms. In particular, Dublin core list of resource types. And I'm sure Australia is only one of many that have this sort of preference.
+
+So an other box under that would be useful to reassure those people.
+
+[Speaker 1]
+Okay. Yep. No, no, you're right.
+
+I, it's obviously up to the extender, what vocabularies they map to. So if they want to, yeah, so I'll put another, and we'll fix the language. But that general approach, I think, answers this ticket, does it?
+
+[Speaker 2]
+The one thing I'd say is in the governance section for the, for the things that we are governing, we probably need to say that we need to, that we're going to maintain long term, long term versions in an immutable way, so that people can always look back at older versions of the stuff that is under our governance.
+
+[Speaker 1]
+So I think we'll, we need to add that to the governance section and add these pictures. And I think that closes it. I also have a comment, if I may.
+
+I think that the gs1.org vocabulary should go down to the use case specific vocabulary, because I don't think we would have it everywhere. Yeah, I suppose we're touching on a question there about it. Put that up again.
+
+I'll just, I'll just, this thing. I'm not going to put it in slideshow mode, because I couldn't get out of it. But where is it?
+
+This one. This, this is fairly uncontroversial, right? And some separately governed entity can kind of do what they want.
+
+And all we can do is ask them to do it in a non-breaking way. This bit is a bit more controversial, because this is a UN standards group. And we could say that doesn't exist.
+
+Everything maps to a UN vocabulary. But schema.org is probably, if I had a wild guess, 10,000 times more used than vocabulary.uncfac.org. And there are some things in schema.org like, you know, that it might be sensible to map to. So this is more of a question for us as a standards body. Are we publishing things that are conform only to our own vocabulary? Or are we willing to say, this thing actually is well described over there in that really well used vocabulary?
+
+Does anyone, particularly those like Gerhard and Virginia and others who are very familiar with the CFAC model, have any fears or concerns or thoughts about, I mean, I'm quite happy to move the GS11 down, but schema.org is really a ubiquitous. Yeah, I didn't mean schema.org. I wouldn't want to discuss schema.org.
+
+I would just discuss GS11.org. Okay. I could put other global standard, right?
+
+That as a governing authority at UN, we say, for example, could be an ISO thing or something, right?
+
+[Speaker 2]
+Yeah, I think you should probably change the sequence because the CFAC, the first one, because that says references and then may reference afterwards.
+
+[Speaker 1]
+Yeah, that's interesting, right? I look at it as that's the foundation, and this is extra stuff you might put on top. And you looked at it as the top one's the important one and the bottom one's the least important one.
+
+It's just how you look at pictures, right? But yeah, I'll color code it or do something to indicate that this is the one that we're obviously focused on. But really, I think Gerhard wants to say something about having to express an opinion, hopefully, about whether we should even reference other standards and vocabularies.
+
+Normally, when you're reading, you read from top to bottom. Yeah, okay. I'm good with that.
+
+That's why. We'll swap them around. Gerhard?
+
+Okay, yes. It's a little bit confusing for others sometimes when we talk about a vocab. It can be, for example, classifications for a product, let's say a product group.
+
+We call that also enumerations of something that can be linked to a UN core element residing in the product data model. This is about, I don't know, about the vocab of GS1. It could be the reference to their EPCIS, or it can be something else that GS1 has.
+
+The question, though, is using, for example, the EPCIS of GS1 vocab instead of the same traceability events we have in UN, only because it is used in GS1 more frequently than in a UNC effect. But on the other hand, what the GS1 made is nice implementation guides and where all these enumerations that they use for a status of something, et cetera, or an event type, they could be reused in a particular context. So, I don't know whether or not we should aim for sticking at the UN vocab, even if EPCIS vocab exists for traceability at GS1.
+
+Yeah, I think that's a discussion that we should have at the forum, Gerhard, and it's kind of a bit, goes to the whole methodology and it's something that I don't think this group is empowered to say one way or another, right? That we need to make a case, get the Bureau to discuss it, and so on and so forth. So, why don't we just do that?
+
+Yeah, at least we align with EPCIS in the UN standard and aligns, of course, because we also created those classes for, like in GS1 or what ISO has described. So, that's the main value, at least that we align. And if the syntax is a little bit adjacent and differs, okay, that's something we could overcome, but still what to choose, yes?
+
+Yeah, yeah. I think there's a kind of principle discussion here on architecture discussion for UN. It's probably a reasonable thing to go, have a reasonable argument about which EPCIS vocabulary you use, but there's kind of like a question that says, if there is a thing like schema.org that is really widely used and defines a term well, and you say, what's CFAC's role really?
+
+Trade, sustainability, stuff like that. There's a lot of things that CFAC would define that are not in schema.org, but should we be rethinking some of the really core stuff like name and person and org and so on that is well defined in schema.org? Are we doing a favor to our customers who are implementers around the world by saying, you can use schema.org here, you don't have to use the CFAC equivalent?
+
+I think we probably are, but again, that's a group discussion for CFAC and the Bureau, not just for us in this project to say, that's it, right? So anyway, I'll tweak the slide as people have suggested. So I propose to get a bit more, stick it on that ticket where we've reached our hour already.
+
+So it's quite good, actually, that we've got through five tickets and made some progress on it. So that's something. Has anybody got anything?
+
+I don't want anybody to stay more time than they have to.
+
+[Speaker 2]
+I'm fine. I think we did good progress. I'm happy.
+
+[Speaker 1]
+Good. Okay. All right.
+
+Well, thanks everyone then. Yours next on the list for next time, traceability events. I think it's what we were just talking about too.
+
+Yes, exactly. Exactly. All right, then.
+
+Thank you, everyone. We're going to beaver away on the REC 49 updates over the weekend. So if you're interested, look out for the email of issues and look forward to seeing you in either next week, if you stay up late in Europe or two weeks time.
+
+Thank you very much.
+
+[Speaker 2]
+Thanks.
+
+[Speaker 1]
+Bye.
+
+[Speaker 2]
+Thanks.

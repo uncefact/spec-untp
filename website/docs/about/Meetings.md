@@ -18,14 +18,14 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
-The next meeting is 8am UTC 27 June 2024.  [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
-The following meeting is 9pm UTC 3rd July 2024.  [Join here](https://us02web.zoom.us/j/85091806131).  
+The next meeting is 9pm UTC 3rd July 2024 - [Join here](https://us02web.zoom.us/j/85091806131).  The following meeting is 8am UTC 11 July 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2024-06-19| [The meeting focused on aligning implementation tools and conformity credentials with VCDM, renaming digital link resolver to identity resolver, restructuring the site, and discussing the use of the Jargon tool for generating context files.](#2024-06-13-meeting-summary))| [video](https://us02web.zoom.us/rec/share/huqG1vXNf21SH4fXNDzPPR4fIqg-OI0X3y0CeMpwRIfw6w6vf3nho1dExIoqIGOb.9G_tdVSmRB-eufKg)| [transcript](../../meetings/2024-06-19-Recording.txt)|
+|2024-06-27| [The meeting focused on reviewing and addressing public comments on Recommendation 49, planning the consolidation of these comments over the weekend, introducing a new digital identity anchor credential, and discussing the governance and versioning of standards.](#2024-06-27-meeting-summary))| [video](https://us02web.zoom.us/rec/share/YSHGiEQEKosYGKgkhtcFr68qpnVtuLGrYMUBueSvgETyaZZ7B9oUT6dMPFDH5gdu.U3JwPcN8cEahYQbx)| [transcript](../../meetings/2024-06-27-Recording.txt)|
+|2024-06-19| [The meeting focused on aligning implementation tools and conformity credentials with VCDM, renaming digital link resolver to identity resolver, restructuring the site, and discussing the use of the Jargon tool for generating context files.](#2024-06-13-meeting-summary)| [video](https://us02web.zoom.us/rec/share/huqG1vXNf21SH4fXNDzPPR4fIqg-OI0X3y0CeMpwRIfw6w6vf3nho1dExIoqIGOb.9G_tdVSmRB-eufKg)| [transcript](../../meetings/2024-06-19-Recording.txt)|
 |2024-06-13| [TThe meeting focused on reviewing and merging key pull requests, discussing the UNTP architecture and methodology, and planning actions for schema and context file alignment.](#2024-06-13-meeting-summary)|[video](https://us02web.zoom.us/rec/share/R6x_ui0ZMeb7JwlERt_Vj3Ag7YIt8fJ_2e-AXZt_0xeQLY5_oma5pguUYvKqvhaN.r97B1NuWbPqM1ec2)|[transcript](../../meetings/2024-06-13-Recording.txt) |
 |2024-06-05| [The meeting focused on improving meeting participation, managing transcription and summary processes, handling JSON schema and JSON-LD context differences, addressing challenges with semantic interoperability, and establishing principles for managing context files.](#2024-06-05-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Vfcr6ZV7Bw0Z8uTKyM1_P8nLkpKaZU0VBLCH9Hlu4xRWbfD8tE5_gL6F87Ny7u3Y.jX5z3_867OAXwB3l)|[transcript](../../meetings/2024-06-05-Recording.txt) |
 |2024-05-30 | [The meeting focused on addressing pull requests, aligning with EU right-to-repair regulations, and discussing the challenges and strategies for maintaining and verifying digital product passports within the supply chain.](#2024-05-30-meeting-summary) | [video](https://us02web.zoom.us/rec/share/vd5oKvWwlRDVlxImzoovy7VsocYbTZgTf5bwKjPuruXUBhPvWJodg24FAD_MLqps.9E3v0xVpCeyefeqD) | [transcript](../../meetings/2024-05-30-Recording.txt)| 
@@ -40,9 +40,75 @@ The following meeting is 9pm UTC 3rd July 2024.  [Join here](https://us02web.zoo
 |2024-03-14| [The team discussed the successful submission of the policy document, agreed on weekly meetings, reviewed technical specifications and PRs, and demonstrated GitHub contribution processes.](#2024-03-15-meeting-summary)|[video](https://us02web.zoom.us/rec/share/fdrIhDXrEvwLcB5v08kdraTfC_7ywRWeYFa-J-LTpGxnCDdxVM6iwyQze_P2BX_z.c7dLspw0q6KCGQ0e?startTime=1710399547000)|[transcript](../../meetings/2024-03-15-Recording.txt) |
 |2024-02-29|[The team discussed updates from Europe, aligned on the structure of recommendations and challenges in their document, and set a plan for finalizing the document for submission by the end of the week.](#2024-02-29-meeting-summary) |[video](https://us02web.zoom.us/rec/share/KQlvFMg2SSlNxsExQJhqzvVaRJSLUPv5SO2W6ze9qqd_Dqpos4blNxAELBbXan-f.z26h2PCKv-krbiX8)| [transcript](../../meetings/2024-02-29-Recording.txt)|
 |2024-02-15|[The meeting focused on refining the policy document draft by incorporating feedback, simplifying technical language, and aligning with global frameworks to prepare for final review and public release.](#2024-02-15-meeting-summary)|[video](https://us02web.zoom.us/rec/share/FHQ1wz0jlb5cRl8mGeZXgYHE_jzbosvnTqBJCsxtxsdsGt_BJGiVx0gywOnj2vua.9B0mR7dX6nBcVzDg)|[transcript](../../meetings/2024-02-15-Recording.txt) |
-|2024-01-18| TBD|[video](https://us02web.zoom.us/rec/share/oPEDPSpZGLBBP5qykEBDaG5NxxMrQu_snm3NmiqZQuGhBVxlWv5bf-70jeuqMvd5.S_8jH8Vk8IW57B0X)| TBD|
-|2024-01-11|TBD | [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)| TBD|
+|2024-02-01|[The meeting focused on refining the structure and content of the policy document, discussing the sustainability pledge, addressing collaboration challenges in value chains, and planning the next steps for finalizing the draft for public consultation.](#2024-02-01-meeting-summary)| [video](https://us02web.zoom.us/rec/share/ZvEFJYTwbM9ER-gZ4jX6_4-gviurC4P7Kn2WgYnIfahG3mLx77hz7NMM_c8284h5.s3UwWFYpeCIt6aMr)|[transcript](../../meetings/2024-02-01-Recording.txt)|
+|2024-01-25|[The meeting focused on refining the structure and content of the policy document, discussing the sustainability pledge, addressing collaboration challenges in value chains, and planning the next steps for finalizing the draft for public consultation.](#2024-01-25-meeting-summary)|[video](https://us02web.zoom.us/rec/share/XJ-SF0jKOj8BRMDStAWU2caoGfcxhW17ulwLAwhsLFfwOUt30eaQg5G92EEknvcm.z1USKwSJ38o6aYkC) |[transcript](../../meetings/2024-01-25-Recording.txt)| 
+|2024-01-18|[The meeting focused on reviewing GitHub issues, demonstrating verifier experiences, discussing schema context, developing a sustainability vocabulary, handling versioning and implementation profiles, and planning for industry-specific extensions of UNTP.](#2024-01-18-meeting-summary)|[video](https://us02web.zoom.us/rec/share/oPEDPSpZGLBBP5qykEBDaG5NxxMrQu_snm3NmiqZQuGhBVxlWv5bf-70jeuqMvd5.S_8jH8Vk8IW57B0X)|[transcript](../../meetings/2024-01-18-Recording.txt)|
+|2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
+|2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
+|2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
+## 2024-06-27 Meeting Summary
+
+**Date:** June 27, 2024
+
+**Participants:**
+- Steve
+- Gerhard
+- Zach
+- Susanne
+- Harley
+- NIS
+- Virginia
+
+**Agenda:**
+1. Review of Public Comments on Recommendation 49
+2. Timeline and Plan for Addressing Comments
+3. Discussion on Specific Comments
+4. Digital Identity Anchor Credential
+5. Governance and Versioning of Standards
+
+**Key Points:**
+
+1. **Introduction and General Updates:**
+   - Steve welcomed everyone and emphasized the importance of contributions to the project.
+   - The public review period for Recommendation 49 has concluded, and comments have been circulated via email.
+
+2. **Review of Comments on Recommendation 49:**
+   - Comments varied from editorial to substantive, with significant input from Gerhard.
+   - The team has a weekend to draft responses and update the document before the plenary meeting in two weeks.
+   - Steve asked for volunteers to help review and respond to the comments. Zach and Speaker 2 offered assistance.
+
+3. **Discussion on Specific Comments:**
+   - Gerhard suggested prioritizing substantive comments over editorial ones.
+   - Some comments highlighted confusion between transparency and traceability in the document's title and content.
+   - The team plans to consolidate and prioritize comments, creating a response log for internal review over the weekend.
+
+4. **Digital Identity Anchor Credential:**
+   - Introduction of a new credential to link digital identities with authorized registers (e.g., Australian business number).
+   - Discussion on aligning with verifiable legal entity identifiers (VLEI) and ensuring compatibility with existing standards.
+
+5. **Governance and Versioning of Standards:**
+   - Presentation of a diagram to illustrate the governance and extension of digital product passports and related credentials.
+   - Agreement to maintain long-term versions and ensure stability of standards and references.
+   - Discussion on the inclusion of external vocabularies (e.g., schema.org) alongside UN-specific vocabularies.
+
+6. **Issues and Actions:**
+   - Several tickets and issues were reviewed, including automated policy execution and maintaining versions of standards.
+   - Harley volunteered to present a demo on trust graphs and shackle rule validation in four weeks.
+
+**Next Steps:**
+- Address and finalize responses to public comments on Recommendation 49 by Monday.
+- Update and publish the digital identity anchor credential after resolving outstanding issues.
+- Continue discussions on governance and versioning, incorporating feedback from the broader standards community.
+- Prepare for the next meeting, focusing on traceability events and further issues.
+
+**Action Items:**
+- Zach and Steve to create an integrated comments log for Recommendation 49.
+- Steve to update the project page with relevant links and descriptions.
+- Harley to prepare a demo on trust graphs for the meeting in four weeks.
+- Team to review and provide feedback on the governance diagram and proposed standards extension approach.
+
+This summary captures the main points and action items from the meeting. If any participant has additional comments or corrections, please share them before the next meeting.
 
 ## 2024-06-19 Meeting Summary
 
@@ -882,12 +948,402 @@ This summary captures the key points and actions from the meeting, ensuring that
 **Next Meeting:**
 - Date to be determined, expected early next week to review the updated document.
 
+## 2024-02-01 Meeting Summary
+
+**Date:** January 25, 2024
+
+**Participants:**
+- Speaker 1 (Steve)
+- Virginia
+- Peter
+- John
+- Zach
+- Olivia
+- Ash
+- Kevin
+- Nancy
+- Brett
+- Others
+
+**Agenda:**
+1. Welcome and Introduction
+2. Review of Document and GitHub Issues
+3. Discussion on Sustainability Pledge and Challenges
+4. Collaboration and Coordination in Value Chains
+5. Summary of Business Drivers and Technical Challenges
+6. Overview of the UNTP Protocol and Design Principles
+7. Stakeholder-Specific Challenges and Recommendations
+8. Next Steps and Action Items
+
+**Key Points:**
+
+1. **Welcome and Introduction:**
+   - Steve acknowledged participants and outlined the meeting's agenda.
+   - Mention of ongoing work on the document and the need to populate it further.
+
+2. **Review of Document and GitHub Issues:**
+   - A walkthrough of the newly created website for technical information.
+   - Encouragement to read specific sections of the website for better alignment with the policy document.
+   - Discussion on the inclusion of contributing experts in the document.
+
+3. **Discussion on Sustainability Pledge and Challenges:**
+   - Debate on the name for the sustainability pledge to avoid confusion with the existing textiles and garments pledge.
+   - Importance of making a pledge that is meaningful and not industry-specific.
+
+4. **Collaboration and Coordination in Value Chains:**
+   - Emphasis on the need for tier-one collaboration without imposing technical solutions.
+   - Highlighting the importance of individual actor implementation for global traceability.
+
+5. **Summary of Business Drivers and Technical Challenges:**
+   - Simplification of business drivers to focus on fear of non-compliance and opportunities for market access and price uplift.
+   - Technical challenges to be detailed in a section correlating with business challenges and confidentiality concerns.
+
+6. **Overview of the UNTP Protocol and Design Principles:**
+   - Discussion on the necessity of a new protocol and why existing solutions may not suffice.
+   - Suggestion to keep technical diagrams and detailed protocol descriptions on the website, not in the policy document.
+
+7. **Stakeholder-Specific Challenges and Recommendations:**
+   - Identification of challenges specific to government, industry, and consumers.
+   - Importance of highlighting regulatory challenges and benefits for governments to ensure relevance and adoption.
+
+8. **Next Steps and Action Items:**
+   - Steve and Virginia to act as master editors to streamline the document.
+   - Focus on creating a draft ready for review and public consultation.
+   - Continued contributions to the technical website for long-term improvements.
+
+**Action Items:**
+- Steve and Virginia to edit and refine the document based on the discussion.
+- Participants to review and comment on the GitHub issues and website content.
+- Schedule next meeting for further review and finalization of the draft document.
+
+**Closing Remarks:**
+- Agreement on a two-week period for Steve and Virginia to finalize the draft.
+- Next meeting to review the draft and gather final feedback before public consultation.
+
+## 2024-01-25 Meeting Summary
+
+**Date:** January 25, 2024
+
+**Participants:**
+- Speaker 1 (Steve)
+- Virginia
+- Peter
+- John
+- Zach
+- Olivia
+- Ash
+- Kevin
+- Nancy
+- Brett
+- Others
+
+**Agenda:**
+1. Welcome and Introduction
+2. Review of Document and GitHub Issues
+3. Discussion on Sustainability Pledge and Challenges
+4. Collaboration and Coordination in Value Chains
+5. Summary of Business Drivers and Technical Challenges
+6. Overview of the UNTP Protocol and Design Principles
+7. Stakeholder-Specific Challenges and Recommendations
+8. Next Steps and Action Items
+
+**Key Points:**
+
+1. **Welcome and Introduction:**
+   - Steve acknowledged participants and outlined the meeting's agenda.
+   - Mention of ongoing work on the document and the need to populate it further.
+
+2. **Review of Document and GitHub Issues:**
+   - A walkthrough of the newly created website for technical information.
+   - Encouragement to read specific sections of the website for better alignment with the policy document.
+   - Discussion on the inclusion of contributing experts in the document.
+
+3. **Discussion on Sustainability Pledge and Challenges:**
+   - Debate on the name for the sustainability pledge to avoid confusion with the existing textiles and garments pledge.
+   - Importance of making a pledge that is meaningful and not industry-specific.
+
+4. **Collaboration and Coordination in Value Chains:**
+   - Emphasis on the need for tier-one collaboration without imposing technical solutions.
+   - Highlighting the importance of individual actor implementation for global traceability.
+
+5. **Summary of Business Drivers and Technical Challenges:**
+   - Simplification of business drivers to focus on fear of non-compliance and opportunities for market access and price uplift.
+   - Technical challenges to be detailed in a section correlating with business challenges and confidentiality concerns.
+
+6. **Overview of the UNTP Protocol and Design Principles:**
+   - Discussion on the necessity of a new protocol and why existing solutions may not suffice.
+   - Suggestion to keep technical diagrams and detailed protocol descriptions on the website, not in the policy document.
+
+7. **Stakeholder-Specific Challenges and Recommendations:**
+   - Identification of challenges specific to government, industry, and consumers.
+   - Importance of highlighting regulatory challenges and benefits for governments to ensure relevance and adoption.
+
+8. **Next Steps and Action Items:**
+   - Steve and Virginia to act as master editors to streamline the document.
+   - Focus on creating a draft ready for review and public consultation.
+   - Continued contributions to the technical website for long-term improvements.
+
+**Action Items:**
+- Steve and Virginia to edit and refine the document based on the discussion.
+- Participants to review and comment on the GitHub issues and website content.
+- Schedule next meeting for further review and finalization of the draft document.
+
+**Closing Remarks:**
+- Agreement on a two-week period for Steve and Virginia to finalize the draft.
+- Next meeting to review the draft and gather final feedback before public consultation.
+
+
 ## 2024-01-18 Meeting Summary
+
+**Date:** January 18, 2024
+
+**Participants:**
+- Speaker 1 (Steve)
+- Virginia
+- Nis
+- Nancy
+- Benjamin
+- Dr. Wang
+- Gregory
+- Others
+
+**Agenda:**
+1. Welcome and Introduction
+2. Review of GitHub Issues and Editorial Process
+3. Verifier Experience and Trust Graph
+4. Schema Context and Verifiable Documents
+5. Vocabulary and Standards Mapping
+6. Versioning and Implementation Profiles
+7. Extension Methodology for UNTP
+8. Next Steps and Action Items
+
+**Key Points:**
+
+1. **Welcome and Introduction:**
+   - Participants greeted each other and the meeting was recorded.
+   - Steve reminded everyone about the fortnightly meeting schedule alternating between technical and policy-focused sessions.
+
+2. **Review of GitHub Issues and Editorial Process:**
+   - The editorial process involves raising GitHub issues, discussing them, reaching conclusions, and submitting pull requests for review.
+   - Nis has volunteered as an editor with maintained rights on the repository.
+
+3. **Verifier Experience and Trust Graph:**
+   - Nis demonstrated a verifier experience showcasing the traversal and validation of a trust graph.
+   - Discussion on how to ensure the contextual validity of linked credentials and automating due diligence for various sectors.
+
+4. **Schema Context and Verifiable Documents:**
+   - Discussion on the need to align schema context for digital product passports and verifiable credentials.
+   - Emphasis on pointing to existing interoperability profiles rather than reinventing them.
+
+5. **Vocabulary and Standards Mapping:**
+   - Steve proposed creating a sustainability vocabulary to categorize ESG claims in digital product passports.
+   - Dr. Wang and Gregory highlighted existing work and offered contributions to the vocabulary design.
+
+6. **Versioning and Implementation Profiles:**
+   - Discussion on how to handle versioning of specifications and implementation profiles.
+   - Proposal to group specifications into core and trust-related categories with implementation profiles reflecting different levels of conformity.
+
+7. **Extension Methodology for UNTP:**
+   - The principle of defining a simple common core for UNTP and allowing industry-specific or geographic extensions.
+   - Need for a rule set to ensure non-breaking extensions.
+
+8. **Next Steps and Action Items:**
+   - Participants to use GitHub tickets for further discussions and provide feedback.
+   - Steve to initiate discussions on specific issues and encourage the development of consensus on key points.
+
+**Action Items:**
+- Participants to review and comment on GitHub issues.
+- Steve to publish a draft sustainability vocabulary.
+- Nis to work on automated policy execution and verifier experiences.
+- Follow-up discussions on extension methodologies and implementation profiles.
+
+**Closing Remarks:**
+- Agreement to use GitHub issues as discussion forums to reach consensus and develop content.
+- Next meeting to focus on merging pull requests and further refining the specifications.
+
 
 ## 2024-01-11 Meeting Summary
 
+**Date:** January 11, 2024
+
+**Participants:**
+- Steve
+- Christian
+- Peter
+- Zach
+- Kay
+- Benjamin
+- Nis
+- Maria Teresa
+- Kevin
+- Brett
+- Anil John
+- Others
+
+**Agenda:**
+1. Welcome and Introduction
+2. Review of Registration and Participation
+3. Overview of GitHub Repository and Structure
+4. Discussion on Key Sections and Specifications
+5. Splitting into Technical and Policy Teams
+6. Next Steps and Action Items
+
+**Key Points:**
+
+1. **Welcome and Introduction:**
+   - Participants greeted each other and wished a Happy New Year.
+   - The meeting was recorded for future reference.
+
+2. **Review of Registration and Participation:**
+   - Steve reviewed the list of participants who had registered and noted the status of their registration.
+   - Participants were encouraged to complete their registration if not already done.
+
+3. **Overview of GitHub Repository and Structure:**
+   - Steve shared the structure of the GitHub repository for the technical specifications of Recommendation 49.
+   - The repository includes sections on architecture, digital product passports, conformity credentials, traceability events, identifiers, vocabularies, verifiable credentials, data carriers, trust anchors, trust graphs, confidentiality, anti-counterfeiting, mass balance, ESG rules, GS1 usage, business cases, tools and support, extensions register, and implementation register.
+
+4. **Discussion on Key Sections and Specifications:**
+   - Emphasis on the need to align digital product passports with existing standards, including those from the EU.
+   - Discussion on the importance of identifiers and the gap between current identifier systems and the needs of a digital trust architecture.
+   - The role of vocabularies in ensuring consistent categorization and reporting of ESG criteria.
+   - The significance of verifiable credentials and leveraging existing profiles from other initiatives.
+   - The need for clear governance and best practices for confidentiality and anti-counterfeiting.
+
+5. **Splitting into Technical and Policy Teams:**
+   - Proposal to split the group into two teams: one focused on the technical specifications in the GitHub repository and the other on the policy recommendation document.
+   - Meetings will be held weekly, alternating between technical and policy discussions.
+
+6. **Next Steps and Action Items:**
+   - Participants to review the GitHub repository and provide feedback via tickets.
+   - Steve to send out invitations for separate technical and policy meetings.
+   - Follow-up on registration for those who have not yet completed the process.
+
+**Action Items:**
+- Steve to set up a spreadsheet for tracking participant roles and contributions.
+- Participants to raise issues and provide feedback on the GitHub repository.
+- Schedule and conduct separate meetings for technical and policy teams.
+
+**Closing Remarks:**
+- Recognition of the interest and engagement from various stakeholders, including presentations to the OECD, GS1 Global Forum, and the European Commission.
+- Encouragement for continued collaboration and contributions to ensure the success of Recommendation 49.
 
 
+## 2023-12-14 Meeting Summary
+
+**Date:** December 14, 2023
+
+**Participants:**
+- Steve
+- Virginia Cram Martos
+- Rakesh
+- Franziska
+- Mathieu
+- Charles Arden-Clark
+- Others
+
+**Agenda:**
+1. Introductions
+2. Overview and Communication of Recommendation 49
+3. Revised Document Structure
+4. Call for Contributors and Next Steps
+
+**Key Points:**
+
+1. **Introductions:**
+   - New participants, including Virginia, Rakesh, Franziska, Mathieu, and Charles, introduced themselves and shared their backgrounds and expertise.
+
+2. **Overview and Communication:**
+   - Steve shared a video explaining Recommendation 49 and its goals, emphasizing anti-greenwashing through supply chain transparency.
+   - Participants were encouraged to watch and share the video for better understanding and feedback.
+
+3. **Revised Document Structure:**
+   - The document is divided into three sections: a high-level executive summary, detailed guidelines for implementation, and an annex for additional information.
+   - The executive summary will cover the introduction, scope, target audience, purpose and benefits, challenges, recommendations, and an opportunity for implementers to make a pledge.
+   - The guidelines section will detail business drivers, design principles, technical challenges, and the actual protocol, including costs, incentives, and implementation guidance.
+   - A GitHub repository has been created for detailed technical information and specifications to support the policy document.
+
+4. **Call for Contributors:**
+   - Participants were invited to volunteer for writing different sections of the document.
+   - Emphasis on involving both business-oriented and technical experts to ensure the document is comprehensive and implementable.
+   - A spreadsheet will be set up to track potential stakeholders and contributors, distinguishing between observers and active contributors.
+
+5. **Next Steps:**
+   - Spreadsheet to track participant roles and contributions will be created and shared.
+   - UNECE to confirm the revised structure of the document.
+   - Separate technical meetings to be scheduled after Christmas to focus on detailed content development for the GitHub repository.
+
+**Action Items:**
+- Steve to create and share a spreadsheet for tracking participants and their roles.
+- UNECE to review and confirm the revised document structure.
+- Participants to indicate their interest in contributing to specific sections.
+- Technical meetings to be scheduled for post-Christmas to progress GitHub content.
+
+**Closing Remarks:**
+- Agreement to skip the meeting scheduled for December 28 due to the holiday season.
+- Next group meeting to be held in a month, with parallel technical meetings starting after Christmas.
+
+## 2023-11-30 Meeting Summary
+
+**Date:** November 30, 2023
+
+**Participants:**
+- Steve
+- Brett
+- Kevin
+- Benjamin
+- Corey
+- Felix
+- Xinyang
+- Nis
+- Maria Teresa
+- Stefano
+
+**Agenda:**
+1. Communication Strategies and Updates
+2. Refactoring Recommendation 49 Document
+
+**Key Points:**
+
+1. **Introduction and General Updates:**
+   - Steve welcomed participants and highlighted the importance of communication.
+   - A project in Australia on agricultural traceability has successfully demonstrated the concepts in Recommendation 49, showing quick vendor adoption and implementation.
+
+2. **Communication Strategies:**
+   - Emphasis on the importance of effectively communicating the project to various stakeholders.
+   - Discussion on creating sector-specific versions of the communication video (e.g., for critical raw materials, textiles).
+   - Participants encouraged to share the existing video and provide feedback.
+   - Maria Teresa agreed to post the video on official UN channels once updates are made.
+
+3. **Feedback on Communication:**
+   - Participants agreed on the need for various media to reach different audiences.
+   - Suggestions included creating a range of materials from short soundbites to longer, detailed videos.
+   - Brett and others emphasized focusing on the flexibility and scalability of the protocol.
+
+4. **Refactoring Recommendation 49 Document:**
+   - Discussion on aligning the structure of Recommendation 49 with previous UN recommendations.
+   - Agreement on including sections like scope, purpose, benefits, and a high-level summary.
+   - Inclusion of a cost-benefit analysis and discussion on inclusivity (small businesses, developing economies).
+   - Emphasis on providing a flexible yet implementable framework that can be adapted for different sectors.
+
+5. **Implementation Guidance:**
+   - Importance of providing clear, implementable guidelines and schemas.
+   - Agreement on using projects like critical raw materials and agriculture as examples.
+   - Discussion on maintaining flexibility while ensuring interoperability and testability.
+
+6. **Next Steps:**
+   - Steve to restructure the document based on the discussed framework.
+   - Participants to review and provide feedback on the restructured document.
+   - Plan to engage with policy makers for informal reviews before formal public review.
+
+**Action Items:**
+- Steve to complete the restructuring of the Recommendation 49 document within the next week.
+- Participants to share the communication video and provide feedback.
+- Maria Teresa to post the updated video on UN channels.
+- Team to engage with policy makers for informal reviews of the draft document before the end of January.
+
+**Closing Remarks:**
+- Agreement on the next meeting to review the restructured document and continue content development.
+- Maria Teresa emphasized the importance of involving policy makers early in the review process to ensure the document meets their needs and gains their support.
 
 
 
