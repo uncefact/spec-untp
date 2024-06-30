@@ -1,0 +1,360 @@
+[Speaker 1]
+Hello colleagues. Hi Steve. Hey.
+
+Hello. We've got 11 so far, give it another minute or two I think. It's impressive how you go from no participants to almost everyone within one minute.
+
+How diligent we all are. You don't have 11 though, you got 10 and a bot. That's true.
+
+You're right. 10 and a bot. I think I see most of the names I expected to see.
+
+Oh, there's another one. Virginia. And Signon.
+
+Okay.
+
+[Speaker 2]
+Hi Virginia, Signon.
+
+[Speaker 1]
+Someone's in a car. Stefano was driving last time. It must be his driving time of the day.
+
+Drive safely Stefano. All right. Well, it's two minutes past.
+
+I'll make a start. If I'm screen sharing and somebody pops up waiting and I don't see it, can you shout out or admit if you've got the authority to do it? So as usual, the agenda for this meeting being the technical meeting, not the policy document meeting, is to work through issues in some sort of order and make progress towards our goals.
+
+And aside from the list of issues, I've got three things, most of which have an issue that I kind of wanted to focus on today. One was this question of the vocabulary and what really it's for and what that means we need to do. And the other one is to introduce an update to the conformity attestation credential data model because Brett Highland's project who's on this call has done a fair bit of work on that and we've reflected it in the model.
+
+And then the last one is I wanted to pick your brains about digital product passport refactoring because we have a surprising amount of interest given that this is a quarter populated website and not much more from the European Commission, the OECD, the UN, the WTO and all these organizations around this digital product passport. And I've learned some lessons from previous implementations that teach me it's not quite right and I'd like to share those with you and get your input. So that's the agenda.
+
+I'll pull up now the issues list. I'll stop share. I hope we have a fairly robust discussion today.
+
+I noticed somebody added this tag called pending close. I'm guessing that's NIS. And he put it on one thing and I've added it to some others because I think there's a few here that we don't have any disagreement on and or much more to discuss.
+
+So I might invite people to comment on any of these red ones. If they think it's not true that they're pending close and if I don't hear anything, then before next call I'm going to close them. That leaves the ones that are not marked pending closed.
+
+And I thought I would start with this one, issue 12, sustainability vocabulary design. Because it's had a fair bit of conversation, which is great, right? Because that's the purpose of a GitHub ticket like this.
+
+And I just wanted to say, I suppose, that over the last couple of weeks, too, I've attended a few meetings now where a light bulb has gone on that we actually potentially fill an important need here that is not well understood, which is that in the light of corporate disclosure obligations around the world, that is your annual reporting of your sustainability performance along with your financial performance, increasingly regulated, a lot of corporates understand that obligation but don't understand particularly how best to do it and particularly, especially how to handle things like scope three emissions, which are really supply chain level and transaction level sustainability metrics, how to capture them and how to include them is a black hole at the moment that's not well understood, either by the regulators, because I have spoken to the Australian Accounting Standards Board, which is kind of like an offshoot of the IFRS. And there's an opportunity here, right?
+
+And I think as a potential value proposition to say that if we can help categorize, classify, link sustainability performance data at the supply chain shipment level, in such a way that it rolls up to corporate disclosure level, we're going to get a fair bit of interest and appetite from those that are facing this obligation, right? So, in my view, there's kind of two levels of, there's two steps we could do with this, a baby step and a bigger step. And I just wanted to share thoughts on that and then get a new colleague, Marcus, to show some things.
+
+So, in theory, at a minimum, a vocabulary, a fairly simple topic map that maybe everyone uses in their passport level sustainability metrics, like carbon intensity, if used consistently, would act almost like a chart of accounts and allow consumers of passports to easily identify scope three emissions or whatever the criteria is and roll it up. So, at a minimum, a sort of simple topic map that is a contribution to that problem and is one of the fields in the passport, it feels like a worthwhile goal. But, of course, that assumes everyone uses that topic map when they populate data in passports or in supply chain transactions.
+
+And everyone thinks they've got the standard, but there'll be dozens, probably, of these categories. There's ESRS, there's IFRS, there's others. There'll be requirements to map to different vocabularies.
+
+And so, there's a question, should we ignore all that and just say, make a topic map, or is there some value or some opportunity to encode that mapping in such a way that we do it centrally and it's reusable by many? Otherwise, everyone kind of has to do the mapping. So, that's why I thought that ESRS to UNEP financial disclosure topic mapping in the spreadsheet, I just found and we didn't do, was an interesting idea, right?
+
+It's a central authority saying, this is how this maps to this, which in theory would be useful for many. And the question is, do we take that further? And I don't know the answer to that.
+
+I think a simple topic map is a minimum and maybe more. And I thought, before we have a robust discussion about it, I might hand over to Marcus Jauzy, who's on this call, who's, after deep saturation diving, turned his career to web ontologies and has been sort of up to his neck in OWL and RDF and web ontologies for a couple of decades, I think, Marcus. Just to hand over, he's done a bit of work in taking that spreadsheet and turning it into a RDFS or OWL ontology and showing how it might add value.
+
+I haven't seen it and I welcome Marcus to show us what he's done so we can inform a subsequent discussion. Over to you, Marcus. Oh, thanks, Steve.
+
+Yeah, I've been working with semantics and promoting the verb up into a first-class citizen for the last 20 years or so. And just for everyone's knowledge, I've been working in things like the 3D CADASTA mapping across Australia and New Zealand to lift standards organisation up to enable 3D. But look, I'll jump straight into sharing a screen if I could.
+
+I think you can just take it over, all participants. I'll stop sharing mine. No worries.
+
+Where am I? I'll just find the screen. Screen.
+
+There we go. Try that. Okay.
+
+Hopefully, you can see a spreadsheet. Is that right? Yes.
+
+Yep. Fabulous. Okay.
+
+This is, in fact, the ESRS to UN EPFI topic map that Steve suggested in the GitHub issue. And I had a look at it. What I didn't do is do any deep research into ESRS or UN EP.
+
+Instead, I just took it at face value and had a look at the data. And I noticed that there are some interesting things. For instance, if I look in this spreadsheet for forced, I get forced labour, but I get two instances of forced labour with two different actual contexts.
+
+One ultimately going up to looking at a topic of own workforce and the other workers in the value chain. And further to that, at the sub-level, there are groupings that forced labour is a leap, if you like, at the end of the branch on is classified under other work-related rights in both cases. However, the set across the two parent categories is different.
+
+So, that's interesting. I don't make any value judgment about that. It's just one of the things that I notice in the standards here.
+
+So, anyway, what I did, and hopefully you can see a screen now with a bunch of ontology, just shrink this down, that's better. This just shows how I took this spreadsheet and I connected the UN EP topics with regard to impacts that all come from the spreadsheet into a very simple model of three different classes and the same for ASRS topics. And it's just a reflection of what's in the spreadsheet.
+
+And I split up the spreadsheet to allow me to populate this easily. It's a very sort of manual process. But at the end of the day, we get UN EP impact, impact area and impact topic and ASR topic, subtopic and sub-subtopic.
+
+And in the spreadsheet, there's an expanded mapping available, which is the declared mapping. And it actually shows, for some reason, I've got a directional symbol indicating it maps from left to right. So, again, I made no value judgment about that.
+
+I just reflected that as is. So, what that allows me to do is open search. So, I want to look for, let's say, consent.
+
+And it pulls up consent and I can see the details associated with this sub-sub, ASRS sub-subtopic. And I can see that it relates to a subtopic of rights of indigenous communities and rule of law with regard to the UN ETP sub, sorry, impact topic. So, I can, you know, do that sort of mapping.
+
+But then I thought, well, what's some interesting questions I might be able to ask of the data? And this is just an example of one. I'm looking for ASRS stuff to do with biodiversity and ecosystems and give me the associated subtopics and sub-subtopics and connect that through to the UN EP topic and associated impact area.
+
+And when I run that query, I get this big, ugly graph. And I can look at the details and any of them and say for the ASRS sub-subtopic, I can grab out the details and I've got the links and can navigate, you know, to its parent topic, in this case, a subtopic and then, you know, go completely up to its and across to its impact area, sorry, its UN EP impact area and have a look at the complexity and navigation associated with that. And I can do the same thing here by clicking on stuff.
+
+So, you know, it's given me the ability to search and navigate across that. That's kind of interesting, but there's nothing special there. And I've done nothing to make any valued constraint around, for instance, forced labour being in one category and appearing in another category, which is in taxonomical terms, really interesting.
+
+But I guess the one thing that might contribute to this discussion a bit more is to look at what the actual W3 standard says about taxonomies. And of course, that in IDF terms is represented as SCARS. So while I've got the screen up, I'll just take any questions at this point from anyone if that was in any way revealing or interesting.
+
+Keep going? All right. I hear nothing.
+
+So I'll just briefly keep going. I might just ask one. Goes to what's the use case or what's the query?
+
+Obviously, I'm not entirely sure. But the one that occurs to me is I've got this bucket of credentials that I've discovered in my supply chain graph. And they've got various terms in them.
+
+And I want to be able to borrow someone else's intelligent mapping so that I can get a simple number like what's the total scopes re-emissions? Where, for example, I've got, I don't know, 20 credentials that have used a different term for that topic. Yeah.
+
+So what I guess this allows you to do is to navigate across terms with regard, of course, we're mapping across two standards here. So it allows you to use, in this case, the declared mapping. But we can also do inferred mapping using this technique.
+
+And I faithfully followed the spreadsheet. So I haven't got an example. Yes, maybe I do have an example of an inferred mapping.
+
+No, I don't. Handy. I haven't gone to that trouble.
+
+So, yeah, it just allows you to actually drill down to meaning behind that. But again, we need that human curator to associate the meaning with the term. And for instance, when I go back to the spreadsheet and have a look at forced labour, there's nothing really there that helps me to make that distinct distinction, other than the fact that one is about workers in the value chain and one is about our workforce.
+
+So more specific and a more generalised question, but it doesn't really answer your question, Steve. What does address the question maybe is, in fact, the standard here where, you know, it talks to the fact that we've got A broader than B and C and B is broader than C, that allowing this taxonomic structure according to, you know, natural polyhierarchical knowledge organisation systems, that it allows that standardisation. But in particular, using SCOZ, it enables disjointness.
+
+So we can make it absolutely reflective of the standard, which is what I did, just copy the standard in there and do the declared mapping. But then we can not use SCOZ and we can use AL and then we can enforce some shapes that are logical shapes over that standard that are more akin to the user domain, for instance. And we might want to profile two or three user domains and figure out, OK, how do those domains look at information from the particular use cases?
+
+And I sent, I dropped a link to this in my response to a Git issue that you put up, Steve, but I'll stick it in the chat window if anyone wants to go out and have a look at that. So, you know, just from a basic point of view, I guess what this allows us to do is, of course, what I'm showing you, I can export as JSON-LD. So, you know, most tools now, you can even use Python and do your own custom setup to do that export.
+
+That's no drama. Or even, you know, a GitHub pipeline. But the important thing, I guess, is understanding the underlying semantic framework that you need to use to represent those vocabularies.
+
+And again, I did no research to look at the underlying meaning associated with this, but I did have a look at the logic complex that exists there from a user point of view, which force labor do I look for in that instance? Yeah. All right, Marcus, I'm going to have to stop you there so that we get time for the other things.
+
+And I would just give anyone a quick opportunity to ask questions, make comments, and say that I think we just need to continue the conversation a little bit in the Slack, sorry, in the GitHub issue, until we decide what we're doing with this vocabulary, having seen what might be possible, right? So, I see John made a comment. Do you want to talk to your comment, John?
+
+Yeah, briefly, if you like. In a sense, I'm assuming the positive that this will be done, we will solve it, we will have a wonderful sort of mapping and graph and everything else is wonderful. But if we do such a thing, in a sense, it needs to be owned and managed by somebody.
+
+In other words, it needs to have some sort of authority that says this is the mapping that is recognized by whatever jurisdiction. And there'll be many, there are, as you pointed out, Steve and Marcus, there are many such mappings. So, who is to say which one is the right one in the sense of a conflict in a jurisdiction?
+
+So, I'm kind of interested in both the support maintenance post getting it all done and in the resolution of conflicts, the recognition of rights in a particular jurisdiction. But I think you're right, that goes into the issue discussion on GitHub. We can handle that, unless you have a particularly quick and wonderfully erudite response now.
+
+Well, I would say we don't want to take on governance and things that it's not our right to govern. And the first order thing is, if there are mappings out there currently done manually, like that spreadsheet, that may have some value in representing in a machine readable way, we can just do that and publish it. We're not then governing the mapping, we're just publishing it in a way that some of us might feel useful.
+
+I think the only mapping we may take on responsibility for is if we come up with our own sort of high-level topic map, there may be an obligation on us to map it to others. But we wouldn't take on, for example, what you just saw, which is ESRS to UNEP. Why would we do that?
+
+Somebody's already doing that, it's UNEP, just reflect what they've done. Maybe give them some feedback and say, well, why did you do it like this? Perhaps you do this better, but I don't think we should govern it.
+
+What we might govern is our own mapping, if we do that. That's the thoughts. Anyway, let's carry on the discussion and then progress this vocabulary thing.
+
+The next ticket I wanted to look at, I'll just share a screen again. Thanks, Marcus, by the way. It's a blackout to me, some of this semantic web stuff, it's nice to have.
+
+Why is Apple TV? No, I don't want to start watching. Amazing, that's it.
+
+Shit that gets thrown up at you. All right. The next thing I wanted to quickly spend a few moments on is just to walk you through the conformity credential, which is not that one.
+
+This one, here it is. To share some thinking on it, because some things in there were not intuitive to me, but Brett kindly explained to me. This is the general representation of, in theory, any sort of product conformity attestation, which could be about environmental qualities or could be about safety qualities or something else.
+
+It comes from a community, which is basically the existing world group of experts on product safety and product conformity testing and encapsulates this idea of authorities that accredit certifying bodies who then assess products or processes or facilities and issue conformity assessments as a third party. It's a fairly familiar process, right? This is what it represents.
+
+At the heart of it is this conformity attestation. You can mentally imagine as a certificate of conformity. At the top here is this scheme or program.
+
+What I discovered is very often you get an organization like, for example, Australian Structural Steel Certification Body that says, we create a scheme or a governance framework for testing structural steels. There are actually five or six or seven different digital standards from Standards Australia or ISO or whatever about various kinds of structural steel rolled by this and that. One certificate about one small collection of products might actually reference different little subsets of different standards.
+
+I had imagined that a conformity attestation would say, this product is conformant to that standard. It's not actually as simple as that. It's a governing scheme about a product category that may make assessments against criteria of multiple standards and not all the criteria of a standard.
+
+A particular standard might have, let's say, 20 criteria. This particular scheme cares about 10 of them. It's not a trivial mapping of the scope of a conformity attestation to various standards and criteria.
+
+That's why the model has this kind of idea of a conformity attestation. Think of it like a paper certificate that's making one or more assessments because you can assess different qualities of a product about one or more products because actually some of these certificates list five or six products or one or more facilities that exist at a location against some criteria that exists under some standard or regulation. This is why the model looks like this.
+
+We've got this balancing act to try to make it representative of the real world but not to make it over complicated. It's already complicated enough. I think it's reached a level of peak complexity or maximum viable complexity, if you like, that is now moving into a testing phase.
+
+It's a paper testing in the sense that a bench testing where Brett has kindly provided, I don't know, a dozen or so different actual certificates in different domains, construction and textiles. We're working through how would we map that certificate to this schema and what would go where and does it work. The answer is so far, particularly after the iteration done today, pretty good, I believe.
+
+I just wanted to take you through this because it's the thing that carries the third party attestation that gives the trust to the ambit claims in the passport. It's important to understand it. That's it for all I wanted to say about this so far.
+
+I noticed Nis has a raised hand. Over to you, Nis. If you're talking, you're on mute.
+
+I had that problem this morning. My mic didn't work. We can come back to you and interject at any time, right?
+
+If you get your mic working or write a question in the chat and I'll read it out if you want. Going back to that core kind of idea of UNTP is that a product passport links to a shipment of products. This is what is really the third party attestations that give confidence in the data of the passport.
+
+We're going to end up mapping different kind of credentials like carbon intensity credentials or environmental credentials to this in the same way that we're working with Brett now for textile and construction to see if it works. One of the things I wanted to was make sure that it worked not only for the formal world of standards and accreditation bodies, but even for the case of a product used in the Democratic Republic of Congo that gathers peer review data and is issuing a credential that says auntie and all her cousins checked this mining site and is satisfied that there aren't slaves there. This sort of thing of no du jour standards, but just can we use this carrier or have we got to change it for all kinds of different use cases?
+
+I don't know yet, but it's important. The first order thing is that we all understand what it means. Can I just try again?
+
+Can you hear me now? We can hear you now. There you go.
+
+It tried to switch through my phone for some reason, no idea. I love the generic approach of this. It's very appealing, but we've talked about steel mill test certificates in the past.
+
+I wonder if this could be used for that as well. On one hand, certainly it could, at least on the top part of a mill test cert, capturing what kind of test is this? What kind of product is it?
+
+What I suppose is, correctly, I'm wrong about that. If I'm just not even approaching this from the right direction, but on the other hand, there's also some very specifics that relates to the tests of steel, like the mechanical and the chemical registration of the test results. That wouldn't fit into this very higher level, more generic, more broadly applicable schema that we're looking at here.
+
+Any thoughts on generic versus specific? Yes. Two things, I think.
+
+First of all, everyone on Brett's group recognizes very well that the world of conformity assessment is astonishingly diverse, whether it's steel mill test or motorcycle helmet safety or whatever, the specifics in a particular domain are very, very different. Any attempt to model the world is going to just dissolve into complexity. The operating assumption is that, at least for digital data, what the consumer cares about is, is my product compliant or not with some reference that I care about, for example, Australian structural steel scheme.
+
+I may not need to know at the digital data level that the hardness measure of this steel was 27 megapascals. There is a carrier for it down here in this criteria and metric stuff. The idea of that, by the way, is that, for example, a standard or regulation like, I can't remember, Australian standard something or other about structural steel might specify for building structure, a minimum tensile strength of a reinforcing steel bar is 100 megapascals.
+
+This would say, Australian standard structural steel criteria tensile strength threshold, 100 megapascals. The conformity assessment would say, I've tested this product from this manufacturer and the measured value is 110 megapascals. It's compliant indicator tick.
+
+There is a structure to carry these data, but in many certificates in the digital world, it may not even exist. The main thing is, can we follow a trust graph, find something that we know is issued by a party we trust, see that it's about a product that matches our supply chain identity, and just know that it's conformant with some standard and not need to know all the details under it. That separation of conformity concern from details of evidence is part of this model.
+
+This is also why conformity evidence here is just a blob of data that some auditor might look at, but we're not trying to standardize. That maybe answers the question. The unanswered thing to me is, is there value in this?
+
+Say you do want that actual mill test with all the structured data in it. Is that a completely different thing or can this be extended in a useful way? Is it a case of defining these criteria vocabularies correctly?
+
+These are the slightly unanswered questions, but the core intent is a carrier of something you trust at the conformity, conforms or doesn't level. Steve, my audio is not so great. I'll just turn my video off in case that helps.
+
+It is answered to my satisfaction. I'll say that when I first started engaging with you and I was a bit embarrassed about how complex conformity assessment was, and I was willing to make all sorts of simplifying assumptions, but Steve Capel seemed to have an unlimited capacity for embracing complexity. Every time I suggested some extra nuance, Steve said, right, we'll build that in.
+
+I now want to answer Nissa's question. The box that you can see called conformity assessment is iterative. This is a key development in this data model.
+
+Within an individual conformity attestation, which is surrounded by the pink box, there is an iterative conformity assessment box. If we're talking about a top-level, let's say, product certification, we don't need this iterative nature because we're simply saying that the product complies with some standard, whether it's ASTM, ISO, whatever, and we don't need to know the details of each parameter that is called up within that standard. However, Nissa specifically asked about a test certificate where we do need to know the results of every single parameter, and the iterative nature of this conformity assessment box means that we can call up each individual test procedure or test method and can capture the individual threshold that is supposed to be met and the individual measure results.
+
+So, I'm actually quite satisfied as a testing professional that the complexity is addressed in this model, but I also recognise that for, I guess, the majority of certificates of interest to the global community, which are more of a certification-based model, you can come at this in a much simpler format. So, I just want to thank Steve for embracing the full complexity of the conformity assessment community. I'm on a call.
+
+Okay. Sorry. You got that.
+
+Interesting. That's very appealing. I'd love to actually give that a go and try and create a sample mill test report from the schema.
+
+That would be an interesting exercise. Nissa, I'd be happy to work with you on that. So, one of the things that happened a couple of days ago with Brett and Steve and I is working with the Australian Structural Steel Certification Authority on that and happy to collaborate with you on the process.
+
+We sort of had a conversation with them today. I'm happy to jump in as well. Testing is my profession, so happy to jump in.
+
+Let's all work together on that because I think the more we can prove this out and move the complexity from Steve's ability to articulate it to the rest of our ability to articulate it, the better off we're all going to be in this process. All right.
+
+[Speaker 2]
+We've got a couple of other hands up.
+
+[Speaker 1]
+Let's get through them before we move on to the next. So, Marcus? Yeah.
+
+Mine's more of a question than an observation. So, sorry, crew. Dumb questions.
+
+I'm just getting up for speed in this. Around the criteria, is my assumption correct that at the border of each governing body where a supply chain transacts that there'll be criteria settings that's specific to that governing body? Is that a fair assumption?
+
+So, in this model, some party governs or owns some standard or regulation. So, let's take Australian National Greenhouse Emissions Reporting. The party that governs it would be the Clean Energy Regulator.
+
+The standard or regulation would be ENGR, National Greenhouse Energy Reporting. A criteria within it might be the carbon intensity of diesel fuel for the purposes of calculating stick scope 2 emissions is 3.2. Yeah. But from an operational point of view, I guess my question is, let's say the border of the governing body is the Bega Valley Shire with the new Bega Circular Economy Drive that they're doing there.
+
+And there are so many goods that go back and forth across that jurisdiction boundary, and that they would be responsible for checking the validation, if you like, the conformity assessment associated with a particular criteria that they've agreed to. Is that valid? Is that a valid yes or no?
+
+I think it's in the eyes of the validator which criteria they care about, right? That's my answer. Fabulous.
+
+[Speaker 2]
+Yeah.
+
+[Speaker 1]
+Okay. This is a schema for the issuer to say what the criteria are, whether the verifier accepts them is a completely different question. John?
+
+I have a question in two parts. Oh, gosh, my camera's gone into Fuji film again. I'm interested in the relationship between sort of authorities and jurisdictions, and you may have already got it in the model.
+
+So I'll ask the question sort of simply. An authority, you were giving an example about sort of an Australian-based authority, a party in the terms that we're looking at on this map here. We previously, when we looked at governance, considered a sort of separation of kind of governing authorities, governing bodies, and the jurisdictions in which they are licensed to operate, partly because we've kind of thought that there's a kind of natural end game to the sort of going up the chain thing, where you eventually end up with a country or some sort of legal sort of sovereign state of some sort or other. Is that something the model needs to contain, or is the ability to kind of recurse back up through the graph sufficient?
+
+Do authorities have some legal location in some sense at some point? That's a good question, right? I think it depends on the type of authority.
+
+If it's a regulator, they obviously have a boundary. It's the country boundaries, right? But there are many cases where product conformity is, the assessment is against an international standard that doesn't have boundaries.
+
+And the authority in that case might be someone like NATA, Brett, who is accrediting a local certifier against an international standard. And all you really care about then is that the accreditation process has some appropriate due diligence, right? Because the law or the rule or the criteria that you're assessing against is an international standard.
+
+And what you care about is, is the assessor qualified? And there's already an international mutual recognition arrangement under ILAC for that. And so I think some of them roll up to they're just global and we trust the accreditation framework.
+
+And some of them are, well, that's a country rule and state rule, haven't really thought too much about how to manage those boundary crossings. But please feel free to make comments in the GitHub issue, if you have thoughts about that. And I'll probably, this will probably be the second part of that same comment, is I think there might be a need for what you might call bi-directional or sort of two-way linking kind of processes.
+
+So if a party declares itself to be kind of authorized by an authority, you might need the authority to list the parties that it recognized as...
+
+[Speaker 2]
+Yes, yes, yes.
+
+[Speaker 1]
+So throughout this whole project, at all kinds of layers, we want to have a mechanism ideally to verify ambit claims, right? So you're right that somebody could issue a conformity attestation and just declare that they're accredited by NATA, right? So this is an example of ideally following that credential URI there.
+
+Finding another kind of credential, which is an accreditation credential, and doing the graph verification that we spoke about last time that says, oh, yes, this conformity assessment body, CAD, who is the issuer of this thing, is actually accredited by an authority that we trust, right? So that's a separate GitHub ticket, right, about how you link claims across credentials and do these verifications. It's kind of like, it's the advanced topic.
+
+We don't have a... Still working on a solution to that. Concepts there, but the actual implementation we haven't defined.
+
+I was just going to say, you actually sound like your background picture, as if you're sitting under the water, then something wrong with your sound. So we didn't get that. But feel free to type the comment.
+
+Look, can you hear me? I was just starting. I'm happy to do it.
+
+No, okay. It's not working. Jean?
+
+[Speaker 2]
+I also have a very dumb question. I'm just curious about whether the colors have special meaning. And the second thing is, I have a similar question as Jean, but from different aspects regarding the authority.
+
+You know, the authority in that box, the authorities of the authorities from the party, but we probably need to adjust compulsory assessment. So in that case, the authority of the authority won't come from the party. And the second issue about the authority is, if you look at the central red box, the conformity attestation, there's a very small word that the regulatory approval is also from authority.
+
+So I wonder whether the regulatory approval actually should need to move to the green box conformity assessment, rather than conformity attestation.
+
+[Speaker 1]
+So this goes to just how you read the model, right? So just quickly, the blue boxes are just bundles of data. The green boxes are uniquely identified bundles of data that they have a unique ID, right?
+
+And the red box is a type of green box, but except it's the root, it's the master, it's the entry point. That's all it means. Now, when you read these models, inside conformity attestation, there is this thing that says, where is it?
+
+Accreditation, and it links to authority. And there's also a regulatory approval that links to authority, right? So that's meant to cover the two cases where some independent authority has accredited the issuer of this conformity attestation to do that job, right?
+
+So for example, the Department of Agriculture accredits a vet to do animal health inspections. It's the vet that issues the conformity attestation, and the authority would be the Department of Agriculture, right? That's what it means.
+
+Conformity assessment is, generally, the authority goes with this scheme or at the attestation level, because you could have a case, for example, where it's a steel product conformity, where there's 20 assessments on different dimensions or metrics, they're all the same authority, right? It's basically this authority will accredit the certifier under a scheme, which is why the scope here is a scheme or program. Yeah.
+
+So NATA says tester X, Y, Z is accredited under the ACRS scheme, or the Department of Agriculture says vet X, Y, Z is accredited under the animal health scheme regulation, right? So yeah, it takes a bit to get your head around this, and I've learned a lot from Brett, but please continue discussions. I'm not saying this is right.
+
+It's just been two, three iterations and got closer to being right. That's all. And I think, as I said in the chat, the real live implementations of this might be much simpler.
+
+You could probably cut off all the green stuff below the red box and still have a reasonably valuable digital credential that gives you confidence of the compliance of a product. Well, maybe you need one conformity assessment. I think that's it for this.
+
+So again, I'm looking for a bit of discussion comment, but then I want to basically push this as a more later version if no one objects to the... I'll do a pull request for approval to publish this to the site as an updated conformity attestation. There are more tickets.
+
+Is my screen still showing? Yeah. I don't think we've got time to delve into, unless someone's got a lot to contribute, this verifying link data graphs thing and this automated policy execution.
+
+We might leave that for the next meeting, if that's all right. There's one thing, if you don't mind, I wanted to just solicit your thoughts on, and it doesn't have an issue, and it's the digital product passport data model, right? And the reason is, and this is just...
+
+I've just been fiddling with it a bit. I'm not declaring in any way that this is right. The reason is I'm about to do a little gallivant to Europe, and I've been asked to meet up with the Surpass Consortium, who have been working for, I don't know, a year now, doing all kinds of product passports without much boundaries.
+
+I think that the European Commission decided to fund European operators to have a go nuts, basically, with 60 different product passports, in order to try to learn from that about what's really the right shape of a product passport. And I'm hoping that when I get to Europe and talk to the Surpass people, and then the next week, I'm invited to talk to DG Digit and DG Grow, which are the European Commission entities responsible for the digital product passport, to find some convergence, right? Where there's this reasonably straightforward mapping between the B2B upstream passport, which is this, and the European digital product passport.
+
+Because if we can achieve that, it actually... We both help each other, right? And so it made me...
+
+So I'll be looking at existing product passports and welcome any comments in a ticket that I'll look back to create. But also, it did occur to me that, because Nis mentioned this earlier, that this model is a bit too restrictive, right? It says, you can't have any sustainability claim or traceability or stuff, unless you've got a product batch.
+
+But actually, some passports won't have a product batch, they'll just have a SKU. And so, and some passports, maybe you can only do detailed traceability against a product batch, because that's all that makes sense. But you should still be able to make provenance claims against a SKU.
+
+So I think these relationships aren't quite right. And in several of our projects, we very quickly learned that actually people care not about a single identified product, but about the qualities of a shipment. So the classic one in Australian beef is, I don't really need to know the carbon intensity of every cow, I just need to know the carbon intensity of the truckload of cows, right?
+
+And I want a credential at the granularity of the shipment. Now, it may or may not make sense if it's completely different things in the shipment, but if there's 20 of the same thing, should we be able to issue one passport at the shipment level? And that's why I've got this shipment box here that I just created an hour ago and haven't linked to anything.
+
+But I'm just dumping thoughts that I, through looking at the European stuff, and through the experience of the Australian Agriculture Project, it became clear that our first go at the digital product passport is not right. So we need to reflect SKU only, no batch, we need to be able to make provenance claims, maybe without a batch, we need to worry about shipments. And so I'm just going to create a ticket with some thoughts and iterate through this.
+
+And anyone that's got product passports are close to their heart, please contribute to the conversation, right? That's all I had to say about that. And I've only got a week or so before a meeting with those.
+
+So this will be one of my priorities. I'll fiddle with the model and put Steve's best guess at a slightly better one in a GitHub ticket and invite your criticisms and comments. That's all I wanted to go through today.
+
+Has anybody got any other, we've got six minutes to go, any questions, comments, thoughts about this? Just zooming out, I think we probably want a slightly more structured, it's rather ad hoc what topics we're discussing. Personally, I love the demo aspect, the fact that we're looking at real stuff.
+
+I really appreciate Marcus' input today. But beyond that, I do think we want to tackle issues in a given order, just to make sure. So let's think about what are these issues.
+
+The list of issues is what drives us as a machine towards our goals. And our mission should be, how do we close the tickets? Because as we close tickets, we make progress.
+
+And obviously encourage inbound issues as well. So I think we probably want to structure this slightly more ordered and go from top to bottom, or at least recently updated. That's what I typically do myself, to make sure that we cover all the issues so they don't just sit there and go stale.
+
+If they go stale, let's agree to close. So I guess that's my one comment just on the procedural element. I was actually hoping you'd say something like that, Nis, because I will admit that just before this call, I thought, shall we go top to bottom, bottom to top, or shall I sort by some other category?
+
+And I remembered how you ran the JSON-LD project. And so I absolutely agree we should do that. I did have a bit of a mission to let Markus show his thing, to let Brett update us on his book.
+
+Let's definitely keep room for that. I love that. Yeah, so please feel free to suggest which order.
+
+Is it oldest and get them closed, or is it most conversation? But yes, the goal absolutely is to turn these red things, make them disappear. It's to make everything disappear, because as long as a topic is stuck in an issue, it's not done.
+
+We want to make things done. I would also be happy to volunteer to be the master of ceremony if you want, and just run us through this in that order, if you're interested. Otherwise, I would just, well, okay, it doesn't matter.
+
+No, you should keep doing this. I would suggest we update it, and then just go with, because that enforces us to go into stale topics. What have we not been discussing for the longest time?
+
+Okay. I don't have any objection to you being a master of ceremony, by the way. My little stutter wasn't, oh, he's taking my job.
+
+It was, oh, good. Maybe an expert will do this. No offense at all.
+
+Yeah, let's try from most commented or least commented or something and run through them. Maybe we can even close a few between now and then. We don't necessarily have to do everything on the call, because I think particularly when you've got some of these tricky things, like what should a passport look like, really, we need time for discussion on it in the group call.
+
+Jean, before we go, we've got two minutes left for your intervention.
+
+[Speaker 2]
+Oh, yeah. Just a very quick question. Steve, I think you really make amazing progress.
+
+I'm just wondering if you are in Europe, if people ask you what will be the relationship between this proposed passport and the European digital passport? How will you answer that question?
+
+[Speaker 1]
+I would show them the PowerPoint slide that the Europeans themselves made, I didn't, that shows an international supply chain right from primary production through the finished product in multiple hops and shows UNTP being the passport carrier, the carrier of information amongst all the upstream hops, falling into a domestic market, there's a big domestic market, I don't mean to belittle it, the final finished product in Europe. They've already got in their head the idea that the data that goes in a consumer product passport in a domestic market, most of those products have components that started their life outside of that market, and you need to be able to trace that information.
+
+So they've already kind of pigeonholed us in a hole that I think fits very well, which is international upstream supply chain data carriers that feed the ultimate one for the European market. So that felt like a good positioning. So I'm happy with it.
+
+If everyone else is, it works for me. All right. Well, we're one minute to go.
+
+And I've got another call to do, unfortunately. I'm not terribly looking forward to the next one. But anyway, thank you very much for your participation.
+
+We'll let NISP master ceremonies next time and take us through tickets. And if we can close some between now and then and comment on more of them, that would be great. Thanks for your time and participation.
+
+Thank you. Thank you, Steve. Steve, thanks, everyone.
