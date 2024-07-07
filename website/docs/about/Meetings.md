@@ -18,12 +18,14 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
-The next meeting is 9pm UTC 3rd July 2024 - [Join here](https://us02web.zoom.us/j/85091806131).  The following meeting is 8am UTC 11 July 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+The next meeting is 8am UTC 11 July 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+The following meeting is 9pm UTC 17th July 2024 - [Join here](https://us02web.zoom.us/j/85091806131).  
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-07-04| [The meeting focused on reviewing PRs for digital product passports, discussing the integration of JSON-LD and JSON Schema for transparency graphs, and planning next steps for refining and testing the models.](#2024-07-04-meeting-summary)| [video](https://us02web.zoom.us/rec/share/aDNOqKQ6itVCWtOlezhyhs4epYW6jiU6B7ZSKB4pOg5mMvH_rwOFWHblkd8vIg6v.xw2yXaIkKZbwyRSW)| [transcript](../../meetings/2024-07-04-Recording.txt)|
 |2024-06-27| [The meeting focused on reviewing and addressing public comments on Recommendation 49, planning the consolidation of these comments over the weekend, introducing a new digital identity anchor credential, and discussing the governance and versioning of standards.](#2024-06-27-meeting-summary))| [video](https://us02web.zoom.us/rec/share/YSHGiEQEKosYGKgkhtcFr68qpnVtuLGrYMUBueSvgETyaZZ7B9oUT6dMPFDH5gdu.U3JwPcN8cEahYQbx)| [transcript](../../meetings/2024-06-27-Recording.txt)|
 |2024-06-19| [The meeting focused on aligning implementation tools and conformity credentials with VCDM, renaming digital link resolver to identity resolver, restructuring the site, and discussing the use of the Jargon tool for generating context files.](#2024-06-13-meeting-summary)| [video](https://us02web.zoom.us/rec/share/huqG1vXNf21SH4fXNDzPPR4fIqg-OI0X3y0CeMpwRIfw6w6vf3nho1dExIoqIGOb.9G_tdVSmRB-eufKg)| [transcript](../../meetings/2024-06-19-Recording.txt)|
 |2024-06-13| [TThe meeting focused on reviewing and merging key pull requests, discussing the UNTP architecture and methodology, and planning actions for schema and context file alignment.](#2024-06-13-meeting-summary)|[video](https://us02web.zoom.us/rec/share/R6x_ui0ZMeb7JwlERt_Vj3Ag7YIt8fJ_2e-AXZt_0xeQLY5_oma5pguUYvKqvhaN.r97B1NuWbPqM1ec2)|[transcript](../../meetings/2024-06-13-Recording.txt) |
@@ -46,6 +48,59 @@ The next meeting is 9pm UTC 3rd July 2024 - [Join here](https://us02web.zoom.us/
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+## 2024-07-04 Meeting Summary
+
+**Participants:**
+- Speaker 1 (Steve)
+- Speaker 2 (Patrick)
+- Speaker 3 (Joe)
+- Speaker 4 (Marcus)
+- Speaker 5 (Anne)
+- Speaker 6 (Mark)
+- Speaker 7 (Other Participants)
+
+**Key Points Discussed:**
+
+1. **Introduction and Agenda:**
+   - Steve welcomed participants and reiterated the meeting recording policy and IP contributions disclaimer.
+   - Mentioned the upcoming UNCFACT forum and plenary, highlighting sessions involving UNTP.
+
+2. **New Participants:**
+   - Mark, Rocky, and Tomas from Canada introduced themselves as potential implementers in the plastics value chain.
+   - Anne and Dow from Canada also introduced themselves, working on digital product passports.
+
+3. **Pull Request Reviews:**
+   - **Digital Product Passport Update:**
+     - Suzanne's PR suggesting a single unique identifier for products instead of an array was discussed.
+     - Agreement to merge after minor adjustments (e.g., removing the 's' from identifiers).
+   - **Trust Graphs and Wallets:**
+     - Suzanne's PR on trust graphs and wallet presentations was not merged.
+     - The team agreed to avoid technical dependencies on wallets, focusing instead on a publish and discover architecture.
+
+4. **Discussion on JSON-LD and JSON Schema:**
+   - Steve shared insights on the use of JSON-LD and JSON Schema for managing vocabularies and credentials.
+   - Emphasis on making life easier for implementers by providing clear schemas and context files.
+   - The goal is to construct meaningful transparency graphs for verifiers.
+
+5. **Conceptual Model and Transparency Graph:**
+   - Discussion on the conceptual model showing relationships between entities like products, organizations, and facilities.
+   - The importance of identifiers and the relationship between entities was emphasized.
+   - The aim is to create a transparency graph that can be easily consumed and interpreted.
+
+6. **Future Steps:**
+   - Plans to finalize and publish updated models for digital product passports, conformity credentials, and traceability events.
+   - Encouragement for participants to review and provide feedback on the proposed changes.
+
+**Action Items:**
+- **Steve:** Finalize and merge the PR for the single unique identifier and update the digital product passport model.
+- **Team:** Review and provide feedback on the proposed updates to the models and context files.
+- **Steve:** Prepare pull requests to align models with the discussed conceptual framework.
+
+**Next Steps:**
+- Continue refining the models and schemas to ensure they are implementable and interoperable.
+- Prepare for testing the models with various extensions and real-world use cases.
+
 
 ## 2024-06-27 Meeting Summary
 
