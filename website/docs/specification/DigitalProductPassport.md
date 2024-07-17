@@ -11,7 +11,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 | DPP Version | Date | status  | Change summary | JSON-LD Context  | JSON Schema  |
 | ------ | ----- | ------ | ------ | ------| ---|
-| 0.3.0      | 01-07-2024 | Raw |refactored to buuild on untp-core  |[@context](https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld) | [Schema](../../Schema/digitalProductPassport.v0.3.0.JSONSchema.json)|
+| 0.3.0      | 01-07-2024 | Raw |refactored to buuild on untp-core  |[@context](https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld) | [Schema](../../schema/digitalProductPassport.v0.3.0.JSONSchema.json)|
 
 
 ## Overview
