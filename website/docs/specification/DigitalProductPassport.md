@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: Digitial Product Passport
+title: Digital Product Passport
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
