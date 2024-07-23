@@ -10,8 +10,8 @@ import Disclaimer from '../\_disclaimer.mdx';
 ## Versions
 
 |DPCC Version|Date|status|change log|JSON-LD Context|JSON Schema|
-|--|--|--|--|
-|0.3.0|01-07-2024|Raw |rebuilt on untp-core vocabulary| [DPP context - TBA |DPP schema - TBA |
+|--|--|--|--|--|--|
+|0.3.0|01-07-2024|Raw |rebuilt on untp-core vocabulary| DPP context - TBA |DPP schema - TBA |
 
 
 ## Overview
