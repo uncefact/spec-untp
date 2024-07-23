@@ -18,13 +18,14 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
-The next meeting is 8am UTC 11 July 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
-The following meeting is 9pm UTC 17th July 2024 - [Join here](https://us02web.zoom.us/j/85091806131).  
+The next meeting is 8am UTC 25 July 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+The following meeting is 9pm UTC 31st July 2024 - [Join here](https://us02web.zoom.us/j/85091806131).  
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-07-17| [The meeting discussed integrating business experts, collaboration with CENELEC on global standards, and reviewing a significant pull request to enhance data model consistency and governance.](#2024-07-17-meeting-summary) |[video](https://us02web.zoom.us/rec/share/9yfJtJ-BFGkrEEYemfpxJU-FhLilK6iMdWjk5-hao8Hvx8uBF5d_bR05WMc1GQIo.5OQR4eACNiJRyUNE)|[transcript](../../meetings/2024-07-17-Recording.txt)
 |2024-07-04| [The meeting focused on reviewing PRs for digital product passports, discussing the integration of JSON-LD and JSON Schema for transparency graphs, and planning next steps for refining and testing the models.](#2024-07-04-meeting-summary)| [video](https://us02web.zoom.us/rec/share/aDNOqKQ6itVCWtOlezhyhs4epYW6jiU6B7ZSKB4pOg5mMvH_rwOFWHblkd8vIg6v.xw2yXaIkKZbwyRSW)| [transcript](../../meetings/2024-07-04-Recording.txt)|
 |2024-06-27| [The meeting focused on reviewing and addressing public comments on Recommendation 49, planning the consolidation of these comments over the weekend, introducing a new digital identity anchor credential, and discussing the governance and versioning of standards.](#2024-06-27-meeting-summary))| [video](https://us02web.zoom.us/rec/share/YSHGiEQEKosYGKgkhtcFr68qpnVtuLGrYMUBueSvgETyaZZ7B9oUT6dMPFDH5gdu.U3JwPcN8cEahYQbx)| [transcript](../../meetings/2024-06-27-Recording.txt)|
 |2024-06-19| [The meeting focused on aligning implementation tools and conformity credentials with VCDM, renaming digital link resolver to identity resolver, restructuring the site, and discussing the use of the Jargon tool for generating context files.](#2024-06-13-meeting-summary)| [video](https://us02web.zoom.us/rec/share/huqG1vXNf21SH4fXNDzPPR4fIqg-OI0X3y0CeMpwRIfw6w6vf3nho1dExIoqIGOb.9G_tdVSmRB-eufKg)| [transcript](../../meetings/2024-06-19-Recording.txt)|
@@ -48,6 +49,56 @@ The following meeting is 9pm UTC 17th July 2024 - [Join here](https://us02web.zo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+## 2024-07-17 Meeting Summary
+
+### Meeting Summary - July 17, 2024
+
+**Attendees:**
+- Steve (Speaker 1)
+- Jason (Speaker 2)
+- Virginia (Speaker 2)
+- Phil (Speaker 2)
+- Zack (Speaker 2)
+- Other unidentified speakers
+
+**Key Points Discussed:**
+
+1. **Meeting Logistics and Technical Issues:**
+   - Steve welcomed participants and acknowledged technical issues faced by Virginia.
+   - Virginia requested a list of acronyms to better understand emails and documents.
+
+2. **Review of Recent Forum and Plenary Sessions:**
+   - Steve reviewed the recent UNTP forum and plenary sessions, highlighting the presentations on VCs, security, language vocabularies, and business models.
+   - Positive feedback and increased volunteer participation were noted.
+   - Discussions on separating technical work from business use cases and engaging business experts from the UNECE Team of Specialists on Sustainable Value Chains.
+
+3. **Concerns from CENELEC and Collaboration Opportunities:**
+   - CENELEC, the European Standards Body, expressed concerns about potential duplication of work with the UNTP.
+   - Robust discussion ensued, with other member states (USA, Canada, Australia, Singapore) supporting a global standard.
+   - Proposal to collaborate with CENELEC to ensure interoperability and avoid duplication.
+   - Discussion on lobbying the European Commission to support the UNTP's global standard approach.
+
+4. **Integrating Business Experts into Technical Sessions:**
+   - Suggestions on how to integrate business experts into technical sessions, either by inviting them to specific meetings or having dedicated sessions for business input.
+
+5. **Pull Request Review and Data Model Updates:**
+   - Steve presented a significant pull request addressing multiple issues and reorganizing business objects into a separate vocabulary for better consistency and reuse.
+   - Discussion on the importance of proper data structure for creating transparency graphs in supply chains.
+   - Request for a detailed walkthrough of the data model to help team members understand the changes and contribute effectively.
+
+6. **Tooling and Versioning for Context Files and Vocabularies:**
+   - Introduction of a deployment pipeline for versioned vocabularies and context files to ensure stable and robust implementations.
+   - Emphasis on the need for good governance and tooling to maintain consistency and prevent breaking changes in issued credentials.
+
+7. **Next Steps and Action Items:**
+   - Plan to write a response to the German delegation, engaging with the European Commission for support.
+   - Agreement to focus the next meeting on a deep dive into the data model and its associations.
+   - Encouragement for team members to review the merged pull request and provide feedback.
+
+**Meeting Conclusion:**
+- Steve thanked everyone for their participation and contributions.
+- The meeting concluded with a positive note on the ongoing implementations and the significant progress being made.
 
 ## 2024-07-04 Meeting Summary
 
