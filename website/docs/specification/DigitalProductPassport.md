@@ -100,7 +100,7 @@ All DPPs are issued as W3C verifiable credentials and MUST conform to the [VCDM 
       "idScheme": "abr.business.gov.au",
       "idSchemeName": "Australian Business Number"}
     ]},
-"validFrom": "2024.03.15",
+"validFrom": "2024-03-15",
 "validUntil": "2034-03-15",
 "credentialSubject": {
    "type": [
