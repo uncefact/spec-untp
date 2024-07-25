@@ -87,7 +87,7 @@ All DPPs are issued as W3C verifiable credentials and MUST conform to the [VCDM 
     "https://www.w3.org/ns/credentials/v2",
     "https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld"
     ],
-"id": "acme.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+"id": "https://acme.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
 "issuer": {
    "type": "CredentialIssuer",
    "id": "did:web:identifiers.acme.com:12345",
