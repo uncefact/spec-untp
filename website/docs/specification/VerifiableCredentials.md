@@ -9,7 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 # Overview
 
-The World-Wide-Web Consortium (W3C) has defined a standard called [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model-2.0/). A VC is a portable digital version of everyday credentials like education certificates, permits, licenses, registrations, and so on. VCs are digitally signed by the issuing party and are tamper proof, privacy preserving, revocable, and digitally verifiable. The UN has previously assessed this standard and has recommended it's use for a variety of cross border trade use cases in a recent [white paper](https://unece.org/trade/documents/2023/10/white-paper-edata-verifiable-credentials-cross-border-trade). VCs are inherently decentralized and so are an excellent fit for UNTP which recommends that passports, credentials, and traceability events are all issued as W3C VCs. A related W3C standard called [Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) provides a mechanism to manage the cryptographic keys used by verifiable credentials and also to link multiple credentials into verifiable trust graphs. DIDs are not the same as the business / product / location identifiers maintained by authoritative agencies - but can be linked to them.
+The World-Wide-Web Consortium (W3C) has defined a [data model for Verifiable Credentials](https://www.w3.org/TR/vc-data-model-2.0/) (VCs). A VC is a portable digital version of everyday credentials like education certificates, permits, licenses, registrations, and so on. VCs are digitally signed by the issuing party and are tamper evident, privacy preserving, revocable, and digitally verifiable. The UN has previously assessed this standard and has recommended its use for a variety of cross border trade use cases in a recent [white paper](https://unece.org/trade/documents/2023/10/white-paper-edata-verifiable-credentials-cross-border-trade). VCs are inherently decentralized and so are an excellent fit for UNTP which recommends that passports, credentials, and traceability events are all issued as W3C VCs. A related W3C standard called [Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) provides a mechanism to manage the cryptographic keys used by verifiable credentials and also to link multiple credentials into verifiable trust graphs. DIDs are not the same as the business / product / location identifiers maintained by authoritative agencies - but can be linked to them.
 
 # Business requirements for UNTP application of VCs
 
@@ -70,14 +70,14 @@ A shared understanding of the meaning of claims made in verifiable credentials i
 - MUST use the [JSON-LD](https://www.w3.org/TR/vc-data-model/#json-ld) syntax for the representation of data in all issued credentials.
 - MUST reference the relevant [UNTP @context](https://test.uncefact.org/vocabulary/untp/home) file for the given credential type. These context files are themselves extentions of the W3C VC Data Model 2.0 context.
 - MAY extend credentials with additional properties but, if so, MUST include additonal @context file reference that defines the extended properties. The @vocab "catch-all" mechanism MUST NOT be used.
-- SHOULD implement widely used industry vocabularies such as [schema.org](https://schema.org/) or [GS1 web vocabulary](https://www.gs1.org/voc/) as a first choice for UNTP extensions requiring terms not in the UN vocabulary.
+- SHOULD implement widely used industry vocabularies such as [schema.org](https://schema.org/) or [GS1 web vocabulary](https://ref.gs1.org/voc/) as a first choice for UNTP extensions requiring terms not in the UN vocabulary.
 - MAY use any other published JSON-LD vocabulary for any other industry or country specific extensions.
 - MUST maintain @context files at the same granularity and version as the corresponding credentila type. This prevents the risk of verification failures when context files change after credentials are issued. 
 - SHOULD provide a complete and versioned JSON schema for each credential type. This is to facilite simple and robust implementations by developers without detailed knowledge of JSON-LD.  
 
 The data governance architecture for UNTP credentials is shown below. the key points to note are
 
-* That credential instances contain VCDM type references for each unquely identified linked-data object. Each extension builds upon parent types and is enumerated in the type array (eg `["Facility", "Farm"]`).
+* That credential instances contain Verifiable Credential Data Model (VCDM) type references for each unquely identified linked-data object. Each extension builds upon parent types and is enumerated in the type array (eg `["Facility", "Farm"]`).
 * UNTP @context types are `protected` and so MUST not be duplicated in extensions. Similarly UNTP @context does not duplicate `protected` terms in WCDM @context.  
 * Unlike @context files, the JSON schema for each credential MUST be a complete schema that defines the entire credential including terms from VCDM and UNTP. 
 
