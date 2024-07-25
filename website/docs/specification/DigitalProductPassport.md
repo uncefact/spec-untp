@@ -284,7 +284,7 @@ The circularityInformation property provides a simple high level summary of circ
   } ,
   "repairInformation": {},
   "recyclableContent": 50,
-  "recyecledContent": 50
+  "recycledContent": 50
 },
 ```
 
