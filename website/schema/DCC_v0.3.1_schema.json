@@ -1,0 +1,857 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "array",
+      "readOnly": true,
+      "const": [
+        "DigitalConformityCredential",
+        "VerifiableCredential"
+      ],
+      "default": [
+        "DigitalConformityCredential",
+        "VerifiableCredential"
+      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "DigitalConformityCredential",
+          "VerifiableCredential"
+        ]
+      }
+    },
+    "@context": {
+      "example": "https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "https://www.w3.org/ns/credentials/v2",
+          "https://test.uncefact.org/vocabulary/untp/dcc/"
+        ]
+      },
+      "description": "A list of JSON-LD context URIs that define the seamntic meaning of prperties within the credential. ",
+      "readOnly": true,
+      "const": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dcc/"
+      ],
+      "default": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dcc/"
+      ]
+    },
+    "id": {
+      "example": "acme.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+      "type": "string",
+      "format": "uri",
+      "description": "A unique identifier (URI) assigned to the product passport. May be a UUID"
+    },
+    "issuer": {
+      "$ref": "#/$defs/CredentialIssuer",
+      "description": "The organisation that is the isuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+    },
+    "validFrom": {
+      "example": "2024.03.15",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time from which the credential is valid."
+    },
+    "validUntil": {
+      "example": "2034.03.15",
+      "type": "string",
+      "format": "date-time",
+      "description": "The expiry date (if applicable) of this verifiable credential."
+    },
+    "credentialSubject": {
+      "$ref": "#/$defs/ConformityAttestation",
+      "description": "The conformity attestion is the subject of the verifiable credential. "
+    }
+  },
+  "description": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. ",
+  "required": [
+    "@context",
+    "id",
+    "issuer"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "CredentialIssuer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "CredentialIssuer",
+          "enum": [
+            "CredentialIssuer"
+          ]
+        },
+        "id": {
+          "example": "did:web:identifiers.acme.com:12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The W3C DID of the issuer - should be a did:web or did:tdw"
+        },
+        "name": {
+          "example": "Acme Pty Ltd",
+          "type": "string",
+          "description": "The name of the issuer person or organisation"
+        },
+        "otherIdentifiers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Entity"
+          },
+          "description": "An optional list of other registered identifiers for this credential issuer"
+        }
+      },
+      "description": "The issuer party ()person or orgnaition) of a verifiable credential.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Entity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Entity",
+          "enum": [
+            "Entity"
+          ]
+        },
+        "id": {
+          "example": "id.gs1.org/01/09520123456788/21/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. "
+        },
+        "name": {
+          "example": "Baked beans, tinned, 500g.",
+          "type": "string",
+          "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory"
+        },
+        "idValue": {
+          "example": "09520123.456788",
+          "type": "string",
+          "description": "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
+        },
+        "idScheme": {
+          "example": "id.gs1.org/01.",
+          "type": "string",
+          "format": "uri",
+          "description": "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+        },
+        "idSchemeName": {
+          "example": "GS1 SGTIN",
+          "type": "string",
+          "description": "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
+        }
+      },
+      "description": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "ConformityAttestation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "const": [
+            "ConformityAttestation",
+            "Attestation"
+          ],
+          "default": [
+            "ConformityAttestation",
+            "Attestation"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "ConformityAttestation",
+              "Attestation"
+            ]
+          }
+        },
+        "id": {
+          "example": "certifiers.com/attestations/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique ID of this conformity attestation."
+        },
+        "name": {
+          "example": "ACRS conformity attestation 12345567",
+          "type": "string",
+          "description": "A name of this confomrity attestation"
+        },
+        "assessorLevel": {
+          "type": "string",
+          "enum": [
+            "Self",
+            "Commercial",
+            "Buyer",
+            "Membership",
+            "Unspecified",
+            "3rdParty"
+          ],
+          "example": "Self",
+          "description": "Assurance code pertaining to assessor (relation to the object under assessment)"
+        },
+        "assessmentLevel": {
+          "type": "string",
+          "enum": [
+            "GovtApproval",
+            "GlobalMLA",
+            "Accredited",
+            "Verified",
+            "Validated",
+            "Unspecified"
+          ],
+          "example": "GovtApproval",
+          "description": "Assurance pertaining to assessment (any authority or support for the assessment process)"
+        },
+        "attestationType": {
+          "type": "string",
+          "enum": [
+            "certification",
+            "declaration",
+            "inspection",
+            "testing",
+            "verification",
+            "validation",
+            "calibration"
+          ],
+          "example": "certification",
+          "description": "The type of criterion (optional or mandatory)."
+        },
+        "attestationDescription": {
+          "example": "Conformance of ACME structural steel products.",
+          "type": "string",
+          "description": "A textual description of the scope or purpose of this confomrity attestation"
+        },
+        "issuedToParty": {
+          "$ref": "#/$defs/Entity",
+          "description": "The party to whom the conformity attestation was issued."
+        },
+        "authorisation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Endorsement"
+          },
+          "description": "The accreditation from a competent authority (ag NATA) that confirms the issuers authorised scope of assessments. "
+        },
+        "conformityCertificate": {
+          "$ref": "#/$defs/SecureLink",
+          "description": "A reference to the human / printable version of this conformity attestation - typically represented as a PDF document. The document may have more details than are represented in the digital attestation."
+        },
+        "auditableEvidence": {
+          "$ref": "#/$defs/SecureLink",
+          "description": "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usally private data and would normally be encrypted."
+        },
+        "scope": {
+          "$ref": "#/$defs/ConformityAssessmentScheme",
+          "description": "A list of relevant standards and/or regulations against which apply to this attestation (eg AS1163:2016)."
+        },
+        "assessments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ConformityAssessment"
+          },
+          "description": "The list of specific assessments made within this conformity attestation."
+        }
+      },
+      "description": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation.",
+      "required": [
+        "id",
+        "assessorLevel",
+        "assessmentLevel",
+        "attestationType",
+        "issuedToParty"
+      ]
+    },
+    "Endorsement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Endorsement",
+          "enum": [
+            "Endorsement"
+          ]
+        },
+        "id": {
+          "example": "authority.gov/schemeABC/123456789",
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier of an accreditation or authority issued to a confomrity assessment body by a regulator or national accreditation authority."
+        },
+        "name": {
+          "example": "Accreditation of certifiers.com under the national structural steel conofmrity framework.",
+          "type": "string",
+          "description": "The name of the accreditation."
+        },
+        "trustmark": {
+          "$ref": "#/$defs/BinaryFile",
+          "description": "The trust mark image awarded by the AB to the CAB to indicate accrediation."
+        },
+        "issuingAuthority": {
+          "$ref": "#/$defs/Entity",
+          "description": "The competent authority that issued the accreditation."
+        },
+        "accreditationCertificate": {
+          "example": "authority.gov/files/daf9d952-0e8b-4ec0-905f-474a5ea50400",
+          "type": "string",
+          "format": "uri",
+          "description": "The evidence that supports the authroty under which the attestation is issued - eg an accreditation certificate."
+        }
+      },
+      "description": "The authority under which a conformity claim is issued.  For example a national accrediation authority may accredit a test lab to issue test certificates about a product against a standard. ",
+      "required": [
+        "id",
+        "name",
+        "issuingAuthority"
+      ]
+    },
+    "BinaryFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fileName": {
+          "example": "tensile test certificate",
+          "type": "string",
+          "description": "A name for referenced binary file"
+        },
+        "fileType": {
+          "type": "string",
+          "x-external-enumeration": "https://mimetype.io/all-types",
+          "description": "The type of file, represented as a MIME type.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://mimetype.io/all-types\n    "
+        },
+        "file": {
+          "type": "string",
+          "format": "byte",
+          "description": "The binary file data encoded as Base64 string."
+        }
+      },
+      "description": "A binary file reference including name and filetype"
+    },
+    "SecureLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "const": [
+            "SecureLink",
+            "Link"
+          ],
+          "default": [
+            "SecureLink",
+            "Link"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "SecureLink",
+              "Link"
+            ]
+          }
+        },
+        "linkURL": {
+          "example": "files.certifier.com/1234567.json",
+          "type": "string",
+          "format": "uri",
+          "description": "The URL of the target resource. "
+        },
+        "linkName": {
+          "example": "Deforestation Certificate",
+          "type": "string",
+          "description": "A display name for the target resource "
+        },
+        "linkType": {
+          "example": "untp.dcc",
+          "type": "string",
+          "description": "The type of the target resource - drawn from a controlled vocabulary "
+        },
+        "targetType": {
+          "type": "string",
+          "x-external-enumeration": "https://mimetype.io/all-types",
+          "description": "The MIME type of the target ressource.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://mimetype.io/all-types\n    "
+        },
+        "targetHash": {
+          "example": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+          "type": "string",
+          "description": "The hash of the file "
+        },
+        "hashMethod": {
+          "type": "string",
+          "enum": [
+            "SHA-256",
+            "SHA-1"
+          ],
+          "example": "SHA-256",
+          "description": "The hashing algorithm used to create the target hash.  SHA-265 is the recommedned standard"
+        },
+        "encryptionMethod": {
+          "type": "string",
+          "enum": [
+            "none",
+            "AES"
+          ],
+          "example": "none",
+          "description": "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
+        }
+      },
+      "description": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
+    },
+    "ConformityAssessmentScheme": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "const": [
+            "ConformityAssessmentScheme",
+            "Standard"
+          ],
+          "default": [
+            "ConformityAssessmentScheme",
+            "Standard"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "ConformityAssessmentScheme",
+              "Standard"
+            ]
+          }
+        },
+        "id": {
+          "example": "www.iso.org/standard/60857.html",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+        },
+        "name": {
+          "example": "ISO 14001:2015 Environmental management systems",
+          "type": "string",
+          "description": "The name of the standard"
+        },
+        "issuingParty": {
+          "$ref": "#/$defs/Entity",
+          "description": "The party that issued the standard "
+        },
+        "issueDate": {
+          "example": "2015-09-01",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the standard was issued."
+        },
+        "trustmark": {
+          "$ref": "#/$defs/BinaryFile",
+          "description": "The trust mark that represents the conformity assessment scheme."
+        }
+      },
+      "description": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)",
+      "required": [
+        "issuingParty"
+      ]
+    },
+    "ConformityAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "const": [
+            "ConformityAssessment",
+            "Declaration"
+          ],
+          "default": [
+            "ConformityAssessment",
+            "Declaration"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "ConformityAssessment",
+              "Declaration"
+            ]
+          }
+        },
+        "id": {
+          "example": "products.acme.com/09520123456788/declarations/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the delcaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
+        },
+        "referenceStandard": {
+          "$ref": "#/$defs/Standard",
+          "description": "The reference to the standard that defines the specification / criteria"
+        },
+        "referenceRegulation": {
+          "$ref": "#/$defs/Regulation",
+          "description": "The reference to the regulation that defines the assessment criteria"
+        },
+        "assessmentCriterion": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Criteria"
+          },
+          "description": "The specification against which the assessment is made."
+        },
+        "declaredValues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Metric"
+          },
+          "description": "The list of specific values measured as part of this assessment (eg tensile strength)"
+        },
+        "compliance": {
+          "example": "true",
+          "type": "boolean",
+          "description": "An indicator of whether or not the assessment meets the specification."
+        },
+        "conformityTopic": {
+          "type": "string",
+          "enum": [
+            "environment.energy",
+            "environment.emissions",
+            "environment.water",
+            "environment.waste",
+            "environment.deforestation",
+            "environment.biodiversity",
+            "circularity.content",
+            "circularity.design",
+            "social.labour",
+            "social.rights",
+            "social.community",
+            "social.safety",
+            "governance.ethics",
+            "governance.compliance",
+            "governance.transparency"
+          ],
+          "example": "environment.energy",
+          "description": "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+        },
+        "assessedProducts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Product"
+          },
+          "description": "The list of products that are the subject of this conformity assessment"
+        },
+        "assessedFacilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Facility"
+          },
+          "description": "The list of facilities that are the subject of this conformity assessment."
+        }
+      },
+      "description": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
+      "required": [
+        "id",
+        "conformityTopic"
+      ]
+    },
+    "Standard": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Standard",
+          "enum": [
+            "Standard"
+          ]
+        },
+        "id": {
+          "example": "www.iso.org/standard/60857.html",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+        },
+        "name": {
+          "example": "ISO 14001:2015 Environmental management systems",
+          "type": "string",
+          "description": "The name of the standard"
+        },
+        "issuingParty": {
+          "$ref": "#/$defs/Entity",
+          "description": "The party that issued the standard "
+        },
+        "issueDate": {
+          "example": "2015-09-01",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the standard was issued."
+        }
+      },
+      "description": "A standard (eg ISO 14000) that specifies the criteria for conformance.",
+      "required": [
+        "issuingParty"
+      ]
+    },
+    "Regulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Regulation",
+          "enum": [
+            "Regulation"
+          ]
+        },
+        "id": {
+          "example": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique identifier of this regulation. "
+        },
+        "name": {
+          "example": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+          "type": "string",
+          "description": "The name of the regulation or act."
+        },
+        "jurisdictionCountry": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
+          "description": "The legal jurisdiction (country) under which the regulation is issued.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+        },
+        "administeredBy": {
+          "$ref": "#/$defs/Entity",
+          "description": "the issuing body of the regulation. For example Australin Goernment Department of Climate Change, Energy, the Environment and Water"
+        },
+        "effectiveDate": {
+          "example": "2024.03.20",
+          "type": "string",
+          "format": "date",
+          "description": "the date at which the regulation came into effect."
+        }
+      },
+      "description": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment.",
+      "required": [
+        "administeredBy"
+      ]
+    },
+    "Criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Criteria",
+          "enum": [
+            "Criteria"
+          ]
+        },
+        "id": {
+          "example": "https://www.legislation.gov.au/F2008L02309/2023-09-21/2023-09-21/text/1/epub/OEBPS/document_1/document_1.html#_Toc147580632",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the criteria within the standard  or regulation. For example CO2 emissions calaculations for liquid fule combusion."
+        },
+        "name": {
+          "example": "Division 2.4.2—Method 1—emissions of carbon dioxide, methane and nitrous oxide from liquid fuels other than petroleum based oils or greases",
+          "type": "string",
+          "description": "A name that describes this criteria."
+        },
+        "thresholdValues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Metric"
+          },
+          "description": "A conformity threshold defined by the specification (eg minimum compressive strength) "
+        }
+      },
+      "description": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "metricName": {
+          "example": "tensile strength",
+          "type": "string",
+          "description": "A human readable name for this metric (for example \"Tensile strength\")"
+        },
+        "metricValue": {
+          "$ref": "#/$defs/Measure",
+          "description": "A numeric value and unit of measure for this metric. Could be a measured value or a specified threshold. Eg {\"value\":400, \"unit\":\"MPA\"} as tensile strenght of structural steel"
+        },
+        "accuracy": {
+          "example": 0.05,
+          "type": "number",
+          "description": "A percentage represented as a numeric between 0 and 1 indicating the rage of accuracy of the claimed value (eg 0.05 means that the actual value is within 5% of the claimed value.)"
+        }
+      },
+      "description": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of emasure) / value (ie the actual numeric value) pairs.  ",
+      "required": [
+        "metricName",
+        "metricValue"
+      ]
+    },
+    "Measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "example": 10,
+          "type": "number",
+          "description": "The numeric value of the measure"
+        },
+        "unit": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode",
+          "description": "Unit of measure drawn from the UNECE rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode\n    "
+        }
+      },
+      "description": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).",
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "Product": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "const": [
+            "Product",
+            "Entity"
+          ],
+          "default": [
+            "Product",
+            "Entity"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "Product",
+              "Entity"
+            ]
+          }
+        },
+        "id": {
+          "example": "id.gs1.org/01/09520123456788/21/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. "
+        },
+        "name": {
+          "example": "Baked beans, tinned, 500g.",
+          "type": "string",
+          "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory"
+        },
+        "idValue": {
+          "example": "09520123.456788",
+          "type": "string",
+          "description": "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
+        },
+        "idScheme": {
+          "example": "id.gs1.org/01.",
+          "type": "string",
+          "format": "uri",
+          "description": "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+        },
+        "idSchemeName": {
+          "example": "GS1 SGTIN",
+          "type": "string",
+          "description": "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
+        },
+        "verfifiedByCAB": {
+          "example": "true",
+          "type": "boolean",
+          "description": "Indicates whether the conformity assessment body has verified the identity product that is the subject of the assessment."
+        }
+      },
+      "description": "The product which is the subject of this conformity assessment",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Facility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "const": [
+            "Facility",
+            "Entity"
+          ],
+          "default": [
+            "Facility",
+            "Entity"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "Facility",
+              "Entity"
+            ]
+          }
+        },
+        "id": {
+          "example": "id.gs1.org/01/09520123456788/21/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique ID of the entity. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.acme.com:123. "
+        },
+        "name": {
+          "example": "Baked beans, tinned, 500g.",
+          "type": "string",
+          "description": "The registered name of the entity within the identifier scheme.  Examplesproduct - baked beans, tinned, 500g. party - Pyx Industries Pty Ltd. facility - Greenacres canning factory"
+        },
+        "idValue": {
+          "example": "09520123.456788",
+          "type": "string",
+          "description": "The value of the identifier within the scheme. Examplesproduct - 09520123.456788party - 90664869327. facility - 123. "
+        },
+        "idScheme": {
+          "example": "id.gs1.org/01.",
+          "type": "string",
+          "format": "uri",
+          "description": "The identifier scheme ID.  Exampleproduct - id.gs1.org/01. party - business.gov.au/abn  facility - did:web:facilities.acme.com. "
+        },
+        "idSchemeName": {
+          "example": "GS1 SGTIN",
+          "type": "string",
+          "description": "The name of the identifier scheme - examples product - GS1 SGTIN. party - ABN. facility - ACME  "
+        },
+        "verfifiedByCAB": {
+          "example": "true",
+          "type": "boolean",
+          "description": "Indicates whether the conformity assessment body has verified the identity of the facility which is the subject of the assement."
+        }
+      },
+      "description": "The facility which is the subject of this conformity assessment",
+      "required": [
+        "id",
+        "name"
+      ]
+    }
+  }
+}
