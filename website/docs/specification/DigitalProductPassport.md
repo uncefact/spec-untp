@@ -87,7 +87,7 @@ All DPPs are issued as W3C verifiable credentials and MUST conform to the [VCDM 
     "https://www.w3.org/ns/credentials/v2",
     "https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld"
     ],
-"id": "acme.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+"id": "https://acme.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
 "issuer": {
    "type": "CredentialIssuer",
    "id": "did:web:identifiers.acme.com:12345",
@@ -100,8 +100,8 @@ All DPPs are issued as W3C verifiable credentials and MUST conform to the [VCDM 
       "idScheme": "abr.business.gov.au",
       "idSchemeName": "Australian Business Number"}
     ]},
-"validFrom": "2024.03.15",
-"validUntil": "2034.03.15",
+"validFrom": "2024-03-15",
+"validUntil": "2034-03-15",
 "credentialSubject": {
    "type": [
       "Entity",
@@ -284,7 +284,7 @@ The circularityInformation property provides a simple high level summary of circ
   } ,
   "repairInformation": {},
   "recyclableContent": 50,
-  "recyecledContent": 50
+  "recycledContent": 50
 },
 ```
 
