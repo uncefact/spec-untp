@@ -18,13 +18,14 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
-The next meeting is 8am UTC 25 July 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
-The following meeting is 9pm UTC 31st July 2024 - [Join here](https://us02web.zoom.us/j/85091806131).  
+The next meeting is 9pm UTC 31st July 2024 - [Join here](https://us02web.zoom.us/j/85091806131).  
+The following meeting is 8am UTC 8 July 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-07-17| [The meeting focused on updates from recent presentations in Geneva, a planned demo on TrustGraphs, reviews of multiple pull requests, discussions on various issues including human observations as sensors, and setting action items for updating digital product passport pages and creating a glossary for standards and acronyms.](#2024-07-25-meeting-summary) |[video](https://us02web.zoom.us/rec/share/rXhYqvNX6fcC6acRfBmWGb5Yfe1tNemDuDhCNCdJjemMrUKiWHUTsnI9fOHQOUjg.ElNsOY95VnBDv5QO)| [transcript](../../meetings/2024-07-25-Recording.txt)|
 |2024-07-17| [The meeting discussed integrating business experts, collaboration with CENELEC on global standards, and reviewing a significant pull request to enhance data model consistency and governance.](#2024-07-17-meeting-summary) |[video](https://us02web.zoom.us/rec/share/9yfJtJ-BFGkrEEYemfpxJU-FhLilK6iMdWjk5-hao8Hvx8uBF5d_bR05WMc1GQIo.5OQR4eACNiJRyUNE)|[transcript](../../meetings/2024-07-17-Recording.txt)
 |2024-07-04| [The meeting focused on reviewing PRs for digital product passports, discussing the integration of JSON-LD and JSON Schema for transparency graphs, and planning next steps for refining and testing the models.](#2024-07-04-meeting-summary)| [video](https://us02web.zoom.us/rec/share/aDNOqKQ6itVCWtOlezhyhs4epYW6jiU6B7ZSKB4pOg5mMvH_rwOFWHblkd8vIg6v.xw2yXaIkKZbwyRSW)| [transcript](../../meetings/2024-07-04-Recording.txt)|
 |2024-06-27| [The meeting focused on reviewing and addressing public comments on Recommendation 49, planning the consolidation of these comments over the weekend, introducing a new digital identity anchor credential, and discussing the governance and versioning of standards.](#2024-06-27-meeting-summary))| [video](https://us02web.zoom.us/rec/share/YSHGiEQEKosYGKgkhtcFr68qpnVtuLGrYMUBueSvgETyaZZ7B9oUT6dMPFDH5gdu.U3JwPcN8cEahYQbx)| [transcript](../../meetings/2024-06-27-Recording.txt)|
@@ -50,9 +51,76 @@ The following meeting is 9pm UTC 31st July 2024 - [Join here](https://us02web.zo
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
-## 2024-07-17 Meeting Summary
 
-### Meeting Summary - July 17, 2024
+## 2024-07-25 Meeting Summary
+
+**Attendees:**
+- Steve (Speaker 1)
+- Phil (Speaker 2)
+- Luis (Speaker 3)
+- Suzanne (Speaker 4)
+- Michael (Speaker 7)
+- Virginia (Speaker 8)
+- Zach (Speaker 5)
+- Brett (Speaker 6)
+- Marcus (Speaker 10)
+- Vinayak (Speaker 9)
+- Chris (mentioned)
+- Gerhard (mentioned)
+- Vladimir (mentioned)
+
+**Agenda:**
+1. Review of Previous Meetings and Updates
+2. Discussion on TrustGraphs Demo
+3. Pull Requests Review
+4. Issues Discussion
+
+**Key Points:**
+
+**1. Review of Previous Meetings and Updates:**
+- **Steve:** Recapped the presentations given at the recent forum and plenary sessions, highlighting the positive reception and support received, except for a minor objection from the European standards organization.
+- Discussed expanding the group to include more people from non-technical backgrounds in sustainability and the potential for collaboration with CEN and ISO on new projects.
+
+**2. Discussion on TrustGraphs Demo:**
+- **Nis:** Inquired about a planned demo on TrustGraphs.
+- **Steve:** Mentioned that Harley, who was supposed to present, is preparing a more refined demo incorporating recent standards, scheduled for two weeks later.
+
+**3. Pull Requests Review:**
+- **Suzanne's Pull Request:**
+  - **Steve:** Suggested Suzanne review the latest content and update her pull request accordingly.
+  - **Suzanne:** Agreed, mentioning she is still learning and appreciated the feedback.
+- **Phil's Pull Requests:**
+  - **Phil:** Made minor corrections to the naming of the W3C standard and clarified the terms VC and VCDM.
+  - **Phil:** Added substantial content on global uniqueness and resolvability, including some necessary corrections.
+- **Steve's Pull Request:**
+  - **Steve:** Presented updates to the digital product passport page, making it more implementer-friendly with examples and snippets.
+  - Discussions were held on further improvements, including explaining color codes in diagrams and fixing URLs and date formats.
+
+**4. Issues Discussion:**
+- **Sustainability Vocabulary Design:** Ongoing discussions on how to represent various standards and regulations meaningfully.
+- **Units of Measure:** Phil confirmed that the current use of UN Rec20 codes is satisfactory.
+- **Reference Standards Page:** Discussion on creating a separate page for reference standards and acronyms.
+- **Human Observations as Valid Sensors:** Zach discussed the need for guidance on incorporating human observations in low digital maturity environments.
+- **General Issues:** Several older issues raised by Gerhard and Vladimir were reviewed for potential closure.
+
+**Next Steps:**
+- **Steve:** Will address the feedback received on the digital product passport page and update the conformity credential page similarly.
+- **Vinayak:** Volunteered to map the GBA's digital product passport data model to the UNTP framework.
+
+**Action Items:**
+1. **Suzanne:** To review steve's updates to her proposed changes
+2. **Steve:** To fix issues on the digital product passport page and update conformity credentials.
+3. **All:** To create a glossary page for standards and acronyms.
+4. **Zach:** To incorporate feedback into discussions on human observations as sensors.
+5. **Vinayak:** To map the GBA digital product passport data model to UNTP.
+
+**Conclusion:**
+The meeting concluded with thanks to all participants and a note that the next meeting will focus on further pull requests and issues.
+
+---
+
+This summary now includes the names of the speakers as requested. Let me know if there are any further modifications needed!
+## 2024-07-17 Meeting Summary
 
 **Attendees:**
 - Steve (Speaker 1)

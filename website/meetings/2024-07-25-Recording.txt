@@ -1,0 +1,928 @@
+[Speaker 1] (0:00 - 2:02)
+The cloud. And remind everyone of the IP rules that your contributions, if you make them, are made on the understanding that they are contributing to UNIP, which will be made freely available to the world. And move on to the agenda.
+
+I think this is the first meeting on this time zone since the plenary. I know one or two were in last week's meeting. And just a quick update there.
+
+We did a whole bunch of presentations that went down pretty well. We also presented, that's in the forum, of experts, about 300, I don't know, 200 or 300 people. And then another 200 or 300 online.
+
+And then we presented at the plenary, which is the member states. And got good support there. One objector, but that was really a channeling and objection from the European standards organization.
+
+Not really a material objection. And so, good support there as well. And also, an opportunity to expand this group with at least equal, probably more, people from a non-technical background in the business of sustainability from a pool of people called the team of specialists.
+
+So, I've made a good friend of the chair. And he's very keen to see how we can split this group into the technical group and the business group and actually start to engage business people around the world. So, all in all, a fairly good outcome, I think.
+
+And a promise to collaborate with CEN. And potentially a promise to collaborate with ISO, who is just about to launch a new project on DPP. Anyway, that's that background.
+
+I'll share screen and move on to the usual agenda of reviewing pull requests and looking at tickets and so on. Unless anyone's got anything they'd like to interject.
+
+[Speaker 3] (2:03 - 2:15)
+I think we, about four weeks ago, we decided that this would be a meeting for a demo on TrustGraphs. But I don't see, what's his name?
+
+[Speaker 1] (2:16 - 2:54)
+Ali. Yes. So, that's a good point.
+
+He did actually reach out to me yesterday and say, I could do a demo on TrustGraphs from what we did in the POC1. But they're just about to implement here, let's call it POC2, with the more recent UNTP standards that are more, shall we say, link data friendly. And he wants to demonstrate to us a bit later when he's got a real better looking demo of basically receiving credentials and pouring them into a graph and showing how they link themselves together.
+
+[Speaker 10] (2:55 - 2:56)
+Okay.
+
+[Speaker 1] (2:56 - 3:38)
+So, probably two weeks away. Cool. All right.
+
+Share desktop. I've got to find the right repo. No, that's not that one.
+
+Should have had that ready, shouldn't I? Here we go. Pull requests.
+
+All right. I see we've got Suzanne with us, who's come back from a break or something. Hello, Suzanne.
+
+Nice to see you. Yes. Hello, everyone.
+
+Sorry?
+
+[Speaker 4] (3:41 - 3:43)
+Yes, that's true. Hello, everyone.
+
+[Speaker 1] (3:43 - 4:40)
+Hello. So, the oldest pull request here is yours. And I have a bit of an apology, which is that your pull request is against an older bit of content because it got updated in the meantime.
+
+And I wondered whether I could basically ask you to have a look at the latest content and then cut and paste whatever you think should be in an updated pull request, right? Because when you did your pull request, this where is it? Trust graphs.
+
+Let me find it. Now called transparency graphs was empty and now it's got some content. And so, we got a bit of a collision.
+
+I could read yours and make another pull request, but I thought better if it's all right, you could have a look at this and then extend it with your words. Would that be okay?
+
+[Speaker 13] (4:41 - 4:49)
+Oh, yeah. Yeah, I'm not sure how easy it is for me to do what you just said.
+
+[Speaker 10] (4:49 - 4:51)
+Or if you like, I can...
+
+[Speaker 13] (4:51 - 4:57)
+I don't really know. Yeah. It would be really helpful if you just, you know...
+
+[Speaker 1] (4:57 - 4:58)
+I can do that.
+
+[Speaker 13] (4:58 - 4:58)
+Have a look.
+
+[Speaker 1] (4:59 - 5:13)
+Yeah, no problem. I just don't want... I don't want to kind of, you know, hold the pen for you if you want to hold it, right?
+
+So, but if you're happy for me to look at your words and make a pull request on that page for next time that reflects your comments, then I'm happy to do that.
+
+[Speaker 4] (5:15 - 5:27)
+Yeah, it was just kind of trying to make a contribution and then, I mean, technically, and then I thought, okay, maybe I do a meaningful contribution and actually put some content in for the fun of it.
+
+[Speaker 13] (5:28 - 5:31)
+And this is what came out of it. So, still learning.
+
+[Speaker 1] (5:32 - 5:45)
+That's all right. No, I quite liked it. So, I'll take it and offer an integrated view.
+
+So, the next two pull requests are from Phil. I'll let you speak to them, Phil. They're not huge, but go ahead.
+
+[Speaker 2] (5:46 - 6:30)
+Yeah, the first one is just... I was just reading through stuff and trying to, you know, look at bits and bobs. Being a professional patent, there are a couple of very minor details about the name of the W3C standard.
+
+And it's not Verifiable Credentials. It's a Verifiable Credential Data Model and so on. And that also raised another issue, which was that we tend to talk about VC and VCDM almost interchangeably.
+
+And I thought there's some just minor confusion about how the two terms are being used. So, this is pure pedantry, this particular one, just trying to tidy a few things up. I'm done.
+
+[Speaker 1] (6:30 - 6:41)
+In my view, it's a good tidy up. And so, I don't have any objections. I think it's already approved.
+
+Somebody approved it.
+
+[Speaker 10] (6:42 - 6:42)
+It is.
+
+[Speaker 1] (6:42 - 7:03)
+I also just approved it. Yeah. So, somewhere there's a merge pull request.
+
+So, with no objections, I'll just click merge now because it seems perfectly reasonable to me. Okay. Confirm merge.
+
+Thank you for that one. That's running. The next one is suggested text.
+
+[Speaker 2] (7:04 - 8:21)
+Yeah, this is more substantial. And I would hope that people would have time to read and comment. Probably easier to do if the group decides this morning to go ahead and merge this, then I've no doubt there'll be further comments and edits from other people.
+
+That's in the document. And I thought, that looks like the kind of space I could fill. So, if you scroll up, Steve, I forget what the...
+
+No, up, sorry, other way. I mean down then, sorry. I forget what the...
+
+So, there was a section on global uniqueness. What does that mean? And how is that achieved?
+
+And I've listed various ways that it's achieved. And then there's another section on resolvability. So, they try and give an overview of what those terms mean and how they can be reflected.
+
+So, just some text to put in those in their spaces that would then need review. And I can see an error I've made already because that word link set should be hyperlinked to that URL and I messed up my syntax. So, there's a mess there to sort out, but...
+
+[Speaker 1] (8:21 - 8:22)
+Okay, that's all right.
+
+[Speaker 2] (8:22 - 8:23)
+It's easy to fix.
+
+[Speaker 1] (8:24 - 9:03)
+So, I haven't looked at the content and thought it was useful content. I think it is. You're right.
+
+It's the type of content that will invite some comments because when we get into this whole identity resolution space, it's going to be quite interesting. There's a lot of ideas in there. But from my perspective, it was useful content.
+
+So, I approved it, but I haven't merged it yet. Does anybody have any thoughts or objections or concerns? Or good enough for now?
+
+Maybe you haven't read it yet. That's good to me.
+
+[Speaker 8] (9:06 - 9:29)
+I'm sorry to be a very bit... Did you go back to the first sentence in that text? It's the only one.
+
+Sorry, it's the third sentence that starts with examples underneath issuing agencies.
+
+[Speaker 1] (9:31 - 9:32)
+For example, that one.
+
+[Speaker 8] (9:33 - 9:39)
+No, no. Up further. Almost at the very, very beginning.
+
+Under issuing agencies.
+
+[Speaker 10] (9:39 - 9:42)
+All right, yeah. There's an example.
+
+[Speaker 8] (9:42 - 9:57)
+Second sentence. There's an end missing from internet. Domain system name.
+
+Examples include the...
+
+[Speaker 7] (9:57 - 9:59)
+Second sentence in that paragraph, Steve.
+
+[Speaker 1] (10:01 - 10:04)
+Okay. One example is... All right, yes.
+
+[Speaker 8] (10:05 - 10:07)
+No, the very second sentence.
+
+[Speaker 7] (10:07 - 10:12)
+Second sentence. First line, second sentence. Examples include...
+
+Oh, yes. Internet.
+
+[Speaker 1] (10:13 - 10:28)
+Oh, Eagle Eyes spotted that. And you've got another little bug down the bottom. I don't know.
+
+We can either merge it now or you can do another PR and we've agreed to merge it. So, as soon as you've fixed the spelling and the link, I'll just merge it.
+
+[Speaker 2] (10:29 - 10:33)
+I'll do it while we talk. Let me do it while we're here and get those things.
+
+[Speaker 1] (10:33 - 13:09)
+All right. So, this next one is one from me. And it's basically to update the digital product passport page.
+
+And I think I might just show you how it looks on my local machine version, because that's the easiest way to look at it. So, what I've done is I've just basically updated the digital product passport to use the latest version of the components, UNTP core, and published a new context and a new schema file, version 3.1. But also, I've taken some advice from this about the way this page is structured and made it much more... So, if we scroll down a bit below this, instead of a big table of data definitions, I've just said, go read over there on this hyperlink for data definitions here.
+
+And I've started to say, actually, this is... What's more useful is information about what an implementation looks like. So, for each of the main chunks in this model here, passport, verifiable credential, product, et cetera, I've basically got some words and a snippet and some more words and a snippet and some more words and a snippet and so on.
+
+And I think it's much more implementer friendly. And also, I think, solves one of our challenges, which is, if we persist in using this modeling tool for generating these things, it's a bit of a blocker for people to, like yourselves, to suggest changes. You know, what have you got to do?
+
+Get into Jargon and make a change? Whereas, if we've got snippets on a page like this, anyone can go and suggest a PR that says, actually, I think you should have this extra property or make some changes to the samples. And then that's a trigger for us to go, yeah, that's a good change.
+
+I'll go and update the schema afterwards. So, have it as a example content-led change. And so, I want to thank NIST for that thinking.
+
+And this is a PR that basically just restructures this page without, it's not a significant kind of meaning change. It's just, I've updated it and got the various context files and schemas that weren't quite working, properly working and published and changed the content. So, what do people think about this?
+
+Very good.
+
+[Speaker 11] (13:09 - 13:18)
+Some of the URLs in the examples don't have a protocol, for example, right here where your cursor is. Yeah.
+
+[Speaker 1] (13:20 - 13:56)
+Yeah. That's true. We could put protocol in there.
+
+I mean, it'll resolve anyway, won't it? Because browsers will do that, but machines might not. You're right.
+
+So, do we want to merge and then fix or do you want me to do, I can fix that before I merge. The main question is, identify any sort of concerns and questions and then I can fix and merge. If the permission here is, this is the right way to go.
+
+[Speaker 11] (13:57 - 14:04)
+Well, there's another thing, the format of dates. So, according to XSD, it should be dash instead of a dot.
+
+[Speaker 3] (14:05 - 14:06)
+Yeah. I was just about to say that.
+
+[Speaker 1] (14:07 - 15:55)
+Oh, that's a mistake. Okay. So, those are, let me, why don't I leave, because this is, you can either look at the pull request, which is there, or you can tell me if, two obvious things, right?
+
+Make the URLs with a protocol and fix those date formats. Why don't I just quickly scroll through it and we'll have a look together. Because one of the comments from the last call from Phil was, you know, we keep sort of quickly scrolling through these things and I haven't yet got clear in my head an understanding of these information entities.
+
+So, I don't feel well positioned. I'm recounting Phil's words here. So, sorry if I take them out of your mouth.
+
+But that was part of my motivation, as well as Nis' advice that it's easier to update samples and then fix the schema than the other way around. It's also driven by Phil's comments that, you know, I look at a UML diagram and some data definitions, but that doesn't really make it real for me. Whereas samples with data does.
+
+So, I've tried to address both of those concerns with this. Yeah. So, you know, for example, making clear that DPP is a VC.
+
+It extends it and you get an extra type in an extra context. But words about IDs and basically saying the issuer should be a DID. But it's important to link that DID to some business identity.
+
+So, we have this other identifier structure here that says is an issuer of a credential. It's Acme Industries and it also happens to be this ABN, Acme Pty Limited, blah, blah, blah. Michael?
+
+[Speaker 7] (15:55 - 16:00)
+Yeah. This might be a net, Steve. But if you scroll back up to the schema diagram.
+
+[Speaker 1] (16:02 - 16:03)
+This one?
+
+[Speaker 7] (16:04 - 16:09)
+Yeah. Is there is the different font color intentional?
+
+[Speaker 1] (16:11 - 16:24)
+Ah, yes. You mean the sort of gray versus black? Correct.
+
+Yes. Yeah. So, the gray means inherited from a reference vocabulary.
+
+[Speaker 7] (16:25 - 16:25)
+Okay.
+
+[Speaker 1] (16:25 - 16:37)
+Right. So, if I quickly click over to, no, not that. Where is it?
+
+Maybe. Yeah. There's a kind of a collection of reusable Lego bricks.
+
+[Speaker 7] (16:38 - 16:43)
+Okay. All right. Yeah.
+
+I understand. Okay. All right.
+
+So, okay. So, there is a meaning to it. So, okay.
+
+[Speaker 1] (16:43 - 16:55)
+When I use one of those Lego bricks in here, where is it? But I had a few extra bits. So, basically, the gray stuff is the Lego brick and the black bit is the extra bits.
+
+Yeah.
+
+[Speaker 8] (16:55 - 16:59)
+Do you explain somewhere the meaning of those colors?
+
+[Speaker 1] (17:01 - 17:03)
+I don't. I probably should, shouldn't I?
+
+[Speaker 8] (17:03 - 17:04)
+You should somewhere.
+
+[Speaker 1] (17:04 - 17:15)
+So, hang on. Let me write down all my to-dos. I've got dates.
+
+I've got protocols. That I've fixed in the PR. Right.
+
+Oh, have you? Okay.
+
+[Speaker 3] (17:15 - 17:16)
+Yes.
+
+[Speaker 8] (17:17 - 17:21)
+Because you have gray and black, but you also have...
+
+[Speaker 1] (17:22 - 17:23)
+Blue and green.
+
+[Speaker 8] (17:23 - 17:27)
+... khaki and turquoise and purple.
+
+[Speaker 1] (17:27 - 17:29)
+Okay. Explain to us.
+
+[Speaker 8] (17:29 - 17:31)
+And I know I should know what those mean.
+
+[Speaker 1] (17:33 - 17:48)
+Yeah. How to read the diagrams. I'll have to put that somewhere else because these diagrams appear in a few pages.
+
+So, I'll make a page or a part of a page that says how to read these diagrams and then just refer to it each time there's a diagram. Yeah.
+
+[Speaker 8] (17:49 - 17:51)
+Yeah. That's fine. As long as it's done somewhere.
+
+[Speaker 1] (17:53 - 21:03)
+Yeah. All right. So, back to this.
+
+Let's just look at these examples and go... We had a discussion a while back about, you know, is the issuer a Ditto or is the issuer an ABN? We came to a conclusion, actually, it's both because we want the issuer to be a DID because we want the cryptographic proof that goes with that.
+
+But we also want to know that it's this ABN or that UK VAT registration number or whatever it is. And so, this structure supports that. And then there's the usual valid from and until.
+
+Those are optional. And credential subject. And the subject of a digital product possible credential is a product.
+
+And here we get into product. And so, there's some words to explain each of these bits. And I'll just...
+
+So, the identifier has to say, here's its ID and name. And here's its just plain old ID value, but it comes from this global scheme or it could be a national scheme or whatever. And this is the scheme name.
+
+So, this collection of attributes always lets you know how to understand an identifier. And then serial number, batch numbers, self-explanatory, isn't it? An image is a link.
+
+So, I don't expand some of these because they're expanded further down. Product category is a bunch of classifications. Produced by, produced at, facility and party, fairly obvious.
+
+The tricky one is conformity information. That's the most complex one. And materials provenance.
+
+So, in materials provenance, we say there's an array of these things which say, this is what this thing is made of, basically. Egyptian cotton, for example, origin, country, material type, some classification scheme. What mass fraction of this product is made of that material?
+
+And what mass fraction of that material comes from a recycled source? And is it hazardous? There might be more stuff we need, but that's the basic provenance stuff.
+
+And then conformity gets a little bit more complicated. This is the bit where you make all your claims. So, basically saying this is a declaration and it's got an ID and it's against a reference standard, ISO 15, 14,000, for example, and or against some reference regulation.
+
+If you expand this reference regulation, it looks a lot like reference standard, but maybe you're conforming to law as opposed to standards. And then some specific criteria. And here's an example from Australian law around national greenhouse emissions.
+
+And then I should probably change this example because I just realized I've got basically, they're valid values, but they're not consistent. Because here I've got ISO environmental management system, and here I've got a criteria which is from national greenhouse regulations. And then we start talking about steel tensile strength.
+
+Maybe I should make it all one scheme, probably the national greenhouse regulation or something like that.
+
+[Speaker 7] (21:05 - 21:11)
+Yeah, I was going to suggest that. Sorry, Steve, because you go from Egyptian cotton to tensile strength of steel.
+
+[Speaker 1] (21:13 - 22:38)
+Yeah, it's because in the core library, I've put just example data in there, and it just pops up in the example it generates, I need to revisit it and make it meaningfully consistent. So I'll do that as well. Circularity, this stuff is basically saying, even though you might make fine grained circularity claims as part of conformity assessment, there's value in saying just a high level at the product level.
+
+Here's information about how to repair, here's information about how to recycle. Here's the total recycled content in this product, and here's the total recyclable content in this product. That doesn't preclude adding much more circularity information down in the details of these conformity claims, but it's kind of that high level picture.
+
+Anyway, it was quite a good exercise actually to put real data against this, because it made me think about what we're missing, and you've given me a bunch of good points to fix. It's a much better way, I think, to focus our attention. So with regards to the SPR, is it a merge and fix, or is it a go away fix and merge later?
+
+[Speaker 5] (22:42 - 22:45)
+Steve, there are a couple of hands up. Phil's and Aneesa's.
+
+[Speaker 1] (22:45 - 22:51)
+Okay, sorry, I didn't see that. Nis? Phil was first.
+
+Oh, was he? Okay.
+
+[Speaker 2] (22:52 - 23:14)
+Merge and fix is just easier to do, so that's fine. The one thing I was going to do, absolute nitpick, I'm sorry. One of your example dids used acme.com.
+
+You had a did web of identifiers.acme.com. Please use example.com or .org or .edu or .net, but please don't use real domain names.
+
+[Speaker 1] (23:15 - 23:19)
+Yeah, Acme's always that pretend one, but there's probably a real company called Acme, isn't there?
+
+[Speaker 2] (23:19 - 23:19)
+There is.
+
+[Speaker 3] (23:21 - 23:29)
+Always add example.com at the end. You can make acme.example.com. That's what I've sort of learned.
+
+Okay, it's a good idea. We'll do that.
+
+[Speaker 1] (23:31 - 23:37)
+Okay, so I've got a bunch of things to fix. That was good advice. It won't take long.
+
+I'll do that tomorrow.
+
+[Speaker 3] (23:39 - 24:13)
+Steve, if you go to the pull request again, I did make some suggestions that you can just merge immediately. And I also found, so this was the protocol. You can just merge it.
+
+No, no, no, no, no. My main comment is about the other identifiers. So these commits, you can just merge into your pull request, into your branch.
+
+[Speaker 1] (24:16 - 24:18)
+All right. How do I do that?
+
+[Speaker 3] (24:19 - 24:28)
+You accept, sign off and commit there. Yes. So that's the stuff.
+
+Yes.
+
+[Speaker 10] (24:29 - 24:31)
+That's merging your stuff into mine. Okay.
+
+[Speaker 3] (24:33 - 25:05)
+But the last one was you had this other identifiers, and I think that seems to collide with, or it seems better solved with always known as, at least that would be my recommendation to go up a little bit. So part of the did spec has an also known as... What is it?
+
+I linked to it. Try and scroll down a bit. It should be here.
+
+There.
+
+[Speaker 1] (25:07 - 25:08)
+All right. Okay.
+
+[Speaker 3] (25:09 - 25:21)
+I would suggest go at least looking into that rather than inventing something new. Okay. Any other opinions?
+
+[Speaker 1] (25:29 - 25:34)
+It's just a property name, right? So, okay. It's easy to change it to also known as.
+
+Yeah.
+
+[Speaker 11] (25:37 - 25:45)
+But, Luis, do you mean to use the namespace defined in the ADCore? So just to use this local?
+
+[Speaker 1] (25:48 - 25:58)
+It would be feasible to use the namespace. So that's a whole other discussion about... That's in DidCore, not VCDM, right?
+
+[Speaker 3] (26:00 - 26:14)
+Yeah. But actually, does it even need to go here or could we just have it on the did document? That's where I would place it.
+
+Resolve the did and get this information through that. Yeah.
+
+[Speaker 1] (26:16 - 27:16)
+So there are parts of this which are driven by not so much machine discoverability and readability, but what does the human presentation of a verifiable credential look like? So, for example, when you reference products or facilities or whatever, technically, you could just put a URI inside a DPP that points to, let's say, a conformity credential or a facility record or something else. But then it doesn't render so nicely.
+
+So part of what goes into a VC is what do you want a user to see when it's a human reading it, not a machine reading it? And do you want a machine to have to know that it can go and render? Because I'm not sure there's a...
+
+Is there a standard way to present these, I suppose, also known as in a did? Yeah. It doesn't preclude putting the same also known as, does it?
+
+Because you can put it in a did. Does it mean we should only put it in a did?
+
+[Speaker 3] (27:24 - 27:35)
+I would always caution against duplication of data, but you're right to ask the question. Michael?
+
+[Speaker 7] (27:37 - 28:06)
+Yeah. It's just a thought that popped in my head when Nis was talking about didCore and didDocuments. Is there a schema or a stamp?
+
+Since the didDocument can contain different material, right? You can have different endpoints and different things in it. Is there something, have we defined something that says this is what the didDocument or the minimum of what the didDocument should actually look like?
+
+[Speaker 1] (28:09 - 29:59)
+That would be something we would put in this verifiable credentials section. We just said methods, but it would make sense to have a didDocument profile or best practices. If anyone wants to put their hand up to do that, please go ahead.
+
+Why don't you write yourself a ticket to say, here's the best practice for what you put in your didDocument. I'm thinking just a bit more about this. There are many places where we have alternative identifiers.
+
+In most cases, they're not linked to a did. For example, a facility can have quite a surprising number of identifiers. It's an authorized establishment for meat processing.
+
+It's also a GLN. It's also a this and a that. There might not be a did for it.
+
+Do we say also known as only for the issuer, other identifiers, right? Because this pattern of other identifiers, it obviously happens... I'm looking at the wrong page, sorry.
+
+It happens here, right? There, under issuer. Certainly, the didCore also known as is a perfectly feasible thing there.
+
+In other parts of the document, you have an identifier of a thing, and then other identifiers of the same thing, and none of them are dids, possibly. It doesn't mean we can't use the property also known as, but would also known as work equally well for products and facilities?
+
+[Speaker 3] (30:00 - 30:04)
+I'm actually not sure. I would need to look into that.
+
+[Speaker 1] (30:06 - 30:14)
+Let's leave that as an open discussion. I'll leave other identifiers for now. I'm not wedded to it.
+
+We'll just fix the other issues.
+
+[Speaker 6] (30:14 - 30:16)
+I think it'd be worth thinking about.
+
+[Speaker 2] (30:22 - 30:30)
+It's a crucial thing, but it can't only be other dids. It must be more general. There's so many different identification schemes.
+
+[Speaker 1] (30:31 - 30:41)
+Yeah, the whole point of other identifiers is generally not to point to dids. It's to say this did also means these things, or this identifier also matches these other identifiers. Correct.
+
+[Speaker 4] (30:43 - 31:25)
+But wouldn't it be in a way then that those other identifiers are also issued as verified the credential from that issuing or from that issuer? For example, if we're talking about a company and the company issues itself a did, and then Glyph or a lie issuer is issuing verifiable lie to that did as a verifiable credential, then it would be connected through the did of that company and not because you put it in also known as.
+
+[Speaker 6] (31:28 - 31:35)
+Yeah, and the observation from the sloppy supply chain world is that that's setting the bar fairly high. I mean, I agree with the principle, of course.
+
+[Speaker 1] (31:40 - 32:26)
+Yeah, I think there are lots of cases where there are multiple identifiers or multiple classification schemes for a thing, and that thing may not even have a did associated with it. Clearly, the entity does because they're the issuer. A facility may.
+
+There's a discussion I'd like to have in a minute about facility. Yeah, products may or may not. I kind of sympathize with the idea of just a basket of identifiers that people want to specify about things, as long as they're meaningful and understandable.
+
+Why don't I raise a ticket on this question of other identifiers, and we can discuss about it. In the meantime, we'll leave it until we come to some alternative agreement.
+
+[Speaker 5] (32:28 - 32:30)
+I've already created a new ticket. All right.
+
+[Speaker 1] (32:30 - 32:41)
+Okay. So, I've merged the spelling corrections and so on you made. Are we in a mergings blocked?
+
+[Speaker 3] (32:43 - 32:49)
+That was this. You can override it, but I just wanted to make sure we considered the... Yeah, yeah.
+
+[Speaker 1] (32:51 - 32:59)
+Okay, and there's one more there. Fix my dates. Thank you for that.
+
+No.
+
+[Speaker 3] (33:01 - 33:10)
+I would say this is two hours old. It may be a little aggressive to merge it. Yeah, that's all right.
+
+I'll keep fixing it.
+
+[Speaker 1] (33:11 - 33:38)
+But do we have... Basically, what I'd rather not do is wait till next week to merge it. So, if we agree that the approach is fine, and there's a bunch of corrections, like about what do the colors mean, and you've picked some of the dates, and get rid of real names, and replace them with examples, and so on.
+
+If I do all that, I don't know, tonight or tomorrow, are you happy for me to just merge what I do?
+
+[Speaker 2] (33:40 - 33:49)
+Yeah. Yes, and it'd be very helpful then to understand more about... It's just easier to comprehend the section, which is a crucial section.
+
+Yes.
+
+[Speaker 1] (33:49 - 34:08)
+Okay. So, let's leave that as a do for me, then, and move on. That should have closed, shouldn't it?
+
+That suggested text. Didn't we merge that one, or didn't we? I thought we did.
+
+Anyway.
+
+[Speaker 7] (34:09 - 34:13)
+I thought Phil was going to fix the spelling mistakes. Ah, that's wrong.
+
+[Speaker 1] (34:13 - 34:14)
+Oh, yes, I did, which I've done.
+
+[Speaker 2] (34:15 - 34:16)
+You did? I've done, yeah.
+
+[Speaker 1] (34:17 - 35:53)
+Okay. So, we can go back. We'll merge that one, then, and make it go away.
+
+And then, I will take Suzanne's words, and make another PR over the updated content, and I'll fix my bugs, and bits, and pieces on this one. So, next time we meet, updated one of this will be there. This one will be gone, because I'll have fixed it.
+
+And we might have multiple requests to talk about. On to issues, then. Sought by least recently updated, shall we?
+
+Sustainability vocabulary design. I think Chris and Marcus were having a chat about this today. Right.
+
+This one isn't going to get fixed, or addressed immediately. So, this one basically goes to the challenge of, how do you represent, meaningfully, all those standards, and criterias, and rules, from I don't know how many different regulations, and standards, and make any sort of sense between them. It's probably one of the biggest challenges of this project.
+
+Units, so I'm going to park that one. Units of measure. Have we addressed this one for you, Phil?
+
+[Speaker 2] (35:56 - 36:03)
+Yeah, I do say we'll use that. You do say use that. Okay, then I don't need to spend time on it.
+
+[Speaker 1] (36:05 - 36:15)
+Yeah, it says, yeah, we recommend, or we almost require, I would say, RAC20 code.
+
+[Speaker 2] (36:16 - 36:31)
+Yeah, just because I saw some examples where it was written in natural way, the way you would write it if you were actually recording a measurement, which is a natural way, but it's not the RAC20 way.
+
+[Speaker 1] (36:31 - 36:40)
+It's not the actual code list, yeah. So, I did make an effort in this samples here, somewhere there's, I think it's the dimensions one, wherever it is.
+
+[Speaker 2] (36:41 - 36:45)
+Yeah, I just saw them flashing by. Yeah, those are actually RAC20.
+
+[Speaker 1] (36:46 - 36:48)
+Yeah, the MTR, and KGM, and LTR.
+
+[Speaker 2] (36:48 - 36:54)
+Yeah, that's the one. It's very, very unnatural, but it is the way it's done.
+
+[Speaker 6] (36:56 - 37:07)
+Okay. There are other systems for classification schemes for units of measure, of course, outside of these ones.
+
+[Speaker 1] (37:10 - 37:19)
+Yeah. Add page listing reference standards. What was this one, Nes?
+
+[Speaker 3] (37:24 - 37:26)
+Yeah, what was it?
+
+[Speaker 5] (37:29 - 37:30)
+It's kind of like a bibliography.
+
+[Speaker 3] (37:31 - 37:44)
+Yeah, like we're using the Ditcore and VC data model and stuff like that, the ISO one. I mean, I think this was probably, it seems outdated. Let's just close it.
+
+[Speaker 1] (37:45 - 38:05)
+Well, Virginia did mention before, let's have a page of abbreviations. Do we need a glossary somewhere? And if we did have a glossary, would we separate standards from terminology from whatever other category of meaning?
+
+Yeah, do we have a glossary?
+
+[Speaker 3] (38:05 - 38:06)
+Yeah.
+
+[Speaker 7] (38:09 - 38:11)
+Sorry, go ahead, Nes. No, no.
+
+[Speaker 3] (38:11 - 38:12)
+I don't.
+
+[Speaker 7] (38:12 - 38:35)
+Okay. I guess is there, I know with other standards, are there standards that are like normative standards that we would say are part of this or? Yes, absolutely.
+
+And so then are there other ones that would be sort of otherwise referenced, but not, and do we list those anywhere? Because usually you want those listed somewhere in this. Right.
+
+[Speaker 1] (38:36 - 38:39)
+Yeah. I think this is still open.
+
+[Speaker 8] (38:41 - 38:47)
+Yeah. I would not mix up the standards with acronyms. Yeah.
+
+[Speaker 7] (38:47 - 38:50)
+I would agree with Virginia as well. Acronyms are different than standards. Yeah.
+
+[Speaker 1] (38:56 - 39:07)
+I don't know whether we call it a glossary, but so when we say don't mix them up, obviously not in the same table, but are we okay with having a one page, which is, here's the standards, here's the language, here's a, you know, it's just basically a.
+
+[Speaker 8] (39:09 - 39:12)
+Sorry, but this is going to take more than one page.
+
+[Speaker 1] (39:13 - 39:16)
+I don't mean one page of A4, I mean one webpage.
+
+[Speaker 14] (39:20 - 39:32)
+Yeah. So Steve, I guess there are a couple of types of glossary. There's typically glossary of terms and glossary of acronyms.
+
+And you try and separate them generally.
+
+[Speaker 8] (39:33 - 39:42)
+Yeah. I wouldn't put them in like one link because the person who's looking for standards may not be looking for acronyms and vice versa.
+
+[Speaker 1] (39:45 - 40:28)
+Yeah. Make them, et cetera. All right.
+
+And then I'll sign it. I'll sign it to me as well, just to make the page. And then I'll just put some stuff in there.
+
+And then it can be a place where we always, you know, anytime anybody finds a standard or an acronym or something that they think should be added, you can make a pull request to that page. All right. Next.
+
+Explore how to incorporate human observations as valid sensors in low digital maturity environments. That's yours, Zach.
+
+[Speaker 5] (40:30 - 41:29)
+Yeah. So this is one that came up when we were talking about the mine auditing in the DRC as part of our CRM project. So I'm catching up with Golda next week.
+
+I might sort of talk about this. So, and Steve, this goes to some of the conversations you and I were having around assurances, right? And while normally, and Brett, cover your ears, but normally assurances come from sort of robust conformity assessment ecosystems and frameworks.
+
+But in low digital maturity or low economic maturity environments, we might, there might be, we probably should provide guidance around how those can plug into conformity credential frameworks.
+
+[Speaker 6] (41:29 - 41:48)
+Zach, I entirely agree. I think the only consideration is that as we come across specific examples, that we don't try and build a system around those examples, but we always refer back to the generic case and understand where these examples fit into the wider framework.
+
+[Speaker 1] (41:49 - 41:50)
+Totally agree.
+
+[Speaker 10] (41:50 - 41:50)
+Yeah.
+
+[Speaker 1] (41:52 - 42:43)
+I think this is quite important, right? It's actually not just for low maturity environments, because there is a risk that all the available, quite small margin that you might get in terms of price uplift of product for sustainable produce gets eaten up with this kind of technology and auditors and everything else, and not enough left for actually changing behavior. And so the cheaper and better you can make confidence and assessments, the better.
+
+And I think sensors and audits and photographs and audits and observations, you know, gobbins sort of thing are quite a cheap way of doing that. I don't know how to make them, how to distinguish between a real dobbin and somebody maliciously trying to, you know, damage the competition.
+
+[Speaker 12] (42:45 - 43:08)
+Yeah, I think it comes back to what is a valid observation and who is issuing the VC. And yeah, because this type of secondary party observations and your low tech observation are really useful, but can still be captured in a small note and then be given the status of a VC if the person who is making the observation is someone legitimate.
+
+[Speaker 1] (43:09 - 43:20)
+Yeah. I think that's the biggest problem with second party stuff is, how do you know it's a genuine second party? Susanne?
+
+[Speaker 4] (43:21 - 43:59)
+Yeah, which comes back to the very small paragraph that I wrote with the trust list. However, you want to implement it, that you put trusted issuers or accredited issuers on a list, and then check again, if those are accredited issuers or auditors or not. And then, I mean, you can always accept a credential, but maybe then they have a different risk score.
+
+So if they're on the list, the risk score is very low because they're accredited. If they're not on the list, they have a higher risk, but you might still decide to accept that information, depending on the use case.
+
+[Speaker 6] (44:00 - 44:27)
+I do agree with that as well, Susanne and Steve, but I mean, a list is just one example. And I keep saying, let's think about the broader framework. And we did get our work published, Steve, on the conformity credential side, before the UNTP got across the line, which wasn't the intention, but that's how it's worked out.
+
+And we talk about endorsements, which there are many forms, and being on a list is one form of endorsement.
+
+[Speaker 5] (44:30 - 45:03)
+Yeah. And Brett, in your published document, and I've had a cursory review, but not a detailed review, is there a section that you can point me to for this one that I can kind of bring to my conversation and kind of think about how we bring that forward? Just to kind of guide me towards the generic pattern, as opposed to, and then we can sort of reference that section and then describe how different scenarios that we encounter in the real world are applied?
+
+Would that be a good way of kind of articulating?
+
+[Speaker 6] (45:04 - 45:15)
+Yes. I shall send you the section, of course, even it is unnecessarily abbreviated, given the nature of the document, but it'll give you perhaps some principles to think about.
+
+[Speaker 5] (45:16 - 45:35)
+Yeah. And I think it's important to Steve's point that we make this open or flexible enough that it can be low cost. And so we've got to be careful about not being too prescriptive here.
+
+[Speaker 4] (45:36 - 46:28)
+Yeah. And one other thing that people think about in the automotive industry is that if you as a supplier already have an accredited position as automotive supplier for a different vendor, for example, if a supplier that supplies to Volkswagen now shall supply to BMW, then BMW can check, oh, it's already accredited company at Volkswagen. So I shall also trust them at least in the first place or unless something else comes up.
+
+So that's also something we were thinking about, depending on the credentials that you already have in your wallet can also kind of accredit you in some way.
+
+[Speaker 6] (46:29 - 46:49)
+So those are other good examples of an endorsement. And even though I come from an accreditation body, the document that we produced on the conformity credentials allows for first party declarations, but noting that there's scope for endorsements over first party declarations. So it is a fairly wide canvas.
+
+[Speaker 5] (46:52 - 46:59)
+Yeah. And I think the important thing is to really leverage that work. So we're not reinventing the wheel here.
+
+[Speaker 1] (47:00 - 47:59)
+Yeah. Okay. So on the next tickets, there's three by Gerhard here.
+
+He's not on the call, but I'll go through these tickets and see. They're a bit old and maybe I've addressed them in recent releases. And if so, I'll suggest to Gerhard that they're addressed.
+
+And if not, they'll remain open. There's a couple here by Vladimir, who's also not on this call, and I'll do the same thing. So these five, I'll just go through them and see if we can close them.
+
+We think we can close them or not. That leaves us back to a few by Nis and Phil here that some have even got pending clothes on. Investigate best ways to render a credential.
+
+Where are we at with that, do you think? We got some stuff, haven't we, on the VC page, which talks about rendering templates, I think. Render method.
+
+It's not much, is it? It just says you should use a render method. It doesn't say which one or...
+
+What did you want to do with this ticket, Nis?
+
+[Speaker 3] (47:59 - 48:12)
+We have discussed this. No, there has been discussion on it. I would, in my opinion, that should, with render method, is fine.
+
+We can close.
+
+[Speaker 1] (48:13 - 48:32)
+There's quite a long discussion here. Yeah, yeah, yeah. This is quite a lot of...
+
+Okay. But I think, yeah. Do you think that we close it because there's evidence of discussion and that the outcome of, yes, we should have a render template, but we're not too fussed about exactly which one.
+
+[Speaker 3] (48:33 - 48:48)
+Yes, and I think the spec reflects that now. So basically, I would close this as done, discussion. Discussion has happened and the spec has been updated accordingly.
+
+Okay.
+
+[Speaker 1] (48:49 - 49:05)
+That's good. It's nice to close tickets. The best.
+
+So it's a nice log of discussion as well, though. Yes. Now, the next one is also Nis, DPP schema context.
+
+I think we've got that now, haven't we?
+
+[Speaker 3] (49:06 - 49:08)
+Yeah, yeah. That's also updated.
+
+[Speaker 1] (49:08 - 49:13)
+And credential subject with also... That's Phil, isn't it? What was that one about?
+
+[Speaker 2] (49:13 - 49:17)
+Yeah, depending. Those just means, as far as I'm concerned, it is closed.
+
+[Speaker 1] (49:18 - 49:27)
+So please- Yeah, and on product passport, sorry, product image, you were saying, don't just put a URL, put a link with some metadata. So I've done that as well. Yes.
+
+Yep. So I might just bulk.
+
+[Speaker 2] (49:28 - 49:31)
+Yeah, I saw that in your model. Please, yeah.
+
+[Speaker 1] (49:31 - 49:33)
+How good is that? How do I close?
+
+[Speaker 3] (49:35 - 49:39)
+I don't know if you can. I'll just go in, close, come back. Okay.
+
+[Speaker 10] (49:40 - 49:53)
+Close, come back, close.
+
+[Speaker 1] (49:58 - 50:07)
+This is good. Yeah. We might have reached peak open ticket situation.
+
+[Speaker 3] (50:08 - 50:19)
+Don't jinx it. On the product image, can we talk about that? Yeah.
+
+What was the suggestion here?
+
+[Speaker 2] (50:20 - 50:52)
+Oh, it's simply that giving a URL for an image isn't enough. You need to know what kind of images. I mean, so if you're talking about a product, we have pages and pages of standards on this.
+
+Is it the front, the back, the top, the side? Is it an angle? Has it got a background?
+
+All that kind of stuff. Just sending, just recording an image as just a URL of an image that exists today isn't enough. And the schema.org vocabulary has a detailed thing, image dimensions and other bits and bobs.
+
+[Speaker 1] (50:52 - 51:27)
+The schema.org one is huge. And I wonder what's the minimum viable. All I've done at the moment is got a link type, link name, link URL, and that target type is MIME type.
+
+It's a bad example there, but it's, you know. So is it enough to say, here's a name for the link? Here's a link type in a kind of, what is it at the other end sense?
+
+And here's a media type. I should call it media type, which is...
+
+[Speaker 2] (51:27 - 52:09)
+Yeah, that's probably the least important. I mean, it can be useful, I guess, if you want a high res image or whatever. And I'm probably going beyond what's necessary for the DPP.
+
+So I, because the image, because the MIME type would come back from the server. It's only ever a hint, it was in the data. It's really allowing for the fact that you often have more than one image.
+
+That's, I think that's the thing. So I guess a minimum would be an array of URLs. But I think it's useful to have some description of each one.
+
+Is it, without getting into the kind of details that are...
+
+[Speaker 1] (52:09 - 52:17)
+So what would be the minimum data that you would want to see with each image? So a name. I think a URL.
+
+[Speaker 3] (52:18 - 52:30)
+Can we talk about the data model for that link? It's a link. Why do we have five attributes on it?
+
+Like describing media type like this? It's, I don't know. It doesn't look all that pretty in my humble opinion.
+
+[Speaker 2] (52:30 - 52:33)
+No, I agree that media type is not actually necessary.
+
+[Speaker 3] (52:35 - 52:37)
+I think... It doesn't make sense.
+
+[Speaker 1] (52:37 - 52:50)
+It's so that when you render it, you give it a title. You know, for the human rendering, you're going to show a picture and maybe I should call it title as well. Okay.
+
+[Speaker 2] (52:53 - 53:29)
+So I certainly think as a minimum, it should be an array of URLs, because you can often have more than one. So again, this is going beyond what's necessary for DPP. But in the product world, you've got multiple angles.
+
+You've got, is it a romance one, which will have a picture of the thing in front of a field of cows? Or is it just the products square on and so on? There are all sorts of things around there.
+
+And dimensions can be useful to help you select the right one. Is it a thumbnail? Is it an enormous poster size, high res image, whatever it may be?
+
+So, yeah.
+
+[Speaker 1] (53:29 - 53:40)
+I mean, there's all kinds of stuff in schema.org, but the purpose here is the thing you're going to show in the rendered credential. And that's about it. Right.
+
+Oh.
+
+[Speaker 4] (53:41 - 53:45)
+So I would also go for alternative text.
+
+[Speaker 2] (53:46 - 53:51)
+Yeah, alt text. Oh, very citizen. Yes, Marcus.
+
+Thank you. Thank you, Suzanne. Yeah, you're right.
+
+[Speaker 1] (53:55 - 53:56)
+Instead of title or as well as title?
+
+[Speaker 10] (54:00 - 54:00)
+Instead of.
+
+[Speaker 4] (54:01 - 54:04)
+Oh, no, I think I said title.
+
+[Speaker 8] (54:05 - 54:12)
+So don't you need to say what format the image is in? Is it PNG, JPG?
+
+[Speaker 1] (54:13 - 54:25)
+That's the MIME type that as I did put it in there, but as Phil says, it comes back anyway with the HTTP header that you get back. It's a bit superfluous putting it in the message.
+
+[Speaker 10] (54:25 - 54:34)
+Okay. I think that I think. I'm sorry.
+
+[Speaker 3] (54:34 - 54:57)
+You could also, you could title alt text, caption if you want, if that. I understand now what we're trying to do here. Caption might also be relevant.
+
+And then whatever part of Phil's extremely nerdy comments we want to include here. All right. Yeah, probably.
+
+[Speaker 2] (54:59 - 55:13)
+I think what you're saying that the intention here is what do I need to be able to present the image in the rendering? And that actually narrows down the scope significantly.
+
+[Speaker 4] (55:14 - 55:23)
+And then we also need to have credits. So which you always have to show who has the IP, right?
+
+[Speaker 1] (55:24 - 55:27)
+Even in a DPP, maybe.
+
+[Speaker 2] (55:29 - 55:33)
+I mean, you're right, Suzanne, of course. But I would imagine that the caption would handle that.
+
+[Speaker 4] (55:36 - 55:44)
+Yeah, that could be part of the caption. I'm fine with that.
+
+[Speaker 10] (55:44 - 55:45)
+Okay.
+
+[Speaker 1] (55:49 - 56:28)
+All right. Let me leave that one as a comment. So we don't close that one.
+
+We actually improve my rather shitty link structure. So thank you. See, these conversations always make things better.
+
+And we're one minute away from end. We've closed a few issues. We've merged some pull requests.
+
+I've got some good feedback on the DPP page. I'll take your feedback, fix it, but also do a similar thing for the conformity credential page by next week so that we start to shape the spec in a way that is more friendly for people to read and understand and comment on. Any other last things before we sign off for the day?
+
+[Speaker 9] (56:32 - 57:03)
+Hi, everyone. I'm Vinayak. This is my first meeting.
+
+So I'm doing PhD at Imperial College on battery passports. So I was listening to all your discussion. So it was very helpful.
+
+And I'm also looking like going through the website. It's a huge like collecting all the facts and data. So just wanted to say hi to all of you and would like to contribute to the work.
+
+[Speaker 2] (57:04 - 57:12)
+Would you? I'm just getting over the fact you're doing a PhD in battery passports. The thing that didn't exist until a few years ago.
+
+[Speaker 1] (57:15 - 58:36)
+Are you still there? Where's he gone? So yeah, a couple of things then, Vinayak.
+
+One, congratulations for going to a great university. It's also my alumni from there. Long time ago, though.
+
+Long time ago. You in the building next to Albert Hall, yeah? That before they had like you.
+
+It was when they had a mainframe computer that had magnetic core memory and you programmed it with punch cards. That's how long ago it was. Anyway, but I do have a...
+
+One of the things we need to do, Vinayak, is prove the thesis that the UNTP core is a sound foundation for industry-specific extensions. And one of the tasks is to say, can I take Suzanne's... Or well, it's the GBA's digital product passport data model, right?
+
+It's an Excel spreadsheet with a bunch of terms. And can I map that to UNTP and identify what are the extension points? And say, here is an extension of UNTP that meets all the requirements of the GBA digital product passport.
+
+It's a thing on the to-do list. I mean, I just, I got a feeling you've just volunteered for it.
+
+[Speaker 9] (58:38 - 58:39)
+Yeah, yeah, yeah.
+
+[Speaker 1] (58:39 - 58:39)
+Sure, sure.
+
+[Speaker 9] (58:39 - 58:44)
+So connecting. Yeah, yeah, go ahead, please.
+
+[Speaker 1] (58:46 - 58:51)
+No, that's all. If you can ping me or... Are you on the Slack channel?
+
+Can we contact you somehow?
+
+[Speaker 9] (58:54 - 58:57)
+Yeah, yeah, I'm on Slack channel as well, yeah.
+
+[Speaker 1] (58:58 - 59:11)
+We're two minutes past time, so I don't want to discuss it too long. I just want to acknowledge your willingness to contribute and give you a job. So that's all right, yeah.
+
+Anybody else got something to add?
+
+[Speaker 7] (59:17 - 59:21)
+No, okay. An additional job for Vinyak or just a comment?
+
+[Speaker 1] (59:23 - 59:32)
+No, no, just a job to do the digital product battery passport. Okay, thanks everyone. Okay guys, thanks everyone.
+
+Thanks for your time.
+
+[Speaker 4] (59:33 - 59:35)
+See you soon, bye. Thanks, bye.
+
+[Speaker 14] (59:35 - 59:36)
+Thanks, bye.
