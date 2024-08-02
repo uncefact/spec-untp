@@ -7,9 +7,9 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-The decision to implement UNTP needs a positive business case to justify the investment. The purpose of this page is to provide a framework for business case development. We provide a generalised cost / benefit model and then discuss it's application to specific roles and industries. 
+The decision to implement UNTP needs a positive business case to justify the investment. The purpose of this page is to provide a framework for business case development. We provide a generalised cost / benefit model and then discuss it's application to specific roles and industries. We also provide a separate cost benefot model and business case template for regulators.
 
-## Cost Benefit Model
+## Industry Cost Benefit Model
 
 The high level model shown below breaks benefits into three categories and costs into two categories.
 
@@ -108,14 +108,21 @@ UNTP provides a framework based on international standards which can accommodate
 * *Quantification.*
 * *References.*
 
-## Business Case Templates
+### Industry Business Case Tempalate
 
-### Buyers and Suppliers in the Value Chain
 
-### Conformity Assesment Bodies
+## Regulator Cost Benefit Model
 
-### Industry Associations
+TBD - insert model diagram here
 
-### Regulators
+### Benefits - National Economy
 
-### Software Vendors
+### Benefits - Compliance Outcomes
+
+### Benefits - Government Efficiency
+
+### Costs - Implementation
+
+### Costs - Operational
+
+### Regulator Business Case Template

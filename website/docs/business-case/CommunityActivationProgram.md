@@ -29,6 +29,13 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ### IT Solution Providers
 
+## Implementation Program Model
+
+### Discovery Phase (Crawl)
+
+### Alpha Phase (Walk)
+
+### Beta Phase (Run)
 
 ## The Community Level Business Case
 
