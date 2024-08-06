@@ -18,14 +18,16 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
-The next meeting is 9pm UTC 31st July 2024 - [Join here](https://us02web.zoom.us/j/85091806131).  
-The following meeting is 8am UTC 8 July 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+ 
+The next meeting is 8am UTC 8 August 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+The following meeting is 9pm UTC 14th August 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2024-07-17| [The meeting focused on updates from recent presentations in Geneva, a planned demo on TrustGraphs, reviews of multiple pull requests, discussions on various issues including human observations as sensors, and setting action items for updating digital product passport pages and creating a glossary for standards and acronyms.](#2024-07-25-meeting-summary) |[video](https://us02web.zoom.us/rec/share/rXhYqvNX6fcC6acRfBmWGb5Yfe1tNemDuDhCNCdJjemMrUKiWHUTsnI9fOHQOUjg.ElNsOY95VnBDv5QO)| [transcript](../../meetings/2024-07-25-Recording.txt)|
+|2024-08-01| [The meeting focused on refining the business case for the UNTP, discussing the inclusion of emissions and circularity performance in digital product passports, and balancing simplicity with the need for reliable data to encourage voluntary adoption.](#2024-08-01-meeting-summary)|[video](https://us02web.zoom.us/rec/share/GWtQbYEYvwLllNWX_MU3sDngPkcl73prtAnNrsZ-BUKof611JFmf_SfpjjM-BHar.XJrZ23Mu-s3EkZiH)|[transcript](../../meetings/2024-08-01-Recording.txt)|
+|2024-07-25| [The meeting focused on updates from recent presentations in Geneva, a planned demo on TrustGraphs, reviews of multiple pull requests, discussions on various issues including human observations as sensors, and setting action items for updating digital product passport pages and creating a glossary for standards and acronyms.](#2024-07-25-meeting-summary) |[video](https://us02web.zoom.us/rec/share/rXhYqvNX6fcC6acRfBmWGb5Yfe1tNemDuDhCNCdJjemMrUKiWHUTsnI9fOHQOUjg.ElNsOY95VnBDv5QO)| [transcript](../../meetings/2024-07-25-Recording.txt)|
 |2024-07-17| [The meeting discussed integrating business experts, collaboration with CENELEC on global standards, and reviewing a significant pull request to enhance data model consistency and governance.](#2024-07-17-meeting-summary) |[video](https://us02web.zoom.us/rec/share/9yfJtJ-BFGkrEEYemfpxJU-FhLilK6iMdWjk5-hao8Hvx8uBF5d_bR05WMc1GQIo.5OQR4eACNiJRyUNE)|[transcript](../../meetings/2024-07-17-Recording.txt)
 |2024-07-04| [The meeting focused on reviewing PRs for digital product passports, discussing the integration of JSON-LD and JSON Schema for transparency graphs, and planning next steps for refining and testing the models.](#2024-07-04-meeting-summary)| [video](https://us02web.zoom.us/rec/share/aDNOqKQ6itVCWtOlezhyhs4epYW6jiU6B7ZSKB4pOg5mMvH_rwOFWHblkd8vIg6v.xw2yXaIkKZbwyRSW)| [transcript](../../meetings/2024-07-04-Recording.txt)|
 |2024-06-27| [The meeting focused on reviewing and addressing public comments on Recommendation 49, planning the consolidation of these comments over the weekend, introducing a new digital identity anchor credential, and discussing the governance and versioning of standards.](#2024-06-27-meeting-summary))| [video](https://us02web.zoom.us/rec/share/YSHGiEQEKosYGKgkhtcFr68qpnVtuLGrYMUBueSvgETyaZZ7B9oUT6dMPFDH5gdu.U3JwPcN8cEahYQbx)| [transcript](../../meetings/2024-06-27-Recording.txt)|
@@ -51,6 +53,63 @@ The following meeting is 8am UTC 8 July 2024 - [Join here](https://us02web.zoom.
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
+## 2024-08-01 Meeting Summary
+
+**Date:** August 1, 2024
+
+**Speakers:**
+- **Steve** (Host)
+- **Martin Pompery** (Speaker 2)
+- **Zach** (Speaker 3)
+- **Christophe** (Speaker 4)
+- **Virginia** (Speaker 5)
+- **Nancy** (Speaker 6)
+- **Phil** (Speaker 7)
+- **Juliet** (Speaker 8)
+
+**Key Points:**
+
+1. **Introduction and Attendance:**
+   - Steve began the meeting, noting the recording and summary availability.
+   - Martin Pompery introduced himself as a co-founder of the SINA Foundation, focusing on carbon transparency protocols with the World Business Council for Sustainable Development.
+
+2. **Business Case for the UNTP:**
+   - Steve presented an initial contribution to the business case for the UNTP, highlighting the costs and benefits for potential implementers.
+   - The business case was divided into three parts:
+     - Costs and benefits for individual supply chain actors or regulators.
+     - Costs and benefits for communities.
+     - Reporting the value and cost of implementations for benchmarking.
+
+3. **Feedback on Business Case:**
+   - Christophe agreed with the categories but questioned the final product's specificity.
+   - Virginia emphasized the need for cost-benefit arguments for public authorities and not-for-profits.
+   - Nancy noted the importance of differentiating between pilot and long-term participation.
+
+4. **Emissions and Circularity Performance in Digital Product Passports:**
+   - Steve discussed adding emissions and circularity performance to digital product passports.
+   - Emissions performance would include high-level carbon footprint data with scope and reference standards.
+   - Circularity performance would measure linear flow index and utility, reflecting recycled content and product durability.
+
+5. **Challenges and Considerations:**
+   - Martin and Christophe highlighted the complexity and variability in measuring carbon footprints.
+   - Zach questioned the governance structure for adding summary boxes and emphasized aligning with sustainable development goals.
+   - The balance between simplicity for ease of implementation and the need for detailed, reliable data was a recurring theme.
+
+6. **Future Steps:**
+   - Agreement to merge the initial business case content and continue refining it.
+   - Continued deliberation on representing frameworks like the Pathfinder Framework in digital product passports.
+   - Emphasis on simplicity to encourage voluntary adoption while ensuring reliable and comparable data.
+
+**Action Items:**
+- Steve to merge the initial business case contribution and iterate based on feedback.
+- Further discussion on the appropriate level of detail for emissions and circularity performance in digital product passports.
+- Consideration of additional examples and practical applications to test the proposed structures.
+
+**Next Meeting:**
+- Focus on refining the business case and exploring practical examples of implementing the digital product passport framework.
+
+**Conclusion:**
+The meeting concluded with acknowledgment of valuable feedback and a commitment to ongoing collaboration to achieve a balanced and implementable framework.
 
 ## 2024-07-25 Meeting Summary
 
@@ -117,9 +176,7 @@ The following meeting is 8am UTC 8 July 2024 - [Join here](https://us02web.zoom.
 **Conclusion:**
 The meeting concluded with thanks to all participants and a note that the next meeting will focus on further pull requests and issues.
 
----
 
-This summary now includes the names of the speakers as requested. Let me know if there are any further modifications needed!
 ## 2024-07-17 Meeting Summary
 
 **Attendees:**
