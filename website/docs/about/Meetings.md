@@ -19,13 +19,14 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 ## Next Meetings
 
  
-The next meeting is 8am UTC 8 August 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
-The following meeting is 9pm UTC 14th August 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
+The next meeting is 8am UTC 22 August 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+The following meeting is 9pm UTC 28th August 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-08-15| [The meeting focused on refining digital product passports, facility records, and conformity assessment schemes while establishing a working group to develop the business case pages.](#2024-08-15-meeting-summary)| [video](https://us02web.zoom.us/rec/share/4aCZG5zqAMVtI7wSYUFLsiWTWBrUnBU54WHuq5UL99BbtXc_n_2IzPOHfX7yUXWy.H-f8GsYaQm4RUyUI)|[treanscript](../../meetings/2024-08-15-Recording.txt)
 |2024-08-01| [The meeting focused on refining the business case for the UNTP, discussing the inclusion of emissions and circularity performance in digital product passports, and balancing simplicity with the need for reliable data to encourage voluntary adoption.](#2024-08-01-meeting-summary)|[video](https://us02web.zoom.us/rec/share/GWtQbYEYvwLllNWX_MU3sDngPkcl73prtAnNrsZ-BUKof611JFmf_SfpjjM-BHar.XJrZ23Mu-s3EkZiH)|[transcript](../../meetings/2024-08-01-Recording.txt)|
 |2024-07-25| [The meeting focused on updates from recent presentations in Geneva, a planned demo on TrustGraphs, reviews of multiple pull requests, discussions on various issues including human observations as sensors, and setting action items for updating digital product passport pages and creating a glossary for standards and acronyms.](#2024-07-25-meeting-summary) |[video](https://us02web.zoom.us/rec/share/rXhYqvNX6fcC6acRfBmWGb5Yfe1tNemDuDhCNCdJjemMrUKiWHUTsnI9fOHQOUjg.ElNsOY95VnBDv5QO)| [transcript](../../meetings/2024-07-25-Recording.txt)|
 |2024-07-17| [The meeting discussed integrating business experts, collaboration with CENELEC on global standards, and reviewing a significant pull request to enhance data model consistency and governance.](#2024-07-17-meeting-summary) |[video](https://us02web.zoom.us/rec/share/9yfJtJ-BFGkrEEYemfpxJU-FhLilK6iMdWjk5-hao8Hvx8uBF5d_bR05WMc1GQIo.5OQR4eACNiJRyUNE)|[transcript](../../meetings/2024-07-17-Recording.txt)
@@ -52,6 +53,52 @@ The following meeting is 9pm UTC 14th August 2024 - [Join here](https://us02web.
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+## 2024-08-15 Meeting Summary
+
+**Date**: August 14, 2024  
+**Attendees**:  
+- **Steve** (Speaker 1)  
+- **Phil** (Speaker 2)  
+- **Virginia** (Speaker 4)  
+- **Zach** (Speaker 5)  
+- **Patrick** (Speaker 3)  
+- **Harley** (Speaker 13)  
+- **Todd Taylor** (Speaker 7)  
+- **Bree** (Speaker 8)
+
+**Key Discussion Points**:
+
+1. **Pull Request Review (Phil's Updates)**:
+   - Phil discussed the simplification of terminology in the pull request. His changes primarily involved correcting typos and substituting GS1 references with corresponding ISO/IEC standards for event tracking and business vocabularies. This was done to align politically and avoid implying that GS1 identifiers are mandatory for using EPCIS.
+   - Steve and others approved the pull request, agreeing to merge it as it was a simple update.
+
+2. **ISO and UN Involvement in Global Digital Passport Standards**:
+   - Steve mentioned an upcoming meeting at ISO to review a candidate project proposed by a Chinese standards authority to develop a global digital passport standard. He was invited to co-chair this initiative, potentially representing both the UN and ISO. The group discussed the significance of this project and the potential implications of having a UN co-chair involved.
+   - Phil provided additional context, mentioning the Vienna Memorandum, an agreement between ISO and CEN-CENELEC to avoid duplication of efforts in standard development. He also noted GS1’s interest in participating in the project.
+
+3. **New Digital Facility Record Proposal**:
+   - Steve introduced the idea of adding a new credential type, a **Digital Facility Record (DFR)**, to the UN Transparency Protocol (UNTP). This record would focus on the facility itself rather than the product and could be used to track sustainability assessments at the facility level.
+   - Virginia and Phil supported the idea, with Virginia suggesting the term "Facility Profile" to better represent the data. The group discussed how this could streamline sustainability reporting by making facilities first-order objects rather than secondary attributes of products.
+
+4. **Challenges with Product Passport Updates**:
+   - Zach raised concerns about updating digital product passports (DPPs) after they have been issued, such as adding post-sale repair events or certifications. The group acknowledged that while updates are crucial, there are challenges with ensuring that only authorized entities can modify the passport.
+   - Steve proposed the idea of allowing certain events to be added to a product passport by authorized third parties, like certified repairers or recycling plants, using a delegated authority model.
+
+5. **Formation of a Working Group**:
+   - A new working group was formed, led by Zach, to explore solutions for managing updates to digital product passports. The group will work on defining the conditions under which updates can be made and will consider different approaches to identity resolution and authorization.
+
+6. **Conformity Assessment Scheme Clarification**:
+   - Bree raised a question regarding the linkage between conformity assessment schemes and regulations within the digital product passport framework. Steve clarified that in the context of product conformity, an assessment can reference multiple standards or regulations, bundled together in a scheme.
+   - The group discussed how this framework might need to be adapted for regulatory permits and other credentials outside of product conformity.
+
+**Action Items**:
+- **Phil** and **Zach** to collaborate on a working group to explore digital product passport updates.
+- **Steve** to create a proposal for the Digital Facility Record and present it for further review.
+- **Bree** and **Patrick** to revisit the mapping of assessment schemes to regulations for conformity credentials and report back on potential updates to the framework.
+
+**Conclusion**:
+The meeting focused on refining standards around digital product passports, facility records, and conformity assessment schemes. The formation of a working group will drive further exploration of issues related to product passport updates and maintaining data integrity across complex supply chains.
 
 ## 2024-08-01 Meeting Summary
 
