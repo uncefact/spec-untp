@@ -220,7 +220,7 @@
                 "metricValue": {
                   "value": 1.8,
                   "unit": "NIL"
-                },
+                }
               }
             ]
           }
@@ -281,7 +281,7 @@
           "Standard"
         ],
         "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
-        "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+        "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0"
         },
         "issueDate": 2023
       }
@@ -297,4 +297,3 @@
       }
     ]
   }
-}
