@@ -1,0 +1,300 @@
+{
+  "type": [
+    "DigitalProductPassport",
+    "VerifiableCredential"
+  ],
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://test.uncefact.org/vocabulary/untp/dpp/"
+  ],
+  "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+  "issuer": {
+    "type": [
+      "CredentialIssuer"
+    ],
+    "id": "did:web:identifiers.example-company.com:12345",
+    "name": "Example Company Pty Ltd",
+    "otherIdentifiers": [
+      {
+        "type": [
+          "Entity"
+        ],
+        "id": "https://business.gov.au/ABN/View?abn=1234567890",
+        "name": "Sample Company Pty Ltd",
+        "registeredId": "1234567890",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://business.gov.au/ABN/",
+          "name": "Australian Business Number"
+        }
+      }
+    ]
+  },
+  "validFrom": 2024,
+  "validUntil": 2034,
+  "credentialSubject": {
+    "type": [
+      "Product",
+      "Entity"
+    ],
+    "id": "https://id.gs1.org/01/09520123456788/21/12345",
+    "name": "EV battery 300Ah.",
+    "registeredId": "90664869327",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org/01/",
+      "name": "Global Trade Identification Number (GTIN)"
+    },
+    "serialNumber": "12345678",
+    "batchNumber": "6789",
+    "productImage": {
+      "linkURL": "https://files.example-company.com/123456789.jpg",
+      "linkName": "EV battery 300Ah",
+      "linkType": "https://www.gs1.org/voc/relatedImage"
+    },
+    "description": "300 Ah LiFePO4 Battery Cell",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
+      }
+    ],
+    "furtherInformation": [
+      {
+        "linkURL": "https://files.example-company.com/products/90664869327/index.html",
+        "linkName": "Product Information page",
+        "linkType": "https://www.gs1.org/voc/sustainabilityInfo"
+      }
+    ],
+    "producedByParty": {
+        "type": [
+          "Entity"
+        ],
+        "id": "https://business.gov.au/ABN/View?abn=1234567890",
+        "name": "Sample Company Pty Ltd",
+        "registeredId": "1234567890",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://business.gov.au/ABN/",
+          "name": "Australian Business Number"
+      }
+    },
+    "producedAtFacility": {
+      "type": [
+        "Entity"
+      ],
+      "id": "https://maps.app.goo.gl/QBF7Xy4S9QjHJrzb7",
+      "name": "Sample EV battery manufacturing site",
+      "registeredId": "QBF7Xy4S9QjHJrzb7",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "hhttps://maps.app.goo.gl",
+        "name": "Google Pin"
+      }
+    },
+    "dimensions": {
+      "weight": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "length": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "width": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "height": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "volume": {
+        "value": 10,
+        "unit": "KGM"
+      }
+    },
+    "productionDate": 2024,
+    "countryOfProduction": "AU",
+    "materialsProvenance": [
+      {
+        "name": "Lithium Concentrate",
+        "originCountry": "AU",
+        "materialType": {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        },
+        "massFraction": 0.2,
+        "recycledAmount": 0.5,
+        "hazardous": false,
+        "materialSafetyInformation": {
+          "linkURL": "https://sampleLithiumCompany.com/msds/1234567.json",
+          "linkName": "Lithium safe handling instructions",
+          "linkType": "https://www.gs1.org/voc/safetyInfo"
+        }
+      }
+    ],
+    "conformityDeclarations": [
+      {
+        "type": [
+          "Declaration"
+        ],
+        "id": "https://files.example-company.com/declarations/90664869327/",
+        "referenceStandard": {
+          "type": [
+            "Standard"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+          "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+          "issuingParty": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=786222414",
+            "name": "Global Battery Alliance",
+            "registeredId": "786222414",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://kbopub.economie.fgov.be/",
+              "name": "Belgian business register"
+            }
+          },
+          "issueDate": 2023
+        },
+        "referenceRegulation": {
+          "type": [
+            "Regulation"
+          ],
+          "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+          "name": "National Greenhouse and Energy Reporting (Measurement) Determination",
+          "jurisdictionCountry": "AU",
+          "administeredBy": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://abr.business.gov.au/ABN/View?abn=72321984210",
+            "name": "Clean Energy Regulator",
+            "registeredId": "72321984210",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://abr.business.gov.au/ABN/",
+              "name": "Australian Business Number"
+            }
+          },
+          "effectiveDate": 2024
+        },
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+            "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+            "thresholdValues": [
+              {
+                "metricName": "Industry Average emissions intensity",
+                "metricValue": {
+                  "value": 1.8,
+                  "unit": "NIL"
+                },
+              }
+            ]
+          }
+        ],
+        "declaredValues": [
+          {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 1.5,
+              "unit": "NIL"
+            },
+            "accuracy": 0.05
+          },
+          {
+            "metricName": "GHG emissions footprint",
+            "metricValue": {
+              "value": 15,
+              "unit": "KGM"
+            },
+            "accuracy": 0.05
+          }
+        ],
+        "compliance": true,
+        "conformityTopic": "environment.energy",
+        "conformityEvidence": {
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "6239119",
+          "hashMethod": "SHA-256",
+          "encryptionMethod": "AES"
+        }
+      }
+    ],
+    "circularityScorecard": {
+      "recyclingInformation": {
+        "linkURL": "https://files.example-company.com/products/123456789/recycling.pdf",
+        "linkName": "Recycling instructions",
+        "linkType": "https://www.gs1.org/voc/recyclingAndRepairInfo"
+      },
+      "repairInformation": {
+        "linkURL": "https://files.example-company.com/products/123456789/repair.pdf",
+        "linkName": "Repair instructions",
+        "linkType": "https://www.gs1.org/voc/recyclingAndRepairInfo"
+      },
+      "recyclableContent": 0.5,
+      "recyecledContent": 0.3,
+      "utilityFactor": 1.2,
+      "materialCircularityIndicator": 0.67
+    },
+    "emissionsScorecard": {
+      "carbonFootprint": 15,
+      "declaredUnit": "KGM",
+      "operationalScope": "Scope123toGate",
+      "primarySourcedRatio": 0.3,
+      "reportingStandard": {
+        "type": [
+          "Standard"
+        ],
+        "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+        "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+        },
+        "issueDate": 2023
+      }
+    },
+    "traceabilityInformation": [
+      {
+        "linkURL": "https://files.sampleCompany.com/events/123456789.json",
+        "linkName": "Battery Assembly Event",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dte",
+        "hashDigest": "50af99a26f4af48c9f4ad8cf9d2f5018780ab4bb1167f0e94884ec228f1ba832",
+        "hashMethod": "SHA-256",
+        "encryptionMethod": "AES"
+      }
+    ]
+  }
+}

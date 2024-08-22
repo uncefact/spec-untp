@@ -51,3 +51,7 @@ ISO/IEC (FDIS) 18975 defines a framework for resolving any existing identifier t
 * The identifiers can be encoded in a URL within a QR Code printed on a product that can be scanned using a specialist app that queries the resolver and returns the DPP.
 
 The [GS1 Digital Link](https://ref.gs1.org/standards/digital-link/uri-syntax/) and [GS1-Conformant resolver](https://ref.gs1.org/standards/resolver/) standards conform to ISO/IEC (FDIS) 18975.
+
+## Verifiability 
+
+UNTP credentials will include identifiers of products, locations or businesses.  UNTP credentials will also include ESG performance claims like emissions intensity values. But how can a verifier of these identifiers or ESG claims be confident that the claims are true and that they are made by the genuine party at a verifiable location? Trust anchors are national or international authorities that typically run existing business or product registration, certification, accreditation, or other high integrity processes. Examples of trust anchors include national regulators that govern things like land ownership or business registrations. Another example are the national accreditation bodies that audit and accredit certifiers to issue third party assessments. UNTP depends on trust anchors to add digital integrity to ESG claims and identities by linking them to the authority under which they are made. In essence, UNTP defines a protocol for existing trust anchors to continue doing what they have always done, but in a digitally verifiable way.

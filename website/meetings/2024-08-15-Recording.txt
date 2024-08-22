@@ -1,0 +1,654 @@
+[Speaker 9]
+G'day all. Good morning. Morning.
+
+I just thought I'd make some noise because it looked really quiet. If that's a possible thing, looking quiet, it looked very quiet. I'll now go on to mute and not say a word.
+
+Consider it an equipment test. It worked.
+
+[Speaker 1]
+I seem to have picked a time originally designed for the Canadians that has got a reasonable number of Europeans on the call. Maybe it's a good title.
+
+[Speaker 2]
+Such is the dedication to the cause.
+
+[Speaker 10]
+I want to give it one more minute.
+
+[Speaker 1]
+All right. Well, welcome everybody. Thank you for sharing your time.
+
+As usual, this meeting is being recorded and will get posted and your contributions are deemed contributions to UNIP, which will be shared free for all. Today, we've got one pull request from Phil to look at. I thought we might go for those that have raised tickets and are on the call, go through them so that we can work towards closing them or some of them.
+
+Also, I wanted to get your opinion on one thing about a new kind of credential that describes facilities rather than products because I'm getting some demand for that.
+
+[Speaker 10]
+I suppose in order of due process, I'll share my screen and look at Phil's pull request. Do you want to talk through it?
+
+[Speaker 2]
+I can, yes. It's extremely simple, actually, in pretty much every respect. So it is primarily, I mean, the vast majority of changes are typos.
+
+I wish I could type as well as the original. I wouldn't have to spend as long as I do going back and re-editing my stuff to fix all my typos. So nothing but sympathy.
+
+The only thing I did do, the only substantive thing I did, and this goes to the aspects of this work that let's not get into today. But as I've done several times since having the privilege of joining the group, I've tried to not remove GS1 as a name, but to only use the term GS1 where we're talking about something that's very specific to GS1, and in general, talk about the relevant ISO IEC standards. So on the screen right now, at least it was that you just scroll past it.
+
+There, stop. EPCIS is our standard for event tracking. Thing was packed, thing was put on the back of a truck, thing was delivered, thing arrived, whatever it may be.
+
+Now, that and its companion called business vocabulary are also expressed as ISO IEC standards. They're one of these that's reissued as an ISO IEC standard. So it's just politically more convenient if you call it ISO IEC 19987 and 19988, I think it is.
+
+It's just politically more satisfactory. It's verbatim the same. And for those who may be concerned about it, although it is a GS1 standard, it explicitly does not require the use of GS1 identifiers to use EPCIS.
+
+I think from memory, Steve, that's the only substantial change I made.
+
+[Speaker 1]
+Yeah, and that does help us politically a bit. But okay. I'm just scrolling through it here.
+
+I did have a quick look at it and reviewed it and approved it. But if everyone's happy, I think I'd like to just merge this one, because it's typos and substituting ISO for GS1 where appropriate.
+
+[Speaker 2]
+I did have one concern, though, since you specifically asked me to look at it, which I did. And I thought, was that what you wanted? Am I missing something?
+
+Was there something else I was supposed to do? No, I don't think so. Okay, great.
+
+Then that was easy. All right, we'll merge that then.
+
+[Speaker 1]
+All right. A couple of things then. One little bit of news, by the way, I've been asked to attend, and Phil may give me some insights here, to attend a TC154JC something or other meeting, ISO next week, where they review, I think the purpose is to review candidate projects and sort of accept or not and nominate chairs and the like.
+
+And there is a candidate project proposed by a China standards or National Standards Authority to the ISO to develop a global digital passport standard. And I think the China organization has graciously reached out to the UN to say, would you like to co-chair this? So, do you know anything about this, Phil?
+
+And would you, do you have any advice or anyone that's familiar with ISO? Because I think the UN might want to nominate me as co-chair, which case we'd have a foot in the ISO camp and a foot in the UN camp doing the same thing. And, or not quite the same thing, because we're doing a little bit more than a product passport, but certainly some overlap.
+
+[Speaker 2]
+Most of what I know about it is stuff that you've shared with us before, Steve, and I'm very grateful for you doing that. So, the only, it is being talked about in lots of places. And I was briefed the other day on something called the Vienna Convention or Vienna Memorandum, I forget, it certainly has Vienna in it.
+
+And it sounds terribly, terribly Cold War, but it's not. It's an agreement between ISO and SenSenelec that says, we won't duplicate efforts. And at the moment, SenSenelec has a working group working on DPP under a mandate from the European Commission.
+
+And I think that process needs to play out. I am not the person to ask, I don't represent GS1 formally at ISO or at UNCFAC. That's my colleague, Pia Giorgio does the latter.
+
+ISO is my colleague, Steve Keddy. But we are very interested in that work. If the project goes ahead, then I expect two of us to be in that project from GS1, myself and Pia Giorgio.
+
+So, I don't suppose this matters to anyone, but we would certainly be supportive of that and we want to be actively involved. And we're delighted at the prospect of you being a co-chair, Steve.
+
+[Speaker 1]
+Okay, well, I'm a newbie in that space. So, we'll see how it goes. Interested to hear about the Vienna Memorandum.
+
+I suppose that'll be another avenue by which SenSenelec will present an objection.
+
+[Speaker 2]
+Quite possibly, yes. So, I would be extremely careful what I was saying about this in any context. But speaking to people, some of whom I haven't had the pleasure of meeting, and while being recorded, I'm going to be extremely careful to say, yes, I would expect some back and forth between ISO and SenSenelec.
+
+And I think the word Vienna is going to come up. All right.
+
+[Speaker 14]
+Okay.
+
+[Speaker 1]
+I can't hear you, Virginia. Virginia, I think you've got the same problem you had last time, which is a microphone selection issue.
+
+[Speaker 10]
+Now I can see your lips moving.
+
+[Speaker 4]
+Can you hear me better now?
+
+[Speaker 10]
+Yes, perfect.
+
+[Speaker 4]
+Okay. Yes, you were right. But when I went to change the microphone, I put it on silence.
+
+But now it's okay. No, what I was saying is I think if the ISO goes, I think it's really important that the UN co-chair, and I think you would be the best person.
+
+[Speaker 1]
+Thank you for your confidence.
+
+[Speaker 10]
+All right.
+
+[Speaker 1]
+Well, then, let's see. I presume China has a little bit of weight. So, it'll be interesting.
+
+[Speaker 2]
+I guess my final comment on this, the last time we met, which was the other time zone, the Chinese gentleman was on the call, at least for the first half an hour, from TCI 154. So, I'm hopeful if he reappears... Is it Dr. Wang?
+
+Yes. Isn't it him? Isn't he the one pushing this?
+
+I thought that was the case.
+
+[Speaker 1]
+I'm not sure. No, Dr. Wang's been invited to this call for a while, and sometimes he pops up. And he was co-author of that original white paper on verifiable credentials that I wrote.
+
+I've worked with him for a while. I didn't make the connection that he's also potentially the chair of the China DPP thing. I can ask him.
+
+[Speaker 2]
+My reason for saying that was because his affiliation in the Zoom list was TCI 154. Right.
+
+[Speaker 1]
+I know he works in ISO as well. I'll check with him. I've got a...
+
+[Speaker 4]
+The other thing is, if you go to that, during that meeting, I would let the Chinese challenge send someone.
+
+[Speaker 1]
+Oh, yes. Oh, yes. We've done enough challenging of sense at the plenary.
+
+So, that's good. Yeah, okay. All righty.
+
+So, enough on that, then. Before we get into reviewing open issues and seeing if we can collectively agree on closure strategy of some of them, may I ask for your thoughts on some feedback received from the Responsible Business Alliance, which is an organization in around, I think, five or six or seven years, maybe a bit more, that is a member organization that has all the big tech companies in it. So, Google, Microsoft, and some, I think, Japanese and a few Chinese equipment manufacturers.
+
+It's all electronics and consumer goods and software and that sort of stuff. Quite large companies, between them something like $7 trillion of revenue. These guys have, like many member organizations, have been trying to develop tools and methods to facilitate a sustainable transition for their members.
+
+And one of the things they've done is create a supplier data hub. And there are a few of these around the world, Open Supply Hub, the ITC one, the RBA one, and so on. And one of the challenges is getting uptake and maintaining data.
+
+And particularly when there's half a dozen of these type of, you know, accredited supplier registers, the supplier is having to update in multiple places. It's kind of similar, I suppose, to the island of information that a traceability platform might have if it's not interoperable with others. And I think they've reached a kind of a point where their membership are saying, really, I think we need an interoperability protocol rather than a solution so that we can access data at source and so on.
+
+But their overall message about UNTP was that it seemed like a great architecture and a good approach, but they felt like it jumped a maturity step straight from nothing to product level sustainability, missing out the facility in the middle as a prime. But for us at the moment, the facility is like a property of the product passport, like it was made there. But we don't have a first order object, which is in then to name a digital facility record that is discoverable given a facility ID that presents basic information about the facility and attaches facility level credentials.
+
+And many of them are many sustainability assessments are done after all, at the facility level, is the farm deforested or not? It is a facility question, not a grain or tomatoes or cow question. And so I wanted to share a thought or a question for you.
+
+Would it make sense to add a new credential type to UNTP? For the moment, we'll call it a digital facility record that is linked to a facility ID, which that's another question about what's a good facility ID. It's more complex than a product ID, but that offers that ability to define a kind of a standard record about that facility and attach credentials to it.
+
+So it's discoverable in the same way. That would certainly be attractive to the RBA and their members and probably others. So with that, any comments or thoughts?
+
+[Speaker 4]
+I'm sorry, I thought we could already do that. Because a lot of the sustainability characteristics of a product are determined by the facility, where it's manufactured, or parts of the product are manufactured, like where the cotton is, where the cotton is dyed, etc.
+
+[Speaker 1]
+We can do that, but we didn't make it a kind of a first order object, shall we say. So you said, the central thing is a digital product passport identified by a product identifier, discoverable from the product identifier. And one of the attributes of the product passport is the facility ID where it's made, and some information about that facility.
+
+But it's kind of under the tree of the product passport. And the question is, actually, a lot of people are at the point of maturity where they're not really concerned about the product, they're more interested in the facility. It's not that we don't have information about it, it's just making it a kind of a first order object, in its own right, without necessarily any connection to product.
+
+So it would be just a facility record without product information, just what industry is it in, what location is it in, what sustainability characteristics or credentials are attached to it. And you can use it in its own right without products. That's, it's actually not a big change for us, because we've got the data record anyway.
+
+But it's just lifting its kind of ranking to be equal to a product passport.
+
+[Speaker 2]
+It strikes me that the answer is obviously, yes, we should do that. And I guess, like Virginia, I sort of thought we kind of did it anyway. But I do understand the difference between it being an object and a property.
+
+So yes, let's make it an object in its own right, a class in its own right.
+
+[Speaker 4]
+Actually, what we're talking about is, like having a sort of, you have a product passport. And then, I don't want to call it certification, because, but like a product passport, it's not a facility passport. It's like a, I guess you facility record, as you were saying, but a little bit more than just a record.
+
+So that people can exchange, people, instead of exchanging information about products and digital product passports, they would exchange information about facilities.
+
+[Speaker 1]
+That's right. So basically, what's its name? What's its registration?
+
+What's its geolocation, cadastral boundaries, things like that.
+
+[Speaker 10]
+Typical sort of entity records. Sorry?
+
+[Speaker 11]
+It sounds good to me. And I see some value in that when your company is looking for a facility as a supplier, for instance, they can get information on the facility directly with credentials on China or whatever. So it does make sense.
+
+Yes.
+
+[Speaker 9]
+I've got a reservation, Steve, to some extent that we risk going down another rabbit hole of definitions of what is a facility and what are the attributes and what's important to record. And I think that what we could probably do is provide a standard sort of did pointer structure to the facility identifier. So it's such that that domain can be defined by those that are defining facilities and what they need to comply with, rather than us trying to sort of understand all that.
+
+We need people to be able to navigate to that information. We don't necessarily need to define what that information must be in the digital product passport space.
+
+[Speaker 1]
+Yeah. So, well, we've already got a structure, which is basically, you know, name, industry sector, geolocation, cadastral boundary, etc. of a facility linked to a passport.
+
+So I wouldn't propose to do much more than that. But you have touched on a question, which is interesting, which is, what's the identifier of a facility? And given that identifier, I mean, even is it routinely shared?
+
+How do I know what the identifier, what's the navigation path to the facility, right? And that does open a can of worms when you start to think about it. There are obviously some global facility identifiers, like the GS1 GLN, that has some uptake.
+
+But really, the, you know, it's, do you use a Google pin? Do you use, do you allow all of these things? Most facilities are on a plot of land that is owned and registered with a national or state level, land register, you know, that's another identity.
+
+So it does open that can of worms about what is the idea of the thing? And how do you navigate to it?
+
+[Speaker 2]
+But the alternative is, you could get around that and cover all the options by saying it's a URI.
+
+[Speaker 10]
+That's what I'm thinking, Phil. Yeah.
+
+[Speaker 4]
+I have a suggestion that you call it a facility profile.
+
+[Speaker 13]
+Okay. Right. Okay.
+
+[Speaker 1]
+All right. So let's, except for the moment, then there's some consensus that a simple facility record to which you can link credentials, without too much diktat on exactly what the navigation path is, it's a URI, could be a GLN, could be some other things, will start to encourage facilities to identify themselves, which is not common practice, at least not in any way that's universally discoverable.
+
+[Speaker 2]
+I think, sorry, Stephen, if I may just say, whilst I think that a URI, and there are so many different types, including ours, including lots of other people's that would satisfy that. I think one thing that I would like to say, what you should not do is use a postal address. And my only reason to say that is because they're so woolly, so ill defined as a thing.
+
+I know you, I mean, the only way to define an address is to write it out in plain text. I believe that's the way of doing stuff. So it must be a URI as an identifier and not a plain text description, such as an address.
+
+[Speaker 13]
+Yes.
+
+[Speaker 7]
+Steve, quick thought just from my side. This is Todd Taylor. I was part of the BRS work that Brett Hyland and team led just at the tail end of it.
+
+But from a Web3 kind of technology standpoint, you have assets, you have digital assets, and then you have resources that act upon those assets or that make changes to those assets. And so a facility certainly would be one of those things that would interact with a product that is flowing through a supply chain and would have an impact upon or a change upon that digital asset. So having an identity associated with the facility is something that we typically do.
+
+And it's typically a 256 SHA kind of identifier on that facility.
+
+[Speaker 1]
+Self-issued by the facility and shared. You could give a facility a DID if you wanted. Like a public key share.
+
+Exactly. Okay. Well, I'll create a page, put some initial content and make a PR and seek your review and move on from there and create a ticket to support it.
+
+Anybody else got any comments before we start looking at open tickets?
+
+[Speaker 5]
+I just want to echo John's concern about scope and make sure that as we add these things, we think about long-term maintainability and just be conscious of that as we go through these processes. Because the key thing that occurs to me, and I was just updating a ticket this morning about it, is our validation of links between our credential types is kind of what we're talking about in terms of our tier three test architecture. Adding another credential increases the scope of that tier three testing work that we're in the middle of at the minute.
+
+There's implications as we add more top-level functionality to the ongoing governance and maintenance of this. I think it's a consideration. I'm not saying not, I just want to make sure that we're thinking that through as we add these things.
+
+[Speaker 1]
+I dispute it's a consideration, but once you decide to go, then you've decided to support it. We've got a little bit of useful feedback on ISO and what to listen out for, and advice to shut up and let the Chinese side do the talking. That's good.
+
+And some consensus on it might be helpful to have a first-order object, which is a facility profile. Virginia's suggestion to name. Let's move on, if that's all right, to look at open issues and probably ask those that are on the call to talk about their issues.
+
+Maybe we should group them.
+
+[Speaker 10]
+That's a nice list now.
+
+[Speaker 1]
+I'm looking for Phil in here, I can't find him, but there's an issue. Require batch if serialized.
+
+[Speaker 2]
+Yes. This is something I saw in your text. It says, if you specify a serial number, you must also provide a batch.
+
+[Speaker 13]
+Did I say that?
+
+[Speaker 2]
+Yes, and I was surprised to see it, because I think, whilst it might be possible in some cases, I think there'll be some manufacturers who would not be able to do that.
+
+[Speaker 1]
+I wonder why I said that. There must have been some rationale, but I'll take the advice of the people that know more about this than anyone else, namely GS1.
+
+[Speaker 2]
+If there was someone who had a reason for it, then listen to that person, but it struck me that I think a lot of people would just say, batch numbers apply if you make lots and lots of things the same, but you make them in batches. That may not be the case for a lot of products, so there may not be a batch number.
+
+[Speaker 1]
+Yes, fair enough. It probably came from Australian farming and herds and cows and things and made me say something like that. The fact that I can't remember saying it means it probably wasn't that important, so thank you for the pickup.
+
+[Speaker 4]
+I think I vaguely remember some discussion about this. Maybe it wasn't in this group. I think I was told that if there's no batch number, you use the serial number, but the serial number is a batch number.
+
+[Speaker 1]
+Yes, so it does go to just a quick question for Phil. Does it make sense? I suppose it does, because you can have quantities.
+
+To have traceability events, if you don't have either batch or serial number, because what are you actually tracing? But the EPCIS does allow you to say it's this quantity of that product class without a batch or a serial, doesn't it?
+
+[Speaker 2]
+You know more about that than I do, but of course, as always, the answer is it depends. If you have mass-produced item like bottles of fizzy drink, it's done in batches, but if you make one of your products a day, then you probably don't think in terms of batch numbers. I think, Flex, it could be that every single one that you make, you actually have the same suppliers, because you're the supplier or you have like three suppliers that you use, and there's no concept of batch.
+
+So, whether it's an instance-level serial number or a subclass batch level or a class-level identifier, whatever you use for that, I would say GTIN, you use the appropriate one, and certainly in the European legislation, it's going to be defined by the delegated acts what level of granularity is appropriate for that kind of thing.
+
+[Speaker 13]
+Okay.
+
+[Speaker 2]
+As soon as you get into repairability, if you want to track the repairs on a thing, it's got to be serialized. And so, in other words, it was the must that struck me more than anything else. If you just say, you know, serialized items, because it's instance-level, does have slightly different implications in batch than class-level.
+
+Yeah, it was the must that jumped out. That's fine.
+
+[Speaker 1]
+I think it's a fair point. Can we move on to this one? This one's from Zach, and it's talking, I think, about the situation where you issue a digital product passport, and then additional information relevant to that product arrives after the digital product passport's been issued.
+
+Could be a repair event. It could be a conformity credential that was issued after you made the passport, or all kinds of post-issue events that you still want to link to that original digital product passport, and the best way to do that. Am I taking your words correctly, Zach?
+
+[Speaker 5]
+That is correct. And the example that we're working through in Australian agriculture is in the movement of animals. It's not the farmer that records it.
+
+It's the receiver. So, the product passport that a farmer might issue might not include the transportation event. Okay.
+
+Well, may or may not include is what happens.
+
+[Speaker 4]
+And also, I think you just have to take into account that in real life, for example, you're trading in something, and you have incomplete information, so you issue what you have.
+
+[Speaker 13]
+Yes, absolutely.
+
+[Speaker 4]
+But then, you know, this vendor comes back and says, well, I do have this certificate, and he sends it to you after you've done the passport. Of course.
+
+[Speaker 1]
+So, this is not an edge case, I think. It's a very common case. And I think, I wrote a comment which was, well, isn't this really, maybe we start thinking about a passport, not so much as one credential, but as a collection of them linked to the identifier of the product.
+
+So, if you've got a late-breaking thing, you just add it to the, so that it's discoverable from the same identifier. So, this goes to link resolvers and link sets. If I've got an ID of a thing, and I ask for a digital passport link, I might get back five records, which are an issue, an attached credential, and three repair events, or something.
+
+But basically, continuing to add data under the same identifier, and making it discoverable from the link resolver, seems to me to be one way to address this problem. Remember, we get into an authority question about who has the right to update the link, if it's not the original issuer, but deal with that separately. Any comments?
+
+And so, I see Jason's got his hand up. Patrick, sorry.
+
+[Speaker 3]
+Yeah. So, I just wanted to point out one of the, do a parallel to one of the feature of TrustDID web, you know, TDW, which is, you have your DID document, but you also have your DID logs. So, here, it seems like a similar case.
+
+Well, we would need some kind of logs of the digital product passport that either, they can either be patched, or a new product passport can be issued, and signed by a witness that's authorized to do it. And I don't think this is only limited to product passport, we are also seeing similar feature with conformity credential. So, example, we have Minds Act permits, and the permit in itself will go through changes, you know, it might change owner, it might change chains, and we will be issuing a new verifiable credential about the same permit, right?
+
+Or if there's an addendum that's being added, that's as some legal implementation. So, I do also agree that I think this should be a feature that's accounted for, instead of being considered an edge case. I think historical value of these credentials is something that could be accounted for.
+
+I'm not too familiar with the link resolver yet. I'm sure this is also another interesting thing that could be added here. But I think having a mechanism to retrieve a log of the steps this digital product passport went through is something that could be interesting.
+
+[Speaker 2]
+My dog will stop barking. That'd be great. Sorry, I don't know why he's barking.
+
+I think this problem is extremely difficult to solve. But if you're talking about a farmer who issues information that he or she has, as Virginia says, and more information comes along, so you can add to it, and this idea that you can add an additional link to the resolver or whatever it may be, that assumes a lot of stuff. Now imagine that the person that issues the original DPP is a certain fruit-based computer manufacturer in Cupertino.
+
+You think they're going to let you issue any information about their stuff ever? Never, right? It gets repaired.
+
+They're not going to recognize that repair. And you get into those kind of branded things where, so you immediately need to have a third party that is recording these things. The best example of this that I've come across, or been told about, is Carfax.
+
+And Carfax is a site where you can actually see a complete log of every repair to a car in the system. I think it's an American system. Some people may know about Carfax.
+
+But you can see everything about it because it gets recorded. But that's a completely independent system. So where's the legal liability?
+
+In the EU DPP, it's with the economic operator that puts the thing on the market in the first place. And you very quickly get into control and reputation and branding that puts a real spanner in the works of what you might wish would happen.
+
+[Speaker 1]
+Yeah. So this is something we've touched on before, right? That is the hard part.
+
+The easy part is the same manufacturer has had an afterthought and has the natural authority to add something to the thing they own. But a lot of the use cases are someone else adding something to the thing I made. And then you get into, well, who's authorized to do that?
+
+And how do you make it discoverable under the same ID? Or do you, right? Because the thing you know, is the identifier on the thing you're holding.
+
+So if that resolves in a conventional way to the manufacturer of the thing, and the manufacturer is authorized publishing, you can find all that. But then the battery goes to a repair house, or the repair doesn't change the ID of the battery, unless the repair puts some sort of another identifier on it, which identifies their repair event. Then, you know, there's no way for the next step in the chain to know about it.
+
+So we did talk briefly about this digital identity anchor. And there are some kinds of entities who may have some sort of agreed authorization to make certain kinds of updates, like you're an accredited recycling plant. And you're allowed to, under some regulatory environment, allowed to update passports with recycling events or something like this, then you've got to prove you're a recycling plant with a digital identity anchor that says so.
+
+The other one is, would you could you see a manufacturer ever allowing users of its products, serialized products, especially to update records, but in a very narrow type, they can't change the details of the passport, but they can add certain events in a very controlled way. And you give them permission to do it by passing a secret key on the box, right? So you open the box, there's a key there, which is an authority to make an update, but only a very specific kind.
+
+That's another way to do it. But you're right, it's a can of worms. And we should probably think about options.
+
+And, but it's a real problem is we can't resolve it.
+
+[Speaker 5]
+It's kind of a blocker, because, yes, Steve, Steve, can I suggest we spin out a little working group to work on this problem? And I'm happy to lead that. And because I think there's a number of interesting options.
+
+So we can kind of, and I'd like to invite Phil to participate in this, because I think your insight that the identity resolution technique might be a path forward. But I agree with Phil that there's some can of worms here, but there might be some options we can put forward or creative ways we can work through the problem. And I think we should kind of try to articulate that out and bring that back to the team.
+
+Here's some options, here's some ideas, and then figure out a path forward. And I'd like to kind of turn that around pretty quickly. There's a few things that are pushing on this.
+
+[Speaker 4]
+No, my, my approach to that kind of problem would be to say, what's this, the simple scenario, or the scenario, which will cause which will have the fewest problem, how do you solve that, and then start looking at, okay, and then adding on the other scenarios where there are issues. But starting with the basic one, which, in this case, is probably information that the manufacturer wants to have added to the information about the product, that just for some reason is delayed, or there's some timing issue that doesn't allow it to be issued at the time of the product passport. And then you go, one, then you go on to other information, which is like sort of the post sale information, which is where I think things start to be more sensitive.
+
+[Speaker 3]
+Yeah, there's also a distinction I'd like to add, like, which especially with reparations, like if we make this like a feature, because if I buy an iPhone, and you know, I need to repair it, I go to a certified repairing, I send it back to Apple, they, you know, they update it, and so on, it's very different than if I go at the mall, I go at the little stand, and I give them the iPhone, they fix the screen, right? The second part is more of like an unofficial path of repairs.
+
+Obviously, having that show up is probably not something that would happen. But for a, like officially recognized certification body that could figure on the digital product passport, but this then makes it that someone might think that there was no repair if they rely on this feature, if we make this like a strong sort of supported feature, which, you know, might not always be the case. So obviously, an iPhone is a bit of a silly use case, I think like probably a car is a larger, more sensible use case.
+
+But same thing, right, I can go see my friend who's got a garage, and he took his mechanics class last year, and he fixed it up for me, or I can go at the official retailer to get the car fixed. So I think these kind of thing are interesting for like recalls, things like this. But for repairs, yeah, it's a bit tricky.
+
+[Speaker 5]
+But there is regulatory changes around right to repair and circularity and things like that. And that's kind of where my view on let's kind of, and I agree with Virginia, your approach, let's start with a simple case, and then extend it out. And we kind of need to articulate what would need to be true for the simple case to apply to more and more complex or fraught cases, right?
+
+So a right to repair legislation might have a specific requirement that people can append to their product identity, right? Like we could like you could, it's a rabbit hole, sure, but we can't with this, we can sort of suggest pathways forward that make it easier.
+
+[Speaker 2]
+Yeah, Zach, I think you're right. And I'm happy to try and meddle on that with you. But it is immensely complex.
+
+[Speaker 3]
+We had talked like, there's this thing about the upstream and the downstream part of it. So the upstream sort of ends at the point at which the raw material gets transformed into a product. And then, you know, from that point on, I think I have a hard time seeing something that would be added to that digital product passport.
+
+These cases seems to be more for downstream supply chains. Because even if I created product passports, and then one year later, I had the certification, well, at the time that I issued that passport, I didn't have that certification. Right.
+
+[Speaker 1]
+So there is a use case. And this applies, I think, to a lot of smallholders where, and this came up in Australian farming too, right, where a large cattle ranch will have the, if you like the machinery, the facilities, the processes to issue passports, smallholders may well just want to manage their animals and sell them to the next stop. But the whole supply chain expects a passport, and they're essentially delegating authority to their customer to produce the data about their product.
+
+This will happen quite often in farming, right? So how does that delegation work? Where smallholders sell, does it, you know, just the fact that that, let's say, feedlot has received those cows, does that give them a natural authority to update?
+
+Maybe it does. But I can imagine something similar with artisanal miners.
+
+[Speaker 12]
+Yeah, it may happen on supply chain when they are in developing countries which are not used to that or don't have the financial resources to do that, and which we rely on the next step to do that for them, yes.
+
+[Speaker 3]
+Might want to capture the capability delegation feature, seems relevant.
+
+[Speaker 5]
+Yeah, and so I'll take the action. I'll reach out to Phil, and Phil, I also want to talk about identity resolution and the project we're working on here as well. So there's a couple of things to reach out to you on.
+
+I'll suggest a couple of times in the coming week or so. Is that right? And is anybody else who wants to join that working team?
+
+I'd like to join it, Zach. Sorry, I'm in my car, so I can't see who that was.
+
+[Speaker 13]
+Oh, it's Harley.
+
+[Speaker 5]
+That sounded like Harley.
+
+[Speaker 1]
+Okay, so that's quite a thorny issue, that nice to have a little sub-team spinning off on that. And I think it's important to articulate the use cases as well before jumping to solutions. These scenarios like small-time farmer wants to delegate the ride.
+
+There's a repair event. Is it from an authorized repairer or not? And just organize them in sort of the hierarchy of how difficult they are to deal with and think about some ways to recommend solutions.
+
+All right.
+
+[Speaker 10]
+What else have we got?
+
+[Speaker 5]
+I'm going to drop off. I'll set up that working group. I'll reach out to Harley and Phil separately.
+
+Thanks, everybody.
+
+[Speaker 1]
+I think Bree's on the call. There's a conformity assessment scheme linkage to regulation ticket here.
+
+[Speaker 4]
+Well, I was thinking about something just now. And I'm not at all sure about this, but I think I read somewhere that for some products, and I think this is insane, the EU is planning to set up a central database with the registration of every product that's sold, you know, with the DPP of everything. And I think they will soon figure out the best unmanned...
+
+I think in a year or so, but I think they'll eventually figure it out.
+
+[Speaker 2]
+I can explain it, Virginia.
+
+[Speaker 4]
+What?
+
+[Speaker 2]
+I can explain it, what that's about. But I'm interested in the way you've heard it. So the proposal is that there is one or more EU-run registries as a backup.
+
+And it is meant to be a backup. So the primary place that you would get the DPP information is from the economic operator that puts the products on the market. And you're expected to be able to get the DPP from there.
+
+But if it doesn't work, when they put the product on the market, they register the product identifier in the central registry. So if that company get out of business, then you can go to the central registry as the backup and look up the last bit of information that the central one has. So it is very much a backup for when that company, or even when that company gets out of business, it's not meant to be the primary place where you'd always get the DPP.
+
+[Speaker 4]
+That's the argumentation. I understand the logic behind this.
+
+[Speaker 2]
+It's because so many companies won't be around in 10 years' time.
+
+[Speaker 1]
+I think it's also because, isn't it also because somewhere in the legislation, and they'll regret writing this, is an idea that people can search a centralized registry to find products with digital product passports, as opposed to start with the product. And that implies you've got to have data in a search engine. Now, whether it's a decentralized one or how that works, but that's in the legislation as well.
+
+It is.
+
+[Speaker 2]
+So there, assuming the company is still in business and the DPP is at its primary location, then if you do that, if you look, if you start at the central registry and you look for a product and you get its identifier, then you should be taken to the primary DPP. It's only if that fails that then the registry would have a backup somewhere, and an immutable backup for the last time it checked. That's the idea.
+
+I don't know who suggests that to them.
+
+[Speaker 1]
+All right. Well, we're only eight minutes left. But we've got one thorny issue with the team to work on it.
+
+So that's a good outcome. I'm just looking down this issue list for someone. There's a few technical ones I need to get through.
+
+Maybe Pat and Nis can help with all these. All the ones from FACT3 and Vladimir are all really about more technical data measures. I want to deal with all those and close them out at some point.
+
+Need a volunteer to help with that. What else have we got here? Has anybody else got an issue that they've raised recently that they'd like to talk to with the group to see if we can reach some consensus on questions?
+
+[Speaker 4]
+What's the question called? What's the beef?
+
+[Speaker 10]
+Where's that one?
+
+[Speaker 4]
+It's towards the bottom there.
+
+[Speaker 10]
+On the previous page?
+
+[Speaker 4]
+Where you were scanning down.
+
+[Speaker 10]
+What's the beef? Yeah. Okay.
+
+[Speaker 1]
+This is another. So there's a couple of people who don't join the call often, but do make comments who are deep semantic web experts. And I think actually I saw Marcus was on the call.
+
+I wouldn't mind. There's probably about seven or eight issues that have been sitting there for a while that we need to collectively look at and go, what's going on here and how can we address these concerns? Or if they're not valid concerns and say why they're not valid, but basically resolve them all because they've been sitting there a while.
+
+[Speaker 3]
+Something to keep in mind. This was based on an example that was available at a point in time in the specification. And I don't know when this issue has been open, but it's been a pretty long time.
+
+And the data model went through some changes since then. And even on our side, we had identified some issues with them. So I think once we have the latest version of the data model, and we can circle back and see if this is still applicable.
+
+This is how I would address this. Because it was talking about context. It was talking about some of these things.
+
+And they add to some changes.
+
+[Speaker 1]
+Yes. So out of all these issues, there'll be some that are resolved just because we've moved on and some that are still open. And we just need to work through them and answer them all.
+
+And maybe you could help Marcus with that. I'll take a look at this issue, Steve. Thanks.
+
+Well, it's all of them by fact three or Vladimir Alexiev. There's two semantic web experts who have raised several issues. Maybe we'll group them together, and I'll schedule a chat or something.
+
+Because we're in the same time zone, we can dedicate a little bit of time. Sure. See all these ones by fact three.
+
+That's Roman and Vladimir. He's from Ontotext. Right.
+
+And there's probably a number of them. There'll be 10 or so all up.
+
+[Speaker 4]
+Yeah. If you go up a bit, there's conformity assessments in linkage to regulation.
+
+[Speaker 1]
+Ah, yes. So that one's raised. That's not a technical one, is it?
+
+That's this one. That's Brie. Are you on the call still, Brie?
+
+[Speaker 8]
+Yeah, I am.
+
+[Speaker 1]
+In the last few minutes, why don't we just talk to this one what your concern is and see if we can agree how to close it.
+
+[Speaker 8]
+Okay. This was when I was working through mapping with Patrick, and we kind of came up with the question about needing a bit more clarification for linking the assessment scheme to a regulation. And I actually don't know.
+
+I haven't looked at this in some time. I don't know what the updates have answered that question. Um, so we made the assumption that the artifact relates to the governance of the credential.
+
+So at the application layer, if we're looking at the forestock model, I don't know if that's what you intended with the schema at that point. But those were the assumptions we made.
+
+[Speaker 1]
+All right. So is this a question about how do I specify the relevant regulation under which a conformity credential is issued?
+
+[Speaker 8]
+It's more the linkage between the assessment scheme to the regulation. And I think you might have clarified.
+
+[Speaker 10]
+Right, right, right. Okay.
+
+[Speaker 8]
+Patrick, are you still on the call?
+
+[Speaker 3]
+Yes, I'm here. I'm trying to look in the specification because I remember we raised this. And so basically, in BCGov, we have various of documents, right, that these conformity credential we share based on.
+
+Some of them are legal acts, you know, that date from a long time ago. Some of them are governance documents that people put together. And we were wondering what fits where, you know, because there's a few things.
+
+Yes. You know, the assessment scheme, the scope, reference standard, reference regulation, assessment criteria. A lot of these refer to, like, external documents.
+
+And we were just wondering, like...
+
+[Speaker 1]
+Which one to use.
+
+[Speaker 3]
+Or, yeah, like, what to fit where. We went with a decision. So maybe one thing we can do is, like, in a further call, or maybe on one of our Monday calls, we can review the things that we approached and see if this fits what the sort of conformity credential expects.
+
+Mostly disambiguate between reference standard, regulation, scope, and assessments. What was the other one that you mentioned?
+
+[Speaker 1]
+So there are three things that the conformity credential links to. And I'll just give a quick overview, and then we'll see where it fits. Because this conformity credential was developed in a project that was very much CASCO product conformity centric, right?
+
+And the whole idea of standards, accreditation authorities, certified conformity assessment bodies, and how they all work, right? And it has had limited testing about the feasibility of using it for things like regulatory permits. And so maybe it fits, maybe it doesn't.
+
+And I think it's a good test. But what is a scheme? My understanding, and I think we've got Todd on the call who might correct me if I'm wrong, is that when you're making an attestation as a conformity assessment body, about, let's say, the properties of structural steel, you might make several assessments.
+
+It's tensile strength, it's chemical composition or something. And those are multiple assessments under an attestation. And each assessment might reference either some regulation or a standard.
+
+So you could have three or four different Australian or ISO standards about steel, and be making assessments about structural steel based on just subsets of different standards. So a particular standard might define, let's say, 20 criteria. But it's only three of them that are relevant to structural steel.
+
+So you group three from here, and two from there, and four from there, and you bundle them all up into a thing called a scheme, which is really relevant for that jurisdiction and that product. So Australian structural steel, it would be a scheme, and it might... And so that's kind of linked at the attestation level, to say this is an attestation about structural steel under the ACRS, Australian Structural Steel Scheme.
+
+But the assessments are made against particular criteria from different standards. So it's this complex relationship between schemes, standards, regulations, criteria that all get kind of linked together. So it's not simple, and that's why it's structured like that.
+
+And then you get to, okay, now I'm just issuing a mines permit. What is that? Is there a scheme at all?
+
+Or is this really just an attestation with one or two conformity assessments, always against the same regulation, which is the BC Government Mines Act? That would be my sense. There is no scheme in that case.
+
+But I'm not sure.
+
+[Speaker 3]
+So the scheme or the scope, we more landed of the scope. So there's a group of people in the digital trust team that get together. They make this document that explains what this is.
+
+They explain what the energies and mines is. They explain what their credential is about. And they make decisions.
+
+And then that document will link to some legal acts. So currently we have one assessment, which is the permit itself. And the assessment is regulated by the act, the Mines Act.
+
+And then the scope of the attestation is that governance document. So that governance document sort of talks about what you find in here and how should you interpret this data in relation to the legal act. So it's sort of an overseeing thing.
+
+[Speaker 6]
+So I don't know if it's useful. And I know we're up to time, Steve, but very briefly. I'm currently for another project creating profiles of Australian legislation, which is around carbon reporting.
+
+And it touches on a whole swag of legislation. And each particular business will have its own unique profile of the various acts and clauses within legislation that it needs to reference that will be associated with some sort of reporting claim made. So that capability kind of exists.
+
+And it's not that difficult to achieve. But it results in a single URI that can be pointed to that points at a profile that itself points at a catalogue that enables a single identifier to pick up on a complex set of clauses across legal acts. So it's quite, just pointing out, it's quite achievable.
+
+[Speaker 3]
+That's interesting. Like, there is a very strong, like, BC laws registry in BCN. Like, you can sort of query by a bunch of acts that are related to this.
+
+This is also something that we look at. But we want to base these on one specific legal act and is what we're kind of looking into.
+
+[Speaker 6]
+Sure, sure. And that's certainly true of some of the stuff I'm doing at the moment. So might just be parts or part of an act.
+
+Yeah.
+
+[Speaker 3]
+Yeah, exactly. And, you know, sometime in the act, there's definitions. So that's always something relevant when it comes to vocabulary and so on.
+
+[Speaker 6]
+Yeah, DC terms part of or as part kind of thing.
+
+[Speaker 1]
+Yeah, I mean, I think we're going to draw this to an end because we've exceeded our time. But how are that all those different kind of standards, regulations, criteria, schemes, et cetera, related? It'd be nice to have a group together under a single URI, but you're still having to define somewhere, which is maybe not in the credential, that relationship, right?
+
+That structure. But it'd be good to get what you've done. Was that for Enger or for the ASIC corporate disclosures?
+
+[Speaker 6]
+Yeah, it was for ASIC corporate disclosures and the customer is a large accounting firm.
+
+[Speaker 1]
+Okay, well, I'll make a note to chat with Marcus about how we handled ASIC corporate, how you handle, not we, ASIC corporate disclosures and see if there's relevance to that to simplify this problem for these kind of regulatory conformance.
+
+[Speaker 13]
+Sure.
+
+[Speaker 1]
+And with that, I might say thank you for your time. We've already gone five minutes over and I try not to do that. So I appreciate your feedback.
+
+Thank you. See you next time.
+
+[Speaker 13]
+See you. Bye, everyone. Give a like.
