@@ -9,7 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 * Latest JSON-LD @context : [DTE v0.3.0 JSON-LD context](../../schema/DTE_v0.3.0_context.jsonld)
 * Latest JSON Schema : [DTE v0.3.0 JSON schema ](../../schema/DTE_v0.3.0_schema.json)
-* Sample Instance : [DTE v0.3.0 JSON sample (better data needed)](../../samples/untp-digital-transformation-events-v0.3.0.json)
+* Sample Instance : [DTE v0.3.0 JSON sample (better data needed)](../../samples/untp-digital-traceability-events-v0.3.0.json)
 
 ## Versions
 
