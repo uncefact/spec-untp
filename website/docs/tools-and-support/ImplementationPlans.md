@@ -44,7 +44,7 @@ Implementation guidance is broken into three phases (crawl, walk, run) that prov
 
 |Step|Activity|Result| 
 |--|--|--|
-|1||Engage with activated community|Achieve consistency in implementation across a commodity and/or geographic sector|
+|1|Engage with activated community|Achieve consistency in implementation across a commodity and/or geographic sector|
 
 
 ### Beta Phase (Run)
