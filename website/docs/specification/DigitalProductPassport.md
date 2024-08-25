@@ -86,34 +86,47 @@ All DPPs are issued as W3C Verifiable Credentials and MUST conform to the [VCDM 
 
 ```json
 {
-"type": [
-    "VerifiableCredential",
+  "type": [
     "DigitalProductPassport",
-    ],
-"@context":[
+    "VerifiableCredential"
+  ],
+  "@context": [
     "https://www.w3.org/ns/credentials/v2",
-    "https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld"
+    "https://test.uncefact.org/vocabulary/untp/dpp/0.3.6/"
+  ],
+  "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+  "issuer": {
+    "type": [
+      "CredentialIssuer"
     ],
-"id": "https://acme.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
-"issuer": {
-   "type": "CredentialIssuer",
-   "id": "did:web:identifiers.acme.com:12345",
-   "name": "ACME industries",
-   "otherIdentifiers": [{
-      "type": "Entity",
-      "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-      "name": "ACME Pty Ltd",
-      "idValue": "90664869327",
-      "idScheme": "abr.business.gov.au",
-      "idSchemeName": "Australian Business Number"}
-    ]},
-"validFrom": "2024-03-15",
-"validUntil": "2034-03-15",
-"credentialSubject": {
-   "type": [
-      "Entity",
-      "Product"
-      ],
+    "id": "did:web:identifiers.example-company.com:12345",
+    "name": "Example Company Pty Ltd",
+    "otherIdentifiers": [
+      {
+        "type": [
+          "Entity"
+        ],
+        "id": "https://business.gov.au/ABN/View?abn=1234567890",
+        "name": "Sample Company Pty Ltd",
+        "registeredId": "1234567890",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://business.gov.au/ABN/",
+          "name": "Australian Business Number"
+        }
+      }
+    ]
+  },
+  "validFrom": 2024,
+  "validUntil": 2034,
+  "credentialSubject": {
+    "type": [
+      "Product",
+      "Entity"
+    ],
+    "id": "https://id.gs1.org/01/09520123456788/21/12345",
     ... remainder of product passport information goes here ...
 
 ```

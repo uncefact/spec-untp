@@ -18,15 +18,15 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
- 
-The next meeting is 8am UTC 22 August 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
-The following meeting is 9pm UTC 28th August 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
+* Next meeting is 9pm UTC 28th August 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
+* The following meeting 8am UTC 5 Sept 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2024-08-15| [The meeting focused on refining digital product passports, facility records, and conformity assessment schemes while establishing a working group to develop the business case pages.](#2024-08-15-meeting-summary)| [video](https://us02web.zoom.us/rec/share/4aCZG5zqAMVtI7wSYUFLsiWTWBrUnBU54WHuq5UL99BbtXc_n_2IzPOHfX7yUXWy.H-f8GsYaQm4RUyUI)|[treanscript](../../meetings/2024-08-15-Recording.txt)
+|2024-08-22| [The meeting focused on refining the business case content, updating the digital product passport schema, and preparing to solicit implementation commitments as the team moves towards a stable 1.0 release by the end of the year.](#2024-08-22-meeting-summary)|[video](https://us02web.zoom.us/rec/share/YWThMHYlAdjry0oG-4ytceAKGn-qUDW3cuGiP2hkBwMRMOiYWTsY5oeAwjgNsaiF.TljvfQcuaW-ckYbo)|[transcript](../../meetings/2024-08-22-Recording.txt)|
+|2024-08-15| [The meeting focused on refining digital product passports, facility records, and conformity assessment schemes while establishing a working group to develop the business case pages.](#2024-08-15-meeting-summary)| [video](https://us02web.zoom.us/rec/share/4aCZG5zqAMVtI7wSYUFLsiWTWBrUnBU54WHuq5UL99BbtXc_n_2IzPOHfX7yUXWy.H-f8GsYaQm4RUyUI)|[transcript](../../meetings/2024-08-15-Recording.txt)
 |2024-08-01| [The meeting focused on refining the business case for the UNTP, discussing the inclusion of emissions and circularity performance in digital product passports, and balancing simplicity with the need for reliable data to encourage voluntary adoption.](#2024-08-01-meeting-summary)|[video](https://us02web.zoom.us/rec/share/GWtQbYEYvwLllNWX_MU3sDngPkcl73prtAnNrsZ-BUKof611JFmf_SfpjjM-BHar.XJrZ23Mu-s3EkZiH)|[transcript](../../meetings/2024-08-01-Recording.txt)|
 |2024-07-25| [The meeting focused on updates from recent presentations in Geneva, a planned demo on TrustGraphs, reviews of multiple pull requests, discussions on various issues including human observations as sensors, and setting action items for updating digital product passport pages and creating a glossary for standards and acronyms.](#2024-07-25-meeting-summary) |[video](https://us02web.zoom.us/rec/share/rXhYqvNX6fcC6acRfBmWGb5Yfe1tNemDuDhCNCdJjemMrUKiWHUTsnI9fOHQOUjg.ElNsOY95VnBDv5QO)| [transcript](../../meetings/2024-07-25-Recording.txt)|
 |2024-07-17| [The meeting discussed integrating business experts, collaboration with CENELEC on global standards, and reviewing a significant pull request to enhance data model consistency and governance.](#2024-07-17-meeting-summary) |[video](https://us02web.zoom.us/rec/share/9yfJtJ-BFGkrEEYemfpxJU-FhLilK6iMdWjk5-hao8Hvx8uBF5d_bR05WMc1GQIo.5OQR4eACNiJRyUNE)|[transcript](../../meetings/2024-07-17-Recording.txt)
@@ -53,6 +53,51 @@ The following meeting is 9pm UTC 28th August 2024 - [Join here](https://us02web.
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+## 2024-08-22 Meeting Summary
+
+**Date:** August 22, 2024
+
+**Speakers:**
+- **Steve** (Host)
+- **Michael O'Shea** (Speaker 4)
+- **Phil** (Speaker 3)
+- **Zach** (Speaker 2)
+- **Nis** (Speaker 6)
+- **Brett** (Speaker 7)
+
+**Key Points:**
+
+1. **Business Case Content Development:**
+   - Steve introduced the development of business case content led by Michael O'Shea and his team.
+   - The team has begun working on creating a table that outlines the business case by identifying stakeholders and categorizing value points.
+   - The objective is to have a shareable document by mid-September, aiming to refine and organize the content for clarity.
+
+2. **Digital Product Passport (DPP) Updates:**
+   - Steve discussed updates to the digital product passport, including the inclusion of context and schema files to support future implementation.
+   - Emphasis was placed on making the DPP consistent with existing standards and ensuring it is easy to implement while valuable for verification.
+
+3. **Vocabulary and Schema Mapping:**
+   - The team discussed the challenges of mapping data to established vocabularies such as schema.org and GS1.
+   - The focus is on maintaining consistency and preventing issues like breaking proofs during versioning.
+
+4. **Implementation Interest:**
+   - There was discussion on the timing of soliciting commitments from organizations to implement the UNTP standard.
+   - It was agreed that the right time is approaching, and efforts to socialize the project and secure interest should begin.
+
+5. **Next Steps:**
+   - Steve and the team will work on refining the business case and moving towards creating a stable 1.0 release by Christmas.
+   - A call for implementers will be prepared to start gathering interest and commitments from potential adopters.
+
+**Action Items:**
+- Michael and his team will continue refining the business case content with the goal of having a draft ready by mid-September.
+- Steve will work on fixing identified bugs and preparing materials to solicit implementation commitments.
+  
+**Next Meeting:**  
+- Focus will continue on the business case, schema updates, and gathering implementer commitments.
+
+**Conclusion:**  
+The meeting ended on a positive note, with everyone feeling that significant progress is being made towards finalizing the UNTP standard and building momentum for broader adoption.
 
 ## 2024-08-15 Meeting Summary
 
