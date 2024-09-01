@@ -1,6 +1,6 @@
 ---
-name: UNTP issue template
-about: A general template for raising any issue about UNTP specificaiton.
+name: General UNTP issue template
+about: A general template for raising any issue about UNTP specification.
 title: ''
 labels: ''
 assignees: ''

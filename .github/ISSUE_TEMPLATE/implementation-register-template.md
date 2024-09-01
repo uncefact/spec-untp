@@ -87,6 +87,14 @@ Product major version:
 
 repeat as necessary
 
+### For Identity Registry Operators
+
+Authoritative Registers of product, facility, or organisation identifiers may register their intent to implement the UNTP [Identity Resolver](https://uncefact.github.io/spec-untp/docs/specification/IdentityResolver) specification here.  
+
+Register name: 
+Register base URL:
+Register Type : (products, locations, organisations, other)
+
 # Other Relevant Information
 
 Placeholder for any other relevant information that is not covered by the templated sections above.
