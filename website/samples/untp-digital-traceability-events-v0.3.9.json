@@ -1,0 +1,449 @@
+{
+  "type": [
+    "DigitalTraceabilityEvent",
+    "VerifiableCredential"
+  ],
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/dte/0.3.9"
+  ],
+  "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+  "issuer": {
+    "type": [
+      "CredentialIssuer"
+    ],
+    "id": "did:web:identifiers.example-company.com:12345",
+    "name": "Example Company Pty Ltd",
+    "otherIdentifiers": [
+      {
+        "type": [
+          "Entity"
+        ],
+        "id": "https://id.gs1.org/01/09520123456788/21/12345",
+        "name": "EV battery 300Ah.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      {
+        "type": [
+          "Entity"
+        ],
+        "id": "https://id.gs1.org/01/09520123456788/21/12345",
+        "name": "EV battery 300Ah.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      }
+    ]
+  },
+  "validFrom": 2024,
+  "validUntil": 2034,
+  "credentialSubject": [
+    {
+      "type": [
+        "TransformationEvent",
+        "Event"
+      ],
+      "id": "https://jargon.sh",
+      "eventTime": "1970-01-01T00:00:00Z",
+      "action": "observe",
+      "disposition": "Enumeration Value",
+      "bizStep": "Enumeration Value",
+      "bizLocation": "https://jargon.sh",
+      "sensorElementList": [
+        {
+          "sensorMetadata": {
+            "device": {
+              "type": [
+                "Item",
+                "Entity"
+              ],
+              "id": "https://id.gs1.org/01/09520123456788/21/12345",
+              "name": "EV battery 300Ah.",
+              "registeredId": "90664869327",
+              "idScheme": {
+                "type": [
+                  "IdentifierScheme"
+                ],
+                "id": "https://id.gs1.org/01/",
+                "name": "Global Trade Identification Number (GTIN)"
+              }
+            },
+            "dataProcessingMethod": "https://jargon.sh"
+          },
+          "sensorReport": [
+            {
+              "time": "1970-01-01T00:00:00Z",
+              "sensorType": "https://jargon.sh",
+              "value": 12345,
+              "uom": "Enumeration Value"
+            },
+            {
+              "time": "1970-01-01T00:00:00Z",
+              "sensorType": "https://jargon.sh",
+              "value": 12345,
+              "uom": "Enumeration Value"
+            }
+          ],
+          "sensorIntegrityProof": "https://jargon.sh"
+        },
+        {
+          "sensorMetadata": {
+            "device": {
+              "type": [
+                "Item",
+                "Entity"
+              ],
+              "id": "https://id.gs1.org/01/09520123456788/21/12345",
+              "name": "EV battery 300Ah.",
+              "registeredId": "90664869327",
+              "idScheme": {
+                "type": [
+                  "IdentifierScheme"
+                ],
+                "id": "https://id.gs1.org/01/",
+                "name": "Global Trade Identification Number (GTIN)"
+              }
+            },
+            "dataProcessingMethod": "https://jargon.sh"
+          },
+          "sensorReport": [
+            {
+              "time": "1970-01-01T00:00:00Z",
+              "sensorType": "https://jargon.sh",
+              "value": 12345,
+              "uom": "Enumeration Value"
+            },
+            {
+              "time": "1970-01-01T00:00:00Z",
+              "sensorType": "https://jargon.sh",
+              "value": 12345,
+              "uom": "Enumeration Value"
+            }
+          ],
+          "sensorIntegrityProof": "https://jargon.sh"
+        }
+      ],
+      "outputEPCList": [
+        {
+          "type": [
+            "Item",
+            "Entity"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        {
+          "type": [
+            "Item",
+            "Entity"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        }
+      ],
+      "inputEPCList": [
+        {
+          "type": [
+            "Item",
+            "Entity"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        {
+          "type": [
+            "Item",
+            "Entity"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        }
+      ],
+      "inputQuantityList": [
+        {
+          "product": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "quantity": 12345,
+          "uom": "Enumeration Value"
+        },
+        {
+          "product": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "quantity": 12345,
+          "uom": "Enumeration Value"
+        }
+      ],
+      "outputQuantityList": [
+        {
+          "product": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "quantity": 12345,
+          "uom": "Enumeration Value"
+        },
+        {
+          "product": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "quantity": 12345,
+          "uom": "Enumeration Value"
+        }
+      ],
+      "processType": "https://jargon.sh"
+    },
+    {
+      "type": [
+        "ObjectEvent",
+        "Event"
+      ],
+      "id": "https://jargon.sh",
+      "eventTime": "1970-01-01T00:00:00Z",
+      "action": "observe",
+      "disposition": "Enumeration Value",
+      "bizStep": "Enumeration Value",
+      "bizLocation": "https://jargon.sh",
+      "sensorElementList": [
+        {
+          "sensorMetadata": {
+            "device": {
+              "type": [
+                "Item",
+                "Entity"
+              ],
+              "id": "https://id.gs1.org/01/09520123456788/21/12345",
+              "name": "EV battery 300Ah.",
+              "registeredId": "90664869327",
+              "idScheme": {
+                "type": [
+                  "IdentifierScheme"
+                ],
+                "id": "https://id.gs1.org/01/",
+                "name": "Global Trade Identification Number (GTIN)"
+              }
+            },
+            "dataProcessingMethod": "https://jargon.sh"
+          },
+          "sensorReport": [
+            {
+              "time": "1970-01-01T00:00:00Z",
+              "sensorType": "https://jargon.sh",
+              "value": 12345,
+              "uom": "Enumeration Value"
+            },
+            {
+              "time": "1970-01-01T00:00:00Z",
+              "sensorType": "https://jargon.sh",
+              "value": 12345,
+              "uom": "Enumeration Value"
+            }
+          ],
+          "sensorIntegrityProof": "https://jargon.sh"
+        },
+        {
+          "sensorMetadata": {
+            "device": {
+              "type": [
+                "Item",
+                "Entity"
+              ],
+              "id": "https://id.gs1.org/01/09520123456788/21/12345",
+              "name": "EV battery 300Ah.",
+              "registeredId": "90664869327",
+              "idScheme": {
+                "type": [
+                  "IdentifierScheme"
+                ],
+                "id": "https://id.gs1.org/01/",
+                "name": "Global Trade Identification Number (GTIN)"
+              }
+            },
+            "dataProcessingMethod": "https://jargon.sh"
+          },
+          "sensorReport": [
+            {
+              "time": "1970-01-01T00:00:00Z",
+              "sensorType": "https://jargon.sh",
+              "value": 12345,
+              "uom": "Enumeration Value"
+            },
+            {
+              "time": "1970-01-01T00:00:00Z",
+              "sensorType": "https://jargon.sh",
+              "value": 12345,
+              "uom": "Enumeration Value"
+            }
+          ],
+          "sensorIntegrityProof": "https://jargon.sh"
+        }
+      ],
+      "epcList": [
+        {
+          "type": [
+            "Item",
+            "Entity"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        {
+          "type": [
+            "Item",
+            "Entity"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        }
+      ],
+      "quantityList": [
+        {
+          "product": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "quantity": 12345,
+          "uom": "Enumeration Value"
+        },
+        {
+          "product": {
+            "type": [
+              "Entity"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "90664869327",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "quantity": 12345,
+          "uom": "Enumeration Value"
+        }
+      ]
+    }
+  ]
+}

@@ -7,16 +7,16 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-* Latest JSON-LD @context : [DTE v0.3.0 JSON-LD context](../../schema/DTE_v0.3.0_context.jsonld)
-* Latest JSON Schema : [DTE v0.3.0 JSON schema ](../../schema/DTE_v0.3.0_schema.json)
-* Sample Instance : [DTE v0.3.0 JSON sample (better data needed)](../../samples/untp-digital-traceability-events-v0.3.0.json)
+* Latest JSON-LD @context : [DTE v0.3.9 JSON-LD context](https://test.uncefact.org/vocabulary/untp/dte/0/untp-dte-context-0.3.9.jsonld)
+* Latest JSON Schema : [DTE v0.3.9 JSON schema ](https://test.uncefact.org/vocabulary/untp/dte/0/untp-dte-schema-0.3.9.json)
+* Sample Instance : [DTE v0.3.9 JSON sample (better data needed)](../../samples/untp-digital-traceability-events-v0.3.9.json)
 
 ## Versions
 
 |Version|Date|status|changes|JSON-LD Context|JSON Schema|
 |--|--|--|--|
 |0.3.0|20-04-2024|Raw (for review)|Coming soon - fixing a bug| TBA|TBA|
-|0.3.6|22-08-2024|Draft for pilot testing|Aligned with unto core, modified to support multipe events per credential|[context](../../schema/DTE_v0.3.0_context.jsonld)|[schema](../../schema/DTE_v0.3.0_schema.json)|
+|0.3.9|22-08-2024|Draft for pilot testing|Aligned with unto core, modified to support multipe events per credential|[context](https://test.uncefact.org/vocabulary/untp/dte/0/untp-dte-context-0.3.9.jsonld)|[schema](https://test.uncefact.org/vocabulary/untp/dte/0/untp-dte-schema-0.3.9.json|
 
 
 The current version of this specification is v0.3.0

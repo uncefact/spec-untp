@@ -7,15 +7,15 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-* DFR context : [JSON-LD @context](../../schema/DFR_v0.3.0_context.jsonld)
-* DFR schema : [JSON schema](../../schema/DFR_v0.3.0_schema.json)
-* DFR sample : [JSON Sample](../../samples/untp-digital-facility-record-v0.3.0.json)
+* DFR context : [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-context-0.3.9.jsonld)
+* DFR schema : [JSON schema](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-schema-0.3.9.json)
+* DFR sample : [JSON Sample](../../samples/untp-digital-facility-record-v0.3.9.json)
 
 ## Versions
 
 | DPP Version | Date | status  | Change summary | JSON-LD Context  | JSON Schema  |
 | ------ | ----- | ------ | ------ | ------| ---|
-| 0.3.0     | 21-08-2024 | Draft |Initial model for facility data |[@context](../../schema/DFR_v0.3.0_context.jsonld) |[schema](../../schema/DFR_v0.3.0_schema.json) |
+| 0.3.9     | 21-08-2024 | Draft |Initial model for facility data |[@context](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-context-0.3.9.jsonld) |[schema](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-schema-0.3.9.json) |
 
 
 
@@ -51,12 +51,12 @@ The Digital Facility Record is an assembly of re-usable components from the UNTP
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.6/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of the Digital Facility Record.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.9/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of the Digital Facility Record.
 
 
 ### DFR Documentation
 
-The [DFR documentation](https://jargon.sh/user/unece/DigitalFacilityRecord/v/0.3.0 provides a technology-neutral definition of classes, properties and code lists in the DFR model.
+The [DFR documentation](https://jargon.sh/user/unece/DigitalFacilityRecord/v/0.3.9 provides a technology-neutral definition of classes, properties and code lists in the DFR model.
 
 ## Implementation Guidance
 
