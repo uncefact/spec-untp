@@ -7,7 +7,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-Latest JSON-LD @graph vocabulary : https://test.uncefact.org/vocabulary/untp/core/0/3/6/
+Latest JSON-LD @graph vocabulary : https://test.uncefact.org/vocabulary/untp/core/0/about
 
 Note: The presentation of the vocabulary will be updated to include super classes and referenced domains.
 
@@ -27,7 +27,7 @@ Although these two credential types have different structures, they are assemble
 
 ![UNTP Core Vocabulary](UNTP-Core-Vocabulary.svg)
 
-The core vocabulary [data model and browsable documentation](https://jargon.sh/user/unece/untp-core/v/0.3.6)
+The core vocabulary [data model and browsable documentation](https://jargon.sh/user/unece/untp-core/v/0.3.9)
 
 ## Declarations Structure
 

@@ -8,16 +8,16 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 
-* Latest JSON-LD @context : [DCC v0.3.7 JSON-LD context](../../schema/DCC_v0.3.7_context.jsonld)
-* Latest JSON Schema : [DCC v0.3.7 JSON schema ](../../schema/DCC_v0.3.7_schema.json)
-* Sample Instance : [DCC v0.3.7 JSON sample (better data needed)](../../samples/untp-digital-conformity-credential-v0.3.7.json)
+* Latest JSON-LD @context : [DCC v0.3.9 JSON-LD context](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-context-0.3.9.jsonld)
+* Latest JSON Schema : [DCC v0.3.9 JSON schema ](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-schema-0.3.9.json
+* Sample Instance : [DCC v0.3.9 JSON sample (better data needed)](../../samples/untp-digital-conformity-credential-v0.3.9.json)
 
 ## Versions
 
 |DPCC Version|Date|status|change log|JSON-LD Context|JSON Schema|
 |--|--|--|--|--|--|
 |0.3.0|01-07-2024|Raw |rebuilt on untp-core vocabulary| DPP context - TBA |DPP schema - TBA |
-|0.3.7|22-08-2024|Draft| Resulved issues, aligned with untp core, ready for pilot testing|[context](../../schema/DCC_v0.3.7_context.jsonld)|[schema](../../schema/DCC_v0.3.7_schema.json)
+|0.3.9|22-08-2024|Draft| Resulved issues, aligned with untp core, ready for pilot testing|[context](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-context-0.3.9.jsonld|[schema](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-schema-0.3.9.json)
 
 
 ## Overview
@@ -52,11 +52,11 @@ The Digital Conformity Credential is an assembly of re-usable components from th
 
 ### Core Vocabulary
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.6/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.9/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 ### DCC Documentation
 
-[DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.3.7/artefacts/readme/render)
+[DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.3.9/artefacts/readme/render)
 
 ## Implementation Guidance
 

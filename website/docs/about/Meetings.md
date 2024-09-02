@@ -18,13 +18,15 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
-* Next meeting is 9pm UTC 28th August 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
-* The following meeting 8am UTC 5 Sept 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+
+* The next meeting 8am UTC 5 Sept 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+* The following meeting is 9pm UTC 11th September 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-08-28| [The meeting focused on updates and discussions around the development of a global digital product passport, business case frameworks, and the importance of community activation in implementing UNTP extensions.](#2024-08-28-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Sul2KkyH8LYUiNJDTwT3JR9gNR4uxL8JGvPIvyp202fO-NfN2anAZtjRkFH4me9w.8hQdXJfine_JzV6b)|[transcript](../../meetings/2024-08-28-Recording.txt)|
 |2024-08-22| [The meeting focused on refining the business case content, updating the digital product passport schema, and preparing to solicit implementation commitments as the team moves towards a stable 1.0 release by the end of the year.](#2024-08-22-meeting-summary)|[video](https://us02web.zoom.us/rec/share/YWThMHYlAdjry0oG-4ytceAKGn-qUDW3cuGiP2hkBwMRMOiYWTsY5oeAwjgNsaiF.TljvfQcuaW-ckYbo)|[transcript](../../meetings/2024-08-22-Recording.txt)|
 |2024-08-15| [The meeting focused on refining digital product passports, facility records, and conformity assessment schemes while establishing a working group to develop the business case pages.](#2024-08-15-meeting-summary)| [video](https://us02web.zoom.us/rec/share/4aCZG5zqAMVtI7wSYUFLsiWTWBrUnBU54WHuq5UL99BbtXc_n_2IzPOHfX7yUXWy.H-f8GsYaQm4RUyUI)|[transcript](../../meetings/2024-08-15-Recording.txt)
 |2024-08-01| [The meeting focused on refining the business case for the UNTP, discussing the inclusion of emissions and circularity performance in digital product passports, and balancing simplicity with the need for reliable data to encourage voluntary adoption.](#2024-08-01-meeting-summary)|[video](https://us02web.zoom.us/rec/share/GWtQbYEYvwLllNWX_MU3sDngPkcl73prtAnNrsZ-BUKof611JFmf_SfpjjM-BHar.XJrZ23Mu-s3EkZiH)|[transcript](../../meetings/2024-08-01-Recording.txt)|
@@ -53,6 +55,52 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+### 2024-08-28 Meeting Summary
+
+**Participants:**
+- **Steve Capell**
+- **Virginia Cram-Martos**
+- **Ester Cunha**
+- **Nancy** (last name not mentioned)
+- **Michael O'Shea**
+- **Anne** (last name not mentioned)
+- **Joe** (last name not mentioned)
+- **John Phillips**
+- **Guy** (last name not mentioned)
+- **Marcus** (last name not mentioned)
+
+---
+
+**1. Opening Remarks:**
+   - The meeting started with greetings from **Steve Capell**. **Steve** mentioned that the meeting might be brief due to a smaller group and the absence of full requests to review. The agenda was to share thoughts and discuss ongoing ideas.
+
+**2. Project Updates:**
+   - **Steve Capell** provided an update on a meeting with ISO TC154 regarding a potential new project for a global digital product passport. This project is being pushed by the China National Institute of Standards and is in the early proposal stages. The project will be a joint collaboration with UNECE.
+
+   - **Nancy** discussed updates related to the UNTP extension site, focusing on the critical raw materials extension. She suggested creating a one-page value proposition template to assist early adopters, particularly mining companies, in implementing the UNTP.
+
+**3. Business Case Development:**
+   - **Nancy** emphasized the importance of developing a business case framework that can evolve with more data during the pilot phases. She highlighted the need for a robust business case to secure funding for post-pilot projects.
+
+   - **Anne** and **Joe** provided updates on a spreadsheet they developed to guide participants through creating a value case or business case for UNTP implementation. The focus is on calculating ROI over a 10-year period.
+
+**4. Community Activation:**
+   - **Steve Capell** discussed the necessity of community activation before moving into full implementation phases. He cited examples from Australian agriculture, where community activation was crucial for project success.
+
+**5. Technical and Regulatory Challenges:**
+   - **Guy** raised challenges regarding the allocation of emissions to products, especially in critical minerals sectors. There was consensus that allocation rules are often unclear, and industry-specific guidance might be necessary.
+
+   - **Virginia Cram-Martos** asked about the conflict between counterfeit issues and the right to repair, leading to a discussion on the regulatory landscape and its impact on standards.
+
+**6. Next Steps:**
+   - **Steve Capell** mentioned plans to establish a structure for registering commitment to implementation by different categories. There was also a focus on developing content for community activation and the business case guide.
+
+   - The meeting concluded with **Steve Capell** inviting participants to continue their contributions and to attend future meetings.
+
+---
+
+This summary includes the names of the participants and captures the key points discussed during the meeting. If you need further adjustments or more details on any section, please let me know!
 
 ## 2024-08-22 Meeting Summary
 
