@@ -34,6 +34,6 @@ Summary list of industry actors (eg brands, manufacturers, primary producers) th
 A complete suite of reference implementations and test tools will be available at the same time as UNTP version 0.5.0 pilot testing release (due 1st Oct 2024).
 
 |Product Name|Description|Product Category|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
-|--|--|--|--|--|--|
-|EV Batteries (URL)|Electric vehicle batteries|4641|DPP, DTE|v0.5.0|01-Feb-2025|TBA |
+|--|--|--|--|--|--|--|
+|EV Batteries (URL)|Electric vehicle batteries|4641|DPP, DTE|v0.5.0|01-Feb-2025|TBA |TBA|
 

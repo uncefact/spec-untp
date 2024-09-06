@@ -18,14 +18,15 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
+* The next meeting is 9pm UTC 11th September 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
+* The following meeting is 8am UTC 19  Sept 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
 
-* The next meeting 8am UTC 5 Sept 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
-* The following meeting is 9pm UTC 11th September 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-09-05| [](#2024-09-05-meeting-summary))|[video](https://us02web.zoom.us/rec/share/AC4BGb0zEH0UFQBTw1V0wgbT-oMlsSKGYDxZV08tU_uhS7CW_W6ODIor8k1vGH4X.4H1NEA5vs-2yl-hZ)|[transcript](../../meetings/2024-09-05-Recording.txt)
 |2024-08-28| [The meeting focused on updates and discussions around the development of a global digital product passport, business case frameworks, and the importance of community activation in implementing UNTP extensions.](#2024-08-28-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Sul2KkyH8LYUiNJDTwT3JR9gNR4uxL8JGvPIvyp202fO-NfN2anAZtjRkFH4me9w.8hQdXJfine_JzV6b)|[transcript](../../meetings/2024-08-28-Recording.txt)|
 |2024-08-22| [The meeting focused on refining the business case content, updating the digital product passport schema, and preparing to solicit implementation commitments as the team moves towards a stable 1.0 release by the end of the year.](#2024-08-22-meeting-summary)|[video](https://us02web.zoom.us/rec/share/YWThMHYlAdjry0oG-4ytceAKGn-qUDW3cuGiP2hkBwMRMOiYWTsY5oeAwjgNsaiF.TljvfQcuaW-ckYbo)|[transcript](../../meetings/2024-08-22-Recording.txt)|
 |2024-08-15| [The meeting focused on refining digital product passports, facility records, and conformity assessment schemes while establishing a working group to develop the business case pages.](#2024-08-15-meeting-summary)| [video](https://us02web.zoom.us/rec/share/4aCZG5zqAMVtI7wSYUFLsiWTWBrUnBU54WHuq5UL99BbtXc_n_2IzPOHfX7yUXWy.H-f8GsYaQm4RUyUI)|[transcript](../../meetings/2024-08-15-Recording.txt)
@@ -56,11 +57,53 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
-### 2024-08-28 Meeting Summary
+## 2024-09-05 Meeting Summary
+
+### Meeting Participants:
+1. **Mr. Kepler** - Lead of the meeting
+2. **Dr. Wang** - Provided an update on the UNTP presentation translation into Chinese
+3. **Steve** - Discussed the TC154 project and provided updates
+4. **Michael** - Business case development lead
+5. **Phil** - Provided comments on vocabulary management
+6. **Gerhard** - Commented on testing and evidence for implementations
+7. **Nis** - Raised concerns about versioning and semantic context
+
+### Key Discussion Points:
+
+1. **Translation and Feedback:**
+   - Dr. Wang translated the UNTP (United Nations Trade Procedure) presentation into Chinese and received positive feedback during a workshop. This sparked further discussion on expanding outreach and engagement.
+
+2. **TC154 Digital Product Passport Project:**
+   - Steve provided updates on the ongoing work related to the TC154 Digital Product Passport. He mentioned that the ISO meeting, likely to occur in Korea in October, would decide whether to launch the project.
+   - There was a one-on-one discussion with the project lead, emphasizing the need for a comprehensive program rather than a single standard, drawing parallels to existing multiple specifications.
+   - Steve encouraged Dr. Wang to join future collaborations under TC154.
+
+3. **Business Case Development:**
+   - Michael shared that the team is working on a model to help businesses understand the impact of implementing UNTP and developing a business case around it.
+   - Examples like the EU's Battery Pass Project and Surpass were discussed as templates for businesses to build their justification for implementation.
+
+4. **Community Activation:**
+   - There was a discussion on how community-level adoption of standards could enhance business cases, particularly in scenarios where multiple actors (e.g., farmers or manufacturers) use shared tools or processes, reducing costs and increasing benefits.
+
+5. **Technical Infrastructure and Versioning:**
+   - Several participants discussed the challenges related to managing vocabulary, version control, and ensuring consistency in the digital product passport pipeline.
+   - A solution involving vocabulary sites, schema versioning, and simplified context files was introduced by Steve, while Nis raised concerns about frequent updates to context files and their potential to disrupt system setups.
+
+6. **Implementation and Testing:**
+   - The team discussed creating a register of implementations, inviting stakeholders to express their intent to implement UNTP standards. This will help assess the adoption of these standards.
+   - The importance of evidence for successful implementation, such as test results, was emphasized by Gerhard and others.
+
+7. **Next Steps:**
+   - The pull request related to implementation registers and vocabulary updates was approved.
+   - The meeting ended with a reminder to continue working on the pull requests and to solicit early expressions of interest from potential implementers.
+
+
+## 2024-08-28 Meeting Summary
 
 **Participants:**
 - **Steve Capell**
 - **Virginia Cram-Martos**
+- **Dr Wang Xiang**
 - **Ester Cunha**
 - **Nancy** (last name not mentioned)
 - **Michael O'Shea**

@@ -31,10 +31,10 @@ Summary list of software products and status of implementation.  Scope defines t
 ** Product Information **
 
 |Product Name|Description|Product Version(s)|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
-|--|--|--|--|--|--|
+|--|--|--|--|--|--|--|
 |VC Software|Verifiable credential issuing and verifying platform| v2.0 |VCP|v1.0|01-Jan-2025|TBA |
-|IDR Software|Identity resolver platform that can be plugged into any existing identity register.|v2.0|IDR, DIA|v1.0|01-Jan-2025|TBA|
-|Traceability Software|A solution to map value chains from primary production to finished product|v2.0|DPP, DCC, DFR, DTE|v1.0|01-Jan-2025|TBA|
+|IDR Software|Identity resolver platform that can be plugged into any existing identity register.|v2.0|IDR, DIA|v1.0|01-Jan-2025|TBA|TBA|
+|Traceability Software|A solution to map value chains from primary production to finished product|v2.0|DPP, DCC, DFR, DTE|v1.0|01-Jan-2025|TBA|TBA|
 
 
 

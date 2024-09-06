@@ -26,6 +26,8 @@ Implementers may register a future intent to support UNTP specifications. Once i
 
 Each implementer organisation should provide a short statement about their UNTP implementation plans and should define which of their products, solutions or services support which UNTP specifications. 
 
+Note that implementers need only declare intent to implement the minimum mandatory scope (defined on each specification page). Full details of actual implemented scope will be defined by the post implementation test report.
+
 * [VCP](../specification/VerifiableCredentials) - Verifiable Credentials Profile
 * [DPP](../specification/DigitalProductPassport.md) - Digital Product Passport
 * [DCC](../specification/ConformityCredential.md) - Digital Conformity Credential
