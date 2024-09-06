@@ -8,7 +8,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 * **[Latest JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-context-0.3.10.jsonld)**
-* **[Latest JSON Schema ](https://test.uncefact.org/vocabulary/untp/dte/0/untp-dte-schema-0.3.10.json)**
+* **[Latest JSON Schema ](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-schema-0.3.10.json)**
 * **[Sample Instance](../../samples/untp-digital-traceability-events-v0.3.9.json)**
 
 ## Versions
