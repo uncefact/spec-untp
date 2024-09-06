@@ -31,5 +31,5 @@ Summary list of conformity assessment bodies that have implemented or plan to im
 ** Scheme Information **
 
 |Conformity Scheme|Description|Topic|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
-|--|--|--|--|--|--|
-|[GHG Protocol](https://ghgprotocol.org/)|GHG emissions intensity credential|environment. emissions|DCC|v0.5.0|01-Feb-2025|TBA |
+|--|--|--|--|--|--|--|
+|[GHG Protocol](https://ghgprotocol.org/)|GHG emissions intensity credential|environment. emissions|DCC|v0.5.0|01-Feb-2025|TBA |TBA|

@@ -31,5 +31,5 @@ Summary list of regulators (ie international bodies, national government agencie
 ** Regulation Information **
 
 |Regulation|Description|Topic|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
-|--|--|--|--|--|--|
-|GO Certificate|Guarantee of Origin Certificate|environment. emissions|DCC|v0.5.0|01-Feb-2025|TBA |
+|--|--|--|--|--|--|--|
+|GO Certificate|Guarantee of Origin Certificate|environment. emissions|DCC|v0.5.0|01-Feb-2025|TBA |TBA|

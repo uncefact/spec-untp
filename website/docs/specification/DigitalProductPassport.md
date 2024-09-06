@@ -7,18 +7,28 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-* **[Latest JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.10.jsonld)**
-* **[Latest JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.10.json)**
-* **[Sample Instance](../../samples/untp-digital-product-passport-v0.3.10.json)**
+## Artifacts 
+
+### Stable Releases For Implementation
+
+Version 0.5 due end Sept 2024 for industry pilot implementation.
+
+### Latest Test Releases
+
+Version 0.3.10 release artifacts
+
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.10.jsonld)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.10.json)
+* [Sample Instance](../../samples/untp-digital-product-passport-v0.3.10.json)
+
+### Version History
+
+History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dpp/0/versions)** page.
 
 
-## Versions
+### Visualization
 
-| DPP Version | Date | status  | Change summary | JSON-LD Context  | JSON Schema  |
-| ------ | ----- | ------ | ------ | ------| ---|
-| 0.3.1 | 25-07-2024| Draft | Bug fixes and sample values added|[@context](../../schema/DPP_v0.3.1_context.jsonld) |[Schema](../../schema/DPP_v0.3.1_schema.json)|
-| 0.3.10 | 28-08-2024| Draft | Consistency enhancements. Ready for pilot testing | [@context](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.10.jsonld) | [schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.10.json)|
-
+A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/untp-digital-product-passport-v0.3-visualisation.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
 
 ## Overview
