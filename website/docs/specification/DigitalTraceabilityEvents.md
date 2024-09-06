@@ -16,7 +16,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 |Version|Date|status|changes|JSON-LD Context|JSON Schema|
 |--|--|--|--|
 |0.3.0|20-04-2024|Raw (for review)|Coming soon - fixing a bug| TBA|TBA|
-|0.3.10|28-08-2024|Draft for pilot testing|Aligned with unto core, modified to support multiple events per credential|[context](https://test.uncefact.org/vocabulary/untp/dte/0/untp-dte-context-0.3.10.jsonld)|[schema](https://test.uncefact.org/vocabulary/untp/dte/0/untp-dte-schema-0.3.10.json|
+|0.3.10|28-08-2024|Draft for pilot testing|Aligned with unto core, modified to support multiple events per credential|[context](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-context-0.3.10.jsonld)|[schema](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-schema-0.3.10.json|
 
 
 ## Overview
