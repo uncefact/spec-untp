@@ -8,16 +8,16 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 
-* Latest JSON-LD @context : [DCC v0.3.9 JSON-LD context](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-context-0.3.9.jsonld)
-* Latest JSON Schema : [DCC v0.3.9 JSON schema ](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-schema-0.3.9.json
-* Sample Instance : [DCC v0.3.9 JSON sample (better data needed)](../../samples/untp-digital-conformity-credential-v0.3.9.json)
+* **[Latest JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-context-0.3.10.jsonld)**
+* **[Latest JSON Schema](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-schema-0.3.10.json)**
+* **[Sample Instance](../../samples/untp-digital-conformity-credential-v0.3.10.json)**
 
 ## Versions
 
 |DPCC Version|Date|status|change log|JSON-LD Context|JSON Schema|
 |--|--|--|--|--|--|
 |0.3.0|01-07-2024|Raw |rebuilt on untp-core vocabulary| DPP context - TBA |DPP schema - TBA |
-|0.3.9|22-08-2024|Draft| Resulved issues, aligned with untp core, ready for pilot testing|[context](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-context-0.3.9.jsonld|[schema](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-schema-0.3.9.json)
+|0.3.10|28-08-2024|Draft| Resolved issues, aligned with untp core, ready for pilot testing|[context](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-context-0.3.10.jsonld)|[schema](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-schema-0.3.10.json)
 
 
 ## Overview
@@ -52,38 +52,177 @@ The Digital Conformity Credential is an assembly of re-usable components from th
 
 ### Core Vocabulary
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.9/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.10/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 ### DCC Documentation
 
-[DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.3.9/artefacts/readme/render)
+[DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.3.10/artefacts/readme/render)
 
 ## Implementation Guidance
 
 
 ### Verifiable Credential
 
-See DPP section
+Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential)
 
 ### Conformity Attestation
 
-Add implementation guidance
+The `ConformityAttestation` type is the root content of the `credentialSubject` of the DCC. It is best thought of as the digital version of the paper product or facility conformity certificate.
 
-### Scope (Conformity Assessment Scheme)
+* The `type` property is mandatory and must be populated with the value `ConformityAttestation` indicating the JSON-LD type of the data.
+* the `id` MUST be a globally unique identifier (URI) for the attestation.  Typically a certificate number with the CAB web domain as a prefix. `name` should contain a human readable text string that describes the attestation.
+* `assessorLevel` (how assured is the party doing the assessment?), `assessmentLevel` (how assured is the subject product/facility being assessed?) and `attestationType` (is this a test report, a certificate, or some other type?) are coded values that help to classify the type and integrity of the attestation.
+* `issueToParty` identifies the entity to who the conformity attestation is issued - usually the product manufacturer or facility operator.
+* `authorisations` describes a list of accreditations that a competent authority (such as a government agency or a national accreditation authority or a trusted global standards body) has issued to the conformity assessment body that is issuing this attestation. It provides trust that the certifier is properly accredited to issue certificates. 
+* `conformityCertfificate` is a secure link to the full version (eg a PDF document) of this attestation. 
+* `auditableEvidence` is a secure link to an unstructured collection of files which provided the original evidence basis for the conformity assessments made by this DCC. The evidence files are usually commercially sensitive and encrypted but are an important information source for audits.
+* `scope` defines the conformity scheme under which this attestation is issued. A scheme is a high level framework describing the context for the entire attestation. Each individual assessment included in this attestation will usually reference more fine grained criteria within any standards or regulations that are part of the scheme. 
+* `assessments` is an array of detailed conformity assessments made about an identified product or facility - against a specific criteria contained in a standard or regulation.  
 
-Add implementation guidance
+
+```json
+ "credentialSubject": {
+    "type": ["ConformityAttestation"],
+    "id": "https://exampleCAB.com/38f73303-a39e-45a7-b8b7-e73517548f27",
+    "name": "Carbon Lifecycle assessment 12345567",
+    "assessorLevel": "3rdParty",
+    "assessmentLevel": "Accredited",
+    "attestationType": "certification",
+    "attestationDescription": "Assessment of battery products against the GHG Protocol.",
+    "issuedToParty": {..},
+    "authorisations": [{..}],
+    "conformityCertificate": {..},
+    "auditableEvidence": {..},
+    "scope": {..},
+    "assessments": [{..},{..}]
+ }
+```
+
 
 ### Authorisations (Endorsements)
 
-Add implementation guidance
+Authorisations are endorsements or accreditations issued by a competent authority (such as a government agency or a national accreditation authority or a trusted global standards body) has issued to the conformity assessment body that is issuing this attestation. It provides trust that the certifier is properly accredited to issue certificates. 
 
-### Auditable Evidence (Secure Link)
+* The `id` is a URI providing a unique ID of the endorsement / accreditation.  
+* `trustmark` is a base64 binary file that is typically shown on paper accreditations or endorsements. 
+* The `issuingAuthority` object defines the identity details of the competent authority that issued the endorsement. For example, in Australia the accreditation authority for conformity test labs is [NATA](https://nata.com.au/).
+* `accreditationCertificate` is a link to the actual accreditation details.  This link SHOULD point to a trusted source of evidence such as a web page on the accreditation authority site ([example](https://nata.com.au/accredited-organisation/sydney-steel-mill-laboratory-279-272/?highlight=infrabuild)) or a digital verifiable credential.
 
-Add implementation guidance
+It should be noted that this `authorisations` structure is part of the attestation issued by the conformity assessment body. As such it is only an unverified claim until confirmed via the `accreditationCertificate` link.
+
+
+```json
+    "authorisations": [
+      {
+        "type": [
+          "Endorsement"
+        ],
+        "id": "https://authority.gov/schemeABC/123456789",
+        "name": "Accreditation of certifiers.com under the Australian National Greenhouse and Energy Reporting scheme (NGER).",
+        "trustmark": {
+          "fileName": "NGER Accreditation",
+          "fileType": "image/png",
+          "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+        },
+        "issuingAuthority": {
+          "type": [
+            "Entity"
+          ],
+          "id": "https://abr.business.gov.au/ABN/View?abn=72321984210",
+          "name": "Clean Energy Regulator",
+          "registeredId": "72321984210",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+             "id": "https://business.gov.au/ABN/",
+             "name": "Australian Business Number"
+          }
+        },
+        "accreditationCertificate": {
+          "linkURL": "https://files.example-authority.com/1234567.json",
+          "linkName": "NGER conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+        }
+      }
+```
+
+
+### Conformity Certificate and Auditable Evidence (Secure Link)
+
+The `conformityCertificate` and `auditableEvidence` objects are both the same `SecureLink` type. The purpose is to provide a verifiable link to further details about the attestation (the certificate) or the auditable evidence (eg test results) that informed the attestation.  
+
+* `linkURL` points to the external certificate or evidence described by `linkName`.
+* `linkType` is an optional identifier that, if present, should be drawn from a controlled vocabulary of linktypes ([example](https://ref.gs1.org/voc/?show=linktypes).  
+* `hashDigest` should equal the hash of the target. This provides an integrity measure to ensure that the external certificate or evidence has not been tampered since the DCC was issued. `hashMethod` code defines which hash algorithm to use.
+* `encryptionMethod` defines whether the target is encrypted and, if so, using which algorithm.  THis provides a privacy/confidentiality mechanism to protect more sensitive content. The decryption key is assumed to be passed out of bounds. 
+
+```json
+    "conformityCertificate": {
+      "linkURL": "https://files.example-certifier.com/1234567.json",
+      "linkName": "GBA rule book conformity certificate",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+      "hashDigest": "7d294dd556fc7c5c7ee1123fbd18a59686b74e9697fee2299906e00f80ec1dc8",
+      "hashMethod": "SHA-256",
+      "encryptionMethod": "AES"
+    },
+    "auditableEvidence": {
+      "linkURL": "https://files.example-certifier.com/1234567.json",
+      "linkName": "GBA rule book conformity certificate",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+      "hashDigest": "73af1e7404283545909e9714e51e4b1653ff168ecfbe69dddcf4feece01e0c87",
+      "hashMethod": "SHA-256",
+      "encryptionMethod": "AES"
+    },
+```
+
+### Scope (Conformity Assessment Scheme)
+
+`scope` defines the conformity scheme under which this attestation is issued. A scheme is a high level framework describing the context for the entire attestation. many individual assessments can be made under one scheme, and each may reference different standards or regulations. 
+
+* the `id` and `name` identifies the scheme. `issuingParty` identifies the scheme owner.  
+* the `issueDate` defines when the scheme was created and the `trustMark` is a binary file representing the mark or logo of the scheme.
+
+```json
+    "scope": {
+      "type": [
+        "ConformityAssessmentScheme",
+        "Standard"
+      ],
+      "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+      "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+      "issuingParty": {
+        "type": [
+          "Entity"
+        ],
+        "id": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=786222414",
+        "name": "Global Battery Alliance",
+        "registeredId": "786222414",
+        "idScheme": {
+          "type": [
+             "IdentifierScheme"
+           ],
+          "id": "https://kbopub.economie.fgov.be/",
+          "name": "Belgian business register"
+        }
+      },
+      "issueDate": "2023-12-05",
+      "trustmark": {
+        "fileName": "GHG protocol trust mark",
+        "fileType": "image/png",
+        "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+      }
+    },
+```
 
 ### Conformity Assessments 
 
-Conformity assessments are included in the DCC as an array of UNTP `Declaration` structures. The same structure is re-used for third party assessments in UNTP Digital Product Passport (DPP).  Please refer to the [Sustainability Vocabulary Page](SustainabilityVocabularyCatalog.md) for further information and examples.
+Conformity assessments are included in the DCC as an array of UNTP `Declaration` structures. The same structure is re-used for third party assessments in UNTP Digital Product Passport (DPP).  Please refer to the [declarations structure](SustainabilityVocabularyCatalog.md#declarations-structure) for further information and examples.
+
+To help understand the difference between a `Scheme` that defines the scope of the overall attestation and the `Criterion` that defines the rules for a specific conformity assessment, an example can help.
+
+* ACRS operates a structural steel [product certification scheme](https://steelcertification.com/product-certification) which will include a specific assessment assessment criteria for many different steel product types. For example on criteria could be about minimum tensile strength of a concrete reinforcing steel bar under criteria define by standard [AS/NZS 4671: 2019](https://store.standards.org.au/product/as-nzs-4671-2019).  
+
 
 ## Sample
 

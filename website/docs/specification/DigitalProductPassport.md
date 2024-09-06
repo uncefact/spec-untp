@@ -7,18 +7,17 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-* Latest JSON-LD @context : https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.9.jsonld
-* Latest JSON Schema : https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.9.json
-* Example DPP : [untp-digital-product-passport-v0.3.9 (battery use case)](../../samples/untp-digital-product-passport-v0.3.9.json)
+* **[Latest JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.10.jsonld)**
+* **[Latest JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.10.json)**
+* **[Sample Instance](../../samples/untp-digital-product-passport-v0.3.10.json)**
 
 
 ## Versions
 
 | DPP Version | Date | status  | Change summary | JSON-LD Context  | JSON Schema  |
 | ------ | ----- | ------ | ------ | ------| ---|
-| 0.3.0      | 01-07-2024 | Raw |Refactored to build on untp-core  |[@context](https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld) | [Schema](../../schema/DPP_v0.3.0_schema.json)|
 | 0.3.1 | 25-07-2024| Draft | Bug fixes and sample values added|[@context](../../schema/DPP_v0.3.1_context.jsonld) |[Schema](../../schema/DPP_v0.3.1_schema.json)|
-| 0.3.9 | 22-08-2024| Draft | Consistency enhancements. Ready for pilot testing | [@context](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.9.jsonld) | [schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.9.json)|
+| 0.3.10 | 28-08-2024| Draft | Consistency enhancements. Ready for pilot testing | [@context](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.10.jsonld) | [schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.10.json)|
 
 
 
@@ -58,12 +57,12 @@ The Digital Product Passport is an assembly of re-usable components from the UNT
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.9/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.10/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 
 ### DPP Documentation
 
-The [DPP documentation](https://jargon.sh/user/unece/DigitalProductPassport/v/0.3.9/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DPP model.
+The [DPP documentation](https://jargon.sh/user/unece/DigitalProductPassport/v/0.3.10/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DPP model.
 
 ## Implementation Guidance
 
@@ -92,7 +91,7 @@ All DPPs are issued as W3C Verifiable Credentials and MUST conform to the [VCDM 
   ],
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
-    "https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.9.jsonld"
+    "https://test.uncefact.org/vocabulary/untp/dpp/0.3.10/"
   ],
   "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
   "issuer": {
