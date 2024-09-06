@@ -13,7 +13,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Versions
 
-| DPP Version | Date | status  | Change summary | JSON-LD Context  | JSON Schema  |
+| DFR Version | Date | status  | Change summary | JSON-LD Context  | JSON Schema  |
 | ------ | ----- | ------ | ------ | ------| ---|
 | 0.3.10     | 28-08-2024 | Draft |Initial model for facility data |[@context](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-context-0.3.10.jsonld) |[schema](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-schema-0.3.10.json) |
 
