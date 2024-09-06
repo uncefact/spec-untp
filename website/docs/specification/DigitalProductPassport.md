@@ -91,7 +91,7 @@ All DPPs are issued as W3C Verifiable Credentials and MUST conform to the [VCDM 
   ],
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
-    "https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.10.jsonld"
+    "https://test.uncefact.org/vocabulary/untp/dpp/0.3.10/"
   ],
   "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
   "issuer": {
