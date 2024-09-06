@@ -49,6 +49,20 @@ Registered implementers are requested to provide annual reporting of anonymised 
 
 ## UN/CEFACT Reference Implementation
 
-UN/CEFACT will maintain an up to date reference implementation for each major UNTP version and a suite of tests for each major and minor version.  The [registration details](Software.md#uncefact) are provided in the software solutions register.
+UN/CEFACT will maintain an up to date reference implementation for each major UNTP version and a suite of tests for each major and minor version.  The details below follow the same format as any [software register](Software.md) implementations.  
+
+** Organisation Information **
+
+|Logo|Name|Implementation Statement|Geographic scope|
+|--|--|--|--|
+|![UN Logo](../../implementations/uncefact/logo.png)|[UN/CEFACT](https://unece.org/trade/uncefact)|The UN center for trade facilitation and e-business is pleased to provide a suite of UNTP open source reference implementations and a conformity testing toolkit.|Global|
+
+** Product Information **
+
+|Product Name|Description|Product Version(s)|UNTP Scope|UNTP Version(s)|Date|Test Report|
+|--|--|--|--|--|--|--|
+|[VCkit](https://github.com/uncefact/project-vckit)|Verifiable credential issuing and verifying toolkit| v0.5 |VCP|v0.5|01-Oct-2025|TBA |
+|[IDkit](https://github.com/uncefact/project-identity-resolver)|Identity resolver reference implementation.|v0.5|IDR, DIA|v0.5|01-Oct-2025|TBA|
+|[Test Kit](https://uncefact.github.io/tests-untp/)|A suite of conformity testing tools for all UNTP specifications|v0.5|DPP, DCC, DFR, DTE, DIA|v0.5|01-Oct-2025|TBA|
 
 
