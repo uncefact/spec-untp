@@ -34,7 +34,7 @@ The traceability event is designed to meet the following detailed requirements a
 |ID|Name|Requirement Statement|Solution Mapping|
 |--|--|--|--|
 |TEV-01|Sub-components|The traceability event MUST provide a mechanism to trace from a DPP representing a product assembly to the individual DPPs of each sub-assembly component part|[Association Event](#associationevent)|
-|TEV-02|Consumed materials|The traceability event MUST provide a mechanism to trace a manufactured product DPP back to the DPPs representing batches of input materials that are consumed in manufacturing one or more output products.|Transformation Event](#transformation event)|
+|TEV-02|Consumed materials|The traceability event MUST provide a mechanism to trace a manufactured product DPP back to the DPPs representing batches of input materials that are consumed in manufacturing one or more output products.|[Transformation Event](#transformation-event)|
 |TEV-03|Aggregated bundles|When a DPP represents an aggregated bundle of similar items (eg a pallet of cotton bales) then the traceability event MUST provide a means to allocate the aggregate measures to each individual item (ie each bale)|[Aggregation Event](#aggregationevent)|
 |TEV-04|Transportation|when a product (or consolidated consignment) is shipped from one physical location to another, the traceability event MUST provide a means to record the movement and associate sustainability measures such as transport emissions to the shipped bundle|[Transaction event](#transactionevent)|
 |TEV-05|items or quantities|Traceability events MUST work equally well whether the input or output items are individually serialised items or measured quantities (mass or volume) of a product class.|[Items](#item) [Quantity](#quantityelement)|
