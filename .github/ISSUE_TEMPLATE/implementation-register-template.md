@@ -50,12 +50,18 @@ Select the UNTP specification version(s) that you plan to support
 
 ### For Industry 
 
-Please list any industry associations of which you are a member and which may be a focal point for a UNTP [community activation program](https://uncefact.github.io/spec-untp/docs/business-case/CommunityActivationProgram). 
+Please list any industry associations of which you are a member and which may be a focal point for a UNTP [community activation program](https://uncefact.github.io/spec-untp/docs/business-case/CommunityActivationProgram). Also please indicate which (if any) [UNTP industry extensions](https://uncefact.github.io/spec-untp/docs/extensions/) you plan to implement
 
 - Association name
 - Association homepage URL
 
 repeat as necessary
+
+UNTP Extensions
+
+- [ ] Agriculture
+- [ ] Critical Minerals
+- [ ] Textiles
 
 ### For Regulators
 
@@ -63,13 +69,19 @@ Please list any business registers, accreditations, certificates, licenses, or p
 
 - Regulation name 
 - Reference URL
-- Type (Identity / Compliance)
 
 repeat as necessary
 
-### For Certifiers
+### For Assurance Bodies
 
-Please list the relevant conformity schemes against which you issue attestations of conformance.
+Type of Assurance body
+
+- [ ] Standards Authority
+- [ ] Industry Body
+- [ ] Accreditation Authority
+- [ ] Conformity Assessment Body (CAB)
+
+Please list the relevant conformity schemes
 
 Scheme name: 
 Scheme reference URL:
@@ -84,6 +96,7 @@ Please list your software products and major versions that you wish to register 
 Product name: 
 Product URL:
 Product major version: 
+UNTP Specifications supported by this product:
 
 repeat as necessary
 
