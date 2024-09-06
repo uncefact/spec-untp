@@ -16,7 +16,6 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 | DPP Version | Date | status  | Change summary | JSON-LD Context  | JSON Schema  |
 | ------ | ----- | ------ | ------ | ------| ---|
-| 0.3.0      | 01-07-2024 | Raw |Refactored to build on untp-core  |[@context](https://test.uncefact.org/vocabulary/untp/dpp/dpp-context.jsonld) | [Schema](../../schema/DPP_v0.3.0_schema.json)|
 | 0.3.1 | 25-07-2024| Draft | Bug fixes and sample values added|[@context](../../schema/DPP_v0.3.1_context.jsonld) |[Schema](../../schema/DPP_v0.3.1_schema.json)|
 | 0.3.10 | 28-08-2024| Draft | Consistency enhancements. Ready for pilot testing | [@context](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.10.jsonld) | [schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.10.json)|
 
