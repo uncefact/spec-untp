@@ -60,13 +60,13 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 ## 2024-09-05 Meeting Summary
 
 ### Meeting Participants:
-1. **Mr. Kepler** - Lead of the meeting
-2. **Dr. Wang** - Provided an update on the UNTP presentation translation into Chinese
-3. **Steve** - Discussed the TC154 project and provided updates
-4. **Michael** - Business case development lead
-5. **Phil** - Provided comments on vocabulary management
-6. **Gerhard** - Commented on testing and evidence for implementations
-7. **Nis** - Raised concerns about versioning and semantic context
+
+1. **Dr. Wang** - Provided an update on the UNTP presentation translation into Chinese
+2. **Steve** - Discussed the TC154 project and provided updates
+3. **Michael** - Business case development lead
+4. **Phil** - Provided comments on vocabulary management
+5. **Gerhard** - Commented on testing and evidence for implementations
+6. **Nis** - Raised concerns about versioning and semantic context
 
 ### Key Discussion Points:
 
