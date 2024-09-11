@@ -13,7 +13,7 @@ Summary list of regulators (ie international bodies, national government agencie
 
 |Organisation Name |Regulatory Function|UNTP Scope|Status|
 |--|--|--|--|
-|[Government of British Columbia](#government-of-british-columbia)|Energy and Mines|DCC|planned| 
+|[Government of British Columbia](#government-of-british-columbia)|Energy and Mines Digital Trust|DCC|planned| 
 | | | | |
 
 
