@@ -13,23 +13,27 @@ Summary list of regulators (ie international bodies, national government agencie
 
 |Organisation Name |Regulatory Function|UNTP Scope|Status|
 |--|--|--|--|
-|[Sample Agency](#sample-agency)|Environmental protection|DCC|planned| 
+|[Government of British Columbia](#government-of-british-columbia)|Energy and Mines|DCC|planned| 
 | | | | |
 
 
 ## Implementation Details
 
 
-### Sample Agency
+### [Government of British Columbia](https://digital.gov.bc.ca/)
 
-** Agency Information **
+* UNTP commitment made on:  11-Sept-2024
+* Registration Country: Canada
+* Operting Countries: Canada
+* Participate in pre-release UNTP Pilots? : Yes
 
-|Logo|Name|Implementation Statement|Registration Date|Country|
-|--|--|--|--|--|
-|**LOGO**|Sample Agency (URL hyperlink)|Environmental regulator will issue guarantee-of-origin (GO) credentials as UNTP DCCs to national industry for high emissions goods categories. The UNTP DCC GO credentials will allow our industries to meet the regulatory and due diligence requirements of both domestic and export markets. |01-Jan-2025|AU|
+|Logo|Implementation Statement|
+|--|--|
+|![BC Gov](../../implementations/digital.gov.bc.ca/logo.png)|The BC government sees UNTP implementation as an opportunity to enable BC producers of raw materials to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
 
 ** Regulation Information **
 
 |Regulation|Description|Topic|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
 |--|--|--|--|--|--|--|
-|GO Certificate|Guarantee of Origin Certificate|environment. emissions|DCC|v0.5.0|01-Feb-2025|TBA |TBA|
+|[P&NG Tenure](https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/petroleum-natural-gas-tenure)|Petroleum and Natural Gas tensure|compliance|DCC|v0.5, v1.0|TBA|TBA |
+|[Mine permitting](https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting)|BC Government dept of energy and mines permitting|compliance|DCC|v0.5, v1.0|TBA|TBA|
