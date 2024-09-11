@@ -19,7 +19,7 @@ A core principle of UNTP is to avoid re-inventing standards by building upon exi
 |[W3C Verifiable Credentials (VCDM)](#w3c-verifiable-credentials-data-model)|UNTP ensures data integrity by requiring that Product passports, conformity credentials, facility records, and traceability events are issued as W3C verifiable credentials.|
 |[W3C Decentralised Identifiers (DID)](#w3c-decentralised-identifiers)|UNTP ensures identity integrity by requiring that all credential issuers are identified by a W3C DID that is cryptographically linked to an authoritative organisation / facility / product identity|
 |[ISO Product Circularity Data Sheet (PCDS)](#iso-product-circularity-data-sheet)|UNTP provides a simple and interoperable mechanism to digitalise ISO PCDS using the DPP and DCC `Declaration` structure|
-|[CEN Digital Product passport System (CEN DPP)](#cen-jtc24-digital-product-passport-framework)|UNTP will liaise with CEN to enure interoperability where there is overlap (3 of 11 UNTP specifications). For example, whilst CEN DPP will define a specific data carrier and product identifier scheme, UNTP must support many existing industry schemes and so will include the CEN schemes in the list of supported schemes.|
+|[CEN/CENELEC Digital Product passport System (CEN DPP)](#cen-cenelec-digital-product-passport-framework)|UNTP will work to enure interoperability where there is overlap (3 of 11 UNTP specifications). For example, whilst CEN DPP will define a specific data carrier and product identifier scheme, UNTP must support many existing industry schemes and so will include the CEN schemes in the list of supported schemes.|
 |[ISO Electronic Product Code Information Services (EPCIS)](#iso-epc-information-services)|UNTP Digital Traceability Events present a simplified but conformant subset of EPCIS that is optimised for packaging as verifiable credentials. |
 
 ## Matrix
@@ -56,7 +56,7 @@ The **column headings** represent the discrete UNTP components:
 |[W3C VCDM](#w3c-verifiable-credentials-data-model)|PRO|USE|USE|USE|USE| | |USE| | | |
 |[W3C DID](#w3c-decentralised-identifiers)|PRO| | | | | |USE|USE| | | |
 |[ISO PCDS](#iso-product-circularity-data-sheet)| |CPL|CPL| | | | | | | | |
-|[CEN DPP](#cen-jtc24-digital-product-passport-framework)| |INT| | | | |INT| |INT| | |
+|[CEN DPP](#cen-cenelec-digital-product-passport-framework)| |INT| | | | |INT| |INT| | |
 |[ISO EPCIS](#iso-epc-information-services)| | | | |PRO| | | | | | |
 
 
@@ -96,11 +96,11 @@ UNTP does not re-invent any of the criteria in the ISO PCDS.  Rather the UNTP Di
 
 Sample ISO-59040 conformant UNTP DPP - to be provided.
 
-### CEN JTC24 Digital Product Passport Framework
+### CEN CENELEC Digital Product Passport Framework
 
 **Standard Overview**
 
-The [CEN/CENELEC JTC 24 Digital Product Passport Framework and System (CEN EU DPP)](https://standards.cencenelec.eu/dyn/www/f?p=205:7:0::::FSP_ORG_ID:3342699&cs=1798F43FAA14922B642266F24B912DC61) is a new initiative that will deliver the underlying technical standards (data carriers, identifiers, data exchange) to support the [European Commission Eco-design for Sustainable Products Regulation (ESPR)](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products-regulation_en). There are three outputs defined by the CEN DPP working group.
+The [CEN/CENELEC Digital Product Passport Framework and System (CEN EU DPP)](https://standards.cencenelec.eu/dyn/www/f?p=205:7:0::::FSP_ORG_ID:3342699&cs=1798F43FAA14922B642266F24B912DC61) is a new initiative that will deliver the underlying technical standards (data carriers, identifiers, data exchange) to support the [European Commission Eco-design for Sustainable Products Regulation (ESPR)](https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/sustainable-products/ecodesign-sustainable-products-regulation_en). There are three outputs defined by the CEN DPP working group.
 
 * [Unique Identifiers](https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT,FSP_LANG_ID:79954,25&cs=1ADFFF9399AF24899ABD679346872B4D1) - unique identifier system that supports both centralised and decentralised identifiers and supports product identification at the model, batch, or item level.
 * [Data Carriers](https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT,FSP_LANG_ID:80081,25&cs=1C477B63D7C0FF3374CDD59F4B1B40FF6) - the format, error correction, encoding methods, printing & durability of the product data carrier (eg QR code).

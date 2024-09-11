@@ -17,23 +17,26 @@ Register types are
 
 |Register Name|Type|UNTP Scope|Geographic scope|Status|
 |--|--|--|--|
-|[Sample Register](#sample-register)|Product|IDR, DIA|Global|planned| 
+|[Government of British Columbia Org Book](#sample-register)|Organisation|IDR, DIA|Canada|planned| 
 | | | | | |
 
 
 ## Implementation Details
 
+### [Government of British Columbia Org Book](https://orgbook.gov.bc.ca/)
 
-### Sample Register
+* UNTP commitment made on:  11-Sept-2024
+* Registration Country: Canada
+* Operting Countries: Canada
+* Participate in pre-release UNTP Pilots? : Yes
 
-** Organisation Information **
-
-|Logo|Name|Implementation Statement|Registration Date|Country|
-|--|--|--|--|--|
-|**LOGO**|Sample Register (URL hyperlink)|As a global register of trade products we will implement UNTP so that anyone that encounters a registered product (eg a barcode) can discover rich and verifiable sustainability information about that product|01-Jan-2025|AU|
+|Logo|Implementation Statement|
+|--|--|
+|![BC Gov](../../implementations/orgbook.gov.bc.ca/logo.png)|The Government of British Columbia (BC) sees UNTP implementation as an opportunity to enable producers of raw materials in the province of BC to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
 
 ** Registered Identifier Schemes**
 
-|Regulation|Description|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
-|--|--|--|--|--|--|
-|Product ID|Unique identifier for a product class|IDR, DIA|v0.5.0|01-Feb-2025|TBA |
+|Scheme|Description|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
+|--|--|--|--|--|--|--|
+|[BC Org Book](https://orgbook.gov.bc.ca/)|Public verifiable credential register (VCR) of organisations registered in the province of Brish Columbia|DCC|v0.5, v1.0|TBA|TBA |
+
