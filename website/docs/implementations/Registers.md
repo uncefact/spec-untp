@@ -32,7 +32,7 @@ Register types are
 
 |Logo|Implementation Statement|
 |--|--|
-|![BC Gov](../../implementations/orgbook.gov.bc.ca/logo.png)|The BC government sees UNTP implementation as an opportunity to enable BC producers of raw materials to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
+|![BC Gov](../../implementations/orgbook.gov.bc.ca/logo.png)|The Government of British Columbia (BC) sees UNTP implementation as an opportunity to enable producers of raw materials in the province of BC to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
 
 ** Registered Identifier Schemes**
 
