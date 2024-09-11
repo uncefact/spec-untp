@@ -38,5 +38,5 @@ Register types are
 
 |Scheme|Description|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
 |--|--|--|--|--|--|--|
-|[BC Org Book](https://orgbook.gov.bc.ca/)|Public register of organisations registered in BC|DCC|v0.5, v1.0|TBA|TBA |
+|[BC Org Book](https://orgbook.gov.bc.ca/)|Public verifiable credential register (VCR) of organisations registered in the province of Brish Columbia|DCC|v0.5, v1.0|TBA|TBA |
 
