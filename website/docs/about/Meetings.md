@@ -18,14 +18,15 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
-* The next meeting is 9pm UTC 11th September 2024 - [Join here](https://us02web.zoom.us/j/85091806131). 
-* The following meeting is 8am UTC 19  Sept 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09)
+* The next meeting is 8am UTC 19  Sept 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09).
+* The following meeting is 9pm UTC 25th September 2024 - [Join here](https://us02web.zoom.us/j/85091806131).
 
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-09-11| [The meeting covered updates on standards integration, implementation commitments from key stakeholders like the British Columbia government, and the plan to freeze UNTP version 0.4.0 for upcoming pilot programs.](#2024-09-11-meeting-summary))| [video](https://us02web.zoom.us/rec/share/TLDhFQPgXJ8CksSqR3CvWp3je0oiBuJyS8o0djx4shDXVha71lJMuPU94m4UMPhW.sT8AgEAZJkesR_FQ)|[transcript](../../meetings/2024-09-11-Recording.txt)|
 |2024-09-05| [The meeting focused on updates and discussions around the development of a global digital product passport, business case frameworks, and the importance of community activation in implementing UNTP extensions.](#2024-09-05-meeting-summary)|[video](https://us02web.zoom.us/rec/share/AC4BGb0zEH0UFQBTw1V0wgbT-oMlsSKGYDxZV08tU_uhS7CW_W6ODIor8k1vGH4X.4H1NEA5vs-2yl-hZ)|[transcript](../../meetings/2024-09-05-Recording.txt)
 |2024-08-28| [The meeting focused on updates and discussions around the development of a global digital product passport, business case frameworks, and the importance of community activation in implementing UNTP extensions.](#2024-08-28-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Sul2KkyH8LYUiNJDTwT3JR9gNR4uxL8JGvPIvyp202fO-NfN2anAZtjRkFH4me9w.8hQdXJfine_JzV6b)|[transcript](../../meetings/2024-08-28-Recording.txt)|
 |2024-08-22| [The meeting focused on refining the business case content, updating the digital product passport schema, and preparing to solicit implementation commitments as the team moves towards a stable 1.0 release by the end of the year.](#2024-08-22-meeting-summary)|[video](https://us02web.zoom.us/rec/share/YWThMHYlAdjry0oG-4ytceAKGn-qUDW3cuGiP2hkBwMRMOiYWTsY5oeAwjgNsaiF.TljvfQcuaW-ckYbo)|[transcript](../../meetings/2024-08-22-Recording.txt)|
@@ -56,6 +57,51 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+
+## 2024-09-11 Meeting Summary
+
+
+**Participants:**
+- **Steve Capell**
+- **Virginia Cram-Martos**
+- **Dr. Wang Xiang**
+- **Christophe** (Association des Centraliens)
+- **Joe** (last name not mentioned)
+- **Esther** (last name not mentioned)
+- **Brie** (last name not mentioned)
+- **Patrick** (last name not mentioned)
+- **Todd Taylor**
+- **Nancy** (last name not mentioned)
+- **Phil Archer** (not present, mentioned as being on holiday)
+
+---
+
+**1. Opening Remarks:**
+   - **Steve Capell** welcomed the participants and noted the absence of Phil Archer due to holiday. The meeting started with an agenda to discuss ongoing initiatives and updates on standards and implementations.
+
+**2. Discussion on Standards and References:**
+   - **Virginia Cram-Martos** raised a couple of points regarding typos and clarity in a recently published page on references to standards. Specifically, she suggested improvements to the readability of certain sections, including changes to the terminology around cryptographic links and facility identities.
+   - There was a discussion on how UNTP should relate to standards like SEND and ISO, with the consensus being that these should focus on complementing existing standards rather than reinventing them.
+
+**3. Technical Matrix for Standards:**
+   - **Virginia** and others provided feedback on a matrix listing standards and their relationship to UNTP components. There were suggestions to improve the readability of this matrix by possibly reformatting it or providing tooltips for acronyms to make it more accessible.
+
+**4. Community Implementations:**
+   - **Steve Capell** reviewed several commitments to UNTP implementation that had been submitted over the past week. Notable entries came from the **British Columbia Government** and various software vendors.
+   - **Patrick** highlighted that BC's open-source governmental software could be leveraged by other provinces, emphasizing collaboration between BC, Ontario, and Quebec in developing tools like mobile wallets and identity solutions.
+
+**5. Business Case and Metrics:**
+   - The discussion shifted to how UNTP would gather metrics on its implementation, with a consensus that any reporting should only include information that the implementing parties would be willing to publish publicly. 
+   - **Brie** pointed out the importance of linking corporate-level and site/facility-level data, particularly for standards like TSM (Towards Sustainable Mining), which have different levels of granularity.
+
+**6. Stability and Version Freezing for Pilots:**
+   - The group discussed freezing the UNTP version at **0.4.0** to stabilize the implementation for the next round of pilots. The goal is to ensure technical consistency while allowing further refinements based on pilot feedback.
+
+**7. Next Steps:**
+   - **Steve Capell** proposed continuing discussions on identifying which remaining tickets need to be resolved before version 0.4.0 is finalized. 
+   - There was also a brief discussion about cross-referencing implementations between UNTP and other projects, such as the **Critical Raw Materials (CRM)** project, to avoid duplication while maintaining transparency.
+
 
 ## 2024-09-05 Meeting Summary
 

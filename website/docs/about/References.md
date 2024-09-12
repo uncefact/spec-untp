@@ -9,7 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 # Relationships To Other Standards And Initiatives
 
-A core principle of UNTP is to avoid re-inventing standards by building upon existing work and maximising interoperability with similar initiatives. In many cases, UNTP provides complementary value to other initiative (for example by providing a data exchange protocol for business standards). This page provides an overview of related standards and details the relationship with relevant UNTP specifications. 
+A core principle of UNTP is to avoid re-inventing standards by building upon existing work and maximising interoperability with similar initiatives. In many cases, UNTP provides complementary value to other initiatives (for example by providing a data exchange protocol for business standards). This page provides an overview of related standards and details the relationship with relevant UNTP specifications. 
 
 ## Summary
 
@@ -17,51 +17,17 @@ A core principle of UNTP is to avoid re-inventing standards by building upon exi
 |Standard|UNTP Relationship|
 |--|--|
 |[W3C Verifiable Credentials (VCDM)](#w3c-verifiable-credentials-data-model)|UNTP ensures data integrity by requiring that Product passports, conformity credentials, facility records, and traceability events are issued as W3C verifiable credentials.|
-|[W3C Decentralised Identifiers (DID)](#w3c-decentralised-identifiers)|UNTP ensures identity integrity by requiring that all credential issuers are identified by a W3C DID that is cryptographically linked to an authoritative organisation / facility / product identity|
+|[W3C Decentralised Identifiers (DID)](#w3c-decentralised-identifiers)|UNTP ensures identity integrity by requiring that all credential issuers are identified by a W3C DID that is cryptographically linked to an authoritative register (of organisations or facilities or products)|
 |[ISO Product Circularity Data Sheet (PCDS)](#iso-product-circularity-data-sheet)|UNTP provides a simple and interoperable mechanism to digitalise ISO PCDS using the DPP and DCC `Declaration` structure|
-|[CEN/CENELEC Digital Product passport System (CEN DPP)](#cen-cenelec-digital-product-passport-framework)|UNTP will work to enure interoperability where there is overlap (3 of 11 UNTP specifications). For example, whilst CEN DPP will define a specific data carrier and product identifier scheme, UNTP must support many existing industry schemes and so will include the CEN schemes in the list of supported schemes.|
+|[CEN/CENELEC Digital Product passport System (CEN DPP)](#cen-cenelec-digital-product-passport-framework)|UNTP will work to enure interoperability where there is overlap (3 of 11 UNTP specifications). For example, whilst CEN DPP will define a specific data carrier and product identifier scheme, UNTP will support many existing industry schemes and so will include the CEN schemes in the list of supported schemes.|
 |[ISO Electronic Product Code Information Services (EPCIS)](#iso-epc-information-services)|UNTP Digital Traceability Events present a simplified but conformant subset of EPCIS that is optimised for packaging as verifiable credentials. |
 
 ## Matrix
 
-The acronyms used in the matrix table (necessary to make the table fit in a typical browser window) are defined here.
-
-The **column headings** represent the discrete UNTP components:
-
- - [VCP](../specification/VerifiableCredentials.md) : Verifiable Credentials Profile
- - [DPP](../specification/DigitalProductPassport.md) : Digital Product Passport
- - [DCC](../specification/ConformityCredential.md) : Digital Conformity Credential
- - [DFR](../specification/DigitalFacilityRecord.md) : Digital Facility Record
- - [DTE](../specification/DigitalTraceabilityEvents.md) : Digital Traceability Event
- - [SVC](../specification/SustainabilityVocabularyCatalog.md) : Sustainability Vocabulary Catalog
- - [IDR](../specification/IdentityResolver.md) : Identity Resolver
- - [DIA](../specification/IdentityResolver.md) : Digital Identity Anchor
- - [DAC](../specification/DecentralisedAccessControl.md) : Decentralised Access Control
- - [BCT](../business-case/BusinessCaseTemplates.md) : Business Case Template
- - [CAP](../business-case/CommunityActivationProgram.md) : Community Activation Program
-
- The **table cell values** indicate the type of relationship or dependency between the referenced standard and the UNTP component.
-
-- **PRO** : UNTP adopts a simplified but fully conformant **PRO**file (subset) of the reference standard.
-- **EXT** : UNTP adopts and **EXT**ends the reference standard to meet additional needs.
-- **USE** : UNTP **USE**es the standard.
-- **CPL** : UNTP **C**om**PL**ements the reference standard (for example by providing a digitalisation solution)
-- **INT** : UNTP is (or aims to be) **INT**eroperable with the reference standard.
-- **EQV** : UNTP is **EQ**ui**V**alent to the referenced standard (eg jointly developed and published)
-- **ALT** : UNTP is a non-interoperable **ALT**ernative to the referenced standard.
+Standards relationship matrix as downloadable excel (coming soon)
 
 
-|Standard|VCP|DPP|DCC|DFR|DTE|SVC|IDR|DIA|DAC|BCT|CAP|
-|--|--|--|--|--|--|--|--|--|--|--|--|
-|[W3C VCDM](#w3c-verifiable-credentials-data-model)|PRO|USE|USE|USE|USE| | |USE| | | |
-|[W3C DID](#w3c-decentralised-identifiers)|PRO| | | | | |USE|USE| | | |
-|[ISO PCDS](#iso-product-circularity-data-sheet)| |CPL|CPL| | | | | | | | |
-|[CEN DPP](#cen-cenelec-digital-product-passport-framework)| |INT| | | | |INT| |INT| | |
-|[ISO EPCIS](#iso-epc-information-services)| | | | |PRO| | | | | | |
-
-
-
-## Detailed Comparisons
+## Expanded Descriptions
 
 ### W3C Verifiable Credentials Data Model 
 
@@ -106,14 +72,16 @@ The [CEN/CENELEC Digital Product Passport Framework and System (CEN EU DPP)](htt
 * [Data Carriers](https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT,FSP_LANG_ID:80081,25&cs=1C477B63D7C0FF3374CDD59F4B1B40FF6) - the format, error correction, encoding methods, printing & durability of the product data carrier (eg QR code).
 * [Data Exchange Protocols](https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT,FSP_LANG_ID:80427,25&cs=1923166F1B2A61A3BCD3F393EB2D7DB02) - An open, secure, reliable, and high integrity data exchange protocol for the exchange of DPP data between two or more systems. Includes access control mechanisms for sensitive data.
 
+The CEN/CENELEC DPP standardization work is in-progress.  This information will be refreshed as updated information is published.
+
 **UNTP Relationship**
 
-Whilst the CEN DPP standard will define specific product data carrier and identifier standards that will be enforced by EU regulation, the UNTP is a voluntary standard that must be easy to apply to any existing industry specific product data carriers and identifiers - and must work within any member country regulatory framework. For example, 100 million livestock (sheep and cattle) in Australia are identified with RFID data carriers that carry [NLIS](https://www.nlis.com.au/) identifiers and comply with national regulations. Also, approximately 2 million organisation use GS1 product identifiers and data carriers (1D or 2D bar codes). UNTP is designed to work with these existing industry and regulated schemes without preference to any specific scheme. Furthermore, to facilitate scalable uptake of digital credentials, the UNTP avoids any need for system-to-system data exchange by including security and human readability into each digital credential. Given any identifier for any product, represented with any data carrier, the UNTP [Identity Resolver](../specification/IdentityResolver.md) specification provides a means to discover the Digital Product Passport and verify it, irrespective of whether the verifier is a human or a machine.  Therefore, with regard to the three CEN DPP standards, the UNTP alignment is achieved as follows.
+The UNTP is a voluntary standard that must be easy to apply to any existing industry specific product data carriers and identifiers - and must work within any member country regulatory framework. For example, 100 million livestock (sheep and cattle) in Australia are identified with RFID data carriers that carry [NLIS](https://www.nlis.com.au/) identifiers and comply with national regulations. UNTP builds upon ubiquitous technical standards from W3C and IETF to ensure technical interoperability and will leverage semantic web technologies and established vocabularies for semantic interoperability. Therefore is is expected that interoperability with CEN/CENELEC DPP standards will be straightforward.
 
 * Identifiers and Carriers : UNTP will maintain a human and machine readable register of organisation, facility, and product identifier schemes together with data about how to parse data carriers, resolve identifiers to discover passports, and verify ownership of the identifier and integrity of the passport. Any EU product registers that implement CEN standards will be added to the UN register of schemes.
 * Data Exchange Protocol : UNTP leverages open technical standard including [JSON Schema](https://json-schema.org/), [W3C JSON-LD](https://www.w3.org/TR/json-ld11/) semantics, and [IETF Linksets](https://datatracker.ietf.org/doc/rfc9264/). CEN DPP is likely to leverage similar technical standards. Furthermore, UNTP Digital product passport data is mapped to well established semantic vocabularies such as vocabulary.uncefact.org, schema.org and others as needed. UNTP will maintain mappings to any EU specific passport data semantics to ensure interoperability at the semantic level. 
 
-Whilst the exact direction of CEN DPP standards will not be known until later in the life-cycle of standards development, it is expected the UNTP interoperability will be straightforward. 
+This information will be refreshed as updated information is published. UN/CEFACT remains committed to ensure interoperability with CEN/CENELEC DPP standards as they emerge. 
 
 ### ISO EPC Information Services
 
