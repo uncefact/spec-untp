@@ -151,13 +151,13 @@ Logo|Implementation Statement
 
 |Logo|Implementation Statement
 |--|--|
-|![Logo](../../implementations/digital.gov.bc.ca/logo.png)| |
+|![Logo](../../implementations/digital.gov.bc.ca/logo.png)|The BC government sees UNTP implementation as an opportunity to enable BC producers of raw materials to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy.|
 
 ** Product Information **
 
 |Product Name & version|Description|UNTP Scope & versions|Implementation Test Report|
 |--|--|--|--|
-|[Traction](https://digital.gov.bc.ca/digital-trust/tools/traction/)|Traction is a tool for simplifying the sending and receiving of digital credentials. It’s for governments and organizations.| |VCP, DPP, DCC v0.5, v1.0|TBA|
+|[Traction](https://digital.gov.bc.ca/digital-trust/tools/traction/)|Traction is a tool for simplifying the sending and receiving of digital credentials. It’s for governments and organizations.|VCP, DPP, DCC v0.5, v1.0|TBA|
 
 ** Industry Focus **
 
