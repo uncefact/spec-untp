@@ -1,0 +1,404 @@
+[Speaker 1]
+Good evening, Virginia.
+
+[Speaker 8]
+Hello.
+
+[Speaker 1]
+It's very early for you, Dr. Wang, isn't it?
+
+[Speaker 8]
+Yes, Mr. Kaplan, it's very early. Good morning. Thank you for joining.
+
+[Speaker 2]
+Did you ever figure out what all those messages were about? Do I need to accept all of them?
+
+[Speaker 1]
+I think what happens is whenever I add a new person to the mailing list, it's like when you organize a meeting and you add a new member, everyone gets notified of the new member. So the bloody thing keeps...
+
+[Speaker 2]
+So there's no changes in the time?
+
+[Speaker 1]
+No. I wish I could figure out a way to stop that.
+
+[Speaker 2]
+Okay, so I'll just delete them all. Because I've been saving them in my inbox and I'm just wondering what I should do.
+
+[Speaker 1]
+Yes, understandable. I have to see if I can find a cleaner way to manage that mailing list and calendar combination. Hello, Joe.
+
+[Speaker 8]
+Morning, everyone. How are you?
+
+[Speaker 1]
+Very well. And Zach. And who's that from the Association des Centraliens?
+
+[Speaker 3]
+That's Christophe. I think I was still logging on another Zoom.
+
+[Speaker 1]
+Okay. Hello, Christophe.
+
+[Speaker 3]
+Hello, Steve.
+
+[Speaker 6]
+Hi, Steve. I'm driving, so I'll be just listening in today.
+
+[Speaker 8]
+Okay.
+
+[Speaker 2]
+When we get started, I'd like to look together at the references page with the standards, because I had a question in one place and I had a suggestion about how to make that table more readable.
+
+[Speaker 8]
+Certainly.
+
+[Speaker 1]
+Yeah, I added it quickly because there's been a little bit of discussion about how do we relate to the SEND work and also ISO wanting to understand how their proposed DPP would fit. So I thought it was time to have that page.
+
+[Speaker 2]
+It's well presented. The concepts are all good. Like I said, I had a question about one place where I didn't.
+
+I think it's just the way it's worded. I'm not sure I understand what it's saying. And then I'll explain to you what I think would be done with the table when we're looking at it.
+
+[Speaker 1]
+Perfect. I value that feedback. We'll give it one more minute.
+
+Hello, Esther and Brie.
+
+[Speaker 8]
+Hey, Steve. Hello.
+
+[Speaker 1]
+All right. It's three minutes past. I know that Phil Archer from GS1 is on holiday for two weeks, so we won't see him for a while.
+
+Let me start with the usual welcome, everyone, and thank you for sharing your time on a voluntary basis. I know it's quite a lot of time, and we really appreciate it. This meeting is being recorded and will be summarized and posted.
+
+Hope everyone's all right with that. And again, a reminder, all your contributions are UNIP and will be shared freely with the world. I'm going to start my screen share, and work through a little bit of today's agenda.
+
+Todd Taylor has joined us as well. Which in the email, I think the things to work through, the first one on the list is what Virginia was talking about, is a new page that was published during the week out of session because of some pressures from SAN and ISO about how do we relate. And I'd like to walk you through that and collect your views on it.
+
+It did go through a review process, and we did get a couple of reviews, but nevertheless, I think it's important we all understand what that page is for and get your feedback. So I might start with that, if that's all right. So there is this page now called References.
+
+I don't know if that's the right word for it, but it basically means our relationship with other standards and initiatives. So I'll just walk you through this. The little paragraph here says, a core principle of ours is to avoid reinventing standards by building on existing work and maximizing interoperability with other initiatives.
+
+So that's important to the way we work. And in many cases, UNTP provides complementary value to other initiatives. So there's things like all the sustainability standards out there.
+
+We're not reinventing sustainability criteria. We're just giving away to digitize. The way I've organized this page is a bit like the meetings page where you've got this summary table that's quite short, but you can click on any of these and get the details.
+
+So going back to the summary table, this is by no means a complete list, fairly obviously. There's a few there. Virginia's got a hand up already, so why don't you say what you do.
+
+[Speaker 2]
+I'll start with a typo because that's the simplest one.
+
+[Speaker 8]
+Okay.
+
+[Speaker 2]
+In the third line, to other initiatives, it should be plural.
+
+[Speaker 1]
+All right. Typo. I haven't got a pen to write this down.
+
+[Speaker 2]
+I don't have editing rights, so I couldn't do anything. I get an error message that says, you can't do this.
+
+[Speaker 1]
+All right. Virginia, I'll get your GitHub account. You can create any GitHub account, and then I can grant you editing access.
+
+[Speaker 2]
+I'm sure I have a GitHub account.
+
+[Speaker 1]
+Okay, but I probably haven't added you to the maintainers team, which means when you click on this edit page button, you can actually edit it as opposed to get an error message.
+
+[Speaker 2]
+Okay.
+
+[Speaker 1]
+So it's a typo.
+
+[Speaker 2]
+It's not a big deal. Now, the second thing that I don't understand is in the second standard, the W3C decentralized identifiers. It says, starting with the second line, a W3C DID is cryptographically linked to an authoritative organization.
+
+I get that, but facility? Is that an authoritative facility? The DID that's cryptographically linked to a facility?
+
+[Speaker 1]
+Right. Okay. So what I meant there was linked to an authoritative identity, which may be of type, organization, facility, or product.
+
+In other words, a DID is a self-issued thing. You can create a thousand of them, but not all DIDs are the same. Some have a strong link to a DNS entry, for example.
+
+But until you link a DID to something more publicly understood, like a business number or a domain name or a land title or something, it's just a meaningless identifier that links to a key pair. So it's a cryptographic thing, but not an identity thing. So that's what this is trying to say.
+
+I need to find a way to improve the words.
+
+[Speaker 2]
+Yes. Cryptographically... I'll think about that.
+
+But anyway... I was thinking about when it said linked to an authoritative organization, I immediately thought about your trust anchors.
+
+[Speaker 1]
+Yes, yes.
+
+[Speaker 2]
+But then I said cryptographically linked to a facility. That's not an authoritative facility.
+
+[Speaker 1]
+What it should say is something like cryptographically linked to an authoritative register of identities. And that register...
+
+[Speaker 2]
+Or... to an authoritative registry for organizations or facilities or product identities.
+
+[Speaker 1]
+Exactly. Exactly. Okay.
+
+So feel free to raise a ticket if you can't edit the page and just write what you want changed, but I'll give you edit rights as well as soon as this call is finished.
+
+[Speaker 2]
+Okay, and then if you go down to the matrix... Okay, yeah.
+
+[Speaker 1]
+So I should just say for the others in the room, I've so far put just six standards here. I know there's more. There's some more technical ones, like some good stuff coming from the Decentralized Identity Foundation that we're going to build on for digital identity anchors.
+
+There's also, of course, other ISO standards like the digital link one. And the list will go on. I expect there'll be 20 or 30 when we finally stabilize this page.
+
+So the intent of this first table is just to give you a quick human readable, what is this external standard and some words that are meant to be comprehensible and I failed with the second row to understand the UNTP relationship.
+
+[Speaker 2]
+There's another typo in the SEND one. In the SEND line. Will liaise with SEND to ensure?
+
+[Speaker 1]
+Yes, ensure. I changed the wording on that one because that word liaise implies that there is a formal liaison which there isn't. There's a pull request in here with the thing we're going to talk about, which is all these registrations of intent that fixes a few things.
+
+Thank you for that, too. Then the next question is I imagined people would have and this is the reason for the next table is, okay, there's an external standard but we have probably UNTP has a bunch of components and which of the components of UNTP does this standard overlap with or leverage or do we leverage them or what's the relationship between this external standard and the UNTP components? I had a go at making this matrix here and I know everyone hates acronyms but in order to make it fit I couldn't put the full names here at the top.
+
+[Speaker 2]
+I had a suggestion for this because you have to constantly go back and forth between the acronyms and the table. I was thinking how could we do this so that it would fit better and how about changing so that across the top you have the standards W3C, ISO, et cetera and down the left-hand column you have the different UNTP elements.
+
+[Speaker 5]
+That's what gives you a little bit more room so maybe you could even spell it out for us.
+
+[Speaker 2]
+Because then you would be able to spell out the UNTP elements even if it makes the So that works for this table but what if we had 30 standards?
+
+[Speaker 1]
+What about a tool tip?
+
+[Speaker 2]
+I would actually break it into the same table several times rather than make it so that it's so difficult to read because that was my first idea.
+
+[Speaker 1]
+There is a plug-in for Docusaurus where you can tell it to look for certain acronyms and then when you hover over it it pops up and says is that another solution? Just to understand the main issue here is this table is just basically a soup of acronyms so it's hard to follow. I accept that I'm trying to think of a better solution it could be a downloadable Excel maybe might be better than this but you could just put there and say download this if I'm a bit constrained by what the web presentation can do.
+
+[Speaker 2]
+You can do both actually you can put it here when you hover over it it gives you the definition for the acronym and then you can also at the bottom say download the above table in Excel.
+
+[Speaker 1]
+Or do it in Excel and then paste in an image where I can do much cleverer things like if the column at the top was rotated vertically you can do that easily in Excel it's just harder to do I'll probably do it with some complex HTML code so the message here is make this table easier to understand the acronyms I just wanted to get your thoughts on not so much the headings but the table contents so you've got words like pro, use, int what the hell does that mean so I was trying to find a way to say well sometimes we're using a standard and making a simple implementable profile of it that's quite a common pattern where an external standard is really quite all encompassing and you want to say I'm just using this bit of it in a simple and interoperable way that's what I mean by profile so for example our verifiable credentials profile is a subset of the full W3C specification that meets our needs and then there's this sometimes a standard is the opposite the standard gives you a very simple kind of framework but it's actually not enough and a good example of that is the digital link ISO standard that says if you've got an identifier you can create a URL like this but it doesn't tell you about what you get back when you hit the URL about link sets and stuff like this so that would be one we extend a bit and then there's some that we just use unchanged there's some that I think we complement for example the ISO product circularity data sheet is a PDF document that says here's all the things you should say about circularity has no digitization instructions so UNTP digital passport is a way to digitize an ISO product circularity data sheet so I use complement int means interoperable so this is a lot of that for the send stuff we aim to be interoperable with whatever that standard does or produces equivalent is we're photocopied either one way or the other we photocopy theirs they photocopy this is a common pattern for the TC-154 joint publication of a UN standard under an ISO badge anyway so that's the short list that's what I meant by it I welcome your feedback again is it useful to have this sort of matrix of standards and our components and whether we're extending them profiling them using them or whatever is it useful is it too much detail what do you think Virginia
+
+[Speaker 2]
+I think it's useful once you can get past the acronyms and both the acronyms in the top line and also all of them I mean sure I know what the W3C DID is but does everybody who's reading this and and then to also have the rollover for the options inside like profile instead of pro and interoperable instead of int because when I look at int I think international immediately comes to my mind that's not what it means
+
+[Speaker 1]
+it's all about fitting it on a screen right and maybe the answer is put it in an Excel sheet and make it downloadable
+
+[Speaker 2]
+but also I mean I think having the rollover is a good idea but you just need to look for everything
+
+[Speaker 1]
+all right if you don't mind I might just skip down to the send DPP because this is an interesting one I have changed the words a little bit here with Suzanne's feedback but send like ISO develop standards with a working group behind a firewall and then finishes them and publishes them so you don't actually know exactly what they're doing unless you're on the committee until a draft is published but what they do have is a page that says here's a high level of what we're doing so I've linked to those pages and what their public statement says is that they're going to create a unique identifier system for products and they're going to make a data carrier standard so QR code and print integrity and size and all kinds of stuff about how you represent it and they're going to develop a technical interchange protocol that covers things like security, reliability technical interoperability and semantic interoperability that's what they say they're doing and so I thought what I say here about our relationship is first of all I think this is important to highlight the send work is a piece of work being carried out effectively on behalf of the European Commission to support some European regulation and so the law can mandate whatever the law wants to mandate and if the law says we're going to create an identifier scheme that's what it's going to do and that's what the standards authority is going to define but with us we're trying to build a global scalable framework for traceability and transparency that we've had this discussion before must work on top of existing identifier schemes and I deliberately put an obvious example here because it will make people think they know what this means but there's 100 million livestock walking around Australia, mostly sheep but about two thirds of them sheep and one third of them cows and they've all got RFID tags in their ears and they're all linked to a national identity register of livestock so it goes without saying that if we publish a standard that says you've got to rip all those ID tags off and put a QR code on the side of the cow it ain't going to work and the world is full of these kind of identifier schemes so UNTP must register them and show how to interoperate with them and build upon them and in that context I see whatever SEND comes up with with regards to our unique identifiers and data carriers as just another scheme that we would register and demonstrate interoperability with.
+
+So do you think that's fair positioning?
+
+[Speaker 5]
+Looks good to me Steve, I have a quick question. Are you wanting machine readable language so anytime must, shall, may, you want that all capital?
+
+[Speaker 1]
+I think I should go through the whole spec and do that, right?
+
+[Speaker 5]
+Yes.
+
+[Speaker 1]
+So Virginia, you've still got your hand up. Is that because you haven't put it down? Oh, it's because I'm sorry.
+
+Yeah, that's right.
+
+[Speaker 3]
+Patrick? Yeah, I just want to point out like what Bri just said is like really important like I would avoid using the word must unless you mean it in the normative statement kind of way. And if you do want to use it in uppercase letters, so you should clearly mention because this is a specification so people that read these keywords have sort of meaning so depending which specification terminology you want to use like must, may, these things and if you want to have a sentence that you want to say must in it without that meaning, like try to find a you know, like a must synonym like the
+
+[Speaker 1]
+Yeah, well, Patrick, that's a good point.
+
+[Speaker 2]
+It is important that, it is essential that Yes, yes.
+
+[Speaker 3]
+Yeah, exactly. Yeah, exactly. Just avoid these keywords depending on which specification terminology that you use.
+
+There's different ones out there.
+
+[Speaker 1]
+You know, for example, like DHS and they recommend they use shall instead of must so that's like a different sort of set of terminology so Can I just ask Can I just ask though, do we think that rule about using these normative words clearly applies to the whole site or just to the specification pages because this is really just business content we're looking at, right? It's not a technical specification like many specs. There's the normative part and the informative part.
+
+[Speaker 2]
+Well, I think in this particular page, you're talking about standards maybe the business discussion, but you're talking about standards and the standards people will be reading this so you probably want at least on this page to use a vocabulary that's not going to turn on
+
+[Speaker 3]
+Yes, red lights One thing that can be done is just on top of the page you put this page is not normative you know, just like a small thing like they do that in some section and some specification so I would put that on every page that is not normative like a little info box like this or something like that that could help just make sure it's not too ambiguous
+
+[Speaker 4]
+My hands I can't raise my hand right now but I really agree with what Virginia and Bri and Patrick are saying and I'm wondering if less is more at this point, Steve like just given the political sensitivities that we have with some of these standards organizations maybe we just list them and don't talk about don't go into all the detail about the relationship because the relationships are still forming in some ways and I just feel like there might be opportunities for misinterpretation maybe we kind of update this in a month or two when things have settled a little bit I still think we should have the page and list all of the different standards and entities that we are working with and actively trying to be interoperable with but maybe going into long descriptions isn't the way to go right now I don't know
+
+[Speaker 1]
+Okay
+
+[Speaker 4]
+Maybe just have the table
+
+[Speaker 1]
+Just the top table Where did it go now, sorry Just made an issue for myself there Just this table
+
+[Speaker 4]
+Yeah, I don't know, how do others feel about that?
+
+[Speaker 2]
+Well, I would go down Can you go down a little further, Steve? No, too far I want to look at the second table You might want I would include the second table but somehow indicate that this is provisional based on the knowledge that we have at this time or something like that That makes sense So that people can see what our objective is but just say that this is provisional and subject to change after consultation with the standards bodies in question or something like that
+
+[Speaker 4]
+And don't take the maybe detailed comparison language remove it from the GitHub site for now but I think that it's valuable and we should keep it I just think maybe we don't publish it yet
+
+[Speaker 2]
+I would take out the word comparisons Sorry, I would take out the word detailed because detailed implies that it's complete and just say and maybe So I think
+
+[Speaker 1]
+what we're navigating here is a tricky balance between providing useful information to the reader that cares about this versus not treading on other standards bodies' toes by misrepresenting what we think they're doing and causing potential unintended conflict So that's Nancy's concern and Virginia's concern is saying well it's useful information but present it better and avoid these sort of things
+
+[Speaker 2]
+You could call this further descriptions or enlarged descriptions or something like that instead of detailed comparisons
+
+[Speaker 7]
+Or relation to something and I agree with Nancy because I think some of these standards, even Sentinelite right here, they are still incredibly active debate So for us to say something, it sounds like we declare their intent and conclusions and they're very far well the intent maybe but the conclusion, they're very far from that So we don't want to misrepresent them or misrepresent us
+
+[Speaker 1]
+What if we make that matrix an Excel spreadsheet so it's less obvious and you've got to download it and look at it, it's not in your face on the page and if we we already know which standards are a little bit sensitive right and so just change the wording on this to be a simple statement that here's what's published right now, it's under development and we will seek to remain aligned That's it, that sort of thing, right and so the uncontentious ones you know, like ISO product circularity data sheet and other things still useful information so let's see if we can we'll do that right, so I'll get rid of that complex table because it's hard to read anyway make it an Excel spreadsheet and modify the wording where we know there's a sensitivity but otherwise it's actually just useful information, does that make sense?
+
+[Speaker 4]
+Yeah, I agree Stephen, I think it shows that we're thinking hard about not just sort of nodding to the fact that we know that these other standards exist and that we should be working with them but that we're actually digging in and making the connections and thinking about it so I'm going back on my original take it all off comment
+
+[Speaker 1]
+That's alright, that's why we have these chats right, I think we've reached a happy compromise Is everyone happy with that compromise? Alright then our next topic for discussion is an interesting one because you may remember last meeting we published this page which is an invitation to express a commitment to implement and we broke it up by industry actors, conformity assessment bodies regulators, software solutions and identity registers with some instructions and the instructions basically say raise a ticket with your intent and currently the site has nothing there are a bunch of tickets but we haven't yet, we're about to review them it just has a sample, put your logo here, blah blah now I'm pleased to report that in the week since we published this we now have, let's go to the issues page a number of there's ones with the implementations tab so I'll just show only those there's quite a number here already, which is quite satisfying really, I appreciate those that have made a commitment, so one of them is just our own reference implementation so don't need to talk about that too much but I thought anyone on the call that represents any of these and I know there's a couple may want to talk to their own commitment should we start with the government of British Columbia?
+
+[Speaker 4]
+Speak to our commitment?
+
+[Speaker 1]
+Yeah, there's a ticket here that says what you're doing
+
+[Speaker 4]
+Oh, we're all in
+
+[Speaker 1]
+So that's cool I looked at this so what I've done is read these tickets and made a pull request which reflects these tickets on the actual register pages and for the British Columbia government one I actually split it into two because what I see here is a Department of Energy, Mines and Digital Trust committing to implement a couple of permits as digital conformity credentials but I also see a business register committing to implement verifiable identity so I split this into two entries one in the registers page and one in the regulators page to reflect that commitment which is very welcome and they're the only ones so far on the regulators page and the registries page because those are harder organisations to bring on board it's not surprising that the initial flurry of interest will come from software vendors and that's good because the concern I hear from major corporates who are saying UNTP looks interesting but where's the tooling I'm not going to write it myself so it's actually quite good to get a whole flurry of software vendors committing to implement because then we can say to the corporates look there's lots, pick one so most of the rest of these are software vendors and I would like to go through them first of all Patrick's got his hand up I think you want to say something about the BCW
+
+[Speaker 3]
+Well just about software one of the things that is behind BC's government mission is to provide open source governmental software that can be leveraged so everything that, well there's probably a few exceptions but I'd say a good 90% of what BC will use to drive this will be available as open source software and the goal is that this software can be customised a good example of that is the collaboration with other provinces such as Ontario and Quebec where Ontario they also have their version of the org book and the mobile wallet that is being developed the provincial mobile wallet all provinces are creating their own version initiating from the same open source code base so this creates a very powerful set of tools of course there's still work that needs to be done to have the infrastructure to support it so depending on the entity's technical resource not every government or not every ministry has the same technical resources these can be stood up and the same way that a private company might want to operate these software to provide their software I know Norton Block they use a lot of this software and their solution that they provide so this creates a very interoperable ecosystem for different players so that's something
+
+[Speaker 1]
+so my takeaway from that comment Patrick is that I was mistaken in splitting the BCGov entry into two, I should have split it into three because there's also an entry on the software page reflecting the open source tooling you've made
+
+[Speaker 3]
+definitely, I think so and for the identity anchoring the software is the same the only reason why it has an authority is because BCGov hosts it and they have some business to go behind this they are authoritative for the business that are registered in BC so who hosts the service is what's going to give it its role in the ecosystem
+
+[Speaker 1]
+okay, good I'm pleasantly it's nice to see all these commitments in just one week I hope we get to something like 50 or 100 by Christmas and I've got a PR which has the ones that were available to me before I went to bed last night which is everything except FreshChain, Tilcal and NorthernBlock, but I'll add those in I don't think we've got anyone actually on this call have we from any of these software companies Tilcal, I know them all so one of the reasons to make these issues that we then discuss is to avoid the situation or to manage in a fairly crude way the situation where somebody puts basically a spam ticket, right, because anybody can raise a ticket so I want us to collectively have some confidence that these are genuine I know that Serity has been watching what we're doing and Suzanne used to work for them and that this request here is a genuine one I know the TrustProvenance guys very well because they were on the Australian agriculture pilots FreshChain similarly is in the second round of Australian agriculture pilots, Tilcal, Matthew Hugg he's been on the call several times and participating in our group and NorthernBlock is your Canadian provider so I'm confident that all of these are genuine and has anybody else got any concerns or objections about transforming these tickets into actual registrations on the page?
+
+No, good, alright. My only little comment might be if you click on a couple of them, let's compare the Serity one with the Tilcal one if you see what Serity is committing to you look at all those checkboxes basically to implement every spec and if you look at what Tilcal is committing to it's to implement a digital product passport so there is a tendency I think for a software company to want to advertise maximum overlap we support everything and I wonder what our strategy should be if we look at a request and we go, really? Are you going to implement an identity register?
+
+Maybe they are, I don't know and I know TrustProvenance has actually built an identity resolver maybe Serity has as well my sense is that if somebody says they are going to do something as long as they are a genuine entity that we know then we just accept it and publish it it's not for me to say no you're not going to or you are going to but we might have a conversation with them to say, are you sure?
+
+[Speaker 4]
+Or maybe we have as a project an ongoing part of our project governance that we have a six month window or something and if it hasn't been implemented then there is some sort of outreach
+
+[Speaker 1]
+certainly all of these are just commitments to implement when they transform to yes we have implemented and here are the test results then you can't hide anyway because you have to prove that you have implemented an IDR or whatever it is
+
+[Speaker 2]
+Steve I would suggest doing something like planning on a yearly basis to send to everyone who is registered a request for confirmation that this information is correct and to ask them what they have implemented
+
+[Speaker 1]
+so the good news on that one is they will be motivated I believe to advertise the fact that they have implemented because all of these are commitments to a future implementation because if I'm a large corporate and I'm looking for a piece of software it's nice to see commitments but it's better to see ones I can actually use and so I think there will be a natural motivation to do that and the testing framework will ensure that there is evidence behind it and the other thing I put in in that page implementations register somewhere down here ongoing value assessment this is one of the things that has been really challenging for CFACT to measure we produce a standard but how do we know it's being used and what impact is it having on society and so what I've asked here is that anyone who implements and gets their name published is also committing to give us high-level anonymized KPI metrics like how many digital product passports did you issue last quarter or last year so that we can then aggregate those up measure our impact and report back benchmarking privately so I would imagine these companies may not want to be public about how many they issued but we can say here's all the data and you're in the lower quartile or upper quartile or whatever it is this sort of stuff assessing impact and giving value back to those reporting I think is a way to really close this loop three hands went up Nancy you're first
+
+[Speaker 4]
+I have a different topic that I want to talk about so let's talk this one through
+
+[Speaker 8]
+I'll pass to the next person
+
+[Speaker 5]
+I'll go next so I just want to put a caution on that ask Steve about reporting so I think about as a regulator in publishing our information we'll undergo probably a pretty significant privacy review because we'll be publishing data in any way and it's public data and we have our what we call FOIPA so that's our freedom of information and privacy and whatnot so publishing is one thing and then reporting out that data might be another question entirely
+
+[Speaker 1]
+well I think that's a really good point and it's maybe not for this call but we have to have a call at some point where we go to get the balance right between the risk of revealing commercially sensitive or private information which we absolutely cannot do versus anonymized high level aggregated performance indicators so what is the minimum we could ask that is not leaking any private information not even from the reporter to us, never mind from us to the public so for example the number of, let's say in your digital mine stuff let's ask a regulator you're committing to implement the mines permit and the petroleum license thing right so would it be unreasonable to ask how many did you issue in a year is that private information not who you issued them to, just count that's all
+
+[Speaker 5]
+it would be interesting you want to know what we issue we're not really issuing, we're publishing and if we do we publish all of our permits in this way the same way that and it's not a self-service model then it would be even harder for us to pull those stats so it kind of depends on path and regular takes in the implementation
+
+[Speaker 1]
+is the general rule that CFAT should not ask for anything that the reporter isn't already or wouldn't be willing to publish on their own public site so that's basically the principle don't give us any information that you consider private if you would publish it on your site anyway like TILCAL might proudly announce that they issued 100,000 digital passports on their public site fine, give us that but don't give us anything that you consider private or confidential so maybe that's the framework, Patrick?
+
+[Speaker 8]
+yeah, so the first sorry?
+
+[Speaker 3]
+someone wants to talk? I just want to point out, one thing I'm going to clear, so we are issuing credentials so we are issuing credential, we're not just publishing them we have issuers that are registered and they are applying a signature on the credential so that's one thing we need to clarify and I understand why the idea because we're not sending this to an entity directly, but the act of issuing is we have some claims and we are signing these claims as an authority, so as soon as you apply the signature on the document, you've issued that document it's issued, it's out there, then how you where you put it, who you send it to, that's a separate thing so in our model, yes we are and just in the UNTP model, everyone's issuing and then they're just hosting these credentials publicly so that's one thing to pay attention to but for the data aggregation or metric aggregation this information is public so I can, like myself, I can if I want set up a bot and just aggregate all the data there's nothing you can do about it, it's public information it's on the internet for everyone to consume so now do we want a built-in mechanism to sort of report these, that's a different topic, but due to the transparency model and discovery I wouldn't see that there's a big risk, again for the public information, very important to say but yeah, definitely I could also see why it could raise an eyebrow from who's going to gather this information
+
+[Speaker 1]
+Fair enough, but I think we've collectively reached a conclusion that it's useful to have metrics of impact, but the constraint is that we never ask for anything that anyone wouldn't already be willing to publish publicly if we just say those two things, are we on safe ground?
+
+[Speaker 3]
+Yeah, and I even say you need metrics to gauge the success, so like what were you going to do otherwise, I think it's important Virginia?
+
+[Speaker 2]
+I think you might want to also add to that that the UN or UNC Tech will not, will publish aggregate data, so they won't say, you know, like this software vendor did this much or this, you know No, that's right, but it won't be published in aggregate as for example all public authorities or public authorities in North America or something, or public authorities in Europe have never gone on
+
+[Speaker 1]
+Okay, look, I think we're more or less on the same page on this, I'll tweak the wording a bit
+
+[Speaker 6]
+Steve, can I just quickly add one of the other sort of incentives for implementers is, and one of the kind of, I guess, sticks we have is if you're unwilling to share information because it's private or confidential, then it may not be in UN CPAC's interest to maintain your registration right, because if for whatever reason you're not public about your activities, you're sort of undermining transparency at scale and we might, that might be a carrot stick kind of model to kind of keep because there is value to these brands and these entities of being listed on the UN side, right so there's an exchange that we can kind of leverage there
+
+[Speaker 1]
+Alright, so I'm good with this, I know Bri put a couple of tweaks to what I was publishing about BCGov, so I've accepted those when these checks are run, I'm going to merge this pull request which will publish everything except the last three and, what's that Did I miss that one? I should wrap that up right away for you Steve, sorry I'll get that completed That's alright, no they're all done, I've accepted your changes So let's, we've got ten minutes left How would people like to use the last ten minutes? Nancy did you have something you wanted to talk about?
+
+[Speaker 4]
+Oh yeah, I just wanted to, and I think this is probably not a controversial ask but I'm thinking that for those who register with the intent to implement UNTP that it's okay as we get the critical raw materials project underway the implementation, early implementation portion of it for them to also register on the CRM GitHub if indeed they I don't think that there's any issue with duplication It's just
+
+[Speaker 1]
+They can just cross reference because they'll have a permanent URL on UNTP and they can add, say, reference our UNTP implementation and here's specifically what we're doing for critical minerals Something like that Alright, confirmed So one other thing I just wanted to bring up is we're rapidly approaching the point where we want to do a second round of pilots and when we do that, we need a certain stability and so if you look at the published technical artifacts here and somewhere there's a versions link like a digital product passport, for example you see a history of versions and there's been more than that, it's just they're not all published but we've been changing and tweaking and as we have a chat every week, I go, oh yes, that's a good point publish a, you know, go from 0.3.9 to 0.3.10 It's all fine unless someone's trying to build on this moving target and so what I want to propose is that within a week or two we freeze a certain version let's say 0.4.0 knowing that it's imperfect and there's still probably even a backlog of existing tickets that are wanting some sort of change but we collectively say it's good enough to run the next round of pilots and we'll publish that you see this is a test URL here we'll move it from test to the production one and say version 0.4.0 is ready to run pilots we can in the meantime carry on and do 0.4.1 and 0.4.2 etc. in the test environment as we learn from pilots but we're anchoring a certain version for pilots to build to that isn't moving, even with imperfections it isn't moving is everyone happy with that approach and the real question then is do we need to close every ticket before we get to version 4 or can we say what are the tickets that really matter to baseline for a pilot and there might still be some tickets because if you look at the open tickets on our list there's still quite a few things to work through which ones really must be addressed before we say here's version 0.4.0 for pilots is really the thing that we need to sort out and Patrick has a comment
+
+[Speaker 3]
+My only comment is that now that we have the technical stuff sorted so I'm pretty happy with the version before it was just breaking so that was obviously not good but now it seems to be working I can now issue a data model 2.0 credential without breaking it so I'm pretty happy with this I think for the semantic, the UNTP related stuff it's a pretty good space because that also has been sort of refined a little bit and I agree that 4.0 should be what pilots are trusted in and then start the backlog of future improvements because there's always going to be improvements and then if we keep iterating with this model we'll have version 1.0 pretty solid I think
+
+[Speaker 1]
+I think what I hear from that is what's important is 0.4.0 that's ready for pilots is it must be technically consistent and working and not broken in a technical sense obviously but if there's still some business issues like maybe this term should be that or you need to change the way you think about circularity or whatever that's less critical for starting the pilots unless there's some ticket that somebody feels particularly important about that we need to fix but the purpose of the pilots is to discover not so much technical problems hopefully we've resolved most of those but to discover business emissions what data is missing or is too much or does it meet the business intent that's hard to predict before we start the pilots Bre?
+
+[Speaker 5]
+Thanks Steve So if we've got the green light from the technical folks that we have a measure of consistency I think it's good to turn on the green light one thing I will kind of put my hand up and say I don't know we've put an issue in yet but starting to do some mapping with the TSM folks and Poppermark there's a question that I'm going to have about digital conformity credentials because a lot of what we're doing is granular we're seeking the granularity at the site or facility or shipment level, product level I'm not sure if we've sufficiently mapped out how to think of reporting that ties corporate level to the site or facility and that might be really problematic for some of the mapping for things like TSM or Poppermark because they consider both corporate and site or facility level
+
+[Speaker 1]
+So let's continue that discussion that's a good point because I think the way I'd reflect that back is that two things are important to start the pilots, one is it technically doesn't break the other one is that the sort of high level entity relationship model the granularity of the structure looks like it'll work you can have situations where you want more data about a facility or you want inside a class some changes, that's not a big deal but if there's a fundamental misalignment that makes it hard to achieve a business outcome because basically the entity relationship model isn't quite right, then we ought to look at that so let's ask the business focused people like Bri on the call business and technical Bri to figure out to try and spot those so Patrick thankfully has managed to tick the green box technically maybe there's a few more technical things to address but I think the big one is is the high level data model entity relationship, not necessarily every property good enough to start let's focus our discussions over the next week on that question then we can confidently go to point four right, well we're at time more or less I've merged that PR and there's still three of these hopefully it's gone through now implementations register let's look at regulators no, not yet, I think it's still oh no, there it is oh look, British Columbia government is live on the site congratulations and hopefully a bunch of software solutions as well there we go, cool I'm feeling pretty good this is progress right, we've got commitment, we're getting motion I don't know, I'm feeling a bit uplifted today
+
+[Speaker 4]
+excellent work it's really exciting I feel like we've put an invitation to the party and people are RSVPing
+
+[Speaker 1]
+and people came, yes, it's very embarrassing when you say come to my party and nobody knocks on the door it is one of the scary things about doing this but on the other hand, if nobody knocks on the door then you know you're wasting your time, so you may as well pack up early anyway, right, so you've got to take that risk yeah, good thank you everyone for your participation today, it's 7.59 we'll close on time and thanks for your feedback about that standards page we'll make a change as requested see you everyone
+
+[Speaker 3]
+nice day, or good night
+
+[Speaker 8]
+thank you
