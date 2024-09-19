@@ -1,31 +1,22 @@
 {
-  "type": [
-    "DigitalProductPassport",
-    "VerifiableCredential"
-  ],
+  "type": ["DigitalProductPassport", "VerifiableCredential"],
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
     "https://test.uncefact.org/vocabulary/untp/dpp/0.3.10/"
   ],
   "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
   "issuer": {
-    "type": [
-      "CredentialIssuer"
-    ],
+    "type": ["CredentialIssuer"],
     "id": "did:web:identifiers.example-company.com:12345",
     "name": "Example Company Pty Ltd",
     "otherIdentifiers": [
       {
-        "type": [
-          "Entity"
-        ],
+        "type": ["Entity"],
         "id": "https://business.gov.au/ABN/View?abn=1234567890",
         "name": "Sample Company Pty Ltd",
         "registeredId": "1234567890",
         "idScheme": {
-          "type": [
-            "IdentifierScheme"
-          ],
+          "type": ["IdentifierScheme"],
           "id": "https://business.gov.au/ABN/",
           "name": "Australian Business Number"
         }
@@ -35,17 +26,12 @@
   "validFrom": "2024-03-15T12:00:00",
   "validUntil": "2034-03-15T12:00:00",
   "credentialSubject": {
-    "type": [
-      "Product",
-      "Entity"
-    ],
+    "type": ["Product", "Entity"],
     "id": "https://id.gs1.org/01/09520123456788/21/12345",
     "name": "EV battery 300Ah.",
     "registeredId": "90664869327",
     "idScheme": {
-      "type": [
-        "IdentifierScheme"
-      ],
+      "type": ["IdentifierScheme"],
       "id": "https://id.gs1.org/01/",
       "name": "Global Trade Identification Number (GTIN)"
     },
@@ -59,9 +45,7 @@
     "description": "400Ah 24v LiFePO4 battery",
     "productCategory": [
       {
-        "type": [
-          "Classification"
-        ],
+        "type": ["Classification"],
         "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
         "code": "46410",
         "name": "Primary cells and primary batteries",
@@ -77,31 +61,23 @@
       }
     ],
     "producedByParty": {
-      "type": [
-          "Entity"
-        ],
-        "id": "https://business.gov.au/ABN/View?abn=1234567890",
-        "name": "Sample Company Pty Ltd",
-        "registeredId": "1234567890",
-        "idScheme": {
-          "type": [
-            "IdentifierScheme"
-          ],
-          "id": "https://business.gov.au/ABN/",
-          "name": "Australian Business Number"
+      "type": ["Entity"],
+      "id": "https://business.gov.au/ABN/View?abn=1234567890",
+      "name": "Sample Company Pty Ltd",
+      "registeredId": "1234567890",
+      "idScheme": {
+        "type": ["IdentifierScheme"],
+        "id": "https://business.gov.au/ABN/",
+        "name": "Australian Business Number"
       }
     },
     "producedAtFacility": {
-      "type": [
-        "Entity"
-      ],
+      "type": ["Entity"],
       "id": "https://maps.app.goo.gl/QBF7Xy4S9QjHJrzb7",
       "name": "Sample EV battery manufacturing site",
       "registeredId": "QBF7Xy4S9QjHJrzb7",
       "idScheme": {
-        "type": [
-          "IdentifierScheme"
-        ],
+        "type": ["IdentifierScheme"],
         "id": "hhttps://maps.app.goo.gl",
         "name": "Google Pin"
       }
@@ -135,9 +111,7 @@
         "name": "Lithium Spodumene",
         "originCountry": "AU",
         "materialType": {
-          "type": [
-            "Classification"
-          ],
+          "type": ["Classification"],
           "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/14290",
           "code": "46410",
           "name": "Other non-ferrous metal ores and concentrates (other than uranium or thorium ores and concentrates)",
@@ -157,9 +131,7 @@
         "name": "Copper Concentrate",
         "originCountry": "CA",
         "materialType": {
-          "type": [
-            "Classification"
-          ],
+          "type": ["Classification"],
           "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/14210",
           "code": "14210",
           "name": "Copper, ores and concentrates",
@@ -168,32 +140,24 @@
         },
         "massFraction": 0.2,
         "recycledAmount": 0.5,
-        "hazardous": false,
+        "hazardous": false
       }
     ],
     "conformityDeclarations": [
       {
-        "type": [
-          "Declaration"
-        ],
+        "type": ["Declaration"],
         "id": "https://files.example-company.com/declarations/90664869327/",
         "referenceStandard": {
-          "type": [
-            "Standard"
-          ],
+          "type": ["Standard"],
           "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
           "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
           "issuingParty": {
-            "type": [
-              "Entity"
-            ],
+            "type": ["Entity"],
             "id": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=786222414",
             "name": "Global Battery Alliance",
             "registeredId": "786222414",
             "idScheme": {
-              "type": [
-                "IdentifierScheme"
-              ],
+              "type": ["IdentifierScheme"],
               "id": "https://kbopub.economie.fgov.be/",
               "name": "Belgian business register"
             }
@@ -201,34 +165,26 @@
           "issueDate": "2023-12-05"
         },
         "referenceRegulation": {
-          "type": [
-            "Regulation"
-          ],
+          "type": ["Regulation"],
           "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
           "name": "National Greenhouse and Energy Reporting (Measurement) Determination",
           "jurisdictionCountry": "Enumeration Value",
           "administeredBy": {
-            "type": [
-              "Entity"
-            ],
+            "type": ["Entity"],
             "id": "https://abr.business.gov.au/ABN/View?abn=72321984210",
             "name": "Clean Energy Regulator",
             "registeredId": "72321984210",
             "idScheme": {
-              "type": [
-                "IdentifierScheme"
-              ],
+              "type": ["IdentifierScheme"],
               "id": "https://abr.business.gov.au/ABN/",
               "name": "Australian Business Number"
             }
           },
           "effectiveDate": "2024-03-20"
         },
-         "assessmentCriteria": [
+        "assessmentCriteria": [
           {
-            "type": [
-              "Criterion"
-            ],
+            "type": ["Criterion"],
             "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
             "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
             "thresholdValues": [
@@ -237,7 +193,7 @@
                 "metricValue": {
                   "value": 1.8,
                   "unit": "NIL"
-                },
+                }
               }
             ]
           }
@@ -272,39 +228,29 @@
         }
       },
       {
-        "type": [
-          "Declaration"
-        ],
+        "type": ["Declaration"],
         "id": "https://files.example-company.com/declarations/906648677543/",
         "referenceRegulation": {
-          "type": [
-            "Regulation"
-          ],
+          "type": ["Regulation"],
           "id": "https://www.legislation.gov.au/C2009A00028/2021-09-11/text",
           "name": "Fair work act 2009",
           "jurisdictionCountry": "AU",
           "administeredBy": {
-            "type": [
-              "Entity"
-            ],
+            "type": ["Entity"],
             "id": "https://abr.business.gov.au/ABN/View?abn=96584957427",
             "name": "Department of Employment and Workplace Relations",
             "registeredId": "96584957427",
             "idScheme": {
-              "type": [
-                "IdentifierScheme"
-              ],
-               "id": "https://business.gov.au/ABN/",
-               "name": "Australian Business Number"
+              "type": ["IdentifierScheme"],
+              "id": "https://business.gov.au/ABN/",
+              "name": "Australian Business Number"
             }
           },
           "effectiveDate": "2024-03-20"
         },
         "assessmentCriteria": [
           {
-            "type": [
-              "Criterion"
-            ],
+            "type": ["Criterion"],
             "id": "https://www.legislation.gov.au/C2009A00028/2021-09-11/text",
             "name": "National minimum wage orders",
             "thresholdValues": [
@@ -319,7 +265,7 @@
           }
         ],
         "compliance": true,
-        "conformityTopic": "social.labour",
+        "conformityTopic": "social.labour"
       }
     ],
     "circularityScorecard": {
@@ -344,24 +290,18 @@
       "operationalScope": "CradleToGate",
       "primarySourcedRatio": 0.3,
       "reportingStandard": {
-        "type": [
-          "Standard"
-        ],
+        "type": ["Standard"],
         "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
         "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
         "issuingParty": {
-          "type": [
-            "Entity"
-          ],
-            "id": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=786222414",
-            "name": "Global Battery Alliance",
-            "registeredId": "786222414",
-            "idScheme": {
-              "type": [
-                "IdentifierScheme"
-              ],
-              "id": "https://kbopub.economie.fgov.be/",
-              "name": "Belgian business register"
+          "type": ["Entity"],
+          "id": "https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=786222414",
+          "name": "Global Battery Alliance",
+          "registeredId": "786222414",
+          "idScheme": {
+            "type": ["IdentifierScheme"],
+            "id": "https://kbopub.economie.fgov.be/",
+            "name": "Belgian business register"
           }
         },
         "issueDate": "2023-12-05"
