@@ -20,6 +20,10 @@ Summary list of software products and status of implementation.  Scope defines t
 |[Northern Block](#northern-block)|Orbit enterprise, trust registry|VCP, DCC|planned|
 |[FreshChain](#freshchain)|FreshChain Platform|VCP, DPP, DFR, DTE, DCC, DIR, DAC|planned|
 |[Government of British Columbia](#government-of-british-columbia)|Traction|VCP, DCC, DIA|planned|
+|[ReLOG3P SRL](#relog3p-srl)|ReACT, SRL|VCP, DPP, DTE, IDR, DIA, DAC, SVC|planned|
+|[Lumoin](#lumoin)|Verifiable, CoreLoop|VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC|planned|
+|[Transmute](#transmute)|Transmute Platform|VCP, DPP, DTE, DCC, DFR|planned|
+|[Morpheus Network](#morpheus-network)|Morpheus Platform|VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC|planned|
 
 
 ## Implementation Details
@@ -165,6 +169,91 @@ Logo|Implementation Statement
 |--|--|--|
 |Government|compliance (permits, licenses, certificates)|VCP, DPP, DCC|
 
+
+### [ReLOG3P SRL](https://relog3p.com/)
+
+* UNTP commitment made on:  12-Sept-2024
+* Registration Country: Italy
+* Operating Countries: Global
+* Participate in pre-release UNTP Pilots? : Yes
+
+|Logo|Implementation Statement
+|--|--|
+|![Logo](../../implementations/relog3p.com/logo.png)|ReLOG3P is an Innovative Startup and Benefit Corporation based in Italy founded with the specific aim to support the Global Trade to contribute, among others, achieving the UN Agenda 2030 and its Sustainable Development Goals as well as the EU objectives set by the Green Deal, Fit for 55% Package, Sustainable and Smart Mobility Strategy, Digital Strategy. Full transparency all along the Supply Chains is key to achieve our targets, and UNTP vision and mission are extremely aligned to ours, specifically looking at scaling the transparency around Sustainability and against any type of fake and washing, and we strive to embrace and embed it fully within our own product, services and actions.|
+
+** Product Information **
+
+|Product Name & version|Description|UNTP Scope & versions|Implementation Test Report|
+|--|--|--|--|
+|ReACT|Reshaping trasnport and logistics towards a sustainable future.|VCP, DPP, DTE v0.5, v1.0|TBA|
+|SRL|Traction is a tool for simplifying the sending and receiving of digital credentials. It’s for governments and organizations.|VCP, DPP, DTE v0.5, v1.0|TBA|
+
+
+### [Lumoin](https://lumoin.com)
+
+* UNTP commitment made on:  14-Sept-2024
+* Registration Country: Finland
+* Operating Countries: Global
+* Participate in pre-release UNTP Pilots? : Yes
+
+|Logo|Implementation Statement
+|--|--|
+|![Logo](../../implementations/lumoin.com/logo.png)|Lumoin builds Verifable and open-source components to drive the transition to a regenerative and circular economy by implementing the UN Transparency Protocol (UNTP). Verifable offers secure management of Digital Product Passports (DPPs) and verifiable credentials, creating accountable, dependable pathways for supply-chain and project finance across global value chains. Focusing on habitats' resilience, we ensure that materials, water, and energy flow sustainably through societies. By leveraging UNTP, Verifable empowers individuals and businesses to co-create meaningful, accountable choices, driving regenerative and sustainable actions for a better future.|
+
+** Product Information **
+
+|Product Name & version|Description|UNTP Scope & versions|Implementation Test Report|
+|--|--|--|--|
+|[Verifiable](https://github.com/Lumoin/Verifiable)|DID, VC and presentation methods and standards as open source|VCP, DPP, DCC v0.5, v1.0|TBA|
+|[CoreLoop](https://github.com/Lumoin/CoreLoop)|UNTP and other data shapes standards and transformations as open source|DPP, DTE, SVC v0.5, v1.0|TBA|
+
+
+** Industry Focus **
+
+|Industry Sector|Process focus|UNTP Usage|
+|--|--|--|
+|Agriculture, Critical Minerals, Textiles|Supply chain transparency|VCP, DPP, DTE|
+
+
+### [Transmute](https://transmute.industries/)
+
+* UNTP commitment made on:  16-Sept-2024
+* Registration Country: USA
+* Operating Countries: Global
+* Participate in pre-release UNTP Pilots? : Yes
+
+|Logo|Implementation Statement
+|--|--|
+|![Logo](../../implementations/transmute.industries/logo.png)|The future of digital trade is fast clearance, full compliance with Transmute open standard technology. Transmute’s Platform transforms data from every stage of digitization and paper into secure, interoperable, machine readable, and context rich data.|
+
+** Product Information **
+
+|Product Name & version|Description|UNTP Scope & versions|Implementation Test Report|
+|--|--|--|--|
+|[Transmute Platform](https://platform.transmute.industries/)|The Transmute platform offers key supply chain documents, and will add the UNTP schemas offering seamless industry uptake.|VCP, DPP, DTE, DFR, DCC v0.5, v1.0|TBA|
+
+** Industry Focus **
+
+|Industry Sector|Process focus|UNTP Usage|
+|--|--|--|
+|Regulatory compliance|Supply chain|VCP, DPP, DTE, DCC|
+
+### [Morpheus Network](https://morpheus.network/)
+
+* UNTP commitment made on:  14-Sept-2024
+* Registration Country: Canada
+* Operating Countries: Global
+* Participate in pre-release UNTP Pilots? : Yes
+
+|Logo|Implementation Statement
+|--|--|
+|![Logo](../../implementations/morpheus.network/logo.png)|Morpheus.Network is a middleware solution designed specifically for the complexities of supply chain IT systems and stakeholders. Acting as a "binding glue," it seamlessly connects fragmented data, software systems, and various stakeholders across the supply chain. With over 150 integrations, including ERPs (Enterprise Resource Planning systems), TMS (Transportation Management Systems), and cloud providers, Morpheus.Network ensures smooth interoperability between disparate systems. This middleware also provides intuitive tools that enable businesses to digitalize and automate their supply chain processes, leading to increased efficiency, transparency, and control. Morpheus.Network is proud to be part of the UN/CEFACT and UN ESCAP ecosystems of professionals and contributors. We strongly believe in the UNTP initiative and are committed to advancing our goal of achieving global supply chain transparency and efficiency.|
+
+** Product Information **
+
+|Product Name & version|Description|UNTP Scope & versions|Implementation Test Report|
+|--|--|--|--|
+|[Morpheus Network Platform](https://morpheus.network/platform/)|Our multi-award-winning supply chain platform eliminates inefficiencies and removes barriers in your operations. With over 150 connections, our middleware provides a layer between disparate systems and processes, facilitating smooth data exchange and automating workflows.|VCP, DPP, DTE, DFR, DCC, DIA, IDR v0.5, v1.0|TBA|
 
 
 

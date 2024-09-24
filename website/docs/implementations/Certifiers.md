@@ -13,23 +13,27 @@ Summary list of conformity assessment bodies that have implemented or plan to im
 
 |Organisation Name |Accreditation|Geographic footprint|UNTP Scope|Status|
 |--|--|--|--|
-|[Sample Certifier](#sample-certifier)|Global MRA|AU|DCC|planned| 
-| | | | |
+|[ACRS (Australasian Certification Authority for Reinforcing and Structural Steel)](#acrs)|Global MRA|AU, NZ|DPP, DCC|planned| 
 
 
 ## Implementation Details
 
 
-### Sample Certifier
+### [ACRS](https://steelcertification.com)
 
-** Organisation Information **
+**Australasian Certification Authority for Reinforcing and Structural Steel**
 
-|Logo|Name|Implementation Statement|Registration Date|Country|
-|--|--|--|--|--|
-|**LOGO**|Sample Certifier (URL hyperlink)|A global MRA accredited conformity assessment body that specializes in product and process sustainability assessments against authoritative standards. We will issue conformity credentials as UNTP DCC so that our customers can provide verifiable evidence of product conformity to their value chain. |01-Jan-2025|AU|
+* UNTP commitment made on:  14-Sept-2024
+* Registration Country: Australia
+* Operating Countries: Australian & New Zealand
+* Participate in pre-release UNTP Pilots? : Yes
+
+|Logo|Implementation Statement|
+|--|--|
+|![Logo](../../implementations/steelcertification.com/logo.png) | ACRS is the leading CAB for reinforcing and structural steel in Australia. We have committed to implement UNTP to support the local steel industry and to help facilitate the transition to a more transparent supply chain that adds value to the building and manufacturing industries. |
 
 ** Scheme Information **
 
-|Conformity Scheme|Description|Topic|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
-|--|--|--|--|--|--|--|
-|[GHG Protocol](https://ghgprotocol.org/)|GHG emissions intensity credential|environment. emissions|DCC|v0.5.0|01-Feb-2025|TBA |TBA|
+|Conformity Scheme|Description|Topic|UNTP Scope|Test Report|
+|--|--|--|--|--|
+|[Steel Products](https://ghgprotocol.org/)|The Product Certification Scheme certifies steel construction products are manufactured to Australian and New Zealand Standards and other nominated technical standards. It provides users with certainty that steel manufacturers and producers of fabricated materials adhere to necessary specifictions across the construction sector|Safety|DPP, DCC v0.5, v1.0|TBA |

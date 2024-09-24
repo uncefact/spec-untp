@@ -18,15 +18,15 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ## Next Meetings
 
-* The next meeting is 8am UTC 19  Sept 2024 - [Join here](https://us02web.zoom.us/j/87319408152?pwd=dTdyOUU5b1dzdDdjZDZVNFMzSGZLUT09).
-* The following meeting is 9pm UTC 25th September 2024 - [Join here](https://us02web.zoom.us/j/85091806131).
+* The next meeting will be on 3rd Oct 2024 at 8:00 UTC.  Meeting link TBA
 
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2024-09-11| [The meeting covered updates on standards integration, implementation commitments from key stakeholders like the British Columbia government, and the plan to freeze UNTP version 0.4.0 for upcoming pilot programs.](#2024-09-11-meeting-summary))| [video](https://us02web.zoom.us/rec/share/TLDhFQPgXJ8CksSqR3CvWp3je0oiBuJyS8o0djx4shDXVha71lJMuPU94m4UMPhW.sT8AgEAZJkesR_FQ)|[transcript](../../meetings/2024-09-11-Recording.txt)|
+|2024-09-19|[The meeting focused on reviewing new registration requests, addressing syntax and human-readability issues in traceability events, planning updates to the REC 49 policy document, and discussing business case development for public and private sector value.](#2024-09-19-meeting-summary))|[video](https://us02web.zoom.us/rec/share/ZzkAqJFNRuDgJ9On4Uvg7cp2MU-1N5Sas6GDK0VIVid00Zx9vYLdWe1gEZSCDm4F.VTPpBJyEtiQHYYgQ)|[transcript](../../meetings/2024-09-19-Recording.txt)|
+|2024-09-11| [The meeting covered updates on standards integration, implementation commitments from key stakeholders like the British Columbia government, and the plan to freeze UNTP version 0.4.0 for upcoming pilot programs.](#2024-09-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/TLDhFQPgXJ8CksSqR3CvWp3je0oiBuJyS8o0djx4shDXVha71lJMuPU94m4UMPhW.sT8AgEAZJkesR_FQ)|[transcript](../../meetings/2024-09-11-Recording.txt)|
 |2024-09-05| [The meeting focused on updates and discussions around the development of a global digital product passport, business case frameworks, and the importance of community activation in implementing UNTP extensions.](#2024-09-05-meeting-summary)|[video](https://us02web.zoom.us/rec/share/AC4BGb0zEH0UFQBTw1V0wgbT-oMlsSKGYDxZV08tU_uhS7CW_W6ODIor8k1vGH4X.4H1NEA5vs-2yl-hZ)|[transcript](../../meetings/2024-09-05-Recording.txt)
 |2024-08-28| [The meeting focused on updates and discussions around the development of a global digital product passport, business case frameworks, and the importance of community activation in implementing UNTP extensions.](#2024-08-28-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Sul2KkyH8LYUiNJDTwT3JR9gNR4uxL8JGvPIvyp202fO-NfN2anAZtjRkFH4me9w.8hQdXJfine_JzV6b)|[transcript](../../meetings/2024-08-28-Recording.txt)|
 |2024-08-22| [The meeting focused on refining the business case content, updating the digital product passport schema, and preparing to solicit implementation commitments as the team moves towards a stable 1.0 release by the end of the year.](#2024-08-22-meeting-summary)|[video](https://us02web.zoom.us/rec/share/YWThMHYlAdjry0oG-4ytceAKGn-qUDW3cuGiP2hkBwMRMOiYWTsY5oeAwjgNsaiF.TljvfQcuaW-ckYbo)|[transcript](../../meetings/2024-08-22-Recording.txt)|
@@ -57,6 +57,49 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+
+## 2024-09-19 Meeting Summary
+
+**Date:** September 19, 2024 
+
+1. **Steve (Speaker 1)** - Chairperson
+2. **Stefano (Speaker 4)** - Contributor from Reload3P and Morpheus Network
+3. **Nis (Speaker 5)** - Presenter of DPP implementation
+4. **John (Speaker 6)** - Contributed to the discussion on meeting structure
+5. **Suzanne (Speaker 3)** - Discussed the REC 49 policy document and traceability issues
+6. **Sébastien (Speaker 9)** - Contributed to the technical discussion on GS1 standards
+7. **Brett (Speaker 7)** - Provided insights on the TSM credential issue
+8. **Michael (Speaker 2)** - Provided updates on the business case development
+
+#### Key Discussions and Contributions
+
+1. **Registration Requests:**
+   - Steve introduced the agenda, primarily discussing new registration requests.
+   - Stefano (Speaker 4) spoke about his contributions, including those from **Reload3P** and **Morpheus Network**. The work focuses on sustainability and transparency within supply chains.
+   - Nish (Speaker 5) presented a **DPP implementation** on his platform, aiming to include **UNTP schemas** as a template, making it easier to issue credentials.
+   - Steve also mentioned other registration requests, including those from Viko (not present) and an Australian scheme for structural steel.
+
+2. **Pull Requests:**
+   - Nish highlighted a pull request addressing minor **syntax bugs**. Steve admitted the errors might have occurred during manual editing and promised to check with Alistair.
+
+3. **Upcoming Work on REC 49 Policy Document:**
+   - Steve discussed the need to revisit the **REC 49 policy document**, considering feedback from the July 2024 plenary. The goal is to finalize the document for the next plenary in July 2025.
+   - Steve proposed alternating **fortnightly meetings**, separating policy and technical discussions. John and Stefano supported this idea.
+
+4. **Human Readability in Traceability Events:**
+   - Steve proposed making **traceability events** more human-readable, adding optional human-readable properties. Stefano, Suzanne (Speaker 3), and Sébastien (Speaker 9) contributed to the discussion, suggesting using existing GS1 standards to improve readability.
+
+5. **TSM Credential Issue:**
+   - The group discussed a pattern where **different auditors** assess different sections of a standard over time, which leads to multiple assessments. Steve suggested adding an **auditor party reference** to the conformity credential model to solve the issue. Brett (Speaker 7) agreed with Steve's proposal.
+
+6. **Business Case Updates:**
+   - Michael and John provided an update on the **business case development**, focusing on business and public sector value arguments. Nancy’s input, particularly from the public sector perspective, was highlighted as key.
+
+7. **Next Steps:**
+   - Steve planned to raise tickets for various issues discussed and to prepare **pull requests** based on registration approvals and the business case document.
+
+The meeting ended with a commitment to continue work on registrations, policy revisions, and technical improvements.
 
 
 ## 2024-09-11 Meeting Summary
