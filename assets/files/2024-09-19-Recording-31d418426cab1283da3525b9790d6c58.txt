@@ -1,0 +1,409 @@
+[Speaker 1]
+Right, sorry about that. So, welcome everyone. As usual, a reminder that your contributions are UNIP.
+
+If you don't want to contribute, then don't. Hopefully it's a fairly short meeting today. We don't have too much in the way of pull requests and new contributions to look at, but we do have some new registration requests we'll quickly walk through.
+
+And then I've just got a few questions for you, and then maybe we can work through open issues. Allow me to share my screen. So, first order of business is just to raise everyone's, let everyone know that we've got four more implementation requests here.
+
+I think maybe apart from this one from Lumoin, we've got people on the call who represent these. So, actually there's five because there's one down here as well. So, just quickly, did you want to talk to Stefano?
+
+You've got two, right? Yourself and Morpheus Network. Do you want to have a minute about these contributions?
+
+[Speaker 4]
+That's right, Steve. So, this is about our setup and the interest which basically is there since the beginning is to embed the work we're doing in UNTP group in within the services we provide. Basically, Reload3P as a platform that works for the sustainability within the chains and this transparency is key in the matter of sustainability.
+
+So, that's the reason of the registration from our side, Steve and team. In conjunction with that, which is the last one that you show, Steve, we have a partner which is Morpheus Network. They are from Canada and they are also active in the supply chain in reason of transparency, traceability, trackability.
+
+By the way, they are also part of some other UNCFAC working group. And in relation to specifically the UNTP, we are working together to this project I mentioned to you guys already a couple of times where we're going to talk with European regulators, some DGs, within the end of the year. And the UNTP is one of the subjects that we mentioned with them we were going to put on the table and that picked up their attention quite immediately, basically.
+
+So, that's both sides reason why we put down, file up the registration.
+
+[Speaker 1]
+All right, thank you. I'm just looking at the Morpheus Network one. There's no product name here.
+
+Can we just call it Morpheus Network? Or are there... So, try to distinguish between the entity, like who is applying and what products.
+
+[Speaker 4]
+I will possibly put this Steve because I may have missed this section. But yeah, they have the platform. I will put the name of the platform there.
+
+[Speaker 1]
+Yeah, just a quick update. And on your own registration, I noticed you've got two products one called SRL trademark and one called React. But you haven't sort of said what each one does and which UNTP.
+
+Do they service different parts of the UNTP suite or are they, you know, a little bit of words around here. Probably I should update this template a little bit to make that clearer. But what do we say against React versus SRL with regards to which UNTP bits and pieces it will support?
+
+Yeah, something like that. All right. And we've also got one from, a welcome one from our friend Nish.
+
+Nish, did you want to quickly talk to yours, Nish?
+
+[Speaker 5]
+Yeah, sure. I'll just share my screen briefly. So, I do have one, a DPP implemented here on our platform.
+
+What I'm working on is to work the schemas in also, and that will make the UNTP schemas available as a template, which makes it really easy to issue. So, that's my intention. It shouldn't take me long.
+
+I just need to find the time.
+
+[Speaker 1]
+As we all do. Yeah. All right.
+
+Well, then back to the list. We also have one from Viko. Where is it?
+
+Here. He's not on the call at the moment. This is, I think, a Finnish product.
+
+I haven't heard of it, but I do know Viko. It's interesting that people take, a surprising number of software products tick all of these boxes. And that might change when we actually have test suites and rubber hits the road.
+
+But anyway, there's a number of separate products here, verifiable call, verifiable twice. So, I might ask him also what each one does and which bits of UNTP it might support. But it's nice to see interest.
+
+Evidently, it's only a sort of non-binding commitment at the moment, but nevertheless, it's something. The last one here is from an Australian conformity scheme for structural steel. So, nice to have a beginning to get some registrations that are not from software products, but from actual business operators.
+
+So, these guys define a standard for structural steel and a few other things. So, they're going to be issuing conformity credentials and the like. So, that's it.
+
+Does anybody have any, presumably nobody has any objections to this? A little bit of data to tidy up. But if we all think these are valid applications, then I'm going to make a pull request after this to merge them all into the registration pages.
+
+No objections. All good. All right.
+
+So, that's that. There is one little pull request, but let's deal with it. This is from NISQ.
+
+Some syntax bugs. Did you want to talk about that?
+
+[Speaker 5]
+Yes. And the actual difference is just what you're looking at here. Some comments that are out of JSON syntax.
+
+I don't know how they got in. I guess we should probably speak to Alistair about that, but it's minor. What's major is if you look at the actual file changed, the formatting, it's a tool called Prettier that cleans up.
+
+It's like a static code cleanup tool. And it runs. And it is apparently not run when we source the output from the webhook out of jargon.
+
+So, if you go to files changed, the pull request looks massive. And it's just because of how our CI is set up. So, I raised a different issue about it.
+
+All of this is completely unsubstantial. It's three commas, and it looks like this. And it's happened to me before, and it's quite annoying.
+
+I raised a ticket for that and asked Ksenia to look into it. And I think she delegated it. So, should be on track.
+
+But the actual difference is only this.
+
+[Speaker 1]
+Okay. Fair enough. And the guilty party here could be me, right?
+
+Because what happened here is that jargon generates a sample DPP with whatever data you set as sample values in jargon. But sometimes you want to go in and change things. So, I took the sample and manually edited it to have more realistic data and add a few things and add things.
+
+So, it could be that I just stuffed up with commas. But I will check with Alistair and make sure that it is my stuff up and not a jargon generation thing and also look into prettier. But for now, this is an obvious one to just merge.
+
+No exceptions. The real action here is how do we make better samples so that you don't have this weird prettier effect and you don't forget commas. All right.
+
+Okay. So, that's running. So, before we get on to a few little technical issues I want to discuss on OpenTickets, I just wanted to say it's coming towards time when we need to seriously start rethinking or re-editing the REC 49 policy document.
+
+If you remember, we used to have a week on REC 49 and then a week on UNTP. And then we kind of parked REC 49 because we got to the plenary and it was presented for information. Just so you understand the life cycle of these things, because it didn't quite reach maturity in time for the July 2024 plenary, it means the next approval opportunity by the member states is the July 2025 plenary.
+
+Now, working back from there, there's two months of translation and publication, and then there's a month of addressing comments, and then there's a month of second public review, which gets you to sort of March time frame where it's got to be ready for submission to the next plenary. Which means we should start thinking about establishing a working group to fix or reflect all the comments, rethink, and is it the right structure? Maybe we've made it too long and too detailed and we should keep it at a higher level of business model story and just point to more UNTP pages now that they're I don't know, but we may well look for another lead to run that REC 49, editing and polishing and reworking and reflecting comments and so on.
+
+It's a little bit political because we've got to align with the European interest and others. So I think the secretariat and the chair are looking at who might be a good lead for opening that up, but I just want to let you know that those of you that are interested to contribute to the policy document, second edition if you like, you're probably going to sometime in the next few weeks start a second stream of work. And so what I wanted to ask for that is, should we take these weekly meetings and make them fortnightly and have alternatively for those that want to participate, but kind of back to what we were doing before when we had a week on policy and a week on technology.
+
+Would that work better do you think for everyone? Because I'm sensitive, I'm taking a lot of your time every week. I thought we'd get a tempo off, but I'm not sure that it makes us go any faster really having a weekly meeting.
+
+What's your, want to get some thoughts and comments on that? John? Oh, you just put a thumbs up.
+
+[Speaker 6]
+I just did the emoji thumbs up. I think it's a good idea. So I think Stefano put the same thumb up nodding head symbol.
+
+[Speaker 1]
+Yeah, and we may sort of merge the business case area that Michael's leading with the policy document. We really have a business focus team that might attract more real business people, which would be great to refine that policy document and not bother the business people with the techie stuff. So yeah, I'll give you a permission then sometime in the next few weeks, we might go back to that split personality thing, right?
+
+One business and one technical meeting and people choose to attend what matters to them. Any objections to that? No.
+
+No. Okay. Well, that's good then.
+
+[Speaker 3]
+Maybe just a comment from my side on this because I don't know, Steve, if you're aware, I think you are. I've been speaking with Nancy and also Teresa because I was interested in supporting this activity. So yeah.
+
+[Speaker 1]
+I'm very aware of that. I didn't want to put you on the spot. No problem.
+
+[Speaker 3]
+I definitely try to be part of it in whatever role.
+
+[Speaker 1]
+Yeah. So for those that don't know Suzanne, she has one foot in the SenSenelec European Digital Product Passport standardization effort and another foot in the World Economic Forum Global Battery Alliance battery pass effort. And another foot, she's got three legs, in UNTP, right?
+
+So she's very well qualified, I think, to help join the dots because I think that's one of the challenges we collectively have is this perception that we're doing something different and they're doing something different. We really need to start pulling this together and having someone that's actually got a real foot in these other camps help us with RAC49 would be wonderful, in my opinion. I just didn't want to kind of assume that that decision was made yet, Suzanne.
+
+[Speaker 3]
+No, no, it's not made. I just said I'm applying just to play a role in that provision.
+
+[Speaker 1]
+All right. Well, that's good. And you'd be very welcome in my mind.
+
+Thank you. Just before we move on to a few technical questions, I just thought I'd share an anecdote. I had a meeting with the Australian Government Department of Finance that's responsible for the National Digital Identity Framework.
+
+And Australia's got a citizen identity scheme, we call it MyGovID, and we've got a business identity scheme under the Australian Business Register. There's an awful lot of focus, like there probably is in other countries, about personal identity. And the personal digital identity is all the politicians and everyone's got a pretty reasonable understanding of the value and power of that.
+
+And it particularly goes to privacy protection, because we had, like some other countries probably, some of our corporates, a major telecom operator and a healthcare operator that have lots and lots of personal information about individuals got hacked and lots of personal information leaked. And the government response is to equip us with a digital ID where we don't need to anymore hand over full details of driver's licenses or passports or whatever. We just assert an individual identity with minimum extra data.
+
+So it's harder to make identities. That's a good thing. But they're also starting to business identity.
+
+But the real thing that came out is they absolutely have no understanding of business value of business identity. None whatsoever. There isn't a clear business case the government about why it matters to have high integrity business identity.
+
+I told the story of the Asian Development Bank trade finance gap, and how it's $2.5 trillion globally and half of it is because of know your customer identity issues. And there's so much business value of strong business identity. But what was quite interesting was that the government agency that's responsible for it, it just doesn't have much of an understanding of that.
+
+And it's maybe not surprising because their role is to collect tax or to be a government, not to really think about what identity means to business when they're dealing with other business. But what it did tell me is a big communication effort in here. And it kind of goes to Suzanne, what we might put in Reg 49, to really kind of help governments understand and not just understand what it means to be an identity anchor or whatever, but what the business value is to their constituents.
+
+So that really was a bit of a light bulb moment and made me think even more about the importance of the policy document and spending time to graph it and get it right.
+
+[Speaker 3]
+There's a nice example also here in Europe and in Germany, where during the Corona crisis, companies did get some support from the government. And this support, I think there was a billion fraud, because all kinds of people, you know, applied for it, companies applied for it two and three times, companies that were no companies applied for it and did get it. So here's already the business case for the government, because they could easily find out if it's a registered proper company that's applying for the support.
+
+And it would have saved them billions of euros.
+
+[Speaker 1]
+That's a great business case. John, you've got your hand up?
+
+[Speaker 6]
+Yeah, just supporting what you've just been saying, Steve, we've probably been talking to the same people in Australia, but the argument, we're developing a public argument set of documents around the reasons why trust for the digital ID for organisations and people should be seen as a driver for economic growth, not just a reduction in harm. So that most of most governments around the world invest in digital ID and declare the reason they're doing it because of Deja Vu, which is fraud, identity theft, this sort of stuff. And very rarely do they say it's actually a driver for economic growth.
+
+And we're putting forward a public argument on the reasons why government should actually come up with those considerations. They no doubt have to argue for the investment at treasury levels in the government on the basis of the return to the economy and society in terms of investment, but they don't, they seldom make it public. So we're sort of working with a bunch of economists around the world on that argument.
+
+It's publicly available on LinkedIn, our first group.
+
+[Speaker 1]
+Perhaps you could send a reference to the transparency group, just point to it and put a post on the Slack channel. I'd be interested to look, right? Because the Australian government anyway, is about to go to a public consultation on business identity.
+
+And one of the questions is the value proposition. They don't even really quite understand what they need to know. So it's a very broad public consultation, right?
+
+So it's an opportunity for us to present that sort of stuff. Yeah.
+
+[Speaker 3]
+And the entire, the entire kind of motivation of GLIFE, Global Legal Entity Identity in our foundation is, you know, giving us probably a large list of use cases for organizational identity.
+
+[Speaker 1]
+Yes, indeed. All right. So onto a few quick technical matters.
+
+One, I'm having one of our team members is making some default, nice, friendly, rendering templates for all of our credentials. And this is a UX design person. So thinks about very human centric, right?
+
+Not machine exchange. And she did pretty well with the digital product passport and working on the conformity credential. But when she got to the traceability event, she said, what am I going to show people here?
+
+Because when you look at the event, it's very machine to machine centric, right? Lots of IDs, lots of keys, but not much human presentation. And that's because it's been designed for machine to machine, not for machine to human, right?
+
+The agency is basis of the traceability event. So I just wanted to check with everyone. I still think it's important that all credentials are human renderable.
+
+So if I look at a passport, and it's got some, let's say a transformation event about input materials for an output product, that that should still be human readable. And that's going to mean adding names and text bits and pieces to the traceability event, which is extra data than the pure GS1 or ISO standard, but it's therefore human readability of traceability information. What is everyone's opinion on that?
+
+[Speaker 2]
+I think that I agree partly with you, Steve. But the other side then becomes from the actual use. If the ability to read it, I guess the question is how often will it be human read?
+
+So in an initial phase, I can see, yeah, it's being very important, but if it's in over time, effectively, it's read less than 1%, human read less than 1% of the time, then it becomes a lot of baggage to be carrying around all the time. And if it really isn't a machine to machine transaction, then maybe it's, I don't know if there's a way to make it more tight, more compact, that way, if that makes sense. Yes.
+
+[Speaker 1]
+Well, the underlying GS1 spec is pretty tight and compact. And certainly if we add human readable properties, we would most definitely make them optional, right? Not mandatory.
+
+[Speaker 2]
+Yeah. I know that Manu shared, there's something for BC over NFC that Manu Sporny shared in the CCG mailing list in the last couple of days. And it was using CBOR-LD, but it was more terse for the way they structured the credential.
+
+So that might be something to look at, and maybe that's getting too far down the road at this point. I don't know.
+
+[Speaker 1]
+Maybe. I mean, a core principle is that everything we issue should be machine and human readable, right? So that the issuer doesn't have to know what the verifier needs.
+
+But yeah, traceability events are a bit kind of different, I suppose, to passports and conformity credentials, because they're likely to be higher volume. And I don't know, in any case, two more hands are up. Stefano?
+
+[Speaker 4]
+Yeah, just maybe a little complementing for sure is tied to the technicality aspect first. But in final instance, traceability is for stakeholders to be aware of something. So in my view, that's a key something that we should be trying to visualize.
+
+So we discussed several times, not all for everybody, but you even mentioned or recalled right now, maybe optional. But for sure, there are stakeholders that like to have transparency at certain times, at certain point of certain aspects. So to me, it's both, as you basically indicate.
+
+Okay. Suzanne?
+
+[Speaker 3]
+I fully support the readability part for humans. So I think we should add something there. I believe that there might even already be de facto standards for, for example, package tracing also, so that I know where's my stock when I get delivered my package, then I know it stopped here, it stopped there, it stopped here.
+
+And then these events definitely already have some semantics. And then we probably have other events coming up, such as the battery was loaded, or charged, and things like that, where we maybe do not have a good vocabulary for yet. But I fully support kind of readability, at least with maybe two attributes or so.
+
+So that you know, what was it? Was it a transportation event? Yeah, something like that.
+
+[Speaker 1]
+Okay. So I think that's a yes for an optional human readability property with various bits and pieces in traceability event. One other small technical...
+
+[Speaker 3]
+There's another hand up from Sébastien.
+
+[Speaker 9]
+Yeah, yeah. Like you said, in JS1, there is some fields that are dedicated to specify some kind of activity. Yeah, so for me, there is no need for additional properties.
+
+There is everything already in the JS1 structure.
+
+[Speaker 1]
+So they have things like disposition code, and various other codes that can be shown as a human readable component.
+
+[Speaker 9]
+Activity also is, I think, is a good field to have some kind of human readable activity name, like, I don't know, sewing, tenting, splitting, etc. So, all right.
+
+[Speaker 1]
+So you raise a good point, which is the UN digital traceability event is actually a subset of the JS1 EPC-IS. And perhaps, it's as simple as having another look at JS1 EPC-IS and see if we missed something that makes it human readable. So that's step number one.
+
+And if there's still something missing, then we might add a few optional properties that help with understandability for humans. But I'll take your point, Sébastien, that the first thing to do is confirm that the existing JS1 and ISO standards has enough for human readability. And if not, I'll raise a ticket on this.
+
+We can have a public discussion and share our thoughts. I'm just collecting thoughts on the note. So I'll raise a ticket.
+
+We can chat about it on the ticket. Another quick one is just to reflect a comment from this about the fact that in the structural data modeling of the passport and the conformity credential and so on and so forth, there's this idea of an identifier of a thing and a name of a thing and an identifier scheme. And just because, you know, I don't know, I'm used to data modeling with abstract classes, I created a thing called an entity, which product and facility and party all inherit from.
+
+And, you know, from one perspective, structural data modeling, it sort of makes sense. But it has an impact on the JSON-LD world, because now in the type of product, you see it's a product and an entity. And you look at that and go, what do you mean it's an entity?
+
+It's a product. And so this is suggested that I get rid of that abstract, because it's not really adding much value and just add the properties to each class, so that it's clear and simple that this is a product. And it's not necessarily a type of entity, because that doesn't matter.
+
+It doesn't add anything. And also, as it happens, it helps me to get the sample data more understandable. So I'm proposing to do that.
+
+And just not have that entity class that's a bit confusing for some. It's no objection. And I'll raise a ticket for this as well, right?
+
+I'm not suggesting the discussion today is finalized as this. I'm just sharing some of the recent feedback. Anybody got any?
+
+[Speaker 5]
+I thought I raised the ticket, but maybe that was just slack.
+
+[Speaker 1]
+Oh, did you? I'll check. Anyway.
+
+But I think, I mean, I suppose the lesson for me is that there is a little bit of a worldview collision between structural data modelers who are used to, let's say, modeling database schema in third normal form and love abstractions and specializations and so on and so forth, and linked data modelers who really think about what's the identifiable entity and its type and what's its relation to other linked data. And you do see these collisions, one example is in schema.org, where Google themselves, it's not only Google, but they're kind of the leading publisher of schema.org, have said that a country is a type of administrative region, which makes sense. And an administrative region is a type of place, which sort of makes sense. When you say it like that, you go, all right, that sounds reasonable. But that's this linked data semantic view.
+
+But when you look at the structures, a place in schema.org is the thing that describes a pin location. So it has things like opening hours and drive-through service available, yes, no, this sort of thing. And so, of course, administrative region and country inherits that.
+
+So you end up with this rather bizarre situation where the schema.org country has opening hours and drive-through service. And you can see there almost the impact of two different mindsets of modeling information colliding and having weird effects. So it's been a lesson for me when I'm now making structural models to think, yes, but how will this look in the graph?
+
+And I think that's quite useful. I'm just sharing this feedback. I don't know what thoughts people have, but it's actually not that easy to join these two worlds together and get it right.
+
+And we're not far off, I think, but it's been a learning curve. Even schema.org doesn't get it right. So we're not alone in making a few mistakes.
+
+All right. One other little bit of feedback I've got, and this will also be a ticket, is from the Canadians who are trying to implement a Towards Sustainable Mining credential as a UNTP digital conformity credential. And if you remember, you can open the page on the screen share.
+
+What is it? There it is. The conformity credential structure looks like this, right?
+
+It's got the idea that some party, where is it? It's the issuer of the conformity credential, is a conformity assessment body who makes an attestation about a product or a facility that includes a number of assessments. That's the basic model.
+
+But the whole thing assumes that there's one issuer, and it's the conformity assessment body doing the attestation. So the pattern for Towards Sustainable Mining is this. The Mining Association of Canada published the rules.
+
+So that's a standard with criteria, and it has a whole bunch of sections. And what happens is during the year, different auditors go and assess a mine site according to different sections of the rules. So Auditor A might go and say, I've checked this mine site against rule set 1, 2, 3.
+
+A few months later, Auditor B goes and I've also looked at this mine site against a different set of rules. Here's my assessment. So you get, during the year, four or five assessments possibly done by different auditors against different sections of one standard.
+
+And then it gets rolled up at the end of the year into a certificate issued by the Mining Association of Canada every other year, and it's self-issued by the miners themselves every other year. So an interesting pattern, right? But what it means is that they can't fit it in this model because they go, how do I say who the auditor was for the assessment?
+
+Because this model assumes that it's one auditor just saying, making a series of statements about a product or a facility. So I have to think about that. And again, I'll raise a ticket with all their questions.
+
+But it's kind of a pattern of use of conformity that is interesting. I think we've still got Brett on the call. I'm not sure who may have an opinion about this, but I was tempted to say that there should be an auditor party reference or something.
+
+Well, one technical way to do this is to think of each auditor assessment as a verifiable credential and as the MAC annual assembly of different credentials into a presentation. But that might be pushing the envelope a little bit. A simpler way might be just to say, have a bit of a link from the conformity assessment to an auditor party who might be different to the issuer party of the attestation.
+
+So you can have three different auditors and then Mining Association of Canada is the issuer of the overall attestation. Anyway, that's the problem space. Does anybody have any thoughts on it?
+
+[Speaker 7]
+Well, we've discussed that at length, Stephen. I agree with where you're going there. I would like to sort of stay involved in that discussion, but I think the picture that you painted at the end there sounded right to me.
+
+[Speaker 1]
+Okay, in which case it's not that complicated, right? It's just this conformity assessment box has a link to party, which is the auditor, which could be different to the issuer of the overall attestation.
+
+[Speaker 7]
+Yeah, I think so. I mean, look, the model can remain unchanged if each auditor wants to issue their own credential, but then it becomes quite hard to stitch them all together. I think we should consider some extensions of the nature that you've just described.
+
+Okay.
+
+[Speaker 3]
+Sorry, just to the logic that you presented, Steve. So you have an issuer who is the auditor or not, or who issues?
+
+[Speaker 1]
+So let's just decouple from verifiable credentials at the moment and say, there is an auditor that makes a number of assessments and could just issue the whole thing you see here, right? You could say, is a verifiable credential issued by the auditor, but the kind of user expectation of the recipient of the towards sustainable mining credential is I get one credential that talks about the facility once a year that assembles all the audits, right? So you have this kind of, do we say each auditor issues an attestation like this, and then it's up to the verifier to kind of assemble them?
+
+Or do we say, well, maybe the auditor, maybe they don't even have the tools to issue as a verifiable credential. It could be just you just record the auditor name and really the issuer of the attestation is the mining association of Canada once a year. That feels like a slightly lower barrier.
+
+[Speaker 3]
+The point that I see here is that you might need a trust list, as I call it, with accredited auditors that actually may issue credentials above a standard, which is also something that we consider at the Global Battery Alliance. You know that we have those rule books, and we want to make sure that auditors comply to those rule books and know how to use them. So they kind of have a preliminary training and then get accredited auditor of GPI rules.
+
+So you would have to check those against the trust list and therefore should be the issuer, because otherwise, how do you properly check the issue of the credential against a trusted issuer list?
+
+[Speaker 1]
+Yeah.
+
+[Speaker 2]
+But I think if I understood what you said, though, Steve, for at least how the mining association of Canada is working, they're essentially doing that validation of the auditor, right? Because the information, the final credential that's being issued is coming from the mining association of Canada. So they are, at least in their current processes, validating that the auditor is actually authorized to audit that those sections of the standard.
+
+Isn't that true?
+
+[Speaker 1]
+Yeah. So if this is issued as one verifiable credential where the auditor ID is just a data field, and it's not really cryptographically verifiable, then you would be exactly right. I think you'd have to impose an obligation on the issuer, who would be the mining association of Canada, to make sure that the auditor names in the list are accredited auditors.
+
+The other approach is each auditor issues one of these. Maybe they're not mutually exclusive, right? I mean, there's nothing to stop an auditor issuing one of these digital conformity credentials and giving it to mining association of Canada, who then wraps it up in a MAC-issued VP.
+
+We don't have to say you have to do one or the other, but I worry that the second one might just impose too many technical barriers for early adopters.
+
+[Speaker 2]
+I guess what I was going to ask, if we make this the addition to the current schema here, it's not a case of that it has to be always. So you really then get both ends, right? It could still be then that each issue an individual credential, each auditor issues a credential, or it could work that we now have the connection to who is the auditor such that in the mining association of Canada context, they could issue the aggregated credential, right?
+
+We can do that.
+
+[Speaker 1]
+I think one of the challenges with this model is we're going to need a bunch of examples from different spaces, because that question I posed to you from mining association Canada was actually only one of about 10 in the list, but the other nine are fairly straightforward to answer, and they go to how to interpret the model. The lesson from that is people have different assumptions about what these things mean, even though there's descriptions. The best way to inform that is to put on this page, I think, a few examples of different usage patterns for this model.
+
+Anyway, I'll raise a ticket and people can have their... We're not making any requests now, but we will have for the next poll some...
+
+[Speaker 8]
+Yeah, before I jump on that, so my understanding from the about the TSM Mac, released by Mac, it's a performing indicator guidance, right? So it's in parallel, it's going to be like in a global battery alliance, GHG protocol. So they don't issue credentials, they set up the rules of parameters of performance indicators itself and rely on those audit companies or companies themselves to issue credentials according to that those performance indicators.
+
+So in parallel to that one, with the GBA, with this conformity credentials, I'm seeing like maybe that's endorsement box linked to that conformity credentials, and being basically connecting between the conformity released by the entity itself and endorsed by audit company according to the specific credential, which could be TSM, which could be GRI or anything like that as a performance indicator.
+
+[Speaker 1]
+Yeah. Okay.
+
+[Speaker 7]
+Can I comment, Brett? Oh, look, I think we're sort of saying the same thing in different words. The default schema is for the auditor to issue their own little data point.
+
+And then they would prove their credentials by linking to an endorsement from the industry association. That's the default. But I think from what you've been saying, Steve, that's not really fit for purpose, because the users want an aggregate certificate that captures all of the various different audits that are being done at the various facilities, which means that you need a party coming in over the top and essentially verifying all of the components to make up an aggregate certificate.
+
+So in which case, an endorsement would be the ability of that aggregator to meaningfully aggregate the various auditing components. But I think both should be allowable, because they're both legitimate interpretations of what we want to achieve.
+
+[Speaker 1]
+All right. Look, like I said, I'll raise a ticket and elect opinions. That's been valuable to help think about options.
+
+I'm done with the list of things I wanted to go through. There are open tickets to discuss in the last 10 minutes, and I do have a flight to board soon.
+
+[Speaker 2]
+Instead of open tickets, can I just give you a quick update on the business case?
+
+[Speaker 1]
+Oh, yes. Actually, that's more interesting, I think.
+
+[Speaker 2]
+Go ahead. So we had a good call yesterday. Nancy was on the call.
+
+I was able to make the call yesterday. So we'll hold at the 5 a.m. Central European time so that we can get Nancy on the call every so often. We should have something or we will have something by end of day tomorrow for you to pull back into the main site.
+
+John's spreadsheet is really looking excellent. We've also come to the realization that we need something different for the public sector slash regulator business case justification and probably, again, some slight modification for the community context versus an individual business. But I think we've got a very good start on the first one on the business side.
+
+We also went over some of the economic value points and more societal value points from a public sector side as well. So Nancy had some really good feedback in that. John, anything you want to add?
+
+[Speaker 6]
+No, I think that was spot on, Michael. I think one of the interesting revelations from Nancy is that they're right at the point where they're going to move from a grant-based innovative programming to a hopefully government-funded program, which will require them to go through the treasury hoops and produce the business case argument that hasn't so far had to have been provided. So she's really quite interested in getting the right argument forward for it.
+
+So it's good timing.
+
+[Speaker 1]
+Okay. Well, that's just another emphasis of the starting story, isn't it, that we had with the Australian government about the importance of really articulating value here. And yeah, there is value, it's just not well understood.
+
+Well, look, so that sounds to me like then there could be quite a number of pull requests over the next week from me. I'll obviously do one for all these applications for registration, another one for some of the technical issues we just discussed. Well, no, I'll raise tickets first, we'll have discussions, but maybe another pull request with the business case content that Michael Shea will look out for those probably early next week and have time to review, and we'll merge them next week.
+
+And when should we start the two-weekly thing? Do you want to meet again in two weeks? Well, actually, the next week is a different time zone, isn't it?
+
+Anyway, I tend to get different people, but maybe we'll keep them like they are for another one or two weeks. And then when we get an anointed leader for the policy business side of things, then we'll split and have one business, one technical challenge. There will be time zones.
+
+[Speaker 2]
+Yep. Someone's getting up in the middle of the night. So there really isn't.
+
+[Speaker 1]
+I'll do my best. All right. Well, given there's only a few minutes left and I am taking a lot of your time and I have got a lot of answers, unless anyone has an issue on this list that they particularly want to discuss and get people's opinion on, I would call it a day round.
+
+Okay. In that case, I will say thank you very much. Meeting minutes will be posted and the number of tickets will be raised discussing the issues, and I look forward to the business case content.
+
+Thanks, everyone.
+
+[Speaker 9]
+Thanks, Steve.
+
+[Speaker 1]
+Thank you, guys. Thank you.
+
+[Speaker 5]
+Bye-bye.
