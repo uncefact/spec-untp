@@ -50,7 +50,7 @@ The conformity Information structure in the DPP is an array of UNTP `Declaration
 
 
 ```json
- "conformityDeclarations": [
+ "conformityDeclaration": [
       {
         "type": [
           "Declaration"
@@ -110,7 +110,7 @@ The conformity Information structure in the DPP is an array of UNTP `Declaration
             ],
             "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
             "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
-            "thresholdValues": [
+            "thresholdValue": [
               {
                 "metricName": "Industry Average emissions intensity",
                 "metricValue": {
@@ -121,7 +121,7 @@ The conformity Information structure in the DPP is an array of UNTP `Declaration
             ]
           }
         ],
-        "declaredValues": [
+        "declaredValue": [
           {
             "metricName": "GHG emissions intensity",
             "metricValue": {

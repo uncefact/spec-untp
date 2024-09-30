@@ -7,17 +7,35 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
+## Artifacts 
 
-* **[Latest JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-context-0.3.10.jsonld)**
-* **[Latest JSON Schema](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-schema-0.3.10.json)**
-* **[Sample Instance](../../samples/untp-digital-conformity-credential-v0.3.10.json)**
+Are maintained at https://test.uncefact.org/vocabulary/untp/dcc/0/about
 
-## Versions
+### Stable Releases For Implementation
 
-|DPCC Version|Date|status|change log|JSON-LD Context|JSON Schema|
-|--|--|--|--|--|--|
-|0.3.0|01-07-2024|Raw |rebuilt on untp-core vocabulary| DPP context - TBA |DPP schema - TBA |
-|0.3.10|28-08-2024|Draft| Resolved issues, aligned with untp core, ready for pilot testing|[context](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-context-0.3.10.jsonld)|[schema](https://test.uncefact.org/vocabulary/untp/dcc/0/untp-dcc-schema-0.3.10.json)
+Version 1.0 stable release for production implementation is due Jan 2025
+
+### Release for Pilot Testing
+
+Digital Conformity Credential version 0.4.1 release artifacts can be used for pilot testing.  
+
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dcc/0.4.1/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dcc/untp-dcc-schema-0.4.1.json)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dcc/untp-dcc-instance-0.4.1.json)
+
+### Latest Development Version
+
+Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
+
+### Version History
+
+History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dcc/0/versions)** page.
+
+
+### Visualization
+
+A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/DigitalConformityCredentialRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+
 
 
 ## Overview
@@ -52,11 +70,11 @@ The Digital Conformity Credential is an assembly of re-usable components from th
 
 ### Core Vocabulary
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.10/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.4.1/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 ### DCC Documentation
 
-[DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.3.10/artefacts/readme/render)
+[DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.4.1/artefacts/readme/render)
 
 ## Implementation Guidance
 
@@ -73,11 +91,11 @@ The `ConformityAttestation` type is the root content of the `credentialSubject` 
 * the `id` MUST be a globally unique identifier (URI) for the attestation.  Typically a certificate number with the CAB web domain as a prefix. `name` should contain a human readable text string that describes the attestation.
 * `assessorLevel` (how assured is the party doing the assessment?), `assessmentLevel` (how assured is the subject product/facility being assessed?) and `attestationType` (is this a test report, a certificate, or some other type?) are coded values that help to classify the type and integrity of the attestation.
 * `issueToParty` identifies the entity to who the conformity attestation is issued - usually the product manufacturer or facility operator.
-* `authorisations` describes a list of accreditations that a competent authority (such as a government agency or a national accreditation authority or a trusted global standards body) has issued to the conformity assessment body that is issuing this attestation. It provides trust that the certifier is properly accredited to issue certificates. 
+* `authorisation` describes a list of accreditations that a competent authority (such as a government agency or a national accreditation authority or a trusted global standards body) has issued to the conformity assessment body that is issuing this attestation. It provides trust that the certifier is properly accredited to issue certificates. 
 * `conformityCertfificate` is a secure link to the full version (eg a PDF document) of this attestation. 
 * `auditableEvidence` is a secure link to an unstructured collection of files which provided the original evidence basis for the conformity assessments made by this DCC. The evidence files are usually commercially sensitive and encrypted but are an important information source for audits.
 * `scope` defines the conformity scheme under which this attestation is issued. A scheme is a high level framework describing the context for the entire attestation. Each individual assessment included in this attestation will usually reference more fine grained criteria within any standards or regulations that are part of the scheme. 
-* `assessments` is an array of detailed conformity assessments made about an identified product or facility - against a specific criteria contained in a standard or regulation.  
+* `assessment` is an array of detailed conformity assessments made about an identified product or facility - against a specific criteria contained in a standard or regulation.  
 
 
 ```json
@@ -90,11 +108,11 @@ The `ConformityAttestation` type is the root content of the `credentialSubject` 
     "attestationType": "certification",
     "attestationDescription": "Assessment of battery products against the GHG Protocol.",
     "issuedToParty": {..},
-    "authorisations": [{..}],
+    "authorisation": [{..}],
     "conformityCertificate": {..},
     "auditableEvidence": {..},
     "scope": {..},
-    "assessments": [{..},{..}]
+    "assessment": [{..},{..}]
  }
 ```
 
@@ -112,7 +130,7 @@ It should be noted that this `authorisations` structure is part of the attestati
 
 
 ```json
-    "authorisations": [
+    "authorisation": [
       {
         "type": [
           "Endorsement"
@@ -217,6 +235,94 @@ The `conformityCertificate` and `auditableEvidence` objects are both the same `S
 
 ### Conformity Assessments 
 
+One conformity credential may include many assessments. Each assessment includes 
+* subjects of the assessment (ie what was assessed) which may reference one or more products, facilites, or organisaitons. For example a 300Ah Lithium battery.
+* a reference standard and/or regulation against which the assessment was made. For example the global battery alliance rulebook.
+* one or more specific critieria within the referenced standard or regulation which may include benchmark or threshold values. For example the industry bechmakr carbon intensity of lithium batteries 
+* one or more actual declared values. For example the actual carbon intensity of the assessed battery.
+* an indicator of compliance against the regulation or standard. For example, the battery is compliant with the GBA rulebook.
+* the ID and name of the auditor if different to the issuer of the conformity credential.
+
+```json
+    "assessment": [
+      {
+        "type": [
+          "ConformityAssessment",
+          "Declaration"
+        ],
+        "assessmentDate": "2024-03-15",
+        "id": "https://exampleCAB.com/38f73303-a39e-45a7-b8b7-e73517548f27/01",
+        "referenceStandard": {
+          "type": [
+            "Standard"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+          "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+          "issuingParty": {...},
+          "issueDate": "2023-12-05"
+        },
+        "referenceRegulation": {...},
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+            "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+            "thresholdValues": [
+              {
+                "metricName": "GHG emissions intensity",
+                "metricValue": {
+                  "value": 10,
+                  "unit": "KGM"
+                },
+                "score": "BB",
+                "accuracy": 0.05
+              }
+            ]
+          }
+        ],
+        "declaredValue": [
+          {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          }
+        ],
+        "compliance": true,
+        "conformityTopic": "environment.emissions",
+        "assessedProduct": [
+          {
+            "type": [
+              "Product"
+            ],
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "09520123456788.21.12345",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            },
+            "serialNumber": "12345678",
+            "batchNumber": "6789",
+            "IDverifiedByCAB": true
+          }
+        ],
+        "assessedFacility": [...],
+        "assessedOrganisation": {...},
+        "auditor": {...}
+      }
+    ]
+  }
+```
+
 Conformity assessments are included in the DCC as an array of UNTP `Declaration` structures. The same structure is re-used for third party assessments in UNTP Digital Product Passport (DPP).  Please refer to the [declarations structure](SustainabilityVocabularyCatalog.md#declarations-structure) for further information and examples.
 
 To help understand the difference between a `Scheme` that defines the scope of the overall attestation and the `Criterion` that defines the rules for a specific conformity assessment, an example can help.
@@ -225,4 +331,5 @@ To help understand the difference between a `Scheme` that defines the scope of t
 
 
 ## Sample
+
 

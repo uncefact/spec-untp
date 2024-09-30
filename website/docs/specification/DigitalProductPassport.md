@@ -9,17 +9,23 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Artifacts 
 
+Are maintained at https://test.uncefact.org/vocabulary/untp/dpp/0/about 
+
 ### Stable Releases For Implementation
 
-Version 0.5 due end Sept 2024 for industry pilot implementation.
+Version 1.0 stable release for production implementation is due Jan 2025
 
-### Latest Test Releases
+### Release for Pilot Testing
 
-Version 0.3.10 release artifacts
+Version 0.4.1 release artifacts can be used for pilot testing.  
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-context-0.3.10.jsonld)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.3.10.json)
-* [Sample Instance](../../samples/untp-digital-product-passport-v0.3.10.json)
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0.4.1/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.4.1.json)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.4.1.json)
+
+### Latest Development Version
+
+Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
 ### Version History
 
@@ -28,7 +34,7 @@ History of releases is available from the **[Version history](https://test.uncef
 
 ### Visualization
 
-A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/untp-digital-product-passport-v0.3-visualisation.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/DigitalProductPassportRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
 
 ## Overview
@@ -67,12 +73,12 @@ The Digital Product Passport is an assembly of re-usable components from the UNT
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.10/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.4.1/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 
 ### DPP Documentation
 
-The [DPP documentation](https://jargon.sh/user/unece/DigitalProductPassport/v/0.3.10/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DPP model.
+The [DPP documentation](https://jargon.sh/user/unece/DigitalProductPassport/v/0.4.1/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DPP model.
 
 ## Implementation Guidance
 
@@ -110,10 +116,10 @@ All DPPs are issued as W3C Verifiable Credentials and MUST conform to the [VCDM 
     ],
     "id": "did:web:identifiers.example-company.com:12345",
     "name": "Example Company Pty Ltd",
-    "otherIdentifiers": [
+    "otherIdentifier": [
       {
         "type": [
-          "Entity"
+          "Identifier"
         ],
         "id": "https://business.gov.au/ABN/View?abn=1234567890",
         "name": "Sample Company Pty Ltd",
@@ -149,15 +155,18 @@ The Product object is the the subject of the verifiable credential. Key points t
 * The `productImage` is expected to be an instance of the UNTP `Link` object that provides linkURL and metadata.
 * `productCategory` is expected to be an array of UNTP `Classification` objects that classify the product using a global scheme such as [UN CPC](https://unstats.un.org/unsd/classifications/Econ/cpc). Industry-specific classification schemes (eg cattle breed) may also be used.
 * `furtherInformation` is an array of UNTP `Link` types that optionally provide links to additional information such as material safety data sheets etc. The `linkType` values should match the linkTypes returned by an [Identity Resolver](IdentityResolver.md) service for the same product ID.
-* `producedByParty` is a UNTP `Entity` type that identifies the producer or manufacturer of the product.  
+* `producedByParty` is a UNTP `Entity` type that identifies the producer or manufacturer of the product. 
 * `producedAtFacility` is a UNTP `Entity` type that identifies the manufacturing site or farm or mine site where the product was produced. 
 * The `dimensions` object defines the `length`, `width`, `height`, `weight`, `volume` dimensions of the product. Implementers should choose the relevant dimensions to include for the product. 
 * The `productionDate` is relevant for batch or serialised items and should indicate the date that the specific batch or item was produced.
 * The `countryOfProduction` property must carry the ISO-3166 two letter country code for the country where the product was manufactured.  Note that this represents only the country of manufacture for the identified product. The provenance of materials used to make the product are defined separately. 
 * The `characteristics` property provides an extension point for commodity-specific properties such as battery capacity in AmpHours or shirt size.  UNTP does not define values for this property but does provide guidance for [industry extensions](../extensions/index.md).
+* `granularityLevel` indicates whether this digital product passport is issued at product class level, batch level, or serialised item level.
+* `dueDiligenceDclaration` is a link to a due diligence declaration that meets the legal requirement of the importing economy.
 * `materialsProvenance` is an array of UNTP `Material` types that define the origin and characteristics of constituent materials in the product.
-* `conformityInformation` is an array of `Claim` types that list the product quality or sustainability claims made by the manufacturer against criteria defined by a reference standard or regulation. The [sustainability vocabulary](SustainabilityVocabularyCatalog.md) is designed to accommodate the very diverse set of conformity criteria expressed by various standards and regulations.
-* `circularityInformation` is a simple object that defines the overall percentage of recycled content (and recyclable content) as well as links to recycling and repair information.
+* `conformityClaims` is an array of `Claim` types that list the product quality or sustainability claims made by the manufacturer against criteria defined by a reference standard or regulation. The [sustainability vocabulary](SustainabilityVocabularyCatalog.md) is designed to accommodate the very diverse set of conformity criteria expressed by various standards and regulations.
+* `circularityScorecard` is a simple object that defines the overall percentage of recycled content (and recyclable content) as well as links to recycling and repair information.
+* `emissionsScorecard` is a simple object that defines the carbon footptint of the product against a defined reporting standard, the scope 3 boundaries, and the extent to which the data is accruately measured.
 * `traceabilityInformation` is an array of `Link` objects that reference UNTP [Digital Traceability Events](DigitalTraceabilityEvents.md). This provides traceability through the value chain via events such as the TransformationEvent that lists the input product identifiers and the output product identifiers for a manufacturing process.  
 
 
@@ -184,9 +193,11 @@ The Product object is the the subject of the verifiable credential. Key points t
   "dimensions": {},
   "productionDate": "2024-04-25",
   "countryOfProduction": "AU",
+  "granularityLevel":"batch",
+  "dueDiligenceDeclaration":{ },
   "characteristics": { },
   "materialsProvenance": [],
-  "conformityInformation": [],
+  "conformityClaim": [],
   "circularityScoreCard": {},
   "emissionsScorecard" : {},
   "traceabilityInformation": []
@@ -212,7 +223,7 @@ An array of `Material` objects is used to describe the constituent materials in 
 
 * A human readable `name`
 * The `originCountry` as a 2-letter ISO-3166 code.
-* The material type as a UNTP `Classification` object. The relevant classification scheme to use depends on the commodity type of the products.  For example batteries may use the emerging [UNFC](https://unece.org/sustainable-energy/sustainable-resource-management/united-nations-framework-classification)
+* The material type as a UNTP `Classification` object. The relevant classification scheme to use depends on the commodity type of the products but, unless otherwise stated the material CAS number together with a URI to a relevant registry entry (eg https://chem.echa.europa.eu/100.028.325) 
 * The `massFraction` is the percentage by mass of the product that is made from this constituent material.
 * The `recycledAmount` is the percentage by mass of this material constituent that is made from recycled sources.
 * The `hazardous` flag is a boolean that indicates whether this material constituent is a hazardous material
@@ -225,6 +236,7 @@ An array of `Material` objects is used to describe the constituent materials in 
   "originCountry": "EG",
   "materialType": {},
   "massFraction": 50,
+  "massAmount":{"value":10,"unit":"KGM"}
   "recycledAmount": 50,
   "hazardous": "false",
   "materialSafetyInformation": {}
@@ -290,10 +302,13 @@ The circularity Scorecard provides a simple high level summary of circularity pe
 
 ### Traceability Information
 
-Traceability Information is an array of links (with context information) to UNTP Digital Traceability Event (DTE) structures.
+Traceability Information is an array of TraceabilityPerformance objects which are designed to group traceability data according to value chain process. Each value chain step SHOULD specify the extent to which materials and compon ents in that step have been verifiably traced. An array of links (with context information) to UNTP Digital Traceability Event (DTE) structures by also be provided.
 
 ```json
-    "traceabilityInformation": [
+ "traceabilityInformation":[
+    {"valueChainProcess":"Cell Manufacture",
+     "verifiedRatio":0.5,
+     "traceabilityEvent":[
       {
         "linkURL": "https://files.sampleCompany.com/events/123456789.json",
         "linkName": "Battery Assembly Event",
@@ -301,7 +316,9 @@ Traceability Information is an array of links (with context information) to UNTP
         "hashDigest": "50af99a26f4af48c9f4ad8cf9d2f5018780ab4bb1167f0e94884ec228f1ba832",
         "hashMethod": "SHA-256",
         "encryptionMethod": "AES"
-      }
+      }]
+   }]
+  
 ```
 
 ### Conformity Information
