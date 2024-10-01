@@ -74,14 +74,14 @@ The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.4.1/
 
 ### DCC Documentation
 
-[DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.4.1/artefacts/readme/render)
+The [DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.4.1/artefacts/readme/render) provide a technology-neutral definition of classes, properties and code lists in the DCC model.
 
 ## Implementation Guidance
 
 
 ### Verifiable Credential
 
-Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential)
+Digital Conformity Credentials are issued as Vierifiable credentials. Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiaible credentials data model for UNTP. 
 
 ### Conformity Attestation
 

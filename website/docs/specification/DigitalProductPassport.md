@@ -20,7 +20,7 @@ Version 1.0 stable release for production implementation is due Jan 2025
 Version 0.4.1 release artifacts can be used for pilot testing.  
 
 * [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0.4.1/)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/0/untp-dpp-schema-0.4.1.json)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.4.1.json)
 * [Sample Instance](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.4.1.json)
 
 ### Latest Development Version
