@@ -7,16 +7,34 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-* **[Latest JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-context-0.3.10.jsonld)**
-* **[Latest JSON schema](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-schema-0.3.10.json)**
-* **[Sample instance](../../samples/untp-digital-facility-record-v0.3.10.json)**
+## Artifacts 
 
-## Versions
+Are maintained at https://test.uncefact.org/vocabulary/untp/dfr/0/about
 
-| DFR Version | Date | status  | Change summary | JSON-LD Context  | JSON Schema  |
-| ------ | ----- | ------ | ------ | ------| ---|
-| 0.3.10     | 28-08-2024 | Draft |Initial model for facility data |[@context](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-context-0.3.10.jsonld) |[schema](https://test.uncefact.org/vocabulary/untp/dfr/0/untp-dfr-schema-0.3.10.json) |
+### Stable Releases For Implementation
 
+Version 1.0 stable release for production implementation is due Jan 2025
+
+### Release for Pilot Testing
+
+Version 0.4.1 release artifacts can be used for pilot testing.  
+
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dfr/0.4.1/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dfr/untp-dfr-schema-0.4.1.json)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dfr/untp-dfr-instance-0.4.1.json)
+
+### Latest Development Version
+
+Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
+
+### Version History
+
+History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dfr/0/versions)** page.
+
+
+### Visualization
+
+A UNTP digital traceability event may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/DigitalFacilityRecordRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
 
 ## Overview
@@ -51,25 +69,125 @@ The Digital Facility Record is an assembly of re-usable components from the UNTP
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.3.10/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of the Digital Facility Record.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.4.1/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of the Digital Facility Record.
 
 
 ### DFR Documentation
 
-The [DFR documentation](https://jargon.sh/user/unece/DigitalFacilityRecord/v/0.3.10) provides a technology-neutral definition of classes, properties and code lists in the DFR model.
+The [DFR documentation](https://jargon.sh/user/unece/DigitalFacilityRecord/v/0.4.1) provides a technology-neutral definition of classes, properties and code lists in the DFR model.
 
 ## Implementation Guidance
 
-This section provides sample JSON-LD snippets for each DFR component.
+This section provides sample JSON-LD snippets for each DFR component with guidance on their purpose and usage.
 
 ### Verifiable Credential
 
-TBA
+Digital Facility Records are issued as Vierifiable credentials. Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiaible credentials data model for UNTP.  THe issuing party for the VC should be the facility owner or operator. 
 
 ### Facility
 
-TBA
+The facility object is the `credentialSubject`. It comprises
+
+* An identifier for the facility.  This could be a self-issued DID, or an ID managed by an industry association such as a member / facility register, or a global location scheme such as a GS1 GLN.  Whatever the facility identifier scheme, facility IDs should be resolvable and verifiable.
+* An industry process category, preferably using a global standard classificaiton scheme such as UN ISIC.
+* The `operatedByParty` for the facility, typically identified using a national business register or a glbal business identifier scheme.
+* The semi-strucutred address for the facility.
+* The geolocation information for the facility (using PlusCodes adn GeoJSON - see below)
+* The confirmity claims about the facility made by the facility owner or operator - following the same `Declaratoion` structure as used by the UNTP Digital Product Passport.
+
+```json
+  "credentialSubject": {
+    "type": [
+      "Facility"
+    ],
+    "id": "https://samplefacilityregister.org/1234567",
+    "registeredId": "1234567",
+    "description": "LiFePO4 Battery plant number 7",
+    "name": "Example facility 7",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://samplefacilityregister.org",
+      "name": "A facility register"
+    },
+    "countryOfOperation": "AU",
+    "processCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://unstats.un.org/unsd/classifications/Econ/isic/2611",
+        "code": "2611",
+        "name": "Manufacture of solar cells, solar panels and photovol",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic",
+        "schemeName": "UN Standard Industry Classification"
+      },
+      {...}
+    ],
+    "operatedByParty": {
+      "type": [
+        "Identifier"
+      ],
+      "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+      "name": "Sample Company Pty Ltd.",
+      "registeredId": "90664869327",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://abr.business.gov.au",
+        "name": "Australian Business Number"
+      }
+    },
+    "otherIdentifier": [..],
+    "address": {
+      "streetAddress": "level 11, 15 London Circuit",
+      "postalCode": "2601",
+      "addressLocality": "Acton",
+      "addressRegion": "ACT",
+      "addressCountry": "AU"
+    },
+    "locationInformation": {..},
+    "conformityClaims": [..]
+  }
+}
+```
 
 ### Location
 
-TBA
+Facility location is a value object (ie it does not have a unique identifier). It's purpose it to locate the facility in a geographic area with whatever degree of resolution required. A location object must include at leaqst one of the following geolocation properties:
+
+* An open location code (also know as [Plus Codes](https://maps.google.com/pluscodes/)). Plus codes are essentially a grid reference and can define an small area that is virtually a pin location (eg https://plus.codes/8CGRC78W+MM) or a much larger area (eg Roughly Madrid city - https://plus.codes/8CGRC700+) by removing digits after the "+" and replacing grid digits with an even number of trailing zeros. 
+* A geoLocation as a [GeoJSON Point](https://datatracker.ietf.org/doc/html/rfc7946#appendix-A.1) as a decimal lattitude / longditude pair.  
+* A geoBoundary as a [GeoJSON Polygon](https://datatracker.ietf.org/doc/html/rfc7946#appendix-A.3) that defines any closed boundary (or collection of closed boundaries) as a sequence of lat/long pairs where the first and last pair represent the same point.
+
+```json
+
+    "locationInformation": {
+      "plusCode": "https://plus.codes/8CGRC78W+MM",
+      "geoLocation": {
+        "type": "Point",
+        "coordinates":[
+            40.416688,
+            -3.703313,
+          ]
+      },
+      "geoBoundary": {
+        "type": "Polygon",
+         "coordinates": [
+                 [100.0, 0.0],
+                 [101.0, 0.0],
+                 [101.0, 1.0],
+                 [100.0, 1.0],
+                 [100.0, 0.0]
+             ]
+      }
+```
+
+### Confomrity Claims
+
+Conformity information is included in the Digital Facility Record as an array of UNTP Declaration structures. The same structure is re-used for confomrity Information in Digital Product Passports nad for third party assessments in UNTP Digital Conformity Credentials (DCC). Please refer to the [Sustainability Vocabulary Page](SustainabilityVocabularyCatalog.md) for further information and examples.
+
+## Samples
+
