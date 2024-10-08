@@ -17,11 +17,11 @@ Version 1.0 stable release for production implementation is due Jan 2025
 
 ### Release for Pilot Testing
 
-Version 0.4.1 release artifacts can be used for pilot testing.  
+Version 0.5.0 release artifacts can be used for pilot testing.  
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dfr/0.4.1/)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dfr/untp-dfr-schema-0.4.1.json)
-* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dfr/untp-dfr-instance-0.4.1.json)
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dfr/0.5.0/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dfr/untp-dfr-schema-0.5.0.json)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dfr/untp-dfr-instance-0.5.0.json)
 
 ### Latest Development Version
 
@@ -69,12 +69,12 @@ The Digital Facility Record is an assembly of re-usable components from the UNTP
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.4.1/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of the Digital Facility Record.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of the Digital Facility Record.
 
 
 ### DFR Documentation
 
-The [DFR documentation](https://jargon.sh/user/unece/DigitalFacilityRecord/v/0.4.1) provides a technology-neutral definition of classes, properties and code lists in the DFR model.
+The [DFR documentation](https://jargon.sh/user/unece/DigitalFacilityRecord/v/0.5.0) provides a technology-neutral definition of classes, properties and code lists in the DFR model.
 
 ## Implementation Guidance
 
@@ -176,12 +176,14 @@ Facility location is a value object (ie it does not have a unique identifier). I
       "geoBoundary": {
         "type": "Polygon",
          "coordinates": [
+              [
                  [100.0, 0.0],
                  [101.0, 0.0],
                  [101.0, 1.0],
                  [100.0, 1.0],
                  [100.0, 0.0]
              ]
+          ]
       }
 ```
 

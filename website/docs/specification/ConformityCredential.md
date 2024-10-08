@@ -17,11 +17,11 @@ Version 1.0 stable release for production implementation is due Jan 2025
 
 ### Release for Pilot Testing
 
-Digital Conformity Credential version 0.4.1 release artifacts can be used for pilot testing.  
+Digital Conformity Credential version 0.5.0 release artifacts can be used for pilot testing.  
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dcc/0.4.1/)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dcc/untp-dcc-schema-0.4.1.json)
-* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dcc/untp-dcc-instance-0.4.1.json)
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dcc/0.5.0/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dcc/untp-dcc-schema-0.5.0.json)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dcc/untp-dcc-instance-0.5.0.json)
 
 ### Latest Development Version
 
@@ -40,7 +40,7 @@ A UNTP digital product passport may be rendered in any format desired by the iss
 
 ## Overview
 
-Conformity credentials are usually issued by independent third parties and provide a **trusted assessment** of product ESG performance against credible **standards or regulations**. As such the credential provides trusted verification of the ESG claims in the passport. Since the passport may make several independent claims (eg emissions intensity, deforestation free, fair work, etc) there may be many linked conformity credentials referenced by one passport. As an additional trust layer, the conformity credential may reference an **accreditation** credential that attests to the authority of the third party to perform the specific ESG assessments. The conformity credential data model has been developed by a separate UN/CEFACT project on digital conformity that has expert membership from accreditation authorities and conformity assessment bodies.
+Conformity credentials are usually issued by independent parties and provide a **trusted assessment** of product ESG performance against credible **standards or regulations**. As such the credential provides trusted verification of the ESG claims in the passport. Since the passport may make several independent claims (eg emissions intensity, deforestation free, fair work, etc) there may be many linked conformity credentials referenced by one passport. As an additional trust layer, the conformity credential may reference an **accreditation** credential that attests to the authority of the party to perform the specific ESG assessments. The conformity credential data model has been developed by a separate UN/CEFACT project on digital conformity that has expert membership from accreditation authorities and conformity assessment bodies.
 
 ## Conceptual Model
 
@@ -52,14 +52,14 @@ The digital product conformity credential (DPCC) is designed to meet the followi
 
 |ID|Name|Requirement Statement|Solution Mapping|
 |--|--|--|--|
-|DPCC-01|Authorised source|The DPCC MUST be verifiable as issued by an authorised source, typically a conformity assessment body (CAB) |DPCC MUST be issued as a digital [verifiable credential](VerifiableCredentials.md) signed by the CAB|
+|DPCC-01|Authorised|The DCC MUST be verifiable as issued by an authorised body, typically a conformity assessment body (CAB) |DPCC MUST be issued as a digital [verifiable credential](VerifiableCredentials.md) signed by the CAB|
 |DPCC-01|Assurance level|The DPCC MUST the identify the nature of any authority or support for attestation, such as formal recognition by a Governmental authority or an Accreditation Body| Attestation. accreditation property|
-|DPCC-03|Subject of conformity|The DPCC MUST unambiguously identify the subject of the conformity assessment, whether a product or facility.|Assessment. assessedProducts, Assessment. assessedFacilities|
+|DPCC-03|Object of conformity|The DPCC MUST unambiguously identify the object of the conformity assessment, whether a product or facility.|Assessment. assessedProducts, Assessment. assessedFacilities|
 |DPCCE-04|Reference standard or regulation|The DPCC MUST identify the reference standard(s) and/or regulation(s) that specify the criteria against which the conformity assessment is made. If appropriate this must include specific measurable thresholds (eg minimum tensile strength)| ConformityAssessment. referenceStandard and ConformityAssessment. assessmentCriterion|
-|DPCC-05|Conformity Attestation|The DPCCE MUST unambiguously state whether or not the subject of the assessment is conformant to the reference standard or regulation criteria|ConformityAssessment. compliance|
+|DPCC-05|Conformity Attestation|The DPCCE MUST unambiguously state whether or not the object of the assessment is conformant to the reference standard or regulation criteria|ConformityAssessment. compliance|
 |DPCC-06|Measured metrics|The DPCCE SHOULD include actual measured values (eg emissions intensity, tensile strength, etc) with the conformity assessment|ConformityAssessment. declaredValues|
 |DPCC-07|Evidence|The DPCCE MAY include references to audit-able evidence (eg instrument recordings, satellite images, etc) to support the assessment. If so then the hash of the evidence file-set SHOULD be included (so that an auditor can be sure that the evidence data has not changed).  The evidence data MAY be encrypted with decryption keys provided on request|ConformityAttestation. auditableEvidence|
-|
+
 
 ## Logical Model
 
@@ -70,11 +70,11 @@ The Digital Conformity Credential is an assembly of re-usable components from th
 
 ### Core Vocabulary
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.4.1/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 ### DCC Documentation
 
-The [DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.4.1/artefacts/readme/render) provide a technology-neutral definition of classes, properties and code lists in the DCC model.
+The [DCC class & property definitions](https://jargon.sh/user/unece/ConformityCredential/v/0.5.0/artefacts/readme/render) provide a technology-neutral definition of classes, properties and code lists in the DCC model.
 
 ## Implementation Guidance
 
@@ -89,7 +89,7 @@ The `ConformityAttestation` type is the root content of the `credentialSubject` 
 
 * The `type` property is mandatory and must be populated with the value `ConformityAttestation` indicating the JSON-LD type of the data.
 * the `id` MUST be a globally unique identifier (URI) for the attestation.  Typically a certificate number with the CAB web domain as a prefix. `name` should contain a human readable text string that describes the attestation.
-* `assessorLevel` (how assured is the party doing the assessment?), `assessmentLevel` (how assured is the subject product/facility being assessed?) and `attestationType` (is this a test report, a certificate, or some other type?) are coded values that help to classify the type and integrity of the attestation.
+* `assessorLevel` (how assured is the party doing the assessment?), `assessmentLevel` (“how assured is the process by which the object product/facility is being assessed?) and `attestationType` (is this a test report, a certificate, or some other type?) are coded values that help to classify the type and integrity of the attestation.
 * `issueToParty` identifies the entity to who the conformity attestation is issued - usually the product manufacturer or facility operator.
 * `authorisation` describes a list of accreditations that a competent authority (such as a government agency or a national accreditation authority or a trusted global standards body) has issued to the conformity assessment body that is issuing this attestation. It provides trust that the certifier is properly accredited to issue certificates. 
 * `conformityCertfificate` is a secure link to the full version (eg a PDF document) of this attestation. 
@@ -157,7 +157,7 @@ It should be noted that this `authorisations` structure is part of the attestati
              "name": "Australian Business Number"
           }
         },
-        "accreditationCertificate": {
+        "endorsementEvidence": {
           "linkURL": "https://files.example-authority.com/1234567.json",
           "linkName": "NGER conformity certificate",
           "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
@@ -240,7 +240,7 @@ One conformity credential may include many assessments. Each assessment includes
 * a reference standard and/or regulation against which the assessment was made. For example the global battery alliance rulebook.
 * one or more specific critieria within the referenced standard or regulation which may include benchmark or threshold values. For example the industry bechmakr carbon intensity of lithium batteries 
 * one or more actual declared values. For example the actual carbon intensity of the assessed battery.
-* an indicator of compliance against the regulation or standard. For example, the battery is compliant with the GBA rulebook.
+* an indicator of conformance against the regulation or standard. For example, the battery conforms to the GBA rulebook.
 * the ID and name of the auditor if different to the issuer of the conformity credential.
 
 ```json
@@ -293,7 +293,7 @@ One conformity credential may include many assessments. Each assessment includes
             "accuracy": 0.05
           }
         ],
-        "compliance": true,
+        "conformance": true,
         "conformityTopic": "environment.emissions",
         "assessedProduct": [
           {
