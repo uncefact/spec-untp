@@ -7,9 +7,33 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-Latest JSON-LD @graph vocabulary : https://test.uncefact.org/vocabulary/untp/core/0/about
+## Artifacts 
 
-Note: The presentation of the vocabulary will be updated to include super classes and referenced domains.
+Are maintained at https://test.uncefact.org/vocabulary/untp/core/0/about
+
+### Stable Releases For Implementation
+
+Version 1.0 stable release for production implementation is due Jan 2025
+
+### Release for Pilot Testing
+
+UNTP Core Vocabulary version 0.5.0 release artifacts can be used for pilot testing.  
+
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/core/0.5.0/)
+* [JSON-LD Vocabulary](https://test.uncefact.org/vocabulary/untp/core/0/about)
+
+Note that the vocabulary is accessible either in human readable form or machine readable form via the same URL - but with different accept header:
+
+curl https://test.uncefact.org/vocabulary/untp/core/0/ -H 'Accept: application/ld+json'
+
+### Latest Development Version
+
+Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
+
+### Version History
+
+History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/core/0/versions)** page.
+
 
 ## Overview
 
@@ -27,7 +51,7 @@ Although these two credential types have different structures, they are assemble
 
 ![UNTP Core Vocabulary](UNTP-Core-Vocabulary.svg)
 
-The core vocabulary [data model and browsable documentation](https://jargon.sh/user/unece/untp-core/v/0.3.9)
+The core vocabulary [data model and browsable documentation](https://jargon.sh/user/unece/untp-core/v/0.5.0/artefacts/readme/render)
 
 ## Declarations Structure
 
@@ -43,7 +67,7 @@ The conformity Information structure in the DPP is an array of UNTP `Declaration
 * The `assessmentCritieria` is an array of UNTP `Criterion` objects that define the specific rule(s) within the standard or regulation against which this conformity claim is made.
 * The `thresholdValues` are an array of UNTP `Metric` objects that define the minimum or maximum values that are required to be met.  For example, a construction steel standard might specify 300 MPa as the minimum tensile strength threshold.
 * The `declaredValues` property defines the actual specified values for the DPP product. For example, a minimum tensile strength of 350 Mpa within a 5% confidence range. In many cases this may be sensitive data and can be replaced by a simple `compliance` assertion.
-* The `compliance` boolean is a declaration by the product manufacturer that the product meets the conformity criteria specified.
+* The `conformance` boolean is a declaration by the product manufacturer that the product meets the conformity criteria specified.
 * The `conformityTopic` is a high level UNTP classification scheme for safety and environmental and social sustainability. 
 * `benchmarkValue` (eg 10 Tons per Ton carbon intensity) is used in cases where a `declaredValue`(eg 5 Tons per Ton) is usefully compared to an industry average performance (benchmark) value.  When a `benchmarkValue` is provided, a `benchmarkReference` link MUST also be provided and should provide a link to an authoritative reference to support the benchmark value.
 * `conformityEvidence` is a `Link` to a second or third party attestation such as a UNTP [Digital Conformity Credential](ConformityCredential.md) that provides independent verification of the claims made. Note that this property may also link to a PDF or a website or some other format of conformity evidence.
@@ -139,7 +163,7 @@ The conformity Information structure in the DPP is an array of UNTP `Declaration
             "accuracy": 0.05
           }
         ],
-        "compliance": true,
+        "conformance": true,
         "conformityTopic": "environment.energy",
         "conformityEvidence": {
           "linkURL": "https://files.example-certifier.com/1234567.json",

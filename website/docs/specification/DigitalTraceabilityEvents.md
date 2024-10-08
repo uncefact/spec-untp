@@ -17,11 +17,11 @@ Version 1.0 stable release for production implementation is due Jan 2025
 
 ### Release for Pilot Testing
 
-Version 0.4.1 release artifacts can be used for pilot testing.  
+Version 0.5.0 release artifacts can be used for pilot testing.  
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dte/0.4.1/)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-schema-0.4.1.json)
-* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-instance-0.4.1.json)
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dte/0.5.0/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-schema-0.5.0.json)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-instance-0.5.0.json)
 
 ### Latest Development Version
 
@@ -66,12 +66,12 @@ The traceability event is designed to meet the following detailed requirements a
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.4.1/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 
 ### DTE Documentation
 
-The [UNTP Digital Traceability Events Vocabulary](https://jargon.sh/user/unece/traceabilityEvents/v/0.4.1/artefacts/readme/render) defines the core traceability event and it's variants including aggregation event, transformation event, association event, transaction event, and object event.
+The [UNTP Digital Traceability Events Vocabulary](https://jargon.sh/user/unece/traceabilityEvents/v/0.5.0/artefacts/readme/render) defines the core traceability event and it's variants including aggregation event, transformation event, association event, transaction event, and object event.
 
 ## Implementation Guidance
 

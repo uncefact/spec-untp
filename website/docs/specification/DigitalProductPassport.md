@@ -17,11 +17,11 @@ Version 1.0 stable release for production implementation is due Jan 2025
 
 ### Release for Pilot Testing
 
-Version 0.4.1 release artifacts can be used for pilot testing.  
+Version 0.5.0 release artifacts can be used for pilot testing.  
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0.4.1/)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.4.1.json)
-* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.4.1.json)
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0.5.0/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.5.0.json)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.5.0.json)
 
 ### Latest Development Version
 
@@ -73,12 +73,12 @@ The Digital Product Passport is an assembly of re-usable components from the UNT
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.4.1/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 
 ### DPP Documentation
 
-The [DPP documentation](https://jargon.sh/user/unece/DigitalProductPassport/v/0.4.1/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DPP model.
+The [DPP documentation](https://jargon.sh/user/unece/DigitalProductPassport/v/0.5.0/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DPP model.
 
 ## Implementation Guidance
 
