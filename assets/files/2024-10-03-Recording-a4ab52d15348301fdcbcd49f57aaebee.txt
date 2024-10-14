@@ -1,0 +1,780 @@
+[Speaker 12]
+Hello, Stefano. Hi, Steve. Just a sec.
+
+There we are. How are you? Good, thanks.
+
+[Speaker 1]
+Did you manage to fix the fix on your web page yet?
+
+[Speaker 3]
+On the web page, yes. On the platform, not yet. I think it would take time because I found a criticality on the, how to say, top page.
+
+We changed the system. We did linkage coupling and probably, so far we just leave as you did and that's fine. Okay.
+
+And I just wanted to confirm with you on the timing when we change winter, summer, no, summer-winter time, is it the meeting in Europe thought to be at 10 o'clock like now or is going to be 9 o'clock, sorry, 9 o'clock or 8 o'clock?
+
+[Speaker 1]
+It's 10 o'clock now, isn't it? In Europe? Yeah.
+
+And so, yeah, I've said it at the moment and we can discuss at 8 a.m. UTC, which will mean it will become 9 a.m. CET, does that work for you or do you want to change it?
+
+[Speaker 3]
+No, no. It works. It works fine.
+
+It's just that I got also another invitation at 8 CET, yeah? And I don't understand why because I saw the source you sent was the same. But in that case, I simply canceled the 8 o'clock and keep the 9 o'clock.
+
+[Speaker 1]
+I don't know. I, you know, because I'm nervous I'm sending out a meeting to like 100 people and I spent ages on the Zoom panel going, right, get this timing right, you know, and somehow the second one didn't go out. So I'll wait till a few more people come on and then I'll explain and apologize and, you know, blame Zoom.
+
+[Speaker 19]
+Yes.
+
+[Speaker 1]
+Good morning, Brett. Good evening, Brett, I should say for you and Virginia's up early.
+
+[Speaker 9]
+Hi, all.
+
+[Speaker 18]
+Good morning.
+
+[Speaker 9]
+Good morning. I still don't have the invite for the evening meetings.
+
+[Speaker 1]
+Yeah, nobody does. Even though I created it and it appeared in my Zoom, for some reason it didn't send out an email. So I thought I'd just talk about my Zoom's stresses this morning and then just confirm that I'll try again and everybody should get a evening meeting for two weeks time.
+
+[Speaker 19]
+Yeah.
+
+[Speaker 9]
+This is the side. Hello, Gerhard. It's been a couple of weeks since we've been on a meeting together.
+
+Maybe a month.
+
+[Speaker 10]
+Hello, Virginia. Hello, Gerhard.
+
+[Speaker 1]
+Hello.
+
+[Speaker 12]
+Hi, everyone.
+
+[Speaker 1]
+Hello, all. Hello, Gerhard. It's good to see you.
+
+Well, I don't see you yet, but I know what you look like. Now you can see me.
+
+[Speaker 16]
+I hope so. Oh, wait. Shoot me now.
+
+There you are. Yeah. Live and kicking.
+
+Not recorded.
+
+[Speaker 11]
+Give it one more minute.
+
+[Speaker 1]
+There's Michael. Good. I was hoping he'd show up because I wanted to focus half the meeting on the business case content.
+
+Hello, Michael. Pleased to see you.
+
+[Speaker 14]
+Hello, Steve. How are you?
+
+[Speaker 1]
+I'm doing very well. We will put you on the spot for half this meeting, I think.
+
+[Speaker 14]
+Oh, no.
+
+[Speaker 1]
+To talk about your business case content.
+
+[Speaker 2]
+My connection is getting very bad, Steve. I can't hear you. Did you say something?
+
+[Speaker 1]
+No, you can't get away with it as easily as that. All right, everyone. I think it's 10.04. We'll make a start. Thank you for joining. And I'll kick off with the usual. This meeting is being recorded.
+
+Let me know if that's a problem and your contributions are considered UNP. And I apologize for the screw up with Zoom. I tried really, really hard to get the meeting invitation right.
+
+And it appears that everyone got the 8 a.m. every month meeting. And I also created a 8 p.m. This is UTC, by the way. Every month meeting that would be a fortnight after the previous one.
+
+So we're kind of moving to fortnightly meetings. And each fortnight shifting between 8 a.m. And 8 p.m. To accommodate different time zones. So that somebody has a bad time only once a month.
+
+That's the plan. And so that's the intent. And I believe everyone got the 8 a.m. UTC meeting. And nobody got the 8 p.m. UTC meeting. So it's not urgent because it's two weeks away. I just wanted to make sure that indeed nobody got it.
+
+And I'm going to blame Zoom and try again after this meeting. And beg your forgiveness. All right.
+
+So I thought in the spirit of the email I sent out, that there's a few technical things to chat about. Not too much. And then I wanted to really, if we could, spend a bit of time reviewing what Michael O'Shea and his team have done on the business case content.
+
+And see if we agree that it's enough to update the site. It may not be complete or perfect. But is it enough to update the site?
+
+All right. So with that, I'll screen share. And start with the basic stuff.
+
+You may have seen that an email went out saying, hey, good news. We released, I'm trying to find it now. Here we go.
+
+0.4.1. Version of digital product passport, conformity, credential, traceability events, virtual facility profile. With the intent that this is a sufficiently usable, stable version for some months of pilot testing. It's not the final production version.
+
+But that's the intent. And I'll just walk you through one page, because they all look much the same. What I've done is said, all the artifacts, as you may have realized, are now getting, every time I do a release, they get published through to a UN-owned domain.
+
+That looks like this. That's the digital product passport vocabulary. But actually, there's the passport, core vocabulary, facility record, conformity, credential.
+
+It's a bit hard to see version number there, 0.41. And if you click on one of these, you get browsable pictures of classes, properties, and code list. The technical stuff, like a context file, JSON schema, and a generated sample instance, which is not as nice and consistent as a human-crafted sample instance would be. But it's nevertheless a useful sample instance.
+
+That's what happens every time we release. And the stuff is there. I'm just walking you through that.
+
+The other thing that was added that may be interesting, particularly for business people, is this little, and you'll see it on every one of these pages, this thing called a visualization. We have a team member that's a good bit of a kind of UX designer. And I'll show you an example, digital product passport.
+
+I have to zoom in quite a bit, because it's mobile rendering. Can you see that? I don't think I can zoom in anymore.
+
+But you can always download it and zoom in. But basically what it is is a human rendering of a digital product passport. In this case, we've chosen a lithium-ion battery.
+
+It doesn't have to be. With tags here, and you can see these tags, these tags indicate which field in the data model does that bit of data on the visualization correspond to. So it's quite a kind of, I think, a useful thing to see what it might look like and how it maps to the data model.
+
+So those are there, for your pleasure, in each section, visualization. Probably the conformity credential one will be easier to see because it's a bit smaller.
+
+[Speaker 11]
+Let's look at that one. Yeah, there you go. I can zoom it up a bit bigger.
+
+So this is for a factory.
+
+[Speaker 1]
+Shouldn't be issued by Global Battery Alliance. That's a mistake. It should be issued by whoever the factory owner is.
+
+Oh, I'm sorry. It's a conformity credential. Beg your pardon.
+
+This is an attestation. Yeah, yeah. I thought I was looking at a facility record.
+
+But yeah, you see here a visualization and a mapping. So in the not-too-distant future, all of those will also be available as verifiable credential rendering templates that anyone can use. Of course, if you're a software vendor, you may choose your own template or your own branding.
+
+But take one of these and tweak it to make it yours. We're not fast. But that's the kind of complete set of stuff.
+
+And then each section is now reasonably complete with words, some requirements, a data model, and some description with snippets. And that's true for all of them. So that's just a quick walkthrough of what's there.
+
+Any comments about that before I move on?
+
+[Speaker 6]
+Only comments that it's very good and very useful.
+
+[Speaker 1]
+Thank you. So now that was the good news. The bad news is that some colleagues in Canada rolled their sleeves up very quickly and started playing with it and pointed out a few bugs, which I've listed.
+
+[Speaker 11]
+Where is it?
+
+[Speaker 1]
+Here. A list of bugs in release 4.1. There is a typo. So one of the changes I made, and this is in response to a couple of requests from the semantic web community, who don't like to see plurals in property terms.
+
+So facility, not facilities, even though it might be many of them. And I think that's to do with the way it gets represented in a graph. It's described as a facility.
+
+And I noticed that the...
+
+[Speaker 2]
+You sorry? Sorry. Is that the typo of facility, the spelt wrong?
+
+Yeah, yeah.
+
+[Speaker 1]
+So I'm explaining why I did this stupid typo, right? I went through, and most of the time you're removing an S. And I went through quickly removing S's.
+
+And of course, you don't just remove an S to make facilities a facility. So there's a nasty typo there, which... Just say it's in French.
+
+It's just in French. Yes. There you go.
+
+There's a thought. And then they also kindly pointed out that there's a few places in the context files where a W3C verifiable credential protected term, like we've made sure we removed all the type and name and other terms that are defined in W3C VCDM. The rules are we can't duplicate the definition of those terms, right?
+
+Because our context file is built upon on top of the W3C context file. So when we duplicate a term, it causes confusion. And there is a term description in W3C, which is still loitering around some of our context files.
+
+So I have to remove that. And then there's a case where there is a context file that describes a particular context, in this case, identifier scheme, and the context is empty. The reason it's empty is because identifier scheme is a really simple type.
+
+It just has a name and a description, I think, or an ID or something like this. And those are already protected terms in VCDM. So it's empty from our side.
+
+So we produce a context file that has a context property, but it's empty. And that can apparently cause sort of bugs or errors in some processes. So those are the three bugs.
+
+They're all technical bugs. Well, one typo and two technical bugs. I thought I'd give it a day and see if anyone finds any others, because we might have to do a 0.4.2 just to tidy this up so it's workable. Nis?
+
+[Speaker 4]
+Yeah, I also rolled up my sleeves. There are tons of typos all over the place. I would encourage anyone with an interest in contributing to just look through and clean that up.
+
+It was too much for me to even start working on.
+
+[Speaker 1]
+Oh, really? It's in descriptions, not in the terms, right? It's in the descriptions?
+
+Not in the terms. No, no, just description. Right, okay.
+
+It doesn't really matter. Yeah, but it's just not professional, is it? So let's fix those as well.
+
+[Speaker 4]
+Like in the description of facility profile. I'm literally just switching over and performance information. Information is I-N-O.
+
+It's all over the place.
+
+[Speaker 1]
+All right, so there's too many to list, basically. To be honest, you're right. I haven't paid enough attention to the words of the descriptions since we wrote them a while ago.
+
+And I'm writing them in an editor that doesn't have Spellchecker, so that's the reason.
+
+[Speaker 4]
+So I'll go back then. That would solve most of it. One that was worse was a schema.
+
+One of the examples didn't comply with the schema, and it has to do with the geolocation points, the way the coordinates are listed. What I did, I just took out the geolocations from the example because they're not required, and I don't have to have it all. And it also, it's got multiple, or maybe that's intentional.
+
+Yeah, I guess that's it. But there was a schema collision on the geolocation.
+
+[Speaker 1]
+Yeah, so that, I'm not too surprised by that one. GeoJSON's an interesting, it's not a key value structure, it's just a value structure. And it's very tight, but it's sort of not really what data modeling system would expect, and that has caused some grief.
+
+So I'll take those two. We have to get rid of the typos.
+
+[Speaker 4]
+I would request we don't, can we try and limit the amount of, none of this really matters, I think so. A 4.2 already, I think, is too frequently updating.
+
+[Speaker 1]
+Well, what I'm trying to get to is, what we do know, and what I can say, we can confidently say, is that testing over the next few months will reveal more important gaps, like you've missed some business elements, or I can't make my steel certificate fit this DCC. These are the sort of things I want to find, but I just wanted to go into it with something technically clean. And so I thought I had that, but I don't, because there's these little, I agree they're not big bugs, but if people haven't rolled their sleeves up much yet, do we think it's worth just getting rid of the typos, fixing these three things that Canadians pointed out, they're not hard to fix.
+
+And yeah, GeoJSON, I don't know, that one, I'm sure we can fix it. But I'm a bit reluctant to go into a period of testing with technical bugs. I want to go in with clean technical stuff, and then say, this is business testing, not technical testing, right?
+
+[Speaker 4]
+It's never clean, Steve. That's all we've got.
+
+[Speaker 6]
+Steve, I agree with your own philosophy that it should be a business case, and if it can be as clean as possible from a technical point of view, we'll certainly focus the test on the business case and not on debugging. I agree with your point.
+
+[Speaker 1]
+Yeah. All right, well, does the majority agree that give it another day, fix the typos, and issue of 0.4.2, and then send out an email saying, you know, good news, bad news, but now it's locked. Do we do that?
+
+[Speaker 4]
+It was locked.
+
+[Speaker 1]
+I know. But it's embarrassing, right?
+
+[Speaker 4]
+No more locked than this one.
+
+[Speaker 7]
+Steve, I can't see the screen. I'm just on my phone, so apologies if I'm speaking out of turn. It could be a 0.4.1. I mean, typos is a patch. It isn't a minor version.
+
+[Speaker 6]
+So…
+
+[Speaker 1]
+Yeah, the point… We've been using minor versions for something that are really more… Sorry, major, minor, patch.
+
+The one is the patch, right? Okay. We're not really, honestly, applying semantic versioning properly at this stage because changing the spelling of a property is actually a breaking change, right?
+
+It should be a major version change if you were… Yes, that is. Yeah.
+
+But until we get to the point where we go, let's… Until we get to 1.0, I think semantic versioning, we should be a little bit relaxed about it. Otherwise, we're going to end up with…
+
+We won't release production until we get to the major version 14 or something.
+
+[Speaker 19]
+Right.
+
+[Speaker 1]
+Yeah. Okay, well, look. Do we want to vote on this?
+
+And this has said leave it at 4.1, 0.4.1. Am I sort of… Because I feel a little embarrassed about some of these typos, right? I'm not overly worried about things like the GeoJSON, although if we can fix it easily, we will.
+
+[Speaker 8]
+Is anyone really using it? I mean, you know who they are, Steve. Just tell them.
+
+Yeah, well, they're on this call, right?
+
+[Speaker 1]
+So I think… All right. Unless anyone's got any strong objections, we'll do one more release, and then I'll eat my hat if we have to do a 4.3. We'll just live with it for testing at 4.2. Are you good with that, Nis? Okay. Anyway, that's, I think, all I had on the sort of techie stuff. Oh, just one last thing.
+
+Actually, two things. This implementation registration came in. I don't know Quintessence Research.
+
+I don't know if anybody does, but reading it and looking at the website looks more like a consultancy than a product company, and so I've responded saying, ah, okay, and there's been… I wrote, thank you for your expression of interest. However, it appears you're a consultancy rather than a product vendor, and we're not.
+
+I don't think we want to start registering consultancies because how do you verify? A product vendor, you can run some tests and say, right, it's conformal or not, but a consultancy, we'll get hundreds of them, and so even though I'm a consultancy myself, I think it's just not appropriate, and here it's a consultancy with the vision and ambition to be a product vendor, right? So then when you have a product that we can reference, well, what do we collectively think we should do with this kind of application?
+
+[Speaker 2]
+I would agree with your comment there, Steve. I think a lot of us on here are consultancies, and it's always… and having been in the consulting game for a very long time, it's always a desire to create a product of some sort, but I agree it really should be…
+
+you have product and code that can be tested against. I would agree with you, Steve.
+
+[Speaker 1]
+So then I'll reply to this saying, basically, great. We look forward to registering your product when you have it, but we're not registering a consultancy now, right? Yeah?
+
+Okay.
+
+[Speaker 13]
+I agree with that, and I also suspect that a product is not a physical product. It could be a software or whatever, and what we want to test is with physical things. Yes.
+
+[Speaker 1]
+Okay. So I just wanted to make sure I've got more support than just my own thoughts when I say no to that one. The other little thing is Bert van Luffelen, who I don't know, hasn't joined the calls, wrote a comment.
+
+By the way, we seem to be attracting some attention from various corners. Even though they're not joining the call, people are starting to refer to UNTP more and more and getting more and more registrations on the chat and comments like this. This one is saying, essentially, that the identity resolver spec seems a bit too constrained to the assumption that you're starting with an ID and you have to resolve it to URL and da-da-da-da-da, and why can't we just have HTTP URLs?
+
+More or less, they're saying that, and it did occur to me, and here's what I wrote in response. I'm seeking your opinions. I said, look, basically, the fundamental architecture here is that given an ID of a thing, I need to be able to get data about a thing, and there are different patterns here.
+
+Sometimes the ID is not a URL, right? It's just a GTIN or something like this, in which case you need a protocol to create a URL, but sometimes the ID is embedded in a URL, right? It's a QR code or it's a URL, in which case you can just call the URL, and sometimes the ID might be a DID, in which case you go to the DID document, look at the service endpoint, and get a URL, but they're all basically just different patterns to get to the point where there's a URL to call, and then I said the response to that URL should be a link set, not a particular link, because otherwise you end up needing lots of IDs, right, because the particular ID of, let's say, a bottle of wine, might want to return different data sets depending on what country you're in, and so this idea of given an ID, get a URL, get back a link set, choose the link you want, I think is the universal pattern that we want to consistently apply. It's just that there are different ways to get to the URL, right? Does everyone agree with that, these words on the screen?
+
+[Speaker 7]
+Steve, I can answer the screen, but yes, I do agree with it. That's kind of what I've been doing for the last few years. The name Bert van Lufland, I do recognize the name, and I think I knew him when I was at W3C.
+
+I can't remember, but the fact that I remember his name, it sounds very Flemish-Belgian, means he's almost certainly a semantic web person, you know, great, good, good look. So he's thinking URIs for everything, which is, you know, what I used to do, and I understand and I sympathize with, but what you just said is correct, and so if you're going to reply to Bert, by all means, copy me in if that's helpful, because I do recognize the name, and so you can take it up with me if he wants to, and I'm happy to explain further if necessary.
+
+[Speaker 1]
+He raised a public ticket, and I replied in the public ticket, so you can feel free to chime in in the public ticket. I'll do that, okay, thank you.
+
+[Speaker 10]
+I have a question, Steve. Yes. We are using URI many times in the data model, so an ID can be of type URI, and a URI can be either a URL or a URN, so does this relate to what is written here?
+
+[Speaker 1]
+I think what he's referring to is the section in the document that talks about this discovery protocol, right, because I got asked this too yesterday by the Global Battery Alliance, how are you exchanging these credentials, where's the DITCOM or transport method, and I said there isn't one because the fundamental architecture is publish and discover, and so we all collectively think that's the most scalable way to do this because very often you can't do a push because you don't know who to push to a lot of the time, right, it's somebody a couple of steps down the supply chain, so publish and discover is a much more scalable way of doing it, and there's a section called identity resolver which is basically focused on if you've got an ID of a thing and it doesn't have to be a full URI, it could be just a string, which let's say a GS1GTIN or an Australian cow identifier, how do you then get the data about the thing, right, and there are kind of two steps.
+
+One is from the ID get a URL, not a URN, but something resolvable that you can call, and then given that URL, what do you get back? The answer is not a digital product passport but actually a list of link types, and then you pick the digital product passport if that's the one you want because this goes back to making sure you don't have to put 20 QR codes on your bottle of wine, one for each thing, right? You want to basically have one ID which resolves to a list of useful things, one of which might be a digital product passport, so the whole discussion is around that idea of how to go from an identifier to a link set and eventually find the passport.
+
+[Speaker 10]
+So perhaps this should be then elaborated in our documentation or not?
+
+[Speaker 1]
+It is, yeah, yeah, yeah, there is a page and he's commenting on that page, right, so it's this page. It's not clear then, it's not clear for him? Well, actually, I think he's kind of correct that the page, let's find the page, where is it, identity resolver, here it is.
+
+This page does talk quite a bit about resolving, let's call them traditional identifiers, you know, like a one-dimensional barcode to make them resolvable. So there's quite a bit about that and it doesn't say enough to say, well, actually, maybe you've already got a resolved identifier, right? So I think it's a fair point and it complements a point that was made yesterday when I was talking to the Global Battery Alliance and said, well, also a DID is an identifier and a DID has a DID document and in the DID document is a standard service endpoint, so that's another way to go from an identifier to a URL that gives you more information.
+
+So my response is to acknowledge that this page is a little bit maybe traditional identifier focused and that we should instead describe these three patterns, right? You've got a traditional identifier, here's how you turn it into a URL, blah, blah, blah, or you've already got a URL, but get back a link set, not a single thing, or you've got a DID, right? So yeah, I think this is the next page I need to work on anyway, so I just wanted to share this with you because it's making this slightly more generic and, well, not really generic, but accommodating more patterns, I would say, and I think it's a good thing to do.
+
+So anyway, but it's kind of good that we're starting to get comments from people that haven't been on the calls, they're looking at the site and giving their opinion, I like that, and I think that's a measure of, kind of a measure of success, right? When people you don't know start commenting.
+
+[Speaker 16]
+Yeah, yeah.
+
+[Speaker 1]
+Yeah. Yeah, it's good, it's good. Yeah, so that's it for me, and we're exactly at 10.30, good. The other half of this meeting, I wanted to hand over to Michael O'Shea to walk through the business case content which is in Google Docs at the moment, and at the end of that walkthrough, to collectively assess, shall we publish it? You know, as it is, noting that it's, you know, still work to do, but it's probably better than what's there now. So with that, I'll stop sharing and hand over to, unless you want me to share your screens, or do you want to do it, Michael?
+
+[Speaker 2]
+I'll do it, Steve, because I think it makes it just easier to flow. Let me just get the right. All right, so are you seeing my screen?
+
+[Speaker 18]
+Yep.
+
+[Speaker 2]
+Okay. So there are, well, these are the sort of the first landing page for the business case for change. So the, and what we have done so far is, we've updated, if you look at the three pages that are, or three or four pages, we've got updates for all four pages.
+
+Maybe the value assessment framework is the one piece that still needs probably the most work, but we just started talking about that yesterday.
+
+[Speaker 6]
+Can you make your screen a little bit bigger, please? Sure. Better?
+
+[Speaker 2]
+Yeah, much better. Thank you. Okay, no problem.
+
+So we're taking, so the first part is looking at the, we've been looking at from the business sector side and from the regulator side. So trying to look at it from both sides to try and give the justifications. And I apologize, I've got a cold, so my throat might go dry and I might start hacking, it'll go on mute.
+
+So we have come through, so what we've got is some key benefits and then also definitions of the benefits. We've gone over some of these with, the team has gone over and the team, just so everybody is aware, Nancy was able to join us on one call and she was very much in alignment with her for a lot of the benefits, but it's been myself, John, Ann, who I know is on the call, Peter, Peter's last name is escaping me right now. Carter.
+
+Yep, Peter Carter. It was joined us on the last call. There is someone else, Luca as well has been, put stuff in for the community activation.
+
+So the main structure here is first, this is the first landing page for it, trying to give an overview of the business case for change. Then we can go deeper. There's a business case template page, which I'll go to in a minute.
+
+Then the community activation program, how do you bring a community together or bring it to start moving forward with this? And then the value assessment framework. Those are the three main pages or four main pages of the business case area.
+
+Let's see what else, and I'm sorry for being a little disjointed. These as part of it is that we said, okay, what are the, there are more value base or societal based values from doing this whole effort. And then there's more economic areas.
+
+So these six here are really on the economic side of the trade cost reduction, increase in trade volumes, economic growth, enhanced revenue collection, foreign direct investment and supply chain resilience.
+
+[Speaker 1]
+Do you anywhere put any sort of metrics or basis or references to substantiate those sort of claims?
+
+[Speaker 2]
+Yes, that's in the second doc, that's in the more detailed document. So I tried, and it's certainly open to suggestion, should they be on the first landing page or should they be deeper down open?
+
+[Speaker 1]
+Maybe just links to the deeper down, just so that people who read that and go, oh, those are a bunch of grandiose claims, aren't they? It can go, oh, really? They've got some references.
+
+I'll click and have a look, rather than kind of think you're claiming to solve world hunger without evidence.
+
+[Speaker 2]
+Absolutely, absolutely. So.
+
+[Speaker 6]
+May I make a comment? Please. Christophe speaking.
+
+Everything is, you're trying to address at the same time the business corporate and the regulator. Now, when you write enhanced revenue collection, that's good for the regulator. I'm not sure that could be perceived by your corporate.
+
+[Speaker 2]
+Fair enough. Yeah, fair enough. Maybe we separate some of those values.
+
+When I was doing that, I lumped them together, saying public and private. So maybe teasing them apart is a good suggestion.
+
+[Speaker 3]
+Michael.
+
+[Speaker 1]
+Yeah, in the detail bit, we do have separate, here's a business case for buyers, sellers, regulators, et cetera, right? But this is, what we're looking at now is the overview page that tries to bring it all together. And we probably need to, it's still one page, but yeah, try not to trigger these kinds of questions.
+
+[Speaker 6]
+Yeah. Yeah, yeah, yeah. If you modify enhancing transparency, that's something that corporate would be happy to.
+
+Transparency revenue collection is something that business and corporate could understand. Enhance is more touching.
+
+[Speaker 2]
+Yeah, yeah, yeah, yeah. They're trying to pay as little. Yes, I completely understand what you're getting to, Christoph.
+
+Susanne.
+
+[Speaker 5]
+Yeah, hi everyone. Sorry for being so late this morning. We have a holiday today and I just missed the time, apologies.
+
+I spoke with the European commission this week and one eye-opening comment was made that of course the European commission wants infrastructure, a digital infrastructure establishment. And I think that's, yeah, that's really a thing that we could add here, which we're creating. We're creating digital infrastructure.
+
+And that's one for the regulator, obviously.
+
+[Speaker 8]
+Yeah, good point.
+
+[Speaker 1]
+Essentially to understand that, what we're providing is the business motivation and the technical specifications that encourage the, if you like, community of service providers to create the infrastructure needed by a regulator. Or are we talking about the regulator creating the infrastructure or a bit of both?
+
+[Speaker 5]
+Yeah, it depends how you define infrastructure, right? So with the standards that we're creating, of course someone has to implement it, but the tools work with each other because of the standards that we're setting. So somehow, yeah, we're facilitating an infrastructure which is globally available.
+
+So I don't know what's the best way to formulate it, but that's what I'm trying to say.
+
+[Speaker 8]
+I agree, yeah.
+
+[Speaker 2]
+Yeah, okay. We can talk afterwards maybe and figure out what's the best way to put it in here or if that's something completely aside from this effort. No, no.
+
+[Speaker 5]
+I think it would be nice if it could be in the list. Yeah, we can speak afterwards.
+
+[Speaker 2]
+Of course, no problem. Yep, okay.
+
+[Speaker 1]
+All right, Stefano? Does the word infrastructure... Oh, sorry, Stefano.
+
+[Speaker 3]
+Yeah, just a quick in line, Michael, with Christophe and also Susanna. One of the upsides, I believe, of the effort we are doing is anyway to highlight that there are benefits from everybody basically, right? So one of my feeling is why don't, according to Christophe, how to say, question, why don't we try to structure what you already set up here a bit in line with what is the main frame of the material we are producing?
+
+That means there is a section for the regulators, the section for the businesses, but the key message is, hey, guys, you all are connected and get benefits, but just as a readable or familiar structure, we use what we did already in the other part of the UNTP exercise. That's, how to say, a question maybe for all of us, but this I feel to give also a kind of easy reading and find a way to read the material we produce.
+
+[Speaker 2]
+Yeah, okay. Yeah, there is some stuff. So some of these Google Docs are still a little bit of a working document.
+
+So we are trying to cover both, whether if it's public, private, if that's the easier way of drawing the lines, and conscious to the fact that bombarding with a huge volume of information is, it's almost like you're trying to spoon feed them to some degree, but not completely, if you know what I mean. You don't want to be insulting, but you don't also want to hit them with a never-ending page of stuff that they have to scroll through in order to get everything. So that's where we are.
+
+I think you'll see, let me keep on going a bit, Steve, just I'm conscious of the time. So I want to at least show people the pages of where we are.
+
+[Speaker 14]
+Exactly.
+
+[Speaker 2]
+So these tables were created automatically by Peter created these, and they were a great source of conversation. We're likely to remove them, based on the conversation yesterday and reframe this and put this into, put an additional table section into the document. But what we are thinking of looking at is part of the value assessment framework using this structure of the different rows as part of the value assessment.
+
+Steve, this is one of the things that came out of our conversation yesterday and then start to create, the feeling was that an AI tool was helped use to create this. We're not really sure. We don't necessarily agree with some of the value point or the rankings or ratings that's been put into it.
+
+But there's also a concern that the overall, excuse me, the size and the breadth of it is almost information overload. But so this is something that's been, it was been very helpful for guiding our conversations from the beginning. This one is really the private sector business benefits.
+
+And we have something similar on the public sector sort of public benefits as well. But like I said, we're in the process of making some changes there. Business case approach.
+
+And this I will, so this is, we have a whole spreadsheet that John created around creating a high level sort of standardized business case just for somebody who's first starting to look at UNTP and say, okay, is this something we should look at that is not intended to be an official business case template because we have worked on the assumption that every organization be a public or private is gonna have its own set cases that they have to use. But this just sort of gives them a starting point where they can collect information and say, okay, yes, I can see this financial benefit.
+
+So again, I will go through these, the community activation program. This content is still your same content, Steve. The page is updated, but the content has not changed here yet.
+
+Okay, sorry. Just wanna make sure I'm not missing something. So I'll skip over to one of the other, the business case template and this and another document.
+
+So Peter created this document. Oh, wait a second. It takes a while for it to load.
+
+Skip through here. Okay. So, all right, where is it?
+
+Okay, so we've created this template benefit analysis for each of the different stakeholder roles. And the stakeholder roles come from the document, from the stent or the site and the document that was originally created. So there's, I think a dozen or 13 of them.
+
+What we've tried to do is put, so, okay, what is the basic interest? What is the, you know, we're struggling with companies. So from a regulator standpoint, and what's the value prop?
+
+These two pieces of it. So the role, the description and the value prop will be taken in and added into that top level business case document that we just talked about, this went through. We will take, and Steve, this is where my comment was.
+
+Do I, as we take this out of here and create a page, do I create a separate page for every regulator? Sorry, for every role or one big page? That's more of a housekeeping type thing.
+
+But what we're going to do is take all of this where it says, okay, you know, what do I need to do as an implementer? Like the reaction example and the benefits and caught, you know, so that these different elements for the different role. You know, creating them as separate documents is not a problem, obviously.
+
+[Speaker 1]
+So is there... In John's spreadsheet, so there are quite a number of different roles articulated on the site, you're right. But I think some of them, we don't really need to make a business case document for, right, for example, software providers.
+
+They'll be driven by their own motivations and also their customer demands and so on. It's... I think the important...
+
+There's really two fundamentally important targets of business case. One is regulators and the other one is industry, actual manufacturers in the value chain. Should we...
+
+Even though there are lots of different stakeholder types, the question really is how many of them do we need a business case template for?
+
+[Speaker 14]
+We're only...
+
+[Speaker 2]
+So let me flip back. Sorry to that. So I think that this is what John was...
+
+This is exactly what John was talking about. Yeah, so this table here is the business case. So this is something that John added in over the last week, saying, okay, from the buyer side, how would you modify?
+
+So we're actually come to the point where we're just going to use the one full spreadsheet model, maybe a second one for regulator. Yeah. But simplifying it that way, exactly trying to address what you're saying, certifier, software vendor.
+
+So we're not going to create 13 spreadsheets or whatever it is.
+
+[Speaker 1]
+Yeah, okay. So the page granularity should probably match that then, right? Or even...
+
+But buyer and supplier is interesting, right? Because that's actually just looking at two different views of a business value proposition or a business case, because almost every entity is a buyer and a supplier, right? So we should probably create a template for a value chain actor.
+
+And there's parts of that, which is the value to you as a supplier, and parts of that, which are the value to you as a buyer. Yeah. So that's just my thinking.
+
+Yep. So yeah, I don't think we want to have 13 pages with fine-grained separate business cases for the more... I wouldn't call them minor roles, because they're all important, but maybe I'll ask Brett.
+
+So one of the roles is conformity assessment bodies, right? They play an important part in this. Do we need to make a business case template for a conformity assessment body, or will they see that digitizing what they do already based on demand from regulators and industry is enough of an incentive?
+
+I don't know the answer to that. Maybe Brett does.
+
+[Speaker 8]
+I wouldn't have thought so, Steve, and I wouldn't have thought so for accreditation bodies either. I think the wider issue is the quality infrastructure, which captures all of these things and has the attention of regulators in a much stronger way than any of those individual sectors do.
+
+[Speaker 1]
+Right. So I think I interpret that as... Go on.
+
+[Speaker 2]
+Sorry, Brett. Could you just add a little bit to what you mean by quality infrastructure?
+
+[Speaker 8]
+Yeah. So there's a set of functions in any economy, which includes standards writing, conformity assessment, accreditation, and others, that constitutes means of assurance, not just over products, but over all sorts of processes. And I think that's the right sort of language to be using because it builds regulator support, it gains interest from regulators in a way that many of these terms just miss the mark, I think.
+
+[Speaker 14]
+Okay. All right.
+
+[Speaker 1]
+So then what is boiling down to me is we've got lots of stakeholder types, but we've really only got two targets of a business case template. One is the industry actor, who's a member of the value chain, who is both a buyer and a seller, usually, and a regulator or an agency. Do we generally feel that that's true?
+
+That doesn't mean we can't enumerate the other stakeholder types and make a paragraph about why is this of interest to you. That's fine. But actually having a dedicated page with templates and numbers and value metric models and stuff like this, look, I think it's true, and I think the rest is sort of peripheral actors.
+
+[Speaker 14]
+Okay.
+
+[Speaker 8]
+Okay.
+
+[Speaker 14]
+That certainly simplifies it.
+
+[Speaker 1]
+So then the question, though, is we're going to still acknowledge that those other roles exist, software vendors, conformity assessment bodies, and so on, and say some words around benefits, you know, not a whole business case template, but just basically a stakeholder acknowledgement and value statement. We already got that in roles somewhere else in the document. Do we keep it there and focus business case templates just on these two actors and say, please read that roles and stakeholders section if you're not one of these, but you want to see what's in it for you?
+
+Or how should we best structure this? Because we could bring all that roles and stakeholder stuff that's currently in about UNTP somewhere and stick it in the business case area and have a page which is, you know, industry, a page which is regulators, and a page which is everyone else. And the everyone else one isn't Excel spreadsheets.
+
+It's just a list of stakeholders and some sort of paragraph about benefits.
+
+[Speaker 2]
+Yep. I think having it only in one place is absolutely the right way. You know, having same content in two places is just a bad idea.
+
+Moving them into the business case, I think, has a logical sense. I don't know if it's been a little while since we went back through it. Is it, you know, and maybe this is just my perception, about is usually more of a high level description of what, you know, what we're trying to, what's trying to be accomplished here.
+
+But that's just my view. So that would make a case to put some of that content into the business case section. But I'm obviously not hard on that either.
+
+[Speaker 1]
+Okay. We better get on in the next three minutes to some actual content about the business case for an industry implementer or a regulator.
+
+[Speaker 2]
+Let me get the spreadsheet open here.
+
+[Speaker 1]
+Maybe in the last few minutes, John should walk us through his spreadsheet.
+
+[Speaker 2]
+Is John here?
+
+[Speaker 1]
+I didn't see him earlier. Joe is here.
+
+[Speaker 15]
+Yeah, I'm here. I'm not capable of doing John's work for him. Fair enough.
+
+All right. On top of that.
+
+[Speaker 2]
+Okay. So this is the model. This is the Google Docs version.
+
+There is an Excel spreadsheet version. First, we're taking this diagram that you created initially, Steve. This is the introduction in the model.
+
+So it just describes, it goes through and describes the different elements here and puts the, you know, the information around it. And really looking at how does the cost of compliance over time, this is sort of the key part of the model is that over time, the cost of compliance per unit sold decreases by the use of UNTP. I'm just going to go quickly because there's only a few minutes left.
+
+We define all the terms that are used in the model, right? And then we'll get to the model here. So we have tried to look at, you know, whether you're looking at it.
+
+Well, the only period is a year. It goes, I think, out over 20 years is the way it is. It's fairly simplistic in the sense that you would put in your, let me see here.
+
+John would be the better person for this to walk through. But we tried to, sorry.
+
+[Speaker 1]
+No, I was going to say we could, we could do this next meeting with Joan if you want, but. Yep. Yep.
+
+[Speaker 2]
+I mean, this should match. So the red fields match the graphics that you created, the green fields match the graphics, right? That's what we've tried to keep it tied together.
+
+And the blue is I believe more your internal costs or your internal information, unit costs of supply, you know, unit price.
+
+[Speaker 11]
+Parameters. Yeah.
+
+[Speaker 2]
+Just the parameters for factoring in. And we've tried to, you know, some of the, you know, it really is just something that they should be able to easily put information in without having to go into deep detail. We've also tried to factor in, you know, what's your initial implementation costs, that there is sort of an initial investment and then it's out over time.
+
+So that that initial implementation CapEx disappears and then you have your operating costs. Let's see what others.
+
+[Speaker 1]
+Okay. And then there's some calculated results.
+
+[Speaker 2]
+Calculate cost of, yeah. And we've tried to using the cost of compliance per unit sold. And the, you know, we've also the residual, I think based off of some of the, you know, is there a price uplift?
+
+We don't, you know, again, that that's there, but the conversations that we had around, okay, you know, many organizations look and say, okay, what are my fines? And is it going to cost me less money just to take the fine? And I don't, and I just continue operating the way I do.
+
+Or is that fine now becoming significant such that it's actually the improved disclosure actually, you know, bringing in UNTP plus the improved disclosure reduces my liability around the cost of non-compliance.
+
+[Speaker 1]
+So can I suggest, I'll be, I'll admit, I haven't followed too closely all this. I think what this needs is one volunteer in addition to me to have a look at this with fresh eyes, right. And put yourself in the position of a business and go, do I understand this model?
+
+Right. Because if someone's going to use this spreadsheet to make a business case to their CFO for investment, then they have to be able to support it. Right.
+
+Which means they have to understand it and say, yes, this is why that number's there. This is what it means makes sense to me.
+
+[Speaker 2]
+I think that would be a great idea.
+
+[Speaker 1]
+Yeah. So does anybody on this call feel both interested and I don't know, ready, capable, qualified to have a look at this spreadsheet, put yourself in the position of a business and go, does this really make sense? And do I understand it?
+
+And when I understand it, do I support it? And could I sell this to my CFO is really the question, isn't it? Cause I, I think it, it looks pretty good, right.
+
+But it needs that kind of independent test. Absolutely.
+
+[Speaker 6]
+Yep. I'm happy to be part of the team who is on your proof, on your proof checking it. Christoph speaking.
+
+Okay. Yep.
+
+[Speaker 2]
+So I will send you the, I'll add you to the folder. I think I can add you to the folder, right? Steve.
+
+Pretty sure.
+
+[Speaker 12]
+Pretty sure.
+
+[Speaker 2]
+Yep. Okay. And I'll send you a link Christoph to do the spreadsheet.
+
+Yeah. Okay.
+
+[Speaker 1]
+Do you think, um, the spreadsheet is meant to be self-describing, isn't it? Uh, so.
+
+[Speaker 2]
+Yes, it is. Yeah. So it was just, I just dropped it completely.
+
+Yep.
+
+[Speaker 1]
+Yeah. So here's the thought. How do people feel about sending it out to the, uh, mailing list, which has about 200 people on it to say, I'll be right back.
+
+Yeah. Okay. Um, is it too early to do that?
+
+Do we want to have a look at it just one or two of us now? I mean, it's a, we could send it to the whole mailing list and say, this is an attempt to provide a quantifiable business case template framework for industry. Um, how broadly do we socialize it now?
+
+[Speaker 6]
+I think a step-by-step approach is a good idea.
+
+[Speaker 1]
+All right. So in the next two weeks, whoever is interested to have a look and have a look and give feedback after that, we may be send it out as an attachment to the mailing list because, um, at some point it's going to go up on the site. Right.
+
+And then people will download it and offer their own comments. I don't mind putting stuff that's not finished on the site. We've been doing that for a year now.
+
+So there's, you know, there's nothing wrong with that. It's just, just a little sanity check. And then we can test it.
+
+Right.
+
+[Speaker 2]
+Sorry, Steve. I know I missed you, but I think I know what you were saying.
+
+[Speaker 1]
+Yeah. I was just saying, what's the process to get some sort of sense of consensus that it's actually not a bad financial model, you know, it sort of works or it's missing this or it shouldn't have that or whatever.
+
+[Speaker 2]
+Can we do it to the mailing list first versus, because most people on the mailing list are not aware of this, have not seen it so that anybody who has the business or has that, that business context. Yeah. And so otherwise, the only thing about to me about putting it out fully out on the, on the site is well, one, nobody may look, but that we, whatever, but, um, getting too many responses quickly, right.
+
+To deal with it.
+
+[Speaker 1]
+All right. So why don't, why don't do this? Uh, over the next few days, I'll have a look at your written content.
+
+So not the spreadsheet. Uh, I'll have a quick look at it. Maybe see what we could update on the current site.
+
+So there's a little bit more content and then send out an email saying, here's a detailed business, you know, financial business case template, uh, that we've been working on. We, we're sure it's not quite right, but we're seeking your input and send it out to the mailing list. Yep.
+
+Wait a few weeks, get feedback and then, you know, depending how it goes, we publish that sound like a strategy.
+
+[Speaker 2]
+Yep. Sounds like a plan.
+
+[Speaker 1]
+All right. Well, uh, we're at one minute past our time and, uh, everyone's time is valuable. I'm lucky enough to get your participation for an hour a fortnight.
+
+[Speaker 9]
+So, uh, quick question. You have DPPs produced and DPPs consumed. What do you mean by DPPs consumed in the spreadsheet?
+
+[Speaker 2]
+Um, it means as a receiver. Yeah. Yeah.
+
+[Speaker 9]
+So that's the cost to the person who's receiving the DPP. It looks pretty high to me. It's, it's higher than the, the, the, uh, the cost.
+
+[Speaker 2]
+Yeah. I think that, um, and I forget John's the rationale behind it. So, uh, you know, maybe having John go through it, but, um, the, the idea is that you are producing, you will be producing DPPs and you will be consuming them, that the consumption that may be, uh, that you are likely to be consuming more than you're producing.
+
+Uh, and so that, um, uh, I think that I'm trying to remember now here, sorry, Virginia.
+
+[Speaker 9]
+Um, Cause that was a per unit consumption cost that was higher. Yep.
+
+[Speaker 1]
+Yep. That's odd. Yeah.
+
+So that's a good question, Virginia. I think John needs to support it, but let's collectively have a look at it. We're kind of out of time, but let, let, let, let's not drop this on the world too quickly until we've all those of us that, you know, have some sense of this, give it a sanity check and ask John various questions and then we'll send it out to the mailing list with a similar constraint.
+
+[Speaker 2]
+Sorry.
+
+[Speaker 9]
+Somehow inside the spreadsheet so that people. It is, it is, it is alone. Right here.
+
+Okay.
+
+[Speaker 17]
+Sorry. Does it explain for example, what DPP consume and DPP produce means?
+
+[Speaker 2]
+Yes, it is. It's actually in the model terms and definitions. There's a sheet that has a definition for every field.
+
+[Speaker 5]
+Okay. Super.
+
+[Speaker 1]
+All right. Anyway, some work to sanity check and then a mailing list and then a publishing. And through that process we'll, we'll either identify some issues, big issues we need to fix or we'll reach consensus that it makes more or less sense.
+
+One way or another, we'll get to a, a position where we feel more confident to publish, right?
+
+[Speaker 14]
+Nope. Nope.
+
+[Speaker 1]
+All right. Well, thank you everyone. Appreciate your time.
+
+I'll fix the zoom invite and you'll get one for 8 p.m. UTC in two weeks time. And in the meantime, please do have a look at the business case stuff and we'll make sure you've got access.
+
+[Speaker 12]
+Thanks. Bye bye. Bye bye all.
