@@ -8,24 +8,25 @@ import Disclaimer from '../\_disclaimer.mdx';
 <Disclaimer />
 
 
-# Meetings
+## Meetings
 
-UNTP development team meetings are held weekly at alternating times to accomodate participants from different timezones. 
+UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
+
+* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 31st Oct 2024.  [Add to your calendar](https://us02web.zoom.us/meeting/tZYudOGorT4pG9L063kaKKGTqDKcuHrU7x0R/ics).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
+* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 17th Oct 2024. [Add to your calendar](https://us02web.zoom.us/meeting/tZclfumvrT0qHdKo32WdllIiNii83MftuDuX/ics).  [Join the meeting](https://us02web.zoom.us/j/83890736076?pwd=bUegz9NiyqGnAd2WKyoLAQHBZX04hw.1)
+
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
 Previous meeting dates, recordings, transcripts, and minutes are summarised below with the most recent meeting at the top.
-
-## Next Meetings
-
-* The next meeting will be on 3rd Oct 2024 at 8:00 UTC.  Meeting link TBA
 
 
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2024-09-19|[The meeting focused on reviewing new registration requests, addressing syntax and human-readability issues in traceability events, planning updates to the REC 49 policy document, and discussing business case development for public and private sector value.](#2024-09-19-meeting-summary))|[video](https://us02web.zoom.us/rec/share/ZzkAqJFNRuDgJ9On4Uvg7cp2MU-1N5Sas6GDK0VIVid00Zx9vYLdWe1gEZSCDm4F.VTPpBJyEtiQHYYgQ)|[transcript](../../meetings/2024-09-19-Recording.txt)|
+|2024-10-03| [The meeting focused on reviewing and refining the business case content for Digital Product Passport implementation, addressing technical bugs, and preparing the materials for broader feedback and publication.](#2024-10-03-meeting-summary)|[video](https://us02web.zoom.us/rec/share/KDARf7eHzuXRW4F2OkrF7JgNgMvnSHkBx_3UXf3LEpAo2jTSYTghVBv2gvAr75ig.QsEeOK3KSd4VlcnE)|[transcript](../../meetings/2024-10-03-Recording.txt)|
+|2024-09-19|[The meeting focused on reviewing new registration requests, addressing syntax and human-readability issues in traceability events, planning updates to the REC 49 policy document, and discussing business case development for public and private sector value.](#2024-09-19-meeting-summary)|[video](https://us02web.zoom.us/rec/share/ZzkAqJFNRuDgJ9On4Uvg7cp2MU-1N5Sas6GDK0VIVid00Zx9vYLdWe1gEZSCDm4F.VTPpBJyEtiQHYYgQ)|[transcript](../../meetings/2024-09-19-Recording.txt)|
 |2024-09-11| [The meeting covered updates on standards integration, implementation commitments from key stakeholders like the British Columbia government, and the plan to freeze UNTP version 0.4.0 for upcoming pilot programs.](#2024-09-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/TLDhFQPgXJ8CksSqR3CvWp3je0oiBuJyS8o0djx4shDXVha71lJMuPU94m4UMPhW.sT8AgEAZJkesR_FQ)|[transcript](../../meetings/2024-09-11-Recording.txt)|
 |2024-09-05| [The meeting focused on updates and discussions around the development of a global digital product passport, business case frameworks, and the importance of community activation in implementing UNTP extensions.](#2024-09-05-meeting-summary)|[video](https://us02web.zoom.us/rec/share/AC4BGb0zEH0UFQBTw1V0wgbT-oMlsSKGYDxZV08tU_uhS7CW_W6ODIor8k1vGH4X.4H1NEA5vs-2yl-hZ)|[transcript](../../meetings/2024-09-05-Recording.txt)
 |2024-08-28| [The meeting focused on updates and discussions around the development of a global digital product passport, business case frameworks, and the importance of community activation in implementing UNTP extensions.](#2024-08-28-meeting-summary)|[video](https://us02web.zoom.us/rec/share/Sul2KkyH8LYUiNJDTwT3JR9gNR4uxL8JGvPIvyp202fO-NfN2anAZtjRkFH4me9w.8hQdXJfine_JzV6b)|[transcript](../../meetings/2024-08-28-Recording.txt)|
@@ -58,6 +59,48 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
+
+## 2024-10-03 Meeting Summary
+
+### Meeting Summary
+
+**Date:** October 3, 2024  
+**Attendees:** Steve, Stefano, Brett, Virginia, Michael O'Shea, Christoph, Susanne, Peter Carter, Nancy, Luca, Dr Wang Xiang, and others.
+
+---
+
+#### Agenda:
+1. **Zoom Meeting Timing Issues**
+   - Steve mentioned difficulties with Zoom invites. Some participants received only the 8 a.m. invite and not the 8 p.m. one for the next meeting. Steve apologized and promised to resend the correct invites after the meeting.
+
+2. **Business Case Content Discussion**
+   - The meeting focused on reviewing the business case content developed by Michael O'Shea and his team. Steve emphasized that the business case section should be clear, simple, and provide value for stakeholders. 
+
+3. **Digital Product Passport (DPP) Technical Update**
+   - Steve announced the release of version 0.4.1 for the DPP, including core vocabulary, facility records, and conformity credentials. There were a few minor technical bugs identified, which might lead to a version 0.4.2 release.
+   - Michael also showcased a visualization tool for a lithium-ion battery passport, which was praised by the team.
+
+4. **Bug Reports and Typos**
+   - A participant from Canada found several bugs in the latest release, mostly typos and small technical issues like missing terms and empty context files. The team debated whether to fix these before the business case testing.
+   - Christoph offered to help review the business case documents to ensure the technical and business sides align well.
+
+5. **Business Case for Change**
+   - Michael and his team presented their work on the business case for both private sector businesses and regulators. They discussed the need to balance the technical content and value statements in a way that appeals to both.
+   - Christoph and Susanne provided feedback that the business case should distinguish between benefits for corporations and regulators to avoid confusion. They also suggested adding infrastructure-related benefits, specifically for regulators.
+
+6. **Feedback on Business Case Template**
+   - Steve asked for volunteers to review the business case model from a business perspective, ensuring it makes sense to potential adopters, especially in terms of convincing a CFO.
+   - Christoph volunteered to help review the business case spreadsheet, and Steve proposed sending the document to the wider mailing list for feedback once it has been internally reviewed.
+
+7. **Next Steps:**
+   - Finalize version 0.4.2 of the DPP to address minor technical bugs.
+   - Refine and simplify the business case content and spreadsheet to make it more accessible.
+   - Collect feedback from the team and mailing list before publishing the business case template publicly.
+
+---
+
+**Next Meeting:**  
+The next meeting will be in two weeks, and Zoom invites for both 8 a.m. and 8 p.m. sessions will be corrected and sent out.
 
 ## 2024-09-19 Meeting Summary
 
