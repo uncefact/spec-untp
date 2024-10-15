@@ -12,8 +12,8 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 31st Oct 2024.  [Add to your calendar](https://us02web.zoom.us/meeting/tZYudOGorT4pG9L063kaKKGTqDKcuHrU7x0R/ics).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
-* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 17th Oct 2024. [Add to your calendar](https://us02web.zoom.us/meeting/tZclfumvrT0qHdKo32WdllIiNii83MftuDuX/ics).  [Join the meeting](https://us02web.zoom.us/j/83890736076?pwd=bUegz9NiyqGnAd2WKyoLAQHBZX04hw.1)
+* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 31st Oct 2024.  [Add to your calendar](../../meetings/UNTP-8amUTC-meetingCalendar.ics).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
+* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 17th Oct 2024. [Add to your calendar](../../meetings/UNTP-8pmUTC-meetingCalendar.ics).  [Join the meeting](https://us02web.zoom.us/j/83890736076?pwd=bUegz9NiyqGnAd2WKyoLAQHBZX04hw.1)
 
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 

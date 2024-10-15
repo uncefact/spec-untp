@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+PRODID:-//zoom.us//iCalendar Event//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+CLASS:PUBLIC
+BEGIN:VTIMEZONE
+TZID:Europe/London
+LAST-MODIFIED:20240422T053450Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20241015T074639Z
+DTSTART;TZID=Europe/London:20241031T080000
+DTEND;TZID=Europe/London:20241031T090000
+SUMMARY:UNTP Team Meeting (8am UTC)
+EXDATE;TZID=Europe/London:20241003T090000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250807T090000Z;INTERVAL=4;BYDAY=TH
+UID:ZOOM82338035316@zoom.us
+TZID:Europe/London
+DESCRIPTION:Steve Capell is inviting you to a scheduled Zoom meeting.\n\n
+ Join Zoom Meeting\nhttps://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9h
+ TukagOJCN4shxSt6ZWT.1\n\nMeeting ID: 823 3803 5316\nPasscode: 516924\n\n
+ ---\n\nOne tap mobile\n+61871501149\,\,82338035316# Australia\n+61280156
+ 011\,\,82338035316# Australia\n\n---\n\nDial by your location\n• +61 8 7
+ 150 1149 Australia\n• +61 2 8015 6011 Australia\n• +61 3 7018 2005 Austr
+ alia\n• +61 7 3185 3730 Australia\n• +61 8 6119 3900 Australia\n\nMeetin
+ g ID: 823 3803 5316\n\nFind your local number: https://us02web.zoom.us/u
+ /k3fJLTRH8\n\n---\n\nJoin by SIP\n• 82338035316@zoomcrc.com\n\n---\n\nJo
+ in by H.323\n• 162.255.37.11 (US West)\n• 162.255.36.11 (US East)\n• 115
+ .114.131.7 (India Mumbai)\n• 115.114.115.7 (India Hyderabad)\n• 213.19.1
+ 44.110 (Amsterdam Netherlands)\n• 213.244.140.110 (Germany)\n• 103.122.1
+ 66.55 (Australia Sydney)\n• 103.122.167.55 (Australia Melbourne)\n• 149.
+ 137.40.110 (Singapore)\n• 64.211.144.160 (Brazil)\n• 159.124.132.243 (Me
+ xico)\n• 159.124.168.213 (Canada Toronto)\n• 65.39.152.160 (Canada Vanco
+ uver)\n• 207.226.132.110 (Japan Tokyo)\n• 149.137.24.110 (Japan Osaka)\n
+ \nMeeting ID: 823 3803 5316\nPasscode: 516924\n\n
+LOCATION:https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4s
+ hxSt6ZWT.1
+ATTENDEE;CN=steve.capell@gosource.com.au;RSVP=TRUE:mailto:steve.capell@go
+ source.com.au
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -24,6 +24,9 @@ Summary list of software products and status of implementation.  Scope defines t
 |[Lumoin](#lumoin)|Verifiable, CoreLoop|VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC|planned|
 |[Transmute](#transmute)|Transmute Platform|VCP, DPP, DTE, DCC, DFR|planned|
 |[Morpheus Network](#morpheus-network)|Morpheus Platform|VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC|planned|
+|[Cordina](#cordina)|Cordina emissions intelligence platform|VCP, DTE, DCC, IDR|planned|
+|[Enigio](#enigio)|trace:original|VCP, DPP, DTE, DCC, DFR, DAC|planned|
+
 
 
 ## Implementation Details
@@ -255,5 +258,44 @@ Logo|Implementation Statement
 |--|--|--|--|
 |[Morpheus Network Platform](https://morpheus.network/platform/)|Our multi-award-winning supply chain platform eliminates inefficiencies and removes barriers in your operations. With over 150 connections, our middleware provides a layer between disparate systems and processes, facilitating smooth data exchange and automating workflows.|VCP, DPP, DTE, DFR, DCC, DIA, IDR v0.5, v1.0|TBA|
 
+### [Cordina](https://www.cordina.io/)
+
+* UNTP commitment made on:  04-Oct-2024
+* Registration Country: Australia
+* Operating Countries: Global
+* Participate in pre-release UNTP Pilots? : Yes
+
+|Logo|Implementation Statement
+|--|--|
+|![Logo](../../implementations/cordina.io/logo.png)|Cordina is implementing UNTP to help simplify ESG disclosures for Heavy Industry and delivery of high value interactive benchmarking|
+
+** Product Information **
+
+|Product Name & version|Description|UNTP Scope & versions|Implementation Test Report|
+|--|--|--|--|
+|[Cordina interactive benchmarking engine](https://www.cordina.io/product)|We're putting the Cordina data framework into action for industrial supply chains and demonstrating the value of interactive benchmarking vs scope 3 emissions reporting.|VCP, DTE, DCC, IDR v0.5, v1.0|TBA|
+
+** Industry Focus **
+
+|Industry Sector|Process focus|UNTP Usage|
+|--|--|--|
+|Critical Minerals, Heavy Industry|Emissions accounting|VCP, DCC, DTE|
+
+### [Enigio](https://enigio.com/)
+
+* UNTP commitment made on:  14-Oct-2024
+* Registration Country: Sweden
+* Operating Countries: Global
+* Participate in pre-release UNTP Pilots? : Yes
+
+|Logo|Implementation Statement
+|--|--|
+|![Logo](../../implementations/enigio.com/logo.png)|Recent legislation has paved the way for complete trade digitalisation. Achieving seamless end-to-end digitalisation also requires that trading parties can exchange structured data across multiple systems efficiently. Without such capabilities, the risk of fragmentation increases, leading to multiple platforms and/or complex API integrations. Enigio's trace:original offers a solution that creates freely transferable electronic original documents wich includes structured data. This allows any recipient of a trace:original document to extract verified structured data effortlessly, without the need for onboarding or additional system integration.|
+
+** Product Information **
+
+|Product Name & version|Description|UNTP Scope & versions|Implementation Test Report|
+|--|--|--|--|
+|[Enigio trace:original](https://enigio.com/traceoriginal/)|Enigio's trace:original is a solution for creating and managing digital original documents, with all the useful properties of paper, but in a digital form. This means that you can maintain a completely digital process for original documents, with all the security, efficiency and convenience of digital documents.|VCP, DTE, DPP, DFR, DCC, DAC v0.5, v1.0|TBA|
 
 
