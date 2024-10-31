@@ -51,7 +51,7 @@ The digital product passport is designed to meet the following detailed requirem
 
 | ID | Name  | Requirement Statement   | Solution Mapping  |
 | ------ | ---- | --------- | ---------- |
-| DPP-01 | product, batch, item | The DPP should support use at either product level or at batch level or at individual serialised item level.  | Claims are made at the passport level, which MUST have a related product and MAY have a related batch and item   |
+| DPP-01 | Granularity | The DPP should support use at either *model* level or at *batch* level or at serialised *item* level.  | Claims are made at the passport level, which MUST have a related model and MAY have a related batch and item   |
 | DPP-02 | Classification       | The DPP should support any number of product classifications using codes from a defined classification scheme (eg UN-CPC) | The classifications property |
 | DPP-03 | Materials provenance | The DPP should provide a simple structure to allow issuers to break down the material composition of their products by mass fraction and origin country so that raw material provenance requirements are easily assessed and met.    | The DPP "materialsProvenance" structure is designed to meet this need. |
 | DPP-04 | Produced at | The DPP should provide a simple structure to describe the manufacturing facility at which the product was made. The facility identifier SHOULD be resolvable and verifiable and SHOULD link to cadastral boundary information. | The "Facility" structure including the location class is designed to meet this need |
