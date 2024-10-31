@@ -49,7 +49,7 @@ UNTP credential JSON schema allow additional properties in most objects to provi
 
 ### Vocabulary Extensions
 
-Industry extensions will often leverage existing industry specific vocabularies. For example an agriculture extension may reference terms from [Codex Alimentarius](https://www.fao.org/fao-who-codexalimentarius/en/). THis is achieved through JSON-LD @context files.
+Industry extensions will often leverage existing industry specific vocabularies. For example an agriculture extension may reference terms from [Codex Alimentarius](https://www.fao.org/fao-who-codexalimentarius/en/). This is achieved through JSON-LD @context files.
 
 * Each credential defined by a UNTP extension MUST reference a JSON-LD @context file that defines all additional terms. 
 * JSON-LD @context files defined by a UNTP extension MUST NOT redefine terms in the corresponding UNTP @context file.
@@ -57,7 +57,7 @@ Industry extensions will often leverage existing industry specific vocabularies.
 
 ### Identifier Schemes
 
-UNTP and it's extensions have a dependency on resolvable and verifiable identifiers. Industry extension will typically define specific identifier schemes (for products, facilities, and organisations) that are relevant for the specific industry and/or geography. For example, Australian livestock are identified by a [national Livestock Identifier](https://www.nlis.com.au/) that is carried as an RFID tag in the animal's ear.  
+UNTP and it's extensions have a dependency on resolvable and verifiable identifiers. Industry extension will typically define specific identifier schemes (for products, facilities, and organisations) that are relevant for the specific industry and/or geography. For example, Australian livestock are identified by a [National Livestock Identifier](https://www.nlis.com.au/) that is carried as an RFID tag in the animal's ear.  
 
 * All identifier schemes used by registered UNTP extensions MUST be registered in the UNTP identifier scheme register.
 * Identifiers used by UNTP extensions SHOULD be resolvable and verifiable as defined by the UNTP Identity Resolver specification.  
@@ -69,7 +69,7 @@ UNTP is deliberately agnostic of specific standards and regulations. The generic
 * UNTP extensions MUST list all relevant standards and regulations on the extension specification website.
 * The specific conformity criteria within Standards and Regulations referenced by UNTP extensions SHOULD be reference-able as stable URIs.  
 
-## Extension Conformity
+## Extension Conformity Testing
 
 TBC
 

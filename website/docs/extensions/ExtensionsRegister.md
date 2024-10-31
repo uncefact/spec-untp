@@ -36,7 +36,8 @@ Summary list of UNTP Extensions
 ** Credential Extensions **
 
 |Credential|Description|Extension of|
-|Digital Livestock Passport|Quality and sustainability characteristics of cattle including bovine characteristics and veterinary treatment history|DPP|
+|--|--|--|
+|[Digital Livestock Passport](https://gs-gs.github.io/aatp/docs/specification/DigitalProductPassport#livestock-extensions-dlp)|Quality and sustainability characteristics of cattle including bovine characteristics and veterinary treatment history|DPP|
 |Deforestation Credential|A farm-level attestation of conformity to EU Deforestation Regulation|DCC|
 
 
@@ -48,7 +49,7 @@ Summary list of UNTP Extensions
 * Geography: Global
 
 |Logo|Implementation Statement|
-|--|--|
+|--|--|--|
 |![UNECE](../../extensions/CRMTP/logo.png)|In line with the United Nations (UN) Sustainable Development Goals (SDGs) and building on the success of the UNECE Textile & Leather traceability project, this project seeks to empower the Critical Raw Material (CRM) industry with practical, low cost tools for digital data exchange to achieve product differentiation, maximize the value of existing permitting and ESG compliance efforts, counter green-washing, and support a more sustainable global economy. This project supports the UN focus on extractive industries and leverages the UN Center for Trade Facilitation and Electronic Business' (UN/CEFACT) role and capabilities to deliver digital standards for sustainable supply chains. |
 
 ** Credential Extensions **
