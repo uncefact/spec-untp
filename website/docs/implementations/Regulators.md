@@ -35,5 +35,5 @@ Summary list of regulators (ie international bodies, national government agencie
 
 |Regulation|Description|Topic|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
 |--|--|--|--|--|--|--|
-|[P&NG Tenure](https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/petroleum-natural-gas-tenure)|Petroleum and Natural Gas tensure|compliance|DCC|v0.5, v1.0|TBA|TBA |
+|[P&NG Tenure](https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/petroleum-natural-gas-tenure)|Petroleum and Natural Gas tenure|compliance|DCC|v0.5, v1.0|TBA|TBA |
 |[Mine permitting](https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/permitting)|BC Government dept of energy and mines permitting|compliance|DCC|v0.5, v1.0|TBA|TBA|
