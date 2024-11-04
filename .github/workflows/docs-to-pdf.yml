@@ -15,6 +15,9 @@ jobs:
     permissions:
       contents: "write"
       actions: "read"
+    concurrency:
+      group: pdf
+      cancel-in-progress: true
     steps:
       - uses: actions/create-github-app-token@v1
         id: app-token
