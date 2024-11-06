@@ -23,9 +23,9 @@ Version 0.5.0 release artifacts (when available) are suitable for pilot testing.
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
-* JSON-LD @context - https://test.uncefact.org/vocabulary/untp/dia/0.1.0/
-* JSON Schema - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-schema-0.1.0.json
-* Sample Instance - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.1.0.json
+* JSON-LD @context - https://test.uncefact.org/vocabulary/untp/dia/0.2.0/
+* JSON Schema - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-schema-0.2.0.json
+* Sample Instance - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.0.json
 
 ### Version History
 
@@ -87,7 +87,7 @@ The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/
 
 ### DIA Documentation
 
-The [DIA documentation](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.1.0/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DIA model.
+The [DIA documentation](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.0/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DIA model.
 
 ## Implementation Guidance
 
