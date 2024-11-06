@@ -23,9 +23,10 @@ Version 0.5.0 release artifacts (when available) are suitable for pilot testing.
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
-* JSON-LD @context - https://test.uncefact.org/vocabulary/untp/dia/0.2.0/
-* JSON Schema - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-schema-0.2.0.json
-* Sample Instance - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.0.json
+* JSON-LD @context - https://test.uncefact.org/vocabulary/untp/dia/0.2.1/
+* JSON Schema (full credential) - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-schema-0.2.1.json
+* JSON Schema (credentialSubject only) - https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.1/artefacts/jsonSchemas/RegisteredIdentity.json?class=RegisteredIdentity 
+* Sample Instance - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.1.json
 
 ### Version History
 
@@ -63,12 +64,12 @@ The digital identity anchor is designed to meet the following detailed requireme
 
 | ID | Name  | Requirement Statement   | Solution Mapping  |
 | ------ | ---- | --------- | ---------- |
-| DIA-01 | DID Verification | The DIA issuer (registrar) SHOULD confirm that the registered member (subject) is the legitimate holder of a DID before issuing a DIA credential so that the registrar is protected against members falsely claiming ownership of well known DIDs| MAY use the [DID Auth](https://w3c-ccg.github.io/vp-request-spec/#did-authentication) protocol for this purpose. |
-| DIA-02 | DIA Issuer DID | The DIA issuer MUST use did:web (or a trusted variant such as did:tdw) as the DIA issuer and the web domain MUST match the well known domain of the issuing authority so that verifiers can confirm authority identity via public web records.| DIA issuer specification|
+| DIA-01 | DID Verification | The DIA issuer (registrar) MUST confirm that the registered member (subject) is the legitimate controller of a DID before issuing a DIA credential so that the registrar is protected against members falsely claiming ownership of well known DIDs| MAY use the [DID Auth](https://w3c-ccg.github.io/vp-request-spec/#did-authentication) protocol for this purpose. |
+| DIA-02 | DIA Issuer DID | The DIA issuer MUST use did:web as the DIA issuer and the web domain MUST match the well known domain of the issuing authority so that verifiers can confirm authority identity via public web records.| DIA issuer specification|
 | DIA-03 | Scheme registration | The DIA issuing authority SHOULD register the identity scheme (including the trusted issuer DIDs) with the UN/CEFACT identifier scheme registry so that verifiers can leverage UN maintained scheme metadata to simplify DIA discovery and verification.| See UNTP [Identity Resolver](IdentityResolver.md)|
 | DIA-04 | Multiple DIDs | A registered member may need to link multiple DIDs to one registered ID, either because there is a need to transition between DID service providers or because an organisation may choose to use different DIDs for different purposes. | Issue multiple DIAs |
 | DIA-05 | Scope List| The DIA MUST include a list of scope URIs that unambiguously define the authorised role(s) of the member in the register so that verifiers can confirm the scope of the membership. | `scopeList` property |
-| DIA-06 | Register Type| The DIA MUST specify the register type so that verifiers can understand the context of the `scopeList`| `registerType` property|
+| DIA-06 | Register Type| The DIA MUST specify the register type so that verifiers can understand the context of the `registrationScopeList`| `registerType` property|
 | DIA-07 | DIA Discovery| The DIA SHOULD be discoverable given either the DID or the registeredID| [DIA Discovery](#dia-discovery)|
 | DIA-08 | White list | The DIA should include a mechanism to avoid malicious actors who are not the registrar from issuing DIAs that claim links to authoritative registered IDs| Maintain white list of trusted issuer DIDs on UN/CEFACT identifer scheme registry|
 
@@ -87,7 +88,7 @@ The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/
 
 ### DIA Documentation
 
-The [DIA documentation](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.0/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DIA model.
+The [DIA documentation](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.1/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DIA model.
 
 ## Implementation Guidance
 
@@ -102,12 +103,11 @@ The Digital Identity Anchors is a Verifiable credential. Please refer to [DPP VC
 The registered identity class represents the registry member. For example, in a national business register, the registered identity would be one of the registered businesses.
 
 * `type` MUST contain constant value array `["RegisteredIdentity", "Identifier"]` which declares to linked data processors that this is a registered identity which is a sub-type of identity.
-* the `id` MUST contain the globally unique member identifier as maintained in the register.  Often this will be a web link to the member entry.
+* the `id` MUST contain DID of the registered member that is linked to the `registredID` and for which the registrar has verified is controlled by the subject.
 * `name` is the human readable registered entity name and SHOULD match the registered name as it appears in the authoritative register.
 * `registeredId` contains the simple identifier value that is unique within the register (but may not be globally unique) for example the VAT registration number.
 * `idScheme` identifies the authoritative register.  If the identity scheme is registered with UN/CEFACT then the `idScheme.id` MUST match the `identityRegister.id` in the UN/CEFACT scheme register.
 * `registerType` is a coded value that allows verifiers to distinguish between different DIA [use cases](#use-cases)
-* `verifiedDIDList` contains an array of DIDs that the member has requested (and the registrar has verified) to be linked to the registeredId of the member.
 * `registrationScopeList` contains a list of URIs that define the scope of the member registration. The values are very specific to the register. For example a national business register would typically have a controlled vocabulary of entity types (eg [Australian Entity Types](https://abr.business.gov.au/Help/EntityTypeList))
 
 
@@ -146,7 +146,7 @@ DIA credentials SHOULD be discoverable from either identifier:
 * Given a DID (eg as the issuer of a DPP) via DID document `service` endpoint.
 * Given a registered identifier (eg a VAT registration number) via the ID scheme resolver service.
 
-### Via DID Service EndPoint
+### Via DID Service Endpoint
 
 As described in the [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/) specification, DIDs are resolvable to a DID document. The `service` property of a DID document contains an array of typed `serviceEndpoint` which can point to services or credentials relevant to the DID. A DID document may also contain an "alsoKownAs" property which is typically used to reference other identifiers. Controllers of DIDs that are linked to authoritative register SHOULD
 
