@@ -141,7 +141,7 @@ The registered identity class represents the registry member. For example, in a 
 
 DIA credentials SHOULD be discoverable from either identifier:
 
-* Given a DID (eg as the issuer of a DPP) via DID document `service` end point.
+* Given a DID (eg as the issuer of a DPP) via DID document `service` endpoint.
 * Given a registered identifier (eg a VAT registration number) via the ID scheme resolver service.
 
 ### Via DID Service EndPoint
