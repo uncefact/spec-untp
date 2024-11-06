@@ -66,10 +66,11 @@ The digital identity anchor is designed to meet the following detailed requireme
 | DIA-01 | DID Verification | The DIA issuer (registrar) SHOULD confirm that the registered member (subject) is the legitimate holder of a DID before issuing a DIA credential so that the registrar is protected against members falsely claiming ownership of well known DIDs| MAY use the [DID Auth](https://w3c-ccg.github.io/vp-request-spec/#did-authentication) protocol for this purpose. |
 | DIA-02 | DIA Issuer DID | The DIA issuer MUST use did:web (or a trusted variant such as did:tdw) as the DIA issuer and the web domain MUST match the well known domain of the issuing authority so that verifiers can confirm authority identity via public web records.| DIA issuer specification|
 | DIA-03 | Scheme registration | The DIA issuing authority SHOULD register the identity scheme (including the trusted issuer DIDs) with the UN/CEFACT identifier scheme registry so that verifiers can leverage UN maintained scheme metadata to simplify DIA discovery and verification.| See UNTP [Identity Resolver](IdentityResolver.md)|
-| DIA-04 | Subject DID List | The DIA MUST allow multiple subject DIDs to be linked to the same registered identity so long as proof of ownership is verified for each - so that members can rotate multiple active DIDs | `VerfiedDIDList` property|
+| DIA-04 | Multiple DIDs | A registered member may need to link multiple DIDs to one registered ID, either because there is a need to transition between DID service providers or because an organisation may choose to use different DIDs for different purposes. | Issue multiple DIAs |
 | DIA-05 | Scope List| The DIA MUST include a list of scope URIs that unambiguously define the authorised role(s) of the member in the register so that verifiers can confirm the scope of the membership. | `scopeList` property |
 | DIA-06 | Register Type| The DIA MUST specify the register type so that verifiers can understand the context of the `scopeList`| `registerType` property|
 | DIA-07 | DIA Discovery| The DIA SHOULD be discoverable given either the DID or the registeredID| [DIA Discovery](#dia-discovery)|
+| DIA-08 | White list | The DIA should include a mechanism to avoid malicious actors who are not the registrar from issuing DIAs that claim links to authoritative registered IDs| Maintain white list of trusted issuer DIDs on UN/CEFACT identifer scheme registry|
 
 The examples below help to clarify the application of DIA-05 and DIA-06.
 
@@ -116,7 +117,7 @@ The registered identity class represents the registry member. For example, in a 
       "RegisteredIdentity",
       "Identifier"
     ],
-    "id": "https://sample-register.gov/90664869327",
+    "id": "did:web:samplecompany.com/123456789",
     "name": "Sample business Ltd",
     "registeredId": "90664869327",
     "idScheme": {
@@ -127,15 +128,16 @@ The registered identity class represents the registry member. For example, in a 
       "name": "Sample National Business Register"
     },
     "registerType": "Business",
-    "verifiedDIDList": [
-      "did:web:samplecompany.com/123456789",
-      "did:ethr:0x5:0xf3beac30c498d9e26865f34fcaa57dbb935b0d74"
-    ],
     "registrationScopeList": [
       "https://sample-register.gov/EntityType?Id=00019"
     ]
   }
 ```
+## DIA Trust Anchors
+
+The integrity of the DIA depends on verifiers knowing the authoritative list of authoritative registry issuer DIDs. Whilst it is possible for each verifier to maintain their own whitelist of trusted issuers, scalable global uptake would be facilited if there is a UN maintained and trusted whitelist. 
+
+The data model for a UN maintained identifier scheme register is defined in the [Identity Resolver](IdentityResolver.md) specification and a prototype will be implemented for UNTP testing. A production implementation will require a new UN/CEFACT project proposal which will be submitted in due course.
 
 ## DIA Discovery
 
