@@ -48,7 +48,7 @@ The outcome is that the subject of the DIA (eg the VAT registered business) can 
 * A verifier (eg buyer of an identified product) discovers a DPP for the product and verifies the credential - confirming that the DPP has not been tampered-with, is genuinely issued by party identified by the issuer DID.
 * The DID is resolvable to the DID document which contains a link to the DIA in the DID document `service` end point.
 * Verify the DIA credential and confirm that the DPP issuer DID is contained in the `verifiedDIDList` of the DIA.  
-* Confirm that the issuer did:web of the DIA (the authoritative register) is on the white list of trust anchors.  
+* Confirm that the issuer `did:web` of the DIA (the authoritative register) is on the white list of trust anchors.  
 
 The DIA can also be used for similar trust anchoring purposes such as:
 
