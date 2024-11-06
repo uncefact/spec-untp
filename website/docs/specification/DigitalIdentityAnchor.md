@@ -148,7 +148,7 @@ DIA credentials SHOULD be discoverable from either identifier:
 
 As described in the [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/) specification, DIDs are resolvable to a DID document. The `service` property of a DID document contains an array of typed `serviceEndpoint` which can point to services or credentials relevant to the DID. A DID document may also contain an "alsoKownAs" property which is typically used to reference other identifiers. Controllers of DIDs that are linked to authoritative register SHOULD
 
-* Add the ID URI from the authoritative register to the `alsonKnownAs` list. In the snippet below `https://sample-register.gov/90664869327` has been added.
+* Add the ID URI from the authoritative register to the `alsoKnownAs` list. In the snippet below `https://sample-register.gov/90664869327` has been added.
 * Add proof that the relationship is reciprocal by adding a `service` object that references the DIA credential. In the example below, the DIA credential URL is `https://sample-credential-store.com/credentials/dia-90664869327.json`
 
 ```json
