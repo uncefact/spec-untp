@@ -94,7 +94,7 @@ This section provides sample JSON-LD snippets for each DIA component.
 
 ### Digital Identity Anchor
 
-The Digital Identity Anchors is a Verifiable credential. Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiable credentials data model for UNTP.  THe issuing party for the VC MUST be the authority that owns or operates the identity register. 
+The Digital Identity Anchors is a Verifiable credential. Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiable credentials data model for UNTP.  The issuing party for the VC MUST be the authority that owns or operates the identity register. 
 
 ### Registered Identity
 
