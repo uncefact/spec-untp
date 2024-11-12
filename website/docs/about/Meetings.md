@@ -17,7 +17,7 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 28th Nov 2024.  [Invitation Link](../../meetings/UNTP-8amUTC-meetingCalendar.ics).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
+* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 28th Nov 2024.  [Invitation Link](https://calendar.app.google/q9DX8SANXSCKrJGW7).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
 * Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 14th Nov 2024. [Invitation link](https://calendar.app.google/E6wLvBxCJ7VgAvd8A).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
 
 
