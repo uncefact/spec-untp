@@ -10,8 +10,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Extensions Register
 
-Summary list of UNTP Extensions
-
+Summary list of registered UNTP Extensions
 
 |Extension Name |Extension Owner|Geographic Scope|Industry Scope|Status|
 |--|--|--|--|

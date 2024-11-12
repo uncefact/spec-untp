@@ -1,0 +1,779 @@
+[Speaker 10]
+.
+
+[Speaker 6]
+Hi Stefano, how are you?
+
+[Speaker 7]
+Good thank you. You finally won the battle against Zoom?
+
+[Speaker 1]
+I realized far too late that don't use Zoom for calendaring, just use Zoom for the meeting link and then use Google for the calendar, yeah, I don't know why I didn't think of that.
+
+[Speaker 7]
+Anyway, there are still a lot of inconsistencies, I use all of them and often people have troubles either way, no matter if it's Teams rather than, yeah, whatever, so anyway, it looks like now we are getting geared up, I mentioned to you that I was going to have three meetings with some of the EU directorates in relation to this project, mentioning about the UNTP and we are getting ready, basically the meetings are next Monday, hi Michael, next Monday and then on the 26th of November and 18th of December.
+
+Okay, with who? I will learn on Monday who finally accepted, but basically the invite was sent out at least for the director generals that follow anything related to transportation, logistics, sustainability and I don't remember another couple, I forgot.
+
+[Speaker 6]
+Right, cool, all right, hi Virginia, Phil. Hi, Prok, I think there's a couple more that have accepted, I'll give them a minute, now there's Luca.
+
+[Speaker 8]
+Hello, sorry, I have a couple of minutes. I was reviewing pull requests. Oh, were you?
+
+[Speaker 1]
+Oh, good, all right, well, hi Luca, who have we got that's new on the call? Jordan, have you joined us before?
+
+[Speaker 9]
+Hello, Luca, long time, I'll see.
+
+[Speaker 6]
+Hi, Virginia, how are you? Hi, Nis, good to see you.
+
+[Speaker 9]
+I'm fine, except I've got a cold and my voice is half gone.
+
+[Speaker 1]
+All right, well, let me make a start, I might need to hand over to Suzanne or Zach or somebody at some point in this meeting because I did disconnect from a UNEP meeting where they're talking about their progress on digital product passport blueprint and stuff, but let's just make a start. Welcome, everybody. We're now, as you know, doing two weekly meetings and they're at opposite timeframes, so this meeting time is once every four weeks, which does mean hopefully more PRs and stuff in between.
+
+As you may know, I've been away for a month and I'm just back, so hopefully activity will pick up again. Let me just start with the usual, make sure everyone's happy that this meeting is being recorded and a summary will be posted, any objections, let me know. And as usual, your contributions, if any, are considered UNIP, so don't contribute stuff that you don't want to gift to the UN in terms of standard specifications, that is.
+
+And let me share screen for a moment and I'll kick off with open PRs. Also, a little update. I've been advised that at the plenary in Korea last week, ISO TC154 did agree or endorse the commencement of a global digital product passport standard.
+
+I haven't yet managed to catch up with Mr. Xi, who's the TC154 chair, to coordinate on how we progress together on that. I don't know if anybody else on the call has any insights on that, but I will let you know as soon as I know something. But my understanding is...
+
+[Speaker 8]
+So Jing Wang says they're from ISO TC154 in the participants list.
+
+[Speaker 1]
+Dr. Wang, I don't know how involved you are with the digital product passport initiative on ISO TC154. Are you, Dr. Wang?
+
+[Speaker 6]
+He's on mute.
+
+[Speaker 1]
+We'll find out. But I hopefully have a meeting with the ISO team soon to find out how we're going to work together, because my understanding is the intent is to basically produce a joint standard. That's one bit of news.
+
+Another bit of news is that the IEC, International Electrochemical Commission, I think, it's another international standards body out of the UN, is launching a digital product passport task force specifically for the consumer goods and electronic goods market, and is looking at UNTP possibly as a basis for that, so a kind of an industry extension. And we have an agreement for mutual participation. So they will join UNTP and we'll join that project.
+
+[Speaker 3]
+Yeah, just a quick question. Do you know, has there been any conversation or chatter around, particularly around clinical IoT or medical-related devices and DPPs? Have you heard anything?
+
+[Speaker 1]
+Not specifically, but medical devices might be in scope for that IEC project. So we can find out. I think they welcome participation from our project on theirs.
+
+I've registered through the Australian representative and others that are interested can probably find out who your national delegation is to IEC and join it. But I'll at least be able to keep an ear out and give you updates about what's going on there.
+
+[Speaker 3]
+Okay.
+
+[Speaker 1]
+And we're still progressing the formal liaison. It's not organized yet with JTC24. SENCENELEC, that's the European Digital Product Passport System.
+
+So basically, feelers are out. Collaboration is happening or in progress, and hopefully some across-the-board consistency will come out of that.
+
+[Speaker 4]
+Anyhow, Bill?
+
+[Speaker 6]
+Yeah.
+
+[Speaker 4]
+Just very briefly, Steve. IEC is a big organization. Do you have any names of the people who are working on that new DPP group there, please?
+
+I do. I do.
+
+[Speaker 1]
+Hang on. It's I-E-C-E-E, and it's Martina Paul. Thank you.
+
+Okay. Am I still showing screen?
+
+[Speaker 12]
+Yeah.
+
+[Speaker 1]
+Yeah, all right. Be careful what I show then. So for today, amongst other things, I just wanted to kick off with this PR, if that's all right, if there's no more questions, to talk about extensions methodology.
+
+What I'll do, rather than show the PR, I might just show the local deployment. Where is it? Is that it?
+
+Yeah, because it's just easier to look at. So, as you remember, UNTP is designed to be a generic capability that's extended to meet particular industry needs. And we're under a bit of pressure to get the Australian Agriculture Traceability Protocol done.
+
+And the CRM project is running. And they both depend on some sort of consistent methodology to take UNTP and extend it for a particular industry. So this page, which I'll just quickly walk you through, talks about the methodology for doing that.
+
+First of all, just a very high level. This isn't new. This has been there for several months.
+
+Just a statement that says, this is the goal, right? Take UNTP, apply some extension methodology, get several industry or geography and or geography specific extensions that are still interoperable at core. That's the intent of it all.
+
+Go. And what this is saying is that whilst anyone, of course, can take any UNCTAP project output and use it however they like, nothing to stop anyone doing that. If a community or group that wants to extend it, then wants to register that extension back on our site as a kind of conformant extension, then there are some criteria to meet.
+
+And that's what this page is about, saying to take it and do what you want with it. But if you want to register a conformant extension, then here's some rules, right? Starting with governance.
+
+And this diagram here is basically an attempt to say, here's the UNTP governance, which is no surprises, right? This blue box is us. It's the working group.
+
+And we're governed through the UN Open Development Process by CFACT that has member states that approve experts, which is us on this call. And we have some liaison as discussed with other standards bodies. And we produce a work product, which is the UNTP core standard various versions.
+
+Now, an extension looks pretty similar in the sense that some extension owner, not necessarily for us to say who can and can't, but typically some sort of industry association or NGO or something like that, has some sort of public governance process that they document and has some members who contribute experts to create a working group. So in the Australian example, that's a collaborative research center called Food Agility. And the member organizations are various Australian agriculture industry bodies and companies and so on, making an extension.
+
+And they release that extension, which should be a conformant extension of UNTP. And likely, and we do have some members from AATP who join us on this UNTP working group to kind of keep an eye on and basically give us requirements that might emerge out of these extensions. And then it's on us, I think, question here.
+
+This is an interesting one, this arrow here that goes from UNTP working group down to a registered extension. Who and how do we say or verify that this extension is a conformant extension? I'm a bit reluctant to put workload on us to do that.
+
+So this arrow might change to be maybe through some certifier or something. But there's some process whereby somebody says, yeah, your extension is conformant. So we'll register it.
+
+And writing that diagram made me think about not just technical extensions, but do we impose some requirements on governance? For example, UN standards are free, deliberately. And if we're going to endorse some extension that then says, no, no, you've got to license my extension standards, should we be doing that?
+
+And my feeling is probably not. So here's some simple rules. Say, well, you can read them on the screen there and welcome your comments.
+
+But whoever's governing an extension needs to be transparent about what that governance process is. The outputs need to be freely available under some sort of permissive or creative commons license. You've got to manage versions of what you do and document it on a public website.
+
+It's a minimum set. So that's basically, Michael, comment?
+
+[Speaker 3]
+Yeah. What is the license that the standard, we're not just making code available, right? So there's nothing like a MIT license or any of the different IP licenses.
+
+What's that the whole thing is under? So does that include that ability of saying, you know, you got to make it freely available back? Do you get what?
+
+[Speaker 1]
+Yes. So, yeah, you're asking what licenses UNTP made available under and whether that's going to carry forward obligation a bit like GPL-3. So the code bits of UNTP, like reference implementations and so on, I think we use Apache because it's the most permissive one.
+
+And for the standard itself, there isn't, that I'm aware of anyway, a reference to an open standard license. It's the UN ODP that says the outputs belong to the UN and are made available free of charge. I don't know how you can kind of carry forward that license.
+
+[Speaker 3]
+I'm just wondering. Yeah. Okay.
+
+[Speaker 1]
+All right. Thank you. Maybe you can perhaps have something to research.
+
+But at the moment, I'm just, yeah.
+
+[Speaker 8]
+The license under UNTP, under what you're looking at now, is GPL.
+
+[Speaker 1]
+Yeah, because it's GitHub and we picked that one by default. Actually, that implies there's a bit of a task there to discuss with the UN Secretary about what is the license under which UN outputs are made freely available? Is it a document?
+
+Maybe Virginia knows something about this.
+
+[Speaker 9]
+Well, based on my, excuse me, excuse my voice, experience, the UN on one side says that everything should be free of charge. On the other side, they do not give a clear copyright in the sense that they don't want to allow people to change it and say it's a UN standard.
+
+[Speaker 6]
+Yeah.
+
+[Speaker 9]
+If you understand what I mean.
+
+[Speaker 1]
+Yes. I think we can retain that, right? So an extension isn't, unless it's an extension that's governed itself by the UN, like the CRM one is, it's not a UN standard.
+
+It's somebody taking a UN standard and making an extension, isn't it?
+
+[Speaker 9]
+The other thing about this list of points that I wonder a little bit about is the part about being freely available in the sense that there are a number of important organizations who might just go off on their own in order to be able to charge for something.
+
+[Speaker 1]
+Yeah. Well, I think we can't stop someone taking UNTP, making what they claim is an extension and even making it licensable for fee. The question is, are there conditions upon which we would register and list that extension?
+
+Would we list one that is not free? And at the moment, I'm suggesting not. Go nuts and do something commercial with it if you want, but we're not going to list it.
+
+Phil briefly put his hand up. I don't know whether it was...
+
+[Speaker 4]
+Because I was going to say what you just said. I thought, oh, you just said it, I don't need to repeat it.
+
+[Speaker 1]
+All right. Okay. Fair enough then.
+
+All right. So the next bit here is not so much about the governance, but more technically, what does an extension mean? And this diagram is a kind of feeble attempt to say, here's an example product passport, UNTP core product passport.
+
+And here's what an extension might look like. Here's a livestock passport, for example. And it's saying there's some dimensions here, like what's the schema?
+
+What's the vocabulary and context file? What identifiers are you using? And what are the conformity criteria that matter?
+
+And so I'm saying here, okay, this product passport complies with a UNTP published schema and the context file, which itself builds upon various vocabulary files. And I think at the UNTP level, we don't sort of specify any particular identifier scheme other than dids. And as for criteria, it's wide open, any.
+
+By criteria, I mean in standards and regulations and their conformity criteria. That's what I mean by that. So here's an extension that says, okay, there's a schema for the extension.
+
+Now it's called a AATP digital livestock passport schema and a context file for the extension. And that may point at vocabularies, other vocabularies like meat and livestock, Australia, bovine characteristics and stuff like that. And there's some specific identifier schemes that matter in this context, such as the National Livestock Identification System and some rules, various standards and regulations.
+
+So an extension is starting to get a bit more specific, right? And so I've just written some words around all that to say that basically with regards to schema, you can add properties and even classes as long as the UNTP schema allows it to the extent that it doesn't, it's fairly permissive. You just can't redefine anything.
+
+So add whatever you want, but don't redefine. And a test is that an instance of a livestock passport should also validate against the UNTP core digital product passport. Obviously it'll have extra stuff in it, but it shouldn't be invalid.
+
+[Speaker 6]
+Suzanne, you had your hand up?
+
+[Speaker 2]
+Sorry, yeah, I was thinking while you were speaking and a lot of things came to my mind. So first of all, if we have different identification schemes, how do we do that? For example, for the European Commission DPP, we have identifiers for products.
+
+We have identifiers for companies. We have identifiers for locations. So, and we have different versions of it, but they're all referred to the ESPR as a regulation if you want to have that as the criteria.
+
+So would we then have several schemas there or several profiles, extensions for each of the variants of those is probably a question. And yeah, I had one other one, it got lost. Yeah.
+
+[Speaker 1]
+Okay. Yeah, so I experienced so far doing a couple of these extensions is that at UNTP level, we are not prescriptive, right? About which identifier schemes are allowed as long as they are resolvable and verifiable.
+
+And we only talk about what makes any identifier scheme resolvable and verifiable, but we don't say we prefer this one or that one. Within a particular extension, what we found very quickly in Australia is there are some really quite important identifier schemes that are fundamental. And if you don't use them, you may as well pack up and go home, such as the RFID tags in a hundred million livestock year, right?
+
+The NLIS. So I think it's likely that extensions will say, well, we'll use that general identifier resolvable discoverable architecture, but in our case, you need to identify cattle with the NLIS ID.
+
+[Speaker 2]
+Yeah, I see that. And then to me, it looks a bit like a profile if I would define a profile of something. And then for the profile, I would probably maybe also have to add the security aspect, such as encryption mechanisms.
+
+Also, I don't know what others think about it, but to make it really operational, we need the security part in there as well.
+
+[Speaker 1]
+Yes, maybe at the moment.
+
+[Speaker 2]
+Which encryption algorithms you can use or not. And also which exchange protocols can you use or not? And then we are again at the exchange protocol discussion, which is maybe a bigger one, but to really implement something, you need both.
+
+[Speaker 1]
+Yes, I remember at the moment, the UNTP doesn't assume that credentials are exchanged between wallets. It assumes that credentials are discovered through identifier resolvers. So we haven't written anything about direct system to system or wallet to wallet exchange protocols.
+
+We maybe we should, but we haven't yet. We have on the roadmap to write something about how to do access control to more sensitive information in a decentralized architecture, which was going to be about presenting credentials that prove that you have the access rights to wherever the data is being hosted. So at the moment, I can imagine we'll have a fairly simple sort of exchange protocol at UNTP level.
+
+Will there be further profiles at extension level? Perhaps there will. You could be right.
+
+Don't know. Because things like encryption algorithms, you'd specify in the data payload, right? Say this thing is encrypted with whatever algorithm.
+
+Do you need to say this profile only allows these algorithms maybe?
+
+[Speaker 2]
+Yeah, that's what we do when we create profiles. Then we also tell you what encryption algorithms are you using, because otherwise it's not working.
+
+[Speaker 1]
+So there's a, well, if UNTP says there are these three or four encryption algorithms and support all of them, and as long as you say in the method which encryption algorithm, maybe you don't need to profile it. I don't know, but I think what you're saying is I might be missing a brown box here, which is the extent to which an extension or an industry profile profile constrains the more technical specifications with UNTP, the discovery stuff and the verifiable credentials profile. For example, would an extension say we're only using JWT and not integrity proofs?
+
+[Speaker 2]
+Yeah, or JSON-OT, I don't know.
+
+[Speaker 1]
+Okay, so let's take an action then to add another box here, I think, unless anyone else disagrees, to put a placeholder for more like a technical profile that is a way to specify a restriction on whatever UNTP says in a particular context. So all I've done so far is schema and vocabulary, which are a bit distinct from schema. And what I'm saying here is that if you define new terms in a extension schema, like a livestock passport, then you must have a context file and a vocabulary.
+
+You can't have undefined terms in your extension. This is what this is saying. You extend however you like, but make sure they're all defined.
+
+And when you point at external vocabularies, make sure they're not fly by night. So that's what that's saying. Here's the bit about identifier schemes.
+
+And this is an interesting one that might cause some... We've been talking previously about whether UN should maintain a little register of identifier schemes with key metadata, like is it resolvable or verifiable and if so, how and so on and so forth. So this at the moment assumes that we do do that and that identifier schemes are registered with UNTP.
+
+And that I've said should not must to be resolvable and verifiable because it might take time for whoever runs the registry to do that. You don't want to prevent issuing passports and the like because you can always use some other method for discovering them. Yeah.
+
+[Speaker 4]
+Sorry, I've got my hand up. Just before you're going past the bits I wanted to talk about. Beg your pardon, I didn't see your hand up.
+
+That's all right, don't worry. I agree with a lot of what she said and what you said. Can you go back up to...
+
+Hang on, the schema extension, that one there, right. So a trivial point. In that first bullet point, once this has been merged, I'm going to put in a pull request to change the word variants.
+
+The words variant suggests you can vary what's in the UNTP scheme, which is not what you mean. Right. So yes, we're talking about profiles.
+
+We're talking about adding on layers. And I agree completely with Suzanne that those layers would normally include... They're more restricted than the baseline.
+
+So UNTP is more flexible. And as you add on the extension or the profile, and I too like the word profile, you can define new terms and you can add cardinalities on the terms that are in the basic UNTP schema. But the word variant I think is not right there.
+
+So I think we should do that. And one thing that... So JSON-LD doesn't have a cardinality method.
+
+What adds that is the shackle shapefile that goes on top of that. And so it may be appropriate to say that your profile should also... So as well as what you've said here should also include a shackle file, which then adds on the cardinality and puts in the kind of restrictions that we're talking about and saying, okay, you've got to use this code list, this identify scheme, whatever it may be.
+
+So all these things go in layers. Everything in IT is about layers. So one of the layers then is the cardinality.
+
+So that would be the profile.
+
+[Speaker 1]
+Well, so as you know, you can issue verifiable credentials with only a JSON-LD context and no structured constraint like a schema. However, we here do publish both schema and JSON-LD context. And the reason for the schema is kind of like a poor man's shackle, right?
+
+But it's a simple tool for those implementers that are not linked data dudes. And so you can have cardinality constraints in the schema that works over the instance. So I'm not sure I'd want to mandate shackle.
+
+Anyone could add further business rules through shackle constraints on top of their instance. I don't know if we want to mandate it though. And yeah, the variance absolutely.
+
+What I meant by that is, and it's poorly worded, is that a single extension might define several types of variance of things like a digital product passport. So for example, an agriculture extension in Australia has both a livestock passport and a horticulture passport. And they're not the same, right?
+
+Because a livestock passport talks about veterinary treatment history, which obviously you don't send vets to treat cherries. So that's what I was trying to say with that from what can fix the word.
+
+[Speaker 4]
+Yeah. And just one last thing. You talk about registering profiles with UNTP.
+
+I think that'd be good if we could. But then, yes, it's the burden, isn't it? Of who's going to validate them.
+
+Given the JSON schemas and stuff and all the other stuff, it might be possible to largely, if not completely automate that. So you could have a harness somewhere, put your profile in here and it would check, obviously the JSON schema went, what worked okay. And it might require some voodoo to check that you hadn't redefined a term or something.
+
+I know when I've done work before on this with W3C, what we wanted to avoid was just using a different word for the same thing. So you couldn't define your own term that basically replicated or was so close to the original that it really wasn't useful. I don't think a machine can test that fully.
+
+[Speaker 1]
+No, no. But I think you're right. A machine could test a lot of things.
+
+In a way, it's a nice problem to have if we get so many requests for formal extensions. That means entire industry sectors are coming and saying we want to do an extension. If we get past 10, I think my guess...
+
+Well, no, if this is successful, I suspect we will have something like 100. But if it's not, I would suggest when we get to five or 10, then we start worrying about automating the compliance. But yeah, it's...
+
+Anyway, conformity criteria is another one, right? We found in critical minerals and in agriculture that yeah, we've got this generic declaration, standard regulation and criteria in UNTP. But what a typical industry extension wants to say is, yes, but where our rules are drawn from towards sustainable mining or this and that legislation.
+
+So I'm putting a placeholder here for extensions to say, you should list the relevant... must list the relevant standards and regulations that apply in your context. And I think, ideally, they're all web published and even the discrete criteria within a standard of regulation has a URI, but I think that's too much to ask at the beginning.
+
+So I have just a should there for that. But anyway, this is a really short kind of... Brett's got his hand up.
+
+No, it just popped up. Oh, that was intended just to be a thumbs up, Steve. Nothing more.
+
+Okay, good. All right. Well, anyway, it's not very long, this.
+
+And it's sort of easier to say, maybe a bit harder to do. What I've taken away from this discussion is some wording tweaks and also a technical profile to add on top of this. More like a protocol profile, right?
+
+Things like that might restrict the verifiable credentials profile and other technical stuff. And then it's a starting point. What I've also added is the first entries into a register of extensions.
+
+So for example, here's the Australian Agriculture traceability protocol, some words about it. And if you click on that, it'll take you to the site that describes it. And a little...
+
+I thought quite interesting on this page for each extension to list what they've extended, right? So this one extends a DPP to be a livestock passport and a DCC to be a deforestation credential. And the critical raw materials one, similar story there.
+
+This one is governed by UN, not by an independent body. And it's making a copper passport and a towards sustainable mining credential. So just the beginnings.
+
+But that's what's in the PR for extensions methodology.
+
+[Speaker 2]
+Suzanne? I don't know if you see my hand. Can you go back to this towards sustainable mining thing?
+
+Where did you sort it in? Because I think that's super. And we need to make sure that it's not only see a scene like at the lowest level of some registered extension.
+
+I think that all of these conformity credentials that are part of some of the extensions should maybe get a separate list so that people can see conformity credentials are already defined in these standards.
+
+[Speaker 1]
+Yeah. Yeah. There might be the same for commodity passports, right?
+
+Maybe some other group wants to make, I don't know, a critical mineral passport or even a cattle passport and that is not aware of the Australian.
+
+[Speaker 2]
+Exactly.
+
+[Speaker 1]
+So it did occur to me too, that what happens when you've got 100 of these and you start to get duplicates where we've got an Australian agricultural traceability protocols. But what if the Americans or the Canadians say, oh, I'm going to make a Canadian agricultural traceability protocol. And they make a completely different livestock passport.
+
+They could. I'm not sure we want... My initial thinking on this is it's very challenging to try to govern and harmonize that stuff when it's kind of a little bit out of your control.
+
+And perhaps the best way is to make it discoverable. So if the Canadians come along and say, oh, we're going to do an agriculture one as well, they will find this one and go, oh, look, there's a headstart. We'll use it if we can, right?
+
+[Speaker 2]
+And usually what I meant with towards sustainable mining is that the standard setter is towards sustainable mining. So I think there should be some relation and official kind of... I mean, I know it takes time, but usually the standard setters define how this certificate looks like in a digital format and how maybe it should be signed and where it should be made available.
+
+Before you can actually put it here. So I guess to make it official, we also have to have the sign-off of the standard setter. Not in the first step, but all of it.
+
+And the copper mark is the same. The people that define the copper mark, they probably want to have a word on what's in this copper mark profile here.
+
+[Speaker 8]
+They did approve that and they are part of the process.
+
+[Speaker 1]
+Yes, yes. Nothing appears on this list because we think it should be there. It only appears on the list because the organization that owns it made the commitment.
+
+So copper mark is there not because we're using copper mark, but because copper mark themselves have made a commitment.
+
+[Speaker 2]
+Okay, then I think this should be visible, transparent somehow. I don't know what, but I think this would increase the value maybe and the trustworthiness of that.
+
+[Speaker 1]
+I'm not sure what you mean, because it is visible. We're looking at it, right? What would you do differently?
+
+[Speaker 2]
+The copper mark has signed off the way that this is specified. Ah, okay. Because you see what I mean?
+
+Where can I find that copper mark has signed off your way of creating a copper mark credential?
+
+[Speaker 1]
+In the issues that lead to, I'll just show you. Let's look at the closed ones and pick. Here we go.
+
+This is the request from copper mark requesting a registration of their intent to implement UNTP.
+
+[Speaker 2]
+Cool. Okay, then we have to link it. Something like that to the copper mark.
+
+I would love to have a page that shows all the conformity credential types that we're already supporting. Because if you show that the Global Battery Alliance and they see, wow, they have the copper mark, they have towards sustainable mining, they have this and that and this, that's really going to be a thing. You can impress them.
+
+If they don't see it at once, they have to find it in the extension registered somewhere down.
+
+[Speaker 1]
+Okay, so a few to-dos out of this. One is on this implementations page, where we have, for example, a copper mark, we should add a link back to this implementation request. In other words, so that people can see, this is actually requested by copper mark and not something we've just created.
+
+Yeah, so we can add that link. That's easy enough.
+
+[Speaker 3]
+Can I throw something into the conversation here? That's what I mean. I think that I don't know if it's worth continuing to discuss here or doing it as an offline conversation or bringing it back.
+
+But my sense is that there are things that we're coming into now that whether it is part of a standard per se, it's not so much a technical part, it's more of the business side of how to move this out of the engineering technical audience to the business non-technical audience. Some of the similar conversations we had around the business case side as well, which I'd like to chat with you a bit, Steve, offline, not on the session today. But how do we make sure that it's visible to people who are not having a link to GitHub is not necessarily going to be something that somebody is going to understand, quite frankly, to have the GitHub ticket in there or issue or registration.
+
+So I would agree with Suzanne that we want to make this really available from a, if anything, maybe not the right word, but a marketing and promotion and building awareness. So you see what I mean? I don't know.
+
+That's, I guess, the question is, do we just chat a little bit outside this context and bring it back here?
+
+[Speaker 1]
+I think the question here is, how do we lift this from something that might appear? I mean, this is obviously GitHub pages. It's a website.
+
+It's not necessarily GitHub and anyone can read this. But what I'm hearing is that most people will look at this site and think, oh, it's all technical, and maybe not even bother to drill down to this implementations register and see that we have the government of British Columbia, and we've got two certifying bodies, and we've got, I don't know how many now, 13 or something, software companies, all committing to implement UNTP. This is good marketing story.
+
+And I expect a lot more will come. So what's the mechanism to raise awareness? I suspect it might be just a bit more kind of newsfeed announcements.
+
+Once people know that they can come to the software solutions page and look for, I don't know, trust provenance and see what Tilcal and so on and so forth and see who's committed to implement, then this is quite compelling information. But I suppose it's a bit hidden at the moment.
+
+[Speaker 3]
+It's not hidden, it's just- It's there, but if you're not familiar, I mean, if you're talking about somebody who is not familiar of the whole things within the standards and technical community, it's not necessarily, it's not on the landing page a scrolling list of icons of, here are the software providers, here are the business sectors that are- Well, we could. So maybe that's part of it. It's something that is gonna catch the eye.
+
+[Speaker 2]
+Yeah.
+
+[Speaker 1]
+Why don't we link this? So I think there's two things. One, there should be some marketing that's not even on this page.
+
+It's done by UNECE making announcements about progress, right? And I did that little one page performance dashboard that we will propose to come out quarterly. We could get UNECE to publish that on their channels.
+
+And here we could hyperlink. Currently it says, it's just a dead link. Software providers empower your customers, blah, blah, blah.
+
+But if you clicked on that and it took you to straight to implementations to this page, you'd see it's real, right? Yeah.
+
+[Speaker 3]
+And also the, sorry, Suzanne, I'll make one last comment and let you go. But I think something like Coppermark and the Australian, those are actually really from the industry side and having them cross-link so that as they're registering and those things are being set up, that there's also a commitment to cross-link from their side into here as well. So you have this bi-directional, you put their logo or brand on the site as well, because it's just increasing the awareness to drive people to here.
+
+[Speaker 1]
+Yeah, most of them are keen to do that. But yes, okay. We've got two hands up, Zach and Suzanne.
+
+[Speaker 2]
+Yeah, I didn't want to ruin your going through your new page. I think we should close up before we get into this more deeply. But if we could maybe also find a time that I could attend and the business calls, then I'm happy to contribute there a bit more on the presentation of that information.
+
+[Speaker 3]
+Yeah, we can talk.
+
+[Speaker 1]
+You're talking about this extensions page and stuff like that? Yeah.
+
+[Speaker 2]
+I'm talking about the call that's taking place in the middle of the night.
+
+[Speaker 3]
+5 a.m. in the morning, for your Central European time. Let's talk offline. We'll figure out how we can adjust it.
+
+[Speaker 2]
+Okay, perfect.
+
+[Speaker 1]
+Thank you. Ah, okay. That one, right, right, right.
+
+Okay. Yeah, I'm going to have a bit of a focus on business case next week, Michael, and let's have some chats and try to get some content published, but maybe not today. I'm just keen to walk through this extensions methodology, the register, get feedback, which I've got, and ask, is it good enough to merge the PR and then allow you to make your further PRs on top of whatever we publish?
+
+Has anybody got objections to, where have it gone? Extensions methodology. Are we happy to, shall we merge it?
+
+I know there's things still to fix, but is it good enough to merge now and then you can raise tickets or PRs?
+
+[Speaker 7]
+Yeah, yeah.
+
+[Speaker 1]
+All right.
+
+[Speaker 7]
+I think so, yeah. No problem.
+
+[Speaker 1]
+And it's merging.
+
+[Speaker 6]
+That's good.
+
+[Speaker 1]
+All right. Where are we now? Sorry, lost it.
+
+Ah, too many. Yeah, okay. That's it for the PR that I wanted to talk about.
+
+And I think, oh, there's another. Does anyone know this organization? Sorry, let's just have a quick look.
+
+Back on issues. There's another implementation registration. Sustainabilitytracker.com.
+
+Anyone on this call know these guys? I don't.
+
+[Speaker 2]
+They're from Australia.
+
+[Speaker 1]
+Are they? Oh, yes, look. Okay.
+
+[Speaker 2]
+Someone in your bubble.
+
+[Speaker 1]
+Somewhere in my part of the bubble. All right, then it's on me to follow up with them and find out.
+
+[Speaker 8]
+I'll take that on. I'll take that.
+
+[Speaker 1]
+Will you? Okay, right here. I guess I just want to make sure.
+
+We did have a couple of implementation registrations that were not really right in the sense that there was a consulting organization saying, I'm going to make a product one day and I'd like to register that I'm a consultant, you know, so we're not accepting that sort of stuff. It has to be a real product.
+
+[Speaker 5]
+Steve, can we go through pull requests before we switch to issues?
+
+[Speaker 1]
+Yep, okay. So this one's from you, Nis.
+
+[Speaker 5]
+Yeah. So I think we should take them in the right order. Otherwise, you risk merge collisions and the wrong person having to sort it out.
+
+So let's do Ksenia's first.
+
+[Speaker 1]
+Okay. This one was... I haven't reviewed this one.
+
+[Speaker 5]
+Is it adding Mermaid?
+
+[Speaker 1]
+Yes, adding Mermaid.
+
+[Speaker 5]
+It's adding Mermaid capabilities on the website.
+
+[Speaker 1]
+I mean, Git supports Mermaid and DocuSource supports it when you add this plugin. Right, so I haven't... Okay.
+
+So shall I merge that one now? You've just approved it, haven't you, Nis? Yeah.
+
+Okay. I'm going to merge. Okay, that doesn't break anything.
+
+All right, so now we're on to yours.
+
+[Speaker 5]
+Yeah, and this just changes from, what is it? Indication of support to actual implementation because we implement it.
+
+[Speaker 1]
+Yeah, so we did have a discussion about this one two weeks ago when you weren't on the call, Nis. And we're asking ourselves... By the way, first of all, amazing.
+
+Congratulations on being the first. But there was a discussion to say, what does it mean to claim conformity? And how far are we from having a test case or test service that we can publish so that you can run your implementation through a test case and then attach the test evidence with your conformity claim?
+
+I mean, you have attached links to your implementation, right? So there is evidence there. But the consensus was, let's get the formal test cases out and then run every one through it.
+
+And there was a bit of reluctance to let the first one slip through. So I don't know how you feel about that. I don't know.
+
+[Speaker 5]
+Okay, that means you cannot be compliant today.
+
+[Speaker 1]
+It means that we need to publish a test suite. How far are we away from that, Zach, do you know?
+
+[Speaker 8]
+A week away?
+
+[Speaker 1]
+Yeah, we said a couple of weeks, two weeks ago. Now it's a week. I don't want to hold up an eager and committed implementer, right?
+
+So how do you feel, Nis, about waiting a week for the test cases?
+
+[Speaker 5]
+I have no idea what that means. What does test case mean? Is that compliance to adjacent schema?
+
+[Speaker 8]
+Yes, basically.
+
+[Speaker 1]
+Okay, which I'm sure won't be a problem for you because you've already done that, I'd imagine. So I think the test cases for industry extensions will get richer because they got some sort of sense of industry choreography about livestock going from farm to abattoir, for example. But test cases for UNTP core are pretty simple, right?
+
+There's schema and vocabulary compliance and a little bit of verifiable credential signature methods and the like.
+
+[Speaker 5]
+All right, well, then let's close this pull request then.
+
+[Speaker 1]
+Do you want to, should we, what, just close it without and say open it again when the test cases are out and provide your evidence?
+
+[Speaker 5]
+I guess that's the conclusion, isn't it?
+
+[Speaker 1]
+Yeah, I mean, everyone will go through the same process. Yeah, I can't see any reason why it will be a challenge for you, but it'd also be helpful to test our test cases.
+
+[Speaker 8]
+Okay. Yeah, you may tell me that our test cases need improved, which would be also a valuable outcome. And if that's the case, we might want to support you claiming success.
+
+Like, anyway, as soon as I have something that I can share with you, I'll ping you on Slack and we'll get that sorted so that you can get that hopefully in time for the next meeting.
+
+[Speaker 5]
+We could also merge this and as soon as there are test cases and those test cases will, I guess, evolve also over time, we can bump me back if I don't pass the test cases. That's another option. Obviously, I would love to get this merged because I want to make a thing about it and call attention to what we do and all that good stuff.
+
+[Speaker 1]
+I don't mind doing that because this is very early days and it's not like we've got hundreds of these going through. But you're committing to work with us to work through the test cases and if either of them are wrong, like our test cases are bad or something fails on your side to fix it and update, right?
+
+[Speaker 5]
+Yeah. There's definitely details to be sorted out. I can hear that already.
+
+For sure.
+
+[Speaker 1]
+What does the rest of the group think? Are we going to give Ness a pass because he was the first and we're keen to see an implementation?
+
+[Speaker 3]
+It's part of a process. It's also another process test because you could be compliant today and something changes and you're not compliant tomorrow.
+
+[Speaker 5]
+Yeah. Then we'll figure out how to do that. I'm sure that's how it's going to be.
+
+[Speaker 2]
+I think Ness has definitely deserved with all of his support to get this trophy.
+
+[Speaker 3]
+I wanted to say that too, but we've got other technology companies on the call. Okay, good. Thank you.
+
+We're testing part of the process too.
+
+[Speaker 1]
+All right. Someone's got to do a quick review then. Oh, I can do that.
+
+Okay. All right. Do you want to review it then and then we'll merge it?
+
+Everyone give Ness a thumbs up for being the first. Well done.
+
+[Speaker 2]
+And thanks for moving this forward.
+
+[Speaker 1]
+Yeah. Look, I think we should collectively be quite pleased with ourselves that we do have whatever it is, 13 or so software vendors committed, a few certifiers, regulators, and so on.
+
+[Speaker 8]
+And Suzanne, I have a call with Mac, who's the TSM owner tomorrow, and we'll get them on there tomorrow as well.
+
+[Speaker 1]
+You get them what?
+
+[Speaker 8]
+Towards sustainable mining. Yeah. We'll get them added tomorrow.
+
+It'll be in the next approval process. We'll get the reply.
+
+[Speaker 2]
+Yeah. This is super. This is really great stuff.
+
+[Speaker 8]
+And we have a few other kind of big ones coming in the built environment, building construction.
+
+[Speaker 2]
+What I would love to see is Irma. Hadn't someone had Nancy spoken with Irma? I think it would be lovely to have them on here because they're so big in Europe for the battery passport.
+
+[Speaker 3]
+I think there was somebody on Nancy's call a week ago or two weeks ago when they did the review.
+
+[Speaker 2]
+Yeah, I think so too. So if we could get them on here, that would be big.
+
+[Speaker 1]
+A good way to get Irma on board is to get towards sustainable mining on board. Because they go, oh! That's right.
+
+They're on board. Yeah. A few minutes.
+
+[Speaker 2]
+Can I raise one last thing before we go?
+
+[Speaker 5]
+On the point that we're leaving now, Zach, is there an issue for the conformance test? Might be worth discussing how that works.
+
+[Speaker 8]
+Add an issue in terms of conformance testing publishing?
+
+[Speaker 5]
+A good issue to just see what's coming. I can make one if you don't have one.
+
+[Speaker 8]
+Yeah, make one. That'd be helpful.
+
+[Speaker 1]
+Okay, cool. All right. Well, Suzanne, you've got your hand up for something?
+
+Or is it left over from before?
+
+[Speaker 2]
+No, I've got my hand up for something. I'm desperately trying to contribute to this text, but it doesn't work. So I tried my first GitHub thing just as a trial.
+
+Then I changed something. I did write it with Nis. He helped me.
+
+It got somehow overwritten. It's still not there today. Again, after, I guess, four weeks.
+
+So I'm losing a bit of trust into how can I change things? And I can forget them because they are changing somehow. So how do we do this?
+
+I mean, I'm already, I would say, technical. I don't know the right word in English, but if someone comes that's less technical, how can they contribute to that?
+
+[Speaker 5]
+Suzanne, you asked me, and I actually spent a fair bit of time looking into it.
+
+[Speaker 11]
+I know. Yes, thank you.
+
+[Speaker 5]
+What this is, and Steve, I'm going to just be prepared. I'm going to throw you under the bus completely here. What happened was it did get in, it got merged, and everything worked out well.
+
+Steve made a massive pull request that just completely overhauled. And we all appreciate that. That's how it happened.
+
+It just got overwritten. What's worse is that pull request got merged after it was less than a day. It was like an hour before a meeting, and it just got squeezed in there.
+
+This is what happens when we are not sticking to our own process. It's not GitHub's fault. And you did everything correct, Suzanne.
+
+[Speaker 11]
+Okay, so how can someone contribute?
+
+[Speaker 1]
+As Nis said, as long as we review pull requests in the order that they're lodged, and I stopped, and I've committed to do this, stop making these big pull requests that change 10 pages at once. Because I had one branch, and I would do lots of stuff in one branch and commit it. And now I have as many branches as I need to have distinct pull requests.
+
+So I will do fine-grained ones, and we'll address them in the sequence they're made. So if you make a pull request before me, then we have to review yours first.
+
+[Speaker 2]
+I see. I see. This is how it kind of came.
+
+Ah, okay. So blame me.
+
+[Speaker 1]
+Nis is right to blame me. It's not a failure in the system. It's my fuck-up.
+
+And a screw-up, sorry. And yeah, you can either do it by editing this page, as long as I think you've got commission.
+
+[Speaker 11]
+I did achieve it with Nis. So I'm going to try it once again, just with this little few words that I want to change, to see how the process works.
+
+[Speaker 1]
+Just try it. Try a small thing, and it should pop up as a pull request. And then we can chat about it in the chat.
+
+We don't even necessarily, if it's a small thing, have to wait till the next call. As long as we announce in the chat channel there's a pull request, give people a day to review it. And then if it's a fairly uncontroversial thing, we can just merge them.
+
+We just stick to the diligence and the sequence that Nis is talking about, and that I screwed up. So please don't lose faith.
+
+[Speaker 11]
+Just try again.
+
+[Speaker 8]
+We don't want to have to take away your GIF privileges.
+
+[Speaker 11]
+Say that again?
+
+[Speaker 8]
+We don't want to have to take these GIF privileges away. We can take them off. We can just say, Steve, you can't do this anymore.
+
+Yeah, I know.
+
+[Speaker 11]
+I don't think we want to do that.
+
+[Speaker 5]
+I want to maybe just... We've been punishing you now, Steve. But on the other side of this, you contributed like 99% of everything we have.
+
+And we all appreciate that a lot. Of course.
+
+[Speaker 6]
+Okay, thank you for that. I feel better now.
+
+[Speaker 1]
+And I'm going to go and watch a Halloween movie now. And we're one minute over time. I'd like to thank you for your contributions and feedback.
+
+And I'm glad I've got that extensions register stuff discussed and started. So all good. We'll see you on the next call.
+
+Thank you very much. Thanks, everyone. Bye-bye.
+
+Bye.
+
+[Speaker 5]
+Have a great day.
+
+[Speaker 6]
+Bye, everyone.

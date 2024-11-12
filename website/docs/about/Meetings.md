@@ -7,13 +7,18 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
+## Mailing List
+
+A group mailing list is maintained and can be used by any list member to post messages to the group. The list also maintains an archive of all messages sent to the group.
+
+[Join the mailing list](https://groups.google.com/g/transparency-uncefact)
 
 ## Meetings
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 31st Oct 2024.  [Add to your calendar](../../meetings/UNTP-8amUTC-meetingCalendar.ics).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
-* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 17th Oct 2024. [Add to your calendar](../../meetings/UNTP-8pmUTC-meetingCalendar.ics).  [Join the meeting](https://us02web.zoom.us/j/83890736076?pwd=bUegz9NiyqGnAd2WKyoLAQHBZX04hw.1)
+* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 28th Nov 2024.  [Invitation Link](../../meetings/UNTP-8amUTC-meetingCalendar.ics).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
+* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 14th Nov 2024. [Invitation link](https://calendar.app.google/E6wLvBxCJ7VgAvd8A).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
 
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
@@ -25,6 +30,8 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-10-31| [The team discussed updates on UNTP governance, digital product passport collaborations, and the methodology for industry-specific extensions, focusing on security, visibility, and implementation compliance.](#2024-10-31-meeting-summary)|[video](https://us02web.zoom.us/rec/share/IHBm8m69es-EaEl_Je01fsqUNAzY4QuumwJZaeI0ihah6wrZADAmyRC2bK8Jt-lZ.3FxFLsOE9Fjkvsvx)|[transcript](../../meetings/2024-10-31-Recording.txt)|
+|2024-10-17| [The team discussed the latest updates on UNTP credential implementation, focusing on testing, identity resolution processes, and potential trust anchors for bulk commodity tracking.](#2024-10-17-meeting-summary)|[video](https://us02web.zoom.us/rec/share/EgwRbS_jvLwwsLqJ4ddM55Je-OnpxkvDxcn6WhsWwZZwKS35Ts6JDXneurvWfxgQ.D9GdxgqUbFOPmCv3)|[transcript](../../meetings/2024-10-17-Recording.txt)|
 |2024-10-03| [The meeting focused on reviewing and refining the business case content for Digital Product Passport implementation, addressing technical bugs, and preparing the materials for broader feedback and publication.](#2024-10-03-meeting-summary)|[video](https://us02web.zoom.us/rec/share/KDARf7eHzuXRW4F2OkrF7JgNgMvnSHkBx_3UXf3LEpAo2jTSYTghVBv2gvAr75ig.QsEeOK3KSd4VlcnE)|[transcript](../../meetings/2024-10-03-Recording.txt)|
 |2024-09-19|[The meeting focused on reviewing new registration requests, addressing syntax and human-readability issues in traceability events, planning updates to the REC 49 policy document, and discussing business case development for public and private sector value.](#2024-09-19-meeting-summary)|[video](https://us02web.zoom.us/rec/share/ZzkAqJFNRuDgJ9On4Uvg7cp2MU-1N5Sas6GDK0VIVid00Zx9vYLdWe1gEZSCDm4F.VTPpBJyEtiQHYYgQ)|[transcript](../../meetings/2024-09-19-Recording.txt)|
 |2024-09-11| [The meeting covered updates on standards integration, implementation commitments from key stakeholders like the British Columbia government, and the plan to freeze UNTP version 0.4.0 for upcoming pilot programs.](#2024-09-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/TLDhFQPgXJ8CksSqR3CvWp3je0oiBuJyS8o0djx4shDXVha71lJMuPU94m4UMPhW.sT8AgEAZJkesR_FQ)|[transcript](../../meetings/2024-09-11-Recording.txt)|
@@ -59,6 +66,84 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
+## 2024-10-31 Meeting Summary
+
+### Meeting Summary
+
+**Participants**:
+- **Steve (Speaker 1)**: UN Representative, project lead on UNTP.
+- **Stefano (Speaker 6)**: Liaison with EU directorates, providing updates on coordination efforts.
+- **Virginia (Speaker 6)**: Providing feedback on governance and licensing.
+- **Phil (Speaker 4)**: Brief input on registration processes.
+- **Suzanne (Speaker 2)**: Contributed insights on standard profiles and security specifications.
+- **Nis (Speaker 5)**: Discussed implementation requirements and test cases.
+- **Luca (Speaker 8)**, **Jordan (Speaker 9)**, **Dr. Wang**, and **Martina Paul**: Various inputs related to standards and technical topics.
+
+**Key Topics**:
+
+1. **UNTP Governance and Extension Methodology**:
+   - Steve introduced the UNTP extension methodology, designed to create industry-specific standards based on UNTP’s core. Discussions focused on extension governance, transparency, and the criteria for official UN endorsement.
+
+2. **Digital Product Passport (DPP) Initiatives**:
+   - Updates were provided on new collaborations with ISO TC154, IEC, and other regulatory groups to align DPP standards across industries. Dr. Wang’s potential involvement in the ISO TC154 project was noted.
+
+3. **Technical Specifications for Extensions**:
+   - Suzanne and others discussed the need for security profiles and identifier schemes for robust operational implementations. Agreement to add technical profiles, such as encryption and protocol requirements, to the extension methodology.
+
+4. **Implementation Registration**:
+   - Nis’s implementation of UNTP was acknowledged as the first to meet compliance requirements, with future test suites planned to verify consistency.
+
+5. **Conformity and Visibility**:
+   - Suggestions were made to improve visibility of UNTP implementations and their industry affiliations, enhancing marketing efforts to non-technical audiences.
+
+**Next Steps**:
+- Steve will merge the current extension methodology PR, and the team will refine with specific technical profiles.
+- Nis and others will participate in initial test suite trials.
+- UNECE will work on promoting UNTP implementation visibility, potentially adding links and marketing content for public accessibility.
+
+## 2024-10-17 Meeting Summary
+
+### Meeting Summary
+
+**Participants**:
+- **Steve (Speaker 1)**: UN Representative and project lead on UNTP standards.
+- **Phil (Speaker 5)**: Discussed the registration process for UNTP implementation.
+- **Virginia (Speaker 6)**: Provided input on implementation and test suite requirements.
+- **Gerhard (Speaker 4)**: Contributed insights on bulk product tracking.
+- **GS1 Representatives (Speaker 2 and Speaker 3)**: Discussed identity standards and resolver frameworks.
+- **Dr Wang Xiang**
+
+**Key Discussion Points**:
+
+1. **UNTP Credential Update**:
+   - **Version 0.5.0**: Released for testing with credentials for digital product passports, conformity, traceability events, and facility records. Around 13-14 software providers and several regulatory bodies have committed to implementation.
+   - **Implementation Registry**: A GitHub-hosted registration process guides companies in joining the initiative and tracks active implementers, marking a new approach for the UN in standard adoption tracking.
+
+2. **Test Suite and Implementation Process**:
+   - **Test Suite**: Expected in two weeks. The group recommended that companies wait for the suite to ensure consistent conformance testing.
+   - **First Implementer**: Transmute has completed an initial implementation, but the group advised a formalized test to verify compliance.
+
+3. **Identity Resolution Process**:
+   - **Workflow Diagram**: Steve introduced a flowchart detailing steps to resolve, verify, and link identifiers, emphasizing both registered and self-issued identifiers. He highlighted a need to address bulk commodities like minerals.
+   - **Challenges with Bulk Commodities**: Bulk products lack unique identifiers, complicating traceability. Suggestions included using shipment or consignment IDs for identification.
+
+4. **Trust Anchors and Verification**:
+   - **Potential of Trademark Offices**: EUIPO is considering involvement, where trademark verification could serve as a trust anchor for product claims.
+   - **Domain and Business Registry Checks**: DNS ownership and business registries were discussed as potential trust mechanisms, though complex in some cases.
+
+5. **GS1's Approach to Identity Resolution**:
+   - **Cataloging Identifier Schemes**: Steve suggested a UN-hosted catalog for identifier schemes. Challenges included governance complexities and ensuring neutrality.
+
+6. **Future Steps and Closing Remarks**:
+   - **Further Asynchronous Feedback**: Steve invited ongoing comments on the resolver and bulk tracking processes.
+
+**Next Steps**:
+- Steve to raise a pull request (PR) for further review on the identity resolution process.
+- Ongoing exploration of bulk commodity identification and potential collaboration with EUIPO on trademark verification.
+
+--- 
+
+This summary captures named participants, key decisions, and next steps discussed in the meeting.
 
 ## 2024-10-03 Meeting Summary
 
