@@ -24,6 +24,8 @@ Summary list of software products and status of implementation. Scope defines th
 | [Morpheus Network](#morpheus-network)                             | Morpheus Platform                        | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC      | planned   |
 | [Cordina](#cordina)                                               | Cordina emissions intelligence platform  | VCP, DTE, DCC, IDR                          | planned   |
 | [Enigio](#enigio)                                                 | trace:original                           | VCP, DPP, DTE, DCC, DFR, DAC                | planned   |
+| [Sustainable Choice Group](#sustainable-choice-group). |Sustainability Tracker|VCP, DPP, IDR|planned|
+
 
 ## Implementation Details
 
@@ -287,3 +289,23 @@ Summary list of software products and status of implementation. Scope defines th
 | Product Name & version                                     | Description                                                                                                                                                                                                                                                                                                               | UNTP Scope & versions                   | Implementation Test Report |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | -------------------------- |
 | [Enigio trace:original](https://enigio.com/traceoriginal/) | Enigio's trace:original is a solution for creating and managing digital original documents, with all the useful properties of paper, but in a digital form. This means that you can maintain a completely digital process for original documents, with all the security, efficiency and convenience of digital documents. | VCP, DTE, DPP, DFR, DCC, DAC v0.5, v1.0 | TBA                        |
+
+### [Sustainable Choice Group](https://www.sustainabilitytracker.com/scgroup/)
+
+- UNTP commitment made on: 28-Oct-2024
+- Registration Country: Australia
+- Operating Countries: Global
+- Participate in pre-release UNTP Pilots? : Yes
+
+| Logo                                               | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Logo](../../implementations/sustainabilitytracker.com/logo.png) | Sustainability Tracker is a world first solution that houses brand sustainability credentials, initiatives, actions, and evidence in the palm of your hands. By simplifying complex data, Sustainability Tracker helps consumers to make considered choices in real time while they shop and helps brands share their sustainability messages without greenwashing. We host the sustainability data of brands and businesses around the world, and fully intend to support Digital Product Passport development. |
+
+** Product Information **
+
+| Product Name & version                                     | Description                                                                                                                                                                                                                                                                                                               | UNTP Scope & versions                   | Implementation Test Report |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | -------------------------- |
+| [Sustainability Tracker](https://www.sustainabilitytracker.com/) | Sustainability Tracker is a world first solution that houses brand sustainability credentials, initiatives, actions, and evidence in the palm of your hands. | VCP, DPP, IDR v0.5, v1.0 | TBA |
+
+
+
