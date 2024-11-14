@@ -1,0 +1,547 @@
+[Speaker 5]
+Hello everyone, global greetings.
+
+[Speaker 9]
+Hello.
+
+[Speaker 7]
+And good morning from Perth, Western Australia at 4am.
+
+[Speaker 1]
+What a horrible time for you, sorry. No, go right ahead. We do have another meeting in two weeks time which is more friendly for you.
+
+[Speaker 7]
+That's okay. That's all right. I'm committed.
+
+[Speaker 1]
+So, awesome. Right, let's give it a usually give it about two minutes for people to arrive.
+
+[Speaker 7]
+So where are you calling in from Steve camera for me.
+
+[Speaker 1]
+But this one, we do one meeting at this time to suit the people from us. And then another one. 12 hours later so it's 7pm Thursday in two weeks time for me.
+
+It'd be a nice friendly 4pm or something for you. And that one's targeted to being friendly for the Europeans.
+
+[Speaker 11]
+Okay. Okay. I kind of like this time.
+
+[Speaker 1]
+I know you're a night owl.
+
+[Speaker 11]
+I don't know why my camera is not working. So, you'll have to live without looking at me.
+
+[Speaker 9]
+Oh, good. We're about there. Oh, you found your camera.
+
+[Speaker 12]
+Yes.
+
+[Speaker 9]
+All right.
+
+[Speaker 1]
+Yes, I'm not expecting too many of the European folks to join today. I see we've got Virginia but he loves to work late.
+
+[Speaker 6]
+I'm here as well Steve.
+
+[Speaker 1]
+Oh hello Luca.
+
+[Speaker 6]
+And Michael.
+
+[Speaker 3]
+Yeah, I'm here as well. Okay.
+
+[Speaker 1]
+Oh yeah, of course you are Nancy. That's right.
+
+[Speaker 9]
+Nice to see you yesterday. Yeah, it was really nice. Sorry.
+
+[Speaker 1]
+It's a three minutes past, and I think we'll make a start. Couple of things the usual intro this meeting is being recorded. And the minutes, and the recording will be published publicly.
+
+So, if anyone has any objections, please let me know. And also just remember whatever you say is will be public material. So secondarily, this is a UNC fact project and if you contribute ideas.
+
+Then those ideas become. If they're written into the spec become UNC fact property intellectual property. So, anything you don't want to contribute to us as part of the spec, because it's your property then then keep it that way please.
+
+All right, with that. I think I'd like to work through the agenda that I sent out in the email just recently and I'll start by sharing my screen. Where are we.
+
+Usually what we do is work through a thing called pull request actually before we do that I noticed there's a few new faces on this call. My voice a bit croaky 7am in the morning. Perhaps we should do a super quick like 30 seconds.
+
+Hello, from, and who you are from the new faces on my screen at Adriana is the first new face.
+
+[Speaker 7]
+So hi, I'm Adriana Zachary. I'm CEO of little tiny organization called circular economy Asia. And the reason why I'm here is because I'm volunteering for surpass to which is the which has been created out of digital Europe for to work on work.
+
+There are several working groups to create digital product passports and I volunteer for four of those groups. One is user access is the second one is your IDs, the third one is data authentication. And the fourth one is standards, so there are there are other group working groups that I'm not involved in.
+
+But they exist so that's why I'm here.
+
+[Speaker 1]
+Oh great thank you for that. I should say we have a very friendly relationship with Carolyn Banye. Very impressive lady, and a good synergy between surpass and this project but it's great to have someone with actual feet in the ground.
+
+There. Who's next that we haven't had on the call before.
+
+[Speaker 4]
+Have you joined us before me. To jump in. I'm sure.
+
+Yeah. Hi all have been following the UNCP work for quite a long time, but I'm coming to y'all over a little bit from open supply hub and open hub has done for a while. Looking at how do we how do we map all of the production facilities around the world and create OS IDs and so really excited about UNTP and the protocol existing.
+
+And so here to learn a little bit more about that data pillar, the green one in the center there, and how that all works through and then I've also been doing some ecosystem and partnerships management for initiative that came out of open supply hub as well as other partners called the supply chain data exchange standard. And so just looking to see, there are some complimentary places I think we're trying to make sure that it complies with the UNTP, and happy to share a little bit more about that later but I don't want to, I don't want to interrupt or get in the way of the agenda really wanted to listen in today and see how, see where there are places to learn from and make sure that it complies and aligns.
+
+[Speaker 1]
+Well, thank you. Sure, actually, not just complies but actually you can help us get it right because I will admit that one of the reasons that we added a thing called a digital facility record is because of our conversations with RBA, and their needs for facility level data interoperability as opposed to product level. So, our facility record is a stab in the dark, and your expertise in that area will help us to get it right so we're very pleased you're joining us.
+
+[Speaker 4]
+Absolutely.
+
+[Speaker 1]
+Who else has not joined us before is that. Have we covered everyone. Is anyone else's new to this call.
+
+[Speaker 5]
+Me, I'm new to this call.
+
+[Speaker 1]
+Hello.
+
+[Speaker 5]
+Hello everyone. I'm part, and I'm calling from San Francisco. My background is technical, I come from a software engineer background, I am leading as a technical product manager, I did work with a lot of OEMs car manufacturing companies in implementing digital product passport in terms of like a POC.
+
+So I'm familiar with the KTNIX, GAIX, GBA rulebooks, all the data mappings that they are, they have created so far, and I have been following UNDP and trying to contribute. So that's where I'm here. Nice to meet you all.
+
+[Speaker 1]
+And you too. Actually that's three in a row that have a lot to contribute because our next task. Important task is to take the generic model of UNDP and test how well it maps to things like a GBA passport, and various other establishing initiatives that will tell us, you know, is it a good fit and have we missed anything and it sounds like you'll be able to help with that.
+
+Yes, for sure. I've also had some longish discussions with KTNIX so maybe not in this call but I wouldn't mind having a chat with you about that. All right, well, if there's nobody else new, I'll just carry on with the agenda.
+
+And the first thing we do is review new contributions. Collectively, the first one here is this new implementation commitments. Now, the easiest way to do that is to show you what that looks like on my local machine, where did I put that.
+
+There we go. So, those are not familiar that we use GitHub as a which is a tool for really for software development but it also useful for maintaining specifications and the like and an automatic publishing mechanism takes whatever we put in GitHub content and publishes it into this site that most of you have had a look through. What we're looking at the moment is some new content that I'm running on my local machine so you can see what it looks like.
+
+It's easier than looking at a pull request. It would help if I had the right branch on my local machine.
+
+[Speaker 9]
+All right.
+
+[Speaker 1]
+Tell you what, why don't we just look at the pull request and emerge it. I don't know what's going on there. The news here is, in any case, it's business news.
+
+There are two new UNTP extension commitments. So just for especially for the new people to explain what that means. UNTP is a core sort of industry agnostic and geography agnostic framework for traceability, transparency and draft, but it's actually not really usable by a business organization.
+
+Until it's got something specific to their needs. So, you know, if I'm a farmer, I need an agriculture extension that has semantics and the one about about farming, for example, cattle characteristics and veterinary health records added to the passport and so on. Every industry needs its special stuff.
+
+Batteries as well. So basically we need to think of UNTP as the toolkit and the industry extensions as the things that real businesses implement. And industry extensions are governed either by the UN itself, such as the critical raw materials one, or by an industry association that represents enough members that they can bring them together.
+
+So these two extensions, the first one is from the Responsible Business Alliance, which, if those that are not familiar with them, is a roughly 20 year old organization that has changed its name a few times. But it represents a significant number of actors in the electrical electronics and automotive parts industry and software and computing industry. So household names like Microsoft, Dell, Google, Amazon are on there.
+
+Some automotive companies like BMW, I think, and a whole bunch of midstream companies, especially Asian manufacturers in Taiwan and elsewhere of printed circuit boards and the like. It's quite a big member list. You can look for yourself.
+
+In fact, maybe we'll just look at Responsible Business. There it is somewhere about members. There you go.
+
+Yeah, from A to Z. I don't know how many there are several hundred. And as you go through that, you see Hewlett Packard, quite a lot of household names.
+
+In any case, the combined revenue, I think, of those members is something around several trillion, five, six, seven trillion, something like that. So it's quite a significant organ. Well, its members are significant.
+
+And this organization is committing to implement a UNTP extension for the electrical electronics goods sector. And this is their extension request. So some words about the implementation statement.
+
+And they have a few conformity schemes, let's call them one called the Responsible Minerals Initiative, Responsible Labor Initiative, Responsible Factory Initiative, Responsible Environment Initiative. So these are all the criteria for sustainable behavior in each of those categories for their members. And they have many members that deal with batteries.
+
+So they're also proposing to make a general electric goods passport and a specific digital battery passport and electrical facility record. And this is the bit that will probably involve some participation from open supply hubs. So anyway, this is their request.
+
+That's one. So that's quite, I think, rewarding, or when a large organization like that sees enough value in UNTP to make this kind of commitment. So I'm quite happy about that.
+
+The other one is from, where is it? Oh, yes, this one. So this is from a group called the International Code Council.
+
+And code in this case means building codes. So all the rules about construction industry and been around quite a long time and quite a rich rule base. And they've gotten together with Standards Australia and made an announcement.
+
+Have they made it or are they going to make it, Zach?
+
+[Speaker 10]
+The announcement is actually not until the 16th at 12 o'clock Baku time. So this is a little bit of a preview. They wanted to get the commitment up onto the UN site.
+
+[Speaker 9]
+Exactly. Yeah.
+
+[Speaker 10]
+They wanted to get it up onto the UN site prior to the announcement. So the announcement is actually in a couple of days time.
+
+[Speaker 1]
+So this one is interesting because it's going to focus more on the semantics of rules and criteria across all lots of economies. Maybe have a bit of an AI angle in it, but they're going to develop and extend the sustainability vocabulary catalog, which is the language of criteria. Michael, you got your hand up?
+
+[Speaker 3]
+Yeah, just to wonder, because I know that construction materials is one of the next ones in the pipe for the delegated acts within the European Union. Do you know if this is any relationship to that for doing digital product passports for construction materials?
+
+[Speaker 1]
+I think most people doing these extensions are aware of what's coming in the delegated acts. Obviously, we haven't seen the delegated acts yet, so we don't exactly know what's going to be in them. But I think any of these projects that doesn't keep an eye on those and seek to align would be making mistakes.
+
+So certainly, I think we'll be keeping an eye on it. Anyway, those two new extension commitments are ready to be merged. I haven't merged them yet.
+
+I know somebody's approved the merge. Maybe that's Zach. So I think that's good news for all of us, both of those, actually.
+
+Has anyone got any other comments or concerns before we merge these two onto the site? No? Then I'm going to click Merge Pull Request.
+
+Hopefully, that will work its way through to the site while we're talking. All right. The next one is I'd say I'm about halfway through with this, Michael.
+
+But Michael, who's on this call, has been running a side group, I should say, that has been working to update these pages. I'll just show you them. There's a part of UNTP which is attempting to make the commercial case for implementation.
+
+Because that's one of the challenges with all of these things is people don't move unless there's a value in it. And we decided that it helps to articulate all the categories of value and categories of cost to help move the needle. And so we have these pages for the case for change.
+
+And there are broadly three categories. Business case template, which is targeted at particular actors. And in fact, Michael's work splits this into two, one for industry and one for government.
+
+And this is kind of advice for individual industries or governments about the case for change. And then there's a thing called a community activation profile, which program, sorry, which is more the collective model. So what's the commercial case?
+
+Not when you're an individual actor, but when you're a group in an industry sector. So the community activation program kind of goes hand in hand with the industry extension model to say it's almost, you could almost imagine it like a business case for the member association to benefit their members. And the value assessment framework is the business case for the UN itself.
+
+How do we know we're having an impact? What's the reporting back? So these are the aspects of the business case.
+
+So what I did, Michael, so Michael's been working on, I'll show you offline on some Google Docs. Here they are. And what I've done is gone through.
+
+So a fair bit more content there. I don't need to go through. I'll go through what it looks like on my machine, assuming I can get that local host working.
+
+[Speaker 9]
+Let me try. Go back to the right branch.
+
+[Speaker 1]
+Yeah, so what's in that pull request is it says here, I basically took all the material from your new master index page. And all the material from your industry case page, except the cost stuff. I haven't got to that yet.
+
+But haven't yet got to the government page or the community activation profile. So we'll have a look through this and see if it sort of aligns with what you thought. So it's primarily for your eyes, Michael, to make sure I haven't done something that you might disagree with.
+
+[Speaker 3]
+No, but I also like the way government versus industry, I think, is the right words. Because I didn't like public and private, but that's what was stuck in my head.
+
+[Speaker 1]
+Right. Okay. Yeah.
+
+So you see there's an extra page in there now because we split business case templates into industry and government. And on the business case page itself. This one's a bit longer.
+
+It starts with a little pointer to these pages, so that the way most of these pages work is the root page, like specification tells you something about all the child pages. So the business case page here says, what's first of all, what are the meaning of these 1234 or so pages. There was a diagram there on yours, which was a PowerPoint diagram and had a fair bit of text in it.
+
+And one of the troubles with text in PowerPoints is that they're not easy for people to edit and do a pull request and make changes. Fair enough. And so it's exactly the same words, but I put it in a table.
+
+That's fine. And so this first part here is a very short summary of motivations for every stakeholder type. And there's quite a few right.
+
+Consumer regulators, producers, manufacturers, brands, retailers, et cetera, et cetera. And the reason these are highlighted, because remember, we had that discussion about how do we relate what is on this quite old page now, the audience benefit and goals page that has wrote this over a year ago that has all these stakeholder types and what it means to implement UNTP for each. And we said, how do we relate business case actors to that?
+
+So what I've done for now, maybe we can change it, is just hyperlink every one of these so that it says, you know, for example, producers and manufacturers, what do they do? What challenges they face? And if you click on it, it takes you to the producers and manufacturers section.
+
+But we're not going to write detailed business cases for every one of these actors, basically too much work. So we summarize those actors. And then we say, these are the two we really focus on industry and government.
+
+So there's a few summary words about industry. They're mostly your words, Michael, except I tweaked this bit. This is something that, at least for me, has been quite interesting.
+
+I'll just explain this here. So what I think many of us are noticing is a trend in the behavior of corporates that can be kind of categorized into three, if you like, periods. And I'm just calling historically, currently and in future.
+
+But historically, I think we all recognize that mostly sustainability was the domain of the marketing department and led to logos all over products and an outbreak of what we collectively call greenwashing. And lots of assessments that have indicated, and there are lots of reports about this, that more than 50% of goods on the shelf, the environmental claims on them are either misleading or quite wrong. So that's a huge amount of greenwashing.
+
+But it's because it's a marketing initiative. It's basically logos on boxes. And I think it's that behavior that led to the explosion in regulation to correct that, to meet consumer expectations of trust and honesty and what is said on packaging.
+
+That's the role of government. So if you think about the European Digital Product Passport, it's a regulatory transparency measure that forces with compliance, more accurate declarations on products. That's what it's for.
+
+And similarly, corporate level annual disclosures are a similar vein. They're asking corporates to make quantifiable and harmonized statements about things like their emissions against regulatory standards like IFRS, which is a reporting standard, to encourage transparency and to make their behavior more auditable. So they're both regulatory initiatives at the product level and corporate level are driven by the need to bring consistency and accuracy to reporting.
+
+And most companies I talk to think of today, think of sustainability as a risk and compliance initiative. Not all, but most. Some are still in the historical space of greenwashing.
+
+Most are in this better meet the regulation space, but an increasing number. This is the interesting thing. And I'll put a link to a report there, the Deloitte report, which should be worth reading, saying, wait a minute, what's the purpose of all this regulation?
+
+It's going to year on year drive expectations that we will improve our sustainability. And if we don't take serious actions, then we might comply with regulation, but would be punished by capital markets and consumers. And really, we should take sustainability into the front and center of our corporate strategy.
+
+And so more and more companies are thinking this way. So I'll put this little summary here because it kind of it's an encouragement to walk through this kind of life cycle. Go from here to here to here.
+
+And UNTP can help you, basically. And then there's some words for the business case for government, which is straight out of your book. So that's that page.
+
+Do you got any questions or comments on this page, Michael?
+
+[Speaker 3]
+No, actually, I like the layout. Once you merge it through, I'll read through it. The layout changes fit the rest of the UNTP site, which is what I expected you to do anyway.
+
+[Speaker 1]
+Yeah, I tweaked it a little bit. So then this is the more detailed business case for industry. And it starts with this diagram that says, look, there's categories of value and categories of cost.
+
+And hopefully the benefits and value exceed the benefits exceed the cost. And we have a net value. That's the theory.
+
+And let's articulate in some detail each of these categories. Because the other thing I've discovered in talking to organizations is that most of them have a good idea of why this might matter and understand several of these categories. But in most cases, some will go, I hadn't thought about that.
+
+And what it's doing is providing the tools for organizations and particularly chief sustainability officers and the like to think about all the dimensions of value and maybe discover some they hadn't thought about and therefore make a stronger case to their executives for implementation. That's the purpose of this page. So each of these little green boxes here, I haven't got to the red ones yet, has a section that basically provides some background description.
+
+What do you mean by market access? And then attempts to quantify the benefit and provide some references. So this market access unit price uplift has been around a while and anti counterfeiting.
+
+And you guys added, Michael, a lot of stuff around compliance costs here and finance costs and even subdivided finance into trade finance and capital finance and improved margins and cost of goods sold and so on. And then there's some material about benefits of digitization and automation and some references and some material about brand reputation and improved disclosures and so on. So I tweaked the improved disclosures one a bit because it added some slightly different thoughts.
+
+But one comment, Michael, is that the quantification numbers that you guys brought some quite good references of quantification, but they were generic. Like, for example, when brands become more sustainable, here's all the and the trouble is you can't assign all of the benefits from sustainability.
+
+[Speaker 3]
+Absolutely.
+
+[Speaker 1]
+Just the UNTP implementation, right?
+
+[Speaker 3]
+Correct, just the percentage of it.
+
+[Speaker 1]
+Here's all the sort of referenced metrics, but let's be conservative in how much of that we allocate to UNTP implementation. So that's basically as far as I got with it. I've still got to do the government one and community activation program.
+
+But let's go back to, has anybody got any questions on the structure of this?
+
+[Speaker 9]
+Yeah, I got a question.
+
+[Speaker 1]
+Yeah, what's up?
+
+[Speaker 9]
+Where do you get your body work done on your cars?
+
+[Speaker 6]
+Oh no, did you have a little crunch?
+
+[Speaker 9]
+Yeah.
+
+[Speaker 1]
+Hey, yeah.
+
+[Speaker 9]
+I just want to go get a club.
+
+[Speaker 1]
+That happens. All right. So, yeah, it's quite interesting stuff to think about this.
+
+And I think one of the reasons I just want to, it's not perfect yet, but the reason I want to get it merged is so the rest of us collectively can start to go back to the normal process of just reviewing content, making suggestions and changing it. So has anybody got any questions about this stuff? Or particularly any objections to merging what you see now into what is there now, which is much less, right?
+
+So here's what it's on there now. It's the same diagram, but the kind of the detail stops, right? A lot of emptiness.
+
+So a lot of it's been fleshed out. Any thoughts, objections, comments? Bhar?
+
+[Speaker 5]
+I just want to ask maybe how many different industry or business cases are we targeting just to start with here?
+
+[Speaker 1]
+So at the UNTP level, as opposed to the industry extension level, we're trying to be fairly generic, right? So it's not targeting a particular industry sector. It's just saying, here's the categories of value and the categories of cost and some means to estimate them.
+
+I think the reality is every, so the answer is just to one generic case for industry and one generic case for government. I think every organization that's making a case has their own internal business case process. And you want to give them basically a simple list of ideas and probably a spreadsheet with a sort of a really simple economic model that they could tweak and say, basically, here's a toolkit.
+
+Use it as you see fit to make a stronger case for change to your executive. I think when we work in industry extensions, we'll probably tailor this a bit and say, well, you know, what really are the strong drivers in food and agriculture or electrical and electronic and automotive or the construction industry and so on?
+
+[Speaker 5]
+Makes sense.
+
+[Speaker 1]
+Understood. Thank you. No worries.
+
+Any other comments, questions or objections?
+
+[Speaker 3]
+None for me, Steve. You know, for those that are part of been working on the business case pages, I meant to put a meeting out, invite out for you last night or yesterday evening, but events got in the way. So I will put one for Wednesday next week so we can clean up the last bits.
+
+I think we're pretty close. And also just review, go over, you know, what Steve is doing the PR on now to see how it fits with everything else. Because I think it looks from just watching as you scroll by, Steve, it looks pretty good.
+
+I don't certainly have any objections at all.
+
+[Speaker 1]
+All right. Thanks. I see there's a number of questions, comments in the chat.
+
+[Speaker 6]
+I have a question, Steve. Because, OK, so I've been working on the Word document. So, yeah, I know I'm looking for I'm working on looking for some links to some of the reference that are there.
+
+But besides that, on the GitHub part, when I see a request to your review pull request on what we just saw, does it mean basically if I have any objections or comments on what you have put or does it mean that I have to draft and complete what you have, what isn't there?
+
+[Speaker 1]
+No, it just means it's only comment on what is proposed. Every pull request is like that.
+
+[Speaker 6]
+Yeah. So comments or approve what is proposed. OK.
+
+[Speaker 1]
+Yes. Review and approve it or review it and say, I think you should change this. Or review and comment.
+
+Yeah. OK. It looks like there's a technical conflict.
+
+And I think it's because I upgraded my Docusaurus locally and it seems to have had some conflict with the remote one. So I can't merge this yet, but we'll fix it up a few minutes after this call. And the result will be what you saw on my local machine.
+
+This stuff will appear on the public site. So maybe we'll leave clicking that button for now because I've got to resolve this conflict.
+
+[Speaker 6]
+Oh yeah. And last question, Steve. What I see on the pull request, I cannot see on your local host thing, no?
+
+That's only you can see that.
+
+[Speaker 1]
+So it is in the pull request in the sense that it's just easier to look at a locally deployed one. So you can go here, look at a pull request and see what files have changed. You see that button?
+
+Yeah, I have this view. Sorry. So I have this view.
+
+Yeah. Then you can click this button, display the rich div. So you see a more human friendly change.
+
+But it's a little bit techy.
+
+[Speaker 6]
+As long as I'm only reviewing content, that's OK. And I don't need to worry about how it looks on the web page.
+
+[Speaker 1]
+I guess that's OK. There's basically two ways to suggest changes, right? One is never mind all the GitHub stuff.
+
+You can take any of these pages. Let's say this requirements one. And this is on the public site.
+
+And down the bottom, there's an edit this page button. And you can just click that, make changes, submit, and that'll create a pull request and all that behind in the background. The other one is, if you're going to make a substantial amount of changes, then it's best to set up a local version, make lots of changes, test them locally and then push them.
+
+That's something that's very easy for devs to do, technical people to do, and a bit more challenging for non-technical people. But it's easy to walk people through it. So if we have people on the call that feel a little bit concerned about how do I use this GitHub thing properly, because I want to do a large volume of content and would like to set up their local machine in the same way I have, very happy to have a call to walk through how to do that.
+
+Maybe we should update. Actually, what we'll do is put some much better instructions on there. There's a little very terse description here that says how to do this.
+
+But if I expand this into normal human language that says do this, install this, and do this to set up your local exactly as I have, I'll take that as an action before the next call to do that so that those that want to can enjoy the same experience. It's easier to work locally and test your changes before you commit them. Okay.
+
+All right. So I'll take it that we'll merge that once we fix that little technical hiccup. The next thing I wanted to chat about is basically how we manage the supporting the testing of all of these current implementation commitments.
+
+So this page here is, you can see down here, there's an implementations register. So this is, as opposed to extensions, we're a bit special. Those two things we spoke about today are entire industries committing to build extensions.
+
+This page down here is individuals, whether they're industry regulators, certifiers, or identity registers or software solutions, individually making a commitment to implement UNTP, right? So not the same as an extension. And unsurprisingly, at this stage, most of the commitments are from software providers that have some tools that they see value in making interoperable.
+
+I think over time, we'll see more. We've got, I think, one register from British Columbia. There's another one coming from Australia around cattle and some certifiers and one regulator and none from industry yet.
+
+I think most of the industry commitments will be in the industry extensions, not so much in UNTP. But any case, the reason I'm bringing this up is that there are, I don't know, 13 or something software providers. I expect there'll be more when, for example, the members of RBA start saying, okay, how do we do this?
+
+And they start pressuring their own incumbent software providers to support them. I expect there'll be more here, right? So could be hundreds.
+
+So the thing is, these are all commitments to implement, and all will need to test and all will encounter some issues and maybe need a bit of support. There isn't a paid framework for that. So what I'm thinking is a community ecosystem where everybody supports each other in working through the testing, but also collaboratively builds and extends the test suite itself.
+
+So there is another site. Let me see if I can find it.
+
+[Speaker 9]
+Where is it? S-U-N-T-P. There it is.
+
+[Speaker 1]
+Which is the UN Transparency Protocol test suite that has a bunch of, you know, we won't go through all this, but this is basically the site that helps an implementer who's made a commitment to work through the tests to confirm that their implementation is interoperable. 
+
+I think it's time to make it a UNTP community project, if you like. So the more technical people on this call, what I'm proposing to set up here is another group, a bit like Michael Shea's business group, but this time more technical, to take this test harness and own it as a community open source project and build a kind of an implementation community ecosystem where software providers can look at the site, test their product, ask questions on Slack. Somebody who's perhaps been through a test recently might say, oh, yes, I had that problem.
+
+Here's how you solve it, this sort of thing. See if we can create that kind of ecosystem of mutual support and ongoing improvement and development of the test suite itself. So I wanted to ask for your thoughts and ideas about that.
+
+There are a couple of people, I think one of them's on this call. Pat, are you on the call? Oh, and Nis.
+
+Pat and Nis are both here. Right. Of the people I've encountered, I can't imagine two better people than Pat and Nis to, if they don't mind, to take some leadership of this community of more technical people who will help continue to develop and improve the test case itself and not necessarily support every implementer, not asking that, but to kind of, if you like, coordinate the community of mutual support.
+
+So first of all, I just wanted to ask the group, what do you think about this idea? And then solicit hands up to take a little bit of ownership of it. Any thoughts or comments?
+
+[Speaker 2]
+Well, I think testing is always good and even probably required. There's many different ways to test software. I know, you know, there were some ways to test at the traceability group.
+
+They had some test suite and there's the W3C test suite. And then there's this test suite here, which want to test different things. I think also testing is a sequential thing, right?
+
+Like there are some things you want to test first before you test the end product of where you want to be. Sort of like building blocks, right? You want to make sure you can sign your credential before you want to make sure you can issue a digital product passport, for example.
+
+I like to divide testing into two sections, like a more technical conformance section and then a more business oriented testing where you start to have some, what we call behavior driven testing. So you kind of create your scenario about what you want to do or the story you want to tell, right? In this case, which is you have a product, right?
+
+The product came from raw material that went through some transformation. And you want to make sure that someone can, well, hopefully can get some information from this. And I think this is the interesting part about the UNTP and it is where we'll be able to do some interesting creative testing.
+
+But yeah, I think the first level, like some basic testing tools are also very, very useful for the community. Because not everyone will come in here with the same level of knowledge or experience. Want to make sure that everyone can get started.
+
+I know, for example, Jason on the team here did a lot of discovery in the program and he came a very long way and he had a lot of experience with this test tool. I'm sure you could probably share a bit of his feedback. But, you know, the test, it's important that the test give a path for the people who want to test their implementation to test against, right?
+
+Like a test should be like, I don't like that term, but should be almost like a game, right? Like you want to get all the score, right? You know, you have these things that you need to pass and you want to achieve these green check marks one after the other to get a score at the end.
+
+So I think test suites are good to give direction for implementers that might not be that familiar with the spec at the beginning.
+
+[Speaker 1]
+And then the middle layer is the semantics, the schemas, the specific digital product passports and so on from the UNTP. But I think what the diagram here is trying to show is that when you get to business specific testing, it does tend to get a little bit heavier. So I think the things, so the question I'm asking here or thinking is that what a technology product software vendor might test might be a bit different to what a feedlot running some software and participating in the agriculture industry might test.
+
+And as you get more and more industry extensions, I'd expect those are the places where you'll get those more business use case type testing. And so what this diagram is trying to show is that UNTP as a core will have a number of tech interrupt tests and it should not reinvent what the W3C is already doing and just lean on that wherever possible. And then we'll add its UNTP specific schema testing and the like, and may have a little bit of linked data testing.
+
+This last one is, for example, can you verify a digital product passport, find the digital identity anchor, follow the link to it, verify that and confirm that the issuer of one is the subject of another. That might be the limit of what you might do in UNTP testing. But as you move to an industry extension, you probably have a lot more of this business rules and linked data testing and probably very little or nothing that's technical testing that's specific to that industry extension.
+
+So that's what this diagram is trying to show. Any thoughts or comments on that?
+
+[Speaker 2]
+I think it nails it down really well. Because oftentimes, if I look at the first block, the technology interoperability testing, I notice most of the time when you do this, when you have these playgrounds or these test suite, it's doing a bit of blind testing. You have a test client that just gets some data, tries to figure out what it is and assess if it's OK or not.
+
+But as you move along and you get closer to your business use case, then your test client knows what to expect. As you get closer to production, your software, you know what you're going to look for, you know what you're going to expect. But when you start, your software doesn't have that business configuration.
+
+So we're looking at very technological level, like what proof you're using, the issuer did methods and all these things, JSON schemas. But as you get closer to the end, like you mentioned, with the extension, you can really fine tune it to, you know exactly, like you mentioned in the food agriculture, you know you're going to look for some certification about what did the cow eat? It's a very rudimentary level, but you know, there's going to be very specific things you're going to look for.
+
+That's right.
+
+[Speaker 1]
+Yeah. into a framework that gets better and better.
+
+[Speaker 8]
+Right now, I'm sort of getting a JSON, then I'm testing that JSON against its corresponding schema. And it sort of just doesn't really make sense. There are things that can make sense.
+
+If it's an actual instance being tested, that would make sense. But just showing that you have the UNCP schema represented doesn't really do anything. So right, but we'll find ways that do make sense.
+
+I think there's a discussion to be had here about what exactly are these testing. On the technical side, I would also, I've said this before, I don't know if this is the place to do that technical interoperability testing, if that doesn't belong better elsewhere.
+
+[Speaker 1]
+And yes, I think I said at the beginning, it, there is an interrupt test suite already at the W3C. And there's no reason. I mean, you should leverage that right and not duplicate it.
+
+So the only question in my mind would be, is there something in UNTP, that's a little bit different or extra to what's on the on the W3C? And if so, just test that extra bit. So the instructions would be go over there and confirm your conformance with the UNTP, sorry, the W3C test suite, and then do this extra bit if there is an extra bit.
+
+Yeah, there probably is. I think rendering templates and things like that, maybe a few things, right. But yeah, so I think we're on the same page.
+
+And two, I haven't looked in detail at this test suite, I'll be frank, right, I've been focusing on UNTP content and the like. I had in my mind, a reference implementation that's running either locally or remotely, that can issue credentials that you can verify instances that you can then verify on your software, and also your software can issue and verify on the reference implementation instance level, and would test technical interoperability and schema conformance, and many other sort of semantic business rules that you might throw in. That's the purpose of it.
+
+Yeah. All right. Yeah, yeah.
+
+Yeah. So that that might mean, you know, what? Yeah, yeah.
+
+So and Ash, I know Ashley's on the call, who did a lot of this work in AATP. So I think if there's the right intent here and the right pragmatism about what are we trying to achieve, which is ultimately to make sure that implementations of UNTP are interoperable. You know, you don't want the situation where a large community goes live and starts issuing credentials that other parts of the community can't verify, for example, in a technical and schema sense.
+
+Patrick, you got your hand up?
+
+[Speaker 2]
+Yeah. And I think like there's something, you know, there's testing, but there's also reporting, right, which is pretty important. And this can be useful for developers to show their team leader or things, the progress that they've made, like there is this test suite, and we've got these check marks, and it's a good way to kind of quantify the work that was done, because that can be very abstract.
+
+Sometimes, you know, it's very difficult to explain to your manager that you've configured a crypto suite, or, you know, you've done these JSON schema, and having these sort of nicely presented report is like, okay, we've met these criteria. And then this also ebbs down the line if you, you know, because what will happen, without a doubt, is people will pass this test suite, but they'll still have issues, right? Like, it's not because everyone passes this suite that they are 100% compatible, but at least this enables to sort of iron out some things and help to pinpoint the failure points that you can have.
+
+And, you know, as much as, you know, pasting a VC somewhere and getting a response, does it match if it seems trivial, for some people, it could be very useful, right? Like people that are new in this space, or, you know, maybe like something we do in BCGov here, we have, you know, other lines of business, like, you know, we have the digital trust team, we're working on this, and we're, you know, really learning what UNTP, but then when we're going to delegate some work to another line of business, which are new to this, like, we don't want them to go through the whole learning process that we've made.
+
+We want them to be able to have the tools that can assist them to, you know, integrate their lines of business a bit quicker, right?
+
+[Speaker 1]
+Exactly. Yes.
+
+[Speaker 2]
+Because, you know, it's not true that the digital trust team will do all the work for all the different ministries that have data that could participate in there, right? There's different teams, and they have varying level of technical knowledge. And, you know, to my point, these test suites should, when you paste your JSON, and you get a response, you should get a few things that tell you this is what you need to work on, right?
+
+Like, this property, it's not quite right. And, you know, what they can do, that's debatable, but at least that they have some kind of direction to go. I think that's, that's a value you could have.
+
+[Speaker 1]
+Yes, I remember you showed me a reporting framework that gives exactly that nice dashboard, right? Because what I'd imagine is also that when one of those implementers has run through the testing and claimed conformance, they make a pull request. Because what I've done, and if you look at the kind of the structure under here, is that in their GitHub repository, sorry, implementations, where is it?
+
+Every commitment has its own folder, find transmute industries there. All it's got in it at the moment is a logo. But I can imagine putting a nicely or renderable, if not rendered test report in there, so that you basically run your test, put the report in there.
+
+And then, you know, on this implementations page, where it says test report, that would be a hyperlink that takes you to evidence that the test case has been run, right? So, then you show this to your test holder, and it's exactly, exactly.
+
+[Speaker 3]
+And it's a credential, right?
+
+[Speaker 2]
+Well, yeah, that's where you want to do it. You do an open badge.
+
+[Speaker 1]
+So, um, we're running out of time here. I just wanted to basically test that our thoughts are similar around the purpose of testing and these layers of testing and that it is the right time to just to find generous volunteers to work on this as a technical team. And I won't ask for commitment now, but I'm really hoping that at least Patton is put their hand up a little bit to put you on the spot.
+
+But we're at two minutes to go. And I'm sensitive of everyone's time. Has anybody got any last thoughts or comments about today's meeting?
+
+No? Okay. Well, look, I'm quite happy with today.
+
+We've got two major industry sectors making commitments. That's, that's really quite satisfying. And we've made progress on the business case content, which is really important content.
+
+And hopefully we're going to spin off a group that will help the technical stuff get right. So those are three big wins for me today. And I really appreciate your time and support and welcome to the new members.
+
+So with that, I'll stop sharing. And say thank you to everyone. Thanks, Steve.
+
+Great job.
+
+[Speaker 9]
+Thanks, Steve. Thank you. Thanks, Steve.
+
+[Speaker 1]
+Thanks, everyone.
+
+[Speaker 9]
+Bye. Good meeting.

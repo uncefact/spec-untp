@@ -18,7 +18,7 @@ A group mailing list is maintained and can be used by any list member to post me
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
 * Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 28th Nov 2024.  [Invitation Link](https://calendar.app.google/q9DX8SANXSCKrJGW7).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
-* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 14th Nov 2024. [Invitation link](https://calendar.app.google/E6wLvBxCJ7VgAvd8A).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
+* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 12th Dec 2024. [Invitation link](https://calendar.app.google/E6wLvBxCJ7VgAvd8A).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
 
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
@@ -30,6 +30,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-11-14| [The UNTP working group discussed recent industry commitments, advanced business case documentation, and proposed a community-driven testing support ecosystem to enhance UNTP implementation and interoperability.](#2024-11-14-meeting-summary)|[video](https://us02web.zoom.us/rec/share/diHIQ18nhFsX7h5bEaNia9n9FxuS3GYBaLZdSp7MxEKVjhu7PiuVi3VYhUYaCd5r.lnj0ChgXR4TskJuU)|[transcript](../../meetings/2024-11-14-Recording.txt)|
 |2024-10-31| [The team discussed updates on UNTP governance, digital product passport collaborations, and the methodology for industry-specific extensions, focusing on security, visibility, and implementation compliance.](#2024-10-31-meeting-summary)|[video](https://us02web.zoom.us/rec/share/IHBm8m69es-EaEl_Je01fsqUNAzY4QuumwJZaeI0ihah6wrZADAmyRC2bK8Jt-lZ.3FxFLsOE9Fjkvsvx)|[transcript](../../meetings/2024-10-31-Recording.txt)|
 |2024-10-17| [The team discussed the latest updates on UNTP credential implementation, focusing on testing, identity resolution processes, and potential trust anchors for bulk commodity tracking.](#2024-10-17-meeting-summary)|[video](https://us02web.zoom.us/rec/share/EgwRbS_jvLwwsLqJ4ddM55Je-OnpxkvDxcn6WhsWwZZwKS35Ts6JDXneurvWfxgQ.D9GdxgqUbFOPmCv3)|[transcript](../../meetings/2024-10-17-Recording.txt)|
 |2024-10-03| [The meeting focused on reviewing and refining the business case content for Digital Product Passport implementation, addressing technical bugs, and preparing the materials for broader feedback and publication.](#2024-10-03-meeting-summary)|[video](https://us02web.zoom.us/rec/share/KDARf7eHzuXRW4F2OkrF7JgNgMvnSHkBx_3UXf3LEpAo2jTSYTghVBv2gvAr75ig.QsEeOK3KSd4VlcnE)|[transcript](../../meetings/2024-10-03-Recording.txt)|
@@ -65,6 +66,46 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+
+## 2024-11-14 Meeting Summary
+
+**Meeting Summary:**
+
+On **November 14, 2024**, the UNTP working group convened to review recent updates, discuss business cases, and explore testing strategies for the UN Transparency Protocol (UNTP) implementation. The meeting, hosted by **Steve (Speaker 1)**, began with a brief welcome and a reminder of upcoming meetings that cater to global time zones.
+
+### Participant Introductions:
+
+- **Adriana Zachary (Speaker 7)**: CEO of Circular Economy Asia, volunteered on digital product passport initiatives and contributes to user access, data authentication, and standards working groups.
+- **Pat (Speaker 5)**: Technical Product Manager from San Francisco with experience in digital product passports for OEMs.
+- **Nancy (Speaker 3)**, **Luca (Speaker 6)**, **Michael (Speaker 3)**, and **Zach (Speaker 10)** also actively contributed to the conversation, particularly regarding business cases and technical support needs.
+
+### Key Discussion Points:
+
+1. **New Commitments from Industry Sectors**:
+   - The **Responsible Business Alliance (RBA)**, representing major electronics and automotive companies, committed to implementing UNTP extensions for digital product passports and traceability.
+   - The **International Code Council**, in collaboration with Standards Australia, aims to create sustainability vocabulary for building codes. This commitment includes alignment with European Union regulations.
+
+2. **Business Case Development**:
+   - Michael has been refining the business case templates to differentiate between **government** and **industry** needs. Steve reviewed the new layout, adding contextual insights on historical and current trends in corporate sustainability, noting a shift from regulatory compliance toward strategic integration.
+   - The business case content, which includes **value and cost categories** for implementing UNTP, is structured to assist organizations in building tailored cases for executives. The group agreed on the necessity of further refinement, with Michael suggesting a follow-up review session.
+
+3. **Implementation and Testing**:
+   - To support the various software providers implementing UNTP, Steve proposed creating a **community-driven technical support ecosystem**. The group discussed leveraging an open-source approach for the test suite, allowing mutual support and continued development.
+   - **Pat** and **Nis** were suggested as potential leaders of this technical support group, which would guide implementers through the **UNTP test suite**. Testing will include both technical conformance and business use case validations specific to industries.
+
+4. **Testing Structure**:
+   - The testing approach includes three layers:
+     - **Technical interoperability** for ensuring compliance with W3C standards.
+     - **Schema conformance** for validating UNTP’s unique frameworks.
+     - **Industry-specific testing** for sectors using custom extensions.
+   - **Jason (Speaker 2)** emphasized reporting tools to document testing results, which could serve as valuable evidence of compliance for implementers.
+
+### Closing Remarks:
+
+Steve concluded by celebrating the day’s progress, noting the importance of industry extensions and the growth of the business case documentation. He thanked the team for their collaboration and welcomed further input from new and existing members.
+
+The next steps involve finalizing the business case documentation, establishing a technical testing support group, and resolving any issues with the public release of content updates. The meeting adjourned with gratitude for the participants' contributions and commitments to the UNTP initiative.
 
 ## 2024-10-31 Meeting Summary
 
