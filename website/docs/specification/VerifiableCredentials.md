@@ -7,11 +7,11 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Overview
+## Overview
 
 The World-Wide-Web Consortium (W3C) has defined a [data model for Verifiable Credentials](https://www.w3.org/TR/vc-data-model-2.0/) (VCs). A VC is a portable digital version of everyday credentials like education certificates, permits, licenses, registrations, and so on. VCs are digitally signed by the issuing party and are tamper evident, privacy preserving, revocable, and digitally verifiable. The UN has previously assessed this standard and has recommended its use for a variety of cross border trade use cases in a recent [white paper](https://unece.org/trade/documents/2023/10/white-paper-edata-verifiable-credentials-cross-border-trade). VCs are inherently decentralized and so are an excellent fit for UNTP which recommends that passports, credentials, and traceability events are all issued as W3C VCs. A related W3C standard called [Decentralized Identifiers (DIDs)](https://www.w3.org/TR/did-core/) provides a mechanism to manage the cryptographic keys used by verifiable credentials and also to link multiple credentials into verifiable trust graphs. DIDs are not the same as the business / product / location identifiers maintained by authoritative agencies - but can be linked to them.
 
-# Business requirements for UNTP application of VCs
+## Business requirements for UNTP application of VCs
 
 Verifiable Credentials technology is one of the key tools in the UNTP anti-green-washing toolbox. But there are many different technical implementation options which presents an interoperability risk - namely that credentials issued by one party will not be understandable or verifiable by another party. UNTP will not design new technical standards as that is the role of technology standards bodies such as W3C or IETF. However, be recommending the use of the narrowest practical set of technical options for a given business requirement, the UNTP can enhance interoperability.
 
@@ -30,7 +30,9 @@ A key design principle that is applicable to decentralized ecosystems such as UN
 | VC-09 | Portability    | VC DID method recommendations must allow users (issuers) to move their DID documents between different service providers so that long duration credentials can remain verifiable even when issuers change service providers.                      | [DID methods](#did-methods)             |
 | VC-10 | Evolution      | VC technology is evolving and UNTP recommendations must evolve as newer tools and versions become ubiquitous                                                                                                                                      | Roadmap                                 |
 
-# VC basic profile
+## Verifiable Credential Profile
+
+### VCDM profile
 
 The VC basic profile is designed to be as simple, lightweight, and interoperable as possible. A conformant implementation
 
@@ -41,7 +43,7 @@ The VC basic profile is designed to be as simple, lightweight, and interoperable
 - MUST implement the enveloping proof mechanism defined in [W3C VC JOSE / COSE](https://www.w3.org/TR/vc-jose-cose/) with JOSE (Section 3.1.1)
 - SHOULD implement the embedded proof mechanism defined in [W3 Data Integrity proof](https://www.w3.org/TR/vc-data-integrity/)
 
-# DID methods
+### DID methods
 
 There are a large number of did methods listed in the [W3C did register](https://www.w3.org/TR/did-spec-registries/#did-methods). It is reasonable to expect that this proliferation of did methods will consolidate to a much smaller number of did methods, each designed to meet a specific business need. In future the UNTP may provide a did method decision tree with different methods for different use cases (eg legal entities vs products). In the meantime, a conformant implementation
 
@@ -50,20 +52,20 @@ There are a large number of did methods listed in the [W3C did register](https:/
 
 > Note that there is activity within the VC technical community to define new did methods that achieve the ubiquity of did:web whilst still maintaining portability across web domains. For example [Trusted DID Web](https://bcgov.github.io/trustdidweb/). This work may impact future UNTP DID method recommendations.
 
-# Render Method
+### Render Method
 
 To support uptake across supply supply chain actors with varying levels of technical maturity, human rendering of digital credentials is essential. A conformant implementation
 
 - SHOULD use the `renderMethod` property as defined in the [VC data model](https://www.w3.org/TR/vc-data-model-2.0/).
 
-# Presentations
+### Presentations
 
 Verifiable Presentations (VP) are widely used in the verifiable credentials ecosystem to support holders to combine one or more credentials in a digital wallet and then present them for in-person or online verification purposes. The VP is signed by the holder did and so provides a holder binding mechanism. In UNTP supply chain implementations, the subject of most claims is an inanimate object (eg bar-coded goods) and digital credentials about the goods are discovered by any party that has access to the goods. The box of goods does not create verifiable presentations on demand and the binding is to the identity of the goods. A conformant UNTP implementation
 
 - MUST issue and publish product passports, product conformity credentials, and traceability events as verifiable credentials and MUST include the identifier of the goods within the VC subject.
 - MAY exchange these and any other credentials as verifiable presentations in wallet-to-wallet transfers or any other method.
 
-# Vocabularies
+## Vocabularies
 
 A shared understanding of the meaning of claims made in verifiable credentials is essential to interoperability. To this end, conformant UNTP implementations
 
@@ -84,7 +86,7 @@ The data governance architecture for UNTP credentials is shown below. the key po
 ![UNTP Credential Data Governance](CredentialVocabularyArchitecture.png)
 
 
-# Roadmap
+## Roadmap
 
 Future versions of this specification will
 
