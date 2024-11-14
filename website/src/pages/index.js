@@ -35,8 +35,8 @@ export default function Home() {
       title="UN Transparency Protocol"
       description="Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.">
       <main className="homepage-content">
-        <HomepageHero/>
-        <HomepageFeatures/>
+        <HomepageHero />
+        <HomepageFeatures />
       </main>
     </Layout>
   );

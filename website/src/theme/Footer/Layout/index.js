@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import './footer.scss';
+import './footer.css';
 
 export default function FooterLayout({style, links, copyright}) {
   return (
