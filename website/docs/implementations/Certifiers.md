@@ -37,7 +37,7 @@ Summary list of conformity assessment bodies that have implemented or plan to im
 
 |Conformity Scheme|Description|Topic|UNTP Scope|Test Report|
 |--|--|--|--|--|
-|[Steel Products](https://ghgprotocol.org/)|The Product Certification Scheme certifies steel construction products are manufactured to Australian and New Zealand Standards and other nominated technical standards. It provides users with certainty that steel manufacturers and producers of fabricated materials adhere to necessary specifictions across the construction sector|Safety|DPP, DCC v0.5, v1.0|TBA |
+|[Steel Products](https://steelcertification.com/sustainability-certification)|The Product Certification Scheme certifies steel construction products are manufactured to Australian and New Zealand Standards and other nominated technical standards. It provides users with certainty that steel manufacturers and producers of fabricated materials adhere to necessary specifictions across the construction sector|Safety|DPP, DCC v0.5, v1.0|TBA |
 
 ### [The Copper Mark](https://coppermark.org/)
 
