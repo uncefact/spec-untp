@@ -31,9 +31,9 @@ Summary list of registered UNTP Extensions
 
 |Logo|Implementation Statement|
 |--|--|
-|![RBA](../../extensions/RBTP/logo.png)|he Responsible Business Alliance (RBA) is a coalition of companies driving sustainable value for workers, the environment and business throughout the global supply chain. Our members, suppliers and stakeholders collaborate to improve working and environmental conditions and business performance through leading standards and practices. Transparency and traceability in value chains is key to building confidence and value of sustainable business practices. Accordingly, the RBA is pleased to build upon the foundational capabilities provided by the UN Transparency Protocol (UNTP) to deliver a suite of interoperability standards for the electrical and electronic goods and automotive parts industries. |
+|![RBA](../../extensions/RBTP/logo.png)|The Responsible Business Alliance (RBA) is a coalition of companies driving sustainable value for workers, the environment and business throughout the global supply chain. Our members, suppliers and stakeholders collaborate to improve working and environmental conditions and business performance through leading standards and practices. Transparency and traceability in value chains is key to building confidence and value of sustainable business practices. Accordingly, the RBA is pleased to build upon the foundational capabilities provided by the UN Transparency Protocol (UNTP) to deliver a suite of interoperability standards for the electrical and electronic goods and automotive parts industries. |
 
-** Credential Extensions **
+**Credential Extensions**
 
 |Credential|Description|Extension of|
 |--|--|--|
@@ -56,7 +56,7 @@ Summary list of registered UNTP Extensions
 |--|--|
 |![UDP](../../extensions/UDP/logo.jpg)|The Universal Data Protocol (UDP) is an extension of the UNTP and is seeking to leverage its decentralised framework to provide transparent, trustworthy, and verifiable data in the global built environment. The UDP is an open protocol that will allow for the efficient exchange of verifiable data, enhancing reporting and compliance across jurisdictions and life cycle stages. This project seeks to improve the interoperability of data across the built environment, aiming to make reporting more cost effective, accurate and efficient for all stakeholders. |
 
-** Credential Extensions **
+**Credential Extensions**
 
 |Credential|Description|Extension of|
 |--|--|--|
@@ -73,7 +73,7 @@ Summary list of registered UNTP Extensions
 |--|--|
 |![AgTrace](../../extensions/AATP/logo.jpeg)|The AATP is an adaptation of the UN Transparency Protocol and is designed to help Australian producers meet emerging environmental, social, and governance (ESG) regulatory and consumer requirements. Operating as a governance framework, the AATP facilitates the interaction between multiple certifiers, farm systems, and enterprise systems. Interoperability and traceability tools help the Australian agriculture sector attain higher quality information about the value of Australian-made products. |
 
-** Credential Extensions **
+**Credential Extensions**
 
 |Credential|Description|Extension of|
 |--|--|--|
@@ -89,10 +89,10 @@ Summary list of registered UNTP Extensions
 * Geography: Global
 
 |Logo|Implementation Statement|
-|--|--|--|
+|--|--|
 |![UNECE](../../extensions/CRMTP/logo.png)|In line with the United Nations (UN) Sustainable Development Goals (SDGs) and building on the success of the UNECE Textile & Leather traceability project, this project seeks to empower the Critical Raw Material (CRM) industry with practical, low cost tools for digital data exchange to achieve product differentiation, maximize the value of existing permitting and ESG compliance efforts, counter green-washing, and support a more sustainable global economy. This project supports the UN focus on extractive industries and leverages the UN Center for Trade Facilitation and Electronic Business' (UN/CEFACT) role and capabilities to deliver digital standards for sustainable supply chains. |
 
-** Credential Extensions **
+**Credential Extensions**
 
 |Credential|Description|Extension of|
 |--|--|--|
