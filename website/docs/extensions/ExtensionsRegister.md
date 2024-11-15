@@ -15,7 +15,7 @@ Summary list of registered UNTP Extensions
 |Extension Name |Extension Owner|Geographic Scope|Industry Scope|Status|
 |--|--|--|--|--|
 |[Responsible Business Transparency Protocol (RBTP)](#responsible-business-transparency-protocol)|[Responsible Business Alliance](https://www.responsiblebusiness.org/)| Global|Electrical, electronic & automotive parts|new|
-|[UDP for the Global Built Environment](#udp-for-the-global-built-environment)|[Standards Australia](https://www.standards.org.au/) and the [International Code Council](https://www.iccsafe.org/)|Global|Construction|new|
+|[Universal Data Protocol (UDP) for the Global Built Environment](#universal-data-protocol-for-the-global-built-environment)|[Standards Australia](https://www.standards.org.au/) and the [International Code Council](https://www.iccsafe.org/)|Global|Construction|new|
 |[Australian Agriculture Traceability Protocol (AATP)](#australian-agriculture-traceability-protocol)|[Food Agility CRC](https://www.foodagility.com/)|Australia|Agriculture|draft| 
 |[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|draft| 
 
@@ -45,7 +45,7 @@ Summary list of registered UNTP Extensions
 |Digital Battery Passport (DBP) |A digital product passport that is designed to meet the needs of RBA members whilst also offering compliance with emerging EU standards. |Digital Product Passport |
 |Electrical Facility Record (EFR) |A digital facility record tailored to the needs of manufacturing facilities in the electrical and electronic industry sectors and their sustainability performance. |Digital Facility Record |
 
-### UDP for the Global Built Environment
+### Universal Data Protocol for the Global Built Environment
 
 * Extension Launched:  Nov-2024
 * Release Date: TBA
@@ -54,7 +54,7 @@ Summary list of registered UNTP Extensions
 
 |Logo|Implementation Statement|
 |--|--|
-|![UDP](../../extensions/UDP/logo.jpg)|The UDP is an extension of the UNTP and is seeking to leverage its decentralised framework to provide transparent, trustworthy, and verifiable data in the global built environment. The UDP is an open protocol that will allow for the efficient exchange of verifiable data, enhancing reporting and compliance across jurisdictions and life cycle stages. This project seeks to improve the interoperability of data across the built environment, aiming to make reporting more cost effective, accurate and efficient for all stakeholders. |
+|![UDP](../../extensions/UDP/logo.jpg)|The Universal Data Protocol (UDP) is an extension of the UNTP and is seeking to leverage its decentralised framework to provide transparent, trustworthy, and verifiable data in the global built environment. The UDP is an open protocol that will allow for the efficient exchange of verifiable data, enhancing reporting and compliance across jurisdictions and life cycle stages. This project seeks to improve the interoperability of data across the built environment, aiming to make reporting more cost effective, accurate and efficient for all stakeholders. |
 
 ** Credential Extensions **
 
