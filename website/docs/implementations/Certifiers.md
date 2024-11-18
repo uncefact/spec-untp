@@ -12,7 +12,7 @@ Summary list of conformity assessment bodies that have implemented or plan to im
 
 
 |Organisation Name |Accreditation|Geographic footprint|UNTP Scope|Status|
-|--|--|--|--|
+|--|--|--|--|--|
 |[ACRS (Australasian Certification Authority for Reinforcing and Structural Steel)](#acrs)|Global MRA|AU, NZ|DPP, DCC|planned| 
 |[The Copper Mark](#the-copper-mark)|Industry|GLobal|DCC|planned| 
 
@@ -33,7 +33,7 @@ Summary list of conformity assessment bodies that have implemented or plan to im
 |--|--|
 |![Logo](../../implementations/steelcertification.com/logo.png) | ACRS is the leading CAB for reinforcing and structural steel in Australia. We have committed to implement UNTP to support the local steel industry and to help facilitate the transition to a more transparent supply chain that adds value to the building and manufacturing industries. |
 
-** Scheme Information **
+**Scheme Information**
 
 |Conformity Scheme|Description|Topic|UNTP Scope|Test Report|
 |--|--|--|--|--|
@@ -52,7 +52,7 @@ Summary list of conformity assessment bodies that have implemented or plan to im
 |--|--|
 |![Logo](../../implementations/coppermark.org/logo.png) | The Copper Mark is the leading assurance framework promoting responsible practices in the copper, molybdenum, nickel, and zinc value chains. It intends to implement the UNTP to support the piloting of a full value chain approach, promoting transparency and ensuring the highest levels of integrity in their standards. |
 
-** Scheme Information **
+**Scheme Information**
 
 |Conformity Scheme|Description|Topic|UNTP Scope|Test Report|
 |--|--|--|--|--|
