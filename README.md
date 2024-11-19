@@ -36,12 +36,28 @@ If you are going to be a regular contributor and/or you want to propose more sig
 
 ## Running a local UNTP website
 
-The UNTP website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. To run it locally:
+The UNTP website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. 
+
+> *Note: You can copy code snipets below and paste them to your terminal, just remove `$` sign, that indicates that those are commands to execute in a terminal*
+
+To run it locally:
 
 1. if you don't already have node.js and NPM isnatlled then install them using the [Node Installer](https://nodejs.org/en/download/prebuilt-installer) - select the "prebuilt installer" and chose the right optoins for your mac or pc.
 2. Open your command line / terminal window. On Mac you'll find it in `Applications`->`Utilities`->`Terminal`.
-3. Find the GitHub folder that has the cloned UNTP repository you created as described in the "Complex changes" section. Hint `ls` command will list the files in the current folder and `cd someFolder` will move you to that folder. `cd ..` will move you back up a folder level. Use `ls` and `cd` till you are in the `website` folder of the UNTP repository.
+3. Find the GitHub folder that has the cloned UNTP repository you created as described in the [complex changes](#more-complex-changes) section. Hint `ls` command will list the files in the current folder and `cd someFolder` will move you to that folder. `cd ..` will move you back up a folder level. Use `ls` and `cd` till you are in the `website` folder of the UNTP repository.
+```
+$ cd ~/GitHub/spec-untp/website/
+```
 4. If you don't already have Yarn installed then type `npm install --global yarn`. Yarn is a dependency manager that will keep all your local bits and pieces of website software up to date.
+```
+$ npm install --global yarn
+```
 5. Type `yarn install --frozen-lockfile` to install the dependencies needed for the website (which includes docusaurus).
+```
+$ yarn install --frozen-lockfile
+```
 6. Type `yarn start`. This will launch the website and open it in a browser windo on your local machine at `http://localhost:3000/spec-untp/`. Whenever you make changes to UNTP Markdown files, you'll see the change on your local website.
+```
+$ yarn start
+```
 7. To stop the website, enter "Ctrl+C" in the terminal window. You can start it again anytime by navigating to the `website` folder as described above and typing `yarn start`. You don't need to re-install node or yarn or docusaurus.
