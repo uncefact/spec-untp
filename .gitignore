@@ -5,3 +5,4 @@ node_modules
 .docusaurus
 
 website/build/
+yarn.lock
