@@ -21,7 +21,7 @@ Version 0.5.0 release artifacts can be used for pilot testing.
 
 * [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0.5.0/)
 * [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.5.0.json)
-* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.5.0.json)
+* [Sample JSON Instance](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.5.0.json)
 
 ### Latest Development Version
 
@@ -32,9 +32,15 @@ Latest development versions are used to reflect lessons learned from pilots but 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dpp/0/versions)** page.
 
 
-### Visualization
+### Default Render Template
 
-A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/DigitalProductPassportRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Template Design](../../samples/DigitalProductPassportRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+
+### Sample Credential
+
+|URL|QR|Description|
+|--|--|--|
+|[Sample Digital Battery Passport](https://untp.showthething.com/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2Fbc075c5f-2304-4b3f-bb24-46d9fa9a8e60.json%22%7D%7D)|![Battery Passport Example](untp-dpp-demo.png)|A sample digital product passport as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be dlownloaded via the download button.|
 
 
 ## Overview
@@ -326,8 +332,3 @@ Traceability Information is an array of TraceabilityPerformance objects which ar
 Conformity information is included in the DPP as an array of UNTP `Declaration` structures. The same structure is re-used for third party assessments in UNTP Digital Conformity Credentials (DCC).  Please refer to the [Sustainability Vocabulary Page](SustainabilityVocabularyCatalog.md) for further information and examples.
 
 
-## Working examples from pilot projects
-
-| Project | DPP Version | Description       | Credential                                                                      | Rendered View                                                                                                                                                                                                                                                   |
-| ------- | ----------- | ----------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AATP    | 0.1.0       | Packaged Meat DPP | [sample DPP VC](../../samples/au-agriculture/vc-dpp-0.1.0-au-meat-product.json) | [DPP VC Viewer](https://web.agtrace.showthething.com/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fagtrace-processor-verifiable-credentials.s3.ap-southeast-2.amazonaws.com%2F9359502000041%2Fde0ff0c2-cec8-4cca-aa84-fac75c75103c.json%22%7D%7D) |

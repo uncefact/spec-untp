@@ -23,10 +23,16 @@ Version 0.5.0 release artifacts (when available) are suitable for pilot testing.
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
-* JSON-LD @context - https://test.uncefact.org/vocabulary/untp/dia/0.2.1/
-* JSON Schema (full credential) - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-schema-0.2.1.json
-* JSON Schema (credentialSubject only) - https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.1/artefacts/jsonSchemas/RegisteredIdentity.json?class=RegisteredIdentity 
-* Sample Instance - https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.1.json
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dia/0.2.1/)
+* [JSON Schema (full credential)](https://test.uncefact.org/vocabulary/untp/dia/untp-dia-schema-0.2.1.json)
+* [JSON Schema (credentialSubject only)](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.1/artefacts/jsonSchemas/RegisteredIdentity.json?class=RegisteredIdentity)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.1.json)
+
+### Sample Credential 
+
+|URL|QR|Description|
+|--|--|--|
+|[Sample Digital Identity Anchor](https://untp.showthething.com/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2F67aea5a9-e895-4c1e-b263-861dfddf63aa.json%22%7D%7D)|![Sample Digital Identity Anchor](untp-dia-demo.png)|A sample digital identity anchor as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be dlownloaded via the download button.|
 
 ### Version History
 

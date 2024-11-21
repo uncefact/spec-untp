@@ -32,11 +32,15 @@ Latest development versions are used to reflect lessons learned from pilots but 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dcc/0/versions)** page.
 
 
-### Visualization
+### Default Render Template
 
-A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/DigitalConformityCredentialRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Template Design](../../samples/DigitalConformityCredentialRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
+### Sample Credential
 
+|URL|QR|Description|
+|--|--|--|
+|[Sample Battery Performance and Safety Certificate](https://untp.showthething.com/verify/?q={"payload"%3A{"uri"%3A"https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2F12615fb1-1e15-4389-92ba-b031fa42d265.json"}})|![Sample Battery Performance and Safety Certificate](untp-dcc-demo.png)|A sample digital conformity credential as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be dlownloaded via the download button.|
 
 ## Overview
 

@@ -32,10 +32,15 @@ Latest development versions are used to reflect lessons learned from pilots but 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dfr/0/versions)** page.
 
 
-### Visualization
+### Default Render Template
 
-A UNTP digital traceability event may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/DigitalFacilityRecordRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+A UNTP digital facility record may be rendered in any format desired by the issuer. However a default **[Template Design](../../samples/DigitalFacilityRecordRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
+### Sample Credential 
+
+|URL|QR|Description|
+|--|--|--|
+|[Sample Battery Manufacturing Facility Record](https://untp.showthething.com/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2F936fe321-94ad-4b0b-8690-f6b25da1fc7f.json%22%7D%7D)|![Sample Battery Manufacturing Facility Record](untp-dfr-demo.png)|A sample digital facility record as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be dlownloaded via the download button.|
 
 ## Overview
 
