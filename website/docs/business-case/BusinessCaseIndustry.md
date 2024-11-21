@@ -85,7 +85,7 @@ A study by the Global Reporting Initiative (GRI) found that companies with stron
 #### Cost of Goods Sold
 A report by McKinsey & Company indicates that companies with optimized supply chain financing can reduce their cost of goods sold by 5% to 10% due to lower financing costs and improved supply chain efficiencies.
 
-* *References* McKinsey & Company, "Supply Chain Finance: The Key to Unlocking Working Capital," 2019.
+* *References* McKinsey & Company, ["Supply Chain Finance: The Key to Unlocking Working Capital," 2019](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/unlocking-success-in-digital-transformations)
 
 ### Digitalisation Efficiency
 
