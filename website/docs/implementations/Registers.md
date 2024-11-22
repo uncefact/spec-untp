@@ -16,7 +16,7 @@ Register types are
 
 
 |Register Name|Type|UNTP Scope|Geographic scope|Status|
-|--|--|--|--|
+|--|--|--|--|--|
 |[Government of British Columbia Org Book](#sample-register)|Organisation|IDR, DIA|Canada|planned| 
 | | | | | |
 
@@ -34,9 +34,9 @@ Register types are
 |--|--|
 |![BC Gov](../../implementations/orgbook.gov.bc.ca/logo.png)|The Government of British Columbia (BC) sees UNTP implementation as an opportunity to enable producers of raw materials in the province of BC to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
 
-** Registered Identifier Schemes**
+**Registered Identifier Schemes**
 
 |Scheme|Description|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
-|--|--|--|--|--|--|--|
+|--|--|--|--|--|--|
 |[BC Org Book](https://orgbook.gov.bc.ca/)|Public verifiable credential register (VCR) of organisations registered in the province of Brish Columbia|DCC|v0.5, v1.0|TBA|TBA |
 
