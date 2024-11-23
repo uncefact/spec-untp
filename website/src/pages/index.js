@@ -1,9 +1,18 @@
-import React from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Pledges from '@site/src/components/Pledges';
 import HomeHeroImageUrl from '@site/static/img/home-hero.jpg';
+import Layout from '@theme/Layout';
+import React from 'react';
+import extensions from '../../extensions';
+import {
+  certifierImplementationPledges,
+  industryImplementationPledges,
+  registerImplementationPledges,
+  regulatorImplementationPledges,
+  softwareImplementationPledges,
+} from '../../implementations';
 
 function HomepageHero() {
   const {siteConfig} = useDocusaurusContext();
@@ -29,6 +38,15 @@ function HomepageHero() {
   );
 }
 
+const implementationPledges = [
+  ...extensions,
+  ...regulatorImplementationPledges,
+  ...certifierImplementationPledges,
+  ...registerImplementationPledges,
+  ...industryImplementationPledges,
+  ...softwareImplementationPledges,
+];
+
 export default function Home() {
   return (
     <Layout
@@ -37,6 +55,9 @@ export default function Home() {
       <main className="homepage-content">
         <HomepageHero />
         <HomepageFeatures />
+        <div className="homepage-content__pledges">
+          <Pledges implementations={implementationPledges} />
+        </div>
       </main>
     </Layout>
   );
