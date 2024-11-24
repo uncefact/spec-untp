@@ -18,7 +18,6 @@ Register types are
 |Register Name|Type|UNTP Scope|Geographic scope|Status|
 |--|--|--|--|--|
 |[Government of British Columbia Org Book](#sample-register)|Organisation|IDR, DIA|Canada|planned| 
-| | | | | |
 
 
 ## Implementation Details
@@ -34,7 +33,7 @@ Register types are
 |--|--|
 |![BC Gov](/img/implementations/orgbook.gov.bc.ca/logo.png)|The Government of British Columbia (BC) sees UNTP implementation as an opportunity to enable producers of raw materials in the province of BC to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
 
-**Registered Identifier Schemes**
+#### Registered Identifier Schemes
 
 |Scheme|Description|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
 |--|--|--|--|--|--|

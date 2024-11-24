@@ -14,7 +14,6 @@ Summary list of regulators (ie international bodies, national government agencie
 |Organisation Name |Regulatory Function|UNTP Scope|Status|
 |--|--|--|--|
 |[Government of British Columbia](#government-of-british-columbia)|Energy and Mines Digital Trust|DCC|planned| 
-| | | | |
 
 
 ## Implementation Details
@@ -31,7 +30,7 @@ Summary list of regulators (ie international bodies, national government agencie
 |--|--|
 |![BC Gov](/img/implementations/digital.gov.bc.ca/logo.png)|The BC government sees UNTP implementation as an opportunity to enable BC producers of raw materials to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
 
-** Regulation Information **
+#### Regulation Information
 
 |Regulation|Description|Topic|UNTP Scope|UNTP Version(s)|Implementation Date|Test Report|
 |--|--|--|--|--|--|--|
