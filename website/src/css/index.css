@@ -20,6 +20,10 @@
   margin: 0 auto;
 }
 
+.homepage-content__pledges {
+  margin-top: 4rem;
+}
+
 @media screen and (min-width: 996px) {
   .home-hero__container {
     display: flex;
