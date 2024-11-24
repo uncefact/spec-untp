@@ -55,7 +55,7 @@ UN/CEFACT will maintain an up to date reference implementation for each major UN
 
 |Logo|Name|Implementation Statement|Geographic scope|
 |--|--|--|--|
-|![UN Logo](../../implementations/uncefact/logo.png)|[UN/CEFACT](https://unece.org/trade/uncefact)|The UN center for trade facilitation and e-business is pleased to provide a suite of UNTP open source reference implementations and a conformity testing toolkit.|Global|
+|![UN Logo](/img/implementations/uncefact/logo.png)|[UN/CEFACT](https://unece.org/trade/uncefact)|The UN center for trade facilitation and e-business is pleased to provide a suite of UNTP open source reference implementations and a conformity testing toolkit.|Global|
 
 ** Product Information **
 

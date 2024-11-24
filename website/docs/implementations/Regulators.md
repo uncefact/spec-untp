@@ -29,7 +29,7 @@ Summary list of regulators (ie international bodies, national government agencie
 
 |Logo|Implementation Statement|
 |--|--|
-|![BC Gov](../../implementations/digital.gov.bc.ca/logo.png)|The BC government sees UNTP implementation as an opportunity to enable BC producers of raw materials to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
+|![BC Gov](/img/implementations/digital.gov.bc.ca/logo.png)|The BC government sees UNTP implementation as an opportunity to enable BC producers of raw materials to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
 
 ** Regulation Information **
 
