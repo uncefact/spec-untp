@@ -58,7 +58,7 @@ UNTP [Verifiable Credentials Profile](../specification/VerifiableCredentials.md)
 
 **UNTP Relationship** 
 
-UNTP does not re-invent any of the criteria in the ISO PCDS.  Rather the UNTP Digital Product Passport provides a simple mechanism to digitalise product product circularity data in a way remains ISO-59040 conformant. The UNTP Digital Product Passport data model includes the organisation, facility, and product meta-data required by ISO-50940. The `Declarations` structure within the UNTP DPP data model can be used to convey each specific circularity criteria defined by ISO-59040. Since UNTP DPPs are both human and machine readable and can carry other sustainability information such as carbon footprint, product manufacturers can issue UNTP DPPs with confidence that the single DPP can conform to multiple sustainability standards and be equally valuable to human and machine verifiers. 
+UNTP does not re-invent any of the criteria in the ISO PCDS.  Rather the UNTP Digital Product Passport provides a simple mechanism to digitalise product product circularity data in a way remains ISO-59040 conformant. The UNTP Digital Product Passport data model includes the organisation, facility, and product meta-data required by ISO-59040. The `Declarations` structure within the UNTP DPP data model can be used to convey each specific circularity criteria defined by ISO-59040. Since UNTP DPPs are both human and machine readable and can carry other sustainability information such as carbon footprint, product manufacturers can issue UNTP DPPs with confidence that the single DPP can conform to multiple sustainability standards and be equally valuable to human and machine verifiers. 
 
 Sample ISO-59040 conformant UNTP DPP - to be provided.
 
