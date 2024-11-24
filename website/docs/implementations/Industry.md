@@ -23,13 +23,13 @@ Summary list of industry actors (eg brands, manufacturers, primary producers) th
 
 ### Sample Company
 
-** Organisation Information **
+#### Organisation Information
 
 |Logo|Name|Implementation Statement|Registration Date|ISIC|Geographic scope|
-|--|--|--|--|--|
-|**LOGO**|[Sample Company (URL hyperlink)|Manufacturer of sustainable products in the energy sector.|01-Jan-2025|272|Europe|
+|--|--|--|--|--|--|
+|**LOGO**|[Sample Company](URL hyperlink)|Manufacturer of sustainable products in the energy sector.|01-Jan-2025|272|Europe|
 
-** Product Information **
+#### Product Information
 
 A complete suite of reference implementations and test tools will be available at the same time as UNTP version 0.5.0 pilot testing release (due 1st Oct 2024).
 
