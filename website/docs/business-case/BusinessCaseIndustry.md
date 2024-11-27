@@ -85,7 +85,7 @@ A study by the Global Reporting Initiative (GRI) found that companies with stron
 #### Cost of Goods Sold
 A report by McKinsey & Company indicates that companies with optimized supply chain financing can reduce their cost of goods sold by 5% to 10% due to lower financing costs and improved supply chain efficiencies.
 
-* *References* McKinsey & Company, "Supply Chain Finance: The Key to Unlocking Working Capital," 2019.
+* *References* [McKinsey & Company, Unlocking success in digital transformations, 2018](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/unlocking-success-in-digital-transformations) 
 
 ### Digitalisation Efficiency
 
@@ -94,7 +94,7 @@ Digitalisation through UNTP enables automated data collection and processing, re
 Digitalisation as a whole of organisation initiative can deliver a 10% to 20% reduction in operational costs due to automation and improved data accuracy. Improved supply chain visibility can reduce inventory holding costs by 15% to 30% and decrease stock-outs by 20%. Data-driven decision-making can increase productivity by 5% to 10% and enhance profitability by 3% to 5%. Enhanced customer satisfaction can lead to a 10% increase in repeat business and a 5% boost in overall sales.
 
 * *Quantification* The digitalisation cost savings are for enterprise wide digital transformation.  A smaller but significant proportion of those savings could be allocated to digitalisation of supply chain traceability & transparency through UNTP implementation. A 1% reduction in operating costs is a conservative estimate.
-* *References*  McKinsey & Company reports on digital transformation, Deloitte insights on operational efficiency. Gartner reports on supply chain visibility, Accenture studies on inventory management. Harvard Business Review articles on data analytics, PwC reports on data-driven strategies. Forrester Research on customer experience, Bain & Company studies on customer loyalty.
+* *References*  [McKinsey & Company reports on digital transformation](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/unlocking-success-in-digital-transformations), Deloitte insights on operational efficiency. Gartner reports on supply chain visibility, Accenture studies on inventory management. Harvard Business Review articles on data analytics, PwC reports on data-driven strategies. Forrester Research on customer experience, Bain & Company studies on customer loyalty.
 
 
 ## Benefits - Corporate Value
@@ -106,7 +106,7 @@ Transparency in supply chains builds consumer trust, as customers are increasing
 Studies reveal that over 50% of global consumers and over 75% of millennials are willing to pay more for sustainable brands. Also that over 80% of consumers will purchase a product because a company advocated for an issue they cared about, and over 70% will refuse to purchase if they find out a company supports an issue contrary to their beliefs. Brands with high ESG scores have been found to achieve a brand value premium of up to 10%. Brands with strong reputations recover more quickly from crises, with a 5% to 10% faster recovery in stock prices. 
 
 * *Quantification.* The brand value benefits listed above will accrue for companies that place sustainability at the center of their corporate strategy and implement a range of measures.  UNTP implementation is only one measure but will add considerable trust to sustainability claims and can therefore conservatively account for a 1% increase in brand value.
-* *References.* Nielsen, "The Sustainability Imperative: New Insights on Consumer Expectations," 2015, Brand Finance, "Global 500 2020: The Annual Report on the World's Most Valuable Brands," 2020. RepTrak, "Global RepTrak 100: The World's Most Reputable Companies," 2019. Cone Communications, "2017 Cone Communications CSR Study," 2017.
+* *References.* Nielsen, "The Sustainability Imperative: New Insights on Consumer Expectations," 2015, [Brand Finance, "Global 500 2020: The Annual Report on the World's Most Valuable Brands," 2019](https://brandfinance.com/wp-content/uploads/1/global_500_2019_locked_4.pdf). RepTrak, "Global RepTrak 100: The World's Most Reputable Companies," 2019. [Cone Communications, "2017 Cone Communications CSR Study," 2017](https://www.cbd.int/doc/case-studies/inc/cs-inc-cone-communications-en.pdf).
 
 ### Improved Disclosures
 
@@ -125,22 +125,39 @@ Direct measures of supplier sustainability performance through UNTP digital prod
 
 ### Process Improvement
 
+Suppliers are often requested to bring ESG improvements based on the materiality matrix of their buyers, so as to align with the buyers ESG strategic priorities:
+Examples may include: 
+Reducing carbon emissions of particular energy intensive processes (i.e. by adopting less energy intensive processes or switching to renewable energy sources)
+Reducing or eliminating the use of harmful chemicals in heavy industrial processes
+Improving human or labour rights issues within their supply chains
+These improvements are often costly, which are often absorbed by loans. Green finance mechanism can help reduce the financing cost of these improvements, and are often related to these improvements, while the establishment of long term contracts with buyers can on the one hand secure cash flow for suppliers to absorb those costs over the years, while on the other guarantee to the buyer the flow of conform goods.
+
 * *Quantification.*
 * *References.*
 
 ### Audits & Certification
+
+Suppliers that improve their processes towards sustainability practices have three ways to prove their credentials to their buyers, namely carrying out a self assessment, being audited by the buyers and being audited and certified by a third party, the latter of which carries the greatest weigh in terms of credibility, both for voluntary improvements and certainly for regulated ones. These certifications and audits often need to be made for each ESG risk where mitigating actions have occurred, with certifications starting in the 5 figures for each certification type. 
 
 * *Quantification.*
 * *References.*
 
 ## Costs - Transparency System
 
+Establishing a transparency systems along a supply chain carries its own costs in the form of consulting fees to map and study the structure and processes and actors involved in a specific supply chain, the data elements of it and how those conform to an interoperability protocol such as UNTP as well as software and IT integration and adaptation costs, all of which is expected to range in the six figures. It also carries costs to run such a system on a day to day basis. At the same time, UNTP’s principle is to use what is already available and being used, or planned to be used, by participants, rather than buying new software; once implemented we expect the operational costs to be in a similar range to what existed before hand, with any additional cost related to additional features related to benefits which the industry might require.
+
 ### Capital investment
+
+In order to adapt a digital ecosystem to an interoperability protocol such as UNTP, adopters will likely rely on consulting companies to assess the supply chain, identify data elements, and evaluate compatibility with UNTP standards and may decide to rely on consultants also to project manage and implement the project. Equally buyers will need to integrate their systems with their suppliers systems, or decide to commonly use a system that conforms to UNTP.
+
 
 * *Quantification.*
 * *References.*
 
 ### Operational costs
+
+As a UNTP complaint system set up is designed to work with what is already available, we expect adopters to get back more for the same resources they were already using for transparency purposes AUTOMATION, COST SAVINGS.. At the same time, the wealth of information resulting from full traceability will likely drive adopters to capitalise on their investment and add resources to analyse and disclose their supply chain data where they see a return.
+
 
 * *Quantification.*
 * *References.*
