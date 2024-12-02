@@ -49,7 +49,7 @@ Global trade in counterfeit goods is estimated at between 2% and 5% of trade. Th
 * *Quantification.* 4% of global trade represents about $1.2Tn in counterfeit goods. If approximately 50% of that trade can be impacted by improved anti-counterfeiting measures then the average value is around 2%. If the effectiveness of anti-counterfeiting measures is estimated at 50% then the value falls to around 1% of trade.
 * *References.* [OECD trends in counterfeit goods](https://www.oecd.org/en/publications/2019/03/trends-in-trade-in-counterfeit-and-pirated-goods_g1g9f533.html), [USTPO counterfeit estimates.](https://www.uspto.gov/sites/default/files/documents/USPTO-Counterfeit.pdf)
 
-The value of sales recovered by reductions in illicit goods will very from 0% for commodity goods to as much as 10% for pharmaceuticals and some luxury goods. A benchmark value of 1% industry-wide seems reasonable and conservative. 
+The value of sales recovered by reductions in illicit goods will vary from 0% for commodity goods to as much as 10% for pharmaceuticals and some luxury goods. A benchmark value of 1% industry-wide seems reasonable and conservative. 
 
 ## Benefits - Cost Reduction
 
