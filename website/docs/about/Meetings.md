@@ -30,6 +30,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-11-28| [The meeetingunderscored the progress in developing agricultural extensions for UNTP, the usability of tools like the playground, and the importance of addressing business challenges alongside technical ones.](#2024-11-28-meeting-summary)|[transcript](../../meetings/2024-11-28-Recording.txt)|[video](https://us02web.zoom.us/rec/share/HVySh1IQGfWbWrZzJDwVqWZgTFhhJV3JKboYcS50zvr2B4jx5lU9UBsNCxCKtmuF.8BMJxuD20MrOmRko)|
 |2024-11-14| [The UNTP working group discussed recent industry commitments, advanced business case documentation, and proposed a community-driven testing support ecosystem to enhance UNTP implementation and interoperability.](#2024-11-14-meeting-summary)|[video](https://us02web.zoom.us/rec/share/diHIQ18nhFsX7h5bEaNia9n9FxuS3GYBaLZdSp7MxEKVjhu7PiuVi3VYhUYaCd5r.lnj0ChgXR4TskJuU)|[transcript](../../meetings/2024-11-14-Recording.txt)|
 |2024-10-31| [The team discussed updates on UNTP governance, digital product passport collaborations, and the methodology for industry-specific extensions, focusing on security, visibility, and implementation compliance.](#2024-10-31-meeting-summary)|[video](https://us02web.zoom.us/rec/share/IHBm8m69es-EaEl_Je01fsqUNAzY4QuumwJZaeI0ihah6wrZADAmyRC2bK8Jt-lZ.3FxFLsOE9Fjkvsvx)|[transcript](../../meetings/2024-10-31-Recording.txt)|
 |2024-10-17| [The team discussed the latest updates on UNTP credential implementation, focusing on testing, identity resolution processes, and potential trust anchors for bulk commodity tracking.](#2024-10-17-meeting-summary)|[video](https://us02web.zoom.us/rec/share/EgwRbS_jvLwwsLqJ4ddM55Je-OnpxkvDxcn6WhsWwZZwKS35Ts6JDXneurvWfxgQ.D9GdxgqUbFOPmCv3)|[transcript](../../meetings/2024-10-17-Recording.txt)|
@@ -67,6 +68,63 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
+
+## 2024-11-28 Meeting Summary
+
+**Meeting Summary: UNTP Agricultural Extensions and Tools**
+
+**Date:** November 28, 2024  
+**Chair:** Zachary  
+**Participants:**  
+- **Zachary (Speaker 1):** UNTP facilitator, leading discussions.  
+- **Ashley (Speaker 2):** Consultant, showcased technical tools and developments.  
+- **Adrian (Speaker 9):** Representing the BSF Group, Switzerland, focusing on supply chain transparency.  
+- **Adriana Zacche (Speaker 3):** Circular Economy Asia, specializing in resource management.  
+- **Suna (Speaker 10):** SME in Brussels, leading EU compliance initiatives for digital product passports.  
+- **Phil (Speaker 4):** GS1 advocate for verifiable credentials.  
+- **Michael (Speaker 5):** Provided feedback on business case development.  
+- **Stefano (Speaker 7):** EU-focused discussions on UNTP implementation.  
+- **Additional Contributors:** Marcus, Charles, Brett, and others engaged with questions and insights.  
+
+---
+
+### **Agenda:**
+1. **Introductions and Updates**  
+   - New participants introduced their roles and interests in digital transparency and supply chain management.  
+   - Zachary highlighted the meeting's focus on agricultural traceability protocols and business case discussions.  
+
+2. **Demonstrations:**
+   - **Sample Credentials:**  
+     Ashley showcased the development of sample digital product passports and credentials, highlighting user-friendly rendering formats for non-technical stakeholders.  
+   - **UNTP Playground:**  
+     A prototype tool for testing the compliance of digital credentials with UNTP standards was demonstrated, receiving positive feedback from participants.  
+
+3. **Australian Agriculture Traceability Protocol (AATP):**  
+   - Ashley and Zachary detailed AATP’s role as an extension of UNTP, tailored to livestock and agricultural needs in Australia.  
+   - Examples included livestock passports incorporating biosecurity data and deforestation compliance for feed sources.  
+   - Discussion on the readiness and potential launch timeline, targeting late 2024.  
+
+4. **Feedback and Questions:**  
+   - **Phil:** Raised concerns about demonstrating the value of technical standards to business users and emphasized practical evidence over technical details.  
+   - **Adriana:** Discussed resource management challenges and access controls for circular economy-focused businesses.  
+   - **Marcus:** Advocated for linking traceability tools to complementary systems (e.g., methane reduction from seaweed-based feed).  
+
+5. **Extensions and Use Cases:**  
+   - Discussion on replicability of the AATP model for other sectors, including critical minerals, electronics, and the built environment.  
+
+6. **Business Case Development:**  
+   - Participants sought updates on pending business case materials for the UNTP repository, with action points for follow-up on outstanding documentation.  
+
+7. **Future Plans:**  
+   - Expansion of UNTP applications in agriculture and alignment with global standards.  
+   - Continued refinement of tools like the playground and integration of user feedback.  
+
+---
+
+**Next Steps:**  
+- Finalize and publish AATP materials.  
+- Address pending business case and technical issues.  
+- Provide demonstrations linking agricultural traceability with broader sustainability objectives.
 
 ## 2024-11-14 Meeting Summary
 

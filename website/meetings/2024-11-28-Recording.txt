@@ -1,0 +1,582 @@
+[Speaker 1]
+And I'm going to give it a couple of minutes just so that we can get folks to join and we'll start probably two or three minutes after the hour, just so that we can give people time to join. We've seen a fair few more people coming through. Hello.
+
+[Speaker 8]
+Hello.
+
+[Speaker 1]
+I'll give it another few minutes and then we'll get started. Hello. And actually, while we get started, are there any new folks on the call today who've not joined a UNTP session before?
+
+If so, maybe introduce yourself and describe your interest and what you might be able to add to the group.
+
+[Speaker 9]
+Then I'll start. Adrian, my name. I'm located in Switzerland.
+
+I'm the product owner of the digital material and product passport in the BSF group. And my interest is to see how can we, with the technology that we already have developed in KTNX and other formats, support this global UN initiative to go to the digital transparency in the supply chain. That's me in a nutshell.
+
+Hello, everybody. Fantastic. And welcome.
+
+Thank you.
+
+[Speaker 1]
+Any other new folks want to introduce themselves?
+
+[Speaker 3]
+Yes, I'm Adriana Zacche. I'm normally located in Southeast Asia, Malaysia, but I happen to be in Perth, Western Australia at the moment. I run a small organization called Circular Economy Asia.
+
+So large components of the, or some components of the DPP will, are dedicated to circular economy. But I'm also volunteering in surplus into four working groups in surplus, which is user access, interoperability standards and UIDs. So I'm here to expand my scope of skills and knowledge and to contribute from a circular economy perspective to UNTP.
+
+[Speaker 1]
+Great. Welcome. Thank you.
+
+Sounds like you have a lot to contribute. And there's a fair few Australians here. So you're in Australia as well.
+
+And so there's a large Australian contingent. So you're very welcome. Other new folks want to introduce themselves?
+
+[Speaker 10]
+Now, maybe I can just jump in. Hello, my name is Suna. I'm based in Brussels.
+
+We are a small SME who is developing also DPP for different domains. And we are also leading one lighthouse project in Horizon Europe. It's a battery passport.
+
+I'm here to more to discover what are these initiatives are going on. And if we complied with this ones, particularly we are very much concentrated on EU standards and EU specifications, but on a global level, now we started to onboard several clients and we are struggling, let me say, different technical issues plus the regulation ones. I think that will be quite a good to be part of this group.
+
+Thank you.
+
+[Speaker 1]
+Suna, welcome.
+
+[Speaker 10]
+Thank you.
+
+[Speaker 1]
+Other new folks want to introduce themselves? I don't know. I'm not going to call on anybody, but well, and that's five minutes past and that's probably the right time to unless there's anybody want to raise their hand.
+
+OK, we'll get started. So as normal, any contributions in this forum are part, as you would have agreed in becoming part of a member here, are open and contributed to the UN and IP resides there. If there's any IP that you wish to protect, don't share it here.
+
+And so this is an open and collaborative ecosystem. So that's sort of the way this works. We are recording this session.
+
+We will create minutes using AI to sort of facilitate other people. We'll also publish the recording as we go forward. Steve did, does send his apologies.
+
+He's unable to make it tonight. I will be leading the session today. He did sort of send through three agenda items, really focused on samples, testing and extensions.
+
+So really sort of where the rubber hits the road. Actually, I see you're here. He was asking that you kind of show, kick us off and show some of the sample digital product passports and other credentials that we've been generating for some of our projects.
+
+Do you want to kind of kick us off with some of those demos and just show folks where that information?
+
+[Speaker 2]
+Yes, certainly. I'm just give me one minute, share my screen.
+
+[Speaker 1]
+Well, actually he's bringing that up. The other two agenda items is we'll go through an extension example that we're working on here in Australia for agriculture. And we'll also talk a little bit about the cycle of validating business scenarios.
+
+And then we'll go through pull requests and then we'll go through open issues. I also intend to end the meeting about 10 minutes early because, well, I've got to go pick up my kids at Scouts. And if I don't end it 10 minutes early, I'll be stuck.
+
+So we'll end it 10 till 8 in Australian time. All right, Ash.
+
+[Speaker 2]
+Awesome. Thanks, Zach. So for those that are not aware of who I am, my name is Ashley.
+
+I work at a consulting firm out of Canberra, Australia called GoSource and have previously worked on projects in the digital transformation and cross-border trade facilitation space, most notably a project called the Digital Verification Platform built for the Australian Border Force. Most recently, I've started to work in the UNTP space. Recently, working on the DAF funded open source digital identity resolver service, which is a key component of UNTP.
+
+And then also working on the Australian agricultural traceability protocol, which is an extension of UNTP. So I'm going to run through a something in. I do apologize.
+
+I would have no notice. But based on a previous meeting, Dr. Zazan suggested that perhaps maybe we should promote those that have chosen to adopt or plan to adopt UNTP. So there has been a bit of a change to the website on the homepage.
+
+So if everyone can see on the screen, we have a pledges to implement section, which basically just circles through all of the logos of the companies and the organizations that have pledged to implement UNTP. Serves a couple of purposes, obviously encouraging those thinking about implementing UNTP, right? It's much easier to adopt something if you're not the first person adopting it, but also to celebrate those that have pledged to implement UNTP.
+
+So offer any feedback around this is welcome. But yeah, just wanted to sneak that in there, Zach. So the next item.
+
+Yeah, yeah. Good. Yeah, yeah.
+
+Cool. So the next item that I'll walk everyone through is basically what we wanted to achieve was to provide tangible examples of the credentials within the UNTP specification, most notably the digital product passport and the conformity credential and so on and so forth. So if we now navigate to the specification page and go to the respective section, you'll note that there's a new section here with the sample credentials, the URL to the sample credential, a QR code that is essentially contains the URL here, and a bit of a description around the credential.
+
+Now there's one for each of the credentials, except for the trace. We've got that as well. But yeah, so basically what we wanted to do was move away from showing JSON, right?
+
+So things like this here. So move away from this. Move towards something that's a little bit more human friendly.
+
+And move to this. So what you see on your screen now is a digital product passport. And in particular, the rendering of a digital product passport.
+
+So there's a bit of work done here with my team by designing render templates for each of the respective credentials. And then embedding those render templates inside of the credentials. And then that produces the result that you can see here.
+
+So basically what we're doing is taking the data that is contained in the credential and applying it or mapping it to the render template. And then that's what populates what you see on the screen here. So as you can see, it's quite extensive.
+
+And those technical on the call, we also have a JSON view as well. Hence the ability to download the credential. So those have been produced for each of the credentials.
+
+Just quickly show another. And again, these are on the deployed site. So anyone can view these.
+
+And here we have a digital facility record. And again, the JSON view for that. So that's the render templates credential rendering.
+
+Next, any questions so far?
+
+[Speaker 14]
+No questions. A big thank you because it's very helpful. It's really helpful to see it live.
+
+Thank you for this.
+
+[Speaker 2]
+So the next item I'll move on to is a new addition to the test suite. Now, please note that this is a proof of concept. But basically, as we've gone through a couple of extensions of UNTP, some of the participants that have pledged that they will implement UNTP and taken a few people through the cycle now, we've received feedback that the documentation around testing and also the reference implementation for UNTP is quite daunting.
+
+There's quite a few moving pieces. And for those that are not familiar with some of those pieces, it becomes a little bit of a burden to get your head around. So the idea with the UNTP playground is that we provide a human friendly user interface so that one can test their conformance with UNTP specification.
+
+As opposed to dealing with code and getting in the weeds around technical details. So, again, this is a work in progress. And it's a proof of concept.
+
+So what I can do here is basically have a few credentials that I've produced ahead of time. So what I can do is just take those credentials and literally just drag and drop them into the playground. And a little bit of confetti there.
+
+But basically what has just happened is based upon the credential that was uploaded, it has the ability to detect the type of credential that was uploaded, the version of the credential, and also the securing mechanism that has been used to secure the credential. We can dig a little bit deeper here. So basically the checks.
+
+So we were able to detect the proof type. The credential itself also was able to be verified. And also pass the schema validation for the corresponding credential.
+
+So I'll just quickly show you a credential that is not conformant and what you might expect. So here you can see that this one failed. There was no confetti.
+
+But the proof type was detected. The credential verified. But there was a schema validation error here.
+
+And also we were unable to detect the version. So if we can click on view details, we are presented with some helpful hints of what went wrong. And as you can see, we found five issues with this digital traceability event.
+
+In particular, we're missing the ID field here. And a few other things like the context file. And then also helpful hints on what that should be.
+
+That that value should be. Again, feedback is welcome here. And it's currently being developed.
+
+But actually one last feature. We also have the ability to download a test credential as well. So we can download the test credential, upload that up into our own service or implementation and ensure that we're conformant with the underlying specifications here.
+
+And again, the entire point here was to abstract away all of that technical burden that one must understand to implement this protocol and just provide a nice, simple, easy to use graphical website that people can just drag and drop their credentials. And then, yeah, check their implementation. That's it for me, Zach.
+
+Anything to add there?
+
+[Speaker 1]
+Fantastic from your team. Questions? Yeah, Phil has a question.
+
+[Speaker 4]
+Actually, absolutely fantastic. It looks terrific. Thank you very much indeed for showing us that and the huge amount of work that's gone into it.
+
+My concern with this and every other demonstration I've seen of this technology, which I'm a huge supporter of, that's why I'm here, is how do we show visually to a non-technical person that this isn't just a bit of visual candy? That what you've done is to do some real cryptographic work here to prove all the things that I know this proves, which is the difference. I mean, so somebody better than me could create something else that looked the same, but actually didn't do a fraction of what you've done.
+
+[Speaker 2]
+Yes. Yeah, that's a great question, Phil. So, the existing test suites inside of the test UNTP repository in the UNCFACT organization does provide that ability to run finer grained test suites, right?
+
+The tier 1, the tier 2, and the tier 3 testing. That is where you will get an appreciation for what is actually taking place under the covers. But this specific tool is more so an onboarding ramp for early adopters.
+
+And then once they're familiarized themselves with the credentials and the versions of the credentials, the securing mechanisms and so on and so forth, then we can move over to the more technical side of things and deep dive into those specific categories, right?
+
+[Speaker 1]
+I think Phil's asking a slightly different question, which is, how do we help a business user see the value of all of this technical work without having to expose them to the technical side? And I think it's a very different answer. My view, Phil, on that is that that will have occurred when all of this technical work completely disappears.
+
+And when what is happening is people are not paying invoices unless they have high quality information from their suppliers that conform with these standards, right? That's where I think we'll see the value because then the businesses that are producing the passports will go, oh, I didn't get paid because I didn't do it right. All right, let me check, make sure I get it right.
+
+And then we'll see that sort of flywheel effect that we anticipate down the line. It's going to take time for us to get there. And I think what Ashley has showed here that's really impressive and helpful is that on-ramp, right?
+
+So that we have people who are maybe not as technical as Ashley are being able to go, well, did I get something valid from somebody? And they drop it in something like this. Now, there's all sorts of complexity that sits underneath this as we start talking about extensions and stuff downstream, but we'll explore that as we get there.
+
+[Speaker 4]
+Yep. Thank you, Zach.
+
+[Speaker 13]
+Adriano? So what you are saying is that what we have just seen at the moment could be a kind of verification of the verification credential itself would be kind of validation of this is a valid VC.
+
+[Speaker 1]
+Not just that this is a valid VC, it's also a valid VC that conforms to the UNTP credential type. So that's two checks. Yep.
+
+And there's a third check that's not covered here that we've sort of architected, which is sort of business scenario testing. And that's the third topic that Steve wanted us to talk about tonight.
+
+[Speaker 13]
+Okay. Thank you.
+
+[Speaker 1]
+Adriano, you're on mute.
+
+[Speaker 3]
+I have a question about user access because it looks like, and please correct me if I'm wrong, Ashley, is that the QR code that you have is accessible by anybody. Is that correct?
+
+[Speaker 2]
+That's correct. Yes.
+
+[Speaker 3]
+So if I was a business and I get a DPP for my particular product, but I want to maintain ownership of that because I'm coming from a circular economy perspective and I'm really specializing in resource management. So if I want to get my product back, so I own the product and I own the resources so I can reprocess those resources that provides my business additional revenue, I may not want to have all that information available to anybody. I may want to segment that user access only to myself or only to the recycling or the reprocessing company that will be reprocessing those materials that is going to give me additional value.
+
+How are you going to factor that into what you're developing here?
+
+[Speaker 2]
+Yeah, look, that's a great question. So the UNTP does provide six securing mechanisms to facilitate precisely what you've just articulated. So, well, the problem that is address that problem.
+
+So it might be a little bit too much for this discussion, but essentially what we do is we encrypt the data and then you have the ability to provide that decryption key and also the location to that credential such that you can basically allow access to whoever you provide the key to, right? So anyone scanning the QR code, if the data is encrypted, you won't be able to view the data, right? It's encrypted.
+
+But if you pass along the key, the decryption key, you will then be able to see that data.
+
+[Speaker 3]
+Okay, sorry to interrupt you. So again, if I'm a consumer, could I have access to basic information? And then if I want, if I'm not a consumer, so that DPP would have three or four access levels?
+
+[Speaker 1]
+So let me kind of, so Adriana, this is a core architectural component. And so when actually describes the six tiers of security access. So there's two things to sort of think about here.
+
+One is each supplier has the opportunity to share data with their buyer via this mechanism. What data they share is completely up to them. And so the idea of UNTP is each supplier builds a product passport for the needs of their customer.
+
+And they may include additional product passports from their upstream supply chain if that's necessary or adds value. And one of the securing mechanisms is a redacting mechanism where you can share the proof without sharing the details, or you might share like, and this, we would need to go through the securing methods. And we haven't, that's beyond the scope of this discussion, but that's the conceptual idea behind this.
+
+And I think it'd be helpful maybe in a second area conversation to build a little bit of a how-to once we, it looks like we have, we need to update this page because it's missing some of the details that Ashley's brought up. But I don't want us to get too sidetracked because that's a pretty, I understand it's a very important consideration, but we do have a large group here and a significant agenda. And I'm happy to maybe take some time offline to walk you through that and maybe build.
+
+[Speaker 3]
+Okay. All right. Thanks.
+
+I would appreciate that. I call you Zachary or Zach?
+
+[Speaker 1]
+Zach is fine.
+
+[Speaker 3]
+Okay, Zach.
+
+[Speaker 2]
+Zach, we might also have a look at providing tangible examples of that encryption and decryption as well on the website.
+
+[Speaker 1]
+Yeah, I think that that's, yeah, let's talk about that as we sort of build out the next sprint cycles.
+
+[Speaker 2]
+Okay. Yep. So just quickly, Zach, so what I'll do is I'll reach out to Zach or Steve to provide links to what I've demonstrated today, but most of it is accessible via the United Nations Transparency Protocol, UNTP website.
+
+So yeah, again, just under the specification section, you can just go to the respective credential type and then you'll be able to find the examples.
+
+[Speaker 1]
+And Brett has asked a quick question, Ash, about it didn't say version 0.5. And I think that's because the version only shows up after you upload the credential. Is that correct?
+
+[Speaker 2]
+So the reason why there is an unknown version here is because it's extracting it from the credentials context. So because, as you can see, one of the validation rules here is that we have an invalid context value. It was unable to extract the appropriate version of the credential.
+
+[Speaker 1]
+But when you first go into this, before you uploaded things?
+
+[Speaker 2]
+Oh, yes. Yeah. So yeah, this was a design decision.
+
+So basically, what I wanted to do was convey the credentials that needed to be tested, right? So here we just have upload credential to begin validation.
+
+[Speaker 1]
+And we anticipate there will be sort of many active version, well, hopefully not many, but when we get to version one, we hopefully that's stable for a long time, but there might be 1.0.1, 1.0.2, and we'll want to have that visibly visible for folks. Yep.
+
+[Speaker 2]
+Yeah, yeah, yeah, definitely. Yep. Cool.
+
+Cool.
+
+[Speaker 1]
+All right. Ashley, thank you. Great work.
+
+Really helpful stuff. I think it's something that moves the ball forward for people looking to experiment and get on board early on in the process. So really good, really exciting stuff.
+
+Okay. One of the things that Ashley just showed is the use of UNTP schema and uploading those and creating and validating UNTP credentials using the default schema. But or and one of the key features of UNTP is that at the UN level, it's intentionally a generic is kind of the word I'm thinking of, where it covers maybe 70 or 80% of information in a digital product passport, but is purposely not trying to solve the last 20 or 30% that is specific to a jurisdiction, specific to an industry or specific to a company's needs.
+
+And the way we address that specificity is through what we describe as the extensions model. And so we want to walk through sort of what an extension looks like and how that gets described as we look to meet the specific needs of a sector and or jurisdiction. So I'm going to show an example of the Australian agriculture traceability protocol extension, which is an extension of UNTP.
+
+And not there. Let's see, I thought I was going to go there. I was looking at GitHub, but not tonight's meeting, which is this one.
+
+So, as you saw, actually show the UNTP site, this site looks very similar, because it is very similar. So if we go into this, you kind of see that same kind of organization, where we're talking about the AATP. So AATP is the Australian agriculture traceability protocol.
+
+And it's designed to meet the specific needs of the of farmers in Australia. And basically, it, this is intended to describe what is that last 20 or 30% that has been modified to meet the specific needs of this jurisdiction and sector. So in here is the governance structure.
+
+So basically, this is how AATP is governed as part of the in the in our context. And I'm not going to go through all of these details, because we don't have enough time, this, this site was sent to you online, but sort of this follows the the governance structure that was defined for UNTP as well. But each extension may decide that they may modify this or do this in their own way.
+
+meetings, this is early days, they haven't been listed here. The key thing is, down here, there's some business case stuff, and how we're building that out for the Australian agricultural sector, case studies, we're talking, these are some of the projects we've done, we can kind of look at those. And we have, in fact, we finished a another one for the wine industry today.
+
+So we'll get that up here as well. But what's important here is in the specification side of things. Because the product passports, traceability events, conformity credentials, we saw Ash just show us that at the UNTP level, but now we need to talk about it at the AATP level.
+
+And so when we think about a digital product passport for something like an animal, the default digital product passport doesn't have information about the animal characteristics, it doesn't have information about biosecurity, it doesn't have information about medical treatments, vaccinations, or quenching that's done. And so what what we've done to meet that requirement is we've built a digital livestock passport. And so if we click on that, we can see that the model follows very closely the digital product passport with these following changes.
+
+So we added the bovine characteristics, the health treatment, circularity, scorecard, and materials, and remove circularity and materials, because those weren't really relevant to livestock. And then we added these rules, and those profile rules is that the bovine animal ID must be mapped to the National Livestock Identification Scheme. Because one of the key principles of UNTP is that if you have the identity of the thing, you can find out more information about that thing via the identity scheme operator.
+
+And so in the case of livestock in Australia, that identity scheme operator is the National Livestock Identity Scheme, which is run by Integrity Systems Company, and so this is described here. And these profile rules, when Ash was showing us those first two tiers of testing, the first tier of testing was, is it a valid verifiable credential? The second tier of testing was, is this a valid UNTP schema?
+
+These profile rules is that third tier of testing, which is, does this particular livestock passport meet the protocol for Australian agriculture? And these are the rules that we've defined for that. If we look at this, we have a similar example where we see a credential, and this is a very similar credential, but we see these additional characteristics added, and we see these additional details here.
+
+Same thing with traceability events. These were the same, except we added profile rules. So the traceability events didn't change the actual UNTP thing.
+
+We didn't need to change the, we didn't need to extend the traceability events, but there are profile rules that describe exactly how we treat traceability events for livestock in Australia. Conformity credential, here's an example of a deforestation credential, and again, similar pattern where it was an extension of the, it used, it actually didn't change the conformity credential, but it provided additional profile rules about how this is done. Identifiers, we'll see our national livestock identification scheme that I said.
+
+Identity anchor credential, property identification codes, and different metadata about those identifiers, and ABNs. Then vocabularies. These are some of the vocabularies we use to build this stuff.
+
+Michael, you have your hand up?
+
+[Speaker 5]
+Yeah, just a quick question, Zach. Is this AATP site publicly available so that people could be, if someone's trying to understand what the extensions are, how this extension processes, we could point people at it?
+
+[Speaker 1]
+It is not publicly released yet. The link that Steve shared with us is publicly, you can click on the link in the email and you can come here, but it is not formally approved yet. Okay, all right.
+
+So yeah, don't throw Steve under a bus here. No.
+
+[Speaker 5]
+I have something else to throw him under the bus for, so it's okay.
+
+[Speaker 6]
+A quick one, Zach. Those profile rules, I saw there were links there. Does that link to policy as well as, you know, policy, potentially legislation, that type of thing?
+
+Oh, okay. Yeah, right.
+
+[Speaker 1]
+So there are some links, but again, this is an initial cut at this, and it is not, I would describe this livestock passport as pretty early in the development of this process. No worries, thanks. Yep.
+
+Other questions or comments?
+
+[Speaker 11]
+Yeah, Prok here. What about the profile rules for traceability events? Is it some sort of by the industry groups saying this is the scenarios for events?
+
+That's right.
+
+[Speaker 1]
+Yeah. So in the case of the traceability events, we didn't change from the default UNTP digital traceability event artifact, which follows EPSIS. So we use the default, but we define these profile rules.
+
+[Speaker 11]
+So in theory, this profile rules could be potentially different for another geographic location where scenarios are completely different?
+
+[Speaker 1]
+Not potentially, most likely.
+
+[Speaker 11]
+Yeah. Yeah. Okay.
+
+Fair enough.
+
+[Speaker 1]
+Yep.
+
+[Speaker 11]
+Yep.
+
+[Speaker 5]
+Oh, sorry. Go ahead.
+
+[Speaker 8]
+Sorry. Hi, this is John. Just a question as to when do you think the AATP is actually going to go live?
+
+To anybody who doesn't know me, I'm another UNEC consultant. I'm working on ESG traceability in the agri-food value chain. And I just, I've been watching the AATP develop, and it looks, well, extremely impressive and the kind of thing that's required, but I keep hearing that it's under development.
+
+And I'm wondering if there's a targeted launch date for at least the AATP and some of its extensions.
+
+[Speaker 1]
+The expectation is before the end of the month, or the end of the year. The process is the process. So I can't make commitments for people, for folks that, yeah, but the expectation is in the coming weeks for sure.
+
+Okay. That being said, we need to consider all of this AATP and UNTP as pre-1.0. So going live means we're still in pilot phases. So this is the structure, the architecture, the approach, and it's still evolving at pace.
+
+[Speaker 14]
+Okay.
+
+[Speaker 1]
+Thank you. Okay.
+
+[Speaker 5]
+Michael. Zach, one other, then this is more just my understanding from the AATP of what you're doing. Does this also then in the product passport with things like vaccinations and that sort of stuff also be in here or is that?
+
+Yes.
+
+[Speaker 2]
+Yeah. That link is broken, but you should be able to go to the deferred station certificate. Okay.
+
+[Speaker 1]
+So this is EUDR, but if there was a vaccination certificate, that was working, but that's the idea that there's specific things that are specific to the animal.
+
+[Speaker 5]
+So is this then effectively taking what is today the paper passport that in many countries a cow or a piece of an animal livestock would have, that they were moved from, sold from farmer A to farmer B, moved from field one to field two, that sort of thing. Would that all be part of the passport?
+
+[Speaker 1]
+So the intention of that is yes. It would be part of that passport if it's valuable for the farmer to attach it to the passport as they're selling the animal to their downstream customer. Okay.
+
+All right.
+
+[Speaker 5]
+Yeah. I know that's regulation in some areas like in the UK and particularly for some of the transmissible diseases and that sort of stuff where they want to be able to backtrace animals, but okay, thanks.
+
+[Speaker 1]
+So anyway, yes, that's right. The architecture is designed to provide that capability. The traceability in Australia is done in a different system and so it may move to this at some point in the future, but this is more intended in the short term to provide livestock producers the ability to attach additional information to their animals.
+
+It has the possibility to create, to attach traceability, but traceability is solved in a different way in Australia at this point.
+
+[Speaker 9]
+Adrian, you have your hand up? Yeah. Just a question.
+
+Is the AATP traceability system looking into the feedstock, so to soybean, any kind of source of starch or sugar with which the animal stock has been feeded? Because in Europe we have the agri-guide topic, which is preparing a digital label, which is more or less the representation of the so-called gap record in the agribusiness, so the good agricultural practices. I'll share the link in the chat.
+
+[Speaker 1]
+Yeah. The answer to that question is absolutely. We are doing a grain pilot next, but what we showed in the livestock pilot, so we have a deforestation credential in here, but we were also able to attach deforestation credentials to the feed that were fed to the animal and we used the traceability events to describe that this much feed was from this farm that had this deforestation credential, was fed to this animal, and so that there was a deforestation-free grain was fed to this animal to meet the deforestation laws. Similar approach as what you're describing.
+
+[Speaker 9]
+Okay. Thank you. Okay.
+
+[Speaker 1]
+Other questions? And then guidance for the different... Oh, so actually this is the picture I was thinking of.
+
+So we see a grain passport going into the feedlot. It is not included in this one, the deforestation credential, but we did have in the demo the deforestation credential here. So this is intended to provide for the livestock industry guidance on how they might approach the process.
+
+Charles, do you have your hand up?
+
+[Speaker 8]
+Yeah. Just a question. I mean, it is very impressive.
+
+Are you aware of any other jurisdiction where they're this far down the track on an agri-food traceability protocol extension to the UNTP?
+
+[Speaker 1]
+Because I'm not. We're not aware of any other agriculture extension this far down the track. We'd love to talk to them, love to help them, love to share all the learnings.
+
+[Speaker 8]
+But in all the interactions, all of you've had, you haven't come across... I mean, Australia seems to be way out there in front.
+
+[Speaker 1]
+There are some conversations with some folks in Canada and the US at this point. So we're starting to have those conversations, but it's nowhere near this.
+
+[Speaker 8]
+Yeah. It's going to be another agricultural exporter, isn't it? But that was kind of what I thought.
+
+Thanks.
+
+[Speaker 1]
+But the pattern is infinitely replicable. The idea is the pattern is a pattern is a pattern. And so we're hopeful that folks start seeing this and going, oh, this makes sense.
+
+All right. And then the final... So the final section...
+
+So the guidance, here's how you get help and support in the Australian community. And over here is registering implementers through the process. So here are the software providers that have done work in this place, in this space.
+
+And yeah, certifiers. So again, this is early days, but you can kind of see how this is a extension of what we're doing in UNTP, but really specific to the differences in that last 20 or 30% that is very specific to the local community and the local industry needs. All right.
+
+Well, I'm not going to stop at 745. The question that's... I think I'm going to pause on the...
+
+Is there anybody on the call? Is Nisa on the call? I don't see him.
+
+Is there anybody else on the call who has commit rights? I don't see anybody here. Ash, you do.
+
+But I think we would need somebody else. Yeah. So the reason I'm asking that question is because I was planning on going through pull requests to get them approved and released.
+
+But I don't think I'm going to do that because we don't really have sort of the... I've approved the current pull requests. And so it feels a little bit too...
+
+It doesn't feel like it's the right governance to approve them at this point. So I'll pause on there. And so what I'd like to do is kind of spend the last five, 10 minutes talking about that third item that Steve put on the agenda for us, which is how do we organize testing UNTP in a business content sense?
+
+And this kind of goes to the question that Phil was asking. How do we help answer the question? Hey, and potentially the question that I think Adriana was getting at, which is how do we know that this is the right fit for the business problem I'm trying to solve?
+
+We have a bunch of technical proofs and schemas and detailed technical language, but how do we help folks go, we want to solve a circularity problem or we want to solve a scope three emissions problem. Is this approach correct for what I'm trying to do? How do we help people see that this might be a good fit for them?
+
+I think is what... Yeah, Adriana?
+
+[Speaker 3]
+Yeah. Sorry. Just to clarify, it's not a circularity problem.
+
+It's a resource management problem. So that's the problem that we want to solve. So the circular economy feeds into that solution, but the problem is resource management.
+
+How do we manage our primary and secondary raw materials? I'm sorry to get pedantic about that, but that's really the problem. So a company needs to consider how it manages its resources as part of the bigger picture.
+
+And that's why I'm here.
+
+[Speaker 1]
+Yeah. So thank you for clarifying the question you want to answer. I think the premise of my question is still the same, which is how do we evaluate these sets of tools against those kinds of questions?
+
+Marcus, you have your hand up? You're on mute.
+
+[Speaker 6]
+Whoops. Sorry, muted. I've got a strong feeling that mapping across the supply chain as the UNTP is doing, but mapping that through across to other programmes and benefits that are in place as well would help.
+
+For example, I'm helping out in the seaweed industry in Australia and some of their productivity is around pushing out to cattle farmers to help reduce methane emissions. And they've got some good science behind that at the moment coming through from Australian and New Zealand universities that can back that up. And linking that all through would solicit interest from people like those seaweed farmers or ocean restoration farmers to participate.
+
+So the more it's linked, the more motivation for participation, I guess, is one of my ideas.
+
+[Speaker 1]
+Yeah. So sort of demonstrating that linked approach. And so in our demos so far, we've kind of not done a huge amount of that linking, but we did in the livestock demos and the cherries demos.
+
+So I think potentially increasing the number of links in our demos might be helpful.
+
+[Speaker 6]
+Yeah. And potentially catalogues of that information that you can link to so that then particularly where it's publicly available information and there's no squeamishness around sharing.
+
+[Speaker 1]
+Yeah. Phil, you have your hand up?
+
+[Speaker 4]
+Very briefly, because I know that we're about to end the call. So some of you will know, I've spent the last six months working with a couple of consultants trying to put together the evidence that will help my bosses decide whether or not GS1 embraces verifiable credentials as a technology. Now that work, which is almost finished, delivering it in a couple of weeks time, I hope to be able to publish some of those results before long.
+
+But the way we've had to phrase that, we certainly haven't, we have stopped trying to explain what a VC is. We've stopped talking about the technology completely. We have pointed at UNTP as being an important use case.
+
+We have pointed at other people who are important potential users. But the arguments that we're making are, here's all the reasons for doing it. Here are the reasons for not doing it.
+
+And the gap between the two is actually quite small. And here's how we can begin to fill that gap at almost zero cost. Now, whether you're talking about cows on a field or batteries from wherever, it's that kind of analysis that we're going to need.
+
+As I say, I very much want to share the work that we've done, because I hope it's valuable to other people. They will do the same. And it's never going to be about the technology.
+
+In some of the sort of practice runs of the presentations, we realized that we spent 10, 15 minutes explaining what a VC is. And it was 10, 15 minutes completely wasted, because in those conversations, it's irrelevant, sadly, to say that in front of a bunch of engineers.
+
+[Speaker 1]
+I was in front of a bunch of supply chain and procurement experts last week, and running a 90-minute workshop around implementation of UNTP. And we only described verifiable credentials when somebody asked a very detailed question about how we could prove that the data was correct. And I went, OK, we're going to go technical here, but we're finding that for the most...
+
+And that's why when you asked the question before, Phil, I kind of said, we'll know this has worked when it disappears.
+
+[Speaker 4]
+Yeah, I agree with you completely.
+
+[Speaker 1]
+And that's what... When we get protocol work right, it completely disappears.
+
+[Speaker 5]
+Who brags about their plumbing?
+
+[Speaker 1]
+Well, I've got some amazing pipes. Stefano?
+
+[Speaker 7]
+Yeah, well, first of all, I do share exactly the same feelings, or I don't want to say frustration, but exercises you guys are explaining. And in this, actually, as you mentioned yourself, Zach, last week, I had a discussion with a number of stakeholders in the European Union, which was planned after some time. But going to practical, I want to talk with my team, because possibly already in within the next three, four weeks, I want to try to use what we basically have seen today in practice with two, three examples, as Marcos mentioned, in two, three different applications.
+
+OK, so I'm not now saying we will do, I'm saying I probably want to do because it will serve the purpose on a second talk with these stakeholders and in practice on saying, how do we move forward? So I'm kind of committing to say, I really want to make it in practice in the coming two, three weeks by using this great job that you guys have shared so far today.
+
+[Speaker 1]
+Yes, please. And any feedback, questions, challenges, let us know. Our goal is to make this easier.
+
+[Speaker 7]
+Yeah, yeah, indeed. I do expect that maybe in this sense, I can come back to you with questions exactly on how to shape it nicely. But yeah, that's my two cents in this sense today.
+
+[Speaker 5]
+And just that's where, you know, when the ATP site comes available, if that can be shared, Zach, because I think that that is a very good example of helping explain it to somebody without going into the guts.
+
+[Speaker 1]
+Yeah, and we do anticipate several other sectors in the coming months also having similar sites, particularly in the built environment and the electronic sector. So we do expect to see, and the critical mineral sector, those three are coming as well. And not just in Australia, so around the world.
+
+[Speaker 5]
+I do have one. If you're done with that, I do have one question. And this was my allusion to the slightly throwing Steve under the bus.
+
+I know he mentioned about getting the rest of the business case stuff merged in. It was supposed to be done. A Slack message said he was going to do it over last weekend and be there for Monday.
+
+It doesn't look like there's any PRs outstanding with regards to it.
+
+[Speaker 1]
+There is one PR that Luca put up that does have some of that business case stuff that is outstanding. I saw some errors there. I was hoping they might resolve with the push, but I think we need to take a look at that.
+
+So I'll have a conversation with them, with Steve about that tomorrow, and we'll come back to you.
+
+[Speaker 5]
+Okay. All right. Thanks, Zach.
+
+Just because we're trying to figure out how to keep the things, get it finished, but we're in that balanced state between Google Doc and GitHub. Yep. That's right.
+
+[Speaker 1]
+Follow up on that for you.
+
+[Speaker 5]
+Okay. Thanks.
+
+[Speaker 12]
+Michael, I'm doing some of the content on the website from the Google Docs. Also to everyone, I did also put an issue about references. There are some references that can't be found.
+
+So if anyone has any idea of where they're coming from, any link, just add them there.
+
+[Speaker 5]
+I'll dig back through notes and see if I can find anything, Luca. Okay. Thanks.
+
+[Speaker 12]
+Thanks.
+
+[Speaker 1]
+Okay. All right. Well, thank you, everybody, for your time and contributions and feedback.
+
+And I'm looking forward to the next one, and I appreciate everybody's time today. Thank you, everyone.
+
+[Speaker 14]
+Thank you.
+
+[Speaker 6]
+It's looking great, Zach. Thanks.
+
+[Speaker 1]
+Oh, thanks, Ashley. You did all the work. Thanks, everybody.
+
+Thank you. Bye.

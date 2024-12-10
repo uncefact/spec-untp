@@ -62,9 +62,10 @@ Summary list of registered UNTP Extensions
 |--|--|--|
 |Built Environment Vocabulary|Catalog of sustainability creiteria for the built environment|SVC|
 
-### [Australian Agriculture Traceability Protocol](https://gs-gs.github.io/aatp/)
+### [Australian Agriculture Traceability Protocol](https://aatp.foodagility.com/)
 
 * Extension Launched:  Feb-2024
+* Website : https://aatp.foodagility.com/ 
 * Release Date: TBA
 * Industry: Agriculture
 * Geography: Australia
