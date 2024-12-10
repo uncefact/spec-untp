@@ -113,7 +113,7 @@ The registered identity class represents the registry member. For example, in a 
 * `name` is the human readable registered entity name and SHOULD match the registered name as it appears in the authoritative register.
 * `registeredId` contains the simple identifier value that is unique within the register (but may not be globally unique) for example the VAT registration number.
 * `idScheme` identifies the authoritative register.  If the identity scheme is registered with UN/CEFACT then the `idScheme.id` MUST match the `identityRegister.id` in the UN/CEFACT scheme register.
-* `registerType` is a coded value that allows verifiers to distinguish between different DIA [use cases](#use-cases)
+* `registerType` is a coded value that allows verifiers to distinguish between different DIA [use cases](#dia-use-cases)
 * `registrationScopeList` contains a list of URIs that define the scope of the member registration. The values are very specific to the register. For example a national business register would typically have a controlled vocabulary of entity types (eg [Australian Entity Types](https://abr.business.gov.au/Help/EntityTypeList))
 
 

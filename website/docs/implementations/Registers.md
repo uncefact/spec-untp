@@ -17,7 +17,7 @@ Register types are
 
 |Register Name|Type|UNTP Scope|Geographic scope|Status|
 |--|--|--|--|--|
-|[Government of British Columbia Org Book](#sample-register)|Organisation|IDR, DIA|Canada|planned| 
+|[Government of British Columbia Org Book](#government-of-british-columbia-org-book)|Organisation|IDR, DIA|Canada|planned| 
 
 
 ## Implementation Details
