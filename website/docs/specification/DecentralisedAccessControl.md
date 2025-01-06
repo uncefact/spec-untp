@@ -20,7 +20,7 @@ The conceptual model for decentralised access control is relatively simple. All 
 1. **You already have the key:** The key is passed by the data holder to the data requestor by a separate channel. For example, to empower access to non-public data by the legitimate purchaser of the goods, the key could be located inside the packaging of the product. 
 2. **You have a right to the key:** The key is made available to any data requestor that can prove their authorised role to the data holder via an authentication mechanism such as [DID Authentication](https://w3c-ccg.github.io/vp-request-spec/#did-authentication). 
 
-Each uniquely identified item will have a unique encryption key. Therefore the keys provided by either of the above methods is usable only to decrypt the data about a single facility/product/item.
+Each uniquely identified item will have a unique encryption key. Therefore the keys provided by either of the above methods is usable only to decrypt the data about a single item. Similarly, for confidential data about products or facilities each will have it's own unique encryption key. 
 
 Shared secrets and DID Authentication can be used in conjunction - for example a data holder may allow anonymous users to read non-public data with just a secret but may require both the secret (to prove item ownership) and DID Authentication (to confirm identity or role of the data requestor) to update item data.
 
@@ -41,7 +41,7 @@ The decryption of previously issued and encrypted verifiable credentials is pref
 |DAC-1|Anonymous access|As a data requestor that requires access to public product information, I should be able to access the information without any registration or identification - so that my privacy remains protected. |[Anonymous public access](#anonymous-public-access)|
 |DAC-2|Access by legitimate owner|As the legitimate owner or user of a specific serialised item, I should be able to access non-public information such as usage and maintenance history about my item and also be able to update post-sale life-cycle events without any need to register or identify myself to the data holder.|[Anonymous access with secret](#decryption-key-as-shared-secret)|
 |DAC-3|Access with verifiable role|As an authorised actor such as an accredited recycling plant or a government authority, I should be able to access and update non-public product information in according to my authorised role even if I am otherwise unknown to the data holder.|[Decentralised authentication - role](#decentralised-authentication-workflow) `registrationScopeList` property|
-|DAC-4|Access with verifiable identity|As a known and trusted data requestor party I should be able to prove my identity to the data holder and be granted access according to my permissions. |[Decentralised authentication - ID](#decentralised-authentication-workflow) `registeredId` property|
+|DAC-4|Access with verifiable identity|As a known and trusted data requestor party I should be able to prove my identity to the data holder and be granted access according to my permissions. |[Decentralised authentication - ID](#decentralised-authentication-workflow) `registeredId` property or any [federated identity](#authenticated-workflow) protocol|
 |DAC-5|Confidential supply|As buyer that received credentials from my suppliers that provide confidence in the sustainability or quality of my upstream supply chain, I would like to pass on the sustainability or quality confidence to my customers without revealing the identity of my suppliers. |[N-tier supplier visibility](#n-tier-supplier-visibility) |
 |DAC-6|Discoverability|As any data requestor that queries available data about a product or facility from an identity resolver service, I would like to understand not only what public data is available but also what confidential data is available and what evidence I need to provide to access the confidential data.|[Discoverability of encrypted content](#confidential-data-discovery) |
 |DAC-7|Durability| As a data requestor seeking information about a product or facility, I want to access the necessary data according to my role even if the original manufacturer is no longer in business and whether or not the data is open or confidential.|[Durable storage options](#durable-storage)|
@@ -49,6 +49,15 @@ The decryption of previously issued and encrypted verifiable credentials is pref
 |DAC-9|Small footprint|Where space is tight (eg under a wine bottle cap) then a small format secret key option is available.|[Secret key carrier](#small-footprint-codes)
 
 ## Decentralised Access Control
+
+The simple matrix below will assist the reader to understand the context of the access control guidance and when to use each access model. 
+
+|Security context| no secret key| access with secret key|
+|--|--|--|
+|**no authentication**|publicly discoverable data |item specific confidential data (eg service history) for the legitimate product owner |
+|**authenticated & authorised role**|authorised role access to confidential data about multiple items (eg a customs authority) |authorised role access to specific item data only (eg repair facility update to item history) or facility level confidential data.|
+
+The following paragraphs provide guidance on how to secure data and grant access for various scenarios. 
 
 ### Anonymous public access
 
@@ -106,12 +115,13 @@ The full and short URLs would produce the following QR codes
 |--|--|
 |![Full](QR-DACcomplexURLwithKey.png)|![Short](QR-DACshortRedirectURL.png)|
 
+### Federated authentication workflow
+
+In some cases access to (and update of) confidential data requires more than a shared secret that proves ownership of a serialised item but also requires evidence that the data requestor has an authorised role such as a competent authority, a recycling plant, or accredited auditor. When the data requestor is already known and registered with the data provider then a conventional "sign-in-with" federated authentication and authorisation mechanism such as [OAuth 2.0](https://oauth.net/2/) or [OIDC](https://openid.net/specs/openid-connect-core-1_0.html) can be used. UNTP does not impose any restrictions on how a data provider authenticates and authorises access to protected data for users that are already known to the provider. 
+
+However, these kind of protocols require a relying-party relationship between the data provider that requires evidence of identity (eg a product passport issuer) and an identity provider that is the manager of the identity (eg a regulatory authority). Although this "sign-in-with" protocol is easy to implement with social network identity providers who deliberately place low barriers to relying parties, more authoritative registers such as national business registers, land registers, trademark registers, and so on are much more conservative. They mostly either don't offer federated identity or even if they do, they are very restrictive about allowed relying parties. 
 
 ### Decentralised authentication workflow
-
-In some cases access to (and update of) confidential data requires more than a shared secret that proves ownership of a serialised item but also requires evidence that the data requestor has an authorised role such as a competent authority, a recycling plant, or accredited auditor. When the data requestor is already known and registered with the data provider then a conventional "sign-in-with" federated authentication and authorisation mechanism such as [OAuth 2.0](https://oauth.net/2/) or [OIDC](https://openid.net/specs/openid-connect-core-1_0.html) can be used. 
-
-However these kind of protocols require a relying-party relationship between the data provider that requires evidence of identity (eg a product passport issuer) and an identity provider that is the manager of the identity (eg a regulatory authority). Although this "sign-in-with" protocol is easy to implement with social network identity providers who deliberately place low barriers to relying parties, more authoritative registers such as national business registers, land registers, trademark registers, and so on are much more conservative. They mostly either don't offer federated identity or even if they do, they are very restrictive about allowed relying parties. 
 
 Decentralised protocols provide a much simpler and more scalable authentication and authorisation approach for decentralised architectures that avoids any need for direct collaboration or dependencies between data providers and identity providers. For example, consider an access rule defined by a China based battery manufacturer that says "to update battery status to `recycled` the requestor must be an accredited recycling establishment operating in a recognized jurisdiction (eg Australia). The workflow would be 
 
@@ -138,7 +148,6 @@ UNTP does not define any new protocols for decentralised authentication but rath
 
 
 The best choice will eventually be the specification(s) that demonstrate the widest market implementation. At this time, the UNTP recommendation is that implementers SHOULD use **DID-Authentication** but MAY also use either **DID-SIOP** or **OpenID4VP**.
-
 
 ### Confidential data discovery
 
@@ -179,12 +188,37 @@ For example
 } 
 ```
 
-## N-tier supplier visibility
 
-To do - add words about how trusted third parties can verify upstream graphs and issue credentials so that data holders do not need to expose upstream supply confidential data. 
 
-## Security Considerations
+## Implementation Considerations
 
-To do - add concerns and caveats relevant to decentralised access control.
+To do - add guidance relevant to decentralised access control for common concerns and use-cases.
+
+### Linked confidential data
+
+Data about a value chain comprises multiple credentials about products and facilities in a linked-data graph. Any of the credentials in the graph may be considered confidential and therefore be protected by an appropriate access control method. This will present challenges for verifiers such as supply chain traceability systems that need to traverse long graphs for their customers. A typical scenario might work as follows:
+
+* A verifier encounters a serialised product ID and performs an IDR lookup which returns a link-set which contains:
+	* link to an un-encrypted Digital Product Passport (DPP) which also contains an ID of the facility that manufactured the item
+	* links to an encrypted Digital Traceability Event (DTE) with `"encryptionMethod": "AES-128"` and `"accessRole":["untp:accessRole#Anonymous"]` properties.
+* The verifier has the secret key for the given item and so decrypts the DTE to find that it is a transformation event that lists the identifiers and quantities of input products. 
+	* For some of the input product ID, the verifier is able to resolve link-sets from relevant IDRs and access public data (eg DPPs) about the input products.
+	* The input product IDR process also returns encrypted links but they cannot be decrypted because the verifier has no access to the secret key for supplier input products.
+* The verifier resolves the facility ID found in the DPP to a new link-set that contains links to both public and private data about the facility.
+	* A link to a public digital facility record (DFR) includes precise geo-location information as well as some public sustainability claims.
+	* A set of links to facility level conformity credentials (DCC) that are encrypted and have `"accessRole":["untp:accessRole#Customer"]` property. The verifier uses DID-Authentication to connect to the DCC end points and presents a Digital Identity Anchor (DIA) that proves the verifier ID which matches a facility customer list. Decryption keys are provided with a new link-set of the authorised customer.
+
+In general, when a verifier hits a graph node that in encrypted and does not have access keys, then graph traversal cannot proceed beyond that node. Perhaps the most common scenario will be transformation events that reveal the input products (and suppliers) in a manufacturing process. 
+
+### N-tier supplier visibility
+
+To do - guidance about how to handle upstream product / supplier data that is considered sensitive. There are likely to be four "levels" of transparency that implementers may choose:
+
+* Make it all public
+* Make your suppliers visible only to your direct customers (eg if the ID in your DIA matches the destination party ID in a transaction event)
+* Use a trusted third party to assess to your supply chain sustainability without revealing supplier identities - and issue a more public digital conformity credential that attests to qualities without identities.
+* Make it all private and never share anything.
 
 ### Durable storage
+
+To do - write some words about how to manage protected data even after the supplier / publisher is no longer in business.
