@@ -61,7 +61,7 @@ The following paragraphs provide guidance on how to secure data and grant access
 
 ### Anonymous public access
 
-Anonymous access to public data is the default UNTP access pattern. it is already described in the [identity resolver](IdentityResolver.md) specification. from a security and resilience perspective, the only requirements are 
+Anonymous access to public data is the default UNTP access pattern. It is already described in the [identity resolver](IdentityResolver.md) specification. From a security and resilience perspective, the only requirements are 
 
 * That data providers MUST NOT **require** personal identifying information from the data requestor as a condition of providing public information.
 * That data SHOULD remain available for the lifetime of the product, irrespective of whether the original manufacturer still exists. 
