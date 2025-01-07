@@ -17,8 +17,9 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 28th Nov 2024.  [Invitation Link](https://calendar.app.google/q9DX8SANXSCKrJGW7).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
-* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 12th Dec 2024. [Invitation link](https://calendar.app.google/E6wLvBxCJ7VgAvd8A).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
+
+* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 9th Jan 2025. [Invitation link](https://calendar.app.google/E6wLvBxCJ7VgAvd8A).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
+* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 23rd Jan 2025.  [Invitation Link](https://calendar.app.google/q9DX8SANXSCKrJGW7).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
 
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
@@ -30,6 +31,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2024-12-12| [The meeting discussed progress on UNTP collaborations, technical updates, and pilot projects, with participants emphasizing interoperability, schema flexibility, and industry-specific implementations for 2025 goals.](#2024-12-12-meeting-summary))| [video](https://us02web.zoom.us/rec/share/XLYqWl-SuqhWB8BvudCHewjB-ds60wD6AyDAafxVB0SSKdm4PBbCKm0bTiY_xYRy.4SVCRR3yzrsJ2w4c)|[transcript](../../meetings/2024-12-12-Recording.txt)|
 |2024-11-28| [The meeetingunderscored the progress in developing agricultural extensions for UNTP, the usability of tools like the playground, and the importance of addressing business challenges alongside technical ones.](#2024-11-28-meeting-summary)|[transcript](../../meetings/2024-11-28-Recording.txt)|[video](https://us02web.zoom.us/rec/share/HVySh1IQGfWbWrZzJDwVqWZgTFhhJV3JKboYcS50zvr2B4jx5lU9UBsNCxCKtmuF.8BMJxuD20MrOmRko)|
 |2024-11-14| [The UNTP working group discussed recent industry commitments, advanced business case documentation, and proposed a community-driven testing support ecosystem to enhance UNTP implementation and interoperability.](#2024-11-14-meeting-summary)|[video](https://us02web.zoom.us/rec/share/diHIQ18nhFsX7h5bEaNia9n9FxuS3GYBaLZdSp7MxEKVjhu7PiuVi3VYhUYaCd5r.lnj0ChgXR4TskJuU)|[transcript](../../meetings/2024-11-14-Recording.txt)|
 |2024-10-31| [The team discussed updates on UNTP governance, digital product passport collaborations, and the methodology for industry-specific extensions, focusing on security, visibility, and implementation compliance.](#2024-10-31-meeting-summary)|[video](https://us02web.zoom.us/rec/share/IHBm8m69es-EaEl_Je01fsqUNAzY4QuumwJZaeI0ihah6wrZADAmyRC2bK8Jt-lZ.3FxFLsOE9Fjkvsvx)|[transcript](../../meetings/2024-10-31-Recording.txt)|
@@ -67,6 +69,74 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+## 2024-12-12 Meeting Summary
+
+**Date**: December 12, 2024  
+**Purpose**: Discuss updates, collaboration opportunities, and next steps for UNTP and related projects.
+
+---
+
+### **Participants**
+- **Steve**: Meeting lead, discussed UNTP updates and coordination with various organizations.
+- **Adriana**: Provided updates on the CERPAS project and emphasized the importance of interoperability and regulatory compliance in DPPs.
+- **Patrick**: Shared experiences with BC Mines Act permits and raised technical concerns about schema flexibility.
+- **Phil**: Contributed insights on updating DPPs and discussed GS1-related work.
+- **Nick Smith**: Introduced his work on supply chain credentialing for emissions reporting.
+- **Danika**: Highlighted her contributions to visual design for human-readable credentials.
+- **Virginia**: Clarified distinctions between IEC, ITU, and other standards organizations.
+
+---
+
+### **Key Discussion Points**
+1. **Updates from the Rome Forum**:
+   - Progress on UNTP and collaboration with ISO, CENCENELEC, and ITU.
+   - A UNECE co-lead for ISO TC154 work was introduced to ensure alignment with UNTP.
+   - Upcoming WWF pilots on sustainable practices in food and agriculture.
+
+2. **CERPAS Collaboration**:
+   - Adriana discussed challenges and progress in interoperability and regulatory standards for DPPs.
+   - Identified gaps in user stories and opportunities for collaboration on pilots.
+
+3. **Testing and Implementation**:
+   - UNTP aims to finalize data models for conformity credentials by April 2025.
+   - Volunteers sought to test mapping for industries like batteries, agriculture, and the built environment.
+
+4. **Technical Concerns**:
+   - Patrick raised issues about schema flexibility for extending digital conformity credentials.
+   - Discussions on managing updates and linking credentials (e.g., service events).
+
+5. **Future Collaboration**:
+   - Interoperability testing planned for early 2025.
+   - Interest in pilot programs with industrial partners like Century Batteries.
+
+---
+
+### **Actions and Next Steps**
+1. **Pilot Projects**:
+   - Explore pilots in various industries, including Australian agriculture and batteries.
+   - Adriana and Nick Smith to coordinate potential Australian collaborations.
+
+2. **Schema Flexibility**:
+   - Patrick to raise a GitHub issue to address schema concerns and ensure extension compatibility.
+
+3. **Testing**:
+   - Volunteers to test mapping of UNTP credentials to specific industries.
+   - Focus on identifying gaps and refining data models before the first release.
+
+4. **Documentation**:
+   - Update UNTP pages on decentralized access control and interoperability patterns.
+   - Publish mapping tools to assist contributors unfamiliar with JSON schema.
+
+5. **Next Meeting**:
+   - Scheduled for January after the holiday break.
+
+---
+
+### **Closing Remarks**
+- Participants shared holiday greetings.
+- Steve emphasized ongoing collaboration through Slack and the mailing list.
+
 
 
 ## 2024-11-28 Meeting Summary
