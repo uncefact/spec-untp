@@ -25,6 +25,8 @@ Summary list of software products and status of implementation. Scope defines th
 | [Cordina](#cordina)                                               | Cordina emissions intelligence platform  | VCP, DTE, DCC, IDR                          | planned   |
 | [Enigio](#enigio)                                                 | trace:original                           | VCP, DPP, DTE, DCC, DFR, DAC                | planned   |
 | [Sustainable Choice Group](#sustainable-choice-group).            | Sustainability Tracker                   | VCP, DPP, IDR                               | planned   |
+| [Health LOQ](#health-loq) |Health LOQ Document protection, Product Origin, Compliance dashboard| VCP, DPP, DTE, DCC, IDR, DAC, SVC| planned|
+| [SIMBA Chain](#simba-chain)| SIMBA Ensure | VCP, DPP, DFR, DTE, DCC, IDR, DAC| planned| 
 
 ## Implementation Details
 
@@ -296,15 +298,69 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                                             | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Logo     | Implementation Statement      |
+| ------ | --------- |
 | ![Logo](/img/implementations/sustainabilitytracker.com/logo.png) | Sustainability Tracker is a world first solution that houses brand sustainability credentials, initiatives, actions, and evidence in the palm of your hands. By simplifying complex data, Sustainability Tracker helps consumers to make considered choices in real time while they shop and helps brands share their sustainability messages without greenwashing. We host the sustainability data of brands and businesses around the world, and fully intend to support Digital Product Passport development. |
 
 #### Product Information
 
-| Product Name & version                                     | Description                                                                                                                                                                                                                                                                                                               | UNTP Scope & versions                   | Implementation Test Report |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | -------------------------- |
+| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
+| ------ | ------------- | ----------- | ------------ |
 | [Sustainability Tracker](https://www.sustainabilitytracker.com/) | Sustainability Tracker is a world first solution that houses brand sustainability credentials, initiatives, actions, and evidence in the palm of your hands. | VCP, DPP, IDR - v0.5, v1.0 | TBA |
 
+### [Health LOQ](https://healthloq.com/)
+
+- UNTP commitment made on: 07-Dec-2024
+- Registration Country: USA
+- Operating Countries: Global
+- Participate in pre-release UNTP Pilots? : Yes
+
+| Logo     | Implementation Statement      |
+| ------ | --------- |
+| ![Logo](/img/implementations/healthloq.com/logo.jpeg) | The future of trade moves away from complex, redundant, duplicatory document management towards a more automated, transparent, standard way to connect with trading partners. HealthLOQ provides product/ingredient/component origin transparency and certificate protection and verification software for companies in industries where such supply chain transparency is critical. HealthLOQ specializes in providing secure and transparent solutions for tracking and verifying the integrity of products across the supply chain. Their innovative approach ensures that consumers can trust the products they purchase. At the forefront of digital document security, HealthLOQ offers a robust solution for protecting and verifying sensitive documents. Leveraging blockchain technology, HealthLOQ ensures the authenticity and integrity of critical documents, fostering transparency and trust across various industries. |
+
+HealthLOQ is a member of [GRMA](https://grmalliance.org/), the Global Retailer and Manufacturing Alliance.
+
+#### Product Information
+
+| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
+| ------ | ------------- | ----------- | ------------ |
+| [Health LOQ Document Protection](https://healthloq.com/verify-document) |HealthLOQ authenticates legitimate electronic documents and detects fraudulent or tampered versions using blockchain technology  | VCP, IDR, DAC - v0.5, v1.0 | TBA |
+| [Health LOQ Product Origin](https://healthloq.com/products?product_type=all)| HealthLOQ captures first-party inputs from ingredient suppliers and manufacturers and knits that information together into a product genealogy. It links supply chain information from specific ingredient batches to the specific batch of the final product. | DPP, DTE, DIA, IDR, DAC| TBA |
+| [Health LOQ Compliance Dashboard](https://healthloq.com/compliance-dashboard)| Verify a brand’s credentials through the issuing organization. Automate the verification of CoAs, other documentation, & credentials without manual searches. Check for metals, microbials, and adulterants in products effortlessly. Automate the comparison of the label to the CoA for ingredients listed|VCP, IDR, DAC|TBA|
+
+#### Industry Focus
+
+| Industry Sector                   | Process focus        | UNTP Usage    |
+| --------------------------------- | -------------------- | ------------- |
+| Pharmaceuticals, Nutraceuticals, Food Products, Cosmetics, Military and Defense | Traceability & Integrity| VCP, DCC, DTE |
+
+### [SIMBA Chain](https://simbachain.com/)
+
+- UNTP commitment made on: 12-Dec-2024
+- Registration Country: USA
+- Operating Countries: Global
+- Participate in pre-release UNTP Pilots? : Yes
+
+| Logo     | Implementation Statement      |
+| ------ | --------- |
+| ![Logo](/img/implementations/simbachain.com/logo.png) | SIMBA Ensure is a blockchain-powered solution that delivers trust, transparency, and traceability across supply chains and life-cycles of assets and products by creating immutable digital records for asset verification. The adoption of the UNTP is vital for aligning with global standards of accountability and interoperability. By integrating UNTP, we help stakeholders meet international compliance requirements, reduce risks, and foster equitable, transparent ecosystems. This initiative supports sustainable development goals while empowering businesses to innovate responsibly and compete in a global digital economy. |
+
+SIMBA chain is a participant in
+
+* [NAATBatt](https://naatbatt.org/) - Alliance for Advanced Transportation Batteries. Board Member
+* [SAE](https://www.sae.org/) (Society of Automotive Engineers) Battery Global Traceability Standards Development Committee
+* [CIRPASS 2](https://cirpass2.eu/) Electronics Experts Working Group (representative is a SIMBA consultant)
 
 
+#### Product Information
+
+| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
+| ------ | ------------- | ----------- | ------------ |
+| [SIMBA Ensure](https://simbachain.com/) |Transfer error-free and tamper-proof data using any system, with any party – fast. SIMBA’s Platform provides trusted seamless data exchange for identity management, multi-vendor data sharing, and third party data verification. | CP, DPP, DFR, DTE, DCC, IDR, DAC|- v0.5, v1.0 | TBA |
+
+#### Industry Focus
+
+| Industry Sector                   | Process focus        | UNTP Usage    |
+| --------------------------------- | -------------------- | ------------- |
+| Automotive, batteries | Traceability & Integrity| VCP, DCC, DTE |
