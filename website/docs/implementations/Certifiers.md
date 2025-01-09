@@ -15,6 +15,7 @@ Summary list of conformity assessment bodies that have implemented or plan to im
 |--|--|--|--|--|
 |[ACRS (Australasian Certification Authority for Reinforcing and Structural Steel)](#acrs)|Global MRA|AU, NZ|DPP, DCC|planned| 
 |[The Copper Mark](#the-copper-mark)|Industry|GLobal|DCC|planned| 
+|[Towards Sustainable Mining](#towards-sustainable-mining)|Industry|Global|DCC v0.5|Implemented|
 
 
 ## Implementation Details
@@ -58,4 +59,21 @@ Summary list of conformity assessment bodies that have implemented or plan to im
 |--|--|--|--|--|
 |[Coppermark Assurance Framework](https://coppermark.org/standards/core-documents/)|Coppermark Criteria, Due Diligencem and Chain of Custody standards|Human rights and environment|DCC v0.5, v1.0|TBA |
 
+### [Towards Sustainable Mining](https://mining.ca/towards-sustainable-mining/)
 
+**Responsible Mining Practices**
+
+* UNTP commitment made on:  14-Dec-2024
+* Registration Country: Canada
+* Operating Countries: Global
+* Participate in pre-release UNTP Pilots? : Yes
+
+|Logo|Implementation Statement|
+|--|--|
+|![Logo](/img/implementations/mining.ca/logo.png) | TTSM is a globally recognized sustainability program that supports mining companies in managing key environmental and social risks while meeting society’s needs for minerals, metals, and energy products. Through TSM, mine sites develop robust sustainability management systems and report annually on key indicators of performance. Qualified external verifiers review and confirm these results every three years. Implementation of the UN Transparency Protocol is important to TSM as a means to facilitate the sharing of verified performance data between mine sites and interested stakeholders, including with investors and downstream customers. |
+
+**Scheme Information**
+
+|Conformity Scheme|Description|Topic|UNTP Scope|Test Report|
+|--|--|--|--|--|
+|[TSM](https://mining.ca/towards-sustainable-mining/)|The Mining Association of Canada’s Towards Sustainable Mining (TSM) standard is a globally recognized sustainability program that supports mining companies in managing key environmental and social risks.|Human rights and environment|DCC v0.5, v1.0|TBA |
