@@ -45,7 +45,7 @@ The world's supply chains must reach to the point where digitally verifiable tra
 
 ## The United Nations Transparency Protocol (UNTP)
 
-The UNTP provides a solution to the transparency challenges facing the world's supply chains. By implementing a simple prootcol that can be supported by existing business systems, stakeholders will realise immediate benefits and will become visible contributors to the sustainability of global supply chains.
+The UNTP provides a solution to the transparency challenges facing the world's supply chains. By implementing a simple protocol that can be supported by existing business systems, stakeholders will realise immediate benefits and will become visible contributors to the sustainability of global supply chains.
 
 ![Transparency Challenges](TransparencyChallenges.png)
 
