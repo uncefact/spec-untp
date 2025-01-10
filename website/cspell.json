@@ -6,10 +6,32 @@
         "software-terms"
     ],
     "words": [
+        "CBAM",
         "CEFACT",
+        "CEN",
+        "CENELEC",
+        "DID",
+        "EPCIS",
+        "ESPR",
+        "EUDR",
+        "IFRS",
+        "NLIS",
+        "PCDS",
         "UNTP",
-        "greenwashing",
         "VCDM",
-        "WCDM"
+        "WCDM",
+        "airies",
+        "anoncreds",
+        "deconsolidation",
+        "greenwashing",
+        "hyperledger",
+        "incentivises",
+        "linksets",
+        "refurbishers",
+        "repudiable",
+        "uncefact"
+    ],
+    "ignorePaths": [
+        "docs/about/Meetings.md"
     ]
 }
