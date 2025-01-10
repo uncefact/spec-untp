@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20241128T080000Z
+DTEND:20241128T090000Z
+RRULE:FREQ=WEEKLY;WKST=SU;COUNT=11;INTERVAL=4;BYDAY=TH
+DTSTAMP:20250109T011453Z
+ORGANIZER;CN=steve capell:mailto:steve.capell@gmail.com
+UID:1sft0moj8ldet7mucdbojr87m7_R20241128T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=steve capell;X-NUM-GUESTS=0:mailto:steve.capell@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=transparency-uncefact;X-NUM-GUESTS=0:mailto:transparency-uncefact@g
+ ooglegroups.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;X-NUM-GUESTS=0:mailto:felix.haerer@fhnw.ch
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;X-NUM-GUESTS=0:mailto:adrian.von-muehlenen@basf-intertrade.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=klaeri.schelhowe@scheddebrock.com;X-NUM-GUESTS=0:mailto:klaeri.schelhow
+ e@scheddebrock.com
+X-MICROSOFT-CDO-OWNERAPPTID:1388490945
+CREATED:20241030T102236Z
+DESCRIPTION:Zoom Meeting link - <a href="https://us02web.zoom.us/j/82338035
+ 316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1" target="_blank">https://us02web.z
+ oom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1</a><br><br>Contin
+ ued development of specification and guidance at <a href="https://uncefact.
+ github.io/spec-untp/.">https://uncefact.github.io/spec-untp/.</a> Meetings 
+ will be strictly limited to one hour and will spit time equally between bus
+ iness and technical issues.
+LAST-MODIFIED:20250109T011439Z
+LOCATION:Virtual meting
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:UNTP Team meeting
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+END:VCALENDAR
