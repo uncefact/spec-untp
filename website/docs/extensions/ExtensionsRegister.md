@@ -60,7 +60,7 @@ Summary list of registered UNTP Extensions
 
 |Credential|Description|Extension of|
 |--|--|--|
-|Built Environment Vocabulary|Catalog of sustainability creiteria for the built environment|SVC|
+|Built Environment Vocabulary|Catalog of sustainability criteria for the built environment|SVC|
 
 ### [Australian Agriculture Traceability Protocol](https://aatp.foodagility.com/)
 
