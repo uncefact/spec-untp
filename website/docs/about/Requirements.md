@@ -27,7 +27,7 @@ This set of requirements aim to ensure that UNTP is goverened in an open and tra
 
 ## Architectural Requirements
 
-This set of requirements aim to ensure that UNTP is scalable enough to achieve global implementations at a volume of global trade that is sufficient ot have a material impact on greenwashing - by building on top of existing industry systems and practices and using the simplest possible framework that meets the goals.
+This set of requirements aim to ensure that UNTP is scalable enough to achieve global implementations at a volume of global trade that is sufficient to have a material impact on greenwashing - by building on top of existing industry systems and practices and using the simplest possible framework that meets the goals.
 
 | ID    | Name                   | Requirement Statement                                                                                                                                                                                                                                                                      | Solution Mapping                                  |
 | ----- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
