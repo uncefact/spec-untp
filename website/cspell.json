@@ -1,0 +1,15 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "dictionaries": [
+        "en-gb",
+        "software-terms"
+    ],
+    "words": [
+        "CEFACT",
+        "UNTP",
+        "greenwashing",
+        "VCDM",
+        "WCDM"
+    ]
+}
