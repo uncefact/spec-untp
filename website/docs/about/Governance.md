@@ -26,7 +26,7 @@ UN/CEFACT maintains formal liaison arrangements with other UN organisations as w
 
 ## UNTP Governance Details
 
-UNTP is one program within the overall UN/CEFACT governance framework. The diagram below shows how UNTP and recommendation 49 fit within the global UN/CEFACT governance framework and also specifically how UNTP extensions fit within the UNTP governance framework. Extensions are designed to accommodate industry or geographic specific needs of a specific community of implementers and are typically governed by a member association. To be formally [registered as  UNTP extension](../extensions), the extension must also be freely available under a [creative commons license](https://creativecommons.org/licenses/by/4.0/) and must be interoperable with UNTP specifications. 
+UNTP is one program within the overall UN/CEFACT governance framework. The diagram below shows how UNTP and recommendation 49 fit within the global UN/CEFACT governance framework and also specifically how UNTP extensions fit within the UNTP governance framework. Extensions are designed to accommodate industry or geographic specific needs of a specific community of implementers and are typically governed by a member association. To be formally [registered as  UNTP extension](../extensions), the extension must also be freely available under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/) and must be interoperable with UNTP specifications. 
 
 ![UNTP Governance Framework](Governance.png)
 
