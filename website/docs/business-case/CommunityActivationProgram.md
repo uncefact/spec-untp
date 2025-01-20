@@ -9,13 +9,13 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Introduction 
 
-Implementing UNTP initiatives often require industry-wide collaboration due to concerns about interoperability and costs. While individual companies may be hesitant to act alone, widespread adoption can lead to significant benefits. For instance, the use of common software platforms and standards can reduce costs and improve efficiency for all businesses in an industry. The CAP (Community Activation Program) provides a framework for businesses to collaborate on UNTP implementation and assess the potential benefits.
+Implementing UNTP initiatives often requires industry-wide collaboration due to concerns about interoperability and costs. While individual companies may be hesitant to act alone, widespread adoption can lead to significant benefits. For instance, the use of common software platforms and standards can reduce costs and improve efficiency for all businesses in an industry. The CAP (Community Activation Program) provides a framework for businesses to collaborate on UNTP implementation and assess the potential benefits.
 
 ## The vision: a Community Activation Flywheel
 
 Introduction
 
-If we project ourselves into the future, we expect to see communities develop beyond buyer and supplier relationships, and beyond industry associations. International organisations such as the United Nations, Development Banks, Trust Marks and IT Solution providers all have their valid and unique reasons to participate in these programs, resulting in the establishment of a virtuous circle and a flywheel which starts spinning as a self-perpetuating mechanism driven by its members, driving momentum and growth within the community. 
+If we project ourselves into the future, we expect to see communities develop beyond buyer and supplier relationships, and beyond industry associations. International organisations such as the United Nations, Development Banks, Trust Marks and IT Solution providers all have their valid and unique reasons to participate in these programs, resulting in the establishment of a virtuous circle and a flywheel that starts spinning as a self-perpetuating mechanism driven by its members, driving momentum and growth within the community. 
 
 ![Activation Flywheel](CommunityActivationFlywheel.png)
 
