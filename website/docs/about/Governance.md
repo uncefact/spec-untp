@@ -91,7 +91,7 @@ Every version change is automatically published to the UNTP test end point follo
 
 **Linked data vocabulary (test)**
 
-* Pattern:  `https://test.uncefact.org/vocabulary/untp/{vocab-name/{major-version}/{artefact}`
+* Pattern:  `https://test.uncefact.org/vocabulary/untp/{vocab-name}/{major-version}/{artefact}`
 * Example: `https://test.uncefact.org/vocabulary/untp/dpp/0/Product`
 
 **Schema and context files (test)**
