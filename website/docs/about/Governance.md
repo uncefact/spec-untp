@@ -97,7 +97,7 @@ Every version change is automatically published to the UNTP test end point follo
 **Schema and context files (test)**
 
 * Pattern: `https://test.uncefact.org/vocabulary/untp/{credential-type}/{versioned-file-name}`
-* Example: `https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.5.0.json`
+* Example: https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.5.0.json
 
 When a given version meets criteria to justify a production release then the governance process will approve a release. Not all versions will be released to production. Production releases will be published as follows.
 
