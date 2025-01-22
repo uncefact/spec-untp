@@ -72,40 +72,100 @@ This section defines the formal requirement statements for Identity Resolver imp
 
 ## Globally Unique Identifier Representation
 
-Linked data architectures, of which UNTP is an example, depend on unique and consistent identifiers of entities such as product and facilities. For this reason [URIs](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) are heavily used as identifiers of entities throughout UNTP credential types. However, many existing identifier schemes do not have formally rigorous URI schemes. Most identifier schemes have a well defined structure for the identifier - for example an Australian Business Number is always an 11 numeric digit number including a check digit. A globally unique URI is conceptually easy to make by prefixing the registered ID with a unique scheme ID. However most identifier schemes do not have a consistent scheme identifiers. Furthermore, the same identifier can be represented in many different ways in data carriers, on paper, or in structured data. For example
+### Linked Data Needs
+
+Linked data architectures, of which UNTP is an example, depend on unique and consistent identifiers of entities such as product and facilities so that they can be matched across different credentials. For this reason URIs are heavily used as identifiers of entities throughout UNTP credential types. But without consistency in the way globally unique identifiers are constructed, there is a high risk that valuable links are not made. For example, consider the same product identified in two credentials:
+
+* A digital product passport issued by a manufacturer with a sustainability claim about product `product.sample-register.com/123456789`
+* A digital conformity credential with a third party sustainability assessment about product `sample-register.com/product/123456789`
+
+Although these are the same product, the construction of the ID is different and so a validation that attempts to confirm a third party assessment of a claim will fail.
+
+In this section, we define conventions for the consistent representation of identifiers as globally unique [URIs](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) in UNTP credentials.
+
+### Uniform Resource Name (URN)
+
+URNs are a type of URI that are designed to be used as globally unique and persistent identifiers that remain available long after a specific resource that they identify ceases to exist or becomes unavailable. URNs MAY be used for any identifier and SHOULD be used as persistent identifiers for long lived entities such as organisations, facilities and long-lived products. 
+
+In patterns below, 
+
+* `{identifier-scheme}` is any string of characters permitted in URN Namespace Specific Scheme (alphanumeric characters, hyphen ,period, underscore, colon). 
+* `{identifier-value}` is the string of characters after the last colon (limited to alphanumeric characters, hyphen ,period, underscore).
+
+#### For existing IANA registered URN namespaces 
+
+Use your registered URN namespace.
+
+* pattern `urn:{ns}:{identifier-scheme}:{identifier-value}` 
+* examples:
+  * `urn:epc:id:sgtin:1234567.089123.2`
+  * `urn:lei:7LTWFZYICNSX8D621K86`
+
+#### For all other schemes
+
+Use the UN global trust register `gtr` URN namespace (IANA registration pending).
+
+* pattern: `urn:gtr:{identifier-scheme}:{identifier-value}` where `gtr` represents the UN global trust register namespace.
+* examples:
+  * `urn:gtr:register.business.gov.xx:90664869327` - representing an national business registration number
+  * `urn:gtr:nlis.com.au:QDBH0132XBS01234` - representing an Australian livestock identifier
+
+The `gtr` namespace represents identifier schemes that are listed in the UN global trust register (GTR). When the `gtr` namespace is used, the `{identifier-scheme}` MUST be a DNS domain name comprising URN allowed or percent-encoded characters (ie no `/` unless encoded as `%2F`).
+
+#### Resolving URNs to Identity Resolver URLs
+
+The UN global trust register will include resolver templates for each scheme and so the UNTP requirement that identifiers be resolvable is met by substituting the URN `{identifier-value}` into the `{id}` placeholder in the resolver template related to the matching `{identifier-scheme}`. For example
+
+* given a URN ID of `urn:gtr:nlis.com.au:QDBH0132XBS01234`, the `{identifier-scheme}` is `nlis.com.au`
+* and a resolver template of `https://resolver.nlis.com.au/{id}`  is registered for scheme `nlis.com.au`
+* then the resolver URL would be `https://resolver.nlis.com.au/QDBH0132XBS01234`
+
+### Uniform Resource Location (URL)
+
+URLs are a type of URI that represent addressable web locations. URLs as identifiers have the advantage that they are immediately resolvable but the disadvantage that they may become dead/broken links whenever a document is moved or a web site is restructured or a domain name changes. 
+
+#### IDR URLs as identifiers
+
+When URLs are used as identifiers in UNTP credentials they SHOULD be Identity Resolver URLs that conform to the ISO-18975 structured path syntax without parameters. 
+
+* pattern: `https://{identifier-scheme}/{identifier-value}` where `{identifier-scheme}` is a DNS domain name (without `/` characters unless `%2F` encoded) and `{identifier-value}` is a valid ISO-18975 path (which can include `/` characters to separate class, sub-class, and instance id as defined in ISO-18975) 
+* examples:
+  * `https://products.sample-company.com/1234567`
+  * `https://facilities-register.com/ABC123456`
+  * `https://example.com%2F01/733240226591`
+  * `https://example.com%2F01/733240226591/21/1234`
+
+When a given identifier scheme uses both URN and URL mechanisms to represent identifiers as URIs then the `[identifier-scheme}` part SHOULD be the same for both. If the identifier scheme is registered in the UN global trust register then the `[identifier-scheme}` MUST match the corresponding scheme ID in the trust register. 
+
+### Decentralised Identifiers (DID)
+
+Decentralised Identifiers (DIDs) are also generated but the methods used vary significantly and typically depend on some piece of data that the originating person owns. This might be their private cryptographic key or some other extremely hard to guess piece of data. Collisions are all-but impossible but the identifiers are usually significantly longer. The most widely used DID method is "DID Web" which uses the owner's internet domain name as the basis for identification, thus mixing the issued and generated philosophies with one advantage being that the resulting DIDs are short. It's important to note though that the primary purpose of a DID is to provide a means of proving control over the identifier and, having done that, retrieving the DID owner's public cryptographic key.
+
+### Universally Unique Identifier (UUID)
+
+As an alternative to being issued, identifiers can be algorithmically-generated. The best-known example of this is the Universally-Unique Identifier (UUID). This relies on it being *extremely* unlikely, but not impossible, that the same identifier will be generated twice. For many practical applications, that can be "good enough" although there are many instances where duplicates have arisen (known as "collisions").
+
+## Identifier Encoding on Data Carriers
+
+Identifier can be represented in many different ways in data carriers. For example
 
 * A 2D Matrix code might yield the string `0107332402265910211234567890240+A01=442.001-UP001T91456498765498765465432132168753` where `733240226591` is the product ID (with company prefix) and `1234567890` is the serial number
 * An RFID Tag for the same product might yield a string like `urn:epc:tag:sgtin-96:1.7332402.026591.1234567890` where `7332402.026591` is the product ID and `1234567890` is the serial number.
 * A QR code may may yield `https://id.sample-resolver.com/01/733240226591/21/1234567890` where `733240226591` is the product ID (with company prefix) and `1234567890` is the serial number.
-* A structured document may contain properties such as `"productID":"733240226591"` and `"serialNumber":"1234567890"`.
 
-The challenge is to ensure that all these different representations are mapped to a consistent globally unique identifier when building value chain transparency graphs. Failure to do so is likely to result in situations such as a product passport (DPP) making a sustainability claim about a specific product and a separately issued conformity credential (DCC) making third party assessments of the same product - but if the DPP and DCC represent the product URI differently then the claim and the independent assessment will not match. 
+The challenge is to ensure that all these different representations are mapped to a consistent globally unique identifier when building value chain transparency graphs. 
 
 ![ID mapping](IdentityResolverMapping.png)
 
-In this section, we define conventions for the representation of identifiers as URIs in UNTP credentials. 
-
-### Uniform resource name (URN)
-
-
-
-### Issuing Agencies
-Issuing Agencies act as a root that manages an identifier space. Examples include the internet domain name system, Digital Object Identifiers (DOIs), Legal Entity Identifiers (LEIs) and GS1 identifiers. In all these examples, the eventual identifier is created by appending a locally-defined string on the end of a prefix that is managed by the issuing agency that takes *its* authority from a central root. A well-known example is ICANN, which is the root authority for the internet domain name system. By renewable contract, they issue ".com" to Verisign who then license individual domain names under .com to others (usually via intermediaries). The licensee then creates their URLs under that domain name. Because ICANN is solely responsible for the internet's domain name system, global uniqueness is assured.
-
-The same principle applies in all managed identifiers. For LEIs, GLEIF acts as the root authority that gives prefixes to its Local Operating Unit who then issue specific identifiers and so on.
 
 ### ISO/IEC 15459 Issuing Agencies
+
 In the world of Automatic Identification and Data Capture (barcoding etc), the ISO/IEC 15459 series of standards establishes a registry that acts as the root authority. Organisations that wish to issue identifiers that are intended to be encoded in barcodes and/or RFID tags are assigned a unique Issuing Agency Code that ensures their identifiers do not clash with any others. A further standard, ISO/IEC 15418, defines so-called *Data Identifiers* and *Application Identifiers* that "qualify" identifiers. It is this system that enables those Issuing Agencies to efficiently encode globally unique identifiers in optical and radio frequency data carriers without any duplication and for the print and scan industry to be able to create and interpret the barcodes and tags.
 
 For example, the Data Identifier `2B` is for a *Gas Cylinder Container Identification Code assigned by the manufacturer in conformance with U.S. Department of Transportation (D.O.T.) standards*. The Application Identifier `01` is for a *Global Trade Item Number (GTIN)*. Data Identifiers are managed under the auspices of ANSI, Application Identifiers are managed by GS1.
 
-### Generated identifiers
-As an alternative to being issued, identifiers can be algorithmically-generated. The best-known example of this is the Universally-Unique Identifier (UUID). This relies on it being *extremely* unlikely, but not impossible, that the same identifier will be generated twice. For many practical applications, that can be "good enough" although there are many instances where duplicates have arisen (known as "collisions").
-
-Decentralised Identifiers (DIDs) are also generated but the methods used vary significantly and typically depend on some piece of data that the originating person owns. This might be their private cryptographic key or some other extremely hard to guess piece of data. Collisions are all-but impossible but the identifiers are usually significantly longer. The most widely used DID method is "DID Web" which uses the owner's internet domain name as the basis for identification, thus mixing the issued and generated philosophies with one advantage being that the resulting DIDs are short. It's important to note though that the primary purpose of a DID is to provide a means of proving control over the identifier and, having done that, retrieving the DID owner's public cryptographic key.
 
 ## Discoverability
-
 
 
 The term 'data carrier' applies to all 1- and 2-dimensional barcode symbols and radio frequency tags. A very large number of data carriers are in use, including proprietary ones tied to specific apps. For UNTP, the important data carriers are those defined by [ISO/IEC Joint Technical Committee 1, Steering Committee 31](https://www.iso.org/committee/45332.html). These include different types of linear symbol most people think of as 'a barcode', as well as [Data Matrix](https://www.iso.org/standard/80926.html), [QR Code](https://www.iso.org/standard/83389.html) and RFID tags. The standards for those data carriers do not define the type of identifier(s) that can be encoded so that, for practical purposes, it's necessary to also consider the origin and management of the identifiers to be encoded, the syntax to be used for that encoding, the devices and software necessary to print and read the data. It is this multi-layered complexity that makes "Automatic Identification and Data Capture" (AIDC) a professional activity in its own right.
