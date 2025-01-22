@@ -11,11 +11,11 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 The primary goal of UNTP is to make significant reductions in the incidence of greenwashing by giving unsustainable behaviour nowhere to hide. This will also uplift the value of legitimate ESG credentials from supply chain actors that have implemented sustainable practices. UNTP will have achieved it's purpose when
 
-| Goals                         | Description |
-| ----------------------------- | ----------- |
-| Most supply chain shipments are accompanied by verifiable ESG performance data. | In complex supply chains this means that at each supply chain step verifiable product and ESG information accompanies products via a Digital Product Passport. |
+| Goals                                                                                                     | Description                                                                                                                                                                                                                 |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Most supply chain shipments are accompanied by verifiable ESG performance data.                           | In complex supply chains this means that at each supply chain step verifiable product and ESG information accompanies products via a Digital Product Passport.                                                              |
 | Greenwashing is a niche activity that is easily detected and quickly penalised by markets and regulators. | Businesses that chose not to share verifible information about their products are assumed to be doing the wrong things from an ESG perspective and therefore get lower prices for their products or lose access to markets. |
-| Products with the best sustainability characteristics enjoy the greatest market access and price uplift. | Sharing data about your products becomes a competitive advantage and your business choses to compete on the basis of high quality information. |
+| Products with the best sustainability characteristics enjoy the greatest market access and price uplift.  | Sharing data about your products becomes a competitive advantage and your business choses to compete on the basis of high quality information.                                                                              |
 
 # Target Audience & Benefits
 
@@ -106,7 +106,7 @@ There are over 100,000 industry associations world-wide. Most represent a specif
 
 - Industry member associations may add value to their membership by developing develop UNTP industry profiles that provide their members with targeted implementation guidance that meets the needs of their industry and jurisdiction.
 - Industry member associations may develop training and implementation services, possibly in partnership with local service providers, thereby adding both a valuable service and also a revenue stream for the member association.
-- Industry member associations may act as a trusted independent quota managers to counter [mass balance fraud](../design-patterns/MassBalance.md) amongst their membership. The value of this service would be increased if the industry association is accredited by either a national accreditation authority or a global environmental or human welfare organisation.
+- Industry member associations may act as a trusted independent quota managers to counter [mass balance fraud](../design-patterns/ChainOfCustody.md) amongst their membership. The value of this service would be increased if the industry association is accredited by either a national accreditation authority or a global environmental or human welfare organisation.
 
 ## Software Developers
 
