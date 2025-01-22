@@ -11,7 +11,7 @@ The UNTP governance framework follows UN/CEFACT standard governance methodology 
 
 * is a public good that cannot be captured by any specific commercial interest and is permanently free to use.
 * is developed via a consensus based process that ensures it will meet the needs of value chain actors and member states. 
-* is specific, testable, and rigorously versioned so that implementers can be confident of stability and interoperability
+* is specific, testable, and rigorously versioned so that implementers can be confident of stability and interoperability.
 * is compatible with relevant national and international standards and regulations. 
 
 The governance framework described on this page is designed to meet these criteria.
@@ -87,7 +87,7 @@ Note that 0.x.y versions do not strictly follow semver and may include breaking 
 
 ### Release Management
 
-Every version change is automatically published to the UNTP test end point following a defined URL structure
+Every version change is automatically published to the UNTP `test.uncefact.org/vocabulary` end point following a defined URL structure
 
 **Linked data vocabulary (test)**
 
@@ -99,7 +99,7 @@ Every version change is automatically published to the UNTP test end point follo
 * Pattern: `https://test.uncefact.org/vocabulary/untp/{credential-type}/{versioned-file-name}`
 * Example: https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.5.0.json
 
-When a given version meets criteria to justify a production release then the governance process will approve a release. Not all versions will be released to production. Production releases will be published as follows.
+When a given version meets criteria to justify a production release then the governance process will approve a release that will publish the artefacts to the UNTP `vocabulary.uncefact.org` end point. 
 
 **Linked data vocabulary (production)**
 
