@@ -94,7 +94,7 @@ To deliver a successful extension project, teams require a range of specialist s
 
 # CAP membership provides access to valuable resources
 
-As a member of the Community Access Program, members can access a wide range of resources:
+As a member of the Community Activation Program, members can access a wide range of resources:
 
 * **Frameworks and toolkits**: The UNTP Business Case Templates and traceability frameworks provide a comprehensive foundation for project planning. These tools are designed to streamline decision-making processes, ensuring that stakeholders can effectively map out goals, objectives, and resource requirements. The templates also offer guidance for measuring and communicating the value of UNTP extensions to participants and decision-makers.  
 * **UNECE guidance**: The UNECE plays a pivotal role in ensuring global alignment and promoting interoperability through its lightweight governance framework. By offering strategic guidance, the UNECE ensures that extension projects remain consistent with international standards, thereby fostering cooperation across borders and industries. This guidance reduces redundancies and ensures projects are sustainable and impactful.  
@@ -104,7 +104,7 @@ As a member of the Community Access Program, members can access a wide range of 
 
 # Starting a community is simple
 
-* **Join the community**: Contact community@untp.org to connect with a UNTP lead. By joining the community, participants gain access to ongoing support, exclusive updates, and a global network of peers dedicated to advancing UNTP standards.
+* **Join the community**: Join the [UNTP chat channel](https://uncefact.slack.com/ssb/redirect) to connect with a UNTP leader and discuss your community needs. By joining the community, participants gain access to ongoing support, exclusive updates, and a global network of peers dedicated to advancing UNTP standards.
 
 * **Download the CAP toolkit**: Access resources, including methodologies, templates, and tools. This comprehensive toolkit is designed to guide organizations through every phase of a UNTP extension project, providing detailed frameworks for planning, execution, and evaluation. [Toolkit Download](https://uncefact.github.io/spec-untp/docs/tools-and-support/ImplementationPlans)
 
