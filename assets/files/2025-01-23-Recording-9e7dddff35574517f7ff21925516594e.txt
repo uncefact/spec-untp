@@ -1,0 +1,660 @@
+[Speaker 1]
+Hello. Oh, hello, Sinho.
+
+[Speaker 10]
+Hi, Steve. Long time, no see.
+
+[Speaker 1]
+Yes. How are you? I'm all well.
+
+Thank you. Thanks for joining. I start with even one minute before it's supposed to start, so I usually give it until about three minutes afterwards.
+
+speak before we kick off.
+
+[Speaker 9]
+Hello, good morning.
+
+[Speaker 1]
+Suzanne, nice to see you.
+
+[Speaker 4]
+Nice to see you too.
+
+[Speaker 1]
+Phil's joined us. Hello, Phil.
+
+[Speaker 12]
+Hello, everyone.
+
+[Speaker 1]
+Hey, Steve. Hey, hello, Nick. How are you?
+
+[Speaker 8]
+Good, thanks. How are you? Very well.
+
+That's good.
+
+[Speaker 1]
+We're just about there. Two minutes past. Seems like a reasonable time to start.
+
+All right. Welcome, everybody. The usual quick up-front conditions.
+
+This meeting's being recorded and will be transcribed and published. So let me know if you have any objections to that. Secondarily, this is a UN project meeting, and your contributions are considered contributions to UN IP, which is subsequently made freely available for anyone in the world.
+
+So if you have IP you want to protect, don't bring it up. Otherwise, your contributions are gratefully accepted. So with that in mind, the usual progress agenda is to go through outstanding contributions and review them.
+
+And it's quite a busy day meeting today, because there are four not insignificant contributions. And I think the last two will take the most discussion. So I'm going to try and get through the first two fairly quickly.
+
+Let me share my screen. So sharing all my emails and stuff. Don't do that.
+
+Pull requests. So there are four. One is an update to the governance page, which I'll go through.
+
+That one's from me. I'll go through fairly quickly. One is an update to the community activation program page, which David on the call will present.
+
+It's his update. And then there's an interesting one about chain of custody, which is some initial thoughts from Harley. He'll present that.
+
+And then there's an early draft of an update to the identity resolver page. Again, from me. I must admit, I had some head scratching.
+
+So I'm hoping there's some contributions. But allow me to start with the update to the governance page. The easiest way to review these things is to look at the link in the branch.
+
+There it is. Everyone can see that. So previously, the governance page really had a load of stuff about basically how to use GitHub to contribute, which is useful stuff, but it's not really about program governance.
+
+We've kept that, but moved it somewhere else. So the page is now really about how is this standard governed and its extensions. And there's a little bit of preamble here, which is really just for those unfamiliar with CFAQ, how CFAQ generally works.
+
+I won't go through that. But IPR policy, registration of experts, and so on. And then the thing I just want to spend five minutes or so on is this diagram, which does look a bit busy, and I apologize for that.
+
+And what it is, is an attempt to represent the relationship between this project, UMCFAQ generally, the associated recommendation 49, but also the extension projects that this project is spawning, and how that all works together. So I'll work through this diagram and solicit your input. It has been up on the Slack channel for a while, and I have had some input, which I've reflected.
+
+So I'm hoping that once I've been through it, there's no vehement disagreements to merge this one. But in any case, so the gray box here that I'm moving my cursor over in the middle says, UN govern slower moving foundational, that's us, right? This is the UNTP program working group, the white box, that's us on the call.
+
+And we create specifications, the blue box stuff, like the digital product passport, DCC, blah, blah, blah, publish them to our website. And we manage the delivery of some tools that really help implementers like business cases, guidance, test services, and stuff like that. So there should be no great surprises there.
+
+And going up from that box, you see a box says UNCFAQ, that's the UNCFAQ Bureau that governs all UNCFAQ projects of which UNTP is just one. And it does that under a mandate from member states. That's how UNCFAQ works.
+
+In fact, we've got one head of delegation on this call, Sin Yong from Singapore, who's one of those member states at the top. And so UNCFAQ also produces things called recommendations. And these are policy documents, not technical standards like UNTP.
+
+And as many of you know, there is a related policy document to UNTP called Recommendation 49. And we have the project lead for that call, that document on this call as well, that's Suzanne. And those policy documents are approved once a year at the plenary by member states.
+
+That's that line at the top says delivers recommendations. And as a UN organization, we map all our activities in terms of measurable impact to UN Sustainable Development Goals. And that's the little colorful flywheel below the member states, all of which are committed to those Sustainable Development Goals.
+
+But that's the top bit about how we work together. And then as you know, UNTP is designed deliberately to be industry and country agnostic. And that means there's a lot of stuff missing that is required for particular industries and countries.
+
+And that's the purpose of the gray box underneath, right, where we have an extension working group that may be governed by UN if it's a UN project, like the critical minerals one, or it may be governed by some extension owner, like in Australia, the Food Agility Collaborative Research Center, developed the Australian Agriculture Traceability Protocol. And for an upcoming one in the electrical and electronic sector, it'll be the Responsible Business Alliance as a member association. So this sector specific community on the left governs an extension as members that participate in it.
+
+And basically, we register those extensions. And part of the registration process is we kind of want to keep a track on your performance and KPIs so that this KPI reporting error can go all the way up to the top to member states and SDGs. But extensions very similarly, take the UNTP core and extend it like, for example, make a livestock passport out of a product passport, and build on UNTP tools to make testing of tools and things like that for the specific extensions.
+
+And so that hopefully, there's nothing too unfamiliar there. On the right, I put implementers and I'll just say two things about this, and then I'll let Virginia speak. But I've separated software systems and what I'm calling trust anchors, which are regulators, registrars, certifiers, and so on, and industry.
+
+And I think it's likely that software systems will want to implement core protocol compliance, because they want to sell their software to any industry sector. Whereas industry will probably implement the extensions relevant to their industry. So that's why I've drawn it like that.
+
+And that basically summarizes and little steps down there for each actor. If you're any of these software systems or trust bankers or industry, you register your implementation intent and then build it and test it, and then report KPIs. So that's meant to summarize everything in one diagram.
+
+Virginia, you got your hand up?
+
+[Speaker 4]
+Yes. I had a few comments about the diagram, two of which are sort of more cosmetic and two of which are more serious, so to speak. I'll give you the cosmetic ones first.
+
+I think that we should change the wording on these two titles in the bottom two gray boxes to UN govern foundational and slower, instead of slower moving foundational. So foundational and slower, and then down underneath, community governed and just more responsive.
+
+[Speaker 1]
+Yes, yes. It occurs to me, you're right, that that could be read as UN is slow moving, but what I meant was it's a good thing. It's a safe foundation to build on, not that UNs move slowly.
+
+But yes, go on. What else?
+
+[Speaker 4]
+So foundational and slower. Then there are a couple of places where things, it's not clear exactly where they go. Like underneath the UNC fact, you have reports and KPIs, and the KPIs are on top of the light gray box.
+
+[Speaker 12]
+Right.
+
+[Speaker 4]
+And I think they should be up above with the reports.
+
+[Speaker 1]
+Yeah. It's meant to just attach to the arrow. It doesn't have any.
+
+Yes. Okay. Well, I can move it to the right and say reports KPIs.
+
+It wasn't meant to be two separate things.
+
+[Speaker 4]
+To the right, or you can move those two labels further up. There's white space up above them. And then another little picky sort of thing is that the verb tenses aren't always right.
+
+For example, you have UNTP program working group, which, so that's a singular entity, and it maintains and then approve. It should be approves.
+
+[Speaker 1]
+Okay.
+
+[Speaker 4]
+See, just to the right of the UNTP program working group. And then the same thing for the UNTP extension working group that maintains and approve. And there's a couple other little ones around that you should look at.
+
+Be sure that they're all the same. Now, the more Siri, the more the things that are more for discussion. On the right hand side, under the, this is just, it's not necessarily something to go in the diagram, but it's a question in my mind.
+
+You have ongoing KPI reporting. And my question is, who keeps track of that so that if no one's done their KPI reporting for two or three years, or even a year, someone goes back to them and says, hey, you haven't done your KPI reporting. So that's a question for me.
+
+Oh, between the two extensions, there's, you have the are valid extensions of, which is on the gray box. And I think it should be clear that it's refers to the arrow that it's to the left of, and maybe should be down in the gray box underneath. But I had a real question about on the UNTP extension working group.
+
+It says approved or approves release of extension specification. Now I think it should maybe be approves registration of extension specification, because it's not going to go through and say, oh, this sector specific vocabulary is correct or not in terms of the content, maybe the formatting or this, these rules. So they're not really approved.
+
+And somebody could go out and just release these, but not have them registered on the website. I think it should be a little bit more clear that by like approve release, or approve registration of extension specifications or something that makes it clear that you're, we're not approving the content.
+
+[Speaker 1]
+Yeah. So, so I agree with everything except the last point. And it's maybe to do with the way the diagrams interpreted, because that extension working group is not necessarily governed by the UN, right?
+
+In fact, most of them won't be. And so when I, when I'm saying approve release of, I mean, for example, the responsible business lines who is governing the electrical and electronic industry extension is responsible to release themselves, whatever their extension is, the relationship to UNTP is in the line between the two white boxes where it says verifies and registers. So that means we don't list the AATP, sorry, the either of them, the AATP or the IBTP on the UNTP website.
+
+That's where our, our, this group goes, yes, that's a valid registry, sorry, extension, and we'll add it to our list. But once you're down there in that extension community, it's out of our reach, right? It's, this is more like guidance to them, not, not a mandate on us.
+
+Does that make sense? All the stuff in the lower gray box is not our job. It's the extension owner's job.
+
+[Speaker 4]
+Okay. Then.
+
+[Speaker 1]
+We'll maybe need to make that clearer, right? That this is not part of UN governance. All the UN does is go, that looks like a valid extension.
+
+[Speaker 4]
+I think the problem is that up above you have UNTP program working group, and then you have UNTP extension working group, and maybe it needs to be a little long extension working group of community or communities UNTP.
+
+[Speaker 1]
+Yeah. I think you're right. We just changed.
+
+What if we changed the word in the bottom white box from UNTP to community or something like this? So it's, and maybe I tweak the diagram a bit more, just to somehow really clearly, maybe even color code those gray boxes.
+
+[Speaker 4]
+Yeah. It just needs a little tweaking because seeing the parallel titles, the second one was.
+
+[Speaker 1]
+Yeah. Understandable.
+
+[Speaker 4]
+Yeah. So that's it for me.
+
+[Speaker 1]
+Okay. And I think Phil had his hand up and Suzanne, you put yours down, Phil?
+
+[Speaker 11]
+I did cause it can wait and I'll talk to you offline. Sorry. Thank you.
+
+[Speaker 1]
+All right. Suzanne is next.
+
+[Speaker 7]
+Yes. I have a point because I was being asked about it during the writing of the recommendation 49, which is the way that we work and make decisions here in this working group. Do we have a section where this is described already or?
+
+[Speaker 1]
+Yes.
+
+[Speaker 7]
+So that's in the text somewhere.
+
+[Speaker 1]
+Yeah. It's in the text and it's basically the, it follows the, it says it follows the UNODP, which is itself describes how we do it. And somewhere UNTP, here, Consensus Driven Development Process.
+
+So it says how we work. There's the guidance page on how we do it technically. Then there's stuff on version and release management.
+
+I didn't want to go through, you can read all this at your leisure and offer your feedback and say, you know, you've missed something, or I think you should change this. But if, given that what was there before was a whole bunch of details about how to use GitHub, I'm keen to get your approval to release this now and then implement Virginia's suggestions and anything, any other suggestions anyone else might have in a subsequent ticket, because at least it's something a bit more governance-related than what was there before. So if anyone's got any strong objections to us merging this, let me know now.
+
+Otherwise we'll merge it and then we can change it with further tickets and we can move on to the next. Okay. Thank you.
+
+All right. Well, I'll take that as an okay then. And we'll move on to David, who has done some work on the community activation profile.
+
+And given that I think we're going to have more discussion on the next two, if you can keep it to 10 minutes, David, I'll stop my screen share and you go.
+
+[Speaker 2]
+Are you there? Yeah. Let's find this spec.
+
+Okay. So introducing my first attempt at supporting this working group. Can everyone see my screen?
+
+[Speaker 12]
+Yes.
+
+[Speaker 2]
+Fabulous. Okay. So I took the existing community activation page, thought deeply about how this program might work.
+
+And I still have some large questions about how it might actually operate, how we're going to staff it, what its processes might be. But given those ambiguities, I thought I'd have a stab at it anyway. I tried to shorten it, simplify it, and take a bit of a storyline approach with the headings.
+
+So rather than just very short headings, I thought I'd start to weave value proposition into some of those headings. Now, generally, guys, can I get some guidance on how you like to walk through these proposals? Is it a line by line or is it just a high level and you go away and read it and come back with feedback?
+
+What's best for everybody?
+
+[Speaker 1]
+Perhaps I'll interject and say that normally we publish these pull requests several days at least before this meeting, ideally a week. And hopefully people have had a look, those that care or are interested anyway. And so the purpose of the meeting is to quickly review it and kind of walk through the concepts and what your changes are, and then ask for any objections to release.
+
+It's not the same for the next two, which are basically only released yesterday, right? So nobody's had time to review them. So we're not asking for approval to release.
+
+We're just sharing thoughts. But for these two, they've been up a little while. So Virginia, you've got your hand up.
+
+[Speaker 4]
+Yeah. I have a comment about the first paragraph. It's the only thing I've read.
+
+[Speaker 12]
+Yes.
+
+[Speaker 4]
+It says, continue to thrive long after the project is complete. But I think that UNTP is not a project that we should be thinking about closing. And I'm not exactly sure how the Bureau is going to manage that, but it's a bit like the core components library maintenance, where there needs to be something ongoing.
+
+[Speaker 1]
+Yeah, I'd agree with you, Virginia. I think the Bureau generally, now with my Bureau hat on, is looking to transition from lots of projects to fewer products that have a long life and are continually maintained. So certainly UNTP would be one of those.
+
+If it's successful, it never ends. It just gets improved over time.
+
+[Speaker 2]
+I think where I was getting at there was that a community could thrive long after its project is complete. So where a community comes together to own an extension, develop that extension, develop the supports and the toolkits, it can keep going after the initial work of creating the extension is complete. But I'm taking notes here, Virginia.
+
+Adriana had a comment.
+
+[Speaker 9]
+Yes, David. You may have noticed, hopefully you would have noticed that I made a post just in the last week regarding a suggestion I'd made in Surpass using a mural board. And perhaps we might like to consider the group that when we, as we progress through, I'm a big fan.
+
+I'm not sure how many of you have used online whiteboards for brainstorming and for collaboration, but they can be really beneficial. And so perhaps if we had events such as feedback or brainstorming, and we had some reading that we required to do, then we can come to a meeting and then use a whiteboard that could be an interesting way for us to collaborate. Just a suggestion.
+
+I used them very successfully and participated in other activities where they've been used very successfully. And it might be an idea for you to think about or Steve and Zachary to think about as we go through 2025.
+
+[Speaker 2]
+Yes, fabulous. I use them daily for workshops.
+
+[Speaker 9]
+So okay.
+
+[Speaker 2]
+You know, like mural and mirror. Yeah. Use that very successfully.
+
+[Speaker 1]
+So I'd see them not not limited to just these calls, right? I mean, it's another tool like Slack that we can use continuously offline or not offline, but outside of calls, and then use to bring us together on a call, right?
+
+[Speaker 9]
+Right. Well, you can actually integrate mural into Slack. When I posted that, when I made that post, I got a little invitation that said, you want to integrate mural into Slack?
+
+I didn't say yes or no, because it's not my call, but you can easily.
+
+[Speaker 1]
+Let's chat about it. Let's chat about it on Slack and maybe do it. Yeah.
+
+We'll let David continue.
+
+[Speaker 9]
+Not maybe, we will.
+
+[Speaker 1]
+Okay. Sold.
+
+[Speaker 2]
+You volunteered.
+
+[Speaker 9]
+Okay.
+
+[Speaker 2]
+Fabulous. Does anyone have a corporate license that we can leverage so we can get more participants? Normally the free licenses are a bit limited.
+
+[Speaker 1]
+This is a problem with UN generally, right? That we prefer to use the free version of Slack that forgets after I think three months. So we have to move conversations that are important onto GitHub.
+
+So we have to find something that, because it's tricky if one of us pays for a commercial license for everyone, because that's kind of like, you know, are you, is there a conflict of interest with participating with UN and UN itself doesn't have much budget. So it's a challenge. Yeah.
+
+We can find free ones. We'll use them. Carry on, David.
+
+Sorry.
+
+[Speaker 2]
+Yep. No problem. So we talked about the sort of key elements about the CAP being a catalyst for adoption, how it engages buyers.
+
+It relies on committed suppliers. And of course it requires funding mechanisms. We talked a little bit about the flywheel of adoption.
+
+And we've reused this particular illustration, which I think is very good, but I've tried to summarize the flywheel concept down to its core elements. We also reused this diagram about the investment required over time and how it becomes self-sustaining at a particular time. Jump in, anyone with comments?
+
+John?
+
+[Speaker 6]
+Brilliant timing. Thank you, David. Two kind of quick comments.
+
+One on the diagram you just scroll past a little. When I was reading through the text and the submission, it struck me that the diagram is both excellent, but it's slightly at odds to the text that precedes and follows it because the industry association that we're talking to, the community is but one part of that puzzle. Yet the community you've discussed earlier on in the paragraph before includes funding and other elements.
+
+So it's not clear from the diagram. The diagram wasn't drawn explicitly to support your text and shows a little. It's a little bit out of sync.
+
+[Speaker 2]
+It looks like the diagram over your left shoulder.
+
+[Speaker 6]
+Yeah, quite probably, which is a diagram from something else entirely.
+
+[Speaker 2]
+I will review the placement of that diagram.
+
+[Speaker 6]
+So I'm talking about the flywheel diagram, by the way, not the one that's in front of us right now. That diagram shows industry associations top right hand corner, but the whole text is about industry associations or rather it's about communities, right? And therefore the diagram, which is close to but not quite aligned to the commentary of the text that precedes it.
+
+So there's something not quite aligned with the diagram and the text.
+
+[Speaker 2]
+I will double check that, re-read it.
+
+[Speaker 6]
+On the diagram you did show me, which is like the one behind me, that break even arrow is as a sort of slightly obsessive compulsive person, slightly in the wrong place. That break even point isn't on the down descending part of the red bit, is it? It's on the intersection of those two lines.
+
+If you support a cash flow view of break even as opposed to a compounded view of the investment.
+
+[Speaker 2]
+Steve, I'll have to get your original diagram there. Yeah, I've got all the originals.
+
+[Speaker 6]
+That was my two minor contributions. I'll put my hand down. No, my hand's gone down.
+
+Good. Wonderful.
+
+[Speaker 2]
+Thanks. So I think in the original document we had quite a lengthy discussion about the methodology, Inception, Discovery, Alpha, Beta, Live. So I've contracted that into a much smaller diagram.
+
+I did discover that we had a more, a lengthier discussion on the diagram elsewhere on the website. So I've just simply referenced that and made that a bit tighter. We talked about the team effort required and actually I'm wondering whether this diagram here belongs better in that discussion about the participants that should be in the program rather than referring to the flywheel.
+
+John, you're happy with that? Yep. I'll move that.
+
+Yep. All right. I like my suggestion and it's been backed up.
+
+Fabulous. Okay. We talked briefly about the specialist skills, making sure that they brought the right capabilities into the team, not just the right organizations.
+
+Talked about the kinds of tools and resources that would be available through CAP membership, including frameworks, toolkits, UNECE guidance, consultants, support network, collaboration networks and software tools. Jump in anyone if I've got this wrong. I'm trying to learn very quickly this space and summarize this.
+
+And then a few action items. So jumping off points here to get people started. Now, I've made some assumptions here about what the community is, how to join.
+
+Steve and I talked about this the other day. In lieu of a formal function within the UNTP group, we've suggested that participants or people wanting to participate in the community can simply join the Slack channel. We still need to do some work on pulling together a toolkit, but we've linked that off to another page there, which is this implementation plans page.
+
+Bear with me. And then we've also suggested that people go and have a look at the extensions register. All righty.
+
+Any comments there? Any hands up?
+
+[Speaker 8]
+Hey, David, I think it looks really good. It's a really solid start. Something I'm thinking about.
+
+It's not necessarily a suggestion, but I'm just pondering. Looking at it from, say, an industry group perspective, I wonder whether there's value in an example or something that can get really tangible to help them. It might be something that the group here could help with, not necessarily saying, you know, you should do that.
+
+But yeah, I was just wondering something to make it really bring it home to the frontline, what it could bring, where the savings could be, or where the value creation could be.
+
+[Speaker 5]
+And I was just going to add, I expect that this page will update over the coming months as we actually run these programs in critical minerals, in the electronics sector, in the built environment sector. And I think this is an excellent start. And we're going to use these programs that we have ongoing to kind of figure out how we improve this so that we do provide that kind of tangible reality.
+
+Real benefits. Reality validation, right? Like we can actually experiment.
+
+And I'd be keen to work with anybody, and I'll be working closely with David on this as well, to make sure that we're bringing all those learnings into this page.
+
+[Speaker 2]
+Yeah. So case study has gone on the backlog already. Thanks, Nick.
+
+I think what we really want to do is build case studies from multiple perspectives on every...
+
+[Speaker 1]
+I mean, hopefully that this is kind of a, this is almost like a business case page to create a new extension for your industry, right? And so that there are, there's already the extensions registered with four extensions listed. And one of them has a fairly complete site, which is the Australian Agriculture one.
+
+And it has five case studies on it, you know, so maybe we can do a little bit more sort of links and connections to exemplars to make it a little bit more real.
+
+[Speaker 6]
+John? There's something else within the page, which I think is great, by the way, David. I think it's also emphasizing a relationship we're sort of discussing, which is this community activation plan encourages the creation of extensions or has a very strong relationship to extensions.
+
+What we don't have in our current if you scroll up to the heading about CAP supports a structured approach to extension development and adoption, there seems logically to be a point in time when a community will decide it's worth having an extension, or maybe they start off with that point of view, but there's sort of that relationship, which is the two headings that you're now seeing on the screen as you're sharing it, make clear, isn't made clear by the lifecycle.
+
+At what point do you decide we're going to register our extension? We're this confident now about the case for our community, our industry, we need an extension. Or do you start by registering extension and building on it?
+
+It's a bit of a chicken and egg, what comes first, a community or an extension? I think the community comes first, they work on this area, they discover, yes, this makes sense, let's create an extension. And at what point would they do that in this community activation plan?
+
+[Speaker 2]
+Yeah, fair point. I think it is community first. My guess is the inception phase is about bringing the community together.
+
+Someone needs to be the catalyst, whether it's an industry association, or someone who pokes an industry association to get them moving, someone needs to catalyse this group. Would you imagine that the extension registration happens in the inception phase as part of building out the community? I think Suzanne had a comment there.
+
+[Speaker 7]
+I have a totally different question. So once you have closed that discussion, I asked something else.
+
+[Speaker 5]
+What we've seen, David, is really, it's kind of the close of the inception phase is really when the registration occurs, right? Because basically, the inception is, I'm kind of experimenting, I'm looking around for a solution to a problem my community has. And what we've seen is when they've come across UNTP, they go, oh, this looks like a solution to the problem that I have.
+
+And then they kind of explore it with their community. And once they've kind of committed to the idea that they're going to spend some time actually exploring that, and that's kind of moving from inception to discovery is kind of what's happening at that point. And basically, the idea of discovery is, or the end of inception is when you have a community and have some resources to explore what it might mean to actually implement.
+
+That's typically where we've seen people register their intent to implement. And that's what we've seen so far.
+
+[Speaker 2]
+Yep. So what I might do is strengthen that first block to talk about this is where the community forms. And once it's formed, it registers the extension.
+
+[Speaker 5]
+Well, I'd actually suggest that oftentimes these communities already exist. It's more about activating around existing communities as opposed to creating a brand new community just to do this. I don't imagine that will happen very often, at least in the short term.
+
+It's more of, so for example, with the Responsible Business Alliance, their members told them they needed to solve supply chain interoperability. And then they went out to the market to look at what kinds of solutions they might find. And they came across this project and went, oh, that looks right.
+
+And then there was a bunch of exploration. So communities already exist and then...
+
+[Speaker 6]
+This gives them a place to come to. I mean, in a sense, we're keen to encourage the adoption of UNTP. And we need a place where already interested communities can come and explore, be encouraged to explore, and go, yeah, now we're going to commit and create an extension.
+
+It's part of our own accelerator program.
+
+[Speaker 1]
+All right. Thanks, guys. I'm going to have to cut you off now, David, because we've got to give time for Harley.
+
+And we might not even get to Identity Resolver. But if you could give your screen back. What I suggest is you make a few tweaks based on what you've heard today.
+
+You add another commit, basically, to your pull request. Then we announce on the Slack channel, David's updated. And we give it a few days for anyone to object or comment.
+
+And then we'll merge it. That doesn't mean it's finalized. It just means we put that work behind us and there's a public page that we can refine further.
+
+Is everyone happy with that? Yes. Okay.
+
+All right. Back to you. All right.
+
+We've got Suzanne and Virginia with hands up.
+
+[Speaker 7]
+Just a short thing that we cannot solve today. But if we have communities that are all extending in the same way, for example, greenhouse gas emissions, I mean, what is our take here, as I said? So we're not going to solve this today, but we have a greenhouse gas emissions template from the Global Battery Alliance.
+
+We have one from Catena X. We have one from the World Business Council. We have one from the European Commission.
+
+And all these data sheets about greenhouse gas emissions look different and have different attributes and so forth. So they're all extensions. Do we do something about it to harmonize them?
+
+Or do we just allow everything, every extension to come along, even if it's overlapping with something that's maybe already there?
+
+[Speaker 1]
+There is a couple of paragraphs on exactly that question, which has just been released. And it's basically, we can't control the world, but we'll track it. Have a read and offer your comments.
+
+I'll put a link in the chat. We can easily update it if you've opinions. Virginia?
+
+[Speaker 4]
+In the list of the different steps, I think it should be clearly indicated at what point they should register as being in the, you know, having an intention to implement, which I would imagine would be at the end of the discovery period. And then clearly indicate also at what point they should request to become a registered extension.
+
+[Speaker 5]
+Yep. David, I'll work with you on that kind of idea based on what our experience is so far, on where that fits and where we think that might be.
+
+[Speaker 11]
+Very briefly, to Suzanne's point, I think it's a very valuable lesson and a list. Thank you, Suzanne, for that long list of people who have GHG emission standards. We're never going to get everyone to use one standard.
+
+That's impractical, never happened. What we can do, and I want to generally encourage anyone who will ever listen to me to do, is that we can make semantic connections between those models. And we can do it here.
+
+We're certainly planning to do it at GS1, so that you can say that when we say this, that's narrower than that, it's broader than that, it's exactly the same as that. And those semantic links mean that people can continue to use their standard, which is what they will do. But also, it makes a better opportunity for particularly AI to make really accurate connections between different things.
+
+[Speaker 1]
+You're touching on the core purpose or core mission of the one of the extensions, which is the built environment one from ICC.
+
+[Speaker 7]
+But that also means you need ontologies, right?
+
+[Speaker 1]
+Yeah, yes, yes. And a bit of AI and all kinds of stuff. This is a really cool topic for another day, I think.
+
+[Speaker 11]
+Yes, I know. Sorry.
+
+[Speaker 1]
+SVPs. But there's actually quite a lot of work started and going to continue in that particular extension, which will be really interesting for people who care about exactly what you said.
+
+[Speaker 5]
+I might schedule a separate session, sort of out of time session to share that.
+
+[Speaker 1]
+I think that'd be good.
+
+[Speaker 5]
+And kind of bring that forward for folks so that people can see the work that's being done there.
+
+[Speaker 1]
+In fact, as we accelerate, I think everyone should feel free to go, this is a topic of interest, and just feel free to send an email to the mailing list that says, I'm going to host a discussion on this or that topic. We don't have to limit our chats to these fortnightly meetings. Anyway, with that, I'd like to hand over to Harley now.
+
+I do think we're going to have time for identifiers, because 15 minutes left, to show what he's done on mass balance, book and claim, and basically chain of custody models. And this is a draft contribution, right? It's not complete, but there's some interesting thoughts.
+
+It's definitely draft.
+
+[Speaker 3]
+Is my screen coming through for everyone? Yep. Perfect.
+
+So this placeholder page originally was just for the mass balance, and it had this overview section here. It's really just that problem of what happens if some manufacturer buys 10 tons of cotton, which means some kind of ESG credential in 10 tons, it doesn't. And then whatever the volume of t-shirts they produce for 20 tons, they claim that all 20 tons of that meets that ESG credential as well.
+
+So I just took a first pass of trying to build out a page and maybe an overview of what those different chain of custody models can look like. The reason I changed it from mass balance to chain of custody is I think mass balance is potentially one category of chain of custody as well. A lot of the terminology here for these different categorizations, I've just pulled from existing standards and groups that I just found during my research as well.
+
+So I'll just work through these different categories really quickly, but they're pretty obvious as well. So the first one being identity preserved, really that is just whatever the product is good or good is, as we start the supply chain, isn't commingled with anything that's non-qualifying from a different source. So really simply, if you just go to a shop and you buy a bag of coffee, it came from one particular farm, it'll overproduce that coffee as well.
+
+It's not mixed with anything, even if it is a qualifying quantity from a different source, it all comes from the one farm as well. The second category, which is really similar to that again, is whatever the good is that you're buying or curing. All of it is qualifying, but all of the inputs to it may have came from different sources.
+
+So the example that I've just got there at the bottom of that section is a chocolate manufacturer mixing cacao beans from several different accredited farms, but they didn't add any non-qualifying beans to that process as well. So really similar to identity preserved, but there's different origins in there as well. Back to the original one for this document and mass balance as well.
+
+So mass balance is just that situation where some manufacturer is procuring a quantity of goods that is qualifying, a quantity of inputs that is non-qualifying, mixing them together, and then they need to make a claim that X percentage of the output for that manufacturing process meets the ESG credentials that they're making an attestation for. So 20% off responsibly sourced palm oil, 80% that's not, you can only claim 20% of the output as meeting that ESG criteria as well. And then the fourth one, which I think is almost vastly different to the other three as well and could almost be its own section, is this book and claim model.
+
+So that being that some producer is producing some kind of product and they've got an ESG credential about that product, but they're about to sell that into a supply chain that might not be compliant or doesn't care about those particular ESG practices. This is where they can kind of book those credits against some kind of system and then sell those credits or transfer those credits to someone else globally who might not be within their immediate supply chain or geographic region as well. And then that buyer can then claim those credits within the manufacturing process.
+
+So example I came across is renewable identification numbers for biofuels in the US, from my understanding is a biofuel producer can produce one gallon of that fuel. They get a ring associated with it, but then they can sell that to some kind of crude oil manufacturer, even if that crude oil manufacturer didn't actually have anything to do with that physical good as well. So the key difference from book and claim from the previous three is that it completely decouples the credential and the physical products as well.
+
+Virginia?
+
+[Speaker 4]
+Yeah, I think, you know, I read through this before the meeting and I think for the book and claim, it would be useful to have a bit more description of the trusted registry and it's how it would function.
+
+[Speaker 3]
+Yeah, definitely. Yeah. David, there's a bunch of to do's on there.
+
+I'm not proposing to get merged in at all just yet.
+
+[Speaker 2]
+This is great, Harley. Examples would be really good to point to here when you find them, pull them in. Certainly, I was looking at the hydrogen supply chain for the Australian clean energy regulator and they were certainly pulling away from book and claim because of the downstream regulations in the EU, forcing them to have a direct link between the product and the rest of the supply chain.
+
+So you couldn't take a claim for green hydrogen and apply it to oil. You had to actually push it through the same supply chain. So there were some local flavours of that and they had to deal with that through a registry.
+
+[Speaker 3]
+Yeah, gotcha. A lot of the stuff I came across for book and claim was more so for developing regions and small landowners so that they could kind of get a premium and make a bit more money while also being ESG certified. But even if their local supply chain kind of wasn't willing to pay any premium for that as well.
+
+[Speaker 1]
+I think of book and claim sometimes more for the same classification as products, so not so much booking gas benefits to oil or something. But the case where, for example, grain comes into a mixed silo, some of it is carbon free and some of it isn't, the operator selling the grain from the silo, do they have to sell to everyone a mixed performance? Or can they sell, even though the grain is technically mixed, can they sell half of the mixed grain to one market as carbon free and the other half to another market as not carbon free at all?
+
+Because the total is still true, right? It's still two tons of grain where one ton is carbon free and the other ton isn't. It's mixed.
+
+But the book and claim model basically is better aligned with commercial incentives, I think. So it's important to support it, I think, if we can. As long as you've got that register that makes you can't double count.
+
+But anyway, lots of hands up, I'll shut up.
+
+[Speaker 10]
+Brock, you go. Yeah. Can you see me or hear me?
+
+So yeah, we looked at the four models in our reports with the battery supply chain. So this basically depends on the assurance level you would like to see. So if you want to avoid the negative parts of the assurance, you basically can look at the segregation or mass balance.
+
+But book and claim specifically look at the positive impact. So you can see the models where the part of the product has been certified as being sustainable, for example, and can mix with other products which don't have any kind of certification or something. But to be fair, these models are quite old.
+
+They were first introduced in 2012 with Tin, Tantalum and Tungsten for the 3TG Great Lakes regions in Africa. And we are moving from it with a unique identifier. How it's going to look like, I think it depends on the industry.
+
+[Speaker 8]
+Yeah. And Hallie, I was just going to sort of add that there's a lot of different definitions in different industries between mass balance and book and claim. So it is going to be a bit tough to get this as a perfect reference.
+
+And I think we sort of need to keep it so that people can interpret that we're talking about loosely whatever it is in their industry, what it's called, because there aren't really common names across all the different sectors. And they're also evolving what each sector is choosing as being accepted is changing. So I think the main focus will be how does UNTP play into each of those different models?
+
+And it stops and starts at different points, depending on which one you're in.
+
+[Speaker 3]
+Yeah. I think between mass balance and book and claim, I think maybe a good distinction could be book and claim is that there's no physical tie between the ESG credential and the product. But I'm happy for whatever the naming scheme is.
+
+[Speaker 8]
+In the fuels world, I've heard that physical and non-physical being a key distinction. So, what you were talking about before was actually more mass balance than book and claim, whereas aviation fuels a little bit more book and claim, where you might fill up in one place that is nowhere near where the biofuel was produced, and you're book and claiming that carbon reduction. And so UNTP will play differently in both of those examples.
+
+[Speaker 1]
+Yeah. It's hard enough to get agreement what it means. And then the more important bit is, that's what it means.
+
+Now, how can we actually implement it in a verifiable way? That's the really interesting bit is, what do these registers look like? And how do you actually manage tokens?
+
+Because all solutions I've seen for this are very technology dependent, like SAP Green Tokens, great solution, but you've got to be using SAP Green Tokens. So how do you do these sort of things across technology platforms? If there is a way, this is where we should write it.
+
+And that's what I was hoping Harley would get to. A lot of hands up. Virginia, you still got your hand up?
+
+Is that intentional? Zach?
+
+[Speaker 5]
+Yeah. I was just going to add to on your point, Steve, just there is the general purpose, how UNTP could support these models is what I think we should be targeting here. And I think Harley said that really well.
+
+The important thing then will be to sort of describe how extensions can make that work for their specific domain. So jet fuel extension will be very different to the grain extension for booking claim or mass balance or whatever tool they choose for their community. And that's, I think we want to get really clear about sort of the technical techniques that you might be able to leverage UNTP to do and not try to solve these domain specific challenges because they'll all be different.
+
+[Speaker 1]
+Harley's only a quarter of a way down his page. Yeah.
+
+[Speaker 7]
+I think I wanted to make a comment into the same direction because I know what the Global Battery Alliance is working on. They look at mass balance, how they would want to solve it for the battery industry. And then we've also done this guidebook explaining how primary data and secondary data has to be made open and how it has to be calculated and declared.
+
+So I believe that this is indeed a domain specific, more like an extension, then it's something that we can maybe solve here at UNTP.
+
+[Speaker 1]
+Well, we might, I agree that I think the specific rules will be very extension specific, but I guess we don't know yet whether there's any common reusable architectural patterns. And I think, by the way, the main reason Harley's leading this is because the next part of the AgTrace project in Australia is for grain and does face grain in mixed silos and needs an answer to this. So it'll be, I think we just ride the ship and see what we learn from it, right?
+
+[Speaker 3]
+I suggest we let Harley continue. Yeah, indeed. So there are the four categorizations, maybe the names change.
+
+I'll add in some examples to these, maybe some kind of workflow diagram of yes, no questions, which will kind of get the reader to which one that they might be relevant for the supply chain, might be beneficial as well. The next couple of sections have just been me trying to attempt or start how evidence could accrue for this throughout the transparency graph as well. I started outlining how it could be where this evidence is just discoverable with no third party kind of doing any kind of aggregate compliance or making an attestation about mass balance or whatever the four categorizations is.
+
+I've just got to do, cause I'm not sure how this would actually work. So I'm kind of calling on the group to maybe help out on that. So I'll probably just skip over this a bit for now, just for the sake of time.
+
+The other section here is just about some kind of third party making that attestation. So in the grain supply chain with the project that we have coming on, we have that mass balance problem through like a large rolling bunker system, and it needs to be a segregated product as well. Australian grain bulk handlers have like a lot of commercial sensitivities showing their buyers where they actually get their grains from, the different farms and the volumes as well.
+
+So having some kind of trusted third party make that mass balance claim on their behalf is definitely required here as well. I've just had, obviously this is not formal at all. I've just kind of put something in here to say something like this and whatever the exact mechanism is, I'm sure there's more people technical on the team that can help me, but just some kind of reference to this is an identity preserved lot or good as well.
+
+This is the schema that the person had for this particular batch as well, and then some kind of hash off it for auditing purposes. Once again, this will all look completely different. This is just me attempting to say in this draft PR, maybe it could look something like this as well.
+
+Some kind of marker, if this is a segregated claim, some kind of marker, if this is mass balance as well, the percentage and the start date time and the end date time as well, particularly for that grain bunker system example, it's not like they fill up a massive bunker system and then empty it. It's like continuously rolling. So some kind of start date time and end date time of the audit might be required as well.
+
+And just quickly for the sake of time, because we've got two and a half minutes, I've kept book and claim separate to the other three as well, just in terms of, because it is decoupled from the actual physical product as well. Probably don't have time to go into this in too much detail. I haven't even provided that much detail.
+
+Definitely warrants a couple of diagrams in here as well. But I just attempt to outline maybe a way for that small landholder that has that particular ESG credential, and they are certified that they can produce a thousand tons of whatever that good is as well. Some way for them to tokenize that credential against some kind of unit of measure for that particular good, and then transfer that or sell that to someone else around the world, maybe based on the IDR resolver as well.
+
+Probably don't run out of time now, because we've only got one minute to really go over this as well. But this is what this section is going on, and maybe everyone could read it and we could tackle it at our next fortnightly catch-up as well. But yeah, Steve, not too sure if you wanted to add anything, just in the interest of time.
+
+Or David, Suzanne, everyone's got questions?
+
+[Speaker 2]
+I think Suzanne first.
+
+[Speaker 7]
+Sorry, that was a legacy hand.
+
+[Speaker 2]
+David, go. This is great. I was just going to say at a strategic level, we're going to have pressure on mass balance from two directions.
+
+One is where there is an existing regulation that needs to be fulfilled, and it determines the mass balance direction and methodology and requirements. And then I think we're going to have an opportunity here to actually inspire new supply chains to verify their mass balance or the non-duplication of certificates using particular tools. So think of this in two ways.
+
+One is satisfying something existing, one is creating something new.
+
+[Speaker 1]
+I'd like to make one comment to finish, if that's all right. I think a lot of this kind of needs an honest broker who keeps the actors honest. And for me, this is yet another value proposition for the Industry Member Association, because they have the trust of their members, essentially.
+
+And no member, whether it's Monica Beekeepers or whatever it is, Whiskey Distillers, wants other members to cheat. And so all are likely to subscribe to a member association doing the double entry accounting that keeps this honest. So it's actually can maybe even go into the community activation program as another one of the value propositions that if we give them a run sheet here of how you do it, a member association's in a great position to do it.
+
+So I'd like to suggest the same thing here, that Harley makes a few more tweaks as he's comfortable with. Because what's there is better than what's there now, which is nothing, right? And announce when you're ready, Harley, on the Slack channel, I've made a few tweaks based on this feedback, please review.
+
+And if there's no objections, we'll give it a few days and then do a merge so that we've got a baseline to subsequently improve. Because I think this is good work, right? And really, really interesting area.
+
+And I'll leave my bit on identities for the next meeting. Wouldn't mind a chat with Phil, though, about it at some point, because he's my guru on these things. That's it.
+
+We're at time. It was a very interesting meeting. If anyone's got any closing comments, if not, I'll say thank you and post the recording soon and a little summary.
+
+[Speaker 12]
+Thanks, everyone.
+
+[Speaker 1]
+All right. Yes.
+
+[Speaker 11]
+Thank you, Steve. Steve, I have begun to review the IDL page, and I will complete that soon. I haven't seen anything yet that makes me think, oh, no, that's wrong.
+
+Okay, good. All right. Well, we'll chat on Slack or something.
+
+Yeah. Cheers. Okay.
+
+All right. Cheers.
