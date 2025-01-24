@@ -36,7 +36,6 @@ Industry associations engaging with CAP to develop UNTP extensions benefit from:
 * Alignment with emerging extensions, solving interoperability challenges.  
 * Access to global experts, case studies, and robust tools.
 
-![Activation Flywheel](CommunityActivationFlywheel.png)
 
 As extension projects mature, they generate a self-sustaining flywheel effect. This mechanism drives innovation and growth by aligning stakeholders, fostering collaboration, and incentivizing continuous improvement. By enabling shared benefits, CAP ensures long-term progress and success.
 
@@ -46,7 +45,7 @@ As extension projects mature, they generate a self-sustaining flywheel effect. T
 
 The CAP toolkit offers a proven, six-phase methodology:
 
-**Inception Phase**: This initial phase is centered on identifying key catalysts for change, such as emerging regulations, national traceability strategies, or industry-specific challenges. Stakeholders work collaboratively to build consensus, define project goals, and create a compelling business case that articulates value. Securing initial funding ensures the project is adequately resourced for success.
+**Inception Phase**: This initial phase is centered on identifying key catalysts for change, such as emerging regulations, national traceability strategies, or industry-specific challenges. Stakeholders work collaboratively to build consensus, define project goals, and create a compelling business case that articulates value. Communities may already exist and catalyze around a pressing business problem, identifying UNTP as the most effective solution. At the end of this phase, a community may formally register their extension with UNTP, solidifying their commitment and alignment with global standards. Securing initial funding ensures the project is adequately resourced for success.
 
 **Discovery Phase**: In this exploratory phase, current practices are systematically mapped to identify strengths, gaps, and opportunities. Stakeholders prioritize areas for improvement and establish clear objectives that align with industry needs and regulatory demands. This phase sets the foundation for a targeted and actionable implementation plan.
 
@@ -60,7 +59,10 @@ The CAP toolkit offers a proven, six-phase methodology:
 
 # A successful UNTP extension project is a team effort
 
-UNTP extension projects thrive through collaboration, with stakeholders bringing unique needs and deriving tailored benefits:
+UNTP extension projects thrive through collaboration with a wide range of stakeholders.
+![Activation Flywheel](CommunityActivationFlywheel.png)
+
+CAP member stakeholders bring unique needs and derive tailored benefits:
 
 * **Industry associations**: Drive collective industry efforts by providing leadership and fostering collaboration to develop interoperable standards, ensuring enhanced member value and a unified industry voice.
 
