@@ -24,21 +24,27 @@ Each categorization balances operational practicalities and assurance in differe
 
 Under **Identity Preserved**, the exact certified source of the product remains unchanged and unblended throughout the supply chain. Every step, from producer to end-user, tracks and segregates the qualifying quantity so it is never mixed with non-qualifying quantities (or even other qualifying goods from a different source).
 
+![Identity Preserved](IdentityPreserved.jpg)
+
 #### Benefits
 
-This approach achieves maximum traceability, the strongest assurance, and a direct link back to a specific farm or origin. Its presence within a supply chain facilitates additional sustainability conformance requirements with minimal additional effort.
+This approach achieves maximum traceability, the strongest assurance, and a direct link back to a specific manufacturer, farm or origin. Its presence within a supply chain facilitates additional sustainability conformance requirements with minimal additional effort.
 
 #### Challenges
 
-Identity Preserved is among the most costly and complex approaches to implement, as it requires physical or instance-level identification at every stage of the supply chain.
+Identity Preserved is among the most costly and complex approaches to implement, as it requires physical or instance-level identification and segregation at every stage of the supply chain.
 
 #### Example
 
-A bag of coffee beans labeled "single-origin" from a specific farm remains separate from other coffee beans—qualifying or non-qualifying—throughout processing and transport.
+A bag of coffee beans labeled "single-origin" from a specific farm, and remains separate from other coffee beans (qualifying or non-qualifying) throughout processing and transport.
+
+Two production batches of coffee beans, from different origins, cannot be mixed. Even if both batches have identical ESG claims about them.
 
 ### 2. Segregated (SG)
 
-In the **Segregated** model, qualifying quantities and non-qualifying quantities are never mixed. However, qualifying quantities from different certified sources (all meeting the same standard) may be combined. The final product is still 100% qualifying, but it is not guaranteed to come from a single farm or origin.
+In the **Segregated** model, qualifying quantities and non-qualifying quantities are never mixed. However, qualifying quantities from different certified sources (all meeting the same standard) may be combined. The final product is still 100% qualifying, but it is not guaranteed to come from a single farm, manufacturer, or origin.
+
+![Segregation](Segregation.jpg)
 
 #### Benefits
 
@@ -50,16 +56,18 @@ Still requires physical separation from non-qualifying quantities, which can inc
 
 #### Example
 
-A chocolate manufacturer mixing cocoa beans from several accredited farms, without adding any non-qualifying beans. The resulting cocoa batch is 100% qualifying but not linked to a single farm.
-
+A chocolate manufacturer mixes cocoa beans from several accredited farms or origins, without adding any non-qualifying beans. The resulting cocoa batch is 100% qualifying but is not linked to a single farm, but many.
 
 ### 3. Mass Balance (MB)
 
-In a **Mass Balance** system, controlled commingling of qualifying quantities and non-qualifying quantities is allowed, as long as the overall volume of qualifying outputs does not exceed the volume of qualifying inputs purchased. Facilities and manufacturers track quantities over time to ensure that the percentage (or total amount) of "sustainable" outputs matches the actual qualifying inputs in the system.
+In a **Mass Balance** system, controlled commingling of qualifying quantities and non-qualifying quantities is allowed, as long as the overall volume of qualifying outputs does not exceed the volume of qualifying inputs. Facilities and manufacturers track quantities over time to ensure that the percentage (or total amount) of "sustainable" outputs matches the actual qualifying inputs in the system.
+
+![Mass Balance](MassBalance.jpg)
+
 
 #### Benefits
 
-Mass Balance allows for the mixing of qualifying and non-qualifying goods at any stage in the supply chain. When such mixing occurs, only the equivalent quantities of qualifying goods can be sold as "Mass Balanced" products.
+Mass Balance allows for the mixing of qualifying and non-qualifying goods at any stage in the supply chain. When such mixing occurs, only the equivalent quantities of qualifying goods can be sold or claimed to be "Mass Balanced" products.
 
 This approach is well-suited for complex supply chains and provides flexibility for manufacturers to source goods sustainably, even when certain constraints exist, such as:
 
@@ -71,9 +79,17 @@ This approach is well-suited for complex supply chains and provides flexibility 
 
 Dilution occurs at the physical level, meaning end-users and buyers cannot be certain that their specific product is made from qualifying materials—only that an equivalent volume of qualifying material was used elsewhere in the process.
 
-### Book-and-Claim (BC)
+#### Example
 
-In **Book-and-Claim** models, sustainability attributes (e.g., "deforestation-free," "carbon-neutral") are fully decoupled from the physical flow of goods. A producer meeting the standard "books" or issues credits into a registry, and a buyer can purchase (or "claim") those credits even if the physical product they receive is not the certified batch or instance. 
+A flour mill receives both certified organic wheat (40%) and conventional wheat (60%). During processing, these grains are mixed together. Under Mass Balance, the mill can sell up to 40% of its total flour output as "organic" since this matches the proportion of organic input wheat. The remaining 60% must be sold as conventional flour.
+
+If the mill processes 100 tons of wheat in total (40 tons organic, 60 tons conventional), they can sell up to 40 tons of the resulting flour as organic, regardless of which specific flour particles came from which wheat source. This allows efficient processing while maintaining accurate sustainability claims based on input ratios.
+
+### 4. Book-and-Claim (BC)
+
+In **Book-and-Claim** models, sustainability attributes (e.g., "deforestation-free," "carbon-neutral") are fully ***decoupled entirely from the physical flow of goods***. A producer meeting the standard "books" or issues credits into a registry, and a buyer can purchase (or "claim") those credits even if the physical product they receive is not the certified batch or instance. 
+
+![Mass Balance](BookAndClaim.jpg)
 
 #### Benefits
 
@@ -93,49 +109,26 @@ The number of credits a producer can sell is strictly governed by the certificat
 
 A trusted registry is essential to ensure that no double-counting or over-issuance of credits occurs, as the decoupled nature of this model requires robust governance and verification mechanisms.
 
+#### Example
+
+A palm oil producer in Indonesia receives certification that their production methods are deforestation-free. They sell their physical palm oil to local processors (who may not track sustainability credentials), but can separately sell "deforestation-free credits" to global manufacturers.
+
+A soap manufacturer in Europe, unable to source certified deforestation-free palm oil directly, can purchase these credits to offset their use of conventional palm oil. For every ton of conventional palm oil they use, they purchase and retire one ton of deforestation-free credits. This allows them to claim their soap products support deforestation-free palm oil production, even though the physical palm oil in their products may not be from certified sources.
+
+The credits ensure that for every ton of conventional palm oil used in Europe, an equivalent ton of certified deforestation-free palm oil was produced somewhere in the world.
+
 ## Transparency and Evidence 
 
 As always, a balance between the demands for transparency (more supply chain visibility means it is easier to prove either IP, SG, MB, or BC) and confidentiality (share too much data, and risk exposing commercial secrets) is required. As always a key UNTP principle is allowing all supply chain actors to be able to choose their own balance between transparency and confidentiality. 
 
-The following address the three of the four models proposed against varying levels of transparency. "Book and Claim" due to it's unique nature of being decoupled from physical products is outlined separately. 
-
-### Discoverable evidence 
-
-Discoverable evidence is when data supporting either IP, SG, or MB are discoverable via UNTP access methods. This could be via one of the many methods outlined in "Decentralized Access Control".
-
-Under this method, the querying party (i.e. a buyer of qualifying goods) discovers information to sufficiently prove the chain of custody model.
-
-
-**TODO: Would this ever work? What is stopping the manufacturer creating multiple passports for different batches, each referencing the same input products? Is a third party always needed?**
-
-#### Identity Preserved (IP)
-
-The buyer discovers sufficient data proving the product purchased originated from a single origin with relevant credentials linked. 
-
-##### Example
-
-A meat processor discovers a transparency graph for individual cattle. The processor (via decentralised access control methods) can assert single origin and evidence of the sustainability credential of interest (i.e. deforestation free.)
-
-#### Segregated (SG)
-
-The buyer discovers data proving the purchased quantities qualifies against the sustainability scheme of interest. 
-
-##### Example
-
-A brewery is purchasing a large quantity "carbon-neutral" barley from a bulk-handler or aggregator. Evidence is in the transparency graph that accounts for all quantities of barley from the respective sources and origins, and that all quantities have the relevant credential associated with them. 
-
-#### Mass Balance (MB)
-
-TODO?
-
+The following address the three of the four models proposed against varying levels of transparency. "Book-and-Claim" due to it's unique nature of being decoupled from physical products is outlined separately [here](#book-and-claim). 
 
 ### Third Party Attestations 
 
 Commercial sensitivities or purchasing requirements from the buyer are likely to introduce the need of a third party making a attestation. This protects the sellers commercial interests of procured volumes and sources, it also appeases the buyers concerns of the seller double counting, or performing fraudulent activities. 
 
-The trusted third party collects evidence to support either IP, SG, or MB, are issues a credential to the seller attesting their compliance.
+The trusted third party collects evidence to support either IP, SG, or MB chain of custody, are issues a credential to the seller attesting their compliance.
 
-**TODO:** What is the relationship between this third party making the claims against the original sustainability credential issuer? How can they reference a schema, without directly interacting with that issuer? This party is just attesting supply chain practices, not the sustainability credential of interest. 
 
 #### Identity Preserved (IP)
 
@@ -207,15 +200,17 @@ In the schema above,
 - `hashOfSource` is a hash of the original sustainability credential, in case of a audit. 
 - `startDateTime` and `endDateTime` are the audit period mass balance was determined over. 
 
-TODO:
-- Time period of mass balance observations? E.g. a rolling grain bunker system with definitive start or end.
-- Can the "evidence" mechanism hold references to the input DPP, DCC used in accessing mass balance? 
 
-## Book and Claim 
+### Discoverable Evidence
 
-Due to nature of **Book and Claim** in that the sustainability credential is entirely decoupled from the physical goods, different challenges arise. 
+Specification will be outlined on the feasibility, and practicalities on data discoverability within a transparency graph to support different chain of custody models, without relying on a third party making an assessment.
 
-1. Credentials holders need a method to "book" quantities of certified goods that they certified to do. 
+
+## Book-and-Claim 
+
+Due to nature of **Book-and-Claim** in that the sustainability credential is entirely decoupled from the physical goods, different challenges arise. 
+
+1. Credentials holders need a method to "book" quantities of certified goods that they eligible for.
 2. Credential holders need to be able to "transfer" these credits to buyers globally. 
 3. Credential holders cannot "book" the same quantity multiple times, or "transfer" the same credit to multiple buyers. 
 4. Buyers of these credits must be able to subsequently transfer to future buyers, without the original party who created the credential knowing. 
@@ -226,86 +221,121 @@ Due to nature of **Book and Claim** in that the sustainability credential is ent
 
 ### Implementation 
 
-Below is a potential implementation and workflow, following a use case of a wheat producer receiving a carbon-neutral certification from a trust anchor, **tokenizes** that credential against a specific quantity of barley produced, and transfers ownership of that credit to a miller outside their supply chain or geographic region. The miller subsequently retired the credit after milling milled an equivalent of non-qualifying wheat and presenting evidence to buyers of their flour that appropriate credits were used. 
+Below is a potential implementation and workflow using generic actor names - representative of any supply chain, commodity, product, or ESG credential.
+
+Each section is appended with a rolling use case of a wheat producer receiving a carbon-neutral certification from a trust anchor, **tokenizing** that credential against a specific quantity of wheat produced, transferring ownership of that credit to a miller outside their supply chain or geographic region. And finally, the miller subsequently retiring the credit(s) after milling milled an equivalent of non-qualifying wheat and presenting evidence to buyers of their flour that appropriate credits were used. 
 
 #### 1. Credential issuance 
 
-A certifier issues a sustainability credential to an entity, attesting that it meets specific sustainability requirements. The credential also specifies the allowable production quantities that can be "booked" (converted into credits) under the claim.
+A certifier makes an assessment against a ESG criteria and issued sustainability credential to the seller. The credential also specifies the allowable production quantities that can be "booked" (converted into credits) under the claim.
 
-Example: A barley producer is certified as carbon-neutral and receives a credential confirming this certification. The credential includes an allowance to generate 100,000 kg of carbon-neutral credits that can be booked and traded.
+The issuer could make the assessment of the upper limit of credits that can be booked based on volume prediction models, looking at historical averages, or comparable industry bench marks for the seller.
+
+
+
+![Credential and Credits](BookAndClaim_1.jpg)
+
+**Example**: The wheat producer provides sufficient evidence that their farming enterprise is carbon-neutral and receives a credential confirming attesting this. The certifier, using wheat production averages for the region, an understanding of the production area size of the farm, and satellite imagery assesses that a production volume of 1000t of wheat for the upcoming harvest period is feasible for this particular producer.
+
+The wheat producer now has the ESG credential, and the ability to "book" up to 1000t of wheat produced from their farm.
+
 
 #### 2. "Booking" Credits
 
-The barley producer tokenizes credits against a register (potentially an IDR operated by, or on behalf of, the certifier). By doing so, the producer creates a Verifiable Credential (VC) that reflects the quantity of certified barley.
+The seller performs their production/manufacturing activities, and when a quantity of product is produced, they can then tokenize the ESG credential as a credit.
+
+The seller tokenizes credits against the certifiers register (potentially an IDR operated by, or on behalf of, the certifier). By doing so, the seller receives a credential from the certifier for the qualifying quantity.
 
 ```json 
 {
     
     "credentialSubject": {
-        "id": "did:example:barleyproducer",
+        "id": "did:example:seller",
         "quantity": {
             "quantity": 1,
             "uom": "KGM"
         },
-        "schema": "https://carboneutralbarley.com/schema.json",
-        }
+        "schema": "https://.../schema.json",
+    },
     "proof": { ... }
 }
 ```
 
-This VC enables the barley producer to present evidence of their certified claim to potential buyers. Buyers can independently verify the credential’s authenticity and confirm that the credit is genuinely held by the barley producer.
+This VC enables the seller to present evidence of their certified claim to potential buyers. Buyers can independently verify the credential's authenticity and confirm that the credit is genuinely held by the seller via the certifiers IDR.
+
+![Bookings Credits](BookAndClaim_2.jpg)
+
+**Example**: The wheat producer has harvest 75t of wheat, and receives 75 1t carbon-neutral credits from the certifier. The wheat producer now has 75 credits to sell to a potential buyer somewhere in the world. 
+
+Potential buyers are able to verify the VC attesting the credit to ensure it is valid, not revoked, in date, and is in fact owned by the wheat producer as well as the ESG schema the token reflects.
+
+The wheat producer is free to sell any allotment of these 75 credits to any number of buyers. 
+
 
 #### 3. Transferring (selling) credits
 
-The barley producer wishes to sell the credit to a buyer in a different geographic region. 
+The seller wishes to sell the credit to a buyer in a different geographic region. 
 
 To initiate the transfer:
 
-1. The seller submits a transfer request to the register operator (e.g., the IDR system), providing:
+1. The seller submits a transfer request to the certifier register operator (e.g., the IDR system), providing:
    1. The buyer's DID.
    2. A reference to the specific credit(s) being transferred.
-   3. A digital signature generated using the barley producer's private key.
+   3. A digital signature generated using the sellers private key.
 
 2. The register operator verifies the transfer request by:
-   1. Authenticating the barley producer and buyer DIDs.
+   1. Authenticating the seller and buyer DIDs.
    2. Confirming the validity of the credit(s) referenced in the request.
    
 3. Upon approval:
-   1. Ownership of the credit is transferred to the buyer (the miller).
-   2. The original credential held by the barley producer is revoked.
-   3. The miller receives a new credential representing the transferred credit.
+   1. Ownership of the credit is transferred to the buyer.
+   2. The original credential held by the seller is revoked.
+   3. The buyer receives a new credential representing the transferred credit.
 
-The miller can receive this credential for the credit purchased by making a request using did authentication.
+The buyer can receive this credential for the credit purchased by making a request using did authentication.
 
+The register operator is able to ensure no double counting is occurring, and any other verification requirements for their industry.
+
+![Transferring Credits](BookAndClaim_3.jpg)
+
+
+**Example**: The wheat producer and a miller have come in agreement to transfer 10 1t credits of carbon-neutral wheat. The wheat producer initiates the transfer with the certifier by providing information about the buyer, and the 10 credits to be transferred.
+
+The register operator for the carbon-neutral credits can verify the credits are legitimate, no double counting is occurring, the credits are not in escrow in another concurrent transaction, and any other industry requirements pertaining to carbon-neutral wheat credits.
+
+The buyer can then request the register operator for these 10 credits, and the register operator can issue a new set of 10 credits to the buyer, and revoke the previous 10 held by the seller. 
+
+The buyer is then free to then transfer these 10 credits, or provide as evidence, to other actors in the supply chain, without the *original* seller knowing. 
 
 #### 4. Retiring credits
 
-Once the miller uses non-qualifying wheat in the milling process, they retire the credit to ensure its sustainability attributes are appropriately accounted for.
+Once the buyer performs a manufacturing process and uses non-qualifying quantities of the product their process. They retire the equivalent quantities of credit to ensure its sustainability attributes are appropriately accounted for.
 
 Steps to retire the credit:
 
-1. The miller submits a retirement request to the IDR, authenticated using their DID. The request references the specific credit being retired.
-2. The IDR processes the request, marking the credit as retired and preventing it from being reused or double-counted.
-3. The miller receives evidence of retirement, potentially in the form of another Verifiable Credential that references the original.
+1. The buyer submits a retirement request to the certifier register, authenticated using their DID. The request references the specific credit(s) being retired.
+2. The certifier register processes the request, marking the credit as retired and preventing it from being reused or double-counted, or transferred in the future.
+3. The buyer receives evidence of retirement, potentially in the form of another Verifiable Credential that references the original credit - forming a link of evidence of retirement, evidence of credit purchase, and reference to the underling ESG schema from the credential from the original seller.
 
-This retirement evidence can then be linked to the Digital Product Passport (DPP) for the flour, enabling downstream buyers to verify:
+This retirement evidence can then be linked to the Digital Product Passport (DPP) for the manufactured products, enabling downstream buyers to verify:
 - The schema associated with the original credit.
-- The identity of the certifier who issued the initial credential to the barley producer.
-- The integrity of the credit lifecycle, including its transfer and retirement, validated by the IDR operator to prevent double counting.
+- The identity of the certifier who issued the initial credential to the seller.
+- The integrity of the credit lifecycle, including its transfer and retirement, validated by the certifier registor operator to prevent double counting.
+
+![Retiring Credits](BookAndClaim_4.jpg)
+
+**Example**: The miller has purchase 10 1t carbon-neutral wheat credits from the farmer. The miller mills 10t of non-qualifying wheat as they have no practical and physical access to certified carbon-neutral wheat. The miller, however, wants to claim 10t of output flour as carbon-neutral. 
+
+The miller retires the 10 credits with the certifier register operator, and receives evidence of credit retirement. The miller, in a Digital Product Passport for the flour, can reference this evidence as proof to buyers. 
+
+The buyer of the flour can be confident that 10t of production of carbon-neutral wheat occurred somewhere globally, under a framework that they trust as per the credential schema, and that this 10t has not been double counted elsewhere in the supply chain. 
+
 
 ### Outcomes
 
-- The IDR operator, as a trusted third party, ensures:
-  - Credit quotas are not exceeded by the barley producer
-  - Double counting does not occur
-  - More than one party holds the same "credit" at the same time
-  - Credits are properly retired.
-- 
-
-**TODO**: 
-- sketch out the schema for these different credentials, how is everything linked?
-- is the IDR the appropriate spot for this "registry"
-- what other methods could work? 
-- diagrams!
-
+- Producers are incentivized to receive ESG credentials, even if their local supply chain does not demand it.
+- Producers are able to sell these credits to buyers globally, and receive a premium for their sustainable practices.
+- The Book-and-Claim model is not dependent on a single technology choice, or platform.
+- The certifier register operator can ensure credit quotas are not exceeded, double counting did not occur, and proper transfer of credits.
+- Manufacturers are able to retire purchased credits, and provide evidence their buyers that credits have been purchased against the ESG schema of interest.
 
