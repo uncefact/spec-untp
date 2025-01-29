@@ -175,26 +175,23 @@ UUIDs can be useful as scheme specific identifiers, particularly when there is v
 
 ## Discoverability
 
-This section describes the challenges and solutions in the first step of the [identity resolver conceptual model](#conceptual-model) - from an identifier encoded in some kind of data carrier to a consistent URI representation.
+This section describes the challenges and solutions in the first step of the [identity resolver conceptual model](#conceptual-model) - from an identifier encoded in some kind of data carrier to a consistent URI representation. UNTP does not define any new data carrier standards but rather aims to support any existing or future scheme. 
 
 ### Data Carriers
 
-The term 'data carrier' applies to all 1- and 2-dimensional barcode symbols and radio frequency tags. A very large number of data carriers are in use, including proprietary ones tied to specific apps. For UNTP, the important data carriers are those defined by [ISO/IEC Joint Technical Committee 1, Steering Committee 31](https://www.iso.org/committee/45332.html). These include different types of linear symbol most people think of as 'a barcode', as well as [Data Matrix](https://www.iso.org/standard/80926.html), [QR Code](https://www.iso.org/standard/83389.html) and RFID tags. The standards for those data carriers do not define the type of identifier(s) that can be encoded so that, for practical purposes, it's necessary to also consider the origin and management of the identifiers to be encoded, the syntax to be used for that encoding, the devices and software necessary to print and read the data. It is this multi-layered complexity that makes "Automatic Identification and Data Capture" (AIDC) a professional activity in its own right.
+The term "data carrier" covers all 1D and 2D barcode symbols and RFID tags. Many exist, including proprietary ones, but for UNTP, the recommended carriers are those defined by [ISO/IEC JTC 1/SC 31](https://www.iso.org/committee/45332.html), such as linear barcodes, [Data Matrix](https://www.iso.org/standard/80926.html), [QR Codes](https://www.iso.org/standard/83389.html), and RFID. While these standards define the carrier format, they do not dictate identifier types, encoding syntax, or required devices, making "Automatic Identification and Data Capture" (AIDC) a specialized field.
 
-Given this background, 'discoverability' itself has several aspects. It is reasonable to assume that someone inspecting goods in the course of their work will be equipped with a specialist device. This is always necessary for RFID tags, the principal advantage of which is that hundreds, if not thousands, of tags can be scanned within a given volume, even without line of sight. But be aware that the device needs to be running software that can interpret the data it receives. Handheld optical scanners are also in common use and these will typically be able to read a very wide variety of optical symbols. But again, the key question is whether or not the software can interpret the data read from the carrier. 
+**Discoverability** depends on equipment and software. RFID requires specialist readers, capable of scanning multiple tags without line of sight. Optical scanners can read various barcodes, but their software must interpret the data correctly. The more standardized the identifiers and encoding, the more interoperable and discoverable they are, leading industries to favor established systems.
 
-It hardly needs saying that the more standardized the identifiers and the encoding used, the more widely used the data carrier, and the more ubiquitous the software used to interpret the data read from the carrier, the more interoperable and therefore the more discoverable the identifiers will be. It is this kind of consideration that often leads industry to choose established identifier and data exchange systems. That said, modern smartphones can read any almost any optical barcode and NFC tag *if* the user first opens an app that can interpret the data. This is true for proprietary data carriers and identifiers as well as standardized ones. Installing an app can readily turn a general-purpose smartphone into a specialist device. This opens up the option of using less-established identifier schemes and syntax including Decentralized Identifiers (DIDs). Then it's a question of whether the identifiers are equally discoverable at different points along the supply chain.
+Modern smartphones can read most optical barcodes and NFC tags via apps, enabling decentralized identifiers (DIDs) and alternative schemes. However, **QR Codes with URLs** are the most discoverable, as native camera apps can instantly open links. Yet, URL-based identifiers pose risks like "link rot" and incompatibility with offline systems. [ISO/IEC 18975](https://www.iso.org/standard/83389.html) addresses this by embedding structured identifiers within URLs, balancing broad accessibility with specialist data use.
 
-One case deserves special mention: a URL encoded in a QR Code. Almost all smartphone users can scan a QR Code just using the native camera app and, if the QR Code contains a URL, the Web browser will open the relevant Web page. This kind of identifier is therefore the most discoverable of all. That is, if a URL in the QR code is treated as the identifier then discoverability is a given. However, using a URL itself as the identifier brings some issues of its own. For example, over the medium to long term, many URLs suffer 'link rot' - that is, the URL no longer functions. Or if it does, it may lead to a Web page very different from the one originally intended. Furthermore, existing data exchange systems are likely to be built on short offline identifiers. ISO/IEC 18975 attempts to offer the best of both worlds by providing a means to encode existing identifiers into a data structure that is also a URL. Non-specialist software - notably a smartphone's camera app - can just read it like any URL. But specialist software can parse the URL to extract the identifiers used to identify products, batches and more.
+In **Automatic Identification and Data Capture (AIDC)**, the **ISO/IEC 15459** series establishes a registry for short codes in data carriers. Organizations issuing barcode and RFID identifiers receive a unique **Issuing Agency Code** to prevent conflicts.  **ISO/IEC 15418** defines **Data Identifiers (DIs)** and **Application Identifiers (AIs)**, which qualify identifiers, ensuring globally unique encoding in optical and RFID data carriers.  
 
-#### ISO/IEC 15459 Issuing Agencies
+For example:  
+- **DI `2B`** identifies gas cylinders per U.S. D.O.T. standards.  
+- **AI `01`** represents a **Global Trade Item Number (GTIN)**.  
 
-In the world of Automatic Identification and Data Capture (barcoding etc), the ISO/IEC 15459 series of standards establishes a registry that acts as the root authority for short codes used in data carriers. Organisations that wish to issue identifiers that are intended to be encoded in barcodes and/or RFID tags are assigned a unique Issuing Agency Code that ensures their identifiers do not clash with any others. A further standard, ISO/IEC 15418, defines so-called *Data Identifiers* and *Application Identifiers* that "qualify" identifiers. It is this system that enables those Issuing Agencies to efficiently encode globally unique identifiers in optical and radio frequency data carriers without any duplication and for the print and scan industry to be able to create and interpret the barcodes and tags.
-
-For example, 
-
-* the Data Identifier `2B` is for a *Gas Cylinder Container Identification Code assigned by the manufacturer in conformance with U.S. Department of Transportation (D.O.T.) standards*. 
-* The Application Identifier `01` is for a *Global Trade Item Number (GTIN)*. Data Identifiers are managed under the auspices of ANSI, Application Identifiers are managed by GS1.
+DIs are managed by **ANSI**, while AIs fall under **GS1**.
 
 ### Mapping to consistent URIs
 
@@ -215,17 +212,48 @@ For new identifier schemes or existing schemes that have not already defined dat
 
 ## Resolvability
 
-This section describes the challenges and solutions in the second and third steps of the [identity resolver conceptual model](#conceptual-model) - from a consistent URI representation of an identifier to a [link-set](https://datatracker.ietf.org/doc/rfc9264/) about the identified entity. In the context of UNTP, that means easily discovering credentials such as the identified product's DPP or the identified facility's DFR.
+This section describes the challenges and solutions in the second and third steps of the [identity resolver conceptual model](#conceptual-model) - from a consistent URI representation of an identifier to a [link-set](https://datatracker.ietf.org/doc/rfc9264/) about the identified entity. In the context of UNTP, that means easily resolving a product or facility identifier to credentials such as the identified product's DPP or the identified facility's DFR. 
+
+ISO/IEC (FDIS) 18975 defines a framework for resolving any existing identifier that is globally unique in such as those issued under the ISO/IEC 15459 series. It sets out two options for how those identifiers can be encoded in a regular HTTP URI (Web addrress), using Data Identifiers and Application Identifiers, and how that URI can resolve to a set of links to information about the identified entity. That [linkset](https://datatracker.ietf.org/doc/rfc9264/) can be operationalised in a resolver. This defines a framework for creating a simple query interface for any identified entity. 
+
+This UNTP identity Resolver (IDR) specification builds upon these existing standards by defining some specific constraints that improve interoperability and meet UNTP specific requirements.
+
+### Identity Resolver Example
+
+An IDR request URL such as `https://resolver.sample-register.com/products/123456789?linkType=all` is requesting all link types about a product with ID `123456789` issued by identifier scheme `sample-register.com`
+
+A typical response might be as follows.
+
+```json
+{
+    "linkset": [
+        {
+            "anchor": "https://resolver.sample-register.com/products/123456789",
+            "untp:dpp": [
+                {
+                    "href": "https://sample-credential-store.com/credentials/dia-90664869327.json",
+                    "title": "Digital Product Passport",
+                    "type": "application/json"
+                 }
+            ]
+        },
+        {
+            "anchor": "https://resolver.sample-register.gov/vatNumber/90664869327",
+            "https://sample-register.gov/registrationHistory": [
+                {
+                    "href": "https://sample-register.gov/registrationHistory?id=90664869327",
+                    "title": "Registration History",
+                    "type": "application/json"
+                 }
+            ]
+        },
+    ]
+} 
+```
+
+Whilst 
 
 
-ISO/IEC (FDIS) 18975 defines a framework for resolving any existing identifier that is globally unique in its own right, most notably, those issued under the ISO/IEC 15459 series. It sets out two options for how those identifiers can be encoded in a regular HTTP URI (Web addrress), using Data Identifiers and Application Identifiers, and how that URI can resolve to a set of links to information about the identified entity. That [linkset](https://datatracker.ietf.org/doc/rfc9264/) can be operationalised in a resolver. This defines a framework for creating a simple query interface for any identified entity. ISO/IEC 18975 enables identity issuing agencies to develop conformant standards that specify the following:
-* The identifiers can be encoded in a URL within a QR Code printed on a product that can be scanned just using a mobile phone's camera, without any need for a specialist app. The user can select the DPP from the list of available links to information (i.e. manually select the correct link from the linkset).
-* The identifiers can be encoded in a URL within a QR Code printed on a product that can be scanned using a specialist app that queries the resolver and returns the DPP.
-
-
-### Link Resolver Services
-
-ISO/IEC (FDIS) 18975 defines a framework for resolving any existing identifier that is globally unique (notably those issued under the ISO/IEC 15459 series). It sets out two options for how those identifiers can be encoded in a regular HTTP URI (Web address), using Data Identifiers and Application Identifiers, and how that URI can resolve to a set of links (a "link-set") to information about the identified entity. That [link-set](https://datatracker.ietf.org/doc/rfc9264/) can be operationalised in a resolver service. This defines a framework for creating a simple query interface for any identified entity. 
 
 TBD - link query examples and linkset response examples.
 
