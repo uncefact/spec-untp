@@ -251,12 +251,13 @@ A typical response might be as follows.
 } 
 ```
 
-Whilst 
+
+ISO/IEC (FDIS) 18975 defines a framework for resolving any existing identifier that is globally unique in its own right, most notably, those issued under the ISO/IEC 15459 series. It sets out two options for how those identifiers can be encoded in a regular HTTP URI (Web addrress), using Data Identifiers and Application Identifiers, and how that URI can resolve to a set of links to information about the identified entity. That [linkset](https://datatracker.ietf.org/doc/rfc9264/) can be operationalised in a resolver. This defines a framework for creating a simple query interface for any identified entity. ISO/IEC 18975 enables identity issuing agencies to develop conformant standards that specify the following:
+* The identifiers can be encoded in a URL within a QR Code printed on a product that can be scanned just using a mobile phone's camera, without any need for a specialist app. The user can select the DPP from the list of available links to information (i.e. manually select the correct link from the linkset).
+* The identifiers can be encoded in a URL within a QR Code printed on a product that can be scanned using a specialist app that queries the resolver and returns the DPP.
 
 
-
-TBD - link query examples and linkset response examples.
-
+### Link Resolver Services
 
 ### URNs to link-Set
 
@@ -295,7 +296,6 @@ TBD - how to represent links to API's or services that will accept create/update
 ### Secure Targets
 
 TBD - how to represent links that require authenticated access or decryption keys?
-
 
 
 ## Verifiability 
