@@ -53,7 +53,7 @@ The digital product passport (DPP) is issued by the shipper of goods and is the 
 
 ## Requirements
 
-The digital product passport is designed to meet the following detailed requirements as well as the more general [UNTP Requirements(https://uncefact.github.io/spec-untp/docs/about/Requirements)]
+The digital product passport is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://uncefact.github.io/spec-untp/docs/about/Requirements).
 
 | ID | Name  | Requirement Statement   | Solution Mapping  |
 | ------ | ---- | --------- | ---------- |
