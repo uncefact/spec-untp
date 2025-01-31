@@ -205,7 +205,7 @@ For new identifier schemes or existing schemes that have not already defined dat
 
 This section describes the challenges and solutions in the second and third steps of the [identity resolver conceptual model](#conceptual-model) - from a consistent URI representation of an identifier to a [link-set](https://datatracker.ietf.org/doc/rfc9264/) about the identified entity. In the context of UNTP, that means easily resolving a product or facility identifier to credentials such as the identified product's DPP or the identified facility's DFR. 
 
-ISO/IEC (FDIS) 18975 defines a framework for resolving any existing identifier that is globally unique in such as those issued under the ISO/IEC 15459 series. It sets out two options for how those identifiers can be encoded in a regular HTTP URI (Web addrress), using Data Identifiers and Application Identifiers, and how that URI can resolve to a set of links to information about the identified entity. That [linkset](https://datatracker.ietf.org/doc/rfc9264/) can be operationalised in a resolver. This defines a framework for creating a simple query interface for any identified entity. 
+### Link Resolver Services
 
 This UNTP identity Resolver (IDR) specification builds upon these existing standards by defining some specific constraints that improve interoperability and meet UNTP specific requirements.
 
@@ -299,6 +299,8 @@ This mapping architecture is designed to ensure that UNTP can accommodate any ne
 
 #### From a URN to IDR linkset
 
+### URNs to link-Set
+
 The UN global trust register will include resolver templates for each scheme and so the UNTP requirement that identifiers be resolvable is met by substituting the URN `{identifier-value}` into the `{id}` placeholder in the resolver template related to the matching `{identifier-scheme}`. For example
 
 * given a URN ID of `urn:gtr:nlis.com.au:QDBH0132XBS01234`, the `{identifier-scheme}` is `nlis.com.au`
@@ -361,6 +363,7 @@ This section covers specific linkset use cases that SHIULD be supported by confo
 
 * Where possible, always use IETF linkset standard properties and IANA standard link types.
 * Where necessary, use custom link types and linkset properties but always define them in a public vocabulary and reference them using a profile link type.
+
 
 #### Defaults
 
