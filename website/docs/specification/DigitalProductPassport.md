@@ -168,7 +168,7 @@ The Product object is the the subject of the verifiable credential. Key points t
 * The `countryOfProduction` property must carry the ISO-3166 two letter country code for the country where the product was manufactured.  Note that this represents only the country of manufacture for the identified product. The provenance of materials used to make the product are defined separately. 
 * The `characteristics` property provides an extension point for commodity-specific properties such as battery capacity in AmpHours or shirt size.  UNTP does not define values for this property but does provide guidance for [industry extensions](../extensions/index.md).
 * `granularityLevel` indicates whether this digital product passport is issued at product class level, batch level, or serialised item level.
-* `dueDiligenceDclaration` is a link to a due diligence declaration that meets the legal requirement of the importing economy.
+* `dueDiligenceDeclaration` is a link to a due diligence declaration that meets the legal requirement of the importing economy.
 * `materialsProvenance` is an array of UNTP `Material` types that define the origin and characteristics of constituent materials in the product.
 * `conformityClaims` is an array of `Claim` types that list the product quality or sustainability claims made by the manufacturer against criteria defined by a reference standard or regulation. The [sustainability vocabulary](SustainabilityVocabularyCatalog.md) is designed to accommodate the very diverse set of conformity criteria expressed by various standards and regulations.
 * `circularityScorecard` is a simple object that defines the overall percentage of recycled content (and recyclable content) as well as links to recycling and repair information.
