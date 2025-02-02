@@ -18,7 +18,7 @@ UNTP requires four key features of identifier schemes and, for those that don't 
 * **unique** so that there is no risk of collision with identifiers across different schemes,
 * **discoverable** either as structured data in documents or easily read by scanning a barcode, QR code, or RFID, 
 * **resolvable** so that, given an identifier, there is a standard way to find more data about the identified thing, and 
-* **verifiable** so that ownership of the identifier can be verified so that actors cannot make claims about identifiers they don't control. 
+* **verifiable** so that claims about identifiers made by the identifier's controller can be distingished from reviews and other third party claims.
 
 ## Conceptual Model
 
@@ -29,16 +29,16 @@ A fundamental UNTP principle is "given an ID of a thing, I can find verifiable d
 A typical IDR workflow is as follows.
 
 1. Each item in an inbound shipment of supplies to a manufacturing facility is barcoded - using the same well known barcode scheme that has been in use for many years (so nothing special for UNTP). A barcode reader captures the identifier of an item - eg `1234567`.
-2. The scanner system may already know how to construct a URL from the ID (eg following ISO-18975) or may lookup the scheme in a local copy of the UN global register of schemes. A resolver template such as `https://resolver.sample-scheme.org/{id}` can be used to replace `{id}` with the actual identifier to get `https://resolver.sample-scheme.org/1234567`.  
-3. Calling the URL `https://resolver.sample-scheme.org/1234567` returns an [IETF link-set](https://datatracker.ietf.org/doc/rfc9264/) that includes many different links (also URLs), each with a specific type that may include a product safety data sheet, instruction manual, brand homepage, a digital product passport (DPP), and a digital conformity credential (DCC) link type. 
-4. Following the DPP link yields a UNTP DPP credential which is verified to confirm integrity. The DPP includes several sustainability claims including the emissions footprint of the product, which the manufacturing facility can use to calculate the contribution of the received item to their scope 3 total. Following the DCC link type yields a conformity credential issued by a third party certifier that attests to the carbon intensity of the product. 
+2. The scanner system may already know how to construct a URL from the ID (eg following ISO/IEC 18975) or may lookup the scheme in a local copy of the UN global register of schemes. A resolver template such as `https://resolver.example/{id}` can be used to replace `{id}` with the actual identifier to get `https://resolver.example/1234567`.  
+3. Calling the URL `https://resolver.example/1234567` returns an [IETF link-set](https://datatracker.ietf.org/doc/rfc9264/) that includes one or more links (also URLs). Each link is annotated so that the type of information provided by the link is declared. **Link types** may include things like product safety data sheet, instruction manual, brand homepage, a digital product passport (DPP), and a digital conformity credential (DCC). Further annotations are used to declare things like the format of the linked information (HTML, PDF, JSON etc.). This is achieved using [IANA-registed Media Types](https://www.iana.org/assignments/media-types/media-types.xhtml).
+4. A link typed of `dpp` with a format declaration of `[application/vc](https://www.w3.org/TR/vc-data-model-2.0/#vc-ld-media-type)` is a hint that the target URL will yield a UNTP DPP credential which is verified to confirm integrity. The DPP includes several sustainability claims including the emissions footprint of the product, which the manufacturing facility can use to calculate the contribution of the received item to their scope 3 total. Following the DCC link type yields a conformity credential issued by a third party certifier that attests to the carbon intensity of the product. 
 5. The DPP and DCC both include an issuer DID like `did:web:sample-supplier.com` and `did:web:sample-certifier.com` which resolve to DID documents that link to [digital identity anchor](DigitalIdentityAnchor.md) credentials confirming the identity of the supplier and certifier. The DPP also contains the ID of the manufacturing facility which can be resolved in the same way as the product ID (step 2) and therefore can be used to find facility level credentials such as fair work certificates. In this way a due-diligence [transparency graph](../design-patterns/TrustGraphs.md) can be created by the manufacturer, providing strong evidence of regulatory compliance and sustainability performance. 
 
 The process is very flexible
 
 * If instead of a barcoded item arriving at a manufacturing plant, it were a cow arriving at a processing plant, the same process would work using the livestock identifier encoded in the RFID tag on the cow's ear. The link-set would include a livestock passport which would, in turn, include the ID of the farm which could be used to find a deforestation credential for the farm. 
-* If the supplier of goods to the manufacturer switched from 1D barcodes to QR codes at any time, then this just means that step 2 is not needed because the QR is already an IDR URL that will return a link-set.  
-* If the barcode or QR is on a finished product and is scanned by a consumer in the EU using a smartphone then the link resolver can use `http` header user context information to return the DPP by default (with additional links as options) and in the language of the user settings. 
+* If the supplier of goods to the manufacturer switched from 1D barcodes to QR codes at any time, then this just means that step 2 is not needed because the QR is already likely to be an IDR URL that will return a link-set.  
+* If the barcode or QR is on a finished product and is scanned by a consumer in the EU using a smartphone then the IDR can use `http` header user context information to return the DPP by default (with additional links as options) and in the language of the user settings. 
 
 In this way, a single data carrier, whether a traditional barcode or a QR code, provides access to a wealth of further information which can be tailored to suit the user context - irrespective of whether the user is a human or a machine.
 
@@ -67,7 +67,7 @@ This section defines the formal requirement statements for Identity Resolver imp
 |IDR-10|Versioning of link targets|When multiple version of link targets exist (eg multiple version of a product passport) then resolvers MUST include version information in link metadata and MUST ensure that any defaults reference the latest version - so that users receive current information and can audit historical data| |
 |IDR-11|Resolver redirection|Resolvers SHOULD, where available, include links that reference secondary resolvers so that product/facility owners can maintain additional document and credential links in their own resolvers. A typical example is the case where a global scheme maintains identifiers only at product class level but the manufacturer manages identifiers and related data at serialised item level. In such cases the primary resolver would say "here's what I know about the product and here's a link to another resolver that can tell you about the serialised item"| |
 |IDR-12|Self-issued product identifiers|This specification MUST support self-issued identifiers so long as they are equally discoverable, resolvable, and verifiable - so that each value chain actor is free to make their own choice between third party product registers and self-managed product registers without any lock-in.| |
-|IDR-13|Existing standards|This specification SHOULD use existing standards such as ISO-18975 or IETF RFC 9264 so that implementers can maximise re-use of existing infrastructure and maintain interoperability.| |
+|IDR-13|Existing standards|This specification SHOULD use existing standards such as [ISO/IEC 18975](https://www.iso.org/standard/85540.html) and [IETF RFC 9264](https://www.rfc-editor.org/rfc/rfc9264.html) so that implementers can maximise re-use of existing infrastructure and maintain interoperability.| |
 
 
 ## Globally Unique Identifier Representation
@@ -76,8 +76,8 @@ This section defines the formal requirement statements for Identity Resolver imp
 
 Linked data architectures, of which UNTP is an example, depend on unique and consistent identifiers of entities such as product and facilities so that they can be matched across different credentials. For this reason [URIs](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) are heavily used as identifiers of entities throughout UNTP credential types. But without consistency in the way globally unique identifiers are constructed, there is a high risk that valuable links are not made. For example, consider the same product identified in two credentials:
 
-* A digital product passport issued by a manufacturer with a sustainability claim about product `http://product.sample-register.com/123456789`
-* A digital conformity credential with a third party sustainability assessment about product `urn:com:sample-register:product:123456789`
+* A digital product passport issued by a manufacturer with a sustainability claim about product `http://product.sample-register.example/123456789`
+* A digital conformity credential with a third party sustainability assessment about product `urn:example:sample-register:product:123456789`
 
 Although these are the same product, the construction of the ID is different and so a validation that attempts to confirm that a product passport claim is genuinely supported by third party assessment may fail.
 
@@ -118,14 +118,14 @@ The `gtr` namespace represents identifier schemes that are listed in the UN glob
 
 #### IDR URLs as identifiers
 
-When URLs are used as identifiers in UNTP credentials they SHOULD be Identity Resolver URLs that conform to the ISO-18975 structured path syntax without parameters. 
+When URLs are used as identifiers in UNTP credentials they SHOULD be Identity Resolver URLs that conform to the ISO/IEC 18975 *structured path syntax* without parameters. 
 
-* pattern: `https://{identifier-scheme}/{identifier-value}` where `{identifier-scheme}` is a DNS domain name (without `/` characters unless `%2F` encoded) and `{identifier-value}` is a valid ISO-18975 path (which can include `/` characters to separate class, sub-class, and instance id as defined in ISO-18975) 
+* pattern: `https://{identifier-scheme}/{identifier-value}` where `{identifier-scheme}` is a DNS domain name (without `/` characters unless `%2F` encoded) and `{identifier-value}` is a valid ISO/IEC 18975 path (which can include `/` characters to separate class, sub-class, and instance id as defined in ISO-18975) 
 * examples:
-  * `https://products.sample-company.com/1234567`
-  * `https://facilities-register.com/ABC123456`
-  * `https://example.com%2F01/733240226591`
-  * `https://example.com%2F01/733240226591/21/1234`
+  * `https://products.sample-company.example/1234567`
+  * `https://facilities-register.example/ABC123456`
+  * `https://example.com/01/733240226591`
+  * `https://example.com/01/733240226591/21/1234`
 
 When a given identifier scheme uses both URN and URL mechanisms to represent identifiers as URIs then the `{identifier-scheme}` part SHOULD be the same for both. If the identifier scheme is registered in the UN global trust register then the `{identifier-scheme}` MUST match the corresponding scheme ID in the trust register. 
 
@@ -139,8 +139,8 @@ The allowed structure of the `{did-method-specific-identifier}` depends on the `
 
 * DID Web pattern: `did:web:{domain-name}[:{path}]` where `:path` is an optional colon-delimited path to the identifier.
 * examples:
-  * `did:web:sample-company.com` - representing the DID of sample-company.com
-  * `did:web:sample-company.com:products:123456789` - representing the DID of a product made by sample-company.com
+  * `did:web:sample-company.example` - representing the DID of sample-company.example
+  * `did:web:sample-company.example:products:123456789` - representing the DID of a product made by sample-company.example
  
 ### Universally Unique Identifier (UUID)
 
@@ -161,8 +161,8 @@ UUIDs can be useful as scheme specific identifiers, particularly when there is v
 
 * pattern: `{uri-scheme}:{identifier-scheme}[:or/]{UUID}`
 * examples: 
-  * `urn:gtr:products.sample-register.com:709f3df6-4cdf-4bda-94d9-ce0ec9428616`
-  * `https://products.sample-register.com/709f3df6-4cdf-4bda-94d9-ce0ec9428616`
+  * `urn:gtr:products.sample-register.example:709f3df6-4cdf-4bda-94d9-ce0ec9428616`
+  * `https://products.sample-register.example/709f3df6-4cdf-4bda-94d9-ce0ec9428616`
 
 ## Discoverability
 
@@ -174,7 +174,7 @@ The term "data carrier" covers all 1D and 2D barcode symbols and RFID tags. Many
 
 **Discoverability** depends on equipment and software. RFID requires specialist readers, capable of scanning multiple tags without line of sight. Optical scanners can read various barcodes, but their software must interpret the data correctly. The more standardized the identifiers and encoding, the more interoperable and discoverable they are, leading industries to favor established systems.
 
-Modern smartphones can read most optical barcodes and NFC tags via apps, enabling decentralized identifiers (DIDs) and alternative schemes. However, **QR Codes with URLs** are the most discoverable, as native camera apps can instantly open links. Yet, URL-based identifiers pose risks like "link rot" and incompatibility with offline systems. [ISO/IEC 18975](https://www.iso.org/standard/83389.html) addresses this by embedding structured identifiers within URLs, balancing broad accessibility with specialist data use.
+Modern smartphones can read most optical barcodes and NFC tags via apps, enabling decentralized identifiers (DIDs) and alternative schemes. However, **QR Codes with URLs** are the most discoverable, as native camera apps can instantly open links. Yet, URL-based identifiers pose risks like "link rot" and incompatibility with offline systems. [ISO/IEC 18975](https://www.iso.org/standard/83389.html) addresses this by embedding structured identifiers within *structured path* URLs, balancing broad accessibility with specialist data use.
 
 In **Automatic Identification and Data Capture (AIDC)**, the **ISO/IEC 15459** series establishes a registry for short codes in data carriers. Organizations issuing barcode and RFID identifiers receive a unique **Issuing Agency Code** to prevent conflicts.  **ISO/IEC 15418** defines **Data Identifiers (DIs)** and **Application Identifiers (AIs)**, which qualify identifiers, ensuring globally unique encoding in optical and RFID data carriers.  
 
@@ -190,7 +190,7 @@ A key challenge is to ensure that all these different data carrier representatio
 
 * A 2D Matrix code might yield the string `0107332402265910211234567890240+A01=442.001-UP001T91456498765498765465432132168753` where `733240226591` is the product ID (with company prefix) and `1234567890` is the serial number
 * An RFID Tag for the same product might yield a string like `urn:epc:tag:sgtin-96:1.7332402.026591.1234567890` where `7332402.026591` is the product ID and `1234567890` is the serial number.
-* A QR code may may yield `https://id.sample-resolver.com/01/733240226591/21/1234567890` where `733240226591` is the product ID (with company prefix) and `1234567890` is the serial number.
+* A QR code may may yield `https://id.sample-resolver.example/01/733240226591/21/1234567890` where `733240226591` is the product ID (with company prefix) and `1234567890` is the serial number.
 
 ![ID mapping](IdentityResolverMapping.png)
 
@@ -217,27 +217,27 @@ IDR queries are URLs that take the general form
 
 `https://{domain}/{path}?{query}` where
 
-* `domain` is the web domain of the resolver service, usually operated by the identifier scheme register - eg `resolver.sample-register.com`
+* `domain` is the web domain of the resolver service, usually operated by the identifier scheme register - eg `resolver.sample-register.example`
 * `path` carries the specific ID of the product or facility being queried and may include qualifiers - eg `products/ABCD9876/items/1234`
 * `query` contains a list of URL parameters that are used to filter the response - eg `linkType=untp:dpp&language-en`
 
 A typical IDR query might be something like this
 
-`https://resolver.sample-register.com/products/ABCD9876/items/1234?linkType=all` 
+`https://resolver.sample-register.example/products/ABCD9876/items/1234?linkType=linkset` 
 
 which is requesting
 
-* all link types 
+* the complete link-set
 * about a product class `ABCD98765`
-* issued by identifier scheme `sample-register.com`
+* issued using an identifier scheme supported by `sample-register.example`
 * with specific serial number `123456789` 
 
 To get a different response, the query might be modified as follows
 
-* `https://resolver.sample-register.com/products/ABCD9876?linkType=all` to get data about the product class only, not a specific serialised item.
-* `https://resolver.sample-register.com/products/ABCD9876/items/1234?linkType=untp:dpp` to get only the DPP for the item.
-* `https://resolver.sample-register.com/products/ABCD9876/items/1234?linkType=all&language=de` to get all links to German language targets.
-* `https://resolver.sample-register.com/products/ABCD9876/items/1234` to get a redirect to the target of the `default` link.
+* `https://resolver.sample-register.example/products/ABCD9876?linkType=linkset` to get data about the product class only, not a specific serialised item.
+* `https://resolver.sample-register.example/products/ABCD9876/items/1234?linkType=untp:dpp` to get only the DPP for the item.
+* `https://resolver.sample-register.example/products/ABCD9876/items/1234?linkType=all&language=de` to get all links to German language targets.
+* `https://resolver.sample-register.example/products/ABCD9876/items/1234` to get a redirect to the target of the `default` link.
 
 #### IDR LinkSet Response
 
@@ -246,27 +246,27 @@ The response to an IDR query is an IETF `linkset` which contains one or more `co
 * a context describes what the links are about using the `anchor` property. Often there is only one `anchor` that represents the requested `identifier`. But as described in the [resolver workflow](#resolver-service-workflow), a resolver may return links about related entities. For example a query about a specific serialised item may return some links about the item, and some links about the product class, and even some links about the manufacturer or brand that sells the product. 
 * a target describes a specific link identified with the `href` property together with other properties that provide useful meta-data about the link. 
 
-A typical response the the sample query `https://resolver.sample-register.com/products/ABCD9876/items/1234?linkType=all` might be as shown in the snippet below. 
+A typical response the the sample query `https://resolver.sample-register.example/products/ABCD9876/items/1234?linkType=linkset` might be as shown in the snippet below. 
 
-* there are two `contexts`, one is at serialised item level `"anchor": "https://resolver.sample-register.com/products/ABCD9876/items/1234"` and one is at product class level `"anchor": "https://resolver.sample-register.com/products/ABCD9876"`. 
-* the first context has two `targets`, both of which have a linkType "untp:dpp" (UNTP digital product passports) and MIME type "application/vc+jwt" but one is rendered in German and the other in English.
-* the second context is at product and has one target which points to the manufacturers product information web page. THis highlights that link resolvers can return all kinds of relevant links, only some of which point to UNTP credentials.
+* there are two `contexts`, one is at serialised item level `"anchor": "https://resolver.sample-register.example/products/ABCD9876/items/1234"` and one is at product class level `"anchor": "https://resolver.sample-register.example/products/ABCD9876"`. 
+* the first context has two `targets`, both of which have a linkType "untp:dpp" (UNTP digital product passports) and MIME type `application/vc+jwt` but one is rendered in German and the other in English.
+* the second context is at product and has one target which points to the manufacturers product information web page. This highlights that link resolvers can return all kinds of relevant links, only some of which point to UNTP credentials.
 
 ```json
 {
     "linkset": [
         {
-            "anchor": "https://resolver.sample-register.com/products/ABCD9876/items/1234",
+            "anchor": "https://resolver.sample-register.example/products/ABCD9876/items/1234",
             "link": [
                 {
-                    "href": "https://sample-credential-store.com/credentials/dpp/90664869327.json",
+                    "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
                     "rel":["untp:dpp"],
                     "type": "application/vc+jwt",
                     "title": "Digital Product Passport",
                     "hreflang":["en"]
                  },
                 {
-                    "href": "https://sample-credential-store.com/credentials/dpp/90664869311.json",
+                    "href": "https://sample-credential-store.example/credentials/dpp/90664869311.json",
                     "title": "Digitaler Produktpass",
                     "hreflang":["de"],
                     "type": "application/vc+jwt"
@@ -274,10 +274,10 @@ A typical response the the sample query `https://resolver.sample-register.com/pr
             ]
         },
         {
-            "anchor": "https://resolver.sample-register.com/products/ABCD9876",
+            "anchor": "https://resolver.sample-register.example/products/ABCD9876",
             "link": [
                 {
-                    "href": "https://sample-company.com/productInformation/ABCD9876",
+                    "href": "https://sample-company.example/productInformation/ABCD9876",
                     "rel": ["gs1:pip"],
                     "type": "text/html",
                     "title": "Product Information"
@@ -315,8 +315,8 @@ As described in [IDR URLs as identifiers](#idr-urls-as-identifiers), URL identif
 
 By design, all DIDs resolve to a URL that addresses a DID document. The way in which a DID resolved to a DID document is specific to the DID method. In the case of DID web, the resolution works by replacing ":" with "/" and appending "did.json".  
 
-* DID : `did:web:sample-company.com:products:123456789` is an example of a product identifier the did:web scheme.
-* URL : `https://sample-company.com/products/123456789/did.json` would be the URL of the DID document according to [did:web method specification](https://w3c-ccg.github.io/did-method-web/)
+* DID : `did:web:sample-company.example:products:123456789` is an example of a product identifier the did:web scheme.
+* URL : `https://sample-company.example/products/123456789/did.json` would be the URL of the DID document according to [did:web method specification](https://w3c-ccg.github.io/did-method-web/)
 
 The DID document `did.json` has a standard data model defined by the W3C DID recommendation [core properties](https://www.w3.org/TR/did-core/#core-properties).  It is primarily designed to define the cryptographic methods by which control of a DID can be verified, including associated public keys. The DID [service](https://www.w3.org/TR/did-core/#services) property can be used to reference further information such as UNTP credentials like a digital product passport. The UNTP approach to using a DID document as a resolver service combines conformant use of DID `service` properties with maximum alignment with IETF linksets. 
 
@@ -326,22 +326,22 @@ The DID document `did.json` has a standard data model defined by the W3C DID rec
 
 ```json
 {
-  "id": "did:web:sample-company.com:products:123456789",
+  "id": "did:web:sample-company.example:products:123456789",
   ..other did document properties ..
   "service": [{
-    "id":"did:web:sample-company.com:products:123456789#untp:dpp",
+    "id":"did:web:sample-company.example:products:123456789#untp:dpp",
     "type": "VerifiableCredentialService", 
     "serviceEndpoint": {
-          "href": "https://sample-credential-store.com/credentials/dpp/90664869327.json",
+          "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
           "rel": ["untp:dpp"],
           "title": "Digital Product Passport",
           "hreflang":["en"],
           "type": "application/vc+jwt"
      },
-    "id":"did:web:sample-company.com:products:123456789#untp:idr",
+    "id":"did:web:sample-company.example:products:123456789#untp:idr",
     "type": "linkset", 
     "serviceEndpoint": {
-          "href": "https://resolver.sample-company.com/products/123456789",
+          "href": "https://resolver.sample-company.example/products/123456789",
           "rel": ["linkset","untp:idr"],
           "title": "Identity Resolver Service",
           "type": "application/linkset+json"
@@ -357,9 +357,9 @@ The example above shows two ways of using the DID document serviceEndpoint as an
 
 In this way, simple scenarios can be achieved simply by placing link targets directly in the DID document whilst richer and more dynamic link resolver services can also be delivered by including a DID document service which is itself a link resolver. 
 
-### LinkSet Response Variations
+### Link-set Response Variations
 
-This section covers specific linkset use cases that SHIULD be supported by conforming link resolvers. The general approach to solving linkset specific needs is 
+This section covers specific linkset use cases that SHOULD be supported by conforming link resolvers. The general approach to solving linkset specific needs is 
 
 * Where possible, always use IETF linkset standard properties and IANA standard link types.
 * Where necessary, use custom link types and linkset properties but always define them in a public vocabulary and reference them using a profile link type.
@@ -369,9 +369,9 @@ This section covers specific linkset use cases that SHIULD be supported by confo
 
 Default link types allow a resolver to return just the target URL of the default link - which means that client applications (including just a camera on a mobile phone) need not have any knowledge of link resolvers and how they work.  
 
-Link resolver services SHOULD define DEFAULT linktype for each `anchor` which defines the `href` target to which a client will be redirected when no linkType is specified in the matching query URL. In the previous [IDR example](#identity-resolver-example), calling the resolver URL without a linkType parameter;
+Link resolver services SHOULD define DEFAULT link type for each `anchor` which defines the `href` target to which a client will be redirected when no `linkType` is specified in the matching query URL. In the previous [IDR example](#identity-resolver-example), calling the resolver URL without a `linkType` parameter;
 
-`https://resolver.sample-register.com/products/ABCD9876/items/1234?linkType=all`
+`https://resolver.sample-register.example/products/ABCD9876/items/1234?linkType=linkset`
 
 Would redirect the client directly to the target `href` of the default link type
 
@@ -388,26 +388,26 @@ and receives the following HTTP query URL
 
 ```http
 GET /products/123456789 HTTP/1.1
-Host: resolver.sample-company.com
+Host: resolver.sample-company.example
 Accept-Language: de
 ```
 
 Even though there are a dozen DPP links maintained by the IDR service, only one of them is in German and so the IDr can again redirect the client to the specific target URL of the German language DPP. 
 
-`https://sample-credential-store.com/credentials/dpp-90664869311.json`
+`https://sample-credential-store.example/credentials/dpp-90664869311.json`
 
 #### Secondary Resolvers
 
 There are some cases where an identifier scheme owner manages identifiers at a coarse granularity by issuing globally unique prefixes but allows the subject to manage more fine grained identifiers themselves. For example
 
-* GS1 maintains GTIN (product identifiers in a single global register but management of SGTIN (serialised items) is left to the owner of the GTIN.
+* GS1 maintains GTIN product identifiers in a single global register but management of SGTIN (serialised items) is left to the owner of the GTIN.
 * IATA issues 3 character carrier identifiers but allows each carrier to add the 7 digit suffix for each cargo consignment to make a globally unique 11 digit consignment number. 
 * Australian government manages 8 alpha-numeric character farm identifications codes such as `QDBH0132` and allows each farmer to add a unique suffix to identify each unique livestock animal born on the farm.
 * and many more examples exist.
 
 The result is that a client may construct an IDR query to the genuine scheme operator's IDR service but that service may not hold information at the requested granularity. In such cases, a conformant IDR SHOULD return links relevant to the more coarse grained item and, if available, a link to a secondary resolver service (eg hosted by the serialised product manufacturer) that can return more fine grained information. For example the following query to a link resolver about a serialised item
 
-`https://resolver.sample-register.com/products/ABCD9876/items/1234`
+`https://resolver.sample-register.example/products/ABCD9876/items/1234`
 
 May return a link to a secondary resolver that maintains data at serialised item level as well as a link to a DPP at product class level. 
 
@@ -415,10 +415,10 @@ May return a link to a secondary resolver that maintains data at serialised item
 {
     "linkset": [
         {
-            "anchor": "https://resolver.sample-register.com/products/ABCD9876/items/1234",
+            "anchor": "https://resolver.sample-register.example/products/ABCD9876/items/1234",
             "link": [
                 {
-                    "href": "https://resolver.sample-company.com/products/ABCD9876/items/1234",
+                    "href": "https://resolver.sample-company.example/products/ABCD9876/items/1234",
                     "rel": ["linkset", "untp:idr", "gs1:handledBy"],
                     "title": "Secondary Identity Resolver",
                     "hreflang":["en"],
@@ -427,10 +427,10 @@ May return a link to a secondary resolver that maintains data at serialised item
             ]
         },
         {
-            "anchor": "https://resolver.sample-register.com/products/ABCD9876",
+            "anchor": "https://resolver.sample-register.example/products/ABCD9876",
             "link": [
                 {
-                    "href": "https://sample-credential-store.com/credentials/dpp/90664869327.json",
+                    "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
                     "rel":["untp:dpp"],
                     "title": "Digital Product Passport",
                     "hreflang":["en"],
@@ -450,17 +450,17 @@ In some cases, a publisher may wish to maintain multiple versions of a credentia
 {
     "linkset": [
         {
-            "anchor": "https://resolver.sample-register.com/products/ABCD9876",
+            "anchor": "https://resolver.sample-register.example/products/ABCD9876",
             "link": [
                 {
-                    "href": "https://sample-credential-store.com/credentials/dpp/90664869327.json",
+                    "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
                     "rel":["untp:dpp"],
                     "title": "Digital Product Passport",
                     "hreflang":["en"],
                     "type": "application/vc+jwt"
                  },
                 {
-                    "href": "https://sample-credential-store.com/credentials/dpp/90664869111.json",
+                    "href": "https://sample-credential-store.example/credentials/dpp/90664869111.json",
                     "rel":["untp:dpp","predecessor-version"],
                     "title": "Digital Product Passport",
                     "hreflang":["en"],
@@ -474,7 +474,7 @@ In some cases, a publisher may wish to maintain multiple versions of a credentia
 
 #### Creating New Links
 
-In some cases, an identity resolver service may wish to accept updates such as creation of new links from appropriately authorised users. For example, adding a maintenance event to a battery passport record after the battery has been sold into the market. An identity resolver SHOULD accommodate this possibility by including a link in the linkset for the given product that specifies how to POST an event to the resolver. In the example below, an `anchor` representing product `https://resolver.sample-register.com/products/ABCD9876` has two links. The first is a simple link to a DPP describing the product. The second describes a method to create a new maintenance event.
+In some cases, an identity resolver service may wish to accept updates such as creation of new links from appropriately authorised users. For example, adding a maintenance event to a battery passport record after the battery has been sold into the market. An identity resolver SHOULD accommodate this possibility by including a link in the linkset for the given product that specifies how to POST an event to the resolver. In the example below, an `anchor` representing product `https://resolver.sample-register.example/products/ABCD9876` has two links. The first is a simple link to a DPP describing the product. The second describes a method to create a new maintenance event.
 
 * The standard IANA link relation `edit` indicates that the target resource is used to edit the link's context. 
 * The custom link relation `untp:dte` indicates that the target expects a digital traceability event.
@@ -484,10 +484,10 @@ In some cases, an identity resolver service may wish to accept updates such as c
 {
     "linkset": [
         {
-            "anchor": "https://resolver.sample-register.com/products/ABCD9876",
+            "anchor": "https://resolver.sample-register.example/products/ABCD9876",
             "link": [
                 {
-                    "href": "https://sample-credential-store.com/credentials/dpp/90664869327.json",
+                    "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
                     "rel":["untp:dpp"],
                     "title": "Digital Product Passport",
                     "hreflang":["en"],
@@ -514,10 +514,10 @@ In some cases the target of a link contains sensitive data that is not generally
 {
     "linkset": [
         {
-            "anchor": "https://resolver.sample-register.com/products/ABCD9876",
+            "anchor": "https://resolver.sample-register.example/products/ABCD9876",
             "link": [
                 {
-                    "href": "https://sample-credential-store.com/credentials/dpp/90664869327.json",
+                    "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
                     "rel":["untp:dte"],
                     "title": "Product Traceability",
                     "encryptionMethod": "AES-128",
@@ -553,7 +553,7 @@ flowchart
     E -- No --> G[not found 404]
     E -- Yes --> H[redirect to external resolver 307]
     F -- No --> I[redirect to default link 307]
-    F -- Yes --> K{linktypes=all?}
+    F -- Yes --> K{linktypes=linkset?}
     K -- Yes --> L[create/append list of links]
     L --> J{is there a less granular identifier?}
     J -- Yes --> L
