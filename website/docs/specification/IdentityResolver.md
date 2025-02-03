@@ -9,7 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Overview
 
-Identifiers of **businesses** (eg tax registration numbers), of **locations** (eg google pins or cadastral/lot numbers), and of **products** (eg GS1 GTINs or other schemes) are ubiquitous throughout supply chains and underpin the integrity of the system. The diagram shows an example of a global and a local scheme for three types of entity. These are just a few of thousands of existing identifier schemes. This identity resolver specification builds upon these identifier schemes so that existing investments and high integrity registers can be leveraged. This specification also supports the use of self-issued decentralised identifiers as identifier schemes.
+Identifiers of **businesses** (eg tax registration numbers), of **locations** (eg google pins or cadastral/lot numbers), and of **products** (eg GS1 GTINs or other schemes) are ubiquitous throughout supply chains and underpin the integrity of the system. The diagram shows an example of a global and a local scheme for three types of entity. These are just a few of thousands of existing identifier schemes. This identity resolver specification builds upon these identifier schemes so that existing investments and high integrity registers can be leveraged. This specification also supports the use of self-issued decentralised identifiers.
 
 ![Identifier examples](IdentityResolverIdentifiers.png)
 
@@ -54,21 +54,21 @@ This section defines the formal requirement statements for Identity Resolver imp
 * **Resolver** means an implementation of this specification that returns a link-set about a given identifier.
 
 
-|ID|Name|Requirement|Solution Mapping|
+|ID|Short name|Requirement|Solution Mapping|
 |--|--|--|--|
 |IDR-01|Global uniqueness|All identifiers, whether for products, assets, facilities, or businesses used in UNTP credentials MUST be globally unique so that they can be unambiguously referenced and resolved. |[Globally Unique Identifier Representation](#globally-unique-identifier-representation) |
-|IDR-02|One carrier, many links|One data carrier on a physical product or asset MUST be able to reference any amount of linked data or documents so that user or system confusion from multiple carriers on products can be avoided|IDR Link-set |
-|IDR-03|Leverage existing schemes|Existing identifier schemes MUST be usable for UNTP IDR functions so that existing investments can be leveraged and UNTP rollout can be accelerated because there is no need to re-tool existing identifier infrastructure.|ID Scheme register|
-|IDR-04|Leverage existing carriers|Existing data carriers, whether 1D barcodes on products or RFID tags on livestock are entrenched and unlikely to change quickly. Therefore identity resolvers MUST be able to work with existing carriers so that digitalisation can proceed at pace without the need to re-tool existing physical scanning infrastructure.| |
-|IDR-05|Seamless transition to 2D|As industry transitions from 1D barcodes to 2D/QR codes, the UNTP identity resolver process MUST work equally well with either so that implementers can transition at their own pace| |
-|IDR-06|Understanding link-sets|When a link-set is returned by a resolver, each link MUST include sufficient meta-data so that user systems can understand the purpose and usage of each link as well as the relationship between links| |
-|IDR-07|Filtering link-sets|Resolvers MUST allow users to request specific links, all links, or (if unspecified) then receive a default link - so that user experience can be optimised.| |
-|IDR-08|Responsive links|Resolvers SHOULD leverage available user information such as language preferences to return tailored link-sets and default links - so that user experience is optimised.| |
+|IDR-02|One carrier, many links|One data carrier on a physical product or asset MUST be able to reference any amount of linked data or documents so that user or system confusion from multiple carriers on products can be avoided|[Identity resolver services](#identity-resolver-services) |
+|IDR-03|Leverage existing schemes|Existing identifier schemes MUST be usable for UNTP IDR functions so that existing investments can be leveraged and UNTP rollout can be accelerated because there is no need to re-tool existing identifier infrastructure.|This specification supports any identifier scheme.|
+|IDR-04|Leverage existing carriers|Existing data carriers, whether 1D barcodes on products or RFID tags on livestock are entrenched and unlikely to change quickly. Therefore identity resolvers MUST be able to work with existing carriers so that digitalisation can proceed at pace without the need to re-tool existing physical scanning infrastructure.|[Data carriers](#data-carriers) |
+|IDR-05|Seamless transition to 2D|As industry transitions from 1D barcodes to 2D/QR codes, the UNTP identity resolver process MUST work equally well with either so that implementers can transition at their own pace|The [Conceptual model](#conceptual-model) - either create a resolver query from an 1D barcode / 2D matrix  or embed the query into a QR. |
+|IDR-06|Understanding link-sets|When a link-set is returned by a resolver, each link MUST include sufficient meta-data so that user systems can understand the purpose and usage of each link as well as the relationship between links|[Identity resolver services](#identity-resolver-services)|
+|IDR-07|Filtering link-sets|Resolvers MUST allow users to request specific links, all links, or (if unspecified) then receive a default link - so that user experience can be optimised.|[IDR Query](#idr-query-url) |
+|IDR-08|Responsive links|Resolvers SHOULD leverage available user information such as language preferences to return tailored link-sets and default links - so that user experience is optimised.|[Defaults](#defaults) and [Automatically returning the right language](#automatically-returning-the-right-language)|
 |IDR-09|Logical grouping of links|Link-set meta-data SHOULD provide an ability to group related link targets such as a product passport and related traceability events - so that user experience can be optimised. | |
-|IDR-10|Versioning of link targets|When multiple version of link targets exist (eg multiple version of a product passport) then resolvers MUST include version information in link metadata and MUST ensure that any defaults reference the latest version - so that users receive current information and can audit historical data| |
-|IDR-11|Resolver redirection|Resolvers SHOULD, where available, include links that reference secondary resolvers so that product/facility owners can maintain additional document and credential links in their own resolvers. A typical example is the case where a global scheme maintains identifiers only at product class level but the manufacturer manages identifiers and related data at serialised item level. In such cases the primary resolver would say "here's what I know about the product and here's a link to another resolver that can tell you about the serialised item"| |
-|IDR-12|Self-issued product identifiers|This specification MUST support self-issued identifiers so long as they are equally discoverable, resolvable, and verifiable - so that each value chain actor is free to make their own choice between third party product registers and self-managed product registers without any lock-in.| |
-|IDR-13|Existing standards|This specification SHOULD use existing standards such as [ISO/IEC 18975](https://www.iso.org/standard/85540.html) and [IETF RFC 9264](https://www.rfc-editor.org/rfc/rfc9264.html) so that implementers can maximise re-use of existing infrastructure and maintain interoperability.| |
+|IDR-10|Versioning of link targets|When multiple version of link targets exist (eg multiple version of a product passport) then resolvers MUST include version information in link metadata and MUST ensure that any defaults reference the latest version - so that users receive current information and can audit historical data|[Versioned targets](#versioned-targets) |
+|IDR-11|Resolver redirection|Resolvers SHOULD, where available, include links that reference secondary resolvers so that product/facility owners can maintain additional document and credential links in their own resolvers. A typical example is the case where a global scheme maintains identifiers only at product class level but the manufacturer manages identifiers and related data at serialised item level. In such cases the primary resolver would say "here's what I know about the product and here's a link to another resolver that can tell you about the serialised item"|[Secondary resolvers](#secondary-resolvers) |
+|IDR-12|Self-issued product identifiers|This specification MUST support self-issued identifiers so long as they are equally discoverable, resolvable, and verifiable - so that each value chain actor is free to make their own choice between third party product registers and self-managed product registers without any lock-in.|[Decentralised Identifiers](#decentralised-identifiers-did) and [DID to IDR linkset](#from-a-did-to-idr-linkset)|
+|IDR-13|Existing standards|This specification SHOULD use existing standards such as [ISO/IEC 18975](https://www.iso.org/standard/85540.html) and [IETF RFC 9264](https://www.rfc-editor.org/rfc/rfc9264.html) so that implementers can maximise re-use of existing infrastructure and maintain interoperability.| ISO/IEC 18975 is the basis for mapping an ID to a query. IETF RFC 9264 is the bases for the structure of the linkset response.|
 
 
 ## Globally Unique Identifier Representation
@@ -207,7 +207,7 @@ For new identifier schemes or existing schemes that have not already defined dat
 
 This section describes the challenges and solutions in the second and third steps of the [identity resolver conceptual model](#conceptual-model) - from a consistent URI representation of an identifier to a [link-set](https://datatracker.ietf.org/doc/rfc9264/) about the identified entity. In the context of UNTP, that means easily resolving a product or facility identifier to credentials such as the identified product's DPP or the identified facility's DFR. 
 
-### Link Resolver Services
+### Identity Resolver Services
 
 This UNTP identity Resolver (IDR) specification builds upon these existing standards by defining some specific constraints that improve interoperability and meet UNTP specific requirements.
 
@@ -259,10 +259,9 @@ A typical response the the sample query `https://resolver.sample-register.exampl
     "linkset": [
         {
             "anchor": "https://resolver.sample-register.example/products/ABCD9876/items/1234",
-            "link": [
+            "untp:dpp": [
                 {
                     "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
-                    "rel":["untp:dpp"],
                     "type": "application/vc+jwt",
                     "title": "Digital Product Passport",
                     "hreflang":["en"]
@@ -277,10 +276,9 @@ A typical response the the sample query `https://resolver.sample-register.exampl
         },
         {
             "anchor": "https://resolver.sample-register.example/products/ABCD9876",
-            "link": [
+            "gs1:pip": [
                 {
                     "href": "https://sample-company.example/productInformation/ABCD9876",
-                    "rel": ["gs1:pip"],
                     "type": "text/html",
                     "title": "Product Information"
                  }
@@ -330,10 +328,9 @@ The DID document `did.json` has a standard data model defined by the W3C DID rec
   ..other did document properties ..
   "service": [{
     "id":"did:web:sample-company.example:products:123456789#untp:dpp",
-    "type": "VerifiableCredentialService", 
+    "type": "untp:dpp", 
     "serviceEndpoint": {
           "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
-          "rel": ["untp:dpp"],
           "title": "Digital Product Passport",
           "hreflang":["en"],
           "type": "application/vc+jwt"
@@ -342,7 +339,6 @@ The DID document `did.json` has a standard data model defined by the W3C DID rec
     "type": "linkset", 
     "serviceEndpoint": {
           "href": "https://resolver.sample-company.example/products/123456789",
-          "rel": ["linkset","untp:idr"],
           "title": "Identity Resolver Service",
           "type": "application/linkset+json"
      }
@@ -416,10 +412,10 @@ May return a link to a secondary resolver that maintains data at serialised item
     "linkset": [
         {
             "anchor": "https://resolver.sample-register.example/products/ABCD9876/items/1234",
-            "link": [
+            "linkset": [
                 {
                     "href": "https://resolver.sample-company.example/products/ABCD9876/items/1234",
-                    "rel": ["linkset", "untp:idr", "gs1:handledBy"],
+                    "rel": ["untp:idr", "gs1:handledBy"],
                     "title": "Secondary Identity Resolver",
                     "hreflang":["en"],
                     "type": "application/linkset+json"
@@ -428,10 +424,9 @@ May return a link to a secondary resolver that maintains data at serialised item
         },
         {
             "anchor": "https://resolver.sample-register.example/products/ABCD9876",
-            "link": [
+            "untp:dpp": [
                 {
                     "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
-                    "rel":["untp:dpp"],
                     "title": "Digital Product Passport",
                     "hreflang":["en"],
                     "type": "application/vc+jwt"
@@ -451,17 +446,16 @@ In some cases, a publisher may wish to maintain multiple versions of a credentia
     "linkset": [
         {
             "anchor": "https://resolver.sample-register.example/products/ABCD9876",
-            "link": [
+            "untp:dpp": [
                 {
                     "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
-                    "rel":["untp:dpp"],
                     "title": "Digital Product Passport",
                     "hreflang":["en"],
                     "type": "application/vc+jwt"
                  },
                 {
                     "href": "https://sample-credential-store.example/credentials/dpp/90664869111.json",
-                    "rel":["untp:dpp","predecessor-version"],
+                    "rel":["predecessor-version"],
                     "title": "Digital Product Passport",
                     "hreflang":["en"],
                     "type": "application/vc+jwt"
@@ -485,17 +479,18 @@ In some cases, an identity resolver service may wish to accept updates such as c
     "linkset": [
         {
             "anchor": "https://resolver.sample-register.example/products/ABCD9876",
-            "link": [
+            "untp:dpp": [
                 {
                     "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
-                    "rel":["untp:dpp"],
                     "title": "Digital Product Passport",
                     "hreflang":["en"],
                     "type": "application/vc+jwt"
-                 },
+                 }],
+            "anchor": "https://resolver.sample-register.example/products/ABCD9876",
+            "untp:dte": [
                 {
                     "href": "https://sample-credential-store.com/credentials/dte",
-                    "rel":["edit","untp:dte"],
+                    "rel":["edit"],
                     "title": "Create Maintenance Event",
                     "method":["POST","X-API-Key"],
                     "type": "application/vc+jwt"
@@ -515,10 +510,9 @@ In some cases the target of a link contains sensitive data that is not generally
     "linkset": [
         {
             "anchor": "https://resolver.sample-register.example/products/ABCD9876",
-            "link": [
+            "untp:dte": [
                 {
                     "href": "https://sample-credential-store.example/credentials/dpp/90664869327.json",
-                    "rel":["untp:dte"],
                     "title": "Product Traceability",
                     "encryptionMethod": "AES-128",
                     "accessRole":["untp:accessRole#Owner"],
@@ -567,10 +561,49 @@ flowchart
 
 ## Verifiability 
 
-TBD - update this section, referencing VCP and DIA as well as verifiying graphs
+Once identifiers have been resolved to a linkset and links have been followed to retrieve UNTP (or other) credentials, then the final step is verification. There are several types of verification.
 
-UNTP credentials will include identifiers of products, locations or businesses.  UNTP credentials will also include ESG performance claims like emissions intensity values. But how can a verifier of these identifiers or ESG claims be confident that the claims are true and that they are made by the genuine party at a verifiable location? Trust anchors are national or international authorities that typically run existing business or product registration, certification, accreditation, or other high integrity processes. Examples of trust anchors include national regulators that govern things like land ownership or business registrations. Another example are the national accreditation bodies that audit and accredit certifiers to issue third party assessments. UNTP depends on trust anchors to add digital integrity to ESG claims and identities by linking them to the authority under which they are made. In essence, UNTP defines a protocol for existing trust anchors to continue doing what they have always done, but in a digitally verifiable way.
+### Verifying Individual Credentials
 
+Each link target that has a `type` property that indicates it is a verifiable credentials ( `application/ld+json` , `application/vc+jwt`) SHOULD be verified according to W3C Verifiable Credential validation rules. This verifies
+
+* Integrity (the credential has not been tampered-with)
+* Currency (the credential has not been revoked)
+
+The UNTP [Verifiable Credential Profile](VerifiableCredentials.md) provides further guidance.
+
+### Verifying Identity Integrity
+
+A credential such as a digital product passport can be valid in it's own right but may not be valid in context. For example
+
+* The named issuer of the DPP may not be the party they claim to be.
+* The DPP might be issued by a party that is not the legitimate owner of the product identifier.  
+
+These kind of validation rules are define in the UNTP [Digital Identity Anchor - Use Cases](DigitalIdentityAnchor#dia-use-cases) page.
+
+### Anti-Counterfeiting
+
+In the particular case of data carriers on physical goods, there is also a counterfeiting risk. 
+
+* The product may have copied a valid data carrier from a real product to a counterfeit one.
+* The data carrier might resolve to verifiable claims that are about a different product.
+
+Countermeasures to these kind of counterfeiting behaviour are described in the UNTP [Anti-Counterfeiting](../design-patterns/Counterfeiting.md) best practices page.
+
+### Chain of Custody Accounting
+
+A particularly important and challenging verification in supply chains is chain of custody / mass-balance accounting. 
+
+* A high carbon batch of input materials might be mixed with a low carbon batch of the same commodity and the output may be fraudulently associated with only the low carbon input.
+* A verifiable assessment of total emissions of a facility may not be accurately allocated across the individual product shipments from the facility. 
+
+Countermeasures to this kind of mass balance fraud are described in the UNTP [chain of custody](..design-patterns/ChainOfCustody.md) best practices page.
+
+### Verifying Regulatory or Industry Standards Compliance
+
+Verification such as due-diligence across entire supply chains of fair work practices or chain of custody accounting accuracy of mass-balance processes are achieved by verifying entire graphs of data rather then individual credentials. Furthermore, these kind of verification rules tend to be industry and/or geography specific and are defined in [UNTP extension projects](../extensions/ExtensionsRegister.md) rather than UNTP core specification. 
+
+Some best practice guidance is available in the UNTP [Transparency Graphs](../design-patterns/TrustGraphs.md) page.
 
 
 
