@@ -597,7 +597,7 @@ A particularly important and challenging verification in supply chains is chain 
 * A high carbon batch of input materials might be mixed with a low carbon batch of the same commodity and the output may be fraudulently associated with only the low carbon input.
 * A verifiable assessment of total emissions of a facility may not be accurately allocated across the individual product shipments from the facility. 
 
-Countermeasures to this kind of mass balance fraud are described in the UNTP [chain of custody](..design-patterns/ChainOfCustody.md) best practices page.
+Countermeasures to this kind of mass balance fraud are described in the UNTP [chain of custody](../design-patterns/ChainOfCustody.md) best practices page.
 
 ### Verifying Regulatory or Industry Standards Compliance
 
