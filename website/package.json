@@ -12,7 +12,8 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "spell-check": "cspell \"docs/**/*.{md,mdx}\" --config cspell.json"
   },
   "dependencies": {
     "@docusaurus/core": "^3.6.0",
@@ -39,5 +40,10 @@
   },
   "engines": {
     "node": ">=18.00"
+  },
+  "devDependencies": {
+    "@cspell/dict-en-gb": "^4.1.53",
+    "@cspell/dict-software-terms": "^4.2.2",
+    "cspell": "^8.17.1"
   }
 }

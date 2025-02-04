@@ -50,7 +50,50 @@ ISO/IEC (FDIS) 18975 defines a framework for resolving any existing identifier t
 * The identifiers can be encoded in a URL within a QR Code printed on a product that can be scanned just using a mobile phone's camera, without any need for a specialist app. The user can select the DPP from the list of available links to information (i.e. manually select the correct link from the linkset).
 * The identifiers can be encoded in a URL within a QR Code printed on a product that can be scanned using a specialist app that queries the resolver and returns the DPP.
 
-The [GS1 Digital Link](https://ref.gs1.org/standards/digital-link/uri-syntax/) and [GS1-Conformant resolver](https://ref.gs1.org/standards/resolver/) standards conform to ISO/IEC (FDIS) 18975.
+
+### Link Resolver Services
+
+ISO/IEC (FDIS) 18975 defines a framework for resolving any existing identifier that is globally unique (notably those issued under the ISO/IEC 15459 series). It sets out two options for how those identifiers can be encoded in a regular HTTP URI (Web address), using Data Identifiers and Application Identifiers, and how that URI can resolve to a set of links (a "link-set") to information about the identified entity. That [link-set](https://datatracker.ietf.org/doc/rfc9264/) can be operationalised in a resolver service. This defines a framework for creating a simple query interface for any identified entity. 
+
+TBD - link query examples and linkset response examples.
+
+### URNs to link-Set
+
+The UN global trust register will include resolver templates for each scheme and so the UNTP requirement that identifiers be resolvable is met by substituting the URN `{identifier-value}` into the `{id}` placeholder in the resolver template related to the matching `{identifier-scheme}`. For example
+
+* given a URN ID of `urn:gtr:nlis.com.au:QDBH0132XBS01234`, the `{identifier-scheme}` is `nlis.com.au`
+* and a resolver template of `https://resolver.nlis.com.au/{id}`  is registered for scheme `nlis.com.au`
+* then the resolver URL would be `https://resolver.nlis.com.au/QDBH0132XBS01234`
+
+An identifier is nothing more than a string of characters. In isolation, it has no specific meaning. However, in most cases, the identifier will have a recognisable structure that gives a strong hint about its intended purpose and how it can be processed.  
+
+### URLs to link-Set
+
+As described in [IDR URLs as identifiers](#idr-urls-as-identifiers), URL identifiers SHOULD already be Identity Resolver URLs that conform to the ISO-18975 structured path syntax without parameters. Client applications may of course add parameters to the URL before calling the resolver service to get more specific link sets.
+
+### DIDs to Link-Set
+
+TBD - Probably the service end-point in a DID document should point to a link resolver.  A did document service property could also enumerate link targets using the same link types in the `type` property of the DID service.
+
+### Link Types
+
+TBD - What extra link types do we need to define?
+
+### Related Links
+
+TBD - how to logically group related links (eg a DPP and related service history events)?
+
+### Versioned targets
+
+TBD - how to reference version histories of specific links?
+
+### Updatable Targets
+
+TBD - how to represent links to API's or services that will accept create/update actions (eg POST a maintenance event to a product linkset)
+
+### Secure Targets
+
+TBD - how to represent links that require authenticated access or decryption keys?
 
 ## Verifiability 
 
