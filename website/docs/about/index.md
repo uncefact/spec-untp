@@ -4,38 +4,37 @@ title: About the UNTP
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
+import YouTube from '@site/components/YouTube';
 
 <Disclaimer />
 
 The United Nations Transparency Protocol (UNTP) aims to support governments and industry with practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.
 
-## Presentations & Videos
+Watch a 15 min overview of UNTP or continue learning more below:
 
-* Short UNTP Presentation [PDF](../../files/Short-UNTP-Presentation.pdf) [PPT](../../files/Short-UNTP-Presentation.pptx)
-* Longer UNTP Presentation [PDF](../../files/UNTP-Presentation.pdf) [PPT](../../files/UNTP-Presentation.pptx)
-* Video presentation (15 mins) [Youtube](https://youtu.be/dJFryZS2UII)
+<YouTube id="dJFryZS2UII" />
 
 ## Incentives for sustainable supply chains are increasing
 
-Incentives for sustainable supply chains are increasing fast. 
+Incentives for sustainable supply chains are increasing fast.
 
-* Regulations such as the European [Regulation on Deforestation](https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en) (EUDR) and [Carbon Border Adjustment Mechanism](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en) (CBAM) will present market access barriers or increased border tariffs for non-sustainable produce. 
+* Regulations such as the European [Regulation on Deforestation](https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en) (EUDR) and [Carbon Border Adjustment Mechanism](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en) (CBAM) will present market access barriers or increased border tariffs for non-sustainable produce.
 * These regulations impose [due diligence obligations](https://commission.europa.eu/business-economy-euro/doing-business-eu/corporate-sustainability-due-diligence_en) on entire supply chains, not just final products. Penalties for repeated non-compliance can be as high as 4% of global revenue.
-* Financial institutions are rapidly moving to ensure that capital is preferentially focussed on ESG assets. [According to Bloomberg](https://www.bloomberg.com/professional/blog/esg-assets-may-hit-53-trillion-by-2025-a-third-of-global-aum/), within a few years, around $50 Trillion or one third of all global assets under management will be ESG assets. 
-* Consumer sentiment is driving purchasing decisions to favour sustainable products. At the same time, consumers are increasingly mistrustful of unverifiable claims and look for third party certification based on trusted standards.  
+* Financial institutions are rapidly moving to ensure that capital is preferentially focussed on ESG assets. [According to Bloomberg](https://www.bloomberg.com/professional/blog/esg-assets-may-hit-53-trillion-by-2025-a-third-of-global-aum/), within a few years, around $50 Trillion or one third of all global assets under management will be ESG assets.
+* Consumer sentiment is driving purchasing decisions to favour sustainable products. At the same time, consumers are increasingly mistrustful of unverifiable claims and look for third party certification based on trusted standards.
 
 ## But endemic greenwashing risks devaluing the incentives
 
-Greenwashing is a term used to describe a false, misleading, or untrue action or set of claims made by an organization about the positive impact that a company, product or service has on the environment or on social welfare. Just as the incentives described above provide a strong motivation for genuine sustainability in products, so they also provide stronger motivations for greenwashing. 
+Greenwashing is a term used to describe a false, misleading, or untrue action or set of claims made by an organization about the positive impact that a company, product or service has on the environment or on social welfare. Just as the incentives described above provide a strong motivation for genuine sustainability in products, so they also provide stronger motivations for greenwashing.
 
 The evidence from multiple research activities is that greenwashing is already endemic with around 60% of claims being proven to be false or misleading. This presents a significant threat to sustainability outcomes. But there is room for optimism because around 70% of consumers expect higher integrity behaviour and are willing to pay for it. There are two plausible pathways ahead of us.
 
 ![Greenwashing race to the top or bottom](RaceToTopBottom.png)
 
-To win the race to the top, fake claims need to be hard to make. The best way to achieve that is to make supply chains traceable and transparent so that unsustainable practices have nowhere to hide. But, to have any impact, the traceability and transparency measures must be implemented at scale. 
+To win the race to the top, fake claims need to be hard to make. The best way to achieve that is to make supply chains traceable and transparent so that unsustainable practices have nowhere to hide. But, to have any impact, the traceability and transparency measures must be implemented at scale.
 
 
-## Challenges 
+## Challenges
 
 The world's supply chains must reach to the point where digitally verifiable traceability and transparency information is available to meet regulatory compliance, satisfy investors, and motivate consumers for the majority of products on the market. However, achieving transparency at that scale presents some challenges.
 
@@ -46,12 +45,13 @@ The world's supply chains must reach to the point where digitally verifiable tra
 
 ## The United Nations Transparency Protocol (UNTP)
 
-The UNTP provides a solution to the transparency challenges facing the world's supply chains. By implementing a simple prootcol that can be supported by existing business systems, stakeholders will realise immediate benefits and will become visible contributors to the sustainability of global supply chains.
+The UNTP provides a solution to the transparency challenges facing the world's supply chains. By implementing a simple protocol that can be supported by existing business systems, stakeholders will realise immediate benefits and will become visible contributors to the sustainability of global supply chains.
 
 ![Transparency Challenges](TransparencyChallenges.png)
 
+## Presentations & Videos
 
-
-
-
+* Short UNTP Presentation [PDF](../../files/Short-UNTP-Presentation.pdf) [PPT](../../files/Short-UNTP-Presentation.pptx)
+* Longer UNTP Presentation [PDF](../../files/UNTP-Presentation.pdf) [PPT](../../files/UNTP-Presentation.pptx)
+* Video presentation (15 mins) [Youtube](https://youtu.be/dJFryZS2UII)
 

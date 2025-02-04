@@ -1,0 +1,37 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "dictionaries": [
+        "en-gb",
+        "software-terms"
+    ],
+    "words": [
+        "CBAM",
+        "CEFACT",
+        "CEN",
+        "CENELEC",
+        "DID",
+        "EPCIS",
+        "ESPR",
+        "EUDR",
+        "IFRS",
+        "NLIS",
+        "PCDS",
+        "UNTP",
+        "VCDM",
+        "WCDM",
+        "airies",
+        "anoncreds",
+        "deconsolidation",
+        "greenwashing",
+        "hyperledger",
+        "incentivises",
+        "linksets",
+        "refurbishers",
+        "repudiable",
+        "uncefact"
+    ],
+    "ignorePaths": [
+        "docs/about/Meetings.md"
+    ]
+}

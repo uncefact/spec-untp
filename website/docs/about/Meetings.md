@@ -17,21 +17,24 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-
-* Thursday 8pm UTC meetings.  Every 4 weeks. Next meeeting 9th Jan 2025. [Invitation link](https://calendar.app.google/E6wLvBxCJ7VgAvd8A).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
-* Thursday 8am UTC Meetings. Every 4 weeks. Next meeting 23rd Jan 2025.  [Invitation Link](https://calendar.app.google/q9DX8SANXSCKrJGW7).  [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1)
-
+* **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 6th Feb 2025. 
+	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
+	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
+* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 20th Feb 2025.  
+	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
+	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
 Previous meeting dates, recordings, transcripts, and minutes are summarised below with the most recent meeting at the top.
 
-
 ## Previous Meetings
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2024-12-12| [The meeting discussed progress on UNTP collaborations, technical updates, and pilot projects, with participants emphasizing interoperability, schema flexibility, and industry-specific implementations for 2025 goals.](#2024-12-12-meeting-summary))| [video](https://us02web.zoom.us/rec/share/XLYqWl-SuqhWB8BvudCHewjB-ds60wD6AyDAafxVB0SSKdm4PBbCKm0bTiY_xYRy.4SVCRR3yzrsJ2w4c)|[transcript](../../meetings/2024-12-12-Recording.txt)|
+|2025-01-23| [The meeting focused on enhancing UNTP governance, fostering community engagement through CAP, refining chain of custody models, and exploring tools for effective collaboration, setting the stage for further iterations and sector-specific applications.](#2025-01-23-meeting-summary)|[video](https://us02web.zoom.us/rec/share/kQt_d4JsLMrfy3iCGf1hoD04b-7Rg5ksuGML-Sj8wSMZL7l3uWqhkO4HEPpr8nBG.eHleGSxocBLfQumY)|[transcript](../../meetings/2025-01-23-Recording.txt)|
+|2025-01-08| [The meeting addressed progress on UNTP implementations, focusing on decentralized access control, sustainable mining, and selective disclosure, while initiating discussions on managing mixed commodities and advancing public review of specifications.](#2025-01-08-meeting-summary)| [video](https://us02web.zoom.us/rec/share/u7PDvJjbvgcJui79hqIYoh-CAzgoKVZtt5fieXWZkenCMkMCpbnmA4XKrEJjBJsT.eIZrcLXd5eSP72e2)|[transcript](../../meetings/2025-01-08-Recording.txt)|
+|2024-12-12| [The meeting discussed progress on UNTP collaborations, technical updates, and pilot projects, with participants emphasizing interoperability, schema flexibility, and industry-specific implementations for 2025 goals.](#2024-12-12-meeting-summary)| [video](https://us02web.zoom.us/rec/share/XLYqWl-SuqhWB8BvudCHewjB-ds60wD6AyDAafxVB0SSKdm4PBbCKm0bTiY_xYRy.4SVCRR3yzrsJ2w4c)|[transcript](../../meetings/2024-12-12-Recording.txt)|
 |2024-11-28| [The meeetingunderscored the progress in developing agricultural extensions for UNTP, the usability of tools like the playground, and the importance of addressing business challenges alongside technical ones.](#2024-11-28-meeting-summary)|[transcript](../../meetings/2024-11-28-Recording.txt)|[video](https://us02web.zoom.us/rec/share/HVySh1IQGfWbWrZzJDwVqWZgTFhhJV3JKboYcS50zvr2B4jx5lU9UBsNCxCKtmuF.8BMJxuD20MrOmRko)|
 |2024-11-14| [The UNTP working group discussed recent industry commitments, advanced business case documentation, and proposed a community-driven testing support ecosystem to enhance UNTP implementation and interoperability.](#2024-11-14-meeting-summary)|[video](https://us02web.zoom.us/rec/share/diHIQ18nhFsX7h5bEaNia9n9FxuS3GYBaLZdSp7MxEKVjhu7PiuVi3VYhUYaCd5r.lnj0ChgXR4TskJuU)|[transcript](../../meetings/2024-11-14-Recording.txt)|
 |2024-10-31| [The team discussed updates on UNTP governance, digital product passport collaborations, and the methodology for industry-specific extensions, focusing on security, visibility, and implementation compliance.](#2024-10-31-meeting-summary)|[video](https://us02web.zoom.us/rec/share/IHBm8m69es-EaEl_Je01fsqUNAzY4QuumwJZaeI0ihah6wrZADAmyRC2bK8Jt-lZ.3FxFLsOE9Fjkvsvx)|[transcript](../../meetings/2024-10-31-Recording.txt)|
@@ -70,6 +73,124 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
+## 2025-01-23 Meeting Summary
+
+**Date**: January 23, 2025  
+**Purpose**: To review progress on the UNTP project, including governance updates, community activation plans, chain of custody models, and upcoming contributions.
+
+---
+
+**Key Participants**
+1. **Steve** - Lead Facilitator, UNTP Working Group.
+2. **David** - Contributor to the Community Activation Plan (CAP).
+3. **Harley** - Presenter on chain of custody models.
+4. **Suzanne** - Contributor on governance and Recommendation 49.
+5. **Virginia** - Reviewer of governance and CAP documents.
+6. **Phil** - Technical advisor on identifiers.
+7. **Nick** - Contributor to CAP and technical workflows.
+8. **Brock** - Expert on battery supply chains and assurance models.
+9. **Adriana** - Advocate for collaboration tools like online whiteboards.
+10. **Zachary** - Contributor to sector-specific extension discussions.
+
+---
+
+**Key Discussion Points**
+
+1. **Governance Updates**:
+   - **Steve** presented updates to the governance framework, emphasizing the relationship between core UNTP efforts and sector-specific extensions.
+   - Suggestions were made to clarify and simplify terms in the governance diagram, ensuring alignment between core and community-managed projects.
+
+2. **Community Activation Plan**:
+   - **David** introduced a revised CAP focusing on engaging industry associations and encouraging adoption of UNTP extensions.
+   - Feedback included emphasizing ongoing maintenance of UNTP as a living framework, aligning diagrams with text, and including tangible examples for industry relevance.
+
+3. **Chain of Custody Models**:
+   - **Harley** outlined four models: identity-preserved, segregation, mass balance, and book-and-claim.
+   - Discussions centered on how UNTP could support these models, particularly for industries like grain and aviation fuels.
+   - Feedback included adding examples, workflows, and details about trusted registries and technical implementations.
+
+4. **Collaboration Tools**:
+   - **Adriana** suggested using online whiteboards like Mural for brainstorming, which was well-received.
+
+---
+
+**Next Steps**
+1. Governance and CAP documents will be updated based on feedback and re-shared on Slack for further review.
+2. Harley will refine the chain of custody draft, adding diagrams and examples before the next meeting.
+3. Further discussions on identifiers and ontologies to be scheduled.
+
+
+## 2025-01-08 Meeting Summary
+
+**Date**: January 8, 2025  
+**Purpose**: Discuss progress and challenges in implementing UNTP projects, focusing on decentralized access control, sustainable mining, and collaborative contributions.  
+
+---
+
+**Participants**
+1. **Steve**: Meeting lead, discussed new implementation commitments, decentralized access control, and UNTP updates.
+2. **David Haycock**: Introduced as a new participant; emphasized experience in health and interoperability.
+3. **Nancy**: Shared insights on sustainable mining practices and challenges in global adoption.
+4. **Patrick**: Raised questions about right access and updating lifecycle events in decentralized models.
+5. **Adriana**: Asked about secret key management and user access to encrypted data.
+6. **Danica**: Provided clarity on publishing event histories and differentiating data updates.
+7. **Clary**: Highlighted European supply chain act requirements and selective disclosure use cases.
+8. **Harley**: Volunteered to lead discussions on managing mixed commodity challenges.
+9. **Nick**: Expressed interest in contributing to clean energy and mass balance discussions.
+
+---
+
+**Key Discussion Points**
+#### 1. **New Contributions and Implementation Commitments**:
+   - **Health LOQ** and **Simba Chain** (US-based) registered their intent to implement UNTP solutions following presentations on sustainability and traceability.
+   - The **Mining Association of Canada** committed to supporting the "Towards Sustainable Mining" (TSM) standards for global adoption.
+   - A pull request to update implementation lists was approved.
+
+#### 2. **Decentralized Access Control**:
+   - Explored models for granting secure access to non-public data, especially in cases involving lifecycle events or regulatory needs.
+   - Key challenges discussed:
+     - Sharing secrets (e.g., QR codes or embedded keys) for access while preventing unauthorized use.
+     - Managing sensitive updates, such as repair or recycling events, through authentication.
+   - Proposed approaches:
+     - Encrypted data with secret keys shared through products.
+     - Federated and decentralized authentication methods to scale access for unknown yet authorized roles (e.g., recyclers).
+
+#### 3. **Sustainable Mining and Conformity Credentials**:
+   - Nancy discussed the global adoption of TSM standards and their integration with UNTP frameworks.
+   - Highlighted regional adaptations and the importance of accreditation processes.
+
+#### 4. **Selective Disclosure in Supply Chains**:
+   - Clary emphasized the need for selective disclosure to comply with European regulations while protecting commercial sensitivities.
+   - Discussed methods for hiding specific attributes in digital product passports (DPPs).
+
+#### 5. **Managing Mixed Commodities**:
+   - Harley introduced challenges in managing blended commodities (e.g., grain, copper concentrate) under mass balance and book-and-claim systems.
+   - A working group was proposed to address technical and compliance requirements.
+
+---
+
+**Tangible Outcomes**
+- Approved updates to implementation commitments and standards documentation.
+- Initiated discussions on selective disclosure, lifecycle event management, and decentralized authentication.
+- Agreed to form a subgroup to address mixed commodity challenges in agriculture and industrial contexts.
+
+---
+
+**Next Steps**
+1. **Documentation and Review**:
+   - Update UNTP specifications for public review.
+   - Clarify technical details in decentralized access control and selective disclosure.
+2. **Collaborations**:
+   - Engage stakeholders (e.g., recyclers, regulators) for pilot testing.
+   - Advance work on agricultural and clean energy projects (e.g., grain and hydrogen tracking).
+3. **Community Activation**:
+   - Encourage Slack discussions and business-focused presentations to improve adoption.
+
+---
+
+**Closing Remarks**
+Steve emphasized the need for timely contributions and invited participants to join ongoing Slack discussions and subgroups for unresolved challenges. The next meeting is scheduled in two weeks.
+
 ## 2024-12-12 Meeting Summary
 
 **Date**: December 12, 2024  
@@ -77,7 +198,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ---
 
-### **Participants**
+**Participants**
 - **Steve**: Meeting lead, discussed UNTP updates and coordination with various organizations.
 - **Adriana**: Provided updates on the CERPAS project and emphasized the importance of interoperability and regulatory compliance in DPPs.
 - **Patrick**: Shared experiences with BC Mines Act permits and raised technical concerns about schema flexibility.
@@ -88,7 +209,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ---
 
-### **Key Discussion Points**
+**Key Discussion Points**
 1. **Updates from the Rome Forum**:
    - Progress on UNTP and collaboration with ISO, CENCENELEC, and ITU.
    - A UNECE co-lead for ISO TC154 work was introduced to ensure alignment with UNTP.
@@ -112,7 +233,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ---
 
-### **Actions and Next Steps**
+**Actions and Next Steps**
 1. **Pilot Projects**:
    - Explore pilots in various industries, including Australian agriculture and batteries.
    - Adriana and Nick Smith to coordinate potential Australian collaborations.
@@ -133,7 +254,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ---
 
-### **Closing Remarks**
+**Closing Remarks**
 - Participants shared holiday greetings.
 - Steve emphasized ongoing collaboration through Slack and the mailing list.
 
@@ -158,7 +279,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 ---
 
-### **Agenda:**
+**Agenda:**
 1. **Introductions and Updates**  
    - New participants introduced their roles and interests in digital transparency and supply chain management.  
    - Zachary highlighted the meeting's focus on agricultural traceability protocols and business case discussions.  
@@ -202,13 +323,13 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 On **November 14, 2024**, the UNTP working group convened to review recent updates, discuss business cases, and explore testing strategies for the UN Transparency Protocol (UNTP) implementation. The meeting, hosted by **Steve (Speaker 1)**, began with a brief welcome and a reminder of upcoming meetings that cater to global time zones.
 
-### Participant Introductions:
+Participant Introductions:
 
 - **Adriana Zachary (Speaker 7)**: CEO of Circular Economy Asia, volunteered on digital product passport initiatives and contributes to user access, data authentication, and standards working groups.
 - **Pat (Speaker 5)**: Technical Product Manager from San Francisco with experience in digital product passports for OEMs.
 - **Nancy (Speaker 3)**, **Luca (Speaker 6)**, **Michael (Speaker 3)**, and **Zach (Speaker 10)** also actively contributed to the conversation, particularly regarding business cases and technical support needs.
 
-### Key Discussion Points:
+Key Discussion Points:
 
 1. **New Commitments from Industry Sectors**:
    - The **Responsible Business Alliance (RBA)**, representing major electronics and automotive companies, committed to implementing UNTP extensions for digital product passports and traceability.
@@ -229,7 +350,7 @@ On **November 14, 2024**, the UNTP working group convened to review recent updat
      - **Industry-specific testing** for sectors using custom extensions.
    - **Jason (Speaker 2)** emphasized reporting tools to document testing results, which could serve as valuable evidence of compliance for implementers.
 
-### Closing Remarks:
+Closing Remarks:
 
 Steve concluded by celebrating the day’s progress, noting the importance of industry extensions and the growth of the business case documentation. He thanked the team for their collaboration and welcomed further input from new and existing members.
 
@@ -237,7 +358,7 @@ The next steps involve finalizing the business case documentation, establishing 
 
 ## 2024-10-31 Meeting Summary
 
-### Meeting Summary
+Meeting Summary
 
 **Participants**:
 - **Steve (Speaker 1)**: UN Representative, project lead on UNTP.
@@ -272,7 +393,7 @@ The next steps involve finalizing the business case documentation, establishing 
 
 ## 2024-10-17 Meeting Summary
 
-### Meeting Summary
+Meeting Summary
 
 **Participants**:
 - **Steve (Speaker 1)**: UN Representative and project lead on UNTP standards.
@@ -316,14 +437,14 @@ This summary captures named participants, key decisions, and next steps discusse
 
 ## 2024-10-03 Meeting Summary
 
-### Meeting Summary
+**Meeting Summary**
 
 **Date:** October 3, 2024  
 **Attendees:** Steve, Stefano, Brett, Virginia, Michael O'Shea, Christoph, Susanne, Peter Carter, Nancy, Luca, Dr Wang Xiang, and others.
 
 ---
 
-#### Agenda:
+**Agenda:**
 1. **Zoom Meeting Timing Issues**
    - Steve mentioned difficulties with Zoom invites. Some participants received only the 8 a.m. invite and not the 8 p.m. one for the next meeting. Steve apologized and promised to resend the correct invites after the meeting.
 
@@ -369,7 +490,7 @@ The next meeting will be in two weeks, and Zoom invites for both 8 a.m. and 8 p.
 7. **Brett (Speaker 7)** - Provided insights on the TSM credential issue
 8. **Michael (Speaker 2)** - Provided updates on the business case development
 
-#### Key Discussions and Contributions
+**Key Discussions and Contributions**
 
 1. **Registration Requests:**
    - Steve introduced the agenda, primarily discussing new registration requests.
@@ -445,7 +566,7 @@ The meeting ended with a commitment to continue work on registrations, policy re
 
 ## 2024-09-05 Meeting Summary
 
-### Meeting Participants:
+**Meeting Participants:**
 
 1. **Dr. Wang** - Provided an update on the UNTP presentation translation into Chinese
 2. **Steve** - Discussed the TC154 project and provided updates
@@ -454,7 +575,7 @@ The meeting ended with a commitment to continue work on registrations, policy re
 5. **Gerhard** - Commented on testing and evidence for implementations
 6. **Nis** - Raised concerns about versioning and semantic context
 
-### Key Discussion Points:
+**Key Discussion Points:**
 
 1. **Translation and Feedback:**
    - Dr. Wang translated the UNTP (United Nations Trade Procedure) presentation into Chinese and received positive feedback during a workshop. This sparked further discussion on expanding outreach and engagement.

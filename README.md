@@ -10,7 +10,7 @@ All contributions to this project are done as GitHub [Pull Requests](https://doc
 
 ## Markdown
 
-All content on the UNTP website is writing [using the Markdown notation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), a very simple text based editor. If unfamiliar with markdown, we suggest you experiment with it on a [markdown playground](https://kip2.github.io/MarkdownToHTML/) so that you understand how to create headings, bulleted lists, tables, and so on.
+All content on the UNTP website is written [using the Markdown notation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), a very simple text based editor. If unfamiliar with markdown, we suggest you experiment with it on a [markdown playground](https://kip2.github.io/MarkdownToHTML/) so that you understand how to create headings, bulleted lists, tables, and so on.
 
 ## Simple Changes
 

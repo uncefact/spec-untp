@@ -1,0 +1,73 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Australia/Sydney
+X-LIC-LOCATION:Australia/Sydney
+BEGIN:STANDARD
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+TZNAME:GMT+10
+DTSTART:19700405T030000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+TZNAME:GMT+11
+DTSTART:19701004T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Sydney:20241115T070000
+DTEND;TZID=Australia/Sydney:20241115T080000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20241212T125959Z;INTERVAL=4;BYDAY=FR
+DTSTAMP:20250109T011456Z
+ORGANIZER;CN=steve capell:mailto:steve.capell@gmail.com
+UID:754h2m2ghsivmn0e44ikn5fpgp@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=steve capell;X-NUM-GUESTS=0:mailto:steve.capell@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=transparency-uncefact;X-NUM-GUESTS=0:mailto:transparency-uncefact@g
+ ooglegroups.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;X-NUM-GUESTS=0:mailto:adrian.von-muehlenen@basf-intertrade.com
+X-MICROSOFT-CDO-OWNERAPPTID:-349389748
+CREATED:20241112T003543Z
+DESCRIPTION:Steve Capell is inviting you to a scheduled Zoom meeting.<br><b
+ r>Topic: UNTP Team meeting<br>Time: This is a recurring meeting Meet anytim
+ e<br><br>Join Zoom Meeting<br><a href="https://us02web.zoom.us/j/8233803531
+ 6?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1">https://us02web.zoom.us/j/823380353
+ 16?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1</a><br><br>Meeting ID: 823 3803 531
+ 6<br>Passcode: 516924<br><br>---<br><br>One tap mobile<br>+61871501149\,\,8
+ 2338035316# Australia<br>+61280156011\,\,82338035316# Australia<br><br>---<
+ br><br>Dial by your location<br>• +61 8 7150 1149 Australia<br>• +61 2 8015
+  6011 Australia<br>• +61 3 7018 2005 Australia<br>• +61 7 3185 3730 Austral
+ ia<br>• +61 8 6119 3900 Australia<br><br>Meeting ID: 823 3803 5316<br><br>F
+ ind your local number: <a href="https://us02web.zoom.us/u/k3fJLTRH8">https:
+ //us02web.zoom.us/u/k3fJLTRH8</a><br><br>---<br><br>Join by SIP<br>• 823380
+ 35316@zoomcrc.com<br><br>---<br><br>Join by H.323<br>• 162.255.37.11 (US We
+ st)<br>• 162.255.36.11 (US East)<br>• 115.114.131.7 (India Mumbai)<br>• 115
+ .114.115.7 (India Hyderabad)<br>• 213.19.144.110 (Amsterdam Netherlands)<br
+ >• 213.244.140.110 (Germany)<br>• 103.122.166.55 (Australia Sydney)<br>• 10
+ 3.122.167.55 (Australia Melbourne)<br>• 149.137.40.110 (Singapore)<br>• 64.
+ 211.144.160 (Brazil)<br>• 159.124.132.243 (Mexico)<br>• 159.124.168.213 (Ca
+ nada Toronto)<br>• 65.39.152.160 (Canada Vancouver)<br>• 207.226.132.110 (J
+ apan Tokyo)<br>• 149.137.24.110 (Japan Osaka)<br><br>Meeting ID: 823 3803 5
+ 316<br>Passcode: 516924
+LAST-MODIFIED:20250109T011441Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:UNTP Team meeting
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+END:VCALENDAR
