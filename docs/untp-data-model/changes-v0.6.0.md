@@ -43,7 +43,7 @@ This isn't a jsonld error, but a semantic error which caught Patrick. You can't 
 There are three other references in untp-core for `Identifier`: `CredentialIssuer.otherIdentifier`, `Party.otherIdentifier` and `Facility.otherIdentifier`. Depending on what the use is for these (should they only take an identifier, or possibly parties, products and facilities) will determine whether `Party`, `Product` and `Facility` have an "IS A" relationship to `Identifier`. I'm waiting for info there on that issue.
 
 
-### Optional: Some terms used in the DCC are not defined in our imported context
+### Deferred: Some terms used in the DCC are not defined in our imported context
 
 [JSON-LD has the requirement](https://www.w3.org/TR/json-ld11/#node-objects) that
 
@@ -80,7 +80,7 @@ This also answers other questions or issues I had:
 
 Given that this has been the case for some time, I'll wait to hear from Alastair, but I think the longer-term solution is to ensure we are *not* redefining core classes and instead are always expecting our credentials to be importing the core context. Yet we can't just switch to do so quickly as it not only requires changes in jargon but also our model (due to the current redefinitions).
 
-So short-term, for this release, it might be better to not deal with these ignored fields (they've been ignored by json-ld for a while, and it's not clear to me if this means they'll not appear in a graph or are just ignored by json-ld parsing for terms), or ensure that the missing fields are re-defined in the sub-contexts (ie. so the dcc context and dpp context both re-define `streetAddress`), but there are many of them (especially for the DPP context).
+So short-term, for this release, it might be better to not deal with these ignored fields (they've been ignored by json-ld for a while, and it's not clear to me if this means they'll not appear in a graph or are just ignored by json-ld parsing for terms), or ensure that the missing fields are re-defined in the sub-contexts (ie. so the dcc context and dpp context both re-define `streetAddress`), but there are many of them (especially for the DPP context). I'll turn this into a GitHub issue for later.
 
 * Some of the fields, such as the `file` ones marked with an asterisk, are actually redefined in the dcc context, so it's unclear to me why the jsonld lint tool is saying they weren't resolved.
 
@@ -121,7 +121,7 @@ TDB, but this will basically be the results from the previous sections that requ
 
 ## Digital Product Passport
 
-### Optional: many terms used in the DPP are not defined in our imported context
+### Deferred: many terms used in the DPP are not defined in our imported context
 
 [JSON-LD has the requirement](https://www.w3.org/TR/json-ld11/#node-objects) that
 
@@ -174,3 +174,66 @@ I can confirm these fields are missing from the rdf/graph by dropping in a valid
 
 See the same section for Digital Conformity Credential above.
 
+
+### Deferred: Removing class redefinitions
+
+Certain classes are redefined unnecessarily and will be invalid if credentials use the untp-core context as well.
+
+
+## Digital Facility Record
+
+
+### Deferred: many terms used in the DFR are not defined in our imported context
+
+See above explanation for the Digital Conformance Certificate's similar issue and planned resolution.
+
+Dropped properties:
+- `addressCountry`
+- `addressLocality`
+- `addressRegion`
+- `postalCode`
+- `streetAddress`
+- `encryptionMethod`
+- `hashDigest`
+- `hashMethod`
+- `linkName`
+- `linkType`
+- `linkURL`
+- `geoBoundary`
+- `geoLocation`
+- `plusCode`
+
+
+### Required: DateTime format with regex
+
+See the same section for Digital Conformity Credential above.
+
+
+## Digital Traceability Events
+
+
+### Optional: many terms used in the DTR are not defined in our imported context
+
+See above explanation for the Digital Conformance Certificate's similar issue and planned resolution.
+
+Dropped properties:
+- `productId`
+- `productName`
+
+These are obviously pretty serious properties to be dropped from the rdf/graph. In this case, the issues isn't because we're not importing untp-core (as is the case for other domains above) but rather because we're just creating two new terms without defining them.
+
+The jargon DTR model defines a `QuantityElement` with these two terms, so they would normally be present, but they have the `[jsonld.contextOmit] = true` set, so I assume that's why they're not included in the generated context. (TODO: copy domain and check)
+
+
+### Required: DateTime format with regex
+
+See the same section for Digital Conformity Credential above.
+
+
+## Digital Identity Anchor
+
+There were no other issues with jsonld lint. The datetime regex pattern is the only change.
+
+### Required: DateTime format with regex
+
+See the same section for Digital Conformity Credential above.
