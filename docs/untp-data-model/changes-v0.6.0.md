@@ -6,8 +6,59 @@ Each section identify issues for that model that either result in invalid jsonld
 
 These changes are in addition to the requested jargon changes for the schema output which we've worked with Alastair to ensure are present, recorded in this [schema diff example](https://github.com/absoludity/tests-untp/pull/1/files).
 
+
 ## Digital Product Passport
-TBD
+
+### Optional?: many fields are ignored from the document
+
+[JSON-LD has the requirement](https://www.w3.org/TR/json-ld11/#node-objects) that
+
+> All keys which are not [IRIs](https://tools.ietf.org/html/rfc3987#section-2), [compact IRIs](https://www.w3.org/TR/json-ld11/#dfn-compact-iri), [terms](https://www.w3.org/TR/json-ld11/#dfn-term) valid in the [active context](https://www.w3.org/TR/json-ld11/#dfn-active-context), or one of the following [keywords](https://www.w3.org/TR/json-ld11/#dfn-keyword) (or alias of such a keyword) _MUST_ be ignored when processed
+
+Currently, if I run our test example DPP 0.5.0 document through the `jsonld lint`, I see "Invalid Property" warnings with "Dropping property that did not expand into an absolute IRI or keyword" for the following terms:
+- `materialCircularityIndicator`
+- `recyclableContent`
+- `recycledContent`
+- `recyclingInformation`
+- `repairInformation`
+- `utilityFactor`
+- `encryptionMethod`
+- `hashDigest`
+- `hashMethod`
+- `linkName`
+- `linkType`
+- `linkURL`
+- `accuracy`
+- `metricName`
+- `metricValue`
+- `score`
+- `accuracy`
+- `height`
+- `length`
+- `volume`
+- `weight`
+- `width`
+- `carbonFootprint`
+- `declaredUnit`
+- `operationalScope`
+- `primarySourcedRatio`
+- `reportingStandard`
+- `hazardous`
+- `massAmount`
+- `massFraction`
+- `materialSafetyInformation`
+- `materialType`
+- `originCountry`
+- `recycledAmount`
+- `symbol`
+
+As per the Digital Conformity Credetial which had a similar issue below, this looks solveable with the jargon key-pair (see below).
+
+
+### Required: DateTime format with regex
+
+See the same section for Digital Conformity Credential below.
+
 
 ## Digital Conformity Credential
 
@@ -51,7 +102,7 @@ There are three other references in untp-core for `Identifier`: `CredentialIssue
 
 > All keys which are not [IRIs](https://tools.ietf.org/html/rfc3987#section-2), [compact IRIs](https://www.w3.org/TR/json-ld11/#dfn-compact-iri), [terms](https://www.w3.org/TR/json-ld11/#dfn-term) valid in the [active context](https://www.w3.org/TR/json-ld11/#dfn-active-context), or one of the following [keywords](https://www.w3.org/TR/json-ld11/#dfn-keyword) (or alias of such a keyword) _MUST_ be ignored when processed
 
-Currently, if I run our same test 0.5.0 document through the `jsonld lint`, I see "Invalid Property" warnings with "Dropping property that did not expand into an absolute IRI or keyword" for the following terms:
+Currently, if I run our same test DCC 0.5.0 document through the `jsonld lint`, I see "Invalid Property" warnings with "Dropping property that did not expand into an absolute IRI or keyword" for the following terms:
 - `addressCountry`
 - `addressLocality`
 - `addressRegion`
@@ -83,6 +134,7 @@ This also answers other questions or issues I had:
 Given that this has been the case for some time, I'll wait to hear from Alastair, but I think the longer-term solution is to ensure we are *not* redefining core classes and instead are always expecting our credentials to be importing the core context. Yet we can't just switch to do so quickly as it not only requires changes in jargon but also our model (due to the current redefinitions).
 
 So short-term, for this release, it might be better to not deal with these ignored fields (they've been ignored by json-ld for a while, and it's not clear to me if this means they'll not appear in a graph or are just ignored by json-ld parsing for terms), or ensure that the missing fields are re-defined in the sub-contexts (ie. so the dcc context and dpp context both re-define `streetAddress`), but there are many of them (especially for the DPP context).
+
 
 
 ### Optional: `@id` URL's required on all models
