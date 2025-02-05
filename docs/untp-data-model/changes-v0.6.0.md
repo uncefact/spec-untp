@@ -4,6 +4,8 @@ These changes are the result of various inputs, most from Patrick St-Louis, rega
 
 Each section identify issues for that model that either result in invalid jsonld, or valid docs that are deemed invalid from the json schema, or credentials that are deemed valid by our JSON Schema but invalid by the Verified Credentials schema, or are otherwise needing improvement. Each section identifies the proposed solution that will be included for 0.6.0 once reviewed and agreed upon.
 
+These changes are in addition to the requested jargon changes for the schema output which we've worked with Alastair to ensure are present, recorded in this [schema diff example](https://github.com/absoludity/tests-untp/pull/1/files).
+
 ## Digital Product Passport
 TBD
 
