@@ -30,7 +30,7 @@ Like all UN/CEFACT standards, the UNTP is a voluntary standard that is not manda
 
 * Business case templates for [industry](../business-case/BusinessCaseIndustry.md) and [government](../business-case/BusinessCaseGovernment.md))to assist implementers with their cost/benefit assessments.
 * A [Value Assessment Framework](../business-case/ValueAssessmentFramework.md) that will collect performance metrics from implementers to track UNTP impact on UN Sustainable Development Goals.
-* An [extensions methodology](..extensions/ExtensionsMethodology.md) and governance framework that provides an incentive for implementations across entire communites led by member associations.
+* An [extensions methodology](../extensions/ExtensionsMethodology.md) and governance framework that provides an incentive for implementations across entire communites led by member associations.
 
 UNTP aims to be the highest value and lowest cost framework for scaling traceability & transparency across global supply chains. 
 
