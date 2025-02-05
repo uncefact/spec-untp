@@ -58,9 +58,9 @@ Currently, if I run our same test DCC 0.5.0 document through the `jsonld lint`, 
 - `geoBoundary`
 - `geoLocation`
 - `plusCode`
-- `file`
-- `fileName`
-- `fileType`
+- `file` *
+- `fileName` *
+- `fileType` *
 
 This is because the fields, for example, of Address, are defined in our **untp-core jsonld** as follows:
 ```json
@@ -82,7 +82,7 @@ Given that this has been the case for some time, I'll wait to hear from Alastair
 
 So short-term, for this release, it might be better to not deal with these ignored fields (they've been ignored by json-ld for a while, and it's not clear to me if this means they'll not appear in a graph or are just ignored by json-ld parsing for terms), or ensure that the missing fields are re-defined in the sub-contexts (ie. so the dcc context and dpp context both re-define `streetAddress`), but there are many of them (especially for the DPP context).
 
-
+* Some of the fields, such as the `file` ones marked with an asterisk, are actually redefined in the dcc context, so it's unclear to me why the jsonld lint tool is saying they weren't resolved.
 
 ### Optional: `@id` URL's required on all models
 
@@ -140,11 +140,11 @@ Currently, if I run our test example DPP 0.5.0 document through the `jsonld lint
 - `linkName`
 - `linkType`
 - `linkURL`
-- `accuracy`
-- `metricName`
-- `metricValue`
-- `score`
-- `accuracy`
+- `accuracy` *
+- `metricName` *
+- `metricValue` *
+- `score` *
+- `accuracy` *
 - `height`
 - `length`
 - `volume`
@@ -166,6 +166,9 @@ Currently, if I run our test example DPP 0.5.0 document through the `jsonld lint
 
 As per the Digital Conformity Credetial which had a similar issue above, the reason is that we do not currently import the untp-core context from our credential. For more information, including why this will not be fixed in this release, see the similar issue in the Digital Conformity Credential section above.
 
+* Some of the fields, such as the `metric` ones marked with an asterisk, are actually redefined in the dcc context, so it's unclear to me why the jsonld lint tool is saying they weren't resolved.
+
+I can confirm these fields are missing from the rdf/graph by dropping in a valid 0.5.0 DPP example credential into the jsonld playground and viewing the flattened data / graph. The `metricName` and `metricValue` properties are present (as they are defined in the dcc context) but none of the others from the doc which match, such as `recycledAmount`, `recyclableContent` or `recycledContent` are present in the rdf/graph.
 
 ### Required: DateTime format with regex
 
