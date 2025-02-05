@@ -21,9 +21,9 @@ ConformityAttestation:untp.Attestation
   scope:ConformityAssessmentScheme
   assessment:ConformityAssessment[]
 ```
-Note that we could have also just changed the type of `issuedTo` to be `untp.Party` but it's much neater to not redefine things unnecessarily.
+Note that we could have also just changed the type of `issuedTo` to be `untp.Party` but it's much neater to not redefine things unnecessarily. Additionally, if we move to import `untp-core` into the credential context (see below regarding undefined terms).
 
-The result is that the `ConformityAttestation.issuedTo` property is now a normal `untp.Party`, which does not mean you need to set all the properties (but in this case, I think we would want to anyway).
+The result is that the `ConformityAttestation.issuedTo` property is now a normal `untp.Party`, which does not mean you need to set all the properties of `Party` (but in this case, I think we would want to anyway).
 
 
 ### Optional: Removing the `dcc.Party` with the unset fields
