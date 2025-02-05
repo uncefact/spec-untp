@@ -30,7 +30,7 @@ The result is that the `ConformityAttestation.issuedTo` property is now a normal
 
 I'm also suggested removing the re-definition of `dcc:Party` in the dcc jargon defs (with the fields unset) as I don't see a need for confusingly having a second definition with unset fields, given that you don't need to provide all properties for a node. Need to double-check with Steve if it's just for the jargon UI that this was done? Having extra terms defined does not affect the parsing of the JSON-ld, nor does it affect the JSON Schema validation (unless they are required fields, which they are not). That is, nothing stops you just using only the fields you want (as long as any required fields are present).
 
-Note that I've now [answered my own question about whether it's valid to have multiple node objects (which aren't just references) with the same `@id` throughout the graph](https://github.com/orgs/json-ld/discussions/853#discussioncomment-12060189)... it's fine, the data is just merged if it differs.
+Furthermore, if a credential includes the untp-core context (which I think it may in the future - see missing fields below) it would be an invalid redefinition.
 
 
 ### Required: `issuingParty` should be a `Party` not an  `Identifier` in the schema
@@ -58,9 +58,9 @@ Currently, if I run our same test DCC 0.5.0 document through the `jsonld lint`, 
 - `geoBoundary`
 - `geoLocation`
 - `plusCode`
-- `file` *
-- `fileName` *
-- `fileType` *
+- `file` [1]
+- `fileName` [1]
+- `fileType` [1]
 
 This is because the fields, for example, of Address, are defined in our **untp-core jsonld** as follows:
 ```json
@@ -82,7 +82,7 @@ Given that this has been the case for some time, I'll wait to hear from Alastair
 
 So short-term, for this release, it might be better to not deal with these ignored fields (they've been ignored by json-ld for a while, and it's not clear to me if this means they'll not appear in a graph or are just ignored by json-ld parsing for terms), or ensure that the missing fields are re-defined in the sub-contexts (ie. so the dcc context and dpp context both re-define `streetAddress`), but there are many of them (especially for the DPP context). I'll turn this into a GitHub issue for later.
 
-* Some of the fields, such as the `file` ones marked with an asterisk, are actually redefined in the dcc context, so it's unclear to me why the jsonld lint tool is saying they weren't resolved.
+[1] Some of the fields, such as the `file` ones marked with an asterisk, are actually redefined in the dcc context, so it's unclear to me why the jsonld lint tool is saying they weren't resolved.
 
 ### Optional: `@id` URL's required on all models
 
@@ -140,11 +140,11 @@ Currently, if I run our test example DPP 0.5.0 document through the `jsonld lint
 - `linkName`
 - `linkType`
 - `linkURL`
-- `accuracy` *
-- `metricName` *
-- `metricValue` *
-- `score` *
-- `accuracy` *
+- `accuracy` [2]
+- `metricName` [2]
+- `metricValue` [2]
+- `score` [2]
+- `accuracy` [2]
 - `height`
 - `length`
 - `volume`
@@ -166,9 +166,10 @@ Currently, if I run our test example DPP 0.5.0 document through the `jsonld lint
 
 As per the Digital Conformity Credetial which had a similar issue above, the reason is that we do not currently import the untp-core context from our credential. For more information, including why this will not be fixed in this release, see the similar issue in the Digital Conformity Credential section above.
 
-* Some of the fields, such as the `metric` ones marked with an asterisk, are actually redefined in the dcc context, so it's unclear to me why the jsonld lint tool is saying they weren't resolved.
-
 I can confirm these fields are missing from the rdf/graph by dropping in a valid 0.5.0 DPP example credential into the jsonld playground and viewing the flattened data / graph. The `metricName` and `metricValue` properties are present (as they are defined in the dcc context) but none of the others from the doc which match, such as `recycledAmount`, `recyclableContent` or `recycledContent` are present in the rdf/graph.
+
+[2] Some of the fields, such as the `metric` ones marked with an asterisk, are actually redefined in the dcc context, so it's unclear to me why the jsonld lint tool is saying they weren't resolved.
+
 
 ### Required: DateTime format with regex
 
