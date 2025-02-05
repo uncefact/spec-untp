@@ -63,6 +63,7 @@ Currently, if I run our same test 0.5.0 document through the `jsonld lint`, I se
 - `file`
 - `fileName`
 - `fileType`
+
 This is because the fields, for example, of Address, are defined in our **untp-core jsonld** as follows:
 ```json
 "streetAddress": {
@@ -71,13 +72,17 @@ This is because the fields, for example, of Address, are defined in our **untp-c
 },
 ```
 
-Note that they could be updated to use schema.org quite easily in jargon, but this isn't the actual issue. The issue is that this property is not defined in the DCC sample credential doc **because we don't import the untp-core context** in the DCC sample credential. Nor do we expect it to be imported, according to the JSON-Schema that's generated. This is the same for the other docs too (DPP, etc.).
+Note that they could be updated to use schema.org quite easily in jargon, but this isn't the actual issue. The issue is that **this property is not defined in the DCC sample credential doc because we don't import the untp-core context** in the DCC sample credential. Nor do we expect it to be imported, according to the JSON-Schema that's generated. This is the same for the other docs too (DPP, etc.).
 
-I'm chatting with Alastair about this to understand the history, but AFAICT, we should be importing the untp-core context in the DCC credential if we want to used properties defined in the untp-core context, rather than *re-defining* those properties (such as `Identifier` or `Attestation`) in the sub-contexts (dcc, dpp etc.). This also answers other questions or issues I had:
-- Why does the DCC LD re-define core classes (with all their fields) without us defining it? (eg. [`Identifier`](https://github.com/uncefact/vocabulary-outputs/blob/70cea8f83acea3bb347cc0ce329f682f25795f4b/_artefacts/untp-dcc-context-0.5.0.jsonld#L47-L60) or `Attestation`) Answer: because we're referring to them or needing them available without actually having including the core context in the credential document.
-- How do the redefinitions of certain classes, but with fields removed, not cause jsonld redefinition errors? Answer: because we're not importing core at all :/
+I'm chatting with Alastair about this to understand the history (it is, I believe, on our request that jargon doesn't import untp-core, not a decision of Alastair's), but AFAICT, longer-term we should be importing the untp-core context in the DCC credential if we want to use properties defined in the untp-core context, rather than *re-defining* those properties (such as `Identifier` or `Attestation`) in the sub-contexts (dcc, dpp etc.) while missing other properties as in this issue.
 
-I'll wait to hear from Alastair, but I think the longer-term solution is to ensure we are *not* redefining core classes and instead are always expecting our credentials to be importing the core context. But short-term, for this release, it might be better to not deal with these ignored fields (they've been ignored for a while), or ensure that the missing fields are re-defined in the sub-contexts (ie. so the dcc context and dpp context both re-define `streetAddress`).
+This also answers other questions or issues I had:
+- Why does the DCC LD re-define core classes (with all their fields) without us defining it in Jargon? (eg. [`Identifier`](https://github.com/uncefact/vocabulary-outputs/blob/70cea8f83acea3bb347cc0ce329f682f25795f4b/_artefacts/untp-dcc-context-0.5.0.jsonld#L47-L60) or `Attestation`) Answer: because we're referring to them or needing them available without actually having including the core context in the credential document.
+- How do the redefinitions of certain classes, but with fields removed, not cause jsonld redefinition errors? Answer: because we're not importing the core context at all :/
+
+Given that this has been the case for some time, I'll wait to hear from Alastair, but I think the longer-term solution is to ensure we are *not* redefining core classes and instead are always expecting our credentials to be importing the core context. Yet we can't just switch to do so quickly as it not only requires changes in jargon but also our model (due to the current redefinitions).
+
+So short-term, for this release, it might be better to not deal with these ignored fields (they've been ignored by json-ld for a while, and it's not clear to me if this means they'll not appear in a graph or are just ignored by json-ld parsing for terms), or ensure that the missing fields are re-defined in the sub-contexts (ie. so the dcc context and dpp context both re-define `streetAddress`), but there are many of them (especially for the DPP context).
 
 
 ### Optional: `@id` URL's required on all models
