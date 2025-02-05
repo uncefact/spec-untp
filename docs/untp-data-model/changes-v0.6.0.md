@@ -88,7 +88,7 @@ Mentioned by Patrick on [issue 184](https://github.com/uncefact/tests-untp/issue
 > 
 >     * The VCDM has a specific datetime format. Dates can be complicated, I would suggest to align with this format instead of requiring a different format for other dates within the DCC.
 
-The date format used by VCDM requires a timezone, whereas the `datetime` format of JSON-Schema does not. We can manually add the following required (regex) pattern to the `validUntil` etc. fields:
+The date format used by VCDM requires a timezone, whereas the `datetime` format of JSON-Schema does not. We can manually add the following required (regex) pattern to the `validUntil` etc. fields (taken directly from the [VCDM Schema](https://github.com/w3c/vc-data-model/blob/bbebf31de4feed0a182a857490c807cc6885acff/schema/verifiable-credential/verifiable-credential-schema.json#L229)):
 
 ```
       "pattern": "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))"
