@@ -27,10 +27,13 @@ Note that we could have also just changed the type of `issuedTo` to be `untp.Par
 
 The result is that the `ConformityAttestation.issuedTo` property is now a normal `untp.Party`, which does not mean you need to set all the properties (but in this case, I think we would want to anyway).
 
+
 ### Optional: Removing the `dcc.Party` with the unset fields
+
 I'm also suggested removing the re-definition of `dcc:Party` in the dcc jargon defs (with the fields unset) as I don't see a need for confusingly having a second definition with unset fields, given that you don't need to provide all properties for a node. Need to double-check with Steve if it's just for the jargon UI that this was done? Having extra terms defined does not affect the parsing of the JSON-ld, nor does it affect the JSON Schema validation (unless they are required fields, which they are not). That is, nothing stops you just using only the fields you want (as long as any required fields are present).
 
 Note that I've now [answered my own question about whether it's valid to have multiple node objects (which aren't just references) with the same `@id` throughout the graph](https://github.com/orgs/json-ld/discussions/853#discussioncomment-12060189)... it's fine, the data is just merged if it differs.
+
 
 ### Required: `issuingParty` should be a `Party` not an  `Identifier` in the schema
 
@@ -40,6 +43,7 @@ This isn't a jsonld error, but a semantic error which caught Patrick. You can't 
 - the untp-core `Standard.issuingParty` should be a `Party` rather than an `Identifier`.
 - similarly, the `Facility.operatedByParty` and `Product.producedByParty` should be `Party` rather than `Identifier`.
 There are three other references in untp-core for `Identifier`: `CredentialIssuer.otherIdentifier`, `Party.otherIdentifier` and `Facility.otherIdentifier`. Depending on what the use is for these (should they only take an identifier, or possibly parties, products and facilities) will determine whether `Party`, `Product` and `Facility` have an "IS A" relationship to `Identifier`. I'm waiting for info there on that issue.
+
 
 ### Optional: some fields are ignored from the document
 
@@ -74,7 +78,10 @@ and the generated file does not import "https://schema.org" (because we don't us
   },
 ```
 to avoid the warning and ensure they are not dropped, but it's not clear to me how I can get jargon to do that (or the contracted form) for property names (nor why terms in the jargon generated link data files have self-referential `@id`'s, as above), but since we're not using these fields in our examples, I'll defer this to a subsequent point/patch release after resolving.
+
+
 ### Optional: `@id` URL's required on all models
+
 Mentioned by Patrick on [issue 184](https://github.com/uncefact/tests-untp/issues/184):
 > > Required ID fields
 > 
@@ -84,7 +91,9 @@ Note that we don't need to specify URLs for every required id, a URI is ok. That
 
 That said, JSON-LD doesn't require all nodes to be identified with an `@id`, and indeed we don't require them for things like `Address`, `Location`, `Metric` etc. as they aren't nodes we need to reference. Looking through the defs, all the nodes with a required `@id` are things that should be identifiable (like permits) even if they're not derefencencable, so I think we just need to update the docs to make it clear that the required `@id` URI just needs to be a unique resource identifier (so `permit:com.example.permits.12345` is fine), not necessarily a unique resource locator (such as `https://permits.example.com/12345`).
 
+
 ### Required: DateTime format with regex
+
 Mentioned by Patrick on [issue 184](https://github.com/uncefact/tests-untp/issues/184):
 > > Inconsistent date values
 > 
@@ -99,6 +108,7 @@ The date format used by VCDM requires a timezone, whereas the `datetime` format 
 [Jargon supports specifying the pattern](https://docs.jargon.sh/#/pages/data_definitions?id=jargon-recognised-key-value-pairs) for a property using `[jargon.pattern] = ^...$`
 
 We should do this at least for the VC properties that we use, as otherwise we may validate a DPP, but it fails as a VC due to the missing timezone (for example).
+
 
 ## UNTP Core
 
