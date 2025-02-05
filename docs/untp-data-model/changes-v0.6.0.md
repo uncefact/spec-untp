@@ -70,14 +70,16 @@ This is because the fields, for example, of Address, are defined as:
   "@type": "xsd:string"
 },
 ```
-and the generated file does not import "https://schema.org" (because we don't use its assigned prefix, I assume). In Jargon we do import it, but jargon forces a prefix for imports (ours is `schemaorg`), and I don't see a way to prefix property names (ie. `schemaorg:streetAddress:Text` is not valid, nor can I quote it as `"schemaorg:streetAddress": "Text"` it seems). I can manually update the core ld file so that the terms are IRIs, such as:
+and the generated file does not import "https://schema.org" (because we don't use its assigned prefix, I assume). In Jargon we do import it, but jargon forces a prefix for imports (ours is `schemaorg`). The jargon docs mention a specific key-value pair that can be associated with a property, `[jsonld.contextPrefix]` which looks like it could be used to prefix the properties as required (TODO: test, also, many properties appear to use `[jsonld.contextOmit]=true` to explicitly *not* include the property in the LD file, perhaps for this reason? Check)
+
+I can manually update the core ld file so that the terms are IRIs, such as:
 ```json
   "https://schema.org/streetAddress": {
     "@id": "untp-core:streetAddress",
     "@type": "xsd:string"
   },
 ```
-to avoid the warning and ensure they are not dropped, but it's not clear to me how I can get jargon to do that (or the contracted form) for property names (nor why terms in the jargon generated link data files have self-referential `@id`'s, as above), but since we're not using these fields in our examples, I'll defer this to a subsequent point/patch release after resolving.
+to avoid the warning and ensure they are not dropped, so it's definitely the issue. Once the above solution is verified (using the jargon key-value), we can update to make this change required and simply do so. If it does not, then since we're not using these fields in our examples, I'll defer this to a subsequent point/patch release after resolving the required changes.
 
 
 ### Optional: `@id` URL's required on all models
