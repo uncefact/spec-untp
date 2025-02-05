@@ -7,59 +7,6 @@ Each section identify issues for that model that either result in invalid jsonld
 These changes are in addition to the requested jargon changes for the schema output which we've worked with Alastair to ensure are present, recorded in this [schema diff example](https://github.com/absoludity/tests-untp/pull/1/files).
 
 
-## Digital Product Passport
-
-### Optional?: many fields are ignored from the document
-
-[JSON-LD has the requirement](https://www.w3.org/TR/json-ld11/#node-objects) that
-
-> All keys which are not [IRIs](https://tools.ietf.org/html/rfc3987#section-2), [compact IRIs](https://www.w3.org/TR/json-ld11/#dfn-compact-iri), [terms](https://www.w3.org/TR/json-ld11/#dfn-term) valid in the [active context](https://www.w3.org/TR/json-ld11/#dfn-active-context), or one of the following [keywords](https://www.w3.org/TR/json-ld11/#dfn-keyword) (or alias of such a keyword) _MUST_ be ignored when processed
-
-Currently, if I run our test example DPP 0.5.0 document through the `jsonld lint`, I see "Invalid Property" warnings with "Dropping property that did not expand into an absolute IRI or keyword" for the following terms:
-- `materialCircularityIndicator`
-- `recyclableContent`
-- `recycledContent`
-- `recyclingInformation`
-- `repairInformation`
-- `utilityFactor`
-- `encryptionMethod`
-- `hashDigest`
-- `hashMethod`
-- `linkName`
-- `linkType`
-- `linkURL`
-- `accuracy`
-- `metricName`
-- `metricValue`
-- `score`
-- `accuracy`
-- `height`
-- `length`
-- `volume`
-- `weight`
-- `width`
-- `carbonFootprint`
-- `declaredUnit`
-- `operationalScope`
-- `primarySourcedRatio`
-- `reportingStandard`
-- `hazardous`
-- `massAmount`
-- `massFraction`
-- `materialSafetyInformation`
-- `materialType`
-- `originCountry`
-- `recycledAmount`
-- `symbol`
-
-As per the Digital Conformity Credetial which had a similar issue below, this looks solveable with the jargon key-pair (see below).
-
-
-### Required: DateTime format with regex
-
-See the same section for Digital Conformity Credential below.
-
-
 ## Digital Conformity Credential
 
 ### Required: Removing the redefinition of `issuedTo` Party
@@ -96,7 +43,7 @@ This isn't a jsonld error, but a semantic error which caught Patrick. You can't 
 There are three other references in untp-core for `Identifier`: `CredentialIssuer.otherIdentifier`, `Party.otherIdentifier` and `Facility.otherIdentifier`. Depending on what the use is for these (should they only take an identifier, or possibly parties, products and facilities) will determine whether `Party`, `Product` and `Facility` have an "IS A" relationship to `Identifier`. I'm waiting for info there on that issue.
 
 
-### Optional: some fields are ignored from the document
+### Optional: Some terms used in the DCC are not defined in our imported context
 
 [JSON-LD has the requirement](https://www.w3.org/TR/json-ld11/#node-objects) that
 
@@ -170,3 +117,57 @@ We should do this at least for the VC properties that we use, as otherwise we ma
 ## UNTP Core
 
 TDB, but this will basically be the results from the previous sections that required core changes.
+
+
+## Digital Product Passport
+
+### Optional: many terms used in the DPP are not defined in our imported context
+
+[JSON-LD has the requirement](https://www.w3.org/TR/json-ld11/#node-objects) that
+
+> All keys which are not [IRIs](https://tools.ietf.org/html/rfc3987#section-2), [compact IRIs](https://www.w3.org/TR/json-ld11/#dfn-compact-iri), [terms](https://www.w3.org/TR/json-ld11/#dfn-term) valid in the [active context](https://www.w3.org/TR/json-ld11/#dfn-active-context), or one of the following [keywords](https://www.w3.org/TR/json-ld11/#dfn-keyword) (or alias of such a keyword) _MUST_ be ignored when processed
+
+Currently, if I run our test example DPP 0.5.0 document through the `jsonld lint`, I see "Invalid Property" warnings with "Dropping property that did not expand into an absolute IRI or keyword" for the following terms:
+- `materialCircularityIndicator`
+- `recyclableContent`
+- `recycledContent`
+- `recyclingInformation`
+- `repairInformation`
+- `utilityFactor`
+- `encryptionMethod`
+- `hashDigest`
+- `hashMethod`
+- `linkName`
+- `linkType`
+- `linkURL`
+- `accuracy`
+- `metricName`
+- `metricValue`
+- `score`
+- `accuracy`
+- `height`
+- `length`
+- `volume`
+- `weight`
+- `width`
+- `carbonFootprint`
+- `declaredUnit`
+- `operationalScope`
+- `primarySourcedRatio`
+- `reportingStandard`
+- `hazardous`
+- `massAmount`
+- `massFraction`
+- `materialSafetyInformation`
+- `materialType`
+- `originCountry`
+- `recycledAmount`
+- `symbol`
+
+As per the Digital Conformity Credetial which had a similar issue above, the reason is that we do not currently import the untp-core context from our credential. For more information, including why this will not be fixed in this release, see the similar issue in the Digital Conformity Credential section above.
+
+
+### Required: DateTime format with regex
+
+See the same section for Digital Conformity Credential above.
+
