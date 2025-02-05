@@ -63,23 +63,21 @@ Currently, if I run our same test 0.5.0 document through the `jsonld lint`, I se
 - `file`
 - `fileName`
 - `fileType`
-This is because the fields, for example, of Address, are defined as:
+This is because the fields, for example, of Address, are defined in our **untp-core jsonld** as follows:
 ```json
 "streetAddress": {
   "@id": "untp-core:streetAddress",
   "@type": "xsd:string"
 },
 ```
-and the generated file does not import "https://schema.org" (because we don't use its assigned prefix, I assume). In Jargon we do import it, but jargon forces a prefix for imports (ours is `schemaorg`). The jargon docs mention a specific key-value pair that can be associated with a property, `[jsonld.contextPrefix]` which looks like it could be used to prefix the properties as required (TODO: test, also, many properties appear to use `[jsonld.contextOmit]=true` to explicitly *not* include the property in the LD file, perhaps for this reason? Check)
 
-I can manually update the core ld file so that the terms are IRIs, such as:
-```json
-  "https://schema.org/streetAddress": {
-    "@id": "untp-core:streetAddress",
-    "@type": "xsd:string"
-  },
-```
-to avoid the warning and ensure they are not dropped, so it's definitely the issue. Once the above solution is verified (using the jargon key-value), we can update to make this change required and simply do so. If it does not, then since we're not using these fields in our examples, I'll defer this to a subsequent point/patch release after resolving the required changes.
+Note that they could be updated to use schema.org quite easily in jargon, but this isn't the actual issue. The issue is that this property is not defined in the DCC sample credential doc **because we don't import the untp-core context** in the DCC sample credential. Nor do we expect it to be imported, according to the JSON-Schema that's generated. This is the same for the other docs too (DPP, etc.).
+
+I'm chatting with Alastair about this to understand the history, but AFAICT, we should be importing the untp-core context in the DCC credential if we want to used properties defined in the untp-core context, rather than *re-defining* those properties (such as `Identifier` or `Attestation`) in the sub-contexts (dcc, dpp etc.). This also answers other questions or issues I had:
+- Why does the DCC LD re-define core classes (with all their fields) without us defining it? (eg. [`Identifier`](https://github.com/uncefact/vocabulary-outputs/blob/70cea8f83acea3bb347cc0ce329f682f25795f4b/_artefacts/untp-dcc-context-0.5.0.jsonld#L47-L60) or `Attestation`) Answer: because we're referring to them or needing them available without actually having including the core context in the credential document.
+- How do the redefinitions of certain classes, but with fields removed, not cause jsonld redefinition errors? Answer: because we're not importing core at all :/
+
+I'll wait to hear from Alastair, but I think the longer-term solution is to ensure we are *not* redefining core classes and instead are always expecting our credentials to be importing the core context. But short-term, for this release, it might be better to not deal with these ignored fields (they've been ignored for a while), or ensure that the missing fields are re-defined in the sub-contexts (ie. so the dcc context and dpp context both re-define `streetAddress`).
 
 
 ### Optional: `@id` URL's required on all models
