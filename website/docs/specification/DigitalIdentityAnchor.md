@@ -167,8 +167,12 @@ As described in the [W3C Decentralized Identifiers](https://www.w3.org/TR/did-co
   "alsoKnownAs": ["https://sample-register.gov/90664869327"],
   "service": [{
     "id":"did:web:sample-business.com:123456789#90664869327",
-    "type": "DigitalIdentityAnchor", 
-    "serviceEndpoint": "https://sample-credential-store.com/credentials/dia-90664869327.json"
+    "type":"untp:dia"
+    "serviceEndpoint": {
+        "href":"https://sample-credential-store.com/credentials/dia-90664869327.json",
+        "title":"Digital Identity Anchor",
+        "type": "application/vc+jwt"
+    }
   }]
 }
 ```
@@ -189,21 +193,21 @@ The resolver service may be called with parameters that define which link-types 
     "linkset": [
         {
             "anchor": "https://resolver.sample-register.gov/vatNumber/90664869327",
-            "https://vocabulary.uncefact.org/untp/linkType#digitalIdentityAnchor": [
+            "untp:dia": [
                 {
                     "href": "https://sample-credential-store.com/credentials/dia-90664869327.json",
                     "title": "Digital Identity Anchor",
-                    "type": "application/json"
+                    "type": "application/vc+jwt"
                  }
             ]
         },
         {
             "anchor": "https://resolver.sample-register.gov/vatNumber/90664869327",
-            "https://sample-register.gov/registrationHistory": [
+            "about": [
                 {
                     "href": "https://sample-register.gov/registrationHistory?id=90664869327",
                     "title": "Registration History",
-                    "type": "application/json"
+                    "type": "text/html"
                  }
             ]
         },
