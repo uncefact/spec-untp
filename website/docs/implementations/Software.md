@@ -26,6 +26,7 @@ Summary list of software products and status of implementation. Scope defines th
 | [Sustainable Choice Group](#sustainable-choice-group).            | Sustainability Tracker                   | VCP, DPP, IDR                               | planned   |
 | [Health LOQ](#health-loq) |Health LOQ Document protection, Product Origin, Compliance dashboard| VCP, DPP, DTE, DCC, IDR, DAC, SVC| planned|
 | [SIMBA Chain](#simba-chain)| SIMBA Ensure | VCP, DPP, DFR, DTE, DCC, IDR, DAC| planned| 
+| [K4 Security](#k4-security)| KS Digital Product passport, KS Product Trust Service| VCP, DPP, DTE, DCC. IDR, DAC| planned|
 
 ## Implementation Details
 
@@ -340,10 +341,29 @@ SIMBA chain is a participant in
 
 | Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
 | ------ | ------------- | ----------- | ------------ |
-| [SIMBA Ensure](https://simbachain.com/) |Transfer error-free and tamper-proof data using any system, with any party – fast. SIMBA’s Platform provides trusted seamless data exchange for identity management, multi-vendor data sharing, and third party data verification. | CP, DPP, DFR, DTE, DCC, IDR, DAC|- v0.5, v1.0 | TBA |
+| [SIMBA Ensure](https://simbachain.com/) |Transfer error-free and tamper-proof data using any system, with any party – fast. SIMBA’s Platform provides trusted seamless data exchange for identity management, multi-vendor data sharing, and third party data verification. | CP, DPP, DFR, DTE, DCC, IDR, DAC - v0.5, v1.0 | TBA |
 
 #### Industry Focus
 
 | Industry Sector                   | Process focus        | UNTP Usage    |
 | --------------------------------- | -------------------- | ------------- |
 | Automotive, batteries | Traceability & Integrity| VCP, DCC, DTE |
+
+### [K4 Security](https://k4-security.com/)
+
+- UNTP commitment made on: 13-Jan-2024
+- Registration Country: Republic of Korea
+- Operating Countries: Republic of Korea
+- Participate in pre-release UNTP Pilots? : Yes
+
+| Logo     | Implementation Statement      |
+| ------ | --------- |
+| ![Logo](/img/implementations/k4-security.com/logo.png) | KSDPP (K4-Security Digital Product Passport) enables the application of Digital Product Passport (DPP). It allows for the verification of product authenticity while providing a fast and secure means to validate product and supplier information linked to the DPP. |
+
+
+#### Product Information
+
+| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
+| ------ | ------------- | ----------- | ------------ |
+| [KS Product Trust Service](https://dpp.globalwallet.kr/) |KSDID PTS is a supply chain traceability software/service that provides a platform for business to create and manage Digital product passports (DPPs)| VCP, DPP, DTE, DCC. IDR, DAC - v0.5, v1.0 | TBA |
+

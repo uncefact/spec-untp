@@ -24,6 +24,16 @@ Standards such as this United Nations Transparency Protocol (UNTP) and recommend
 
 UN/CEFACT maintains formal liaison arrangements with other UN organisations as well as other global standards bodies such as ISO, ITU, and IEC following a [memorandum of understanding](https://digitallibrary.un.org/record/465895?ln=en&v=pdf).
 
+## Voluntary Standard
+
+Like all UN/CEFACT standards, the UNTP is a voluntary standard that is not mandated by any regulatory framework. Uptake and implementation will be the result of perceived business value. For this reason, UNTP includes
+
+* Business case templates for [industry](../business-case/BusinessCaseIndustry.md) and [government](../business-case/BusinessCaseGovernment.md))to assist implementers with their cost/benefit assessments.
+* A [Value Assessment Framework](../business-case/ValueAssessmentFramework.md) that will collect performance metrics from implementers to track UNTP impact on UN Sustainable Development Goals.
+* An [extensions methodology](../extensions/ExtensionsMethodology.md) and governance framework that provides an incentive for implementations across entire communites led by member associations.
+
+UNTP aims to be the highest value and lowest cost framework for scaling traceability & transparency across global supply chains. 
+
 ## UNTP Governance Details
 
 UNTP is one program within the overall UN/CEFACT governance framework. The diagram below shows how UNTP and recommendation 49 fit within the global UN/CEFACT governance framework and also specifically how UNTP extensions fit within the UNTP governance framework. Extensions are designed to accommodate industry or geographic specific needs of a specific community of implementers and are typically governed by a member association. To be formally [registered as  UNTP extension](../extensions), the extension must also be freely available under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/) and must be interoperable with UNTP specifications. 
@@ -42,9 +52,9 @@ The diagram represents the following key governance concepts:
 
 The diagram shows three classes of implementers within the global value chain.
 
-* **Software systems**, whether commercial or open-source, provide all other implementers with the core technology capability needed to support UNTP. In many cases the underlying software systems will support any industry or geography sector and so will most likely focus on core UNTP conformity, perhaps also supporting some extensions when they have a concentration of customers in a particular industry or geographic sector. UNTP maintains a register of [software system](../implementations/Software.md) implementations.
+* **Software systems**, whether commercial or open-source, provide all other implementers with the core technology capability needed to support UNTP. In many cases the underlying software systems supports any industry or geography sector and so would focus on core UNTP conformity, perhaps also supporting some extensions when they have a concentration of customers in a particular industry or geographic sector. UNTP maintains a register of [software system](../implementations/Software.md) implementations.
 * **Industry actors** such as primary producers, manufacturers, brands, recyclers, transport services, and so on will generally occupy specific industry and geography sectors and so are more likely to be implementers of one or more UNTP extensions. Software systems used by industry actors will generally have implemented core UNTP and will provide some flexibility to configure and support specific rules required by industry and/or geography specific UNTP extensions.  
-* **Trust anchors** such identity registers are expected to implement core UNTP specifications such as [Identity Resolver](../specification/IdentityResolver.md) and [Digital Identity Anchor](../specification/DigitalIdentityAnchor.md). Certifiers will be issuers of very specific conformity credentials such as  certificates of conformance to specific sustainability standards that will be defined in the context of UNTP extensions. Regulators will issue very specific conformity credentials (eg mine permits) but may need to verify a very wide range of conformity credentials and digital product passports as part of border compliance activities. When all industry / geography variants of product passports are based on the same UNTP core, the task for the border authority is simplified. 
+* **Trust anchors** such identity registers would implement core UNTP specifications such as [Identity Resolver](../specification/IdentityResolver.md) and [Digital Identity Anchor](../specification/DigitalIdentityAnchor.md). UNTP provides certifiers with the opportunity to make their existing product and facility certifications digital and verifiable. Regulators may issue regulatory permits, licenses, and certificates (eg mine permits).  Additionally, regulators such as border authorities have the opportunity to automate compliance assessments as verifiers of credentials linked to trade shipments. 
 
 ## UNTP Extension Governance
 
