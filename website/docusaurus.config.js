@@ -64,11 +64,11 @@ const config = {
     ({
       slackLink:
         'https://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
+      mailingListLink: 'https://groups.google.com/g/transparency-uncefact',
       colorMode: {
         disableSwitch: true,
       },
-      // Replace with your project's social card
-      image: 'img/un-crm-social-card.png',
+      image: 'img/social-card.png',
       navbar: {
         title: 'TP',
         logo: {
@@ -98,6 +98,12 @@ const config = {
             position: 'right',
             html: '<svg class="icon icon-slack"><use xlink:href="#slack"></use></svg><span class="menu-item-name">Slack</span>',
             className: 'navbar-slack-link',
+          },
+          {
+            href: 'https://groups.google.com/g/transparency-uncefact',
+            position: 'right',
+            html: '<svg class="icon"><use xlink:href="#mail"></use></svg><span class="menu-item-name">Mailing List</span>',
+            className: 'navbar-mailing-list-link',
           },
           {
             href: 'https://github.com/uncefact/spec-untp',

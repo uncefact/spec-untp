@@ -22,11 +22,16 @@ function HomepageHero() {
         <div className="home-hero__content">
           <h1 className="home-hero__title">{siteConfig.title}</h1>
           <p className="home-hero__description">{siteConfig.tagline}</p>
-          <div className="home-hero__actions">
+          <div className="home-hero__buttons">
             <Link
               className="button button--primary button--lg"
               to={siteConfig.themeConfig.slackLink}>
               Join our chat channel
+            </Link>
+            <Link
+              className="button button--primary button--lg"
+              to={siteConfig.themeConfig.mailingListLink}>
+              Join our mailing list
             </Link>
           </div>
         </div>
