@@ -48,8 +48,13 @@
   max-width: 400px;
 }
 
+.home-hero__image-wrapper {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 996px) {
   .home-hero__image-wrapper {
+    margin-top: 0;
     max-width: 50%;
   }
 }
@@ -62,6 +67,11 @@
   .home-hero__image {
     padding: 0 0 0 75px;
   }
+}
+
+.home-hero__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .home-features {
@@ -107,4 +117,24 @@
 .home-feature__description {
   font-size: 16px;
   line-height: 24px;
+}
+
+.home-hero__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 996px) {
+  .home-hero__buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.home-hero__buttons .button {
+  margin: 0;
+  width: auto;
+  display: inline-flex;
 }
