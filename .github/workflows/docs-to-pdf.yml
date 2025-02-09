@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - fix/add_missing_dependency
     paths-ignore:
       - "website/static/un-transparency-protocol.pdf"
 
@@ -34,6 +35,13 @@ jobs:
         with:
           node-version: 18
           cache: yarn
+
+      - name: Install fs-extra
+        # Workaround: docs-to-pdf expects fs-extra at runtime,
+        # but the package only includes type definitions.
+        # This step installs fs-extra globally until the package
+        # is updated to include it as a proper dependency.
+        run: npm install -g fs-extra
 
       - name: Install dependencies
         run: npm install -g docs-to-pdf
