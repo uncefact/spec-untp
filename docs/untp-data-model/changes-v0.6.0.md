@@ -77,6 +77,12 @@ I'm chatting with Alastair about this to understand the history (it is, I believ
 This also answers other questions or issues I had:
 - Why does the DCC LD re-define core classes (with all their fields) without us defining it in Jargon? (eg. [`Identifier`](https://github.com/uncefact/vocabulary-outputs/blob/70cea8f83acea3bb347cc0ce329f682f25795f4b/_artefacts/untp-dcc-context-0.5.0.jsonld#L47-L60) or `Attestation`) Answer: because we're referring to them or needing them available without actually having including the core context in the credential document.
 - How do the redefinitions of certain classes, but with fields removed, not cause jsonld redefinition errors? Answer: because we're not importing the core context at all :/
+- Even things like the following definition of DigitalConformityCredential:
+```
+DigitalConformityCredential:untp.VerifiableCredential
+  credentialSubject:ConformityAttestation
+```
+should be invalid as it redefines the `credentialSubject` term. Again, the only reason this doesn't error is because we're not currently importing the untp-core context in our actual generated jsonld.
 
 Given that this has been the case for some time, I'll wait to hear from Alastair, but I think the longer-term solution is to ensure we are *not* redefining core classes and instead are always expecting our credentials to be importing the core context. Yet we can't just switch to do so quickly as it not only requires changes in jargon but also our model (due to the current redefinitions).
 
@@ -117,6 +123,12 @@ We should do this at least for the VC properties that we use, as otherwise we ma
 ## UNTP Core
 
 TDB, but this will basically be the results from the previous sections that required core changes.
+
+Currently this is:
+- `VerifiableCredential.validFrom` and `validUntil` - set patterns
+- Identifier relationship with Facility/Product/Party (IS-A or not) related to `Standard.issuingParty`.
+- 
+- 
 
 
 ## Digital Product Passport
