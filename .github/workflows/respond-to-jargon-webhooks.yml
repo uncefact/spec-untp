@@ -1,0 +1,74 @@
+name: respond-to-jargon-webhooks
+
+on:
+  repository_dispatch:
+    types: [test_result]
+
+env:
+  ARTEFACT_DIR: jargon/
+  CI_AUTHOR: jargon-sh
+
+jobs:
+  run_if_failure:
+    if: ${{ !github.event.client_payload.passed }}
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          MESSAGE: ${{ github.event.client_payload.message }}
+        run: echo $MESSAGE
+
+  # get-jargonArtefacts:
+  #   runs-on: ubuntu-latest
+
+  #   permissions:
+  #     # Give the default GITHUB_TOKEN write permission to commit and push the
+  #     # added or changed files to the repository.
+  #     contents: write
+
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - run: mkdir -p ${{ env.ARTEFACT_DIR }}
+  #     - uses: actions/setup-python@v2
+  #     - uses: jannekem/run-python-script-action@v1
+  #       with:
+  #         script: |
+  #           import urllib.request
+  #           import json
+
+  #           def download(url, fileName):
+  #             try:
+  #               urllib.request.urlretrieve(url, '${{ env.ARTEFACT_DIR }}' + fileName)
+  #             except:
+  #               print('Failed to download: ' + url)
+
+  #           # Parse the Json Webhook from Jargon
+  #           jsonObj = json.loads("""${{ toJSON(github.event.client_payload) }}""")
+
+  #           # Determine if this was a Release, or Snapshot
+  #           onRelease = False
+  #           if jsonObj['action']['name'] == "onRelease": onRelease = True
+
+  #           if "test" in jsonObj['action']:
+  #             # Do nothing for test runs
+  #             print('Running in test mode. Exiting')
+  #           else:
+  #             # Download the artefacts
+  #             artefacts = jsonObj['artefacts']
+  #             for artefactType in artefacts:
+  #               if artefactType == 'lifeCycles':
+  #                 lifeCycles = artefacts['lifeCycles']
+  #                 for cycle in lifeCycles:
+  #                   download(cycle['url'], cycle['fileName'])
+  #               else:
+  #                 artefact = artefacts[artefactType]
+  #                 download(artefact['url'], artefact['fileName'])
+                  
+  #     # Commit and push all changed files.
+  #     - name: Commit & Push
+  #       if: ${{ github.event.client_payload.action.test }} == undefined 
+  #       run: |
+  #         git config --global user.name "${{ env.CI_AUTHOR }}"
+  #         git config --global user.email "${{ env.CI_AUTHOR }}@users.noreply.github.com"
+  #         git add ${{ env.ARTEFACT_DIR }}/*
+  #         git commit -m "Update ${{ github.event.client_payload.domain.account}}/${{ github.event.client_payload.domain.name }} from Jargon"
+  #         git push
