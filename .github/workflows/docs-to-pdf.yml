@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - fix/add_missing_dependency
     paths-ignore:
       - "website/static/un-transparency-protocol.pdf"
 
@@ -41,6 +40,7 @@ jobs:
         # but the package only includes type definitions.
         # This step installs fs-extra globally until the package
         # is updated to include it as a proper dependency.
+        # You can track the progress here: https://github.com/jean-humann/docs-to-pdf/pull/484
         run: npm install -g fs-extra
 
       - name: Install dependencies
@@ -49,7 +49,7 @@ jobs:
       - name: Generate PDF
         run: |
           echo "waiting for two minutes for GitHub pages to be deployed..."
-          # sleep 120 && echo "Done!"
+          sleep 120 && echo "Done!"
           npx docs-to-pdf --initialDocURLs="https://uncefact.github.io/spec-untp/docs/about/" \
           --contentSelector="article" \
           --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" \
