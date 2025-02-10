@@ -49,7 +49,7 @@ jobs:
       - name: Generate PDF
         run: |
           echo "waiting for two minutes for GitHub pages to be deployed..."
-          sleep 120 && echo "Done!"
+          # sleep 120 && echo "Done!"
           npx docs-to-pdf --initialDocURLs="https://uncefact.github.io/spec-untp/docs/about/" \
           --contentSelector="article" \
           --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" \
@@ -57,7 +57,8 @@ jobs:
           --excludeURLs="https://uncefact.github.io/spec-untp/docs/about/Meetings,https://uncefact.github.io/spec-untp/docs/about/FAQ" \
           --outputPDFFilename="website/static/un-transparency-protocol.pdf" \
           --coverTitle="UN Transparency Protocol" \
-          --coverImage="https://uncefact.github.io/spec-untp/img/home-hero.jpg"
+          --coverImage="https://uncefact.github.io/spec-untp/img/home-hero.jpg" \
+          --puppeteerArgs="--no-sandbox,--disable-setuid-sandbox"
 
       - name: commit pdf
         run: |
