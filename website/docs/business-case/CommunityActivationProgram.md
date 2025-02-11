@@ -7,7 +7,9 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-# Introduction
+# Community Activation Program
+
+## Introduction
 
 The Community Activation Program (CAP) serves as a comprehensive framework and collaborative community designed to support industries in developing and implementing their own UNTP extension projects. Communities, supported by UNECE, continue to thrive long after the project is complete, aiding industries in adopting extensions and associated tools.
 
@@ -25,7 +27,7 @@ Starting a UNTP project requires careful consideration of specific foundational 
 
 * **Funding mechanism**: Robust and sustainable funding is crucial for supporting the project’s initial phases, covering development, outreach, and pilot testing. This ensures that the project gains traction and delivers early successes to build momentum.
 
-# CAP delivers value to industries and creates a flywheel of adoption
+## CAP delivers value to industries and creates a flywheel of adoption
 
 Industry associations engaging with CAP to develop UNTP extensions benefit from:
 
@@ -41,7 +43,7 @@ As extension projects mature, they generate a self-sustaining flywheel effect. T
 
 ![](costbenefit.png)
 
-# CAP supports a structured approach to extension development and adoption
+## CAP supports a structured approach to extension development and adoption
 
 The CAP toolkit offers a proven, six-phase methodology:
 
@@ -57,7 +59,7 @@ The CAP toolkit offers a proven, six-phase methodology:
 
 [More on the methodology here.](https://uncefact.github.io/spec-untp/docs/tools-and-support/ImplementationPlans)
 
-# A successful UNTP extension project is a team effort
+## A successful UNTP extension project is a team effort
 
 UNTP extension projects thrive through collaboration with a wide range of stakeholders.
 ![Activation Flywheel](CommunityActivationFlywheel.png)
@@ -78,7 +80,7 @@ CAP member stakeholders bring unique needs and derive tailored benefits:
 
 * **UNECE**: Act as a global steward, offering governance frameworks that ensure alignment and interoperability across projects. Their involvement fosters cooperation, providing guidance that strengthens the foundation for sustainable and globally consistent practices.
 
-# A UNTP extension team requires specialist skills
+## A UNTP extension team requires specialist skills
 
 To deliver a successful extension project, teams require a range of specialist skills. In addition to deep industry knowledge brought by the industry association and its members, a project should have:
 
@@ -94,7 +96,7 @@ To deliver a successful extension project, teams require a range of specialist s
 
 * **UNTP extension knowledge**: Deep understanding of the UNTP framework is indispensable for designing and implementing extensions that meet global standards. Teams must navigate trade protocols, ensure data governance, and address technical interoperability challenges to deliver scalable and impactful solutions.
 
-# CAP membership provides access to valuable resources
+## CAP membership provides access to valuable resources
 
 As a member of the Community Activation Program, members can access a wide range of resources:
 
@@ -104,7 +106,7 @@ As a member of the Community Activation Program, members can access a wide range
 * **Collaboration networks**: Engaging with established UNTP extension programs offers valuable opportunities for shared learning and innovation. These networks allow new participants to benefit from the experiences of others, adapt proven methodologies, and align their projects with broader industry goals. Collaboration also strengthens the ecosystem, making it easier for new extensions to integrate seamlessly.  
 * **Software tools**: A suite of software solutions is available to support UNTP extension projects. These tools facilitate rigorous testing, ensure conformance with established standards, and simplify supply chain management processes. By automating critical workflows and enabling data interoperability, these tools reduce the complexity of project implementation and drive efficiency.
 
-# Starting a community is simple
+## Starting a community is simple
 
 * **Join the community**: Join the [UNTP chat channel](https://uncefact.slack.com/ssb/redirect) to connect with a UNTP leader and discuss your community needs. By joining the community, participants gain access to ongoing support, exclusive updates, and a global network of peers dedicated to advancing UNTP standards.
 
