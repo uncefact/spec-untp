@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - ci/exclude_implementation_register
     paths-ignore:
       - "website/static/un-transparency-protocol.pdf"
 
