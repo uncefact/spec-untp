@@ -35,6 +35,14 @@ jobs:
           node-version: 18
           cache: yarn
 
+      - name: Install fs-extra
+        # Workaround: docs-to-pdf expects fs-extra at runtime,
+        # but the package only includes type definitions.
+        # This step installs fs-extra globally until the package
+        # is updated to include it as a proper dependency.
+        # You can track the progress here: https://github.com/jean-humann/docs-to-pdf/pull/484
+        run: npm install -g fs-extra
+
       - name: Install dependencies
         run: npm install -g docs-to-pdf
 
@@ -46,10 +54,13 @@ jobs:
           --contentSelector="article" \
           --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" \
           --excludeSelectors=".breadcrumbs,.theme-edit-this-page" \
+          --excludePaths="/docs/implementations/" \
           --excludeURLs="https://uncefact.github.io/spec-untp/docs/about/Meetings,https://uncefact.github.io/spec-untp/docs/about/FAQ" \
           --outputPDFFilename="website/static/un-transparency-protocol.pdf" \
           --coverTitle="UN Transparency Protocol" \
-          --coverImage="https://uncefact.github.io/spec-untp/img/home-hero.jpg"
+          --coverImage="https://uncefact.github.io/spec-untp/img/home-hero.jpg" \
+          --cssStyle="body { font-size: 13px !important; } h1 { font-size: 40px !important; } h2 { font-size: 26px !important; } h3 { font-size: 20px !important; } h4 { font-size: 13px !important; }" \
+          --puppeteerArgs="--no-sandbox,--disable-setuid-sandbox"
 
       - name: commit pdf
         run: |

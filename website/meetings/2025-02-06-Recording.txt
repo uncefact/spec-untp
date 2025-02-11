@@ -1,0 +1,601 @@
+[Speaker 8]
+Good morning, David.
+
+[Speaker 6]
+Good morning. How are you?
+
+[Speaker 8]
+I'm well.
+
+[Speaker 6]
+Good to hear. Let me move the screen. What part of the world are you in?
+
+[Speaker 8]
+I'm in Perth.
+
+[Speaker 6]
+In Perth, okay.
+
+[Speaker 8]
+So it's 3.57 in the morning.
+
+[Speaker 6]
+Oh, geez.
+
+[Speaker 8]
+It's called commitment. It is.
+
+[Speaker 6]
+It's been a few years since I've had to have this sort of international commitment.
+
+[Speaker 8]
+Okay. So where are you based?
+
+[Speaker 6]
+Canberra.
+
+[Speaker 8]
+Okay.
+
+[Speaker 6]
+So gearing up for the election? Gearing down, depending on what part of the world. If you're doing any work in the public sector, it's definitely gearing down.
+
+[Speaker 8]
+Oh, okay.
+
+[Speaker 6]
+Things go into caretaker mode, so it gets awfully snoozy. So is that where you do most of your work? At the moment, yeah.
+
+I'm doing mostly public sector work. I'm easing out of that into some more private sector work. That's my appearance at the UNTP stuff.
+
+[Speaker 2]
+Okay.
+
+[Speaker 6]
+Bear with me one second.
+
+[Speaker 7]
+Hello, everybody. Good morning. Good morning.
+
+It was so quiet, I thought I would say hello. Good morning to you all.
+
+[Speaker 5]
+Check the microphone and speakers are working.
+
+[Speaker 7]
+Exactly. Get the right background and all of these kinds of things.
+
+[Speaker 5]
+Hi there.
+
+[Speaker 3]
+This feels like one of those tests in the meeting where you stay quiet and wait to see if anybody says anything.
+
+[Speaker 7]
+We said good morning already or good afternoon or good evening.
+
+[Speaker 3]
+I was fiddling with my audio, but it was all quiet.
+
+[Speaker 7]
+It looks like the big meeting room is trying to connect with audio.
+
+[Speaker 3]
+Is that where Steve is?
+
+[Speaker 7]
+Sure. It's ISOTC 154. Maybe Zach knows where Steve is.
+
+Hi, Zach.
+
+[Speaker 4]
+Good morning. Good afternoon. Steve should be here.
+
+Let me text him.
+
+[Speaker 7]
+Only two minutes.
+
+[Speaker 3]
+He's coming in now.
+
+[Speaker 1]
+Hello, everyone. Sorry I'm late.
+
+[Speaker 7]
+Good morning. Hey, Steve.
+
+[Speaker 1]
+Hi, Nancy. Perhaps we should make the start. Yes.
+
+Welcome, everyone. To UNTP meeting. Again, the usual reminder, this is a UNTP meeting.
+
+This is a UN project and your contributions are UN IP. And this meeting is being recorded. Let me know if there's any objections to either of those two.
+
+Let me share my screen. There we go. Find the PRs.
+
+[Speaker 8]
+Right.
+
+[Speaker 1]
+So there are five change requests to run through. Hopefully some of them are not very controversial. But let's start with the identity resolver page updates.
+
+Start at the bottom and work to the top. This one is a fairly significant one. Let me find the branch.
+
+I just woke up. I'll just go to the branch that has the page so we can look at it.
+
+[Speaker 8]
+Where is it? Right.
+
+[Speaker 1]
+So this is the part of UNTP which addresses that issue of if you've got an identifier of a thing, you should be able to resolve that identifier to find further data about the thing such as a digital product passport or facility record or whatever. The page starts by just reminding us what types of identifiers we're talking about. Product identifiers, facility identifiers, business identifiers.
+
+There's actually hundreds of them. A few at global level. And I've put a few examples here.
+
+I'm not trying to preference anyone over another. And a lot more at national level. And they all play an important part in the value chain.
+
+And there's some examples. I used Australian ones at the national level because I happen to know them. But you'll find the equivalent in almost any country.
+
+And then I'll just walk through this diagram here because it kind of I think highlights the process. So it starts with- We're not seeing your screen.
+
+[Speaker 8]
+Are you sharing your screen, Steve?
+
+[Speaker 1]
+Yes. No, I'm seeing. You're not seeing it?
+
+No. We can see it. We do.
+
+Yeah, we do. I do. I do.
+
+[Speaker 6]
+Oh, okay. Sorry. Yes, sorry.
+
+I had clicked on the wrong thing. I apologise.
+
+[Speaker 1]
+That's all right. It happens. Yeah, so there's this kind of workflow diagram here that goes through the lifecycle of discovering an ID, resolving it, and verifying it.
+
+And most of the rest of the document is just, you know, fits somewhere on this diagram. So it doesn't have to be a product ID, but it's the most, you know, common one. So I'll use that as an example here.
+
+But imagine we start with some product with some data carrier on it. Could be a 1D barcode or a 2D matrix or an RFID or anything, really. It could even be a text on the side of a container.
+
+Scanning that data carrier will reveal or contain identifier information, the identifier of that product. But interestingly, for the same product, the way the identifier is represented somewhere in the string that you get out of either an RFID or a barcode or a 2D matrix could be different. In other words, the same product will have a different string or different combination of characters, if you like, in any of these carriers.
+
+So there's a process to kind of pull out of that carrier what the actual ID is of that product. And then having got that, to be able to say, okay, now where do I look for further information about that product? This is the process of turning an identifier into a URL.
+
+This is step two. That may or may not be supported by some sort of registry of identifiers. For example, there is a separate project being considered to construct a kind of global register of identifier schemes.
+
+And in there, you might find, well, if you've got this identifier type and here's the identifier, this is how you construct a resolver URL. You insert the identifier in the URL here, and that will construct a URL to a link resolver. So at this point, at the end of step two, you've got a URL which takes you to a service that will say, here's what I know about that product.
+
+Now, if in some cases the data carrier is actually a QR code on the product and is constructed as a URL, then you'd be starting really at this point. But it's not always the case. Does that make sense?
+
+You might have a QR code that is actually a link resolver URL, in which case you don't need these first two steps. And then hitting the link resolver URL, what we get back is a link set. In other words, this is the list of things I know about this product.
+
+And this idea of going from one carrier to multiple bits of data about that identified thing is quite important, right? Because if you didn't do that, you'd need to put some sort of QR code or data carrier or something on a box or a product for everything you want to reveal. Imagine you had a digital product passport and you had, I don't know, some general product information, a material set, safety data sheet, and so on.
+
+If you had to have a separate data carrier for each one of those, your product would be just covered with data carriers. So this key idea here is one data carrier can reveal multiple information sets about that thing. So this is the process of going from a query URL to a set of links.
+
+And then the next step is, well, follow any of those links. Which one are you interested in? I want the digital product passport or I want something else.
+
+And then following those links, in this case, let's say you follow a link to the digital product passport, then you verify it and you've got some data about your supply chain. And what these feedback lines are saying is that you're likely to find more identifiers inside the documents that you discover, right? So you find a digital product passport, and then it's got a manufactured at facility, and there's a facility ID there.
+
+Now you want to say, oh, well, tell me more about this facility. Imagine a machine doing this, or it could be a human clicking. Then you've got an ID, which you go back through this loop.
+
+You're not starting right at the beginning, because you're not going to find a barcode inside the structured document. You'll find this ID all ready to go. And then resolve it, get more information, and keep following this loop, basically, as far as you want to, as far as you can, to build, essentially, a graph of knowledge about this value chain.
+
+So that's what this diagram is trying to show. And that's what this part of, yeah?
+
+[Speaker 2]
+What is DIA?
+
+[Speaker 1]
+Digital Identity Anchor. Digital Identity. It's just an example of what you might discover.
+
+Sorry?
+
+[Speaker 2]
+What is the A?
+
+[Speaker 1]
+Anchor.
+
+[Speaker 2]
+Digital Identity. Anchor.
+
+[Speaker 8]
+Like a ship anchor.
+
+[Speaker 2]
+Oh, anchor. Anchor, okay. You might want to.
+
+[Speaker 1]
+Yeah, we've got too many acronyms here. I agree. It's a tight diagram.
+
+I try not to use them elsewhere. Maybe I'll put something. But so that's the flow.
+
+Has anyone got any questions or comments on that? So the rest of this is basically a bunch of text that walks through how that works, right? And what we need to do is write this in such a way that it supports any existing identifier scheme, right?
+
+But also allows someone to use, let's say, decentralized identifiers. There's been a few comments to say, you know, it's all very well supporting existing schemes, but what if I want to use self-issued identifiers to identify my product? So there's part of this spec that says, well, if you want to, that's how you do it.
+
+There's some requirements here. It won't be too surprising. You know, IDs need to be globally unique.
+
+How do you ensure that? This one carrier many links thing I mentioned, leveraging existing schemes, leveraging existing carriers. Don't want to force anyone to have to change identifier schemes or use new carriers.
+
+You can if you want to, but you don't have to. There's an ongoing transition already around the world from sort of 1D bar codes to 2D QR codes and the like. So fit in with that.
+
+Provide a way. Also, I think I mentioned that, you know, given an ID of a thing, you have a URL that gives you a link set, but it ought to be able to default that so that a user can be just given the thing that you think is most important to them. So the effect would be you scan a carrier and you just immediately see, for example, a digital product passport because you set it as a default.
+
+And then there's some stuff about some words about how you would change that default depending on things like user context. So if I'm in Germany, I see the digital product passport in German by default. If I'm in France, I see it in French by default.
+
+So, yeah. So that's it. This has been, Paige has been out there for nearly a bit over a week.
+
+There's been a number of comments. Does anyone, I hope you've had, those that are interested have had time to read it and I've, you know, I've received some comments and resolved them. There's any other any questions or any objections to merging this page.
+
+[Speaker 3]
+Steve, if you is persistent another characteristic of the identifier of the such that it stays with the product during its lifecycle. Instead of having it instead of having a tag attached to a t-shirt that is removed. The moment that it's purchased is that there's that the identifier should be persistent such that it can support circularity as well.
+
+[Speaker 1]
+Yeah, I haven't said that I could, I don't know if it's in the scope of that's talking about really how to construct data carriers. There's a whole separate kind of conversation about that because for example, for clothing, it's quite tricky, right? People like to, I cut the tags off because I hate them.
+
+So Steve, there's also this concept of, you know, on the upstream side ingredients or components into the finished product, you do those component identifiers have persistent link to the final product identifier. And if so, is that something we should, we should be considering or have you considered already? You mean how you connect, for example, the identifier of raw materials to the identifier of the finished product?
+
+Yeah. And, and some raw materials are difficult, but let's just say ingredients in a pharmaceutical product or, you know, batch level, farm information, you know, batch level harvest information into, you know, final, final product that goes to the grocery store or electronic components into a larger, you know, finished good product.
+
+[Speaker 5]
+Are there, is there persistent identifiers that is there, is there a knitting of that component level information that would be traceable with the final final product identifier?
+
+[Speaker 1]
+Yes. That's another part of the specification though, right? Around traceability events and the content of a digital product passport.
+
+This page is more about just the single step, given an idea of a thing, how do I get data about that thing? Right. So there's other parts of UNTP that say, for example, if I've got a battery and I get a passport about the battery, then the passport may have information about the constituent materials and each constituent material might have an identifier in which case the cycle repeats again.
+
+If you want to go and find, for example, further information about the copper that went into the anode of the battery, you might be able to trace it back to a mine site, but that's, this page is just strictly for, I've got an idea of a thing. How do I get data about a thing?
+
+[Speaker 3]
+Steve, some of that would have been in the recycle that you described where you open it up and you discover more identifiers and you go back. So that's in that recycle loop.
+
+[Speaker 1]
+Some people have had their hand up for a while. So Nancy, would you like to comment?
+
+[Speaker 8]
+Yeah. I was just, I noticed that you included glyph identifiers.
+
+[Speaker 1]
+As an example. As an example. Yeah.
+
+And I just was wondering if you could speak to that a bit. Yeah. I know that there's been, we've had back and forth on LEIs and how widespread they are.
+
+Yeah. So, I'm trying not to sort of imply in this diagram here that you have to use glyph or you have to use GS1, or if you've got a cow, it must be an NOIS. These are meant to be just examples.
+
+[Speaker 8]
+Okay.
+
+[Speaker 1]
+Right. And so the key message I'm trying to convey, whether I succeed or not with this diagram is look, there's already six identifier schemes just on this diagram, right? We're not saying you must use this one or we're preferencing that one.
+
+We're just saying, here's a general architecture for any identifier scheme to resolve into further information about that identified thing. So if you have a glyph ID, you'd construct a URL and you'd hit a glyph endpoint that would tell you about that organization. But similarly, you might have an Australian business number and do the same thing.
+
+[Speaker 8]
+That makes sense. And I think it does, it does show that there's lots, that there's many, many different examples.
+
+[Speaker 1]
+Yeah. Yeah. One of the comments we got on this is that spec looks a lot like the GS1 link resolver spec.
+
+Why don't you just point at the GS1 link resolver spec? The answer to that is kind of shown in this diagram. It's a great spec, but it's full of GS1 identifiers.
+
+Of course, because GS1 wrote it, right? So no surprise there, quite reasonable. But the message we're trying to pass is you can use the same discovery architecture for any identifier.
+
+And there are literally hundreds or thousands of them. And so, and you know, depending on the context, for example, this is national livestock, a hundred million livestock in Australia with an identifier at any one time, they roughly have a three year life cycle. So around 30 million of these every year, you know, many times the population of the country.
+
+So at least in this, for that industry in this jurisdiction, this is a pretty significant identifier. It's not going to, we're not going to change the way a national economy puts RFID tags in cattle's ear just because we write a new spec, right? Yeah.
+
+You must be, if we're going to build a global traceability and transparency scheme, if you don't build it on top of existing schemes, you're going to be waiting a long time for anything to happen, right? Because nobody's going to go around and change a hundred million RFID tags. So you have to say, you have to show how you build on top of it.
+
+That's the main intent here.
+
+[Speaker 8]
+Makes sense to me. Thanks.
+
+[Speaker 1]
+David.
+
+[Speaker 6]
+I was just going to respond to the comment earlier about the persistence of identifiers on products. I think that may be stepping into the realm of regular regulation. And so we probably want to avoid bringing any of that into a spec.
+
+A spec just tells us how we find something or how we transmit information or construct it. But that one certainly is something where you might have a regulation in say the EU that says, you know, that the identifier must persist with the product. We probably shouldn't get involved in that stuff.
+
+[Speaker 8]
+Virginia?
+
+[Speaker 2]
+I was just going to say to avoid any comments like we had comments when we use GS1 as examples in REC 49, people started saying that we were promoting GS1. So what I was thinking is that when you refer to that diagram, you should probably say add with example. So just put...
+
+[Speaker 1]
+I'll make stronger words to indicate that these are just examples.
+
+[Speaker 2]
+The diagram shows examples of global and local schemes for three types of entities. Starting on the second sentence of that paragraph.
+
+[Speaker 1]
+These are just a few of thousands of existing. So I sort of say that, but...
+
+[Speaker 2]
+Shows examples.
+
+[Speaker 1]
+Yeah, rather than an example.
+
+[Speaker 2]
+Yeah, shows examples of global and local schemes, plural, for three types of entities. That should be plural anyway. You can't have...
+
+[Speaker 1]
+Yes, yes. And maybe I'll get rid of these words here. So leave the examples in the diagram.
+
+Yeah, look, I know there's a bit of politics around that. And we've got to kind of navigate a careful balance because we want to very clearly show that this works for any identifier scheme, but at the same time, particularly for finished products, GS1 is so prevalent that it would... I don't want people going, oh, what are you telling me?
+
+I've got to retool my use of GS1. No, you don't. You can use it if you want, but you don't have to.
+
+So the key thing is to make that message really clear, right? Okay, I'll revisit the words there. Zach?
+
+[Speaker 4]
+I was going to suggest that we approve this PR. And on the persistence question, I'd like to suggest that we raise a ticket because there is the guiding principle that if you have a thing, you should be able to find more information about a thing. So what I will do is I'll create a ticket that says, talk about persistence of identifiers.
+
+And maybe it's a should instead of a must in the requirements thing. But I think we should talk about that in the ticket and potentially do a new PR in the future.
+
+[Speaker 8]
+Here we go. All right.
+
+[Speaker 1]
+Anyway, that was one of the last bits of, where are we? Really? All right then.
+
+Next one. The next one is, comes from Ashley and is requesting us to change the words on the verifiable credentials page, which is about a year old now that currently says you can use either version 1.1 or version two to say you must use version two. And that's because we run into all kinds of headaches, trying to accommodate two slightly different specs and implementation life and verification.
+
+So it gets a lot easier if we just say, well, now version 2.0 spec is what this is built on. So I don't know if any, a couple of people have reviewed it and approved it. Mostly the technical people like Patrick and who else?
+
+Nis, I think. Does anyone have any comments or feelings about this one? There's no great concern.
+
+A year ago, the version two spec was, if you like, fresh off the, off the production line. And so it was a bit of an ask, but I think almost every verifiable credential tool vendor now supports version two. So it's not, not too much of an impost.
+
+All right. We'll do that. Next one.
+
+Oh, this should be fairly straightforward. So this is just another implementation commitment from a company called K4 security in Korea. I'm not entirely sure how they discovered this and made a commitment, but they have, I checked their website.
+
+It seems legit. Does anyone have any, any concerns about adding, I don't know, this will be the 15th or 16th commitment. It's just another entry on the page.
+
+No concerns. Might come back to that one or is Michael on the call? Yeah, I am.
+
+All right. Okay. Are you proposing to discuss in the PR or merge this PR and then comment on the merge?
+
+[Speaker 4]
+My proposal is just that you and I probably outside of this call just talk through and make sure we agree on those changes and do that.
+
+[Speaker 1]
+If people are interested, we can go through it now, but it's probably best to go through other things like the implementation guidance page. All right. So, but just quickly what this one is about for those that want to have a look is when we released 0.5 for testing, several people started testing. Great. That's the point. And found some bugs and they're kind of technical bugs.
+
+So one of the things with linked data is that every object, like a facility or a product or, or something in the JSON structure should have a type property. And it's not that familiar a pattern for normal developers to insert these types everywhere. So we created schema that forced the type value, but it seemed like a good idea at the time, but actually made life difficult for some that wanted to have a type extension like this digital product conformity credential.
+
+I'm using it for a British Columbia mine permit, but I'm not actually creating a new schema for a British Columbia mine permit. I'm just basically got some rules about use of it. So I still want to say it's a mine permit and the schema didn't allow you to do it.
+
+That's one little bug. And there was another one about some linked data or JSON LD challenges where we thought we were generating valid graphs, but there was some redefinitions. And anyway, there's basically some bugs in the technical bits of the schema and so, and the link data graph.
+
+So this is, this is a fix to it, but the more technical people can have a read of that, but maybe as a suggestion, move on to this one implementation guidance page. I should have that here. Yeah.
+
+So this page currently has nothing on it. This is the branch that shows what would be there. You look at the current page, it just says implementation guidance and blank.
+
+So what I've done is try to convey an understandable story of what does it mean to actually implement UNTP? Because if you arrive at the UNTP site as an industry actor or as a certifier or as a software vendor, it's very easy to get a bit overwhelmed with all these specs and go, well, where do I start? Right.
+
+And so this page is the beginnings of a kind of a navigation of what do I do? And I try to really simplify at an abstract level, the implementation sequence. So this says, well, everyone will go through these kind of five conceptual steps, right?
+
+First of all, is there value for me? Take a look at the business case and see if it makes sense to you. See if you can find your role in there and confirm that, well, this looks interesting.
+
+I think I would like to consider implementation. And then it says, okay, then look at the pages that are relevant to you. Right?
+
+So down here, if you're a producer, registry operator, conformity assessment body, which bits are relevant to you and register your intent to implement right. So just add a new name to the, to the repository of implementation intent. And then this, this line assumes that you're not that one role, which is a software vendor.
+
+You're, you're any of the other roles, basically choose a software product or request your existing software system provider to implement UNTP and test it works. And then register your update, your registration to say I've implemented and it works run a pilot. And then if, and then scale up, that was basically the workflow.
+
+It is obviously a bit simplified because there's lots of details inside those steps. But I think that's a general repeatable pattern. And then put this little section in here because we did have some comments to say, Oh, this is quite a complex spec.
+
+There's no way a small, small or medium business will be able to implement this. Right. And so I've deliberately put this bit here that says, look, if you're a small business, you'll probably never look at this page.
+
+Any of them, right. You won't even know that you're using UNTP because your software provider will either implement it or won't implement it. And you'll be issuing digital product passports as part of your business without understanding how it all works under the covers.
+
+I can't imagine any small business anywhere on the planet actually reading this spec and deciding to implement it. Right. So just feel it's important to make that distinction, you know, in the same way that you don't read the ISO 2022 spec, when you want to send a payment overseas, you just send a payment overseas using your banking app.
+
+And this is bearing out in some early implementations. You know, some of the, for example, the farm software products in Australia that have, let's say 60,000 farms using their software are gearing up to implement AATP, which is an extension of UNTP. So it means those 60,000 farmers will just carry on farming using Agriweb, but there'll be passports associated with cows and sheep and the like.
+
+Right. But none of them will read this spec. Medium businesses, on the other hand, tend to have a slightly more complex landscape and still they'll be using some software product, but they might have to integrate a little bit and test a bit more.
+
+Right. And large enterprise, well, they have a complex ICT landscape. God knows what is the system of record for this or that product.
+
+It'll be a project. Right. But yeah, I wanted to put that in there.
+
+And then this page here, this table here, sorry, says in just a few words, what it means for each of these actors to implement. Right. So producers and manufacturers issue product passports, facility records, and traceability events, according to guidelines specified in industry extensions.
+
+Because I think very few actual supply chain actors will implement UN generic product passport. They'll be implementing a livestock passport or a leather passport or a battery passport or something and so on down here. And each of these links to a page that we haven't yet populated, but where I want to put a bit of a detailed template.
+
+Right. So you land here and there's a downloadable document or something that is, is an implementation, more detailed implementation guide. And then, yeah, a bit about what industry and geographic sector are you in?
+
+And I'm trying to say here that like organization like software vendors, registry operators, regulators, and scheme owners are probably more implementing UNTP core. But once you get into UNTP extensions are more, you know, they're created by industry associations to be used by manufacturers and producers and brands. This bit here.
+
+And I'm not sure I've really got the message right here, but what's not yet obvious, I think is that what all this means is that there's kind of some dependencies, especially if you're an industry actor, right? You're a farmer or a battery manufacturer or whatever you're, you could just pick up this or the extension. You maybe you're big enough and start to, to implement, but more likely, you know, you're, you're a member of some industry group and you're being led by that industry association to say, Hey, we're getting together to implement traceability and Australian agriculture.
+
+And we're using this collective specification called Australian agriculture traceability protocol. You know, there's a kind of a dependency on the farmer for the, an industry associate relevant industry association to, to get their members together to agree. And then there's also a dependency on some software product.
+
+And what you generally find too, is that in a given industry sector, either country and or, and or industry, you tend to find a, a concentration of particular software products, right? So a lot of Australian cattle farmers use Agriweb. It's probably about 50% of all farms.
+
+So one software vendor implements an extension and 50,000 farms are then able to participate in transparent supply chains. So it was kind of this dependency flow. If I'm one of those actors, I want to choose a software that's implemented and I'm a member of an industry association.
+
+And that makes the whole thing much more straightforward, right? Registry operators too. If you want to be able to resolve the whole discussion that started this meeting, there's a dependency on registry operators, implementing link resolvers.
+
+So this is a bit of a dependency diagram. I worry it's a bit too messy and complicated, but it's trying to show us, particularly in the bold lines, this story, right? This is what we're seeing.
+
+It's early days yet, but we're seeing extension communities get together around extensions to start to influence the software vendors in their community to say, all right, here's how we're all going to act. And so this, this dependency flow is materializing right now in, in various extensions, but that's what that's about. So any questions?
+
+Virginia has got her hand up.
+
+[Speaker 2]
+Sorry, actually I don't, I forgot to put it down after the last time.
+
+[Speaker 1]
+Okay. Clary?
+
+[Speaker 7]
+What do you think should we maybe add advisory and implementation services in these categories? Because there might be intermediaries between the vendors and the brand owners and the food manufacturers, for example.
+
+[Speaker 1]
+Yeah. Consulting services. Yeah.
+
+[Speaker 7]
+Or yeah. Something like consulting or implementation services, because there are a lot of middlemen between the core providers.
+
+[Speaker 1]
+There are. Yes. And they'll be quite important because they're the ones that help you get it right.
+
+Yeah. So yes.
+
+[Speaker 7]
+That's cool. Perfect. If you want to add that, thank you.
+
+[Speaker 3]
+John? Good call, Clary. Two, two things.
+
+One was on the, on the sort of five step process you described at the beginning, I was wondering whether we need anything that talks about the sort of run step you, you hinted at in step five, but if you've got something like a, an extension scheme that's been approved and being looked after that, that, that group will have to decide how they manage the extension going forward. They'll have to have their own governance process, which, which was you articulated elsewhere on the spec, which they interact with UNTP. So there's a sort of, there's a sort of run thing that happens after you've implemented and five goes to it.
+
+But the, the run for things like extensions and schemes, has a governance aspect to it for those individuals running the scheme or the extension.
+
+[Speaker 1]
+Yeah. I, I agree. Oh God.
+
+Sorry.
+
+[Speaker 3]
+Sorry. No, I wanted to put the two points in just to be proficiency. And the second one was when you were looking at the dependencies, it struck me that what you've described in the, and some key dependencies are actually enablers for scale.
+
+So when you first read and some key dependencies, it feels like it's a, it's a, it's a, a, a challenge to actually get this thing to work. What you've described are the things that actually make it work at scale. And it feels like they're scale enablers rather than dependencies.
+
+If you kind of flip the logic around, I think there might be a way to, both of those comments, I'd be happy to sort of commit the pull request and do them later as an update.
+
+[Speaker 1]
+Yeah. If you want to make a PR right after that, I think they're both good points. I did actually delete a bunch of words that were much more fine grained implementation steps because I looked at it, landed on again with fresh eyes and it was this big list of do this and this and this and this and that.
+
+And it looked a bit overwhelming. And so I thought what I wanted to do with five simple steps, even though they could be anything but simple, especially for a large enterprise that they might be almost invisibly simple for a small business is just convey a general pattern and wanted to put all the details in those, the empty page, you know, where you have kind of implementation guidance would be largely targeted at the bigger businesses. But yes.
+
+All right. I think they're both good points. Virginia.
+
+[Speaker 2]
+Yeah. I, after I put my hand down, I put it quickly back up again because I had a thought. If you go to the, to the section about the different sizes of enterprises, I would put something a bit more, how can I say to promote UNTP?
+
+You could say that small enterprises look for or request software that implements UNTP instead of saying they don't know anything about, of course they don't know anything about the internal workings of UNTP, but they should perhaps, but it would be nice if they knew that UNTP existed and they ask for it just like that. I understand 9,000, you know, they look for software that implements it. They don't necessarily know all the details about the software in terms of internally, but they ask for software that implements it.
+
+[Speaker 1]
+John, when you do a PR after I've merged this, why don't you have a think about any of this wording and reflect the comments you've heard. Marcus got his hand up.
+
+[Speaker 5]
+Yeah, Steve, just a brief question with regard to small business and that are likely to use existing management software. Where you gave the example of barming software, is there any policy around branding? So if in Australia they're using the AATP, does the software vendor get to brand it or their product as using a UNTP extension or any plans around doing that?
+
+That's an interesting question.
+
+[Speaker 1]
+At the moment, all we have as you know is a register of software that has committed to implement, but I haven't thought about it. I think it's an interesting idea. Put a kind of logo on your box so that you can just look at it and go, okay, that's.
+
+[Speaker 5]
+Yeah, it's kind of promotive for the actual software vendors themselves to climb on board, you know, because we're Australian government approved for this and we've got, you know, a little logo that says that maybe the coat of arms, but it could be like a coat of arms for the UNTP kind of thing.
+
+[Speaker 1]
+Maybe or for each extension. I haven't thought about it, but it's a very interesting topic. And if so, it would go into the software vendor implementation guidance.
+
+[Speaker 7]
+And to that, when we discuss and consider that, we might want to think about if there is an accreditation process required as well, because the vendors can say they do it. Is there any appetite from the UNTP community to say, okay, what are we doing with a full X in the basket? That's a whole other area to be discussed then when we say you are allowed to use our logo, but who is ensuring that they're really implementing UNTP protocols?
+
+[Speaker 1]
+Yeah, there is. To answer that, we will provide as part of UNTP a self-service test suite that confirms that you're technically valid and your schema valid. It might not confirm that you've got all the rule.
+
+I think beyond that, specific rules, like if it's an Australian livestock, the identifier must be the NLIS type would be in the industry extension. But with an architecture here where we think that UNTP will offer some self-service tests capability, and then extensions will extend that test for their specific rules. Now, we did have a discussion a while ago, and maybe we should go back to it is it's one thing to provide some lightweight test services and you self-assess and you say, I've tested, here's the test results.
+
+We'll publish them. So some software company X goes through the tests, passes them, there's a record, they get uploaded to UNTP and you can find it next to the, I'm just trying to find it.
+
+[Speaker 7]
+Next to the register where they have the names and things.
+
+[Speaker 1]
+Yeah. But that's still a self-assessment. Exactly.
+
+We did have a discussion about should we, is there some sort of higher level certification? The challenge with that is probably not the UN's job to do that. And so that would need to kind of spawn an industry of certifiers.
+
+And yes, I could make sense. And do you do that at UNTP level? Or do you do it extension level?
+
+We discussed it. And for the moment said self-assessment, because I think figuring out how to do accreditation and certification was not too hard, but kind of not an immediate topic, but maybe we should go back to Virginia.
+
+[Speaker 2]
+Yeah. Just two points. I think we could, after we, you know, things have advanced a little bit further, think about promoting UNTP as UNTP, but you cannot have the UN logo there anywhere because the UN is extremely strict about private companies can never put their logos with UN logos, but UNTP, just the initials, you can do that.
+
+So you could think about, you know, some other logo that goes with UNTP that doesn't have a UN logo in it. The other thing is, I was just going to say what you had said is that the UN will never agree to dedicate resources to certifying third-party software. And that would have to be something like SGS or one of those other certification outfits.
+
+And we might actually want to do a little promotion with them, you know, to say, here's a business opportunity for you, you know.
+
+[Speaker 1]
+Yes. Yes. I agree.
+
+And that's how many, that's how conformity with many standards gets achieved today, right? ISO writes the standard, but it's not ISO that does the certification, right? It's some commercial certifier advertises their service of certifying, let's say ISO 9000.
+
+And that certifier is accredited by a national accreditation authority that says we've checked you and you are qualified to make that assessment. So we could well find that UNTP just falls into that existing global accreditation and certification architecture. The way it normally works is I asked Brett exactly this question, like how do you, if you've given, if you've got a standard, how do you sort of insert it into this world of accreditation authorities and certifying bodies?
+
+And he said, it actually normally gets pulled rather than pushed. In other words, there's customer demand of certifying bodies to get certificates against a given standard. And then those certifying bodies talk to their accreditation authority and say, well, let's establish an accreditation framework for this.
+
+But I have actually had a brief chat with Jazz Ants, which is the Australian accreditation authority about this. And I think there's a willingness around the place to, to establish such a framework. It's just what's the right time, you know?
+
+I think it's for us to think about that. Two things.
+
+[Speaker 4]
+One is I think similar to what I said last time, which is let's approve this PR and add a ticket into the backlog to, to sort of follow up on the sort of certification and accreditation framework for UNTP certification, accreditation and branding framework, I think is probably what we want to sort of describe it as. And then the second point is we do have some collaboration and participation. So you mentioned Brett from Jazz Ants or NADA here in Australia.
+
+We have pretty significant commitments from the Standards Australia. We're kicking off engagements with the Canadian Standards Authority. So there's a number of collaborators that we can potentially explore this with.
+
+And I'm wondering if we should set up a working group because it feels like a, it doesn't feel like a critical path item, but it does feel like an important thing to set up.
+
+[Speaker 1]
+Yeah. It is interesting with, there's a question really about where should long-term ownership or maintenance of an extension live, right? So for example, Australian Agriculture Protocol, one of the early ones got created under what's called the Collaborative Research Centre.
+
+And these things are by design, temporary. They have some government funding and they last for, let's say five years or seven years or whatever the duration is. And then they wind up.
+
+AATP is currently governed by a thing that by design will cease to exist in another year or two. So it needs to go and live somewhere else if it's going to continue to be maintained past that. And it does feel to me like national standards bodies like Standards Australia or the Canadian one or various others are kind of logical home because they're very well used to secretariat services.
+
+It just does need one of the challenges is UNTP is free under creative commons. And the words here say, any extension should also be free under creative commons. And most national standards bodies, a bit like ISO currently have a model where they sell their standards.
+
+Although I will say having spoken to several of them, almost all of them, including ISO are currently scratching their head and thinking about it. They almost all believe that that model of selling standards has itself a limited shelf life. They've got to change their business model and many of them that we've spoken to are quite content with the idea that they can host, let's say, a UNTP extension like Australian agriculture, maybe charge us like a secretariat fee to those participating in the development of the standard, but make the standard itself free and creative commons, which that means it's not a bad place to, you know, it's a reasonable business model for the standards authority. They're already very used to convening standards development groups. They already have a good relationship too, with the certifiers and accreditors, right?
+
+So it feels like a quite a potentially quite a repeatable pattern to say, well, put your extension in the hands of your national standards authority, as long as they're willing to make it free. And it's a pay to play, not a pay to view model could be a good pattern. That's just a thought anyway.
+
+[Speaker 4]
+I'll raise the ticket and we can start the conversation.
+
+[Speaker 1]
+Okay. I can't merge this one yet because someone's got to review it and approve it. So if anyone feels like doing that.
+
+Okay. Well, we're at three minutes to the end. Does anybody got any closing thoughts comments that they'd like to make?
+
+Thank you for listening. There's quite a bit to get through this time. It's kind of good, right?
+
+I know I wrote a couple of them, but some of the other people wrote the other three. So, you know, we're getting some participation.
+
+[Speaker 5]
+I'd like to be, I'd like to be invited in to that group as well. Zack having worked a fair bit with Australian standards and created the standard for 3d cadaster. I've got a little bit of a feel for it.
+
+[Speaker 1]
+Okay. Cool. You'd be very welcome.
+
+All right. Well then with that we'll merge this page when someone's approved it. And I encourage everyone to what we didn't get to is we started to beat down this list of open issues and we had 150 or something and got down to about 50 open.
+
+And now we're back up to 81 open because there's about 10 here from Danica who's basically been through the site with a user experience eye and said, you should improve all these things, which is a good thing, right? But basically the backlog of things to fix is growing again. And I think it's probably impractical to go through 80 issues in calls like this.
+
+So in the, in, in the gap in between, well, I hope we can get trigger some discussion about these issues and get some consensus about what the fix is and kind of have this engine of improvement that happens in between meetings, not just in meetings. And that's all. Well, thank you very much everyone for your participation.
+
+I'll stop sharing and close the meeting and post minutes shortly. Thank you.
+
+[Speaker 7]
+Thanks everybody. Thanks Steve.
+
+[Speaker 8]
+Thanks everyone. Thanks Steve.
