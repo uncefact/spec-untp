@@ -1,4 +1,4 @@
-# Changes proposed for the v0.6.0 UNTP data model
+# Changes proposed for the v0.6.0-alpha1 UNTP data model
 
 These changes are the result of various inputs, most from Patrick St-Louis, regarding using the v0.5.0 UNTP data model.
 
@@ -57,8 +57,7 @@ Steve agrees with the above changes for `issuingParty`. These are all changes to
 Where things get trickier is with three other references in untp-core for `Identifier`: `CredentialIssuer.otherIdentifier`, `Party.otherIdentifier` and `Facility.otherIdentifier`. According to Steve, these are "also known as" type fields, so the `Party.otherIdentifier` is meant to reference one or more `Party`'s by which the `Party` is also known, but Steve has concerns about recursive references. Similarly, a `CredentialIssuer`'s `$id` is a DID, representing an identity of some sort, where the "also known as" can only be referring to a `Party` (not a `Facility` or `Product`), while `Facility.otherIdentifier` should refer to a `Facility`.
 
 `otherIdentifier` can just be a list of ids (references) or richer references. For now, to avoid any recursive references (which can be handled as [outlined on the JSON-Schema blog](https://json-schema.org/blog/posts/modelling-inheritance#adding-a-recursive-reference)) I'll set these to be `[jargon.reference]=true` for `Party.partyAlsoKnownAs` and `Facility.facilityAlsoKnownAs` so that they are simple string arrays, until we have a [solution for rich references in jargon](https://github.com/jargon-sh/issues/issues/20) (this is not necessary for `CredentialIssuer.issuerAlsoKnownAs` since there's no recursive reference).
-- TODO: Check if they're used in the in-situ presentation, but even if so, we'll need to wait for [jargon issue 20](https://github.com/jargon-sh/issues/issues/20) or otherwise post-process for a rich-reference validation.
-- TODO: create an issue for jargon also for the current schema for a reference (to allow an object with an id, not just a string).
+- TODO: Check if they're used in the in-situ presentation, but even if so, we'll need to wait for [jargon issue 20](https://github.com/jargon-sh/issues/issues/20) or otherwise post-process for a rich-reference validation, or not use a reference and have a recursive reference for now.
 
 Note that all properties in the domain with the same name must all be of the same type, so rather than `otherIdentifier`, I've switched to `partyAlsoKnownAs`, `facilityAlsoKnownAs` and `issuerAlsoKnownAs` based on a related comment from Steve.
 
@@ -115,6 +114,7 @@ Note that we don't need to specify URLs for every required id, a URI is ok. That
 
 That said, JSON-LD doesn't require all nodes to be identified with an `@id`, and indeed we don't require them for things like `Address`, `Location`, `Metric` etc. as they aren't nodes we need to reference. Looking through the defs, all the nodes with a required `@id` are things that should be identifiable (like permits) even if they're not derefencencable, so I think we just need to update the docs to make it clear that the required `@id` URI just needs to be a unique resource identifier (so `permit:com.example.permits.12345` is fine), not necessarily a unique resource locator (such as `https://permits.example.com/12345`).
 
+Verified with Patrick and he is OK with these being required as long as we ensure the docs have clear instructions for creating them.
 
 ### Required: DateTime format with regex
 
@@ -200,9 +200,11 @@ I can confirm these fields are missing from the rdf/graph by dropping in a valid
 See the same section for Digital Conformity Credential above.
 
 
-### Deferred: Removing class redefinitions
+### Required: Removing class redefinitions
 
-Certain classes are redefined unnecessarily and will be invalid if credentials use the untp-core context as well.
+The `dpp.Product` class inherits but redefines all inherited fields unnecessarily, revert to simple inherit with additional field defined.
+
+The `dpp.Claim` class inherits from `untp.Declaration` and redefines all the existing fields but apparently mistakenly defines the core property `declaredValue` as `declaredValues`, and as a result, the model has *both* the inherited `declaredValue` and the newly defined `declaredValues` defined. I have left the existing field redefinitions as they are used to display the linked imported classes (which disappear if you don't re-define the fields and add the metadata), but have updated the definition of `declaredValues` property to match the core `declaredValue`.
 
 
 ## Digital Facility Record
@@ -248,7 +250,7 @@ Dropped properties:
 
 These are obviously pretty serious properties to be dropped from the rdf/graph. In this case, the issue is not related to missing untp property definitions, but rather because we're creating two new terms and omitting their definitions (due to inheriting the term types).
 
-The jargon DTE model defines a `QuantityElement` with these two terms imported from the untp-core properties `productId:untp.Product.id` and `productName:untp.Product.name` respectively. Given that these imported property types have the `[jsonld.contextOmit]=true` set, the `productId` and `productName` properties here are inheriting those properties. I've tried overriding this key-value on the DTE property.
+The jargon DTE model defines a `QuantityElement` with these two terms imported from the untp-core properties `productId:untp.Product.id` and `productName:untp.Product.name` respectively. Given that these imported property types have the `[jsonld.contextOmit]=true` set, the `productId` and `productName` properties here are inheriting those properties. I've tried overriding this key-value on the DTE property to be false.
 
 
 ### Required: DateTime format with regex
@@ -259,6 +261,8 @@ See the same section for Digital Conformity Credential above.
 ## Digital Identity Anchor
 
 There were no other issues with jsonld lint. The datetime regex pattern is the only change.
+
+Not quite true. With the removal of `untp.Identity` (which was meant to represent either a Party, Facility or Product), the `DigitalIdentityAnchor.RegisteredIdentity` needs to be a `Party` directly.
 
 ### Required: DateTime format with regex
 
