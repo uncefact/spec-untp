@@ -21,9 +21,12 @@ const jsonInstanceSuffix = '_instance_jsonSchema.json';
 
 async function validateCredentialsSchemas (jsonSchemas) {
   const schemaAndInstancePairs = await pairSchemasAndInstances(jsonSchemas);
+  if (!schemaAndInstancePairs || !schemaAndInstancePairs.length) {
+    return core.setFailed('No schema and instance pairs found.');
+  }
 
   const results = schemaAndInstancePairs.map(({ schema, instance }) => {
-    core.info(`Validating sample credential "${instance.fileName}" against schema "${schema.fileName}"...`);
+    core.info(`Validating sample credential "${instance.fileName}" against schema "${schema.fileName}"`);
     const validate = ajv.compile(schema.json);
     const isValid = validate(instance.json);
 
@@ -31,7 +34,7 @@ async function validateCredentialsSchemas (jsonSchemas) {
     const onlyAdditionalPropertiesErrors = validate?.errors?.every((error) => error.keyword === 'additionalProperties');
     const combinedResult = isValid || onlyAdditionalPropertiesErrors;
 
-    core.info(`Sample credential "${instance.fileName}" validation ${combinedResult ? 'succeeded' : 'failed'}.`);
+    core.info(`Sample credential "${instance.fileName}" validation result: ${combinedResult ? 'passed' : 'failed'}.`);
     return {
       schemaFileName: schema.fileName,
       schemaUrl: schema.url,
@@ -43,7 +46,7 @@ async function validateCredentialsSchemas (jsonSchemas) {
   });
 
   const finalResult = results.every(({ valid }) => valid);
-  core.info(`Final sample credentials validation result: ${finalResult ? 'succeeded' : 'failed'}.`);
+  core.info(`All sample credentials validation result: ${finalResult ? 'passed' : 'failed'}.`);
   if (!finalResult) {
     return core.setFailed(`Sample credentials validation failed: ${JSON.stringify(results)}`);
   }
@@ -56,39 +59,43 @@ async function validateCredentialsSchemas (jsonSchemas) {
  */
 
 async function pairSchemasAndInstances (jsonSchemas) {
-  const { schemas, instances } = splitSchemasAndInstances(jsonSchemas);
-  core.info(`Schemas: ${JSON.stringify(schemas)}`);
-  core.info(`Instances: ${JSON.stringify(instances)}`);
+  try {
+    const { schemas, instances } = splitSchemasAndInstances(jsonSchemas);
+    core.info(`Schemas: ${JSON.stringify(schemas)}`);
+    core.info(`Instances: ${JSON.stringify(instances)}\n`);
 
-  const schemaFileNames = Object.keys(schemas);
-  const pairPromises = schemaFileNames.map(async schemaFileName => {
-    const baseName = schemaFileName.replace(jsonSchemaSuffix, '');
-    const instanceFileName = `${baseName}${jsonInstanceSuffix}`;
+    const schemaFileNames = Object.keys(schemas);
+    const pairPromises = schemaFileNames.map(async schemaFileName => {
+      const baseName = schemaFileName.replace(jsonSchemaSuffix, '');
+      const instanceFileName = `${baseName}${jsonInstanceSuffix}`;
 
-    if (!instances[instanceFileName]) {
-      core.setFailed(`No instance found for schema "${schemaFileName}".`);
-      return null;
-    }
+      if (!instances[instanceFileName]) {
+        core.setFailed(`No instance found for schema "${schemaFileName}".`);
+        return null;
+      }
 
-    const [schemaJson, instanceJson] = await Promise.all([
-      fetchArtefactData(schemas[schemaFileName]),
-      fetchArtefactData(instances[instanceFileName])
-    ]);
-    if (!schemaJson || !instanceJson) {
-      core.setFailed(`Failed to fetch schema "${schemaFileName}" or instance "${instanceFileName}".`);
-      return null;
-    }
+      const [schemaJson, instanceJson] = await Promise.all([
+        fetchArtefactData(schemas[schemaFileName]),
+        fetchArtefactData(instances[instanceFileName])
+      ]);
+      if (!schemaJson || !instanceJson) {
+        core.setFailed(`Failed to fetch schema "${schemaFileName}" or instance "${instanceFileName}".`);
+        return null;
+      }
 
-    core.info(`Fetched schema "${schemaFileName}" and instance "${instanceFileName}".`);
+      core.info(`Fetched schema "${schemaFileName}" and instance "${instanceFileName}".`);
 
-    return { 
-      schema: { fileName: schemaFileName, url: schemas[schemaFileName], json: schemaJson },
-      instance: { fileName: instanceFileName, url: instances[instanceFileName], json: instanceJson }
-    };
-  });
+      return { 
+        schema: { fileName: schemaFileName, url: schemas[schemaFileName], json: schemaJson },
+        instance: { fileName: instanceFileName, url: instances[instanceFileName], json: instanceJson }
+      };
+    });
 
-  const pairs = await Promise.all(pairPromises); // Fetch all pairs in parallel
-  return pairs.filter(pair => pair); // Remove null values
+    const pairs = await Promise.all(pairPromises); // Fetch all pairs in parallel
+    return pairs.filter(pair => pair); // Remove null values
+  } catch (error) {
+    core.setFailed(`Error pairing schemas and instances: ${error.message}`);
+  }
 }
 
 /**

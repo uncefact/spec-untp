@@ -11,11 +11,16 @@ const { fetchArtefactData } = require('./utils');
 async function validateContext(jsonldContext) {
   try {
     const context = await fetchArtefactData(jsonldContext.url);
+    if (!context) {
+      throw new Error(`Failed to fetch JSON-LD context "${jsonldContext.url}".`);
+    }
 
     // Run JSON-LD context expansion
     await jsonld.expand(context);
+    core.info('Context validation results: passed.');
   } catch (error) {
-    core.setFailed(`Error validating context: ${JSON.stringify(error)}`);
+    core.setFailed(`Error validating context: ${error.message} ${JSON.stringify(error)}`);
+    core.info('Context validation results: failed.');
   }
 }
 
@@ -42,10 +47,16 @@ async function validateContextInCredential(jsonSchemas) {
   try {
     // Expand all fetched instances
     await Promise.all(
-      fetchedInstances.map(async ({ json }) => jsonld.expand(json, { safe: true }))
+      fetchedInstances.map(async ({ json, url }) => {
+        core.info(`Validating "${url}"`);
+        return jsonld.expand(json, { safe: true });
+      })
     );
+
+    core.info('Context in credentials validation results: passed.');
   } catch (error) {
     core.setFailed(`Error validating context in credentials: ${JSON.stringify(error)}`);
+    core.info('Context in credentials validation results: failed.');
   }
 }
 

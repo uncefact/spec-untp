@@ -1,3 +1,5 @@
+const core = require('@actions/core');
+
 async function fetchArtefactData (url) {
   try {
     const response = await fetch(url);

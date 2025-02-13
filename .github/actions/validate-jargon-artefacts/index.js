@@ -13,35 +13,35 @@ async function validateJargonArtefacts(jargonArtefact) {
       return core.setFailed('No Jargon artefact payload found.');
     }
     if (jargonArtefact.action && jargonArtefact.action.test) {
-      core.info('Jargon artefact is a test action.');
+      return core.info('Jargon artefact is a test action. Skipping validation.');
     }
 
     core.info('Validating Jargon artefacts...');
 
     // Validate sample credentials against its JSON schemas
     const { jsonSchemas = [], jsonldContext } = jargonArtefact.artefacts;
-    core.info(`Json Schemas: ${JSON.stringify(jsonSchemas)}`);
+    core.info(`\nJson Schemas: ${JSON.stringify(jsonSchemas)}`);
     if (jsonSchemas && jsonSchemas.length) {
-      core.info('Validating sample credentials against schemas...');
+      core.info('\n\nValidating sample credentials against schemas...');
       await validateCredentialsSchemas(jsonSchemas);
       core.info('Sample cretidentials against schemas validation complete.');
 
       // Validate JSON-LD context in credentials
-      core.info('Validating context in credentials...');
+      core.info('\n\nValidating context in credentials...');
       await validateContextInCredential(jsonSchemas);
       core.info('Context in credentials validation complete.');
 
     }
 
     // Validate JSON-LD context
-    core.info(`Json LD context: ${JSON.stringify(jsonldContext)}`);
+    core.info(`\n\nJson LD context: ${JSON.stringify(jsonldContext)}`);
     if (jsonldContext) {
       core.info('Validating context...');
       await validateContext(jsonldContext);
       core.info('Context validation complete.');
     }
 
-    core.info('Jargon artefacts validation complete.');
+    core.info('\nJargon artefacts validation complete.');
   } catch (error) {
     core.setFailed(`Error validating Jargon artefacts: ${error.message}`);
   }
