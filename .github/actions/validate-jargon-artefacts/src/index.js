@@ -63,3 +63,52 @@ async function run() {
 }
 
 run();
+
+
+validateJargonArtefacts({
+  "action": {
+    "name": "onSnapshot",
+    "type": "snapshot"
+  },
+  "artefacts": {
+    "dataModel": {
+      "fileName": "huy_nguyen_Test_dataModel.svg",
+      "url": "https://jargon.sh/user/huy_nguyen/Test/s/4/artefacts/diagram/render.svg?light=true"
+    },
+    "jsonSchemas": [
+      {
+        "fileName": "huy_nguyen_Test_DigitalProductPassport_jsonSchema.json",
+        "url": "https://f25e-115-79-32-109.ngrok-free.app/api/valid-dpp-context"
+      },
+      {
+        "fileName": "huy_nguyen_Test_DigitalProductPassport_instance_jsonSchema.json",
+        "url": "https://f25e-115-79-32-109.ngrok-free.app/api/all-valid"
+      }
+    ],
+    "jsonldContext": {
+      "fileName": "huy_nguyen_Test_jsonldContext.json",
+      "url": "https://f25e-115-79-32-109.ngrok-free.app/api/test-context-valid"
+    },
+    "jsonldVocab": {
+      "fileName": "huy_nguyen_Test_jsonld.json",
+      "url": "https://jargon.sh/user/huy_nguyen/Test/s/4/artefacts/jsonld/render.jsonld"
+    }
+  },
+  "domain": {
+    "account": "huy_nguyen",
+    "name": "Test",
+    "url": "https://jargon.sh/user/huy_nguyen/Test"
+  },
+  "settings": {
+    "jsonld": {
+      "generate": true,
+      "prefix": "",
+      "uri": ""
+    }
+  },
+  "snapshot": {
+    "description": "v0.0.5",
+    "index": 4,
+    "url": "https://jargon.sh/user/huy_nguyen/Test/s/4/editor"
+  }
+})
