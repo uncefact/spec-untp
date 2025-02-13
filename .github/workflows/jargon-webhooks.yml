@@ -1,0 +1,25 @@
+name: jargon-webhooks
+
+on:
+  repository_dispatch:
+    types: [jargon_onSnapshot]
+
+env:
+  ARTEFACT_DIR: jargon/
+  CI_AUTHOR: jargon-sh
+
+jobs:
+  validate-jargon-artifacts:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Jargon Artefacts
+        uses: ./.github/actions/validate-jargon-artefacts
+        with:
+          jargon-webhook-payload: ${{ toJSON(github.event.client_payload) }}
