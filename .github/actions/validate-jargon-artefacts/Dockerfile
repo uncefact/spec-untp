@@ -4,6 +4,6 @@ COPY package*.json /
 
 RUN npm ci
 
-COPY src /
+COPY src /src
 
 CMD ["node", "/src/index.js"]
