@@ -1,0 +1,1 @@
+Currently the release process doesn't have a transparent identification of changes between UNTP versions nor the reasons for those changes. Until we get a chance to update the process to include this, the files in this directory serve to make this transparent for our future selves working on the data model.
