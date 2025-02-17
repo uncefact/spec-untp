@@ -12,12 +12,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run Validate Jargon Artefacts
-        continue-on-error: true
-        id: validate
         uses: ./.github/actions/validate-jargon-artefacts
         with:
           jargon-webhook-payload: ${{ toJSON(github.event.client_payload) }}
-      
-      - name: Show Validation Result
-        run: |
-          echo "Jarogn Artefacts Validation Result: ${{ steps.validate.outputs.validation-result }}"
