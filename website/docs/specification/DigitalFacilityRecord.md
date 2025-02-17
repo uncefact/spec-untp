@@ -1,6 +1,6 @@
 ---
 sidebar_position: 18
-title: Digital Facility Profile
+title: Digital Facility Record
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
