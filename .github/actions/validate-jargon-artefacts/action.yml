@@ -1,13 +1,13 @@
-name: 'Validate Jargon Artefacts'
-description: 'Validates the Jargon snapshot artefacts.'
+name: Validate Jargon Artefacts
+description: Validates the Jargon snapshot artefacts.
 
 inputs:
   jargon-webhook-payload:
-    description: 'The JSON payload from the Jargon webhook.'
+    description: The JSON payload from the Jargon webhook.
     required: true
 outputs:
   validation-result:
-    description: 'The validation result.'
+    description: The validation result.
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: Dockerfile

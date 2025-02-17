@@ -15,14 +15,15 @@ const jsonInstanceSuffix = '_instance_jsonSchema.json';
 
 /**
  * Validate sample credentials against their JSON schemas using AJV
- * @param {*} jsonSchemas 
- * @returns void
+ * @param jsonSchemas is an array of JSON schemas and instances
+ * @returns { valid: boolean }
  */
 
 async function validateCredentialsSchemas (jsonSchemas) {
   const schemaAndInstancePairs = await pairSchemasAndInstances(jsonSchemas);
   if (!schemaAndInstancePairs || !schemaAndInstancePairs.length) {
-    return core.setFailed('No schema and instance pairs found.');
+    core.setFailed('No schema and instance pairs found.');
+    return { valid: false };
   }
 
   const results = schemaAndInstancePairs.map(({ schema, instance }) => {
@@ -47,14 +48,17 @@ async function validateCredentialsSchemas (jsonSchemas) {
 
   const finalResult = results.every(({ valid }) => valid);
   core.info(`All sample credentials validation result: ${finalResult ? 'passed' : 'failed'}.`);
+
   if (!finalResult) {
-    return core.setFailed(`Sample credentials validation failed: ${JSON.stringify(results)}`);
+    core.setFailed(`Sample credentials validation failed: ${JSON.stringify(results)}`);
   }
+
+  return { valid: !!finalResult };
 }
 
 /**
  * Pair JSON schemas and instances
- * @param {*} jsonSchemas 
+ * @param jsonSchemas is an array of JSON schemas and instances
  * @returns { schema: {fileName, url, json}, instance: {fileName, url, json} }
  */
 
@@ -100,7 +104,7 @@ async function pairSchemasAndInstances (jsonSchemas) {
 
 /**
  * Split JSON schemas and instances into separate objects
- * @param {*} jsonSchemas
+ * @param jsonSchemas is an array of JSON schemas and instances
  * @returns {schemas: {fileName: url}, instances: {fileName: url}}
  */
 

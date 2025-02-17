@@ -1,3 +1,4 @@
 node_modules
 action.yml
-Dockfile
+Dockerfile
+README.md

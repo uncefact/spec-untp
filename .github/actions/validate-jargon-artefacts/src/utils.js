@@ -15,4 +15,20 @@ async function fetchArtefactData (url) {
   }
 }
 
-module.exports = { fetchArtefactData };
+function getValidationResultOutput({ validateCredentialsResult, validateContextInCredentialResult, validateContextResult }) {
+  if (validateCredentialsResult.valid !== undefined && validateCredentialsResult.valid === false) {
+    return 'Failed';
+  }
+
+  if (validateContextInCredentialResult.valid !== undefined && validateContextInCredentialResult.valid === false) {
+    return 'Failed';
+  }
+
+  if (validateContextResult.valid !== undefined && validateContextResult.valid === false) {
+    return 'Failed';
+  }
+
+  return 'Passed';
+}
+
+module.exports = { fetchArtefactData, getValidationResultOutput };
