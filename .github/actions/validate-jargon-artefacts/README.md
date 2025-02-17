@@ -1,6 +1,6 @@
 # Validate Jargon Artefacts GitHub Action
 
-This repository contains a custom GitHub Action that automates the validation of Jargon-generated UNTP artifacts, including JSON-LD contexts, schemas, and sample credentials. The validation ensures that generated artifacts comply with appropriate specifications before release.
+This custom GitHub Action automates the validation of Jargon-generated UNTP artifacts, including JSON-LD contexts, schemas, and sample credentials. It ensures that the generated artifacts comply with the appropriate specifications before release.
 
 ## Features
 - **Automated Validation**: Checks JSON-LD contexts, schemas, and sample credentials.
