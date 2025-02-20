@@ -17,7 +17,7 @@ Meet your supply chain due diligence obligations and provide evidence to your cu
 |Step|Action|Outcome|
 |--|--|--|
 |1|Choose a relevant UNTP [industry extension](../extensions/ExtensionsRegister.md) or lobby your member association to develop a new extension|Industry-wide consensus|
-|2|Choose a UNTP compatible [software solution](../implementations/Software.md) or engage your ICT department to implement UNTP using our free [reference implementation](../tools-and-support/ReferenceImplementation,md)|Technology-ready|
+|2|Choose a UNTP compatible [software solution](../implementations/Software.md) or engage your ICT department to implement UNTP using our free [reference implementation](../tools-and-support/ReferenceImplementation.md)|Technology-ready|
 |3|Push your suppliers to issue UNTP [DPP](/specification/DigitalProductPassport.md), [DFR](../specification/DigitalFacilityRecord.md) with linked [DCC](../specification/ConformityCredential.md) credentials|Meet your supply chain due-diligence obligations|
 |4|Issue a [digital facility record](../specification/DigitalFacilityRecord.md) for each facility you own/operate|Your customers can verify sustainability performance of your production facilities|
 |5|Issue a [digital product passport](../specification/DigitalProductPassport.md) for each product (and optionally each export market) that you ship from your facilities|Your customers can verify sustainability performance of your products|
