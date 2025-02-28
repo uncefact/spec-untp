@@ -13,7 +13,7 @@ Are maintained at - https://test.uncefact.org/vocabulary/untp/dia/0/about
 
 ### Stable Releases For Implementation
 
-Version 1.0 stable release for production implementation is due Feb 2025
+Version 1.0 stable release for production implementation is due in June 2025 after formal public review 
 
 ### Release for Pilot Testing
 
