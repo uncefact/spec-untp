@@ -1,4 +1,4 @@
-These changes are the changes from v0.6.0-beta1 to v0.6.0-beta4.
+These changes are the changes from v0.6.0-beta4 to v0.6.0-beta5.
 
 There were certain properties which were removed from the intended references of 0.5.0 when switching to a Jargon object reference. The changes below restore those as listed.
 
