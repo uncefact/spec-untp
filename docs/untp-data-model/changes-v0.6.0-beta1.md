@@ -107,7 +107,11 @@ Updated to core 0.6.0-beta1, resaved and released 0.6.0-beta1 of DFR
 
 Updated to core 0.6.0-alpha3 and added contextOmit=false to the main entity, released 0.6.0-alpha3. jsonld lint complains of `credentialSubject` being re-defined.
 
-The cause was that without an `^id` for `RegisteredIdentity`, the `credentialSubject` term is redefined with an internal context (probably due to changes we requested for other contexts). The constraints we have here for the DIA are that we need to:
+The cause was that without an `^id` for `RegisteredIdentity`, the
+`credentialSubject` term is redefined with an internal context (probably due to
+changes we requested for other contexts), as it is already defined as a
+`"@type": "@id"` in the VCDM. The constraints we have here for the DIA are that
+we need to:
 
 - reference an identity without requiring all fields in the schema (I've used an objectReference to a Party, but need to confirm with Steve whether a DIA is intended also for Product or Facility?)
 - allow extra data in addition to the referenced identity, which are the registerType and scope list fields
