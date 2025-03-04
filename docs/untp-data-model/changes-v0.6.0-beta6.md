@@ -30,22 +30,46 @@ We had added the two template classes to the vocabulary with the last release, w
 # UNTP Core changes
 
 - Re-added `#hideClass` to the two template classes
-- Re-added `Product.characteristics` but with `[jsonld.contextOmit]=true` as discussed above, and the new `[...sampleOmit]=true` (see [Jargon issue 36](https://github.com/jargon-sh/issues/issues/36)).
-- Added `[jsonld.contextURI]=https://www.w3.org/2018/credentials#renderMethod#` with prefix `renderMethod` to the `template` properties and similar for `url` (only) of the `RenderTemplate2024` and `WebRenderingTemplate2022` classes (see [Jargon issue 35](https://github.com/jargon-sh/issues/issues/35))
+- Re-added `Product.characteristics` but with `[jsonld.contextOmit]=true` as discussed above, and the new `[json.sampleOmit]=true` (see [Jargon issue 36](https://github.com/jargon-sh/issues/issues/36)).
+- Added `[jsonld.contextURI]=https://www.w3.org/2018/credentials#renderMethod#` with prefix `renderMethodPrefix` to the `template` properties and similar for `url` (only) of the `RenderTemplate2024` and `WebRenderingTemplate2022` classes (see [Jargon issue 35](https://github.com/jargon-sh/issues/issues/35))
 - Saved to ensure protected terms (see earlier).
 
 
 # DigitalProductPassport changes
 
-- Re-save after updating to core 0.6.0-working
+- Re-save after updating to core 0.6.0-working TODO
 - checked no other issues / redefinitions
 
 When checking the result before releasing, the following was noticed additionally:
 - some inherited terms are redefined differently to the originals causing a redefinition error (Updated [Jargon issue 28 with comment](https://github.com/jargon-sh/issues/issues/28#issuecomment-2695996220))
-
-I'm currently waiting on a jargon update to fix the last point above before continuing.
-
+Alastair provided a fix and DPP is now valid.
 
 
+# DigitalConformityCredential changes
 
+- Added #hideClass to template classes
+- Added contextOmit to DCC.credentialSubject
+- Re-save after updating to core 0.6.0-working TODO
+
+With these changes, jsonld lint complains about dropped terms for different aspects of `address` such as `addressCountry`. This is because the context provided for `assessedFacility` just has
+
+```
+            "address": {
+              "@protected": true,
+              "@id": "untp-core:address"
+            },
+```
+
+and there is no type information attached to the data to identify it explicitly. If I add `"type": "Facility"` to each item in `assessedFacility` then jsonld has the information it needs to provide the correct context from `Facility`. But linting then shows that we're now redefining a bunch of terms, such as `address` because they're also defined in the context files "assessedFacility" definition. Removing everything except `IDverifiedByCAB` from the `assessedFacility.@context` in the context file then validates fine. This is because the data has a type associated (which provides the correct context for `core.Facility`) and the context file for the `assessedFacility` field provides the extra context.
+
+That situation feels a bit hacky, and I guess is the result of Jargon not being able to define an explicit `Facility` type again, since the core one is already in the current context, so it's inlined the dcc specific Facility definition? Not sure.
+
+So I found another way to get it to work locally:
+- Rename the DCC `Facility` to `AssessedFacility` - this enables Jargon to define this type completely, as it has a different name. It's context includes all the properties of the core Facility as well as the extra `IDverifiedByCAB`.
+- Saving with that to produce the generated instance and context, which don't yet validate as I need to additionally:
+- Add the `"type": ["AssessedFacility", "Facility"]` to each entry in the sample data's `assessedFacility` arrays and then remove the complete "@context" from the context files' `assessedFacility` definition, since it's all provided by the type.
+
+But why doesn't this affect assessedProduct, which is following the exact same pattern? Could it be the inferred type? Unsure
+
+TODO: turn this into an issue after confirming both my understanding as well as why `Product` doesn't have this issue in DCC.
 
