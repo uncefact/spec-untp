@@ -14,12 +14,12 @@ The second is related specifically to `Product.characteristics`. In the 0.6.0-be
 
 But it's actually meant to be able to be used in a DPP credential as a free-form key-value dict. This is tricky for jsonld (there is no free-form, terms need to be defined and [values are limited to string, number, true or false or a typed value](https://www.w3.org/TR/json-ld11/#dfn-json-ld-value) to ensure that everything can be reduced to RDF triplets).
 
-The best solution I can think of is that we add `Product.characteristics` back to identify the placeholder but ensure it is also omitted from the context (using the Jargon `[jsonld.contextOmit]=true`). This means that both extensions or users of the vanilla DPP who want to specify `characteristics` will need to add the relevant context for `characteristics` to do so explicitly, for which we'll need to provide documentation. For users of Jargon, this will simply be creating their own `Product` which inherits from the core or DPP `Product` and adds the `characteristics` property with whatever items they define. Unfortunately I can't currently include core `Product.characteristics` as the sample data includes the term (which is of course undefined due to the context omit), so we'll have to document it unless [Jargon issue 36](https://github.com/jargon-sh/issues/issues/36) provides a solution.
+The best solution I can think of is that we add `Product.characteristics` back to identify the placeholder but ensure it is also omitted from the context (using the Jargon `[jsonld.contextOmit]=true`). This means that both extensions or users of the vanilla DPP who want to specify `characteristics` will need to add the relevant context for `characteristics` to do so explicitly, for which we'll need to provide documentation. For users of Jargon, this will simply be creating their own `Product` which inherits from the core or DPP `Product` and adds the `characteristics` property with whatever items they define.
 
 
 ## Defining the expected expanded URIs for template vocabulary
 
-What about ensuring expected full URIs for `template` and `url`, see [comment](https://github.com/uncefact/tests-untp/pull/221#discussion_r1978347001)
+This release also updates the expected full URIs for `template` and `url` when seen in `WebRenderingTemplate2022` or `RenderTemplate2024` to match what VC-Kit expects, see [comment](https://github.com/uncefact/tests-untp/pull/221#discussion_r1978347001)
 
 
 ## Hiding the `Template` classes
@@ -30,24 +30,22 @@ We had added the two template classes to the vocabulary with the last release, w
 # UNTP Core changes
 
 - Re-added `#hideClass` to the two template classes
-- Re-added `Product.characteristics` but with `[jsonld.contextOmit]=true` as discussed above.
-- Added `[jsonld.contextURI]=https://www.w3.org/2018/credentials#renderMethod#template` to the `template` properties and similar for `url` (only) of the `RenderTemplate2024` and `WebRenderingTemplate2022` classes.
-- Saved to ensure protected terms.
-
-Note, I checked the resulting context and the `contextURI` hasn't made any visible change, so created [Jargon issue 35](https://github.com/jargon-sh/issues/issues/35)
-
-When checking the result before releasing, the following was noticed additionally:
-- sample data includes characteristics which causes an error (not defined). Created [Jargon issue 36](https://github.com/jargon-sh/issues/issues/36) and removed the property (again) from core for now.
-- some inherited terms are redefined differently to the originals causing a redefinition error (Updated [Jargon issue 28 with comment](https://github.com/jargon-sh/issues/issues/28#issuecomment-2695996220))
-
-But I'll be blocked on the release until we have a fix for that last one (issue 28).
+- Re-added `Product.characteristics` but with `[jsonld.contextOmit]=true` as discussed above, and the new `[...sampleOmit]=true` (see [Jargon issue 36](https://github.com/jargon-sh/issues/issues/36)).
+- Added `[jsonld.contextURI]=https://www.w3.org/2018/credentials#renderMethod#` with prefix `renderMethod` to the `template` properties and similar for `url` (only) of the `RenderTemplate2024` and `WebRenderingTemplate2022` classes (see [Jargon issue 35](https://github.com/jargon-sh/issues/issues/35))
+- Saved to ensure protected terms (see earlier).
 
 
 # DigitalProductPassport changes
 
 - Re-save after updating to core 0.6.0-working
 - checked no other issues / redefinitions
-- 
+
+When checking the result before releasing, the following was noticed additionally:
+- some inherited terms are redefined differently to the originals causing a redefinition error (Updated [Jargon issue 28 with comment](https://github.com/jargon-sh/issues/issues/28#issuecomment-2695996220))
+
+I'm currently waiting on a jargon update to fix the last point above before continuing.
+
+
 
 
 
