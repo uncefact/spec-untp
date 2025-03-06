@@ -17,13 +17,12 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 20th Feb 2025.  
-	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
-	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 * **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 6th Mar 2025. 
 	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
 	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
-
+* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 20th Mar 2025.  
+	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
+	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
@@ -33,6 +32,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2025-02-20| [The meeting focused on preparing UNTP for public review, addressing governance, simplifying specifications, improving usability, and ensuring alignment with Recommendation 49 while planning for future pilots and implementations.](#2025-02-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/hIBsxqAMi7tw1z5Rj-me3ZtbOS-IQnuJR1zYSuER41676BM_JO8lNPi6MEAqhtrL.Sto8AESpUGhaph5Z)|[transcript](../../meetings/2025-02-20-Recording.txt)|
 |2025-02-06| [The UNTP meeting focused on reviewing change requests, refining the identity resolver framework, approving the verifiable credentials update, discussing implementation guidance, exploring certification and governance models, and addressing open issues for future development.](#2025-02-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/ayxfoRJH0z9FXI25UWNuZ4KQ0LQ7N3GoLHTxbz-wTW4fjjOfMjQ3_zr-uNp6jUhk.dwHfJ3YszOvW9aLb)|[transcript](../../meetings/2025-02-06-Recording.txt)|
 |2025-01-23| [The meeting focused on enhancing UNTP governance, fostering community engagement through CAP, refining chain of custody models, and exploring tools for effective collaboration, setting the stage for further iterations and sector-specific applications.](#2025-01-23-meeting-summary)|[video](https://us02web.zoom.us/rec/share/kQt_d4JsLMrfy3iCGf1hoD04b-7Rg5ksuGML-Sj8wSMZL7l3uWqhkO4HEPpr8nBG.eHleGSxocBLfQumY)|[transcript](../../meetings/2025-01-23-Recording.txt)|
 |2025-01-08| [The meeting addressed progress on UNTP implementations, focusing on decentralized access control, sustainable mining, and selective disclosure, while initiating discussions on managing mixed commodities and advancing public review of specifications.](#2025-01-08-meeting-summary)| [video](https://us02web.zoom.us/rec/share/u7PDvJjbvgcJui79hqIYoh-CAzgoKVZtt5fieXWZkenCMkMCpbnmA4XKrEJjBJsT.eIZrcLXd5eSP72e2)|[transcript](../../meetings/2025-01-08-Recording.txt)|
@@ -74,6 +74,56 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+
+## 2025-02-20 Meeting Summary
+
+**Facilitator:** Steve (Speaker 1)  
+**Attendees:** Stefano, Danique, Suzanne, Virginia, Proc, Nis, Zach, Michael, Bart, Alex, Nick, David, and others.
+
+#### **Key Discussion Points:**
+
+1. **UN-Sponsored Pilots and Governance of Extensions (Steve, Stefano)**
+   - Steve shared updates on the UN-sponsored pilots on textiles and critical minerals, discussing whether they should have separate definitions or be grouped globally.
+   - Stefano emphasized the importance of the 80-20 approach for UNTP extensions.
+   - Discussion on governance and whether international bodies exist for specific minerals.
+
+2. **Public Review of Recommendation 49 (Suzanne, Steve, Virginia)**
+   - Suzanne provided an update on Recommendation 49, which is about to go for public review.
+   - The review will be structured to minimize incoming changes before final approval.
+   - Virginia clarified that REC 49’s review is distinct from the public review of UNTP, and it is important to ensure it is approved in July without unnecessary complications.
+
+3. **Concerns on UNTP Specification Readiness (Steve, Nis, Alex)**
+   - Steve raised the question of whether the UNTP specification pages are sufficiently developed for public review.
+   - Nis suggested limiting the scope of what is reviewed, keeping only mature and essential parts.
+   - Alex proposed a more structured approach to incomplete sections by using placeholders instead of “TBC” labels.
+
+4. **Feedback on UNTP Documentation & Usability (Danique, Nis, Michael, Zach)**
+   - **Danique’s Review Findings:**
+     - **Overload of information:** Fragmented resources, lack of clear examples.
+     - **Navigation Issues:** Users find it hard to access the right content.
+     - **Need for Role-Specific Guidance:** Different audiences require tailored documentation.
+     - **Business Case Clarity:** Implementers need to understand the practical value.
+   - **Recommendations:**
+     - Consolidate resources, improve navigation, enhance onboarding with examples.
+     - Use progressive disclosure to present information in digestible steps.
+
+5. **Simplifying UNTP and Restructuring Specs (Nis, Steve, Zach, Bart)**
+   - Nis proposed removing unnecessary complexity from specifications, particularly in role-based access control.
+   - Steve agreed that UNTP should focus on essential functionalities and possibly split off components that are more general-purpose.
+   - Bart highlighted the challenge of transitioning from paper-based supply chains to digital ones and called for a phased approach.
+
+6. **Global Trust Register & Future Pilots (Steve)**
+   - The Global Trust Register, involving the Spanish Business Register and Australian Livestock Identification Scheme, will conduct pilots to refine identity-related UNTP components.
+   - There’s a need to balance current spec development with learnings from these pilots.
+
+7. **Action Items & Next Steps:**
+   - **Steve:** Draft introductory guidance for the public review of UNTP.
+   - **Danique:** Continue improving the site’s structure and usability.
+   - **Michael & Nis:** Publish an article simplifying UNTP’s purpose and implementation.
+   - **Zach:** Implement better documentation flags (e.g., what’s under review and how to give feedback).
+   - **All Participants:** Review and address outstanding issues to improve UNTP specs before public review.
+
 
 ## 2025-02-06 Meeting Summary
 

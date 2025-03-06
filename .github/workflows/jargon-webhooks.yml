@@ -1,0 +1,17 @@
+name: Validate Jargon Artefacts
+
+on:
+  repository_dispatch:
+    types: [jargon_onSnapshot]
+
+jobs:
+  validate-jargon-artefacts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Validate Jargon Artefacts
+        uses: ./.github/actions/validate-jargon-artefacts
+        with:
+          jargon-webhook-payload: ${{ toJSON(github.event.client_payload) }}

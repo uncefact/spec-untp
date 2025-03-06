@@ -1,6 +1,6 @@
 ---
 sidebar_position: 18
-title: Digital Facility Profile
+title: Digital Facility Record
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
@@ -13,7 +13,7 @@ Are maintained at https://test.uncefact.org/vocabulary/untp/dfr/0/about
 
 ### Stable Releases For Implementation
 
-Version 1.0 stable release for production implementation is due Jan 2025
+Version 1.0 stable release for production implementation is due in June 2025 after formal public review 
 
 ### Release for Pilot Testing
 
