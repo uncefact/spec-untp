@@ -64,7 +64,3 @@ Root URL for GS1 identity registers is https://id.gs1.org
 |[GLN](https://www.gs1.org/standards/id-keys/gln)|Global Location Number Registry|IDR v0.6, v1.0|TBA|TBA |
 |[GIAI](https://www.gs1.org/standards/id-keys/global-individual-asset-identifier-giai)|Global Individual Asset Identifier Registry|IDR v0.6, v1.0|TBA|TBA |
 |[GRAI](https://www.gs1.org/standards/id-keys/grai)|Global Returnable Asset Identifier|IDR v0.6, v1.0|TBA|TBA |
-
-
-
-

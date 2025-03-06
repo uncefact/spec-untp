@@ -28,7 +28,6 @@ Summary list of software products and status of implementation. Scope defines th
 | [SIMBA Chain](#simba-chain)| SIMBA Ensure | VCP, DPP, DFR, DTE, DCC, IDR, DAC| planned| 
 | [K4 Security](#k4-security)| KS Digital Product passport, KS Product Trust Service| VCP, DPP, DTE, DCC. IDR, DAC| planned|
 
-
 ## Implementation Details
 
 ### [UNCEFACT](https://unece.org/trade/uncefact)
