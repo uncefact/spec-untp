@@ -27,6 +27,8 @@ Summary list of software products and status of implementation. Scope defines th
 | [Health LOQ](#health-loq) |Health LOQ Document protection, Product Origin, Compliance dashboard| VCP, DPP, DTE, DCC, IDR, DAC, SVC| planned|
 | [SIMBA Chain](#simba-chain)| SIMBA Ensure | VCP, DPP, DFR, DTE, DCC, IDR, DAC| planned| 
 | [K4 Security](#k4-security)| KS Digital Product passport, KS Product Trust Service| VCP, DPP, DTE, DCC. IDR, DAC| planned|
+| [GS1](#gs1)|Link Resolver|IDR, DIA|Planned|
+
 
 ## Implementation Details
 
@@ -367,3 +369,20 @@ SIMBA chain is a participant in
 | ------ | ------------- | ----------- | ------------ |
 | [KS Product Trust Service](https://dpp.globalwallet.kr/) |KSDID PTS is a supply chain traceability software/service that provides a platform for business to create and manage Digital product passports (DPPs)| VCP, DPP, DTE, DCC. IDR, DAC - v0.5, v1.0 | TBA |
 
+### [GS1](https://www.gs1.org/)
+
+- UNTP commitment made on: 03-March-2025
+- Registration Country: Belgium
+- Operating Countries: Global
+- Participate in pre-release UNTP Pilots? : Yes
+
+| Logo     | Implementation Statement      |
+| ------ | --------- |
+| ![Logo](/img/implementations/gs1.org/logo.png) |TIndustries that choose to use the GS1 identification system must be able to continue to do so as they address a growing list of regulations, including those for which UNTP and the concept of "roots of trust" is highly applicable. |
+
+
+#### Product Information
+
+| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
+| ------ | ------------- | ----------- | ------------ |
+| [GS1 Link Resolver CE](https://github.com/gs1/GS1_DigitalLink_Resolver_CE) |GS1 Resolver is a free and open-source web-server application that allows you to resolve GS1 identifiers to their corresponding web resources.| IDR - v0.5, v1.0 | TBA |
