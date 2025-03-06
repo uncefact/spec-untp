@@ -366,4 +366,3 @@ SIMBA chain is a participant in
 | Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
 | ------ | ------------- | ----------- | ------------ |
 | [KS Product Trust Service](https://dpp.globalwallet.kr/) |KSDID PTS is a supply chain traceability software/service that provides a platform for business to create and manage Digital product passports (DPPs)| VCP, DPP, DTE, DCC. IDR, DAC - v0.5, v1.0 | TBA |
-
