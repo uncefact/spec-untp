@@ -1,26 +1,26 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
+import 'dotenv/config';
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'UN Transparency Protocol',
+  title: process.env.SITE_TITLE || 'Example Site',
   tagline:
     'Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.',
-  favicon: 'img/favicon.ico',
+  favicon: process.env.FAVICON || 'img/default-favicon.png',
 
   // Set the production url of your site here
-  url: 'https://uncefact.github.io',
+  url: process.env.SITE_URL || 'https://example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/spec-untp/',
+  baseUrl: process.env.BASE_URL || '/project-name/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'uncefact', // Usually your GitHub org/user name.
-  projectName: 'spec-untp', // Usually your repo name.
+  organizationName: process.env.ORGANIZATION_NAME || 'Example Organization', // Usually your GitHub org/user name.
+  projectName: process.env.PROJECT_NAME || 'example-project', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,7 +42,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/docs',
           editUrl: ({versionDocsDirPath, docPath}) =>
-            `https://github.com/uncefact/spec-untp/edit/main/website/${versionDocsDirPath}/${docPath}`,
+            `${process.env.EDIT_URL_BASE || 'https://example.com'}/{link-purpose}/${versionDocsDirPath}/${docPath}`,
         },
         blog: false,
         theme: {
@@ -63,20 +63,22 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       slackLink:
-        'https://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
+        process.env.SLACK_LINK || 'https://example.com/{link-purpose}',
       mailingListLink: 'https://groups.google.com/g/transparency-uncefact',
       colorMode: {
         disableSwitch: true,
       },
-      image: 'img/social-card.png',
+      image: process.env.SOCIAL_IMAGE || 'img/placeholder-social-card.png',
+      heroImage: process.env.HERO_IMAGE || 'img/grey-placeholder-image.jpg',
+      heroImageAlt: process.env.HERO_IMAGE_ALT || 'Hero image alt',
       navbar: {
-        title: 'TP',
+        title: process.env.NAVBAR_TITLE || 'Title',
         logo: {
-          alt: 'United Nations Transparency Protocol',
-          src: 'img/logo.svg',
+          alt: process.env.LOGO_ALT || 'Logo alt',
+          src: process.env.SITE_LOGO || 'img/grey-placeholder-image.jpg',
         },
         items: [
-          {to: '/docs/about', label: 'About the UNTP', position: 'right'},
+          {to: '/docs/about', label: 'About', position: 'right'},
           {
             to: '/docs/specification',
             label: 'The specification',
@@ -89,12 +91,7 @@ const config = {
           },
           {to: '/docs/extensions', label: 'Extensions', position: 'right'},
           {
-            to: '/docs/implementations',
-            label: 'Implementations',
-            position: 'right',
-          },
-          {
-            href: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
+            href: process.env.SLACK_CLIENT_APP_LINK || 'https://example.com/{link-purpose}',
             position: 'right',
             html: '<svg class="icon icon-slack"><use xlink:href="#slack"></use></svg><span class="menu-item-name">Slack</span>',
             className: 'navbar-slack-link',
@@ -106,7 +103,7 @@ const config = {
             className: 'navbar-mailing-list-link',
           },
           {
-            href: 'https://github.com/uncefact/spec-untp',
+            href: process.env.REPO_LINK || 'https://example.com/{link-purpose}',
             html: '<svg class="icon"><use xlink:href="#github"></use></svg><span class="menu-item-name">Github</span>',
             className: 'navbar-github-link',
             position: 'right',
@@ -117,7 +114,7 @@ const config = {
         links: [
           {
             label: 'Print this specification as PDF',
-            to: '/un-transparency-protocol.pdf',
+            to: process.env.FOOTER_PDF_LINK || 'https://example.com/{link-purpose}',
             target: '_blank',
           },
           {
@@ -129,7 +126,7 @@ const config = {
             to: '/privacy',
           },
         ],
-        copyright: `© United Nations Economic Commission for Europe`,
+        copyright: `© ${process.env.ORGANIZATION_NAME || 'Example Organization'}`,
       },
       prism: {
         theme: lightCodeTheme,

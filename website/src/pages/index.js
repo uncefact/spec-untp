@@ -2,7 +2,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Pledges from '@site/src/components/Pledges';
-import HomeHeroImageUrl from '@site/static/img/home-hero.jpg';
 import Layout from '@theme/Layout';
 import React from 'react';
 import extensions from '../../extensions';
@@ -36,7 +35,7 @@ function HomepageHero() {
           </div>
         </div>
         <div className="home-hero__image-wrapper">
-          <img src={HomeHeroImageUrl} className="home-hero__image" alt="" />
+          <img src={siteConfig.themeConfig.heroImage} className="home-hero__image" alt={siteConfig.themeConfig.heroImageAlt} />
         </div>
       </div>
     </header>
@@ -53,10 +52,11 @@ const implementationPledges = [
 ];
 
 export default function Home() {
+  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="UN Transparency Protocol"
-      description="Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.">
+      title={siteConfig.title}
+      description={siteConfig.tagline}>
       <main className="homepage-content">
         <HomepageHero />
         <HomepageFeatures />
