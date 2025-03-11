@@ -63,7 +63,7 @@ const config = {
     ({
       slackLink:
         process.env.SLACK_LINK || 'https://example.com/{link-purpose}',
-      mailingListLink: 'https://groups.google.com/g/transparency-uncefact',
+      mailingListLink: process.env.MAILING_LIST_LINK || 'https://example.com/{link-purpose}',
       colorMode: {
         disableSwitch: true,
       },
@@ -90,7 +90,7 @@ const config = {
           },
           {to: '/docs/extensions', label: 'Extensions', position: 'right'},
           {
-            href: process.env.SLACK_CLIENT_APP_LINK || 'https://example.com/{link-purpose}',
+            href: process.env.SLACK_LINK || 'https://example.com/{link-purpose}',
             position: 'right',
             html: '<svg class="icon icon-slack"><use xlink:href="#slack"></use></svg><span class="menu-item-name">Slack</span>',
             className: 'navbar-slack-link',
@@ -125,7 +125,7 @@ const config = {
             to: '/privacy',
           },
         ],
-        copyright: `© ${process.env.ORGANIZATION_NAME || 'Example Organization'}`,
+        copyright: `© ${process.env.FOOTER_TEXT || 'Example Footer'}`,
       },
       prism: {
         theme: lightCodeTheme,
