@@ -41,8 +41,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/docs',
-          editUrl: ({versionDocsDirPath, docPath}) =>
-            `${process.env.EDIT_URL_BASE || 'https://example.com'}/{link-purpose}/${versionDocsDirPath}/${docPath}`,
+          editUrl: process.env.EDIT_URL_BASE || 'https://example.com/{link-purpose}',
         },
         blog: false,
         theme: {
