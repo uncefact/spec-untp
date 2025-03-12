@@ -34,10 +34,10 @@ This will use placeholder values suitable for development and testing.
 
 #### With Custom Configuration
 
-1. Copy `.env-example` to `.env`:
+1. Copy `.env.example` to `.env`:
 
 ```bash
-$ cp .env-example .env
+$ cp .env.example .env
 ```
 
 2. Modify the values in `.env` to match your requirements
@@ -68,7 +68,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ### Environment Variables
 
-The site can be configured using environment variables found in the `website/.env-example` file. Create a `.env` file in the same directory or set them directly in your environment.
+The site can be configured using environment variables found in the [.env.example](.env.example) file. Create a `.env` file in the same directory or set them directly in your environment.
 
 #### Core Configuration
 
