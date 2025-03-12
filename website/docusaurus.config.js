@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 const title = process.env.SITE_TITLE || 'Example Site';
 const tagline = process.env.SITE_TAGLINE || 'Example Site Tagline';
-const favicon = process.env.FAVICON || 'img/default-favicon.png';
+const favicon = process.env.FAVICON || 'img/grey-placeholder-image.png';
 const url = process.env.SITE_URL || 'https://example.com';
 const baseUrl = process.env.BASE_URL || '/project-name/';
 const organizationName = process.env.ORGANIZATION_NAME || 'Example Organization';
