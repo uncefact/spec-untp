@@ -5,7 +5,7 @@ const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 const title = process.env.SITE_TITLE || 'Example Site';
-const tagline = 'Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.';
+const tagline = process.env.SITE_TAGLINE || 'Example Site Tagline';
 const favicon = process.env.FAVICON || 'img/default-favicon.png';
 const url = process.env.SITE_URL || 'https://example.com';
 const baseUrl = process.env.BASE_URL || '/project-name/';
