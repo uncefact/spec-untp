@@ -11,17 +11,17 @@ const url = process.env.SITE_URL || 'https://example.com';
 const baseUrl = process.env.BASE_URL || '/project-name/';
 const organizationName = process.env.ORGANIZATION_NAME || 'Example Organization';
 const projectName = process.env.PROJECT_NAME || 'example-project';
-const editUrl = process.env.EDIT_URL_BASE || 'https://example.com/{link-purpose}';
-const slackLink = process.env.SLACK_LINK || 'https://example.com/{link-purpose}';
-const mailingListLink = process.env.MAILING_LIST_LINK || 'https://example.com/{link-purpose}';
+const editUrl = process.env.EDIT_URL_BASE || 'https://example.com/link-purpose';
+const slackLink = process.env.SLACK_LINK || 'https://example.com/link-purpose';
+const mailingListLink = process.env.MAILING_LIST_LINK || 'https://example.com/link-purpose';
 const socialImage = process.env.SOCIAL_IMAGE || 'img/placeholder-social-card.png';
 const heroImage = process.env.HERO_IMAGE || 'img/grey-placeholder-image.png';
 const heroImageAlt = process.env.HERO_IMAGE_ALT || 'Hero image alt';
 const navbarTitle = process.env.NAVBAR_TITLE || 'Title';
 const logoAlt = process.env.LOGO_ALT || 'Logo alt';
 const siteLogo = process.env.SITE_LOGO || 'img/grey-placeholder-image.png';
-const repoLink = process.env.REPO_LINK || 'https://example.com/{link-purpose}';
-const footerPdfLink = process.env.FOOTER_PDF_LINK || 'https://example.com/{link-purpose}';
+const repoLink = process.env.REPO_LINK || 'https://example.com/link-purpose';
+const footerPdfLink = process.env.FOOTER_PDF_LINK || 'https://example.com/link-purpose';
 const footerText = process.env.FOOTER_TEXT || 'Example Footer';
 
 /** @type {import('@docusaurus/types').Config} */
