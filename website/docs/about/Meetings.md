@@ -17,12 +17,13 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 6th Mar 2025. 
-	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
-	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 * **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 20th Mar 2025.  
 	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
 	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
+* **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 3rd April Mar 2025. 
+	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
+	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
+
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
@@ -32,6 +33,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2025-03-06| [The meeting covered updates on GS1's commitment, improvements to the information architecture, the UNTP Playground's credential validation features, and a discussion on whether bulk materials require a separate Digital Material Passport, concluding that further testing is needed.](#2025-03-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/LS0ZS4wMm45ZUBZNrH-oQJkpT2R7a4F8Ma9GOeW6ZHk1HwhLFPMVdVXI8Vy14IEK.lej3QWxOntusXGsK)|[transcript](../../meetings/2025-03-06-Recording.txt)|
 |2025-02-20| [The meeting focused on preparing UNTP for public review, addressing governance, simplifying specifications, improving usability, and ensuring alignment with Recommendation 49 while planning for future pilots and implementations.](#2025-02-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/hIBsxqAMi7tw1z5Rj-me3ZtbOS-IQnuJR1zYSuER41676BM_JO8lNPi6MEAqhtrL.Sto8AESpUGhaph5Z)|[transcript](../../meetings/2025-02-20-Recording.txt)|
 |2025-02-06| [The UNTP meeting focused on reviewing change requests, refining the identity resolver framework, approving the verifiable credentials update, discussing implementation guidance, exploring certification and governance models, and addressing open issues for future development.](#2025-02-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/ayxfoRJH0z9FXI25UWNuZ4KQ0LQ7N3GoLHTxbz-wTW4fjjOfMjQ3_zr-uNp6jUhk.dwHfJ3YszOvW9aLb)|[transcript](../../meetings/2025-02-06-Recording.txt)|
 |2025-01-23| [The meeting focused on enhancing UNTP governance, fostering community engagement through CAP, refining chain of custody models, and exploring tools for effective collaboration, setting the stage for further iterations and sector-specific applications.](#2025-01-23-meeting-summary)|[video](https://us02web.zoom.us/rec/share/kQt_d4JsLMrfy3iCGf1hoD04b-7Rg5ksuGML-Sj8wSMZL7l3uWqhkO4HEPpr8nBG.eHleGSxocBLfQumY)|[transcript](../../meetings/2025-01-23-Recording.txt)|
@@ -74,6 +76,52 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+
+## 2025-03-06 Meeting Summary
+
+**Chair:** Steve  
+**Attendees:** Nick, Zach, Alberto Spritorius, Ali Bezirizadeh, Peter, Patrick, Danika, Ashley, Adrian, Albertus, and other contributors  
+
+#### **1. Welcome and Introductions**  
+- **Steve** welcomed attendees and acknowledged voluntary participation.  
+- **Alberto Spritorius** (Tuneas International) introduced himself, explaining his background in vehicle license plate manufacturing and standards.  
+- **Ali Bezirizadeh** (AI Simpro, Canada) introduced his work on bulk material traceability in the mining sector.  
+
+#### **2. GS1 Commitment to UNTP**  
+- **Steve** announced GS1’s commitment to implementing the UNTP Identity Resolver (IDR).  
+- **Peter** confirmed GS1's commitment but emphasized a gradual approach due to its 150+ member organizations.  
+- **Patrick** raised concerns about GS1’s position on verifiable credentials, which **Steve** clarified, noting GS1's intention to implement the Digital Identity Anchor (DIA).  
+
+#### **3. UNTP Information Architecture Update**  
+- **Danika** presented an improved site structure for UNTP documentation.  
+  - Focus on simplifying navigation and making content more user-friendly.  
+  - Hierarchical model preferred over multidimensional structures to ease maintenance.  
+  - Stakeholder-specific guides added to streamline access to relevant information.  
+- **Patrick and Nick** supported the changes, emphasizing their clarity and usability.  
+
+#### **4. UNTP Playground for Credential Validation**  
+- **Ashley** demonstrated the latest features of the UNTP Playground, a tool for validating digital credentials.  
+  - Now supports conformance testing with **VCDM v2**, JSON-LD validation, and schema checks.  
+  - Users can generate downloadable **conformance reports** (eventually verifiable credentials).  
+  - Planned features include public **credential repositories** for verified implementations.  
+- **Patrick** suggested allowing direct downloads of **rendered HTML reports** from the Playground.  
+- **Zach** proposed highlighting the **extension model** for bulk materials to demonstrate practical applications.  
+
+#### **5. Discussion: Bulk Materials & Digital Material Passport**  
+- **Steve** raised the question of whether bulk materials (e.g., grain, crude oil, copper concentrate) require a **Digital Material Passport** separate from the **Digital Product Passport**.  
+- **Albertus, Nick, and Zach** argued that bulk materials should remain under **UNTP with extensions** rather than creating a new passport type.  
+- **Ali Bezirizadeh** noted different traceability needs between **radioactive materials, iron ore, and concentrates** and asked whether classifications would be standardized.  
+- **Peter** emphasized that **facility credentials** play a crucial role in bulk material traceability, not just the material itself.  
+- **Adrian** (from a crude oil trading and chemical background) argued that **a material passport is necessary** because crude oil and intermediates differ from finished products.  
+- **Steve** concluded that **real-world testing** should determine whether an extension is sufficient or if a new model is needed.  
+
+#### **6. Closing Remarks**  
+- **Steve** mentioned plans to create a **UNTP Media Page** listing external references to UNTP.  
+- Next steps:  
+  - Collect feedback on the **UNTP Playground** and **information architecture updates**.  
+  - Continue practical tests for **bulk materials in UNTP** before deciding on a separate material passport.  
+  - Publish the **media page** for community contributions.  
 
 
 ## 2025-02-20 Meeting Summary

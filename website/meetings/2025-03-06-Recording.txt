@@ -1,0 +1,463 @@
+[Speaker 9]
+Steve, you've made it through customs.
+
+[Speaker 1]
+Yeah, it was actually, I think, a world record. Touchdown at 6.30 and I was in the coffee shop at 6.40 through customs and immigration.
+
+[Speaker 12]
+Where were you?
+
+[Speaker 1]
+Really, Sydney. Yeah, if you arrive early, there's not too many passengers and it's all automated now. You know, smart gates, automatic face recognition, just, I didn't have any check-in bags, so it was just basically a walkthrough.
+
+I see a few people have some struggles with calendars. I have them myself. Google sometimes, the ICS things that it makes.
+
+Didn't seem to make a recurring meeting, only a one-off meeting. I'm gonna make sure that I get a correct ICS file that you can stick in your calendar that will make a recurring meeting over the next few days.
+
+[Speaker 8]
+Morning, Zach. Morning, all.
+
+[Speaker 9]
+Morning, Nick. Dude, I'm assuming, because you got through the cafe, you're planning on driving and I can sit back and just enjoy.
+
+[Speaker 1]
+You can sit back and relax. I'll sit back and enjoy the show. Thank you for your support.
+
+I'm sure you'll have something to say about VMP versus VPP. All right, look, it's three minutes past. I think a few stragglers might still join, but thank you very much.
+
+Joining us on the fortnightly UNTP meeting. I appreciate your participation. I know it's all voluntary and we give our time to this.
+
+Hope it all works out to be worthwhile and something we can reference with some pride. As usual, this meeting is being recorded. Yes, it is.
+
+And the minutes will be posted publicly. If you have any problems or objections, let me know. Also, this is a UNC project where any material contributions, as in Git commits, updates to the spec, are IP granted to the UN.
+
+So don't put your private IP as a contribution, only IP you're willing to contribute to the UN, so that we can make it freely available to the world. That's the purpose of it. All right, so there was a brief agenda sent out I noticed before we get into the first item, which is any open PRs, looks like there might be one or two names on the list that I don't recognize.
+
+I'm not sure if you've joined before. If you're new and haven't joined us, would you like to speak up and do like a 30 second hello introduction?
+
+[Speaker 4]
+Well, I'm Alberto Spritorius, I'm new here. The company I work for is Tuneas International. We make vehicle license plates, manufactured globally, operate in 82 countries.
+
+And we actually do DPP already for vehicle license plates, but it's a regulatory environment. So we are very sticky and let me dare say egoistic clients that insist on the way they do it is the right way, but the reality is mostly it's all the same. That is what we can learn from that.
+
+So yes, it's highly distributed and certainly resolvers is a big need. Then my other job, my job in Tuneas is actually standards. And I am with AC31, ISO IEC JTC1 AC31 since 2004.
+
+And I am currently the editor of four of the data standards and I serve on the DI committee and the data construct committee. Thank you.
+
+[Speaker 1]
+Well, thank you Alberto, that's a stunning resume. So I'm sure you can, if you can spare us the time, you'll contribute some valuable insights to this world. Is there anybody else on the call that wants to introduce themselves?
+
+I like your sign in the background, by the way, great ideas achieved, isn't it? Is that what it means?
+
+[Speaker 4]
+Yes, well, the other view is I might disappear off this call because we sitting right in the path of Alfred, the hurricane.
+
+[Speaker 1]
+All right, good luck with that. All right, anyone else?
+
+[Speaker 9]
+You're based here in Australia, sorry. Sorry, repeat that question. Where you're based in?
+
+Brisbane. Brisbane, okay.
+
+[Speaker 4]
+Yeah, I just actually west of Brisbane. So we hope it will be a tropical low when it hits us. But yeah, so on the timing, it's an hour earlier in Brisbane.
+
+It's the guys timing you gave and thanks for the consideration for us here in Australia. Normally our meetings are at 1 a.m. in the morning.
+
+[Speaker 1]
+I know that's, yes. Try to make it work as much as possible. That's why we have two alternative times.
+
+One that suits the European zone and one that suits the USA. But we still have a number of Europeans joining us here anyway. Anyone else want to do a quick introduction before we move on?
+
+[Speaker 6]
+Okay, my name is Ali Bezirizadeh, AI Simpro from Canada. We are working on mining metal sectors. So we have a current project of bulk material traceability in North America.
+
+One of the area that we are interested to involve discussing with you is that to learn from you how you are going to define it as kind of the best practice. And also we are working on the kind of digitalization automation on the process side and the mirror processing specifically. And yeah, that's what we do.
+
+Thank you.
+
+[Speaker 1]
+Well, thank you, Ali. And I hope we can offer you some insights and knowledge but I suspect if you've got some expertise on bulk material processing, you might help us more than we help you because that is exactly the topic that we're trying to figure out how to do well at the moment.
+
+[Speaker 6]
+Yeah, there is some idea we can discuss it down the road. I just want to learn first what you are doing and I definitely share what we know.
+
+[Speaker 1]
+All right, anyone else before we get started? Okay, and then let me share screen. I'll just pop up.
+
+We only have one, where is it gone? Okay, pull requests. Oh no, that's the wrong one.
+
+There it is. Which is as most of you know, we have a page on UNTP, which is where implementation commitments can be registered. So whether you're a software renderer or registry operator or a certifier or whatever, you can make a public commitment to implement and then when we went through the test cases, register as implemented so that your registry or your product or whatever it is, is publicly discoverable.
+
+So most times we've got a new registration. This one's an interesting one because it's from GS1, which is as everyone knows, I think, certainly at the retail finished product end, probably the dominant product identifier registry in the world. And they've committed to implement the identity resolver spec from UNTP, which actually is not so different to the GS1 link resolver anyway, but we generalized it to work for any identifier scheme and decoupled it from GS1 and added a few tweaks.
+
+And it's nice to see GS1 making this commitment. I don't think there's anyone from GS1 on the call. Phil couldn't make it, so.
+
+[Speaker 9]
+Peter's here.
+
+[Speaker 1]
+Oh, Peter, do you want to say something? Oh, Zach, do you want to do the review or somebody?
+
+[Speaker 9]
+Well, Steve, so overnight, Phil added a comment saying he wanted to be removed from the software thing. So I edited it this morning to reflect that. So yeah, can I do a review if I've made the last commit?
+
+[Speaker 1]
+Well, okay. Anyone with the privileges can do a review. If not, let's have a...
+
+Peter, do you want to say anything about the GS1 commitment?
+
+[Speaker 7]
+No, nothing to add really. Huge momentum in link data. We're just off the back of that global forum.
+
+So I'd like to think everything is really well aligned at the moment. So, sorry, nothing really extra to add.
+
+[Speaker 1]
+Okay. We'll just have a quick look at the GS1 statement here. Basically, they're saying registration of premium to implement the IDR, which is one of the UNTP specs in both test and production for a number of industry sectors and for pretty much most of the product or location or asset by GS1 identifiers.
+
+So that's, I assume nobody's got any objections to merging that when we reviewed it. Does anybody got any comments or questions? Otherwise, we welcome that commitment from GS1 and move on to the next topic.
+
+[Speaker 9]
+Steve, I have been able to approve it because, oh, Patrick, put his hand up.
+
+[Speaker 5]
+Yeah, I just got a question. There was an email, I think, on the public credential mailing list a while back and a post about GS1's sort of relationship with verifiable credential. And it seemed to say that they were sort of taking a step back or getting back into an evaluation phase.
+
+Does that affect the work with UNTP at all?
+
+[Speaker 1]
+So there are actually two specs that GS1 are likely to implement. One, they've made a public commitment now, which is the IDR. That's if I've got an ID of a thing, I can get data about a thing. The other one is the DIA, the Digital Identity Anchor.
+
+As a registry operator, they are a form of trust anchor. And what I understand from GS1 is that they do intend to implement the DIA. They just haven't made a public commitment yet, although they did on the W3C mailing list, I thought.
+
+But I'm not aware of any pullback or withdrawal of that commitment.
+
+[Speaker 7]
+Steve, if I can, very briefly in response, I can actually confirm there's been a commitment to proceed, but on the basis of crawling rather than running. So then because of having 150-odd member organisations around the world, it may be interpreted as not moving as fast as everyone would like, but it's very much about trying to bring all of those 150 member organisations on a journey together. But yeah, there hasn't been actually a formal commitment and sign off from GS1 Global to move forward.
+
+And that's probably the clearest signal we've had for a long while. Everything up until now has been evaluations and target teams and experiments. So I said that as being quite positive.
+
+Thank you.
+
+[Speaker 1]
+Yeah, thanks, Phil. Sorry, Peter. Yeah, and I should say there is, just before we move on, there is a related UNC project that's just been approved and published, which actually John and a lady from the Spanish Business Register are leading, which is a global trust registry, which is really about formalising that digital identity anchor, perhaps moving it out of UNTP because it's a bit more general than that.
+
+It applies equally to invoices and any sort of verifiable document. And we have some interesting, some appetite from some major economies, I should say, to make their national business registers trust anchors, including perhaps India. So that's an interesting one to look at.
+
+I'll post a link in the chat to that other project for those that are interested. In the meantime, let's move on to the next agenda item, which was, I think, Danika to give us a quick overview of the proposed updated information architecture. How can we make this increasingly large and complex sites more navigable and understandable?
+
+[Speaker 3]
+Absolutely, thanks, Steve. So some very quick background on myself. I'm a UX designer and product designer.
+
+And earlier in the year, I did some research with some early implementers to help us better understand some of the challenges that might be, that have already happened and might be still coming ahead with making the documentation and the tooling as useful as possible for getting people adopted in and actually getting to that stage of implementation and using UNTP. So one of the big challenges that was identified was around navigation. So people described the documentation in general as quite dense, a bit overwhelming, and quite difficult to find information specific to their needs.
+
+So we're looking to make the structure more user-focused. And in addition to that as well, has been identified that we need to be able to remove certain pieces without the whole structure falling apart. And it, of course, as always, needs to scale as more information is added.
+
+So what I'll do, I'll share the structure itself. So you can kind of get eyes on and I'll talk through some of the thinking that got us to this point. So can everyone see a mirror board with the, yeah, beautiful.
+
+Okay, so big broad strokes in information architecture. You can have a very simple hierarchical model. So if you go on to your local art galleries website, for example, and it has a series of links across the top, all the pages are set underneath those couple of links at the top, and you can find everything through that single point of navigation.
+
+That's a hierarchical model. Top-down structure, parent-child relationships, very easy to manage, and quite easy for the user to get a good picture of the whole website. A challenge of that is that that's best suited to smaller sites.
+
+Another model we're thinking about is a multidimensional model. So a multidimensional model has the information is organized across multiple axes instead of a single. So that could be things like the user role.
+
+It could be the tasks that they're trying to get done. It could be the industry that the user is approaching it from, where there's multiple different information axes that we could consider in the navigation. You might think of websites like Amazon, like buying a book.
+
+So if you're looking at a book website, a bookstore website, I should say, sorry, it might be genre, but it might also be age, age range for the book that you're looking for. So that's multiple dimensions that you're coming to the book. And on the homepage, it would have like books for teens, sci-fi, adult fiction.
+
+So there's multiple dimensions that can be approached. So that one obviously has a lot of flexibility, a lot of range for growth. The trouble is it has a lot of upkeep as well.
+
+So that's probably beyond the reach for our purposes and our voluntary based working. That we would be looking at hierarchy. You can kind of see how that hierarchy plays out, but what we can do is interlink all of that information with those dimensions in mind.
+
+So then step two is if we are thinking multiple dimensions, what are those dimensions that we really wanna prioritize? Because we would be doing it manually rather than automatically with tagging. And we had a look at role-based actor models.
+
+So role-based would be things like, are you a product owner? Are you a business decision maker? Are you a developer, an engineer?
+
+Are you someone who sits in the data all day? That would be role-based. Also had a look at process-oriented.
+
+So this would be just laying things out as clearly as possible in the order that steps are taken. So any organization, it might be, well, I'm at the start of my journey, so I just wanna know the use case. I'm in the middle of the journey, so I wanna know about APIs and technical stuff.
+
+I'm towards the end of my journey, or I'm thinking about the end of my journey, I wanna know about community activation. Or I wanna know about making sure that everything is connected end to end for that end consumer. Another potential model being focused around the broad use case.
+
+So this is around organization type. So we have industry actors like manufacturers, registry bodies, we've got assessment bodies, we have software vendors, and those consumers at the end as well. So looking at all three of these, all of them are fairly useful.
+
+That broad use case model is what this information architecture is based on. So I'll actually look at my structure now. So in the middle right there is stakeholder guides.
+
+So that's that list of stakeholders. But the thinking around stakeholders is threaded throughout the whole thing. So from getting started, there's a lot of information which is universal.
+
+And then there's information that is specific to the stakeholders. So what the big advantage of this structure is that with those base components versus the individual user guides, it's really easy to plug and play. So if something becomes relevant at a higher level and needs to be taken out of UNTP, it can be taken out and we won't lose any function.
+
+As things are added, if there's another stakeholder group that goes, you know what, UNTP is actually crucial, critical, we can add them without any dramas. So yeah, so hopefully everyone's had a chance to have a look. Is there any questions?
+
+[Speaker 8]
+I think this looks great, Jenica.
+
+[Speaker 5]
+Patrick. Yeah, no, I think this looks really good. I like this idea that getting started is universal and then you kind of head the way you want depending on your role, right?
+
+You could see certain people heading more into the stakeholders guide and people who are gonna be more developer oriented would head towards the specification and implementation guides, right? So there's kind of a clear divide of information. Yeah, I think I like this a lot.
+
+So at least as I see it there, but yeah, as you said it, there's a lot of information and a lot of different angles to cover from this, but I think this is pretty clear to me. Do you plan to, because from what I understand right now, all the website is through GitHub, right? It's a GitHub page, it's configured.
+
+Do you still plan to use this or do you plan to change the information site like the way information is generated as a whole?
+
+[Speaker 3]
+Yeah, so the information architecture has been generated with the assumption that DocuSource or something similar would be still in place. So not looking at re-engineering anything from the ground up, no.
+
+[Speaker 5]
+Yeah, I think that's great because then the documentation is directly affected by the PR, right? So what is reviewed is what's gonna be on the site and there's no extra step needed. So I think that's a good idea.
+
+No, it's looking good.
+
+[Speaker 1]
+Thank you, Danica. Has anybody else got any positive or negative comments on the proposed refactoring? Most of it, I think is moving pages into a different heading, but there will be some content shifting and stuff, but anything we can do to make it more understandable is worthwhile, I think.
+
+[Speaker 3]
+And this is fully available in Slack as well. So a couple of days ago, I uploaded a spreadsheet with also all the sub pages under here, the sub pages. So you can really dig into the detail if you're interested and that's just in a spreadsheet that I've added to Slack.
+
+Thanks, Steve.
+
+[Speaker 1]
+Thanks, Danica. I'm interested in that. We probably won't do anything with this like this week or next week.
+
+Let's dwell on it for a couple of weeks and then think about refactoring. If nobody's got any further comments on the information architecture, then perhaps I can hand over to Ashley who's gonna demonstrate the test playground. This is for implementers to test whether whatever they've implemented actually works and get a report accordingly.
+
+[Speaker 2]
+Yes, thank you, Steve. Can everyone see my screen? Thank you.
+
+Awesome.
+
+[Speaker 1]
+If you wanna show how to find that, there's a link on the test services. I can just say, if you go to the UNTP site and you look under implementation support, there's a test services page and the link to this is there.
+
+[Speaker 2]
+Awesome. Thanks, Steve. I've also just dropped a comment inside the Zoom channel.
+
+Sorry, the Zoom chat. With links to everything that I'm going to be demonstrating today. So you can test this out for yourself.
+
+And as Steve just mentioned, we've also updated the UNTP specification site such that implementers can actually find this test suite. So for those that are not familiar with the UNTP playground, essentially it's a website that we are hosting where implementers can produce UNTP conformant credentials and then take those credentials and upload them to the playground. And then the playground will then run a couple of tests against those credentials and then provide some feedback whether or not the credentials you have produced are conformance with the UNTP specification.
+
+And also the dependent specifications, things like the version two verifiable credential data model. So with that being said, since last time we've demonstrated the UNTP playground, we had three key areas to extend the functionality of the UNTP playground. The first being to make sure that we are conformant with the version two VCDM specification, in particular checking for semantics.
+
+So making sure that our credentials conform with the V2VCDM schema. The second is to make sure that the JSON-LD is valid and we are not doing things like redefining protected terms and also ensuring the extensibility of the UNTP as well. And the third thing is the reporting functionality.
+
+So once I actually upload my credentials, I validate them, how can I show that I'm conformant with UNTP? So with that in mind, just a note, the reporting functionality is still currently being developed, but I'll get into that in a moment. So I've prepared a couple of credentials.
+
+One, which is a valid digital product passport. So I've produced this within my implementation, I've downloaded that credential, and now what I'm doing is drag and dropping that credential into the playground. Now, as soon as I drop that, we see some confetti and a green tick, but basically what's happening there is that the playground is determining what the credential type is and also what version of the credential that it is conforming to, and then reaching out, fetching the required assets to validate that credential based on that version and the type, and then running those tests.
+
+So we're able to detect the proof method used. This is pertaining to the BCDM model, in this case, developing proof. Now we're able to detect the version and it's the correct version, version two.
+
+This is the additional test step that we've added, which is the schema validation. So we've passed that. Our credential that we've uploaded has also been, we were able to verify that credential.
+
+We also checked the credential we uploaded against the schema, in this case, the 0.6.0 beta seven schema. And then inside the credential, we were able to expand the credential and to make sure that there were no undefined terms and also to make sure that we were not, we didn't have any conflict with protected terms. So there's a whole lot of things that are happening under the hood here, but more importantly, we got the green ticks.
+
+So that's great. So next, what I'll do is just quickly walk through the reporting functionality. So basically once we upload the credential, we are then able to generate a report.
+
+So we can click the generate report button and here we can add the implementation name. So Acme, oops, sorry. Yep, and we can generate that report.
+
+Now this is a very simple implementation. This is the first iteration. You could imagine that there would be much more details or implement a metadata that we'd like to capture and include in the report itself.
+
+In this case, what I just demonstrated was adding the implementer name, which is included inside the report. But you could also imagine that view having a preview of what this report would look like once it's generated. So now that we've generated the reports, we have the ability to download the report, which I've done.
+
+And yeah, so we can download the report. Now the report itself is just a simple JSON object, nothing too flash at the moment, but the end state will be to produce a verifiable credential such that we can verify it with, yeah, so it's cryptographically secure. We sign the credential and so on and so forth.
+
+So that is just a plain old generic digital product passport. That's great for those that have not extended UNTP, but for those that have extended UNTP, the Playground also offers the ability to configure it in such a way that we can also test an extension. In this case, inside the test environment, we have configured the test environment of UNTP Playground to validate an extension or UNTP extension called AATP, the Australian Agricultural Traceability Protocol, which is what I'll demonstrate now.
+
+So just quickly, so again, I'm taking the credential produced by implementation, in this case, the AATP Digital Livestock Passport credential and dropping that into the Playground. Now there's a little bit more information here. As you can see, we have two credential types, the Digital Livestock Passport version 0.41 beta one, and also the mapping to the passport that was, sorry, the credential or the passport type that was extended, in this case, the Digital Product Passport and specifically the 0.6 beta seven version. So here, one of the test cases failed and it was due to the UNTP schema validation. So the credential I uploaded did not conform to the Digital Product Passport 0.6 beta seven schema. And what we could do is we could click View Details and get some information on why that was the case.
+
+So the intent here is to provide incremental steps on moving towards being compliant with UNTP. In this case, there was an issue with the context in the first element of the rank. And in this case, it should be this value.
+
+Now, unfortunately, as you can see, we do have a little bit of work on some styling. This is a little bit blocked off by the copy button, but yeah, these are the little improvements that we'll make along the way. Patrick, you have your hand up for just quickly answer your question.
+
+[Speaker 5]
+Yeah, this is fantastic. And of course, as you know, I've been like following this quite a lot but my first question I just came to mind. So how did it detect that this is version 0.60 beta if you don't have that URL?
+
+[Speaker 2]
+Yes, that's a great question. Yes, so this is a bit of configuration that's taking place on the back ends, but essentially what is happening is that it is deriving the version based upon the context link. So the context link itself has the version inside of it.
+
+And that is how we derive what version the credential is. Now, there is also an additional configuration between the mappings of the credentials in particular for extensions. So we need to specify that the Digital Livestock Passport version 0.41 is an extension of the Digital Product Passport specifically the 0.6 beta 7 version. Does that answer your question, Patrick? Yeah. Yeah, cool, awesome.
+
+Okay.
+
+[Speaker 1]
+I should say that, oh, go on. No, no, go ahead. No, I was just gonna say there's still a bit of churn obviously with 0.6, 0.5, beta 7, et cetera. When we get past, when we get to version 1.0, we'll have strict semantic versioning. So that means version 1.2 should be backwards compatible with 1.0 and 1.2.3 will just be a patch with no functional change, et cetera. But right now, before we get to 1.0, it's not quite as rigorously applied as that because we're making more significant changes. But just to assure everyone that there'll be a bit of stability once we get past 1.0. Yes. Sorry. Did you wanna finish anything off, Ash?
+
+Has anybody got any comments on what Ash has said?
+
+[Speaker 2]
+Yes, I do have one last thing, just quickly. Sorry, Patrick. Just one last thing.
+
+So now that we've generated a report, as I mentioned before, the end state is to issue that as a verifiable credential and we can then share that credential with stakeholders and attest to our conformance with UNTP. And one neat way that we can do that is provide a rendering of that report, which is included inside the verifiable credential. So I've handcrafted two of these reports.
+
+So we're currently developing the render templates to visually display the contents of the reports. So the first one here is the report of the first credential that I uploaded, the pass, so just the digital product passport. So just a metadata implementation name when we ran the test, the test runner, and what was tested and whether or not it passed or not.
+
+There's much more rich data inside of the credential, and I apologize that I'm showing JSON, but basically we have all the metadata, the test suites, whether or not it passed or not, implementation name, and then also the results, which goes into much more depth of sort of the results of this validation. And lastly, the extension report. So same layout, but more tailored to the extent the passport type of the extension itself and secondary, the UNTP passport type.
+
+Yeah, and then if something goes wrong, we do still have a little bit more work to do here in the rendering. Other than that, yeah, that's it for me. I've attached everything that I've displayed today in the channel, and also for those who would like to test the playground out, there's also a link there.
+
+And as Steve mentioned on the UNTP specification website, and I've also dropped two links in which you can provide feedback if you find that something's wrong or you think it should be done another way, one being the test UNTP Slack channel and also the GitHub repository. Yeah, that's it for today. Pat, you have another question?
+
+[Speaker 5]
+Yeah, so again, this is really good. I think this, what we're seeing here, the rendered report is really the interesting part of the report. I was wondering if there are maybe a backlog item to be able directly from the playground to download the HTML rendered version of the report.
+
+Is that something that you foresee could be possible? Because I feel that's really what would make it very easy for someone to test their credential, get the report, and then put that into a sort of deliverable package of the work that they've done or show like stakeholders. At the moment, from what I understand, they would need to get the credential, host the credentials somewhere, and then give that endpoint to that render, which is like an extra step that's a bit tedious.
+
+So is there a reflection currently about allowing that feature, like download as a standalone HTML file?
+
+[Speaker 2]
+Yes, so along that lines, yes. So one way in which we could do this is obviously download the HTML rendering of the reports. Obviously, it is populated with all of the data.
+
+The second is that we will actually store the credential and we will provide a link such that what you're seeing here so that you can just copy that and then send that off to stakeholders and they can see that. And the third option is just to download the credential itself. But obviously, as you've just pointed out, there's a bit of work to be done there to actually render the credential and so on and so forth.
+
+[Speaker 5]
+That's interesting. And it would be nice, like the publishing thing, like it'd be nice if people had a choice, like I want to publish my report and it could start something like a public sort of report repository, right? Like people, they can list next to their implementation, their conformance report.
+
+So not only they're listed as an implementation, but they have some results. My last point was about the discussion about the extension. So like from what I'm doing right now with BCGov, right?
+
+So we're defining a Minds Eye Permit, like we're not so... And I think that's actually what you showed. We don't want to be conformant with a Minds Eye Permit.
+
+We want to make sure that the Minds Eye Permit is conformant with the digital conformity credential, right? So, and I think that's pretty much what we've seen with the agriculture stuff. It detected that extra item.
+
+Yes. But yeah, I think like for me, that extra bit is not really necessary for my case. It would be necessary if there's like a popular extension that many people might extend for BCGov.
+
+You know, it's a BCGov specific thing. So we will just want to make sure for ourselves that it's conformant with UNTP and then- And that's precise.
+
+[Speaker 2]
+Yeah, that's precisely what's happening here. So not only is it making sure that we're conformant with the extension, in this case, the Digital Livestock Passport, but also we're conformant with the core UNTP specification, in this case, the DPP 0.6. But Pat, yeah, welcome any feedback on that. And as you already have, yeah, please feel free to raise an issue on your thoughts of what you would envision this to look like.
+
+And yeah, we'll most certainly take a look at that. Awesome.
+
+[Speaker 1]
+All right. Well, thanks Ash.
+
+[Speaker 2]
+Yeah, no worries.
+
+[Speaker 1]
+I'll just take over the screen again if I can. And move back to the last item, or just before the last item, in the next few days, I'm just gonna create a media page, which has kind of any references to UNTP that are made outside of our group by various parties. And I surprised myself while I sat on the plane, just trying to, just off the top of my head, what I could remember, and I found about 40 of them.
+
+And I expect other people on this group or this call will have their own references. So I'll post the kind of first draft media, but please go nuts with pull requests and things like this to add your own references. One important one that came out just last week was the International Energy Authority, which is part of OECD, publishing some guidance to nations on traceability and critical mineral supply chains.
+
+And it made quite a lot of references to UNTP, which is nice to see. And I think we'll get more and more like that. Anyway, the last topic for discussion today, I don't know really why I'm sharing the screen, because there's really nothing to look at.
+
+I might just not do it, is the question of how to manage biomass and bulk materials, which are slightly different in their characteristics because you don't stick QR codes on a silo of grain or on a shipment of copper concentrate. There might be a shipment identifier, but not so much a product identifier. Also, mass balance with bulk materials becomes really critical because they're almost always mixed at some point in the manufacturing and operational supply chain.
+
+And that implies some differences in the way the product passports represented. And the question there is, are the differences enough to justify a digital material passport as a separate thing? I've seen a couple of comments.
+
+One said, yes, and one said, no. So I'll just open the meeting to anybody's thoughts one way or another. Albertus?
+
+[Speaker 4]
+Yes, that's an extremely interesting question. And that extension will fairly quickly go further when we go into production and manufacturing where you will suddenly also have a tool or a part of a machine that is used during production, which also need to be identified like what is done currently in vehicle manufacturing. We also mark various tools.
+
+So the point which I'm trying to make is the moment we start to put things in silos and I have my standards hat on now, then we paint ourselves in a corner by allowing somebody else to define something which actually fits into this product passport or let me call it rather item information, online item information, which fits essentially anything that is in the from manufacturing or in the full life cycle of any item. So my answer to that is DPP, though it says digital product passport and the product is emphasized in the, may need to become the root definition and under that is a set of clauses to distinguish that there are some differentiation below.
+
+I would have preferred it if it was the digital item passport and maybe that is what we can do is by saying, okay, there's a thing called the digital item passport and below that in our critical structure are all these various other classes or sub silos in which you can define things and let the economic operators decide on that. To answer your question on years for materials, we need to do something like that. Years for items, years for tools because all of them fits into this very big picture that in the end need to be identifiable in an interoperable way.
+
+[Speaker 1]
+Thanks Albertus. Nick's got his hand up.
+
+[Speaker 8]
+I think I agree with Albertus. If I followed all of that, I think I'm in agreement that the product is the main classification and for me, bulk commodities are probably one of the biggest areas of where the UNTP could actually apply and for me, they're products. I think in your email, Steve, you actually referred to it as a product so I facetiously said that that's the clue.
+
+It's a product so we should treat it like a product and in some of the use case thinking which is still, I guess, still draft, we were thinking that the aggregations that take place with some of the bulk commodities are really analogous to some of the transformations that take place with a physical product and there are natural cereals that occur in the production of bulk products at least from my experience on the energy side. There's always some sort of code or number that's given to a different parcel, a different shipment, a different pipeline movement so the natural serialization is occurring. It might not be an exact format that's needed for UNTP and then lastly, I'll just say that the mass balancing, there are industry rules and guidance around that and I don't think that's our job to make sure that it's done correctly.
+
+I think that's the job of auditors and the systems and sort of the DCC structure that we have allows for sort of checking that so I kind of take the view of keep it as simple as possible. If we can do it in the existing architecture then use that. That'll make it easier to understand for everyone and we probably have the ability to have checks and balances on the actual numbers as well with the existing system.
+
+[Speaker 1]
+Thank you. Nick, I tend to agree. Zach?
+
+[Speaker 9]
+Yeah, and I think, so I'm gonna echo sort of keep it as simple as possible. Bulk materials are a product and we've already architected the extensions model to sort of, to actually answer industry and product specific variations and so one of the things we might want to do as a team is articulate a bulk materials extension or we might wanna collaborate with the CRM project or the Australian grains project. I know Harley's here to really sort of publish the example of how to handle bulk materials as an extension as opposed to, and really sort of highlight the extensions methodology as opposed to trying to create a first-class UNTP citizen of a bulk material.
+
+[Speaker 1]
+Right, well, that's three voices saying, keep it simple unless you have evidence that it doesn't work. And I think that's generally a good practice with anything, right? You don't change it until you've actually tested it three or four times with specific, let's do it with grains, let's do it with proper concentrate and test whether we can squeeze it into just a standard UNTP with maybe some extensions and only after that, we'll have a better informed discussion.
+
+So I think we've answered our own question here. We should proceed with extensions and implementations before we come back and do any significant changes to UNTP. Albertus.
+
+[Speaker 4]
+Yes, while the speakers were talking there, I realized that anything you can purchase is a product and that includes tools. So you can put the tools in there so that the top can be, in fact, just the DPP. So yes, agree.
+
+[Speaker 11]
+Can I have a question?
+
+[Speaker 1]
+Oh, sorry. Yeah, next, go ahead, Ali.
+
+[Speaker 6]
+Sorry, I just want to understand when we are talking about bulk material, definitely we have a different classes of the bulk materials. So are we going to address that? For example, if we are talking about some bulk material like radioactive uranium, they already have a natural traceability.
+
+So, and there is a very solid methodology to trace them. And if we go to something like iron ore, there is another story. If you look at some concentrates, like copper concentrate and nickel concentrate, it's different.
+
+The way we are shipping, the way we are tracking, the way we are going to do it in the mass balance, the refinery or in the smelter, it's similar in some extent and they are different in the other extent. So I don't know about the bulk material, the organic bulk material. I'm just talking about an organic bulk material.
+
+So is there any kind of mechanism to classify the bulk materials?
+
+[Speaker 1]
+Yes. The product passport has classifications. And you can have as many as you want.
+
+I'd imagine a bulk material has some sort of commodity identification. It's this breed of grain or it's that type of copper concentrate or whatever. And there are some well-established schemes that tend to be industry-specific for that.
+
+But then it would, because you're attacking sustainability characteristics and one farm or one mine of the same commodity, sorry, two different farms and mines of the same commodity can have different characteristics. So you'd want to say it's this, I think it's this commodity from that facility in that period is what would kind of put some boundaries around its sustainability characteristics. So we've got to prove that.
+
+[Speaker 6]
+Yeah, fair enough. Just a little different in organic material from the organic material is, as much as let's say you'll get the copper inside of the refinery, you produce something and ship it out. So it doesn't matter exactly where it comes, it comes from mine A or B.
+
+At the end of the day, if you look at to how much mass you get it with a specific, let's say ESG score from mine A or B, so you can, yeah, you can transfer it to the product based on how much credit you get it from mine A, which let's say have a very good ESG score compared to the B that doesn't have ESG score. And that's better come back to the kind of alternative to the refinery to allocate what, how many credits, let's say, from the downstream, from the upper stream goes to which of those products in the downstream.
+
+[Speaker 1]
+So- Yes, I think that's right. So the way I see this fit in the UNTD architecture is I'm a facility, a refining facility. I get shipments of bulk material in that have some product passport with them defining their specific characteristics.
+
+I run a process and I output a mixed product, which is a combination of various inputs. It's up to me to make the allocation and up to an auditor at a particular, and maybe once a year or something to check that my allocations are being done consistently and accurately. And it feels to me like the current UNTP model of saying, all right, I've got some bulk material input passports and now I've got a cancellation event that is taking those inputs and creating an output.
+
+And now I've got a new commodity in the output, which is a mixed product, and maybe also refined. So it seems to fit to me. I just think we've got to actually test it with some real materials and some real cases.
+
+So we've got a couple of other hands up. I'm not sure which is the right order. Let's see, who's top of the list?
+
+Peter.
+
+[Speaker 7]
+Yeah, I think you're almost going there, Steve. The pattern that we're observing is that it's actually the credentials associated with the facilities where the commodities are moving through is really, seems to be the real focus. I think it's helpful for us to consider fungibility of products as actually a strength, as opposed to the way we often perceive it as a weakness that we have to try and squeeze these commodities into traceable items.
+
+So, and I'd also agree, mass balance, how it's done, a little bit like carbon calculations, it's not really our business. But I do, everything that we're working on at the moment seems to come back to the facility credentials. And the issue is proof that the products move through those facilities, and then the magic is around it.
+
+Well, how do you associate those credentials where you've got materials being blended through multiple pathways? I suppose what I'm saying is that I think it's, we could talk about trace elements and isotopes and certification of provenance, and we know that that's possible. We've proven up that credentials can be exchanged.
+
+But again, the commingling is, I don't think we should try to solve that problem. I think we should actually consider it to be a strength of primary industries production processes. Certainly it's very powerful for traders who can substitute product at their 11th hour when they need to.
+
+It's critical for supply chain resilience and the ability to adapt.
+
+[Speaker 1]
+Yeah, thanks, Peter. It's definitely not for us to tell a refinery what they can mix and what they can't. I think our purpose is only for them to have a place to say what they've done.
+
+And when they're making any carbon assessments or whatever, to say against what criteria they made that assessment, you know? And then it's up to the verifier. So I got one more point.
+
+Adrian, I think, did you have a?
+
+[Speaker 10]
+Yeah, thank you. As a representative of a crude oil trader and a chemical company, I'm more of the opinion that I would like to see a material passport. Why?
+
+Because if I come with a vessel of crude oil and go to Rotterdam or to one of our Verbund plants, and I put it into our feedstock and from there into the steam cracker and I make products out of it. So I have, first of all, my crude oil, which has no PCF because you can't really report that. Then you make out of that acrylic acid.
+
+And from the acrylic acid, you make a polymer to do a super absorber that goes into diapers. From there, we talk from a product and all starts from this material, which is the crude oil, which goes into the refinery from where we have multiple pre-stages of different products. And by chemical reactions, we generate different products.
+
+And that's why I was very much appealed by your question, Steve, when you said, should we do a material passport? And for me, for the crude oil and the monomers or oligomers, it was a clear yes, because that's something we don't sell. It's an intermediate.
+
+[Speaker 1]
+Ah, okay. It's always interesting to have an alternative opinion. Well, I think isn't the answer to this, to try it out, right?
+
+And through evidence, it comes to the conclusion that in some cases, maybe we do need a material passport, but at least through experience and testing, we've discovered when we do and when we don't, and we can be a little bit more confident about how to do it. Okay, well, thanks for that feedback. We're exactly at 8 a.m. on my time anyway, one hour into this call, and I don't like to take people's time longer than they've permitted. If anyone's got any questions or comments or wants to carry on the discussion, I'm happy to stay on the call longer. Otherwise, thank you everyone for your participation. I will publish that media page sometime in the next few days and welcome your contributions to it.
+
+And that's it. Thank you all. Thanks, Steve.
+
+[Speaker 10]
+Thanks, Steve.
+
+[Speaker 11]
+Thank you.
+
+[Speaker 10]
+Thanks, Steve. Bye. Bye.
+
+[Speaker 11]
+Thank you very much.
