@@ -1,4 +1,4 @@
-These changes are the changes from v0.6.0-beta10 to v0.6.0-beta11.
+These changes are the changes from v0.6.0-beta10 to v0.6.0-beta12.
 
 The model changes revert two changes from the previous release that were re-evaluated after feedback:
 - Stick just with `Product` for now, even if that means that extensions which aren't manufactured (such as DigitalLivestockPassport) have extra fields that aren't relevant, we can later decide about better classes with more data available.
@@ -20,6 +20,7 @@ Other changes included in this release:
 - Updated the `renderMethodPrefix` on the template and url properties of `RenderTemplate2024` and `WebRenderingTemplate2022` to use `https://w3id.org/vc/render-method#` instead, fixing [issue 334](https://github.com/uncefact/spec-untp/issues/334)
 
 - Saved to check working core in other domains.
+- Released core 0.6.0-beta12
 
 
 ## DigitalProductPassport changes
@@ -28,11 +29,10 @@ Other changes included in this release:
 - Reverted rename back to `DigitalProductPassport`
 - Temporarily updated to core working to verify artefacts.
 - Verified after tweaking the core model.
-
-TODO
 - Updated from working to 0.6.0-beta11 core
 - Released dpp 0.6.0-beta11
 - Verified produced instance is valid jsonld
+- Realised I'd missed three fields, so re-added and released dpp 0.6.0-beta12
 
 
 ## DigitalConformityCredential changes
@@ -40,40 +40,46 @@ TODO
 - Renamed back to DigitalConformityCredential
 - Moved the objectReferences for product and facility from `ConformityAssessment.assessedProduct` and `ConformityAssessment.assessedFacility` to `ProductVerification.product` and `FacilityVerification.facility` respectively (they had been missed when we moved the reference to product from the `ConformityAssessment` directly to the verification entity, which was in turn created to avoid redefining product or facility)
 - Verified instance and context after updating to working core.
-
-TODO
 - Updated from working to 0.6.0-beta11 core
-- Released dpp 0.6.0-beta11
+- Released dcc 0.6.0-beta11
 - Verified produced instance is valid jsonld
+- Released dcc 0.6.0-beta12
 
 
 ## DigitalFacilityRecord changes
 
 - Renamed back to DigitalFacilityRecord
 - Verified instance and context after updating to working core.
-
-TODO
 - Updated from working to 0.6.0-beta11 core
-- Released dpp 0.6.0-beta11
+- Released dfr 0.6.0-beta11
 - Verified produced instance is valid jsonld
+- Updated core to beta12 and release dfr 0.6.0-beta12
 
 
 ## DigitalIdentityAnchor and DigitalTraceabilityEvent
 
 These two should have no changes, just double-check for any missing objectReferences and then:
 
-TODO
 - Updated from working to 0.6.0-beta11 core
-- Released dpp 0.6.0-beta11
+- Released dia and dte 0.6.0-beta11
 - Verified produced instance is valid jsonld
-
+- Updated core to beta12 and release dia and dte 0.6.0-beta12
 
 ## DigitalLivestockPassport
 
 
-TODO
-- Update to core and dpp 0.6.0-beta11
+- Update to core and dpp 0.6.0-beta12
 - This will mean extra fields which are not used, but we can at least set the example data for these fields to null.
-- Check if we should rename back to DigitalLivestockPassport for consistency? I assume so.
+
+For BovineAnimal:
+[jargon.nestedExample:$.serialNumber]=null
+[jargon.nestedExample:$.dimensions]=null
+
+For LivestockPassport:
+[jargon.nestedExample:$.circularityScorecard]=null
+[jargon.nestedExample:$.dueDiligenceDeclaration]=null
+[jargon.nestedExample:$.materialsProvenance]=null
+
+- Renamed back to DigitalLivestockPassport for consistency.
 - Verify instance data
 - Release DLP 0.4.2-beta3
