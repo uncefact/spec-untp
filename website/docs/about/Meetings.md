@@ -17,13 +17,12 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 20th Mar 2025.  
-	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
-	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 * **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 3rd April Mar 2025. 
 	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
 	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
-
+* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 17th April 2025.  
+	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
+	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
@@ -33,6 +32,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2025-03-20| [The UNTP meeting focused on strengthening governance, introducing subcommittees for scalability, and advancing work on a machine-readable sustainability criteria catalog to support digital product passports.](#2025-03-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/MGrgwRJ6j3hgizfX1mBY266CykA3xYJOTGmofxBAxrNJzvFNZVLOmc1mdkH0ls4H.odAXmt0tqvJT9jv7) |[transcript](../../meetings/2025-03-20-Recording.txt)
 |2025-03-06| [The meeting covered updates on GS1's commitment, improvements to the information architecture, the UNTP Playground's credential validation features, and a discussion on whether bulk materials require a separate Digital Material Passport, concluding that further testing is needed.](#2025-03-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/LS0ZS4wMm45ZUBZNrH-oQJkpT2R7a4F8Ma9GOeW6ZHk1HwhLFPMVdVXI8Vy14IEK.lej3QWxOntusXGsK)|[transcript](../../meetings/2025-03-06-Recording.txt)|
 |2025-02-20| [The meeting focused on preparing UNTP for public review, addressing governance, simplifying specifications, improving usability, and ensuring alignment with Recommendation 49 while planning for future pilots and implementations.](#2025-02-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/hIBsxqAMi7tw1z5Rj-me3ZtbOS-IQnuJR1zYSuER41676BM_JO8lNPi6MEAqhtrL.Sto8AESpUGhaph5Z)|[transcript](../../meetings/2025-02-20-Recording.txt)|
 |2025-02-06| [The UNTP meeting focused on reviewing change requests, refining the identity resolver framework, approving the verifiable credentials update, discussing implementation guidance, exploring certification and governance models, and addressing open issues for future development.](#2025-02-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/ayxfoRJH0z9FXI25UWNuZ4KQ0LQ7N3GoLHTxbz-wTW4fjjOfMjQ3_zr-uNp6jUhk.dwHfJ3YszOvW9aLb)|[transcript](../../meetings/2025-02-06-Recording.txt)|
@@ -76,6 +76,64 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+
+
+## 2025-03-20 Meeting Summary
+
+**Date:** March 20, 2025  
+**Project:** United Nations Transparency Project (UNTP)  
+**Facilitator:** Steve (Speaker 1)  
+**Recording Note:** Meeting was recorded and will be posted.
+
+#### **Participants & Introductions**
+- **Steve** (Facilitator): Based in Canberra, Australia. Emphasized the need for better governance and decentralization.
+- **Herman van der Pooy**: From FIDES (Netherlands). Introduced his colleague Victor van der Hulst. Interested in UNTP, especially discovery based on decentralized identifiers and invoicing.
+- **Daria**: Starting April 1 as Chief Sustainability Officer at Ressos, a metals traceability company. Based in Germany.
+- **David Jensen**: From UN Environment Programme. Focused on environmental aspects of digital transformation. Interested in overlap with UNEP's Digital Product Passport blueprint.
+- **Marcus**: Working with local agriculture and seaweed production communities. Raised points about innovation at grassroots levels.
+- **Phil Archer**: Advocated for better semantic mappings and URI-based standards for sustainability criteria.
+- **Michael**: Raised governance questions and proposed aligning with open source governance models (e.g., Linux). Volunteered to help with business case documentation.
+- **Adriana**: Proposed forming sub-working groups, including one on standards. Shared her experience analyzing sustainability standards for SERPAS.
+- **Nick**: Suggested a matrix structure—subgroups by sector and technical focus—for scalability.
+- **Zach**: Supported subcommittees and emphasized the need for leadership and community contribution to make the UNTP sustainable.
+- **Bertus**, **John**, and several others also participated actively.
+
+#### **Key Discussion Points**
+
+#### 1. **Governance Update**
+- Steve admitted to bypassing the formal GitHub process when making a governance diagram change.
+- Proposal to transfer the GitHub repository ownership to the UN Secretariat to enforce governance practices.
+- **New Governance Addition**: An “Extensions Governance Board” was added to give extension owners formal input into core UNTP development.
+
+#### 2. **Subcommittees Proposal**
+- General agreement on forming subcommittees to decentralize and scale work.
+- Possible structure:  
+  - By **technical components** (e.g., identity, traceability, resolver)  
+  - By **industry sectors** (e.g., agriculture, mining, electronics)  
+- Steve will propose a structure and seek feedback via email.
+
+#### 3. **Standards Integration**
+- UNTP will act as a global open standard and complement JTC24 (EU's DPP regulation body).
+- TC154’s Joint Working Group 9 (UN/ISO collaboration) was cited as a global standardization path.
+- Emphasis on how UNTP differs by not dictating centralized registries and allowing for decentralized implementations.
+
+#### 4. **Sustainability Vocabulary Catalog (New Work Item)**
+- The team is developing a way to make sustainability-related **criteria URI-addressable and machine-readable**.
+- Key challenges:
+  - Different schemes (e.g., IRMA, TSM) define sustainability criteria differently.
+  - Need a referenceable taxonomy for these criteria.
+  - Determine whether referencing should be a “must” or “should”.
+- General support for the effort. Recognized as **critical for data credibility and interoperability**.
+
+---
+
+#### **Next Steps & Action Items**
+- **Steve** to draft a proposal for working group structure.
+- **Team** to provide feedback on subcommittee structure and volunteer for leadership.
+- **Sustainability Vocabulary Work**: Continue researching schemes and URIs. Draft guidance for scheme owners on publishing machine-readable criteria.
+- **Michael** to resume work on business case documentation.
+- Update diagrams to reflect **facility records** as a core component.
 
 
 ## 2025-03-06 Meeting Summary
