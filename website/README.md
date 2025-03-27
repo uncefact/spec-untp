@@ -8,6 +8,10 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 $ yarn
 ```
 
+### Configuration
+
+By default, this project uses placeholder values for all required environment variables. You can start developing right away without any manual configuration. When you're ready to customize, you can adjust environment variables as explained in the [Environment Variables](#environment-variables) section.
+
 ### Local Development
 
 ```
@@ -18,11 +22,33 @@ This command starts a local development server and opens up a browser window. Mo
 
 ### Build
 
-```
+#### With Default Configuration
+
+The site can be built with the default environment variables:
+
+```bash
 $ yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This will use placeholder values suitable for development and testing.
+
+#### With Custom Configuration
+
+1. Copy `.env.example` to `.env`:
+
+```bash
+$ cp .env.example .env
+```
+
+2. Modify the values in `.env` to match your requirements
+
+3. Build the site:
+
+```bash
+$ yarn build
+```
+
+The built site will use your custom configuration values and will be generated in the `build` directory, ready to be served by any static content hosting service.
 
 ### Deployment
 
@@ -39,3 +65,46 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Environment Variables
+
+The site can be configured using environment variables found in the [.env.example](.env.example) file. Create a `.env` file in the same directory or set them directly in your environment.
+
+#### Core Configuration
+
+| Variable            | Description                                 | Default                          |
+|---------------------|---------------------------------------------|----------------------------------|
+| `SITE_TITLE`        | Main title of the website                   | `Example Site`                   |
+| `SITE_TAGLINE`      | Tagline shown in hero section               | `Example Site Tagline`           |       
+| `FAVICON`           | Path to favicon file                        | `img/grey-placeholder-image.png` |
+| `SITE_URL`          | Production URL of the site                  | `https://example.com`            |
+| `BASE_URL`          | Base pathname for serving the site          | `/project-name/`                 |
+| `ORGANIZATION_NAME` | GitHub organization name                    | `Example Organization`           |
+| `PROJECT_NAME`      | GitHub repository name                      | `example-project`                |
+
+#### Content & Branding
+
+| Variable         | Description                       | Default                          |
+|------------------|-----------------------------------|----------------------------------|
+| `NAVBAR_TITLE`   | Short title shown in navigation   | `Title`                          |      
+| `SITE_LOGO`      | Path to site logo image           | `img/grey-placeholder-image.png` |
+| `LOGO_ALT`       | Alt text for site logo            | `Logo alt`                       |
+| `HERO_IMAGE`     | Path to hero image                | `img/grey-placeholder-image.png` |
+| `HERO_IMAGE_ALT` | Alt text for hero image           | `Hero image alt`                 |
+| `SOCIAL_IMAGE`   | Social media card image           | `img/placeholder-social-card.png`|
+
+#### External Links
+
+| Variable           | Description                             | Default                               |
+|--------------------|-----------------------------------------|---------------------------------------|
+| `EDIT_URL_BASE`    | Base URL for "Edit this page" links     | `https://example.com/link-purpose`    |
+| `SLACK_LINK`       | Direct link to Slack channel            | `https://example.com/link-purpose`    |
+| `MAILING_LIST_LINK`| Direct link to mailing list             | `https://example.com/link-purpose`    |
+| `REPO_LINK`        | GitHub repository URL                   | `https://example.com/link-purpose`    |
+| `FOOTER_PDF_LINK`  | Link to PDF version of spec             | `https://example.com/link-purpose`    |
+
+#### Footer
+
+| Variable       | Description                                 | Default          |
+|----------------|---------------------------------------------|------------------|
+| `FOOTER_TEXT`  | Text appended to `©` in the footer          | `Example Footer` |
