@@ -68,21 +68,6 @@ Anonymous access to public data is the default UNTP access pattern. It is alread
 
 Both of these requirements are met using the [identity resolver](IdentityResolver.md) specification. 
 
-### Item identifier as shared secret
-
-Most item identifiers are relatively short numbers and are issued sequentially. So, for example, if `https://example.com/product/11223/serial/44556` is a known product and serial identifier then it is likely that the next serialised item ID could be `https://example.com/product/11223/serial/44557` or that the next product and serial in the range could be `https://example.com/product/11224/serial/00001`. When identifiers are easily guessed then information about the products is easily discovered even when the data requestor is not in possession of an actual product or serialised item.
-
-However, if the product and serial numbers are issued as **genuinely random** large numbers then they become un-guessable and so any public (ie non-encrypted) data linked to the ID can be considered to be accessible only to the party in possession of the item. For example `https://example.com/product/11223/serial/44FDB2AFC91B898893CF36CB18863D26` is a product with a 32 character hexadecimal (128 bit) serial number and, provided the serial number is genuinely random, is computationally impractical to guess (1 billion guesses per second would still take many universe lifetimes). 
-
-Large random serial numbers are not common practice in industry and so are more likely to be considered for new rather than existing identifier schemes.  However, depending on the sensitivity of the data, shorter serial numbers such as the 20-character GS1 SGTIN (eg `https://example.com/01/0952400005919/21/419A2845FD8050A0DD56`) may provide adequate confidentiality provided they are issued randomly and not sequentially. For example, if serial number `419A2845FD8050A0DD56` were one of a million serialised items of product ID `0952400005919` then it would still take a few years to guess one matching serial number at 1 billion guesses per second.
-
-When non-guessable large identifiers are used as a security mechanism to access non-encrypted sensitive data, then;
-
-* the access mechanism is no different to [anonymous public access](#anonymous-public-access). 
-* the identifiers MUST be **genuinely random** strings 
-* the data MUST NOT be index-able by search engines.
-* the web repository that holds the data MUST NOT be searchable or expose lists of stored file.
-
 ### Confidential data encryption
 
 In many cases, relying on an un-guessable identifier is not possible or not sufficiently secure. In such cases, confidential data SHOULD be encrypted.
@@ -102,12 +87,12 @@ When confidential data about serialised items is encrypted then decryption keys 
 * The code MUST resolve to an [Identity Resolver](IdentityResolver.md) query URL for the given item and with the symmetric key secret as a `key` parameter.
 * For cases with limited space such as a QR under a wine bottle cap, implementers MAY use a shorter URL that redirects to the same full identity resolver URL. The short URL SHOULD include 128 bit entropy so that it is sufficiently un-guessable.
 
-For example, for a 128 bit AES key in a query to a resolver about product ID 90664869327 that returns only encrypted link targets for anonymous access the resolver URL would be `https://resolver.product-register.com/01/90664869327?key=2b7e151628aed2a6abf7158809cf4f3c&accessRole=untp%3AaccessRole%23Anonymous`
+For example, for a 128 bit AES key in a query to a resolver about product ID 90664869327 that returns only encrypted link targets for anonymous access the resolver URL would be `https://resolver.product-register.com/01/90664869327?key=2b7e151628aed2a6abf7158809cf4f3c`
 
 
 ### Small footprint codes
 
-A 128 bit short redirect URL (in capitals because that creates smaller QR codes) can be used for cases where there is limited space for QR codes.  For example `HTTPS://REDIRECT.IO/E05778C659733E222758AC5179AE4611` could redirect to the same full URL `https://resolver.product-register.com/01/90664869327?key=2b7e151628aed2a6abf7158809cf4f3c&accessRole=untp%3AaccessRole%23Anonymous`
+A 128 bit short redirect URL (in capitals because that creates smaller QR codes) can be used for cases where there is limited space for QR codes.  For example `HTTPS://REDIRECT.IO/E05778C659733E222758AC5179AE4611` could redirect to the same full URL `https://resolver.product-register.com/01/90664869327?key=2b7e151628aed2a6abf7158809cf4f3c`
 
 The full and short URLs would produce the following QR codes
 
@@ -154,9 +139,7 @@ The best choice will eventually be the specification(s) that demonstrate the wid
 Identity resolvers MUST include information to indicate when a link target is encrypted. Resolvers MUST also provide information about how to POST update events, where appropriate.
 
 * When a link target is encrypted, the `encryptionMethod` custom property MUST be included with a value drawn from the [UNTP encryption method code list](https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode).
-* When a link target is encrypted, the `accessRole` custom property MUST be included. The allowed values are an array of URIs that will be used to match against `registrationScopeList` in digital identity anchor credentials. 
-* To indicate that access is allowed by any party that holds a secret key, the accessRole `untp:accessRole#Anonymous` MUST be included.
-* To indicate that the link target is an update service, the `method":"POST"` property is required, together with the `accessRole` needed for the update to be accepted. 
+* To indicate that the link target is an update service, the `method":"POST"` property is required. 
 
 For example 
 
@@ -171,16 +154,14 @@ For example
                     "title": "Battery maintenance event",
                     "type": "application/ld+json",
                     "lang": ["en"],
-                    "encryptionMethod": "AES-128",
-                    "accessRole":["untp:accessRole#Anonymous"]
+                    "encryptionMethod": "AES-128"
                  },
                 {
                     "href": "https://api.sample-credential-store.com/credentials",
                     "title": "Battery recycling event",
                     "type": "application/ld+json",
                     "lang": ["en"],
-                    "method": "POST",
-                    "accessRole":["untp:accessRole#Recycler"]
+                    "method": "POST"
                  }
             ]
         }
@@ -200,13 +181,13 @@ Data about a value chain comprises multiple credentials about products and facil
 
 * A verifier encounters a serialised product ID and performs an IDR lookup which returns a link-set which contains:
 	* link to an un-encrypted Digital Product Passport (DPP) which also contains an ID of the facility that manufactured the item
-	* links to an encrypted Digital Traceability Event (DTE) with `"encryptionMethod": "AES-128"` and `"accessRole":["untp:accessRole#Anonymous"]` properties.
+	* links to an encrypted Digital Traceability Event (DTE) with `"encryptionMethod": "AES-128"` property.
 * The verifier has the secret key for the given item and so decrypts the DTE to find that it is a transformation event that lists the identifiers and quantities of input products. 
 	* For some of the input product ID, the verifier is able to resolve link-sets from relevant IDRs and access public data (eg DPPs) about the input products.
 	* The input product IDR process also returns encrypted links but they cannot be decrypted because the verifier has no access to the secret key for supplier input products.
 * The verifier resolves the facility ID found in the DPP to a new link-set that contains links to both public and private data about the facility.
 	* A link to a public digital facility record (DFR) includes precise geo-location information as well as some public sustainability claims.
-	* A set of links to facility level conformity credentials (DCC) that are encrypted and have `"accessRole":["untp:accessRole#Customer"]` property. The verifier uses DID-Authentication to connect to the DCC end points and presents a Digital Identity Anchor (DIA) that proves the verifier ID which matches a facility customer list. Decryption keys are provided with a new link-set of the authorised customer.
+	* A set of links to facility level conformity credentials (DCC) that are encrypted. The verifier uses DID-Authentication to connect to the DCC end points and presents a Digital Identity Anchor (DIA) that proves the verifier ID which matches a facility customer list. Decryption keys are provided with a new link-set of the authorised customer.
 
 In general, when a verifier hits a graph node that in encrypted and does not have access keys, then graph traversal cannot proceed beyond that node. Perhaps the most common scenario will be transformation events that reveal the input products (and suppliers) in a manufacturing process. 
 
