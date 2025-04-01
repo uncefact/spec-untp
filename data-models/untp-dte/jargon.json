@@ -1,0 +1,1078 @@
+{
+  "@context": {
+    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/working/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+  },
+  "@graph": [
+    {
+      "@id": "untp-dte:DigitalTraceabilityEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An array of Traceability Events as a VC",
+      "rdfs:label": "DigitalTraceabilityEvent",
+      "rdfs:subClassOf": "untp-core:VerifiableCredential"
+    },
+    {
+      "@id": "untp-dte:Event",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "This abstract event structure provides a common language to describe supply chain events such as shipments, inspections, manufacturing processes, etc. There are four types of EPCIS event but this is an abstract class representing all common properties of an EPCIS event.",
+      "rdfs:label": "Event"
+    },
+    {
+      "@id": "untp-dte:SensorElement",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A SensorElement is used to carry data related to an event that is captured one sensor such as an IoT device. Include one sensor property and an array of sensor data values.",
+      "rdfs:label": "SensorElement"
+    },
+    {
+      "@id": "untp-dte:Sensor",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A physical sensor that records a sensor data set.",
+      "rdfs:label": "Sensor"
+    },
+    {
+      "@id": "untp-dte:Item",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A specific serialised trade item which is an instance of a more generic product. ",
+      "rdfs:label": "Item"
+    },
+    {
+      "@id": "untp-dte:SensorData",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A data point read by a sensor.",
+      "rdfs:label": "SensorData"
+    },
+    {
+      "@id": "untp-dte:TransformationEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Transformation represents an event in which input objects are fully or partially consumed and output objects are produced, such that any of the input objects may have contributed to all of the output objects - for example consuming bales of cotton to produce yarn.",
+      "rdfs:label": "TransformationEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:QuantityElement",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The quantity element is used to define the quantity (eg 100 kg of a product class. Used when serialised items are not applicable.",
+      "rdfs:label": "QuantityElement"
+    },
+    {
+      "@id": "untp-dte:ObjectEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Object represents an event that happened to one or more physical or digital objects - such as an inspection or certification of a product or shipment. The physical objects may be identified either as specific items (eg a unique consignment number) or as a quantified amount of a product class (eg 100Kg of cotton yarn)",
+      "rdfs:label": "ObjectEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:AggregationEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking.",
+      "rdfs:label": "AggregationEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:TransactionEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Transaction represents an event in which one or more objects become associated or disassociated with one or more identified business transactions - such as the purchase / shipment of goods between buyer and seller.",
+      "rdfs:label": "TransactionEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:AssociationEvent",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The association event represents the assembly of child sub-components to create a parent assembled item. For example a desktop computer assembled from power supply, hard drive, and motherboard.  The association event is very similar in structure to the aggregation event but is used for physical assembly. An association event may represent a bill of materials used to assemble a  product whilst an aggregation event may represent a packing list or items for transport. ",
+      "rdfs:label": "AssociationEvent",
+      "rdfs:subClassOf": "untp-dte:Event"
+    },
+    {
+      "@id": "untp-dte:RenderTemplate2024",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9",
+      "rdfs:label": "RenderTemplate2024",
+      "rdfs:subClassOf": "untp-core:RenderTemplate2024"
+    },
+    {
+      "@id": "untp-dte:WebRenderingTemplate2022",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A simple (though non-standard) embedded template.",
+      "rdfs:label": "WebRenderingTemplate2022",
+      "rdfs:subClassOf": "untp-core:WebRenderingTemplate2022"
+    },
+    {
+      "@id": "untp-dte:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:Item"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID",
+        "The unique identifier of this event - SHOULD be a UUID"
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-dte:processType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A human readable name for industry specific process represented by this event.",
+        "A human readable name for industry specific process represented by this event.",
+        "A human readable name for industry specific process represented by this event.",
+        "A human readable name for industry specific process represented by this event.",
+        "A human readable name for industry specific process represented by this event.",
+        "A human readable name for industry specific process represented by this event."
+      ],
+      "rdfs:label": "processType"
+    },
+    {
+      "@id": "untp-dte:eventTime",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred.",
+        "The ISO-8601 date time when the event occurred."
+      ],
+      "rdfs:label": "eventTime"
+    },
+    {
+      "@id": "untp-dte:action",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:actionCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "Code describing how an event relates to the life-cycle of the entity impacted by the event.",
+        "Code describing how an event relates to the life-cycle of the entity impacted by the event.",
+        "Code describing how an event relates to the life-cycle of the entity impacted by the event.",
+        "Code describing how an event relates to the life-cycle of the entity impacted by the event.",
+        "Code describing how an event relates to the life-cycle of the entity impacted by the event.",
+        "Code describing how an event relates to the life-cycle of the entity impacted by the event."
+      ],
+      "rdfs:label": "action"
+    },
+    {
+      "@id": "untp-dte:disposition",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:dispositionCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. ",
+        "Disposition code describing the state of the item after the event. "
+      ],
+      "rdfs:label": "disposition"
+    },
+    {
+      "@id": "untp-dte:bizStep",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:bizStepCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary.",
+        "A business step code drawn from a controlled vocabulary."
+      ],
+      "rdfs:label": "bizStep"
+    },
+    {
+      "@id": "untp-dte:bizLocation",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an event until it is reported to be at a different Business Location by a subsequent event. The bizLocation must be a resolvable URI that links to facility information and geo-location data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an event until it is reported to be at a different Business Location by a subsequent event. The bizLocation must be a resolvable URI that links to facility information and geo-location data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an event until it is reported to be at a different Business Location by a subsequent event. The bizLocation must be a resolvable URI that links to facility information and geo-location data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an event until it is reported to be at a different Business Location by a subsequent event. The bizLocation must be a resolvable URI that links to facility information and geo-location data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an event until it is reported to be at a different Business Location by a subsequent event. The bizLocation must be a resolvable URI that links to facility information and geo-location data.",
+        "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an event until it is reported to be at a different Business Location by a subsequent event. The bizLocation must be a resolvable URI that links to facility information and geo-location data."
+      ],
+      "rdfs:label": "bizLocation"
+    },
+    {
+      "@id": "untp-dte:sensorElementList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:SensorElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Event"
+        },
+        {
+          "@id": "untp-dte:TransformationEvent"
+        },
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. ",
+        "An array (one for each sensor) of sensor device data sets associated with the event. "
+      ],
+      "rdfs:label": "sensorElementList"
+    },
+    {
+      "@id": "untp-dte:sensorMetadata",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Sensor"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorElement"
+        }
+      ],
+      "rdfs:comment": [
+        "Data that describes the physical sensor that recorded the sensor data set."
+      ],
+      "rdfs:label": "sensorMetadata"
+    },
+    {
+      "@id": "untp-dte:sensorReport",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:SensorData"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorElement"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of sensor readings from the given sensor relevant to the traceability event context."
+      ],
+      "rdfs:label": "sensorReport"
+    },
+    {
+      "@id": "untp-dte:sensorIntegrityProof",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorElement"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional reference to a verifiable credential signed by the sensor device or device manufacturer that contains the digitally signed raw data associated with this sensor report."
+      ],
+      "rdfs:label": "sensorIntegrityProof"
+    },
+    {
+      "@id": "untp-dte:device",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Sensor"
+        }
+      ],
+      "rdfs:comment": [
+        "The device Identifier for the sensor as a URI (typically an EPC)"
+      ],
+      "rdfs:label": "device"
+    },
+    {
+      "@id": "untp-dte:dataProcessingMethod",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Sensor"
+        }
+      ],
+      "rdfs:comment": [
+        "The data processing method used by the sensor - should reference a documented standard criteria as a URI"
+      ],
+      "rdfs:label": "dataProcessingMethod"
+    },
+    {
+      "@id": "untp-dte:name",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:name"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:Item"
+        },
+        {
+          "@id": "untp-dte:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dte:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "The name of the product class to which the product item belongs.  ",
+        "Human facing display name for selection",
+        "Human facing display name for template"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-dte:time",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorData"
+        }
+      ],
+      "rdfs:comment": [
+        "the timestamp at which the sensor reading was made."
+      ],
+      "rdfs:label": "time"
+    },
+    {
+      "@id": "untp-dte:sensorType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorData"
+        }
+      ],
+      "rdfs:comment": [
+        "the measurement type of the sensor reading, as a URI reference to a measurement method specification."
+      ],
+      "rdfs:label": "sensorType"
+    },
+    {
+      "@id": "untp-dte:value",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorData"
+        }
+      ],
+      "rdfs:comment": [
+        "the sensor reading"
+      ],
+      "rdfs:label": "value"
+    },
+    {
+      "@id": "untp-dte:uom",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:UOM"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:SensorData"
+        },
+        {
+          "@id": "untp-dte:QuantityElement"
+        }
+      ],
+      "rdfs:comment": [
+        "the unit of measure for the sensor reading, drawn from UNECE rec20 code list.",
+        "The unit of measure for the quantity value (eg Kg or meters etc) using the UNECE Rec 20 unit of measure codelist."
+      ],
+      "rdfs:label": "uom"
+    },
+    {
+      "@id": "untp-dte:outputEPCList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of uniquely identified items that are the output of this transformation event - for example a list of individually identified bolts of cloth that are the output of a weaving process."
+      ],
+      "rdfs:label": "outputEPCList"
+    },
+    {
+      "@id": "untp-dte:inputEPCList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of uniquely identified items that are the input of this transformation event - for example a list of individually identified bobbins of yarn that are the input of a weaving process."
+      ],
+      "rdfs:label": "inputEPCList"
+    },
+    {
+      "@id": "untp-dte:inputQuantityList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:QuantityElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The quantified list of product classes that are the input of this transformation event - used when each item does not have a unique identity.  for example the weight of raw cotton that is the input to a ginning process."
+      ],
+      "rdfs:label": "inputQuantityList"
+    },
+    {
+      "@id": "untp-dte:outputQuantityList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:QuantityElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransformationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The quantified list of product classes that are the output of this transformation event - used when each item does not have a unique identity.  for example a count of the bales of cleaned cotton that are the output of a ginning process."
+      ],
+      "rdfs:label": "outputQuantityList"
+    },
+    {
+      "@id": "untp-dte:productId",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:id"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:QuantityElement"
+        }
+      ],
+      "rdfs:comment": [
+        "THe identifier of a product class (as opposed to a product instance) such as a GTIN code for a manufactured product."
+      ],
+      "rdfs:label": "productId"
+    },
+    {
+      "@id": "untp-dte:productName",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:name"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:QuantityElement"
+        }
+      ],
+      "rdfs:comment": [
+        "The registered name of the product within the identifier scheme. "
+      ],
+      "rdfs:label": "productName"
+    },
+    {
+      "@id": "untp-dte:quantity",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:QuantityElement"
+        }
+      ],
+      "rdfs:comment": [
+        "The numeric quantity of the product class (eg 100 kg of cotton)"
+      ],
+      "rdfs:label": "quantity"
+    },
+    {
+      "@id": "untp-dte:epcList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of uniquely identified items (eg specific items serial numbers or tagged shipments / packages) that are the focus of this object event.  ",
+        "The list of uniquely identified trade items included in this supply chain transaction."
+      ],
+      "rdfs:label": "epcList"
+    },
+    {
+      "@id": "untp-dte:quantityList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:QuantityElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:ObjectEvent"
+        },
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "A quantified list of product classes (eg GS1 GTINs) that are the focus of this object event",
+        "List of quantified product classes that are included in this transaction.  Used when the trade items do not have unique identifiers (eg 100 reels of yarn)"
+      ],
+      "rdfs:label": "quantityList"
+    },
+    {
+      "@id": "untp-dte:parentEPC",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The unique item identifier that is the result of this aggregation. Typically a packaging ID used in shipments that represents a box/ pallet / container of contained items.",
+        "The unique item identifier that is the parent of this association. Typically an assembled product ID such as a desktop computer that is built from the associated child components."
+      ],
+      "rdfs:label": "parentEPC"
+    },
+    {
+      "@id": "untp-dte:childEPCList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:Item"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of child items that have been aggregated into the parent (or dis-aggregated from the parent). Maybe a list of package references (eg boxes on a pallet) or may be individual items (eg products in a box).",
+        "The list of child items that have been assembled to create the parent - for example the power supply or hard drive components of a desktop computer."
+      ],
+      "rdfs:label": "childEPCList"
+    },
+    {
+      "@id": "untp-dte:childQuantityList",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:QuantityElement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:AggregationEvent"
+        },
+        {
+          "@id": "untp-dte:AssociationEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "List of quantified product classes that have been aggregated into the parent.  Used when the child items do not have unique identifiers (eg 100 Kg of cotton bales)",
+        "List of quantified product classes that have been assembled into the parent.  Used when the child items do not have unique identifiers (eg brackets and screws used in the assembly of a desktop computer)"
+      ],
+      "rdfs:label": "childQuantityList"
+    },
+    {
+      "@id": "untp-dte:sourcePartyId",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:id"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The source party for this supply chain transaction - typically the seller party"
+      ],
+      "rdfs:label": "sourcePartyId"
+    },
+    {
+      "@id": "untp-dte:destinationPartyId",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:id"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The destination party for this supply chain transaction - typically the buyer party."
+      ],
+      "rdfs:label": "destinationPartyId"
+    },
+    {
+      "@id": "untp-dte:bizTransaction",
+      "schema:rangeIncludes": {
+        "@id": "untp-dte:documentTypeCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:TransactionEvent"
+        }
+      ],
+      "rdfs:comment": [
+        "The document type representing the trade transaction drawn from the business transaction type vocabulary."
+      ],
+      "rdfs:label": "bizTransaction"
+    },
+    {
+      "@id": "untp-dte:mediaQuery",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Media query as defined in https://www.w3.org/TR/mediaqueries-4/"
+      ],
+      "rdfs:label": "mediaQuery"
+    },
+    {
+      "@id": "untp-dte:template",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dte:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "An inline template field for use cases where remote retrieval of a render method is suboptimal",
+        "An inline template field "
+      ],
+      "rdfs:label": "template"
+    },
+    {
+      "@id": "untp-dte:url",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "URL for remotely hosted template"
+      ],
+      "rdfs:label": "url"
+    },
+    {
+      "@id": "untp-dte:mediaType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "content/media type for (possible) conneg on the above URL and certainly for display use"
+      ],
+      "rdfs:label": "mediaType"
+    },
+    {
+      "@id": "untp-dte:digestMultibase",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dte:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Used for resource integrity and/or validation of the inline `template`"
+      ],
+      "rdfs:label": "digestMultibase"
+    },
+    {
+      "@id": "untp-dte:actionCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "actionCode",
+      "rdfs:comment": "The Action type says how an event relates to the lifecycle of the entity being described. For example, AggregationEvent is used to capture events related to aggregations of objects, such as cases aggregated to a pallet. Throughout its life, the pallet load participates in many business process steps, each of which may generate an EPCIS event. The action field of each event says how the aggregation itself has changed during the event: have objects been added to the aggregation, have objects been removed from the aggregation, or has the aggregation simply been observed without change to its membership? The action is independent of the bizStep (of type BusinessStepID) which identifies the specific business process step in which the action took place."
+    },
+    {
+      "@id": "untp-dte:actionCode#observe",
+      "@type": "untp-dte:actionCode",
+      "rdf:value": "observe",
+      "rdfs:label": "Observe",
+      "rdfs:comment": "The entity in question has not been changed."
+    },
+    {
+      "@id": "untp-dte:actionCode#add",
+      "@type": "untp-dte:actionCode",
+      "rdf:value": "add",
+      "rdfs:label": "Add",
+      "rdfs:comment": "The entity in question has been created or added to."
+    },
+    {
+      "@id": "untp-dte:actionCode#delete",
+      "@type": "untp-dte:actionCode",
+      "rdf:value": "delete",
+      "rdfs:label": "Delete",
+      "rdfs:comment": "The entity in question has been removed from or destroyed altogether."
+    },
+    {
+      "@id": "untp-dte:bizStepCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "bizStepCode",
+      "rdfs:comment": "BusinessStep is a vocabulary whose elements denote steps in business processes. An example is an identifier that denotes “shipping.” The business step field of an event specifies the business context of an event: what business process step was taking place that caused the event to be captured?"
+    },
+    {
+      "@id": "untp-dte:dispositionCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "dispositionCode",
+      "rdfs:comment": "Disposition code is a vocabulary whose elements denote a business state of an object. An example is a code that denotes “recalled\". The disposition field of an event specifies the business condition of the events objects, subsequent to the event. The disposition is assumed to hold true until another event indicates a change of disposition. Intervening events that do not specify a disposition field have no effect on the presumed disposition of the object. "
+    },
+    {
+      "@id": "untp-dte:documentTypeCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "documentTypeCode",
+      "rdfs:comment": "Document type codes for trade and logistics documents supporting the event such as purchase order, invoice, shipping notification, bill of lading, etc."
+    },
+    {
+      "@id": "untp-dte:UOM",
+      "@type": "rdfs:Class",
+      "rdfs:label": "UOM",
+      "rdfs:comment": "UNECE Recommendation 20 Unit of Measure code list."
+    }
+  ]
+}
