@@ -1,0 +1,106 @@
+{
+  "type": [
+    "AssociationEvent",
+    "Event"
+  ],
+  "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
+  "processType": "Weaving",
+  "eventTime": "2024-09-01T12:00:00Z",
+  "action": "add",
+  "disposition": "https://ref.gs1.org/cbv/Disp-active",
+  "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
+  "bizLocation": "https://id.gs1.org/414/9520123456788",
+  "sensorElementList": [
+    {
+      "sensorMetadata": {
+        "device": {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah."
+        },
+        "dataProcessingMethod": "https://standards.org/sensorMethod#1234"
+      },
+      "sensorReport": [
+        {
+          "time": "2024-07-24T12:00:00Z",
+          "sensorType": "https://samplesensors.com/model1234",
+          "value": 25,
+          "uom": "KGM"
+        },
+        {
+          "time": "2024-07-24T12:00:00Z",
+          "sensorType": "https://samplesensors.com/model1234",
+          "value": 25,
+          "uom": "KGM"
+        }
+      ],
+      "sensorIntegrityProof": "https://jargon.sh"
+    },
+    {
+      "sensorMetadata": {
+        "device": {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah."
+        },
+        "dataProcessingMethod": "https://standards.org/sensorMethod#1234"
+      },
+      "sensorReport": [
+        {
+          "time": "2024-07-24T12:00:00Z",
+          "sensorType": "https://samplesensors.com/model1234",
+          "value": 25,
+          "uom": "KGM"
+        },
+        {
+          "time": "2024-07-24T12:00:00Z",
+          "sensorType": "https://samplesensors.com/model1234",
+          "value": 25,
+          "uom": "KGM"
+        }
+      ],
+      "sensorIntegrityProof": "https://jargon.sh"
+    }
+  ],
+  "parentEPC": {
+    "type": [
+      "Item"
+    ],
+    "id": "https://id.gs1.org/01/09520123456788/21/12345",
+    "name": "EV battery 300Ah."
+  },
+  "childEPCList": [
+    {
+      "type": [
+        "Item"
+      ],
+      "id": "https://id.gs1.org/01/09520123456788/21/12345",
+      "name": "EV battery 300Ah."
+    },
+    {
+      "type": [
+        "Item"
+      ],
+      "id": "https://id.gs1.org/01/09520123456788/21/12345",
+      "name": "EV battery 300Ah."
+    }
+  ],
+  "childQuantityList": [
+    {
+      "productId": "https://id.gs1.org/01/09520123456788/21/12345",
+      "productName": "EV battery 300Ah.",
+      "quantity": 20,
+      "uom": "KGM"
+    },
+    {
+      "productId": "https://id.gs1.org/01/09520123456788/21/12345",
+      "productName": "EV battery 300Ah.",
+      "quantity": 20,
+      "uom": "KGM"
+    }
+  ]
+}
