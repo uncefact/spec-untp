@@ -50,7 +50,7 @@ The diagram shows how the sustainability vocabulary catalog works with UNTP cred
 The purpose of the sustainability vocabulary catalog (SVC) is to reduce the risk of misalignment between claims in DPPs and assessments in DCCs and also to provide a way to group similar criteria across different schemes. The SVC has three components
 
 * [A standard structure (schema)](#conformity-vocabulary-schema) for scheme owners to publish their vocabularies of conformity criteria. This makes sure that the criterion URI is **correct**.
-* [A catalog of schemes](#conformity-scheme-register) that can be used as the enrty point to discover scheme-specific criteria. This makes sure that the criterion URI is **discoverable**.
+* [A catalog of schemes](#conformity-scheme-register) that can be used as the entry point to discover scheme-specific criteria. This makes sure that the criterion URI is **discoverable**.
 * [A conformity topic taxonomy](#conformity-topic-classification) that can be used to classify criteria from different schemes. This makes sure that different criterion URI are **comparable**.
 
 ## Requirements
@@ -72,7 +72,7 @@ The sustainability vocabulary publishing guide provides scheme owners with a bes
 
 ### Implementation Guidance
 
-To publish a UNTP SVC compliant vocabulary, scheme owners will need to published conformity criteria as a web vocabulary alongside existing publishing formats (typically PDF documents).  For some scheme owners that already operate a system to manage scheme and criteria in a structured way, this could be just a simple publishing step from existing structured data. Other may choose to implement a "scheme management system" so that criteria are managed in one place and can be published in different formats. The diagram below shows a conceptual implementaiton model for any scheme owner. 
+To publish a UNTP SVC compliant vocabulary, scheme owners will need to published conformity criteria as a web vocabulary alongside existing publishing formats (typically PDF documents).  For some scheme owners that already operate a system to manage scheme and criteria in a structured way, this could be just a simple publishing step from existing structured data. Other may choose to implement a "scheme management system" so that criteria are managed in one place and can be published in different formats. The diagram below shows a conceptual implementation model for any scheme owner. 
 
 ![Scheme management system](SchemeManagementSystem.png)
 
@@ -82,13 +82,13 @@ The implementation model proposes that scheme owners
 * Populate the system, possibly with generative AI assistance to automate the majority of content creation, from existing scheme documentation.
 * Publish both the UNTP standard vocabulary catalog and relevant document content from the same system.  
 
-One advantage of a structured scheme management system is that it can be the source of tailored auditor checklists that, again with generativer AI assistance over audit subject provate data, can dramitally increase the efficiency of audit processes. The same tools can then use then generate a UNTP DCC from the audit criteria checklist and include a secure link to the auditable vidence that supports the assessment.  
+One advantage of a structured scheme management system is that it can be the source of tailored auditor checklists that, again with generative AI assistance over audit subject private data, can dramatically increase the efficiency of audit processes. The same tools can then use then generate a UNTP DCC from the audit criteria checklist and include a secure link to the auditable evidence that supports the assessment.  
 
 ![Improving audit efficiency](SVC-DCC-Integration.png)
 
 ### Logical Model
 
-This section describes the logoal data model of the scheme and criteria in more detail.  
+This section describes the logical data model of the scheme and criteria in more detail.  
 
 ![SVC logical Model](SustainabilityVocabularyCatalog.svg)
 
@@ -108,7 +108,7 @@ The key ideas in the logical model of a published conformity vocabulary are
 
 ### Sample Scheme Vocabulary
 
-The JSON snippet below shows an example of a Scheme and ctrieria as a UNTP compliant digital vocabulary. Such data structures should be simple to generate from a scheme management system. An HTMl rendering template can present the same data as a human browsable website where there is a dedicated web page for each criteria ID (eg `https://sample-scheme.org/ESGStandard/S11`) that rpesents the detailed information about that criteria.  
+The JSON snippet below shows an example of a Scheme and criteria as a UNTP compliant digital vocabulary. Such data structures should be simple to generate from a scheme management system. An HTMl rendering template can present the same data as a human browsable website where there is a dedicated web page for each criteria ID (eg `https://sample-scheme.org/ESGStandard/S11`) that represents the detailed information about that criteria.  
 
 ```json
 {
