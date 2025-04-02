@@ -70,6 +70,10 @@ The purpose of the sustainability vocabulary catalog (SVC) is to reduce the risk
 
 The sustainability vocabulary publishing guide provides scheme owners with a best practice framework that can be used to publish their schemes as a hierarchy of  criteria, each with a unique identifier (URI). This is a critical activity so that issuers of product passports, conformity credentials, and facility records, can unambiguously reference a conformity criterion. In the example above the key reference criterion is `"id": id": "https://www.globalbattery.org/GHGRulebook/2.0/GHG_Calculation` indicating that the claim is made following GHG Calculation guidance in the GBA v2.0 rulebook. 
 
+### Minimum Implementation
+
+At a minimum, scheme owners need to specify a URL for each conformity criterion that will be referenced by a claim or assessment. Scheme owners that already publish schemes and assessment criterion as a website with stable links may register their schemes with no further action. Scheme owners without reference-able criteria URIs (or who wish to upgrade their digital publishing) should follow the guidance below.  
+
 ### Implementation Guidance
 
 To publish a UNTP SVC compliant vocabulary, scheme owners will need to published conformity criteria as a web vocabulary alongside existing publishing formats (typically PDF documents).  For some scheme owners that already operate a system to manage scheme and criteria in a structured way, this could be just a simple publishing step from existing structured data. Other may choose to implement a "scheme management system" so that criteria are managed in one place and can be published in different formats. The diagram below shows a conceptual implementation model for any scheme owner. 
