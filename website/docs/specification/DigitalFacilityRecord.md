@@ -194,7 +194,6 @@ Facility location is a value object (ie it does not have a unique identifier). I
 
 ### Confomrity Claims
 
-Conformity information is included in the Digital Facility Record as an array of UNTP Declaration structures. The same structure is re-used for confomrity Information in Digital Product Passports nad for third party assessments in UNTP Digital Conformity Credentials (DCC). Please refer to the [Sustainability Vocabulary Page](SustainabilityVocabularyCatalog.md) for further information and examples.
+Conformity information is included in the Digital Facility Record as an array of UNTP Declaration structures. The same structure is re-used for confomrity Information in Digital Product Passports nad for third party assessments in UNTP Digital Conformity Credentials (DCC). Please refer to the [DPP COnformity Information](DigitalProductPassport#conformity-information) section for further information and examples.
 
-## Samples
 

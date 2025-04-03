@@ -1,11 +1,11 @@
 ---
 sidebar_position: 20
-title: Certifiers
+title: Scheme Owners
 ---
 
 ## Implementation Register
 
-Summary list of conformity assessment bodies that have implemented or plan to implement UNTP specifications to support their customers with verifiable evidence of product or process conformity against relevant standards. 
+Summary list of conformity scheme ownersthat have implemented or plan to implement UNTP specifications to support their customers with verifiable evidence of product or process conformity against relevant standards. 
 
 * Product category is defined by [UN CPC](https://unstats.un.org/unsd/classifications/Econ/cpc)
 * Conformity topic is defined from [UNTP conformity topic](https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode)
