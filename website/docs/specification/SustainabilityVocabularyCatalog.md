@@ -41,7 +41,7 @@ Web **vocabularies** are a means to bring consistent understanding of **meaning*
 
 The diagram shows how the sustainability vocabulary catalog works with UNTP credentials such as product passports, facility records, and conformity credentials to bring unambiguous meaning to sustainability claims and assessments. 
 
-* Schemes (Grey): There are thousands of national regulations and industry standards that address sustainability of products, facilities, and organisations. Each one typically contains multiple auditable criteria. These are governed by the the government or industry authorities that define them.  UNTP does not seek to create any new schemes or regulations but rather to provide a means to ensure that these standards and regulations can be unambiguously referenced by digital credentials. This requires each individual criteria to have a globally unique identifier (a URI). 
+* Schemes (Grey): There are hundreds of national regulations and industry standards that address sustainability of products, facilities, and organisations. Each one typically contains multiple auditable criteria. These are governed by the the government or industry authorities that define them.  UNTP does not seek to create any new schemes or regulations but rather to provide a means to ensure that these standards and regulations can be unambiguously referenced by digital credentials. This requires each individual criteria to have a globally unique identifier (a URI). 
 * DPP / DFR (green): The UNTP digital product passport (DPP) provides a means for a manufacturer or brand owner to list multiple sustainability claims for a given identified product. Similarly a UNTP digital facility record (DFR) provides the same capability but for facilities such as farms, mine-sites, processing plants, or manufacturing sites. Each claim may reference a sustainability criteria defined by a regulator or an industry standard.  
 * DCC (brown): The UNTP digital conformity credential (DCC) provides a means for a second or third party to list independent assessments of specific products or facilities against the same conformity criteria. For a DCC to verifiably support a claim in a DPP, the identifier of the criteria and supporting regulation / standard must match. Therefore it is important that both the manufacturer issuing the DPP and the auditor issuing the DCC use the same identifier for the sustainability criteria.  
 
@@ -83,10 +83,14 @@ To publish a UNTP SVC compliant vocabulary, scheme owners will need to published
 The implementation model proposes that scheme owners
 
 * Create a lightweight system to maintain scheme versions, the conformity criteria within the scheme, and the classification of the criteria.
-* Populate the system, possibly with generative AI assistance to automate the majority of content creation, from existing scheme documentation.
+* Populate the system from existing scheme documentation, possibly with the assistance of some automation tools.
 * Publish both the UNTP standard vocabulary catalog and relevant document content from the same system.  
 
-One advantage of a structured scheme management system is that it can be the source of tailored auditor checklists that, again with generative AI assistance over audit subject private data, can dramatically increase the efficiency of audit processes. The same tools can then use then generate a UNTP DCC from the audit criteria checklist and include a secure link to the auditable evidence that supports the assessment.  
+Once scheme and criteria are managed in a more structured way, scheme owners can potentially leverage the system to realise further benefits.
+
+* Tailored auditor checklists are easily generated, reflecting the specific criteria applicable to the context of a specific product or facility subject.
+* Automated assistants can more easily make initial assessments based on documentary evidence from the subject product or facility.
+* The structured assessment together with secure links to evidence is already available, making the job of issuing a UNTP digital conformity credential very straightforward. 
 
 ![Improving audit efficiency](SVC-DCC-Integration.png)
 
