@@ -8,7 +8,7 @@ title: Implementations Register
 UNTP implementation registers are designed to track uptake of UNTP. This provides value to UN/CEFACT as a means to assess impact.  It also provides value to implementers as a means to raise awareness of implementation plans or to discover usable implementations.  There is a separate register for each implementer type.
 
 * [Industry](Industry.md) will typically implement the DPP, DFR and DTE specifications so that the sustainability characteristics of their products and facilities are discoverable and verifiable. Registration provides a means to announce intent to participate in sustainable and interoperable value chains and allows buyers to discover suppliers with digitally verifiable sustainability data.
-* [Conformity Assessment Bodies](Certifiers.md) will typically implement the DCC specification so that they can provide their customers with verifiable sustainability credentials about their products and facilities. 
+* [Conformity Scheme owners](SchemeOwners.md) will typically implement the SVC specification so that their conformity criteria or digtially referenceable. They (or their accredited auditors) will also implement the DCC specification so that they can provide their customers with verifiable sustainability credentials about their products and facilities. 
 * [Regulators](Regulators.md) will also typically be DCC implementers for government permits, licenses, certificates or other relevant credentials so that they can provide their constituents with digitally verifiable regulatory compliance evidence. Regulators may also operate identity registers.
 * [Software Solutions](Software.md) will typically implement the VCP and/or IDR specifications into their systems so that they can support their customers who will use the solutions to issue DPPs, DFRs, DTEs, and DCCs.  
 * [Identity Registers](Registers.md) will typically implement the IDR specification (so that registered identities are resolvable) and the DIA specification (so that registered identities are verifiable).
@@ -35,6 +35,7 @@ Note that implementers need only declare intent to implement the minimum mandato
 * [DTE](../specification/DigitalTraceabilityEvents.md) - Digital Traceability Event
 * [IDR](../specification/IdentityResolver.md) - Identity Resolver
 * [DIA](../specification/IdentityResolver.md) - Digital Identity Anchor
+* [SVC](../specification/SustainabilityVocabularyCatalog.md) - Sustainability Vocabulary Catalog
 
 ## Registration Process
 

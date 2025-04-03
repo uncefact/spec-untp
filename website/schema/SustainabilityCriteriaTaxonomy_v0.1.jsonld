@@ -1,0 +1,698 @@
+{
+  "@context": {
+    "sustainability": "http://vocabulary.uncefact.org/sustainability/",
+    "@vocab": "http://vocabulary.uncefact.org/sustainability/",
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "references": {
+      "@id": "sustainability:references",
+      "UN_SDG": {
+        "@id": "sustainability:unSdg",
+        "@type": "@id"
+      },
+      "EU_ESPR": {
+        "@id": "sustainability:euEspr",
+        "@type": "http://schema.org/Text"
+      }
+    },
+    "children": {
+      "@id": "sustainability:hasChild",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "sustainability:ecological-resilience",
+      "name": "Ecological Resilience",
+      "description": "Emphasizes environmental protection, resource conservation, and climate resilience.",
+      "references": {
+        "UN_SDG": ["6", "7", "12", "13", "14", "15"],
+        "EU_ESPR": "Chapter VI: Environment"
+      },
+      "children": [
+        {
+          "@id": "sustainability:ecological-resilience/carbon-footprint-reduction",
+          "name": "Carbon Footprint Reduction",
+          "description": "Minimizing greenhouse gas emissions.",
+          "references": {
+            "UN_SDG": ["13"],
+            "EU_ESPR": "Art. 5 - Environmental Sustainability"
+          }
+        },
+        {
+          "@id": "sustainability:ecological-resilience/renewable-energy-use",
+          "name": "Renewable Energy Use",
+          "description": "Transition to sustainable energy sources.",
+          "references": {
+            "UN_SDG": ["7"],
+            "EU_ESPR": "Art. 7 - Energy Efficiency"
+          }
+        },
+        {
+          "@id": "sustainability:ecological-resilience/water-conservation",
+          "name": "Water Conservation",
+          "description": "Sustainable water management.",
+          "references": {
+            "UN_SDG": ["6"],
+            "EU_ESPR": "Annex I - Water Use"
+          }
+        },
+        {
+          "@id": "sustainability:ecological-resilience/waste-minimization",
+          "name": "Waste Minimization",
+          "description": "Reducing waste generation.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 6 - Waste Prevention"
+          }
+        },
+        {
+          "@id": "sustainability:ecological-resilience/ecosystem-preservation",
+          "name": "Ecosystem Preservation",
+          "description": "Protecting biodiversity.",
+          "references": {
+            "UN_SDG": ["15"],
+            "EU_ESPR": "Annex I - Biodiversity Impact"
+          }
+        },
+        {
+          "@id": "sustainability:ecological-resilience/forest-conservation",
+          "name": "Forest Conservation",
+          "description": "Preventing deforestation.",
+          "references": {
+            "UN_SDG": ["15"],
+            "EU_ESPR": "Art. 5 - Resource Use"
+          }
+        },
+        {
+          "@id": "sustainability:ecological-resilience/recycled-material-integration",
+          "name": "Recycled Material Integration",
+          "description": "Use of secondary materials.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 8 - Recycled Content"
+          }
+        },
+        {
+          "@id": "sustainability:ecological-resilience/sustainable-product-design",
+          "name": "Sustainable Product Design",
+          "description": "Design for circularity.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 5 - Durability and Recyclability"
+          }
+        },
+        {
+          "@id": "sustainability:ecological-resilience/chemical-safety",
+          "name": "Chemical Safety",
+          "description": "Restriction of hazardous substances.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Annex I - Substance Restrictions"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "sustainability:human-equity-welfare",
+      "name": "Human Equity and Welfare",
+      "description": "Focuses on human rights, fair labor, and community support.",
+      "references": {
+        "UN_SDG": ["1", "3", "4", "5", "8", "10"],
+        "EU_ESPR": "Chapter IV: Human Rights, Chapter V: Employment and Industrial Relations"
+      },
+      "children": [
+        {
+          "@id": "sustainability:human-equity-welfare/rights-equality",
+          "name": "Rights and Equality",
+          "description": "Ensuring non-discrimination.",
+          "references": {
+            "UN_SDG": ["10"],
+            "EU_ESPR": "Art. 10 - Social Sustainability"
+          }
+        },
+        {
+          "@id": "sustainability:human-equity-welfare/decent-work-conditions",
+          "name": "Decent Work Conditions",
+          "description": "Fair wages and hours.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Annex I - Supply Chain Due Diligence"
+          }
+        },
+        {
+          "@id": "sustainability:human-equity-welfare/workplace-safety",
+          "name": "Workplace Safety",
+          "description": "Protecting worker health.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Art. 10 - Social Impact"
+          }
+        },
+        {
+          "@id": "sustainability:human-equity-welfare/community-empowerment",
+          "name": "Community Empowerment",
+          "description": "Supporting local development.",
+          "references": {
+            "UN_SDG": ["1"],
+            "EU_ESPR": "Art. 10 - Stakeholder Engagement"
+          }
+        },
+        {
+          "@id": "sustainability:human-equity-welfare/worker-representation",
+          "name": "Worker Representation",
+          "description": "Freedom of association.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Annex I - Labor Rights"
+          }
+        },
+        {
+          "@id": "sustainability:human-equity-welfare/forced-labor-elimination",
+          "name": "Forced Labor Elimination",
+          "description": "Preventing exploitation.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Art. 10 - Human Rights Due Diligence"
+          }
+        },
+        {
+          "@id": "sustainability:human-equity-welfare/youth-protection",
+          "name": "Youth Protection",
+          "description": "Safeguarding young workers.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Annex I - Child Labor Ban"
+          }
+        },
+        {
+          "@id": "sustainability:human-equity-welfare/gender-equity",
+          "name": "Gender Equity",
+          "description": "Promoting diversity.",
+          "references": {
+            "UN_SDG": ["5"],
+            "EU_ESPR": "Art. 10 - Social Sustainability"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "sustainability:ethical-governance",
+      "name": "Ethical Governance",
+      "description": "Promotes integrity, accountability, and transparent practices.",
+      "references": {
+        "UN_SDG": ["16"],
+        "EU_ESPR": "Chapter II: General Policies, Chapter VII: Combating Bribery"
+      },
+      "children": [
+        {
+          "@id": "sustainability:ethical-governance/anti-corruption-measures",
+          "name": "Anti-Corruption Measures",
+          "description": "Preventing bribery.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 11 - Governance Requirements"
+          }
+        },
+        {
+          "@id": "sustainability:ethical-governance/open-reporting",
+          "name": "Open Reporting",
+          "description": "Transparent ESG disclosures.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 12 - Information Requirements"
+          }
+        },
+        {
+          "@id": "sustainability:ethical-governance/legal-compliance",
+          "name": "Legal Compliance",
+          "description": "Adhering to regulations.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 4 - Compliance Obligations"
+          }
+        },
+        {
+          "@id": "sustainability:ethical-governance/responsible-procurement",
+          "name": "Responsible Procurement",
+          "description": "Ethical supply chains.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 10 - Supply Chain Responsibility"
+          }
+        },
+        {
+          "@id": "sustainability:ethical-governance/stakeholder-inclusion",
+          "name": "Stakeholder Inclusion",
+          "description": "Engaging affected parties.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 10 - Stakeholder Dialogue"
+          }
+        },
+        {
+          "@id": "sustainability:ethical-governance/data-privacy",
+          "name": "Data Privacy",
+          "description": "Protecting personal information.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 12 - Digital Product Passport"
+          }
+        },
+        {
+          "@id": "sustainability:ethical-governance/ip-protection",
+          "name": "IP Protection",
+          "description": "Respecting intellectual property.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 11 - Governance Standards"
+          }
+        },
+        {
+          "@id": "sustainability:ethical-governance/competitive-fairness",
+          "name": "Competitive Fairness",
+          "description": "Ensuring fair market practices.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 11 - Governance"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "sustainability:product-integrity",
+      "name": "Product Integrity",
+      "description": "Ensures products are safe, reliable, and sustainable.",
+      "references": {
+        "UN_SDG": ["9", "12"],
+        "EU_ESPR": "Chapter VIII: Consumer Interests"
+      },
+      "children": [
+        {
+          "@id": "sustainability:product-integrity/product-safety-standards",
+          "name": "Product Safety Standards",
+          "description": "Ensuring consumer safety.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 5 - Safety Requirements"
+          }
+        },
+        {
+          "@id": "sustainability:product-integrity/quality-performance",
+          "name": "Quality Performance",
+          "description": "Meeting performance specs.",
+          "references": {
+            "UN_SDG": ["9"],
+            "EU_ESPR": "Art. 5 - Performance Standards"
+          }
+        },
+        {
+          "@id": "sustainability:product-integrity/substance-control",
+          "name": "Substance Control",
+          "description": "Banning harmful materials.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Annex I - Substance Restrictions"
+          }
+        },
+        {
+          "@id": "sustainability:product-integrity/product-longevity",
+          "name": "Product Longevity",
+          "description": "Enhancing durability.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 5 - Durability"
+          }
+        },
+        {
+          "@id": "sustainability:product-integrity/standards-adherence",
+          "name": "Standards Adherence",
+          "description": "Compliance with certifications.",
+          "references": {
+            "UN_SDG": ["9"],
+            "EU_ESPR": "Art. 4 - Ecodesign Requirements"
+          }
+        },
+        {
+          "@id": "sustainability:product-integrity/supply-chain-traceability",
+          "name": "Supply Chain Traceability",
+          "description": "Tracking origins.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 12 - Digital Product Passport"
+          }
+        },
+        {
+          "@id": "sustainability:product-integrity/consumer-information",
+          "name": "Consumer Information",
+          "description": "Clear labeling.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 7 - Information Obligations"
+          }
+        },
+        {
+          "@id": "sustainability:product-integrity/end-of-life-management",
+          "name": "End-of-Life Management",
+          "description": "Effective recycling processes.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 6 - End-of-Life Requirements"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "sustainability:circular-value-chains",
+      "name": "Circular Value Chains",
+      "description": "Advances sustainability throughout supply and production networks.",
+      "references": {
+        "UN_SDG": ["8", "12", "17"],
+        "EU_ESPR": "Chapter II: General Policies, Chapter VI: Environment"
+      },
+      "children": [
+        {
+          "@id": "sustainability:circular-value-chains/ethical-material-sourcing",
+          "name": "Ethical Material Sourcing",
+          "description": "Sustainable raw materials.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 10 - Supply Chain Due Diligence"
+          }
+        },
+        {
+          "@id": "sustainability:circular-value-chains/supplier-sustainability",
+          "name": "Supplier Sustainability",
+          "description": "ESG compliance in supply.",
+          "references": {
+            "UN_SDG": ["17"],
+            "EU_ESPR": "Art. 10 - Supply Chain Responsibility"
+          }
+        },
+        {
+          "@id": "sustainability:circular-value-chains/resource-circularity",
+          "name": "Resource Circularity",
+          "description": "Reuse and recycling.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 8 - Recycled Content"
+          }
+        },
+        {
+          "@id": "sustainability:circular-value-chains/energy-optimization",
+          "name": "Energy Optimization",
+          "description": "Efficient supply chain energy use.",
+          "references": {
+            "UN_SDG": ["7"],
+            "EU_ESPR": "Art. 7 - Energy Efficiency"
+          }
+        },
+        {
+          "@id": "sustainability:circular-value-chains/supply-chain-labor-rights",
+          "name": "Supply Chain Labor Rights",
+          "description": "Fair worker treatment.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Annex I - Labor Standards"
+          }
+        },
+        {
+          "@id": "sustainability:circular-value-chains/origin-tracking",
+          "name": "Origin Tracking",
+          "description": "Transparent supply chains.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 12 - Digital Product Passport"
+          }
+        },
+        {
+          "@id": "sustainability:circular-value-chains/supplier-development",
+          "name": "Supplier Development",
+          "description": "Building supplier capacity.",
+          "references": {
+            "UN_SDG": ["17"],
+            "EU_ESPR": "Art. 10 - Supply Chain Support"
+          }
+        },
+        {
+          "@id": "sustainability:circular-value-chains/supply-chain-risk-reduction",
+          "name": "Supply Chain Risk Reduction",
+          "description": "Mitigating vulnerabilities.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 10 - Risk Management"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "sustainability:economic-sustainability",
+      "name": "Economic Sustainability",
+      "description": "Balances profitability with sustainable economic impact.",
+      "references": {
+        "UN_SDG": ["8", "9"],
+        "EU_ESPR": "Chapter II: General Policies"
+      },
+      "children": [
+        {
+          "@id": "sustainability:economic-sustainability/business-resilience",
+          "name": "Business Resilience",
+          "description": "Long-term profitability.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Art. 11 - Governance for Sustainability"
+          }
+        },
+        {
+          "@id": "sustainability:economic-sustainability/sustainable-investment",
+          "name": "Sustainable Investment",
+          "description": "Funding green initiatives.",
+          "references": {
+            "UN_SDG": ["9"],
+            "EU_ESPR": "Art. 5 - Resource Efficiency"
+          }
+        },
+        {
+          "@id": "sustainability:economic-sustainability/green-innovation",
+          "name": "Green Innovation",
+          "description": "Developing sustainable tech.",
+          "references": {
+            "UN_SDG": ["9"],
+            "EU_ESPR": "Art. 5 - Innovation Requirements"
+          }
+        },
+        {
+          "@id": "sustainability:economic-sustainability/employment-opportunities",
+          "name": "Employment Opportunities",
+          "description": "Job creation.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Art. 10 - Social Impact"
+          }
+        },
+        {
+          "@id": "sustainability:economic-sustainability/regional-economic-growth",
+          "name": "Regional Economic Growth",
+          "description": "Supporting local economies.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Art. 10 - Community Benefits"
+          }
+        },
+        {
+          "@id": "sustainability:economic-sustainability/resource-efficiency",
+          "name": "Resource Efficiency",
+          "description": "Cost-effective resource use.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Art. 7 - Efficiency Standards"
+          }
+        },
+        {
+          "@id": "sustainability:economic-sustainability/economic-risk-management",
+          "name": "Economic Risk Management",
+          "description": "Assessing financial risks.",
+          "references": {
+            "UN_SDG": ["8"],
+            "EU_ESPR": "Art. 11 - Governance"
+          }
+        },
+        {
+          "@id": "sustainability:economic-sustainability/supply-network-strength",
+          "name": "Supply Network Strength",
+          "description": "Enhancing value chain stability.",
+          "references": {
+            "UN_SDG": ["9"],
+            "EU_ESPR": "Art. 10 - Supply Chain Resilience"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "sustainability:health-safety-assurance",
+      "name": "Health and Safety Assurance",
+      "description": "Prioritizes health and safety for workers and communities.",
+      "references": {
+        "UN_SDG": ["3"],
+        "EU_ESPR": "Chapter V: Employment and Industrial Relations"
+      },
+      "children": [
+        {
+          "@id": "sustainability:health-safety-assurance/workplace-hazard-control",
+          "name": "Workplace Hazard Control",
+          "description": "Reducing risks.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Art. 10 - Social Sustainability"
+          }
+        },
+        {
+          "@id": "sustainability:health-safety-assurance/emergency-readiness",
+          "name": "Emergency Readiness",
+          "description": "Preparedness plans.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Annex I - Safety Measures"
+          }
+        },
+        {
+          "@id": "sustainability:health-safety-assurance/exposure-management",
+          "name": "Exposure Management",
+          "description": "Controlling harmful agents.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Annex I - Substance Safety"
+          }
+        },
+        {
+          "@id": "sustainability:health-safety-assurance/living-conditions",
+          "name": "Living Conditions",
+          "description": "Safe worker accommodations.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Art. 10 - Worker Welfare"
+          }
+        },
+        {
+          "@id": "sustainability:health-safety-assurance/healthcare-access",
+          "name": "Healthcare Access",
+          "description": "Providing medical support.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Art. 10 - Health Provisions"
+          }
+        },
+        {
+          "@id": "sustainability:health-safety-assurance/well-being-support",
+          "name": "Well-Being Support",
+          "description": "Addressing mental health.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Art. 10 - Social Impact"
+          }
+        },
+        {
+          "@id": "sustainability:health-safety-assurance/nutrition-standards",
+          "name": "Nutrition Standards",
+          "description": "Ensuring safe food provisions.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Art. 10 - Worker Welfare"
+          }
+        },
+        {
+          "@id": "sustainability:health-safety-assurance/ergonomic-design",
+          "name": "Ergonomic Design",
+          "description": "Safe physical work environments.",
+          "references": {
+            "UN_SDG": ["3"],
+            "EU_ESPR": "Art. 5 - Product Safety"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "sustainability:systemic-sustainability",
+      "name": "Systemic Sustainability",
+      "description": "Establishes frameworks for managing and improving ESG outcomes.",
+      "references": {
+        "UN_SDG": ["12", "16"],
+        "EU_ESPR": "Chapter II: General Policies"
+      },
+      "children": [
+        {
+          "@id": "sustainability:systemic-sustainability/sustainability-policies",
+          "name": "Sustainability Policies",
+          "description": "Formal ESG commitments.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 11 - Governance Framework"
+          }
+        },
+        {
+          "@id": "sustainability:systemic-sustainability/risk-identification",
+          "name": "Risk Identification",
+          "description": "Assessing ESG risks.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 10 - Due Diligence"
+          }
+        },
+        {
+          "@id": "sustainability:systemic-sustainability/outcome-tracking",
+          "name": "Outcome Tracking",
+          "description": "Monitoring performance.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 12 - Reporting Requirements"
+          }
+        },
+        {
+          "@id": "sustainability:systemic-sustainability/capacity-building",
+          "name": "Capacity Building",
+          "description": "Training stakeholders.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 10 - Stakeholder Support"
+          }
+        },
+        {
+          "@id": "sustainability:systemic-sustainability/process-enhancement",
+          "name": "Process Enhancement",
+          "description": "Continuous improvement.",
+          "references": {
+            "UN_SDG": ["12"],
+            "EU_ESPR": "Art. 5 - Performance Improvement"
+          }
+        },
+        {
+          "@id": "sustainability:systemic-sustainability/feedback-channels",
+          "name": "Feedback Channels",
+          "description": "Grievance mechanisms.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 10 - Stakeholder Engagement"
+          }
+        },
+        {
+          "@id": "sustainability:systemic-sustainability/compliance-verification",
+          "name": "Compliance Verification",
+          "description": "Audits and checks.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 4 - Compliance Monitoring"
+          }
+        },
+        {
+          "@id": "sustainability:systemic-sustainability/transparent-communication",
+          "name": "Transparent Communication",
+          "description": "Public ESG reporting.",
+          "references": {
+            "UN_SDG": ["16"],
+            "EU_ESPR": "Art. 12 - Information Disclosure"
+          }
+        }
+      ]
+    }
+  ]
+}
