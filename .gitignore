@@ -3,6 +3,7 @@ node_modules
 .idea
 .nvmrc
 .docusaurus
+.env
 
 website/build/
 yarn.lock
