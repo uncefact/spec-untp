@@ -17,12 +17,13 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 3rd April Mar 2025. 
-	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
-	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 * **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 17th April 2025.  
 	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
 	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
+* **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 1st May 2025. 
+	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
+	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
+
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
@@ -32,6 +33,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2025-04-03| [The UNTP working group, led by Steve and Brett, reviewed draft terms of reference for subgroups and introduced a proposed Sustainability Vocabulary Catalog to standardize and digitize conformity criteria, while participants raised concerns around governance, classification, and AI integration.](#2025-04-03-meeting-summary)|[video](https://us02web.zoom.us/rec/share/6S5o_zGgw9QLSIW30eTvSo_jVyz9Hd6Rd6fYRUQ92ZwcHWLWtaGuSP8QOKRNVKYM.IP3heXAuCu5BZhdW)|[transcript](../../meetings/2025-04-03-Recording.txt)|
 |2025-03-20| [The UNTP meeting focused on strengthening governance, introducing subcommittees for scalability, and advancing work on a machine-readable sustainability criteria catalog to support digital product passports.](#2025-03-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/MGrgwRJ6j3hgizfX1mBY266CykA3xYJOTGmofxBAxrNJzvFNZVLOmc1mdkH0ls4H.odAXmt0tqvJT9jv7) |[transcript](../../meetings/2025-03-20-Recording.txt)
 |2025-03-06| [The meeting covered updates on GS1's commitment, improvements to the information architecture, the UNTP Playground's credential validation features, and a discussion on whether bulk materials require a separate Digital Material Passport, concluding that further testing is needed.](#2025-03-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/LS0ZS4wMm45ZUBZNrH-oQJkpT2R7a4F8Ma9GOeW6ZHk1HwhLFPMVdVXI8Vy14IEK.lej3QWxOntusXGsK)|[transcript](../../meetings/2025-03-06-Recording.txt)|
 |2025-02-20| [The meeting focused on preparing UNTP for public review, addressing governance, simplifying specifications, improving usability, and ensuring alignment with Recommendation 49 while planning for future pilots and implementations.](#2025-02-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/hIBsxqAMi7tw1z5Rj-me3ZtbOS-IQnuJR1zYSuER41676BM_JO8lNPi6MEAqhtrL.Sto8AESpUGhaph5Z)|[transcript](../../meetings/2025-02-20-Recording.txt)|
@@ -77,6 +79,86 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
 
+## 2025-04-03 Meeting Summary
+
+#### **Meeting Summary**
+**Date:** April 3, 2025  
+**Topic:** UNTP Working Group Meeting  
+**Duration:** ~1 hour  
+**Recorded & Transcribed:** Yes  
+**Chair:** Steve
+
+#### **Agenda**
+1. Review of draft Terms of Reference (ToR) for working groups (led by Brett)  
+2. Presentation of the draft **Sustainability Vocabulary Catalog** specification (by Steve)  
+3. Open discussion on governance, classification schemes, and next steps
+
+
+#### **Participants**
+
+There were 20 participants with contributions as described below.
+
+| Name        | Role/Notes                                               |
+|-------------|----------------------------------------------------------|
+| **Steve**   | Chair, presenter of UNTP structure and Sustainability Vocabulary Catalog |
+| **Brett**   | Lead of Conformity Credential Group, drafted ToR         |
+| **Virginia**| Contributor, raised key concerns on roles, classification, AI usage |
+| **Zach**    | Provided strategic input, supported linking previous conformity work |
+| **Bree**    | Asked governance and extension implementation questions   |
+| **Phil**    | Aligned current work with machine-readable credentialing |
+| **Clary**   | Inquired about handling activities, mitigation risks, registry process |
+| **Nick**    | Cautioned about overreach and subjectivity in standards |
+| **Robertus**| Advocated clarity for new readers, suggested keeping helpful visuals |
+| **Marcus**  | Asked about URIs and issues with paywalls                 |
+| **Michael** | Inquired about EU regulations like CSRD/CSDDD            |
+
+
+#### **Key Discussion Highlights**
+
+#### 1. **Working Group Terms of Reference**
+- **Brett** presented a draft ToR for the Conformity Credential Group.
+- Roles proposed: **Group Lead**, **Technical Editor**, possibly additional roles (e.g. Register Maintainer).
+- Feedback:
+  - **Virginia**: Watch for workload — suggested splitting tasks.
+  - **Phil/Zach**: Tie-in with UNCFACT and earlier conformity projects.
+  - **Robertus**: Asked for acronym clarity and onboarding support.
+- Consensus: Keep the ToR flexible and evolving.
+
+#### 2. **Sustainability Vocabulary Catalog (SVC) Draft**
+- **Steve** walked through a proposed model for scheme owners to:
+  - Publish digitally referenceable criteria.
+  - Be included in a **scheme register**.
+  - Classify criteria using a controlled vocabulary.
+
+**Key features:**
+- Clear distinction between **self-claims** (Digital Product Passports) and **third-party audits** (Conformity Credentials).
+- Encourages scheme owners to publish **granular, URI-addressable criteria**.
+- Optional fields for scores, thresholds, and measurement types.
+
+#### 3. **Classification Concerns**
+- Proposed a 2-level classification model inspired by OECD, ESPR, ITC, etc.
+- **Virginia**: Urged coordination with ITC; pointed out their taxonomy and data should be consulted.
+- **Clary**: Raised concerns around registering mitigation activities.
+- **Michael**: Suggested alignment with CSRD, CSDDD.
+- **Marcus**: Asked how the model handles URIs behind paywalls (e.g. ISO).
+
+---
+
+#### **AI and Automation Debate**
+- **Nick & Phil**: Cautioned against overreliance on AI for standards mapping.
+- **Steve**: Clarified AI references were exploratory and not core.
+- **Virginia & Zach**: Suggested AI-related notes should be relocated to adoption/business case docs.
+- **Consensus**: Remove “AI” terminology from spec and refer to “Assessment Assistance Tools”.
+
+---
+
+#### **Next Steps**
+- **Steve** to update the SVC draft:
+  - Remove direct AI references.
+  - Reframe visuals for clarity.
+  - Publish revised draft for peer review.
+- Plan to **formally initiate sub-working groups** based on ToRs in the coming weeks.
+- Consider organizing a **joint discussion** with ITC to align classification vocabularies.
 
 
 ## 2025-03-20 Meeting Summary
