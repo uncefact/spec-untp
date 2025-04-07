@@ -1,0 +1,553 @@
+[Speaker 4] (0:48 - 0:49)
+Good morning.
+
+[Speaker 12] (0:49 - 0:51)
+Good morning.
+
+[Speaker 6] (1:54 - 1:55)
+Morning everyone.
+
+[Speaker 12] (2:00 - 2:02)
+People weren't exactly thrilled with it.
+
+[Speaker 1] (2:12 - 2:16)
+I'll give it another minute or so. Usually until about three minutes past.
+
+[Speaker 12] (2:30 - 2:33)
+Morning everyone. Morning. David?
+
+[Speaker 1] (2:42 - 3:54)
+She hasn't been well recently, but she's joining us. Well, we're at a magic number of 20 on the call. Maybe a few more will join, I don't know.
+
+And it's three minutes past, so let us get started. Thank you everyone for making time in your busy day. I know it's an effort.
+
+As usual, just remind you that this is being recorded and will be transcribed and published. If anyone has any objections, let me know. And also that this is a UN project.
+
+Well, confirm your speaking language. It pops up and says Korean. Really?
+
+No. Do I sound like I'm speaking Korean?
+
+[Speaker 8] (3:55 - 3:56)
+I don't think so.
+
+[Speaker 12] (3:57 - 3:59)
+Why does it do that?
+
+[Speaker 1] (4:04 - 4:05)
+I don't even know how to...
+
+[Speaker 4] (4:06 - 4:11)
+You should know by now that Australian is very close to Korean.
+
+[Speaker 1] (4:12 - 6:38)
+Yes. Anyway, your contributions will, if made towards the content of UNTP are UNIP. I would also just...
+
+I've been asked by the Secretariat because we have a model here where anyone can join and listen because it's open and public anyway and comment, but if you actually make a contribution in the form of something written, a GitHub commit, you need to be a UNC Fact registered expert because that also covers IP conditions. And there's sometimes a little bit of a disconnect between people that join and I ask them to go and register, but the loop doesn't get closed, so I don't always know whether it's been done. So anyone that has...
+
+I'll be going through and just checking who's made a commit, who's contributed anything and confirmed, but if anyone knows that they either have been contributing written stuff or wish to and are not an expert, could you please let me know and I'll facilitate the process. But in the meantime I'm going to go and do a bit of an audit anyway. Alright, well today's agenda has two items on it and then discussion of roadmap and what's next.
+
+The two items are one is a review of a very draft terms of reference that Brett has kindly written, because if you remember at the last meeting, we spoke about breaking ourselves up into subgroups. I called them committees for some reason, that's wrong. It implies some sort of decision making.
+
+They're really just working groups. And that we would make a terms of reference for each group and Brett has started with his and we thought we could review it and see if it's the right pattern basically for every group. And then the next thing is to look at a draft.
+
+The final, if you like, component of the specification at draft level is the sustainability vocabulary catalog and I'll walk through that. But maybe we'll let Brett get his bit out of the way so that we're got the rest of the time for whatever discussions we have. How do you feel about that, Brett?
+
+[Speaker 2] (6:39 - 7:25)
+Thank you, Steve. Hello all. I'll just share my screen.
+
+I wasn't quite clear that that rough draft that I'd knocked out was suddenly going to be presented as a draft template. But anyway, here we are. I've already made some changes.
+
+I've just made a one line statement about what I understand the purpose of the conformity credential group is. And I've added one more function tentatively. Steve, I'm not even sure.
+
+Is the sustainability vocabulary catalog maintenance part of this group?
+
+[Speaker 1] (7:25 - 7:33)
+I think so, because it's the thing that claims are made against. And it's owned by a scheme owner, so it's a logical fit.
+
+[Speaker 2] (7:33 - 9:39)
+But I'll walk through it next. That was a fairly major omission in that case, so hopefully that's rectified. Well, maybe I'll just leave this list of functions on the screen for any feedback.
+
+Some may be superfluous. There may be others that are missing. I'll just give you a couple of moments to read through that, and please signal any discontent that you may have.
+
+Well, there are many others on the mailing list that are not on this call. And even if on reflection you find there are some functions that you would like to add or subtract, just please let Steve or myself know that, because this remains draft, as you can see from the watermark. In terms of roles, I could only think of two roles.
+
+There may be others. And that is the group lead, if that's the right term. I don't know.
+
+And some kind of technical editor, which I was assuming would do the things that a normal business person like me would really have no idea about. And so for the group editor, I've talked about the GitHub pages, the pull requests, and the test harness. I'm not sure if I've got that roughly correct.
+
+In terms of the group lead, I just had a stab at what I thought the role might entail. And again, I'll just leave that on the screen for a minute and wait to hear any discontent that you may have. This, of course, assumes the existence of a steering committee to which the group would report.
+
+[Speaker 4] (9:49 - 10:00)
+Maybe for the mere mortals of us that read it for the first time, it would help to put DCC the first time the full word for it.
+
+[Speaker 2] (10:05 - 10:11)
+Absolutely, Bertus. I'll do that. But this is not the first section in which it appears.
+
+I'll do that above, for sure.
+
+[Speaker 4] (10:13 - 10:15)
+Okay. Sorry. Thank you.
+
+[Speaker 2] (10:15 - 10:22)
+We've got hands up. I don't know who was first. Does anyone know?
+
+I think Virginia had her hand up first, just.
+
+[Speaker 1] (10:23 - 10:29)
+Go ahead. Glad to see you back, Virginia. You're on mute still.
+
+[Speaker 3] (10:31 - 12:02)
+I agree that you should still spell out DCC because this particular page may be distributed separately from other documents. But scrolling up a bit, yeah, back to the functions. There are some of these functions including the group mailing list and the sustainability vocabulary, the last two, which may be and the certifier implementation register, the third one.
+
+Yeah, the second one. These may end up being pretty time-consuming tasks. I mean, we have to see as work develops.
+
+But you may want to have some separate roles related to those so that you don't overcharge the because they're not really the editor, technical editor. And if the technical editor has to do all the pages plus all of that maintenance, those three items, it may be too much to ask one person to do if they're not dedicated full-time. So it's just something to keep in mind.
+
+[Speaker 2] (12:07 - 12:17)
+Thank you very much, Virginia. I've just added a new role. Steve can digest that and let us know.
+
+In the meantime, I'm sure that I can see Phil's hand and maybe others.
+
+[Speaker 9] (12:18 - 12:36)
+Thank you very briefly, Brett. For me, this is interesting because you're leading it and because I hope it ties in with the work you've been leading on machine readable credentials and certificates, whether they're verifiable credentials or not. Am I right in hoping that that is where you're leading this?
+
+[Speaker 2] (12:39 - 13:04)
+Well, look, Steve approached me and I presume it was because of my role at CFACT with the conformity credential work there. So I'm hoping and kind of assuming that the two are a hand in glove. They certainly are.
+
+All of my prejudices from the earlier work will carry over.
+
+[Speaker 9] (13:05 - 13:11)
+I just wanted to hear that said out loud, but yes, that's my hope too. Good.
+
+[Speaker 1] (13:13 - 13:30)
+We just used the work that Brett's team did in the previous project in DCC obviously, and aside from that my participation in Brett's projects revealed to me what a great project lead he is. It's a double bonus. Thanks.
+
+[Speaker 2] (13:31 - 13:33)
+Zach's hand popped up. G'day, Zach.
+
+[Speaker 6] (13:34 - 13:45)
+G'day, Brett. Virginia's was up first, but I just quickly, we might want to sort of, do we want to say in here that there's a specific interaction with that other piece of work? Is that helpful or is that...
+
+[Speaker 2] (13:48 - 14:00)
+Yeah, I think it might be. I'm not sure if there's room for some references at the bottom or do we thread it into the... Because there might be others as well.
+
+[Speaker 8] (14:01 - 15:04)
+I think that's really important to highlight. If we're building on previous work and adding to it, those references are good on so many levels. One, for folks understanding the evolution of the work, but then also two, when we come to looking at how the UNC fact work is modernized and used across different projects, I would love to see that.
+
+That would be really helpful. I am a little bit... I haven't read through all of this stuff, but I do have some questions if you could give me a high-level walkthrough of what the steering committee and what their requirements would be.
+
+If I was a regulator wanting to extend the UNTP digital conformity credential, what would the steps be? Is there...
+
+[Speaker 1] (15:04 - 15:39)
+Shall I take that one, Brett? Please. Yeah.
+
+Nobody's got further comments on this. It was really just to socialize what a typical working group terms of reference might look like. We'll proceed with this and work with the other team leads, working group leads, to produce a few more and start to scale this up.
+
+But in the meantime now, if I may, I'll take the screen and quickly answer Bree's question and then move on to the next topic.
+
+[Speaker 3] (15:40 - 15:43)
+I still had a comment about... I had a new comment.
+
+[Speaker 1] (15:44 - 15:49)
+Oh, did you? My apologies, Virginia. I thought your hand was still left up from before.
+
+Please go ahead.
+
+[Speaker 3] (15:49 - 16:32)
+I put it down for a few seconds and then I put it back up. I was thinking what you could do is in the reference to the... I forgot what you called it, the coordinator of this group, whatever Brett's role would be, that they're responsible for ensuring the links with the other work in UNCFACT.
+
+And then the reference to the previous work that's been done should be... It's not really part of the terms of reference. It's part of the text of the standard itself, I think.
+
+[Speaker 1] (16:40 - 18:44)
+To quickly answer Bree's question, I'm trying to zoom in a little bit on this picture. The reason for that terms of reference is a discussion in the last meeting two weeks ago about scaling up a little bit our effort in developing UNTP and having myself as less of a bottleneck that we would create sub-working groups. And for the moment, it seemed like about four were about right.
+
+One around conformity, which you just heard. One around product passports and facility records and so on. One around technology and one around business and promotion and adoption.
+
+Including extensions and attracting them. That's just reflecting this picture here. Well, actually, no, sorry.
+
+It's not reflecting this picture because our group is just this white blob. It doesn't show the subgroups. I'll have to add a section to the governance page about subgroups.
+
+But back to your question about extensions, the idea here is that the extensions govern themselves but there is some coordination. So here's an extension working group. We've got four registered so far and I believe another two to come.
+
+And those extension members or the lead of those extensions group have a role in a governance board up here in the light blue thing on the left that itself drives requirements for UNTP core. And that way, there's a closing of the loop so that those that invest in extensions have a sense of that their voice is contributing to the ongoing development of the thing they're extending. I don't know if that answers your question.
+
+[Speaker 8] (18:45 - 19:09)
+Yeah. I appreciate you just taking a minute or two to give me that overview, Steve. A follow-up question would be, because you're starting to broaden the governance structure, will you provide a meeting designated to that and put out a call for the working groups?
+
+Do you have plans for that, Steve? Or is this something that's happening organically?
+
+[Speaker 1] (19:12 - 19:49)
+We will ask each working group lead to manage their meetings and calls on roughly a two-week cycle. And it'll be up to each working group. At some point, when we've got through a bulk of final development, it might go down to a one-month cycle or something like this.
+
+Right now, it's fairly active. Each group will do that. We'll still be contributing to the same site.
+
+We'll see subgroup meetings appearing on the meeting page announced and discoverable. It'll be very clear for anyone who wants to participate in any subgroup how to do so.
+
+[Speaker 8] (19:51 - 19:52)
+Great. Thanks.
+
+[Speaker 1] (19:54 - 26:26)
+All right. Well, with that, then, we'll move on to the next topic of discussion. This page is not yet merged.
+
+It's a subject of a pull request. This is just the version on my local machine that I'll walk you through. I'll start the discussion here with this diagram.
+
+For those that have joined us more recently, you may remember that there are a couple of core, if you like, credential types within UNTP. One is a digital product passport, which is a set of claims made by a producer, manufacturer, or brand about their product. In other words, they're self-assessed.
+
+They're just me saying, I declare that my carbon intensity is this, that I am deforestation-free, or whatever it is. Separately, and this is Brett's domain, there are less frequently issued, because obviously you're not going to have an assessor assess every product passport, but you might have an assessor come and audit a farm or a site or whatever. Conformity credentials issued by could be first-party assessment, but more likely second or third-party assessment of your facility or products and making some independent declaration about them.
+
+I've measured the tensile strength of the steel and it is above the minimum threshold required for the construction industry or whatever the credential is saying. These two things go together because one is my set of claims about this product or that shipment, and the other one is independent assessments. They're not necessarily exactly at the same granularity, because this might be at facility level and this might be at product level, or this could be at product class level for a year, and this could be at serialized item level, but nevertheless there's a clear correlation between them because there are some common identifiers.
+
+Now, what's the challenge with this? The challenge is that when making some sort of claim or assertion, for a passport you should be making it against some sort of criteria. I declare my carbon intensity is 15 tonnes per tonne.
+
+Yes, okay, that's nice, but against what measurement framework? What rules did you use? Or I'm deforestation free.
+
+By whose definition of deforestation? A claim in a passport should reference some independent scheme or standard that says that it gives some basis for that claim. Similarly, a claim in a conformity credential really must reference some independent standard, otherwise what are you saying?
+
+Or scheme. This grey thing in the middle is the specification. It could be Australian structural steel, it could be deforestation regulation, it could be the Responsible Business Alliance, Responsible Minerals Initiative, it could be Towards Sustainable Mining.
+
+There are many of them around the place. This thing is the language of the conformity criteria that both of these things are referencing. If that grey thing in the middle isn't discoverable, understandable and unambiguously referenceable, it's a bit challenging to issue either of the things on the right or the left.
+
+You could just put I declare my work rights are conformed in words to the validation assessment program from Responsible Business Alliance version 8 chapter 14 section 3. You could write that in words and a human could read it and look up and go, oh yes I see what that means. But if you want any chance of at some point more and more automated processing and validation of all these things, you want these references to be unambiguous, which means there needs to be a thing called a URI.
+
+So that's the basis for this specification. It's how does a scheme owner do the stuff in the middle? That's what the sustainability vocabulary is about.
+
+It's not for the UN to define new schemes. We're not going to do that because there's more than enough of them and it's not our role, but it is for us to say how could any scheme owner make their scheme referenceable? What we thought we would do is these three things in this light yellow box at the bottom.
+
+One is define some sort of schema or model for how you publish your scheme vocabulary of criteria, some sort of meta model if you like. Then maintain a register of schemes that have done so and make them discoverable. So you can click through from our list into the details of that maintained by the scheme.
+
+We won't be maintaining on our site all the detailed criteria, just that this scheme owner has registered. Then lastly, if you imagine hundreds of schemes, maybe thousands, each with hundreds of criteria, each written in some language and with a URI which is in the domain of that scheme, so it's towards sustainable mining or responsible business lines or whatever, then how do you even begin to make some assessments across different schemes of whether you're talking about the same thing. Is this labour rights or is this carbon intensity or is this water usage or what?
+
+So some sort of classification scheme against which criteria in any scheme can be tagged or classified so that I could potentially write a query and say, show me all the criteria from all the schemes that are registered that are to do with deforestation, for example. That would be the purpose of the thing on the left. So these three boxes here, how do you publish your vocabulary?
+
+How do you classify the granular criteria in your vocabulary? And how do you get added to a list of the purpose of this page? So before I go further, does that make sense about the intent of this page?
+
+[Speaker 5] (26:33 - 26:38)
+Sorry, I didn't put my hand up. I can never find the hand up button.
+
+[Speaker 12] (26:39 - 26:41)
+Nick, after you, please.
+
+[Speaker 5] (26:41 - 28:27)
+I think that makes sense. If I'm going to be really honest and having worked in a number of different schemes, ISOs, more on the deployment side for different energy products, it feels like we might be adopting a bunch of, taking on a lot of the content from inside the standards. And it makes me a little bit nervous that we're going beyond just referencing what assessment has been done by the auditors and what sort of verifiable credential we have on that system that that data has come from has been audited into what has the auditor done.
+
+And I can see a reason why we want to do that. Practically I feel like that could be the next level of maturity that the UNTP could go after, but for an initial, and an initial implementation could make the implementation more difficult. And I'm really, where I'm coming from is it's not so black and white for a lot of the auditors.
+
+It is really, there's a whole lot of subjectivity in actually issuing and saying that something is compliant. What you're really doing is leaning on those professionals to make that judgment a lot of the time. And that is the main thing that you're saying to the market is we've gone through a process.
+
+The standard for that standard is written down over here. We don't want to necessarily be the holder of that and it might not be really binary to be able to digitize it. Yep.
+
+Which is really I see. Yeah, to that bottom box.
+
+[Speaker 1] (28:28 - 30:04)
+I see three hands up and so I'll just quickly answer yours. So if I gave the impression that we are maintaining anything at a more granular level than this scheme exists, then I'm giving you the wrong impression because that's not the intent. Okay.
+
+The scheme register just says towards sustainable mining is a scheme, right? We hope that towards sustainable mining themselves have had a look at some optional guidance really is all it is about how to publish your scheme in such a way that it's digitally referenceable but it's them that's publishing it, not us. Yep.
+
+Okay. And also I think it's up to every scheme owner how granular they want to go. So if you look at some schemes and you look at the publicly issued certificates, they just say this facility gets a score.
+
+Sometimes it's real binary. You're compliant or not against just an entire scheme and sometimes it's a score. Sometimes they go down to a lower level of granularity like towards sustainable mining will break it into about 30 categories and give a score between C and AAA.
+
+And then sometimes it's really fine grained like a public certificate has like, I don't know, 400 criteria in it, right? So you need to be able to accommodate that and leave it up to the scheme owner about what is the granularity that they want to go to in terms of referenceable criteria and how to score them. So I've had a look at these schemes and tried to do something pragmatic.
+
+That's good context. Helpful. Thank you.
+
+You'll see that when I get... Yeah, go on.
+
+[Speaker 6] (30:04 - 30:25)
+Yeah, just to add to that, when we work with scheme owners, they actually welcome this sort of approach because it makes their audits potentially more valuable and their scheme more useful for their members. But it does take some education to get them there.
+
+[Speaker 1] (30:27 - 30:34)
+All right. Virginia and then Clary. You're on mute again, Virginia.
+
+[Speaker 3] (30:36 - 31:17)
+I just wanted to mention again my concern that even though it's only registering that the scheme exists, there's a... taking in mind the number of different products and the number of different conformity schema for each type of product, this really may be a much bigger register than you're anticipating. And it will also require some maintenance because I imagine over time some schemes disappear.
+
+And when they disappear, they may not tell you that they disappear.
+
+[Speaker 1] (31:20 - 31:43)
+In a way, if we have 400 schemes registered, that would be in some ways a nice problem to have because it would mean that the UNTP is getting serious focus. So I guess maybe we can cross that bridge when we come to it as long as we keep the maintenance of the register like I said at a really high level. Let's see.
+
+Clary?
+
+[Speaker 7] (31:45 - 32:28)
+I think Nick addressed already the concern about when we can use it as a kind of a dictionary definition artifacts, putting artifacts into a context registry to reference into the schema. I think that's a good thing. And how will the registry process look like?
+
+Did you think about that? Okay, cool. Because that might be...
+
+I have an attribute in my digital product passport and I'm using a new schema. It's not registered. What do I do?
+
+Can I still use it? Or is it a mandatory reference or an optional reference? I think this kind of things.
+
+But when you come to that, okay, I'm listening then. Thanks.
+
+[Speaker 1] (32:29 - 37:27)
+All right. Well, then I'll start scrolling down and go through some of this. These words just say what I just said about the purpose of these three blobs.
+
+There's a list of requirements here which you can click on and read once this is merged or follow the link I put in the email to the branch that has this content. As a schema owner, I need to publish a granular conformity criteria. I need guidance on how to do it.
+
+What I've seen too with a lot of schemes is, especially when they get fairly mature, they go through a version life cycle, obviously. Towards this responsible mineral alliance or some of the RBA ones are at version 8 and have been around for nearly 20 years. And they comprise a number of criteria that might get reused across versions because when I go from version 7 to version 8, I probably add a few criteria, change a few, but the majority don't change.
+
+So I need to be able to accommodate that. be able to classify things as a cab or a passport issue. I need to be able to find these criteria to put in my passport.
+
+So that's just the requirements. So the first part, let's have a look at the proposed structure for any scheme owner that is going to publish their vocabulary of criteria. And the first part, I just make this minimum implementation statement because some scheme owners, and particularly regulators, I really want to call them scheme owners, have of course already published their schemes, often as just a PDF, in which case it's quite hard to unambiguously reference some subchapter.
+
+But many as websites. And if you've already done that, and there's already a URL somewhere to represent what you mean by deforestation, for example, under a scheme, then that's good enough for me, right? I don't think we need to force anyone to do any more work than they've already done.
+
+So this minimum implementation statement is just saying that. This may already exist. If you've got a reference people can use, good enough.
+
+If not, or if you want to make it richer following this guidance, then read on, basically. There's a little bit of kind of how-to business guidance here that's saying what we're trying to end up with is some description of a scheme where you've got a scheme version which has many criteria in it and each criteria is classified against some consistent taxonomy. That's the purpose of this.
+
+And we've started to play with some of them, and especially those that currently exist as a library of PDF documents, it's not too hard to get an 80% correct version of this thing in the middle with a little bit of gen-AI assistance. It's never 100% correct, so humans must be in the loop to make it correct. But having got that, it should be quite straightforward to continue publishing exactly what you've always been publishing and the bit, it's usually some sub-chapter so quite often a scheme document will have, I don't know, 15 chapters but it's chapter 12 that actually lists the auditable criteria.
+
+So if I was recreating that document from this structured data set, it would just be chapter 12 that I would suck out of my scheme management system and then top and tail the document and I'm back to where I was before but I've also got digital publishing. So all this is trying to say is a kind of concept about what we hope scheme owners will do. And when you've got that, actually some of the scheme owners we've spoken to are already doing this but saying, well, how can I provide some, how can I make my scheme assessments more efficient?
+
+I'm not sure whether we should have this in here. It's just a little bit of kind of incentive, I suppose, to do this. But when you have your assessment criteria in a structured way, it's easy to query that and say give me a tailored checklist for a gold mining in some country and then use some more modern tooling to uplift the efficiency of the audit process.
+
+But that's just really ideas for scheme owners if they want to choose to use them. This is now breaking down into the next level of detail of what a scheme vocabulary might look like. If you like, it's just a detailed version of this thing on the left.
+
+Vocabulary has many criteria which are classified. Nothing more than that. Virginia?
+
+[Speaker 3] (37:28 - 37:46)
+Yeah, that part about using AI in the diagram, I would put that into text because when people just glance at a diagram like that, they may think that UNTP is going to do something about that.
+
+[Speaker 12] (37:47 - 37:48)
+Yes.
+
+[Speaker 3] (37:48 - 37:58)
+So I would just include it, but include it as a note, as something that's said in the text. I think it's already there, but not put it in the diagram.
+
+[Speaker 1] (37:59 - 38:02)
+I could just remove that diagram because it already says it in this text.
+
+[Speaker 6] (38:02 - 38:17)
+Yeah, and if we do have those kinds of sort of inputs, they maybe belong more in the adoption and business case side of things around efficiency and sort of like I think it might be somewhere else.
+
+[Speaker 1] (38:19 - 38:26)
+I stuck them in there because I had them because I'd just done this work, but yeah, you're right. This may be the wrong place for this sort of thing. Happy with that.
+
+Bill?
+
+[Speaker 9] (38:27 - 38:59)
+With a sample size of one, somebody showed me an AI-generated mapping between the GSOM web vocabulary and someone else's carbon footprint vocabulary. Ours is published as a linked data vocabulary. Theirs is published as an Excel file.
+
+GPT got about 2 right out of 100. I mean, it was astonishingly bad because you kind of thought, oh, it's going to get like 80, 90%. No, it was terrible.
+
+Right. Just to warn you. Yeah, no.
+
+It was a sample size of one, so it means nothing.
+
+[Speaker 1] (39:01 - 39:05)
+Yeah. It gets it wrong but presents it with such confidence, doesn't it?
+
+[Speaker 12] (39:06 - 39:07)
+Absolutely, yes.
+
+[Speaker 1] (39:10 - 39:18)
+All right. A few advices now to get rid of that bit. I have no objections to it.
+
+I'm not even sure why I put it in, but Alberto?
+
+[Speaker 4] (39:21 - 40:01)
+I just found the mute button. Actually, I like that it is here for a person completely new reading all of this. For the plain and simple reason it provides a common starting point, but for people to implement this, understanding what to do or where to start is usually the biggest hurdle, and this certainly helps that.
+
+Yes, I agree with people that it doesn't fit properly in here, but at least there needs to be some reference somewhere. That little picture had really some good meaning for me.
+
+[Speaker 1] (40:02 - 40:02)
+This one here?
+
+[Speaker 4] (40:03 - 40:48)
+Or the one below it? Both of them, in fact. I looked at it and suddenly realized I don't need to ask some questions, but again, the experts can decide on how to get everything streamlined.
+
+I prefer initially to have more information than less, and then stream it down. Being a standards writer, I prefer to only have things in one place. It's sort of contradictory to what I say, but this logical model also makes sense to me.
+
+I'm not an expert in these type of things, but I look at it and say, oh, this is how it works, and now I can go and tell my technical guys to go and do something about it.
+
+[Speaker 1] (40:51 - 48:09)
+Yes, thanks, Robertus. That's the point, I suppose. Looking at this diagram, the bold stuff is what we say is mandatory.
+
+You really do need an identifier for your scheme, and name it and describe it and have a version of it, and say when it's valid from, and who owns it, and it must have a list of conformity criteria. It could be a short list. I don't think we want to dictate whether you just list five top-level categories, or whether you go like Irma down to God knows how many detailed criteria.
+
+That's entirely up to the scheme owner. And then for each criteria also, the ID, and that ID there, this is the key thing that justifies this whole damn thing, because that ID of the conformity criteria is the thing you reference in digital product passports and conformity credentials. Name, description, topic, and status.
+
+The rest of the stuff is optional about how you score. Some schemes, it's a Boolean, conform, not conform. Some, there's a measurement, like my steel is 360 kilopascals, and the threshold is 300, so I achieve it.
+
+Some schemes have scores, like this criteria represents a performance level of B, so just try to accommodate that, but they're all optional. And some words here about what those properties mean, and an example is one, just for sample scheme. So that, for example, that there is the thing that you would reference in your product passport or your conformity credential.
+
+And you can see it's about forced labour, and that organisations shall ensure that all their labour is voluntary, prohibiting any form of forced labour, and so on. So that's just an example. And I would expect that a scheme, if they do this, would publish this same data in both human and machine readable way, right, exactly the same way we do for our UNTP vocabularies.
+
+So you can click on it and read it as a human and find each of these URIs will be a small web page, where is it, sorry, not there. These would be, would take you, if you know, when this is implemented, if you enter that URL, it's going to take you straight to a page that describes that criteria. So that's it for how do I publish my schemes.
+
+The next thing is, how do I register my scheme? At the moment, all I've said is, well, we already have a registration page for scheme owners. Where is it?
+
+Implementation register scheme owners. And some list, I've got to put a few more on here for Responsible Business Alliance, but you know, we already have a registration page. It's meant to indicate a commitment to implement, so it's not necessarily a perfect vocabulary entry, but it's there, so let's use it for now.
+
+And what this, I'll get down to it again, sorry, here. I'm saying, I imagine the next version of the register might be a little more structured, with a bit more metadata, and actually reflect these, this data, not all this data, because that's for the scheme owner to publish, but just this metadata at the scheme vocabulary level, and maybe any reference regulation that it references. And that way, you start to have an experience, which is, you'd go to a UNTP list of schemes, and it would be a structured list, and when you click on a particular scheme, you'd get taken straight to the scheme owner's site, which details the criteria.
+
+So the experience would be like navigating through a deep hierarchy of schemes, but the implementation is, we're just maintaining the list, and the scheme owner maintains the details. So I could see that emerging, and in future, some people, and this is not for us to do, because it gets into a whole mess of politics, is people might start to maintain some assessments of equivalence between criteria, or against some baseline. I know some schemes around the world, such as the worldwide Fun for Nature Codex Planetarius, are called, aiming to address this question of how do I compare your scheme to my scheme and to that other scheme, not by trying to declare any sort of equivalence between criteria, because that gets really difficult, but actually by establishing a floor, or a sort of a baseline threshold performance, so that every scheme can say my criteria, or my scheme meets or exceeds that floor, and you don't need to say any more than that, right? But that is kind of a unifying concept.
+
+I quite like that idea. Hopefully the Worldwide Fun for Nature will be part of our and their Codex Planetarius will be one of the schemes that come on board. All right.
+
+The last bit is that the classification of them, and I want to really emphasize that this is just a dump to trigger discussion, because this is a tricky area, right, about who classifies the who owns and develops a classification criteria, because there are some already with slightly different purposes from OECD, you could argue that the European ASPR is itself a classification scheme, and so on. I will admit that I did use a little bit of grok in this case, to say, go and have a look at OECD stuff, look at ESPR stuff, look at a few other things, and propose a hierarchy, two levels, with roughly 100 classifications with less than 8 at the top level and no more than about 8 under each level, and reference the corresponding regulation system and make a suggestion. This is just that, right?
+
+It's a suggestion, and you can scroll through it, but what I'm hoping is that most of our focus as a group will be to criticize the hell out of this, and make any other suggestions you have about, well, how do we how are we going to classify, what is our code list, if you like, for classification of criteria? So you can see the top levels here are ecological resilience, human equity and welfare, ethical governance, product integrity, circular value chains, economic sustainability, health and safety, and systemic systems, which is not an uncommon structure that you see in OECD and other places. So, right, with that, and that's, by the way, the end of it, so those are the three chunks of this page.
+
+Virginia?
+
+[Speaker 3] (48:10 - 48:39)
+Yeah, I think the ITC has done some work, where they, if you have a certain requirement, they'll tell you which standards allow you to meet that requirement. And so I think in order, especially not to annoy ITC, it would be a good idea to include them in the discussions on this.
+
+[Speaker 1] (48:40 - 50:54)
+Absolutely. So I'll share with you a little bit of history on that. So for those that don't know, ITC, the International Trade Center, is a kind of special agency that is co-governed by UN and World Trade Organization, and has published a thing called standardsmap.org, which is quite an interesting site, where they've manually catalogued, I think the number stands at something like 350 schemes or standards, and broken them down into focus areas, you know, is it about environment, is it about human welfare, or what geography, and so on. So there's a fair bit of work, as Virginia said, already done on this. And in order to do all that work, it's clear that they had to develop some underlying classification.
+
+And they did. And I actually got a copy of it from them, as an Excel spreadsheet, which is kind of like the underlying vocabulary that they don't actually publish. And I said, oh, that's great.
+
+That's our vocabulary. And I turned it into a machine-readable classification scheme and published it under UNTP about a year ago. And then was told to take it down, because that was proprietary information.
+
+Which does seem a bit odd to me, because as a UN agency working for the common good, why the underlying classification scheme would be proprietary, I'm not sure. But I did use it in the prompt to AI, to say, when making this vocabulary, please consider this classification scheme. So I think you're right, Virginia.
+
+It would be really good to just go arm-in-arm with ITC. And maybe even ITC owns this, not us, right? But somewhere we need to publish a structured taxonomy, really, of criteria.
+
+And my question is, arm-in-arm with who? Is it ITC? Is it OECD?
+
+So this is meant to really just stimulate that discussion. Anybody else got any thoughts or comments on this?
+
+[Speaker 2] (50:55 - 51:17)
+Only a general thought, Steve. We're obviously focused on sustainability, but the structures apply to any topic of conformity assessment. Are we keeping in the back of our mind that we do want a generic template that we can possibly expand in the future, or are we rigorously constraining ourselves to sustainability considerations?
+
+[Speaker 1] (51:18 - 51:31)
+I asked myself the same question, Brett, and thought, why would we want to exclude things that are focused on quality, performance, safety standards, or anything like that, right?
+
+[Speaker 2] (51:32 - 51:35)
+So you could have a lab like Bilio, of course, everywhere.
+
+[Speaker 1] (51:35 - 51:52)
+Yes. But no, I think we should develop a vocabulary that any scheme owner can use, including for things that aren't strictly about sustainability but are about, for example, this product safety standards or quality performance or whatever.
+
+[Speaker 6] (51:55 - 52:12)
+I had suggested, Steve, that we change this from sustainability vocabulary catalog to sustainable vocabulary catalog that describes that this is a more sustainable way to manage vocabularies for conformity assessments writ large.
+
+[Speaker 1] (52:13 - 52:34)
+Yeah. I remember you saying that, but I think that would still confuse people in terms of the meaning of the word sustainable. In your meaning, it was it's a sustainable way to manage it in a kind of governance sense, and sustainability means ecological and human welfare performance.
+
+You used such a similar word, it might confuse, but actually...
+
+[Speaker 6] (52:34 - 52:36)
+That confusion is by design.
+
+[Speaker 1] (52:37 - 52:45)
+Oh, right. Okay. For the moment, that's why I called it conformity topic classification as opposed to sustainability topic classification.
+
+[Speaker 6] (52:46 - 52:46)
+Yeah.
+
+[Speaker 1] (52:47 - 52:47)
+Yeah.
+
+[Speaker 6] (52:49 - 53:20)
+What I'm saying is that we kind of achieve both ends, but it still stays SVC in UNTP. It becomes the sustainable vocabulary catalog and for people whose bias is towards the sustainability angle here, they can read it the way they read it, but we can start thinking about it in terms of a more sustainable conformity ecosystem for business and industry. Okay.
+
+[Speaker 1] (53:22 - 53:26)
+Let's put that out to a vote. Clary?
+
+[Speaker 7] (53:27 - 54:09)
+I have a question. Was there any thoughts or discussion about activities to mitigate sustainability risks? How do we deal and transfer in the UNTP protocol this kind of data?
+
+For example, when I think about the Climate Bond Initiative for significant harm on the farm side. The nature of the activity, the performance of the activity were really activities and not only conformity of the activity. It was a level lower in the granularity.
+
+Do you understand what I mean?
+
+[Speaker 1] (54:10 - 54:41)
+I do. A lot of schemes talk not just about thresholds, but process and method and, as you say, activity. Is it sufficient to say, well, if that is a thing that the farm is assessed against, whether they do this activity or not, as opposed to what their performance level is, isn't that just another criteria that we could include here?
+
+Do we need something different? I'm not sure.
+
+[Speaker 7] (54:41 - 54:51)
+We could, because I get the feeling that you describe the results basically of the activity in this scheme.
+
+[Speaker 1] (54:52 - 55:34)
+This is a classification scheme. There is a pass-not-pass, but there is also a scoring, and it's also optional that bit, because for that reason sometimes a conformity scheme is very specific. It's like, if you're going to put structural steel in a building, it must be at least 300 megapascals in tensile strength.
+
+Okay, can't argue with that. Other times it's like, do you have a well-managed record system? We have to accommodate all these different types of criteria by being pretty flexible about what represents a score or a performance level or just an observance, I think.
+
+[Speaker 7] (55:36 - 55:41)
+Basically, the schema for the Climate Bond Initiative would be then recorded in the registry?
+
+[Speaker 1] (55:42 - 56:18)
+I think so. The more initiatives that we test against this reference model, the more we'll discover, this scheme does something a little bit different. How will we accommodate that?
+
+This model was informed by looking at half a dozen schemes across product safety and performance through to environmental and schemes with different scoring systems. By no means am I saying it's correct or right. I'm sure it's got some bugs, but it's the start.
+
+[Speaker 7] (56:19 - 56:25)
+I will come back when we have the New Zealand taxonomy defined and we can stress test it against it. Thanks.
+
+[Speaker 10] (56:27 - 57:11)
+Marcus, you've got your hand up. Steve, this looks a lot like a DCAT catalogue profile, what you're trying to build here. I really had a question and that was around resolvability of the URI for conformity criterion in that would that point to potentially another catalogue owned by a standards organisation or similar?
+
+If so, is there any ruling? Are you anticipating any rules around the ability to resolve that if it's behind a paywall or something like that?
+
+[Speaker 1] (57:15 - 58:40)
+Paywall, that's interesting. Two URIs here. One is the one that you put in the UNTP list, which is this scheme, nothing more.
+
+For example, this one here, sample-scheme.org ESG standard version 4. Then another one is what criteria are in that scheme, not maintained or published by us, but maintained and published by the scheme owner. I would hope that they're all resolvable.
+
+It does say that further up somewhere, that they should be resolvable. I haven't thought about what happens when they're behind a paywall, because obviously I only looked at the ones that aren't behind a paywall. I'm not even sure what to say about that, because if it's behind a paywall and you're referencing it in your passport or conformity credential, how does that work?
+
+Most of the time, these schemes, as far as I can see, are not behind paywalls. I know some of the ISO ones are, but they're more procedural. Even ISO, I remember talking to them saying, yeah, we've got to make the future digital version of our standards and they know that they've got problems by putting these criteria behind paywalls.
+
+I'm not sure I have an answer to it. Okay, thanks, Steve. No worries.
+
+If anyone's got any thoughts about what you do about a scheme that is important, but the details of what the scheme is, is in a document that's behind a paywall, let me know.
+
+[Speaker 6] (58:42 - 58:43)
+I don't know what to say at the moment.
+
+[Speaker 1] (58:43 - 58:47)
+Yeah, maybe. Michael, you got your hand up?
+
+[Speaker 11] (58:48 - 59:15)
+Yeah, just as on the ESPR, the thing that you ran through GROC, has any thought gone around to any of the corporate sustainable reporting directive, or there's a couple of directives that the commission has, I think it's either... CSRD. Yeah, CSRD and CSDD, I think it is.
+
+Due diligence is CSDD, yeah.
+
+[Speaker 1] (59:16 - 59:53)
+And they're based on IFRS S1, S2, some of them, or related to them anyway. So no, I mean I put a number of them in the prompt, and this is, like I said, it's, the purpose is not to say, here's the final classification scheme. It's to say here's what might be a not unreasonable start, hoping that it's a little more than Phil's 2% right experience for us to discuss.
+
+So, of all of this I think the bit that needs the most discussion and criticism is this bit here. The classification scheme.
+
+[Speaker 11] (59:56 - 59:59)
+Okay. That's one last question. Thanks, Steve.
+
+[Speaker 1] (1:00:04 - 1:00:23)
+Alright, well we're at time. Does anyone have any feelings about whether this page that I've just taken you through is good enough to publish as a draft? Because it's currently sitting in a PR.
+
+Does anyone have any objections to it being published as a draft?
+
+[Speaker 4] (1:00:25 - 1:00:39)
+I can just say, I cannot say whether it's good enough, but I can tell you it is highly informative to me. Right. The point is, yes, publish it.
+
+Okay.
+
+[Speaker 2] (1:00:40 - 1:00:51)
+Thank you. I personally would be very hesitant about referencing AI in relation to schemes. That's my personal view.
+
+[Speaker 4] (1:00:53 - 1:01:09)
+The word AI should be removed or transformed some different way. I like something somebody said in the chat. Assessment assistance tools.
+
+[Speaker 1] (1:01:10 - 1:02:40)
+Okay. Yeah, I'll read the chat after this. Alright, so I won't merge it as is, because there have been comments about this.
+
+I'll get rid of references to AI and make this, you know, that sounds like it's the main concern, right? So one more commit, and then I'll ask for a couple of reviewers, and we'll merge it. So I haven't read through every comment in this chat here, but I will do later.
+
+Is there anything that, other than fix those AI references that anyone has a strong concern about? It looks not. Okay.
+
+In that case, thank you, everyone, for listening. This particular page has been a bit of a headache, I'll have to say. It's one of the trickiest bits of this, but it's also, when you think about it, it's the heart of it, right?
+
+If we don't get the language right about how you make claims, then what do those claims mean? Thank you for your attention. I'll make the tweaks, update, and then ask for a review, and we'll merge the page.
+
+And we'll soon be splitting into subgroups when I've got some more terms of reference, so whether that's before the next call or after it, I'm not sure yet, but thank you for your attention. Well done, Steve.
+
+[Speaker 12] (1:02:41 - 1:02:42)
+Thanks, Steve.
+
+[Speaker 2] (1:02:43 - 1:02:43)
+Thanks.
