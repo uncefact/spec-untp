@@ -20,7 +20,6 @@ UNTP development team meetings are held fortnightly at alternating times to acco
 * **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 1st May 2025. 
 	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
 	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
-
 * **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 15th May 2025.  
 	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
 	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
@@ -160,7 +159,6 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 - **Matthias** to document pilot progress and stakeholder coordination.
 - **Michael** and team to explore tire industry and DPP regulations.
 - Further exploration of **schema.org compatibility** in the UNTP model.
-
 
 ## 2025-04-03 Meeting Summary
 
