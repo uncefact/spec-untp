@@ -17,13 +17,12 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 17th April 2025.  
-	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
-	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 * **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 1st May 2025. 
 	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
 	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
-
+* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 15th May 2025.  
+	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
+	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
@@ -33,8 +32,9 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2025-04-03| [The UNTP working group, led by Steve and Brett, reviewed draft terms of reference for subgroups and introduced a proposed Sustainability Vocabulary Catalog to standardize and digitize conformity criteria, while participants raised concerns around governance, classification, and AI integration.](#2025-04-03-meeting-summary)|[video](https://us02web.zoom.us/rec/share/6S5o_zGgw9QLSIW30eTvSo_jVyz9Hd6Rd6fYRUQ92ZwcHWLWtaGuSP8QOKRNVKYM.IP3heXAuCu5BZhdW)|[transcript](../../meetings/2025-04-03-Recording.txt)|
-|2025-03-20| [The UNTP meeting focused on strengthening governance, introducing subcommittees for scalability, and advancing work on a machine-readable sustainability criteria catalog to support digital product passports.](#2025-03-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/MGrgwRJ6j3hgizfX1mBY266CykA3xYJOTGmofxBAxrNJzvFNZVLOmc1mdkH0ls4H.odAXmt0tqvJT9jv7) |[transcript](../../meetings/2025-03-20-Recording.txt)
+|2025-04-17| [The UNTP team met to discuss updates on Recommendation 49, roadmap milestones, pilot project planning across sectors, subgroup formation, and key terminology and data structure decisions, welcoming several new participants to the initiative.](../../meetings/2025-04-17-Recording.txt)|[video](https://us02web.zoom.us/rec/share/CEZuLKkqS1OmzPXhinc1UDmLeDEn-ottyW17ZzG3BgYa8WpTWPArTvOQGKz88bc3.QXWJ6am-Kt7S_bRx)|[transcript](../../meetings/2025-04-17-Recording.txt)|
+|2025-04-03| [The UNTP working group, led by Steve and Brett, reviewed draft terms of reference for subgroups and introduced a proposed Sustainability Vocabulary Catalog to standardize and digitize conformity criteria, while participants raised concerns around governance, classification, and AI integration.](#2025-04-03-meeting-summary)|[video](https://us02web.zoom.us/rec/share/4gZmOdWIZ6qO3X3kSnHFfOEIXKTCwNeurVx3lBHk8LjWA2sWFZFADkoBOWT2V4Gp.bTZgsXCWizVbmj9B)|[transcript](../../meetings/2025-04-03-Recording.txt)|
+|2025-03-20| [The UNTP meeting focused on strengthening governance, introducing subcommittees for scalability, and advancing work on a machine-readable sustainability criteria catalog to support digital product passports.](#2025-03-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/peh1TXSSwynNkdt3NupX2t23TVtOz4ygI5JDoFfXfadYxM5irHhgYS2VTX3XxCz_.FjrlrwC7vj1qTyDS) |[transcript](../../meetings/2025-03-20-Recording.txt)
 |2025-03-06| [The meeting covered updates on GS1's commitment, improvements to the information architecture, the UNTP Playground's credential validation features, and a discussion on whether bulk materials require a separate Digital Material Passport, concluding that further testing is needed.](#2025-03-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/LS0ZS4wMm45ZUBZNrH-oQJkpT2R7a4F8Ma9GOeW6ZHk1HwhLFPMVdVXI8Vy14IEK.lej3QWxOntusXGsK)|[transcript](../../meetings/2025-03-06-Recording.txt)|
 |2025-02-20| [The meeting focused on preparing UNTP for public review, addressing governance, simplifying specifications, improving usability, and ensuring alignment with Recommendation 49 while planning for future pilots and implementations.](#2025-02-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/hIBsxqAMi7tw1z5Rj-me3ZtbOS-IQnuJR1zYSuER41676BM_JO8lNPi6MEAqhtrL.Sto8AESpUGhaph5Z)|[transcript](../../meetings/2025-02-20-Recording.txt)|
 |2025-02-06| [The UNTP meeting focused on reviewing change requests, refining the identity resolver framework, approving the verifiable credentials update, discussing implementation guidance, exploring certification and governance models, and addressing open issues for future development.](#2025-02-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/ayxfoRJH0z9FXI25UWNuZ4KQ0LQ7N3GoLHTxbz-wTW4fjjOfMjQ3_zr-uNp6jUhk.dwHfJ3YszOvW9aLb)|[transcript](../../meetings/2025-02-06-Recording.txt)|
@@ -78,6 +78,87 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+## 2025-04-17 Meeting Summary
+
+**Facilitator:** Steve Capell (Speaker 1)  
+**Duration:** Approximately 1 hour  
+**Recording:** Yes, available publicly  
+**Purpose:** Regular UNTP team meeting covering updates, new participants, recommendation development, roadmap planning, pilots, and discussion of issues.
+
+#### **Key Participants**
+- **Steve Capell** – Lead facilitator, overseeing agenda and project direction
+- **Matthias Altmann** – Consultant joining UNECE Secretariat, working on traceability projects
+- **Virginia (Speaker 14)** – Participant recovering from illness
+- **David (Speaker 10)** – New participant from GraphVise, interested in DBPs
+- **Eric Drury (Speaker 11)** – Independent consultant in digital identity and trust
+- **Adriana (Speaker 7)** – Contributor with a focus on circular performance
+- **Michael (Speaker 5)** – Involved in DPP, IEEE, and regulatory frameworks
+- **Suna (Speaker 4)** – Provided input on upcoming EU regulations
+- **Peter (Speaker 6)** – Raised points about GS1 and upstream supply chains
+- **Christophe (Speaker 9)** – Commented on DPP terminology and structure
+
+#### **Discussion Highlights**
+
+**1. Introductions & Participation**
+- Welcomed newcomers: Matthias Altmann, David, and Eric Drury.
+- Updates from returning members, including Virginia’s recovery.
+
+**2. Administrative Notes**
+- Clarified meeting recording and IP contributions for UNTP participation.
+- Addressed time zone confusion due to daylight savings.
+- Group agreed to continue meetings at 8 a.m. UTC.
+
+**3. UNTP and Recommendation 49**
+- Steve provided updates on **Recommendation 49 (Transparency at Scale)**:
+  - Separated implementation guidance into **design principles**.
+  - UNTP positioned in the annex as one of several supporting instruments.
+  - Diagram introduced to explain framework lifecycle generically.
+  
+**4. Roadmap Planning**
+- Current version: **0.5**; goals set for versions 0.6, 0.7, and 1.0.
+- 0.6: Technical fixes.
+- 0.7: Incorporate business functions and feedback.
+- 1.0: Stable release planned for fall 2025.
+- Steve encouraged tagging issues in GitHub with target versions.
+
+**5. Subgroups Formation**
+- Announced the formation of subgroups:
+  - **Conformity Subgroup** (lead: Brett)
+  - **Adoption Subgroup** (lead: Michael)
+- Two more subgroups in planning; volunteers still needed.
+- Plan to spin off groups as soon as leads are ready.
+
+**6. Pilots and Testing**
+- **Steve** detailed the **Responsible Business Alliance (RBA)** pilot in electronics and automotive.
+- **Matthias** discussed pilots in **garments** and **critical raw materials (starting with copper)**:
+  - Aim to demonstrate **scalability and interoperability**.
+  - EU project funding supports pilot facilitation.
+- Additional pilot opportunities:
+  - **Tire industry** (Michael & Adriana to explore GDSO involvement)
+  - Collaboration with **Surpass Initiative** and European **data spaces**.
+  - Alignment with **Gaia-X / Catena-X**.
+
+**7. Open Issues & Feedback**
+- Terminology:
+  - Discussion on continuing to use **"DPP" (Digital Product Passport)** vs. “product data.”
+  - Consensus: Retain "DPP" with clear guidance on voluntary vs. regulatory use.
+- Data Structure:
+  - Discussion on **flattened vs. hierarchical** conformity structures.
+  - Tendency toward flat for simplicity, but open to structured representation.
+- Naming clarity:
+  - Debate on whether to rename **Digital Conformity Credential** to **Attestation**.
+- Schema usage:
+  - Reviewed use of **schema.org** and **semantic context files**.
+  - Issues raised about schema.org inheritance quirks (e.g., "drive-thru" countries).
+
+#### **Action Items**
+- Participants to **review and comment on GitHub issues**.
+- Volunteers needed to lead additional subgroups.
+- **Adriana** to raise circular performance concerns via GitHub.
+- **Matthias** to document pilot progress and stakeholder coordination.
+- **Michael** and team to explore tire industry and DPP regulations.
+- Further exploration of **schema.org compatibility** in the UNTP model.
 
 ## 2025-04-03 Meeting Summary
 
