@@ -1,0 +1,453 @@
+[Speaker 1]
+I'm sure I saw you an hour ago.
+
+[Speaker 12]
+Hello, Clary. Hello. If I know.
+
+[Speaker 1]
+Hopefully we're going to get a few people from the UN Secretary and finally dial in this time. They've staffed up a little bit because they got some funding from the EU.
+
+[Speaker 8]
+Oh, great. Good to hear.
+
+[Speaker 12]
+Yeah. Hello, Brock. Hello.
+
+Can you hear me? Yeah. I can.
+
+Oh, cool.
+
+[Speaker 1]
+I shouldn't mute myself then. We're still even one minute early, so we have to give it another three or four minutes to reach our normal, about three minutes past.
+
+[Speaker 8]
+I haven't seen you for a while, Brock. How's things?
+
+[Speaker 13]
+I'm actually traveling. I quit my job about three months ago, and I've been in Southeast Asia at the moment. I'm climbing in Arapolis.
+
+Oh, holiday travel, good for you. Yeah. Yeah.
+
+But I'm starting a new position in May, so, you know, having fun.
+
+[Speaker 12]
+Morning. Hello. Hello.
+
+I'll give it a few more minutes. All right. Where is everyone?
+
+[Speaker 1]
+Eight or so. Oh, I just saw eight people enter the meeting room and I didn't notice. Here we go.
+
+Admit all. Where's the admit all button? Here we go.
+
+[Speaker 12]
+Morning. Morning. Good morning.
+
+All right. Good morning.
+
+[Speaker 14]
+Morning, Steve.
+
+[Speaker 1]
+Hello. How are you, Virginia? We still don't have anyone from the Secretariat who keep saying they're going to join.
+
+Ah, here's one. Good morning.
+
+[Speaker 2]
+Matthias. I'm here. I just find having trouble with my camera, but I'll get that sorted out.
+
+[Speaker 1]
+Awesome.
+
+[Speaker 2]
+Great.
+
+[Speaker 1]
+I'll let you to introduce yourself shortly. We'll give it another minute and see who shows up.
+
+[Speaker 12]
+Are you feeling better, Virginia?
+
+[Speaker 1]
+You're on mute, but you look happy. You must be feeling better.
+
+[Speaker 14]
+Yes, I am feeling better. If I felt the same way I felt on this date last month, I wouldn't be here.
+
+[Speaker 12]
+All right.
+
+[Speaker 1]
+Well, it's four minutes past, so others may join, but I think it's time to get started, if that's all right with everyone. First of all, the usual two disclaimers, that this meeting is being recorded and will be minuted and the recording and minutes and summary will be public. Let me know if that's a problem for you.
+
+Second one is that any contributions anyone makes, actual material contributions to the UNTP specification, are done with the understanding that you're contributing IP to be owned by the UN so that it can be made freely available. You're welcome to listen, anyone, but if you're going to contribute, you must be a registered expert, sign up to the IP clauses, and be aware that that's the conditions. Next little comment is to apologize for the diary confusion.
+
+I don't know why, when summertime in Europe and wintertime in Australia came into force, I somehow had two meetings in my diary. It seems like very few people did, though. Most people recognize that this is the right time.
+
+For some reason, my diary had one an hour ago and this one, but anyway, we've resolved it and I'll try to make sure it's not an issue. Is everyone, though, happy with 8 a.m. UTC, which means that everyone is now one hour later because of summertime in Europe? No complaints or concerns with that?
+
+I'll assume then we'll just carry on with the UTC timing. Perfect. Thank you.
+
+All right. Well, before I get on with today's agenda, I might like anyone new on this call to introduce themselves. I know one is Matthias.
+
+Is there anyone else on this call that hasn't been on the call before?
+
+[Speaker 10]
+Yes, me. Hi, everyone. David, please introduce yourself.
+
+Yes, so I spontaneously joined now. So Vladimir from GraphVise told me about this call. I'm interested in DBPs and the topic, working in research projects about the topic.
+
+So I'm also a member of GraphVise focused on technical innovation. And I just joined now because he basically shared this meeting and said it would be highly interesting regarding this topic. So here I am.
+
+Thank you.
+
+[Speaker 1]
+All right. Well, thank you and welcome. I might ask whoever else hasn't.
+
+Matthias, would you like to introduce yourself? You're an important one.
+
+[Speaker 2]
+Yes, thank you, of course. And sorry that I have no camera. We will have to leave that for a next team call.
+
+But it doesn't work on Zoom today with my system. Yeah, my name is Matthias Altmann. I have been working with the UNECE Secretariat as a consultant last year for six months and then continued on a voluntary basis more or less to now supporting the team on a project that the EU is funding on transparency and traceability.
+
+It started in the garment and footwear sector. But since last fall, it's now entering into a second phase for another four years, adding to garment also critical raw materials and beef and hides as additional sectors in which we will support the development of traceability and transparency standards. So your work, basically.
+
+I will be joining now officially the OECD at the UNECE Secretariat by the end of this week, this month, and will then hopefully be a regular participant also in these UNTP team meeting calls, which I would which I look very much forward to. So thank you for having me today.
+
+[Speaker 1]
+Thank you. You're welcome. Eric Drury, you're new as well.
+
+[Speaker 11]
+This is my third meeting, but the first time to introduce myself. And I've been following along on Slack. And I'm an independent consultant and trust a digital trust and digital identity.
+
+I work with Trust over IP Foundation with their ecosystem and governance working group as a co-chair. And I've done work in sustainability and supply chain. And I know a few of the members here, Michael and Joe and John.
+
+And I think I've met Clary before. So I'm happy to be OK.
+
+[Speaker 1]
+Great. Well, happy to have you with us. You may get an invitation from John to join a separate project called Global Trust Register.
+
+[Speaker 12]
+Yes, I know.
+
+[Speaker 1]
+OK, right. All right. Good.
+
+Right then. Unless anyone's got anything else, I'll get on with today's agenda and share my screen. As I mentioned in the agenda, we don't have a major sort of update to the site to discuss.
+
+So I thought I'd start with a few sort of updates on what's been going on. So those of you that have been with us a while will understand that UNTP is what you might call a supporting instrument in UN speak, namely detailed technical guidance on how to do something. And it's a supporting instrument for a policy recommendation called a recommendation happens to be called Recommendation 49 because it's the 49th one.
+
+And the name of it is Transparency at Scale. So this is more of a guidance to nations and policymakers than UNTP, which is a technical specification. But that document has been in development for about a year and a half.
+
+It nearly made these recommendations to nations need to be approved at a thing called the annual plenary, which happens once a year. And the next one is in July 3rd and 4th this year in Geneva. We only got a once a year window to get these things approved.
+
+We missed last year, but it's probably a good thing we did because we got quite a lot of feedback. So in summary, this is a document that says, here's all the challenges with global transparency. Here's the opportunities and benefits if there's a scalable framework to address them, et cetera, et cetera.
+
+And then it makes and it makes specific recommendations about what member states should do. It's voluntary, right? So it's not a legal mandate.
+
+It's just we recommend that. And then after that, it says, and here's how you should do it. It's called implementation guidance.
+
+And in the first version of this recommendation 49, we made the mistake of basically putting in the implementation guidance to the effect saying you should implement UNTP. And of course, in hindsight, that probably wasn't very wise because there are other frameworks such as the EUDPP, such as even ecosystems like the GaiaX, CatenaX ecosystems that may well meet the same requirements, if you like. So the overwhelming feedback was, please, in Section 2, which is this guidance, turn it into more like a set of detailed principles, design principles, if you like.
+
+So that's what we've done. Section 2 is now a set of design principles.
+
+[Speaker 5]
+If you think you're showing your screen, we're just seeing the Zoom screen. We're not actually seeing anything that you're showing.
+
+[Speaker 1]
+Oh, yeah. Yeah. Sorry.
+
+Where is it? I can't find my finder anymore. In any case, it's not too...
+
+[Speaker 12]
+This is strange.
+
+[Speaker 1]
+There it is. I think it's behind this annotate button. Where did annotate come from?
+
+Okay. Finder. I suppose it doesn't matter too much.
+
+I don't know what's going on with my...
+
+[Speaker 15]
+We now see scope of recommendation 49 slide.
+
+[Speaker 1]
+Yeah. Okay. Anyway, let's just use this slide.
+
+I'll just finish the story. It takes a minute and we don't need to look at the whole document. But basically, it now separates the details of UNTP into an annex and positions it as one possible and supporting instrument.
+
+And then the annex, where we describe UNTP, basically maps all the UNTP specific features, like what we call a conformity credential and traceability event and all that stuff, to the more generic design principles. It basically says, here's the principles. Here's UNTP.
+
+Here's how UNTP complies with the principles. But there might be another instrument that also complies with the principles. So that's how it's been restructured.
+
+Hopefully, it is more palatable to the broader audience and particularly those countries that have to approve it in July. And this is just a diagram that will be near the top of the recommendation that shows this kind of architecture of the lifecycle and the idea of facility information and product information and then conformity information. If you know UNTP, you could imagine this process as the DTE traceability events and this facilities bit as the digital facility record, this product bit as the digital product passport, and this credentials bit as the digital conformity credentials.
+
+But this is deliberately not using UNTP-specific language and just representing the budget. Anyway, that's it for UNTP. What else was on the agenda?
+
+What I sent out? Now I've lost my own agenda. Oh, UNTP team meeting today.
+
+Discuss roadmap. Okay. Does anybody have any questions on REC 49 before I move on?
+
+You'll see it come out hopefully very soon. But yeah, it's been a learning experience accommodating everyone's needs, I should say. Right.
+
+So on the roadmap, what we've got here is if we look at the UNTP issues page, as you can see, this is the kind of where we maintain all the comments and ideas and feedback and suggestions and to-dos and so on about UNTP. They're all GitHub issues. There are 90 of them still open and 120 closed.
+
+What we've got to do now is allocate these 90 issues to milestones and show them here. Basically, we are at release 0.5 now. And what we want to do is release a couple more sort of pre-production versions.
+
+Might need more than that. I don't know. But then a stable 1.0 version. So that real...
+
+[Speaker 7]
+No, what do you do?
+
+[Speaker 1]
+Sorry, is that Adriana? I might try and mute her. Yeah, so I'm imagining we've got a...
+
+Well, I'm not imagining. We will have a 0.6 release quite soon and then a 0.7 and then a 1.0. These timings are estimated. You can see we're a bit late for 0.6. So the question then is, what is...
+
+Which of those open 80 issues goes in which release, right? So anyone that has created issues or has opinions about them should feel free to tag them with a particular release number. I'm going to go through and tag them all.
+
+And if anyone has raised an issue, when I tag it, you'll get a notification saying, you know, your issue has been tagged version 0.6 or 0.7. If you disagree, then go ahead and change it, right? I just want to get them all categorised so we have a kind of a roadmap. Version 0.6 is basically technical fixes. We had some issues with linked data vocabulary verification and so on and had to fix some tooling and so on. So mostly technical issues, but also technical fixes, but also some of the priority functional changes. 0.7, I want to...
+
+I'm hoping that when we split up into our groups, we got all the technical stuff behind us and the architecture, right? And we've got sort of reasonably good outline of what a digital product passport or a traceability... Sorry, a facility record or a conformity credential are.
+
+We're proceeding with some pilots and some further designs. We should learn from that and decide what other business features, you know, like maybe packaging isn't a thing on the DPP yet. Perhaps it should be, right?
+
+What business features do we need on top of the existing models that are generic enough to be considered global common core? So, you know, not specific to livestock or minerals or whatever, but what's missing or what needs to change? The aim for 0.7 is to get those kind of functional things informed by everyone's experience, more or less in place, because 0.7 is, if you like, candidate for 1.0. So we'll encourage a lot of testing of 0.7 and then hopefully 1.0 is something that we can stand behind and go, it's stable enough. There will be at some point a 1.1 or a 1.2 or even a 2.0, but we don't want to have any technical bugs, certainly not, and any major kind of functional omissions we need to clean out before we get to 1.0. So, and we want to get 1.0 out in the fall of the Northern Hemisphere this year. So that's kind of what I think the milestones are. And there's 90 issues to squeeze into those three releases, you know, so what's urgent, what's functional, and what can wait till after production release is the question for all these issues.
+
+Adriana, did you put your hand up? You're on mute. Sorry, I muted you because you were...
+
+[Speaker 7]
+Yes. Okay. So yes, I did put my hand up and my question is related to that topic you were just mentioning before, 0.7. So are you talking about adding in or contributing things like circular performance, how that may work or that may be integrated into DPP? So is that something that you're looking for?
+
+[Speaker 1]
+So business functional stuff, not technical stuff exactly in 0.7. I'm not talking about technical stuff.
+
+[Speaker 7]
+I'm talking about business stuff in relation to circular performance, specifically about circular performance.
+
+[Speaker 1]
+So you'll see there is there already an object with properties about circular performance. Yeah. So each, you know, people on this call have different expertise.
+
+I know yours is circularity. So the option, the opportunity for you is to look at this circular performance and go, is that enough? Now, just a reminder for everyone, the purpose of these two data structures here, circularity performance and emissions performance is really meant to be a high level statement in a consistent place because most of the performance data that will come in a passport is actually down here in this generic reusable structure, right?
+
+Where we say there's a claim and let's say it could be a deforestation claim and that claim needs to reference some criteria that give an unambiguous definition for what that claim means, right? So if I'm making a deforestation claim about produce from an Australian farm, I might reference the European EUDR regulation to say this is what I mean when I say deforestation, right? So most claims are down here.
+
+And one of our challenges is that we've got, we're not a scheme owner, right? That defines, you know, we're not the GHG protocol, we're not the Global Battery Alliance, we're not the Responsible Minerals Initiative and so on and so forth. And there are hundreds, literally hundreds of schemes across different industries and sectors.
+
+But what we can't do is make these sort of headline dashboards, if you like, try to accommodate every bit of data element from every scheme in the world. The complexity is going to be down here. And so the goal is to keep these as simple as possible, but as meaningful as possible.
+
+So there may be stuff missing and keep the complexity down here where each DPP is going to start referencing all kinds of different schemes for the claims it makes. Because unlike the EU DPP, where the European Commission will say in their delegated acts for this commodity, these are the facts you need against these schemes. We're a voluntary standard that needs to accommodate hundreds of schemes of which conceptually the European ESPR is just one scheme.
+
+It's a huge one, obviously, with major global impact. I'm not trying to diminish it, but from the perspective of UNTP, it's just one of many rule sets, if you like, that product passports may make claims against. It's important, especially if you're spending a lot of time in the EU DPP, to remember that this is not a regulated instrument.
+
+It doesn't have the legal standing behind it. It's a voluntary instrument and it needs to accommodate multiple rule sets from all kinds of countries and all kinds of scheme owners. So anyway, does that make sense?
+
+[Speaker 7]
+Yes, it does.
+
+[Speaker 1]
+Yeah. That's why we have the, by the way, for those that haven't seen it, this bit, there's about nine specifications which are components of UNTP, but just remind everyone this sustainability vocabulary catalogue is precisely the thing for scheme owners to say, this is my scheme and here are my criteria so that they can be referenced by the DPP. And hopefully some mutual recognition starts.
+
+One risk of accommodating hundreds of schemes is that people who are producing produce in one place and selling it to another place or to different enterprises, if their target customers all have different preferences for what scheme they need their suppliers to comply with, they could end up with all the margin and value being consumed by paying auditors instead of actually improving your business practice, right? So this is, this is going to be a looming challenge and having scheme to scheme mapping and being able to say, that's all right, you haven't met my scheme, but that other one is equivalent. I'm happy with that.
+
+It's going to be an important cost saving in the world. But yes, that's point seven is let's get, put our collective expertise together and raise tickets if you see anything missing or needs to be fixed, you know, let's work on that.
+
+[Speaker 7]
+So, so how do I, how do I do that? I just go to the, to that issues section on GitHub and then go to Yeah, just go here and see what I'll show you.
+
+[Speaker 1]
+For example, you just create new issue and it'll say use this generic issue template. The other one is basically implementers registering and I won't save this one, but it says refer, tell me which specific, which, which page on UNTP you're talking about and what your issue is and then create, click create and you'll have lodged an issue.
+
+[Speaker 7]
+Okay. All right. Thank you.
+
+[Speaker 1]
+Now, if you lodge an issue, you're also volunteering to implement the issue because we're, ah, that's, that's okay. We are all volunteers, right? So I don't want a hundred issues all dropping on, dropping on me.
+
+Already got 90 to deal with. Ah, right. So the next topic on the agenda is when should we split into sub-working groups?
+
+If you remember a couple of meetings ago we said it's all getting a bit large and we should split up and we haven't actually actioned it yet. Ah, we have two ah, group leads right, Brett for the conformity group and Michael for the um, ah, adoption group and ah, I'm still looking for volunteers for the um, other two groups. I'll send out another note for that.
+
+There's a couple of ideas and a few people have put their hands up. There's a bit of work to do to, to set those up but I think rather than wait for all four groups to be ready as soon as we have a clear leadership and support for a particular group I think we just spin it off and the rest remains in this group until we've managed to spin it off otherwise we'll be waiting for everything to happen so that's a heads up for you Brett that we might kick you off very soon. What do you reckon? I think he's on the call somewhere.
+
+[Speaker 8]
+Oh I was just saying your wish is my command Steve. Oh yes you're too kind.
+
+[Speaker 1]
+All right yeah um all right so that's we'll start spinning off subgroups and then um the subgroup lead will announce meeting times and people that are interested in that subgroup. So Brett's one is the conformity subgroup which and the focus is the digital conformity credential which is the the attestation of conformance and the sustainability vocabulary catalog which is the language of conformance. Right the next thing on the agenda was um pilots um so I don't know if um Matthias you want to jump in here about pilots because I can talk about the responsible business alliance one um you might want to talk about the critical minerals and textiles ones they're they're only just beginning um should I should I talk about the critical uh sorry responsible business one first and then hand over you Matthias.
+
+[Speaker 2]
+Yes please go ahead.
+
+[Speaker 1]
+Yeah okay so um the responsible business alliance for those that are familiar with it is a member association based in the US although its members are a lot of US companies but also global some European and Asian ones and their focus is electrical electronic goods automotive supply and automotive supply chain and if you look at their members list there are some household names there like Microsoft and Apple and Dell and uh Tesla and uh NVIDIA and Ford and Volkswagen and so on right so quite a a lot of big brands there and their history has been uh facility level performance particularly with conflict minerals and um forced labor and so they're a scheme owner but they're also a community and uh we will be running some pilots to try to verify uh that it's feasible to um connect supply chains from finished product electrical electronic goods and automotive back to primary production subject to confidentiality concerns unlike the agriculture sector that's used to traceability for food safety reasons the these um manufacturing sectors are much more sensitive about revealing their um suppliers to their customers so a little bit of confidentiality issues to deal with but it's an important it's an interesting project because there's boundaries around the community that represents the um OEMs you know the finished products the Apple iPhones and the like and the upstream stuff which is actually a separate implementation or separate UNTP working group for critical minerals so that the the test is can we have two extensions one for electronics one for critical minerals and exactly as we're supposed to achieve with the extensions methodology prove that miners can just do their thing without needing to be contacted by automotive manufacturers who maybe use their copper in motors and batteries and yet their performance sustainability performance is still discoverable by the next value chain so it will be working together with the critical minerals pilot that Matthias will talk about and also because interestingly it's automotive supplies those there may be people on the call that are familiar with GaiaX and KatinaX and this European data exchange ecosystem let's call it that's quite strongly led by automotive sector and because the biggest powerhouse in European automotive is Germany it's also quite Germany led and one of the things we have done is made contact with KatinaX and hopefully maybe signing some kind of MOU because what we want to prove is that UNTP credentials that are coming from upstream let's say mining manufacturing etc. of components can be pulled into the KatinaX ecosystem and used to benefit the KatinaX members so companies like Volkswagen or whatever may say the room I'm working in is called KatinaX but I still want to reach into the value chain so part of this pilot will be to see if we can prove the feasibility of actually moving data not just between two different UNTP extensions but actually between two ecosystems so that'll be quite interesting that's it for the Responsible Business Alliance extension
+
+[Speaker 5]
+Michael yeah just a quick one Steve before Matthias takes over has there been any talk with any of the folks at GDSO around the tire industry no no okay maybe I can connect or reach out to I know the executive or the general secretary of GDSO and the tire world is that something that's of interest or they're heavily involved in the data spaces as well
+
+[Speaker 1]
+are they okay that's interesting do you know whether tires are still made from natural rubber the reason I ask is because there is some work we might be kicking off with the Asian Development Bank around Cambodian and Vietnamese rubber which that might bring a connection from upstream to downstream for tires
+
+[Speaker 7]
+yes as far as I'm aware there's some percentage of natural rubber is in tires but also Thailand is one of the biggest rubber producers in the world so you might like to think about Thailand besides Cambodia and Vietnam
+
+[Speaker 1]
+yeah that's the interesting thing about all these pilots they're all within an industry sector but you haven't got a you know scratch very far before you suddenly jump into completely different sectors and economies so it's really going to be interesting to see if we can do that right to go from automotive primarily we're reaching back to batteries and copper and lithium but why not reach back through tyres to Vietnam and Cambodia and Thailand sorry anyway I think we'll have to start documenting what these pilots look like and that's something Matthias will be interested to manage that's where the complexity sits of joining all these communities over to you Matthias
+
+[Speaker 2]
+yes thanks Steve maybe to mention that the EU project we have is primarily there to support things like testing and piloting of the standard because that normally takes more than voluntary work it takes a lot of project management each company participating needs some technical coaching so this goes beyond the capacity of your group goes also beyond the resources that the UNECE has from own sources so that the EU project is quite instrumental to bring that additional support that we need to move forward with piloting and testing we are not that advanced for garment and critical raw materials as we are for the RBA project simply because there are no ready extensions in these two sectors yet so the first next step would actually be to have more clarity on how we build those extensions and then do the piloting on those extensions so for critical raw materials and we decided for copper as the first material to start with a potential way forward would be to have an organization as the extension owner and build on that with companies interested but there is scope to work with the global batteries alliance and operational trials on their standard for digital products for batteries these are options to move forward with pilots in this space for garment we have to see how we go about the extension we are in the fortunate situation that we had already recommendation 46 and the supporting instruments to it so this can be a good basis for very easy to accomplish extension for the garment and footwear sector and also see how we can organize partnerships with companies there is a lot of interest by fashion brands already maybe a bit ahead of our timeline who want to work with us on pilots sometimes the intention seems to be more that they would like to get their own traceability systems up and running through a pilot that was the approach we had in the first phase of the project where we set up our own traceability platform and tested the traceability of fiber from the cotton field to the finished product to prove that traceability along the garment supply chain is possible but we want to prove scalability and data interoperability and that is what we require now and companies who have their traceability solution providers joining the pilot and we need more to prove that between these systems data exchange is possible so we don't only need companies who are willing to work with us we also need their traceability solution providers to become a UNTP compliant or compatible so that these pilots can really be run on the UNTP extension for the garment and footwear sector so that's the work which is ahead of us now but pilots are clearly in the scope of the project and something we want to achieve within the now three and a half years project timeline correct anything
+
+[Speaker 1]
+from your perspective no no no that that sounds right Suna has a quick hand up for a question you're on mute Suna
+
+[Speaker 4]
+sorry I was just trying to add another thing that maybe you have already discussed before but there's going to be an omnibus regulation to be released by the commission in two days or three days and the tires will have also regulations on the having the digital product passport not only the tires but also there's going to be toys and construction related regulation which is going to be coming up and that will also define a bit more unified frameworks unified methodologies how to collect the data from the European perspective. In addition to the tires I think we will have a more direct funding calls which is going to be creating a mandatory DPP for tires construction and other areas. One thing maybe I can add to Matthias.
+
+The other thing is about the data spaces development. I'm sure you are mentioning a lot of data spaces specifically on the battery one which I think I'm going to need to share with you that some are already under the construction some are trying to federate mainly led by Gaia X but there are other data spaces from a project or from other spaces. I think we need guidance or governance how those sector or industry data spaces need to align.
+
+Just additional things that might help for you to discover other opportunities at the same time. Thank you.
+
+[Speaker 1]
+Yeah, I think all these things will come together around pilots. I should also mention that we're in fairly close collaboration with the Surpass Initiative and they're doing lots and lots of pilots although one interesting difference is that mostly it's from what I understand the Surpass pilots are largely technology pilots. There's maybe 300 technology vendors involved it's a big group whereas our pilots are more business pilots.
+
+That's actually quite a useful synergy I think because the trouble with a business pilot where you go I don't know big OEM who are their suppliers and who are their suppliers and who are their suppliers and you try to map a real value chain the first thing you run into is what software are they using and is it UNTP compliant you can't scale up without that. We want lots of software implementers to believe there's value in implementing UNTP. We have a page where there's about 16 vendors that have committed so far but Carolyn has kindly offered the next community of practice meeting which usually has quite a lot of technology vendors participating for us to present UNTP and also to present the RBA pilots because there's kind of an opportunity here for the Europe driven community of software vendors to solve the problem for UNTP business pilots which is are there enough software vendors that have implemented UNTP so that the businesses that are in real value chains have enough choice and hopefully aligned with their preferred software vendors anyway right so there's a nice synergy here I think where we can bring genuine business pilots and accommodate give opportunities really to a large community of technology providers to offer their solution so that that's quite an exciting opportunity I think and we'll see how successful we are in exciting that community in Europe that are all focused on Surpass to also look at UNTP what I can gather when talking to Surpass is they're actually very very similar in architectural approach and concepts so it shouldn't be a big stretch for anyone that's focused on European compliance to also support UNTP but we really want to be as aligned as possible so that people don't have to do things twice generally so that's the strategy Peter you had your hand up have you put it down again
+
+[Speaker 6]
+sorry Steve I'm in the car and everyone apologies but I just wanted to do a quick share and maybe a call out from Mattias regarding GS1 just kicking off a global upstream initiative I can't help but suggest that it would be great to connect that work with the prior UNECE work and Steve to your point I ran through a list of all of the companies that had signed up to the sustainability pledge and I noticed that there are a very large number of software vendors maybe if there's appetite to collaborate on that activity that we could build on the work that UNECE have been doing since 2019 very keen not to reinvent the wheel here
+
+[Speaker 1]
+when it comes to the textile sector UNECE has done a lot of work so the development of UNTP extension should not need a lot of business analysis that's usually the hard bit all that's done in recommendation 46 it should be straightforward to create a textile extension for UNTP much quicker than if you like a fresh industry that we haven't worked on and that should align ducks as well I think because a lot of those pledges sometimes from software you're right the sustainability pledge they're either software vendors or if they're not they're all in the textile industry there's a gap there because we don't have a textile extension
+
+[Speaker 6]
+this is really concentrating on upstream looking at tier 3 4 which is really complicated because then you get to primary producers so it is really quite a challenging brief but I'm really happy to collaborate on that if there's interest
+
+[Speaker 1]
+yeah for sure there is all right well we've already at 45 minutes into this and the last bit of the agenda was to go through open issues but before I pick a few has anybody got anything that they want to contribute or a particular hot topic okay well here's one that I'll just pick should we avoid the term DPP I just raised that issue today and I wanted to share this thought with you I'm quite keen to keep the term DPP but I'll share with you that it has caused some consternation and confusion particularly in Europe why because in Europe the term DPP is very strongly attached to a regulatory instrument right so for obvious reasons and in terms of assurance about the accuracy of the data there is a thing called the law and the judiciary and the police right in other words your claims are you you're obliged by law to make accurate claims now as soon as you move outside to the rest of the world and you're a farmer in Australia or a rubber grower in Cambodia or whatever there is no local law that says when you issue DPPs they must be accurate there's due diligence or whatever you're doing it only because perhaps your downstream customers ask for it or there's some value in it so we can't rely on the law for enforcement and compliance that's why actually we have a digital conformity credential the whole point of it is to add trust to claims what it means is a DPP in Europe is backed by law and so has some integrity right in terms of loosely called claims because they're kind of claims but they're claims that backed by a law that says if you lie about it you might be in trouble whereas a DPP issued I don't know in some other country let's pick Australia for some commodity there is no law in Australia about passports right so we depend on third party or second party attestations to give us confidence and so the DPP is really a lightweight just set of ambit claims as far as UNTP is concerned and this causes a bit of confusion right because people have said oh it's an expensive thing to do a DPP you don't want to impose that on the whole value chain and it would be if the assumption was that a DPP is this legal instrument that needs all that work in every country whereas for us a DPP is really just just call it product data it's just manufacturer or producer declared product data nothing more than that which is hopefully much cheaper and lighter but also doesn't have regulatory enforcement behind it so should we call our DPP actually just product data or should we keep the term digital product passport and somehow find a way to distinguish it from a regulatory instrument that has law behind it is is a question
+
+[Speaker 5]
+what do you think unless it's trademarked and I don't believe it is it has now entered the common lexicon right regardless of what you know anybody I think that there needs to be language potentially within UNTP to say you know please be aware it may mean different things in different jurisdictions right and you know just I was working on a standard for IEEE and clinical IOT and this was part of the same issue is that well if you're selling a clinical IOT product into the US you better conform to the FDA if you're in Europe you better conform to the European EMDA I think it is EMA so you have to comply with whatever the regulations are of your jurisdiction and research them but I don't unless the DPP acronym and name is trademarked and we'd otherwise end up in violation it's sorry folks it's now in the common lexicon
+
+[Speaker 1]
+yeah well I was hoping somebody would say that I don't believe it is it's coined by the European Commission give them credit they're the first to come up with it but everyone's using it so yeah my inclination is to clarify that you know it isn't a like our DPP is not a regulatory instrument it's a voluntary statement but still keep the term Christophe you've got a viewpoint
+
+[Speaker 9]
+yes thank you I think also that DPP is also very easy to understand as a concept so I think it's good that we keep this wording of DPP I agree with everything which has been said in terms of caveat and if we really have to do something we could call it V DPP like voluntary DPP if we really need to differentiate but I think it's useful to keep DPP which is easy to understand as a concept
+
+[Speaker 1]
+good I think so too I just just thought I'd share this because it has been a frustration while writing the REC 49 because most of the commenters come from the jurisdictions that are issuing regulatory passports all right so please feel free to just add your comments to that you know that issue there and say what you think because that'll give a bit of an auditable history of discussion right here's one I'm curious to discuss also with perhaps with Brett especially the current structure if you look at it for both a conformity credential or digital passport doesn't matter which one you pick because they're the same basically has this idea let me zoom in a bit in this case a conformity attestation with a flat list of assessments a flat list so it can be an array as big as you like but this conformity assessment does not contain more conformity assessments now when you look at most conformity schemes right I've been delving quite deeply into the RBA ones obviously for obvious reasons you find they quite often have a kind of a hierarchical nature right so there might be for example 35 high-level criteria grouped by you know voluntary labor environment and then they're grouped into five top-level topics and so on so there's a kind of a hierarchical shape to it so the question is should we reflect that hierarchy in our conformity credential and our passport or should we flatten the hierarchy so even if it is a hierarchy in the source document let's say there's section you know there's criteria two in in topic five we would just flatten it and say this is 5.2 right what do you think? I don't know if you understand the question but maybe I expressed myself very well because I'm trying to map the actual RBA schemes to our credentials
+
+[Speaker 9]
+I do understand your question and my my thinking would be that it's better to keep flat just as a kind of matter of fact things because it's a data sheet it's not anything else so in this respect having it flat is for me a good way
+
+[Speaker 1]
+I suppose an intelligent app if it wanted to could look at the IDs and go that's a subset of that one and present it as a hierarchy even if it's recorded as a as a flat structure right okay all right well again feel free to comment on that issue or is it gone do you have feelings about it Gerhard raised
+
+[Speaker 9]
+one here
+
+[Speaker 1]
+yeah go on
+
+[Speaker 9]
+no yeah if I may add we don't know what the use of will be so it may be that something which is a subset of is the things that someone is looking for so in this respect also having a flat structure is useful
+
+[Speaker 1]
+yeah okay and welcome Brett's opinions on that as well there's also this one here from Gerhard who says why do we call a digital conformity credential a credential when it's really an attestation and before we release 1.0 should we call it a digital conformity attestation or a digital conformity credential because the word credential gets a little bit confused with the word credential in verifiable credentials because actually all of these data objects are presented as verifiable credentials right so it's just a thought again please write some comments share your ideas it's okay to change names because we're not at 1.0 yet if we think this adds clarity
+
+[Speaker 8]
+we're pretty close to Gerhard this one has caught me by surprise Steve often there will be a very detailed certificate which is quite separate and a reference document from the DCC so in my view DCC always did make sense because it may well call up the raw certificate which would be the attestation
+
+[Speaker 1]
+oh yeah okay well in that case Brett feel free to click in this add a comment box and add your thoughts because actually this is going to be your domain very soon I mean we encourage just ideas right just because there's a ticket suggesting something doesn't mean we accept it the whole point here is this is a place to dump ideas we as a team review them comment on them I would encourage everyone who's on this call and anyone who's listened to the recording to browse through these open issues and if there's anything that you feel you have an opinion or an expertise just write your comments the more discussion there is against any of these issues before we actually implement them or reject them the better from a kind of transparency and
+
+[Speaker 8]
+governance perspective well I think another thing I'll comment when I get around to typing it in Steve there's schemes some of them have complex attestations it might say yes the product meets this scheme but here are the limitations for a building product that can be pages long that will always be a reference document called the certificate or attestation
+
+[Speaker 1]
+I'll just mention this one because I'm probably going to do a pull request soon for those that have had the time to have a look at this thing called the identity resolver this is the specification that says if you've got an idea of a thing here's how you find further data about the thing there was early on a requirement to make sure we support two kinds of identifier which is the registered ones some authority or national livestock registers these identifiers so there's a central register somewhere we want to be able to support continued use of those things and be able to resolve whether it's a RFID tag or a GS1G should work but there's also a significant demand particularly from our colleagues in Europe to make sure that particularly for products maybe not so much for facilities and organisations that organisations can use self issued identifiers now the question then is if it's a self issued identifier how do you discover it and resolve it and so we included it in this specification but I'll admit that there's kind of structure of this specification follows this idea of discoverable resolvable verifiable and inside each bit I talk about if it's a registered identifier I do it this way and if it's a self issued identifier I do it that way and I realise it makes the whole thing complicated and confusing to read when you're reading this you're either wanting to use a self issued identifier or you are a register whose issues identify so I'm proposing to restructure this and within that how you make it discoverable resolvable and verifiable so it's an inversion to make it I think a lot cleaner and understandable so I hope nobody disagrees with doing that because I even confuse myself when I read this bit now so I think it needs to be done Michael I
+
+[Speaker 3]
+like the comparison you said between regulatory view and voluntary view so I'm coming from the regulatory side so I was part of the digital battery product passport 99 100 and yeah as you said it is about product data and I did put it into the chat so I like it very much to say it is about product data management every product and then we can think about how to use this data and I follow the we as a company follow the schema.org since more than 15 years and in the last 5 years it accelerated very very much and many missing semantics are there now sorry my English is not good so I think the most important three ones are the product the product group and the product model and if we focus on that definition and if we talk about product data management and if we talk about schema.org product and product group and product model I would say it is very it would be very very helpful to to use these three pillars as common yeah common ground or common understanding across all products
+
+[Speaker 1]
+if I understand right you're talking about the difference between a serialized item a batch and a product class
+
+[Speaker 12]
+right no
+
+[Speaker 3]
+a product class I'm not sure if product class is the same as product group
+
+[Speaker 16]
+yeah
+
+[Speaker 3]
+if it is the same yes if it isn't the same okay
+
+[Speaker 1]
+let's use a real example so an iphone 16 pro edition would be a product class but my particular iphone serial number 27000 blah blah blah is an item yeah yeah yeah is that what you mean
+
+[Speaker 3]
+yes okay so there's a differentiation between family class and item so mammals or whales and humans people yeah are mammals but if we talk about people we have the attributes of people yeah yeah length weight born in and so on so the and if it is a person born at born in name steve last name capell so this is the item yeah yeah so the the product with the manufacturer part number is the the batch or the unit the unit the the product and if it is delivered if it is produced and if it is if it has a serial number it is it is an item yeah
+
+[Speaker 1]
+yeah so there's probably needs to be a little bit more work on just separating those things this is the current product model and this is what I mean by thinking about this carefully when we go to version point seven I also note Phil Archer's comment about schema.org and I also know we're three minutes past so I'll just quickly I wouldn't mind talking with someone about schema.org because it is important to use well-established vocabularies but when I try to use it in a kind of structure sense as opposed to just pointing to a meaning for example I run into some troubles for example schema.org says a country is a type of administrative region which is a type of place which is a type of thing and when you say it like that it all sounds reasonable until you realize that the schema.org place is the thing that's used to represent a pin on a Google map and has things like opening hours and has drive-thru service and so on so that all gets inherited into country so you have a schema.org definition of country which has absurdities like the opening hours of the country whether the country has a drive-thru service and so on and so forth right so I struggle to use schema.org structurally and I still need to figure out how to use it semantically right because I think there is an overuse of inheritance in schema.org which causes some trouble
+
+[Speaker 3]
+that's fine but you use as I see you use name it is in schema.org you use serial number in camel case it is in schema.org so the I think it should be clear which is also equal absolutely equal to other schemas and if it is equal and if the meaning is equal I can use it as a point-to-point connection if the meaning and the understanding is different it's a
+
+[Speaker 1]
+problem I understand yeah
+
+[Speaker 3]
+okay
+
+[Speaker 1]
+so
+
+[Speaker 3]
+what I have seen is sorry for interrupting you what I have seen is you use schema.org semantics in this model and in your schema and that's quite good in my point of view easy to say
+
+[Speaker 1]
+yes we fully aim to do that so here's this little diagram which you can in the verifiable credentials page on the spec and that there is a thing called a JSON-LD context file
+
+[Speaker 3]
+could you share the link into the chat please just
+
+[Speaker 1]
+for easy use
+
+[Speaker 3]
+thank you yep where is the chat gone oh I'm
+
+[Speaker 1]
+out of time sorry yeah we're a bit
+
+[Speaker 12]
+over time
+
+[Speaker 1]
+feel free to read this and comment but we basically the idea here is that there is a structure like a digital product passport it has a schema that's not but it also has a semantic reference called a context file which points to definitions in things like schema.org vocabulary.unc5.org and so on so this is this is a fundamental concept here that we want to reuse as much of this as possible and this is one of the differences between release .6 and .7 which is fix up my references in context files so that I maximize use of it and deal with this challenge that the semantics of schema.org are sometimes a bit sloppy as Phil said in the channel that this country with drive-thru service you know how can I still use schema.org to the maximum extent possible but not inherit the messy semantics where it is broken I just need to figure that out and we're happy to have some discussions about that but look
+
+[Speaker 3]
+thank you thank you for today I have another appointment yes yes I'm very very sorry see you next time
+
+[Speaker 1]
+happy Easter
+
+[Speaker 3]
+to you
+
+[Speaker 1]
+thank you so much thank you very much I'm happy to stay on if anyone wants to to ask more questions I see Michael got his hand up or that was your hand wasn't it Michael yeah okay all right well let's let's call it a day here thank you everyone for your attention please feel free to go nuts with those comment those issues and offer your comments on any of them that resonate with you because that'll help me understand how to prioritize them and we'll see you in two weeks time
+
+[Speaker 8]
+thanks Dave
+
+[Speaker 1]
+thank you bye bye
+
+[Speaker 2]
+thank you
