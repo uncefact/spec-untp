@@ -71,7 +71,7 @@ The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/
 
 ### DTE Documentation
 
-The [UNTP Digital Traceability Events Vocabulary](https://jargon.sh/user/unece/traceabilityEvents/v/0.5.0/artefacts/readme/render) defines the core traceability event and it's variants including aggregation event, transformation event, association event, transaction event, and object event.
+The [UNTP Digital Traceability Events Vocabulary](https://jargon.sh/user/unece/traceabilityEvents/v/0.5.0/artefacts/readme/render) defines the core traceability event and its variants including aggregation event, transformation event, association event, transaction event, and object event.
 
 ## Implementation Guidance
 
@@ -79,7 +79,7 @@ The [UNTP Digital Traceability Events Vocabulary](https://jargon.sh/user/unece/t
 
 Digital Traceability Events are issued as Vierifiable credentials.  Note that one UNTP Digital Traceability Event credential may contain multiple events.
 
-Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiaible credentials data model for UNTP.
+Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiable credentials data model for UNTP.
 
 ### Traceability Event
 
@@ -91,7 +91,7 @@ There are five types of traceability event which all extend the same abstract `E
 * A `TransactionEvent` represents the transfer of products between organisations or facilites. For example the sale of some cotton cloth from seller to buyer.
 * An `ObjectEvent` represents an action on an idividual item or quantity of product.  For example an inspection or test of a battery.
 
-Any value chain of any complexity can be represented as a combination of these types of events. However for UNTP value chain traceability, the most important event is the transformation event because it represents a manufacturing step that consumes inputs to create new outputs. When an identified output product (with it's digital product passport) can be traced to it's identified input products (each with their own digital product passport) then a linked set of credentials can be followed to define an entire value chain.
+Any value chain of any complexity can be represented as a combination of these types of events. However for UNTP value chain traceability, the most important event is the transformation event because it represents a manufacturing step that consumes inputs to create new outputs. When an identified output product (with its digital product passport) can be traced to its identified input products (each with their own digital product passport) then a linked set of credentials can be followed to define an entire value chain.
 
 ### Transformation Event
 
