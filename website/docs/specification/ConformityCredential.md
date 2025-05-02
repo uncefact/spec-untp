@@ -61,7 +61,7 @@ The digital product conformity credential (DPCC) is designed to meet the followi
 |DPCC-03|Object of conformity|The DPCC MUST unambiguously identify the object of the conformity assessment, whether a product or facility.|Assessment. assessedProducts, Assessment. assessedFacilities|
 |DPCCE-04|Reference standard or regulation|The DPCC MUST identify the reference standard(s) and/or regulation(s) that specify the criteria against which the conformity assessment is made. If appropriate this must include specific measurable thresholds (eg minimum tensile strength)| ConformityAssessment. referenceStandard and ConformityAssessment. assessmentCriterion|
 |DPCC-05|Conformity Attestation|The DPCCE MUST unambiguously state whether or not the object of the assessment is conformant to the reference standard or regulation criteria|ConformityAssessment. compliance|
-|DPCC-06|Measured metrics|The DPCCE SHOULD include actual measured values (eg emissions intensity, tensile strength, etc) with the conformity assessment|ConformityAssessment. declaredValues|
+|DPCC-06|Measured metrics|The DPCCE SHOULD include actual measured values (eg emissions intensity, tensile strength, etc) with the conformity assessment|ConformityAssessment. declaredValue|
 |DPCC-07|Evidence|The DPCCE MAY include references to audit-able evidence (eg instrument recordings, satellite images, etc) to support the assessment. If so then the hash of the evidence file-set SHOULD be included (so that an auditor can be sure that the evidence data has not changed).  The evidence data MAY be encrypted with decryption keys provided on request|ConformityAttestation. auditableEvidence|
 
 
