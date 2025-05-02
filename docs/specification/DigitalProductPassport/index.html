@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NBG7HW734"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9NBG7HW734",{anonymize_ip:!0})</script><link rel="stylesheet" href="/spec-untp/assets/css/styles.a8f1e8bc.css">
-<script src="/spec-untp/assets/js/runtime~main.eb431d75.js" defer="defer"></script>
+<script src="/spec-untp/assets/js/runtime~main.b77ea68a.js" defer="defer"></script>
 <script src="/spec-untp/assets/js/main.36f1365e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -134,7 +134,7 @@
 <li>The <code>referenceRegulation</code> against which the conformity claims are made. In most cases a conformity claim will reference either a <code>Standard</code> or a <code>Regulation</code> but in some circumstances both will apply.</li>
 <li>The <code>assessmentCritieria</code> is an array of UNTP <code>Criterion</code> objects that define the specific rule(s) within the standard or regulation against which this conformity claim is made.</li>
 <li>The <code>thresholdValues</code> are an array of UNTP <code>Metric</code> objects that define the minimum or maximum values that are required to be met.  For example, a construction steel standard might specify 300 MPa as the minimum tensile strength threshold.</li>
-<li>The <code>declaredValues</code> property defines the actual specified values for the DPP product. For example, a minimum tensile strength of 350 Mpa within a 5% confidence range. In many cases this may be sensitive data and can be replaced by a simple <code>compliance</code> assertion.</li>
+<li>The <code>declaredValue</code> property defines the actual specified values for the DPP product. For example, a minimum tensile strength of 350 Mpa within a 5% confidence range. In many cases this may be sensitive data and can be replaced by a simple <code>compliance</code> assertion.</li>
 <li>The <code>conformance</code> boolean is a declaration by the product manufacturer that the product meets the conformity criteria specified.</li>
 <li>The <code>conformityTopic</code> is a high level UNTP classification scheme for safety and environmental and social sustainability.</li>
 <li><code>benchmarkValue</code> (eg 10 Tons per Ton carbon intensity) is used in cases where a <code>declaredValue</code>(eg 5 Tons per Ton) is usefully compared to an industry average performance (benchmark) value.  When a <code>benchmarkValue</code> is provided, a <code>benchmarkReference</code> link MUST also be provided and should provide a link to an authoritative reference to support the benchmark value.</li>
