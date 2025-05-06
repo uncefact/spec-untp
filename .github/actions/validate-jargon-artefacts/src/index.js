@@ -30,7 +30,7 @@ async function validateJargonArtefacts(jargonArtefact) {
 
       // Validate JSON-LD context in credentials
       core.info('Validating context in credentials...');
-      validationResult.validateContextInCredentialResult = await validateContextInCredential(rawArtefactData);
+      validationResult.validateContextInCredentialResult = await validateContextInCredential(rawArtefactData, jsonldContext);      
       core.info('Context in credentials validation complete.');
     }
 
