@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NBG7HW734"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9NBG7HW734",{anonymize_ip:!0})</script><link rel="stylesheet" href="/spec-untp/assets/css/styles.a8f1e8bc.css">
-<script src="/spec-untp/assets/js/runtime~main.52083214.js" defer="defer"></script>
+<script src="/spec-untp/assets/js/runtime~main.8fe75849.js" defer="defer"></script>
 <script src="/spec-untp/assets/js/main.36f1365e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -39,7 +39,7 @@
 <ul>
 <li>A verifier (eg buyer of an identified product) discovers a DPP for the product and verifies the credential - confirming that the DPP has not been tampered-with, is genuinely issued by party identified by the issuer DID.</li>
 <li>The DID is resolvable to the DID document which contains a link to the DIA in the DID document <code>service</code> end point.</li>
-<li>Verify the DIA credential and confirm that the DPP issuer DID is contained in the <code>verifiedDIDList</code> of the DIA.</li>
+<li>Verify the DIA credential and confirm that the DPP issuer DID is the <code>credentialSubject.id</code> of the DIA.</li>
 <li>Confirm that the issuer <code>did:web</code> of the DIA (the authoritative register) is on the white list of trust anchors.</li>
 </ul>
 <p>The DIA can also be used for similar trust anchoring purposes such as:</p>
