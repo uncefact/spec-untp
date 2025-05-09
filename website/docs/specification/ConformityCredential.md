@@ -27,6 +27,16 @@ Digital Conformity Credential version 0.5.0 release artifacts can be used for pi
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
+### Ontology 
+The ontology for the Conformity Credential is available in JSON-LD format and can be retrieved via content negotiation from:
+
+[https://test.uncefact.org/vocabulary/untp/dcc/0/](https://test.uncefact.org/vocabulary/untp/dcc/0/)
+
+  Example:
+  ```bash
+  curl https://test.uncefact.org/vocabulary/untp/dcc/0/ -H 'Accept: application/ld+json'
+  ```
+
 ### Version History
 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dcc/0/versions)** page.
