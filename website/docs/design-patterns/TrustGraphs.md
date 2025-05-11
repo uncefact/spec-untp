@@ -26,17 +26,26 @@ There are other trust chains that can be followed to anchor trust to a national 
 
 A transparency graph is a linked set of identified nodes such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, or Endorsement. The data to construct a transparency graph comes from multiple individual credentials. When multiple credentials identify the same entity (eg a business, a facility, a product) then the graph will contain meaningful connections that can be used to make valuable verifications such as "product XYZ has a GHG assessment from CAB ABC". UNTP is designed to simplify the task of creating linked data graphs because UNTP credentials are represented as a collection of uniquely identified entities that are ready to be added to a graph.
 
-* A Digital Product Passport is a set of declarations (claims) against sustainability criteria defined in regulations or standards - made by a manufacturer party about a given product that is manufactured at a facility in a defined location.
+* A Digital Product Passport or a Digital Facility Record provides a set of declarations (claims) against sustainability criteria defined in regulations or standards - made by a manufacturer party about a given product that is manufactured at a facility in a defined location.
 * A Digital Conformity Credential is an attestation made by an endorsed confomrity assessment body - which includes one or more assesments of a list of identified products or facilities against specific criteria.
+* A Digital Traceability Event is used to link input materials and components to output products. Also to link supplier facilities to buyer facilities. THis kind of information is usually more commercially sensitive than product passports or conformity attestations but, when made availble to authorised actors, can be used to contstruct the graph of dependent products and facilities.
 
-Although these two credential types have different structures, they are assembled from the same core vocabulary building blocks. This allows a supply chain transparency system to construct a transparency graph from a stream of DPPs and DCCs. Claims about a product found in a DPP can be linked to assessment of the same product in DCC when both credentials have matching product and criteria identifiers. 
+Although these credential types have different structures, they are assembled from the same core vocabulary building blocks. This allows a supply chain transparency system to construct a graph from a stream of DPPs, DFRs, DTEs, and DCCs. An example is shown below - for the case of critical minerals as material feedstock to electronic and automotive sectors.
 
-![Transparency graphs](TransparencyGraphs.png)
+![Transparency graphs](CriticalMineralsTransparencyGraph.png)
 
-## JSON-LD Representation 
+## Verifying Graphs
 
-TBA
+The digital verification of transparency graphs requires that verifiers understand and verify the contextual relationships between different credentials. For example that the subject of an identity credential is indeed the issuer of a product passport - or that the conformity criteria claimed in a product passport are indeed the same as the criteria in a third party assessment. THis section provides guidance on how to express and verify these kinds of relationships.
 
-## SCHACL Graph verification
+### Identity Verification
 
-TBA
+TBD
+
+### Conformity Criteria Verification 
+
+TBD
+
+
+
+
