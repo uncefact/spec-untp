@@ -43,11 +43,16 @@ The world's supply chains must reach to the point where digitally verifiable tra
 * **Protecting confidential information.** "Sunlight is the best auditor" and so verifiable transparency is the best greenwashing counter-measure. However, increased supply chain transparency for ESG purposes also risks exposure of commercially sensitive information. A viable transparency protocol must allow supply chain actors to share ESG evidence whilst protecting sensitive information. Rather than dictate what must be shared and what should not, the UNTP includes a suite of confidentiality measures that allow every supply chain actor to choose their own balance between confidentiality and transparency. The basic principle is that actors should be empowered to share only what delivers value.
 * **Making a business case for implementation.** Each supply chain actor (or their software provider) will need to make a viable business case for implementation of the UNTP. The transparency incentives discussed in this section represent the benefit side of the equation. To keep the cost side as low as practical, UNTP has a strong "keep it simple" focus and offers a suite of implementation tools to further reduce cost. Some sample business case templates are provided to help actors make their case for action.
 
+![Transparency Challenges](TransparencyChallenges.png)
+
 ## The United Nations Transparency Protocol (UNTP)
 
-The UNTP provides a solution to the transparency challenges facing the world's supply chains. By implementing a simple protocol that can be supported by existing business systems, stakeholders will realise immediate benefits and will become visible contributors to the sustainability of global supply chains.
+The UNTP provides a solution to the transparency challenges facing the world's supply chains. By implementing a simple protocol that can be supported by existing business systems, stakeholders will realise immediate benefits and will become visible contributors to the sustainability of global supply chains. Most importantly, UNTP is a **protocol, not a platform**, meaning that it focusses on interoperabiloity standards that allow any technology platform to participate in interoperable and sustainable value chains. 
 
-![Transparency Challenges](TransparencyChallenges.png)
+The UNTP defines a relatively simple architecture comprising standards for [product data](../specification/DigitalProductPassport.md), [facility data](../specification/DigitalFacilityRecord.md), [traceability data](../specification/DigitalTraceabilityEvents.md), [conformity data](../specification/ConformityCredential.md), and [identity data](../specification/DigitalIdentityAnchor.md). Each supply chain actor can independently implement UNTP without imposing technical dependencies on any other upstream or downstream actor. In this way, the traceability and transparency information describing artirarily complex value chains can "emerge" in a bottom-up manner, like pixels illuminating one by one on a TV screen. Additonally, the UNTP includes security and confidentialy tools that allow each actor to choose their own balance between confidentiality and transparency.  The diagram below provides a conceptual model for the scope of UNTP and the value chain picture that it can reveal.
+
+![UNTP Value Chain](UNTP-ValueChainModel.png)
+
 
 ## Presentations & Videos
 
