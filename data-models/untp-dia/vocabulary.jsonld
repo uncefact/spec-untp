@@ -1,0 +1,309 @@
+{
+  "@context": {
+    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/working/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+  },
+  "@graph": [
+    {
+      "@id": "untp-dia:DigitalIdentityAnchor",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The Digital Identity Anchor (DIA) is a very simple credential that is issued by a trusted authority and asserts an equivalence between a member identity as known to the authority (eg a VAT number) and one or more decentralised identifiers (DIDs) held by the member.  ",
+      "rdfs:label": "DigitalIdentityAnchor",
+      "rdfs:subClassOf": "untp-core:VerifiableCredential"
+    },
+    {
+      "@id": "untp-dia:RegisteredIdentity",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The identity anchor is a mapping between a registery member identity and one or more decentralised identifiers owned by the member. It may also list a set of membership scopes.",
+      "rdfs:label": "RegisteredIdentity"
+    },
+    {
+      "@id": "untp-dia:RenderTemplate2024",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9",
+      "rdfs:label": "RenderTemplate2024",
+      "rdfs:subClassOf": "untp-core:RenderTemplate2024"
+    },
+    {
+      "@id": "untp-dia:WebRenderingTemplate2022",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A simple (though non-standard) embedded template.",
+      "rdfs:label": "WebRenderingTemplate2022",
+      "rdfs:subClassOf": "untp-core:WebRenderingTemplate2022"
+    },
+    {
+      "@id": "untp-dia:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "The DID that is controlled by the registered member and is linked to the registeredID through this Identity Anchor credential"
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-dia:name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        },
+        {
+          "@id": "untp-dia:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dia:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "The registered name of the entity within the identifier scheme.  Examples: product - EV battery 300Ah, Party - Sample Company Pty Ltd,  Facility - Green Acres battery factory",
+        "Human facing display name for selection",
+        "Human facing display name for template"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-dia:registeredId",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
+      ],
+      "rdfs:label": "registeredId"
+    },
+    {
+      "@id": "untp-dia:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:IdentifierScheme"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or global authority."
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dia:registerType",
+      "schema:rangeIncludes": {
+        "@id": "untp-dia:RegistryTypeCodeList"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "The thematic purpose of the register - organisations, facilities, products, trademarks, etc"
+      ],
+      "rdfs:label": "registerType"
+    },
+    {
+      "@id": "untp-dia:registrationScopeList",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RegisteredIdentity"
+        }
+      ],
+      "rdfs:comment": [
+        "List of URIs the represent the role/scopes of membership for the register. For example [\"https://abr.business.gov.au/Help/EntityTypeDescription?Id=19\"]"
+      ],
+      "rdfs:label": "registrationScopeList"
+    },
+    {
+      "@id": "untp-dia:mediaQuery",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Media query as defined in https://www.w3.org/TR/mediaqueries-4/"
+      ],
+      "rdfs:label": "mediaQuery"
+    },
+    {
+      "@id": "untp-dia:template",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dia:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "An inline template field for use cases where remote retrieval of a render method is suboptimal",
+        "An inline template field "
+      ],
+      "rdfs:label": "template"
+    },
+    {
+      "@id": "untp-dia:url",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "URL for remotely hosted template"
+      ],
+      "rdfs:label": "url"
+    },
+    {
+      "@id": "untp-dia:mediaType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "content/media type for (possible) conneg on the above URL and certainly for display use"
+      ],
+      "rdfs:label": "mediaType"
+    },
+    {
+      "@id": "untp-dia:digestMultibase",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dia:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Used for resource integrity and/or validation of the inline `template`"
+      ],
+      "rdfs:label": "digestMultibase"
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList",
+      "@type": "rdfs:Class",
+      "rdfs:label": "RegistryTypeCodeList",
+      "rdfs:comment": "A registry category code."
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Product",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Product",
+      "rdf:value": "A product register",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Facility",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Facility",
+      "rdf:value": "A facility register",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Business",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Business",
+      "rdf:value": "A business register",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Trademark",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Trademark",
+      "rdf:value": "A trademark register",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Land",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Land",
+      "rdf:value": "A land register",
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-dia:RegistryTypeCodeList#Accreditation",
+      "@type": "untp-dia:RegistryTypeCodeList",
+      "rdfs:label": "Accreditation",
+      "rdf:value": "An accreditation register",
+      "rdfs:comment": null
+    }
+  ]
+}
