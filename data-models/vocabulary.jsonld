@@ -1,0 +1,511 @@
+{
+  "@context": {
+    "_SustainabilityVocabulary": "https://test.uncefact.org/vocabulary/untp/svc/working/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+  },
+  "@graph": [
+    {
+      "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A conformity scheme as a structured hierarchy of conformity critera.",
+      "rdfs:label": "ConformitySchemeVocabulary",
+      "rdfs:subClassOf": "untp-core:ConformityScheme"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:ConformityCriterion",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A conformity criterion under the scheme. Note that the same criterion ID may be reused across multiple schemes (particularly across different versions of the same scheme).",
+      "rdfs:label": "ConformityCriterion",
+      "rdfs:subClassOf": "untp-core:Criterion"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:LevelCode",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A list of performance level codes that may be assigned to criterion. Conformity at a higher level requires conformity agaisnt all criteria at lower levels.",
+      "rdfs:label": "LevelCode"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:TagCode",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A code list of target groups () that are the object of confomance for this scheme.",
+      "rdfs:label": "TagCode"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        },
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier of this scheme as a URI. Typically of the form ownerDomain.schemeName.",
+        "A unique identifier for the criterion within the scheme, standard  or regulation. For example CO2 emissions calculations for liquid fuel combustion."
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        },
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        },
+        {
+          "@id": "_SustainabilityVocabulary:LevelCode"
+        },
+        {
+          "@id": "_SustainabilityVocabulary:TagCode"
+        }
+      ],
+      "rdfs:comment": [
+        "The name of this conformity scheme",
+        "A name that describes this criteria.",
+        "The name of the performance level (eg \"B\")",
+        "Tag name used to classify criterion"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:description",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        },
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        },
+        {
+          "@id": "_SustainabilityVocabulary:LevelCode"
+        },
+        {
+          "@id": "_SustainabilityVocabulary:TagCode"
+        }
+      ],
+      "rdfs:comment": [
+        "The description of this conformity scheme",
+        "A full text description of the criterion that clearly specifies how compliance is achieved and measured. ",
+        "A description of this conformity performance level within the scheme.",
+        "A full text description of the criterion that clearly specifies how compliance is achieved and measured. "
+      ],
+      "rdfs:label": "description"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:version",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "Version of this scheme folling SemVer best practive (major.minor.patch). "
+      ],
+      "rdfs:label": "version"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:validFrom",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "The data from which this scheme version is valid."
+      ],
+      "rdfs:label": "validFrom"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:owner",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "The party that is the owner / maintainer of this conformity scheme."
+      ],
+      "rdfs:label": "owner"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:trustMark",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "The trust mark or seal used by this conformity scheme."
+      ],
+      "rdfs:label": "trustMark"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:conformityCriterion",
+      "schema:rangeIncludes": {
+        "@id": "_SustainabilityVocabulary:ConformityCriterion"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of criterion defined by this scheme."
+      ],
+      "rdfs:label": "conformityCriterion"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:regulatoryAlignment",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Regulation"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "Regulations to which this conformity scheme is aligned. "
+      ],
+      "rdfs:label": "regulatoryAlignment"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:industryScope",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "A classification scheme and code / name representing a category value for a product, entity, or facility."
+      ],
+      "rdfs:label": "industryScope"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:geographicScope",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "A classification scheme and code / name representing a category value for a product, entity, or facility."
+      ],
+      "rdfs:label": "geographicScope"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:performanceLevelCodes",
+      "schema:rangeIncludes": {
+        "@id": "_SustainabilityVocabulary:LevelCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of performance levels (eg C, B, A, AA) defined by the scheme and used to assign criterion to the relevant performance level."
+      ],
+      "rdfs:label": "performanceLevelCodes"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:tagCodes",
+      "schema:rangeIncludes": {
+        "@id": "_SustainabilityVocabulary:TagCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "A codelist of tags defined by the scheme and used to tag criterion for filtering and sorting."
+      ],
+      "rdfs:label": "tagCodes"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:conformityTopic",
+      "schema:rangeIncludes": {
+        "@id": "_SustainabilityVocabulary:conformityTopicCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        }
+      ],
+      "rdfs:comment": [
+        "A gloabl UN/CEFACT standard sustainability toipic code. "
+      ],
+      "rdfs:label": "conformityTopic"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:status",
+      "schema:rangeIncludes": {
+        "@id": "_SustainabilityVocabulary:statusCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        }
+      ],
+      "rdfs:comment": [
+        "The lifecycle status of this criterion. "
+      ],
+      "rdfs:label": "status"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:thresholdValue",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:thresholdValue"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        }
+      ],
+      "rdfs:comment": [
+        "A threshold value that defines the minimum compliance level. "
+      ],
+      "rdfs:label": "thresholdValue"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:performanceLevel",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:performanceLevel"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        }
+      ],
+      "rdfs:comment": [
+        "A performance category code to group criterion in a given hierarchyLevel according to pareformance"
+      ],
+      "rdfs:label": "performanceLevel"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:tags",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:tags"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        }
+      ],
+      "rdfs:comment": [
+        "a category code to reporent target stakholder types or commodity types to which this criteron applies. "
+      ],
+      "rdfs:label": "tags"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:subCriterion",
+      "schema:rangeIncludes": {
+        "@id": "_SustainabilityVocabulary:ConformityCriterion"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of sub-criteria under this criterion."
+      ],
+      "rdfs:label": "subCriterion"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:category",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:ConformityCriterion"
+        }
+      ],
+      "rdfs:comment": [
+        "A set of classification codes that may be used to catgorise the applicability of this criteria - for example industry sector, jurisdiction, commodity type."
+      ],
+      "rdfs:label": "category"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:rank",
+      "schema:rangeIncludes": {
+        "@id": "xsd:integer"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "_SustainabilityVocabulary:LevelCode"
+        }
+      ],
+      "rdfs:comment": [
+        "The rank of the conformance level where a higher number indicates a higher performance. "
+      ],
+      "rdfs:label": "rank"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:performanceLevelCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "performanceLevelCode",
+      "rdfs:comment": "Coe list to indicate the performance level (eg A, B, C) at which this criterion is targeted."
+    },
+    {
+      "@id": "_SustainabilityVocabulary:statusCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "statusCode",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "_SustainabilityVocabulary:statusCode#proposed",
+      "@type": "_SustainabilityVocabulary:statusCode",
+      "rdf:value": "proposed",
+      "rdfs:label": "",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "_SustainabilityVocabulary:statusCode#active",
+      "@type": "_SustainabilityVocabulary:statusCode",
+      "rdf:value": "active",
+      "rdfs:label": null,
+      "rdfs:comment": null
+    },
+    {
+      "@id": "_SustainabilityVocabulary:statusCode#deprecated",
+      "@type": "_SustainabilityVocabulary:statusCode",
+      "rdf:value": "deprecated",
+      "rdfs:label": null,
+      "rdfs:comment": null
+    },
+    {
+      "@id": "_SustainabilityVocabulary:tagCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "tagCode",
+      "rdfs:comment": "A set of tags that can be used to classify or group criteria"
+    },
+    {
+      "@id": "_SustainabilityVocabulary:topicCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "topicCode",
+      "rdfs:comment": ""
+    }
+  ]
+}

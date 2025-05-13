@@ -1,0 +1,311 @@
+{
+  "id": "https://jargon.sh",
+  "name": "The quick brown fox jumps over the lazy dog.",
+  "description": "The quick brown fox jumps over the lazy dog.",
+  "version": "The quick brown fox jumps over the lazy dog.",
+  "validFrom": "1970-01-01",
+  "owner": {
+    "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+    "name": "Sample Company Pty Ltd.",
+    "registeredId": "90664869327",
+    "idScheme": {
+      "id": "https://id.gs1.org/01/",
+      "name": "Global Trade Identification Number (GTIN)"
+    }
+  },
+  "trustMark": "undefined",
+  "conformityCriterion": [
+    {
+      "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+      "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+      "description": "The quick brown fox jumps over the lazy dog.",
+      "conformityTopic": "environment.energy",
+      "status": "proposed",
+      "thresholdValue": {
+        "metricName": "GHG emissions intensity",
+        "metricValue": {
+          "value": 10,
+          "unit": "KGM"
+        },
+        "score": "BB",
+        "accuracy": 0.05
+      },
+      "performanceLevel": "The quick brown fox jumps over the lazy dog.",
+      "tags": "The quick brown fox jumps over the lazy dog.",
+      "subCriterion": [
+        {
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "The quick brown fox jumps over the lazy dog.",
+          "conformityTopic": "environment.emissions",
+          "status": "active",
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "The quick brown fox jumps over the lazy dog.",
+          "tags": "The quick brown fox jumps over the lazy dog.",
+          "subCriterion": [
+            {},
+            {}
+          ],
+          "category": [
+            {
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            },
+            {
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ]
+        },
+        {
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "The quick brown fox jumps over the lazy dog.",
+          "conformityTopic": "environment.water",
+          "status": "deprecated",
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "The quick brown fox jumps over the lazy dog.",
+          "tags": "The quick brown fox jumps over the lazy dog.",
+          "subCriterion": [
+            {},
+            {}
+          ],
+          "category": [
+            {
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            },
+            {
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ]
+        }
+      ],
+      "category": [
+        {
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        },
+        {
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        }
+      ]
+    },
+    {
+      "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+      "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+      "description": "The quick brown fox jumps over the lazy dog.",
+      "conformityTopic": "environment.waste",
+      "status": "proposed",
+      "thresholdValue": {
+        "metricName": "GHG emissions intensity",
+        "metricValue": {
+          "value": 10,
+          "unit": "KGM"
+        },
+        "score": "BB",
+        "accuracy": 0.05
+      },
+      "performanceLevel": "The quick brown fox jumps over the lazy dog.",
+      "tags": "The quick brown fox jumps over the lazy dog.",
+      "subCriterion": [
+        {
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "The quick brown fox jumps over the lazy dog.",
+          "conformityTopic": "environment.deforestation",
+          "status": "active",
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "The quick brown fox jumps over the lazy dog.",
+          "tags": "The quick brown fox jumps over the lazy dog.",
+          "subCriterion": [
+            {},
+            {}
+          ],
+          "category": [
+            {
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            },
+            {
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ]
+        },
+        {
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "The quick brown fox jumps over the lazy dog.",
+          "conformityTopic": "environment.biodiversity",
+          "status": "deprecated",
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "The quick brown fox jumps over the lazy dog.",
+          "tags": "The quick brown fox jumps over the lazy dog.",
+          "subCriterion": [
+            {},
+            {}
+          ],
+          "category": [
+            {
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            },
+            {
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ]
+        }
+      ],
+      "category": [
+        {
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        },
+        {
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        }
+      ]
+    }
+  ],
+  "regulatoryAlignment": [
+    {
+      "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+      "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+      "jurisdictionCountry": "Enumeration Value",
+      "administeredBy": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      "effectiveDate": "2024-03-20"
+    },
+    {
+      "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+      "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+      "jurisdictionCountry": "Enumeration Value",
+      "administeredBy": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      "effectiveDate": "2024-03-20"
+    }
+  ],
+  "industryScope": {
+    "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+    "code": "46410",
+    "name": "Primary cells and primary batteries",
+    "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+    "schemeName": "UN Central Product Classification (CPC)"
+  },
+  "geographicScope": {
+    "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+    "code": "46410",
+    "name": "Primary cells and primary batteries",
+    "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+    "schemeName": "UN Central Product Classification (CPC)"
+  },
+  "performanceLevelCodes": [
+    {
+      "name": "The quick brown fox jumps over the lazy dog.",
+      "rank": 12345,
+      "description": "The quick brown fox jumps over the lazy dog."
+    },
+    {
+      "name": "The quick brown fox jumps over the lazy dog.",
+      "rank": 12345,
+      "description": "The quick brown fox jumps over the lazy dog."
+    }
+  ],
+  "tagCodes": [
+    {
+      "name": "The quick brown fox jumps over the lazy dog.",
+      "description": "The quick brown fox jumps over the lazy dog."
+    },
+    {
+      "name": "The quick brown fox jumps over the lazy dog.",
+      "description": "The quick brown fox jumps over the lazy dog."
+    }
+  ]
+}
