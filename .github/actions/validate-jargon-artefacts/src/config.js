@@ -1,4 +1,5 @@
 const JARGON_INSTANCES_TO_VALIDATE = [
+    'ConformitySchemeVocabulary_instance',
     'DigitalConformityCredential_instance',
     'DigitalProductPassport_instance',
     'DigitalTraceabilityEvent_instance',
