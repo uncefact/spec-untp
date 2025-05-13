@@ -1,0 +1,20 @@
+{
+  "type": [
+    "RegisteredIdentity"
+  ],
+  "id": "did:web:samplecompany.com/123456789",
+  "name": "Sample business Ltd",
+  "registeredId": "123456789",
+  "idScheme": {
+    "type": [
+      "IdentifierScheme"
+    ],
+    "id": "https://id.gs1.org/01/",
+    "name": "Global Trade Identification Number (GTIN)"
+  },
+  "registerType": "Business",
+  "registrationScopeList": [
+    "https://jargon.sh",
+    "https://jargon.sh"
+  ]
+}
