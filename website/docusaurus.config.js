@@ -4,7 +4,6 @@
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
-// TODO: update slack link to long-lived invite link
 const slackLink =
   'https://join.slack.com/t/uncefact/shared_invite/zt-35d2dcrn7-2KEYgff22ob7BtQcprolkg';
 
