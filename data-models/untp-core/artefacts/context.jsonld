@@ -47,7 +47,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "organisationWebsite": {
@@ -115,7 +115,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "processCategory": {
@@ -240,7 +240,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://vocabulary.uncefact.org/CountryId"
+                "@vocab": "https://vocabulary.uncefact.org/CountryId#"
               }
             }
           }
@@ -345,7 +345,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "serialNumber": {
@@ -492,7 +492,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "administeredBy": {
