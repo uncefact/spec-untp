@@ -239,7 +239,7 @@
         }
       ],
       "rdfs:comment": [
-        "The W3C DID of the issuer - should be a did:web or did:tdw",
+        "The W3C DID of the issuer - should be a did:web or did:webvh",
         "The globally unique ID of the party as a URI, ideally as a resolvable ID. ",
         "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
         "The globally unique URI representing the specific classifier value",
