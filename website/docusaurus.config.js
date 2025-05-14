@@ -4,6 +4,9 @@
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
+const slackLink =
+  'https://join.slack.com/t/uncefact/shared_invite/zt-35d2dcrn7-2KEYgff22ob7BtQcprolkg';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'UN Transparency Protocol',
@@ -62,8 +65,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      slackLink:
-        'https://join.slack.com/t/uncefact/shared_invite/zt-1d7hd0js1-sS1Xgk8DawQD9VgRvy1QHQ',
+      slackLink,
       mailingListLink: 'https://groups.google.com/g/transparency-uncefact',
       colorMode: {
         disableSwitch: true,
@@ -94,7 +96,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://app.slack.com/client/T03KNUD7LHZ/C05R8DD2AKZ',
+            href: slackLink,
             position: 'right',
             html: '<svg class="icon icon-slack"><use xlink:href="#slack"></use></svg><span class="menu-item-name">Slack</span>',
             className: 'navbar-slack-link',
