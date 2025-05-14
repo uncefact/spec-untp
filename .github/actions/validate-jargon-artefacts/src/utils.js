@@ -16,15 +16,15 @@ async function fetchArtefactData (url) {
 }
 
 function getValidationResultOutput({ validateCredentialsResult, validateContextInCredentialResult, validateContextResult }) {
-  if (validateCredentialsResult.valid !== undefined && validateCredentialsResult.valid === false) {
+  if (validateCredentialsResult && validateCredentialsResult.valid === false) {
     return 'Failed';
   }
 
-  if (validateContextInCredentialResult.valid !== undefined && validateContextInCredentialResult.valid === false) {
+  if (validateContextInCredentialResult && validateContextInCredentialResult.valid === false) {
     return 'Failed';
   }
 
-  if (validateContextResult.valid !== undefined && validateContextResult.valid === false) {
+  if (validateContextResult && validateContextResult.valid === false) {
     return 'Failed';
   }
 
