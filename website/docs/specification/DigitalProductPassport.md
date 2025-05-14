@@ -27,6 +27,16 @@ Version 0.5.0 release artifacts can be used for pilot testing.
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
+### Ontology
+The ontology for the Digital Product Passport is available in JSON-LD format and can be retrieved via content negotiation from:
+
+[https://test.uncefact.org/vocabulary/untp/dpp/0/](https://test.uncefact.org/vocabulary/untp/dpp/0/)
+
+  Example:
+  ```bash
+  curl https://test.uncefact.org/vocabulary/untp/dpp/0/ -H 'Accept: application/ld+json'
+  ```
+
 ### Version History
 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dpp/0/versions)** page.
