@@ -28,6 +28,16 @@ Latest development versions are used to reflect lessons learned from pilots but 
 * [JSON Schema (credentialSubject only)](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.1/artefacts/jsonSchemas/RegisteredIdentity.json?class=RegisteredIdentity)
 * [Sample Instance](https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.1.json)
 
+### Ontology
+The ontology for the Digital Identity Anchor is available in JSON-LD format and can be retrieved via content negotiation from:
+
+[https://test.uncefact.org/vocabulary/untp/dia/0/](https://test.uncefact.org/vocabulary/untp/dia/0/)
+
+  Example:
+  ```bash
+  curl https://test.uncefact.org/vocabulary/untp/dia/0/ -H 'Accept: application/ld+json'
+  ```
+
 ### Sample Credential 
 
 |URL|QR|Description|
