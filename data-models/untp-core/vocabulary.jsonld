@@ -1788,6 +1788,25 @@
       "rdfs:label": "performanceLevel"
     },
     {
+      "@id": "untp-core:tags",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Criterion"
+        }
+      ],
+      "rdfs:comment": [
+        "a category code to represent target stakeholder types or commodity types to which this criteron applies. "
+      ],
+      "rdfs:label": "tags"
+    },
+    {
       "@id": "untp-core:conformityEvidence",
       "schema:rangeIncludes": {
         "@id": "untp-core:SecureLink"
