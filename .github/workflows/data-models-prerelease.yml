@@ -18,5 +18,8 @@ jobs:
           rm event.json
   
   jargon_snapshot:
+    if: ${{ github.event.release.prerelease }}
     uses: uncefact/.github/.github/workflows/untp-data-models-prerelease.yml@main
+    with:
+      tag_name: ${{ github.event.release.tag_name }}
     secrets: inherit
