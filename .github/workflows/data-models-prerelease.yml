@@ -11,11 +11,11 @@ jobs:
     steps:
       - shell: bash
         env:
-          CLIENT_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+          EVENT: ${{ toJSON(github.event) }}
         run: |
-          printf '%s\n' "$CLIENT_PAYLOAD" > client_payload.json
-          cat client_payload.json
-          rm client_payload.json
+          printf '%s\n' "$EVENT" > event.json
+          cat event.json
+          rm event.json
   
   jargon_snapshot:
     uses: uncefact/.github/.github/workflows/untp-data-models-prerelease.yml@main
