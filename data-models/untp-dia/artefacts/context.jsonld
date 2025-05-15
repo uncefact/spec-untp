@@ -1,7 +1,7 @@
 {
   "@context": {
     "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/working/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@protected": true,
@@ -51,7 +51,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "organisationWebsite": {
