@@ -521,10 +521,6 @@
       "@id": "untp-core:Criterion",
       "@context": {
         "@protected": true,
-        "description": {
-          "@id": "untp-core:description",
-          "@type": "xsd:string"
-        },
         "conformityTopic": {
           "@id": "untp-core:conformityTopic",
           "@type": "@vocab",
@@ -594,10 +590,6 @@
       "@id": "untp-core:Declaration",
       "@context": {
         "@protected": true,
-        "description": {
-          "@id": "untp-core:description",
-          "@type": "xsd:string"
-        },
         "referenceStandard": {
           "@id": "untp-core:referenceStandard",
           "@type": "@id"
@@ -671,10 +663,6 @@
       "@id": "untp-core:Claim",
       "@context": {
         "@protected": true,
-        "description": {
-          "@id": "untp-core:description",
-          "@type": "xsd:string"
-        },
         "referenceStandard": {
           "@id": "untp-core:referenceStandard",
           "@type": "@id"
