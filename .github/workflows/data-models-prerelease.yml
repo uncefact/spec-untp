@@ -1,0 +1,22 @@
+name: Publish data models prerelease
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  check_release_type:
+    runs-on: ubuntu-latest
+
+    steps:
+      - shell: bash
+        env:
+          CLIENT_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+        run: |
+          printf '%s\n' "$CLIENT_PAYLOAD" > client_payload.json
+          cat client_payload.json
+          rm client_payload.json
+  
+  jargon_snapshot:
+    uses: uncefact/.github/.github/workflows/untp-data-models-prerelease.yml@main
+    secrets: inherit
