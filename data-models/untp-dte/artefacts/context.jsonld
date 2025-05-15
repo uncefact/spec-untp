@@ -132,7 +132,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/Disp"
+            "@vocab": "https://ref.gs1.org/cbv/Disp-"
           }
         },
         "bizStep": {
@@ -140,7 +140,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/BizStep"
+            "@vocab": "https://ref.gs1.org/cbv/BizStep-"
           }
         },
         "bizLocation": {
@@ -189,7 +189,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -587,7 +587,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/Disp"
+            "@vocab": "https://ref.gs1.org/cbv/Disp-"
           }
         },
         "bizStep": {
@@ -595,7 +595,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/BizStep"
+            "@vocab": "https://ref.gs1.org/cbv/BizStep-"
           }
         },
         "bizLocation": {
@@ -644,7 +644,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -685,7 +685,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
               }
             }
           }
@@ -712,7 +712,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
               }
             }
           }
@@ -745,7 +745,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/Disp"
+            "@vocab": "https://ref.gs1.org/cbv/Disp-"
           }
         },
         "bizStep": {
@@ -753,7 +753,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/BizStep"
+            "@vocab": "https://ref.gs1.org/cbv/BizStep-"
           }
         },
         "bizLocation": {
@@ -802,7 +802,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -839,7 +839,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
               }
             }
           }
@@ -872,7 +872,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/Disp"
+            "@vocab": "https://ref.gs1.org/cbv/Disp-"
           }
         },
         "bizStep": {
@@ -880,7 +880,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/BizStep"
+            "@vocab": "https://ref.gs1.org/cbv/BizStep-"
           }
         },
         "bizLocation": {
@@ -929,7 +929,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -970,7 +970,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
               }
             }
           }
@@ -1003,7 +1003,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/Disp"
+            "@vocab": "https://ref.gs1.org/cbv/Disp-"
           }
         },
         "bizStep": {
@@ -1011,7 +1011,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/BizStep"
+            "@vocab": "https://ref.gs1.org/cbv/BizStep-"
           }
         },
         "bizLocation": {
@@ -1060,7 +1060,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -1076,7 +1076,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/BTT"
+            "@vocab": "https://ref.gs1.org/cbv/BTT-"
           }
         },
         "epcList": {
@@ -1105,7 +1105,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
               }
             }
           }
@@ -1138,7 +1138,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/Disp"
+            "@vocab": "https://ref.gs1.org/cbv/Disp-"
           }
         },
         "bizStep": {
@@ -1146,7 +1146,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://ref.gs1.org/cbv/BizStep"
+            "@vocab": "https://ref.gs1.org/cbv/BizStep-"
           }
         },
         "bizLocation": {
@@ -1195,7 +1195,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -1236,7 +1236,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
               }
             }
           }

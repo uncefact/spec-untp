@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "additionalProperties": true,
   "properties": {
@@ -57,13 +58,13 @@
     },
     "disposition": {
       "type": "string",
-      "x-external-enumeration": "https://ref.gs1.org/cbv/Disp",
-      "description": "Disposition code describing the state of the item after the event. \n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://ref.gs1.org/cbv/Disp\n    "
+      "x-external-enumeration": "https://ref.gs1.org/cbv/Disp-",
+      "description": "Disposition code describing the state of the item after the event. \n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://ref.gs1.org/cbv/Disp-\n    "
     },
     "bizStep": {
       "type": "string",
-      "x-external-enumeration": "https://ref.gs1.org/cbv/BizStep",
-      "description": "A business step code drawn from a controlled vocabulary.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://ref.gs1.org/cbv/BizStep\n    "
+      "x-external-enumeration": "https://ref.gs1.org/cbv/BizStep-",
+      "description": "A business step code drawn from a controlled vocabulary.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://ref.gs1.org/cbv/BizStep-\n    "
     },
     "bizLocation": {
       "example": "https://id.gs1.org/414/9520123456788",
@@ -98,7 +99,6 @@
     }
   },
   "description": "Aggregation represents an event that happened to one or more objects that are physically aggregated together (physically constrained to be in the same place at the same time, as when cases are aggregated to a pallet).  This event is also used to represent de-aggregation (eg unpacking) when businessStepCode is unpacking.",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$defs": {
     "SensorElement": {
       "type": "object",
@@ -257,8 +257,8 @@
         },
         "uom": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode",
-          "description": "the unit of measure for the sensor reading, drawn from UNECE rec20 code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "the unit of measure for the sensor reading, drawn from UNECE rec20 code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
         }
       },
       "description": "A data point read by a sensor."
@@ -303,8 +303,8 @@
         },
         "uom": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode",
-          "description": "The unit of measure for the quantity value (eg Kg or meters etc) using the UNECE Rec 20 unit of measure codelist.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "The unit of measure for the quantity value (eg Kg or meters etc) using the UNECE Rec 20 unit of measure codelist.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
         }
       },
       "description": "The quantity element is used to define the quantity (eg 100 kg of a product class. Used when serialised items are not applicable.",
