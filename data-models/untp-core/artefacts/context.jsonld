@@ -371,7 +371,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -390,7 +390,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -409,7 +409,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -428,7 +428,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -447,7 +447,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -568,7 +568,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -637,7 +637,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -714,7 +714,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -801,7 +801,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://mimetype.io/all-types"
+                "@vocab": "https://mimetype.io/"
               }
             },
             "file": {
