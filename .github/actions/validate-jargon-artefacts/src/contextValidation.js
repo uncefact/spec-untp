@@ -80,8 +80,9 @@ async function validateContextInCredential(rawArtefactData, jsonldContext) {
     await Promise.all(
       fetchedInstances.map(async ({ json, url }) => {
         core.info(`Validating "${url}"`);
-        return jsonld.expand(json, { safe: true });
-      })
+        // Expands the document and converts it to RDF. See issue https://github.com/uncefact/spec-untp/issues/369#issuecomment-2878856840
+        return jsonld.toRDF(json, { safe: true })        
+      }) 
     );
 
     core.info('Context in credentials validation results: passed.');
