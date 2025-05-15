@@ -118,7 +118,7 @@
           "example": "did:web:identifiers.example-company.com:12345",
           "type": "string",
           "format": "uri",
-          "description": "The W3C DID of the issuer - should be a did:web or did:tdw"
+          "description": "The W3C DID of the issuer - should be a did:web or did:webvh"
         },
         "name": {
           "example": "Example Company Pty Ltd",
