@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "additionalProperties": true,
   "properties": {
@@ -90,7 +91,6 @@
     "id",
     "issuer"
   ],
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$defs": {
     "CredentialIssuer": {
       "type": "object",
@@ -118,7 +118,7 @@
           "example": "did:web:identifiers.example-company.com:12345",
           "type": "string",
           "format": "uri",
-          "description": "The W3C DID of the issuer - should be a did:web or did:tdw"
+          "description": "The W3C DID of the issuer - should be a did:web or did:webvh"
         },
         "name": {
           "example": "Example Company Pty Ltd",
@@ -373,8 +373,8 @@
         },
         "countryOfProduction": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
-          "description": "The country in which this item was produced / manufactured.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "The country in which this item was produced / manufactured.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
         },
         "serialNumber": {
           "example": 12345678,
@@ -624,8 +624,8 @@
         },
         "unit": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode",
-          "description": "Unit of measure drawn from the UNECE Rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "Unit of measure drawn from the UNECE Rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
         }
       },
       "description": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).",
@@ -669,6 +669,11 @@
           "format": "uri",
           "description": "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
         },
+        "description": {
+          "example": "A standardised disclosure of the battery's greenhouse gas emissions intensity, calculated in accordance with the Global Battery Alliance Battery Passport Greenhouse Gas Rulebook V.2.0.",
+          "type": "string",
+          "description": "A textual description of the declaration being made."
+        },
         "referenceStandard": {
           "$ref": "#/$defs/Standard",
           "description": "The reference to the standard that defines the specification / criteria"
@@ -680,29 +685,7 @@
         "assessmentCriteria": {
           "type": "array",
           "items": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                "type": "string",
-                "format": "uri",
-                "description": "A unique identifier for the criterion within the scheme, standard  or regulation. For example CO2 emissions calculations for liquid fuel combustion."
-              },
-              "name": {
-                "example": "GBA Battery rule book v2.0 battery assembly guidelines.",
-                "type": "string",
-                "description": "A name that describes this criteria."
-              },
-              "description": {
-                "type": "string",
-                "description": "A full text description of the criterion that clearly specifies how compliance is achieved and measured. "
-              }
-            },
-            "required": [
-              "id",
-              "name",
-              "description"
-            ]
+            "$ref": "#/$defs/Criterion"
           },
           "description": "The specification against which the assessment is made."
         },
@@ -864,8 +847,8 @@
         },
         "jurisdictionCountry": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
-          "description": "The legal jurisdiction (country) under which the regulation is issued.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "The legal jurisdiction (country) under which the regulation is issued.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
         },
         "administeredBy": {
           "type": "object",
@@ -903,6 +886,106 @@
       "description": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment.",
       "required": [
         "administeredBy"
+      ]
+    },
+    "Criterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Criterion"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Criterion",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the criterion within the scheme, standard  or regulation. For example CO2 emissions calculations for liquid fuel combustion."
+        },
+        "name": {
+          "example": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "type": "string",
+          "description": "A name that describes this criteria."
+        },
+        "description": {
+          "example": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "type": "string",
+          "description": "A full text description of the criterion that clearly specifies how compliance is achieved and measured. "
+        },
+        "conformityTopic": {
+          "type": "string",
+          "enum": [
+            "environment.energy",
+            "environment.emissions",
+            "environment.water",
+            "environment.waste",
+            "environment.deforestation",
+            "environment.biodiversity",
+            "circularity.content",
+            "circularity.design",
+            "social.labour",
+            "social.rights",
+            "social.community",
+            "social.safety",
+            "governance.ethics",
+            "governance.compliance",
+            "governance.transparency"
+          ],
+          "example": "environment.energy",
+          "description": "A gloabl UN/CEFACT standard sustainability toipic code. "
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "active",
+            "deprecated"
+          ],
+          "example": "proposed",
+          "description": "The lifecycle status of this criterion. "
+        },
+        "subCriterion": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Criterion"
+          },
+          "description": "List of criterion that are subordinate to this criterion in the hierarchy."
+        },
+        "thresholdValue": {
+          "$ref": "#/$defs/Metric",
+          "description": "A threshold value that defines the minimum compliance level. "
+        },
+        "performanceLevel": {
+          "example": "\"Category 3 recyclable with 73% recyclability\"",
+          "type": "string",
+          "description": "A performance category code to group criterion in a given hierarchyLevel according to pareformance"
+        },
+        "tags": {
+          "type": "string",
+          "description": "a category code to represent target stakeholder types or commodity types to which this criteron applies. "
+        }
+      },
+      "description": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
+      "required": [
+        "id",
+        "name",
+        "description",
+        "conformityTopic",
+        "status"
       ]
     },
     "Metric": {
@@ -1054,8 +1137,8 @@
         },
         "declaredUnit": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode",
-          "description": "The unit of product (EA, KGM, LTR, etc) that is the basis for carbon footprint.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "The unit of product (EA, KGM, LTR, etc) that is the basis for carbon footprint.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
         },
         "operationalScope": {
           "type": "string",
@@ -1214,8 +1297,8 @@
         },
         "originCountry": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
-          "description": "A ISO 3166-1 code representing the country of origin of the component or ingredient.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "A ISO 3166-1 code representing the country of origin of the component or ingredient.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
         },
         "materialType": {
           "$ref": "#/$defs/Classification",
@@ -1226,11 +1309,11 @@
           "type": "number",
           "description": "The mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 1."
         },
-        "massAmount": {
+        "mass": {
           "$ref": "#/$defs/Measure",
           "description": "The mass of the material component."
         },
-        "recycledAmount": {
+        "recycledMassFraction": {
           "example": 0.5,
           "type": "number",
           "description": "Mass fraction of this material that is recycled (eg 50% recycled Lithium)"
