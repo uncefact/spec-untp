@@ -6,7 +6,7 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/"
   },
   "@graph": [
     {
@@ -194,10 +194,14 @@
       "schema:domainIncludes": [
         {
           "@id": "untp-dcc:ConformityAttestation"
+        },
+        {
+          "@id": "untp-dcc:ConformityAssessment"
         }
       ],
       "rdfs:comment": [
-        "A textual description of the scope or purpose of this conformity attestation"
+        "A textual description of the scope or purpose of this conformity attestation",
+        "A textual description of the declaration being made."
       ],
       "rdfs:label": "description"
     },
