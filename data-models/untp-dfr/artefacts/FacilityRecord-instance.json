@@ -108,27 +108,6 @@
       "addressCountry": "AU"
     }
   },
-  "locationInformation": {
-    "plusCode": "https://plus.codes/8CGRC78W+MM",
-    "geoLocation": {
-      "type": "Point",
-      "coordinates": [
-        3.141579,
-        3.141579
-      ]
-    },
-    "geoBoundary": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            3.141579,
-            3.141579
-          ]
-        ]
-      ]
-    }
-  },
   "conformityClaim": [
     {
       "type": [

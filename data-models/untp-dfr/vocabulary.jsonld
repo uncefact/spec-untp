@@ -75,25 +75,6 @@
       "rdfs:label": "facility"
     },
     {
-      "@id": "untp-dfr:locationInformation",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Location"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:FacilityRecord"
-        }
-      ],
-      "rdfs:comment": [
-        "Physical location details"
-      ],
-      "rdfs:label": "locationInformation"
-    },
-    {
       "@id": "untp-dfr:conformityClaim",
       "schema:rangeIncludes": {
         "@id": "untp-core:Claim"
