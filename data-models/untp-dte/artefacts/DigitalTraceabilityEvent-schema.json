@@ -760,17 +760,13 @@
           },
           "description": "An array (one for each sensor) of sensor device data sets associated with the event. "
         },
-        "sourcePartyId": {
-          "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "sourceParty": {
           "type": "string",
-          "format": "uri",
-          "description": "The source party for this supply chain transaction - typically the seller party"
+          "description": "The source party for this supply chain transaction - typically the seller party\nThis field is the identifier of Party (id). It's definition is:\n\nThe globally unique ID of the party as a URI, ideally as a resolvable ID. "
         },
-        "destinationPartyId": {
-          "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "destinationParty": {
           "type": "string",
-          "format": "uri",
-          "description": "The destination party for this supply chain transaction - typically the buyer party."
+          "description": "The destination party for this supply chain transaction - typically the buyer party.\nThis field is the identifier of Party (id). It's definition is:\n\nThe globally unique ID of the party as a URI, ideally as a resolvable ID. "
         },
         "bizTransaction": {
           "type": "string",
@@ -794,8 +790,8 @@
       },
       "description": "Transaction represents an event in which one or more objects become associated or disassociated with one or more identified business transactions - such as the purchase / shipment of goods between buyer and seller.",
       "required": [
-        "sourcePartyId",
-        "destinationPartyId"
+        "sourceParty",
+        "destinationParty"
       ]
     },
     "AssociationEvent": {

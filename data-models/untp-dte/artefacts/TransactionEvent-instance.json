@@ -66,8 +66,8 @@
       "sensorIntegrityProof": "https://jargon.sh"
     }
   ],
-  "sourcePartyId": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-  "destinationPartyId": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+  "sourceParty": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+  "destinationParty": "https://abr.business.gov.au/ABN/View?abn=90664869328",
   "bizTransaction": "https://ref.gs1.org/cbv/BTT-prodorder",
   "epcList": [
     {

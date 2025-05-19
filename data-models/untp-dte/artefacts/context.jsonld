@@ -1071,6 +1071,14 @@
             }
           }
         },
+        "sourceParty": {
+          "@id": "untp-core:sourceParty",
+          "@type": "@id"
+        },
+        "destinationParty": {
+          "@id": "untp-core:destinationParty",
+          "@type": "@id"
+        },
         "bizTransaction": {
           "@id": "untp-dte:bizTransaction",
           "@type": "@vocab",
