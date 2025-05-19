@@ -506,68 +506,6 @@
           "@id": "untp-core:facility",
           "@type": "@id"
         },
-        "locationInformation": {
-          "@protected": true,
-          "@id": "untp-core:locationInformation",
-          "@context": {
-            "@protected": true,
-            "plusCode": {
-              "@id": "untp-core:plusCode",
-              "@type": "xsd:string"
-            },
-            "geoLocation": {
-              "@protected": true,
-              "@id": "geojson:geoLocation",
-              "@context": {
-                "@protected": true,
-                "type": {
-                  "@id": "geojson:type",
-                  "@type": "xsd:string"
-                },
-                "coordinates": {
-                  "@protected": true,
-                  "@id": "geojson:coordinates",
-                  "@context": {
-                    "@protected": true,
-                    "data": {
-                      "@id": "geojson:data",
-                      "@type": "xsd:decimal"
-                    }
-                  }
-                }
-              }
-            },
-            "geoBoundary": {
-              "@protected": true,
-              "@id": "geojson:geoBoundary",
-              "@context": {
-                "@protected": true,
-                "type": {
-                  "@id": "geojson:type",
-                  "@type": "xsd:string"
-                },
-                "coordinates": {
-                  "@protected": true,
-                  "@id": "geojson:coordinates",
-                  "@context": {
-                    "@protected": true,
-                    "data": {
-                      "@protected": true,
-                      "@id": "geojson:data",
-                      "@context": {
-                        "@protected": true,
-                        "data": {
-                          "@id": "geojson:data",
-                          "@type": "xsd:decimal"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "conformityClaim": {
           "@id": "untp-core:conformityClaim",
           "@type": "@id"

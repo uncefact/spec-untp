@@ -31,10 +31,6 @@
       "$ref": "#/$defs/Facility",
       "description": "The physical site (eg farm or factory) where the product or materials was produced."
     },
-    "locationInformation": {
-      "$ref": "#/$defs/Location",
-      "description": "Physical location details"
-    },
     "conformityClaim": {
       "type": "array",
       "items": {
