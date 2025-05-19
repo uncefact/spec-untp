@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "additionalProperties": true,
   "properties": {
@@ -149,7 +150,6 @@
     "attestationType",
     "issuedToParty"
   ],
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$defs": {
     "Endorsement": {
       "type": "object",
@@ -255,8 +255,8 @@
         },
         "fileType": {
           "type": "string",
-          "x-external-enumeration": "https://mimetype.io/all-types",
-          "description": "The type of file, represented as a MIME type.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://mimetype.io/all-types\n    "
+          "x-external-enumeration": "https://mimetype.io/",
+          "description": "The type of file, represented as a MIME type.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://mimetype.io/\n    "
         },
         "file": {
           "example": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC",
@@ -489,6 +489,11 @@
               }
             }
           ]
+        },
+        "description": {
+          "example": "A standardised disclosure of the battery's greenhouse gas emissions intensity, calculated in accordance with the Global Battery Alliance Battery Passport Greenhouse Gas Rulebook V.2.0.",
+          "type": "string",
+          "description": "A textual description of the declaration being made."
         },
         "assessmentDate": {
           "example": "2024-03-15",
@@ -746,8 +751,8 @@
         },
         "jurisdictionCountry": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
-          "description": "The legal jurisdiction (country) under which the regulation is issued.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "The legal jurisdiction (country) under which the regulation is issued.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
         },
         "administeredBy": {
           "type": "object",
@@ -821,6 +826,7 @@
           "description": "A name that describes this criteria."
         },
         "description": {
+          "example": "Battery is designed for easy disassembly and recycling at end-of-life.",
           "type": "string",
           "description": "A full text description of the criterion that clearly specifies how compliance is achieved and measured. "
         },
@@ -868,12 +874,13 @@
           "description": "A threshold value that defines the minimum compliance level. "
         },
         "performanceLevel": {
+          "example": "\"Category 3 recyclable with 73% recyclability\"",
           "type": "string",
           "description": "A performance category code to group criterion in a given hierarchyLevel according to pareformance"
         },
         "tags": {
           "type": "string",
-          "description": "a category code to reporent target stakholder types or commodity types to which this criteron applies. "
+          "description": "a category code to represent target stakeholder types or commodity types to which this criteron applies. "
         }
       },
       "description": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
@@ -962,8 +969,8 @@
         },
         "unit": {
           "type": "string",
-          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode",
-          "description": "Unit of measure drawn from the UNECE Rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode\n    "
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "Unit of measure drawn from the UNECE Rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
         }
       },
       "description": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).",
