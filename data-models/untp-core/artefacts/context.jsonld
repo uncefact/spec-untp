@@ -582,6 +582,10 @@
         "performanceLevel": {
           "@id": "untp-core:performanceLevel",
           "@type": "xsd:string"
+        },
+        "tags": {
+          "@id": "untp-core:tags",
+          "@type": "xsd:string"
         }
       }
     },
