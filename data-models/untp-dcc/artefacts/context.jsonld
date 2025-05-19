@@ -1,7 +1,7 @@
 {
   "@context": {
     "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/working/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -52,7 +52,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "organisationWebsite": {
@@ -121,7 +121,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://mimetype.io/all-types"
+                "@vocab": "https://mimetype.io/"
               }
             },
             "file": {
@@ -204,7 +204,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://mimetype.io/all-types"
+                "@vocab": "https://mimetype.io/"
               }
             },
             "file": {
@@ -251,7 +251,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "administeredBy": {
@@ -280,16 +280,12 @@
       "@id": "untp-core:Criterion",
       "@context": {
         "@protected": true,
-        "description": {
-          "@id": "untp-core:description",
-          "@type": "xsd:string"
-        },
         "conformityTopic": {
           "@id": "untp-core:conformityTopic",
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/conformityTopicCode#"
           }
         },
         "status": {
@@ -297,7 +293,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/statusCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/statusCode#"
           }
         },
         "subCriterion": {
@@ -327,7 +323,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -370,7 +366,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "processCategory": {
@@ -495,7 +491,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://vocabulary.uncefact.org/CountryId"
+                "@vocab": "https://vocabulary.uncefact.org/CountryId#"
               }
             }
           }
@@ -600,7 +596,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://vocabulary.uncefact.org/CountryId"
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
           }
         },
         "serialNumber": {
@@ -626,7 +622,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -645,7 +641,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -664,7 +660,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -683,7 +679,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -702,7 +698,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -720,10 +716,6 @@
           "@id": "untp-core:assessmentDate",
           "@type": "xsd:string"
         },
-        "name": {
-          "@id": "untp-dcc:name",
-          "@type": "xsd:string"
-        },
         "referenceStandard": {
           "@id": "untp-core:referenceStandard",
           "@type": "@id"
@@ -733,15 +725,8 @@
           "@type": "@id"
         },
         "assessmentCriteria": {
-          "@id": "untp-core:Criterion",
-          "@type": "@id",
-          "@context": {
-            "@protected": true,
-            "description": {
-              "@id": "untp-core:description",
-              "@type": "xsd:string"
-            }
-          }
+          "@id": "untp-core:assessmentCriteria",
+          "@type": "@id"
         },
         "declaredValue": {
           "@protected": true,
@@ -766,7 +751,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -790,7 +775,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/conformityTopicCode#"
           }
         },
         "assessedProduct": {
@@ -895,7 +880,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/assessorLevelCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/assessorLevelCode#"
           }
         },
         "assessmentLevel": {
@@ -903,7 +888,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/assessmentLevelCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/assessmentLevelCode#"
           }
         },
         "attestationType": {
@@ -911,7 +896,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/attestationTypeCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/attestationTypeCode#"
           }
         },
         "issuedToParty": {
@@ -959,7 +944,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
               }
             },
             "encryptionMethod": {
@@ -967,7 +952,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/encryptionMethodCode#"
               }
             }
           }
@@ -998,7 +983,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
               }
             },
             "encryptionMethod": {
@@ -1006,7 +991,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/encryptionMethodCode#"
               }
             }
           }
@@ -1031,7 +1016,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/assessorLevelCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/assessorLevelCode#"
           }
         },
         "assessmentLevel": {
@@ -1039,7 +1024,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/assessmentLevelCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/assessmentLevelCode#"
           }
         },
         "attestationType": {
@@ -1047,7 +1032,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/attestationTypeCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/attestationTypeCode#"
           }
         },
         "issuedToParty": {
@@ -1095,7 +1080,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
               }
             },
             "encryptionMethod": {
@@ -1103,7 +1088,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/encryptionMethodCode#"
               }
             }
           }
@@ -1134,7 +1119,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
               }
             },
             "encryptionMethod": {
@@ -1142,7 +1127,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/encryptionMethodCode#"
               }
             }
           }
@@ -1163,15 +1148,8 @@
           "@type": "@id"
         },
         "assessmentCriteria": {
-          "@id": "untp-core:Criterion",
-          "@type": "@id",
-          "@context": {
-            "@protected": true,
-            "description": {
-              "@id": "untp-core:description",
-              "@type": "xsd:string"
-            }
-          }
+          "@id": "untp-core:assessmentCriteria",
+          "@type": "@id"
         },
         "assessmentDate": {
           "@id": "untp-core:assessmentDate",
@@ -1200,7 +1178,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode"
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
                   }
                 }
               }
@@ -1224,7 +1202,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/conformityTopicCode#"
           }
         }
       }
