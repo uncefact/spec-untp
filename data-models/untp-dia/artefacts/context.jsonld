@@ -1,7 +1,7 @@
 {
   "@context": {
     "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/working/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@protected": true,
