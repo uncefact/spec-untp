@@ -868,9 +868,9 @@
       "rdfs:label": "childQuantityList"
     },
     {
-      "@id": "untp-dte:sourcePartyId",
+      "@id": "untp-dte:sourceParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:id"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -884,12 +884,12 @@
       "rdfs:comment": [
         "The source party for this supply chain transaction - typically the seller party"
       ],
-      "rdfs:label": "sourcePartyId"
+      "rdfs:label": "sourceParty"
     },
     {
-      "@id": "untp-dte:destinationPartyId",
+      "@id": "untp-dte:destinationParty",
       "schema:rangeIncludes": {
-        "@id": "untp-core:id"
+        "@id": "untp-core:Party"
       },
       "@type": [
         "rdf:Property",
@@ -903,7 +903,7 @@
       "rdfs:comment": [
         "The destination party for this supply chain transaction - typically the buyer party."
       ],
-      "rdfs:label": "destinationPartyId"
+      "rdfs:label": "destinationParty"
     },
     {
       "@id": "untp-dte:bizTransaction",
