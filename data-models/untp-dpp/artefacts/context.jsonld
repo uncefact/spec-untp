@@ -182,7 +182,7 @@
                     "@protected": true,
                     "data": {
                       "@id": "geojson:data",
-                      "@type": "xsd:decimal"
+                      "@type": "xsd:double"
                     }
                   }
                 }
@@ -209,7 +209,7 @@
                         "@protected": true,
                         "data": {
                           "@id": "geojson:data",
-                          "@type": "xsd:decimal"
+                          "@type": "xsd:double"
                         }
                       }
                     }
@@ -369,7 +369,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -388,7 +388,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -407,7 +407,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -426,7 +426,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -445,7 +445,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -562,7 +562,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -580,7 +580,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -631,7 +631,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -649,7 +649,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -734,7 +734,7 @@
             "@protected": true,
             "carbonFootprint": {
               "@id": "untp-core:carbonFootprint",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "declaredUnit": {
               "@id": "untp-core:declaredUnit",
@@ -754,7 +754,7 @@
             },
             "primarySourcedRatio": {
               "@id": "untp-core:primarySourcedRatio",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "reportingStandard": {
               "@id": "untp-core:reportingStandard",
@@ -773,7 +773,7 @@
             },
             "verifiedRatio": {
               "@id": "untp-dpp:verifiedRatio",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "traceabilityEvent": {
               "@protected": true,
@@ -861,19 +861,19 @@
             },
             "recyclableContent": {
               "@id": "untp-core:recyclableContent",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "recycledContent": {
               "@id": "untp-core:recycledContent",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "utilityFactor": {
               "@id": "untp-core:utilityFactor",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "materialCircularityIndicator": {
               "@id": "untp-core:materialCircularityIndicator",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -915,7 +915,7 @@
             },
             "massFraction": {
               "@id": "untp-core:massFraction",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "mass": {
               "@protected": true,
@@ -924,7 +924,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -938,7 +938,7 @@
             },
             "recycledMassFraction": {
               "@id": "untp-core:recycledMassFraction",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "hazardous": {
               "@id": "untp-core:hazardous",
@@ -1008,7 +1008,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -1026,7 +1026,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
