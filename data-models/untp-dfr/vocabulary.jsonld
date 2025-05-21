@@ -1,0 +1,219 @@
+{
+  "@context": {
+    "untp-dfr": "https://test.uncefact.org/vocabulary/untp/dfr/0/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+  },
+  "@graph": [
+    {
+      "@id": "untp-dfr:DigitalFacilityRecord",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A digital verifiable credential holding facility performance information.",
+      "rdfs:label": "DigitalFacilityRecord",
+      "rdfs:subClassOf": "untp-core:VerifiableCredential"
+    },
+    {
+      "@id": "untp-dfr:FacilityRecord",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record.",
+      "rdfs:label": "FacilityRecord"
+    },
+    {
+      "@id": "untp-dfr:RenderTemplate2024",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9",
+      "rdfs:label": "RenderTemplate2024",
+      "rdfs:subClassOf": "untp-core:RenderTemplate2024"
+    },
+    {
+      "@id": "untp-dfr:WebRenderingTemplate2022",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A simple (though non-standard) embedded template.",
+      "rdfs:label": "WebRenderingTemplate2022",
+      "rdfs:subClassOf": "untp-core:WebRenderingTemplate2022"
+    },
+    {
+      "@id": "untp-dfr:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-dfr:facility",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Facility"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The physical site (eg farm or factory) where the product or materials was produced."
+      ],
+      "rdfs:label": "facility"
+    },
+    {
+      "@id": "untp-dfr:conformityClaim",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Claim"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of conformity declarations against specific criteria from recognised standards or regulations. "
+      ],
+      "rdfs:label": "conformityClaim"
+    },
+    {
+      "@id": "untp-dfr:name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dfr:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "Human facing display name for selection",
+        "Human facing display name for template"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-dfr:mediaQuery",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Media query as defined in https://www.w3.org/TR/mediaqueries-4/"
+      ],
+      "rdfs:label": "mediaQuery"
+    },
+    {
+      "@id": "untp-dfr:template",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dfr:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "An inline template field for use cases where remote retrieval of a render method is suboptimal",
+        "An inline template field "
+      ],
+      "rdfs:label": "template"
+    },
+    {
+      "@id": "untp-dfr:url",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "URL for remotely hosted template"
+      ],
+      "rdfs:label": "url"
+    },
+    {
+      "@id": "untp-dfr:mediaType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "content/media type for (possible) conneg on the above URL and certainly for display use"
+      ],
+      "rdfs:label": "mediaType"
+    },
+    {
+      "@id": "untp-dfr:digestMultibase",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Used for resource integrity and/or validation of the inline `template`"
+      ],
+      "rdfs:label": "digestMultibase"
+    }
+  ]
+}

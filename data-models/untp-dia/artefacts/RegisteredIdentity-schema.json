@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "type": {
+      "type": "array",
+      "readOnly": true,
+      "default": [
+        "RegisteredIdentity"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "RegisteredIdentity",
+            "minContains": 1
+          }
+        }
+      ]
+    },
+    "id": {
+      "example": "did:web:samplecompany.com/123456789",
+      "type": "string",
+      "format": "uri",
+      "description": "The DID that is controlled by the registered member and is linked to the registeredID through this Identity Anchor credential"
+    },
+    "name": {
+      "example": "Sample business Ltd",
+      "type": "string",
+      "description": "The registered name of the entity within the identifier scheme.  Examples: product - EV battery 300Ah, Party - Sample Company Pty Ltd,  Facility - Green Acres battery factory"
+    },
+    "registeredId": {
+      "example": 123456789,
+      "type": "string",
+      "description": "The registration number (alphanumeric) of the entity within the register. Unique within the register."
+    },
+    "idScheme": {
+      "$ref": "#/$defs/IdentifierScheme",
+      "description": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or global authority."
+    },
+    "registerType": {
+      "type": "string",
+      "enum": [
+        "Product",
+        "Facility",
+        "Business",
+        "Trademark",
+        "Land",
+        "Accreditation"
+      ],
+      "example": "Product",
+      "description": "The thematic purpose of the register - organisations, facilities, products, trademarks, etc"
+    },
+    "registrationScopeList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "List of URIs the represent the role/scopes of membership for the register. For example [\"https://abr.business.gov.au/Help/EntityTypeDescription?Id=19\"]"
+    }
+  },
+  "description": "The identity anchor is a mapping between a registery member identity and one or more decentralised identifiers owned by the member. It may also list a set of membership scopes.",
+  "required": [
+    "id",
+    "name"
+  ],
+  "$defs": {
+    "IdentifierScheme": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "IdentifierScheme"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "IdentifierScheme",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://id.gs1.org/01/",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes"
+        },
+        "name": {
+          "example": "Global Trade Identification Number (GTIN)",
+          "type": "string",
+          "description": "The name of the identifier scheme. "
+        }
+      },
+      "description": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or global authority."
+    }
+  }
+}

@@ -1,0 +1,975 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "type": {
+      "type": "array",
+      "readOnly": true,
+      "default": [
+        "FacilityRecord"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "FacilityRecord",
+            "minContains": 1
+          }
+        }
+      ]
+    },
+    "id": {
+      "example": "example:product/1234",
+      "type": "string",
+      "format": "uri",
+      "description": "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
+    },
+    "facility": {
+      "$ref": "#/$defs/Facility",
+      "description": "The physical site (eg farm or factory) where the product or materials was produced."
+    },
+    "conformityClaim": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Claim"
+      },
+      "description": "A list of conformity declarations against specific criteria from recognised standards or regulations. "
+    }
+  },
+  "description": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record.",
+  "$defs": {
+    "Facility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Facility"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Facility",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://sample-facility-register.com/1234567",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique ID of the facility as URI, ideally as a resolvable URL."
+        },
+        "name": {
+          "example": "Greenacres battery factory",
+          "type": "string",
+          "description": "The registered name of the facility within the identifier scheme.  "
+        },
+        "registeredId": {
+          "example": 1234567,
+          "type": "string",
+          "description": "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
+        },
+        "idScheme": {
+          "$ref": "#/$defs/IdentifierScheme",
+          "description": "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. "
+        },
+        "description": {
+          "example": "Manufacturing site for advanced electric vehicle batteries.",
+          "type": "string",
+          "description": "An optional short description of the facility"
+        },
+        "countryOfOperation": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "The country in which this facility is operating.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
+        },
+        "processCategory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Classification"
+          },
+          "description": "The industrial or production processes performed by this facility. Example unstats.un.org/isic/1030."
+        },
+        "operatedByParty": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+              "type": "string",
+              "format": "uri",
+              "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+            },
+            "name": {
+              "example": "Sample Company Pty Ltd.",
+              "type": "string",
+              "description": "The registered name of the party within the identifier scheme."
+            },
+            "registeredId": {
+              "example": 90664869327,
+              "type": "string",
+              "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "description": "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identification scheme. "
+        },
+        "facilityAlsoKnownAs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "example": "https://sample-facility-register.com/1234567",
+                "type": "string",
+                "format": "uri",
+                "description": "The globally unique ID of the facility as URI, ideally as a resolvable URL."
+              },
+              "name": {
+                "example": "Greenacres battery factory",
+                "type": "string",
+                "description": "The registered name of the facility within the identifier scheme.  "
+              },
+              "registeredId": {
+                "example": 1234567,
+                "type": "string",
+                "description": "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ]
+          },
+          "description": "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
+        },
+        "locationInformation": {
+          "$ref": "#/$defs/Location",
+          "description": "Geo-location information for this facility as a resolvable geographic area (a Plus Code), and/or a geo-located point (latitude / longitude), and/or a defined boundary (GeoJSON Polygon)."
+        },
+        "address": {
+          "$ref": "#/$defs/Address",
+          "description": "The Postal address of the location."
+        }
+      },
+      "description": "The physical site (eg farm or factory) where the product or materials was produced.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "IdentifierScheme": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "IdentifierScheme"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "IdentifierScheme",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://id.gs1.org/01/",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes"
+        },
+        "name": {
+          "example": "Global Trade Identification Number (GTIN)",
+          "type": "string",
+          "description": "The name of the identifier scheme. "
+        }
+      },
+      "description": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or global authority."
+    },
+    "Classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Classification"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Classification",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique URI representing the specific classifier value"
+        },
+        "code": {
+          "example": 46410,
+          "type": "string",
+          "description": "classification code within the scheme"
+        },
+        "name": {
+          "example": "Primary cells and primary batteries",
+          "type": "string",
+          "description": "Name of the classification represented by the code"
+        },
+        "schemeID": {
+          "example": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "type": "string",
+          "format": "uri",
+          "description": "Classification scheme ID"
+        },
+        "schemeName": {
+          "example": "UN Central Product Classification (CPC)",
+          "type": "string",
+          "description": "The name of the classification scheme"
+        }
+      },
+      "description": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Location": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Location"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Location",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "plusCode": {
+          "example": "https://plus.codes/8CGRC78W+MM",
+          "type": "string",
+          "format": "uri",
+          "description": "An open location code (https://maps.google.com/pluscodes/) representing this geographic location or region. Open location codes can represent any sized area from a point to a large region and are easily resolved to a visual map location. "
+        },
+        "geoLocation": {
+          "$ref": "#/$defs/Point",
+          "description": "The latitude and longitude coordinates that best represent the specified location. Using GeoJSON Point notation."
+        },
+        "geoBoundary": {
+          "$ref": "#/$defs/Polygon",
+          "description": "The list of ordered coordinates that define a closed area polygon as a location boundary using GeoJSON polygon notation."
+        }
+      },
+      "description": "Location information including address and geo-location of points, areas, and boundaries"
+    },
+    "Point": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Point"
+          ],
+          "example": "Point",
+          "description": ""
+        },
+        "coordinates": {
+          "$ref": "#/$defs/Point3D",
+          "description": "Coordinates property of type Point3D"
+        }
+      },
+      "description": "Represents a Point geometry",
+      "required": [
+        "type"
+      ]
+    },
+    "Point3D": {
+      "description": "Point in 3d space",
+      "oneOf": [
+        {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Point3D"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Point3D",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "float"
+          },
+          "description": "Array of decimal values"
+        }
+      ]
+    },
+    "Polygon": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Polygon"
+          ],
+          "example": "Polygon",
+          "description": ""
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Point3DWrapper"
+          },
+          "description": "Array of PolygonCoordinates"
+        }
+      },
+      "description": "Represents a Polygon geometry",
+      "required": [
+        "type"
+      ]
+    },
+    "Point3DWrapper": {
+      "description": "",
+      "oneOf": [
+        {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Point3DWrapper"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Point3DWrapper",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Point3D"
+          },
+          "description": ""
+        }
+      ]
+    },
+    "Address": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Address"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Address",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "streetAddress": {
+          "example": "level 11, 15 London Circuit",
+          "type": "string",
+          "description": "the street address as an unstructured string."
+        },
+        "postalCode": {
+          "example": 2601,
+          "type": "string",
+          "description": "The postal code or zip code for this address."
+        },
+        "addressLocality": {
+          "example": "Acton",
+          "type": "string",
+          "description": "The city, suburb or township name."
+        },
+        "addressRegion": {
+          "example": "ACT",
+          "type": "string",
+          "description": "The state or territory or province"
+        },
+        "addressCountry": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "The address country as an ISO-3166 two letter country code.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
+        }
+      },
+      "description": "A postal address."
+    },
+    "Claim": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Claim",
+            "Declaration"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Claim",
+                "minContains": 1
+              }
+            },
+            {
+              "contains": {
+                "const": "Declaration",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://products.example-company.com/09520123456788/declarations/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
+        },
+        "description": {
+          "example": "A standardised disclosure of the battery's greenhouse gas emissions intensity, calculated in accordance with the Global Battery Alliance Battery Passport Greenhouse Gas Rulebook V.2.0.",
+          "type": "string",
+          "description": "A textual description of the declaration being made."
+        },
+        "referenceStandard": {
+          "$ref": "#/$defs/Standard",
+          "description": "The reference to the standard that defines the specification / criteria"
+        },
+        "referenceRegulation": {
+          "$ref": "#/$defs/Regulation",
+          "description": "The reference to the regulation that defines the assessment criteria"
+        },
+        "assessmentCriteria": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Criterion"
+          },
+          "description": "The specification against which the assessment is made."
+        },
+        "assessmentDate": {
+          "example": "2024-03-15",
+          "type": "string",
+          "format": "date",
+          "description": "The date on which this assessment was made. "
+        },
+        "declaredValue": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Metric"
+          },
+          "description": "The list of specific values measured as part of this assessment (eg tensile strength)"
+        },
+        "conformance": {
+          "example": true,
+          "type": "boolean",
+          "description": "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
+        },
+        "conformityTopic": {
+          "type": "string",
+          "enum": [
+            "environment.energy",
+            "environment.emissions",
+            "environment.water",
+            "environment.waste",
+            "environment.deforestation",
+            "environment.biodiversity",
+            "circularity.content",
+            "circularity.design",
+            "social.labour",
+            "social.rights",
+            "social.community",
+            "social.safety",
+            "governance.ethics",
+            "governance.compliance",
+            "governance.transparency"
+          ],
+          "example": "environment.energy",
+          "description": "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+        },
+        "conformityEvidence": {
+          "$ref": "#/$defs/SecureLink",
+          "description": "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital Conformity Credential (DCC)"
+        }
+      },
+      "description": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
+      "required": [
+        "id",
+        "conformance",
+        "conformityTopic"
+      ]
+    },
+    "Standard": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Standard"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Standard",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+        },
+        "name": {
+          "example": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+          "type": "string",
+          "description": "The name of the standard"
+        },
+        "issuingParty": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+              "type": "string",
+              "format": "uri",
+              "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+            },
+            "name": {
+              "example": "Sample Company Pty Ltd.",
+              "type": "string",
+              "description": "The registered name of the party within the identifier scheme."
+            },
+            "registeredId": {
+              "example": 90664869327,
+              "type": "string",
+              "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "description": "The party that issued the standard "
+        },
+        "issueDate": {
+          "example": "2023-12-05",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the standard was issued."
+        }
+      },
+      "description": "A standard (eg ISO 14000) that specifies the criteria for conformance.",
+      "required": [
+        "issuingParty"
+      ]
+    },
+    "Regulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Regulation"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Regulation",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique identifier of this regulation. "
+        },
+        "name": {
+          "example": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+          "type": "string",
+          "description": "The name of the regulation or act."
+        },
+        "jurisdictionCountry": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "The legal jurisdiction (country) under which the regulation is issued.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
+        },
+        "administeredBy": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+              "type": "string",
+              "format": "uri",
+              "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+            },
+            "name": {
+              "example": "Sample Company Pty Ltd.",
+              "type": "string",
+              "description": "The registered name of the party within the identifier scheme."
+            },
+            "registeredId": {
+              "example": 90664869327,
+              "type": "string",
+              "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "description": "the issuing body of the regulation. For example Australian Government Department of Climate Change, Energy, the Environment and Water"
+        },
+        "effectiveDate": {
+          "example": "2024-03-20",
+          "type": "string",
+          "format": "date",
+          "description": "the date at which the regulation came into effect."
+        }
+      },
+      "description": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment.",
+      "required": [
+        "administeredBy"
+      ]
+    },
+    "Criterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Criterion"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Criterion",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the criterion within the scheme, standard  or regulation. For example CO2 emissions calculations for liquid fuel combustion."
+        },
+        "name": {
+          "example": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "type": "string",
+          "description": "A name that describes this criteria."
+        },
+        "description": {
+          "example": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "type": "string",
+          "description": "A full text description of the criterion that clearly specifies how compliance is achieved and measured. "
+        },
+        "conformityTopic": {
+          "type": "string",
+          "enum": [
+            "environment.energy",
+            "environment.emissions",
+            "environment.water",
+            "environment.waste",
+            "environment.deforestation",
+            "environment.biodiversity",
+            "circularity.content",
+            "circularity.design",
+            "social.labour",
+            "social.rights",
+            "social.community",
+            "social.safety",
+            "governance.ethics",
+            "governance.compliance",
+            "governance.transparency"
+          ],
+          "example": "environment.energy",
+          "description": "A gloabl UN/CEFACT standard sustainability toipic code. "
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "active",
+            "deprecated"
+          ],
+          "example": "proposed",
+          "description": "The lifecycle status of this criterion. "
+        },
+        "subCriterion": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Criterion"
+          },
+          "description": "List of criterion that are subordinate to this criterion in the hierarchy."
+        },
+        "thresholdValue": {
+          "$ref": "#/$defs/Metric",
+          "description": "A threshold value that defines the minimum compliance level. "
+        },
+        "performanceLevel": {
+          "example": "\"Category 3 recyclable with 73% recyclability\"",
+          "type": "string",
+          "description": "A performance category code to group criterion in a given hierarchyLevel according to pareformance"
+        },
+        "tags": {
+          "type": "string",
+          "description": "a category code to represent target stakeholder types or commodity types to which this criteron applies. "
+        }
+      },
+      "description": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
+      "required": [
+        "id",
+        "name",
+        "description",
+        "conformityTopic",
+        "status"
+      ]
+    },
+    "Metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Metric"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Metric",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "metricName": {
+          "example": "GHG emissions intensity",
+          "type": "string",
+          "description": "A human readable name for this metric (for example \"Tensile strength\")"
+        },
+        "metricValue": {
+          "$ref": "#/$defs/Measure",
+          "description": "A numeric value and unit of measure for this metric. Could be a measured value or a specified threshold. Eg {\"value\":400, \"unit\":\"MPA\"} as tensile strength of structural steel"
+        },
+        "score": {
+          "example": "BB",
+          "type": "string",
+          "description": "A score or rank associated with this measured metric."
+        },
+        "accuracy": {
+          "example": 0.05,
+          "type": "number",
+          "description": "A percentage represented as a numeric between 0 and 1 indicating the rage of accuracy of the claimed value (eg 0.05 means that the actual value is within 5% of the claimed value.)"
+        }
+      },
+      "description": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of measure) / value (ie the actual numeric value) pairs.  ",
+      "required": [
+        "metricName",
+        "metricValue"
+      ]
+    },
+    "Measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Measure"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Measure",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "value": {
+          "example": 10,
+          "type": "number",
+          "description": "The numeric value of the measure"
+        },
+        "unit": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "Unit of measure drawn from the UNECE Rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
+        }
+      },
+      "description": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).",
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "SecureLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "SecureLink",
+            "Link"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "SecureLink",
+                "minContains": 1
+              }
+            },
+            {
+              "contains": {
+                "const": "Link",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "linkURL": {
+          "example": "https://files.example-certifier.com/1234567.json",
+          "type": "string",
+          "format": "uri",
+          "description": "The URL of the target resource. "
+        },
+        "linkName": {
+          "example": "GBA rule book conformity certificate",
+          "type": "string",
+          "description": "A display name for the target resource "
+        },
+        "linkType": {
+          "example": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "type": "string",
+          "description": "The type of the target resource - drawn from a controlled vocabulary "
+        },
+        "hashDigest": {
+          "example": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+          "type": "string",
+          "description": "The hash of the file."
+        },
+        "hashMethod": {
+          "type": "string",
+          "enum": [
+            "SHA-256",
+            "SHA-1"
+          ],
+          "example": "SHA-256",
+          "description": "The hashing algorithm used to create the target hash.  SHA-265 is the recommended standard"
+        },
+        "encryptionMethod": {
+          "type": "string",
+          "enum": [
+            "none",
+            "AES"
+          ],
+          "example": "none",
+          "description": "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
+        }
+      },
+      "description": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
+    }
+  }
+}

@@ -1,0 +1,1341 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "type": {
+      "type": "array",
+      "readOnly": true,
+      "default": [
+        "DigitalProductPassport",
+        "VerifiableCredential"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "DigitalProductPassport",
+            "minContains": 1
+          }
+        },
+        {
+          "contains": {
+            "const": "VerifiableCredential",
+            "minContains": 1
+          }
+        }
+      ]
+    },
+    "@context": {
+      "example": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/"
+      ],
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. ",
+      "readOnly": true,
+      "prefixItems": [
+        {
+          "const": "https://www.w3.org/ns/credentials/v2",
+          "type": "string"
+        },
+        {
+          "const": "https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/",
+          "type": "string"
+        }
+      ],
+      "default": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/"
+      ],
+      "minItems": 2,
+      "uniqueItems": true
+    },
+    "id": {
+      "example": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+      "type": "string",
+      "format": "uri",
+      "description": "A unique identifier (URI) assigned to the product passport. May be a UUID"
+    },
+    "issuer": {
+      "$ref": "#/$defs/CredentialIssuer",
+      "description": "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+    },
+    "validFrom": {
+      "pattern": "^-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$",
+      "example": "2024-03-15T12:00:00Z",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time from which the credential is valid."
+    },
+    "validUntil": {
+      "pattern": "^-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$",
+      "example": "2034-03-15T12:00:00Z",
+      "type": "string",
+      "format": "date-time",
+      "description": "The expiry date (if applicable) of this verifiable credential."
+    },
+    "credentialSubject": {
+      "$ref": "#/$defs/ProductPassport",
+      "description": "The subject of a digital product passport credential is the identified product."
+    }
+  },
+  "description": "The Product Passport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, provenance information, circularity information and a set of verifiable product conformity & sustainability claims. ",
+  "required": [
+    "@context",
+    "id",
+    "issuer"
+  ],
+  "$defs": {
+    "CredentialIssuer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "CredentialIssuer"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "CredentialIssuer",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "did:web:identifiers.example-company.com:12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The W3C DID of the issuer - should be a did:web or did:webvh"
+        },
+        "name": {
+          "example": "Example Company Pty Ltd",
+          "type": "string",
+          "description": "The name of the issuer person or organisation"
+        },
+        "issuerAlsoKnownAs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+                "type": "string",
+                "format": "uri",
+                "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+              },
+              "name": {
+                "example": "Sample Company Pty Ltd.",
+                "type": "string",
+                "description": "The registered name of the party within the identifier scheme."
+              },
+              "registeredId": {
+                "example": 90664869327,
+                "type": "string",
+                "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ]
+          },
+          "description": "An optional list of other registered identifiers for this credential issuer "
+        }
+      },
+      "description": "The issuer party (person or organisation) of a verifiable credential.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "ProductPassport": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "ProductPassport"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "ProductPassport",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "example:product/1234",
+          "type": "string",
+          "format": "uri",
+          "description": "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
+        },
+        "product": {
+          "$ref": "#/$defs/Product",
+          "description": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+        },
+        "granularityLevel": {
+          "type": "string",
+          "enum": [
+            "item",
+            "batch",
+            "model"
+          ],
+          "example": "item",
+          "description": "Code to indicate the granularity of this digital product passport - item level, batch level or product class level."
+        },
+        "conformityClaim": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "description": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
+        },
+        "emissionsScorecard": {
+          "$ref": "#/$defs/EmissionsPerformance",
+          "description": "An emissions performance scorecard"
+        },
+        "traceabilityInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/TraceabilityPerformance"
+          },
+          "description": "An array of traceability events grouped by value chain process.  Where actual traceability events are unavailable or carry sensitive information, passport publishers may specify the extent to which the traceability information has been independently verified. "
+        },
+        "circularityScorecard": {
+          "$ref": "#/$defs/CircularityPerformance",
+          "description": "A circularity performance scorecard"
+        },
+        "dueDiligenceDeclaration": {
+          "$ref": "#/$defs/Link",
+          "description": "The due diligence declaration that conforms with the regulations of the market into which the product is sold."
+        },
+        "materialsProvenance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Material"
+          },
+          "description": "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch. "
+        }
+      },
+      "description": "The ProductClaim class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details, as well as information about the claims being made about the product. "
+    },
+    "Product": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Product"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Product",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://id.gs1.org/01/09520123456788/21/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. "
+        },
+        "name": {
+          "example": "EV battery 300Ah.",
+          "type": "string",
+          "description": "The registered name of the product within the identifier scheme. "
+        },
+        "registeredId": {
+          "example": "09520123456788.21.12345",
+          "type": "string",
+          "description": "The registration number (alphanumeric) of the entity within the register. Unique within the register."
+        },
+        "idScheme": {
+          "$ref": "#/$defs/IdentifierScheme",
+          "description": "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  "
+        },
+        "batchNumber": {
+          "example": 6789,
+          "type": "string",
+          "description": "Identifier of the specific production batch of the product.  Unique within the product class."
+        },
+        "productImage": {
+          "$ref": "#/$defs/Link",
+          "description": "Reference information (location, type, name) of an image of the product."
+        },
+        "description": {
+          "example": "400Ah 24v LiFePO4 battery",
+          "type": "string",
+          "description": "A textual description providing details about the product."
+        },
+        "characteristics": {
+          "$ref": "#/$defs/Characteristics",
+          "description": "A placeholder for indusutry / product category specific information. "
+        },
+        "productCategory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Classification"
+          },
+          "description": "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
+        },
+        "furtherInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Link"
+          },
+          "description": "A URL pointing to further human readable information about the product."
+        },
+        "producedByParty": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+              "type": "string",
+              "format": "uri",
+              "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+            },
+            "name": {
+              "example": "Sample Company Pty Ltd.",
+              "type": "string",
+              "description": "The registered name of the party within the identifier scheme."
+            },
+            "registeredId": {
+              "example": 90664869327,
+              "type": "string",
+              "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "description": "The Party entity that manufactured the product."
+        },
+        "producedAtFacility": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "https://sample-facility-register.com/1234567",
+              "type": "string",
+              "format": "uri",
+              "description": "The globally unique ID of the facility as URI, ideally as a resolvable URL."
+            },
+            "name": {
+              "example": "Greenacres battery factory",
+              "type": "string",
+              "description": "The registered name of the facility within the identifier scheme.  "
+            },
+            "registeredId": {
+              "example": 1234567,
+              "type": "string",
+              "description": "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "description": "The Facility where the product batch was produced / manufactured."
+        },
+        "productionDate": {
+          "example": "2024-04-25",
+          "type": "string",
+          "format": "date",
+          "description": "The ISO 8601 date on which the product batch or individual serialised item was manufactured."
+        },
+        "countryOfProduction": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "The country in which this item was produced / manufactured.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
+        },
+        "serialNumber": {
+          "example": 12345678,
+          "type": "string",
+          "description": "A number or code representing a specific serialised item of the product. Unique within product class."
+        },
+        "dimensions": {
+          "$ref": "#/$defs/Dimension",
+          "description": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have weight and volume but not length, with, or height.\"weight\":{\"value\":10, \"unit\":\"KGM\"}"
+        }
+      },
+      "description": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "IdentifierScheme": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "IdentifierScheme"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "IdentifierScheme",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://id.gs1.org/01/",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes"
+        },
+        "name": {
+          "example": "Global Trade Identification Number (GTIN)",
+          "type": "string",
+          "description": "The name of the identifier scheme. "
+        }
+      },
+      "description": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or global authority."
+    },
+    "Link": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Link"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Link",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "linkURL": {
+          "example": "https://files.example-certifier.com/1234567.json",
+          "type": "string",
+          "format": "uri",
+          "description": "The URL of the target resource. "
+        },
+        "linkName": {
+          "example": "GBA rule book conformity certificate",
+          "type": "string",
+          "description": "A display name for the target resource "
+        },
+        "linkType": {
+          "example": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "type": "string",
+          "description": "The type of the target resource - drawn from a controlled vocabulary "
+        }
+      },
+      "description": "A structure to provide a URL link plus metadata associated with the link."
+    },
+    "Characteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Characteristics"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Characteristics",
+                "minContains": 1
+              }
+            }
+          ]
+        }
+      },
+      "description": "Extension point for commodity specific characteristics like battery capacity, clothing size, etc."
+    },
+    "Classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Classification"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Classification",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique URI representing the specific classifier value"
+        },
+        "code": {
+          "example": 46410,
+          "type": "string",
+          "description": "classification code within the scheme"
+        },
+        "name": {
+          "example": "Primary cells and primary batteries",
+          "type": "string",
+          "description": "Name of the classification represented by the code"
+        },
+        "schemeID": {
+          "example": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "type": "string",
+          "format": "uri",
+          "description": "Classification scheme ID"
+        },
+        "schemeName": {
+          "example": "UN Central Product Classification (CPC)",
+          "type": "string",
+          "description": "The name of the classification scheme"
+        }
+      },
+      "description": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "Dimension": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Dimension"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Dimension",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "weight": {
+          "$ref": "#/$defs/Measure",
+          "description": "the weight of the product. EG {\"value\":10, \"unit\":\"KGM\"}"
+        },
+        "length": {
+          "$ref": "#/$defs/Measure",
+          "description": "The length of the product or packaging eg {\"value\":840, \"unit\":\"MMT\"}"
+        },
+        "width": {
+          "$ref": "#/$defs/Measure",
+          "description": "The width of the product or packaging. eg {\"value\":150, \"unit\":\"MMT\"}"
+        },
+        "height": {
+          "$ref": "#/$defs/Measure",
+          "description": "The height of the product or packaging. eg {\"value\":220, \"unit\":\"MMT\"}"
+        },
+        "volume": {
+          "$ref": "#/$defs/Measure",
+          "description": "The displacement volume of the product. eg {\"value\":7.5, \"unit\":\"LTR\"}"
+        }
+      },
+      "description": "Overall (length, width, height) dimensions and weight/volume of an item."
+    },
+    "Measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Measure"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Measure",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "value": {
+          "example": 10,
+          "type": "number",
+          "description": "The numeric value of the measure"
+        },
+        "unit": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "Unit of measure drawn from the UNECE Rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
+        }
+      },
+      "description": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).",
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "Claim": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Claim",
+            "Declaration"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Claim",
+                "minContains": 1
+              }
+            },
+            {
+              "contains": {
+                "const": "Declaration",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://products.example-company.com/09520123456788/declarations/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
+        },
+        "description": {
+          "example": "A standardised disclosure of the battery's greenhouse gas emissions intensity, calculated in accordance with the Global Battery Alliance Battery Passport Greenhouse Gas Rulebook V.2.0.",
+          "type": "string",
+          "description": "A textual description of the declaration being made."
+        },
+        "referenceStandard": {
+          "$ref": "#/$defs/Standard",
+          "description": "The reference to the standard that defines the specification / criteria"
+        },
+        "referenceRegulation": {
+          "$ref": "#/$defs/Regulation",
+          "description": "The reference to the regulation that defines the assessment criteria"
+        },
+        "assessmentCriteria": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Criterion"
+          },
+          "description": "The specification against which the assessment is made."
+        },
+        "assessmentDate": {
+          "example": "2024-03-15",
+          "type": "string",
+          "format": "date",
+          "description": "The date on which this assessment was made. "
+        },
+        "declaredValue": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Metric"
+          },
+          "description": "The list of specific values measured as part of this assessment (eg tensile strength)"
+        },
+        "conformance": {
+          "example": true,
+          "type": "boolean",
+          "description": "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
+        },
+        "conformityTopic": {
+          "type": "string",
+          "enum": [
+            "environment.energy",
+            "environment.emissions",
+            "environment.water",
+            "environment.waste",
+            "environment.deforestation",
+            "environment.biodiversity",
+            "circularity.content",
+            "circularity.design",
+            "social.labour",
+            "social.rights",
+            "social.community",
+            "social.safety",
+            "governance.ethics",
+            "governance.compliance",
+            "governance.transparency"
+          ],
+          "example": "environment.energy",
+          "description": "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+        },
+        "conformityEvidence": {
+          "$ref": "#/$defs/SecureLink",
+          "description": "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital Conformity Credential (DCC)"
+        }
+      },
+      "description": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
+      "required": [
+        "id",
+        "conformance",
+        "conformityTopic"
+      ]
+    },
+    "Standard": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Standard"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Standard",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+        },
+        "name": {
+          "example": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+          "type": "string",
+          "description": "The name of the standard"
+        },
+        "issuingParty": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+              "type": "string",
+              "format": "uri",
+              "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+            },
+            "name": {
+              "example": "Sample Company Pty Ltd.",
+              "type": "string",
+              "description": "The registered name of the party within the identifier scheme."
+            },
+            "registeredId": {
+              "example": 90664869327,
+              "type": "string",
+              "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "description": "The party that issued the standard "
+        },
+        "issueDate": {
+          "example": "2023-12-05",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the standard was issued."
+        }
+      },
+      "description": "A standard (eg ISO 14000) that specifies the criteria for conformance.",
+      "required": [
+        "issuingParty"
+      ]
+    },
+    "Regulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Regulation"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Regulation",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique identifier of this regulation. "
+        },
+        "name": {
+          "example": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+          "type": "string",
+          "description": "The name of the regulation or act."
+        },
+        "jurisdictionCountry": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "The legal jurisdiction (country) under which the regulation is issued.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
+        },
+        "administeredBy": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+              "type": "string",
+              "format": "uri",
+              "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+            },
+            "name": {
+              "example": "Sample Company Pty Ltd.",
+              "type": "string",
+              "description": "The registered name of the party within the identifier scheme."
+            },
+            "registeredId": {
+              "example": 90664869327,
+              "type": "string",
+              "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "description": "the issuing body of the regulation. For example Australian Government Department of Climate Change, Energy, the Environment and Water"
+        },
+        "effectiveDate": {
+          "example": "2024-03-20",
+          "type": "string",
+          "format": "date",
+          "description": "the date at which the regulation came into effect."
+        }
+      },
+      "description": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment.",
+      "required": [
+        "administeredBy"
+      ]
+    },
+    "Criterion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Criterion"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Criterion",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "type": "string",
+          "format": "uri",
+          "description": "A unique identifier for the criterion within the scheme, standard  or regulation. For example CO2 emissions calculations for liquid fuel combustion."
+        },
+        "name": {
+          "example": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "type": "string",
+          "description": "A name that describes this criteria."
+        },
+        "description": {
+          "example": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "type": "string",
+          "description": "A full text description of the criterion that clearly specifies how compliance is achieved and measured. "
+        },
+        "conformityTopic": {
+          "type": "string",
+          "enum": [
+            "environment.energy",
+            "environment.emissions",
+            "environment.water",
+            "environment.waste",
+            "environment.deforestation",
+            "environment.biodiversity",
+            "circularity.content",
+            "circularity.design",
+            "social.labour",
+            "social.rights",
+            "social.community",
+            "social.safety",
+            "governance.ethics",
+            "governance.compliance",
+            "governance.transparency"
+          ],
+          "example": "environment.energy",
+          "description": "A gloabl UN/CEFACT standard sustainability toipic code. "
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "active",
+            "deprecated"
+          ],
+          "example": "proposed",
+          "description": "The lifecycle status of this criterion. "
+        },
+        "subCriterion": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Criterion"
+          },
+          "description": "List of criterion that are subordinate to this criterion in the hierarchy."
+        },
+        "thresholdValue": {
+          "$ref": "#/$defs/Metric",
+          "description": "A threshold value that defines the minimum compliance level. "
+        },
+        "performanceLevel": {
+          "example": "\"Category 3 recyclable with 73% recyclability\"",
+          "type": "string",
+          "description": "A performance category code to group criterion in a given hierarchyLevel according to pareformance"
+        },
+        "tags": {
+          "type": "string",
+          "description": "a category code to represent target stakeholder types or commodity types to which this criteron applies. "
+        }
+      },
+      "description": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
+      "required": [
+        "id",
+        "name",
+        "description",
+        "conformityTopic",
+        "status"
+      ]
+    },
+    "Metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Metric"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Metric",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "metricName": {
+          "example": "GHG emissions intensity",
+          "type": "string",
+          "description": "A human readable name for this metric (for example \"Tensile strength\")"
+        },
+        "metricValue": {
+          "$ref": "#/$defs/Measure",
+          "description": "A numeric value and unit of measure for this metric. Could be a measured value or a specified threshold. Eg {\"value\":400, \"unit\":\"MPA\"} as tensile strength of structural steel"
+        },
+        "score": {
+          "example": "BB",
+          "type": "string",
+          "description": "A score or rank associated with this measured metric."
+        },
+        "accuracy": {
+          "example": 0.05,
+          "type": "number",
+          "description": "A percentage represented as a numeric between 0 and 1 indicating the rage of accuracy of the claimed value (eg 0.05 means that the actual value is within 5% of the claimed value.)"
+        }
+      },
+      "description": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of measure) / value (ie the actual numeric value) pairs.  ",
+      "required": [
+        "metricName",
+        "metricValue"
+      ]
+    },
+    "SecureLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "SecureLink",
+            "Link"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "SecureLink",
+                "minContains": 1
+              }
+            },
+            {
+              "contains": {
+                "const": "Link",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "linkURL": {
+          "example": "https://files.example-certifier.com/1234567.json",
+          "type": "string",
+          "format": "uri",
+          "description": "The URL of the target resource. "
+        },
+        "linkName": {
+          "example": "GBA rule book conformity certificate",
+          "type": "string",
+          "description": "A display name for the target resource "
+        },
+        "linkType": {
+          "example": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "type": "string",
+          "description": "The type of the target resource - drawn from a controlled vocabulary "
+        },
+        "hashDigest": {
+          "example": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+          "type": "string",
+          "description": "The hash of the file."
+        },
+        "hashMethod": {
+          "type": "string",
+          "enum": [
+            "SHA-256",
+            "SHA-1"
+          ],
+          "example": "SHA-256",
+          "description": "The hashing algorithm used to create the target hash.  SHA-265 is the recommended standard"
+        },
+        "encryptionMethod": {
+          "type": "string",
+          "enum": [
+            "none",
+            "AES"
+          ],
+          "example": "none",
+          "description": "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
+        }
+      },
+      "description": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
+    },
+    "EmissionsPerformance": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "EmissionsPerformance"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "EmissionsPerformance",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "carbonFootprint": {
+          "example": 1.8,
+          "type": "number",
+          "format": "float",
+          "description": "The carbon footprint of the product in KgCO2e per declared unit."
+        },
+        "declaredUnit": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "The unit of product (EA, KGM, LTR, etc) that is the basis for carbon footprint.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
+        },
+        "operationalScope": {
+          "type": "string",
+          "enum": [
+            "None",
+            "CradleToGate",
+            "CradleToGrave"
+          ],
+          "example": "None",
+          "description": "The operational scope of the emissions performance. Only scope 1 & 2, or including upstream scope 3 (cradle to gate) or upstream and downstream scope 3 (cradle to grave)."
+        },
+        "primarySourcedRatio": {
+          "example": 0.3,
+          "type": "number",
+          "format": "float",
+          "description": "The ratio of emissions data from primary sources (ie from supplier / product specific information rather than secondary / industry averages)."
+        },
+        "reportingStandard": {
+          "$ref": "#/$defs/Standard",
+          "description": "The reporting standard (eg GHG Protocol, IFRS S2, ESRS, etc) against which this product emissions performance is assessed."
+        }
+      },
+      "description": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity.",
+      "required": [
+        "carbonFootprint",
+        "declaredUnit",
+        "operationalScope",
+        "primarySourcedRatio"
+      ]
+    },
+    "TraceabilityPerformance": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "TraceabilityPerformance"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "TraceabilityPerformance",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "valueChainProcess": {
+          "example": "Spinning",
+          "type": "string",
+          "description": "Human readable name for the industry specific value chain process representing this traceability data set."
+        },
+        "verifiedRatio": {
+          "example": 0.5,
+          "type": "number",
+          "description": "The proportion (0 to 1) of materials in this value chain process that have been  traced using verifiable traceability event."
+        },
+        "traceabilityEvent": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SecureLink"
+          },
+          "description": "A list of secure links to digital traceability events that support this traceability performance statement. May be encrypted for confidentiality purposes. "
+        }
+      },
+      "description": "An array of secure links to TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. Events are grouped by value chain process (eg \"Weaving\" in textiles supply chain)."
+    },
+    "CircularityPerformance": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "CircularityPerformance"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "CircularityPerformance",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "recyclingInformation": {
+          "$ref": "#/$defs/Link",
+          "description": "A URI pointing to recycling information for the product."
+        },
+        "repairInformation": {
+          "$ref": "#/$defs/Link",
+          "description": "A URI pointing to repair instructions for this product."
+        },
+        "recyclableContent": {
+          "example": 0.5,
+          "type": "number",
+          "format": "float",
+          "description": "The fraction of the this product (my mass) that has been designed to be recyclable / re-usable. This will be be the total fraction that can avoid waste / landfill."
+        },
+        "recycledContent": {
+          "example": 0.3,
+          "type": "number",
+          "format": "float",
+          "description": "The fraction (by mass) of recycled / repurposed, repaired content in this product.  This will be the total virgin content fraction."
+        },
+        "utilityFactor": {
+          "example": 1.2,
+          "type": "number",
+          "format": "float",
+          "description": "An indicator of durability defined as the lifetime (typically measures as usage cycles) for this product divided by the industry average. For example a battery with a 10,000 cycle lifetime where industry average is 5,000 cycles will have a durability factor of 2. If unknown set to 1 or omit.  "
+        },
+        "materialCircularityIndicator": {
+          "example": 0.67,
+          "type": "number",
+          "format": "float",
+          "description": "The overall circularity performance indicator for this product. Calculated as 1 - (V+W)/2D where - V = Virgin material proportion by mass (will be 1- recycled content) - W = Waste leakage proportion by mass (will be 1 - recyclableContent)  - D = Utility factor (set to 1 if unknown).  "
+        }
+      },
+      "description": "High level circularity information about this product.  Note that this does not substitute for detailed product circularity data sheet (PCDS) criteria which would be represented as a self-issued UNTP Digital Conformity Credential as a set of assessments against individual ISO PCDS criteria."
+    },
+    "Material": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Material"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Material",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "name": {
+          "example": "Lithium Spodumene",
+          "type": "string",
+          "description": "Name of this material (eg \"Egyptian Cotton\")"
+        },
+        "originCountry": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId#",
+          "description": "A ISO 3166-1 code representing the country of origin of the component or ingredient.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId#\n    "
+        },
+        "materialType": {
+          "$ref": "#/$defs/Classification",
+          "description": "The type of this material - as a value drawn from a controlled vocabulary eg from UN Framework Classification for Resources (UNFC)."
+        },
+        "massFraction": {
+          "example": 0.2,
+          "type": "number",
+          "description": "The mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 1."
+        },
+        "mass": {
+          "$ref": "#/$defs/Measure",
+          "description": "The mass of the material component."
+        },
+        "recycledMassFraction": {
+          "example": 0.5,
+          "type": "number",
+          "description": "Mass fraction of this material that is recycled (eg 50% recycled Lithium)"
+        },
+        "hazardous": {
+          "type": "boolean",
+          "description": "Indicates whether this material is hazardous. If true then the materialSafetyInformation property must be present"
+        },
+        "symbol": {
+          "type": "string",
+          "format": "binary",
+          "description": "Based 64 encoded binary used to represent a visual symbol for a given material. "
+        },
+        "materialSafetyInformation": {
+          "$ref": "#/$defs/Link",
+          "description": "Reference to further information about safe handling of this hazardous material (for example a link to a material safety data sheet)"
+        }
+      },
+      "description": "The material class encapsulates details about the origin or source of raw materials in a product, including the country of origin and the mass fraction.",
+      "required": [
+        "name"
+      ]
+    }
+  }
+}

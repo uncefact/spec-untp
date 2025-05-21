@@ -1,0 +1,331 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "type": {
+      "type": "array",
+      "readOnly": true,
+      "default": [
+        "TransactionEvent",
+        "Event"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "TransactionEvent",
+            "minContains": 1
+          }
+        },
+        {
+          "contains": {
+            "const": "Event",
+            "minContains": 1
+          }
+        }
+      ]
+    },
+    "id": {
+      "readOnly": true,
+      "example": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
+      "type": "string",
+      "format": "uri",
+      "description": "The unique identifier of this event - SHOULD be a UUID"
+    },
+    "processType": {
+      "example": "Weaving",
+      "type": "string",
+      "description": "A human readable name for industry specific process represented by this event."
+    },
+    "eventTime": {
+      "example": "2024-09-01T12:00:00Z",
+      "type": "string",
+      "format": "date-time",
+      "description": "The ISO-8601 date time when the event occurred."
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "observe",
+        "add",
+        "delete"
+      ],
+      "example": "observe",
+      "description": "Code describing how an event relates to the life-cycle of the entity impacted by the event."
+    },
+    "disposition": {
+      "type": "string",
+      "x-external-enumeration": "https://ref.gs1.org/cbv/Disp-",
+      "description": "Disposition code describing the state of the item after the event. \n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://ref.gs1.org/cbv/Disp-\n    "
+    },
+    "bizStep": {
+      "type": "string",
+      "x-external-enumeration": "https://ref.gs1.org/cbv/BizStep-",
+      "description": "A business step code drawn from a controlled vocabulary.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://ref.gs1.org/cbv/BizStep-\n    "
+    },
+    "bizLocation": {
+      "example": "https://id.gs1.org/414/9520123456788",
+      "type": "string",
+      "format": "uri",
+      "description": "A Business Location is a uniquely identified and discretely recorded geospatial location that is meant to designate the specific place where an object is assumed to be following an event until it is reported to be at a different Business Location by a subsequent event. The bizLocation must be a resolvable URI that links to facility information and geo-location data."
+    },
+    "sensorElementList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/SensorElement"
+      },
+      "description": "An array (one for each sensor) of sensor device data sets associated with the event. "
+    },
+    "sourceParty": {
+      "type": "string",
+      "description": "The source party for this supply chain transaction - typically the seller party\nThis field is the identifier of Party (id). It's definition is:\n\nThe globally unique ID of the party as a URI, ideally as a resolvable ID. "
+    },
+    "destinationParty": {
+      "type": "string",
+      "description": "The destination party for this supply chain transaction - typically the buyer party.\nThis field is the identifier of Party (id). It's definition is:\n\nThe globally unique ID of the party as a URI, ideally as a resolvable ID. "
+    },
+    "bizTransaction": {
+      "type": "string",
+      "x-external-enumeration": "https://ref.gs1.org/cbv/BTT-",
+      "description": "The document type representing the trade transaction drawn from the business transaction type vocabulary.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://ref.gs1.org/cbv/BTT-\n    "
+    },
+    "epcList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Item"
+      },
+      "description": "The list of uniquely identified trade items included in this supply chain transaction."
+    },
+    "quantityList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/QuantityElement"
+      },
+      "description": "List of quantified product classes that are included in this transaction.  Used when the trade items do not have unique identifiers (eg 100 reels of yarn)"
+    }
+  },
+  "description": "Transaction represents an event in which one or more objects become associated or disassociated with one or more identified business transactions - such as the purchase / shipment of goods between buyer and seller.",
+  "required": [
+    "sourceParty",
+    "destinationParty"
+  ],
+  "$defs": {
+    "SensorElement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "SensorElement"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "SensorElement",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "sensorMetadata": {
+          "$ref": "#/$defs/Sensor",
+          "description": "Data that describes the physical sensor that recorded the sensor data set."
+        },
+        "sensorReport": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SensorData"
+          },
+          "description": "A list of sensor readings from the given sensor relevant to the traceability event context."
+        },
+        "sensorIntegrityProof": {
+          "type": "string",
+          "format": "uri",
+          "description": "An optional reference to a verifiable credential signed by the sensor device or device manufacturer that contains the digitally signed raw data associated with this sensor report."
+        }
+      },
+      "description": "A SensorElement is used to carry data related to an event that is captured one sensor such as an IoT device. Include one sensor property and an array of sensor data values."
+    },
+    "Sensor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Sensor"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Sensor",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "device": {
+          "$ref": "#/$defs/Item",
+          "description": "The device Identifier for the sensor as a URI (typically an EPC)"
+        },
+        "dataProcessingMethod": {
+          "example": "https://standards.org/sensorMethod#1234",
+          "type": "string",
+          "format": "uri",
+          "description": "The data processing method used by the sensor - should reference a documented standard criteria as a URI"
+        }
+      },
+      "description": "A physical sensor that records a sensor data set."
+    },
+    "Item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "Item"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Item",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://id.gs1.org/01/09520123456788/21/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. "
+        },
+        "name": {
+          "example": "EV battery 300Ah.",
+          "type": "string",
+          "description": "The name of the product class to which the product item belongs.  "
+        }
+      },
+      "description": "A specific serialised trade item which is an instance of a more generic product. ",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "SensorData": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "SensorData"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "SensorData",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "time": {
+          "example": "2024-07-24T12:00:00Z",
+          "type": "string",
+          "format": "date-time",
+          "description": "the timestamp at which the sensor reading was made."
+        },
+        "sensorType": {
+          "example": "https://samplesensors.com/model1234",
+          "type": "string",
+          "format": "uri",
+          "description": "the measurement type of the sensor reading, as a URI reference to a measurement method specification."
+        },
+        "value": {
+          "example": 25,
+          "type": "number",
+          "description": "the sensor reading"
+        },
+        "uom": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "the unit of measure for the sensor reading, drawn from UNECE rec20 code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
+        }
+      },
+      "description": "A data point read by a sensor."
+    },
+    "QuantityElement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "QuantityElement"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "QuantityElement",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "productId": {
+          "example": "https://id.gs1.org/01/09520123456788/21/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "THe identifier of a product class (as opposed to a product instance) such as a GTIN code for a manufactured product."
+        },
+        "productName": {
+          "example": "EV battery 300Ah.",
+          "type": "string",
+          "description": "The registered name of the product within the identifier scheme. "
+        },
+        "quantity": {
+          "example": 20,
+          "type": "number",
+          "description": "The numeric quantity of the product class (eg 100 kg of cotton)"
+        },
+        "uom": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "The unit of measure for the quantity value (eg Kg or meters etc) using the UNECE Rec 20 unit of measure codelist.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
+        }
+      },
+      "description": "The quantity element is used to define the quantity (eg 100 kg of a product class. Used when serialised items are not applicable.",
+      "required": [
+        "productId",
+        "productName",
+        "quantity"
+      ]
+    }
+  }
+}
