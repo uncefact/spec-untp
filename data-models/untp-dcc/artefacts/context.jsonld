@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/working/",
+    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/0/",
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
