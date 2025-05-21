@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/working/",
+    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/0/",
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
@@ -124,7 +124,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
           }
         },
         "disposition": {
@@ -579,7 +579,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
           }
         },
         "disposition": {
@@ -737,7 +737,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
           }
         },
         "disposition": {
@@ -864,7 +864,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
           }
         },
         "disposition": {
@@ -995,7 +995,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
           }
         },
         "disposition": {
@@ -1138,7 +1138,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
           }
         },
         "disposition": {
