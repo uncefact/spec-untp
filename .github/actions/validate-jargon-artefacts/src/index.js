@@ -23,6 +23,7 @@ async function validateJargonArtefacts(jargonArtefact) {
     const { jsonSchemas: rawArtefactData = [], jsonldContext } = jargonArtefact.artefacts;
     const validationResult = {};
     core.info(`Json Schemas: ${JSON.stringify(rawArtefactData)}`);
+
     if (rawArtefactData && rawArtefactData.length) {
       core.info('Validating sample credentials against schemas...');
       validationResult.validateCredentialsResult = await validateCredentialsSchemas(rawArtefactData);
@@ -30,8 +31,12 @@ async function validateJargonArtefacts(jargonArtefact) {
 
       // Validate JSON-LD context in credentials
       core.info('Validating context in credentials...');
-      validationResult.validateContextInCredentialResult = await validateContextInCredential(rawArtefactData);
+      validationResult.validateContextInCredentialResult = await validateContextInCredential(rawArtefactData, jsonldContext);
       core.info('Context in credentials validation complete.');
+    } else {
+      core.warning(
+        'No JSON schemas or sample instances in the Jargon payload. Skipping schema validation and JSON-LD expansion for sample instances.'
+      );
     }
 
     // Validate JSON-LD context
@@ -46,7 +51,14 @@ async function validateJargonArtefacts(jargonArtefact) {
     const resultOutput = getValidationResultOutput(validationResult);
 
     core.setOutput('validation-result', resultOutput);
-    core.info('\nJargon artefacts validation complete.');
+
+    if (resultOutput === 'Failed') {
+      core.setFailed(
+        'One or more Jargon artefact validations reported a failure. Please check the logs for details.'
+      );
+    } else {
+      core.info('\nJargon artefacts validation: Passed.');
+    }
   } catch (error) {
     core.setFailed(`Error validating Jargon artefacts: ${error.message}`);
   }

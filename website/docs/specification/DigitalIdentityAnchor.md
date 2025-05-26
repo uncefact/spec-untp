@@ -28,6 +28,16 @@ Latest development versions are used to reflect lessons learned from pilots but 
 * [JSON Schema (credentialSubject only)](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.1/artefacts/jsonSchemas/RegisteredIdentity.json?class=RegisteredIdentity)
 * [Sample Instance](https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.1.json)
 
+### Ontology
+The ontology for the Digital Identity Anchor is available in JSON-LD format and can be retrieved via content negotiation from:
+
+[https://test.uncefact.org/vocabulary/untp/dia/0/](https://test.uncefact.org/vocabulary/untp/dia/0/)
+
+  Example:
+  ```bash
+  curl https://test.uncefact.org/vocabulary/untp/dia/0/ -H 'Accept: application/ld+json'
+  ```
+
 ### Sample Credential 
 
 |URL|QR|Description|
@@ -54,7 +64,7 @@ The outcome is that the subject of the DIA (eg the VAT registered business) can 
 
 * A verifier (eg buyer of an identified product) discovers a DPP for the product and verifies the credential - confirming that the DPP has not been tampered-with, is genuinely issued by party identified by the issuer DID.
 * The DID is resolvable to the DID document which contains a link to the DIA in the DID document `service` end point.
-* Verify the DIA credential and confirm that the DPP issuer DID is contained in the `verifiedDIDList` of the DIA.  
+* Verify the DIA credential and confirm that the DPP issuer DID is the `credentialSubject.id` of the DIA.
 * Confirm that the issuer `did:web` of the DIA (the authoritative register) is on the white list of trust anchors.  
 
 The DIA can also be used for similar trust anchoring purposes such as:

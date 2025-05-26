@@ -27,6 +27,16 @@ Version 0.5.0 release artifacts can be used for pilot testing.
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
+### Ontology
+The ontology for the Digital Product Passport is available in JSON-LD format and can be retrieved via content negotiation from:
+
+[https://test.uncefact.org/vocabulary/untp/dpp/0/](https://test.uncefact.org/vocabulary/untp/dpp/0/)
+
+  Example:
+  ```bash
+  curl https://test.uncefact.org/vocabulary/untp/dpp/0/ -H 'Accept: application/ld+json'
+  ```
+
 ### Version History
 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dpp/0/versions)** page.
@@ -329,6 +339,79 @@ Traceability Information is an array of TraceabilityPerformance objects which ar
 
 ### Conformity Information
 
-Conformity information is included in the DPP as an array of UNTP `Declaration` structures. The same structure is re-used for third party assessments in UNTP Digital Conformity Credentials (DCC).  Please refer to the [Sustainability Vocabulary Page](SustainabilityVocabularyCatalog.md) for further information and examples.
+A key idea in UNTP is that performance **claims** made in product passports and facility records SHOULD reference well defined criteria from a recognised scheme, standard, or regulation. Also that performance **assessments** made in conformity credentials MUST also reference well defined criteria. In this way, claims and assessments have unambiguous meaning as defined by the relevant scheme, standard or regulation. The `conformityClaim` structure of a DPP is described below.
+
+* The `id` which must be globally unique and may be either a UUID or a URI in the DPP issuer's domain.
+* The `referenceStandard` against which the conformity claims are made. This is a UNTP `Standard` object
+* The `referenceRegulation` against which the conformity claims are made. In most cases a conformity claim will reference either a `Standard` or a `Regulation` but in some circumstances both will apply.
+* The `assessmentCritieria` is an array of UNTP `Criterion` objects that define the specific rule(s) within the standard or regulation against which this conformity claim is made.
+* The `thresholdValues` are an array of UNTP `Metric` objects that define the minimum or maximum values that are required to be met.  For example, a construction steel standard might specify 300 MPa as the minimum tensile strength threshold.
+* The `declaredValue` property defines the actual specified values for the DPP product. For example, a minimum tensile strength of 350 Mpa within a 5% confidence range. In many cases this may be sensitive data and can be replaced by a simple `compliance` assertion.
+* The `conformance` boolean is a declaration by the product manufacturer that the product meets the conformity criteria specified.
+* The `conformityTopic` is a high level UNTP classification scheme for safety and environmental and social sustainability. 
+* `benchmarkValue` (eg 10 Tons per Ton carbon intensity) is used in cases where a `declaredValue`(eg 5 Tons per Ton) is usefully compared to an industry average performance (benchmark) value.  When a `benchmarkValue` is provided, a `benchmarkReference` link MUST also be provided and should provide a link to an authoritative reference to support the benchmark value.
+* `conformityEvidence` is a `Link` to a second or third party attestation such as a UNTP [Digital Conformity Credential](ConformityCredential.md) that provides independent verification of the claims made. Note that this property may also link to a PDF or a website or some other format of conformity evidence.
+
+
+```json
+ "conformityClaim": [
+      {
+        "type": [
+          "Claim","Declaration"
+        ],
+        "id": "https://files.example-company.com/declarations/90664869327/",
+        "referenceStandard": {
+          "type": [
+            "Standard"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+          "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+          "issueDate": 2023
+        },
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://www.globalbattery.org/GHGRulebook/2.0/GHG_Calculation",
+            "name": "GHG_Calculation",
+            "thresholdValue": [
+              {
+                "metricName": "Industry Average GHG emissions intensity",
+                "metricValue": {
+                  "value": 1.8,
+                  "unit": "NIL"
+                },
+              }
+            ]
+          }
+        ],
+        "declaredValue": [
+          {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 1.5,
+              "unit": "NIL"
+            },
+            "accuracy": 0.05
+          }
+        ],
+        "conformance": true,
+        "conformityTopic": "environment.energy",
+        "conformityEvidence": {
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "6239119",
+          "hashMethod": "SHA-256",
+          "encryptionMethod": "AES"
+        }
+      }
+    ],
+```
+
+### Referencing Conformity Criterion
+
+Conformity **claims** in DPPs SHOULD unambiguously reference a **criterion** in a relevant scheme, standard, or regulation using a URI. For example the`"id": "https://www.globalbattery.org/GHGRulebook/2.0/GHG_Calculation"` property in the example above is an example of a URI that references which rulebook an emissions intensity claim is made. Issuers of Digital product Passports (and Facility Records and Conformity Credentials) therefore need a way to find the the right criterion URI to put in their claims and assessments. This is the purpose of the UNTP [Sustainability Vocabulary Catalog](SustainabilityVocabularyCatalog.md). 
 
 
