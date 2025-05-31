@@ -31,7 +31,7 @@
     "@context": {
       "example": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.0/"
+        "https://test.uncefact.org/vocabulary/untp/dfr/working/"
       ],
       "type": "array",
       "items": {
@@ -45,13 +45,13 @@
           "type": "string"
         },
         {
-          "const": "https://test.uncefact.org/vocabulary/untp/dfr/0.6.0/",
+          "const": "https://test.uncefact.org/vocabulary/untp/dfr/working/",
           "type": "string"
         }
       ],
       "default": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.0/"
+        "https://test.uncefact.org/vocabulary/untp/dfr/working/"
       ],
       "minItems": 2,
       "uniqueItems": true
@@ -184,7 +184,6 @@
           ]
         },
         "id": {
-          "example": "example:product/1234",
           "type": "string",
           "format": "uri",
           "description": "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"

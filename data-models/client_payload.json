@@ -1,0 +1,59 @@
+{
+  "action": {
+    "name": "onSnapshot",
+    "type": "snapshot"
+  },
+  "artefacts": {
+    "dataModel": {
+      "fileName": "unece_DigitalFacilityRecord_dataModel.svg",
+      "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/diagram/render.svg?light=true"
+    },
+    "jsonSchemas": [
+      {
+        "fileName": "unece_DigitalFacilityRecord_DigitalFacilityRecord_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonSchemas/DigitalFacilityRecord.json?class=DigitalFacilityRecord"
+      },
+      {
+        "fileName": "unece_DigitalFacilityRecord_DigitalFacilityRecord_instance_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonSchemas/DigitalFacilityRecord_instance.json?class=DigitalFacilityRecord_instance"
+      },
+      {
+        "fileName": "unece_DigitalFacilityRecord_FacilityRecord_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonSchemas/FacilityRecord.json?class=FacilityRecord"
+      },
+      {
+        "fileName": "unece_DigitalFacilityRecord_FacilityRecord_instance_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonSchemas/FacilityRecord_instance.json?class=FacilityRecord_instance"
+      }
+    ],
+    "jsonldContext": {
+      "fileName": "unece_DigitalFacilityRecord_jsonldContext.json",
+      "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonldContexts/DigitalFacilityRecord.jsonld?class=DigitalFacilityRecord"
+    },
+    "jsonldVocab": {
+      "fileName": "unece_DigitalFacilityRecord_jsonld.json",
+      "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonld/render.jsonld"
+    },
+    "readme": {
+      "fileName": "unece_DigitalFacilityRecord_readme.md",
+      "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/readme/render.md"
+    }
+  },
+  "domain": {
+    "account": "unece",
+    "name": "DigitalFacilityRecord",
+    "url": "https://jargon.sh/user/unece/DigitalFacilityRecord"
+  },
+  "settings": {
+    "jsonld": {
+      "generate": true,
+      "prefix": "untp-dfr",
+      "uri": "https://test.uncefact.org/vocabulary/untp/dfr/{{version}}/"
+    }
+  },
+  "snapshot": {
+    "description": "Add `[json.sampleOmit]` to FacilityRecord.id",
+    "index": 0,
+    "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/editor"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dfr": "https://test.uncefact.org/vocabulary/untp/dfr/0/",
+    "untp-dfr": "https://test.uncefact.org/vocabulary/untp/dfr/working/",
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
@@ -182,7 +182,7 @@
                     "@protected": true,
                     "data": {
                       "@id": "geojson:data",
-                      "@type": "xsd:decimal"
+                      "@type": "xsd:double"
                     }
                   }
                 }
@@ -209,7 +209,7 @@
                         "@protected": true,
                         "data": {
                           "@id": "geojson:data",
-                          "@type": "xsd:decimal"
+                          "@type": "xsd:double"
                         }
                       }
                     }
@@ -353,7 +353,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -371,7 +371,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -422,7 +422,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -440,7 +440,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -549,7 +549,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -567,7 +567,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
