@@ -1,0 +1,333 @@
+{
+  "@context": {
+    "untp-svc": "https://test.uncefact.org/vocabulary/untp/svc/working/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/"
+  },
+  "@graph": [
+    {
+      "@id": "untp-svc:ConformitySchemeVocabulary",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A conformity scheme as a structured hierarchy of conformity critera.",
+      "rdfs:label": "ConformitySchemeVocabulary",
+      "rdfs:subClassOf": "untp-core:ConformityScheme"
+    },
+    {
+      "@id": "untp-svc:LevelCode",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A list of performance level codes that may be assigned to criterion. Conformity at a higher level requires conformity agaisnt all criteria at lower levels.",
+      "rdfs:label": "LevelCode"
+    },
+    {
+      "@id": "untp-svc:TagCode",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A code list of target groups () that are the object of confomance for this scheme.",
+      "rdfs:label": "TagCode"
+    },
+    {
+      "@id": "untp-svc:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier of this scheme as a URI. Typically of the form ownerDomain.schemeName."
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-svc:version",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "Version of this scheme folling SemVer best practive (major.minor.patch). "
+      ],
+      "rdfs:label": "version"
+    },
+    {
+      "@id": "untp-svc:validFrom",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "The data from which this scheme version is valid."
+      ],
+      "rdfs:label": "validFrom"
+    },
+    {
+      "@id": "untp-svc:owner",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "The party that is the owner / maintainer of this conformity scheme."
+      ],
+      "rdfs:label": "owner"
+    },
+    {
+      "@id": "untp-svc:trustMark",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "The trust mark or seal used by this conformity scheme."
+      ],
+      "rdfs:label": "trustMark"
+    },
+    {
+      "@id": "untp-svc:@context",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "The context for the Sustainability Vocabulary."
+      ],
+      "rdfs:label": "@context"
+    },
+    {
+      "@id": "untp-svc:name",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:name"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        },
+        {
+          "@id": "untp-svc:LevelCode"
+        },
+        {
+          "@id": "untp-svc:TagCode"
+        }
+      ],
+      "rdfs:comment": [
+        "The name of this conformity scheme",
+        "The name of the performance level (eg \"B\")",
+        "Tag name used to classify criterion"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-svc:description",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:description"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        },
+        {
+          "@id": "untp-svc:LevelCode"
+        },
+        {
+          "@id": "untp-svc:TagCode"
+        }
+      ],
+      "rdfs:comment": [
+        "The description of this conformity scheme",
+        "A description of this conformity performance level within the scheme.",
+        "A full text description of the criterion that clearly specifies how compliance is achieved and measured. "
+      ],
+      "rdfs:label": "description"
+    },
+    {
+      "@id": "untp-svc:conformityCriterion",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Criterion"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "A list of criterion defined by this scheme."
+      ],
+      "rdfs:label": "conformityCriterion"
+    },
+    {
+      "@id": "untp-svc:regulatoryAlignment",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Regulation"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "Regulations to which this conformity scheme is aligned. "
+      ],
+      "rdfs:label": "regulatoryAlignment"
+    },
+    {
+      "@id": "untp-svc:industryScope",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "A classification scheme and code / name representing a category value for a product, entity, or facility."
+      ],
+      "rdfs:label": "industryScope"
+    },
+    {
+      "@id": "untp-svc:geographicScope",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "A classification scheme and code / name representing a category value for a product, entity, or facility."
+      ],
+      "rdfs:label": "geographicScope"
+    },
+    {
+      "@id": "untp-svc:performanceLevelCodes",
+      "schema:rangeIncludes": {
+        "@id": "untp-svc:LevelCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of performance levels (eg C, B, A, AA) defined by the scheme and used to assign criterion to the relevant performance level."
+      ],
+      "rdfs:label": "performanceLevelCodes"
+    },
+    {
+      "@id": "untp-svc:tagCodes",
+      "schema:rangeIncludes": {
+        "@id": "untp-svc:TagCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:ConformitySchemeVocabulary"
+        }
+      ],
+      "rdfs:comment": [
+        "A codelist of tags defined by the scheme and used to tag criterion for filtering and sorting."
+      ],
+      "rdfs:label": "tagCodes"
+    },
+    {
+      "@id": "untp-svc:rank",
+      "schema:rangeIncludes": {
+        "@id": "xsd:integer"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-svc:LevelCode"
+        }
+      ],
+      "rdfs:comment": [
+        "The rank of the conformance level where a higher number indicates a higher performance. "
+      ],
+      "rdfs:label": "rank"
+    }
+  ]
+}
