@@ -1,0 +1,26 @@
+name: Validate Jargon Artefacts
+
+on:
+  pull_request:
+    branches:
+      - 'data-models-staging'
+    paths:
+      - 'data-models/**'
+  workflow_dispatch:
+
+jobs:
+  validate-jargon-artefacts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read file and set env variable
+        run: |
+          echo "CLIENT_PAYLOAD<<EOF" >> $GITHUB_ENV
+          cat ./data-models/client_payload.json >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Run Validate Jargon Artefacts
+        uses: ./.github/actions/validate-jargon-artefacts
+        with:
+          jargon-webhook-payload: ${{ env.CLIENT_PAYLOAD }}
