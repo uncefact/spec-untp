@@ -22,7 +22,6 @@
       ]
     },
     "id": {
-      "example": "example:product/1234",
       "type": "string",
       "format": "uri",
       "description": "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"

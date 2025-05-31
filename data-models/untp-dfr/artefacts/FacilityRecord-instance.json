@@ -2,7 +2,6 @@
   "type": [
     "FacilityRecord"
   ],
-  "id": "example:product/1234",
   "facility": {
     "type": [
       "Facility"
