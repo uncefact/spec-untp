@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'data-models-staging'
+      - 'cd/data-models-snapshot'
     paths:
       - 'data-models/**'
 
