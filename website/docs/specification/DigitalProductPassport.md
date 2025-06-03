@@ -27,6 +27,16 @@ Version 0.5.0 release artifacts can be used for pilot testing.
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
+### Ontology
+The ontology for the Digital Product Passport is available in JSON-LD format and can be retrieved via content negotiation from:
+
+[https://test.uncefact.org/vocabulary/untp/dpp/0/](https://test.uncefact.org/vocabulary/untp/dpp/0/)
+
+  Example:
+  ```bash
+  curl https://test.uncefact.org/vocabulary/untp/dpp/0/ -H 'Accept: application/ld+json'
+  ```
+
 ### Version History
 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dpp/0/versions)** page.
@@ -336,7 +346,7 @@ A key idea in UNTP is that performance **claims** made in product passports and 
 * The `referenceRegulation` against which the conformity claims are made. In most cases a conformity claim will reference either a `Standard` or a `Regulation` but in some circumstances both will apply.
 * The `assessmentCritieria` is an array of UNTP `Criterion` objects that define the specific rule(s) within the standard or regulation against which this conformity claim is made.
 * The `thresholdValues` are an array of UNTP `Metric` objects that define the minimum or maximum values that are required to be met.  For example, a construction steel standard might specify 300 MPa as the minimum tensile strength threshold.
-* The `declaredValues` property defines the actual specified values for the DPP product. For example, a minimum tensile strength of 350 Mpa within a 5% confidence range. In many cases this may be sensitive data and can be replaced by a simple `compliance` assertion.
+* The `declaredValue` property defines the actual specified values for the DPP product. For example, a minimum tensile strength of 350 Mpa within a 5% confidence range. In many cases this may be sensitive data and can be replaced by a simple `compliance` assertion.
 * The `conformance` boolean is a declaration by the product manufacturer that the product meets the conformity criteria specified.
 * The `conformityTopic` is a high level UNTP classification scheme for safety and environmental and social sustainability. 
 * `benchmarkValue` (eg 10 Tons per Ton carbon intensity) is used in cases where a `declaredValue`(eg 5 Tons per Ton) is usefully compared to an industry average performance (benchmark) value.  When a `benchmarkValue` is provided, a `benchmarkReference` link MUST also be provided and should provide a link to an authoritative reference to support the benchmark value.

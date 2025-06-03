@@ -1,0 +1,22 @@
+name: Publish data models prerelease
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  check_release_type:
+    runs-on: ubuntu-latest
+
+    steps:
+      - shell: bash
+        env:
+          EVENT: ${{ toJSON(github.event) }}
+        run: |
+          printf '%s\n' "$EVENT" > event.json
+          cat event.json
+          rm event.json
+  
+  jargon_snapshot:
+    uses: uncefact/.github/.github/workflows/untp-data-models-prerelease.yml@main
+    secrets: inherit

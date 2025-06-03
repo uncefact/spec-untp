@@ -161,7 +161,6 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 - **Michael** and team to explore tire industry and DPP regulations.
 - Further exploration of **schema.org compatibility** in the UNTP model.
 
-
 ## 2025-04-03 Meeting Summary
 
 #### **Meeting Summary**

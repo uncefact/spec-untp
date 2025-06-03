@@ -27,6 +27,16 @@ Digital Conformity Credential version 0.5.0 release artifacts can be used for pi
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
+### Ontology 
+The ontology for the Digital Conformity Credential is available in JSON-LD format and can be retrieved via content negotiation from:
+
+[https://test.uncefact.org/vocabulary/untp/dcc/0/](https://test.uncefact.org/vocabulary/untp/dcc/0/)
+
+  Example:
+  ```bash
+  curl https://test.uncefact.org/vocabulary/untp/dcc/0/ -H 'Accept: application/ld+json'
+  ```
+
 ### Version History
 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dcc/0/versions)** page.
@@ -61,7 +71,7 @@ The digital product conformity credential (DPCC) is designed to meet the followi
 |DPCC-03|Object of conformity|The DPCC MUST unambiguously identify the object of the conformity assessment, whether a product or facility.|Assessment. assessedProducts, Assessment. assessedFacilities|
 |DPCCE-04|Reference standard or regulation|The DPCC MUST identify the reference standard(s) and/or regulation(s) that specify the criteria against which the conformity assessment is made. If appropriate this must include specific measurable thresholds (eg minimum tensile strength)| ConformityAssessment. referenceStandard and ConformityAssessment. assessmentCriterion|
 |DPCC-05|Conformity Attestation|The DPCCE MUST unambiguously state whether or not the object of the assessment is conformant to the reference standard or regulation criteria|ConformityAssessment. compliance|
-|DPCC-06|Measured metrics|The DPCCE SHOULD include actual measured values (eg emissions intensity, tensile strength, etc) with the conformity assessment|ConformityAssessment. declaredValues|
+|DPCC-06|Measured metrics|The DPCCE SHOULD include actual measured values (eg emissions intensity, tensile strength, etc) with the conformity assessment|ConformityAssessment. declaredValue|
 |DPCC-07|Evidence|The DPCCE MAY include references to audit-able evidence (eg instrument recordings, satellite images, etc) to support the assessment. If so then the hash of the evidence file-set SHOULD be included (so that an auditor can be sure that the evidence data has not changed).  The evidence data MAY be encrypted with decryption keys provided on request|ConformityAttestation. auditableEvidence|
 
 

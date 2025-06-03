@@ -1,0 +1,515 @@
+{
+  "type": [
+    "ProductPassport"
+  ],
+  "id": "example:product/1234",
+  "product": {
+    "type": [
+      "Product"
+    ],
+    "id": "https://id.gs1.org/01/09520123456788/21/12345",
+    "name": "EV battery 300Ah.",
+    "registeredId": "09520123456788.21.12345",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org/01/",
+      "name": "Global Trade Identification Number (GTIN)"
+    },
+    "batchNumber": "6789",
+    "productImage": {
+      "linkURL": "https://files.example-certifier.com/1234567.json",
+      "linkName": "GBA rule book conformity certificate",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+    },
+    "description": "400Ah 24v LiFePO4 battery",
+    "productCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
+      },
+      {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
+      }
+    ],
+    "furtherInformation": [
+      {
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+      },
+      {
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+      }
+    ],
+    "producedByParty": {
+      "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+      "name": "Sample Company Pty Ltd.",
+      "registeredId": "90664869327",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://id.gs1.org/01/",
+        "name": "Global Trade Identification Number (GTIN)"
+      }
+    },
+    "producedAtFacility": {
+      "id": "https://sample-facility-register.com/1234567",
+      "name": "Greenacres battery factory",
+      "registeredId": "1234567",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://id.gs1.org/01/",
+        "name": "Global Trade Identification Number (GTIN)"
+      }
+    },
+    "productionDate": "2024-04-25",
+    "countryOfProduction": "AU",
+    "serialNumber": "12345678",
+    "dimensions": {
+      "weight": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "length": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "width": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "height": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "volume": {
+        "value": 10,
+        "unit": "KGM"
+      }
+    }
+  },
+  "granularityLevel": "batch",
+  "conformityClaim": [
+    {
+      "type": [
+        "Claim",
+        "Declaration"
+      ],
+      "id": "https://products.example-company.com/09520123456788/declarations/12345",
+      "description": "A standardised disclosure of the battery's greenhouse gas emissions intensity, calculated in accordance with the Global Battery Alliance Battery Passport Greenhouse Gas Rulebook V.2.0.",
+      "referenceStandard": {
+        "type": [
+          "Standard"
+        ],
+        "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+        "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+        "issuingParty": {
+          "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "name": "Sample Company Pty Ltd.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "issueDate": "2023-12-05"
+      },
+      "referenceRegulation": {
+        "type": [
+          "Regulation"
+        ],
+        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+        "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+        "jurisdictionCountry": "AU",
+        "administeredBy": {
+          "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "name": "Sample Company Pty Ltd.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "effectiveDate": "2024-03-20"
+      },
+      "assessmentCriteria": [
+        {
+          "type": [
+            "Criterion"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "conformityTopic": "environment.energy",
+          "status": "proposed",
+          "subCriterion": [],
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+          "tags": "The quick brown fox jumps over the lazy dog."
+        },
+        {
+          "type": [
+            "Criterion"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "conformityTopic": "environment.waste",
+          "status": "proposed",
+          "subCriterion": [],
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+          "tags": "The quick brown fox jumps over the lazy dog."
+        }
+      ],
+      "assessmentDate": "2024-03-15",
+      "declaredValue": [
+        {
+          "metricName": "GHG emissions intensity",
+          "metricValue": {
+            "value": 10,
+            "unit": "KGM"
+          },
+          "score": "BB",
+          "accuracy": 0.05
+        },
+        {
+          "metricName": "GHG emissions intensity",
+          "metricValue": {
+            "value": 10,
+            "unit": "KGM"
+          },
+          "score": "BB",
+          "accuracy": 0.05
+        }
+      ],
+      "conformance": true,
+      "conformityTopic": "environment.emissions",
+      "conformityEvidence": {
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+        "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+        "hashMethod": "SHA-256",
+        "encryptionMethod": "AES"
+      }
+    },
+    {
+      "type": [
+        "Claim",
+        "Declaration"
+      ],
+      "id": "https://products.example-company.com/09520123456788/declarations/12345",
+      "description": "A standardised disclosure of the battery's greenhouse gas emissions intensity, calculated in accordance with the Global Battery Alliance Battery Passport Greenhouse Gas Rulebook V.2.0.",
+      "referenceStandard": {
+        "type": [
+          "Standard"
+        ],
+        "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+        "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+        "issuingParty": {
+          "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "name": "Sample Company Pty Ltd.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "issueDate": "2023-12-05"
+      },
+      "referenceRegulation": {
+        "type": [
+          "Regulation"
+        ],
+        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+        "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+        "jurisdictionCountry": "AU",
+        "administeredBy": {
+          "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "name": "Sample Company Pty Ltd.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "effectiveDate": "2024-03-20"
+      },
+      "assessmentCriteria": [
+        {
+          "type": [
+            "Criterion"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "conformityTopic": "circularity.content",
+          "status": "proposed",
+          "subCriterion": [],
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+          "tags": "The quick brown fox jumps over the lazy dog."
+        },
+        {
+          "type": [
+            "Criterion"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "conformityTopic": "social.rights",
+          "status": "proposed",
+          "subCriterion": [],
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+          "tags": "The quick brown fox jumps over the lazy dog."
+        }
+      ],
+      "assessmentDate": "2024-03-15",
+      "declaredValue": [
+        {
+          "metricName": "GHG emissions intensity",
+          "metricValue": {
+            "value": 10,
+            "unit": "KGM"
+          },
+          "score": "BB",
+          "accuracy": 0.05
+        },
+        {
+          "metricName": "GHG emissions intensity",
+          "metricValue": {
+            "value": 10,
+            "unit": "KGM"
+          },
+          "score": "BB",
+          "accuracy": 0.05
+        }
+      ],
+      "conformance": true,
+      "conformityTopic": "environment.emissions",
+      "conformityEvidence": {
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+        "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+        "hashMethod": "SHA-256",
+        "encryptionMethod": "AES"
+      }
+    }
+  ],
+  "emissionsScorecard": {
+    "carbonFootprint": 1.8,
+    "declaredUnit": "KGM",
+    "operationalScope": "CradleToGate",
+    "primarySourcedRatio": 0.3,
+    "reportingStandard": {
+      "type": [
+        "Standard"
+      ],
+      "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+      "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+      "issuingParty": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      "issueDate": "2023-12-05"
+    }
+  },
+  "traceabilityInformation": [
+    {
+      "valueChainProcess": "Spinning",
+      "verifiedRatio": 0.5,
+      "traceabilityEvent": [
+        {
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+          "hashMethod": "SHA-256",
+          "encryptionMethod": "AES"
+        },
+        {
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+          "hashMethod": "SHA-256",
+          "encryptionMethod": "AES"
+        }
+      ]
+    },
+    {
+      "valueChainProcess": "Spinning",
+      "verifiedRatio": 0.5,
+      "traceabilityEvent": [
+        {
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+          "hashMethod": "SHA-256",
+          "encryptionMethod": "AES"
+        },
+        {
+          "linkURL": "https://files.example-certifier.com/1234567.json",
+          "linkName": "GBA rule book conformity certificate",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+          "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+          "hashMethod": "SHA-256",
+          "encryptionMethod": "AES"
+        }
+      ]
+    }
+  ],
+  "circularityScorecard": {
+    "recyclingInformation": {
+      "linkURL": "https://files.example-certifier.com/1234567.json",
+      "linkName": "GBA rule book conformity certificate",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+    },
+    "repairInformation": {
+      "linkURL": "https://files.example-certifier.com/1234567.json",
+      "linkName": "GBA rule book conformity certificate",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+    },
+    "recyclableContent": 0.5,
+    "recycledContent": 0.3,
+    "utilityFactor": 1.2,
+    "materialCircularityIndicator": 0.67
+  },
+  "dueDiligenceDeclaration": {
+    "linkURL": "https://files.example-certifier.com/1234567.json",
+    "linkName": "GBA rule book conformity certificate",
+    "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+  },
+  "materialsProvenance": [
+    {
+      "name": "Lithium Spodumene",
+      "originCountry": "AU",
+      "materialType": {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
+      },
+      "massFraction": 0.2,
+      "mass": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "recycledMassFraction": 0.5,
+      "hazardous": false,
+      "symbol": "undefined",
+      "materialSafetyInformation": {
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+      }
+    },
+    {
+      "name": "Lithium Spodumene",
+      "originCountry": "AU",
+      "materialType": {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
+      },
+      "massFraction": 0.2,
+      "mass": {
+        "value": 10,
+        "unit": "KGM"
+      },
+      "recycledMassFraction": 0.5,
+      "hazardous": false,
+      "symbol": "undefined",
+      "materialSafetyInformation": {
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "type": [
+    "ConformityAttestation",
+    "Attestation"
+  ],
+  "id": "https://sample-certifiers.com/attestations/12345",
+  "name": "Carbon Lifecycle assessment 12345567",
+  "assessorLevel": "3rdParty",
+  "assessmentLevel": "Accredited",
+  "attestationType": "certification",
+  "description": "A life-cycle assessment of the battery  emissions intensity according to the Global Battery Alliance rule-book.",
+  "issuedToParty": {
+    "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+    "name": "Sample Company Pty Ltd.",
+    "registeredId": "90664869327",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org/01/",
+      "name": "Global Trade Identification Number (GTIN)"
+    },
+    "description": "A leading electric energy storage company"
+  },
+  "authorisation": [
+    {
+      "type": [
+        "Endorsement"
+      ],
+      "id": "https://authority.gov/schemeABC/123456789",
+      "name": "Accreditation of certifiers.com under the Australian National Greenhouse and Energy Reporting scheme (NGER).",
+      "trustmark": {
+        "fileName": "GHG protocol trust mark",
+        "fileType": "image/png",
+        "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+      },
+      "issuingAuthority": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      "endorsementEvidence": {
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+      }
+    },
+    {
+      "type": [
+        "Endorsement"
+      ],
+      "id": "https://authority.gov/schemeABC/123456789",
+      "name": "Accreditation of certifiers.com under the Australian National Greenhouse and Energy Reporting scheme (NGER).",
+      "trustmark": {
+        "fileName": "GHG protocol trust mark",
+        "fileType": "image/png",
+        "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+      },
+      "issuingAuthority": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      "endorsementEvidence": {
+        "linkURL": "https://files.example-certifier.com/1234567.json",
+        "linkName": "GBA rule book conformity certificate",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+      }
+    }
+  ],
+  "conformityCertificate": {
+    "linkURL": "https://files.example-certifier.com/1234567.json",
+    "linkName": "GBA rule book conformity certificate",
+    "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+    "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+    "hashMethod": "SHA-256",
+    "encryptionMethod": "AES"
+  },
+  "auditableEvidence": {
+    "linkURL": "https://files.example-certifier.com/1234567.json",
+    "linkName": "GBA rule book conformity certificate",
+    "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+    "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+    "hashMethod": "SHA-256",
+    "encryptionMethod": "AES"
+  },
+  "scope": {
+    "type": [
+      "ConformityAssessmentScheme",
+      "Standard"
+    ],
+    "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+    "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+    "issuingParty": {
+      "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+      "name": "Sample Company Pty Ltd.",
+      "registeredId": "90664869327",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://id.gs1.org/01/",
+        "name": "Global Trade Identification Number (GTIN)"
+      }
+    },
+    "issueDate": "2023-12-05",
+    "trustmark": {
+      "fileName": "GHG protocol trust mark",
+      "fileType": "image/png",
+      "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+    }
+  },
+  "assessment": [
+    {
+      "type": [
+        "ConformityAssessment",
+        "Declaration"
+      ],
+      "description": "A standardised disclosure of the battery's greenhouse gas emissions intensity, calculated in accordance with the Global Battery Alliance Battery Passport Greenhouse Gas Rulebook V.2.0.",
+      "assessmentDate": "2024-03-15",
+      "id": "https://exampleCAB.com/38f73303-a39e-45a7-b8b7-e73517548f27/01",
+      "name": "Product GHG Footprint certificate in accordance with GBA Rulebook.",
+      "referenceStandard": {
+        "type": [
+          "Standard"
+        ],
+        "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+        "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+        "issuingParty": {
+          "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "name": "Sample Company Pty Ltd.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "issueDate": "2023-12-05"
+      },
+      "referenceRegulation": {
+        "type": [
+          "Regulation"
+        ],
+        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+        "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+        "jurisdictionCountry": "AU",
+        "administeredBy": {
+          "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "name": "Sample Company Pty Ltd.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "effectiveDate": "2024-03-20"
+      },
+      "assessmentCriteria": [
+        {
+          "type": [
+            "Criterion"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "conformityTopic": "environment.energy",
+          "status": "proposed",
+          "subCriterion": [],
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+          "tags": "The quick brown fox jumps over the lazy dog."
+        },
+        {
+          "type": [
+            "Criterion"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "conformityTopic": "environment.waste",
+          "status": "proposed",
+          "subCriterion": [],
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+          "tags": "The quick brown fox jumps over the lazy dog."
+        }
+      ],
+      "declaredValue": [
+        {
+          "metricName": "GHG emissions intensity",
+          "metricValue": {
+            "value": 10,
+            "unit": "KGM"
+          },
+          "score": "BB",
+          "accuracy": 0.05
+        },
+        {
+          "metricName": "GHG emissions intensity",
+          "metricValue": {
+            "value": 10,
+            "unit": "KGM"
+          },
+          "score": "BB",
+          "accuracy": 0.05
+        }
+      ],
+      "conformance": true,
+      "conformityTopic": "environment.emissions",
+      "assessedProduct": [
+        {
+          "product": {
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "09520123456788.21.12345",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            },
+            "batchNumber": "6789",
+            "serialNumber": "12345678"
+          },
+          "IDverifiedByCAB": true
+        },
+        {
+          "product": {
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "09520123456788.21.12345",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            },
+            "batchNumber": "6789",
+            "serialNumber": "12345678"
+          },
+          "IDverifiedByCAB": true
+        }
+      ],
+      "assessedFacility": [
+        {
+          "facility": {
+            "id": "https://sample-facility-register.com/1234567",
+            "name": "Greenacres battery factory",
+            "registeredId": "1234567",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "IDverifiedByCAB": true
+        },
+        {
+          "facility": {
+            "id": "https://sample-facility-register.com/1234567",
+            "name": "Greenacres battery factory",
+            "registeredId": "1234567",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "IDverifiedByCAB": true
+        }
+      ],
+      "assessedOrganisation": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        },
+        "description": "A leading electric energy storage company"
+      },
+      "auditor": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        },
+        "description": "A leading electric energy storage company"
+      }
+    },
+    {
+      "type": [
+        "ConformityAssessment",
+        "Declaration"
+      ],
+      "description": "A standardised disclosure of the battery's greenhouse gas emissions intensity, calculated in accordance with the Global Battery Alliance Battery Passport Greenhouse Gas Rulebook V.2.0.",
+      "assessmentDate": "2024-03-15",
+      "id": "https://exampleCAB.com/38f73303-a39e-45a7-b8b7-e73517548f27/01",
+      "name": "Product GHG Footprint certificate in accordance with GBA Rulebook.",
+      "referenceStandard": {
+        "type": [
+          "Standard"
+        ],
+        "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
+        "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
+        "issuingParty": {
+          "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "name": "Sample Company Pty Ltd.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "issueDate": "2023-12-05"
+      },
+      "referenceRegulation": {
+        "type": [
+          "Regulation"
+        ],
+        "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+        "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+        "jurisdictionCountry": "AU",
+        "administeredBy": {
+          "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "name": "Sample Company Pty Ltd.",
+          "registeredId": "90664869327",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.gs1.org/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "effectiveDate": "2024-03-20"
+      },
+      "assessmentCriteria": [
+        {
+          "type": [
+            "Criterion"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "conformityTopic": "circularity.content",
+          "status": "proposed",
+          "subCriterion": [],
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+          "tags": "The quick brown fox jumps over the lazy dog."
+        },
+        {
+          "type": [
+            "Criterion"
+          ],
+          "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+          "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+          "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+          "conformityTopic": "social.rights",
+          "status": "proposed",
+          "subCriterion": [],
+          "thresholdValue": {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 10,
+              "unit": "KGM"
+            },
+            "score": "BB",
+            "accuracy": 0.05
+          },
+          "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+          "tags": "The quick brown fox jumps over the lazy dog."
+        }
+      ],
+      "declaredValue": [
+        {
+          "metricName": "GHG emissions intensity",
+          "metricValue": {
+            "value": 10,
+            "unit": "KGM"
+          },
+          "score": "BB",
+          "accuracy": 0.05
+        },
+        {
+          "metricName": "GHG emissions intensity",
+          "metricValue": {
+            "value": 10,
+            "unit": "KGM"
+          },
+          "score": "BB",
+          "accuracy": 0.05
+        }
+      ],
+      "conformance": true,
+      "conformityTopic": "environment.emissions",
+      "assessedProduct": [
+        {
+          "product": {
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "09520123456788.21.12345",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            },
+            "batchNumber": "6789",
+            "serialNumber": "12345678"
+          },
+          "IDverifiedByCAB": true
+        },
+        {
+          "product": {
+            "id": "https://id.gs1.org/01/09520123456788/21/12345",
+            "name": "EV battery 300Ah.",
+            "registeredId": "09520123456788.21.12345",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            },
+            "batchNumber": "6789",
+            "serialNumber": "12345678"
+          },
+          "IDverifiedByCAB": true
+        }
+      ],
+      "assessedFacility": [
+        {
+          "facility": {
+            "id": "https://sample-facility-register.com/1234567",
+            "name": "Greenacres battery factory",
+            "registeredId": "1234567",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "IDverifiedByCAB": true
+        },
+        {
+          "facility": {
+            "id": "https://sample-facility-register.com/1234567",
+            "name": "Greenacres battery factory",
+            "registeredId": "1234567",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://id.gs1.org/01/",
+              "name": "Global Trade Identification Number (GTIN)"
+            }
+          },
+          "IDverifiedByCAB": true
+        }
+      ],
+      "assessedOrganisation": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        },
+        "description": "A leading electric energy storage company"
+      },
+      "auditor": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        },
+        "description": "A leading electric energy storage company"
+      }
+    }
+  ]
+}

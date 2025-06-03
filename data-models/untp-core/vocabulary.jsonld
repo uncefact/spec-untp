@@ -1,0 +1,2947 @@
+{
+  "@context": {
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "geojson": "https://purl.org/geojson/vocab#"
+  },
+  "@graph": [
+    {
+      "@id": "untp-core:VerifiableCredential",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A verifiable credential is a digital and verifiable version of everyday credentials such as certificates and licenses.  It conforms to the W3C Verifiable Credentials Data Model v2.0 (VCDM). ",
+      "rdfs:label": "VerifiableCredential"
+    },
+    {
+      "@id": "untp-core:CredentialIssuer",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The issuer party (person or organisation) of a verifiable credential.",
+      "rdfs:label": "CredentialIssuer"
+    },
+    {
+      "@id": "untp-core:Party",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An organisation.  May be a supply chain actor, a certifier, a government agency.",
+      "rdfs:label": "Party"
+    },
+    {
+      "@id": "untp-core:IdentifierScheme",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An identifier registration scheme for products, facilities, or organisations. Typically operated by a state, national or global authority.",
+      "rdfs:label": "IdentifierScheme"
+    },
+    {
+      "@id": "untp-core:Classification",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
+      "rdfs:label": "Classification"
+    },
+    {
+      "@id": "untp-core:Link",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A structure to provide a URL link plus metadata associated with the link.",
+      "rdfs:label": "Link"
+    },
+    {
+      "@id": "untp-core:Facility",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The physical site (eg farm or factory) where the product or materials was produced.",
+      "rdfs:label": "Facility"
+    },
+    {
+      "@id": "untp-core:Location",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Location information including address and geo-location of points, areas, and boundaries",
+      "rdfs:label": "Location"
+    },
+    {
+      "@id": "untp-core:Address",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A postal address.",
+      "rdfs:label": "Address"
+    },
+    {
+      "@id": "untp-core:Product",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details.",
+      "rdfs:label": "Product"
+    },
+    {
+      "@id": "untp-core:Characteristics",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Extension point for commodity specific characteristics like battery capacity, clothing size, etc.",
+      "rdfs:label": "Characteristics"
+    },
+    {
+      "@id": "untp-core:Dimension",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Overall (length, width, height) dimensions and weight/volume of an item.",
+      "rdfs:label": "Dimension"
+    },
+    {
+      "@id": "untp-core:Measure",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).",
+      "rdfs:label": "Measure"
+    },
+    {
+      "@id": "untp-core:Metric",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of measure) / value (ie the actual numeric value) pairs.  ",
+      "rdfs:label": "Metric"
+    },
+    {
+      "@id": "untp-core:BinaryFile",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A binary file reference including name and file type.",
+      "rdfs:label": "BinaryFile"
+    },
+    {
+      "@id": "untp-core:SecureLink",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality).",
+      "rdfs:label": "SecureLink",
+      "rdfs:subClassOf": "untp-core:Link"
+    },
+    {
+      "@id": "untp-core:Declaration",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
+      "rdfs:label": "Declaration"
+    },
+    {
+      "@id": "untp-core:Standard",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A standard (eg ISO 14000) that specifies the criteria for conformance.",
+      "rdfs:label": "Standard"
+    },
+    {
+      "@id": "untp-core:Regulation",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment.",
+      "rdfs:label": "Regulation"
+    },
+    {
+      "@id": "untp-core:Criterion",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
+      "rdfs:label": "Criterion"
+    },
+    {
+      "@id": "untp-core:Claim",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
+      "rdfs:label": "Claim",
+      "rdfs:subClassOf": "untp-core:Declaration"
+    },
+    {
+      "@id": "untp-core:Material",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The material class encapsulates details about the origin or source of raw materials in a product, including the country of origin and the mass fraction.",
+      "rdfs:label": "Material"
+    },
+    {
+      "@id": "untp-core:CircularityPerformance",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "High level circularity information about this product.  Note that this does not substitute for detailed product circularity data sheet (PCDS) criteria which would be represented as a self-issued UNTP Digital Conformity Credential as a set of assessments against individual ISO PCDS criteria.",
+      "rdfs:label": "CircularityPerformance"
+    },
+    {
+      "@id": "untp-core:EmissionsPerformance",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity.",
+      "rdfs:label": "EmissionsPerformance"
+    },
+    {
+      "@id": "untp-core:Attestation",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg battery) against a specification (eg LCA method) defined in a standard or regulation.",
+      "rdfs:label": "Attestation"
+    },
+    {
+      "@id": "untp-core:Endorsement",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The authority under which a conformity claim is issued.  For example a national accreditation authority may authorise a test lab to issue test certificates about a product against a standard. ",
+      "rdfs:label": "Endorsement"
+    },
+    {
+      "@id": "untp-core:RenderTemplate2024",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A single template format focused render method--where the content/media type decision becomes secondary (and is expressed separately).See https://github.com/w3c-ccg/vc-render-method/issues/9",
+      "rdfs:label": "RenderTemplate2024"
+    },
+    {
+      "@id": "untp-core:WebRenderingTemplate2022",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A simple (though non-standard) embedded template.",
+      "rdfs:label": "WebRenderingTemplate2022"
+    },
+    {
+      "@id": "untp-core:ConformityScheme",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "",
+      "rdfs:label": "ConformityScheme"
+    },
+    {
+      "@id": "untp-core:id",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CredentialIssuer"
+        },
+        {
+          "@id": "untp-core:Party"
+        },
+        {
+          "@id": "untp-core:IdentifierScheme"
+        },
+        {
+          "@id": "untp-core:Classification"
+        },
+        {
+          "@id": "untp-core:Facility"
+        },
+        {
+          "@id": "untp-core:Product"
+        },
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Standard"
+        },
+        {
+          "@id": "untp-core:Regulation"
+        },
+        {
+          "@id": "untp-core:Criterion"
+        },
+        {
+          "@id": "untp-core:Claim"
+        },
+        {
+          "@id": "untp-core:Attestation"
+        },
+        {
+          "@id": "untp-core:Endorsement"
+        },
+        {
+          "@id": "untp-core:ConformityScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The W3C DID of the issuer - should be a did:web or did:webvh",
+        "The globally unique ID of the party as a URI, ideally as a resolvable ID. ",
+        "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
+        "The globally unique URI representing the specific classifier value",
+        "The globally unique ID of the facility as URI, ideally as a resolvable URL.",
+        "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
+        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
+        "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
+        "The globally unique identifier of this regulation. ",
+        "A unique identifier for the criterion within the scheme, standard  or regulation. For example CO2 emissions calculations for liquid fuel combustion.",
+        "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
+        "The globally unique ID of this conformity attestation.",
+        "Globally unique identifier of an accreditation or authority issued to a conformity assessment body by a regulator or national accreditation authority.",
+        "The identifier of this scheme as a URI. Typically of the form ownerDomain.schemeName."
+      ],
+      "rdfs:label": "id"
+    },
+    {
+      "@id": "untp-core:name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CredentialIssuer"
+        },
+        {
+          "@id": "untp-core:Party"
+        },
+        {
+          "@id": "untp-core:IdentifierScheme"
+        },
+        {
+          "@id": "untp-core:Classification"
+        },
+        {
+          "@id": "untp-core:Facility"
+        },
+        {
+          "@id": "untp-core:Product"
+        },
+        {
+          "@id": "untp-core:Standard"
+        },
+        {
+          "@id": "untp-core:Regulation"
+        },
+        {
+          "@id": "untp-core:Criterion"
+        },
+        {
+          "@id": "untp-core:Material"
+        },
+        {
+          "@id": "untp-core:Attestation"
+        },
+        {
+          "@id": "untp-core:Endorsement"
+        },
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-core:WebRenderingTemplate2022"
+        },
+        {
+          "@id": "untp-core:ConformityScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The name of the issuer person or organisation",
+        "The registered name of the party within the identifier scheme.",
+        "The name of the identifier scheme. ",
+        "Name of the classification represented by the code",
+        "The registered name of the facility within the identifier scheme.  ",
+        "The registered name of the product within the identifier scheme. ",
+        "The name of the standard",
+        "The name of the regulation or act.",
+        "A name that describes this criteria.",
+        "Name of this material (eg \"Egyptian Cotton\")",
+        "A human readable description of this conformity attestation",
+        "The name of the accreditation.",
+        "Human facing display name for selection",
+        "Human facing display name for template",
+        "The name of this conformity scheme"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-core:issuerAlsoKnownAs",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CredentialIssuer"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of other registered identifiers for this credential issuer "
+      ],
+      "rdfs:label": "issuerAlsoKnownAs"
+    },
+    {
+      "@id": "untp-core:registeredId",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        },
+        {
+          "@id": "untp-core:Facility"
+        },
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The registration number (alphanumeric) of the Party within the register. Unique within the register.",
+        "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register.",
+        "The registration number (alphanumeric) of the entity within the register. Unique within the register."
+      ],
+      "rdfs:label": "registeredId"
+    },
+    {
+      "@id": "untp-core:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:IdentifierScheme"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        },
+        {
+          "@id": "untp-core:Facility"
+        },
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The identifier scheme of the party.  Typically a national business register or a global scheme such as GLEIF. ",
+        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. ",
+        "The identifier scheme for this product.  Eg a GS1 GTIN or an AU Livestock NLIS, or similar. If self issued then use the party ID of the issuer.  "
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-core:description",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        },
+        {
+          "@id": "untp-core:Facility"
+        },
+        {
+          "@id": "untp-core:Product"
+        },
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Criterion"
+        },
+        {
+          "@id": "untp-core:Claim"
+        },
+        {
+          "@id": "untp-core:Attestation"
+        },
+        {
+          "@id": "untp-core:ConformityScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional short description of the party.",
+        "An optional short description of the facility",
+        "A textual description providing details about the product.",
+        "A textual description of the declaration being made.",
+        "A full text description of the criterion that clearly specifies how compliance is achieved and measured. ",
+        "A textual description of the declaration being made.",
+        "A textual description of the scope or purpose of this conformity attestation",
+        "The description of this conformity scheme"
+      ],
+      "rdfs:label": "description"
+    },
+    {
+      "@id": "untp-core:registrationCountry",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        }
+      ],
+      "rdfs:comment": [
+        "the country in which this organisation is registered"
+      ],
+      "rdfs:label": "registrationCountry"
+    },
+    {
+      "@id": "untp-core:organisationWebsite",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        }
+      ],
+      "rdfs:comment": [
+        "Website for this organisation"
+      ],
+      "rdfs:label": "organisationWebsite"
+    },
+    {
+      "@id": "untp-core:industryCategory",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        }
+      ],
+      "rdfs:comment": [
+        "The industry categories for this organisations.  Recommend use of UNCPC as the category scheme. for example - unstats.un.org/isic/1030"
+      ],
+      "rdfs:label": "industryCategory"
+    },
+    {
+      "@id": "untp-core:partyAlsoKnownAs",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Party"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of other registered identifiers for this organisation. For example DUNS, GLN, LEI, etc"
+      ],
+      "rdfs:label": "partyAlsoKnownAs"
+    },
+    {
+      "@id": "untp-core:code",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Classification"
+        }
+      ],
+      "rdfs:comment": [
+        "classification code within the scheme"
+      ],
+      "rdfs:label": "code"
+    },
+    {
+      "@id": "untp-core:schemeID",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Classification"
+        }
+      ],
+      "rdfs:comment": [
+        "Classification scheme ID"
+      ],
+      "rdfs:label": "schemeID"
+    },
+    {
+      "@id": "untp-core:schemeName",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Classification"
+        }
+      ],
+      "rdfs:comment": [
+        "The name of the classification scheme"
+      ],
+      "rdfs:label": "schemeName"
+    },
+    {
+      "@id": "untp-core:linkURL",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The URL of the target resource. ",
+        "The URL of the target resource. "
+      ],
+      "rdfs:label": "linkURL"
+    },
+    {
+      "@id": "untp-core:linkName",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "A display name for the target resource ",
+        "A display name for the target resource "
+      ],
+      "rdfs:label": "linkName"
+    },
+    {
+      "@id": "untp-core:linkType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Link"
+        },
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The type of the target resource - drawn from a controlled vocabulary ",
+        "The type of the target resource - drawn from a controlled vocabulary "
+      ],
+      "rdfs:label": "linkType"
+    },
+    {
+      "@id": "untp-core:countryOfOperation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The country in which this facility is operating."
+      ],
+      "rdfs:label": "countryOfOperation"
+    },
+    {
+      "@id": "untp-core:processCategory",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The industrial or production processes performed by this facility. Example unstats.un.org/isic/1030."
+      ],
+      "rdfs:label": "processCategory"
+    },
+    {
+      "@id": "untp-core:operatedByParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identification scheme. "
+      ],
+      "rdfs:label": "operatedByParty"
+    },
+    {
+      "@id": "untp-core:facilityAlsoKnownAs",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Facility"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
+      ],
+      "rdfs:label": "facilityAlsoKnownAs"
+    },
+    {
+      "@id": "untp-core:locationInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Location"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "Geo-location information for this facility as a resolvable geographic area (a Plus Code), and/or a geo-located point (latitude / longitude), and/or a defined boundary (GeoJSON Polygon)."
+      ],
+      "rdfs:label": "locationInformation"
+    },
+    {
+      "@id": "untp-core:address",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Address"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Facility"
+        }
+      ],
+      "rdfs:comment": [
+        "The Postal address of the location."
+      ],
+      "rdfs:label": "address"
+    },
+    {
+      "@id": "untp-core:plusCode",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Location"
+        }
+      ],
+      "rdfs:comment": [
+        "An open location code (https://maps.google.com/pluscodes/) representing this geographic location or region. Open location codes can represent any sized area from a point to a large region and are easily resolved to a visual map location. "
+      ],
+      "rdfs:label": "plusCode"
+    },
+    {
+      "@id": "untp-core:geoLocation",
+      "schema:rangeIncludes": {
+        "@id": "geojson:appendix-A.1"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Location"
+        }
+      ],
+      "rdfs:comment": [
+        "The latitude and longitude coordinates that best represent the specified location. Using GeoJSON Point notation."
+      ],
+      "rdfs:label": "geoLocation"
+    },
+    {
+      "@id": "untp-core:geoBoundary",
+      "schema:rangeIncludes": {
+        "@id": "geojson:appendix-A.3"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Location"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of ordered coordinates that define a closed area polygon as a location boundary using GeoJSON polygon notation."
+      ],
+      "rdfs:label": "geoBoundary"
+    },
+    {
+      "@id": "untp-core:streetAddress",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Address"
+        }
+      ],
+      "rdfs:comment": [
+        "the street address as an unstructured string."
+      ],
+      "rdfs:label": "streetAddress"
+    },
+    {
+      "@id": "untp-core:postalCode",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Address"
+        }
+      ],
+      "rdfs:comment": [
+        "The postal code or zip code for this address."
+      ],
+      "rdfs:label": "postalCode"
+    },
+    {
+      "@id": "untp-core:addressLocality",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Address"
+        }
+      ],
+      "rdfs:comment": [
+        "The city, suburb or township name."
+      ],
+      "rdfs:label": "addressLocality"
+    },
+    {
+      "@id": "untp-core:addressRegion",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Address"
+        }
+      ],
+      "rdfs:comment": [
+        "The state or territory or province"
+      ],
+      "rdfs:label": "addressRegion"
+    },
+    {
+      "@id": "untp-core:addressCountry",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Address"
+        }
+      ],
+      "rdfs:comment": [
+        "The address country as an ISO-3166 two letter country code."
+      ],
+      "rdfs:label": "addressCountry"
+    },
+    {
+      "@id": "untp-core:batchNumber",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "Identifier of the specific production batch of the product.  Unique within the product class."
+      ],
+      "rdfs:label": "batchNumber"
+    },
+    {
+      "@id": "untp-core:productImage",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "Reference information (location, type, name) of an image of the product."
+      ],
+      "rdfs:label": "productImage"
+    },
+    {
+      "@id": "untp-core:characteristics",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Characteristics"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A placeholder for indusutry / product category specific information. "
+      ],
+      "rdfs:label": "characteristics"
+    },
+    {
+      "@id": "untp-core:productCategory",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
+      ],
+      "rdfs:label": "productCategory"
+    },
+    {
+      "@id": "untp-core:furtherInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A URL pointing to further human readable information about the product."
+      ],
+      "rdfs:label": "furtherInformation"
+    },
+    {
+      "@id": "untp-core:producedByParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The Party entity that manufactured the product."
+      ],
+      "rdfs:label": "producedByParty"
+    },
+    {
+      "@id": "untp-core:producedAtFacility",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Facility"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The Facility where the product batch was produced / manufactured."
+      ],
+      "rdfs:label": "producedAtFacility"
+    },
+    {
+      "@id": "untp-core:productionDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The ISO 8601 date on which the product batch or individual serialised item was manufactured."
+      ],
+      "rdfs:label": "productionDate"
+    },
+    {
+      "@id": "untp-core:countryOfProduction",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The country in which this item was produced / manufactured."
+      ],
+      "rdfs:label": "countryOfProduction"
+    },
+    {
+      "@id": "untp-core:serialNumber",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "A number or code representing a specific serialised item of the product. Unique within product class."
+      ],
+      "rdfs:label": "serialNumber"
+    },
+    {
+      "@id": "untp-core:dimensions",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Dimension"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Product"
+        }
+      ],
+      "rdfs:comment": [
+        "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have weight and volume but not length, with, or height.\"weight\":{\"value\":10, \"unit\":\"KGM\"}"
+      ],
+      "rdfs:label": "dimensions"
+    },
+    {
+      "@id": "untp-core:weight",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Measure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Dimension"
+        }
+      ],
+      "rdfs:comment": [
+        "the weight of the product. EG {\"value\":10, \"unit\":\"KGM\"}"
+      ],
+      "rdfs:label": "weight"
+    },
+    {
+      "@id": "untp-core:length",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Measure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Dimension"
+        }
+      ],
+      "rdfs:comment": [
+        "The length of the product or packaging eg {\"value\":840, \"unit\":\"MMT\"}"
+      ],
+      "rdfs:label": "length"
+    },
+    {
+      "@id": "untp-core:width",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Measure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Dimension"
+        }
+      ],
+      "rdfs:comment": [
+        "The width of the product or packaging. eg {\"value\":150, \"unit\":\"MMT\"}"
+      ],
+      "rdfs:label": "width"
+    },
+    {
+      "@id": "untp-core:height",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Measure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Dimension"
+        }
+      ],
+      "rdfs:comment": [
+        "The height of the product or packaging. eg {\"value\":220, \"unit\":\"MMT\"}"
+      ],
+      "rdfs:label": "height"
+    },
+    {
+      "@id": "untp-core:volume",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Measure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Dimension"
+        }
+      ],
+      "rdfs:comment": [
+        "The displacement volume of the product. eg {\"value\":7.5, \"unit\":\"LTR\"}"
+      ],
+      "rdfs:label": "volume"
+    },
+    {
+      "@id": "untp-core:value",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Measure"
+        }
+      ],
+      "rdfs:comment": [
+        "The numeric value of the measure"
+      ],
+      "rdfs:label": "value"
+    },
+    {
+      "@id": "untp-core:unit",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:unitOfMeasure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Measure"
+        }
+      ],
+      "rdfs:comment": [
+        "Unit of measure drawn from the UNECE Rec20 measure code list."
+      ],
+      "rdfs:label": "unit"
+    },
+    {
+      "@id": "untp-core:metricName",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Metric"
+        }
+      ],
+      "rdfs:comment": [
+        "A human readable name for this metric (for example \"Tensile strength\")"
+      ],
+      "rdfs:label": "metricName"
+    },
+    {
+      "@id": "untp-core:metricValue",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Measure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Metric"
+        }
+      ],
+      "rdfs:comment": [
+        "A numeric value and unit of measure for this metric. Could be a measured value or a specified threshold. Eg {\"value\":400, \"unit\":\"MPA\"} as tensile strength of structural steel"
+      ],
+      "rdfs:label": "metricValue"
+    },
+    {
+      "@id": "untp-core:score",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Metric"
+        }
+      ],
+      "rdfs:comment": [
+        "A score or rank associated with this measured metric."
+      ],
+      "rdfs:label": "score"
+    },
+    {
+      "@id": "untp-core:accuracy",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Metric"
+        }
+      ],
+      "rdfs:comment": [
+        "A percentage represented as a numeric between 0 and 1 indicating the rage of accuracy of the claimed value (eg 0.05 means that the actual value is within 5% of the claimed value.)"
+      ],
+      "rdfs:label": "accuracy"
+    },
+    {
+      "@id": "untp-core:fileName",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:BinaryFile"
+        }
+      ],
+      "rdfs:comment": [
+        "A name for referenced binary file"
+      ],
+      "rdfs:label": "fileName"
+    },
+    {
+      "@id": "untp-core:fileType",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:mimeType"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:BinaryFile"
+        }
+      ],
+      "rdfs:comment": [
+        "The type of file, represented as a MIME type."
+      ],
+      "rdfs:label": "fileType"
+    },
+    {
+      "@id": "untp-core:file",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:BinaryFile"
+        }
+      ],
+      "rdfs:comment": [
+        "The binary file data encoded as Base64 string."
+      ],
+      "rdfs:label": "file"
+    },
+    {
+      "@id": "untp-core:hashDigest",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The hash of the file."
+      ],
+      "rdfs:label": "hashDigest"
+    },
+    {
+      "@id": "untp-core:hashMethod",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:hashMethodCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The hashing algorithm used to create the target hash.  SHA-265 is the recommended standard"
+      ],
+      "rdfs:label": "hashMethod"
+    },
+    {
+      "@id": "untp-core:encryptionMethod",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:encryptionMethodCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:SecureLink"
+        }
+      ],
+      "rdfs:comment": [
+        "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
+      ],
+      "rdfs:label": "encryptionMethod"
+    },
+    {
+      "@id": "untp-core:referenceStandard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Standard"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The reference to the standard that defines the specification / criteria",
+        "The reference to the standard that defines the specification / criteria"
+      ],
+      "rdfs:label": "referenceStandard"
+    },
+    {
+      "@id": "untp-core:referenceRegulation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Regulation"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The reference to the regulation that defines the assessment criteria",
+        "The reference to the regulation that defines the assessment criteria"
+      ],
+      "rdfs:label": "referenceRegulation"
+    },
+    {
+      "@id": "untp-core:assessmentCriteria",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Criterion"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The specification against which the assessment is made.",
+        "The specification against which the assessment is made."
+      ],
+      "rdfs:label": "assessmentCriteria"
+    },
+    {
+      "@id": "untp-core:assessmentDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The date on which this assessment was made. ",
+        "The date on which this assessment was made. "
+      ],
+      "rdfs:label": "assessmentDate"
+    },
+    {
+      "@id": "untp-core:declaredValue",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Metric"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The list of specific values measured as part of this assessment (eg tensile strength)",
+        "The list of specific values measured as part of this assessment (eg tensile strength)"
+      ],
+      "rdfs:label": "declaredValue"
+    },
+    {
+      "@id": "untp-core:conformance",
+      "schema:rangeIncludes": {
+        "@id": "xsd:boolean"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria.",
+        "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
+      ],
+      "rdfs:label": "conformance"
+    },
+    {
+      "@id": "untp-core:conformityTopic",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:conformityTopicCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Declaration"
+        },
+        {
+          "@id": "untp-core:Criterion"
+        },
+        {
+          "@id": "untp-core:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)",
+        "A gloabl UN/CEFACT standard sustainability toipic code. ",
+        "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+      ],
+      "rdfs:label": "conformityTopic"
+    },
+    {
+      "@id": "untp-core:issuingParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Standard"
+        }
+      ],
+      "rdfs:comment": [
+        "The party that issued the standard "
+      ],
+      "rdfs:label": "issuingParty"
+    },
+    {
+      "@id": "untp-core:issueDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Standard"
+        }
+      ],
+      "rdfs:comment": [
+        "The date when the standard was issued."
+      ],
+      "rdfs:label": "issueDate"
+    },
+    {
+      "@id": "untp-core:jurisdictionCountry",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Regulation"
+        }
+      ],
+      "rdfs:comment": [
+        "The legal jurisdiction (country) under which the regulation is issued."
+      ],
+      "rdfs:label": "jurisdictionCountry"
+    },
+    {
+      "@id": "untp-core:administeredBy",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Regulation"
+        }
+      ],
+      "rdfs:comment": [
+        "the issuing body of the regulation. For example Australian Government Department of Climate Change, Energy, the Environment and Water"
+      ],
+      "rdfs:label": "administeredBy"
+    },
+    {
+      "@id": "untp-core:effectiveDate",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Regulation"
+        }
+      ],
+      "rdfs:comment": [
+        "the date at which the regulation came into effect."
+      ],
+      "rdfs:label": "effectiveDate"
+    },
+    {
+      "@id": "untp-core:status",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:statusCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Criterion"
+        }
+      ],
+      "rdfs:comment": [
+        "The lifecycle status of this criterion. "
+      ],
+      "rdfs:label": "status"
+    },
+    {
+      "@id": "untp-core:subCriterion",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Criterion"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Criterion"
+        }
+      ],
+      "rdfs:comment": [
+        "List of criterion that are subordinate to this criterion in the hierarchy."
+      ],
+      "rdfs:label": "subCriterion"
+    },
+    {
+      "@id": "untp-core:thresholdValue",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Metric"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Criterion"
+        }
+      ],
+      "rdfs:comment": [
+        "A threshold value that defines the minimum compliance level. "
+      ],
+      "rdfs:label": "thresholdValue"
+    },
+    {
+      "@id": "untp-core:performanceLevel",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Criterion"
+        }
+      ],
+      "rdfs:comment": [
+        "A performance category code to group criterion in a given hierarchyLevel according to pareformance"
+      ],
+      "rdfs:label": "performanceLevel"
+    },
+    {
+      "@id": "untp-core:tags",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Criterion"
+        }
+      ],
+      "rdfs:comment": [
+        "a category code to represent target stakeholder types or commodity types to which this criteron applies. "
+      ],
+      "rdfs:label": "tags"
+    },
+    {
+      "@id": "untp-core:conformityEvidence",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:SecureLink"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Claim"
+        }
+      ],
+      "rdfs:comment": [
+        "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital Conformity Credential (DCC)"
+      ],
+      "rdfs:label": "conformityEvidence"
+    },
+    {
+      "@id": "untp-core:originCountry",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Material"
+        }
+      ],
+      "rdfs:comment": [
+        "A ISO 3166-1 code representing the country of origin of the component or ingredient."
+      ],
+      "rdfs:label": "originCountry"
+    },
+    {
+      "@id": "untp-core:materialType",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Material"
+        }
+      ],
+      "rdfs:comment": [
+        "The type of this material - as a value drawn from a controlled vocabulary eg from UN Framework Classification for Resources (UNFC)."
+      ],
+      "rdfs:label": "materialType"
+    },
+    {
+      "@id": "untp-core:massFraction",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Material"
+        }
+      ],
+      "rdfs:comment": [
+        "The mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 1."
+      ],
+      "rdfs:label": "massFraction"
+    },
+    {
+      "@id": "untp-core:mass",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Measure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Material"
+        }
+      ],
+      "rdfs:comment": [
+        "The mass of the material component."
+      ],
+      "rdfs:label": "mass"
+    },
+    {
+      "@id": "untp-core:recycledMassFraction",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Material"
+        }
+      ],
+      "rdfs:comment": [
+        "Mass fraction of this material that is recycled (eg 50% recycled Lithium)"
+      ],
+      "rdfs:label": "recycledMassFraction"
+    },
+    {
+      "@id": "untp-core:hazardous",
+      "schema:rangeIncludes": {
+        "@id": "xsd:boolean"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Material"
+        }
+      ],
+      "rdfs:comment": [
+        "Indicates whether this material is hazardous. If true then the materialSafetyInformation property must be present"
+      ],
+      "rdfs:label": "hazardous"
+    },
+    {
+      "@id": "untp-core:symbol",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Material"
+        }
+      ],
+      "rdfs:comment": [
+        "Based 64 encoded binary used to represent a visual symbol for a given material. "
+      ],
+      "rdfs:label": "symbol"
+    },
+    {
+      "@id": "untp-core:materialSafetyInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Material"
+        }
+      ],
+      "rdfs:comment": [
+        "Reference to further information about safe handling of this hazardous material (for example a link to a material safety data sheet)"
+      ],
+      "rdfs:label": "materialSafetyInformation"
+    },
+    {
+      "@id": "untp-core:recyclingInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CircularityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "A URI pointing to recycling information for the product."
+      ],
+      "rdfs:label": "recyclingInformation"
+    },
+    {
+      "@id": "untp-core:repairInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CircularityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "A URI pointing to repair instructions for this product."
+      ],
+      "rdfs:label": "repairInformation"
+    },
+    {
+      "@id": "untp-core:recyclableContent",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CircularityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The fraction of the this product (my mass) that has been designed to be recyclable / re-usable. This will be be the total fraction that can avoid waste / landfill."
+      ],
+      "rdfs:label": "recyclableContent"
+    },
+    {
+      "@id": "untp-core:recycledContent",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CircularityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The fraction (by mass) of recycled / repurposed, repaired content in this product.  This will be the total virgin content fraction."
+      ],
+      "rdfs:label": "recycledContent"
+    },
+    {
+      "@id": "untp-core:utilityFactor",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CircularityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "An indicator of durability defined as the lifetime (typically measures as usage cycles) for this product divided by the industry average. For example a battery with a 10,000 cycle lifetime where industry average is 5,000 cycles will have a durability factor of 2. If unknown set to 1 or omit.  "
+      ],
+      "rdfs:label": "utilityFactor"
+    },
+    {
+      "@id": "untp-core:materialCircularityIndicator",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:CircularityPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The overall circularity performance indicator for this product. Calculated as 1 - (V+W)/2D where - V = Virgin material proportion by mass (will be 1- recycled content) - W = Waste leakage proportion by mass (will be 1 - recyclableContent)  - D = Utility factor (set to 1 if unknown).  "
+      ],
+      "rdfs:label": "materialCircularityIndicator"
+    },
+    {
+      "@id": "untp-core:carbonFootprint",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The carbon footprint of the product in KgCO2e per declared unit."
+      ],
+      "rdfs:label": "carbonFootprint"
+    },
+    {
+      "@id": "untp-core:declaredUnit",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:unitOfMeasure"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The unit of product (EA, KGM, LTR, etc) that is the basis for carbon footprint."
+      ],
+      "rdfs:label": "declaredUnit"
+    },
+    {
+      "@id": "untp-core:operationalScope",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:operationalScopeCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The operational scope of the emissions performance. Only scope 1 & 2, or including upstream scope 3 (cradle to gate) or upstream and downstream scope 3 (cradle to grave)."
+      ],
+      "rdfs:label": "operationalScope"
+    },
+    {
+      "@id": "untp-core:primarySourcedRatio",
+      "schema:rangeIncludes": {
+        "@id": "xsd:decimal"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The ratio of emissions data from primary sources (ie from supplier / product specific information rather than secondary / industry averages)."
+      ],
+      "rdfs:label": "primarySourcedRatio"
+    },
+    {
+      "@id": "untp-core:reportingStandard",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Standard"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:EmissionsPerformance"
+        }
+      ],
+      "rdfs:comment": [
+        "The reporting standard (eg GHG Protocol, IFRS S2, ESRS, etc) against which this product emissions performance is assessed."
+      ],
+      "rdfs:label": "reportingStandard"
+    },
+    {
+      "@id": "untp-core:assessorLevel",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:assessorLevelCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Attestation"
+        }
+      ],
+      "rdfs:comment": [
+        "Assurance code pertaining to assessor (relation to the object under assessment)"
+      ],
+      "rdfs:label": "assessorLevel"
+    },
+    {
+      "@id": "untp-core:assessmentLevel",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:assessmentLevelCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Attestation"
+        }
+      ],
+      "rdfs:comment": [
+        "Assurance pertaining to assessment (any authority or support for the assessment process)"
+      ],
+      "rdfs:label": "assessmentLevel"
+    },
+    {
+      "@id": "untp-core:attestationType",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:attestationTypeCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Attestation"
+        }
+      ],
+      "rdfs:comment": [
+        "The type of criterion (optional or mandatory)."
+      ],
+      "rdfs:label": "attestationType"
+    },
+    {
+      "@id": "untp-core:issuedToParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Attestation"
+        }
+      ],
+      "rdfs:comment": [
+        "The party to whom the conformity attestation was issued."
+      ],
+      "rdfs:label": "issuedToParty"
+    },
+    {
+      "@id": "untp-core:authorisation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Endorsement"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Attestation"
+        }
+      ],
+      "rdfs:comment": [
+        "The authority under which a conformity claim is issued.  For example a national accreditation authority may authorise a test lab to issue test certificates about a product against a standard.  "
+      ],
+      "rdfs:label": "authorisation"
+    },
+    {
+      "@id": "untp-core:conformityCertificate",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:SecureLink"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Attestation"
+        }
+      ],
+      "rdfs:comment": [
+        "A reference to the human / printable version of this conformity attestation - typically represented as a PDF document. The document may have more details than are represented in the digital attestation."
+      ],
+      "rdfs:label": "conformityCertificate"
+    },
+    {
+      "@id": "untp-core:auditableEvidence",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:SecureLink"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Attestation"
+        }
+      ],
+      "rdfs:comment": [
+        "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usually private data and would normally be encrypted."
+      ],
+      "rdfs:label": "auditableEvidence"
+    },
+    {
+      "@id": "untp-core:trustmark",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:BinaryFile"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Endorsement"
+        }
+      ],
+      "rdfs:comment": [
+        "The trust mark image awarded by the AB to the CAB to indicate accreditation."
+      ],
+      "rdfs:label": "trustmark"
+    },
+    {
+      "@id": "untp-core:issuingAuthority",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Endorsement"
+        }
+      ],
+      "rdfs:comment": [
+        "The competent authority that issued the accreditation."
+      ],
+      "rdfs:label": "issuingAuthority"
+    },
+    {
+      "@id": "untp-core:endorsementEvidence",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Link"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Endorsement"
+        }
+      ],
+      "rdfs:comment": [
+        "The evidence that supports the authority under which the attestation is issued - for an example an accreditation certificate."
+      ],
+      "rdfs:label": "endorsementEvidence"
+    },
+    {
+      "@id": "untp-core:mediaQuery",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Media query as defined in https://www.w3.org/TR/mediaqueries-4/"
+      ],
+      "rdfs:label": "mediaQuery"
+    },
+    {
+      "@id": "untp-core:template",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-core:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "An inline template field for use cases where remote retrieval of a render method is suboptimal",
+        "An inline template field "
+      ],
+      "rdfs:label": "template"
+    },
+    {
+      "@id": "untp-core:url",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "URL for remotely hosted template"
+      ],
+      "rdfs:label": "url"
+    },
+    {
+      "@id": "untp-core:mediaType",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "content/media type for (possible) conneg on the above URL and certainly for display use"
+      ],
+      "rdfs:label": "mediaType"
+    },
+    {
+      "@id": "untp-core:digestMultibase",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:RenderTemplate2024"
+        }
+      ],
+      "rdfs:comment": [
+        "Used for resource integrity and/or validation of the inline `template`"
+      ],
+      "rdfs:label": "digestMultibase"
+    },
+    {
+      "@id": "untp-core:version",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:ConformityScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "Version of this scheme folling SemVer best practive (major.minor.patch). "
+      ],
+      "rdfs:label": "version"
+    },
+    {
+      "@id": "untp-core:validFrom",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:ConformityScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The data from which this scheme version is valid."
+      ],
+      "rdfs:label": "validFrom"
+    },
+    {
+      "@id": "untp-core:owner",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:ConformityScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The party that is the owner / maintainer of this conformity scheme."
+      ],
+      "rdfs:label": "owner"
+    },
+    {
+      "@id": "untp-core:trustMark",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:ConformityScheme"
+        }
+      ],
+      "rdfs:comment": [
+        "The trust mark or seal used by this conformity scheme."
+      ],
+      "rdfs:label": "trustMark"
+    },
+    {
+      "@id": "untp-core:assessmentLevelCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "assessmentLevelCode",
+      "rdfs:comment": "Type of authority endorsement of the assessment process"
+    },
+    {
+      "@id": "untp-core:assessmentLevelCode#GovtApproval",
+      "@type": "untp-core:assessmentLevelCode",
+      "rdf:value": "GovtApproval",
+      "rdfs:label": "Government endorsement",
+      "rdfs:comment": "conformity assessment delivered under authority granted by national government"
+    },
+    {
+      "@id": "untp-core:assessmentLevelCode#GlobalMRA",
+      "@type": "untp-core:assessmentLevelCode",
+      "rdf:value": "GlobalMRA",
+      "rdfs:label": "Global mutual recognition agreement",
+      "rdfs:comment": "conformity assessment delivered under authority granted by IAF/ILAC signatory body"
+    },
+    {
+      "@id": "untp-core:assessmentLevelCode#Accredited",
+      "@type": "untp-core:assessmentLevelCode",
+      "rdf:value": "Accredited",
+      "rdfs:label": "National accreditation",
+      "rdfs:comment": "conformity assessment delivered under an independent accreditation"
+    },
+    {
+      "@id": "untp-core:assessmentLevelCode#Verified",
+      "@type": "untp-core:assessmentLevelCode",
+      "rdf:value": "Verified",
+      "rdfs:label": "External verification",
+      "rdfs:comment": "conformity assessment externally verified"
+    },
+    {
+      "@id": "untp-core:assessmentLevelCode#Validated",
+      "@type": "untp-core:assessmentLevelCode",
+      "rdf:value": "Validated",
+      "rdfs:label": "External validation",
+      "rdfs:comment": "conformity assessment externally validated"
+    },
+    {
+      "@id": "untp-core:assessmentLevelCode#Unspecified",
+      "@type": "untp-core:assessmentLevelCode",
+      "rdf:value": "Unspecified",
+      "rdfs:label": "No endorsement.",
+      "rdfs:comment": "conformity assessment claiming no external authority or else unspecified"
+    },
+    {
+      "@id": "untp-core:assessorLevelCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "assessorLevelCode",
+      "rdfs:comment": "Code that describes the level of independent assurance of the specific assessment"
+    },
+    {
+      "@id": "untp-core:assessorLevelCode#Self",
+      "@type": "untp-core:assessorLevelCode",
+      "rdf:value": "Self",
+      "rdfs:label": "Self assessed",
+      "rdfs:comment": " self-assessment"
+    },
+    {
+      "@id": "untp-core:assessorLevelCode#Commercial",
+      "@type": "untp-core:assessorLevelCode",
+      "rdf:value": "Commercial",
+      "rdfs:label": "Commercial assessment",
+      "rdfs:comment": " conformity assessment by related body or under commercial contract"
+    },
+    {
+      "@id": "untp-core:assessorLevelCode#Buyer",
+      "@type": "untp-core:assessorLevelCode",
+      "rdf:value": "Buyer",
+      "rdfs:label": "Buyer assessment",
+      "rdfs:comment": " conformity assessment by potential purchaser"
+    },
+    {
+      "@id": "untp-core:assessorLevelCode#Membership",
+      "@type": "untp-core:assessorLevelCode",
+      "rdf:value": "Membership",
+      "rdfs:label": "Industry body assessment",
+      "rdfs:comment": " conformity assessment by industry representative body or membership body"
+    },
+    {
+      "@id": "untp-core:assessorLevelCode#Unspecified",
+      "@type": "untp-core:assessorLevelCode",
+      "rdf:value": "Unspecified",
+      "rdfs:label": "No independent assessment",
+      "rdfs:comment": " conformity assessment by party with unspecified relationship "
+    },
+    {
+      "@id": "untp-core:assessorLevelCode#3rdParty",
+      "@type": "untp-core:assessorLevelCode",
+      "rdf:value": "3rdParty",
+      "rdfs:label": "Independent third party assessment",
+      "rdfs:comment": " 3rd party (independent) conformity assessment"
+    },
+    {
+      "@id": "untp-core:attestationTypeCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "attestationTypeCode",
+      "rdfs:comment": "A code for the type of the attestation credential"
+    },
+    {
+      "@id": "untp-core:attestationTypeCode#certification",
+      "@type": "untp-core:attestationTypeCode",
+      "rdf:value": "certification",
+      "rdfs:label": "certification",
+      "rdfs:comment": "A formal third party certification of conformity"
+    },
+    {
+      "@id": "untp-core:attestationTypeCode#declaration",
+      "@type": "untp-core:attestationTypeCode",
+      "rdf:value": "declaration",
+      "rdfs:label": "declaration",
+      "rdfs:comment": "A self assessed declaration of conformity"
+    },
+    {
+      "@id": "untp-core:attestationTypeCode#inspection",
+      "@type": "untp-core:attestationTypeCode",
+      "rdf:value": "inspection",
+      "rdfs:label": "inspection",
+      "rdfs:comment": "An Inspection report "
+    },
+    {
+      "@id": "untp-core:attestationTypeCode#testing",
+      "@type": "untp-core:attestationTypeCode",
+      "rdf:value": "testing",
+      "rdfs:label": "testing",
+      "rdfs:comment": "A test report"
+    },
+    {
+      "@id": "untp-core:attestationTypeCode#verification",
+      "@type": "untp-core:attestationTypeCode",
+      "rdf:value": "verification",
+      "rdfs:label": "verification",
+      "rdfs:comment": "A verification report"
+    },
+    {
+      "@id": "untp-core:attestationTypeCode#validation",
+      "@type": "untp-core:attestationTypeCode",
+      "rdf:value": "validation",
+      "rdfs:label": "validation",
+      "rdfs:comment": "A validation report"
+    },
+    {
+      "@id": "untp-core:attestationTypeCode#calibration",
+      "@type": "untp-core:attestationTypeCode",
+      "rdf:value": "calibration",
+      "rdfs:label": "calibration",
+      "rdfs:comment": "An equipment calibration report"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "conformityTopicCode",
+      "rdfs:comment": "A high level category scheme for product and facility conformity declarations (claims or attestations)"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#environment.energy",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "environment.energy",
+      "rdfs:label": "Clean energy",
+      "rdfs:comment": "claims supporting clean energy transition"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#environment.emissions",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "environment.emissions",
+      "rdfs:label": "GHG emissions",
+      "rdfs:comment": "claims supporting GHG emissions reduction"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#environment.water",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "environment.water",
+      "rdfs:label": "Water usage",
+      "rdfs:comment": "claims supporting minimising water usage impact"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#environment.waste",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "environment.waste",
+      "rdfs:label": "Waste reduction",
+      "rdfs:comment": "claims supporting waste processing and reduction"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#environment.deforestation",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "environment.deforestation",
+      "rdfs:label": "Deforestation",
+      "rdfs:comment": "claims supporting native forest restoration"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#environment.biodiversity",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "environment.biodiversity",
+      "rdfs:label": "Biodiversity",
+      "rdfs:comment": "claims supporting improved biodiversity outcomes"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#circularity.content",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "circularity.content",
+      "rdfs:label": "Circular content",
+      "rdfs:comment": "claims supporting the use of recycled content in products"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#circularity.design",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "circularity.design",
+      "rdfs:label": "Circular design",
+      "rdfs:comment": "claims supporting product design for circularity outcomes"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#social.labour",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "social.labour",
+      "rdfs:label": "Fair work",
+      "rdfs:comment": "claims supporting labour rights including fair wages"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#social.rights",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "social.rights",
+      "rdfs:label": "Human rights",
+      "rdfs:comment": "claims supporting human rights and anti-discrimination"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#social.community",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "social.community",
+      "rdfs:label": "Community development",
+      "rdfs:comment": "claims supporting local community development"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#social.safety",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "social.safety",
+      "rdfs:label": "Safety",
+      "rdfs:comment": "claims supporting process and product safety"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#governance.ethics",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "governance.ethics",
+      "rdfs:label": "Ethics",
+      "rdfs:comment": "claims supporting ethical conduct and corporate governance"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#governance.compliance",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "governance.compliance",
+      "rdfs:label": "Regulatory compliance",
+      "rdfs:comment": "claims supporting regulatory compliance including taxation and community protection"
+    },
+    {
+      "@id": "untp-core:conformityTopicCode#governance.transparency",
+      "@type": "untp-core:conformityTopicCode",
+      "rdf:value": "governance.transparency",
+      "rdfs:label": "Transparency",
+      "rdfs:comment": "claims supporting transparency and traceability"
+    },
+    {
+      "@id": "untp-core:countryCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "countryCode",
+      "rdfs:comment": "Country code list."
+    },
+    {
+      "@id": "untp-core:encryptionMethodCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "encryptionMethodCode",
+      "rdfs:comment": "Encryption method code list"
+    },
+    {
+      "@id": "untp-core:encryptionMethodCode#none",
+      "@type": "untp-core:encryptionMethodCode",
+      "rdf:value": "none",
+      "rdfs:label": "No encryption",
+      "rdfs:comment": "no encryption"
+    },
+    {
+      "@id": "untp-core:encryptionMethodCode#AES",
+      "@type": "untp-core:encryptionMethodCode",
+      "rdf:value": "AES",
+      "rdfs:label": "AES encrypted",
+      "rdfs:comment": "Advanced Encryption Standard (AES)"
+    },
+    {
+      "@id": "untp-core:hashMethodCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "hashMethodCode",
+      "rdfs:comment": "Hash method code list"
+    },
+    {
+      "@id": "untp-core:hashMethodCode#SHA-256",
+      "@type": "untp-core:hashMethodCode",
+      "rdf:value": "SHA-256",
+      "rdfs:label": "SHA 256 bit",
+      "rdfs:comment": "Secure Hash Algorithm 256 bits"
+    },
+    {
+      "@id": "untp-core:hashMethodCode#SHA-1",
+      "@type": "untp-core:hashMethodCode",
+      "rdf:value": "SHA-1",
+      "rdfs:label": "SHA 160 bit",
+      "rdfs:comment": "Secure Hash Algorithm 160 bits"
+    },
+    {
+      "@id": "untp-core:mimeType",
+      "@type": "rdfs:Class",
+      "rdfs:label": "mimeType",
+      "rdfs:comment": "IANA multipart media encoding type "
+    },
+    {
+      "@id": "untp-core:operationalScopeCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "operationalScopeCode",
+      "rdfs:comment": "Code list to indicate scope 3 emissions operational boundaries"
+    },
+    {
+      "@id": "untp-core:operationalScopeCode#None",
+      "@type": "untp-core:operationalScopeCode",
+      "rdf:value": "None",
+      "rdfs:label": "Excludes scope 3",
+      "rdfs:comment": "Scope 1 & 2 only"
+    },
+    {
+      "@id": "untp-core:operationalScopeCode#CradleToGate",
+      "@type": "untp-core:operationalScopeCode",
+      "rdf:value": "CradleToGate",
+      "rdfs:label": "Cradle to gate",
+      "rdfs:comment": "Includes upstream scope 3 only"
+    },
+    {
+      "@id": "untp-core:operationalScopeCode#CradleToGrave",
+      "@type": "untp-core:operationalScopeCode",
+      "rdf:value": "CradleToGrave",
+      "rdfs:label": "Cradle to grave",
+      "rdfs:comment": "includes full lifecycle (upstream and downstream) scope 3"
+    },
+    {
+      "@id": "untp-core:performanceLevelCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "performanceLevelCode",
+      "rdfs:comment": "Coe list to indicate the performance level (eg A, B, C) at which this criterion is targeted."
+    },
+    {
+      "@id": "untp-core:statusCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "statusCode",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-core:statusCode#proposed",
+      "@type": "untp-core:statusCode",
+      "rdf:value": "proposed",
+      "rdfs:label": "",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-core:statusCode#active",
+      "@type": "untp-core:statusCode",
+      "rdf:value": "active",
+      "rdfs:label": null,
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-core:statusCode#deprecated",
+      "@type": "untp-core:statusCode",
+      "rdf:value": "deprecated",
+      "rdfs:label": null,
+      "rdfs:comment": null
+    },
+    {
+      "@id": "untp-core:tagCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "tagCode",
+      "rdfs:comment": "A set of tags that can be used to classify or group criteria"
+    },
+    {
+      "@id": "untp-core:topicCode",
+      "@type": "rdfs:Class",
+      "rdfs:label": "topicCode",
+      "rdfs:comment": ""
+    },
+    {
+      "@id": "untp-core:unitOfMeasure",
+      "@type": "rdfs:Class",
+      "rdfs:label": "unitOfMeasure",
+      "rdfs:comment": "UNECE Recommendation 20 Unit of Measure codelist"
+    }
+  ]
+}
