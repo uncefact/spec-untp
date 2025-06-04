@@ -17,12 +17,13 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* **Thursday 8pm UTC meetings**.  Every 4 weeks. Next meeeting 1st May 2025. 
-	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
-	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
-* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 15th May 2025.  
+* **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 12th June 2025.  
 	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
 	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
+
+* **Thursday 9pm UTC meetings**.  Every 4 weeks. Next meeeting 26th June 2025. 
+	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
+	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
 
@@ -32,7 +33,9 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2025-04-17| [The UNTP team met to discuss updates on Recommendation 49, roadmap milestones, pilot project planning across sectors, subgroup formation, and key terminology and data structure decisions, welcoming several new participants to the initiative.](../../meetings/2025-04-17-Recording.txt)|[video](https://us02web.zoom.us/rec/share/CEZuLKkqS1OmzPXhinc1UDmLeDEn-ottyW17ZzG3BgYa8WpTWPArTvOQGKz88bc3.QXWJ6am-Kt7S_bRx)|[transcript](../../meetings/2025-04-17-Recording.txt)|
+|2025-05-29| [The UNTP Working Group discussed copper supply chain traceability challenges, mass balance and book-and-claim models, credential mapping within UNTP, and previewed Tier 3 testing for verifying relationships between multiple verifiable credentials.](#2025-05-29-meeting-summary)|[video](https://us02web.zoom.us/rec/share/41Qwol7tGBl8ISM0zvDioLy8dTggFFRFZmA_Kc1lM5HBf0YsaoGnNXc09PD49XhE.pxfdPbPOVjaihWXJ)|[transcript](../../meetings/2025-05-29-Recording.txt)|
+|2025-05-14| [The UNTP Technical Working Group reviewed and approved schema updates, demonstrated a new validation and mutual verification testing pipeline, discussed data model interoperability across ecosystems like GS1, and prepared for the upcoming 0.6 release with contributions from new and returning participants.](#2025-05-14-meeting-summary)|[video](https://us02web.zoom.us/rec/share/busUMzc0brcbdFVBFXPpfUUOnyMRVZgO2HssV_-LcnVvkVmBOFNJgTUu8OUvVF7c.FUuxe8bXmucP1joO)|[transcript](../../meetings/2025-05-14-Recording.txt)|
+|2025-04-17| [The UNTP team met to discuss updates on Recommendation 49, roadmap milestones, pilot project planning across sectors, subgroup formation, and key terminology and data structure decisions, welcoming several new participants to the initiative.](#2025-04-17-meeting-summary)|[video](https://us02web.zoom.us/rec/share/CEZuLKkqS1OmzPXhinc1UDmLeDEn-ottyW17ZzG3BgYa8WpTWPArTvOQGKz88bc3.QXWJ6am-Kt7S_bRx)|[transcript](../../meetings/2025-04-17-Recording.txt)|
 |2025-04-03| [The UNTP working group, led by Steve and Brett, reviewed draft terms of reference for subgroups and introduced a proposed Sustainability Vocabulary Catalog to standardize and digitize conformity criteria, while participants raised concerns around governance, classification, and AI integration.](#2025-04-03-meeting-summary)|[video](https://us02web.zoom.us/rec/share/4gZmOdWIZ6qO3X3kSnHFfOEIXKTCwNeurVx3lBHk8LjWA2sWFZFADkoBOWT2V4Gp.bTZgsXCWizVbmj9B)|[transcript](../../meetings/2025-04-03-Recording.txt)|
 |2025-03-20| [The UNTP meeting focused on strengthening governance, introducing subcommittees for scalability, and advancing work on a machine-readable sustainability criteria catalog to support digital product passports.](#2025-03-20-meeting-summary)|[video](https://us02web.zoom.us/rec/share/peh1TXSSwynNkdt3NupX2t23TVtOz4ygI5JDoFfXfadYxM5irHhgYS2VTX3XxCz_.FjrlrwC7vj1qTyDS) |[transcript](../../meetings/2025-03-20-Recording.txt)
 |2025-03-06| [The meeting covered updates on GS1's commitment, improvements to the information architecture, the UNTP Playground's credential validation features, and a discussion on whether bulk materials require a separate Digital Material Passport, concluding that further testing is needed.](#2025-03-06-meeting-summary)|[video](https://us02web.zoom.us/rec/share/LS0ZS4wMm45ZUBZNrH-oQJkpT2R7a4F8Ma9GOeW6ZHk1HwhLFPMVdVXI8Vy14IEK.lej3QWxOntusXGsK)|[transcript](../../meetings/2025-03-06-Recording.txt)|
@@ -78,6 +81,156 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+## 2025-05-29 Meeting Summary
+
+**UNTP Working Group – Meeting Summary**
+**Date:** 29 May 2025
+**Chair:** Steve Capell
+**Recording:** Confirmed, to be published
+**Session Type:** Technical status meeting
+
+#### Participants (Named)
+
+* **Steve Capell** – Chair, presented chain of custody models and led discussion
+* **Phil Archer** – Provided update on IANA registration for DPP link relation type
+* **Nancy Norris** – Chair of the UNCFACT Bureau; described UNCFACT’s oversight and copper industry interest
+* **Nick Smith** – Commented on mass balance, government-linked registries, and emissions data aggregation
+* **Michael** – Presented Tier 3 testing proof of concept for credential trust graphs
+* **Adriana** – Raised questions on access control and data visibility for traders
+* **Ali (Canada)** – Described practical implementation of mass balance in mining operations
+* **Brett** – Asked about access to Tier 3 testing tools
+* **Other noted speakers:** Zach (mentioned), Jordan, and unnamed participants from Surpass and other affiliated organizations
+
+#### Key Topics Discussed
+
+1. **IANA Link Relation Registration**
+
+* Phil is registering "dpp" as an IANA link relation type.
+* UNTP will be cited as the primary reference, with an equivalence note to GS1’s DPP.
+* The working group agreed with the proposed short, precise definition.
+
+2. **Chain of Custody in Copper Supply Chain**
+
+* Steve presented a multi-step diagram from mine to EV recycling, explaining transformation from ore to concentrate, blister, cathodes, and manufactured goods.
+* Discussion focused on identity, traceability, and batch blending complexities—especially where smelters/refiners mix inputs from multiple sources.
+
+3. **Mass Balance and Guarantee of Origin**
+
+* Mass balance models were discussed as key mechanisms to trace sustainability attributes through mixed material flows.
+* The need for quota management and assurance was emphasized, with commentary from Nick and Ali on real-world practices in Australia and Canada.
+* Nancy noted that Coppermark and IRMA already audit chain-of-custody systems rather than individual transactions.
+
+4. **Trading and Obfuscation**
+
+* Traders often redact source identities due to commercial sensitivities.
+* Adriana and others discussed access control solutions using UNTP’s decentralized access model.
+* Quality assurance requirements in sectors like defense and aerospace were noted as potential drivers for full traceability.
+
+5. **Book and Claim Models**
+
+* Explored as complementary to traceability, particularly when traceability is impractical or cost-prohibitive.
+* Nancy and Nick highlighted their utility in incentivizing sustainability improvements at the source.
+* Discussion raised the issue of potential double counting and the role of registry programs in preventing it.
+
+6. **UNTP Mapping**
+
+* Steve proposed that guarantees of origin be treated as digital conformity credentials (DCCs), and stock/flow data as traceability events (DTEs).
+* The group generally agreed this was a practical mapping to UNTP concepts.
+
+7. **Tier 3 Testing Demo**
+
+* Michael demonstrated a CLI-based proof of concept that builds a trust graph from verifiable credentials and their relationships.
+* Key functionality included JSON-LD parsing, schema validation, issuer trust chain verification, and semantic inference.
+* Planned future integration with the UNTP Playground and improvements in visualization were discussed.
+* GitHub repo was shared for early testing and contributions.
+
+#### Outcomes and Next Steps
+
+* Update the UNTP chain of custody page to include mass balance and book-and-claim explanations, with diagrams and credential mappings.
+* Continue development of Tier 3 testing features and integrate into UNTP Playground.
+* Reach out to Phil and Michael for offline collaboration on IANA registration and testing framework, respectively.
+* Schedule next meetings targeted for European time zones, with ongoing discussions to continue online.
+
+
+## 2025-05-14 Meeting Summary
+
+**UNTP Technical Working Group – Meeting Summary**
+**Date:** 14 May 2025
+**Chair:** Zach
+**Host:** Zach
+**Recording:** Confirmed to be active, potentially recorded to Zach's Zoom cloud
+
+#### Participants (Named)
+
+* **Zach** – Facilitator, led discussion on governance, PRs, and technical updates
+* **Ash** – Demonstrated the new data model validation and mutual verification testing processes
+* **Phil Archer** – Provided feedback on testing and verification; discussed GS1 identifier systems
+* **Alex (Checked)** – Introduced interest in DID-based trust registries and UNTP contributions
+* **Christophe (Queer Factum)** – Joined as a contributor to DPP-related work, not representing GTC24
+* **Nabil Ahmed (Circularize)** – Observing UNTP developments due to alignment with traceability goals
+* **Unnamed expert from Cirpice2 / Impact** – Introduced herself as a first-time participant, working on traceability in the fashion sector
+* **Adriana** – Mentioned being assigned a task by Steve but unable to locate it
+* **Jordan** – Provided technical validation feedback and support for Ash's demo
+* **Nick Smith** – Asked questions about validation pipeline context and real-world change examples
+* **Stefano** – Mentioned in the list of open GitHub tickets
+* **Michael** – Collaborated on addressing schema validation issues (mentioned by Ash)
+
+#### Key Topics and Discussions
+
+1. **Meeting Opener and Introductions**
+
+* Zach emphasized that the meeting follows the UN Open Development process.
+* New participants introduced themselves, notably from Europe, fashion, and the Circularize traceability platform.
+
+2. **Pull Request Reviews**
+
+* Zach reviewed PR #43 concerning updates to FAQs on DPP topics like late data and repair events.
+* Ash approved and merged the PR with no objections.
+* Plan: remaining PRs to be reviewed by participants post-meeting; objections must be submitted by week's end.
+
+3. **Jargon Release and Validation Pipeline**
+
+* Ash presented the new validation workflow:
+
+  * Snapshots now trigger schema and context validation pipelines.
+  * Errors caught pre-release instead of post-release.
+  * Includes JSON-LD expansion and schema conformance checks.
+* The process reduces error rates and increases community collaboration.
+* Human review remains critical for semantic accuracy.
+* Future improvement: enforce check statuses to block PR merges until validations pass.
+
+4. **Mutual Verification Testing Demo**
+
+* Ash presented the UNTP Playground tool:
+
+  * Supports mutual verification for VCs against UNTP schema and VCDM.
+  * Users upload their own VCs and verify others' to prove interoperability.
+* Documentation now explains Tier 1 and Tier 2 testing stages.
+* W3C VCDM v2 test suite was found insufficient; custom mutual verification is used for now.
+
+5. **Discussion on Data Model Interoperability**
+
+* Phil raised concerns about overlapping verification logic across different ecosystems (e.g., GS1 vs UNTP).
+* Zach explained Tier 1 (technical VC compliance), Tier 2 (schema-level), and Tier 3 (cross-credential trust graph) validations.
+* Alex emphasized the future role of global trust registries in resolving schema equivalence and issuer accreditation.
+
+6. **Open Issues and Next Steps**
+
+* Zach reviewed the GitHub issues list for the 0.6 release and reminded participants to address their assignments.
+* Phil confirmed recent contributions and encouraged peer review of IDR-related spec additions.
+* Adriana will follow up with Steve to confirm her assigned task.
+
+7. **FIWARE DPP Announcement**
+
+* A participant shared that they will be presenting UNTP at the FIWARE Global Summit in Morocco, focusing on Open DPP frameworks for SMEs and smart city applications.
+
+#### Next Steps
+
+* Review and comment on current open pull requests before end of week.
+* Prepare for next session where Tier 3 testing and trust graph validation will be showcased.
+* Steve to follow up with Adriana on task assignment.
+* Continue collaboration on global trust registries and identity scheme integration.
 
 ## 2025-04-17 Meeting Summary
 
