@@ -1,0 +1,600 @@
+[Speaker 12]
+Hi, Krzysztof, how are you today? Hi. Okay, sorry.
+
+I have to switch cameras. That's okay.
+
+[Speaker 1]
+Zach, I've made you host. I've also got a notification that we are recording, and I can see that we are.
+
+[Speaker 2]
+And is it recording in the cloud? Because we had a problem with that last time.
+
+[Speaker 1]
+Yeah, I believe so. I can't confirm, right? I have to assume that it is.
+
+Okay. If not, I'll have a look around my documents folder. Yeah.
+
+After the meeting. So, Zach, it looks as though it's recording to perhaps maybe your Zoom cloud account. I have a cloud with an icon next to your name.
+
+So, it might actually be in your Zoom account. The recording of the previous meeting, that is.
+
+[Speaker 2]
+I went looking in my cloud account.
+
+[Speaker 1]
+Yeah. I'm not sure. I checked mine, too.
+
+I couldn't see it.
+
+[Speaker 2]
+I'll check again, and we'll make sure after this. Cool.
+
+[Speaker 12]
+Adriana? I can't hear you, Adrian. You're on silence.
+
+[Speaker 6]
+Extremely silent. It's very muted, but I hear something.
+
+[Speaker 7]
+What about now?
+
+[Speaker 6]
+That's better. Yeah.
+
+[Speaker 7]
+Okay. All right. I had the microphone plug in the wrong plug.
+
+Does that make sense?
+
+[Speaker 2]
+Yeah. We'll give it another minute or two just to let a few more people join.
+
+[Speaker 7]
+Well, nice to see you here, Christoph.
+
+[Speaker 6]
+Nice to see you, too.
+
+[Speaker 7]
+Change of scenery.
+
+[Speaker 2]
+I'll give it another minute, and then we'll get started. I'm sort of leading the discussion today. Steve is on a flight to Bangkok as we speak.
+
+No, Hong Kong. Sorry. Not Bangkok.
+
+Bangkok's next week.
+
+[Speaker 7]
+Wish I was in Bangkok next week.
+
+[Speaker 2]
+All right. I see a few more people joining. I've gotten a number of requests from our AI friends to also participate, so I've said yes.
+
+We are also recording this. And just the regular disclaimer, this is following the UN Open Development process. In order to contribute, you do need to be a designated expert, as approved by your head of delegation, and any and all IP that is contributed is part of that open development process and will be part of UN IP and made available in either open source or Creative Commons licensing.
+
+So if you do want to participate, those are the conditions. And if you don't or if there's any IP or things you want to keep outside of that open development process, don't contribute to them in these sessions. All right.
+
+With that, I do want to introduce you to a few names I don't recognize. If this is your first time attending or you haven't had the opportunity to introduce yourself, I do want to open the floor to anybody who does want to sort of introduce themselves and sort of describe their interest or their organization. Anybody want to say hello?
+
+[Speaker 4]
+Alex? Hey, yeah, I've been on a few of these calls before, but I don't think I've met this group here because I've just moved to a European time zone from an Australian time zone, so I'm sort of new on these calls. But I'm working for a company called Checked.
+
+We're very sort of deep in the decentralized ID sort of industry, and we've been working on building out sort of trust registry standards. So I'm quite interested in what John Phillips is leading on the global trust registry sort of spinoff from UNTP and looking at sort of how decentralized identifiers can be sort of associated with products as they move along the supply chain. So, yeah, no, looking forward to sort of contributing my own sort of expertise on the sort of dead side and seeing how that progresses with UNTP.
+
+[Speaker 2]
+Great. Alex, well, welcome. Thank you.
+
+Anybody else want to raise their hand or introduce themselves if this is kind of the first time or you haven't introduced yourself in the past?
+
+[Speaker 6]
+Well, it's not my first time, but I don't think I have introduced myself to this group. So I'm Christophe from Queer Factum, which is a company that builds a platform for DPPs in Europe. So we are based in Roche.
+
+And so we are also part of GTC24. And so we like to contribute and see. So I'm here not in the perspective of GTC24.
+
+That's clear because I can't. I'm not representing them. I'm just interested in UNTP.
+
+Sorry, I forgot for a short time. UNTP, I'm sorry.
+
+[Speaker 12]
+I'm just confused.
+
+[Speaker 6]
+So I'm very much interested in making sure that we can support and that we can contribute our knowledge where necessary.
+
+[Speaker 2]
+Great. Excellent. Christophe, welcome.
+
+Thank you.
+
+[Speaker 6]
+Thank you.
+
+[Speaker 2]
+Anybody else? Yeah.
+
+[Speaker 8]
+Can you hear me? Yes. I'm Nabil Ahmed.
+
+This is not my first time joining one of these meetings. I'm mostly, this is my second or third, but I'm mostly here as an observer, just also learning more about UNTP, essentially because it's quite valuable for us. I'm actually a product strategist at Circularize.
+
+Circularize is a traceability solution as well as, I mean, we've had DPPs as well for the past four or five years almost. So, yeah. And I think, I really believe in the way UNTP's approach makes a lot of sense to me.
+
+Hence, I want to follow it more closely. Hence, I joined the meetings. But yeah.
+
+Cheers. Nice to meet you all. Excellent.
+
+Welcome, Nabil.
+
+[Speaker 2]
+Anybody else want to introduce themselves and describe quickly?
+
+[Speaker 11]
+Hi, everyone. Nice to meet you. This is actually my first meeting within the UNTP table.
+
+Actually, I am part, as an expert, of Cirpice2, and I do work as head of global strategy for impact. You see the logo up there. We support companies in fashion to make more traceable and transparent supply chain.
+
+So, I thought that was the right place to be. So, happy to join you.
+
+[Speaker 2]
+Excellent. Thanks for joining us. Is there anybody else?
+
+All right. I'll move on. Welcome to the new folks.
+
+Welcome to the folks we've seen here for a while. We're going to go through a bit of an agenda today, starting with some pull requests to review. There's basically one that's a pretty simple one that I did recently to close off one of the tickets that we assigned last time to me.
+
+Then we have four others that Ashley is going to walk us through that's going to articulate how we move from the jargon modeling process to high-quality, explainable release artifacts that we can track with version control and release management via GitHub. So, he's going to walk us through that process. There's been some really good work there that increases the governance and controls around our release process from the modeling side through to a release that's ready to be used.
+
+And so, the work that Ash will show us has been, as we've been building the artifacts out for the 0.6 release, we want to make sure that we're having nice, strong traceability and release management. And so, we'll walk through it. It's a bit of a technical demo, but I think it's important.
+
+And then we're going to ask Ash to also show us some additional testing that he's been doing around mutual validation, that process. And that's a little bit of a preview of some additional testing we'll probably show next meeting around what we describe as our Tier 3 test models, which is sort of trust graph navigation testing, which is that Tier 3 stuff, which we're working hard on behind the scenes that becomes a really important piece of the puzzle. So, this session is a little bit of a technical release process in the weeds kind of session, but bear with us as we sort of walk through those processes.
+
+Are there any other agenda items people would like to flag just so that we keep them front of mind as we sort of keep things on time? All right, cool. Well, I'll share my screen and get into the first, what I hope is a non-controversial poll request.
+
+Where is it? Here we go. All right.
+
+So, we actually have seven open poll requests. Can people see my screen?
+
+[Speaker 3]
+Yes, no problem, Zach.
+
+[Speaker 2]
+Yep. Well, hello, Phil. How are you?
+
+[Speaker 3]
+All right. Good to see everyone.
+
+[Speaker 2]
+Good to see you as well. So, the first two, so normally when we do poll request reviews, we go in reverse order so that we don't have conflicts. So, the first two, we're actually going to skip.
+
+We need to, I've put a comment in here to chat with Nis about this one. There's been some discussion about closing this and not merging it. So, I just want to confirm that with him before we do that.
+
+This next one, Ash and I are talking about this tomorrow. There's some, it's a, anyway, there's some now conflicts with some other things that have happened since then, and there's some conversation we need to have. So, it's not ready to be merged.
+
+So, I'm going to go to the third one up from the bottom, which is updating the frequently asked questions. So, I got assigned a ticket to number 43. We kind of just take a quick look at that one.
+
+There was, basically, the question was price negotiations based on DPP. Oh, I, basically, Steve sort of provided these answers in the ticket, and I've updated the frequently asked questions pages to address those questions. So, basically, what we're talking about here is, how do we handle late arriving data?
+
+How do we handle repair events? And while these answers aren't fully addressed yet in the UNTP spec, we do have sort of patterns and areas where we think they will be addressed, and we've put that into the FAQs. So, the change request, or the PR, if we look at the file, I've basically taken those questions and put them into the frequently asked questions page.
+
+I wanted to do this one. So, can I issue a DPP for a prior I haven't made yet? Can I add late arriving data?
+
+Can someone else add post-sale information? We sort of point to these areas, and I've added those questions here. Leave that.
+
+People want to read it quickly. So, basically, we're just trying to answer some questions and putting some examples out there. This is kind of just increasing the stub and adding some details.
+
+Any comments, concerns? All right. Ash, can you hit the approve button?
+
+There's no objection? Yep. The cool request.
+
+It's PR number.
+
+[Speaker 1]
+Yeah, yeah. It looks like your branch is out of date. Let me just quickly fix that.
+
+Add myself as a reviewer. I updated that. There's been a lot of changes today.
+
+[Speaker 12]
+Okay.
+
+[Speaker 1]
+Update branch. Just updating that now. Let's quickly go through.
+
+Let's check sec. Let's quickly approve that. Merge that once it's done.
+
+[Speaker 2]
+And with that, yep. With that, it kind of leaves us back to these four sort of vocabulary, basically how we move from jargon to release artifacts that are managed via source control in Git, and this is where I hand it to Ash, and he's going to do a bit of a demo for us, right?
+
+[Speaker 1]
+Yeah, exact. All right. Just share my screen.
+
+Okay. So I just need to remove all the Zoom clutter. Okay.
+
+I assume everyone can see my screen. Yep, we can. Cool.
+
+Okay. So a brief history on how we previously have been managing releases for UNTP. So currently I'm on a website called Juggern.
+
+It's essentially a tool that helps us with our data modeling needs, provides some nice functionality where it can produce, once we've created or defined a data model, we can produce things like schema and ontologies and context files and so on and so forth. So it's a really neat tool. So, yeah, a little bit of a context on what Juggern is.
+
+So previously the way in which we have managed Juggern releases for UNTP when data modeling in Juggern, we've pretty much just come into the editor, which I'm loading now. We make a few edits. We may want to save, make a save while we're, you know, working on things.
+
+So we can create something called a snapshot, which is just a checkpoint. And then we can actually, once we're happy with everything, we can then trigger a release in Juggern. Once a release in Juggern has been made, that the artifacts produced by Juggern, the schema, the ontology, the visual representation of the data model, and so on and so forth, and the documentation is then published to a UNC fact vocabulary website, which you can see here.
+
+Now we had a lot of issues with this workflow in the early stages of UNTP, such that we would make changes. We would then trigger a release. And then after triggering release, we would then get feedback from the community that the artifacts that were produced are not technically valid.
+
+And then also some updates or functional change requests from the community. So it was sort of a really clunky process where we would release and then we would get feedback and then we would have to make another release. And as you can see, that sort of spirals out of control.
+
+[Speaker 2]
+Just to maybe add a touch of context for some of the newer folks, these vocabularies are where we define the language of the different components of UNTP. So what Ash has on the screen here is the digital product. So the schema that we define is a digital product passport schema.
+
+So what's the metadata that goes along with a product passport? And the one he had up on the screen before is a sustainability vocabulary catalog metadata. What are the field definitions of a sustainability vocabulary catalog so that we're all using the same structure?
+
+And so the schema is what defines the structure of these credentials. And making sure that that is right and appropriately managed is what Ash is helping us understand here.
+
+[Speaker 1]
+Yeah, thanks for that, Zach. So yeah, that's a little bit of how we were handling release cycles of UNTP previously. We've since changed the workflow such that when we, so I'll just preface that it's still currently being developed.
+
+We have developed stage one, which handles validating the artifacts produced by Jargon when a snapshot occurs. And stage two will be routing the actual release that occurs in Jargon through our GitHub repository. So for stage one, what we've done is when a snapshot occurs within a domain, so this is the sustainability vocabulary domain.
+
+It could be the digital product passport domain. But respectively, when a snapshot occurs, we then basically trigger some code in the spec UNTP repository. And what that code does is run the artifacts produced by Jargon through a validation process where we make sure that the context files that are being produced are technically valid and there are no errors, but also more importantly, testing the test or the example credentials that we're producing for each data model, making sure that they're compliant with the schema and then also doing some JSON LD magic where we're expanding the documents and making sure that there's no undefined protected terms and so on and so forth. I'm sort of glossing over what all that sort of means, but the point is that we're testing things when a snapshot occurs as opposed to testing things after a release has occurred.
+
+[Speaker 9]
+So, yes. It's Nick Smith here just because I'm not from the technical side, but I'm trying to follow along because I feel like this is important for us to understand. Can you put a few sort of or maybe a working example around when would you trigger a snapshot and when would you what type what would be like a data model change in sort of real world terms?
+
+[Speaker 1]
+Yes, certainly. So, a snapshot can occur for as simple as we would like to update the description of the name attribute of a conformity criterion. So, here we can see that there's an example provided.
+
+So, GBA Battery Rulebook version 2.0. We could bump that up to version 3 and that could justify triggering a snapshot or it could be that a functional change request has been made by the community. Then once we collect all the feedback and sort of the essence of the problem we're trying to solve, we would then come into the data model, make that change. It might be I need to add a description field to this data model so I can display what this is about.
+
+We would then add that description field and then trigger that snapshot and then that would run that through the validation pipeline. But essentially, the snapshot is just to, again, is a checkpoint where we collect or have a collection of changes ready for a release but it's just sort of testing it as we sort of progress through that flow. Does that make sense?
+
+Is that better?
+
+[Speaker 2]
+Yeah, great. It might be adding a field. It might be changing the schema.
+
+It might be we might decide that we want to call it a digital product passport, a digital thing passport. So, any of those kinds of changes are what we're talking about here. So, just making sure we have a strong release process so that it's controlled and managed.
+
+[Speaker 9]
+That's great. And maybe just like one last follow-on question. When you said you then grabbed the relevant files and run it through sort of data model testing, is that a fixed structure of stuff which is like running a pseudo version or pseudo application of the UNTP and stress testing the changes?
+
+[Speaker 1]
+No, not necessarily. It's more so just making sure that we're producing valid schema files. Okay.
+
+Using valid context files, you know, against the JSONLT and so on and so forth, but also making sure that the example credentials that we're producing that will then be published on the UNTP specification website, ensuring that they are also valid as well. So, that's probably the extent of sort of stress testing, the credentials themselves.
+
+[Speaker 9]
+Gotcha.
+
+[Speaker 1]
+Yeah, the next step would be to go through the whole reference implementation process, which is sort of like stage two sort of testing. Yep. Thank you.
+
+No worries. Thanks for the questions.
+
+[Speaker 2]
+Okay. Any other questions while we're sort of paused and like before we let Ash go? All right.
+
+[Speaker 1]
+Awesome. Okay. So, once we, as mentioned, once we make a snapshot, it basically sends all of the data over to our repository, and we then run it through the validation pipeline.
+
+So, here I'm not expecting everyone to sort of read this, but the main point is that the validation pipeline failed, and the reason for that is that we were unable to validate the context within the credential, and it failed on that test case. And it gives a bit of an example of why. Basically, there was an undefined term category, and we need to fix that.
+
+So, once it's been through this validation pipeline, we then create a pull request within the UNTP specification repository, which you can see here. And what this allows us to do is invite the community to give their feedback on the changes being made, but also to catch errors, if there are any. So, one step is the validation pipeline, but then there's also sort of the human validation as well.
+
+Why was this change made? And so on and so forth. Which we can then view in the sort of view here, and see the changes.
+
+This is a big change because this data model hasn't actually been brought over to the UNTP specification repository. Usually, the changes are much smaller, which I'll show you in a moment. But the main point is that the validation pipeline failed.
+
+There has been some conversation around what needs to change to fix this. And then we then go back through that process, or we could open a ticket up for discussion, and then sort of go back through that iterative process again, where we would make the updates that fixed the change. Made the change that fixes the problem, and then run it back through the validation pipeline, and then we review it, and then merge it, if we're happy.
+
+Just as we do merge any other request. So, the sustainability. So, before I continue, any questions so far?
+
+No? Cool. Okay.
+
+So, this is an example of where the pipeline caught an error, and we've been able to iterate on that, and start to address those issues. Next, I'll just quickly show you. So, duplicated a couple of things.
+
+I'll show you where the pipeline succeeded. Sorry, an error occurred. The discussion took place, and where the human validation sort of comes into it, and is a very important part, and it's then a successful pipeline run.
+
+So, the digital facility records here, which is another UNTP data model, had an issue, which was caught in the pipeline. So, as a result, we raised a pull request. There was some discussion.
+
+For example, the pipeline succeeded, but one of the properties were accidentally removed, and this was discovered during the human review. This was then added back, and there was also some additional changes requested to add appropriate descriptions to some of the examples, to the attributes in the data models, and then once those changes were made, the pipeline succeeded, which basically So, here are all of the sort of validation pipeline runs over the last two days. So, as you can see, there's quite a lot.
+
+This was quite a cumbersome process before, where we were releasing and validating. This has allowed us to accelerate changes and validate those changes very rapidly, which is evident, based on what's on the screen right here. So, Michael and I have been able to achieve quite a lot over the last two days, given this new validation pipeline, and we've been able to address quite a lot of the issues that were present in the data models.
+
+So, that's pretty much it on the data model side of things, Zach. Does anyone have any questions about that process, what I've just been through, or feedback?
+
+[Speaker 2]
+Well, I love seeing testing and validation baked into workflows, and so, Ash, you know I always love seeing the tests. I love seeing failed tests, and I love seeing fixes right after those tests. It means that my perspective on that is it means that we have something that can scale much more easily, and we can increase the number of participants in these processes, because they can make changes and see their change either be successful or not, and that process becomes really important over time.
+
+And this is just one piece of the overall test architecture that we've been building out.
+
+[Speaker 1]
+Yeah, definitely, yep.
+
+[Speaker 2]
+Anybody else want to give feedback or echo that?
+
+[Speaker 10]
+I'm preaching to the converted. I'll echo a positive response, Ash. That's really good, and for me, it does, much like Zach was saying, it kind of does the syntax checking, the kind of parsing, if you like, before you kind of check the validity of something.
+
+So at least we know it compiles, and now we can see, actually, does it do what we want it to do or not, the human side of things. So it stops you kind of making the kind of syntactical errors that you might otherwise make, and you pick up too late. So it's a great addition to the tool set.
+
+[Speaker 1]
+Yeah, thanks, Jordan. Yeah, it's definitely reduced the feedback cycle, right, which is, you know, evident based on the information on the screen. So, yeah, it's been a pretty big improvement.
+
+I'll just say that this is still currently a work in progress. So stage 2 will be routing the releases, which will be merged only by the community members in a system like this. So that needs to be built, and that will be routed through this repository.
+
+And the second thing is that for the keen-eyed viewers, yep, so the checks themselves do not prevent a pull request from being merged. That's something that we've discovered going through this process over the last few days, and it's definitely something that we would like to add so that we sort of just catch those errors and fix those errors as opposed to having to go and check in another screen in the GitHub UI. But other than that, it's progressing well.
+
+Cool. All right. Zach, we can merge the digital facility record.
+
+We don't have to do this now if you don't want to, but this one's ready to go. But the sustainability vocabulary data model just needs one last tweak, and then that will be ready to be merged by tomorrow, hopefully.
+
+[Speaker 2]
+We probably should walk through what that merge process looks like for the one that is ready so people can see it, and then we can do the other ones. Because basically this is one big merge to get 0.6 schema ready for testing.
+
+[Speaker 1]
+Yeah, yeah, yeah. Okay. So this data model has been through a couple of iterations now and is passing the validation pipeline.
+
+The last check was just a couple of issues where some things were removed that needed to be replaced or put back, and then just some descriptions. So I know for a fact that this one's done, and as well as this. So basically it would just be in the pull request.
+
+As you can see, there's a couple here. So, yeah, you just go through, check the changes that were made. So here Michael has added a description field, has made a couple of changes that caused our RDF conversion to fail based on Vladimir's feedback.
+
+That's been addressed here as well. And also we are referencing the criterion in the UNTP core as opposed to defining it in the data model itself. So, yeah, I think it might be best to give people a little bit more time to review these in the future, right?
+
+So we'll send out links to what to review beforehand because it might be a little bit difficult to review this now.
+
+[Speaker 2]
+Or do we want to send out links and ask people to put comments in the... Like we can send out the links to the pull request, and people can add comments if they have any. And what I'd like to propose is because we are pushing towards the 0.6 release, and most of these are kind of technical cleanup type fixes as opposed to major changes, like they're not changing the spec or the thing, I'd like to propose that if we don't hear objections, so if you object, write them in the comments. Otherwise, we'll merge them by the end of the week.
+
+[Speaker 1]
+Cool. Sounds good.
+
+[Speaker 2]
+Any objections from anybody on the call to that approach? Okay. Directly after this call, we'll send out the links to the pull requests that we intend to merge by the end of the week.
+
+[Speaker 1]
+Sounds good.
+
+[Speaker 2]
+All right. Cool.
+
+[Speaker 1]
+Okay.
+
+[Speaker 2]
+You're now going to show us another testing demo.
+
+[Speaker 1]
+Yeah. So I'll show you half of the testing demo. But, yeah, I'll speak a little bit to it beforehand.
+
+So what I'll be demonstrating next is a little bit of an update to the testing documentation around our methodology in testing verifiable credentials and ensuring that we are all speaking the same language when it comes to verifiable credentials, and that language is based on the W3C verifiable credential B2 data model and a couple of others. But basically a page has been added to the test documentation just articulating what this methodology entails. So the approach that we're currently taking is through mutual verification of credentials.
+
+So there are a lot of steps involved when verifying a VC. So things like making sure that the did is present in the VC, making sure that we can resolve the did, making sure that the cryptographic material, we're able to decode the VC and so on and so forth. Not to get into the weeds here, but there's a lot of steps involved.
+
+So in this documentation, look through the process of mutual verification in the UNTP playground, which I'll demonstrate in a moment. But stage one is basically once you've produced a UNTP compliant credential and it's a verifiable credential, we provide the ability for implementers to take those credentials, upload it to the UNTP playground, which is a hosted piece of software. And that piece of software will then run through a couple of checks on the credential you've uploaded.
+
+And it can do things like intelligently determine what version you're using and what credential type and so on and so forth. And once uploaded, go through those tests and we actually verify the credential itself. Again, there's a couple of steps involved there.
+
+But then stage two of the mutual verification process, we actually provide implementers a credential to verify in their own implementation, their own VC implementation. And what that does is it proves that we can verify your credential and you can verify our credential. And based on that, we infer that we have both issued valid credentials.
+
+Otherwise we wouldn't be able to verify each other's credentials. So that's a little bit of stage two. So we provide a credential to implementers.
+
+They verify it in their system. Then walk through a couple of example scenarios of why this is important. So as a conformity assessment body, I produce a digital conformity credential as a VC.
+
+I then issue that to a battery manufacturer about their compliance, about their battery. They can then verify that VC. They can then link that VC in their digital product passport that they issued.
+
+And then a third party verifier can then verify both credentials and access the data within those credentials. So a bit of an example there. And then I just go through the verification process, so talking a little bit about the securing mechanisms that we used or was mandated by UNTP.
+
+A bit about verifying signatures, so just making sure that things haven't been tampered with and also the person claiming to have issued the credential is in fact the actual issuer of the credential. Making sure that the credential produced conforms to the schema of the respective data model. Going through a bit of JSON-LD testing where we expand the document, making sure that the terms are all there.
+
+And then finally checking the status of the credential. From there, go through the stage 2, which is sort of verifying their implementation, so where to download the credential, verifying the things you should be doing, and then where to go to resolve any issues. And then just sort of link off to the VCDM specification, the test suite, and a couple of other tooling in our specification.
+
+Now, some of you might be wondering why not just use the VCDM v2 test suite. So there's a bit of a note here that it's currently under active development, so over the last year or so as we've been building out these test suites, we've realized there's a couple of issues with that test suite such that things of the nature that if we were to try and test a credential, it would just fail because it was a static did that didn't resolve to anything, so it was always going to fail. And things like not being able to test credentials secured using an enveloping proof.
+
+Some progress has been made, but it's still not complete. So we've gone with the mutual verification for now. We'll circle back at a later date and check on this test suite to see if we can just point to that as opposed to sort of the mutual verification process, but they achieve the same result.
+
+So, yeah. Okay. And just a quick demo.
+
+I've showed some of you on the call already. Phil, do you want to ask your question before I start?
+
+[Speaker 3]
+I'll just wait until I've done his demo because I don't want to interrupt his flow.
+
+[Speaker 1]
+Thanks, Phil. I'll be two more minutes. So basically, UNTP Playgrounds, we have an area where we can drop the credential in.
+
+We have the section where we can retrieve our test credential. And just to demonstrate, I'll just drop a credential that I have, which is a DPP based on the 0.5 data model. Here we can see we went through, we were able to detect the proof type, the VCDM version.
+
+It validated against the VCDM schema. The credential verified and it passed the UNTP schema, but there's some issues with the JSON-LD. So that's fine for the mutual verification step because we passed the parts associated with verifying compliance with the VCDM.
+
+But then the next step would be to download the test credential, make sure it passed and you were able to verify that credential in your implementation. And yeah, that's pretty much it on that. Zach, any questions?
+
+Any feedback?
+
+[Speaker 2]
+Phil has his hand up. We'll go to him first.
+
+[Speaker 3]
+All right. So thank you very much indeed, Ash. I'm going to look at this in some detail and get some colleagues to look at it as well.
+
+It's all going through my head and maybe you and another data and VC specialist can help me out here. So there's a model that we've developed within UNTP. We have our own model, a GS1, that we're just finalizing and simplifying from, I don't know, something like a 70-page PDF down to, hey, here's a GitHub repo that tells you what to do in two minutes.
+
+But that verification system you've built and any verification system, you've included verifying that the VC follows the UNTP data model, right? And we're going to have one that says you follow the GS1 data model. It's a bit, you know, one-shot thing.
+
+I mean, yes, we'll be able to verify that any credential, the cryptographic doohickey stuff, that all works. But following those individual data models, and it just struck me listening to your comments there, that we're all having to build our own verification of our own data model. And that seems like a, not a single point of failure, but a limit to the scalability of this thing.
+
+[Speaker 1]
+Yeah, so it has, Zach, please feel free to correct me if I'm wrong, yeah, or misspeak here. But always the intent was to ensure that the core of the data models, everyone was interoperable with the core itself. And at the UNTP level, we allow extension points where implementers like GS1 can then extend the data model to suit your customers' needs or your industry's needs or whatever.
+
+So as long as that we're interoperable at the core, and we're speaking the same language in relation to VCs, that there shouldn't be anything that precludes GS1 or anyone for that matter, in extending the data model for your needs and still being UNTP.
+
+[Speaker 3]
+Yeah, I'm getting something slightly different, and I'm not going to carry on because we're running out of time, and I'm sure there are things to get through before we finish. But so our data model is based on the way we operate. So GS1 Global Office, where I work, we give the prefix 9-3 to GS1 Australia.
+
+Every identifier in Australia begins 9-3. And then GS1 Australia then hands out the next block of numbers and so on. That's a GS1 thing, right?
+
+You're not going to do that. We're doing that. So that's a data model that we have.
+
+And of course, that's separate from the UNTP model and so on. And it's only us that are going to build a verification system for that, which doesn't quite seem right. But I have an idea.
+
+Alex may have something interesting to say.
+
+[Speaker 2]
+Can I just add a little bit to what Ashley said before we go to Alex? So we're building a number of different verification systems throughout this. And actually, the test architecture that we're going to kind of go through in more detail in next week or in two weeks' time is our Tier 1, Tier 2, and Tier 3.
+
+And we've purposely broken it into three tiers to be able to kind of address different levels of validation and testing to meet specific needs. And so for example, Phil, your schema and scheme is an identity scheme. And so under UNTP, we do have a generic identity scheme model, the digital identity anchor and that side of things.
+
+And where there is a specific identity scheme, we describe your sort of verification as an extension. Like in order for it to be interoperable, we'd anticipate we would sort of map your extension to the digital identity scheme as an extension. We'd explore that, right?
+
+And so what we describe is Tier 1 testing is technical interoperability. It's a verifiable credential. It verifies all the sort of proof type, the VCDM, the stuff at the top.
+
+The second tier is the schema. Tier 2 of testing is scheme validation. So that's where we potentially collaborate on the digital identities sort of componentry of UNTP and collaborate with you on your scheme.
+
+And you might be happy to take our test suite and apply it to yours. It's all open source. So that might be a great thing to talk about.
+
+[Speaker 12]
+Yeah. Yeah.
+
+[Speaker 2]
+And then Tier 3 is how you take multiple credentials and validate that the links that sort of reinforce claims are made correctly. And so how do I know that the claim I'm making in my digital product passport is validated by this conformity assessment process that I've been through? Or how do I know that this identity scheme actually I own, right?
+
+Like those kinds of linkages between the data in a credential and data in other credentials, we need to do that mapping. And that's what Tier 3 testing is all about. We'll show everybody that stuff next week.
+
+Thank you. Yep. And we articulate that in some of the test stuff.
+
+Alex?
+
+[Speaker 4]
+Yeah. No, I think you've covered most of what I was going to say. That was a very good response.
+
+But directly to Phil's question as well, I think what John Phillips is working on with the global trust registry initiative will also be quite important for interoperability between different schemes. Because you can say that the governance and the trust registry level that perhaps there's an equivalence between these two particular data schemas for a particular specific use case in some instances. And then you could define that relationship at a trust registry level to say, OK, this issuer in particular with this did web is accredited to issue credentials of this UNTP scheme.
+
+And there is an equivalent GS1 scheme for that. And if you define that at a trust registry level, then when you're doing the validation, you can have a validation check against the trust registry and then see if there is a sort of cross endorsement at that level between the two schemes. So I think as we build that initiative out, there will probably become an extra layer of validation logic against trust registries, which is potentially where you could define that governance.
+
+[Speaker 3]
+Interesting. Thank you. Yes, there's lots there to get into and spend time on.
+
+But that's very encouraging from all of you. Thank you.
+
+[Speaker 1]
+Awesome. All right. Zach, that's it for myself.
+
+Excellent. Thanks, Ash.
+
+[Speaker 2]
+And I'm just looking at my notes. Actually, let me open. I don't have anything more that we were specifically going to discuss unless we want to start going through tickets again.
+
+But we kind of assigned them last time. I guess let me just kind of show our 0.6 tickets and remind people who have ones assigned to them that we do need the work done because we are moving very quickly to our 0.6 release. So if there are things assigned, and Phil, I know you've done some work on that.
+
+Appreciate that. But let me kind of just kind of walk through that quickly. And then I'll open it up to any other business.
+
+So milestones, 0.6 release. So we still have 24 open.
+
+[Speaker 3]
+Oh, that's 347. If I can just talk about that for a minute. So I wrote some words for the IDR spec covering my understanding of how did docs and the ideas in web version history about slash who is could conceptually do the same job that a resolver does.
+
+And I'd be very grateful if somebody, I mean, I know a bit about dids and VCs, but other people know far more. People with better expertise than me could review that and make sure I got it right. I think I did, but please review it.
+
+It's been merged into the spec. I was surprised it was merged into the spec. But so that issue is closed if the PR that was merged is acceptable.
+
+But it was merged. So I'm kind of hoping it was right. But more eyes are always good, and comments and criticisms are always welcome.
+
+[Speaker 7]
+Zach, I know that. Sorry to jump in. I know that Steve assigned me to a particular job.
+
+I've actually tried to find it without much luck. So where will I find where he listed my name? Do I just go to spec UNTP on the GitHub site?
+
+Is that where I go?
+
+[Speaker 2]
+Do you have a GitHub name handle?
+
+[Speaker 7]
+Yeah, it would have been under Adriana, wouldn't it?
+
+[Speaker 2]
+Let me go out of the...
+
+[Speaker 7]
+Oh, okay.
+
+[Speaker 2]
+It doesn't look like.
+
+[Speaker 7]
+Okay. All right. So is that what I need to do?
+
+Because I know that Steve, in a last meeting where he talked about this, he assigned me to something, and I've been trying to find it.
+
+[Speaker 2]
+I don't see anything assigned to you specifically. So maybe reach out to him or...
+
+[Speaker 7]
+All right. I know he's been very busy traveling and things like that. So I wanted to remind him, but seeing we were talking about it, I thought it would be a good time to ask this question.
+
+[Speaker 12]
+Yep.
+
+[Speaker 7]
+All right.
+
+[Speaker 2]
+All right. So six release. I've got a couple.
+
+Ash has a couple. Steve has a couple. Cassania, Phil, Phil, Phil.
+
+Me, Phil.
+
+[Speaker 3]
+I've got to get that done. I don't know why I haven't done it yet.
+
+[Speaker 2]
+Okay. And these are pending close. And this is Stefano.
+
+Yeah, just kind of flagging that these are all coming. Is there any other questions or business that people want to cover? I see that there's some chats.
+
+I'm going to stop sharing. Just kind of comments on the thing. All right.
+
+Great. Any other business or comments or things people want to chat about?
+
+[Speaker 5]
+Oh, just maybe from my side, I can share one update that I'm going to be speaking next week in Morocco in the FIWARE Global Summit. I don't know if people know the FIWARE. I'm sure you are knowing.
+
+We will be launching a new initiative with the FIWARE for Open DPP, let's say development, let's say framework with them. To be able to more foster the SMEs, because now this is the mandatory for the textile and the battery in EU. I guess there's going to be more alignment, particularly from my side, that the FIWARE and the UNTP team.
+
+That's the last thing. That session in Morocco is going to be more World Cup 2030 and how DPP, you know, evolving the landscape of DPP can be used for construction, for other smart city purposes. I guess this is going to be an interesting topic.
+
+Also, I will be mentioning UNTP and the global initiatives, and I will share with you the slides or the promotional materials that you can also be used. I don't know how you are using it. So that's the one thing that I wanted to share with this audience.
+
+Thank you.
+
+[Speaker 2]
+Excellent. Yeah. We're collaborating with the Global Battery Alliance on their DPP program.
+
+We're collaborating with, there's a UN project getting launched in textile and leather coming soon. And so there's quite a lot of, and this is an open protocol and open for you. So I think it's a good fit for what you're describing.
+
+[Speaker 5]
+Thank you. Particularly the discussions we've been seeing in this data models and standardization, and particularly, which is not the case for you, but the data spaces interoperability thing is going to be a big, let's say crucial technicality problems. So I hope that we can also contribute on that as well.
+
+[Speaker 2]
+Yeah. And so on the data spaces side, we are sort of looking, there are sort of active conversations around interoperability between UNTP and the sort of X ecosystem. So yeah, absolutely.
+
+Looking forward to collaborating. Cool. And like I sort of hinted, I do want to sort of share, well, actually one of the things I want to kind of flag that we are very focused on testing and validation, because we think that's a key leverage point for making interoperability work.
+
+Because if we can test and validate that these things will be interoperable, it means that implementers have the opportunity to test and validate as well. And so we'll talk a little bit about, I'm hopeful that next week or next session in two weeks time, I'll be able to show the tier three testing to folks, because that's a big piece of the puzzle. It makes a big part of the validation, particularly between DPPs and the claims in a DPP, and the proof about those claims from third party auditors and also building out the trust graphs so that people validate who's saying these things and connect to the digital trust registry project that John's leading and all of those pieces.
+
+So these testing pieces, I know it can be a little bit in the weeds, but it's an important piece of ensuring interoperability long term and making it easy for implementers to take advantage of it.
+
+[Speaker 12]
+Cool.
+
+[Speaker 2]
+Well, with that, unless there's anything else anybody wants to add? All right. Bye-bye.
+
+Excellent. Thank you, everybody. Appreciate your time.
+
+[Speaker 10]
+Thanks, everyone. Bye-bye. Thanks, Zach.
+
+Well done.
