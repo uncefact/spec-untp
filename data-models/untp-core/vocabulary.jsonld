@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
@@ -1226,7 +1226,7 @@
     {
       "@id": "untp-core:value",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -1321,7 +1321,7 @@
     {
       "@id": "untp-core:accuracy",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -1788,7 +1788,26 @@
       "rdfs:label": "performanceLevel"
     },
     {
-      "@id": "untp-core:tags",
+      "@id": "untp-core:category",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-core:Criterion"
+        }
+      ],
+      "rdfs:comment": [
+        "A set of classification codes that may be used to categorize the applicability of this criteria - for example industry sector, jurisdiction or commodity type - based on a formal vocabulary."
+      ],
+      "rdfs:label": "category"
+    },
+    {
+      "@id": "untp-core:tag",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -1802,9 +1821,9 @@
         }
       ],
       "rdfs:comment": [
-        "a category code to represent target stakeholder types or commodity types to which this criteron applies. "
+        "A set of tags that can be used by the scheme owner to be able to filter or group criterion in a large vocabulary for specific use cases."
       ],
-      "rdfs:label": "tags"
+      "rdfs:label": "tag"
     },
     {
       "@id": "untp-core:conformityEvidence",
@@ -1866,7 +1885,7 @@
     {
       "@id": "untp-core:massFraction",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -1904,7 +1923,7 @@
     {
       "@id": "untp-core:recycledMassFraction",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -2018,7 +2037,7 @@
     {
       "@id": "untp-core:recyclableContent",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -2037,7 +2056,7 @@
     {
       "@id": "untp-core:recycledContent",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -2056,7 +2075,7 @@
     {
       "@id": "untp-core:utilityFactor",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -2075,7 +2094,7 @@
     {
       "@id": "untp-core:materialCircularityIndicator",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -2094,7 +2113,7 @@
     {
       "@id": "untp-core:carbonFootprint",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -2151,7 +2170,7 @@
     {
       "@id": "untp-core:primarySourcedRatio",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -2908,22 +2927,22 @@
       "@id": "untp-core:statusCode#proposed",
       "@type": "untp-core:statusCode",
       "rdf:value": "proposed",
-      "rdfs:label": "",
-      "rdfs:comment": ""
+      "rdfs:label": "Proposed",
+      "rdfs:comment": "The criterion is proposed"
     },
     {
       "@id": "untp-core:statusCode#active",
       "@type": "untp-core:statusCode",
       "rdf:value": "active",
-      "rdfs:label": null,
-      "rdfs:comment": null
+      "rdfs:label": "Active",
+      "rdfs:comment": "The criterion is in active use."
     },
     {
       "@id": "untp-core:statusCode#deprecated",
       "@type": "untp-core:statusCode",
       "rdf:value": "deprecated",
-      "rdfs:label": null,
-      "rdfs:comment": null
+      "rdfs:label": "Deprecated",
+      "rdfs:comment": "The criterion is deprecated."
     },
     {
       "@id": "untp-core:tagCode",
