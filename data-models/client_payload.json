@@ -5,55 +5,42 @@
   },
   "artefacts": {
     "dataModel": {
-      "fileName": "unece_DigitalFacilityRecord_dataModel.svg",
-      "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/diagram/render.svg?light=true"
+      "fileName": "unece_untp-core_dataModel.svg",
+      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/diagram/render.svg?light=true"
     },
-    "jsonSchemas": [
-      {
-        "fileName": "unece_DigitalFacilityRecord_DigitalFacilityRecord_jsonSchema.json",
-        "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonSchemas/DigitalFacilityRecord.json?class=DigitalFacilityRecord"
-      },
-      {
-        "fileName": "unece_DigitalFacilityRecord_DigitalFacilityRecord_instance_jsonSchema.json",
-        "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonSchemas/DigitalFacilityRecord_instance.json?class=DigitalFacilityRecord_instance"
-      },
-      {
-        "fileName": "unece_DigitalFacilityRecord_FacilityRecord_jsonSchema.json",
-        "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonSchemas/FacilityRecord.json?class=FacilityRecord"
-      },
-      {
-        "fileName": "unece_DigitalFacilityRecord_FacilityRecord_instance_jsonSchema.json",
-        "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonSchemas/FacilityRecord_instance.json?class=FacilityRecord_instance"
-      }
-    ],
+    "jsonSchemas": [],
     "jsonldContext": {
-      "fileName": "unece_DigitalFacilityRecord_jsonldContext.json",
-      "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonldContexts/DigitalFacilityRecord.jsonld?class=DigitalFacilityRecord"
+      "fileName": "unece_untp-core_jsonldContext.json",
+      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/jsonldContexts/untp-core.jsonld?class=untp-core"
     },
     "jsonldVocab": {
-      "fileName": "unece_DigitalFacilityRecord_jsonld.json",
-      "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/jsonld/render.jsonld"
+      "fileName": "unece_untp-core_jsonld.json",
+      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/jsonld/render.jsonld"
+    },
+    "openapiSpec": {
+      "fileName": "unece_untp-core_openapi.json",
+      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/openapi/render.json"
     },
     "readme": {
-      "fileName": "unece_DigitalFacilityRecord_readme.md",
-      "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/artefacts/readme/render.md"
+      "fileName": "unece_untp-core_readme.md",
+      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/readme/render.md"
     }
   },
   "domain": {
     "account": "unece",
-    "name": "DigitalFacilityRecord",
-    "url": "https://jargon.sh/user/unece/DigitalFacilityRecord"
+    "name": "untp-core",
+    "url": "https://jargon.sh/user/unece/untp-core"
   },
   "settings": {
     "jsonld": {
       "generate": true,
-      "prefix": "untp-dfr",
-      "uri": "https://test.uncefact.org/vocabulary/untp/dfr/{{version}}/"
+      "prefix": "untp-core",
+      "uri": "https://test.uncefact.org/vocabulary/untp/core/{{version}}/"
     }
   },
   "snapshot": {
-    "description": "Add `[json.sampleOmit]` to FacilityRecord.id",
-    "index": 0,
-    "url": "https://jargon.sh/user/unece/DigitalFacilityRecord/s/0/editor"
+    "description": "Re-instate `Criterion.tag` (not `tags`) as per https://github.com/uncefact/spec-untp/issues/377#issuecomment-2921499546",
+    "index": 3,
+    "url": "https://jargon.sh/user/unece/untp-core/s/3/editor"
   }
 }
