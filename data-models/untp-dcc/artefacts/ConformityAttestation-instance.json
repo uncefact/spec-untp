@@ -100,12 +100,14 @@
   },
   "scope": {
     "type": [
-      "ConformityAssessmentScheme",
-      "Standard"
+      "ConformityScheme"
     ],
-    "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
-    "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
-    "issuingParty": {
+    "id": "https://jargon.sh",
+    "name": "The quick brown fox jumps over the lazy dog.",
+    "description": "The quick brown fox jumps over the lazy dog.",
+    "version": "The quick brown fox jumps over the lazy dog.",
+    "validFrom": "1970-01-01",
+    "owner": {
       "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
       "name": "Sample Company Pty Ltd.",
       "registeredId": "90664869327",
@@ -117,12 +119,7 @@
         "name": "Global Trade Identification Number (GTIN)"
       }
     },
-    "issueDate": "2023-12-05",
-    "trustmark": {
-      "fileName": "GHG protocol trust mark",
-      "fileType": "image/png",
-      "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
-    }
+    "trustMark": "undefined"
   },
   "assessment": [
     {

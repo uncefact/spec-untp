@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/0/",
+    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/working/",
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
@@ -166,12 +166,28 @@
         }
       }
     },
-    "ConformityAssessmentScheme": {
+    "ConformityScheme": {
       "@protected": true,
-      "@id": "untp-dcc:ConformityAssessmentScheme",
+      "@id": "untp-core:ConformityScheme",
       "@context": {
         "@protected": true,
-        "issuingParty": {
+        "name": {
+          "@id": "untp-core:name",
+          "@type": "xsd:string"
+        },
+        "description": {
+          "@id": "untp-core:description",
+          "@type": "xsd:string"
+        },
+        "version": {
+          "@id": "untp-core:version",
+          "@type": "xsd:string"
+        },
+        "validFrom": {
+          "@id": "untp-core:validFrom",
+          "@type": "xsd:string"
+        },
+        "owner": {
           "@id": "untp-core:Party",
           "@type": "@id",
           "@context": {
@@ -186,32 +202,9 @@
             }
           }
         },
-        "issueDate": {
-          "@id": "untp-core:issueDate",
+        "trustMark": {
+          "@id": "untp-core:trustMark",
           "@type": "xsd:string"
-        },
-        "trustmark": {
-          "@protected": true,
-          "@id": "untp-core:trustmark",
-          "@context": {
-            "@protected": true,
-            "fileName": {
-              "@id": "untp-core:fileName",
-              "@type": "xsd:string"
-            },
-            "fileType": {
-              "@id": "untp-core:fileType",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://mimetype.io/"
-              }
-            },
-            "file": {
-              "@id": "untp-core:file",
-              "@type": "xsd:string"
-            }
-          }
         }
       }
     },
@@ -316,7 +309,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -334,7 +327,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -428,7 +421,7 @@
                     "@protected": true,
                     "data": {
                       "@id": "geojson:data",
-                      "@type": "xsd:decimal"
+                      "@type": "xsd:double"
                     }
                   }
                 }
@@ -455,7 +448,7 @@
                         "@protected": true,
                         "data": {
                           "@id": "geojson:data",
-                          "@type": "xsd:decimal"
+                          "@type": "xsd:double"
                         }
                       }
                     }
@@ -615,7 +608,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -634,7 +627,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -653,7 +646,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -672,7 +665,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -691,7 +684,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -744,7 +737,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -762,7 +755,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -997,7 +990,7 @@
           }
         },
         "scope": {
-          "@id": "untp-dcc:scope",
+          "@id": "untp-core:scope",
           "@type": "@id"
         },
         "assessment": {
@@ -1171,7 +1164,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -1189,7 +1182,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
