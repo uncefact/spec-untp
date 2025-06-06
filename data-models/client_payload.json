@@ -1,0 +1,63 @@
+{
+  "action": {
+    "name": "onSnapshot",
+    "type": "snapshot"
+  },
+  "artefacts": {
+    "dataModel": {
+      "fileName": "unece_ConformityCredential_dataModel.svg",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/diagram/render.svg?light=true"
+    },
+    "jsonSchemas": [
+      {
+        "fileName": "unece_ConformityCredential_DigitalConformityCredential_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/jsonSchemas/DigitalConformityCredential.json?class=DigitalConformityCredential"
+      },
+      {
+        "fileName": "unece_ConformityCredential_DigitalConformityCredential_instance_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/jsonSchemas/DigitalConformityCredential_instance.json?class=DigitalConformityCredential_instance"
+      },
+      {
+        "fileName": "unece_ConformityCredential_ConformityAttestation_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/jsonSchemas/ConformityAttestation.json?class=ConformityAttestation"
+      },
+      {
+        "fileName": "unece_ConformityCredential_ConformityAttestation_instance_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/jsonSchemas/ConformityAttestation_instance.json?class=ConformityAttestation_instance"
+      }
+    ],
+    "jsonldContext": {
+      "fileName": "unece_ConformityCredential_jsonldContext.json",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/jsonldContexts/ConformityCredential.jsonld?class=ConformityCredential"
+    },
+    "jsonldVocab": {
+      "fileName": "unece_ConformityCredential_jsonld.json",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/jsonld/render.jsonld"
+    },
+    "openapiSpec": {
+      "fileName": "unece_ConformityCredential_openapi.json",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/openapi/render.json"
+    },
+    "readme": {
+      "fileName": "unece_ConformityCredential_readme.md",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/artefacts/readme/render.md"
+    }
+  },
+  "domain": {
+    "account": "unece",
+    "name": "ConformityCredential",
+    "url": "https://jargon.sh/user/unece/ConformityCredential"
+  },
+  "settings": {
+    "jsonld": {
+      "generate": true,
+      "prefix": "untp-dcc",
+      "uri": "https://test.uncefact.org/vocabulary/untp/dcc/{{version}}/"
+    }
+  },
+  "snapshot": {
+    "description": "Change ConformityAttestation.scope from the custom ConformityAssessmentScheme defined here (and incorrectly inheriting from Standard) to use the core ConformityScheme. See https://github.com/uncefact/spec-untp/issues/377#issuecomment-2948182003",
+    "index": 0,
+    "url": "https://jargon.sh/user/unece/ConformityCredential/s/0/editor"
+  }
+}

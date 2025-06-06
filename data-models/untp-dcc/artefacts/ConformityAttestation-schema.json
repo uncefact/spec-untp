@@ -131,7 +131,7 @@
       "description": "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usually private data and would normally be encrypted."
     },
     "scope": {
-      "$ref": "#/$defs/ConformityAssessmentScheme",
+      "$ref": "#/$defs/ConformityScheme",
       "description": "The scheme(s) under which this conformity assesment is issued. "
     },
     "assessment": {
@@ -379,16 +379,15 @@
       },
       "description": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
     },
-    "ConformityAssessmentScheme": {
+    "ConformityScheme": {
       "type": "object",
-      "additionalProperties": true,
+      "additionalProperties": false,
       "properties": {
         "type": {
           "type": "array",
           "readOnly": true,
           "default": [
-            "ConformityAssessmentScheme",
-            "Standard"
+            "ConformityScheme"
           ],
           "items": {
             "type": "string"
@@ -396,30 +395,35 @@
           "allOf": [
             {
               "contains": {
-                "const": "ConformityAssessmentScheme",
-                "minContains": 1
-              }
-            },
-            {
-              "contains": {
-                "const": "Standard",
+                "const": "ConformityScheme",
                 "minContains": 1
               }
             }
           ]
         },
         "id": {
-          "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
           "type": "string",
           "format": "uri",
-          "description": "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html)."
+          "description": "The identifier of this scheme as a URI. Typically of the form ownerDomain.schemeName."
         },
         "name": {
-          "example": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
           "type": "string",
-          "description": "The name of the standard"
+          "description": "The name of this conformity scheme"
         },
-        "issuingParty": {
+        "description": {
+          "type": "string",
+          "description": "The description of this conformity scheme"
+        },
+        "version": {
+          "type": "string",
+          "description": "Version of this scheme folling SemVer best practive (major.minor.patch). "
+        },
+        "validFrom": {
+          "type": "string",
+          "format": "date",
+          "description": "The data from which this scheme version is valid."
+        },
+        "owner": {
           "type": "object",
           "properties": {
             "id": {
@@ -443,22 +447,22 @@
             "id",
             "name"
           ],
-          "description": "The party that issued the standard "
+          "description": "The party that is the owner / maintainer of this conformity scheme."
         },
-        "issueDate": {
-          "example": "2023-12-05",
+        "trustMark": {
           "type": "string",
-          "format": "date",
-          "description": "The date when the standard was issued."
-        },
-        "trustmark": {
-          "$ref": "#/$defs/BinaryFile",
-          "description": "The trust mark that represents the conformity assessment scheme."
+          "format": "binary",
+          "description": "The trust mark or seal used by this conformity scheme."
         }
       },
-      "description": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification) ",
+      "description": "",
       "required": [
-        "issuingParty"
+        "id",
+        "name",
+        "description",
+        "version",
+        "validFrom",
+        "owner"
       ]
     },
     "ConformityAssessment": {
