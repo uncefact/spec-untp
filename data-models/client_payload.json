@@ -6,24 +6,24 @@
   "artefacts": {
     "dataModel": {
       "fileName": "unece_untp-core_dataModel.svg",
-      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/diagram/render.svg?light=true"
+      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/diagram/render.svg?light=true"
     },
     "jsonSchemas": [],
     "jsonldContext": {
       "fileName": "unece_untp-core_jsonldContext.json",
-      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/jsonldContexts/untp-core.jsonld?class=untp-core"
+      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/jsonldContexts/untp-core.jsonld?class=untp-core"
     },
     "jsonldVocab": {
       "fileName": "unece_untp-core_jsonld.json",
-      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/jsonld/render.jsonld"
+      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/jsonld/render.jsonld"
     },
     "openapiSpec": {
       "fileName": "unece_untp-core_openapi.json",
-      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/openapi/render.json"
+      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/openapi/render.json"
     },
     "readme": {
       "fileName": "unece_untp-core_readme.md",
-      "url": "https://jargon.sh/user/unece/untp-core/s/3/artefacts/readme/render.md"
+      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/readme/render.md"
     }
   },
   "domain": {
@@ -39,8 +39,8 @@
     }
   },
   "snapshot": {
-    "description": "Re-instate `Criterion.tag` (not `tags`) as per https://github.com/uncefact/spec-untp/issues/377#issuecomment-2921499546",
-    "index": 3,
-    "url": "https://jargon.sh/user/unece/untp-core/s/3/editor"
+    "description": "Enable additional properties for ConformityScheme.",
+    "index": 7,
+    "url": "https://jargon.sh/user/unece/untp-core/s/7/editor"
   }
 }
