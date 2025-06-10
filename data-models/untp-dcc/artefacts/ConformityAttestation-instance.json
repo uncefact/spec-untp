@@ -100,12 +100,14 @@
   },
   "scope": {
     "type": [
-      "ConformityAssessmentScheme",
-      "Standard"
+      "ConformityScheme"
     ],
-    "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
-    "name": "GBA Battery Passport Greenhouse Gas Rulebook - V.2.0",
-    "issuingParty": {
+    "id": "https://sample-scheme.org/ESGStandard/v4.0",
+    "name": "Sample ESG Standard",
+    "description": "The Sample ESG Standard provides a framework for assessing and enhancing environmental, social, and governance performance across supply chains, ensuring compliance with best practices through validated assessments.",
+    "version": "1.0.0",
+    "validFrom": "2025-06-10",
+    "owner": {
       "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
       "name": "Sample Company Pty Ltd.",
       "registeredId": "90664869327",
@@ -117,7 +119,6 @@
         "name": "Global Trade Identification Number (GTIN)"
       }
     },
-    "issueDate": "2023-12-05",
     "trustmark": {
       "fileName": "GHG protocol trust mark",
       "fileType": "image/png",
@@ -196,7 +197,32 @@
             "accuracy": 0.05
           },
           "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
-          "tags": "The quick brown fox jumps over the lazy dog."
+          "category": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ],
+          "tag": [
+            "The quick brown fox jumps over the lazy dog.",
+            "The quick brown fox jumps over the lazy dog."
+          ]
         },
         {
           "type": [
@@ -218,7 +244,32 @@
             "accuracy": 0.05
           },
           "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
-          "tags": "The quick brown fox jumps over the lazy dog."
+          "category": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ],
+          "tag": [
+            "The quick brown fox jumps over the lazy dog.",
+            "The quick brown fox jumps over the lazy dog."
+          ]
         }
       ],
       "declaredValue": [
@@ -409,7 +460,32 @@
             "accuracy": 0.05
           },
           "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
-          "tags": "The quick brown fox jumps over the lazy dog."
+          "category": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ],
+          "tag": [
+            "The quick brown fox jumps over the lazy dog.",
+            "The quick brown fox jumps over the lazy dog."
+          ]
         },
         {
           "type": [
@@ -431,7 +507,32 @@
             "accuracy": 0.05
           },
           "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
-          "tags": "The quick brown fox jumps over the lazy dog."
+          "category": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ],
+          "tag": [
+            "The quick brown fox jumps over the lazy dog.",
+            "The quick brown fox jumps over the lazy dog."
+          ]
         }
       ],
       "declaredValue": [

@@ -1,12 +1,12 @@
 {
   "@context": {
-    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/0/",
+    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/working/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/"
   },
   "@graph": [
     {
@@ -22,13 +22,6 @@
       "rdfs:comment": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg battery) against a specification (eg LCA method) defined in a standard or regulation.",
       "rdfs:label": "ConformityAttestation",
       "rdfs:subClassOf": "untp-core:Attestation"
-    },
-    {
-      "@id": "untp-dcc:ConformityAssessmentScheme",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification) ",
-      "rdfs:label": "ConformityAssessmentScheme",
-      "rdfs:subClassOf": "untp-core:Standard"
     },
     {
       "@id": "untp-dcc:ConformityAssessment",
@@ -77,15 +70,11 @@
           "@id": "untp-dcc:ConformityAttestation"
         },
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
-        },
-        {
           "@id": "untp-dcc:ConformityAssessment"
         }
       ],
       "rdfs:comment": [
         "The globally unique ID of this conformity attestation.",
-        "A unique identifier for the standard (eg https://www.iso.org/standard/60857.html).",
         "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID."
       ],
       "rdfs:label": "id"
@@ -104,9 +93,6 @@
           "@id": "untp-dcc:ConformityAttestation"
         },
         {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
-        },
-        {
           "@id": "untp-dcc:ConformityAssessment"
         },
         {
@@ -118,7 +104,6 @@
       ],
       "rdfs:comment": [
         "A human readable description of this conformity attestation",
-        "The name of the standard",
         "A name that describes the specific assessment",
         "Human facing display name for selection",
         "Human facing display name for template"
@@ -284,7 +269,7 @@
     {
       "@id": "untp-dcc:scope",
       "schema:rangeIncludes": {
-        "@id": "untp-dcc:ConformityAssessmentScheme"
+        "@id": "untp-core:ConformityScheme"
       },
       "@type": [
         "rdf:Property",
@@ -318,63 +303,6 @@
         "The list of specific assessments made within this conformity attestation."
       ],
       "rdfs:label": "assessment"
-    },
-    {
-      "@id": "untp-dcc:issuingParty",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:Party"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
-        }
-      ],
-      "rdfs:comment": [
-        "The party that issued the standard "
-      ],
-      "rdfs:label": "issuingParty"
-    },
-    {
-      "@id": "untp-dcc:issueDate",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
-        }
-      ],
-      "rdfs:comment": [
-        "The date when the standard was issued."
-      ],
-      "rdfs:label": "issueDate"
-    },
-    {
-      "@id": "untp-dcc:trustmark",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:BinaryFile"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessmentScheme"
-        }
-      ],
-      "rdfs:comment": [
-        "The trust mark that represents the conformity assessment scheme."
-      ],
-      "rdfs:label": "trustmark"
     },
     {
       "@id": "untp-dcc:assessmentDate",

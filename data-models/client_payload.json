@@ -5,47 +5,59 @@
   },
   "artefacts": {
     "dataModel": {
-      "fileName": "unece_SustainabilityVocabulary_dataModel.svg",
-      "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/diagram/render.svg?light=true"
+      "fileName": "unece_ConformityCredential_dataModel.svg",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/diagram/render.svg?light=true"
     },
     "jsonSchemas": [
       {
-        "fileName": "unece_SustainabilityVocabulary_ConformitySchemeVocabulary_jsonSchema.json",
-        "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/jsonSchemas/ConformitySchemeVocabulary.json?class=ConformitySchemeVocabulary"
+        "fileName": "unece_ConformityCredential_DigitalConformityCredential_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/jsonSchemas/DigitalConformityCredential.json?class=DigitalConformityCredential"
       },
       {
-        "fileName": "unece_SustainabilityVocabulary_ConformitySchemeVocabulary_instance_jsonSchema.json",
-        "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/jsonSchemas/ConformitySchemeVocabulary_instance.json?class=ConformitySchemeVocabulary_instance"
+        "fileName": "unece_ConformityCredential_DigitalConformityCredential_instance_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/jsonSchemas/DigitalConformityCredential_instance.json?class=DigitalConformityCredential_instance"
+      },
+      {
+        "fileName": "unece_ConformityCredential_ConformityAttestation_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/jsonSchemas/ConformityAttestation.json?class=ConformityAttestation"
+      },
+      {
+        "fileName": "unece_ConformityCredential_ConformityAttestation_instance_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/jsonSchemas/ConformityAttestation_instance.json?class=ConformityAttestation_instance"
       }
     ],
     "jsonldContext": {
-      "fileName": "unece_SustainabilityVocabulary_jsonldContext.json",
-      "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/jsonldContexts/SustainabilityVocabulary.jsonld?class=SustainabilityVocabulary"
+      "fileName": "unece_ConformityCredential_jsonldContext.json",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/jsonldContexts/ConformityCredential.jsonld?class=ConformityCredential"
     },
     "jsonldVocab": {
-      "fileName": "unece_SustainabilityVocabulary_jsonld.json",
-      "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/jsonld/render.jsonld"
+      "fileName": "unece_ConformityCredential_jsonld.json",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/jsonld/render.jsonld"
+    },
+    "openapiSpec": {
+      "fileName": "unece_ConformityCredential_openapi.json",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/openapi/render.json"
     },
     "readme": {
-      "fileName": "unece_SustainabilityVocabulary_readme.md",
-      "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/readme/render.md"
+      "fileName": "unece_ConformityCredential_readme.md",
+      "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/artefacts/readme/render.md"
     }
   },
   "domain": {
     "account": "unece",
-    "name": "SustainabilityVocabulary",
-    "url": "https://jargon.sh/user/unece/SustainabilityVocabulary"
+    "name": "ConformityCredential",
+    "url": "https://jargon.sh/user/unece/ConformityCredential"
   },
   "settings": {
     "jsonld": {
       "generate": true,
-      "prefix": "untp-svc",
-      "uri": "https://test.uncefact.org/vocabulary/untp/svc/{{version}}/"
+      "prefix": "untp-dcc",
+      "uri": "https://test.uncefact.org/vocabulary/untp/dcc/{{version}}/"
     }
   },
   "snapshot": {
     "description": "Resave after allow additional properties in core.",
-    "index": 26,
-    "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/editor"
+    "index": 4,
+    "url": "https://jargon.sh/user/unece/ConformityCredential/s/4/editor"
   }
 }
