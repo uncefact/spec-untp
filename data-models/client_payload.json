@@ -5,42 +5,47 @@
   },
   "artefacts": {
     "dataModel": {
-      "fileName": "unece_untp-core_dataModel.svg",
-      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/diagram/render.svg?light=true"
+      "fileName": "unece_SustainabilityVocabulary_dataModel.svg",
+      "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/diagram/render.svg?light=true"
     },
-    "jsonSchemas": [],
+    "jsonSchemas": [
+      {
+        "fileName": "unece_SustainabilityVocabulary_ConformitySchemeVocabulary_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/jsonSchemas/ConformitySchemeVocabulary.json?class=ConformitySchemeVocabulary"
+      },
+      {
+        "fileName": "unece_SustainabilityVocabulary_ConformitySchemeVocabulary_instance_jsonSchema.json",
+        "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/jsonSchemas/ConformitySchemeVocabulary_instance.json?class=ConformitySchemeVocabulary_instance"
+      }
+    ],
     "jsonldContext": {
-      "fileName": "unece_untp-core_jsonldContext.json",
-      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/jsonldContexts/untp-core.jsonld?class=untp-core"
+      "fileName": "unece_SustainabilityVocabulary_jsonldContext.json",
+      "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/jsonldContexts/SustainabilityVocabulary.jsonld?class=SustainabilityVocabulary"
     },
     "jsonldVocab": {
-      "fileName": "unece_untp-core_jsonld.json",
-      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/jsonld/render.jsonld"
-    },
-    "openapiSpec": {
-      "fileName": "unece_untp-core_openapi.json",
-      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/openapi/render.json"
+      "fileName": "unece_SustainabilityVocabulary_jsonld.json",
+      "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/jsonld/render.jsonld"
     },
     "readme": {
-      "fileName": "unece_untp-core_readme.md",
-      "url": "https://jargon.sh/user/unece/untp-core/s/7/artefacts/readme/render.md"
+      "fileName": "unece_SustainabilityVocabulary_readme.md",
+      "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/artefacts/readme/render.md"
     }
   },
   "domain": {
     "account": "unece",
-    "name": "untp-core",
-    "url": "https://jargon.sh/user/unece/untp-core"
+    "name": "SustainabilityVocabulary",
+    "url": "https://jargon.sh/user/unece/SustainabilityVocabulary"
   },
   "settings": {
     "jsonld": {
       "generate": true,
-      "prefix": "untp-core",
-      "uri": "https://test.uncefact.org/vocabulary/untp/core/{{version}}/"
+      "prefix": "untp-svc",
+      "uri": "https://test.uncefact.org/vocabulary/untp/svc/{{version}}/"
     }
   },
   "snapshot": {
-    "description": "Enable additional properties for ConformityScheme.",
-    "index": 7,
-    "url": "https://jargon.sh/user/unece/untp-core/s/7/editor"
+    "description": "Resave after allow additional properties in core.",
+    "index": 26,
+    "url": "https://jargon.sh/user/unece/SustainabilityVocabulary/s/26/editor"
   }
 }
