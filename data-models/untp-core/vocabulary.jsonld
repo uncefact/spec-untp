@@ -12,7 +12,7 @@
     {
       "@id": "untp-core:VerifiableCredential",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A verifiable credential is a digital and verifiable version of everyday credentials such as certificates and licenses.  It conforms to the W3C Verifiable Credentials Data Model v2.0 (VCDM). ",
+      "rdfs:comment": "An updated description verifiable credential is a digital and verifiable version of everyday credentials such as certificates and licenses.  It conforms to the W3C Verifiable Credentials Data Model v2.0 (VCDM). ",
       "rdfs:label": "VerifiableCredential"
     },
     {
