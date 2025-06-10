@@ -17,7 +17,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Download client payload
         run: |
-          gh run download -n client-payload
+          branch_name="${{ github.head_ref }}"
+          gh run download -n client-payload-${branch_name#*sync-}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
