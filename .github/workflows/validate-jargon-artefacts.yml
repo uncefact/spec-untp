@@ -13,11 +13,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - uses: actions/checkout@v4
+      - name: Get workflow run ID
+        id: get-run-id
+        run: |
+          # Get the workflow run that created this PR
+          RUN_ID=$(gh api repos/${{ github.repository }}/actions/runs \
+            --jq '.workflow_runs[] | select(.head_sha == "${{ github.event.pull_request.head.sha }}") | .id' \
+            | head -1)
+          echo "run-id=$RUN_ID" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: client-payload
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ steps.get-run-id.outputs.run-id }}
+
       - name: Read file and set env variable
         run: |
           echo "CLIENT_PAYLOAD<<EOF" >> $GITHUB_ENV
-          cat ./data-models/client_payload.json >> $GITHUB_ENV
+          cat ./client_payload.json >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
       - name: Run Validate Jargon Artefacts

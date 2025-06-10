@@ -6,3 +6,5 @@ node_modules
 
 website/build/
 yarn.lock
+
+data_models/client_payload.json
