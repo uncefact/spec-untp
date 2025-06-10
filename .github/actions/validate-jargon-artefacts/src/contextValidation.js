@@ -58,12 +58,14 @@ async function validateContextInCredential(rawArtefactData, jsonldContext) {
     if (instanceJson && jsonldContext && JARGON_CONTEXT_IRI_PREFIX) {
       const context = instanceJson['@context'];
 
-      if(context && Array.isArray(context) && jsonldContext.url) {
-      // Replace the deployed @context IRI (that is, the eventual IRI at which the context will be
-      // published when the deploy completes) with the Jargon context IRI where we know
-      // it is published right now.
-      instanceJson['@context'] = context.map(c =>
-          c.startsWith(JARGON_CONTEXT_IRI_PREFIX) ? jsonldContext.url : c
+      if (context && Array.isArray(context) && jsonldContext.url) {
+        // Replace the deployed @context IRI (that is, the eventual IRI at which the context will be
+        // published when the deploy completes) with the Jargon context IRI where we know
+        // it is published right now.
+        instanceJson['@context'] = context.map(c =>
+          typeof c === 'string' && c.startsWith(JARGON_CONTEXT_IRI_PREFIX)
+            ? jsonldContext.url
+            : c
         );
       }
     }
