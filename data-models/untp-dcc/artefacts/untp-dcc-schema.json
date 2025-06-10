@@ -7,8 +7,8 @@
       "type": "array",
       "readOnly": true,
       "default": [
-        "ConformityAttestation",
-        "Attestation"
+        "DigitalConformityCredential",
+        "VerifiableCredential"
       ],
       "items": {
         "type": "string"
@@ -16,141 +16,303 @@
       "allOf": [
         {
           "contains": {
-            "const": "ConformityAttestation",
+            "const": "DigitalConformityCredential",
             "minContains": 1
           }
         },
         {
           "contains": {
-            "const": "Attestation",
+            "const": "VerifiableCredential",
             "minContains": 1
           }
         }
       ]
     },
+    "@context": {
+      "example": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dcc/working/"
+      ],
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. ",
+      "readOnly": true,
+      "prefixItems": [
+        {
+          "const": "https://www.w3.org/ns/credentials/v2",
+          "type": "string"
+        },
+        {
+          "const": "https://test.uncefact.org/vocabulary/untp/dcc/working/",
+          "type": "string"
+        }
+      ],
+      "default": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dcc/working/"
+      ],
+      "minItems": 2,
+      "uniqueItems": true
+    },
     "id": {
-      "example": "https://sample-certifiers.com/attestations/12345",
+      "example": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
       "type": "string",
       "format": "uri",
-      "description": "The globally unique ID of this conformity attestation."
+      "description": "A unique identifier (URI) assigned to the product passport. May be a UUID"
     },
-    "name": {
-      "example": "Carbon Lifecycle assessment 12345567",
+    "issuer": {
+      "$ref": "#/$defs/CredentialIssuer",
+      "description": "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+    },
+    "validFrom": {
+      "pattern": "^-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$",
+      "example": "2024-03-15T12:00:00Z",
       "type": "string",
-      "description": "A human readable description of this conformity attestation"
+      "format": "date-time",
+      "description": "The date and time from which the credential is valid."
     },
-    "assessorLevel": {
+    "validUntil": {
+      "pattern": "^-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$",
+      "example": "2034-03-15T12:00:00Z",
       "type": "string",
-      "enum": [
-        "Self",
-        "Commercial",
-        "Buyer",
-        "Membership",
-        "Unspecified",
-        "3rdParty"
-      ],
-      "example": "Self",
-      "description": "Assurance code pertaining to assessor (relation to the object under assessment)"
+      "format": "date-time",
+      "description": "The expiry date (if applicable) of this verifiable credential."
     },
-    "assessmentLevel": {
-      "type": "string",
-      "enum": [
-        "GovtApproval",
-        "GlobalMRA",
-        "Accredited",
-        "Verified",
-        "Validated",
-        "Unspecified"
-      ],
-      "example": "GovtApproval",
-      "description": "Assurance pertaining to assessment (any authority or support for the assessment process)"
-    },
-    "attestationType": {
-      "type": "string",
-      "enum": [
-        "certification",
-        "declaration",
-        "inspection",
-        "testing",
-        "verification",
-        "validation",
-        "calibration"
-      ],
-      "example": "certification",
-      "description": "The type of criterion (optional or mandatory)."
-    },
-    "description": {
-      "example": "A life-cycle assessment of the battery  emissions intensity according to the Global Battery Alliance rule-book.",
-      "type": "string",
-      "description": "A textual description of the scope or purpose of this conformity attestation"
-    },
-    "issuedToParty": {
+    "credentialSubject": {
+      "$ref": "#/$defs/ConformityAttestation",
+      "description": "The conformity attestation is the subject of the verifiable credential. "
+    }
+  },
+  "description": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg batttery) against a specification (eg LCA method) defined in a standard or regulation. ",
+  "required": [
+    "@context",
+    "id",
+    "issuer"
+  ],
+  "$defs": {
+    "CredentialIssuer": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "CredentialIssuer"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "CredentialIssuer",
+                "minContains": 1
+              }
+            }
+          ]
+        },
         "id": {
-          "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+          "example": "did:web:identifiers.example-company.com:12345",
           "type": "string",
           "format": "uri",
-          "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+          "description": "The W3C DID of the issuer - should be a did:web or did:webvh"
         },
         "name": {
-          "example": "Sample Company Pty Ltd.",
+          "example": "Example Company Pty Ltd",
           "type": "string",
-          "description": "The registered name of the party within the identifier scheme."
+          "description": "The name of the issuer person or organisation"
         },
-        "registeredId": {
-          "example": 90664869327,
-          "type": "string",
-          "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
-        },
-        "description": {
-          "example": "A leading electric energy storage company",
-          "type": "string",
-          "description": "An optional short description of the party."
+        "issuerAlsoKnownAs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+                "type": "string",
+                "format": "uri",
+                "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+              },
+              "name": {
+                "example": "Sample Company Pty Ltd.",
+                "type": "string",
+                "description": "The registered name of the party within the identifier scheme."
+              },
+              "registeredId": {
+                "example": 90664869327,
+                "type": "string",
+                "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ]
+          },
+          "description": "An optional list of other registered identifiers for this credential issuer "
         }
       },
+      "description": "The issuer party (person or organisation) of a verifiable credential.",
       "required": [
         "id",
         "name"
-      ],
-      "description": "The party to whom the conformity attestation was issued."
+      ]
     },
-    "authorisation": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/Endorsement"
+    "ConformityAttestation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "ConformityAttestation",
+            "Attestation"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "ConformityAttestation",
+                "minContains": 1
+              }
+            },
+            {
+              "contains": {
+                "const": "Attestation",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://sample-certifiers.com/attestations/12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique ID of this conformity attestation."
+        },
+        "name": {
+          "example": "Carbon Lifecycle assessment 12345567",
+          "type": "string",
+          "description": "A human readable description of this conformity attestation"
+        },
+        "assessorLevel": {
+          "type": "string",
+          "enum": [
+            "Self",
+            "Commercial",
+            "Buyer",
+            "Membership",
+            "Unspecified",
+            "3rdParty"
+          ],
+          "example": "Self",
+          "description": "Assurance code pertaining to assessor (relation to the object under assessment)"
+        },
+        "assessmentLevel": {
+          "type": "string",
+          "enum": [
+            "GovtApproval",
+            "GlobalMRA",
+            "Accredited",
+            "Verified",
+            "Validated",
+            "Unspecified"
+          ],
+          "example": "GovtApproval",
+          "description": "Assurance pertaining to assessment (any authority or support for the assessment process)"
+        },
+        "attestationType": {
+          "type": "string",
+          "enum": [
+            "certification",
+            "declaration",
+            "inspection",
+            "testing",
+            "verification",
+            "validation",
+            "calibration"
+          ],
+          "example": "certification",
+          "description": "The type of criterion (optional or mandatory)."
+        },
+        "description": {
+          "example": "A life-cycle assessment of the battery  emissions intensity according to the Global Battery Alliance rule-book.",
+          "type": "string",
+          "description": "A textual description of the scope or purpose of this conformity attestation"
+        },
+        "issuedToParty": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+              "type": "string",
+              "format": "uri",
+              "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+            },
+            "name": {
+              "example": "Sample Company Pty Ltd.",
+              "type": "string",
+              "description": "The registered name of the party within the identifier scheme."
+            },
+            "registeredId": {
+              "example": 90664869327,
+              "type": "string",
+              "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+            },
+            "description": {
+              "example": "A leading electric energy storage company",
+              "type": "string",
+              "description": "An optional short description of the party."
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ],
+          "description": "The party to whom the conformity attestation was issued."
+        },
+        "authorisation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Endorsement"
+          },
+          "description": "The authority under which a conformity claim is issued.  For example a national accreditation authority may authorise a test lab to issue test certificates about a product against a standard.  "
+        },
+        "conformityCertificate": {
+          "$ref": "#/$defs/SecureLink",
+          "description": "A reference to the human / printable version of this conformity attestation - typically represented as a PDF document. The document may have more details than are represented in the digital attestation."
+        },
+        "auditableEvidence": {
+          "$ref": "#/$defs/SecureLink",
+          "description": "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usually private data and would normally be encrypted."
+        },
+        "scope": {
+          "$ref": "#/$defs/ConformityScheme",
+          "description": "The scheme(s) under which this conformity assesment is issued. "
+        },
+        "assessment": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ConformityAssessment"
+          },
+          "description": "The list of specific assessments made within this conformity attestation."
+        }
       },
-      "description": "The authority under which a conformity claim is issued.  For example a national accreditation authority may authorise a test lab to issue test certificates about a product against a standard.  "
+      "description": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg battery) against a specification (eg LCA method) defined in a standard or regulation.",
+      "required": [
+        "id",
+        "assessorLevel",
+        "assessmentLevel",
+        "attestationType",
+        "issuedToParty"
+      ]
     },
-    "conformityCertificate": {
-      "$ref": "#/$defs/SecureLink",
-      "description": "A reference to the human / printable version of this conformity attestation - typically represented as a PDF document. The document may have more details than are represented in the digital attestation."
-    },
-    "auditableEvidence": {
-      "$ref": "#/$defs/SecureLink",
-      "description": "Auditable evidence supporting this assessment such as raw measurements, supporting documents. This is usually private data and would normally be encrypted."
-    },
-    "scope": {
-      "$ref": "#/$defs/ConformityScheme",
-      "description": "The scheme(s) under which this conformity assesment is issued. "
-    },
-    "assessment": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/ConformityAssessment"
-      },
-      "description": "The list of specific assessments made within this conformity attestation."
-    }
-  },
-  "description": "A conformity attestation issued by a competent body that defines one or more assessments (eg carbon intensity) about a product (eg battery) against a specification (eg LCA method) defined in a standard or regulation.",
-  "required": [
-    "id",
-    "assessorLevel",
-    "assessmentLevel",
-    "attestationType",
-    "issuedToParty"
-  ],
-  "$defs": {
     "Endorsement": {
       "type": "object",
       "additionalProperties": true,
