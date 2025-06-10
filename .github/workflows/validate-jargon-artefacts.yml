@@ -30,27 +30,26 @@ jobs:
         with:
           jargon-webhook-payload: ${{ env.CLIENT_PAYLOAD }}
       
-      - name: Get Token
+      - uses: actions/create-github-app-token@v2
         if: ${{ env.CLIENT_PAYLOAD }}
-        id: get_workflow_token
-        uses: peter-murray/workflow-application-token-action@v4
+        id: app-token
         with:
-          application_id: ${{ secrets.APP_ID }}
-          application_private_key: ${{ secrets.APP_PRIVATE_KEY }}
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       
-      - name: Delete client_payload.json
-        if: ${{ env.CLIENT_PAYLOAD }}
+      #https://github.com/actions/create-github-app-token?tab=readme-ov-file#configure-git-cli-for-an-apps-bot-user
+      - name: Get GitHub App User ID
+        id: get-user-id
+        run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+      - run: |
+          git config --global user.name '${{ steps.app-token.outputs.app-slug }}[bot]'
+          git config --global user.email '${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com'
+      - name: commit pdf
         run: |
           rm ./data-models/client_payload.json
-
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add .          
+          git add ./data-models
           git commit -m "chore: delete client_payload.json" || echo -e "nothing to commit" 
           git push origin ${{ github.head_ref }}
-        env:
-          GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
-
-
       
