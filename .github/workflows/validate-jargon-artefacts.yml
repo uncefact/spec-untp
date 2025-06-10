@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - 'data-models-staging'
+      - 'cd/data-models-snapshots'
     paths:
       - 'data-models/**'
   workflow_dispatch:
@@ -29,6 +30,32 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
 
       - name: Run Validate Jargon Artefacts
+        if: ${{ env.CLIENT_PAYLOAD }}
         uses: ./.github/actions/validate-jargon-artefacts
         with:
           jargon-webhook-payload: ${{ env.CLIENT_PAYLOAD }}
+      
+      - name: Get Token
+        if: ${{ env.CLIENT_PAYLOAD }}
+        id: get_workflow_token
+        uses: peter-murray/workflow-application-token-action@v4
+        with:
+          application_id: ${{ secrets.APP_ID }}
+          application_private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      
+      - name: Delete client_payload.json
+        if: ${{ env.CLIENT_PAYLOAD }}
+        run: |
+          rm ./data-models/client_payload.json
+
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .          
+          git commit -m "chore: delete client_payload.json" || echo -e "nothing to commit" 
+          git push
+        env:
+          GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
+
+
+      
