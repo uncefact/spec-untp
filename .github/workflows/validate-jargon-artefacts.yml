@@ -16,13 +16,8 @@ jobs:
     steps:
 
       - uses: actions/checkout@v4
-      - name: Download client payload
-        run: |
-          branch_name="${{ github.head_ref }}"
-          gh run download -n client-payload-${branch_name#*sync-}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+        with:
+          ref: ${{ github.head_ref }}  # This checks out the PR branch
       - name: Read file and set env variable
         run: |
           echo "CLIENT_PAYLOAD<<EOF" >> $GITHUB_ENV
@@ -53,7 +48,7 @@ jobs:
 
           git add .          
           git commit -m "chore: delete client_payload.json" || echo -e "nothing to commit" 
-          git push
+          git push origin ${{ github.head_ref }}
         env:
           GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
 
