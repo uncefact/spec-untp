@@ -1028,9 +1028,28 @@
             }
           }
         },
-        "trustMark": {
-          "@id": "untp-core:trustMark",
-          "@type": "xsd:string"
+        "trustmark": {
+          "@protected": true,
+          "@id": "untp-core:trustmark",
+          "@context": {
+            "@protected": true,
+            "fileName": {
+              "@id": "untp-core:fileName",
+              "@type": "xsd:string"
+            },
+            "fileType": {
+              "@id": "untp-core:fileType",
+              "@type": "@vocab",
+              "@context": {
+                "@protected": true,
+                "@vocab": "https://mimetype.io/"
+              }
+            },
+            "file": {
+              "@id": "untp-core:file",
+              "@type": "xsd:string"
+            }
+          }
         }
       }
     }

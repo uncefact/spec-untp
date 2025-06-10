@@ -182,7 +182,7 @@
     {
       "@id": "untp-core:ConformityScheme",
       "@type": "rdfs:Class",
-      "rdfs:comment": "",
+      "rdfs:comment": "A formal governance scheme under which this attestation is issued (eg ACRS structural steel certification)",
       "rdfs:label": "ConformityScheme"
     },
     {
@@ -2350,10 +2350,14 @@
       "schema:domainIncludes": [
         {
           "@id": "untp-core:Endorsement"
+        },
+        {
+          "@id": "untp-core:ConformityScheme"
         }
       ],
       "rdfs:comment": [
-        "The trust mark image awarded by the AB to the CAB to indicate accreditation."
+        "The trust mark image awarded by the AB to the CAB to indicate accreditation.",
+        "The trust mark or seal used by this conformity scheme."
       ],
       "rdfs:label": "trustmark"
     },
@@ -2550,25 +2554,6 @@
         "The party that is the owner / maintainer of this conformity scheme."
       ],
       "rdfs:label": "owner"
-    },
-    {
-      "@id": "untp-core:trustMark",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:ConformityScheme"
-        }
-      ],
-      "rdfs:comment": [
-        "The trust mark or seal used by this conformity scheme."
-      ],
-      "rdfs:label": "trustMark"
     },
     {
       "@id": "untp-core:assessmentLevelCode",
