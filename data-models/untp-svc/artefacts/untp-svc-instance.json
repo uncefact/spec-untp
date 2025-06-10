@@ -1,0 +1,224 @@
+{
+  "type": [
+    "ConformitySchemeVocabulary"
+  ],
+  "@context": [
+    {
+      "name": "https://schema.org/name",
+      "description": "https://schema.org/description",
+      "id": "@id",
+      "type": "@type"
+    },
+    "https://test.uncefact.org/vocabulary/untp/svc/working/"
+  ],
+  "id": "https://sample-scheme.org/ESGStandard/v4.0",
+  "scheme": {
+    "type": [
+      "ConformityScheme"
+    ],
+    "id": "https://sample-scheme.org/ESGStandard/v4.0",
+    "name": "Sample ESG Standard",
+    "description": "The Sample ESG Standard provides a framework for assessing and enhancing environmental, social, and governance performance across supply chains, ensuring compliance with best practices through validated assessments.",
+    "version": "1.0.0",
+    "validFrom": "2025-06-10",
+    "owner": {
+      "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+      "name": "Sample Company Pty Ltd.",
+      "registeredId": "90664869327",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://id.gs1.org/01/",
+        "name": "Global Trade Identification Number (GTIN)"
+      }
+    },
+    "trustmark": {
+      "fileName": "GHG protocol trust mark",
+      "fileType": "image/png",
+      "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+    }
+  },
+  "conformityCriterion": [
+    {
+      "type": [
+        "Criterion"
+      ],
+      "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+      "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+      "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+      "conformityTopic": "environment.energy",
+      "status": "proposed",
+      "subCriterion": [],
+      "thresholdValue": {
+        "metricName": "GHG emissions intensity",
+        "metricValue": {
+          "value": 10,
+          "unit": "KGM"
+        },
+        "score": "BB",
+        "accuracy": 0.05
+      },
+      "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+      "category": [
+        {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        },
+        {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        }
+      ],
+      "tag": [
+        "ICAB-123",
+        "forestry"
+      ]
+    },
+    {
+      "type": [
+        "Criterion"
+      ],
+      "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
+      "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
+      "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
+      "conformityTopic": "environment.waste",
+      "status": "proposed",
+      "subCriterion": [],
+      "thresholdValue": {
+        "metricName": "GHG emissions intensity",
+        "metricValue": {
+          "value": 10,
+          "unit": "KGM"
+        },
+        "score": "BB",
+        "accuracy": 0.05
+      },
+      "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
+      "category": [
+        {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        },
+        {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+          "code": "46410",
+          "name": "Primary cells and primary batteries",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        }
+      ],
+      "tag": [
+        "ICAB-321",
+        "environment"
+      ]
+    }
+  ],
+  "regulatoryAlignment": [
+    {
+      "type": [
+        "Regulation"
+      ],
+      "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+      "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+      "jurisdictionCountry": "AU",
+      "administeredBy": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      "effectiveDate": "2024-03-20"
+    },
+    {
+      "type": [
+        "Regulation"
+      ],
+      "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
+      "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
+      "jurisdictionCountry": "AU",
+      "administeredBy": {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      "effectiveDate": "2024-03-20"
+    }
+  ],
+  "industryScope": {
+    "type": [
+      "Classification"
+    ],
+    "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+    "code": "46410",
+    "name": "Primary cells and primary batteries",
+    "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+    "schemeName": "UN Central Product Classification (CPC)"
+  },
+  "geographicScope": {
+    "type": [
+      "Classification"
+    ],
+    "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+    "code": "46410",
+    "name": "Primary cells and primary batteries",
+    "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+    "schemeName": "UN Central Product Classification (CPC)"
+  },
+  "performanceLevelCode": [
+    {
+      "name": "Critical",
+      "rank": 1,
+      "description": "Indicates a severe non-conformance requiring immediate action and follow-up assessment."
+    },
+    {
+      "name": "Significant",
+      "rank": 2,
+      "description": "Indicates a notable non-conformance requiring corrective measures within a defined period."
+    }
+  ],
+  "tagCode": [
+    {
+      "name": "Manufacturing",
+      "description": "Criteria applicable to manufacturing industries."
+    },
+    {
+      "name": "SupplyChain",
+      "description": "Criteria targeting supply chain stakeholders."
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "@context": {
+    "untp-svc": "https://test.uncefact.org/vocabulary/untp/svc/working/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@protected": true,
+    "@version": 1.1,
+    "IdentifierScheme": {
+      "@protected": true,
+      "@id": "untp-core:IdentifierScheme"
+    },
+    "Classification": {
+      "@protected": true,
+      "@id": "untp-core:Classification",
+      "@context": {
+        "@protected": true,
+        "code": {
+          "@id": "untp-core:code",
+          "@type": "xsd:string"
+        },
+        "schemeID": {
+          "@id": "untp-core:schemeID",
+          "@type": "xsd:string"
+        },
+        "schemeName": {
+          "@id": "untp-core:schemeName",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Party": {
+      "@protected": true,
+      "@id": "untp-core:Party",
+      "@context": {
+        "@protected": true,
+        "registeredId": {
+          "@id": "untp-core:registeredId",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-core:idScheme",
+          "@type": "@id"
+        },
+        "registrationCountry": {
+          "@id": "untp-core:registrationCountry",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
+          }
+        },
+        "organisationWebsite": {
+          "@id": "untp-core:organisationWebsite",
+          "@type": "xsd:string"
+        },
+        "industryCategory": {
+          "@id": "untp-core:industryCategory",
+          "@type": "@id"
+        },
+        "partyAlsoKnownAs": {
+          "@id": "untp-core:Party",
+          "@type": "@id",
+          "@context": {
+            "@protected": true,
+            "registeredId": {
+              "@id": "untp-core:registeredId",
+              "@type": "xsd:string"
+            },
+            "idScheme": {
+              "@id": "untp-core:idScheme",
+              "@type": "@id"
+            }
+          }
+        }
+      }
+    },
+    "ConformityScheme": {
+      "@protected": true,
+      "@id": "untp-core:ConformityScheme",
+      "@context": {
+        "@protected": true,
+        "version": {
+          "@id": "untp-core:version",
+          "@type": "xsd:string"
+        },
+        "validFrom": {
+          "@id": "untp-core:validFrom",
+          "@type": "xsd:string"
+        },
+        "owner": {
+          "@id": "untp-core:Party",
+          "@type": "@id",
+          "@context": {
+            "@protected": true,
+            "registeredId": {
+              "@id": "untp-core:registeredId",
+              "@type": "xsd:string"
+            },
+            "idScheme": {
+              "@id": "untp-core:idScheme",
+              "@type": "@id"
+            }
+          }
+        },
+        "trustmark": {
+          "@protected": true,
+          "@id": "untp-core:trustmark",
+          "@context": {
+            "@protected": true,
+            "fileName": {
+              "@id": "untp-core:fileName",
+              "@type": "xsd:string"
+            },
+            "fileType": {
+              "@id": "untp-core:fileType",
+              "@type": "@vocab",
+              "@context": {
+                "@protected": true,
+                "@vocab": "https://mimetype.io/"
+              }
+            },
+            "file": {
+              "@id": "untp-core:file",
+              "@type": "xsd:string"
+            }
+          }
+        }
+      }
+    },
+    "Criterion": {
+      "@protected": true,
+      "@id": "untp-core:Criterion",
+      "@context": {
+        "@protected": true,
+        "conformityTopic": {
+          "@id": "untp-core:conformityTopic",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/conformityTopicCode#"
+          }
+        },
+        "status": {
+          "@id": "untp-core:status",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/statusCode#"
+          }
+        },
+        "subCriterion": {
+          "@id": "untp-core:subCriterion",
+          "@type": "@id"
+        },
+        "thresholdValue": {
+          "@protected": true,
+          "@id": "untp-core:thresholdValue",
+          "@context": {
+            "@protected": true,
+            "metricName": {
+              "@id": "untp-core:metricName",
+              "@type": "xsd:string"
+            },
+            "metricValue": {
+              "@protected": true,
+              "@id": "untp-core:metricValue",
+              "@context": {
+                "@protected": true,
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:double"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "https://vocabulary.uncefact.org/UnitMeasureCode#"
+                  }
+                }
+              }
+            },
+            "score": {
+              "@id": "untp-core:score",
+              "@type": "xsd:string"
+            },
+            "accuracy": {
+              "@id": "untp-core:accuracy",
+              "@type": "xsd:double"
+            }
+          }
+        },
+        "performanceLevel": {
+          "@id": "untp-core:performanceLevel",
+          "@type": "xsd:string"
+        },
+        "category": {
+          "@id": "untp-core:category",
+          "@type": "@id"
+        },
+        "tag": {
+          "@id": "untp-core:tag",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Regulation": {
+      "@protected": true,
+      "@id": "untp-core:Regulation",
+      "@context": {
+        "@protected": true,
+        "jurisdictionCountry": {
+          "@id": "untp-core:jurisdictionCountry",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
+          }
+        },
+        "administeredBy": {
+          "@id": "untp-core:Party",
+          "@type": "@id",
+          "@context": {
+            "@protected": true,
+            "registeredId": {
+              "@id": "untp-core:registeredId",
+              "@type": "xsd:string"
+            },
+            "idScheme": {
+              "@id": "untp-core:idScheme",
+              "@type": "@id"
+            }
+          }
+        },
+        "effectiveDate": {
+          "@id": "untp-core:effectiveDate",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "ConformitySchemeVocabulary": {
+      "@protected": true,
+      "@id": "untp-svc:ConformitySchemeVocabulary",
+      "@context": {
+        "@protected": true,
+        "scheme": {
+          "@id": "untp-core:scheme",
+          "@type": "@id"
+        },
+        "conformityCriterion": {
+          "@id": "untp-core:conformityCriterion",
+          "@type": "@id"
+        },
+        "regulatoryAlignment": {
+          "@id": "untp-core:regulatoryAlignment",
+          "@type": "@id"
+        },
+        "industryScope": {
+          "@id": "untp-core:industryScope",
+          "@type": "@id"
+        },
+        "geographicScope": {
+          "@id": "untp-core:geographicScope",
+          "@type": "@id"
+        },
+        "performanceLevelCode": {
+          "@protected": true,
+          "@id": "untp-svc:performanceLevelCode",
+          "@context": {
+            "@protected": true,
+            "name": {
+              "@id": "untp-svc:name",
+              "@type": "xsd:string"
+            },
+            "rank": {
+              "@id": "untp-svc:rank",
+              "@type": "xsd:integer"
+            },
+            "description": {
+              "@id": "untp-svc:description",
+              "@type": "xsd:string"
+            }
+          }
+        },
+        "tagCode": {
+          "@protected": true,
+          "@id": "untp-svc:tagCode",
+          "@context": {
+            "@protected": true,
+            "name": {
+              "@id": "untp-svc:name",
+              "@type": "xsd:string"
+            },
+            "description": {
+              "@id": "untp-svc:description",
+              "@type": "xsd:string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
