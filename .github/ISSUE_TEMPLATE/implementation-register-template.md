@@ -48,6 +48,8 @@ Select the UNTP specification version(s) that you plan to implement or extend
 
 # Implementation Role Specific Information
 
+Delete all roles except your own from the list below. 
+
 ### For UNTP Extension Owners
 
 Please list your proposed extension points, including the core UNTP specification that you will extend together with the name and description of your extension.  For example "Extend the UNTP DPP to create a Digital Livestock Passport (DLP) to add the specific livestock attributes and sustainability claims relevant for the red meat industry"
