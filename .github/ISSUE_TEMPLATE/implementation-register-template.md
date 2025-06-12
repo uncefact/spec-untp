@@ -1,7 +1,7 @@
 ---
 name: Implementation register template
 about: Use this template to register your UNTP implementation / intent
-title: Implementation registration for software [name]
+title: Implementation registration for [name]
 labels: Implementations
 assignees: ''
 
@@ -26,12 +26,12 @@ Please replace this sentence with a short statement describing your product and 
 
 ### Implementation Status
 
-- [ ] Registration of commitment to implement 
+- [ ] Registration of commitment to implement  or extend UNTP
 - [ ] Registration of tested implementation (attach test evidence)
 
 ### Implementation Scope
 
-Select the UNTP specification items that you plan to implement / have implemented
+Select the UNTP specification items that you plan to implement or extend
 
 - [ ] Digital Product Passport
 - [ ] Digital Facility Record
@@ -41,12 +41,20 @@ Select the UNTP specification items that you plan to implement / have implemente
 - [ ] Decentralised Access Control
 - [ ] Sustainability Vocabulary Profile
 
-Select the UNTP specification version(s) that you plan to support
+Select the UNTP specification version(s) that you plan to implement or extend
 
 - [ ] Pre-release pilot versions 0.x.x
 - [ ] Stable first release version 1.x.x
 
-# Role Specific Information 
+# Implementation Role Specific Information
+
+### For UNTP Extension Owners
+
+Please list your proposed extension points, including the core UNTP specification that you will extend together with the name and description of your extension.  For example "Extend the UNTP DPP to create a Digital Livestock Passport (DLP) to add the specific livestock attributes and sustainability claims relevant for the red meat industry"
+
+- Extension point 1
+- Extension point 2
+- etc
 
 ### For Industry 
 
@@ -76,8 +84,8 @@ repeat as necessary
 
 Type of Assurance body
 
+- [ ] Scheme Owner
 - [ ] Standards Authority
-- [ ] Industry Body
 - [ ] Accreditation Authority
 - [ ] Conformity Assessment Body (CAB)
 
