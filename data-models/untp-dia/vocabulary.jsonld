@@ -1,12 +1,12 @@
 {
   "@context": {
-    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/0/",
+    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/working/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/"
   },
   "@graph": [
     {
@@ -275,35 +275,35 @@
       "@type": "untp-dia:RegistryTypeCodeList",
       "rdfs:label": "Facility",
       "rdf:value": "A facility register",
-      "rdfs:comment": null
+      "rdfs:comment": ""
     },
     {
       "@id": "untp-dia:RegistryTypeCodeList#Business",
       "@type": "untp-dia:RegistryTypeCodeList",
       "rdfs:label": "Business",
       "rdf:value": "A business register",
-      "rdfs:comment": null
+      "rdfs:comment": ""
     },
     {
       "@id": "untp-dia:RegistryTypeCodeList#Trademark",
       "@type": "untp-dia:RegistryTypeCodeList",
       "rdfs:label": "Trademark",
       "rdf:value": "A trademark register",
-      "rdfs:comment": null
+      "rdfs:comment": ""
     },
     {
       "@id": "untp-dia:RegistryTypeCodeList#Land",
       "@type": "untp-dia:RegistryTypeCodeList",
       "rdfs:label": "Land",
       "rdf:value": "A land register",
-      "rdfs:comment": null
+      "rdfs:comment": ""
     },
     {
       "@id": "untp-dia:RegistryTypeCodeList#Accreditation",
       "@type": "untp-dia:RegistryTypeCodeList",
       "rdfs:label": "Accreditation",
       "rdf:value": "An accreditation register",
-      "rdfs:comment": null
+      "rdfs:comment": ""
     }
   ]
 }
