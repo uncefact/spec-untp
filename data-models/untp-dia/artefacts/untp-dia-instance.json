@@ -1,0 +1,66 @@
+{
+  "type": [
+    "DigitalIdentityAnchor",
+    "VerifiableCredential"
+  ],
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://test.uncefact.org/vocabulary/untp/dia/working/"
+  ],
+  "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+  "issuer": {
+    "type": [
+      "CredentialIssuer"
+    ],
+    "id": "did:web:identifiers.example-company.com:12345",
+    "name": "Example Company Pty Ltd",
+    "issuerAlsoKnownAs": [
+      {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      },
+      {
+        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+        "name": "Sample Company Pty Ltd.",
+        "registeredId": "90664869327",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      }
+    ]
+  },
+  "validFrom": "2024-03-15T12:00:00Z",
+  "validUntil": "2034-03-15T12:00:00Z",
+  "credentialSubject": {
+    "type": [
+      "RegisteredIdentity"
+    ],
+    "id": "did:web:samplecompany.com/123456789",
+    "name": "Sample business Ltd",
+    "registeredId": "123456789",
+    "idScheme": {
+      "type": [
+        "IdentifierScheme"
+      ],
+      "id": "https://id.gs1.org/01/",
+      "name": "Global Trade Identification Number (GTIN)"
+    },
+    "registerType": "Business",
+    "registrationScopeList": [
+      "https://jargon.sh",
+      "https://jargon.sh"
+    ]
+  }
+}
