@@ -1,7 +1,8 @@
 {
   "@context": {
-    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/0/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/working/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
+    "schemaorg": "https://schema.org/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -13,7 +14,13 @@
     },
     "IdentifierScheme": {
       "@protected": true,
-      "@id": "untp-core:IdentifierScheme"
+      "@id": "untp-core:IdentifierScheme",
+      "@context": {
+        "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        }
+      }
     },
     "Classification": {
       "@protected": true,
@@ -23,6 +30,9 @@
         "code": {
           "@id": "untp-core:code",
           "@type": "xsd:string"
+        },
+        "name": {
+          "@id": "schemaorg:name"
         },
         "schemeID": {
           "@id": "untp-core:schemeID",
@@ -39,6 +49,9 @@
       "@id": "untp-core:Party",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "registeredId": {
           "@id": "untp-core:registeredId",
           "@type": "xsd:string"
@@ -46,6 +59,9 @@
         "idScheme": {
           "@id": "untp-core:idScheme",
           "@type": "@id"
+        },
+        "description": {
+          "@id": "schemaorg:description"
         },
         "registrationCountry": {
           "@id": "untp-core:registrationCountry",
@@ -68,6 +84,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -85,11 +104,17 @@
       "@id": "untp-core:CredentialIssuer",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "issuerAlsoKnownAs": {
           "@id": "untp-core:Party",
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -104,7 +129,13 @@
     },
     "Item": {
       "@protected": true,
-      "@id": "untp-dte:Item"
+      "@id": "untp-dte:Item",
+      "@context": {
+        "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        }
+      }
     },
     "Event": {
       "@protected": true,
@@ -124,7 +155,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
           }
         },
         "disposition": {
@@ -182,7 +213,7 @@
                 },
                 "value": {
                   "@id": "untp-dte:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "uom": {
                   "@id": "untp-dte:uom",
@@ -207,6 +238,9 @@
       "@id": "untp-core:Facility",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "registeredId": {
           "@id": "untp-core:registeredId",
           "@type": "xsd:string"
@@ -214,6 +248,9 @@
         "idScheme": {
           "@id": "untp-core:idScheme",
           "@type": "@id"
+        },
+        "description": {
+          "@id": "schemaorg:description"
         },
         "countryOfOperation": {
           "@id": "untp-core:countryOfOperation",
@@ -232,6 +269,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -247,6 +287,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -282,7 +325,7 @@
                     "@protected": true,
                     "data": {
                       "@id": "geojson:data",
-                      "@type": "xsd:decimal"
+                      "@type": "xsd:double"
                     }
                   }
                 }
@@ -309,7 +352,7 @@
                         "@protected": true,
                         "data": {
                           "@id": "geojson:data",
-                          "@type": "xsd:decimal"
+                          "@type": "xsd:double"
                         }
                       }
                     }
@@ -357,6 +400,9 @@
       "@id": "untp-core:Product",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "registeredId": {
           "@id": "untp-core:registeredId",
           "@type": "xsd:string"
@@ -388,6 +434,9 @@
             }
           }
         },
+        "description": {
+          "@id": "schemaorg:description"
+        },
         "productCategory": {
           "@id": "untp-core:productCategory",
           "@type": "@id"
@@ -416,6 +465,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -431,6 +483,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -469,7 +524,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -488,7 +543,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -507,7 +562,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -526,7 +581,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -545,7 +600,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -579,7 +634,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
           }
         },
         "disposition": {
@@ -637,7 +692,7 @@
                 },
                 "value": {
                   "@id": "untp-dte:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "uom": {
                   "@id": "untp-dte:uom",
@@ -673,12 +728,11 @@
               "@type": "xsd:string"
             },
             "productName": {
-              "@id": "untp-core:productName",
-              "@type": "xsd:string"
+              "@id": "schemaorg:productName"
             },
             "quantity": {
               "@id": "untp-dte:quantity",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "uom": {
               "@id": "untp-dte:uom",
@@ -700,12 +754,11 @@
               "@type": "xsd:string"
             },
             "productName": {
-              "@id": "untp-core:productName",
-              "@type": "xsd:string"
+              "@id": "schemaorg:productName"
             },
             "quantity": {
               "@id": "untp-dte:quantity",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "uom": {
               "@id": "untp-dte:uom",
@@ -737,7 +790,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
           }
         },
         "disposition": {
@@ -795,7 +848,7 @@
                 },
                 "value": {
                   "@id": "untp-dte:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "uom": {
                   "@id": "untp-dte:uom",
@@ -827,12 +880,11 @@
               "@type": "xsd:string"
             },
             "productName": {
-              "@id": "untp-core:productName",
-              "@type": "xsd:string"
+              "@id": "schemaorg:productName"
             },
             "quantity": {
               "@id": "untp-dte:quantity",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "uom": {
               "@id": "untp-dte:uom",
@@ -864,7 +916,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
           }
         },
         "disposition": {
@@ -922,7 +974,7 @@
                 },
                 "value": {
                   "@id": "untp-dte:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "uom": {
                   "@id": "untp-dte:uom",
@@ -958,12 +1010,11 @@
               "@type": "xsd:string"
             },
             "productName": {
-              "@id": "untp-core:productName",
-              "@type": "xsd:string"
+              "@id": "schemaorg:productName"
             },
             "quantity": {
               "@id": "untp-dte:quantity",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "uom": {
               "@id": "untp-dte:uom",
@@ -995,7 +1046,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
           }
         },
         "disposition": {
@@ -1053,7 +1104,7 @@
                 },
                 "value": {
                   "@id": "untp-dte:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "uom": {
                   "@id": "untp-dte:uom",
@@ -1101,12 +1152,11 @@
               "@type": "xsd:string"
             },
             "productName": {
-              "@id": "untp-core:productName",
-              "@type": "xsd:string"
+              "@id": "schemaorg:productName"
             },
             "quantity": {
               "@id": "untp-dte:quantity",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "uom": {
               "@id": "untp-dte:uom",
@@ -1138,7 +1188,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/0/actionCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dte/working/actionCode#"
           }
         },
         "disposition": {
@@ -1196,7 +1246,7 @@
                 },
                 "value": {
                   "@id": "untp-dte:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "uom": {
                   "@id": "untp-dte:uom",
@@ -1232,12 +1282,11 @@
               "@type": "xsd:string"
             },
             "productName": {
-              "@id": "untp-core:productName",
-              "@type": "xsd:string"
+              "@id": "schemaorg:productName"
             },
             "quantity": {
               "@id": "untp-dte:quantity",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "uom": {
               "@id": "untp-dte:uom",
@@ -1256,6 +1305,9 @@
       "@id": "untp-core:RenderTemplate2024",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "mediaQuery": {
           "@id": "untp-core:mediaQuery",
           "@type": "xsd:string"
@@ -1275,6 +1327,9 @@
       "@id": "untp-core:WebRenderingTemplate2022",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "template": {
           "@id": "renderMethodPrefix:template",
           "@type": "xsd:string"
