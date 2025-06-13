@@ -1,12 +1,12 @@
 {
   "@context": {
-    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/0/",
+    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/working/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/"
   },
   "@graph": [
     {
@@ -580,7 +580,7 @@
     {
       "@id": "untp-dte:value",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
@@ -736,7 +736,7 @@
     {
       "@id": "untp-dte:quantity",
       "schema:rangeIncludes": {
-        "@id": "xsd:decimal"
+        "@id": "xsd:double"
       },
       "@type": [
         "rdf:Property",
