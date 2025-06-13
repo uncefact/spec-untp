@@ -1,7 +1,8 @@
 {
   "@context": {
-    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/0/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/working/",
+    "schemaorg": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@protected": true,
@@ -12,7 +13,13 @@
     },
     "IdentifierScheme": {
       "@protected": true,
-      "@id": "untp-core:IdentifierScheme"
+      "@id": "untp-core:IdentifierScheme",
+      "@context": {
+        "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        }
+      }
     },
     "Classification": {
       "@protected": true,
@@ -22,6 +29,9 @@
         "code": {
           "@id": "untp-core:code",
           "@type": "xsd:string"
+        },
+        "name": {
+          "@id": "schemaorg:name"
         },
         "schemeID": {
           "@id": "untp-core:schemeID",
@@ -38,6 +48,9 @@
       "@id": "untp-core:Party",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "registeredId": {
           "@id": "untp-core:registeredId",
           "@type": "xsd:string"
@@ -45,6 +58,9 @@
         "idScheme": {
           "@id": "untp-core:idScheme",
           "@type": "@id"
+        },
+        "description": {
+          "@id": "schemaorg:description"
         },
         "registrationCountry": {
           "@id": "untp-core:registrationCountry",
@@ -67,6 +83,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -84,11 +103,17 @@
       "@id": "untp-core:CredentialIssuer",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "issuerAlsoKnownAs": {
           "@id": "untp-core:Party",
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -106,6 +131,9 @@
       "@id": "untp-dia:RegisteredIdentity",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "registeredId": {
           "@id": "untp-dia:registeredId",
           "@type": "xsd:string"
@@ -119,7 +147,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dia/0/RegistryTypeCodeList#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dia/working/RegistryTypeCodeList#"
           }
         },
         "registrationScopeList": {
@@ -133,6 +161,9 @@
       "@id": "untp-core:RenderTemplate2024",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "mediaQuery": {
           "@id": "untp-core:mediaQuery",
           "@type": "xsd:string"
@@ -152,6 +183,9 @@
       "@id": "untp-core:WebRenderingTemplate2022",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "template": {
           "@id": "renderMethodPrefix:template",
           "@type": "xsd:string"
