@@ -1,0 +1,15 @@
+name: Publish data models release
+
+on:
+  release:
+    types: [published]
+
+jobs:  
+  github_release:
+    if: ${{ !github.event.release.prerelease}}
+    uses: uncefact/.github/.github/workflows/untp-data-models-publish.yml@main
+    secrets: inherit
+    with:
+      version: ${{ github.event.release.tag_name }}
+      comment: ${{ github.event.release.name}}
+      dry-run: true
