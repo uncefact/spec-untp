@@ -1,0 +1,10 @@
+name: Jargon onSnapshot
+
+on:
+  repository_dispatch:
+    types: [jargon_onSnapshot]
+
+jobs:
+  jargon_snapshot:
+    uses: uncefact/.github/.github/workflows/untp-jargon-snapshot.yml@main
+    secrets: inherit
