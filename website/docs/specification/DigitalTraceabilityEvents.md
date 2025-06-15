@@ -17,11 +17,11 @@ Version 1.0 stable release for production implementation is due in June 2025 aft
 
 ### Release for Pilot Testing
 
-Version 0.5.0 release artifacts can be used for pilot testing.  
+Version 0.6.0 release artifacts can be used for pilot testing.  
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dte/0.5.0/)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-schema-0.5.0.json)
-* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-instance-0.5.0.json)
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dte/0.6.0/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-schema-0.6.0.json)
+* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-instance-0.6.0.json)
 
 ### Latest Development Version
 
@@ -57,7 +57,7 @@ Traceability events are very lightweights collections of identifiers that specif
 
 ## Requirements
 
-The traceability event is designed to meet the following detailed requirements as well as the more general [UNTP Requirements(https://uncefact.github.io/spec-untp/docs/about/Requirements)]
+The traceability event is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://uncefact.github.io/spec-untp/docs/about/Requirements)
 
 |ID|Name|Requirement Statement|Solution Mapping|
 |--|--|--|--|
@@ -76,18 +76,18 @@ The traceability event is designed to meet the following detailed requirements a
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.6.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
 
 
 ### DTE Documentation
 
-The [UNTP Digital Traceability Events Vocabulary](https://jargon.sh/user/unece/traceabilityEvents/v/0.5.0/artefacts/readme/render) defines the core traceability event and its variants including aggregation event, transformation event, association event, transaction event, and object event.
+The [UNTP Digital Traceability Events Vocabulary](https://jargon.sh/user/unece/traceabilityEvents/v/0.6.0/artefacts/readme/render) defines the core traceability event and its variants including aggregation event, transformation event, association event, transaction event, and object event.
 
 ## Implementation Guidance
 
 ### Verifiable Credential
 
-Digital Traceability Events are issued as Vierifiable credentials.  Note that one UNTP Digital Traceability Event credential may contain multiple events.
+Digital Traceability Events are issued as W3C Verifiable Credentials. Note that one UNTP Digital Traceability Event credential may contain multiple events.
 
 Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiable credentials data model for UNTP.
 
@@ -96,10 +96,10 @@ Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credentia
 There are five types of traceability event which all extend the same abstract `Event` model. 
 
 * A `TransformationEvent` describes manufacturing processes where input materials are consumed and/or assembled to create new output products. For example cotton thread is consumed to make woven cotton fabric.
-* An `AssociationEvent` is used to establish relationships between otherwise independent items.  For example new tyres on a car.  
-* An `AggregationEvent` describes the grouping (or un-grouping) of a quantity of similar items, usually for transport. For example the stacking of several bales of cotten onto a pallet.
-* A `TransactionEvent` represents the transfer of products between organisations or facilites. For example the sale of some cotton cloth from seller to buyer.
-* An `ObjectEvent` represents an action on an idividual item or quantity of product.  For example an inspection or test of a battery.
+* An `AssociationEvent` is used to establish relationships between otherwise independent items. For example new tyres on a car.  
+* An `AggregationEvent` describes the grouping (or un-grouping) of a quantity of similar items, usually for transport. For example the stacking of several bales of cotton onto a pallet.
+* A `TransactionEvent` represents the transfer of products between organisations or facilities. For example the sale of some cotton cloth from seller to buyer.
+* An `ObjectEvent` represents an action on an individual item or quantity of product.  For example an inspection or test of a battery.
 
 Any value chain of any complexity can be represented as a combination of these types of events. However for UNTP value chain traceability, the most important event is the transformation event because it represents a manufacturing step that consumes inputs to create new outputs. When an identified output product (with its digital product passport) can be traced to its identified input products (each with their own digital product passport) then a linked set of credentials can be followed to define an entire value chain.
 
@@ -114,54 +114,55 @@ This transformation event example describes the manufacture of a battery cell (o
         "TransformationEvent",
         "Event"
       ],
-  "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
-  "processType": "Cell Manufacture",
-  "eventTime": "2024-09-01T12:00:00",
-  "action": "Add",
-  "disposition": "https://ref.gs1.org/cbv/Disp-active",
-  "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
-  "bizLocation": "https://plus.codes/8CGRC78W+MM",
-  "sensorElementList": [...],
-  "outputEPCList": [
-    {
-      "type": [
-        "Item"
+      "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
+      "processType": "Cell Manufacture",
+      "eventTime": "2024-09-01T12:00:00Z",
+      "action": "add",
+      "disposition": "active",
+      "bizStep": "commissioning",
+      "bizLocation": "https://plus.codes/8CGRC78W+MM",
+      "sensorElementList": [...],
+      "outputEPCList": [
+        {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah."
+        }
       ],
-      "id": "https://id.gs1.org/01/09520123456788/21/12345",
-      "name": "EV battery 300Ah."
-    }
-  ],
-  "inputEPCList": [
-    {
-      "type": [
-        "Item"
+      "inputEPCList": [
+        {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/99876",
+          "name": "Graphite Anode"
+        },
+        {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/99987",
+          "name": "Copper Cathode"
+        }
       ],
-      "id": "https://id.gs1.org/01/09520123456788/21/99876",
-      "name": "Graphite Anode"
-    },
-    {
-      "type": [
-        "Item"
+      "inputQuantityList": [
+        {
+          "productId": "https://id.gs1.org/01/095201299876",
+          "productName": "Lithium electrolyte",
+          "quantity": 2,
+          "uom": "KGM"
+        }
       ],
-      "id": "https://id.gs1.org/01/09520123456788/21/99987",
-      "name": "Copper Cathode"
+      "outputQuantityList": [...]
     }
-  ],
-  "inputQuantityList": [
-    {
-      "productId": "https://id.gs1.org/01/095201299876",
-      "productName": "Lithium electrolyte",
-      "quantity": 2,
-      "uom": "KGM"
-    }
-  ],
-  "outputQuantityList": [...]
-}
+  ]
 ```
 
 ### Association Event
 
-This association event example describes the replacement of a new battery cell (child EPC) in an elctric vehicle (parent EPC).
+This association event example describes the replacement of a new battery cell (child EPC) in an electric vehicle (parent EPC).
 
 ```json
    "credentialSubject": [
@@ -170,32 +171,33 @@ This association event example describes the replacement of a new battery cell (
         "AssociationEvent",
         "Event"
       ],
-  "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
-  "processType": "Replace battery",
-  "eventTime": "2024-09-01T12:00:00",
-  "action": "Add",
-  "disposition": "https://ref.gs1.org/cbv/Disp-active",
-  "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
-  "bizLocation": "https://plus.codes/8CGRC78W+MM",
-  "sensorElementList": [...],
-  "parentEPC": {
-    "type": [
-      "Item"
-    ],
-    "id": "https://sample-car-company/VIN-Number/12345678987654",
-    "name": "My Electric car."
-  },
-  "childEPCs": [
-    {
-      "type": [
-        "Item"
+      "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
+      "processType": "Replace battery",
+      "eventTime": "2024-09-01T12:00:00Z",
+      "action": "add",
+      "disposition": "active",
+      "bizStep": "commissioning",
+      "bizLocation": "https://plus.codes/8CGRC78W+MM",
+      "sensorElementList": [...],
+      "parentEPC": {
+        "type": [
+          "Item"
+        ],
+        "id": "https://sample-car-company/VIN-Number/12345678987654",
+        "name": "My Electric car."
+      },
+      "childEPCs": [
+        {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 3000Ah."
+        }
       ],
-      "id": "https://id.gs1.org/01/09520123456788/21/12345",
-      "name": "EV battery 3000Ah."
+      "childQuantityList": [...]
     }
-  ],
-  "childQuantityList": [...]
-}
+  ]
 ```
 ### Aggregation Event
 
@@ -208,44 +210,45 @@ This aggregation event describes the packaging for shipment of two battery cells
         "AggregationEvent",
         "Event"
       ],
-  "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
-  "processType": "Packing",
-  "eventTime": "2024-09-01T12:00:00",
-  "action": "Add",
-  "disposition": "https://ref.gs1.org/cbv/Disp-active",
-  "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
-  "bizLocation": "https://id.gs1.org/414/9520123456788",
-  "sensorElementList": [...],
-  "parentEPC": {
-    "type": [
-      "Item"
-    ],
-    "id": "https://consignments.com/1234567890",
-    "name": "shipment of batteries"
-  },
-  "childEPCs": [
-    {
-      "type": [
-        "Item"
+      "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
+      "processType": "Packing",
+      "eventTime": "2024-09-01T12:00:00Z",
+      "action": "add",
+      "disposition": "active",
+      "bizStep": "commissioning",
+      "bizLocation": "https://id.gs1.org/414/9520123456788",
+      "sensorElementList": [...],
+      "parentEPC": {
+        "type": [
+          "Item"
+        ],
+        "id": "https://consignments.com/1234567890",
+        "name": "shipment of batteries"
+      },
+      "childEPCs": [
+        {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah."
+        },
+        {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/678910",
+          "name": "EV battery 300Ah."
+        }
       ],
-      "id": "https://id.gs1.org/01/09520123456788/21/12345",
-      "name": "EV battery 300Ah."
-    },
-    {
-      "type": [
-        "Item"
-      ],
-      "id": "https://id.gs1.org/01/09520123456788/21/678910",
-      "name": "EV battery 300Ah."
+      "childQuantityList": [...]
     }
-  ],
-  "childQuantityList": [...]
-}
+  ]
 ```
 
 ### Transaction Event
 
-This trasnaction event describes the sale of 200 batteries (quantity list) from source party to destination party.
+This transaction event describes the sale of 200 batteries (quantity list) from source party to destination party.
 
 ```json
    "credentialSubject": [
@@ -254,48 +257,68 @@ This trasnaction event describes the sale of 200 batteries (quantity list) from 
         "TransactionEvent",
         "Event"
       ],
-  "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
-  "processType": "shipping",
-  "eventTime": "2024-09-01T12:00:00",
-  "action": "Add",
-  "disposition": "https://ref.gs1.org/cbv/Disp-active",
-  "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
-  "bizLocation": "https://plus.codes/8CGRC78W+MM",
-  "sensorElementList": [...],
-  "sourcePartyId": "https://somebusinessregister/ID/9988765443",
-  "destinationPartyId": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-  "bizTransaction": "https://ref.gs1.org/cbv/BTT-prodorder",
-  "epcList": [...],
-  "quantityList": [
-    {
-      "productId": "https://id.gs1.org/01/09520123456788",
-      "productName": "EV battery 300Ah.",
-      "quantity": 200,
-      "uom": "KGM"
+      "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
+      "processType": "Shipping",
+      "eventTime": "2024-09-01T12:00:00Z",
+      "action": "add",
+      "disposition": "active",
+      "bizStep": "commissioning",
+      "bizLocation": "https://plus.codes/8CGRC78W+MM",
+      "sensorElementList": [...],
+      "sourceParty": "https://somebusinessregister/ID/9988765443",
+      "destinationParty": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+      "bizTransaction": "prodorder",
+      "epcList": [...],
+      "quantityList": [
+        {
+          "productId": "https://id.gs1.org/01/09520123456788",
+          "productName": "EV battery 300Ah.",
+          "quantity": 200,
+          "uom": "KGM"
+        }
+      ]
     }
   ]
-}
 ```
 ### Object Event
 
 This object event describes the repair of a battery cell (EPC list).
 
 ```json
-   "credentialSubject": [
+  "credentialSubject": [
     {
       "type": [
         "ObjectEvent",
         "Event"
       ],
-  "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
-  "processType": "Repair",
-  "eventTime": "2024-09-01T12:00:00",
-  "action": "Add",
-  "disposition": "https://ref.gs1.org/cbv/Disp-active",
-  "bizStep": "https://ref.gs1.org/cbv/BizStep-commissioning",
-  "bizLocation": "https://id.gs1.org/414/9520123456788",
-  "sensorElementList": [...],
-  "epcList": [
+      "id": "https://events.sample.com/b681df10-c682-454a-b11b-d0b9374c01bd",
+      "processType": "Repair",
+      "eventTime": "2024-09-01T12:00:00Z",
+      "action": "add",
+      "disposition": "active",
+      "bizStep": "commissioning",
+      "bizLocation": "https://id.gs1.org/414/9520123456788",
+      "sensorElementList": [...],
+      "epcList": [
+        {
+          "type": [
+            "Item"
+          ],
+          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "name": "EV battery 300Ah."
+        }
+      ],
+      "quantityList": [...]
+    }
+  ]
+```
+
+### Item
+
+The item structure is designed to represent serialised items such as a specific battery cell.
+
+```json
+  "outputEPCList": [
     {
       "type": [
         "Item"
@@ -303,104 +326,58 @@ This object event describes the repair of a battery cell (EPC list).
       "id": "https://id.gs1.org/01/09520123456788/21/12345",
       "name": "EV battery 300Ah."
     }
-  ],
-  "quantityList": [...]
-}
-```
-
-### Item
-
-The item structure is desinged to represent serialised items such as a specific battery cell.
-
-```json
-      "epcList": [
-        {
-          "type": [
-            "Item",
-            "Entity"
-          ],
-          "id": "https://id.gs1.org/01/09520123456788/21/12345",
-          "name": "EV battery 300Ah.",
-          "registeredId": "90664869327",
-          "idScheme": {
-            "type": [
-              "IdentifierScheme"
-            ],
-            "id": "https://id.gs1.org/01/",
-            "name": "Global Trade Identification Number (GTIN)"
-          }
-        },
+  ]
 ```
 
 ### Quantity Element
 
-THe quantity element structure is designed to represent a measured quantity of lithium hydroxide.
+The quantity element structure is designed to represent a measured quantity such as 20kgs of lithium hydroxide.
 
 ```json
-      "quantityList": [
-        {
-          "product": {
-            "type": [
-              "Entity"
-            ],
-            "id": "https://sampleRegister.com/material/876544321",
-            "name": "Lithium hydroxide",
-            "registeredId": "876544321",
-            "idScheme": {
-              "type": [
-                "IdentifierScheme"
-              ],
-              "id": "https://sampleRegister.com/material",
-              "name": "Register of mining products"
-            }
-          },
-          "quantity": 20,
-          "uom": "KGM"
-        },
+  "inputQuantityList": [
+    {
+      "productId": "https://sampleRegister.com/material/876544321",
+      "productName": "Lithium hydroxide",
+      "quantity": 20,
+      "uom": "KGM"
+    }
+  ]
 ```
 
 ### Sensor Element
 
-The sensort element structure accomodates the association of one or more sensor readings to a given event. Each reading is measured by an identified sensor.
+The sensor element structure accommodates the association of one or more sensor readings to a given event. Each reading is measured by an identified sensor.
 
 ```json
-      "sensorElementList": [
-        {
-          "sensorMetadata": {
-            "device": {
-              "type": [
-                "Item"
-              ],
-              "id": "https://sampledeviceregister.com/123456",
-              "name": "Temperature sensor",
-              "registeredId": "123456",
-              "idScheme": {
-                "type": [
-                  "IdentifierScheme"
-                ],
-                "id": "https://sampledeviceregister.com",
-                "name": "Sample sensor device register"
-              }
-            },
-            "dataProcessingMethod": "https://standards.org/sensorMethod#1234"
-          },
-          "sensorReport": [
-            {
-              "time": "2024-07-24T12:00:00",
-              "sensorType": "https://samplesensors.com/model1234",
-              "value": 25,
-              "uom": "KGM"
-            },
-            {
-              "time": "2024-07-24T12:00:00",
-              "sensorType": "https://samplesensors.com/model1234",
-              "value": 25,
-              "uom": "KGM"
-            }
+  "sensorElementList": [
+    {
+      "sensorMetadata": {
+        "device": {
+          "type": [
+            "Item"
           ],
-          "sensorIntegrityProof": "..."
+          "id": "https://sampledeviceregister.com/123456",
+          "name": "Temperature sensor",
+        },
+        "dataProcessingMethod": "https://standards.org/sensorMethod#1234"
+      },
+      "sensorReport": [
+        {
+          "time": "2024-07-24T12:00:00Z",
+          "sensorType": "https://samplesensors.com/model1234",
+          "value": 25,
+          "uom": "KGM"
+        },
+        {
+          "time": "2024-07-24T12:00:00",
+          "sensorType": "https://samplesensors.com/model1234",
+          "value": 25,
+          "uom": "KGM"
         }
       ],
+      "sensorIntegrityProof": "..."
+    }
+  ]
 ```
 
 ## Samples
