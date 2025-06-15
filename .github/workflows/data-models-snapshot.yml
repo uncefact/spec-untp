@@ -9,5 +9,8 @@ on:
 
 jobs:
   jargon_snapshot:
-    uses: uncefact/.github/.github/workflows/untp-data-models-snapshot.yml@main
+    uses: uncefact/.github/.github/workflows/untp-data-models-publish.yml@main
     secrets: inherit
+    with:
+      version: "working"
+      comment: "Update working version"
