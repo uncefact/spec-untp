@@ -202,8 +202,8 @@
             }
           ],
           "tag": [
-            "The quick brown fox jumps over the lazy dog.",
-            "The quick brown fox jumps over the lazy dog."
+            "ICAB-123",
+            "ICAB-456"
           ]
         },
         {
@@ -249,8 +249,8 @@
             }
           ],
           "tag": [
-            "The quick brown fox jumps over the lazy dog.",
-            "The quick brown fox jumps over the lazy dog."
+            "ICAB-123",
+            "ICAB-456"
           ]
         }
       ],
@@ -378,8 +378,8 @@
             }
           ],
           "tag": [
-            "The quick brown fox jumps over the lazy dog.",
-            "The quick brown fox jumps over the lazy dog."
+            "ICAB-123",
+            "ICAB-456"
           ]
         },
         {
@@ -425,8 +425,8 @@
             }
           ],
           "tag": [
-            "The quick brown fox jumps over the lazy dog.",
-            "The quick brown fox jumps over the lazy dog."
+            "ICAB-123",
+            "ICAB-456"
           ]
         }
       ],
