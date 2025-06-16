@@ -1029,7 +1029,7 @@
         }
       ],
       "rdfs:comment": [
-        "The Party entity that manufactured the product."
+        "The Party entity that manufactured the product.# Commented out as Alastair is adding functionality which will give# .means an effect which we will need to test first.# [jargon.means]=gs1.Product.manufacturer"
       ],
       "rdfs:label": "producedByParty"
     },
