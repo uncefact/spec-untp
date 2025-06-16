@@ -1,7 +1,7 @@
 {
   "@context": {
     "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/working/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "schemaorg": "https://schema.org/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
