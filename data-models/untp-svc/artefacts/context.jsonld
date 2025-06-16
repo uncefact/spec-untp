@@ -1,11 +1,13 @@
 {
   "@context": {
     "untp-svc": "https://test.uncefact.org/vocabulary/untp/svc/working/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "schemaorg": "https://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@protected": true,
     "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
     "IdentifierScheme": {
       "@protected": true,
       "@id": "untp-core:IdentifierScheme",
@@ -171,7 +173,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/conformityTopicCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode#"
           }
         },
         "status": {
@@ -179,7 +181,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/statusCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/statusCode#"
           }
         },
         "subCriterion": {
