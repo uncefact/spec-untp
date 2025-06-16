@@ -6,13 +6,13 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
   },
   "@graph": [
     {
       "@id": "untp-svc:ConformitySchemeVocabulary",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A conformity scheme as a structured hierarchy of conformity critera.# Note: the id\" and \"type\" aliases need to be defined in the context of# the sample because UNTP uses these aliases throughout its models,# as they are defined in the VC context globally:# See https://github.com/w3c/vc-data-model/blob/949c8e1749a18dfd1e5d7556f9d5cb7801e0932f/contexts/credentials/v2#L5-L20# We could update untp-core to not use them, then we wouldn't need to define# them here either.",
+      "rdfs:comment": "A conformity scheme as a structured hierarchy of conformity critera.",
       "rdfs:label": "ConformitySchemeVocabulary"
     },
     {
