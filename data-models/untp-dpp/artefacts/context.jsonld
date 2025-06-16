@@ -1,7 +1,8 @@
 {
   "@context": {
-    "untp-dpp": "https://test.uncefact.org/vocabulary/untp/dpp/0/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "untp-dpp": "https://test.uncefact.org/vocabulary/untp/dpp/working/",
+    "schemaorg": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -13,7 +14,13 @@
     },
     "IdentifierScheme": {
       "@protected": true,
-      "@id": "untp-core:IdentifierScheme"
+      "@id": "untp-core:IdentifierScheme",
+      "@context": {
+        "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        }
+      }
     },
     "Classification": {
       "@protected": true,
@@ -23,6 +30,9 @@
         "code": {
           "@id": "untp-core:code",
           "@type": "xsd:string"
+        },
+        "name": {
+          "@id": "schemaorg:name"
         },
         "schemeID": {
           "@id": "untp-core:schemeID",
@@ -39,6 +49,9 @@
       "@id": "untp-core:Party",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "registeredId": {
           "@id": "untp-core:registeredId",
           "@type": "xsd:string"
@@ -46,6 +59,9 @@
         "idScheme": {
           "@id": "untp-core:idScheme",
           "@type": "@id"
+        },
+        "description": {
+          "@id": "schemaorg:description"
         },
         "registrationCountry": {
           "@id": "untp-core:registrationCountry",
@@ -68,6 +84,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -85,11 +104,17 @@
       "@id": "untp-core:CredentialIssuer",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "issuerAlsoKnownAs": {
           "@id": "untp-core:Party",
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -107,6 +132,9 @@
       "@id": "untp-core:Facility",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "registeredId": {
           "@id": "untp-core:registeredId",
           "@type": "xsd:string"
@@ -114,6 +142,9 @@
         "idScheme": {
           "@id": "untp-core:idScheme",
           "@type": "@id"
+        },
+        "description": {
+          "@id": "schemaorg:description"
         },
         "countryOfOperation": {
           "@id": "untp-core:countryOfOperation",
@@ -132,6 +163,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -147,6 +181,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -182,7 +219,7 @@
                     "@protected": true,
                     "data": {
                       "@id": "geojson:data",
-                      "@type": "xsd:decimal"
+                      "@type": "xsd:double"
                     }
                   }
                 }
@@ -209,7 +246,7 @@
                         "@protected": true,
                         "data": {
                           "@id": "geojson:data",
-                          "@type": "xsd:decimal"
+                          "@type": "xsd:double"
                         }
                       }
                     }
@@ -257,6 +294,9 @@
       "@id": "untp-core:Product",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "registeredId": {
           "@id": "untp-core:registeredId",
           "@type": "xsd:string"
@@ -288,6 +328,9 @@
             }
           }
         },
+        "description": {
+          "@id": "schemaorg:description"
+        },
         "productCategory": {
           "@id": "untp-core:productCategory",
           "@type": "@id"
@@ -316,6 +359,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -331,6 +377,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -369,7 +418,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -388,7 +437,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -407,7 +456,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -426,7 +475,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -445,7 +494,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -466,11 +515,17 @@
       "@id": "untp-core:Standard",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "issuingParty": {
           "@id": "untp-core:Party",
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -492,6 +547,9 @@
       "@id": "untp-core:Regulation",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "jurisdictionCountry": {
           "@id": "untp-core:jurisdictionCountry",
           "@type": "@vocab",
@@ -505,6 +563,9 @@
           "@type": "@id",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "registeredId": {
               "@id": "untp-core:registeredId",
               "@type": "xsd:string"
@@ -526,12 +587,18 @@
       "@id": "untp-core:Criterion",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
+        "description": {
+          "@id": "schemaorg:description"
+        },
         "conformityTopic": {
           "@id": "untp-core:conformityTopic",
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/conformityTopicCode#"
           }
         },
         "status": {
@@ -539,7 +606,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/statusCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/statusCode#"
           }
         },
         "subCriterion": {
@@ -562,7 +629,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -580,7 +647,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -588,8 +655,12 @@
           "@id": "untp-core:performanceLevel",
           "@type": "xsd:string"
         },
-        "tags": {
-          "@id": "untp-core:tags",
+        "category": {
+          "@id": "untp-core:category",
+          "@type": "@id"
+        },
+        "tag": {
+          "@id": "untp-core:tag",
           "@type": "xsd:string"
         }
       }
@@ -599,6 +670,9 @@
       "@id": "untp-core:Claim",
       "@context": {
         "@protected": true,
+        "description": {
+          "@id": "schemaorg:description"
+        },
         "referenceStandard": {
           "@id": "untp-core:referenceStandard",
           "@type": "@id"
@@ -631,7 +705,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -649,7 +723,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -662,7 +736,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/conformityTopicCode#"
           }
         },
         "conformityEvidence": {
@@ -691,7 +765,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
               }
             },
             "encryptionMethod": {
@@ -699,7 +773,7 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/encryptionMethodCode#"
               }
             }
           }
@@ -720,7 +794,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/0/granularityCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/working/granularityCode#"
           }
         },
         "conformityClaim": {
@@ -734,7 +808,7 @@
             "@protected": true,
             "carbonFootprint": {
               "@id": "untp-core:carbonFootprint",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "declaredUnit": {
               "@id": "untp-core:declaredUnit",
@@ -749,12 +823,12 @@
               "@type": "@vocab",
               "@context": {
                 "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/operationalScopeCode#"
+                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/operationalScopeCode#"
               }
             },
             "primarySourcedRatio": {
               "@id": "untp-core:primarySourcedRatio",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "reportingStandard": {
               "@id": "untp-core:reportingStandard",
@@ -773,7 +847,7 @@
             },
             "verifiedRatio": {
               "@id": "untp-dpp:verifiedRatio",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "traceabilityEvent": {
               "@protected": true,
@@ -801,7 +875,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/hashMethodCode#"
+                    "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
                   }
                 },
                 "encryptionMethod": {
@@ -809,7 +883,7 @@
                   "@type": "@vocab",
                   "@context": {
                     "@protected": true,
-                    "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/encryptionMethodCode#"
+                    "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/encryptionMethodCode#"
                   }
                 }
               }
@@ -861,19 +935,19 @@
             },
             "recyclableContent": {
               "@id": "untp-core:recyclableContent",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "recycledContent": {
               "@id": "untp-core:recycledContent",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "utilityFactor": {
               "@id": "untp-core:utilityFactor",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "materialCircularityIndicator": {
               "@id": "untp-core:materialCircularityIndicator",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -901,6 +975,9 @@
           "@id": "untp-core:materialsProvenance",
           "@context": {
             "@protected": true,
+            "name": {
+              "@id": "schemaorg:name"
+            },
             "originCountry": {
               "@id": "untp-core:originCountry",
               "@type": "@vocab",
@@ -915,7 +992,7 @@
             },
             "massFraction": {
               "@id": "untp-core:massFraction",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "mass": {
               "@protected": true,
@@ -924,7 +1001,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -938,7 +1015,7 @@
             },
             "recycledMassFraction": {
               "@id": "untp-core:recycledMassFraction",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             },
             "hazardous": {
               "@id": "untp-core:hazardous",
@@ -976,6 +1053,9 @@
       "@id": "untp-core:Declaration",
       "@context": {
         "@protected": true,
+        "description": {
+          "@id": "schemaorg:description"
+        },
         "referenceStandard": {
           "@id": "untp-core:referenceStandard",
           "@type": "@id"
@@ -1008,7 +1088,7 @@
                 "@protected": true,
                 "value": {
                   "@id": "untp-core:value",
-                  "@type": "xsd:decimal"
+                  "@type": "xsd:double"
                 },
                 "unit": {
                   "@id": "untp-core:unit",
@@ -1026,7 +1106,7 @@
             },
             "accuracy": {
               "@id": "untp-core:accuracy",
-              "@type": "xsd:decimal"
+              "@type": "xsd:double"
             }
           }
         },
@@ -1039,7 +1119,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/conformityTopicCode#"
           }
         }
       }
@@ -1049,6 +1129,9 @@
       "@id": "untp-core:RenderTemplate2024",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "mediaQuery": {
           "@id": "untp-core:mediaQuery",
           "@type": "xsd:string"
@@ -1068,6 +1151,9 @@
       "@id": "untp-core:WebRenderingTemplate2022",
       "@context": {
         "@protected": true,
+        "name": {
+          "@id": "schemaorg:name"
+        },
         "template": {
           "@id": "renderMethodPrefix:template",
           "@type": "xsd:string"
