@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dpp": "https://test.uncefact.org/vocabulary/untp/dpp/working/",
+    "untp-dpp": "https://test.uncefact.org/vocabulary/untp/dpp/0/",
     "schemaorg": "https://schema.org/",
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "geojson": "https://purl.org/geojson/vocab#",
@@ -794,7 +794,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/working/granularityCode#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dpp/0/granularityCode#"
           }
         },
         "conformityClaim": {
