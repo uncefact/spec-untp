@@ -7,7 +7,8 @@
       "type": "array",
       "readOnly": true,
       "default": [
-        "FacilityRecord"
+        "DigitalFacilityRecord",
+        "VerifiableCredential"
       ],
       "items": {
         "type": "string"
@@ -15,31 +16,192 @@
       "allOf": [
         {
           "contains": {
-            "const": "FacilityRecord",
+            "const": "DigitalFacilityRecord",
+            "minContains": 1
+          }
+        },
+        {
+          "contains": {
+            "const": "VerifiableCredential",
             "minContains": 1
           }
         }
       ]
     },
-    "id": {
-      "type": "string",
-      "format": "uri",
-      "description": "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
-    },
-    "facility": {
-      "$ref": "#/$defs/Facility",
-      "description": "The physical site (eg farm or factory) where the product or materials was produced."
-    },
-    "conformityClaim": {
+    "@context": {
+      "example": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dfr/working/"
+      ],
       "type": "array",
       "items": {
-        "$ref": "#/$defs/Claim"
+        "type": "string"
       },
-      "description": "A list of conformity declarations against specific criteria from recognised standards or regulations. "
+      "description": "A list of JSON-LD context URIs that define the semantic meaning of properties within the credential. ",
+      "readOnly": true,
+      "prefixItems": [
+        {
+          "const": "https://www.w3.org/ns/credentials/v2",
+          "type": "string"
+        },
+        {
+          "const": "https://test.uncefact.org/vocabulary/untp/dfr/working/",
+          "type": "string"
+        }
+      ],
+      "default": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dfr/working/"
+      ],
+      "minItems": 2,
+      "uniqueItems": true
+    },
+    "id": {
+      "example": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
+      "type": "string",
+      "format": "uri",
+      "description": "A unique identifier (URI) assigned to the product passport. May be a UUID"
+    },
+    "issuer": {
+      "$ref": "#/$defs/CredentialIssuer",
+      "description": "The organisation that is the issuer of this VC. Note that the \"id\" property MUST be a W3C DID.  Other identifiers such as tax registration numbers can be listed in the \"otherIdentifiers\" property."
+    },
+    "validFrom": {
+      "pattern": "^-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$",
+      "example": "2024-03-15T12:00:00Z",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time from which the credential is valid."
+    },
+    "validUntil": {
+      "pattern": "^-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$",
+      "example": "2034-03-15T12:00:00Z",
+      "type": "string",
+      "format": "date-time",
+      "description": "The expiry date (if applicable) of this verifiable credential."
+    },
+    "credentialSubject": {
+      "$ref": "#/$defs/FacilityRecord",
+      "description": "The subject of a UNTP Digital Facility Record (DFR) is a Facility "
     }
   },
-  "description": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record.",
+  "description": "A digital verifiable credential holding facility performance information.",
+  "required": [
+    "@context",
+    "id",
+    "issuer"
+  ],
   "$defs": {
+    "CredentialIssuer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "CredentialIssuer"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "CredentialIssuer",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "did:web:identifiers.example-company.com:12345",
+          "type": "string",
+          "format": "uri",
+          "description": "The W3C DID of the issuer - should be a did:web or did:webvh"
+        },
+        "name": {
+          "example": "Example Company Pty Ltd",
+          "type": "string",
+          "description": "The name of the issuer person or organisation"
+        },
+        "issuerAlsoKnownAs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "example": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+                "type": "string",
+                "format": "uri",
+                "description": "The globally unique ID of the party as a URI, ideally as a resolvable ID. "
+              },
+              "name": {
+                "example": "Sample Company Pty Ltd.",
+                "type": "string",
+                "description": "The registered name of the party within the identifier scheme."
+              },
+              "registeredId": {
+                "example": 90664869327,
+                "type": "string",
+                "description": "The registration number (alphanumeric) of the Party within the register. Unique within the register."
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ]
+          },
+          "description": "An optional list of other registered identifiers for this credential issuer "
+        }
+      },
+      "description": "The issuer party (person or organisation) of a verifiable credential.",
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "FacilityRecord": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": [
+            "FacilityRecord"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "FacilityRecord",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
+        },
+        "facility": {
+          "$ref": "#/$defs/Facility",
+          "description": "The physical site (eg farm or factory) where the product or materials was produced."
+        },
+        "conformityClaim": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "description": "A list of conformity declarations against specific criteria from recognised standards or regulations. "
+        }
+      },
+      "description": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record."
+    },
     "Facility": {
       "type": "object",
       "additionalProperties": true,
