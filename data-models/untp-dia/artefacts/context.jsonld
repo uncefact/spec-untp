@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/working/",
+    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/0/",
     "schemaorg": "https://schema.org/",
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
@@ -147,7 +147,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dia/working/RegistryTypeCodeList#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dia/0/RegistryTypeCodeList#"
           }
         },
         "registrationScopeList": {

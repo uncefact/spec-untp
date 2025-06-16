@@ -5,7 +5,7 @@
   ],
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
-    "https://test.uncefact.org/vocabulary/untp/dfr/working/"
+    "https://test.uncefact.org/vocabulary/untp/dfr/0.6.1/"
   ],
   "id": "https://example-company.com/credentials/2a423366-a0d6-4855-ba65-2e0c926d09b0",
   "issuer": {
