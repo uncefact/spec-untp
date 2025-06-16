@@ -85,6 +85,7 @@ Summary and detailed information about the content of each UNTP credential is av
 * [Digital Conformity Credential (DCC)](ConformityCredential.md)
 * [Digital Traceability Event (DTE)](DigitalTraceabilityEvents.md)
 * [Digital Facility Record (DFR)](DigitalFacilityRecord.md)
+* [Digital Identity Anchor (DIA)](DigitalIdentityAnchor.md)
 
 ![Architecture for one product](Architecture-actor.png)
 

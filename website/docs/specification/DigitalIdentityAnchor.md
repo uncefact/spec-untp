@@ -17,16 +17,15 @@ Version 1.0 stable release for production implementation is due in June 2025 aft
 
 ### Release for Pilot Testing
 
-Version 0.5.0 release artifacts (when available) are suitable for pilot testing.
+Version 0.6.0 release artifacts can be used for pilot testing.
 
 ### Latest Development Version
 
 Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dia/0.2.1/)
-* [JSON Schema (full credential)](https://test.uncefact.org/vocabulary/untp/dia/untp-dia-schema-0.2.1.json)
-* [JSON Schema (credentialSubject only)](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.1/artefacts/jsonSchemas/RegisteredIdentity.json?class=RegisteredIdentity)
-* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.1.json)
+* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dia/0.6.0/)
+* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dia/untp-dia-schema-0.6.0.json)
+* [Sample JSON Instance](https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.6.0.json)
 
 ### Ontology
 The ontology for the Digital Identity Anchor is available in JSON-LD format and can be retrieved via content negotiation from:
@@ -42,7 +41,7 @@ The ontology for the Digital Identity Anchor is available in JSON-LD format and 
 
 |URL|QR|Description|
 |--|--|--|
-|[Sample Digital Identity Anchor](https://untp.showthething.com/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2F67aea5a9-e895-4c1e-b263-861dfddf63aa.json%22%7D%7D)|![Sample Digital Identity Anchor](untp-dia-demo.png)|A sample digital identity anchor as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be dlownloaded via the download button.|
+|[Sample Digital Identity Anchor](https://untp.showthething.com/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2F67aea5a9-e895-4c1e-b263-861dfddf63aa.json%22%7D%7D)|![Sample Digital Identity Anchor](untp-dia-demo.png)|A sample digital identity anchor as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be downloaded via the download button.|
 
 ### Version History
 
@@ -76,7 +75,7 @@ The DIA can also be used for similar trust anchoring purposes such as:
 
 ## Requirements
 
-The digital identity anchor is designed to meet the following detailed requirements as well as the more general [UNTP Requirements(https://uncefact.github.io/spec-untp/docs/about/Requirements)]
+The digital identity anchor is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://uncefact.github.io/spec-untp/docs/about/Requirements)
 
 | ID | Name  | Requirement Statement   | Solution Mapping  |
 | ------ | ---- | --------- | ---------- |
@@ -84,7 +83,7 @@ The digital identity anchor is designed to meet the following detailed requireme
 | DIA-02 | DIA Issuer DID | The DIA issuer MUST use did:web as the DIA issuer and the web domain MUST match the well known domain of the issuing authority so that verifiers can confirm authority identity via public web records.| DIA issuer specification|
 | DIA-03 | Scheme registration | The DIA issuing authority SHOULD register the identity scheme (including the trusted issuer DIDs) with the UN/CEFACT identifier scheme registry so that verifiers can leverage UN maintained scheme metadata to simplify DIA discovery and verification.| See UNTP [Identity Resolver](IdentityResolver.md)|
 | DIA-04 | Multiple DIDs | A registered member may need to link multiple DIDs to one registered ID, either because there is a need to transition between DID service providers or because an organisation may choose to use different DIDs for different purposes. | Issue multiple DIAs |
-| DIA-05 | Scope List| The DIA MUST include a list of scope URIs that unambiguously define the authorised role(s) of the member in the register so that verifiers can confirm the scope of the membership. | `scopeList` property |
+| DIA-05 | Scope List| The DIA MUST include a list of scope URIs that unambiguously define the authorised role(s) of the member in the register so that verifiers can confirm the scope of the membership. | `registrationScopeList` property |
 | DIA-06 | Register Type| The DIA MUST specify the register type so that verifiers can understand the context of the `registrationScopeList`| `registerType` property|
 | DIA-07 | DIA Discovery| The DIA SHOULD be discoverable given either the DID or the registeredID| [DIA Discovery](#dia-discovery)|
 | DIA-08 | White list | The DIA should include a mechanism to avoid malicious actors who are not the registrar from issuing DIAs that claim links to authoritative registered IDs| Maintain white list of trusted issuer DIDs on UN/CEFACT identifer scheme registry|
@@ -99,12 +98,12 @@ The Digital Identity Anchor logical model.
 
 ### Core Vocabulary Documentation
 
-The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.5.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. The Digital Identity Anchor only re-uses the UNTP core `VerifiableCredential` and `Identifier` classes.
+The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.6.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. The Digital Identity Anchor only re-uses the UNTP core `VerifiableCredential` and `IdentifierScheme` classes.
 
 
 ### DIA Documentation
 
-The [DIA documentation](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.2.1/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DIA model.
+The [DIA documentation](https://jargon.sh/user/unece/DigitalIdentityAnchor/v/0.6.0/artefacts/readme/render) provides a technology-neutral definition of classes, properties and code lists in the DIA model.
 
 ## Implementation Guidance
 
@@ -112,14 +111,14 @@ This section provides sample JSON-LD snippets for each DIA component.
 
 ### Digital Identity Anchor
 
-The Digital Identity Anchors is a Verifiable credential. Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiable credentials data model for UNTP.  The issuing party for the VC MUST be the authority that owns or operates the identity register. 
+The Digital Identity Anchors is a Verifiable credential. Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credential) for information about the use of the verifiable credentials data model for UNTP.  The credential issuer of the VC MUST be the authority that owns or operates the identity register. 
 
 ### Registered Identity
 
 The registered identity class represents the registry member. For example, in a national business register, the registered identity would be one of the registered businesses.
 
-* `type` MUST contain constant value array `["RegisteredIdentity", "Identifier"]` which declares to linked data processors that this is a registered identity which is a sub-type of identity.
-* the `id` MUST contain DID of the registered member that is linked to the `registredID` and for which the registrar has verified is controlled by the subject.
+* `type` MUST contain constant value array `["RegisteredIdentity"]` which declares to linked data processors that this is a registered identity.
+* the `id` MUST contain DID of the registered member that is linked to the `registeredId` and for which the registrar has verified is controlled by the subject.
 * `name` is the human readable registered entity name and SHOULD match the registered name as it appears in the authoritative register.
 * `registeredId` contains the simple identifier value that is unique within the register (but may not be globally unique) for example the VAT registration number.
 * `idScheme` identifies the authoritative register.  If the identity scheme is registered with UN/CEFACT then the `idScheme.id` MUST match the `identityRegister.id` in the UN/CEFACT scheme register.
@@ -131,7 +130,6 @@ The registered identity class represents the registry member. For example, in a 
   "credentialSubject": {
     "type": [
       "RegisteredIdentity",
-      "Identifier"
     ],
     "id": "did:web:samplecompany.com/123456789",
     "name": "Sample business Ltd",
@@ -151,7 +149,7 @@ The registered identity class represents the registry member. For example, in a 
 ```
 ## DIA Trust Anchors
 
-The integrity of the DIA depends on verifiers knowing the authoritative list of authoritative registry issuer DIDs. Whilst it is possible for each verifier to maintain their own whitelist of trusted issuers, scalable global uptake would be facilited if there is a UN maintained and trusted whitelist. 
+The integrity of the DIA depends on verifiers knowing the authoritative list of authoritative registry issuer DIDs. Whilst it is possible for each verifier to maintain their own whitelist of trusted issuers, scalable global uptake would be facilitated if there is a UN maintained and trusted whitelist. 
 
 The data model for a UN maintained identifier scheme register is defined in the [Identity Resolver](IdentityResolver.md) specification and a prototype will be implemented for UNTP testing. A production implementation will require a new UN/CEFACT project proposal which will be submitted in due course.
 
