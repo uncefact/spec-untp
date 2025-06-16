@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/working/",
+    "untp-dte": "https://test.uncefact.org/vocabulary/untp/dte/0/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
