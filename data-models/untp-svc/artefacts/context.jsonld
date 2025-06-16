@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-svc": "https://test.uncefact.org/vocabulary/untp/svc/working/",
+    "untp-svc": "https://test.uncefact.org/vocabulary/untp/svc/0/",
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
     "schemaorg": "https://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
