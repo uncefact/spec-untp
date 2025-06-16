@@ -3,10 +3,6 @@
     "ConformitySchemeVocabulary"
   ],
   "@context": [
-    {
-      "id": "@id",
-      "type": "@type"
-    },
     "https://test.uncefact.org/vocabulary/untp/svc/working/"
   ],
   "id": "https://sample-scheme.org/ESGStandard/v4.0",
