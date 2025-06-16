@@ -12,4 +12,4 @@ jobs:
     with:
       version: ${{ github.event.release.tag_name }}
       comment: ${{ github.event.release.name}}
-      dry-run: true
+      dry-run: ${{ vars.UNTP_RELEASE_DRY_RUN}}
