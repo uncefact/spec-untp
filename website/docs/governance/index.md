@@ -100,7 +100,7 @@ Looks after the maintenance of Digital Product Passport (DPP), Digital Facility 
 
 ### [Conformity Working Group](conformityGroup.md)
 
-looks after the maintenance of the Digital Conformity Credential (DCC) and the Sustainability Vocabulary Catalog (SVC).  This is all about conformity schemes, and the digitally referenceable criteria that are referenced by DCC assessments and the “Claims” in DPPs and DFRs. [Terms of reference and meetings](conformityGroup.md)
+Looks after the maintenance of the Digital Conformity Credential (DCC) and the Sustainability Vocabulary Catalog (SVC).  This is all about conformity schemes, and the digitally referenceable criteria that are referenced by DCC assessments and the “Claims” in DPPs and DFRs. [Terms of reference and meetings](conformityGroup.md)
 
 ### [Technical Working Group](technicalGroup.md)
 
