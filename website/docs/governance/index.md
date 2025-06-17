@@ -88,7 +88,7 @@ UNTP development and maintenance work is split between four working groups and a
 
 ### [UNTP Steering Group](steeringGroup.md)
 
-Includes membership from each sworking group described below, ensures overall collaboration and consistency, includes UN secretariat people and coordinates with the proposed extensions governance board and leases with other DPP initiatives.  
+Includes membership from each working group described below, ensures overall collaboration and consistency, includes UN secretariat people and coordinates with the proposed extensions governance board and liaises with other DPP initiatives.  
 
 ### [Adoption Working Group](adoptionGroup.md)
 
