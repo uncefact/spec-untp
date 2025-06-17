@@ -29,7 +29,7 @@ Every version change is automatically published to the UNTP `test.uncefact.org/v
 **Linked data vocabulary (test)**
 
 * Pattern:  `https://test.uncefact.org/vocabulary/untp/{vocab-name}/{major-version}/{artefact}`
-* Example: `https://test.uncefact.org/vocabulary/untp/dpp/0/Product`
+* Example: `https://test.uncefact.org/vocabulary/untp/dpp/0/product`
 
 **Schema and context files (test)**
 
