@@ -34,7 +34,7 @@ Every version change is automatically published to the UNTP `test.uncefact.org/v
 **Schema and context files (test)**
 
 * Pattern: `https://test.uncefact.org/vocabulary/untp/{credential-type}/{versioned-file-name}`
-* Example: https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.5.0.json
+* Example: https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.6.0.json
 
 When a given version meets criteria to justify a production release then the governance process will approve a release that will publish the artefacts to the UNTP `vocabulary.uncefact.org` end point. 
 
