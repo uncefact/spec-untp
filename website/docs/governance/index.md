@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 2
 title: Governance
 ---
 
@@ -77,53 +77,34 @@ UNTP development follows an agile and iterative approach with maximum public vis
 * Contributing members who wish to propose changes to existing content or contribute new content should [raise a new issue](https://github.com/uncefact/spec-untp/issues) using the GitHub issue workflow - that describes the change. Any other contributing member can comment on the issue.  In this way, the issue can be used as a permanent record of working group discussion around the specific issue. Some issues like this one on [identifiers](https://github.com/uncefact/spec-untp/issues/137) can be long running whilst others like this one on [context file versions](https://github.com/uncefact/spec-untp/issues/149) can be short and quick to resolve. 
 * Once the creator of the issue is confident that there has been sufficient exposure and discussion, then a formal request to change content should be lodged - using the GitHub pull request workflow. All pull requests require at least one reviewer to approve the proposed changes and all approved pull requests are discussed at fortnightly meetings. If there are no objections then the changes are merged into the main website. All pull requests [remain visible](https://github.com/uncefact/spec-untp/pulls?q=is%3Apr+is%3Aclosed) for public scrutiny. 
 * If there are objections then they are discussed and, hopefully, resolved with full consensus. In the rare case of objections that cannot be resolved by consensus then meeting chair will hold a vote. A simple majority is required to accept the change. 
-* All meetings are recorded, transcribed, summarised, and published to the [UNTP meetings](https://uncefact.github.io/spec-untp/docs/about/Meetings) page.
+* All meetings are recorded, transcribed, summarised, and published to the [UNTP meetings](steeringGroup.md) page.
 * A google group mailing list is also maintained and can be used by any observer or contributing member. All group emails are archived and searchable. 
 
-For participants less familiar with GitHub tools and processes, there is a [guidance page](https://github.com/uncefact/spec-untp#spec-untp) on how to write content and how to request changes via the pull request workflow. 
+For participants less familiar with GitHub tools and processes, there is a "using GitHub" guidnace page in this section that describes how to write content and how to request changes via the pull request workflow. 
 
-## UNTP Version and Release Management
+## UNTP Working Groups Structure
 
-Within the UNTP business governance framework, there also needs to be some technical governance to ensure quality and stability of UNTP technical deliverables.
+UNTP development and maintenance work is split between four working groups and a steering group. 
 
-### Version Management
+### [UNTP Steering Group](steeringGroup.md)
 
-All UNTP artifacts are rigorously versioned following [semver](https://semver.org/) best practices. 
+Includes membership from each working group described below, ensures overall collaboration and consistency, includes UN secretariat people and coordinates with the proposed extensions governance board and liaises with other DPP initiatives.  
 
-* Version numbers are indicated as a dot-separated triple `{major}.{minor}.{patch}`.  For example version 2.3.4.
-* `{patch}` version number increments indicate non-breaking bug fixes that do not add new capabilities of features. For example, implementers should see no difference between version 1.4.5 and version 1.4.6.
-* `{minor}` version number increments indicate non-breaking enhancements. For example, implementations of version 1.4.5 are still compatible with version 1.5.0 but may not take advantage of new features.
-* `{major}` version number increments indicate significant and breaking releases. For example implementations of version 1.5.0 will be incompatible with version 2.0.0 and may fail in unpredictable ways.
+### [Adoption Working Group](adoptionGroup.md)
 
-Note that 0.x.y versions do not strictly follow semver and may include breaking changes in minor versions. However all versions after 1.0.0 first formal release will strictly observe this versioning process. 
+Looks after business case and implementation guidance and the promotion / adoption of new implementation commitments by all UNTP implementers including sustainability scheme owners, identity registers, and software platforms. [Terms of reference and meetings](adoptionGroup.md)
 
-### Release Management
+### [Supply Chain Working Group](supplyChainGroup.md)
 
-Every version change is automatically published to the UNTP `test.uncefact.org/vocabulary` end point following a defined URL structure
+Looks after the maintenance of Digital Product Passport (DPP), Digital Facility Record (DFR), and Digital Traceability Events (DTE).  These credentials represent the transparent supply chain information. [Terms of reference and meetings](supplyChainGroup.md)
 
-**Linked data vocabulary (test)**
+### [Conformity Working Group](conformityGroup.md)
 
-* Pattern:  `https://test.uncefact.org/vocabulary/untp/{vocab-name}/{major-version}/{artefact}`
-* Example: `https://test.uncefact.org/vocabulary/untp/dpp/0/Product`
+Looks after the maintenance of the Digital Conformity Credential (DCC) and the Sustainability Vocabulary Catalog (SVC).  This is all about conformity schemes, and the digitally referenceable criteria that are referenced by DCC assessments and the “Claims” in DPPs and DFRs. [Terms of reference and meetings](conformityGroup.md)
 
-**Schema and context files (test)**
+### [Technical Working Group](technicalGroup.md)
 
-* Pattern: `https://test.uncefact.org/vocabulary/untp/{credential-type}/{versioned-file-name}`
-* Example: https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.5.0.json
-
-When a given version meets criteria to justify a production release then the governance process will approve a release that will publish the artefacts to the UNTP `vocabulary.uncefact.org` end point. 
-
-**Linked data vocabulary (production)**
-
-* Pattern : `https://vocabulary.uncefact.org/untp/{vocab-name}/{major-version}/{artefact}`
-* Example : `https://vocabulary.uncefact.org/untp/dpp/1/Product`
-
-**Schema and context files (production)**
-
-* Pattern: `https://vocabulary.uncefact.org/untp/{credential-type}/{versioned-file-name}`
-* Example: `https://vocabulary.uncefact.org//untp/dpp/untp-dpp-schema-1.1.0.json`
-
-
+Looks after the Verifiable Credentials Profile (VCP), Decentralised Access Control (DAC), and Identity Resolver (IDR) specifications.  This is all about the technology underpinnings of UNTP.  This group would also maintain reference implementation and test suites. [Terms of reference and meetings](technicalGroup.md)
 
 
 

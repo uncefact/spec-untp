@@ -66,7 +66,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       slackLink,
-      mailingListLink: 'https://groups.google.com/g/transparency-uncefact',
+      mailingListLink: 'https://gaggle.email/join/untp@gaggle.email',
       colorMode: {
         disableSwitch: true,
       },
@@ -78,15 +78,25 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/docs/about', label: 'About the UNTP', position: 'right'},
+          {to: '/docs/about', label: 'About UNTP', position: 'right'},
+          {
+            to: '/docs/governance',
+            label: 'Governance',
+            position: 'right',
+          },
+          {
+            to: '/docs/business-case',
+            label: 'Business Case',
+            position: 'right',
+          },
           {
             to: '/docs/specification',
-            label: 'The specification',
+            label: 'Specification',
             position: 'right',
           },
           {
             to: '/docs/tools-and-support',
-            label: 'Tools and support',
+            label: 'Guidance',
             position: 'right',
           },
           {to: '/docs/extensions', label: 'Extensions', position: 'right'},
