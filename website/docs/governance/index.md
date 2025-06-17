@@ -80,7 +80,7 @@ UNTP development follows an agile and iterative approach with maximum public vis
 * All meetings are recorded, transcribed, summarised, and published to the [UNTP meetings](steeringGroup.md) page.
 * A google group mailing list is also maintained and can be used by any observer or contributing member. All group emails are archived and searchable. 
 
-For participants less familiar with GitHub tools and processes, there is a [guidance page](usingGitHub.md) on how to write content and how to request changes via the pull request workflow. 
+For participants less familiar with GitHub tools and processes, there is a "using GitHub" guidnace page in this section that describes how to write content and how to request changes via the pull request workflow. 
 
 ## UNTP Working Groups Structure
 
