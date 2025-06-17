@@ -96,7 +96,7 @@ Looks after business case and implementation guidance and the promotion / adopti
 
 ### [Supply Chain Working Group](supplyChainGroup.md)
 
-looks after the maintenance of Digital product passport (DPP), Digital Facility Record (DFR), and Digital Traceability Events (DTE).  These credentials represent the transparent supply chain information. [Terms of reference and meetings](supplyChainGroup.md)
+Looks after the maintenance of Digital Product Passport (DPP), Digital Facility Record (DFR), and Digital Traceability Events (DTE).  These credentials represent the transparent supply chain information. [Terms of reference and meetings](supplyChainGroup.md)
 
 ### [Conformity Working Group](conformityGroup.md)
 
