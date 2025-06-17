@@ -1,17 +1,21 @@
 ---
 sidebar_position: 15
-title: Meetings
+title: Steering Group
 ---
 
 import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
+## Terms of Refernce
+
+As of 1st July 2025, this UNTP workging group will complete it's split into four working groups and this group will transition to become a steering group that supports the working groups. 
+
 ## Mailing List
 
 A group mailing list is maintained and can be used by any list member to post messages to the group. The list also maintains an archive of all messages sent to the group.
 
-[Join the mailing list](https://groups.google.com/g/transparency-uncefact)
+* To [join the mailing list](https://gaggle.email/join/untp@gaggle.email) - your request will be reviewed by a list administrator.
 
 ## Meetings
 
