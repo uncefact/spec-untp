@@ -46,6 +46,11 @@ History of releases is available from the **[Version history](https://test.uncef
 
 A UNTP digital traceability event may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/DigitalTraceabilityEventRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
+### Sample Credential
+
+|URL|QR|Description|
+|--|--|--|
+|[Sample Battery Transformation Event](https://untp.showthething.com/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2F0b9a7227-760b-4b30-a1d3-e1a1d632a671.json%22%7D%7D)|![Sample Battery Transformation Event](untp-dte-demo-transformation-event.png)|A sample digital traceability event (transformation) as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be downloaded via the download button.|
 
 ## Overview
 
@@ -379,6 +384,3 @@ The sensor element structure accommodates the association of one or more sensor 
     }
   ]
 ```
-
-## Samples
-
