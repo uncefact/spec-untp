@@ -105,7 +105,7 @@ Summary list of registered UNTP Extensions
 
 * Extension Launched:  Jun-2025
 * Release Date: TBA
-* Industry: Global Battery Value Chain
+* Industry: B.7 - mining of metal ores, C.24 - manufacture of basic metals, C.2720 - manufacture of batteries and accumulators.
 * Geography: Global
 
 |Logo|Implementation Statement|
