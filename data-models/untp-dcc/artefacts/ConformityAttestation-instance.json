@@ -87,16 +87,14 @@
     "linkName": "GBA rule book conformity certificate",
     "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
     "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-    "hashMethod": "SHA-256",
-    "encryptionMethod": "AES"
+    "hashMethod": "SHA-256"
   },
   "auditableEvidence": {
     "linkURL": "https://files.example-certifier.com/1234567.json",
     "linkName": "GBA rule book conformity certificate",
     "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
     "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-    "hashMethod": "SHA-256",
-    "encryptionMethod": "AES"
+    "hashMethod": "SHA-256"
   },
   "scope": {
     "type": [
@@ -292,8 +290,8 @@
           "accuracy": 0.05
         }
       ],
-      "conformance": true,
       "conformityTopic": "environment.emissions",
+      "conformance": true,
       "assessedProduct": [
         {
           "product": {
@@ -555,8 +553,8 @@
           "accuracy": 0.05
         }
       ],
-      "conformance": true,
       "conformityTopic": "environment.emissions",
+      "conformance": true,
       "assessedProduct": [
         {
           "product": {
