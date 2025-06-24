@@ -26,6 +26,7 @@ const Pledges: FC<PledgesProps> = ({
                   src={impl.logo}
                   alt={`${impl.name} logo`}
                   className={styles.implementationLogo}
+                  style={impl.imageStyle}
                 />
               </a>
             </div>
