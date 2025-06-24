@@ -1548,29 +1548,6 @@
       "rdfs:label": "declaredValue"
     },
     {
-      "@id": "untp-core:conformance",
-      "schema:rangeIncludes": {
-        "@id": "xsd:boolean"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Declaration"
-        },
-        {
-          "@id": "untp-core:Claim"
-        }
-      ],
-      "rdfs:comment": [
-        "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria.",
-        "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
-      ],
-      "rdfs:label": "conformance"
-    },
-    {
       "@id": "untp-core:conformityTopic",
       "schema:rangeIncludes": {
         "@id": "untp-core:conformityTopicCode"
