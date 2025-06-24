@@ -1,12 +1,12 @@
 {
   "@context": {
-    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/0/",
+    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/working/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/"
   },
   "@graph": [
     {
@@ -400,25 +400,6 @@
       "rdfs:label": "declaredValue"
     },
     {
-      "@id": "untp-dcc:conformance",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:conformance"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dcc:ConformityAssessment"
-        }
-      ],
-      "rdfs:comment": [
-        "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
-      ],
-      "rdfs:label": "conformance"
-    },
-    {
       "@id": "untp-dcc:conformityTopic",
       "schema:rangeIncludes": {
         "@id": "untp-dcc:conformityTopicCode"
@@ -436,6 +417,25 @@
         "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
       ],
       "rdfs:label": "conformityTopic"
+    },
+    {
+      "@id": "untp-dcc:conformance",
+      "schema:rangeIncludes": {
+        "@id": "xsd:boolean"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dcc:ConformityAssessment"
+        }
+      ],
+      "rdfs:comment": [
+        "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
+      ],
+      "rdfs:label": "conformance"
     },
     {
       "@id": "untp-dcc:assessedProduct",

@@ -31,7 +31,7 @@
     "@context": {
       "example": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://test.uncefact.org/vocabulary/untp/dcc/0.6.1/"
+        "https://test.uncefact.org/vocabulary/untp/dcc/working/"
       ],
       "type": "array",
       "items": {
@@ -45,13 +45,13 @@
           "type": "string"
         },
         {
-          "const": "https://test.uncefact.org/vocabulary/untp/dcc/0.6.1/",
+          "const": "https://test.uncefact.org/vocabulary/untp/dcc/working/",
           "type": "string"
         }
       ],
       "default": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://test.uncefact.org/vocabulary/untp/dcc/0.6.1/"
+        "https://test.uncefact.org/vocabulary/untp/dcc/working/"
       ],
       "minItems": 2,
       "uniqueItems": true
@@ -528,15 +528,6 @@
           ],
           "example": "SHA-256",
           "description": "The hashing algorithm used to create the target hash.  SHA-265 is the recommended standard"
-        },
-        "encryptionMethod": {
-          "type": "string",
-          "enum": [
-            "none",
-            "AES"
-          ],
-          "example": "none",
-          "description": "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
         }
       },
       "description": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
@@ -704,11 +695,6 @@
           },
           "description": "The list of specific values measured as part of this assessment (eg tensile strength)"
         },
-        "conformance": {
-          "example": true,
-          "type": "boolean",
-          "description": "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
-        },
         "conformityTopic": {
           "type": "string",
           "enum": [
@@ -730,6 +716,11 @@
           ],
           "example": "environment.energy",
           "description": "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
+        },
+        "conformance": {
+          "example": true,
+          "type": "boolean",
+          "description": "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
         },
         "assessedProduct": {
           "type": "array",
@@ -811,8 +802,8 @@
       "description": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
       "required": [
         "id",
-        "conformance",
-        "conformityTopic"
+        "conformityTopic",
+        "conformance"
       ]
     },
     "Standard": {
