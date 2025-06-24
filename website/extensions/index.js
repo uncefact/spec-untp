@@ -1,5 +1,14 @@
 const extensions = [
   {
+    name: 'Global Battery Alliance Transparency Protocol',
+    link: '/spec-untp/docs/extensions/ExtensionsRegister#global-battery-alliance-transparency-protocol',
+    logo: '/spec-untp/img/extensions/GBA/gba-logo.svg',
+    imageStyle: {
+      width: '100px',
+      height: '100px',
+    },
+  },
+  {
     name: 'Critical Raw Materials Transparency Protocol',
     link: '/spec-untp/docs/extensions/ExtensionsRegister#critical-raw-materials-transparency-protocol',
     logo: '/spec-untp/img/extensions/CRMTP/logo.png',
