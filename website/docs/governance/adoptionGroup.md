@@ -38,9 +38,9 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 ### Purpose & functions
 The purpose of the Group is to coordinate UNTP aspects relating to the adoption of UNTP, under the direction of the UNTP Steering Committee.  
 * To maintain, subject to oversight from the Steering Committee, the communications templates, enablement and case studies to facilitate adoption of UNTP by both public and private sector organizations.
-* To develop and maintain Business Case section of UNTP web site 
-* To maintain implementation register
-* To maintain extensions register
+* To develop and maintain the [Business Case section](/spec-untp/docs/business-case) of UNTP web site 
+* To maintain the [implementation register](/spec-untp/docs/implementations/)
+* To maintain the [extensions register](/spec-untp/docs/extensions/)
 * To develop and maintain the Community Activation Program
 * To develop and maintain the Value Assessment Framework
 * To develop and maintain the relationships with global DPP initiatives (EU JTC24, ISO, ITU, IEEE, UNECE, ??)
