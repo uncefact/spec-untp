@@ -1,6 +1,6 @@
 {
   "@context": {
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
@@ -1431,25 +1431,6 @@
         "The hashing algorithm used to create the target hash.  SHA-265 is the recommended standard"
       ],
       "rdfs:label": "hashMethod"
-    },
-    {
-      "@id": "untp-core:encryptionMethod",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:encryptionMethodCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:SecureLink"
-        }
-      ],
-      "rdfs:comment": [
-        "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
-      ],
-      "rdfs:label": "encryptionMethod"
     },
     {
       "@id": "untp-core:referenceStandard",
