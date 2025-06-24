@@ -722,10 +722,6 @@
             }
           }
         },
-        "conformance": {
-          "@id": "untp-core:conformance",
-          "@type": "xsd:boolean"
-        },
         "conformityTopic": {
           "@id": "untp-core:conformityTopic",
           "@type": "@vocab",
@@ -797,10 +793,6 @@
               "@type": "xsd:double"
             }
           }
-        },
-        "conformance": {
-          "@id": "untp-core:conformance",
-          "@type": "xsd:boolean"
         },
         "conformityTopic": {
           "@id": "untp-core:conformityTopic",
