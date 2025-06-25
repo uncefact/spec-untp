@@ -259,11 +259,11 @@
     {
       "@id": "untp-core:name",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "schema:name"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
@@ -407,11 +407,11 @@
     {
       "@id": "untp-core:description",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "schema:description"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {
