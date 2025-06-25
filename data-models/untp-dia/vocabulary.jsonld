@@ -1,12 +1,12 @@
 {
   "@context": {
-    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/0/",
+    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/working/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/"
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/"
   },
   "@graph": [
     {
@@ -58,11 +58,11 @@
     {
       "@id": "untp-dia:name",
       "schema:rangeIncludes": {
-        "@id": "xsd:string"
+        "@id": "schema:name"
       },
       "@type": [
         "rdf:Property",
-        "owl:DatatypeProperty"
+        "owl:ObjectProperty"
       ],
       "schema:domainIncludes": [
         {

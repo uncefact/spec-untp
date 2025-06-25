@@ -1,8 +1,8 @@
 {
   "@context": {
-    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/0/",
-    "schemaorg": "https://schema.org/",
-    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/0/",
+    "untp-dia": "https://test.uncefact.org/vocabulary/untp/dia/working/",
+    "schema": "https://schema.org/",
+    "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@protected": true,
@@ -17,7 +17,7 @@
       "@context": {
         "@protected": true,
         "name": {
-          "@id": "schemaorg:name"
+          "@id": "schema:name"
         }
       }
     },
@@ -31,7 +31,7 @@
           "@type": "xsd:string"
         },
         "name": {
-          "@id": "schemaorg:name"
+          "@id": "schema:name"
         },
         "schemeID": {
           "@id": "untp-core:schemeID",
@@ -49,7 +49,7 @@
       "@context": {
         "@protected": true,
         "name": {
-          "@id": "schemaorg:name"
+          "@id": "schema:name"
         },
         "registeredId": {
           "@id": "untp-core:registeredId",
@@ -60,7 +60,7 @@
           "@type": "@id"
         },
         "description": {
-          "@id": "schemaorg:description"
+          "@id": "schema:description"
         },
         "registrationCountry": {
           "@id": "untp-core:registrationCountry",
@@ -84,7 +84,7 @@
           "@context": {
             "@protected": true,
             "name": {
-              "@id": "schemaorg:name"
+              "@id": "schema:name"
             },
             "registeredId": {
               "@id": "untp-core:registeredId",
@@ -104,7 +104,7 @@
       "@context": {
         "@protected": true,
         "name": {
-          "@id": "schemaorg:name"
+          "@id": "schema:name"
         },
         "issuerAlsoKnownAs": {
           "@id": "untp-core:Party",
@@ -112,7 +112,7 @@
           "@context": {
             "@protected": true,
             "name": {
-              "@id": "schemaorg:name"
+              "@id": "schema:name"
             },
             "registeredId": {
               "@id": "untp-core:registeredId",
@@ -132,7 +132,7 @@
       "@context": {
         "@protected": true,
         "name": {
-          "@id": "schemaorg:name"
+          "@id": "schema:name"
         },
         "registeredId": {
           "@id": "untp-dia:registeredId",
@@ -147,7 +147,7 @@
           "@type": "@vocab",
           "@context": {
             "@protected": true,
-            "@vocab": "https://test.uncefact.org/vocabulary/untp/dia/0/RegistryTypeCodeList#"
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dia/working/RegistryTypeCodeList#"
           }
         },
         "registrationScopeList": {
@@ -162,7 +162,7 @@
       "@context": {
         "@protected": true,
         "name": {
-          "@id": "schemaorg:name"
+          "@id": "schema:name"
         },
         "mediaQuery": {
           "@id": "untp-core:mediaQuery",
@@ -184,7 +184,7 @@
       "@context": {
         "@protected": true,
         "name": {
-          "@id": "schemaorg:name"
+          "@id": "schema:name"
         },
         "template": {
           "@id": "renderMethodPrefix:template",
