@@ -3,7 +3,6 @@
     "untp-dfr": "https://test.uncefact.org/vocabulary/untp/dfr/working/",
     "schema": "https://schema.org/",
     "untp-core": "https://test.uncefact.org/vocabulary/untp/core/working/",
-    "schemaorg": "https://schema.org/",
     "geojson": "https://purl.org/geojson/vocab#",
     "renderMethodPrefix": "https://w3id.org/vc/render-method#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -62,7 +61,7 @@
           "@type": "@id"
         },
         "description": {
-          "@id": "schemaorg:description"
+          "@id": "schema:description"
         },
         "registrationCountry": {
           "@id": "untp-core:registrationCountry",
@@ -145,7 +144,7 @@
           "@type": "@id"
         },
         "description": {
-          "@id": "schemaorg:description"
+          "@id": "schema:description"
         },
         "countryOfOperation": {
           "@id": "untp-core:countryOfOperation",
@@ -371,7 +370,7 @@
           "@id": "schema:name"
         },
         "description": {
-          "@id": "schemaorg:description"
+          "@id": "schema:description"
         },
         "conformityTopic": {
           "@id": "untp-core:conformityTopic",
@@ -451,7 +450,7 @@
       "@context": {
         "@protected": true,
         "description": {
-          "@id": "schemaorg:description"
+          "@id": "schema:description"
         },
         "referenceStandard": {
           "@id": "untp-core:referenceStandard",
@@ -569,7 +568,7 @@
       "@context": {
         "@protected": true,
         "description": {
-          "@id": "schemaorg:description"
+          "@id": "schema:description"
         },
         "referenceStandard": {
           "@id": "untp-core:referenceStandard",
