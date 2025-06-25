@@ -31,7 +31,7 @@
     "@context": {
       "example": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.1/"
+        "https://test.uncefact.org/vocabulary/untp/dfr/working/"
       ],
       "type": "array",
       "items": {
@@ -45,13 +45,13 @@
           "type": "string"
         },
         {
-          "const": "https://test.uncefact.org/vocabulary/untp/dfr/0.6.1/",
+          "const": "https://test.uncefact.org/vocabulary/untp/dfr/working/",
           "type": "string"
         }
       ],
       "default": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.1/"
+        "https://test.uncefact.org/vocabulary/untp/dfr/working/"
       ],
       "minItems": 2,
       "uniqueItems": true
@@ -688,11 +688,6 @@
           },
           "description": "The list of specific values measured as part of this assessment (eg tensile strength)"
         },
-        "conformance": {
-          "example": true,
-          "type": "boolean",
-          "description": "An indicator of whether or not the claim or assesment conforms to the regulatory or standard criteria."
-        },
         "conformityTopic": {
           "type": "string",
           "enum": [
@@ -723,7 +718,6 @@
       "description": "A declaration of conformance with one or more criteria from a specific standard or regulation.  ",
       "required": [
         "id",
-        "conformance",
         "conformityTopic"
       ]
     },
@@ -1129,15 +1123,6 @@
           ],
           "example": "SHA-256",
           "description": "The hashing algorithm used to create the target hash.  SHA-265 is the recommended standard"
-        },
-        "encryptionMethod": {
-          "type": "string",
-          "enum": [
-            "none",
-            "AES"
-          ],
-          "example": "none",
-          "description": "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
         }
       },
       "description": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
