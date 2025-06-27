@@ -122,6 +122,27 @@
         }
       }
     },
+    "Link": {
+      "@protected": true,
+      "@id": "untp-core:Link",
+      "@context": {
+        "@protected": true,
+        "id": {
+          "@id": "untp-core:id",
+          "@type": "xsd:string"
+        },
+        "name": {
+          "@id": "schema:name"
+        },
+        "digestMultibase": {
+          "@id": "https://w3id.org/security#digestMultibase",
+          "@type": "https://w3id.org/security#multibase"
+        },
+        "mediaType": {
+          "@id": "https://schema.org/encodingFormat"
+        }
+      }
+    },
     "Facility": {
       "@protected": true,
       "@id": "untp-core:Facility",
@@ -305,23 +326,8 @@
           "@type": "xsd:string"
         },
         "productImage": {
-          "@protected": true,
           "@id": "untp-core:productImage",
-          "@context": {
-            "@protected": true,
-            "linkURL": {
-              "@id": "untp-core:linkURL",
-              "@type": "xsd:string"
-            },
-            "linkName": {
-              "@id": "untp-core:linkName",
-              "@type": "xsd:string"
-            },
-            "linkType": {
-              "@id": "untp-core:linkType",
-              "@type": "xsd:string"
-            }
-          }
+          "@type": "@id"
         },
         "description": {
           "@id": "schema:description"
@@ -331,23 +337,8 @@
           "@type": "@id"
         },
         "furtherInformation": {
-          "@protected": true,
           "@id": "untp-core:furtherInformation",
-          "@context": {
-            "@protected": true,
-            "linkURL": {
-              "@id": "untp-core:linkURL",
-              "@type": "xsd:string"
-            },
-            "linkName": {
-              "@id": "untp-core:linkName",
-              "@type": "xsd:string"
-            },
-            "linkType": {
-              "@id": "untp-core:linkType",
-              "@type": "xsd:string"
-            }
-          }
+          "@type": "@id"
         },
         "producedByParty": {
           "@id": "untp-core:Party",
@@ -803,35 +794,8 @@
           }
         },
         "conformityEvidence": {
-          "@protected": true,
           "@id": "untp-core:conformityEvidence",
-          "@context": {
-            "@protected": true,
-            "linkURL": {
-              "@id": "untp-core:linkURL",
-              "@type": "xsd:string"
-            },
-            "linkName": {
-              "@id": "untp-core:linkName",
-              "@type": "xsd:string"
-            },
-            "linkType": {
-              "@id": "untp-core:linkType",
-              "@type": "xsd:string"
-            },
-            "hashDigest": {
-              "@id": "untp-core:hashDigest",
-              "@type": "xsd:string"
-            },
-            "hashMethod": {
-              "@id": "untp-core:hashMethod",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
-              }
-            }
-          }
+          "@type": "@id"
         }
       }
     },
@@ -885,23 +849,8 @@
           }
         },
         "endorsementEvidence": {
-          "@protected": true,
           "@id": "untp-core:endorsementEvidence",
-          "@context": {
-            "@protected": true,
-            "linkURL": {
-              "@id": "untp-core:linkURL",
-              "@type": "xsd:string"
-            },
-            "linkName": {
-              "@id": "untp-core:linkName",
-              "@type": "xsd:string"
-            },
-            "linkType": {
-              "@id": "untp-core:linkType",
-              "@type": "xsd:string"
-            }
-          }
+          "@type": "@id"
         }
       }
     },
@@ -966,66 +915,12 @@
           "@type": "@id"
         },
         "conformityCertificate": {
-          "@protected": true,
           "@id": "untp-core:conformityCertificate",
-          "@context": {
-            "@protected": true,
-            "linkURL": {
-              "@id": "untp-core:linkURL",
-              "@type": "xsd:string"
-            },
-            "linkName": {
-              "@id": "untp-core:linkName",
-              "@type": "xsd:string"
-            },
-            "linkType": {
-              "@id": "untp-core:linkType",
-              "@type": "xsd:string"
-            },
-            "hashDigest": {
-              "@id": "untp-core:hashDigest",
-              "@type": "xsd:string"
-            },
-            "hashMethod": {
-              "@id": "untp-core:hashMethod",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
-              }
-            }
-          }
+          "@type": "@id"
         },
         "auditableEvidence": {
-          "@protected": true,
           "@id": "untp-core:auditableEvidence",
-          "@context": {
-            "@protected": true,
-            "linkURL": {
-              "@id": "untp-core:linkURL",
-              "@type": "xsd:string"
-            },
-            "linkName": {
-              "@id": "untp-core:linkName",
-              "@type": "xsd:string"
-            },
-            "linkType": {
-              "@id": "untp-core:linkType",
-              "@type": "xsd:string"
-            },
-            "hashDigest": {
-              "@id": "untp-core:hashDigest",
-              "@type": "xsd:string"
-            },
-            "hashMethod": {
-              "@id": "untp-core:hashMethod",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
-              }
-            }
-          }
+          "@type": "@id"
         }
       }
     },
