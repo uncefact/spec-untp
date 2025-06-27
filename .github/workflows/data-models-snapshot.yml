@@ -3,7 +3,7 @@ name: Publish data models snapshots
 on:
   push:
     branches:
-      - 'data-models-staging'
+      - 'main'
     paths:
       - 'data-models/**'
 
