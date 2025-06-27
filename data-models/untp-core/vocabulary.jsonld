@@ -90,7 +90,7 @@
     {
       "@id": "untp-core:Metric",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of measure) / value (ie the actual numeric value) pairs.  ",
+      "rdfs:comment": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of measure) / value (ie the actual numeric value) pairs.",
       "rdfs:label": "Metric"
     },
     {
@@ -98,13 +98,6 @@
       "@type": "rdfs:Class",
       "rdfs:comment": "A binary file reference including name and file type.",
       "rdfs:label": "BinaryFile"
-    },
-    {
-      "@id": "untp-core:SecureLink",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality).",
-      "rdfs:label": "SecureLink",
-      "rdfs:subClassOf": "untp-core:Link"
     },
     {
       "@id": "untp-core:Declaration",
@@ -208,6 +201,9 @@
           "@id": "untp-core:Classification"
         },
         {
+          "@id": "untp-core:Link"
+        },
+        {
           "@id": "untp-core:Facility"
         },
         {
@@ -243,6 +239,7 @@
         "The globally unique ID of the party as a URI, ideally as a resolvable ID. ",
         "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes",
         "The globally unique URI representing the specific classifier value",
+        "The URL of the target resource. ",
         "The globally unique ID of the facility as URI, ideally as a resolvable URL.",
         "The globally unique ID of the product as a URI. Ideally as a resolvable URL according to ISO 18975. ",
         "A unique identifier for the declaration. Often this will be an extension of the product.id or attestation.id. But could be a UUID.",
@@ -277,6 +274,9 @@
         },
         {
           "@id": "untp-core:Classification"
+        },
+        {
+          "@id": "untp-core:Link"
         },
         {
           "@id": "untp-core:Facility"
@@ -317,6 +317,7 @@
         "The registered name of the party within the identifier scheme.",
         "The name of the identifier scheme. ",
         "Name of the classification represented by the code",
+        "A display name for the target resource ",
         "The registered name of the facility within the identifier scheme.  ",
         "The registered name of the product within the identifier scheme. ",
         "The name of the standard",
@@ -585,7 +586,7 @@
       "rdfs:label": "schemeName"
     },
     {
-      "@id": "untp-core:linkURL",
+      "@id": "untp-core:digestMultibase",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -598,17 +599,17 @@
           "@id": "untp-core:Link"
         },
         {
-          "@id": "untp-core:SecureLink"
+          "@id": "untp-core:RenderTemplate2024"
         }
       ],
       "rdfs:comment": [
-        "The URL of the target resource. ",
-        "The URL of the target resource. "
+        "An optional multi-base encoded digest to ensure the content of the link has not changed. See https://www.w3.org/TR/vc-data-integrity/#resource-integrity for more information.",
+        "Used for resource integrity and/or validation of the inline `template`"
       ],
-      "rdfs:label": "linkURL"
+      "rdfs:label": "digestMultibase"
     },
     {
-      "@id": "untp-core:linkName",
+      "@id": "untp-core:mediaType",
       "schema:rangeIncludes": {
         "@id": "xsd:string"
       },
@@ -621,37 +622,14 @@
           "@id": "untp-core:Link"
         },
         {
-          "@id": "untp-core:SecureLink"
+          "@id": "untp-core:RenderTemplate2024"
         }
       ],
       "rdfs:comment": [
-        "A display name for the target resource ",
-        "A display name for the target resource "
+        "The media type of the target resource.",
+        "content/media type for (possible) conneg on the above URL and certainly for display use"
       ],
-      "rdfs:label": "linkName"
-    },
-    {
-      "@id": "untp-core:linkType",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:Link"
-        },
-        {
-          "@id": "untp-core:SecureLink"
-        }
-      ],
-      "rdfs:comment": [
-        "The type of the target resource - drawn from a controlled vocabulary ",
-        "The type of the target resource - drawn from a controlled vocabulary "
-      ],
-      "rdfs:label": "linkType"
+      "rdfs:label": "mediaType"
     },
     {
       "@id": "untp-core:countryOfOperation",
@@ -1395,44 +1373,6 @@
       "rdfs:label": "file"
     },
     {
-      "@id": "untp-core:hashDigest",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:SecureLink"
-        }
-      ],
-      "rdfs:comment": [
-        "The hash of the file."
-      ],
-      "rdfs:label": "hashDigest"
-    },
-    {
-      "@id": "untp-core:hashMethod",
-      "schema:rangeIncludes": {
-        "@id": "untp-core:hashMethodCode"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:SecureLink"
-        }
-      ],
-      "rdfs:comment": [
-        "The hashing algorithm used to create the target hash.  SHA-265 is the recommended standard"
-      ],
-      "rdfs:label": "hashMethod"
-    },
-    {
       "@id": "untp-core:referenceStandard",
       "schema:rangeIncludes": {
         "@id": "untp-core:Standard"
@@ -1786,7 +1726,7 @@
     {
       "@id": "untp-core:conformityEvidence",
       "schema:rangeIncludes": {
-        "@id": "untp-core:SecureLink"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
@@ -2261,7 +2201,7 @@
     {
       "@id": "untp-core:conformityCertificate",
       "schema:rangeIncludes": {
-        "@id": "untp-core:SecureLink"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
@@ -2280,7 +2220,7 @@
     {
       "@id": "untp-core:auditableEvidence",
       "schema:rangeIncludes": {
-        "@id": "untp-core:SecureLink"
+        "@id": "untp-core:Link"
       },
       "@type": [
         "rdf:Property",
@@ -2417,44 +2357,6 @@
         "URL for remotely hosted template"
       ],
       "rdfs:label": "url"
-    },
-    {
-      "@id": "untp-core:mediaType",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:RenderTemplate2024"
-        }
-      ],
-      "rdfs:comment": [
-        "content/media type for (possible) conneg on the above URL and certainly for display use"
-      ],
-      "rdfs:label": "mediaType"
-    },
-    {
-      "@id": "untp-core:digestMultibase",
-      "schema:rangeIncludes": {
-        "@id": "xsd:string"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:DatatypeProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-core:RenderTemplate2024"
-        }
-      ],
-      "rdfs:comment": [
-        "Used for resource integrity and/or validation of the inline `template`"
-      ],
-      "rdfs:label": "digestMultibase"
     },
     {
       "@id": "untp-core:version",
