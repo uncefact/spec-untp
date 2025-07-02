@@ -19,7 +19,7 @@ Summary list of registered UNTP Extensions
 |[Australian Agriculture Traceability Protocol (AATP)](#australian-agriculture-traceability-protocol)|[Food Agility CRC](https://www.foodagility.com/)|Australia|Agriculture|draft| 
 |[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|dormant|
 |[Global Battery Alliance Transparency Protocol](#global-battery-alliance-transparency-protocol)|[GBA](https://www.globalbattery.org/)|Global|Battery Manufacturing and Value Chains|draft|
-|[International Copper Association Transparency Protocol (ICATP)](#international-copper-transparency-protocol)|[ICA](https://https/internationalcopper.org/)|Global|Copper mining & processing|draft| 
+|[International Copper Association Transparency Protocol (ICATP)](#international-copper-transparency-protocol)|[ICA](https://internationalcopper.org/)|Global|Copper mining & processing|draft| 
 
 ## Extension Details
 
