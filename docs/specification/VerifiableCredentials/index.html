@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NBG7HW734"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9NBG7HW734",{anonymize_ip:!0})</script><link rel="stylesheet" href="/spec-untp/assets/css/styles.a8f1e8bc.css">
-<script src="/spec-untp/assets/js/runtime~main.c75c11d0.js" defer="defer"></script>
+<script src="/spec-untp/assets/js/runtime~main.f9cd62ef.js" defer="defer"></script>
 <script src="/spec-untp/assets/js/main.a2d92969.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -51,16 +51,16 @@
 <p>A shared understanding of the meaning of claims made in verifiable credentials is essential to interoperability. To this end, conformant UNTP implementations</p>
 <ul>
 <li>MUST use the <a href="https://www.w3.org/TR/vc-data-model/#json-ld" target="_blank" rel="noopener noreferrer">JSON-LD</a> syntax for the representation of data in all issued credentials.</li>
-<li>MUST reference the relevant <a href="https://test.uncefact.org/vocabulary/untp/home" target="_blank" rel="noopener noreferrer">UNTP @context</a> file for the given credential type. These context files are themselves extentions of the W3C VC Data Model 2.0 context.</li>
-<li>MAY extend credentials with additional properties but, if so, MUST include additonal @context file reference that defines the extended properties. The @vocab &quot;catch-all&quot; mechanism MUST NOT be used.</li>
-<li>SHOULD implement widely used industry vocabularies such as <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">schema.org</a> or <a href="https://ref.gs1.org/voc/" target="_blank" rel="noopener noreferrer">GS1 web vocabulary</a> as a first choice for UNTP extensions requiring terms not in the UN vocabulary.</li>
+<li>MUST reference the relevant <a href="https://test.uncefact.org/vocabulary/untp/home" target="_blank" rel="noopener noreferrer">UNTP @context</a> file for the given credential type. These context files are themselves extensions of the W3C VC Data Model 2.0 context.</li>
+<li>MAY extend credentials with additional properties but, if so, MUST include additional @context file reference that defines the extended properties. The @vocab &quot;catch-all&quot; mechanism MUST NOT be used.</li>
+<li>SHOULD implement widely used industry vocabularies such as <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">schema.org</a> as a first choice for UNTP extensions requiring terms not in the UN vocabulary.</li>
 <li>MAY use any other published JSON-LD vocabulary for any other industry or country specific extensions.</li>
-<li>MUST maintain @context files at the same granularity and version as the corresponding credentila type. This prevents the risk of verification failures when context files change after credentials are issued.</li>
-<li>SHOULD provide a complete and versioned JSON schema for each credential type. This is to facilite simple and robust implementations by developers without detailed knowledge of JSON-LD.</li>
+<li>MUST maintain @context files at the same granularity and version as the corresponding credential type. This prevents the risk of verification failures when context files change after credentials are issued.</li>
+<li>SHOULD provide a complete and versioned JSON schema for each credential type. This is to facility simple and robust implementations by developers without detailed knowledge of JSON-LD.</li>
 </ul>
 <p>The data governance architecture for UNTP credentials is shown below. the key points to note are</p>
 <ul>
-<li>That credential instances contain Verifiable Credential Data Model (VCDM) type references for each unquely identified linked-data object. Each extension builds upon parent types and is enumerated in the type array (eg <code>[&quot;Facility&quot;, &quot;Farm&quot;]</code>).</li>
+<li>That credential instances contain Verifiable Credential Data Model (VCDM) type references for each uniquely identified linked-data object. Each extension builds upon parent types and is enumerated in the type array (eg <code>[&quot;Facility&quot;, &quot;Farm&quot;]</code>).</li>
 <li>UNTP @context types are <code>protected</code> and so MUST not be duplicated in extensions. Similarly UNTP @context does not duplicate <code>protected</code> terms in WCDM @context.</li>
 <li>Unlike @context files, the JSON schema for each credential MUST be a complete schema that defines the entire credential including terms from VCDM and UNTP.</li>
 </ul>
