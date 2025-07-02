@@ -17,8 +17,9 @@ Summary list of registered UNTP Extensions
 |[Responsible Business Transparency Protocol (RBTP)](#responsible-business-transparency-protocol)|[Responsible Business Alliance](https://www.responsiblebusiness.org/)| Global|Electrical, electronic & automotive parts|new|
 |[Universal Data Protocol (UDP) for the Global Built Environment](#universal-data-protocol-for-the-global-built-environment)|[Standards Australia](https://www.standards.org.au/) and the [International Code Council](https://www.iccsafe.org/)|Global|Construction|new|
 |[Australian Agriculture Traceability Protocol (AATP)](#australian-agriculture-traceability-protocol)|[Food Agility CRC](https://www.foodagility.com/)|Australia|Agriculture|draft| 
-|[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|draft| 
-|[Global Battery Alliance Transparency Protocol](#global-battery-alliance-transparency-protocol)|[GBA](https://www.globalbattery.org/)|Global|Battery Manufacturing and Value Chains|draft| 
+|[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|dormant|
+|[Global Battery Alliance Transparency Protocol](#global-battery-alliance-transparency-protocol)|[GBA](https://www.globalbattery.org/)|Global|Battery Manufacturing and Value Chains|draft|
+|[International Copper Association Transparency Protocol (ICATP)](#international-copper-transparency-protocol)|[ICA](https://https/internationalcopper.org/)|Global|Copper mining & processing|draft| 
 
 ## Extension Details
 
@@ -124,3 +125,22 @@ Summary list of registered UNTP Extensions
 |Approved Verifier Credential (AVC) |A conformity credential attesting that a provider of 3rd-party verification services is approved to conduct verification and issue SVCs.|Digital Conformity Credential|
 |Approved Certifier Credential|A conformity credential attesting that a provider of 3rd-party certification services is approved to conduct certification and issue BSCs. |Digital Conformity Credential|
 |Approved Carbon Calculation Partner Credential|A conformity credential attesting that a provider of 3rd-party carbon calculation services is approved to offer carbon calculation services and issue CCCs. |Digital Conformity Credential|
+
+
+### [International Copper Transparency Protocol](https://uncefact.github.io/project-crm/)
+
+* Extension Launched:  Jun-2025
+* Website: https://internationalcopper.org/
+* Release Date: TBA
+* Industry: Copper Mining
+
+|Logo|Implementation Statement|
+|--|--|
+|![ICA](/img/extensions/ICATP/logo.jpg)|The International Copper Association (ICA) promotes copper, protects its markets, and defends and sustains copper demand as the superior material to address global challenges like electrification, urbanization and digitalization. ICA members are industry leaders in responsible modern production and through ICA come together to address stakeholder questions around product environmental footprint, circularity and responsible production and use to maintain access to markets and promote copper as the material of choice.  The copper extension to the UNTP will help copper producers to better demonstrate their responsible production practices and environmental performance and build trust in the copper supply chain. |
+
+**Credential Extensions**
+
+|Credential|Description|Extension of|
+|--|--|--|
+|Copper Passport|Quality & sustainability characteristics of copper concentrate|DPP|
+|Coppermark Credential|[Coppermark](https://coppermark.org) Copper sustainability performance credential |DCC|
