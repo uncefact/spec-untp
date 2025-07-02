@@ -136,7 +136,7 @@ Summary list of registered UNTP Extensions
 
 |Logo|Implementation Statement|
 |--|--|
-|![ICA](/img/extensions/CRMTP/logo.png)|The International Copper Association (ICA) promotes copper, protects its markets, and defends and sustains copper demand as the superior material to address global challenges like electrification, urbanization and digitalization. ICA members are industry leaders in responsible modern production and through ICA come together to address stakeholder questions around product environmental footprint, circularity and responsible production and use to maintain access to markets and promote copper as the material of choice.  The copper extension to the UNTP will help copper producers to better demonstrate their responsible production practices and environmental performance and build trust in the copper supply chain. |
+|![ICA](/img/extensions/ICATP/logo.jpg)|The International Copper Association (ICA) promotes copper, protects its markets, and defends and sustains copper demand as the superior material to address global challenges like electrification, urbanization and digitalization. ICA members are industry leaders in responsible modern production and through ICA come together to address stakeholder questions around product environmental footprint, circularity and responsible production and use to maintain access to markets and promote copper as the material of choice.  The copper extension to the UNTP will help copper producers to better demonstrate their responsible production practices and environmental performance and build trust in the copper supply chain. |
 
 **Credential Extensions**
 
