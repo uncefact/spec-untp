@@ -17,7 +17,8 @@ Summary list of registered UNTP Extensions
 |[Responsible Business Transparency Protocol (RBTP)](#responsible-business-transparency-protocol)|[Responsible Business Alliance](https://www.responsiblebusiness.org/)| Global|Electrical, electronic & automotive parts|new|
 |[Universal Data Protocol (UDP) for the Global Built Environment](#universal-data-protocol-for-the-global-built-environment)|[Standards Australia](https://www.standards.org.au/) and the [International Code Council](https://www.iccsafe.org/)|Global|Construction|new|
 |[Australian Agriculture Traceability Protocol (AATP)](#australian-agriculture-traceability-protocol)|[Food Agility CRC](https://www.foodagility.com/)|Australia|Agriculture|draft| 
-|[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|draft| 
+|[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|dormant| 
+|[International Copper Association Transparency Protocol (ICATP)](#international-copper-transparency-protocol)|[ICA](https://https/internationalcopper.org/)|Global|Copper mining & processing|draft| 
 
 
 ## Extension Details
@@ -92,6 +93,18 @@ Summary list of registered UNTP Extensions
 |Logo|Implementation Statement|
 |--|--|
 |![UNECE](/img/extensions/CRMTP/logo.png)|In line with the United Nations (UN) Sustainable Development Goals (SDGs) and building on the success of the UNECE Textile & Leather traceability project, this project seeks to empower the Critical Raw Material (CRM) industry with practical, low cost tools for digital data exchange to achieve product differentiation, maximize the value of existing permitting and ESG compliance efforts, counter green-washing, and support a more sustainable global economy. This project supports the UN focus on extractive industries and leverages the UN Center for Trade Facilitation and Electronic Business' (UN/CEFACT) role and capabilities to deliver digital standards for sustainable supply chains. |
+
+### [International Copper Transparency Protocol](https://uncefact.github.io/project-crm/)
+
+* Extension Launched:  Jun-2025
+* Website: https://https/internationalcopper.org/
+* Release Date: TBA
+* Industry: Copper Mining
+* Geography: Global
+
+|Logo|Implementation Statement|
+|--|--|
+|![ICA](/img/extensions/CRMTP/logo.png)|The International Copper Association (ICA) promotes copper, protects its markets, and defends and sustains copper demand as the superior material to address global challenges like electrification, urbanization and digitalization. ICA members are industry leaders in responsible modern production and through ICA come together to address stakeholder questions around product environmental footprint, circularity and responsible production and use to maintain access to markets and promote copper as the material of choice.  The copper extension to the UNTP will help copper producers to better demonstrate their responsible production practices and environmental performance and build trust in the copper supply chain. |
 
 **Credential Extensions**
 
