@@ -97,7 +97,7 @@ Summary list of registered UNTP Extensions
 ### [International Copper Transparency Protocol](https://uncefact.github.io/project-crm/)
 
 * Extension Launched:  Jun-2025
-* Website: https://https/internationalcopper.org/
+* Website: https://internationalcopper.org/
 * Release Date: TBA
 * Industry: Copper Mining
 * Geography: Global
