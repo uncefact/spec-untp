@@ -31,7 +31,7 @@
     "@context": {
       "example": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://test.uncefact.org/vocabulary/untp/dia/0.6.1/"
+        "https://test.uncefact.org/vocabulary/untp/dia/working/"
       ],
       "type": "array",
       "items": {
@@ -45,13 +45,13 @@
           "type": "string"
         },
         {
-          "const": "https://test.uncefact.org/vocabulary/untp/dia/0.6.1/",
+          "const": "https://test.uncefact.org/vocabulary/untp/dia/working/",
           "type": "string"
         }
       ],
       "default": [
         "https://www.w3.org/ns/credentials/v2",
-        "https://test.uncefact.org/vocabulary/untp/dia/0.6.1/"
+        "https://test.uncefact.org/vocabulary/untp/dia/working/"
       ],
       "minItems": 2,
       "uniqueItems": true

@@ -17,9 +17,9 @@ Summary list of registered UNTP Extensions
 |[Responsible Business Transparency Protocol (RBTP)](#responsible-business-transparency-protocol)|[Responsible Business Alliance](https://www.responsiblebusiness.org/)| Global|Electrical, electronic & automotive parts|new|
 |[Universal Data Protocol (UDP) for the Global Built Environment](#universal-data-protocol-for-the-global-built-environment)|[Standards Australia](https://www.standards.org.au/) and the [International Code Council](https://www.iccsafe.org/)|Global|Construction|new|
 |[Australian Agriculture Traceability Protocol (AATP)](#australian-agriculture-traceability-protocol)|[Food Agility CRC](https://www.foodagility.com/)|Australia|Agriculture|draft| 
-|[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|dormant| 
+|[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|dormant|
+|[Global Battery Alliance Transparency Protocol](#global-battery-alliance-transparency-protocol)|[GBA](https://www.globalbattery.org/)|Global|Battery Manufacturing and Value Chains|draft|
 |[International Copper Association Transparency Protocol (ICATP)](#international-copper-transparency-protocol)|[ICA](https://https/internationalcopper.org/)|Global|Copper mining & processing|draft| 
-
 
 ## Extension Details
 
@@ -101,13 +101,38 @@ Summary list of registered UNTP Extensions
 |Copper Passport|Quality & sustainability characteristics of copper concentrate|DPP|
 |TSM Credential|[Towards Sustainable Mining](https://mining.ca/towards-sustainable-mining/) Mine-site sustainability performance credential |DCC|
 
+
+### [Global Battery Alliance Transparency Protocol](https://www.globalbattery.org/)
+
+* Extension Launched:  Jun-2025
+* Release Date: TBA
+* Industry: B.7 - mining of metal ores, C.24 - manufacture of basic metals, C.2720 - manufacture of batteries and accumulators.
+* Geography: Global
+
+|Logo|Implementation Statement|
+|--|--|
+|![GBATP](/img/extensions/GBA/gba-logo.svg)|The Global Battery Alliance is the leading multistakeholder organisation for sustainable, transparent and resilient battery supply chains. The organisation's flagship initiative, the Battery Passport, leverages digital product passport technology to create harmonised data exchange, reporting, compliance and sustainability certification frameworks for companies in the battery supply chain worldwide. |
+
+**Credential Extensions**
+
+|Credential|Description|Extension of|
+|--|--|--|
+|Digital Battery Passport (DBP)|A digital product passport for battery supply chain transparency, sustainability performance measurement and due diligence, including for EU regulatory reporting. |Digital Product Passport|
+|Battery Sustainability Certificate|A digital certificate attesting that a battery has met GBA requirements to be issued sustainability certification.|Digital Conformity Credential|
+|Carbon Calculation Certificate (CCC) |A digital certificate attesting that a site/facility has correctly calculated its associated carbon emissions in line with the GBA Greenhouse Gas Rulebook.|Digital Conformity Credential |
+|Digital Site / Facility Report (DSR) |A digital report produced by sites and facilities in the battery supply chain, with data aligned to GBA Battery Passport reporting requirements.|Digital Product Passport|
+|Site/Facility Verification Credential (SVC) |A conformity credential attesting that a site/facility in the battery supply chain has conformed to GBA rules for data reporting, aggregation and exchange, subsequent to verification by an Approved Verifier.|Digital Conformity Credential|
+|Approved Verifier Credential (AVC) |A conformity credential attesting that a provider of 3rd-party verification services is approved to conduct verification and issue SVCs.|Digital Conformity Credential|
+|Approved Certifier Credential|A conformity credential attesting that a provider of 3rd-party certification services is approved to conduct certification and issue BSCs. |Digital Conformity Credential|
+|Approved Carbon Calculation Partner Credential|A conformity credential attesting that a provider of 3rd-party carbon calculation services is approved to offer carbon calculation services and issue CCCs. |Digital Conformity Credential|
+
+
 ### [International Copper Transparency Protocol](https://uncefact.github.io/project-crm/)
 
 * Extension Launched:  Jun-2025
 * Website: https://internationalcopper.org/
 * Release Date: TBA
 * Industry: Copper Mining
-* Geography: Global
 
 |Logo|Implementation Statement|
 |--|--|
@@ -119,4 +144,3 @@ Summary list of registered UNTP Extensions
 |--|--|--|
 |Copper Passport|Quality & sustainability characteristics of copper concentrate|DPP|
 |Coppermark Credential|[Coppermark](https://coppermark.org) Copper sustainability performance credential |DCC|
-

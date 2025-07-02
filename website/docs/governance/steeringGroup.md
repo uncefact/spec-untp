@@ -21,13 +21,14 @@ A group mailing list is maintained and can be used by any list member to post me
 
 UNTP development team meetings are held fortnightly at alternating times to accomodate participants from different timezones. Use the links below to add the calendar entries to your diary or add the meeting links.
 
-* **Thursday 9pm UTC meetings**.  Every 4 weeks. Next meeeting 26th June 2025. 
-	* [ICS Calendar File](../../meetings/UNTP-8pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
-	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
-
 * **Thursday 8am UTC Meetings**. Every 4 weeks. Next meeting 10th July 2025.  
 	* [ICS Calendar File](../../meetings/UNTP-8am-UTC-4weekly.ics). Download and double click to add the meetings to your calendar
 	* [Zoom meeting link](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
+
+
+* **Thursday 9pm UTC meetings**.  Every 4 weeks. Next meeeting 24th July 2025. 
+	* [ICS Calendar File](../../meetings/UNTP-9pm-UTC-4weekly.ics).  Download and double click to add the meetings to your calendar.
+	* [Join the meeting](https://us02web.zoom.us/j/82338035316?pwd=kscabBvSB9hTukagOJCN4shxSt6ZWT.1). Click to join the meeting without a calendar entry.
 
 
 Each meeting will generally work through open [issues](https://github.com/uncefact/spec-untp/issues) and [pull requests](https://github.com/uncefact/spec-untp/pulls). 
@@ -38,6 +39,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
+|2025-06-26|[The UNTP steering group discussed preparations for the upcoming Geneva plenary and Recommendation 49 approval, addressed mailing list and meeting coordination issues, reviewed subgroup progress, and explored governance for future UNTP extensions and interoperability.](#2025-06-26-meeting-summary)|[video](https://us02web.zoom.us/rec/share/OcIx5O0HxKBaRWtrqYI2SASCAveWewG41hQdpc59y-nvBil9YMJrXxcKmWSrwjE.pXM_7O156GH_SsSe)|[transcript](../../meetings/2025-06-26-Recording.txt)|
 |2025-06-12|[The UNTP meeting formalized four new working groups—Conformity, Product Passports, Adoption, and Technical—to advance implementation readiness ahead of the upcoming UN plenary, with subgroup leads outlining plans and new collaborations announced with GBA, ITC, and VC4Trade.](#2025-06-12-meeting-summary)|[video](https://us02web.zoom.us/rec/share/ncrJ1zDu8Ubfs9GsXKx-VTvmDRgN1OwFhD8TRyutxVJCw40ISJmOHdfBts2dv5FL.6hPttmI5YEHlzk2z)|[transcript](../../meetings/2025-06-12-Recording.txt)|
 |2025-05-29| [The UNTP Working Group discussed copper supply chain traceability challenges, mass balance and book-and-claim models, credential mapping within UNTP, and previewed Tier 3 testing for verifying relationships between multiple verifiable credentials.](#2025-05-29-meeting-summary)|[video](https://us02web.zoom.us/rec/share/41Qwol7tGBl8ISM0zvDioLy8dTggFFRFZmA_Kc1lM5HBf0YsaoGnNXc09PD49XhE.pxfdPbPOVjaihWXJ)|[transcript](../../meetings/2025-05-29-Recording.txt)|
 |2025-05-14| [The UNTP Technical Working Group reviewed and approved schema updates, demonstrated a new validation and mutual verification testing pipeline, discussed data model interoperability across ecosystems like GS1, and prepared for the upcoming 0.6 release with contributions from new and returning participants.](#2025-05-14-meeting-summary)|[video](https://us02web.zoom.us/rec/share/busUMzc0brcbdFVBFXPpfUUOnyMRVZgO2HssV_-LcnVvkVmBOFNJgTUu8OUvVF7c.FUuxe8bXmucP1joO)|[transcript](../../meetings/2025-05-14-Recording.txt)|
@@ -87,6 +89,114 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 |2024-01-11|[The meeting focused on reviewing the registration status, introducing the structure of the GitHub repository for technical specifications, discussing key sections and their alignment with existing standards, and planning to split into separate technical and policy teams for focused work.](#2024-01-11-meeting-summary)| [video](https://us02web.zoom.us/rec/share/jX87C2PZ55iY3hFW-5L2rroXL7HoGY20Qg_m2h0B6a92_u6nk7tKkvfUKfIW6HLp.c_0QNnRPl6anrzyW?startTime=1704956458000)|[transcript](../../meetings/2024-01-11-Recording.txt)|
 |2023-12-14|[The meeting focused on revising the structure of Recommendation 49, enhancing communication strategies, inviting contributions, and planning technical content development for implementation, with follow-up actions and scheduling outlined.](#2023-12-14-meeting-summary)| [video](https://us02web.zoom.us/rec/share/gh8BWTuMrZL0TOka76YVHwbZ_ZTIPhCJTn4LJv7YbxhlK4ZOudb24I3J9t9m9zCE.v6Di5lRXOLHSLQMy)|[transcript](../../meetings/2023-12-14-Recording.txt)|
 |2023-11-30| [The meeting focused on refining communication strategies and restructuring Recommendation 49 to align with previous UN recommendations, emphasizing flexibility, implementability, and stakeholder engagement.](#2023-11-30-meeting-summary)|[video](https://us02web.zoom.us/rec/share/3QJpW_xq7ljVf5UTWKtz_gCYrTO6cP5ZlsNZKhNccA0bY9iSfPcaFP6crO7jlFg.uotFEZa-l-bUgyI9)|[transcript](../../meetings/2023-11-30-Recording.txt)|
+
+## 2025-06-26 Meeting Summary
+
+**Date:** 26 June 2025
+**Location:** Virtual (Zoom)
+**Chair:** Steve Capell
+
+#### Attendees
+
+(Note: list inferred from transcript; not all full names were captured)
+
+* Steve Capell (Chair, UNTP)
+* Nancy (UN/UNCEFACT Chair)
+* Brett (Conformance Group Lead)
+* Michael (Adoption Group Lead)
+* Nick (Supply Chain Implementation Group Lead)
+* Zach (Technical Contributor)
+* Gideon (ISOCASCO/Conformity Assessment)
+* Brie
+* Finn
+* Will Nixon (Australia)
+* Additional unnamed participants from Canada, Austria/Ireland, UK, US
+
+#### Key Discussion Points
+
+1. **Attendance and Mailing List Confusion**
+
+* Lower than usual turnout (\~10 vs expected 20) due to mailing list transition from Google Groups to Gaggle.
+* Meeting invites likely ended up in participants’ junk folders.
+* Calendar issues also noted due to time zone shifts; Steve committed to clarifying on the website and via direct email.
+
+2. **Upcoming Geneva Events**
+
+* UNCEFACT Plenary (2-day) to review work plan including sustainability and UNTP.
+* Recommendation 49 (“Transparency at Scale”) is up for approval.
+* UNECE is hosting several digital product passport (DPP) events in batteries, textiles, etc.
+* Open Wallet Foundation hosting an in-person-only event on decentralized identity; UN is a co-organizer.
+
+3. **Status of Recommendation 49**
+
+* Nancy reported growing support, especially after her presentation at UN Open Source Week.
+* Only notable concern from Germany, requesting either removal or modification of annex referencing UNTP.
+* Language is being negotiated to reach consensus.
+* Support letters to national Heads of Delegation from experts are encouraged.
+
+4. **UNTP Extension Framework**
+
+* Global Battery Alliance has formally requested to lead a battery-specific UNTP extension.
+* A governance framework for extenders is being developed; first meeting in Geneva.
+* Discussion on when and how extenders gain influence on UNTP core.
+
+5. **Governance and Interoperability**
+
+* Need for consistent criteria across different schemes (e.g., carbon measurement, conformance).
+* Two interoperability concerns: data schema and scheme comparability.
+* Gideon emphasized the importance of early alignment with global conformity assessment frameworks.
+
+6. **Working Group Updates**
+
+Conformance Group (Lead: Brett)
+
+* 37 members; kickoff meeting scheduled for 15 July.
+* Aligning with ISO/CASCO to avoid redundancy.
+
+Adoption Group (Lead: Michael)
+
+* First call held; lower attendance possibly due to timing and link confusion.
+* 15 members on the list.
+* Planning next meeting and stakeholder assignments.
+
+Supply Chain Implementation Group (Lead: Nick)
+
+* 8 members actively engaged.
+* Draft terms of reference reviewed.
+* Focus on real-world DPP implementations, capturing lessons learned, and data mapping.
+
+7. **Technical Update**
+
+* Awaiting lead.
+* Playground testing tool being upgraded to support linked verifiable credentials.
+* V0.6 release now available for pilot implementations.
+* Discussion on possibly migrating key technical components (e.g., digital identity anchor spec) to broader UN projects like Global Trust Registry and VC for Trade.
+
+8. **Blockchain Feedback**
+
+* Feedback received requesting softer language regarding blockchain use in the verifiable credentials profile.
+* Agreed to revise wording with care to remain inclusive but avoid platform bias.
+
+9. **Transparency and Documentation**
+
+* Agreement that subgroups should publish meeting summaries and optionally transcripts.
+* GitHub tickets tagged by group are to be used for cross-group visibility and coordination.
+
+#### Action Items
+
+* **Steve:**
+
+  * Send direct email (not via Gaggle) to clarify mailing list and meeting details.
+  * Update meeting time on website.
+  * Follow up with heads of delegation contacts for letter-writing support.
+  * Add Brett and Michael to the Extenders Group Geneva meeting.
+* **Working Group Leads:**
+
+  * Publish meeting summaries on their respective UNTP pages.
+  * Encourage issue tracking and cross-tagging in GitHub.
+* **Participants:**
+
+  * Review Recommendation 49 and consider writing support letters to heads of delegation.
 
 ## 2025-06-12 Meeting Summary
 
