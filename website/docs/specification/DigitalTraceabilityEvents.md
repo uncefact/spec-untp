@@ -54,7 +54,7 @@ A UNTP digital traceability event may be rendered in any format desired by the i
 
 ## Overview
 
-Traceability events are very lightweights collections of identifiers that specify the “what, when, where, why and how” of the products and facilities that constitute a value chain. The UNTP is based on the [GS1 EPCIS](https://www.gs1.org/standards/epcis) standard for this purpose because it is an existing and proven mechanism for supply chain traceability. Note that UNTP supports but does not require the use of GS1 identifiers. The basic idea behind the traceability event structure is that any supply chain of any complexity can always be accurately modeled using a combination of four basic event types. An **object** event describes an action on specific product(s) such as an inspection. A **transaction** event describes the exchange of product(s) between two actors such as sale of goods between seller and buyer. An **aggregation** event describes the consolidation or de-consolidation of products such as stacking bales of cotton on a pallet for transportation. An **association** event describes the assembly of sub-components to make a composite product. Finally, a **transformation** event describes a manufacturing process that consumes input product(s) to create new output product(s). The UNTP uses these events in a decentralised architecture as the means to traverse the linked-data "graph" that represents the entire value-chain.
+Traceability events are very lightweights collections of identifiers that specify the “what, when, where, why and how” of the products and facilities that constitute a value chain. The basic idea behind the traceability event structure is that any supply chain of any complexity can always be accurately modeled using a combination of four basic event types. An **object** event describes an action on specific product(s) such as an inspection. A **transaction** event describes the exchange of product(s) between two actors such as sale of goods between seller and buyer. An **aggregation** event describes the consolidation or de-consolidation of products such as stacking bales of cotton on a pallet for transportation. An **association** event describes the assembly of sub-components to make a composite product. Finally, a **transformation** event describes a manufacturing process that consumes input product(s) to create new output product(s). The UNTP uses these events in a decentralised architecture as the means to traverse the linked-data "graph" that represents the entire value-chain.
 
 ## Conceptual Model
 
@@ -132,7 +132,7 @@ This transformation event example describes the manufacture of a battery cell (o
           "type": [
             "Item"
           ],
-          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "id": "https://example.com/id/9520123456788",
           "name": "EV battery 300Ah."
         }
       ],
@@ -141,20 +141,20 @@ This transformation event example describes the manufacture of a battery cell (o
           "type": [
             "Item"
           ],
-          "id": "https://id.gs1.org/01/09520123456788/21/99876",
+          "id": "https://example.com/id/952012345678899876",
           "name": "Graphite Anode"
         },
         {
           "type": [
             "Item"
           ],
-          "id": "https://id.gs1.org/01/09520123456788/21/99987",
+          "id": "https://example.com/id/952012345678899987",
           "name": "Copper Cathode"
         }
       ],
       "inputQuantityList": [
         {
-          "productId": "https://id.gs1.org/01/095201299876",
+          "productId": "https://example.com/id/95201299876",
           "productName": "Lithium electrolyte",
           "quantity": 2,
           "uom": "KGM"
@@ -196,7 +196,7 @@ This association event example describes the replacement of a new battery cell (
           "type": [
             "Item"
           ],
-          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "id": "https://example.com/id/95201234567881234",
           "name": "EV battery 3000Ah."
         }
       ],
@@ -221,7 +221,7 @@ This aggregation event describes the packaging for shipment of two battery cells
       "action": "add",
       "disposition": "active",
       "bizStep": "commissioning",
-      "bizLocation": "https://id.gs1.org/414/9520123456788",
+      "bizLocation": "https://example.com/id/9520123456788",
       "sensorElementList": [...],
       "parentEPC": {
         "type": [
@@ -235,14 +235,14 @@ This aggregation event describes the packaging for shipment of two battery cells
           "type": [
             "Item"
           ],
-          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "id": "https://example.com/id/952012345678812345",
           "name": "EV battery 300Ah."
         },
         {
           "type": [
             "Item"
           ],
-          "id": "https://id.gs1.org/01/09520123456788/21/678910",
+          "id": "https://example.com/id/9520123456788678910",
           "name": "EV battery 300Ah."
         }
       ],
@@ -276,7 +276,7 @@ This transaction event describes the sale of 200 batteries (quantity list) from 
       "epcList": [...],
       "quantityList": [
         {
-          "productId": "https://id.gs1.org/01/09520123456788",
+          "productId": "https://example.com/id/9520123456788",
           "productName": "EV battery 300Ah.",
           "quantity": 200,
           "uom": "KGM"
@@ -302,14 +302,14 @@ This object event describes the repair of a battery cell (EPC list).
       "action": "add",
       "disposition": "active",
       "bizStep": "commissioning",
-      "bizLocation": "https://id.gs1.org/414/9520123456788",
+      "bizLocation": "https://example.com/id/9520123456788",
       "sensorElementList": [...],
       "epcList": [
         {
           "type": [
             "Item"
           ],
-          "id": "https://id.gs1.org/01/09520123456788/21/12345",
+          "id": "https://example.com/id/952012345678812345",
           "name": "EV battery 300Ah."
         }
       ],
@@ -328,7 +328,7 @@ The item structure is designed to represent serialised items such as a specific 
       "type": [
         "Item"
       ],
-      "id": "https://id.gs1.org/01/09520123456788/21/12345",
+      "id": "https://example.com/id/952012345678812345",
       "name": "EV battery 300Ah."
     }
   ]

@@ -186,10 +186,10 @@ It should be noted that this `authorisations` structure is part of the attestati
 The `conformityCertificate` and `auditableEvidence` objects are both the same `SecureLink` type. The purpose is to provide a verifiable link to further details about the attestation (the certificate) or the auditable evidence (eg test results) that informed the attestation.  
 
 * `linkURL` points to the external certificate or evidence described by `linkName`.
-* `linkType` is an optional identifier that, if present, should be drawn from a controlled vocabulary of linktypes ([example](https://ref.gs1.org/voc/?show=linktypes)).  
+* `linkType` is an optional identifier that, if present, should be drawn from a controlled vocabulary of link types ([example](https://idr.untp.showthething.com/api/1.0.0/voc?show=linktypes)).  
 * `hashDigest` should equal the hash of the target. This provides an integrity measure to ensure that the external certificate or evidence has not been tampered since the DCC was issued. 
 * `hashMethod` code defines which hash algorithm to use.
-* `encryptionMethod` defines whether the target is encrypted and, if so, using which algorithm.  THis provides a privacy/confidentiality mechanism to protect more sensitive content. The decryption key is assumed to be passed out of bounds. 
+* `encryptionMethod` defines whether the target is encrypted and, if so, using which algorithm.  This provides a privacy/confidentiality mechanism to protect more sensitive content. The decryption key is assumed to be passed out of bounds. 
 
 ```json
     "conformityCertificate": {
@@ -321,9 +321,9 @@ One conformity credential may include many assessments. Each assessment includes
         "assessedProduct": [
           {
             "product": {
-              "id": "https://id.gs1.org/01/09520123456788/21/12345",
+              "id": "https://example.com/id/9520123456788",
               "name": "EV battery 300Ah",
-              "registeredId": "09520123456788.21.12345",
+              "registeredId": "9520123456788",
               "serialNumber": "12345"
             },
             "IDverifiedByCAB": true
