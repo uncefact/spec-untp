@@ -94,6 +94,13 @@ Summary list of registered UNTP Extensions
 |--|--|
 |![UNECE](/img/extensions/CRMTP/logo.png)|In line with the United Nations (UN) Sustainable Development Goals (SDGs) and building on the success of the UNECE Textile & Leather traceability project, this project seeks to empower the Critical Raw Material (CRM) industry with practical, low cost tools for digital data exchange to achieve product differentiation, maximize the value of existing permitting and ESG compliance efforts, counter green-washing, and support a more sustainable global economy. This project supports the UN focus on extractive industries and leverages the UN Center for Trade Facilitation and Electronic Business' (UN/CEFACT) role and capabilities to deliver digital standards for sustainable supply chains. |
 
+**Credential Extensions**
+
+|Credential|Description|Extension of|
+|--|--|--|
+|Copper Passport|Quality & sustainability characteristics of copper concentrate|DPP|
+|TSM Credential|[Towards Sustainable Mining](https://mining.ca/towards-sustainable-mining/) Mine-site sustainability performance credential |DCC|
+
 ### [International Copper Transparency Protocol](https://uncefact.github.io/project-crm/)
 
 * Extension Launched:  Jun-2025
@@ -111,5 +118,5 @@ Summary list of registered UNTP Extensions
 |Credential|Description|Extension of|
 |--|--|--|
 |Copper Passport|Quality & sustainability characteristics of copper concentrate|DPP|
-|TSM Credential|[Towards Sustainable Mining](https://mining.ca/towards-sustainable-mining/) Mine-site sustainability performance credential |DCC|
+|Coppermark Credential|[Coppermark](https://coppermark.org) Copper sustainability performance credential |DCC|
 
