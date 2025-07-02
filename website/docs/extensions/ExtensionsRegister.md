@@ -19,7 +19,7 @@ Summary list of registered UNTP Extensions
 |[Australian Agriculture Traceability Protocol (AATP)](#australian-agriculture-traceability-protocol)|[Food Agility CRC](https://www.foodagility.com/)|Australia|Agriculture|draft| 
 |[UN Critical Raw Materials Transparency Protocol (CRMTP)](#critical-raw-materials-transparency-protocol)|[UN/CEFACT](https://unece.org/trade/uncefact)|Global|Critical minerals mining & processing|dormant|
 |[Global Battery Alliance Transparency Protocol](#global-battery-alliance-transparency-protocol)|[GBA](https://www.globalbattery.org/)|Global|Battery Manufacturing and Value Chains|draft|
-|[International Copper Association Transparency Protocol (ICATP)](#international-copper-transparency-protocol)|[ICA](https://internationalcopper.org/)|Global|Copper mining & processing|draft| 
+|[International Copper Association Transparency Protocol (ICATP)](#international-copper-association-transparency-protocol)|[ICA](https://internationalcopper.org/)|Global|Copper mining & processing|draft| 
 
 ## Extension Details
 
@@ -127,7 +127,7 @@ Summary list of registered UNTP Extensions
 |Approved Carbon Calculation Partner Credential|A conformity credential attesting that a provider of 3rd-party carbon calculation services is approved to offer carbon calculation services and issue CCCs. |Digital Conformity Credential|
 
 
-### [International Copper Transparency Protocol](https://uncefact.github.io/project-crm/)
+### [International Copper Association Transparency Protocol](https://uncefact.github.io/project-crm/)
 
 * Extension Launched:  Jun-2025
 * Website: https://internationalcopper.org/
