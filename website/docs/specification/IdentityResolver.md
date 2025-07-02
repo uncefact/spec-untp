@@ -9,7 +9,7 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 ## Overview
 
-Identifiers of **businesses** (eg tax registration numbers), of **locations** (eg google pins or cadastral/lot numbers), and of **products** (eg GS1 GTINs or other schemes) are ubiquitous throughout supply chains and underpin the integrity of the system. The diagram shows an example of a global and a local scheme for three types of entity. These are just a few of thousands of existing identifier schemes. This identity resolver specification builds upon these identifier schemes so that existing investments and high integrity registers can be leveraged. This specification also supports the use of self-issued decentralised identifiers.
+Identifiers of **businesses** (eg tax registration numbers), of **locations** (eg google pins or cadastral/lot numbers), and of **products** (eg from product registers or self-issued) are ubiquitous throughout supply chains and underpin the integrity of the system. The diagram shows an example of identifers schemes for three types of entity. These are just a few of thousands of existing identifier schemes. This identity resolver specification builds upon these identifier schemes so that existing investments and high integrity registers can be leveraged. This specification also supports the use of self-issued decentralised identifiers.
 
 ![Identifier examples](IdentityResolverIdentifiers.png)
 
@@ -107,9 +107,6 @@ In patterns below,
 Use your IANA registered [URN namespace](https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml).
 
 * pattern `urn:{ns}:{identifier-scheme}:{identifier-value}` 
-* examples:
-  * `urn:epc:id:sgtin:1234567.089123.2`
-  * `urn:lei:7LTWFZYICNSX8D621K86`
 
 #### For all other schemes
 
@@ -192,8 +189,6 @@ In **Automatic Identification and Data Capture (AIDC)**, the **ISO/IEC 15459** s
 For example:  
 - **DI `2B`** identifies gas cylinders per U.S. D.O.T. standards.  
 - **AI `01`** represents a **Global Trade Item Number (GTIN)**.  
-
-DIs are managed by **ANSI**, while AIs fall under **GS1**.
 
 ### Mapping to consistent URIs
 
@@ -285,7 +280,7 @@ A typical response the the sample query `https://resolver.sample-register.exampl
         },
         {
             "anchor": "https://resolver.sample-register.example/products/ABCD9876",
-            "gs1:pip": [
+            "sample:pip": [
                 {
                     "href": "https://sample-company.example/productInformation/ABCD9876",
                     "type": "text/html",
@@ -405,7 +400,7 @@ Even though there are a dozen DPP links maintained by the IDR service, only one 
 
 There are some cases where an identifier scheme owner manages identifiers at a coarse granularity by issuing globally unique prefixes but allows the subject to manage more fine grained identifiers themselves. For example
 
-* GS1 maintains GTIN product identifiers in a single global register but management of SGTIN (serialised items) is left to the owner of the GTIN.
+* A product register maintains product identifiers in a single global register but management of serialised items is left to the owner of the GTIN.
 * IATA issues 3 character carrier identifiers but allows each carrier to add the 7 digit suffix for each cargo consignment to make a globally unique 11 digit consignment number. 
 * Australian government manages 8 alpha-numeric character farm identifications codes such as `QDBH0132` and allows each farmer to add a unique suffix to identify each unique livestock animal born on the farm.
 * and many more examples exist.
@@ -424,7 +419,7 @@ May return a link to a secondary resolver that maintains data at serialised item
             "linkset": [
                 {
                     "href": "https://resolver.sample-company.example/products/ABCD9876/items/1234",
-                    "rel": ["untp:idr", "gs1:handledBy"],
+                    "rel": ["untp:idr", "ns1:handledBy"],
                     "title": "Secondary Identity Resolver",
                     "hreflang":["en"],
                     "type": "application/linkset+json"
