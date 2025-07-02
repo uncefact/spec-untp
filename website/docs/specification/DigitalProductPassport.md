@@ -153,7 +153,7 @@ All DPPs are issued as W3C Verifiable Credentials and MUST conform to the [VCDM 
     "type": [
       "ProductPassport"
     ],
-    "id": "https://id.gs1.org/01/09520123456788/21/12345",
+    "id": "https://example.com/id/9520123456788",
     ... remainder of product passport information goes here ...
   }
 }
@@ -209,9 +209,9 @@ The `Product` object is a core component of the `ProductPassport`, encapsulated 
 ```json
 "product": {
   "type": ["Product"],
-  "id": "https://id.gs1.org/01/09520123456788/21/12345",
+  "id": "https://example.com/id/9520123456788",
   "name": "Baked beans, tinned, 500g.",
-  "registeredId": "09520123456788.21.12345",
+  "registeredId": "9520123456788",
   "idScheme": {},
   "serialNumber": "12345",
   "batchNumber": "6789",
@@ -350,13 +350,13 @@ The `circularityScorecard` provides a concise summary of the product’s circula
     "type": ["Link"],
     "linkURL": "https://example.com/products/123456789/recycling.pdf",
     "linkName": "Recycling Instructions",
-    "linkType": "https://www.gs1.org/voc/recyclingAndRepairInfo"
+    "linkType": "https://idr.untp.showthething.com/api/1.0.0/voc/sustainabilityInfo"
   },
   "repairInformation": {
     "type": ["Link"],
     "linkURL": "https://example.com/products/123456789/repair.pdf",
     "linkName": "Repair Instructions",
-    "linkType": "https://www.gs1.org/voc/recyclingAndRepairInfo"
+    "linkType": "https://idr.untp.showthething.com/api/1.0.0/voc/sustainabilityInfo"
   },
   "recyclableContent": 0.5,
   "recycledContent": 0.3,

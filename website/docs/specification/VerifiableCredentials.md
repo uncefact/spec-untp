@@ -69,16 +69,16 @@ Verifiable Presentations (VP) are widely used in the verifiable credentials ecos
 A shared understanding of the meaning of claims made in verifiable credentials is essential to interoperability. To this end, conformant UNTP implementations
 
 - MUST use the [JSON-LD](https://www.w3.org/TR/vc-data-model/#json-ld) syntax for the representation of data in all issued credentials.
-- MUST reference the relevant [UNTP @context](https://test.uncefact.org/vocabulary/untp/home) file for the given credential type. These context files are themselves extentions of the W3C VC Data Model 2.0 context.
-- MAY extend credentials with additional properties but, if so, MUST include additonal @context file reference that defines the extended properties. The @vocab "catch-all" mechanism MUST NOT be used.
-- SHOULD implement widely used industry vocabularies such as [schema.org](https://schema.org/) or [GS1 web vocabulary](https://ref.gs1.org/voc/) as a first choice for UNTP extensions requiring terms not in the UN vocabulary.
+- MUST reference the relevant [UNTP @context](https://test.uncefact.org/vocabulary/untp/home) file for the given credential type. These context files are themselves extensions of the W3C VC Data Model 2.0 context.
+- MAY extend credentials with additional properties but, if so, MUST include additional @context file reference that defines the extended properties. The @vocab "catch-all" mechanism MUST NOT be used.
+- SHOULD implement widely used industry vocabularies such as [schema.org](https://schema.org/) as a first choice for UNTP extensions requiring terms not in the UN vocabulary.
 - MAY use any other published JSON-LD vocabulary for any other industry or country specific extensions.
-- MUST maintain @context files at the same granularity and version as the corresponding credentila type. This prevents the risk of verification failures when context files change after credentials are issued. 
-- SHOULD provide a complete and versioned JSON schema for each credential type. This is to facilite simple and robust implementations by developers without detailed knowledge of JSON-LD.  
+- MUST maintain @context files at the same granularity and version as the corresponding credential type. This prevents the risk of verification failures when context files change after credentials are issued. 
+- SHOULD provide a complete and versioned JSON schema for each credential type. This is to facility simple and robust implementations by developers without detailed knowledge of JSON-LD.  
 
 The data governance architecture for UNTP credentials is shown below. the key points to note are
 
-* That credential instances contain Verifiable Credential Data Model (VCDM) type references for each unquely identified linked-data object. Each extension builds upon parent types and is enumerated in the type array (eg `["Facility", "Farm"]`).
+* That credential instances contain Verifiable Credential Data Model (VCDM) type references for each uniquely identified linked-data object. Each extension builds upon parent types and is enumerated in the type array (eg `["Facility", "Farm"]`).
 * UNTP @context types are `protected` and so MUST not be duplicated in extensions. Similarly UNTP @context does not duplicate `protected` terms in WCDM @context.  
 * Unlike @context files, the JSON schema for each credential MUST be a complete schema that defines the entire credential including terms from VCDM and UNTP. 
 
