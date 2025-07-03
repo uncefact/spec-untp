@@ -20,7 +20,7 @@ A core principle of UNTP is to avoid re-inventing standards by building upon exi
 |[W3C Decentralised Identifiers (DID)](#w3c-decentralised-identifiers)|UNTP ensures identity integrity by requiring that all credential issuers are identified by a W3C DID that is cryptographically linked to an authoritative register (of organisations or facilities or products)|
 |[ISO Product Circularity Data Sheet (PCDS)](#iso-product-circularity-data-sheet)|UNTP provides a simple and interoperable mechanism to digitalise ISO PCDS using the DPP and DCC `Declaration` structure|
 |[CEN/CENELEC Digital Product passport System (CEN DPP)](#cen-cenelec-digital-product-passport-framework)|UNTP will work to enure interoperability where there is overlap (3 of 11 UNTP specifications). For example, whilst CEN DPP will define a specific data carrier and product identifier scheme, UNTP will support many existing industry schemes and so will include the CEN schemes in the list of supported schemes.|
-|[ISO Electronic Product Code Information Services (EPCIS)](#iso-epc-information-services)|UNTP Digital Traceability Events present a simplified but conformant subset of EPCIS that is optimised for packaging as verifiable credentials. |
+|[ISO Electronic Product Code Information Services](#iso-epc-information-services)|UNTP Digital Traceability Events present a simplified but conformant subset of ISO 19987 that is optimised for packaging as verifiable credentials. |
 
 ## Matrix
 
@@ -87,11 +87,11 @@ This information will be refreshed as updated information is published. UN/CEFAC
 
 **Standard Overview**
 
-[ISO/IEC 19987:2024](https://www.iso.org/standard/85557.html), also known as Electronic Product Code Information System (EPCIS) is a well established standard for supply chain traceability. EPCIS defines six event types that can be combined as required to accurately describe a value chain from raw material to finished product. The event types are `Object Event` (eg an inspection), `Transaction Event` (eg a shipment of goods from seller to buyer), `Aggregation Event` (eg loading multiple packages on a pallet), `Transformation Event` (eg manufacturing process that consumes input materials to create output products), and `Association Event` (eg linking products to other products or facilities). EPCIS also defines a suite of APIs for machine-to-machine exchange.
+[ISO/IEC 19987:2024](https://www.iso.org/standard/85557.html) is a well established standard for supply chain traceability. It defines six event types that can be combined as required to accurately describe a value chain from raw material to finished product. The event types are `Object Event` (eg an inspection), `Transaction Event` (eg a shipment of goods from seller to buyer), `Aggregation Event` (eg loading multiple packages on a pallet), `Transformation Event` (eg manufacturing process that consumes input materials to create output products), and `Association Event` (eg linking products to other products or facilities).
 
 **UNTP Relationship**
 
-The UNTP [Digital Traceability Event (DTE)](../specification/DigitalTraceabilityEvents.md) is a conformant and simplified profile of EPCIS that identifies the minimum subset of EPCIS that is necessary to support value chain transparency. The UNTP DTE profile is also optimised for packaging as verifiable credentials and discovery as linked data - rather than the machine-to-machine API mechanisms defined by the ISO standard.
+The UNTP [Digital Traceability Event (DTE)](../specification/DigitalTraceabilityEvents.md) is a conformant and simplified profile of ISO-19987 that identifies the minimum subset that is necessary to support value chain transparency. The UNTP DTE profile is also optimised for packaging as verifiable credentials and discovery as linked data - rather than the machine-to-machine API mechanisms defined by the ISO standard.
 
 
 

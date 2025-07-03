@@ -427,7 +427,7 @@ Supply Chain Implementation Group (Lead: Nick)
 
 5. **Discussion on Data Model Interoperability**
 
-* Phil raised concerns about overlapping verification logic across different ecosystems (e.g., GS1 vs UNTP).
+* Phil raised concerns about overlapping verification logic across different ecosystems (e.g., existing global identifier schemes vs UNTP).
 * Zach explained Tier 1 (technical VC compliance), Tier 2 (schema-level), and Tier 3 (cross-credential trust graph) validations.
 * Alex emphasized the future role of global trust registries in resolving schema equivalence and issuer accreditation.
 

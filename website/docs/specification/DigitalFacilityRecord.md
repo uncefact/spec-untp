@@ -123,7 +123,7 @@ The `credentialSubject` is a FacilityRecord object. It comprises
 The Facility object nested within FacilityRecord comprises
 
 * An identifier for the facility. This could be a self-issued DID, or an ID managed by an industry association such as a member/facility register, or a global 
-location scheme such as a GS1 GLN. Whatever the facility identifier scheme, facility IDs should be resolvable and verifiable.
+location scheme. Whatever the facility identifier scheme, facility IDs should be resolvable and verifiable.
 * The registered id of the facility.
 * A short description of the facility.
 * The registered name of the facility.
