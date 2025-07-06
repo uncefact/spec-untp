@@ -49,6 +49,7 @@ const config = {
           versions: {
             current: {
               label: 'Work in Progress',
+              path: 'wip',
             },
           },
         },
