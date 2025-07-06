@@ -1,0 +1,356 @@
+[Speaker 1]
+There we go, all right, so thank you everyone that we got a few new attendants. If anyone hasn't attended one of these meetings before, could you speak up now and introduce yourself? I think maybe that's...
+
+This is Virginia, I haven't attended before these meetings, I've attended lots of I know you have, I know you have, Virginia, but perhaps for those that are new to C-Fact on this call, just a quick 30-second introduction. Okay, I'm Virginia Cram Martos, I live in Barcelona. I have a small company called Triangularity and another one called NQ.
+
+[Speaker 2]
+Before I worked for 25 years in the UN and during almost all those 25 years I was associated with C-Fact and its predecessor.
+
+[Speaker 1]
+Right, thank you for joining us. Rakesh, I think you were joining us the first time? He's on mute.
+
+Yeah, Rakesh, you're on mute if you're talking, I don't know. You may want to say hello. I think you're from a certifier in Europe.
+
+Okay, well, we'll come back to Rakesh. Who else is joining us? Franziska?
+
+[Speaker 2]
+Yes, thank you. Good morning or I don't know what time it is where you're based. I'm based in Germany, Berlin.
+
+I work for the German Development Corporation Agency, GIZ, on a project on sustainable supply chains, specifically on the topic of data and transparency for the diligence. I know some names and faces because I've been so involved in the UNECE traceability project in the past because in my previous project I was working specifically on transparency in textile supply chain for GIZ. And yeah, I'm very happy to be here.
+
+[Speaker 1]
+Cool, thank you. Sounds like very useful expertise. Mathieu?
+
+Yes, good morning or good afternoon everyone. I'm Mathieu, I live in Paris. I run a company called Tidcal, we provide a platform for inter-interstability for supply chains in different industries like in minerals, food, cosmetics, textile.
+
+And we do deliver some free version of a digital product passport, especially for upstream traceability. And I got involved into the UNECE specialist a month ago in Geneva. Okay, I think I see Charles Arden-Clark.
+
+I'm not sure you've joined us either before. Do you want to say hello? I have not been in this meeting before.
+
+My name is Charlie Arden-Clark. I am the consultant that UNECE has engaged to work on agri-food value chains in the context of the team of specialists. The team of specialists in meeting in May was my first engagement in this process.
+
+This is my first meeting on this. Prior to being a consultant, I worked for UNET for nearly 22 years, mostly on sustainable consumption production. And prior to that for WWF International for 10 years on trade and environment issues.
+
+Okay, impressive. Definitely got the right skills in the group. Anybody else want to speak up before I get on with...
+
+Rakesh has his hand up. Okay, Rakesh. Hi there.
+
+Hi Steve. Hello. I'm based out of Hong Kong.
+
+I'm with Tove Rheinland. We are an independent third party conducting a verification assessment based on technical standards. And we are interested to contribute what we've learned from battery textiles, but also learn from all of you.
+
+Thank you. Perfect. Thank you.
+
+All right. So, just quickly for those since last meeting, I did send out a little video of me attempting to explain what REC 49 is all about. If anyone hasn't listened to it, please do.
+
+It's 15 minutes. I won't repeat it here, but it's trying to basically give an overview of what we're trying to achieve, which is essentially an anti-greenwashing measure through transparency. Hi.
+
+Okay. Thanks, Francesca. And the premise is to make a traceable and transparent supply chain with decentralized...
+
+Yeah, I had down 10 a.m. today and I called them and they said they were... I'm going to put Dave on mute. He's gone on mute.
+
+All right. And I'll share the video so you can listen to it. If you haven't already, I'll put the link in this chat right now.
+
+I want to share. Copy. There you go.
+
+I won't repeat what I said there. What I'm going to do is just discuss a couple of things today. One is the outline of the recommendation document itself after a refactoring requested by UNECE to make it of a shape that's similar to previous recommendations.
+
+I'll start by sharing screen to show you that. What we had before... By the way, for those that are new to this project, we're targeting a plenary approval of REC 49 in July.
+
+And working back from that means a draft document ready for public review by the end of February latest. So what we've got so far is kind of a project initiation, a little video of me explaining what it is, and the terms of reference, which are published on the web. And anyone that hasn't seen it, I'll provide a link.
+
+I'll follow up this meeting with an email with a few links for you. And an outline, and it is only an outline at the moment, of the contents of the recommendation document itself. And that's what you see on the screen now.
+
+And I'm just going to walk you through the slightly revised structure and seek your endorsement or at least feedback on that structure before we start writing. So generally with UN recommendations, there are three chunks to it. One is a really high-level executive summary, which is section one here, Recommendation 49, Transparency and Scale, that has a target size of five or six pages, no more than that.
+
+Which means you've got to be quite terse and precise in what you write there. And then more details in a second section called Guidelines for Implementation, which can be a fair bit longer. And some of the recommendations, like I think Recommendation 46, has something like 20 pages or maybe even 30 pages in that section.
+
+And then there's an annex for other stuff. So our target for this one, I'd like to see that Recommendation section as aligned with Guidance, five or six pages. And I think then the bulk of the document is in section two here.
+
+So what I'm going to do is walk through the sections. So the first section is pretty much a UN standard heading list. An introduction, why are we doing this project?
+
+Scope, what are we trying to achieve in this project? Target audience, for who? Purpose and benefits, how will we measure success and what are the benefits being promised?
+
+What are the challenges associated with the project? And then importantly, what are the recommendations that the UN is making to the target audience? And target recommendations.
+
+And then I've added this extra one, Maria, to an opportunity for implementers or potential implementers to make a pledge to implement. And this is what the UNEC did quite successfully with the textile and leather project. And it's a good way to collect commitment and interest in implementing the project or implementing the protocol.
+
+So that section will say, you know, how do you do that? Yeah. And then we get into the meat of the document, where this section has a sort of consistent structure across recommendations, but doesn't have to be exactly that structure from section one there.
+
+Right. And so what we had quite a lengthy introduction with a whole bunch of rationale and I've moved not much of that to a business drivers section. So more detail on why this is a problem with some metrics, you know, amount of greenwashing and so on and so forth.
+
+Some design principles, which we had before, then technical challenges, as opposed to these business challenges. So these business challenges will say, well, you know, how do you switch on global transparency? You can't switch it on all at the same time.
+
+So how do you do it? And how do you coordinate? Or do you need to coordinate at all?
+
+Can you switch on a pixel at a time and eventually light up the screen? That's one business challenge. Another one is how to do so at a low cost so that the commercial incentives remain with the party that has to change their behavior to be more sustainable.
+
+And then down here, technical challenges. And then I've got into the actual description of the protocol itself. Now, by and large, one of the things we discussed in the last meeting is we would like to have a recommendation, which is actually implementable, right?
+
+So not just a piece of paper, but something you can actually commit to do. And in a decentralized traceability architecture, that means being fairly specific about some technical specifications or standards, mostly borrowed from existing global specifications, but sort of assembled in such a way that it's a collection that represents the UN transparency protocol. So given that, we don't want to put a whole pile of technical standards in the policy document, which is the recommendation document.
+
+So I've spun up a GitHub site for the, if you like, the fine grain details of all these. So in this document, these sections here about B2B digital product passports, conformity credentials, traceability events, and so on, will be more like high level descriptions. And each one will point to a more detailed description or implementation guidance in GitHub.
+
+And then there's a section here on costs and incentives, how we can model the business benefit from the perspective of any actor, because everyone will need to make a case to implement. And this is basically, I'm imagining this as a kind of a template business case. And then implementation guidance.
+
+This is kind of like a more detailed version of these recommendations up here. When we had the first version of this document, there was quite a number of recommendations for each actor type, for regulators, for ESG standards organizations, for certifiers, software system vendors, peak bodies, and so on. Can't fit all of those recommendations in five pages up front.
+
+So I'm imagining these recommendations will be a high summary. And this is more like, okay, I've got the idea of high level what I'm being recommended to do from this section up here. This is more specific.
+
+Perhaps a page for each. And then a little bit about how the transparency protocol will be governed over time, because it will change versions. And also, we're already experiencing, you'll be interested to hear, by the way, over the last three months, we ran a pilot project in Australia for the red meat supply chain that used all the learnings that we've been gathering for UNTP to demonstrate a decentralized traceability picture with four or five different actors using three or four different software packages, right from farm to package meat, through feedlot, through abattoir, and so on, with different identifiers, including GS1 and Australian National Identifiers for cows. Did all that in three months, using the UNTP protocol.
+
+And Australia has already got a badge on it and calling it the Australian Agricultural Traceability Protocol. And so we've basically already done the first verification, if you like, of the feasibility of UNTP. The next one is likely to continue in Australian agriculture, and would love a cross-border partner to work with, by the way.
+
+Somebody mentioned they're in agri-food. And we'll also do one with the other project in UN for critical minerals, as I described earlier. So a key part of this protocol is that, or this project, that is, if we're going to recommend something for actual implementation, then we'd better be confident that it works.
+
+And the worst way to do that is to dream something up, write it down, publish it, say it's final before you've tested it. So it's very important that as we progress over the next few months, we really test this as much as possible. And so we've already done one in Australia, and as many others as are interested would be welcome.
+
+And that's what this National Industry Extensions bit is about. How do you take the UNTP, which will be, if you like, the lightest, most minimum viable core, and how do you extend it for your jurisdiction or your industry without breaking interoperability? That's what Section 2.7 will be about. And then how do you test your implementation? And then there's a section on inclusiveness, because this is the UN. It is important to answer questions like, what if I don't have internet?
+
+Or what if I'm in a developing nation without certain regulatory frameworks? What if I'm a micro, small, or medium enterprise? So that's the revised structure.
+
+Further down in the document, it's mostly relatively empty blue highlighting. And I see people have started to start appearing like magic already. There you go.
+
+And our job is to fill these in. So what I wanted to do is have one author for Section 1, because that's the short six or so pages that need to flow seamlessly. And that author is John Pabon, who's not with us today, but is actually a real live author.
+
+He wrote a book on greenwashing. So he's put his hand up, and we think it's a good idea he writes that section, obviously, for us all to comment on. And then the next challenge then is who's going to write the various bits in the body of the document here in Section 2.
+
+So what I thought I might do is quickly run through Section 2 and ask for people to write to me afterwards or just annotate this document. I'd like to have a kind of a leader for each section. That could be me, or it could be someone who feels really strongly about that section.
+
+So where are we? Business drivers, this is all about... So someone who's...
+
+This is non-technical, right? This is all about, why do I care about this? What are the metrics around climate change, deforestation, biodiversity, and so on, modern slavery?
+
+What are regulators doing about that? Examples of regulation, examples of preferential capital accessibility, examples of consumer choice metrics. So these are all the incentives here to actually fix these things.
+
+And then these are the commercial, market access barriers and so on, and some metrics around greenwashing. This section here should basically tell a very compelling story about why transparency in supply chains is materially important. It would reference things like the EU due diligence regulation and the penalties associated with it, which I gather are up to 4% of global revenue of a firm that is found to be repeatedly non-compliant.
+
+So it's quite strong incentives to do the right thing here, and not only for an entity selling goods into the EU, but for their entire supply chain. So someone with a good knowledge of this area, and I've heard a few introductions on this call that suggests to me there's good candidates for section 2.1. Design principles, fairly short section. I'm not too worried about that.
+
+Technical challenges. So this is, as opposed to the business challenges, these are, if you're going to implement transparency of scale, what are the challenges you've got to overcome? One of the first ones is centralization versus decentralization.
+
+This is something that keeps coming up and came up in Australia too, where supply chain actors who choose a traceability platform, whose operating model is to adopt all members of the supply chain onto their platform, always struggle to scale because it's inevitable that different actors amongst your buyers and suppliers, there will be different choices made. And so you end up having to accommodate multiple platforms, and a better model is choose whichever platform you like because you know it's interoperable, because it conforms with the protocol. So this is a message to traceability platform vendors on this project about making your platform interoperable with others, because the industry is definitely demanding that.
+
+I don't know if I want to, you know, that this is about how do you trust the claims. So if you remember, I'll just scroll down to, where is the diagram? There's this diagram here that is at the heart of how the protocol works.
+
+Each actor has some business system that emits a simple business-to-business digital product passport. Those are the ambit claims made by the issuer about the product and ESG criteria, linked to something that adds trust. So certifiers and accreditation authorities will be interested in this part, and linked to events that allow verifiers to follow links to the next actor in the supply chain.
+
+So in order to do the traceability picture, and to link all that information to natural business identifiers in shipped products, whether there's a consignment or batch identifiers. That's the heart of the protocol. And that means we've got a few technical challenges to answer.
+
+How to do this in decentralized way? What are the standards? How do I know that, how do I attach trust to these things?
+
+How do I manage confidentiality when supply chain actors may have sensitive information they don't want to share? How do we manage mass balance when the accreditation or certification is at the factory or farm level, but the shipment, the passport is at the shipment level? How do I know that the accounting is being done correctly?
+
+How does paper and digital coexist? And how do we manage the plethora of rule complexity? So these are some of the technical challenges that we want to address in the protocol.
+
+And then there's some words about the protocol and how it works and so on. So look, I don't want to go through every bit here, but I'm looking for volunteers in three categories, I think. One is pure business people who understand the business challenges and can help to write the business parts of this.
+
+Then people with enough technical knowledge to help write some of these sections, but these are not hugely technical in themselves. I'm going to have to simplify the language in some of this because the whole document needs to be readable by non-technical people. So these sections, although they sound technical, need to be written in plain English to explain to a non-technical person why this thing is important.
+
+And then there's a third type of person, which is probably the majority of the technical people on this project, that don't need to really write anything in this document, but will be important in the GitHub content, which is the actual concrete implementable specs. So, yeah. Sorry, just to interrupt, but for some reason there's no, in my version, there's no option for raising my hand.
+
+I had two comments. One of them is, I think instead of just referring to DPP, we should call it the UN DPP, because in circles where people talk about DPPs all the time, like in Europe at the moment, when you say DPP, they automatically think EU DPP. So that was one comment.
+
+And then the other one, when you're talking about national and sectoral extensions, are you talking really about an extension, so adding something onto the protocol, or are you talking about implementations or implementation guidelines? I'm talking about extensions, right? So I'll show you an example, if I can find it.
+
+This project in Australia took what admittedly is basically an empty document and a bunch of ideas, calling UN Transparency Protocol, and is starting to develop a national standard called the Australian Agricultural Traceability Protocol, and in doing so identified a few extra things they want around livestock, right? And so we're not going to put livestock-specific stuff in the UNTP, but it becomes important in the AATP. So how do you take a common core?
+
+I want to reverse the approach that CFAC usually takes here, right, where we normally say, let's imagine everything anybody might want and put it in the core component library and then make a subset, so we've defined everything. I don't think that's the right approach for this. What's important here is a minimum interoperable core in UNTP, and then an extension mechanism whereby the extension doesn't break interoperability with the core, right?
+
+So because the reality is these passports will cross jurisdiction boundaries from country to country and will cross industry boundaries. So you can imagine the cow in AATP ending up as a leather seat in a Mercedes, right? And there we've gone from agriculture to automotive, and we need to be able to share data along a supply chain and focus on the minimum subset, but allow each implementation to extend it without breaking that subset.
+
+That's what it's about. Okay. Although I have to say, I have a little bit of a reserve about, okay, if you've got 100 different extensions for cows across different countries and industry associations, well, maybe that's an exaggeration, 50 or 30, won't that cause interoperability problems at the level of that particular sector?
+
+At the level of the extension, yeah. So there's two choices here, right? One is try to boil the ocean and cover everything and then make everyone to choose a subset, but I don't think that's achievable in the time or really very scalable.
+
+So what I think is the right approach is to say, here's how you extend it, but also provide a mechanism to register your extensions, right? So we'll see in the GitHub site at the moment where we say, this is how you extend it and list your extension here, right? And that way, if somebody, let's say Australia extends it for livestock and someone in Brazil goes, yeah, I'd like to use the UNTP for livestock.
+
+Oh, look, the Australians have done an extension. Maybe I can use that, right? And use a bottom up kind of- Okay.
+
+[Speaker 2]
+So is the system of registering the extension together with a structure for the extensions or- That's what I'm thinking.
+
+[Speaker 1]
+Or is it kind of free form? I think it would be better if there was at least an extension sort of- Yes. So at the moment, we're talking about requirements rather than concrete solutions, but I think you're right.
+
+What we need is a fairly rigorous method for extending that doesn't necessarily specify the content of the extension, but specifies how you do it in an interoperable way. And then register your extension so that others can find it and reuse it if they choose to, right? I think that's the scalable way to manage the inevitable explosion of complexity, right?
+
+What's important is to keep this so simple that it's cheap and effective to implement. So I'll just show you, for example, this is a picture here of what we did in Australia in the last three months, where all of those colored blobs, this is a red meat supply chain, and each of the actors in that supply chain issued these credentials, deforestation credentials, movements, events, livestock passports, grain passports, et cetera, et cetera, using completely different software. And we proved that a verifier can enter that, essentially a graph, enter that graph at any point and follow a bunch of links and verify and it works.
+
+In fact, if you want, anyone that wants to can even try it for themselves. Pull your phone out and scan that QR code and you'll get a GS1 barcode scanner. And then if you scan that barcode, you can start to follow links along that supply chain.
+
+So I'm not hogging this session as a demo of an Australian project, but basically the purpose was to show that it works. And what was interesting was it was relatively little effort. Because the big question in my mind is, if you make this protocol too complex and too expensive, nobody will implement it.
+
+So what is the minimum subset that is viable and useful and is simple to implement? Right. And I'm trying to figure out how to get out of this now.
+
+I want to stop sharing. I'll stop share. So yeah.
+
+So yeah. Register extensions. Matthew's got his hand up.
+
+I'll just find the GitHub site. Yeah. Thank you.
+
+Yeah. Just a small question. Looking at your demo, you showed at the end that the traceability was obtained from the barcode.
+
+So it means that it's traceability at the product level, not at the article level. So you don't actually track the actual lifecycle of a given batch of meat, right? Because I mean, you can't get that from a barcode.
+
+You can't access that from a barcode. Yes. Yes.
+
+So you've done a great job of highlighting one of the shortcomings of the demo, right? So the intent absolutely is... That was not my intent.
+
+Sorry. No, no. But actually, Peter Carter from GS1 will be very pleased you asked that question, right?
+
+So we only had three months, and the intent was to prove that a few things, right? That you can define a... It's feasible for different technology providers to conform to more or less a protocol and emit credentials that can be linked, right?
+
+And do so fairly quickly and cheaply. So that got a tick. It took them about two sprints to be able to issue and verify credentials as passports.
+
+That was quite impressive. And then the second thing was, can we leverage natural business identifiers that are already on products? And in this example, we had GS1 at the package meet end, and we have an Australian national identifier scheme for cattle called NLIS, which is an RFID tag in the cows here for cows.
+
+And the premise is that if you've got the goods, then through that identifier, you can find the information about the goods. Now, when this goes to production, that won't be a 1D, a basic GS1 barcode like that. It'll actually be a batch code, not a product code.
+
+So you're dead right that the passport has to be at the batch level, not at the generic product level. But the architecture is the same, right? You're scanning a GS1 code and you're asking GS1 registers, where do I look for more information about this?
+
+And then going there. So another interesting byproduct of this Australian work was to work with the identifier issuers. So one is GS1 and the other one is a national authority for livestock to say, we want to use your identifiers, but we don't want you to host the data, right?
+
+Because we want to empower the natural owner of the data to host it wherever they choose. And GS1 very kindly came to the table and said, yeah, that's all right. We'll update our global register with just a redirection link.
+
+So the minimum amount of data on the GS1 register is given this GS1 identifier, whether it's a GTIN or an SGTIN or an SSCC, it doesn't matter, we will return a URL for where to look for a passport. And it doesn't have to be a GS1 location. The whole point is that every actor in the supply chain makes their own choice about where they host their data and how they protect it.
+
+And the identifier issuer is really just a link resolver. And so that barcode that I showed just now is a real GS1 barcode and that app does resolve it by the global register. But you're right, it's a product identifier, not a batch identifier, but that's the to-do in the next step, basically.
+
+Okay, thanks. So it means that the UNTP, UID, that it specifies clearly that the target is batch level traceability, right? Or even item level, it applies.
+
+Yes. Okay. Yes.
+
+And with some agnosticism about what the identifier is. So built in the protocol is the idea that for any identifier, we should be able to resolve data about that identifier. But depending on the type of identifier, it might be a different resolution process, right?
+
+So for GS1 identifiers, you ask GS1, for NLIS, you ask the Department of Agriculture, but the protocol is much the same. So we'll need to maintain a list of resolution protocols for given identifier types. But yeah, that's the premise.
+
+And yes, it has to be a batch level. Otherwise, it's not serving its purpose. Yeah, exactly.
+
+Thank you. So is my screen sharing again? No, not anymore.
+
+Okay, just quickly then. Yeah, there it is. Created basically a GitHub repository for the more detailed technical information that will support the policy document that we issue or get endorsed in July.
+
+So this is on the UNCFAC GitHub organization. And this is just a rendered page from the CFAC content. And it's fairly empty at the moment.
+
+But for example, if I click on the specification, we see placeholders to describe in some detail how we do confidentiality, what the conformity credential will look and feel, you know, the data model and semantics, and same with the UN Digital Product Passport, I beg your pardon, and link resolution and so on. So there's placeholders for detailed technical information. And so I suspect a number of people on the project will be more comfortable in this space than in the policy document space.
+
+And so because I noticed some people starting to put content in the policy document that was getting too technical for that document. So good news, here's a place for you to work. Bad news, I'm going to delete it from the policy document, because it needs to be readable by non-technical people, even though it's describing in some cases some technical stuff.
+
+So anyway, I guess the first order of business is just to get UNECE agreement that the revised structure is suitable. But I showed not on this page, but the document itself. I'll pull that up again.
+
+Where is it? Here. That content list of, you know, a six-page recommendation, then about 20, 25 pages or so, maybe a bit more of guidelines, and then a little bit of annex.
+
+I noticed the recommendation 46 was something like 36 pages. So we want to keep it to a minimum. This thing wants to be readable.
+
+So wherever possible, even in these technical bits, for example, that digital product passport section should describe what it is, but point to the GitHub site for detailed data models and schema and stuff like that. It's not going in this document. Has anybody got any questions or comments or observations now?
+
+I just wanted to present the revised structure, the GitHub site, and invite interest in participation for writing different bits. If you're more technical and more used to writing technical documents, I'd suggest you work with me on the GitHub site. And if you're more business-oriented, perhaps ideally with a little bit of technical knowledge, work with me on the policy document site.
+
+But I think I'll open up to any questions or comments. Rakesh? Steve, thanks for walking us through this.
+
+While you were talking, there was also an ongoing exchange going on in chat. So once you have a chance, please have a look. Some of us have volunteered to contribute for some of the sections.
+
+I'm curious about one particular aspect. You rightly made a comment that along with this policy guideline or document, we also want to showcase with examples that this works and can be implemented. You mentioned the example of Australian cattle industry.
+
+Perhaps, I'm curious to know, which other industry sectors and countries were already considered for an idea to try out a mock implementation? And the reason for that is, for example, Brazil and the Brazilian cattle farmers have also been very advanced to set up transparency and traceability mechanisms because they want to comply with EUDR. Earlier this year, they also showcased how they have set this up. Or for example, the case of cotton or the case of forestry timber products, where FSC has also been doing a lot of work.
+
+So I'm curious, were some of these already considered? And maybe they have to fulfill some criteria to be considered for evaluation of the mock or EU? I mean, the Australian one is a convenient accident of the same person, me, being involved in both products.
+
+So that shouldn't mean that there's any exclusivity about this, obviously. So I think there's two kinds of related projects. One is actual UN projects.
+
+So there is another parallel project running now in critical raw materials that does have three pilot implementations in scope for copper from Canada, lithium from Australia, and cobalt from DRC, going through Asian supply chains and ending up in consumer markets as batteries. So that's one that is already a UN project. For other projects, there isn't yet, as far as I'm aware, unless it's going to be created under a team of specialists, and it's sort of a next version of UN textile and leather or an agri-food formal UN project.
+
+It would be nice if there was, because I think I'm sort of envisaging an architecture of UNTP as basically the agnostic baseline, right? This project is a framework for transparency and scale. And then you test it in different sectors and commodities and jurisdictions.
+
+And those tests might be through formal UN projects like the critical minerals one, or might be anybody's project, like the Brazil thing you mentioned, or like the Australian one. So what we should have is a way to register interest, to test the protocol in your jurisdiction or industry, and even inform it based on your lessons. So like any UN project, participation is open to any interested party who registers to become an expert, right?
+
+So if you're aware of, you know, like the Brazilian one, feel free to write to them and ask if they'd like to participate, maybe as, you know, whether active or as an observer. The more eyes on this, because as I said at the beginning, we've got a very short time between now and publishing something implementable. So the more eyes of experienced implementation, the better.
+
+Okay. Yeah. Steve, do you feel that on our shared Google Drive, we could maybe create a simple Excel sheet or a table, potential stakeholders to be invited, and we put some three, four columns, we write industry sector, country, relevance to overall project.
+
+And then we put in some contact details and we actively list them down there. Yeah. Okay.
+
+Absolutely. Yeah, I'll set that up. Permission from, sorry.
+
+So well, the engagement methodology in any CFAC project is open for people that, well, so what we've done in previous projects is distinguish between observers who are just watching what's going on, right? Who may be potential future implementers versus contributors, right? So anyone that is actually writing content to define the spec or the document.
+
+So either in GitHub or on this document needs to agree to the IPR conditions of contribution, right? So whatever you write, you're granting to the UN so that the UN can make it free and available for all. So I would say to answer your question, if they're just going to watch, then they don't need to do anything other than watch.
+
+If they're going to contribute and write, then we want to make sure that that written content is IPR granted, right? And that means joining up as a UN expert, following a link on the ECE site. Right.
+
+Sorry, last follow-up question. When writing to the Brazilian industry and the cotton group here, can we write to them once you tell us, would you hear this activity project going on? Consider participating as observer watcher with potential trial implementer of the one.
+
+Can we mention this already? Yes, I believe so. We've done exactly that.
+
+We've done exactly that on the Critical Raw Materials project. So Critical Raw Materials produced a nice sort of two-page glossy that said, what is this project and how to engage? So what you could do is share the video, which is me explaining this.
+
+And at the end, it's inviting participation. And then we'll ask, and I'll maintain that spreadsheet as you've suggested. And then we just distinguish between observers and contributors.
+
+Thank you. I would encourage you to ask everyone to register as an expert, because to do the registration, because even as an observer, there are IPR things to sort of agree to because you're seeing all of the content.
+
+[Speaker 2]
+And you don't necessarily have to be approved, but you have to go into this because there's a two-step process for becoming a UN CFACT expert.
+
+[Speaker 1]
+One, you say, I want to be an expert and I agree to the IPR terms. And then the UN secretary, it sends your request to the national head of delegation or the mission in Geneva if there is no head of delegation. But at least to have them go to the website and say, yes, I want to be, to participate, to be an expert, that doesn't require much.
+
+No, that's easy. I didn't realize that you don't need to be approved in order to be registered as accepting the IPR term. So yeah, okay.
+
+So I'll put that spreadsheet together with everyone that is on the mailing list. And I have to get the secretariat to cross-check that everyone on the mailing list has also at least registered, even if not approved. Yes, thank you so much for that.
+
+And then once you send the spreadsheet, we'll do the check and we'll send the invitation to those that haven't registered yet. I think we have recirculated that invitation several times, including for the members of the team of specialists. So we'll just send a reminder on the process.
+
+Thank you. All right. So then I'm done for today, unless anyone's got any more questions.
+
+The actions are the spreadsheet of participation, a check with who's registered, even if not approved, and ask the secretariat just to confirm that this updated refactored document has the right shape. Not the content yet, but the structure is okay. And then hands up for more technical contributions on GitHub or more business contributions on the policy document.
+
+Will you also circulate a sort of matrix where experts can put in their name for the sections they would like to contribute to? Well, why don't I add that to the Excel spreadsheet that Rakesh suggested, where we'll track, you know, are you an observer or contributor? And if you're a contributor to which part?
+
+Okay, great. Perfect. Thank you.
+
+And this, I heard you talking this, but I couldn't quite hear you. I think your microphone's a bit... Yep.
+
+All right. Good. Regarding GitHub contributions, what do you see being the practical process for merging pull requests?
+
+Is that just through GitHub, some rules in there, or do we want some meetings to do that together? I think we'll arrange a series of more technical meetings starting after Christmas, separate to policy one, where we follow much the same process you followed, Nis, when you did the JSON-LD one of issues, tracking issues, and merging pull requests, and completing the document that way, or the material that way. That's the GitHub way to do it, and that's the way we should do it.
+
+Yeah. So actually, that's another issue for the list. After Christmas, we'll break these calls into two.
+
+The technical content and the policy document. Obviously, they're related, and some people will be on both, but I don't want to demand that non-technical people suffer through GitHub commits, or that the more technical people that perhaps have quite a narrow focus on a particular area need to keep on top of everything. So I think the split will be useful.
+
+All right. Has anybody else got their hand up? I can't really see.
+
+It doesn't look like it. All right. Well, so Maria, will you let me know that the structure of the document's good, and I'll send you, or not send you, I'll send you a link to the spreadsheet of all the participants and their role.
+
+Yes, please give a copy to Olivia. Thank you.
+
+[Speaker 2]
+Okay.
+
+[Speaker 1]
+All right. Thanks a lot. So we'll revert back by the end of the week to you.
+
+Yes. Okay. Thank you.
+
+And I know the content's still a bit lightweight on this, but I am feeling quite reassured that it seemed to work okay in the Australian agricultural example, and that the stuff that the EU European Commission, DigiGrow and DigiConnect are reading, seems to resonate with them very well. They're fairly confidence-inspiring, at least. Perfect.
+
+Yeah. Oh, yes. Next get-together.
+
+Thank you. 28 to the 12th. Let's ask the group now, do we want to skip a meeting because of Christmas and New Year, or are there people interested and able to join a meeting on the 28th?
+
+If possible, let's skip. Yeah, my tendency will be to skip it unless someone's really committed and desperate. I think that we can take that week to catch up in other projects, at least, for example, in my case that I'm new on it.
+
+I'm available that week. My problem is more related with the timing. Yes, yes.
+
+I will cancel the next meeting. The next group meeting will be one month from now, but at the same time, as I suggested to Nis, we'll have another stream of meetings in the more technical stuff that we want to progress in parallel so that when the plenary endorses the policy document, the GitHub site has useful content on it. Okay.
+
+Okay. Thank you, everyone. Thank you.
+
+Thank you. Bye. Bye.
+
+[Speaker 2]
+Bye. Thanks, everyone. Bye.
+
+[Speaker 1]
+Thanks. Thanks. Bye.

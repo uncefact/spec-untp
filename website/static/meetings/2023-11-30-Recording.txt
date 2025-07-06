@@ -1,0 +1,412 @@
+[Speaker 1]
+All right, we'll give it another minute to see who shows up. Kevin, Benjamin, and Corey, Felix.
+
+[Speaker 2]
+Your video is nicely done.
+
+[Speaker 1]
+With the background? Yeah, I had to get that background working for that storyboard. Are you talking about the video that I sent out?
+
+Good, yeah, I'm going to collect a bit of commentary on that. Yes. Oh, hello, Brett.
+
+Hello, Steve. Hello, all. Hi, Brett.
+
+Long time, no see. Xinyang, how are you doing? I like your beard.
+
+Hi, Steve. I noticed that you actually deleted the Google document, right? No.
+
+No? I don't think so. Yeah, but I clicked the link in your Zoom invite, so the page said the document has been removed.
+
+Ah, I did rename UNEC recommendation 49 to old, and the new one. Let me... Yeah, maybe you can circulate the link again, because I tried the old link, it doesn't work.
+
+Basically, the page said the page has been removed. Okay, let me do that right now. If they renamed it, then the link would no longer work, I think.
+
+That's my bad. Share. Copy link.
+
+All right, I'll send out an email to the whole group now with the correct link. And I won't rename it again. If we refactor it, we just refactor it, because it keeps versions.
+
+Good morning. Hey, Nis. Transparency.
+
+Latest. Copy link. Re-refactor.
+
+It's here. All right. Hopefully that works.
+
+Right. Oh, and everyone can see my old school T-shirt. Which one is me?
+
+All right. Look, I think we'll make a start. Thank you for everyone for attending.
+
+We are recording this meeting. If anyone objects, let me know. But that will mean leaving the meeting.
+
+The agenda for today that I wanted to walk through is basically two things. How we communicate what we're doing. And a little bit of an update on the reach and consequence of the relatively limited communication so far.
+
+And then also a look at this refactor that UN have requested. And I'll walk through a previous recommendation. Not that we have to follow exactly the same titles, but just to give you an idea how the UN likes to see them structured.
+
+And then invite suggestions, commentary about how we refactor our current document to align. So first of all, a little update. I know I said I would refactor the document before this meeting.
+
+And I apologize. I haven't done it. Partly because I wouldn't mind your views anyway.
+
+Rather than me just doing it. But also I suppose on the plus side. We have been here in Australia in a agricultural traceability project funded by the Department of Agriculture.
+
+Testing the very ideas that we're encapsulating in recommendation 49. Around digital product passports, conformity claims, decentralized traceability, following links, all that stuff. Discovery from product identifiers and the like.
+
+And it's pleasantly surprised. Well, not too surprised, but pleasantly surprised how quickly vendors, software platform vendors in the Australian agriculture space who at the beginning of the project really faced several barriers. Couldn't really conceptualize how decentralized data, linked data works.
+
+And had never heard of a verifiable credential, et cetera, et cetera. Went from that to understanding what we're trying to achieve using open source software and implementing a basic capability to issue and verify credentials within two or three weeks. In dev environments, and we've been through about five sprints since then and brought people along.
+
+But what we demonstrated yesterday to the Department of Agriculture in a kind of dress rehearsal, and there's a more significant demo to the Department of Secretary and the like week after next, was a case where it's the one in the video that you may have watched, right? That goes from cattle farm all the way to shipped beef and the ability to scan a barcode on a cross-border shipment and follow it through linked data to the on-farm deforestation credential. So it all actually works.
+
+And we've got a kind of a will have. It's not quite other than the video. It's not a public demo yet, but it will be probably by January.
+
+So I felt like it was a bit of an endorsement. And not only that, but the whole idea of protocol of a platform has got people here talking and we're calling it now the Australian Agriculture Traceability Protocol, the AATP, and it's really getting momentum. I'm pleasantly surprised how quickly, once understanding is reached, how the enthusiasm follows it.
+
+And so that emphasizes to me the importance of the communication of what we're trying to achieve and why it's the right way to do things and the most cost-effective and scalable way to do things and the consequent enthusiasm we're likely to feel when we do that effectively. So that's good news, I think, from our side. Our colleagues in a related project of critical raw material traceability, that's Nancy Norris from British Columbia government, has also been keeping an eye on what we've been doing and communicating that through her channels.
+
+And she's just in Europe now and was invited to talk to the Director General Departments that are managing the sustainability standards, ESDR, PR, and digital product passport in Europe. And they're also very keen to collaborate with the UN on this architecture. So a little bit of communication has led to a remarkable amount of interest and enthusiasm.
+
+So I wanted to share that with you and then maybe follow up on the message that was sent today about brainstorming a little bit what else we need to do, what other channels we have, and how we communicate what we're doing. So that's the first topic. And with that, I might just see if anyone's got any thoughts or comments or channels that they think we haven't tickled well.
+
+Then for me, one of the acid tests is, can you communicate the challenge and the solution effectively to people who are not familiar with the space? So it's great that we got the European Commission digital product passport people engaged. But of course, they've been for two years up to the NX in digital product passports.
+
+So you don't have to tell them what one is. And similarly, with a lot of the other enthusiasm coming from agricultural traceability in Australia, I'm interested for us collectively to test the messaging on not necessarily your grandmother, but people vaguely in the space of supply chain transparency or understanding or worried about the impact of emerging regulation. How will we test this message on them?
+
+Has anybody tried showing the video to anyone? Yeah, is Stefano here? And I apologize because I'm driving.
+
+So if I cut off, it's because of that. Drive carefully. I have a say on that because communication is a key struggle, as I briefly mentioned on email yesterday as well on our side.
+
+So not only I fully buy in the importance, as you are mentioning. And by the way, ourselves, we are cross-industry in what we do. So I am definitely open to, how to say, start as soon as you think we are ready to share our material, to try to communicate and measure the temperature on this material because it aligns very much on what we are trying to do, which is also communicate on this traceability importance along the chains.
+
+So yeah, on our side, I do volunteer absolutely to test. We use different medias. And I close by saying what?
+
+Different medias because right now we do have professionals that are quite conservative and use the usual medias, but also we have a new generation, if we can say so, coming up that use other media. So basically what I want to say is we should be, in my view, enlarging as much as possible using any mean to communicate in the way that you mentioned and in the way that I would like to do so as well. So once we get the green light from you, I definitely can support on that.
+
+Well, yeah, look, I'd encourage people, even though the video, as the email threads have said, is less than perfect, it's good enough. Please do share it and really look for anything that doesn't, you know, people that don't understand something. What have we missed?
+
+What do we need to explain better? It would be great over the next couple of weeks just to get some feedback on that for you reaching to your contacts. Well, one thing that UN, I see Maria Theresa's on the call, has said is they will repost the video on official channels so that we can point to UN links.
+
+However, what I said I would do is just learn how to use iMovie better and splice in a different section in the middle. So instead of talking about the red meat supply chain, we'll talk about the critical raw material supply chain and the textile and leather supply chain. So basically two more versions of the same video with a different bit spliced in the middle so that we can target it at the relevant audience.
+
+And when we've done that, I think Maria Theresa will be happy to publish a couple of links on LinkedIn and so on and see what bytes we get. Yes, that's right, Steve. I'm here.
+
+So I think the video, just great, explains very well the scope and the purpose of the recommendation. So just waiting for you to introduce in the video the part regarding the textile and critical raw materials. And then when finalised, we'll go on the com with the posting on our channels.
+
+Yep. Well, I'll definitely get that done this weekend. And so you'll have it on Monday for you.
+
+Perfect. Yeah. That's great.
+
+Thank you. Waiting for that. All right, Brett, did you have a comment?
+
+Only to say that I don't think we need to go into chapter and verse about how the protocol works. We should point to other mouthpieces like Vinnie Anunciato in the USA and others to explain some of those concepts, I think. For me, I think your video is perfect.
+
+[Speaker 2]
+It suits all my needs for engagement. I think the next step is possibly providing sector-specific views of that.
+
+[Speaker 1]
+And I don't know that you need to do it all in one go. I think there's room for a textile version, a critical raw material version, agricultural version, and what have you. Yeah, I don't think it's very hard to do.
+
+It's only about a one-and-a-half, two-minute section in the middle that I just need to record a couple of times with a different PowerPoint and then splice in, really. I learned a lot about using iMovie the last few days because I have a tendency when I'm talking on these videos to use a lot of ums. It's amazing how many ums I edited out.
+
+Anyway, that was cool. All right.
+
+[Speaker 2]
+Editing loud and clear?
+
+[Speaker 1]
+Sorry? I think there are tools for that that just take the ums out automatically. You might want to invest into that.
+
+Are there? Oh, well. If anyone sends me a link how to do that automatically, that would be great.
+
+But, yeah, I did it the hard way. Listen, click, slice, cut. Anyway, yeah.
+
+Steve, sorry. I have difficulty to raise a hand by phone, so I got some other thinking while you mentioned, guys, the different videos on raw material and food. One of the things, because as you mentioned, one of the things is to make people understand the why, right?
+
+And one of the things in the past we tried to do in communication was to make people understand also that we are talking about one feature that may serve different industry. And this may also be communicated, in my view, at least that's what we try to do, even in relation to, let's say, the reverse logistic. What does it mean?
+
+That connecting different fields with this trustability, we increase the value of, let's say, the reverse logistic and the circular economy as well. So I don't know if this is an idea that we may want to also try to capture in the video. So not only concentrating in one stream, but connecting two or even more streams, but I will not go to many, just to make people understand.
+
+Yeah, look, I think there's probably almost like an architecture of communication materials that we need to generate at some point between now and then over the next few months. You know, a two or three-minute soundbite version of that 14-minute one, what does that sound like? And then the slightly longer, perhaps a better version of the 14-minute one, maybe two or three of them, as we suggested, for different sectors.
+
+And then, as someone mentioned today on an email, maybe some more conversational interview-style meetings or videos, particularly when drilling down into a particular area, right? So I didn't touch much at all on that, about the complexity of regulations and this separation of facts from assessment of facts and stuff like that. Or I also didn't touch much at all about confidentiality and how to do that.
+
+And so there's probably a whole library of these things. And I don't quite have a clear vision of what all the titles are and how long they are, but we might start to flesh that out and say, you know, here's all the kind of suggested placeholders for story topics. And then how to get the loudest foghorn to attract attention to them is another question.
+
+Obviously, the UN channels are part of that. But, you know, if we can find a way to excite big industry and maybe even traditional big tech to support the story and start, you know, I only got a certain amount of channels and connections, so I guess I'm asking everyone on the call to think about what are your connections and what sort of incentives or interests there might be for different parties who have basically a loud foghorn and how we might promote through them. Anyway, that's probably enough on the video and storytelling.
+
+I might have a go at that kind of outline of what are the stories to tell. I wouldn't mind moving on, sharing screen, and looking at these requests from Maria, Teresa, to refactor the structure to better align with previous recommendations. So I'm going to just share screen and show our current one and another recommendation so that you get a mental picture of what we're – where has it gone?
+
+I did have the thing. Hang on. Maybe it's document link.
+
+There we go. Okay, so that's our current document. And then there's an email I sent myself recently, this one, with a link to that.
+
+All right, so let's start with this. I just want to walk through two tables of content so you can see what a previous – this is recommendation 46 about textile and leather traceability. It's taking a while to open.
+
+It's coming. Here we go. So I think Maria, Teresa will confirm this represents – this bit here, the forward is written right at the end after plenary approval.
+
+Some executive in the UN writes a summary about why this is important. But I wanted to focus really on this contents list, right? So you may remember we've got something like 10 chapters that are more or less at the same level and probably up to page 30 or 40 by the time you get to the end.
+
+What previous recommendations have done is have a section one here after a forward, which is really what is the recommendation? And quite short, right? So you can see this is quite a long recommendation.
+
+You get up to page 50 by the time you get to the end. But this bit here is five or six pages long. So the challenge for us is how to pull out the key content from the 10 chapters or so that we want to write and express them in a compelling five, six pages, possibly with exactly the same headings.
+
+I don't think there's any rule that says you must use exactly these headings. But I think the idea of saying what are we trying to achieve, the scope, who are we targeting? Why are we trying to achieve it?
+
+What's the purpose and benefits? What problems are we solving? And what are the recommendations?
+
+Seems a not unreasonable set of headings, right? Of perhaps roughly a page each. But this is the feedback from Maria, that we need that section.
+
+And then we get into the next section, which is called guidelines, where, again, we've probably got a little bit of flexibility. But we do have a section about principles. No reason not to put it in there.
+
+What's called here the system concepts, we might actually start to document what our protocol is. And maybe we get into maybe in this section of challenges here, we focus more on the high-level business challenges. And we might have another more, I don't know, technical challenges or something in this section too, which is a bit more detail on why the protocol looks like it is.
+
+And then the protocol itself. I quite like this section about cost allocation and incentives, right? We had one of the challenges, which is business incentives.
+
+But it was kind of hidden away in one subparagraph, whereas I think it's quite important to bring up some sort of assessment of what will this cost? What benefits will it bring? Some cost-benefit analysis right up at a major heading level.
+
+So I quite like that idea. I don't know that we need this. In this previous thing, the UN built a blockchain-based kind of centralized system for doing this.
+
+And that's probably the topic of Section E where we're a bit different. But maybe we might reference in here something around international standards, decentralized architectures, W3C stuff. So also talking about advanced technologies, but in a firmly decentralized idea.
+
+So anyway, that's – and then we get into annexes, where basically you can see this one's gone from page 39 to 50-something. There is this section here, a call to action. I'm a bit – no, that hyperlink has worked.
+
+I quite like the idea of a call to action, but I would rather not put it in an annex. I'd rather have it right up front and maybe some details in the annex of how do you do it? You make a pledge, and then the annex might be, okay, what have I got to do to make the pledge?
+
+What am I committing to? Details down there. But the call to action should be probably a lot higher up.
+
+Yeah, so that's a reference for a previous one. I'll just click to remind you. Ours looks more like this, where we have that same forward, a bit of an introduction, some key principles, and then we get straight into these kind of – maybe some of these are a little bit technical challenges, and then how we solve them, and then what does that mean in terms of recommendations for each party?
+
+And then having made those recommendations, what's the framework for implementing? And then we get into annexes. So there's sort of some logic in this, but the challenge ahead of us is how do we map this content and maybe bring in a new headline item like that cost-benefit analysis, I think, to something more like this structure?
+
+So these links are sent to you. I'm happy to just have a crack at it, but I thought before I have a crack at that, I'd just show you this, show you what we had before, and just open the floor to ideas and comments, right? So that at least when I have a crack at it, it's not just out of my own thoughts.
+
+I leverage some of yours. So over to the audience to comment, ask questions, express your thoughts. Well, Steve, if I could jump in.
+
+These things are usually done best by one person when you're wholesale remapping a document, and if you're offering to do it, then I don't think any of us are going to stand in your way, but at least we understand what you're trying to do now, having seen the other documents. So we will understand when it appears in a new form, but I just wish you godspeed, and we'll look forward to seeing what you come up with. Yeah, yeah.
+
+So I am offering to do it. What I'm asking for in the next few minutes, so we don't have to spend the whole hour on this call, is just a dump of ideas that might inform me when I'm doing the restructuring. So shoot from the hip, you know.
+
+Tell me what you think. How important is cost-benefit analysis right up there? Probably quite important.
+
+What about this bit in the UN document, the other one, that was about inclusivity? Where has it gone? Oh, I drew it up again.
+
+Here it is. Creating its inclusiveness. So, Maria, this is about really small business.
+
+Ivan, just quickly. For part one, well, the idea is to follow a kind of standardized structure for all the recommendations. So the titles might be slightly, the headings slightly different.
+
+But, I mean, it would be important to cover those topics for consistency purposes across all the recommendations that are developed, right? For part two, there is much more flexibility. And it's really up to the group to come up with the contents.
+
+For this recommendation, recommendation 46, it was the group who decided basically the structure, the topics. Inclusiveness, if you ask that question, is always interesting to keep. Because, I mean, of course, this is a UN recommendation.
+
+And for recommendation 46 in particular, the idea was to discuss how complex that is for vulnerable actors or for, you know, small actors operating along the value chain. So to highlight that the challenges are there and what can be done to ensure their address or should be done to ensure their address. I think it would be relevant to discuss, you know, that inclusiveness aspect also in this one.
+
+I mean, it's something that whenever it comes to... Yeah. There's a few dimensions to that inclusiveness, right?
+
+One is big companies versus small companies. And we can make statements about, you know, even small companies tend to use, you know, multi-user cloud software and things like that. And this should be quite accessible to them.
+
+But then there's the sort of advanced economy, developing economy angle and this whole idea that, you know, to establish trust in your claims, you have third-party auditors. Might not be too hard for an auditor to come out to an Australian collection of farms or something like this, but to go and visit artisanal miners in the Democratic Republic of Congo, you know, is that really going to work? Are there other methods?
+
+Maybe this is a place to talk about Benjamin's idea of sort of peer groups keeping each other honest and, you know, alternative approaches to adding trust where you really don't want the overhead of formalized certification processes, especially where they're just not available on the ground there, right? And so I can think of a few interesting things to put in there. I guess the question for the team is, should we add that chapter with a title or something like that that specifically addresses small business, developing economies, you know, that sort of thing?
+
+I think we should. One of the advantages of this approach is it's low cost and it's flexibility, so why not?
+
+[Speaker 2]
+Yeah.
+
+[Speaker 1]
+And Steve, another sort of topic that could go under that heading that came out of the Critical Minerals project was the focus has tended to be business-to-business sort of interactions. And so including all the way to the consumer is kind of another inclusivity element that we might want to include here as well. Totally.
+
+I think that's a very, very relevant aspect. So the B2C and I don't know whether to other recommendation you're also covering any B2G aspects because and I'm mentioning that because when it comes to verification of compliance with ESG requirements along the value chain, there will be this aspect of enforcement and monitoring and that will entail, I believe, B2G.
+
+[Speaker 2]
+Yeah.
+
+[Speaker 1]
+So it will, right? Yes. There is 100% a key recommendation to G, which is it's not the only trust anchors, but they're really important trust anchors in the global economy to exactly what they should be doing to support trust in their ecosystem.
+
+So basically doing what they do today, but digitally and verifiably is probably the number one message to regulators. So that I can have confident digital identity and use it in my supply chain. I can have evidence that I am a trusted trader or whatever the regulatory process is.
+
+And one thing that came up in the agricultural traceability project in Australia is that despite the fact that you can, it's evidently proven now to be feasible to build a decentralized traceability picture where you can follow link data and verify things along the graph. It's easy to do at pilot level, but maybe a little complex to scale up and consistently navigate a trust graph and correctly assess the trust in it. And is it going to be different in different economies?
+
+And is there a role for a regulator to say, all right, this is an exported consignment going to a target economy. I'm going to navigate the domestic trust graph. And then basically redact it and add an exporting authority assertion to say, I've done that.
+
+And the Australian government says, the characteristics and we assert that we've done our due diligence and these goods meet these criteria is a way to both simplify and perhaps add trust depending on how much you trust the regulator at the point of border crossing. I'm interested in your thoughts on that. Well, that pattern could apply to a trusted commercial entity as well.
+
+Right. There could be logistics providers that want to provide that kind of service as well. Yeah.
+
+I fully understand the comment that the recommendation should not only adjust B2B, but also B2G and B2C. But the issue is this is not a book project. If we cover everything, are we sure that what we suggest, the recommendation, you know, transparency at a scale, it will be really convincing, especially in the B2G or B2C scenario because involving consumers, at least in terms of law, different countries have really complex consumer protection requirements.
+
+If we talk about the government, there are actually existing international law for government, for the public data transparency. So I'm not sure because of what I see, the current approach actually is quite good. Currently the draft focus on B2B, but we have specific subchapters talk about the implication for regulators and then for consumers.
+
+So I guess an alternative approach to cover all the transparency. Why not? Because we are not writing a book.
+
+We focus on B2B and then we consider how the transparency at a scale in terms of B2B can have impacts on regulators, B2G, and they have impacts on B2C. Yeah, so that's a good point, right? We did test an idea.
+
+So here's an idea to test that B2C passports are likely to, as Jean just said, be reflective of each country's consumer protection laws and their own environmental ambitions. And so the EU digital product passport, for example, will be driven by EU regulation and EU consumer protection, blah, blah, blah. And maybe the reality is every country will do that at some point, perhaps slightly differently.
+
+The question for you is, my thinking is that it's pretty easy to generate a technical format out of a system that complies with the particular requirements of an economy, let's say an EU digital product passport. The easy bit is doing that. The hard bit is getting the reliable data to put in it.
+
+And the assertion we might make is that by focusing on a lightweight B2B digital product passport that crosses borders and long supply chains, it's basically feedstock. It's high quality feedstock for each economy to put in their B2C domestic digital passport. And so one complements the other, right?
+
+It makes the production of high quality B2C passports like those produced, ultimately produced by the European market, much more feasible, right? So there's a synergy there. Yes, I fully agree with what you said, because actually it's much easier for commercial, for merchants to agree with the transparency and scale.
+
+So basically we focus on international cross-border scenarios. I fully agree with you, you know, like a B2C or B2G, they are actually more domestically focused. So I fully agree with your approach.
+
+[Speaker 2]
+I think I might be the next with my hand up. Steve, I'm agreeing with everything that I'm hearing. The key benefit to me of this approach is its flexibility.
+
+And so I think we want to be reasonably careful about how specific the recommendations are. I think the recommendations should be pointing to possibilities more than saying this is what should happen.
+
+[Speaker 1]
+I think I've even mentioned to you that I think there's an opportunity to recast this term digital product passports to something like modular passports, making it clear that we're just gathering some data and different businesses even may have different expectations about how their passport should be presented.
+
+[Speaker 2]
+And the idea of reinforcing at every point, the flexibility of this approach, I think, is something that we should think about.
+
+[Speaker 1]
+Yeah. So here's a challenge for us collectively then. Whilst it's true that the conceptual architecture, logical architecture is quite flexible and adaptable to any commodity group, any supply chain, any ESG concern.
+
+One of the challenges, if you say the solution to world hunger is this decentralized architecture where hundreds, thousands, maybe tens of thousands of parties, almost independently of the others, implement the protocol. When you say that, then the risk of being too vague in what the protocol is, is that there's nothing concrete to implement. And so people are left going, oh, this is a good idea, but what do I actually do?
+
+And maybe we need to balance kind of the messaging of a flexible architecture. But at some point, maybe not in this document, but there's a third tier that I've mentioned before, right? Which is content in technical GitHub repositories and things like this, where we say the implementation model is to collaboratively develop fairly specific specification criteria for implementation.
+
+Because otherwise we end up with a thing that says everybody go nuts decentralized. And here's the overall guiding principles. But I can already see that just in this Australian project, and this is with only three new technology companies that we, as a consulting company, I don't sell software product, helped them with kind of handholding to implement a common protocol.
+
+They still managed to do it differently, and we had to do some kludges and fix things, right? And so if you're not specific enough, then it's not implementable and it won't work at scale. But at the same time, if you're too specific, do you disenfranchise people and go, well, I've got a different problem.
+
+That's too specific for me, right? So striking that balance is probably a generic architecture and then a whole series of specific fairly detailed specs that are actually testable, right? Where you can claim conformity.
+
+We're not writing a business requirement specification. Now, in this particular document, are we, Steve? We are proposing to link to quite specific schema and things like that in related repositories, like the ones you've just, you know, we've had a discussion, right, over that conformity credential that we've been through.
+
+I'm expecting, I think we need to point at things that are implementable. Well, and Steve, in the critical minerals project, the key thing that I need to deliver is recommendation advice to the pilot projects. And so the way I'm sort of thinking about that is the guidance that I'm getting from REC 49 is kind of the overarching pattern.
+
+And then I have specific patterns that I'm sort of need to provide to the critical minerals pilots. And so, and you and I have been working pretty closely on this. I'm not sure where those lines get drawn in our docs today, but that's sort of what I think we'll kind of be working on over the next two weeks as these two, so parallel streams kind of run.
+
+Well, I want to say the same thing. I think it's great that a template schema are being provided in REC 49. That's going to be very useful and help everyone to hit the ground running.
+
+But I mean, I think individual approaches are going to differ. And so even within the work that I'm doing on the digital product conformity certificate exchange, I'm imagining that my implementation will be fairly specific to that sector. It will be inspired by the REC 49 template, but even some of the language may differ because we'll be talking about different actors.
+
+Yeah. So REC 49 then, because I think the reality is you're right. We're not going to define a schema that will just work for every industry and every country in the world, just one.
+
+That's a fantasy. What we can do is define like a parent type and then some sort of framework for customizing for an industry sector or a jurisdiction and use the other projects like critical raw materials and yours as an example. So that really that REC 49 says, here's the overall framework.
+
+Here are some fairly technical things, but really they're the source material for a industry specific project to extend and turn into implementable testable artifacts is perhaps the way to do it. Cause somehow we've got to, at the end of the day, even if it's for a small segment, have something that's implementable and testable. Otherwise where things will, we won't actually get uptake at scale, right?
+
+Because people will hit a barrier and go, right. It's a good idea, but I stop here because I don't know what I'm building. Yeah.
+
+And I think Steve, with that pattern, one of the things we'll probably want to think about is how we encourage adjacent industry groups or adjacent countries or adjacent participating parties to test that they can move beyond their own boundaries. So if I'm doing the recommendation for critical minerals and we have the agricultural item, how do we then aggregate a critical minerals passport with an agricultural passport to a manufactured good that combines agricultural products and mine products, right? So there's kind of a like, how do we articulate the need to be able to build up from raw materials?
+
+I think that's one to put on a list. I think what I want to ask of this group, particularly the more technical people in the group is do we agree these two things? That one, we can't make a single schema to solve world hunger.
+
+That's, but at the same time, we do need something implementable rather than, or at least a framework in order to produce implementable things. And it's probably through us kind of tree of customization, you know, inherit this, do this and make a spec, but you need a pathway to something implementable and testable in order to measure uptake and to incentivize implementation, right? So we've got to balance those two things.
+
+And if we, if we will fail, if we say everyone must do exactly this and nothing else, and we'll also fail if we keep it too abstract and there's nothing implementable. Right. I'm getting a few thumbs up.
+
+So that's all right. I'll reflect that in the implementation part. Dr. Wang, you got to, yeah.
+
+[Speaker 2]
+Oh, thank you colleagues.
+
+[Speaker 1]
+Thank you, Mr. Kepler. Recently the UAE CE has published the new version of the key trade document and the trade data elements. And the colleagues maybe we can to review for our facility of the process.
+
+[Speaker 2]
+What about the trade document that we can use to tell a story in our user cases to demonstrate that we have the ability to easily simplify the process. Okay. Thank you colleagues.
+
+[Speaker 1]
+Yeah. Okay. We'll bear that in mind too.
+
+I think, look, I'm happy that I've got enough consensus on what sections should be in the slightly revised document. I think we'll follow the previous guideline with some tweaks and we'll have a business case section and we'll talk about inclusivity that the new bits really will be more about implementation and how we go from this generic and flexible architecture to something concrete and testable and make sure that that pathway works so that when people take a pledge and then they implement, there's actually evidence. Like for the agricultural project we did in Australia, you can actually click on a barcode and follow it all the way back to the deforestation credential on the farm. If we don't provide that, then it'll just be another guidance document that doesn't result in outcomes.
+
+Okay. Look, I don't, we still got 10 minutes to go. We don't have to take the whole hour.
+
+Has anybody got any closing comments? If not, I'll take the feedback or the support that I've got and get on with it. We'll produce a refactored structure over the next week.
+
+Steve, I don't have a comment. I have a question. In your recommendations, are you able to point to some suitable guardrails, for want of a better term, to help guide the more specific implementations?
+
+You know, can you get as specific as pointing to GitHubs, for example? Someone made a comment in the chat, I think it might have been Nis, that interoperability is, you know, it's non-negotiable here. And how do we stop that from going a bit pear-shaped?
+
+Yeah, I think that is everything to do with the implementation guidance and providing that framework that takes you from a flexible architecture to a concrete testable thing, right? And maybe we leverage the other project that's running, the Critical Raw Materials one, to host the concrete testable thing. And, you know, so that's basically the pathway.
+
+Recommendation 49 gives you the framework, gives you the common tooling. Then you take an industry-specific thing and you build actual testable criteria there. And we can do the same for agri-food, because we've done it in Australia anyway, and for textile and leather, because that's just refactoring the good work done last year or year before by UNECE.
+
+So we should be able to have three, sort of this fork, from UN REC 49 to three industry-specific, quite specific implementations. All right, Kevin's got his hand up.
+
+[Speaker 2]
+Yeah, hi, Steve, morning. Very impressed with the video. For a non-technical like me, it was very understandable, so that was good news.
+
+[Speaker 1]
+That's a win, thank you.
+
+[Speaker 2]
+Yeah. I think you might be setting a standard, though, for every other recommendation is going to have to follow now, unfortunately, my friend, in that respect. I agree with your comment about the call to action, whether you could lift that up to the first paragraph somehow and make it an additional point, because I think that's, rather than losing it down in the annexes, whether it should be top line, really, because that's one of the objectives of it all.
+
+That's my only comment on that.
+
+[Speaker 1]
+Thanks. Okay, thank you. And I see Gene, who's next with their hand up?
+
+Kevin's just spoken. So Gene and then this. Yes, Steve, I just have one question.
+
+Should we have a definition section? Because I just see the recommendation 46 has. Glossary.
+
+Yeah, yeah, yeah, yeah, yeah. So is that a copy-paste? Because I think, you know, many definitions in recommendation 46 actually are applicable to our recommendations, but not entirely, of course.
+
+Well, I think we definitely need to, whether we call it a glossary or I called it abbreviations in the previous one, but glossary is a better word, I think. Yeah, we already got that. I just called it a different name.
+
+And this? Yeah.
+
+[Speaker 2]
+Last but not least.
+
+[Speaker 1]
+I guess I'm reacting to your last comment about leaving it to other recommendations to provide guidance, examples of reference implementations. I don't, I don't, that doesn't feel right to me. Especially I see as this, what we're doing here as kind of the gateway into those more industry specific elements or branches of the graph, if you will.
+
+But there is something up front, the consumer facing element, how you actually get from the, like that link from product to digital. If not, if that's not here, then I don't know where it would be. Well, we could.
+
+Because Brett made a point earlier about, or somebody made a point about, oh, I think it was Zach. What's, you know, if you make a critical raw materials implementation and then an agri food implementation, and you, you do have a weird case where you're packing beef with a battery in a product, you've got to cross, cross boundaries, right? And so maybe the rec 49 does actually publish a quite implementable schema and it's, it's really that common core subset.
+
+It's the thing that you, you should understand, even if you're in the let's say the automotive manufacturing sector, but you're receiving a passport from a previous, it's on a completely different sector. They may have a whole bunch of other sectors, specific stuff, but the core. The rec 49 defines is the common language that crosses sectors.
+
+And then each sector can extend to the, to their needs. Yeah. All right.
+
+That makes sense to me. Precisely. And that particular example that was raised, I, I was just sketching that out on, on my pad here.
+
+I think it's great. It's, you know, a car with wool interior has agriculture. It's got a battery.
+
+It's got mineral. We don't, we don't have to go all the way down each of those branches that belongs elsewhere, but combining it up, I think belongs here. Yes.
+
+Okay. All right. Look, I've got enough feedback and confidence guidance to be more confident that when I refactor it, everyone will look at it and go, yeah, that has the structure that we discussed.
+
+So that was helpful for me at least. I appreciate that. And I'll get it done within the next week.
+
+So the next call we're looking at a restructured document and starting to flesh out the content more. That's it. If no one else has any comments, I'll stop recording and thank you for your participation and your generous commitment of time.
+
+Steve, I don't know how you feel about producing all the content. Maybe this is a bit premature, but I would suggest that we delegate and we, we kind of try and gain some street cred individually by signing up for a section and then we haven't done it. You know, let's delegate.
+
+Yeah, I think that first, so first of all, I want to do the restructuring because as Brett said, I think if, if you get 10 people trying to restructure a document, it's a mess, right? So I'll do the restructuring. And then I think we probably want one hand on section one, which is that five page fairly hard, you know, the thing that gets the senior exec engaged and, and ready to either read on or get his, his or her people to read the next bits.
+
+Right. So, but from section two down and including annexes, absolutely. I think we can share the load and should share the load because we've got different skills with yeah.
+
+Okay. Thank you. And thanks for giving us a bit of extra time, Maria Teresa, because yeah.
+
+Yeah, we need it. But we, what I don't want to do is, as I said, in the email, get to February and go, we've only got two days to write the whole thing again. So we will.
+
+No, exactly. No, no. Thank you for the opportunity, Steve.
+
+I'm happy to be in this course as much as possible, just to guide you through the process so that we get to the approval by the bureau and then the launch of the open development process, you know, timely this time. One point, since the recommendation is going to address policy makers. I think at one stage when the draft is well advanced, we'll have to try to reach out to some policy makers and get inputs, a sort of peer review before we launch the ODP.
+
+That can be done also during the ODP process, but the more refined is the draft, the less comments we get during the ODP, less cumbersome will be then the process afterwards for the submission to the planner. So I think there we need to make an effort to identify some governments, I mean, or actors at the government level for which the recommendation is relevant. And I will identify, for instance, in the UNEC region, I mean, experts from the German government because they have just enacted this due diligence legislation that makes it mandatory and are very much keen to discuss, you know, the enforcement requirements and or the French or people from the European commission.
+
+So, I mean, just for the group from the UK, we can reach out to a few countries that would be interested eventually to provide a comment. It'd be nice to do that just before, you know, sort of informal review before formal public review, right? So that's what that means for timeline is for us to produce, because the drop dead date now has shifted to end of February.
+
+But if we produce a quality draft by before end of January, then we have a month of informal as Maria just suggested, sharing with governments and getting, you know, before it then goes to formal public review.
+
+[Speaker 2]
+That's right.
+
+[Speaker 1]
+And I think this is very important and we can even at one point try to invite them in one of the calls where, you know, the draft is presented so that, you know, they can get the presentation and then they go to the draft for comments. And that is certainly, you know, in a way a buy-in in the product and in the, you know, process of the recommendation, but also very important feedback for something that is addressed to them, right? It targets them mainly.
+
+Okay. Okay. Thank you so much.
+
+Thanks everyone for attending. Secretariat will support as much as possible. Have a nice day.
+
+Bye-bye. Thanks everyone.

@@ -1,0 +1,645 @@
+[Speaker 9]
+Hello. Hi Virginia. How are you?
+
+I'm okay. Good day everyone.
+
+[Speaker 4]
+Are you still on a boat there, Steve? Yeah. I should probably say yacht or something more significant than a boat.
+
+A boat. Yeah.
+
+[Speaker 6]
+Looks like it. And where is this moving habitation?
+
+[Speaker 1]
+At this moment, it's in Corfu. Lovely.
+
+[Speaker 9]
+Thank you for asking. We worry about you.
+
+[Speaker 1]
+And we're envious. I'm actually kind of looking forward to getting back to Canberra now.
+
+[Speaker 4]
+Have you seen the temperatures in Canberra recently? Come on. I can only be on for 30 minutes, Steve, I'm afraid.
+
+I've got a heating installation happening at the house. And they arrive in 28 minutes.
+
+[Speaker 13]
+I'm also only on for 30 today.
+
+[Speaker 1]
+Well, we may have a shorter meeting today anyway. Because as I've been on vacation, I haven't done much updates. But we'll just work through an agenda.
+
+And if we finish early, we finish early. Give it another two minutes. Or one minute.
+
+Hello, Patrick.
+
+[Speaker 10]
+Good evening.
+
+[Speaker 2]
+I had some trouble with the meeting link. So the mail was just HTML, et cetera. It's not readable.
+
+So I tried and tried. And then I looked in the header of the mail. And there I copied the link.
+
+So I don't know what was happening.
+
+[Speaker 8]
+It was the same for me. It was the same for me the last time I tried to join.
+
+[Speaker 1]
+Okay.
+
+[Speaker 8]
+Also this time around, yeah.
+
+[Speaker 1]
+My apologies. I'll resend the link properly. And post it to the website, I think.
+
+So that we can always click on it. Thanks for that. Well, that explains a lot.
+
+It takes some commitment, then, to go through that irritating failure. All right. Well, it's four minutes past.
+
+Let's make a start. With the usual disclaimer. The meeting's being recorded.
+
+And the objections, let me know. And your contributions today are made under the governance of a UN project where your contributions are considered to be UNIP. If you're not happy with that, then don't contribute.
+
+And with that, I think we'll just work through pull requests and any update to tickets. And we may find we finish early.
+
+[Speaker 9]
+So let me share my screen. Issues, requests. Here we go.
+
+[Speaker 1]
+So there was a pull request last week that we discussed, which is from this, which updates the let's have a look at the files changed. As you may have seen on the digital product passport page, there's a sample file which currently is a very generic and rather boring and not particularly useful sample like this that has example.com and string and not really meaningful values because it's just generated from a schema. And this has done two things.
+
+One, to change it to more meaningful examples and refactored it a little bit to align better with the VC data model. I've already last week reviewed and approved this, but it's not merged yet because last week there was a comment because some of the example data seemed to be real data from a real company. And this wasn't on the call, so we couldn't ask him, did you have permission?
+
+It turns out it was real data from a real company, which was apparently his wife's company. So he did have permission, but questionable whether you should be promoting your wife's company on a UN project. So in any case, he's genericized it and made it a bit more abstract.
+
+And so I think this is a much better example. And with your permission, I will merge it and publish it. No objections.
+
+[Speaker 3]
+Patrick? Not an objection, but so if you go back to the updated example. So just relating to the types of the credential and their credential subject, it was actually an issue that was raised by.
+
+Forgot the name, but the question was, does it make sense to have the type as a UNTP digital product passport credential and the credential subjects type as the UNTP digital product passport?
+
+[Speaker 11]
+And I was curious.
+
+[Speaker 3]
+So the type of the, you know, the wrapper of the credential is a UNTP digital products passport credential. And then the credential subject is a UNTP digital product passport. That was a question that was raised.
+
+I personally think that that's OK. But I was curious if there's any other opinions around this topic. Wouldn't the credential subject be something else?
+
+Or wouldn't this whole document be a UNTP digital product passport, which is also a verifiable credential?
+
+[Speaker 9]
+If there's no opinion, I'm happy with it as is.
+
+[Speaker 12]
+Well, I suggest.
+
+[Speaker 10]
+I'm having a very hard time understanding.
+
+[Speaker 2]
+Yes, Virginia, Virginia. You have the same problem with the sound which I had before with you. So we can hardly follow you.
+
+It's the sound, it's the mic you're using.
+
+[Speaker 1]
+Well, Virginia is sorting her mic. The discussion we had a little while ago about alignment with a VC data model. To my mind, the whole credential is a digital product passport because we're using some of the VCDM properties as key properties of the digital product passport.
+
+So you can't sort of unentangle. Yeah.
+
+[Speaker 2]
+Yes, I just want. Oh, sorry.
+
+[Speaker 6]
+Let me just put in the link.
+
+[Speaker 10]
+It's much better.
+
+[Speaker 6]
+OK. What I was trying to say that no one could hear is that it seems to me like a digital product passport credential would be something that you would find inside of a digital product passport and not the other way around.
+
+[Speaker 3]
+It's interesting. Is it inside or is it in parallel? Because we have like this credential and surely the evidence could be the actual passport.
+
+It's an interesting sort of two side of the coin, I think, question to be raised.
+
+[Speaker 6]
+But I think the more easy question to answer perhaps is do we want to give an example that may be slightly confusing regardless of whether we discuss it. Maybe we discuss it and we come to a resolution, but other people won't be around to discuss it when they're looking at it. So maybe it would be better to try and find an example that's not ambiguous.
+
+[Speaker 3]
+Yeah. I put in the chat, the Zoom chat, the issue. So it was raised by Phil Spencer.
+
+Phil Archer, sorry. And this issue is pending a close, and it addresses a bit what I'm explaining here. So if we are happy with this resolution, we can close this topic for now.
+
+What I explained there, well, it was my idea of reasoning behind this is you have the other layer, which is the credential, and then the credential subject is the actual document, which is feasible in some scenarios. What he was advocating for is that the credential subject is the thing about which this product passport is about, which is more of the product.
+
+[Speaker 1]
+Yeah, okay. Gerhard, I've got a view on it, which I'll share in a moment. Gerhard, did you want to say something?
+
+[Speaker 2]
+Yeah. Well, I just wonder, it's now named digital product passport. That's okay for me.
+
+But there is a data model for the digital product passport, but the entity is named product passport. So I wonder why digital came now in. It's okay for me.
+
+And why it is now named UNTP. I don't know if that is necessary. But my question is though, should the naming of such like the type of passport here, digital product passport, should the name of the entity, should it be named likewise, digital product passport?
+
+So when you go in UNTP, you have somewhere product passport, and the entity is named product passport. Should we name it likewise, digital product passport?
+
+[Speaker 9]
+Yes.
+
+[Speaker 1]
+So I think we, so we've got it at the moment, a little misaligned, assuming we had set this PR. Let's find the digital product passport. We've got this data model.
+
+What is it here? That has product passport.
+
+[Speaker 2]
+Product passport.
+
+[Speaker 1]
+Yes. And what this has done is two things in one PR. One is put meaningful data as opposed to string and stuff like this, but he's also essentially changed this model a bit to reflect our previous discussion about, well, he hasn't changed the model.
+
+He's changed the sample, which means now we need to align the model with the sample. And he's changed it to reflect our consensus that we should better align with the VC data model. There was a discussion we had, I think, two weeks ago, where I had initially imagined this entire data model here being essentially the credential subject, which then leaves open the question of things like issuer, which is a VC data model field, getting confused with this issued by, for example.
+
+And it's a genuine comment. I had misunderstood the way the VC data model could be used, and our consensus was we should align with the VC data model and use the actual VCDN issuer to serve this purpose. Otherwise, it gets confusing for people used to VCs.
+
+That means we've more tightly bundled the data model of a digital product passport with the VC data model. It doesn't mean it can't be separated out. It just means that if it is separated out, you're actually using the issuer field to interpret it as the issuer of the passport.
+
+So I've got some work to do, and I meant to do it by today, and I haven't. Question for us, I suppose, is, is the example better than the previous one?
+
+[Speaker 6]
+I don't think we should change the product passport to digital product passport. That's sort of the tautological in that if it's in an electronic form, it's electronic. And I'm not sure that the model itself is UNTP.
+
+I'm not sure that we have to put that in the data. But I'd rather have UNTP product passport than UNTP digital product passport.
+
+[Speaker 3]
+So I think having UNTP is a good thing because we are talking UNTP here, but this is meant to be used in the broader verifiable credential world. So it's always good to be specific about what type of data you're conveying. And there might be other digital product passport that exists outside of our group.
+
+Digital product passport is quite a broad term. So to really say like here, we're talking about the UNTP digital product passport, I think it's a good thing. Now, whether we should have digital in there or not, another comment, I wouldn't comment on that.
+
+However, when we look at the specification on the left, it does say this is a digital product passport. The same way that for a conformity credential, I would have here UNTP conformity credential.
+
+[Speaker 6]
+Actually, if it's not the name of a data element like type or if it's more of a if it's descriptive text. And we've all had to listen to about EU digital product passports and lots of other people's digital product passports. Then I guess it's OK.
+
+I still have a little bit of an issue with the credential. The product passport credential.
+
+[Speaker 9]
+Sure. So just to clarify.
+
+[Speaker 1]
+Yeah, I think this field that I'm highlighting now, as was mentioned, is meant to tell the whole DC community. That this verifiable credential is one of those UNTP DPP to distinguish it, as was mentioned from 100 other types of DPP. However, this field down here, somewhat confusingly similarly named, is meant to be whatever is in the data model.
+
+And then in the current data model, it says product passport. And this has renamed it to UNTP digital passport. So my suggestion would be that I understand the intent here.
+
+And I would I don't know why we have the name credential there, but I see value in being very specific up here that this is a UNTP digital product passport. This one should just align with the data model and probably can be just called product passport like the data model, as Virginia says, it's already digital. If everyone's happy with that, I won't merge this now, but I'll make that change and then merge it after the call.
+
+And also do what I promised I would, which I haven't done because I'm on holiday, is update this model to align with the sample. And more importantly, to align with our agreement that the VC data model, we shouldn't compete with the VC data model, just use it. And so I'm going to basically add a box that used to be here called verifiable credential above this and indicate that this product passport is the subject of the verifiable credential and move issuer up there.
+
+And it'll just be clearer, right, that the digital product passport is a verifiable credential and the issuer of the verifiable credential is the issuer, etc. So I'll tweak this model and sample and update this model and republish the page with your permission to reflect this discussion. If that's all right.
+
+Gerhard, you had your hand up.
+
+[Speaker 2]
+Yeah, but I doubt if we still should call it a digital product passport because you have product passports already and they are in paper or label form. And we want something about the passport that is digital and by this becoming verifiable. But anyway, it's becoming a term that will be used in many years.
+
+And I don't know, it's doubtful what to choose to mean. Yeah, what we are creating and something what normally has been put in a label on a paper with the product. But now it's something digital and by this becoming verifiable.
+
+But anyway, I stopped this discussion.
+
+[Speaker 1]
+If I hear you right, Gerhard, you're making a counter argument to Virginia's argument. Virginia's in favor of just product passport and Gerhard's in favor of digital product passport for the subject. Anybody have any strong feelings one way or the other?
+
+[Speaker 3]
+No, like the only thing I could add is like when you look at a lot, because you already have the type verifiable credential. So already we know this is a verifiable credential that can be verified. And then we provide an additional type of UNTP digital product passport.
+
+And then for the credential subject, I think it would make sense. Like I don't have a strong feeling for one or the other. But if you look at other examples for the permanent resident card, for example, they just call it a permanent resident card.
+
+Right. You already know contextually that it is a verifiable credential. So I wouldn't be too hung up on whether we have digital product passport or not, as long as it just all aligns with the documentation.
+
+That would be my two cents.
+
+[Speaker 2]
+I agree, too. So.
+
+[Speaker 11]
+OK.
+
+[Speaker 7]
+Yeah, thanks. Thanks, guys. I'm not going to jump in the middle of that one.
+
+I really understand both sides of the argument. My concern is actually around the credential. So we would expect the digital product passport to have multiple credentials, obviously associated with it.
+
+Now, if there's one particularly which identifies the digital product or the passport, you know, saying that this is the overarching credential that sort of describes the passport itself, then it's OK to have it as a credential name term, if you like. I think it's type is verifiable credential. That's fine.
+
+But in essence, what we can't necessarily do is, you know. Expect to be able to name every credential, you know, at this point in time. So that's associated with it.
+
+We might have a digital product passport issuer credential or something like this. You know, we've got to be slightly careful that these sort of are structured in a way that we can add lots of different credentials and associated with the digital product passport. So I would actually I'm actually sort of saying, yes, we might need a DPP credential, which is the overarching credential definition.
+
+But we we're not going to name every credential associated with the DPP.
+
+[Speaker 1]
+Yes, isn't it interesting how a few words convey different meaning in different people's heads, right? I'm sure when this wrote this, what he meant was it's a verifiable credential. What I think he didn't mean is that and included in this verifiable credential are various links to product conformity credentials.
+
+So we got the word confused. My suggestion would be we just because the type here already says it's a verifiable credential. We don't need to repeat this word credential.
+
+We just call it the UNTP digital product passport. It's a verifiable credential. And down here, it's just a product passport.
+
+Let's be done with that if there's no objections. Yeah. So we don't overload the term.
+
+Yeah.
+
+[Speaker 11]
+All right.
+
+[Speaker 3]
+I just wanted to add maybe a little comment to what Joe just said. So one component we're working on with BC is a conformity credential for the Minds Act permit. So we are a good example that someone wanting to contribute to this specification as an early adopter.
+
+And we will design this Minds Act permit credential around the concept of a conformity credential. So in our case, it's going to link to the Minds Act permit. And we will specify that this is a UNTP conformity credential in our overall credential.
+
+Now, what you're raising is that we can't expect this from every single entity participating in this ecosystem. And I think this is something that we need to take into consideration is that these conformity credential, they can be referred as a conformity credential in the digital product passport. But the conformity credential itself, we should enable, you know, people who have existing credential to use them as a conformity credential and not be so strict about it.
+
+In our case, we will design it around this because, you know, we're early adopters and we're helping here. But I think as this matures, there's going to be a lot of organizations that already have credentials that they want to leverage for this. So I don't know if that speaks a bit to your point, Joe.
+
+[Speaker 7]
+No, that's absolutely fine. That's absolutely fine, Patrick. And we'd expect that.
+
+The question is, how do we work out, you know, if it's a conformity attestation? And I like the terminology on the logical model. The question is, then you should be able to have multiple conformity attestation credentials and where they come from.
+
+Obviously, it's dependent on what sort of scenario.
+
+[Speaker 11]
+Yeah.
+
+[Speaker 1]
+Yes, I think we're talking about two different things here. Right. So in the digital product passport model, we have this evidence and that credential reference there.
+
+I would expect would point to some kind of third party issued conformity attestation that asserts to the truthfulness of the claims in the passport. Whether that third party conformity credential is actually structured as a UNTP digital product conformity credential or not, to Patrick's point, we shouldn't be too prescriptive. Because I'd rather have a credential than no credential, because, you know, we sort of demand conformance with this schema.
+
+But, yeah, I think half of this discussion is confusing the product passport as a verifiable credential versus the attached conformity credential as, in this case, overloading that word credential. Because it could be a PDF attachment from a third party certifier that says, you know, the carbon intensity of your beef is X, Y, Z. I think the simple way to handle that is what we just said, remove the word credential from digital product passport and keep the word verifiable.
+
+We are inevitably, I think, going to have, unless we change our terminology at that kind of ecosystem level, we are going to have a potentially a bit of confusion between the term verifiable credential, meaning anything that fits that is plugged into a VC data model versus the product conformity credential. Maybe we should call it product conformity attestation and avoid the word credential anywhere except as a verifiable credential.
+
+[Speaker 10]
+Or conformity attestation. Yeah. But that's separate.
+
+[Speaker 1]
+So I think I've got consensus here to at least merge this PR with the changes we've discussed to progress us better than we were. It doesn't have to be perfect. It just has to be better than it was.
+
+[Speaker 3]
+Do we want to link an issue to do in a subsequent PR to address making sure that it matches the spec, like to update the spec after the example?
+
+[Speaker 1]
+We already have an issue to align. I forget the number. It's assigned to me to align the data model with the VCDM.
+
+So what I'm proposing is I will do that and align it with NIST's model except for the changes we just discussed and just merge that because we've discussed it and we've got consensus.
+
+[Speaker 11]
+Yeah.
+
+[Speaker 1]
+Okay. Alrighty. Well, look at that.
+
+Half an hour on that topic. I thought it would go quickly, but it's sometimes good to have these discussions. Where are we?
+
+Sorry. Okay. So that one I'll merge shortly.
+
+There is another pull request here from Zach that's failing to build and some outstanding comments. Do you want to talk quickly to your pull request, Zach, about what you're going to do to address this? Zach just dropped off, Steve.
+
+Sorry. Okay. He had to go.
+
+All right. Well, he won't then. So that one will stay outstanding for a bit.
+
+Let's move on to open issues. I'll sort them given the time we've got. Or maybe I did already sort them.
+
+They're recently updated.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+So does anyone want to talk to any recent updates they've made, such as one here 30 minutes ago and one an hour ago by two Johns?
+
+[Speaker 4]
+That's the same John. If the doorbell rings, I'll need to jump. In a sense, the good news is, Steve, you've already solved the problem that I was looking at on the issue.
+
+At the very end of all of the long monologue that you're scrolling through now on number 78. Not monologue, actually. It's a multi-log.
+
+There's many people involved. Okay. So stop there for a second.
+
+I'll explain what the hell I put in that. Okay. This is a thing called the design squiggle.
+
+And for many of the things I end up involved in, it feels like I'm going through this process. It feels like it should be simple on the left-hand side. All sorts of stuff comes into play.
+
+And then finally, if you're lucky, you exit on the right-hand side and the world is a better place. But that's sort of what's happened in the logic that's being discussed in this comment or set of issues and comments on this issue. If you scroll one more down now, I think we might be near the right-hand side now.
+
+Because in your existing specification files, you've included an existing definition of Trust Graph, Steve. That's the one that's after the first hyperlink that is a deep link into the design spec patterns or design patterns. And that definition that you've used is consistent with the logic I've presented in this sort of summary comment.
+
+It's that Trust Graph is a phrase. And what we're talking about graphs are obviously not the X, Y axis in a line. These are the arc node kind of directed graph, directed acyclic graph, that kind of mathematical concept.
+
+They're an area of significant research and thinking in all sorts of ways. And they're not necessarily the Trust Graph that we mean in this context. So I think we're meaning the UNTP Trust Graph.
+
+That is the Trust Graph, if you want to think of it that way, that is enabled by the United Nations Transparency Protocol. That's a specific kind of has specific qualities. You can do some things.
+
+It doesn't do other things. Right. And that's why I'm arguing for if we're going to use the word Trust Graph, let's use the prefix with UNTP Trust Graph if we're going to use it until it's sufficiently clear that when we say Trust Graph, we mean UNTP Trust Graph and that it has a sort of narrow definition about what it can and can't do, what it means.
+
+Idealistically, and I am still sometimes an idealist, I'd actually not use the word Trust Graph at all, the words Trust Graph, the phrase, because I think it has the risks of confusion. I think what we're really talking about with UNTP and what it enables is something to do with provenance, the proof of passage, if you like, and the prior data associated with goods or products, rather than some mathematical, computated sort of network of trust calculation that tends to be implicit in the words Trust Graph. So I'm suggesting, Steve, your definition that exists is pretty close to what I came up with.
+
+Well, I came up with a realizing the end I'd prefer. And if you were more bold, then we would look at whether we want to use the words Trust Graph at all. When you say my definition, you mean this?
+
+Inside that, yeah, there's a there's a definition of Trust Graph. I did the link on the comment. If you go back to the issues, there's a deep link in the comment to the specific section.
+
+This one.
+
+[Speaker 9]
+This is consistent.
+
+[Speaker 1]
+OK, yeah, which is a copy. I put the same paragraph in the architecture summary as well as in the relevant section. OK, so.
+
+[Speaker 4]
+Yeah, that's that for me is that that definition of text you've got there is pretty consistent with what I ended up thinking about in the issues as discussed.
+
+[Speaker 1]
+OK, since your doorbell hasn't rung yet, did you manage to talk to Harley at all? Yes.
+
+[Speaker 4]
+Joe and I talked to Harley last week. He he both understood, but sort of basically expressed that that's an area that they hadn't he hadn't been personally thinking about deeply. He did promise to have a look at the issue log.
+
+I can't see that he's provided any additional comments on it, though. OK.
+
+[Speaker 1]
+All right. What do we think about this term Trust Graph? You've raised the question that maybe we should call it provenance graph or something like that to distinguish it from some mathematical concept.
+
+[Speaker 4]
+Yeah.
+
+[Speaker 1]
+Sorry, Patrick.
+
+[Speaker 3]
+Maybe if I if I explain how I'm interpreting the term Trust Graph, if that makes sense for me when I read the Trust Graph, it means can I trust every transformation or every step that the credential has passed through? Is that the idea?
+
+[Speaker 4]
+Yes. And absolutely, Patrick. But that's that's that's very much consistent with the thinking in the comments and in this definition.
+
+But it's not the same as some people's definition of Trust Graph. Right. And that's our problem.
+
+[Speaker 3]
+And the proposal is to call it what was the alternative that you just.
+
+[Speaker 4]
+Prefix it with UNTP. It's the UNTP Trust Graph so that we stop it being confused with the generic thinking around Trust Graphs.
+
+[Speaker 6]
+I'd like to make a suggestion. I think that the idea of calling it a UNTP Trust Graph is good. And so the headline here wouldn't be Trust Graphs.
+
+It would be UNTP Trust Graphs. And then I think it would be good to explicitly state in this definition that this is a sort of. Limited or subset, a subset of what?
+
+Of larger kinds of Trust Graphs. Or that there are definitions that are wider than this kind of Trust Graph. So that any some technical person who's reading it will say, oh, that's not really a Trust Graph.
+
+But then if you say right in there, this is a subset. Of the wider Trust Graph concept that you can find in other documents, then it would be clear to everyone, I think.
+
+[Speaker 4]
+Agreed, Virginia. So it might be there are some tweaks that there's certainly the title does need to change. We accept what I'm suggesting in the comments.
+
+And there might be some tightening of some of the text. Yes.
+
+[Speaker 2]
+John, didn't you said. That it should. More.
+
+Give an explanation about the purpose of the graph because trust says only. It provides trust, but. The examples shows us that we can go back to the origin of something.
+
+[Speaker 4]
+I think we have to be. I'm going to be very, very, very careful about the words here. It doesn't provide trust.
+
+Fundamentally, a trust is a result of a consideration. It's the outcome of a consideration. It's not an assertion.
+
+So a graph is something you explore to see whether the evidence presented by it is sufficient for you to make a trust decision. It isn't something that is given to you by the graph in a sort of absolute sense. And that's part of the reason I am afraid my door has knocked and there is also stuff happening outside here.
+
+So I do need to jump. Please read through the comments if you want to see what the logic was and their thinking was. And by all means, jump on and add some more more stuff.
+
+I think we could exit that squiggle to the right. But if we need to be in the squiggle more fine. I'll squiggle with you.
+
+[Speaker 1]
+I'll take the action to read through it. Thank you. Thanks, guys.
+
+Marcus, do you have a comment? I see Marcus had his hand up. That's all right.
+
+I don't know if you're talking, but you're on mute. Let's go back to the open issues.
+
+[Speaker 9]
+Where did we land on removing the trust score?
+
+[Speaker 1]
+I think from what I remember, the last discussion was get rid of it.
+
+[Speaker 9]
+I think the last comment was we get rid of it, right?
+
+[Speaker 5]
+Sorry, Steve. Can you hear me now? Yes.
+
+Yeah, look, just back to that trust graph, I frequently use provenance graphs to using the W3C Provo ontology to trace back. I agree with John's comment that trusted this was a very confusing thing for me when I first looked at it. What are you trying to achieve here?
+
+And it seemed that you were trying to achieve provenance as opposed to trust. And, of course, with the provenance, you're looking at agent activity and entity being over in a graph form. So a bunch of linked triples of that type to tell a story about something and its provenance.
+
+My question is looking at the description. Is that, in fact, what we're trying to do here?
+
+[Speaker 1]
+So, yeah, it's a good question. What I was trying to position with this term trust graph is that an assessment of the truth integrity, if you like, of claims in a passport requires the combination of evidence from a number of separately issued credentials. For example, the digital passport itself issued by a manufacturer, perhaps other digital product passports issued by upstream manufacturers or subcomponents, but also conformity credentials, but also identity proofs.
+
+So, for example, a passport is issued by Australia, claimed to be issued by Australian business number X, Y, Z. What was it really? You might get better confidence in that if you also discover that a tax office issued credential saying that this did is that ABN.
+
+So it's basically a network of evidence that gives you greater confidence about the accuracy of all the claims, whether it's identity, mass balance or provenance or whatever. That was the intent of the term, whether it's the right term or not.
+
+[Speaker 5]
+So provenance can be a bit confusing, but when I'm looking at trust, I require a view of the provenance of the thing I'm looking at in order to fully understand it and develop trust. And all of those things you just mentioned can be graphed as agents, activities and entities associated with that, including issues like identity. So just a thought that that's what W3 designed Provo for.
+
+And I'm just thinking it might be worth looking at provenance. And if it is, if that is the approach that's taken, then in fact, it should be a provenance graph. So as to remove any confusion, because that's traditionally what's used in industry to get that chain of evidence or chain of links to evidence together.
+
+I use provenance graph for that. And so does the rest of the ontology kind of industry. So, yeah, that's all.
+
+[Speaker 1]
+Okay. Thanks, Marcus. Let's hear from Gerhard in Virginia.
+
+[Speaker 2]
+I just want, I agree with who was on. Marcus. Marcus.
+
+Because when the graph shows at different spots evidence and some spots not, that can end up with no trust, as I see it. So it's an aggregation of all kinds of evidences that can be trusted and give, in fact, a trust score as on the top of this issue. But in fact, it's the result, the trust when you look at the graph.
+
+[Speaker 1]
+Yeah. So you're talking about John's comment that said, you don't get trust from the graph, you may decide to trust what you find. So really, it's a provenance graph or perhaps an evidence graph, not a trust graph.
+
+[Speaker 2]
+Yes, yes. Where can I find evidences or are there any evidences in this graph? Yeah.
+
+[Speaker 6]
+I think I like the term either evidence graph or confidence graph, because you can have confidence rather than trust. And rather than provenance, because, for example, of what you're looking at is the test certificate. That's not necessarily where the goods came from.
+
+It's something about the quality of the goods. And when I think about provenance, I think about, okay, did it really come from, you know, Thailand or did it come from China instead? When you're thinking in a trade context.
+
+[Speaker 2]
+Would the combination work? Provenance, evidence graph?
+
+[Speaker 1]
+Maybe a bit too overloaded. I'm quite sympathetic to calling it an evidence graph. I think Marcus is right.
+
+The term provenance in an ontology sense is a bit broader than provenance in a product origin sense. But because we are in trade and talking about product, most people will interpret provenance, I think, to mean like origin. Where did it come from?
+
+And we're really talking about more than that. So I do like the term evidence graph. Patrick?
+
+[Speaker 3]
+So I'm going to add another suggestion. So this is the United Nations transparency protocol. And ultimately, the goal is to create this graph from a product passport.
+
+So why not call it a transparency graph? This is the transparency graph. It's going to show you how much this produced passport did deal with other players that are into this transparency protocol.
+
+And when you have this transparency graph, it gives you access to all this. It could be evidence. It could be transformation events.
+
+It could be other product passports.
+
+[Speaker 10]
+And then you get to address your trust score based on that. Just yet another idea.
+
+[Speaker 2]
+And when I'm looking at the chat, then somebody, it's Juliet writes, trust between actors in the supply chain. So what we are doing is making the supply chain visible through a graph and providing transparency by this.
+
+[Speaker 8]
+So there's a difference between trusting the data versus trust between actors and if they have done the right thing. Right. So that's why I would stay away from trust.
+
+There's a huge debate. It's like a back and forth. So I would stay away.
+
+So I agree with all of you. Let's stay away from that terminology. I probably wouldn't use provenance as well because I would not use it because I feel it's more an outcome.
+
+You can track different things on the blockchain. So different kind of information, if that's like CO2 emission and then trying to report against that or provenance information or something like this. So maybe it's more about validity and validity of the claims that were made.
+
+I'm not sure. I feel like we need to find a term that is not that inflated and more precise. I'm not sure what it is yet.
+
+[Speaker 2]
+I think that transparency would be quite good or feasibility graph or transparency feasibility. But it's making something visible and more or less it can be the whole supply chain or part of the supply chain. Because and as you said, it could not go back to the provenance of a product and just end somewhere.
+
+It does not cover the full supply chain.
+
+[Speaker 8]
+But what can we try to do? We try to find a word that describes whether the data that was entered was true.
+
+[Speaker 1]
+We're trying to find a term to describe the assessment of not one digital product passport alone, but rather the assessment of a linked set of data across multiple passports that collectively give us more information and more confidence than just the ambit claims in a passport. Because this is a verifiable credential, all of these are, right? Fundamentally, the boundary around a verifiable credential is the issuer, who issued it and what are they saying?
+
+And so all you know is that these assertions were made by the issuer of the credential. So if you want a broader set of evidence, you want to hear, well, what did the third party conformity assessment party say? What did the government identity registrar say, et cetera, et cetera.
+
+So it's a bunch of attestations or statements signed by different parties all pulled together into what we previously or currently call a trust graph. And now we're saying, well, is it an evidence graph or is it a transparency graph? I think evidence graph describes most accurately what it is.
+
+A transparency graph perhaps describes a bit more the outcome you might achieve from it. And I'm on the fence about which one. I'm happy to go with the consensus, but we seem to be roughly split 50-50 at the moment.
+
+[Speaker 2]
+Transparency is just making data available. It does not say anything about the data. And evidence is more like I can find more about the data made transparent in a way in a graph then.
+
+[Speaker 1]
+I mean, transparency is nice because at the end of the day, this is the UN transparency protocol. And if you like, the pinnacle of achievement is to be able to make sense of a transparency graph. It's more than just the whole point of UNTP is it's meant to be more than just one digital product passport, but rather a mechanism to describe an ecosystem or a whole value chain represented as a graph.
+
+So I don't mind using transparency graph.
+
+[Speaker 2]
+Patrick says the graph is ultimately what the UNTP spec enables. And so transparency, I think that transparency graph would be the best. And UNTP explains what kind of transparency we want.
+
+And the graph is just a way of showing what we created with the UNTP, the transparency protocol.
+
+[Speaker 1]
+Yeah. I just found a bug on the site because I clicked on architecture and it went AWOL. I better fix that.
+
+Okay. Note to self, fix that architecture link. But that architecture link has a little picture of an example graph, right?
+
+Yeah, I think it's for critical raw materials, but it shows critical raw materials too. So in a way it is, I think Patrick's right. All right.
+
+So pending objections and to avoid confusion with trust and even confusion with provenance, we'll change it to transparency graph, unless anyone has a strong opinion about it. It nicely aligns with the title and I've got to fix a link. And I'll make those changes after this call because that's a reasonable consensus.
+
+[Speaker 5]
+Based on this discussion, I would recommend that you look at Provo anyway, because whether you use the Provo names like agent, activity and entity, or you change them, you overload it to be UNTP terminology, that's fine. But at the end of the day, you want to be able to query, do advanced queries across what was the, what do I need to learn about this DPP that will give me trust or what imbues it with transparency, that that is the approach. If you scroll down that, Steve, scroll down to the diagram.
+
+There's a big diagram, it just keeps scrolling down there, that when you look at the predicates there, was derived from, was generated by, was attributed to, acted on behalf of, was associated with and the temporal scope and informed by. In fact, that will give you the ability to query the origin of the parts or the bits associated with this DPP and the product that it's associated with.
+
+[Speaker 1]
+So what occurs to me here is that this diagram we're looking at now under the W3C provenance spec does describe pretty well what we're trying to achieve with this graph.
+
+[Speaker 5]
+Agreed. And you don't have to call it an agent, you can overload this as long as you, you know, you include the Provo, you can call an agent, something else, an activity, something else, an entity, something, and I frequently do that for specific business applications. But I remain true to the Provo model to allow that querying.
+
+Yes.
+
+[Speaker 1]
+Just in terms of the light bulb that will go in on people's heads in this particular community of supply chain transparency, when we use the word provenance, I would say that 99% of people will think material origin. And 1% of people who are ontologists will think W3C Provo.
+
+[Speaker 5]
+So I'm not suggesting that transparency graph is a bad idea or any other name you want to call it, only that you use this model.
+
+[Speaker 1]
+Yes, I think that's a good, I think we should definitely look at this model because my understanding of what I'm seeing on the page here is it does reflect the way we want to interpret the graph. So it's an excellent reference for that.
+
+[Speaker 3]
+Because there's two things. There's how we're going to call it and how it's going to happen in the background. So we could have our traceability graph that uses the W3C Provo as a mechanism because I'm assuming at one point, we're going to have some kind of software that derives this from a digital product passport somehow.
+
+Yes.
+
+[Speaker 1]
+Well, not from one passport, but from a linked set of credentials that are discovered together, maybe through the passport or even from other sources.
+
+[Speaker 3]
+Yeah, but there's always going to be that one thing you start from.
+
+[Speaker 1]
+Look, we're close to the end, but Gerhard's got his hand up. It's always good to hear your wisdom.
+
+[Speaker 2]
+Linked data, linked product passports. And when something is linked, then I can go to the beginning, but to the material or the cotton or whatever. But that's something different than traceability.
+
+Because, so I just wanted to not to mix... Transparency graph, not traceability graph. It's not a traceability graph.
+
+It's just the linked data, linked evidences, linked digital product passports. And traceability, we have another entity for this, as you know, traceability events. It holds a lot of events that really happened at a particular location, et cetera, et cetera.
+
+So people should know what this kind of graph called transparency graph is about link, linkages between data or evidences, credentials. And it's not about events, linking events. That's my understanding.
+
+[Speaker 1]
+I agree. I don't want to call it a traceability graph. I agree with you.
+
+It's not. It's a transparency graph or an evidence graph. And I think we've settled on the term transparency graph.
+
+[Speaker 2]
+So that should be noted somewhere. Yeah.
+
+[Speaker 1]
+And to Marcus's point, decades of work from lots of people thinking about how you assess these kind of linked evidence. There's an excellent framework already made for us here that we should consider very carefully and build into our specification if we can, this one. But that's not how we name it.
+
+That's how we create it, ideally. All right. Well, look, we've reached our hour already on surprisingly few topics.
+
+But again, each time we go through this, I feel like a little bit of fog clears and we reach a better collective understanding. So thank you for your time. Let me reflect the comments you've made and post this meeting recording.
+
+And unless anyone has any final comments, I will thank you and close the meeting here, because I'm sure you've got other things to do in your day.
+
+[Speaker 11]
+Or night.
+
+[Speaker 1]
+It's now one in the morning for me. But anyway. Thanks, Dave.
+
+[Speaker 9]
+OK.
+
+[Speaker 12]
+OK.
+
+[Speaker 9]
+Thank you.
+
+[Speaker 12]
+Bye.
+
+[Speaker 9]
+See you.

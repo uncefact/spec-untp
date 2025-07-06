@@ -1,0 +1,714 @@
+[Speaker 9]
+Hi Steve, good morning.
+
+[Speaker 1]
+Hi Stefano.
+
+[Speaker 9]
+Good afternoon.
+
+[Speaker 1]
+7 p.m. for me. Yeah, exactly, almost good evening. I didn't send out a preliminary email reminding everyone of this, so we might get fewer attendees today, but never mind.
+
+[Speaker 9]
+I am trying to attend also the meeting on the CRM, but the timing so far is a little bit more critical.
+
+[Speaker 1]
+Yes, and I think there's some thinking going on about the next phase of UN-sponsored pilots around textiles and critical minerals, exactly how they should be structured. What is the boundary? There's a general consensus that they'll all be based on UNTP, but do you do a definition for all critical minerals globally or for copper separately to nickel?
+
+So there's a bit of thinking going on about that, and I might share some of that in this meeting today.
+
+[Speaker 9]
+I think the approach we set up on the UNTP with this 80-20 approach is basically what could, should be driving the thinking, as you mentioned, right? So not really driving into specific, but with the extension approach, let's say.
+
+[Speaker 1]
+Yes, that's right, but then you get into questions like who governs the extension, and if it's going to be a sort of representative industry body, then it needs to map to something that exists, right? So if there is an international body representing lithium miners, then you would do a lithium extension to UNTP. If there isn't an international body that is all critical minerals globally, which there isn't as far as I can see, then there's no kind of governance framework for it.
+
+There might be within a particular country, you know? So anyway, this is kind of, we've had some thoughts about it, which I'll share with the people on this call as we get a few more participants. Hello, Danique.
+
+[Speaker 3]
+Hey, Steve. Hey, Zach. Hello, Mike.
+
+[Speaker 7]
+Hi, iPhone.
+
+[Speaker 1]
+Yeah, we might have fewer today because I forgot to send out a reminder meeting coming email. John, Joe. Greetings.
+
+Hello, Nis. You're sporting a little beard. What's going on?
+
+[Speaker 6]
+Laziness. Are you suggesting I broke my hand? Everything is just a pain?
+
+[Speaker 3]
+This is the first and perfect time to learn how to shave with your left hand. It's good for your brain.
+
+[Speaker 6]
+Thankfully, it's my left hand out of order.
+
+[Speaker 14]
+I thought Steve was suggesting that Nis should be supporting a large beard or proposing why the small beard?
+
+[Speaker 6]
+I don't know how you do it.
+
+[Speaker 14]
+I'd look to Zach for beard advice if I look to anybody on this call.
+
+[Speaker 5]
+I had somebody say to me, it must be a lot of work. I made the case that it's actually less work because I don't have to do anything at all. It just stays there and it keeps going.
+
+[Speaker 14]
+Once it gets beyond a certain length, I presume.
+
+[Speaker 3]
+I just noticed, is that a requirement to be on this call? Stefano has a beard and John, you have a little bit there as well.
+
+[Speaker 14]
+I think that might be a divisive comment, Michael.
+
+[Speaker 1]
+I'm quite sure Danika is not growing a beard. We'll give it a couple of minutes until about three minutes past. Let's see who shows up.
+
+Hello, Suzanne. We have the owner of Virginia with us today as well. Nice.
+
+A bit early for you, Virginia.
+
+[Speaker 4]
+Yeah, for me. I'm more of a night person.
+
+[Speaker 16]
+I know.
+
+[Speaker 1]
+Hello, Proc. Hi, Steve.
+
+[Speaker 16]
+How are you doing?
+
+[Speaker 1]
+Very well. I haven't seen you for a while. We must remember tomorrow morning, Proc, to have a chat about Rio Dinto.
+
+[Speaker 7]
+Absolutely. Should we meet before?
+
+[Speaker 1]
+Yes, that would be great. I've got it in my diary, but I'm not prepared. I don't want to go into a meeting with one of the world's largest mining companies with, like, oh, what should we talk about then?
+
+[Speaker 7]
+I'm traveling at the moment. Climbing cliffs, as usual. But yeah, let's meet half an hour before.
+
+[Speaker 1]
+Yeah, at least. Whatever you can do, an hour before if you can, but otherwise...
+
+[Speaker 7]
+Hour before is fine.
+
+[Speaker 5]
+I'll send around an invitation for the three of us.
+
+[Speaker 1]
+All right. Well, we're three minutes past. More people may join us.
+
+I'm pleasantly surprised at the quantity we have, 20 people, because I didn't send out an invitation beforehand saying, hey, reminder, meeting coming. So thank you, everyone, for attending. Just a couple of usual quick comments.
+
+One is this meeting is being recorded. If you have objections, let us know. And any contributions you make to UNTP as committed content to the website, you're granting IP to the UN under the terms of the intellectual property agreement.
+
+This is one of the usual two-weekly meetings. And the agenda will be to go through open pull requests and actually spend some time looking at some tickets, I think, today, because there's quite an outstanding backlog that we need to get through. But before that, I might ask Suzanne, if you don't mind me putting you on the spot, Suzanne, to give us an update on recommendation 49.
+
+Would that be all right?
+
+[Speaker 8]
+Yeah, of course. You can wake me up in the middle of the night and I give you an update. It's a little bit how I feel waking up in the middle of the night, because I was traveling for the last few days and came back very late yesterday.
+
+So apologies for just showing you my picture, my static picture. So your recommendation 49 has been in review in a couple of cycles. We received quite some comments in the last version.
+
+And we had some extra round that we went, especially also around governance with some input from JTC 24 chair and others. So we wanted to before we go into public review, we really wanted to make it a version where we think not too many comments should come back. So this is why we had a delay of, I think, two weeks now for the public review.
+
+But the document now goes on the public review this week and then gives you four weeks for public comments. And I think that's all about the status, Steve. Or did you want to hear something else?
+
+I mean, we're presenting the work and the contents next week in the ISO kickoff meeting, which is the usual kind of kick off to work together with ISO then on the global standardization of UNCF standards. But other than that, Steve, I don't know. Did you expect something else?
+
+[Speaker 1]
+No, I think it's just interesting for people to know that it's about literally maybe tomorrow or if not very early next week to be published for public review. And then there's a comment. One thing I'd say is that because REC 49 references UNTP, it means that we are also in public review because UNTP is an accompanying toolkit for Recommendation 49.
+
+Now, what Suzanne has done is limited the scope of UNTP public review to really the UNTP specification pages, which are references for how you do this or that recommendation in REC 49.
+
+[Speaker 8]
+Yeah, that's probably a good part, Steve. So in Recommendation 49, we have restructured it. If you know the old version, it doesn't look like that anymore.
+
+We have made it more a high level recommendation where we define the concepts that we would expect from an instrument such as UNTP. And we also have defined principles after which such instruments such as UNTP should work. So it should work, you know, it should be permissionless, it should use open standards and so forth, our principles.
+
+But then we defined the concepts that UNTP should provide a specification about, which is digital passport, digital conformity credentials, digital facility credentials and so forth. So we are pointing to specifications in Recommendation 49 that we expect in UNTP and that we believe we need to implement this instrument and this is how it's connected. That would be also interesting to get everyone's viewpoint and review.
+
+So please, once this document is openly published, read through it and check if we missed an important principle, if we missed an important concept that we believe we need in UNTP.
+
+[Speaker 1]
+Yeah, thanks for that, Suzanne. And I suppose one decision or thought for this group is, this is a public review, which means it's not final yet. We finalize after we get all the comments from public review.
+
+Do we agree that the current state of all the specification pages is good enough for public review? We do have some technical bugs that we are working on. I'd like to be able to say to the Secretariat that what is currently on UNTP is good enough for public review, despite the fact that we know there's one or two little technical bugs, that we actually will have a 0.6 release coming in about a week or so. And in the next call, not at this time, but at the 12-hour difference time, two weeks from now, we'll give a bit of a walkthrough of the test services and how to test implementations and things like this. I believe that work can continue, even though we're technically in public review. Does anyone have any opinions or thoughts or sort of thresholds about, you know, is UNTP specification pages good enough to launch sort of an official public review?
+
+Obviously, we've been in public for a year anyway, right? But this will be a UN sort of announcement saying, here's recommendation 49, and here's the associated reference pages, please review. Do we think any major work is needed before it's good enough for that?
+
+I'm hoping not myself, but your input. Any thoughts?
+
+[Speaker 3]
+I think they are, Steve, with just one question. While we're doing the public review, does that preclude any significant modifications of the site? Or can we continue to do that?
+
+[Speaker 1]
+Well, normally, it's a frozen thing, but we'd only freeze, if anything, the spec pages. And even there, I think if we have strong evidence of version history, it's a bit different to putting a PDF document out for public review and collecting comments in an Excel sheet. So I'll have to have that discussion with the Bureau, but I hope we can more or less carry on during public review.
+
+Nis?
+
+[Speaker 6]
+Yeah, I have had the thought over the recent couple of weeks, where I've been looking a lot at the spec, that we have parts that are really good and strong and feels rather mature, obviously hasn't been subjected to much real world implementation, but it's something we work more on. And then there are what I would call French extra things. I commented on some of it.
+
+Let's take the role-based access control feels very immature in comparison. Some of the, well, I could name other things. My suggestion would be to pick out our core and make that our frozen thing or somehow avoid publishing the full scope and rather focus on the most mature and most important parts.
+
+[Speaker 1]
+Yeah. Does that make sense? It does.
+
+The only issue is I suppose the REC 49 public review, the documents kind of approved for public review and it points at several of those specification pages. So I likely will find that some of them are pretty mature, like you say, and some of them a bit less mature. And maybe we just need to make that clear.
+
+I mean, I think there are several parties that have tried creating digital product passports and conformity credentials and traceability events. And so we've got pretty good testing under our belt. Yes, there's some bugs and issues, but as you say, those are reasonably mature.
+
+Nobody's really yet built a digital identity anchor and identity resolver and all that sort of stuff. It so happens that there are some, and this brings me onto another topic actually, that there are just about imminently to be some pilot implementations of exactly those specs. It'd be nice to wait until they're finished and update them and then say public review, but I don't know if we've got the time.
+
+But we are, the UN Bureau is just about hopefully to approve, well, the Bureau has approved it. It's got to get three heads of delegation. Another project, which is the Global Trust Register, which is basically a whitelist of identifier schemes and a formalization of that digital identity anchor thing and a bit more testing of it and the link resolver.
+
+So there will be some projects, the Spanish Business Register, the Australian National Livestock Identification Scheme and some other quite significant registers are going to implement pilots in the next few months. So we will have some lessons under our belt, hopefully before one point of release. Some other hands up.
+
+We've got a little list. Alex, I think you're next.
+
+[Speaker 11]
+Yeah, I think perhaps as a suggestion for when this goes to public review, the sections where it currently has like a title and then TBC, maybe we could think of some more graceful ways to say this hasn't been written yet. Maybe we could have like a note rather than just TBC because TBC makes it feel like the spec is incomplete and people might be quite confused by sort of sections which haven't been filled in. So maybe we could remove those and have them in a pull request somewhere and then just have an explanatory note to say in a future version of the spec, we will expand on these areas.
+
+[Speaker 1]
+Yes. So, well, first of all, it's only the pages under the title specification, not all the pages that are subject to the public review because they're the ones that REC 49 references. And of those, it's really, as far as I can see, it's only the sustainability vocabulary catalog that's missing a little bit of weight.
+
+We might be able to put that in in the next week or two.
+
+[Speaker 11]
+Well, I was looking at the digital identity anchor. So the business registries, the facility registers, the bits at the bottom there as well.
+
+[Speaker 1]
+Right. Okay. Yes.
+
+So we did actually remove a couple of pages precisely for that reason in the guidance area that were just empty pages. And I think we should go through and do that. I agree to make it clear.
+
+If it's completely empty, just remove it and make a to-do. And if it's got some useful content, then maybe we flesh it out a bit or move it into a pull request. I agree.
+
+Make it look a reasonably complete site. Fair enough. Stefano, you got your hand up as well?
+
+[Speaker 9]
+Yes. I was feeling that basically what we are discussing here relates to what we mentioned already a few times, which is how to make this kind of continuous process. So anyway, we're going to have to maintain, to update.
+
+And this public review, I feel may fall into how we set up the periodical review process. So CICD consideration on also relating on the public review. That's something I feel we already touch up in a few occasions, but maybe this is the moment to try to narrow our thinking.
+
+[Speaker 1]
+Yes. I mean, the public review, that term, comes from a document called the UNC Fact Open Development Process. And it's a general kind of content development, if you like, that applies equally to white papers as well as technical standards and so on.
+
+And so you can understand sort of a documentary public review for a white paper, but for a technical specification, it needs, I think, a little more testing and stuff like that. But that's a separate process to update that ODP to make clearer the sort of version and release and quality testing of technical specifications. It doesn't say it at the moment, but really all we're doing with this public review is backing up REC 49, right?
+
+So I think it's just the question for us to ask is not is it ready to implement, but rather is the content sufficient to support someone who reads REC 49 and reads about DPPs and clicks on a link and it lands at the DDP page to understand what UNTP thinks a DPP is for a paper review. That's really the focusing question, I think.
+
+[Speaker 10]
+Anyway, David? Yeah, I'm seeing a similar problem in a medical interoperability standards program that I'm involved with. And what has been really important is the scope definition of each review process.
+
+So making sure that everyone's clear that this is, we're still a work in progress. We've still got a lot of work to do. There are some things that are more solid that people should start paying attention to when they're looking at implementation.
+
+And there are some things that are still emerging as topics, but really ensuring that the review process is really nicely scoped. When people are reviewing it, they understand the purpose of the review and they understand the state that we're in. And I think to go to Stefano's point, making sure we have this iterative, evolving process continuing, we have to make sure that that desire is fed back into the review process.
+
+And then we're not seen as having these stage gates where everything must be perfect because we're releasing it. It's growing, it's evolving. There's a common problem everywhere in standards programs.
+
+[Speaker 1]
+Yeah. It occurs to me, what I think I might do is write a couple of paragraphs about which bits of UNTP people should be looking at as part of the public review and how to make comments and things like this and ask the secretariat to put those paragraphs together with the REC 49 so that when people go, oh, REC 49's in public review, they can read our words about how they should understand the review of UNTP. Maybe that's a way to kind of get expectations right. So I'll take an action to do that, share it with everyone for your comment, and then we'll give it to the secretariat.
+
+Bart? Bart's put his hand down. Zach?
+
+[Speaker 7]
+A little bit I'm missing at the moment is how it should be collected from the bottom up. So what I see now in the papers is how the content should look like, how the content is organized. But me, myself, I'm a software vendor and I want to create a DPP service, but the data will not come from a single service.
+
+So how do you communicate parts of that DPP content to the final service that give it to the end consumer? It's like the conformity claims. You have a lot of different ways of calculating this.
+
+So it can come from different other applications. And how do you communicate it from the bottom up to the end player? That's the thing I'm missing a little bit in what is on paper now.
+
+[Speaker 1]
+Yes. And I think that's a perfect example of a lack of enough samples and use cases that would show how that works, right? Because the data structure to answer that question is there, but not enough examples of how you would do it, right?
+
+And we did have a discussion about that with, who was it, with somebody on this call about updating a page with more examples. Yes, with me. Yes, with you also.
+
+Somebody else, the guy from...
+
+[Speaker 12]
+And me, Steve, as well.
+
+[Speaker 1]
+With Nick. Yes, yes, of course. So I think we probably need to roll our sleeves up and have a chat, Nick, about how you can help us contribute some...
+
+Nick came by to say hello in Canberra, which was a nice, pleasant surprise. And we drew some whiteboard pictures, so perhaps we can...
+
+[Speaker 12]
+Yeah, and just a quick note on that, Steve. We had a little sub-meeting as well from a few folks from the last UNTP call earlier this week. And ran those whiteboards, asked those members, and they agreed.
+
+So we've started to clean them up. We're looking at something like minerals flowing into a consumer product example, as well as something like a commodity that can mix and go through terminals and storage and things like that. Nice.
+
+So two examples.
+
+[Speaker 1]
+That would be great, I think. And then we can test whether that answers Bart's question. So he's your customer.
+
+[Speaker 7]
+I know. Also, I want to add to this. I'm also part of the European Alice project, working towards the physical internet.
+
+And so we released a pilot paper this week about the same connectivity and discoverability. And from the Alice perspective, they choose more or less the same approach. So the content of the DPP is about items in this case.
+
+And for Alice, it's more about resources. But from a higher level perspective, they're using the same technologies. So maybe this can be in sync for ease.
+
+[Speaker 1]
+Yeah. Look, what's quite helpful is to have more and more examples of similar architectural thinking, and something that you can say, it's the same shape because it's addressing the same problem. And so we support each other, really, in the perception that this is the right way to go.
+
+So if you've got a white paper, please share it on the Slack channel. And maybe we can do a pull request to a page in About, which describes the relationship between UNTP and other initiatives. Could perhaps add Alice there as another initiative and describe a relationship.
+
+And that might help both of us.
+
+[Speaker 5]
+Zach? Two things. Nick, I have some examples that we can share for minerals going into a battery.
+
+And I'll just confirm that we can. It came from the UNCRM project, so happy to share that one. So I'll just confirm overnight, and we can talk about it tomorrow.
+
+And the second thing, Steve, is what if we put at the top of every page either a message that says this page is part of the public review because it's a specification page, or this page is not part of the public review, like in that sort of comment box. And also include, here's how you provide feedback on this page as part of the public review so that we're coalescing that through our process.
+
+[Speaker 1]
+Would you write a ticket for that?
+
+[Speaker 5]
+I will write a ticket for that, yeah.
+
+[Speaker 1]
+That's cool. That's a good idea.
+
+[Speaker 5]
+That way people, as they're coming through the site, know exactly if they're supposed to comment on that one or not.
+
+[Speaker 1]
+All right. I think, oh, Virginia?
+
+[Speaker 4]
+I have to put my mic on for you to hear me. I was going to raise this separately outside of this meeting because it's a complicated discussion. But I do not see the public review of recommendation 49 as being a public review of the tech standards and the specifications in UNTP.
+
+And I don't think the Secretariat does either. The recommendation is now structured so that it gives a list of what should be covered and what are the challenges that need to be met and the principles that need to be met by any solution that meets the recommendation 49 requirements. And UNTP is the work of the UN to meet those requirements.
+
+So it's sort of an endorsement of continuing work on UNTP, but it's not the specifications themselves. And I don't think we want to do that because it's really important that recommendation 49 be approved in July. And if there's any sort of questions and concerns about the tech standards that arise or giving only a 30-day review, because this is only a 30-day review to tech standards instead of the specifications, instead of the standard 60-day review, it will cause a lot of complications.
+
+[Speaker 1]
+Well, you can learn from us, I think, right? I mean, if we can be somewhat decoupled from REC 49, the last version I saw did have some links, right? Is that right, Suzanne?
+
+[Speaker 4]
+I think it has a link at the end saying this is where you can find information about UNTP. It's not saying that UNTP, you need to look at this and approve it.
+
+[Speaker 1]
+Oh, good. Well, I think that's better.
+
+[Speaker 13]
+But I think that Maria-Theresa sees this differently. Yeah. She wants to put UNTP on public review as well.
+
+I know she wants to put it on public review, but at this moment to get as part of the REC 49 approval? I'm not a hundred percent sure there because I'm not clear on the processes, but it's upcoming as well.
+
+[Speaker 8]
+So if it's directly coming this week or at another point, we need to be prepared anyway with UNTP.
+
+[Speaker 4]
+No, I agree that there will be a public review of UNTP. It's just that I don't think that that's what the Bureau is approving at its meeting.
+
+[Speaker 1]
+Okay. Next week.
+
+[Speaker 4]
+Yeah. So let me, I mean, I or Steve can talk to Maria-Theresa, and I haven't seen the very last version, the one that went to the Bureau. But the last version that I saw did not sound to me like it was asking at this moment to have the UNTP public review.
+
+Because we were trying in the UNTP to follow what's considered to be regulatory best practice. Regulatory best practice says you put the requirements into a recommendation or a piece of legislation. And then any technical tool because technical tools change over time that meets those specifications is acceptable.
+
+And you can say in there, you know, these are the requirements and anyone who implements technical specification X is considered to be compliant. But you could also have other solutions that could be compliant in the future. So, and I think that avoids making, you know, the approval of UNTP or the individual specifications in UNTP dependent on REC 49.
+
+And like I said, I really think it's very important that it be approved in July and saying that this includes the review of UNTP. And that would have to be said really explicitly because saying approve recommendation 49 doesn't really say approve UNTP. And I'm concerned if you say, and this means you are also at this moment approving the tech specifications in UNTP, it might not get approved in time for the July plenary.
+
+[Speaker 1]
+Okay, well, that sounds like a discussion between Virginia with lots of experience in this and Maria-Theresa about how best to handle. And I will just take your advice. But I think if we can decouple them, that's better, right?
+
+Because it just reduces the risk of complaints at the plenary with regards to recommendation 49.
+
+[Speaker 16]
+Yeah.
+
+[Speaker 1]
+Yeah, okay. Cool. Right.
+
+[Speaker 4]
+You do have to prepare it for public review, but just not public review starting next week.
+
+[Speaker 1]
+Yeah. Okay. Good.
+
+I think we're done with the discussion then about rec 49 and its relationship to UNTP. With that, then I might like to move on to some collections of issues, particularly those on the call that have a number of outstanding issues that have been raised. And if I could, I might start with Danika because she raised a few based on a review of the, if you like, the information architecture.
+
+How understandable, how navigable is the site? What kind of troubles did implementers face? And she's done a bit of work on that.
+
+Would you like to give us a five or 10 minute picture of what you've done, Danika, and where you're thinking?
+
+[Speaker 2]
+I can talk through the highlights of the report or from the actual information, the actual sitemap.
+
+[Speaker 1]
+Maybe the highlights of the report, I think, and the sitemap is still emerging, right? But you can give people a link or comment. Alrighty.
+
+[Speaker 2]
+Okay. So this has been shared in the Slack for anyone who is interested. A few people have already indicated that they've seen it.
+
+Like Steve said, it was very much looking to understand the experience of those early, very early implementers and what challenges they face. So I spoke mostly to technical implementers. And that is sort of a bit of a limitation is we haven't had a chance to speak to any scheme owners or identifier registries, peoples.
+
+But this is what we know based on implementers so far. So, Virginia, did you have a question before I start?
+
+[Speaker 4]
+No, I just had to put my hand down.
+
+[Speaker 2]
+I forgot to do that. Not a problem. So key insights, there are more deeper in the report, but you're very welcome to read through those.
+
+But so just briefly, the highest ones that we kept hearing over and over again was one that's already been brought up multiple times in this meeting, which is examples. So examples in specific code, examples in implementations, examples in workflow, any examples is extremely valuable, pretty much across the board. And regardless of whether it's coming from the business side or the technical engineering end, there was pretty clear indication also just in a technical sense.
+
+I'm a UX designer and product designer. So from a technical review side, as well as from feedback from early implementers is that the resources are quite fragmented. So the two different sites of documentation, you've got tools in different areas.
+
+And sometimes that's extremely necessary, but the linking between them is definitely a challenge and potentially where different resources could be brought together to support different levels of information needs. For example, an engineer might just want to dive straight into the tools, playing around, seeing how it works mechanically. But some may actually prefer more of that context.
+
+And when this information is so completely split, those kinds of information needs aren't met. And the same thing can happen on the business side. Information overload.
+
+So we've got so much content, which is incredibly rich, incredibly useful, and there's still more to come. But that does create a bit of an issue when it comes to wall of text. Someone who's maybe not particularly inclined to reading anyway, it can be really off-putting and potentially push to either walking away altogether or trying and getting it wrong and then walking away.
+
+We saw that there is a very variable experience and context in terms of where people are coming from and how much they know about UNTP, about verifiable credentials, about the technology, about the business case, about the UN ECE. So having to meet a bunch of different levels of previous knowledge and technical know-how. Live discussions with experts were vital.
+
+So all of our early implementers mentioned I was struggling with XYZ. Once someone explained it to me, then it clicked. And business case clarity is essential.
+
+So clear examples of how UNTP solves real world problems. So at the moment we have a lot of information which is very abstract. It's really hard to connect those abstract ideas to what it actually works.
+
+So person at border stamps thing, that stamp is now digital version blah. XYZ actually seeing how that plays out within the business context, within the supply chains, within technical businesses, software suppliers as well. What does it mean in the physical real world?
+
+And linking to examples. So what do these, what do the challenges and the things that we found out about people mean? There's also key recommendations.
+
+So these are the top level sort of priorities, but there's more detailed recommendations deeper in the report. So key recommendation, the first is to consolidate the resources. So whether that is putting them together into the same site or even just really improving that interconnectedness between those sites is what the recommendation is there.
+
+Enhancing the example library. I'll go into that more, more examples. Improving search and navigation.
+
+So this is where Steve was talking about improving the information architecture, changing the way that information is ordered and broken up on the site, as well as how that information is connected through. Simplifying the technical onboarding was another high level up there. So you'll see it in a lot of technical documentation and getting started.
+
+And that's essentially what that's pointing to is a quick, what is UNTP? Why do I care? And a quick how to get started really quickly.
+
+And again, for multiple different audiences. Leveraging progressive disclosure. So we talked about having different audiences with different information needs.
+
+This means allowing people to skim the surface to know a little bit. And then once they understand a little bit and they understand the basics, then they can go in. And at the moment we have those challenges with, we have all of the information all at once, which can be extremely difficult to take on.
+
+But if we can help give what show very explicitly, this is important and this is important to you, and then they can follow that deeper. And then offering role specific guidance. So how can we tailor that onboarding and the support materials based on the user's role?
+
+So if they are a scheme operator, or if they are an engineer for a software vendor, very different information needs. And how can we actually offer that guidance better for those and pushing that. So yeah, so that's the key insights and recommendations.
+
+And a few people have had a chance to look at that report. So was there any questions? For me or comments or I welcome feedback.
+
+[Speaker 1]
+Look, I, my view is it's exactly the thing we need, right? We've been beavering away making specifications, which is kind of a, you know, you've got to do that. And they've reached a point where the combination of them is a bit overwhelming and we need to really provide a, an easy way in particularly for a particular role.
+
+Right? So if I'm a registry operator, I don't need to read 80% of it I've just got to do the identity resolver and digital identity. I care for example.
+
+Right. And we didn't start, I'll just put a link in here, which is a recent page, which is just the beginning. It's nowhere near as good as what Danika's envisaging, but we're beginning to kind of provide a narrow path in.
+
+Yeah. So I'm, I think we're about to transition from writing lots of words to making it all understandable and navigable and easily testable and easily to get started and take away fear. Right.
+
+And, and risk. So I think it's really good timing for what Danika is doing. That's my comment.
+
+Who else? A couple of hands up.
+
+[Speaker 16]
+Nis.
+
+[Speaker 6]
+Danika. I love it. I think this kind of feedback is amazing.
+
+I, I plus one, the information overload. I, I feel that I've been part of this all along. If anyone should not feel information overload, it should be me, but I do.
+
+I think it, we simply, we have our scope has just continually grown and to a point where I sort of feel like we have, this is actually a scope for multiple specs. That's my feeling. I'm not making any dramatic suggestions here.
+
+That's just the feeling I'm sitting with also when looking at the spec, I don't know how to address it. My worry is that if the spec is too, this is, this is standards one-on-one. If the spec is too big, only very large corporations with a lot of money can afford to implement it.
+
+That's my, some sort of fundamental worry I have about the spec in its current state. Ideally I would somehow chop it up and, and make more bite size subspecs out of this. That that's some sort of feeling I have here.
+
+Having said that Michael and I have been over the past month or so we've been working on a, an introduction article and it's coming along pretty well. And I hope we can, our plan is to release it today actually. So that might address some of the, some of the actions that you were just listing Danica and I'd be, I'll definitely be sharing that on Slack and everywhere else.
+
+So hopefully that can be a small part of, of solving some of this feedback. Cheers.
+
+[Speaker 1]
+Thanks for that Nis. And I agree with you. If the perception is it's one spec, then it's a, it's a nightmare.
+
+It's a monster. It is actually about nine. I can't remember the exact one, nine or 10 separate little specs.
+
+And there's no single actor that implements all of them. Right. And so what we've, what we failed to show is that if you're one of these, you just do that bit.
+
+If you're one of those, you do that bit. Right. And so, and that's what the, that page that I just put up is trying to do, but we really need to restructure the site a little bit to make that clearer.
+
+And it could be also that some of the specs, the subspecs, or we call them might actually shift out of UNTP anyway, because if you think about things like identity resolver, digital identity anchors, public credentials profile, they apply equally to invoices and bills of lading and other things. That's right. So I can see a split coming where there's some kind of core technical stuff that is dependent upon which UNTP as product passports and conformity credentials and the like depends, but equally invoices and bills of lading depend.
+
+And so I think we're at that peak complexity point where we now start to break them apart and say, well, this lives here, that lives there. And furthermore, what's left, we're making more navigable and understandable and testable and implementable. So I don't think anybody would dispute that need to simplify and deconstruct.
+
+Happy to hear it.
+
+[Speaker 6]
+And by the way, that also on the technical side on our data modeling that applies there as well, from a data inheritance point of view, ideally some of what we inherit from sits not in UNTP, but somewhere neutral if you know what I mean.
+
+[Speaker 1]
+Okay. There's some more hands up.
+
+[Speaker 3]
+Yeah. So, I mean, I agree with what's been said, but I guess the other part is I think what Danica has done, I think it's really good. I think all of the information, it's a case of probably how the information is laid out or how the site is laid out.
+
+This is such a new concept and new area that people don't understand, even forget the technical jargon, but the people who have to understand why this is. And I think Danica said, what's the business value? So I guess what I would advocate is that it's a case, I think more of restructuring and combining business value with a technical spec.
+
+I think we've all had questions when we were working on that last summer and last fall, is this really the right places to be putting this because a business person is unlikely to be looking at a technical spec and a technical person is unlikely to be looking at all the business justification. So is it maybe a case of restructuring the site that has sort of micro sites that are more focused to the interests of the key stakeholder roles. And so that someone who is trying to understand this from a business just really goes and gets a business and they can get into the other areas, but it just gives them their content that they really need versus all the other noise that, you know, noise from a more of a visual noise and distraction as they, as they're trying to understand what the hell this is all about.
+
+[Speaker 1]
+Thank you, Michael. Agreed. Zach.
+
+[Speaker 5]
+Yeah. I want to make two comments. I think the sort of first actually three comments, first of all, Danica, great work.
+
+And it's been really helpful to kind of clarify sort of the challenges people have seen and sort of organize it and sort of composable chunks that we can then address. The second thing that I'll sort of mention is that when I'm talking to business folks and people who are actually wanting to pilot implement, actually experiment with this work. What I've found is that if I describe all of UNTP in the first conversation, I have lost them.
+
+And so what, what has happened is I address the needs that they have and describe how the component of UNTP that addresses that need will meet their need and then sort of frame what else UNTP does in subsequent conversations. And that's worked really effectively. So I think that that sort of leads to this idea of microsites or journeys or things like that, because that that's been my experience and having these conversations.
+
+And then, but the third point I would make is if we overdo that, we'll lose the composability and potentially the flexibility to break the components out in, if we need some of the components to live somewhere else. And so I want to be careful about how we take that recommendation and actually implement it, because if we start interweaving everything, so it's a cohesive story, we lose the flexibility to break it out if it needs to be a more broad or more narrow scope. And so that's kind of the tension I want us to think through as we sort of take these implementations forward.
+
+[Speaker 1]
+Well, look, I think it's all good feedback. And I hope we are at peak complexity and we start to simplify. I mean, I did ask myself a few times, which of these components could I just delete that we don't need?
+
+And actually it's, it's kind of hard to find one, right? Because if you think about it, well, we need a digital product passport. We also have a strong demand to describe sustainability characteristics at the facility level.
+
+And then there's lots of demand for independent certification. Then there's the traceability issue. Then there's the security and confidentiality.
+
+Then there's a discovery. If you pull away any of these building blocks, you have a major component of a decentralized traceability architecture missing. So I'm happy to press delete on one of them.
+
+If somebody thought we can do it. I have a pull request doing exactly that, right?
+
+[Speaker 6]
+It's open right now.
+
+[Speaker 1]
+You're not deleting the idea of confidentiality. You're simplifying that particular. I think yes.
+
+Anything in any of these specs that is unnecessarily complex, we should seriously consider removing, right? The principle should be as simple as you possibly can until you find you must have this thing, right? So I'm very sympathetic with your pull request, Nis.
+
+It's not removing the idea that we need to have a solution to confidentiality. It's just simplifying that particular spec a bit, right? And so welcome those sort of suggestions.
+
+[Speaker 6]
+But yeah, let me just share that pull request. And I'm not saying that it's not a perfect ideal pull request by any means, but exactly the kind of one of the things that it addresses is the role-based approach. I might suggest we just kill that entirely.
+
+For the sake of simplifying matters in a version one, we can always add it later. There can always be a version two. To me, that feels just like an idea that's been written down, and that's it.
+
+That's no spec at all.
+
+[Speaker 1]
+That's the... Yes, I agree. For it to work, you'd need quite a strong vocabulary of roles, a bit like a vocabulary of link types, and we don't have that.
+
+And so, yeah, I'm quite sympathetic to pulling that out until we do have one, right? So yeah, but this is a good example, right? You dump something out, somebody looks at it and says, well, actually, you could make it simpler.
+
+Don't mind the idea, but not in this phase, you know? So by all means, I think I'm quite happy with this general conversation, right? Me too.
+
+Because I think it's agreeing that all the building blocks are kind of valuable, but we need to simplify them as much as we can and then make the whole collection more navigable by just making it much more obvious which bits are for which party, which take all the time. And so, yeah, look, it's not a bad thing, I think, to be having this discussion now. And let's roll our sleeves up and see if we can make it.
+
+[Speaker 6]
+So that's the other thing. Most of us are just talkers, and we have one doer. So yeah, Steve.
+
+[Speaker 1]
+Well, we have a few doers. No, no, I'm pleasantly surprised. There's people writing stuff, you're writing documents.
+
+Somebody is going to write some use cases and more examples. So I think the other thing we need to do is start to burn down the backlog of issues, right? So I think there are about 200 of which 120 or something are closed and 80 are still open.
+
+I had a quick skim through the 80, and some of them look like candidates to be closed. We might get down to 70, but there's still quite a few to work through. And so anyone that has raised an issue, please take the free, right?
+
+Have a look, write some comments. What do you think? Get at least one other person to comment on it and then make a pull request, see if we can burn down on these issues.
+
+Because I think that'll be the kind of condition to go into proper public review, will be we've reflected people's concerns and either accepted or rejected the issues. And we never seem to quite get time to work through issues on this call. So I think this is a kind of a call to action for all of us to just do a little bit of issue grooming in the intervening period.
+
+Zach?
+
+[Speaker 5]
+Yeah, I was wondering if for these areas that we're thinking maybe belong in a version two or still require a little bit more work, rather than deleting them, do we wanna put them into a separate section of the site? Because one of the things that's important, particularly with the security concern is that we're thinking about it and working on it. Like we need to show to the market that it's important that this is something we're considering and there's a pathway forward because if it's not done yet, which is okay, but that potentially particularly early adopters may see that and go, maybe I'll wanna run an experiment with that.
+
+But if we don't have a security, the security one is in particular, if we don't have it, we might lose people who would otherwise be interested. And so I'm wondering if there's a working on or a future release section.
+
+[Speaker 1]
+We should have a roadmap page. The question for the group is, do you have a roadmap on each mini spec? Like here's the DPP and here's what's coming on DPP, or do you have a roadmap for UNTP on a separate page?
+
+I'm not sure, but I think that kind of vision of what we're thinking about is important. I welcome ideas on the granularity of that roadmap. Michael, you've got your hand up.
+
+[Speaker 3]
+I think Bart was performing.
+
+[Speaker 7]
+So I shared a link to C++2 project to European funded project. And it's about also about digital product passport because it's a new regulation in Europe, ESPR that is requiring a DPP for all products that are going into Europe. And it is a requirement for 2027.
+
+And from the specification itself, it's similar. It's definitely not doable to use UNTP for ESPR. But the problem is with surplus and we are in three living labs to try out real life examples to create a DPP is that a lot of supply chain data and master data sharing is on paper or on email.
+
+And to move from a paper based supply chain to a full digital transparent supply chain, that's a very big step. And at the moment, from our perspective, what we see now, only two or 3% is digital at the moment. So it's a big step to go to a digital transparent supply chain.
+
+And so what I'm missing a little bit and I agree with the comments before is it should be a simplified roadmap with very small steps for companies to do works towards a digital supply chain in the first place before implementing very big recommendations.
+
+[Speaker 1]
+Yes, a quick comment on that. First of all, we are quite close to the Surpass 2 project. We work very well with Carolyn who constantly looks at UNTP and gives us comments and asks us questions.
+
+And so there is some back and forth. There is also some strategic positioning that we're trying to do between a regulated instrument like a European DPP and something like UNTP which is a voluntary standard, not a mandate, right? And it's actually Surpass and Carolyn herself which came up with a picture which we use a bit.
+
+I don't think it's on the UNTP site. Maybe we should ask her permission to put it there. But basically it positions the EU DPP as a thing that's issued at the point of market entry by an economic operator in Europe.
+
+And it's the legislation that demands the due diligence. But what's unanswered is how that due diligence is achieved, right? And so what UNTP is saying is this is a framework for gradually digitizing, not instantly, obviously, your upstream supply chain.
+
+So at a very high level, the positioning we're currently pursuing with the European Commission is that UNTP is an architecture to start to digitize the global supply chain. And when you do that, it will provide the evidence that a European economic operator needs to be confident about the data they put in their regulated passport. So they're actually complimentary.
+
+One's upstream and one is market entry. That's the kind of the positioning. I'd welcome your views on that.
+
+And also I think to your point that it's mostly not even not paper. A lot of this upstream supply chain doesn't exist even on paper, nevermind digitally, right? I can't get information about the carbon footprint of a particular product that I'm buying and that's an input to my manufacturing process at all in paper or digital.
+
+So what we need is and I think this is also this peak complexity thing is some examples of how you could gradually implement digitalization across a complex supply chain without depending that the whole thing has to be digital or it doesn't work. And quite a lot of the UNTP thinking has been not well articulated but precisely to solve that problem, which is why, for example, we don't assume that data is exchanged between operators in a value chain, because there you get into all kinds of scalability problems and point-to-point connection integration problems and nightmares. And instead we say, no, just discover it from the identifier.
+
+If it's there, it's there. If it's not, it's not. And that means, for example, if something's going through an intermediary like a sale yard or a distributor, it doesn't matter because the idea of the thing is still the idea of the thing at the other side of that actor.
+
+It makes it a little bit more robust. And then also a key part of it is making sure that every digital thing is also human readable so that the issuer of a digital thing doesn't have to go, oh, this party wants it digitally, that one wants a paper and do something differently. So UNTP has tried to architect itself to accommodate this, if you like, a gradual digitization of a complex supply chain, almost like pixels coming on a screen one at a time, where it doesn't depend on the whole thing being digital.
+
+But I don't think we've done a great job of articulating that story and how it would work. But anyway, that's my contribution to your comment. I don't know if that answers your question or gives you any assurance, but what do you think?
+
+[Speaker 10]
+It sounds like we have a big storytelling challenge ahead of us. Oh, we do. We have a monumental story.
+
+[Speaker 3]
+Well, I think that this is where the article, this is exactly what the article that Miss and I have put together is trying to start to address. Zach, I actually shared, that's the link I shared with you.
+
+[Speaker 5]
+And Michael, I haven't had two minutes to look at it.
+
+[Speaker 3]
+Yeah, I didn't figure you did. But this is exactly the problem and also being able to explain it, not in technical terms. It's an absolute deliberate to keep the technology as much out of the conversation.
+
+But as we have gone through it over the last whatever, four to six weeks, actually this concept came out of the Rome Forum. We were, I think the day before, after dinner, we both agreed to explore this way. And the different things, like so the security part, I understand and agree with the complexity, but the other part is, even in the very simplistic example we have, we have three different roles of a customs officer, a consumer and a recycler.
+
+They have very different information needs. And so how that, and this is a huge concern, so we can't ignore it. But there may be a lot, there's an awful lot of stuff that exists, sort of prior art that exists and figuring out how to connect that and link that in is really important.
+
+But as we've gone through it, I think Nis would agree with me. It's like, oh, how do we, what about this? What does this, where does it, I'm not really sure how it fits in here.
+
+Yeah, it makes sense. We absolutely need it, but I haven't heard anybody talk about it. And there's been repeated occurrences of that conversation.
+
+we'll look forward to feedback on when we share it. Our goal is to get it by the end of the day, by the end of the day.
+
+[Speaker 1]
+Great, thank you. All right, well, look, we've come to the end of our time. I really appreciate everyone's participation.
+
+I think it's been a good meeting. We're all at the point where we've got a nearly complete spec. There's more testing to do, and we want to climb down the other side of this complexity mountain now to make the thing more usable, understandable, and reduce fear and risk and uncertainty and doubt.
+
+And I'm feeling reasonably good about that as an intent. We've got to make it happen, but the next meeting, by the way, for those that are interested, some of the technical guys will demonstrate the playground and the test service where you can drop your credential in and get a test report of what's valid, what's not valid, and even get a credential telling you your test results, you know, so that the process by which an implementer might test their implementation will present that in the next meeting in two weeks' time.
+
+[Speaker 5]
+Yeah, and I just tested the Sparity passport that Suzanne published or put in the chat, and it didn't upload, so I've raised the ticket for the guys to look at.
+
+[Speaker 1]
+Well, look, thank you, everyone, for your time, and particularly those newer to the group for their feedback, because it's, like Nis said, if you've been on this journey, you know all parts of the site, but what's really valuable is newer people coming and saying, I didn't understand this or what's that for or, you know, this is going to help us make it more understandable and more implementable. So I'll post minutes, as usual, in the next day or two and look forward to seeing you in two weeks' time, but also more active on the Slack channel and closing issues and stuff like that. So...
+
+[Speaker 3]
+Steven, Zach, could you hang on for one second or a couple minutes? Yep. Yep.
+
+[Speaker 16]
+Bye.
+
+[Speaker 1]
+Bye. Thank you, Sebastian. Nice to see you, even though we didn't hear from you this time.
+
+[Speaker 16]
+Yeah. See you next meeting.
+
+[Speaker 1]
+And Markus, haven't seen him for a while. He joined just...
+
+[Speaker 15]
+I'm sorry, I didn't have this on the calendar, but I'm determined to join regularly from now on.
+
+[Speaker 1]
+Yeah, yeah. So I think you got it wrong by one hour, right? You just arrived at the closing of the meeting, but never mind.
+
+I'll... Yeah, the timing is announced on the UNTP side, on the meetings page.
+
+[Speaker 15]
+Yeah, thanks. I'll get it right next time. Thank you.
+
+[Speaker 1]
+Thank you for joining. Okay.
+
+[Speaker 3]
+Shoot. Okay. I got contacted by some...
+
+by... I don't know if you know, Vinny Annunziata from DHS CBP. Yes, I do.
+
+And connected to somebody with an ICAO. They're... I'm still...
+
+I have to talk with them later this afternoon. But they may be... They're looking for a developer, you know, potentially, you know, I think it's a combination of cargo, you know, transport knowledge.
+
+Is it CBP that's looking or ICAO that's looking? No, ICAO that's looking.
+
+[Speaker 1]
+So they put out an ad for a consultant, not a developer.
+
+[Speaker 3]
+Correct. Okay.
+
+[Speaker 1]
+The one you're talking about?
+
+[Speaker 3]
+Possibly. I'm talking with the guy this afternoon. Well, they were...
+
+It's Courtney. Yeah, Courtney. Yeah, yeah, yeah.
+
+[Speaker 1]
+And I'm with Courtney from ICAO.
+
+[Speaker 3]
+Yep. And so I'm going to be talking with him, but well, they were talking about particularly... Vinny asked about, actually about NIST, since NIST is still on the line.
+
+But I...
+
+[Speaker 1]
+So... Hmm? Yeah, yeah.
+
+So Courtney did approach me about that one because I worked with him before and I said, look, I've got capacity, but I'd poke around and see, encourage people to apply. I know that Lucy Yang from... Who's working...
+
+Okay. Has applied. And I...
+
+Courtney told me he got a reasonable number of good quality applications. Okay.
+
+[Speaker 3]
+So I'm just wondering why, because the request came in for specifically to Vinny to pass this to NIST, but I know that NIST is starting something new tomorrow. So... So he wasn't on the list.
+
+So that's why I just wanted to talk here and see, okay, is there somebody...
+
+[Speaker 1]
+Yeah, I mean, Courtney, when he first put it out, he said, oh, can you pass it around? We're worried we won't get any good applications, but you know how these things are, right? You put a notice out and then nothing happens for two weeks because people go, the closing date is such and such, and they all arrive in a little flurry not long before closing date.
+
+So Courtney did... I haven't seen the details, but he did say we did get a reasonable number of applications and I think he's confident we'll find some good people.
+
+[Speaker 5]
+So... Okay. All right.
+
+If it is not the consultant and it is more of a developer, Michael, we're happy to back you. Okay. So you can confidently sort of lead a technical thing where we'll be your technical arms and legs.
+
+We'll need to talk about how to make that work, but... And we here, and this is a recorded UNTP call. Did you stop reporting?
+
+No, I haven't.
+
+[Speaker 1]
+So I'll start again.
+
+[Speaker 5]
+This is... So from a...

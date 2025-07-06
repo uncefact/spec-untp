@@ -1,0 +1,663 @@
+[Speaker 1]
+Haven't seen this for a while. Do you have a good vacation?
+
+[Speaker 2]
+It's been a while, yeah. Yes, thank you.
+
+[Speaker 1]
+How are things? All right. I have to warn everybody, I've just come from a staff leaving due and I've had three rums.
+
+So I'm just on the cusp of maximum confidence and minimum capability.
+
+[Speaker 2]
+All right. You'll be an easy target.
+
+[Speaker 1]
+Yes, exactly.
+
+[Speaker 3]
+When this call is at its other time, I'm often on my second glass of brandy. But not at nine o'clock in the morning, so we're okay.
+
+[Speaker 2]
+Okay. I love, Steve, that you press start recording and then you bring that message.
+
+[Speaker 1]
+Yeah, I didn't think that through, did I?
+
+[Speaker 2]
+Exactly, yeah. Which is very much to the point, I guess.
+
+[Speaker 1]
+Exactly, exactly. All right. Well, we're at two minutes past.
+
+Allow us to make a start. Usual disclosure, this is a UN meeting where we're contributing to a UNTP standard and your contributions are considered to be UNIP. So don't contribute stuff that you don't want to.
+
+And this meeting is being recorded and will be posted online. Last meeting is also recorded and I just did the minutes today, but I did it together with a pull request about other stuff. And so it hasn't gone up yet, but it'll be one of the things to discuss today.
+
+So if, with your permission, I will share screen and go through the usual, are there any open pull requests, and then discussion points about tickets and other things that we want to raise. Here we go. There is one pull request.
+
+By the way, for those that weren't here, we spun off a team, kind of a separate sub team with Michael O'Shea to develop the business case content, which is quite important content because this is a voluntary standard. And if there isn't a strong business motivation to do it and a good story, then why would people implement? So there has been quite a few contributions and I hope that the next stand up will be able to review what they've done.
+
+But I think the more we can identify chunks of work that some of us can kind of take ownership of and run with, the better, right? And better for progress, better for me not being a bottleneck. In any case, there is a pull request here that actually impacts quite a few pages.
+
+They're fairly minor, but what this is, I looked through a bunch of the tickets that were raised by particularly the semantic web guys who have an interesting approach to how they assess UNTP, right? They always want to create a graph. And I think that's actually a good test of what we're doing.
+
+Can you make a meaningful graph? And so one example of a ticket that was raised was you had this thing called an entity which has an identity, a unique ID, and that ID comes from an identifier scheme, like, for example, Australian business number or GS1 GTINs or whatever. And I'd kind of lumped together the ID of the scheme and the ID of the entity in one.
+
+And from a kind of message modeling sense, it doesn't seem a problem. But when you dump it in a graph, these are not separate identified nodes because the identity of the scheme, namely, let's say GTINs or ABNs, is different from the identity of a member of the scheme. So that was an interesting ticket, led me to make some changes.
+
+And there are a few others like that that I've been through and sort of said, OK, actually, there's some sense there. And updated models and republished context files and schema and samples for all of digital product passport, digital conformity credential, digital traceability events. And based on the last discussion we had, Nis, you would hear the thing called a digital facility record, which is not product level, but facility level information and conformity data, because we got feedback from some potential implementers that they weren't so interested in product level and more interested in just facility level performance.
+
+So we've added that credential. Anyway, this is a smaller pull request than it looks because it closes a number of issues and it hits a number of pages. But I want to apologize up front for making such a big one.
+
+I think in general, pull requests should close one or two tickets and should be more granular and should be done not three or four hours before a meeting, but days before a meeting and give people time for review. So if you all say not ready to merge this yet, I will understand and accept. But I thought I'd just quickly take you through the changes and then allow you to make your choice and do that with this apology up front about doing too much in one pull request, right?
+
+Because I do agree they should be shorter. So this is a local host version, so it's a deployed version, so it's easier to look at and see. So for example, for digital product passport, I took a little bit of the W3C convention and put a kind of three bullets right up front that say latest JSON-LD context, latest schema, latest example.
+
+And then you get a table of versions so that the latest context and schema here are the same as the ones up here. But in future, this version table will grow, but the latest will always be here, which I think is a kind of a nice thing that the W3C does. And most of the digital product passport stuff hasn't really changed.
+
+I just aligned it with the latest UNTP core vocabulary. And the minor changes are that it inherits, for example, that separation between the identifier of a thing and the identifier of the scheme of a thing. And a few other changes that the guys recommended in various tickets.
+
+But they're not really substantive, I would say. They're substantive maybe in a graph analysis sense, but when you look at the model, really not that much has changed. And I updated the sample snippets and I tried to make them...
+
+I put some effort into the sample for a digital product passport to be more consistent because last time we talked, there were bits of data that were about, I don't know, tins of beans and other bits of data about passports, and it wasn't a consistent kind of example. And so I've now tried to make this example, sorry, up here. I'll scroll up again when you download it.
+
+Pretty much a battery example and consistently throughout. It's all about batteries and about standards about batteries and so on and so forth. It's not really a complete battery passport because it doesn't have some of the battery attributes because this is UNTP, not an extension of UNTP, right?
+
+But at least it's a consistent example. And little snippets of that example through here. And like before, I've removed Acme.com and replaced it with samplecompany.com because as Phil pointed out, Acme.com is a real company, even though in my imagination, it's a Warner Brothers cartoon, but actually a single company.
+
+[Speaker 3]
+I was going to say, I can still see Acme.com on your ID.
+
+[Speaker 1]
+How did that happen? I don't know. Have I put the wrong snippet in?
+
+[Speaker 3]
+The ID of that is Acme.com at the moment.
+
+[Speaker 1]
+Hang on. Let me just have a look at the example and see if I did that in the eyes. Have I just not pasted?
+
+No, see, I've got samplecompany.com there.
+
+[Speaker 2]
+Yeah, but when you look at the ID attribute a bit higher up, it says there example. No, sorry. It wasn't the other.
+
+In the docs, it said there Acme.com.
+
+[Speaker 1]
+I haven't properly pasted the real example into the pages. I thought I had. I don't know what I've done wrong there.
+
+But this is a more complete example based on the schema, and it's sample company, and it's a 300 amp power battery. And we do use real schemes like GTINs. I don't think that's as unreasonable as pointing to a real company.
+
+I hope nobody disagrees with that. And real classifications, like from UN Central Product Classification. This is primary cell.
+
+That's a real 46410, apparently. It is the UN CPC classification of primary cells and batteries, and so on. I've tried to make it non-company specific, and somehow I've cut in place wrongly.
+
+This is the real generated sample with real content, and I've made a mistake somehow with that snippet. So what I've done is created a complete sample, but then when describing, for example, the verifiable credential, but that's why. I remember now.
+
+I looked at the verifiable credential envelope and thought, oh, no, I haven't changed that. So I didn't change that snippet, whereas the rest of them down here, I mentioned I did change. Yeah.
+
+So no, I've just neglected to update that snippet. So that's a fix I need to do. Happy to fix that before we merge, if you want.
+
+But that's Digital Product Passport for conformity credential, the same thing, with more strict versioning now, and the context, the schema, and a sample instance. I only spent energy to make the Digital Product Passport sample data consistent throughout. The other samples are generated from sample data in the model, but when you reuse, for example, entity in different places, it might have sample data about a product when it's meant to be an organization.
+
+So this sample will be technically correct, but we'll have some data in it that isn't perfect. I need to fix it, or someone needs to. But, yeah, I've just been through and cleaned up Product Passport, conformity credential, traceability events, same thing.
+
+The three schema and samples. Added a digital facility profile, again, with context, schema, and samples, and just for your information, the model of a digital facility profile is basically a little bit of facility data with location information. And then exactly the same, this structure of a declaration that says, here's some numbers about performance against a criteria from a standard or regulation, and with metrics, numbers, is consistent.
+
+It's the same structure that you see in a passport as well as in a conformity. We just looked at conformity credential, didn't we? Yeah, so there, that conformity assessment, again, metric, criteria, and regulation, it's the same.
+
+Basically.
+
+[Speaker 3]
+I'm sure the answer is yes, but I'm sure that your conformity assessment class, that matches Brett's work, does it?
+
+[Speaker 1]
+Yes. It comes directly from Brett's work. What I did is in the core underlying model, UNTP core, which I think we see here, I created a thing called a declaration, which gets you instantiated in two contexts.
+
+One, it's a self-assessment, a claim, really, made by a manufacturer about sustainability characteristics attached to a passport. But exactly the same structure is used by a conformity assessment body, not as a claim anymore, but as an attestation of conformity. So you've got this kind of, the manufacturer says, here's some claims.
+
+They may or may not be backed up by a third-party evidence, but if they are backed up by a third-party evidence, it's a comparable structure, so that you can attempt to make a link between a claim in a passport about a conformance to a criteria, when the criteria has an ID, and when a conformity body makes the same sort of attestation, third-party evidence about, let's say, GHG emissions, if it's got the same criteria, it'll be the same note in the graph. So you then basically add evidence to the claims in the passport.
+
+So that's basically, and the rest is, that's basically the substance of the change. Oh, and in traceability events, one change, again, we got context schema and samples. The main change in traceability events is, I think, it's not uncommon practice to put several events in one envelope.
+
+That's how the GS1 API works, and I think it's, we previously had a structure where you could only, you had to issue a separate credential for every event. And now I've got a little, basically, collection of events. You see that little, between the traceability event credential and the event, there's a one-to-many.
+
+It means you can put, if you want, two or three or four or whatever number of events in one credential, which is probably better aligned with industry practice. And so those are all the changes in the PR. There's a bunch of old tickets, which basically ask for things like, give me a context file that works, or separate identity of a thing from identity of the scheme.
+
+Or there was a ticket also about geolocation that complained that I just invented a coordinate, which had a latitude and a longitude, and I really should use GeoJSON or something else. So I've changed it to GeoJSON.
+
+[Speaker 3]
+EPCIS was finished, and then Vladimir joined the group.
+
+[Speaker 1]
+EPCIS was what?
+
+[Speaker 3]
+We thought EPCIS 2 was finished, and then Vladimir joined in.
+
+[Speaker 1]
+Yes, Vladimir's an interesting character.
+
+[Speaker 3]
+I think it added a year. But the thing is, he's right, right? He was absolutely right, and it was better as a result.
+
+[Speaker 1]
+Yes. So I look at all Vladimir's comments, and there's quite a few, right? And they are all about, you've used the wrong term for this, or you haven't mapped to a standard for that.
+
+And they're actually all well-informed, I think, right?
+
+[Speaker 3]
+Yes, they are.
+
+[Speaker 1]
+And I'm sure we haven't satisfied him completely, I will say. He's not on this call, but I want to call out an amazing depth of knowledge on semantic standards and graphs and so on. And my changes are the better, I think, because of him.
+
+But I'm sure I'm still not satisfied. I think one thing that emerged really in a lot of the comments was, I think, an expectation that on the wire, we would be recommending things like RDF. And that's one thing we've steered away from, right, which is to say you can have vocabularies, if you want, ontologies in the background that map things to this or map your keys to standard references, but don't force it on an implementer on the wire, right?
+
+And so we've been careful, if you remember in previous discussions, to say, we want to have a schema that just says, do this, and it'll work. And we want context files that link to vocabularies, and it works so long as you conform to the schema. What we probably don't want to do is, what we want to do is allow those that choose to leverage the power of RDF and AL and so on, but not force it on anyone, right?
+
+So I've had to navigate that line of saying, no, no, you want me to use, I forget, there's some OGC semantic web standard for this really quite complex and very well engineered, no doubt, for geolocations, but it was over the top. And so I went for GeoJSON as a simple thing. So I'm trying to navigate this.
+
+These are really good ideas and they, you know, they do improve the thing, but let's not have to tail wag the dog and make life hard for implementers who want a simple implementation. So it's this balance.
+
+[Speaker 2]
+And we don't want to get into that now, but that also speaks into the, how do you sign? Do you sign the graph or do you sign the serialization? So that whole debate is very related.
+
+[Speaker 1]
+Well, I think one thing, this whole semantic web stuff has led me to understand, I think, and it's an important light bulb moment is that when you design a structure like this one, right? Product declaration, criteria, metric, regulation, et cetera. Think about that as not as a big hierarchical blob, but as a collection of identified nodes.
+
+And imagine that when someone's parsing this structure, they're pouring it into a graph. And does that work for them? Even if the issuer isn't thinking that way, right?
+
+Because you've given the issuer a schema, just do this. But the verifier wants to consume a thousand credentials, pour it into a graph and make some analysis over it. And you want to make the design of the structure and schema not incompatible with emptying.
+
+If you like, I'm imagining this like fire hose of credentials that each one is actually many nodes, right? Because one product passport might have lots of decks.
+
+[Speaker 2]
+This is a class diagram. The graph is a optic diagram.
+
+[Speaker 1]
+That's right. Yeah. So when you think only in class hierarchies, you tend to sort of drift towards the traditional UNC fat way of modeling things.
+
+That the only thing that matters is the root and the, and the big blob of hierarchy. You don't really think of the individual nodes within that hierarchy and how they pour into a graph. And so that what we've got to thank the semantic web guys for is this kind of idea of actually this, this hierarchy is an assembly of individually identified and typed nodes that are friendly and easy to dump into a graph, right?
+
+Because for example, the, you know, the, the example, all these things are, have a type and an ID, right? So everywhere you look, you've got type and ID. And so you, you enter this into a graph and it's friendly to the graph people, but it's also friendly to the implementer.
+
+Who's just got a schema and does what it, what he says, right? So navigating this balance, I think is our, is our critical.
+
+[Speaker 3]
+That difference in modeling style that you described between the UNC fact way and the graph way is also the difference between our GDSN standards for describing everything, which has thousands and thousands of properties and the JSON web vocabulary that that's exactly what it is. You take that bunch of stuff in an Excel spreadsheet and scream at people who use an Excel spreadsheet and turn it into something with classes and nodes and everything else. Yeah.
+
+So, and then basically it's, it's saying, okay, we, we need to extend schema.org because that's a massively used thing. That's what we want to start. And it got this nice structure, take what we've got and map it to that.
+
+So, so what you're doing there, Steve, is exactly the process we went through for the JSON web block.
+
+[Speaker 1]
+And it was a bit of a learning curve. I mean, right. Cause I come from the sort of document model background, hierarchical big blob and graph guys come from a, no, no, it's a, it's a bunch of nodes, which identify.
+
+And I think there is a happy medium, but you've got to really, it's not by accident, right? You've got to think about it that way. And I think it's, it's added a lot of value.
+
+Anyway, the other thing I should mention is that I haven't yet done enough mapping to schema.org and GS1 vocabulary and so on and so forth. And there's a little bit of a reason for that. I mean, I don't know why they're, whether it's by luck or judgment or error or whatever, but I thought, ah, okay, I've got these models, right.
+
+And now it's time to map to an external vocabulary like you and like, sorry, schema.org. For whatever reason, I don't know why I picked address as the first one to map to schema.org. Cause you think, okay, that's a, and for the first property I chose to map was country.
+
+I just picked on it. I don't know why. And when you look at schema.org country, it's actually a subclass of administrative region. And that in turn is a subclass of place. And schema.org has designed place to have all the properties that you might want with a Google pin. Things like, is there a drive-in, drive-through service?
+
+You know, what are the opening hours? So you end up with the class country having things like, what are the opening hours and have a drive-through service.
+
+[Speaker 3]
+Which is silly. Yeah.
+
+[Speaker 1]
+Which is silly. So I thought, oh, okay, I'll come back to this.
+
+[Speaker 3]
+So those, those, those mappings, where you get something as clearly silly as that, don't do a one-to-one mapping, use a narrower, broader, a scholarship relationship or something like that.
+
+[Speaker 1]
+Yeah, that's right. But you, I mean, what was interesting and, and GS1 as well, I think my observation of that vocabulary is it's much better engineered, but you do find things that I'm not saying that just because you're on the call, Bill, but, but it wasn't me.
+
+[Speaker 3]
+It was Mark. So not me.
+
+[Speaker 1]
+Okay. But, but you know, you, you, you, I thought, well, what, again, whatever reason I picked serial number is the first thing to map to the GS1 vocabulary. And you look at the GS1 vocabulary, you find a property serial number and it says it's in the product, the product class.
+
+Then you look at the property product class and you can't find serial number. And I was like, well, all right, I'll tell you what I'm going to do. I'm just going to leave it all as local mapping, and we'll come back to the challenge of mapping all this to external vocabularies later.
+
+So that's where we're at. I just wanted to, just in case people look at all these context files and go, why haven't you mapped to schema.org and GS1? We will, but somehow we've got to, I don't know, figure out how to do that right.
+
+[Speaker 2]
+Because how, how, how have you been doing the mapping then just a, an ad vocab that points to UNCP?
+
+[Speaker 1]
+I don't know. So every, so, so for, are they all listed? Yeah.
+
+So let's look at, sorry, let's go to test. So what we've done is created for, for example, the core vocabulary, a, an actual JSON-LD graph, exactly the same stuff that we did before NIST for.
+
+[Speaker 2]
+I'm just curious what, what terms you're using.
+
+[Speaker 1]
+So I'm using terms that come from UN. So in other words, it's its own vocab, it maps to itself. So UNCP core is published here as a bunch of classes, right?
+
+Like address, attestation, binary file, characteristic, credential issuer, criteria.
+
+[Speaker 2]
+You would have country defined under UNCP. Is that it?
+
+[Speaker 1]
+Yes. And I use the, the one that we created before, right? So a lot of the code lists map to existing not UNTP, but UN vocabulary code lists, right?
+
+This is still in the test domain, but if we go to.
+
+[Speaker 2]
+Actually, I just shared the vocabulary country. That's an alternative to schema.org country.
+
+[Speaker 1]
+Yeah. So, so this one, I basically use that one, right?
+
+[Speaker 4]
+So after working in the, after working in the postal industry for almost 20, for 20 plus years, it's schema.org. If you look at postal address and then, you know, versus address since usually postal address is the one where a lot of the standards come from. And they also refer in country to an ISO 3166-1 alpha two character country code.
+
+Yeah. But address country.
+
+[Speaker 1]
+3166-1 is actually not published as a, as a web browsable, a web anchorable.
+
+[Speaker 4]
+It's the usual, the usual ISO thing. You got to buy it then, right?
+
+[Speaker 1]
+Not just buy it, but even if you buy it, it's a PDF, right? So what did URI that you point to, to say, I mean, Andorra, right? So I use the UNCFAC low-code version of it, right?
+
+Which it uses ISO 3166 as the root of low codes.
+
+[Speaker 3]
+Yeah.
+
+[Speaker 1]
+Okay.
+
+[Speaker 3]
+So that exists. That's good to know. It's Wikipedia because that works as well.
+
+[Speaker 1]
+Yeah. So I've tried to anchor everything to, everything is anchored to a vocabulary. It's just that most of the vocabulary elements to the moment are UNCFAC ones as opposed to schema.org or GDS one ones. And I think the next stage of activity is to, to change that, right? But actually it doesn't change the data model. That's not, that's a nice thing about JSON-LD context, right?
+
+It doesn't change your digital product possible model. It just changes how you map the properties. And so I felt like it's good enough now.
+
+And then we can collectively go, how do we deal with, you know, schema.org country and this sort of stuff. And all that's going to change is not so much the, you know, the picture of the, let me find it, you know, it won't change that, right? It's just going to change what those terms point to.
+
+[Speaker 3]
+Just a quick comment. I mean, because I'm one of the people pushing you to mention schema.org. No one's thinks you should change the model to match.
+
+I suppose it's just a, where it makes sense, where you can make a relationship, whether it's a one-to-one or broader, narrower, or whatever it may be. It is helpful, I think to make those connections with what is the most massively used vocabulary on the planet, but don't, but don't say, oh, I now have to change my model because Dan Brickley did this five years ago. That by the way, person is also a sub class of place.
+
+I think in Danbury's mind.
+
+[Speaker 8]
+Okay.
+
+[Speaker 3]
+Because the person occupies a physical location, therefore a person's a subclass of space. There are some absurd things in there.
+
+[Speaker 1]
+There are, there are, but there's some good stuff as well. Right? So use the good stuff.
+
+Don't use the absurd stuff. And yeah, but the nice thing about the way we're approaching this and it's informed a little bit by this is work with trace vocab is, is to completely separate the structure of the message or the credential that you're creating for a particular business purpose from the links to the vocabulary items that describe the meaning of a property. Right?
+
+Yeah. So CFACT historically has tied those two really tightly together, right? You have this kind of core component library.
+
+There's a massive structural model. And when you want to create a message, it has to be a structural subset. It's like taking a giant thing and then picking pixels and you get this weird structure that doesn't really bear a relationship to your intent.
+
+That'd be because that's the historical method. And what we're doing here I think is much better because we say, no, this is what we need to communicate. And this quite separate structure is what it means.
+
+And I really liked that approach. Right. And, all I'm saying is it didn't turn out to be quite as easy as I thought to find a really quality thing that I could point to that described its means.
+
+[Speaker 2]
+So that is the major learning that you only, like you learn that through hard earned experience. The reason I've also, I've changed my approach from signing the graph that comes out of this to, no, you got to sign this message, the business message, because every time you go and do any of these tweaks that we just completely glossed over and said, we'll, we'll find proper terms for all this stuff later. Every time you do, you break the signature of your verifiable credential.
+
+That's going to go on for, I mean, it's very hard to get all those terms right.
+
+[Speaker 1]
+Yeah. That's why.
+
+[Speaker 2]
+I'm looking through the list here, there are hundreds of terms.
+
+[Speaker 1]
+I think that's why we decided to, in a previous conversation, right? To really attach the version of the context file to the message so that it, you don't, you, if we issue a credential now, right, it's going to point to this UNDPP vocabulary version 036. It means that if you change that vocabulary later and you have a different context file, it won't break the credential that you've issued historically, only versioned it.
+
+And I think that's important, right? Because of all those lessons you had before of, of, if you have these two things too far apart, then you change a context file and it's something that you break credentials that you issued before. Right.
+
+So back to this, you know, if you remember this diagram.
+
+[Speaker 2]
+I see. That's okay. Good.
+
+Very good. Yeah.
+
+[Speaker 1]
+This diagram says.
+
+[Speaker 2]
+Completely with you. So, so there will be a, like, we'll never delete a context file.
+
+[Speaker 1]
+We'll never delete a context file, never delete a vocabulary. They're all just version history. And, and the version of the context file is close to the version of the credential that you're gathering.
+
+Whereas the version of the related vocabulary is completely decoupled. Right? So, so here are this diagram saying, if we issue a digital product passport version 1.1, it's, it's using a context file and a schema that's closely linked to that. That's the bundle you version together. It can point to any number of external vocabulary. A version 1.2 might make far more use of schema.org than version 1.2. Right.
+
+[Speaker 2]
+Right. Right. Yeah.
+
+No, it's, it's very, I totally get it. It's very early. Yeah.
+
+Nice. Thank you for explaining that. That's a, that's a step beyond what we did at trace vocab for sure.
+
+[Speaker 1]
+Yeah. And that's why I'm trying to make all these vocabularies anchored. Yes.
+
+So at the moment it's on test, but these will all move to vocabulary.uncvac.org and the, there'll always be a latest version, but you can always click on and see the previous versions and anchor to any of the previous versions. Right. So we're tight version control.
+
+[Speaker 2]
+It's almost, it's almost like including the context within the file itself, which is also an option.
+
+[Speaker 1]
+Well, in fact, I took your advice on that as well. Right. So you see in the digital, where is it?
+
+Oh, sorry. That's the wrong. That's not deployed yet.
+
+And this is the, where did I, this is the local, local copy. Here we go. Digital product passport example, has context baked in because the schema demands it.
+
+[Speaker 2]
+Yeah. Yes. That, that was, that was the whole demo I did was, was about that and controlling it in the schema to say only these contexts are allowed in here.
+
+[Speaker 6]
+Certainly.
+
+[Speaker 2]
+So that also enforces, that's also part of forcing the shape of the graph that comes out the other end with the schema.
+
+[Speaker 1]
+Yes. Yeah. And so you don't push the implementer to have to know about JSON, LDN, RDF and all that.
+
+They just follow the schema and it will have a context file and it will have the right types because the schema forces you to have it. And yeah, so this is back to that kind of, how do you make it easy for implementers, but how do you make it valuable for verifiers? Cause there are two different mindsets, right?
+
+One is implementing a issuing a transaction. The other one is trying to consume a fire hose of credentials and build a graph. And these are two, just two different worlds.
+
+And yeah, well, I think we've, we've learned a lot from the less previous lessons and hopefully got it nearly right. Anyway. So, so back to that pull request.
+
+It closes a bunch of issues, which are mostly the ones about either bug fixes or your, your, your context file is wrong, or you should separate schema, scheme ID from entity ID and so on. We can go through all these issues or, and I'll go back to my, I think Zach said to, he's reviewed it and approved it and complained that it's too big a PR and too much to review it too much too late time. So I'll be guided by you guys.
+
+Do you want me to break this up? Or do you want to just merge this or what do you want me to do? And I promise not to make such a big one again.
+
+[Speaker 3]
+I know it is a lot of changes, but they're consistent with each other and all come from the same trigger. So as far as I'm concerned, yes, it has tentacles in lots of places, but that's one thing. And it's always easier to review the output.
+
+[Speaker 2]
+It's got meeting minutes from last week. Also meaningful in there. It's not all related.
+
+[Speaker 3]
+Okay. Right. Fair enough.
+
+Right.
+
+[Speaker 1]
+I worked in one, I'll be honest. What happened was I did a lot of modeling, in another tool. And then I thought, Oh shit, I've got a meeting this afternoon.
+
+I'm going to do a lot of updates and it included the meeting minutes and it all did it in my local branch. And then I did pull requests against local branch that had a lot of stuff in it. And I just had to get better practice about separating these things, but it is what it is.
+
+And, and.
+
+[Speaker 2]
+And we're not, it's not like we're colliding with anything else.
+
+[Speaker 1]
+No, and we're not yet in production, but we're, we're, we're, we really have to be careful about versions, but it's all this iteration of lessons to get to a thing that, it's really about also about, I think, iterating over what's the right way to do this. And I think this, the granularity of versioning, I'm getting increasingly happy with it. And for a little while, I was a great JSON-LD skeptic.
+
+I thought this is a fucking waste of time, but actually I'm coming back to it now and realizing that if you use it right, it actually works or could work, you know, maybe.
+
+[Speaker 5]
+The big, big conditional there is if you use it right. Right. And that's the hard part.
+
+[Speaker 1]
+Yeah. And I think, you know, we learned from previous lessons, right. And this is experiments with trace vocab.
+
+We're a great learning curve. And I think we built on top of that and, you know, found that way to make it easy for implementers, but also valuable for verifiers. And that's, that's, that's the, anyway, can I click merge pull request or does anyone have any objections?
+
+[Speaker 2]
+Go for it. I have one more question is the, we talked about context versioning. I don't see in the samples, I don't see any versions on the, on the UNCP context.
+
+Wouldn't that be where you, like where to find it? Yeah. Let me have a look.
+
+It seems like this one, you mean, for example, that's no, I'm looking at the samples in the samples folder.
+
+[Speaker 1]
+They're not committed, but you're looking at, this is previous to this commit.
+
+[Speaker 2]
+It's on the pull request. Oh, on the pull request. I can share my screen if you want.
+
+[Speaker 1]
+Yeah. Okay.
+
+[Speaker 2]
+So these here, this is where I would.
+
+[Speaker 8]
+Are you sharing your screen?
+
+[Speaker 2]
+Yeah. Oh, do I need to, yeah, I'm sharing. Don't you see it?
+
+[Speaker 8]
+Yes we do.
+
+[Speaker 2]
+Okay. So this, and you have it, it's the same on all of them.
+
+[Speaker 1]
+I don't know. It might be the three rounds, but I'm looking at this is face not his screen. I don't know how to fix that.
+
+[Speaker 3]
+We're seeing it's a screen.
+
+[Speaker 2]
+Okay. Yeah.
+
+[Speaker 3]
+But those URIs do have versions that the ones that were on the screen just now have version numbers in digital facility record B 0.3.0. Okay.
+
+[Speaker 2]
+I thought it would be the context file. That's how I understood it.
+
+[Speaker 1]
+I see what you're looking at. Let me have a look. Maybe it's not populating it correctly.
+
+So you're looking at the instance. Are you? And what?
+
+I'm looking at the sample. Yes. Yeah.
+
+You're right. The sample says test.unc4ac.org vocabulary, UNTP, DPP without a version.
+
+[Speaker 2]
+Yes.
+
+[Speaker 1]
+Yes.
+
+[Speaker 2]
+And, and this is, as I understood it, this would be finally versioned every time. Any update would be incrementing.
+
+[Speaker 1]
+Yes. So that's a bug in the thank you in the, cause the context file, there is a versioned context file, but what you pointed out is that the sample instance doesn't point to the version. It points to the unversioned one.
+
+[Speaker 2]
+Oh yeah. Yeah. So it would be, it would be one of these ones.
+
+Yeah, that's right.
+
+[Speaker 1]
+Yeah. So yeah.
+
+[Speaker 2]
+If you don't make it explicit, then, then you lose that whole argument we're just talking about.
+
+[Speaker 1]
+You do.
+
+[Speaker 2]
+It could be just taking the latest, but then you break the proofs.
+
+[Speaker 1]
+I'll either raise a ticket or I'll try to remember after three rums and fix it.
+
+[Speaker 8]
+Yeah. Let's raise a ticket.
+
+[Speaker 1]
+Anyway. So I have merged that because I didn't hear enough objections and I promise to try to be more granular next time. Michael, since you're on the call, do you want to give an update on the business case stuff?
+
+[Speaker 4]
+Sure. We had a call yesterday afternoon, European time, late Australian and morning, Toronto. So the first one that we got together, Peter had contributed a very good document around taking the sort of two dimensions or creating a table around the elements that are in the business case page on business case page as well, as well as stakeholders.
+
+So we've starting to refine it. We're starting to look at each of the pages and, and work at it. So really just the first week at it.
+
+I think that everybody is engaged, contributing and we're hoping that really, so we're aiming for the timeline that you suggested, Steve, what middle of September for having something that's not complete, but shareable to the, you know, I think what's your, your objective there? Shareable more widely. We're working in Google docs right now versus putting it into GitHub.
+
+I think just because the collective is more familiar with a Google doc than merging it into GitHub.
+
+[Speaker 1]
+It was quite a big file that came from Peter, right? Which he admitted had a little bit of GPT in it, but it still seemed reasonably good content. Yeah.
+
+[Speaker 4]
+One of the things that was really good was, was sort of the structure sort of the, for each of the stakeholder roles, come up with a sort of standardized structure of, of framing the, the value, value points, level of investment, level investment, level of engagement or amount of interest that the stakeholder has within.
+
+[Speaker 1]
+Those tables seem to be a kind of a heat map with, on one dimension it was stakeholder role, you know, like are you an operator or a buyer or supplier, whatever. And on the other dimension, it was the business value proposition. Yes, that's it.
+
+Tried to kind of give a heat map of what matters to who, which I thought was quite an interesting way to represent it with high media.
+
+[Speaker 4]
+In the conversation we had yesterday, there was, and Zach, if there's anything that I'm, you know, misremembering, I'm just, you know, please feel free to chime in as well. That and Anne, because Anne was on, the two of them were also on the call. We're going to take the stakeholder roles.
+
+There was a lot, I think there's like 12 or 14 stakeholder roles currently in that document and might be a little overwhelming. So we're going to break it into sort of a primary secondary.
+
+[Speaker 1]
+Feel free to merge some of them if you think we don't need them. Right. Or if it's important.
+
+So yeah, feel empowered. Right.
+
+[Speaker 4]
+Absolutely. Yeah. Yeah.
+
+I think that everyone liked the thought the roles were good, but it might be if you, if someone was coming to look at this for the first time, it might overwhelm them. So, you know, we're, we're looking at that in the same on the business value to somehow make that the table more consumable on a first, a first blush, so to speak.
+
+[Speaker 1]
+Okay. So one other question I got for the group is that there are some pages which currently empty, which are the implementer implementation list, if you like, the organizations who are committing to implement and then when they've done tests have implemented. And I'm wondering whether it's possibly time to start to put an empty table there and solicit commitments to, I know there's probably half a dozen organizations here in Australia that would put their logo to an intent to say, yes, we will issue our software, we'll issue, you know, UNTP compliant DPPs and the like.
+
+Do you think it's too early to put that up? And do you, or do you think there's sort of, it's not a final spec yet. It's not a 1.0, right?
+
+So whoever puts their logo up is, is probably going to expect some changes between now and Christmas. But if we're aiming for what stable 1.0 and by Christmas, do we want to wait until then before we say who's interested to announce some commitment or do we want to start asking for commitment? I mean, it's not a contract lock in stone, right?
+
+It's more like we think this is a good idea and we we'll put our logo against some kind of expectation to implement. What's the right time?
+
+[Speaker 3]
+The more you have the better. Those commitments are good. If it's half a dozen Australians, that's great, but they need to be people from elsewhere as well.
+
+GS1 cannot commit because we don't issue DPPs. So I don't know if we can do that. And the timeline before Christmas, it would be hard to make any commitment with the GS1 logo on it.
+
+So I think, so yeah, put the six Australians. Great. But we need more.
+
+[Speaker 1]
+There's Canadians and others I know as well. And I don't know whether Transmute phone is where my door, but it's getting close to the time where we start to say, look, there's evidence of interest because this goes to confidence to implement. Right.
+
+Yeah. And I don't know what the right time to do this is because it's still an unstable spec, right? But with the right words, is it time to start putting logos and commitments or not?
+
+[Speaker 3]
+In my view, it's never too soon.
+
+[Speaker 1]
+Okay.
+
+[Speaker 3]
+I mean, in lots of standards chartering, you have those intents before the group starts.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 3]
+So you're actually working on it.
+
+[Speaker 1]
+The likes of Responsible Business Alliance, Global Battery Alliance, and an interesting chat, I think it was a couple of days ago where, you know, the Global Battery Alliance is sticking very clearly to defining rule books and steering very clearly away from defining technical standards or interoperability or anything like that. So they're quite welcoming of the idea that we take a rule book and we say, here's how you would issue a Global Battery Alliance, digital product passport as a UNTP, DPP, conforming with the rule book. And I had another chat with UN Environment Program who were doing a global DPP blueprint.
+
+They're also steering away from the technology stuff and keen to point to DPP as the recommended technology implementations. I'm getting some confidence, you know, that there's quite significant entities that are at least interesting. It's a big difference between saying, Oh, that looks interesting.
+
+And then saying, Oh yes, we'll put your logo on the side. But maybe it's the time to test it. And I'm quite interested to do that.
+
+Any thoughts? I mean, you've made your thoughts clear, Phil. Anybody else got any suggestions about is it the right time now to start?
+
+[Speaker 4]
+I think it's the right time to start socializing it that way, that there are people outside this group. I mean, it also validates that there's actual buy-in, right?
+
+[Speaker 7]
+Yeah, I concur. I think it is the right time to where we are mature enough to go for socializing. That's a good time.
+
+[Speaker 5]
+And I'll just share with the group as well. Even when we're working with early implementers who are new to the protocol, as they get their heads around what we're doing, the overwhelming response is this is amazing. This will be game changing for our business.
+
+We're definitely going right. Even with all of the warts and all the challenges, like I've been on a number of calls today where a project is a little bit sideways. And every single implementer who's struggled and not hit the dates they're trying to hit are saying, but we know this is the future.
+
+And we're really excited. So it's been an interesting validation of the core and the value of the work. Of course, these are Australian firms.
+
+So it's part of that half dozen Steve's talking about, but it is a little bit of a validation of the approach.
+
+[Speaker 6]
+Guys also from my side, a kind of similar soft feedback I received. Because I mentioned this exercise on the European blockchain sandbox initiative, which we are participating in. I mentioned we are working as a team on this UNTP.
+
+And this was one of the key things that picked up their attention. So in the current moment, they want us to explain more. And probably this will be brought to the tables of the three meetings with the EU regulators we are going to talk to.
+
+So yeah, similar to Zach mentioned, it was a good stop to buy in for now. I will learn more when I understand what they really want to understand. And then this may translate into some of the use case we can mention, Steve.
+
+[Speaker 1]
+Okay. Well, then I'll prepare a kind of template and solicit interest and we'll start week by week building a bigger library of interested parties. Thank you.
+
+We're only seven minutes away from the end. Do we want to go through open issues? Or has anybody got any thing they want to bring up?
+
+[Speaker 4]
+Have we ever got through one in seven minutes?
+
+[Speaker 1]
+We could. We closed about ten of them. But the party that opened them, I don't know, may object to, they can always reopen it.
+
+But let's have a look.
+
+[Speaker 5]
+I think let's leave it here, Steve. Like I think we all have busy days and times like trying to, I think, unless other people have opinions.
+
+[Speaker 1]
+Some of the open tickets are not to do with the technology, right? Things like the business case stuff that is, I'll go through all the tickets and see what else is left to close. But we're keeping, we're generally declining the balance, which is a good thing.
+
+I'm feeling like for me anyway, I'm at. For today.
+
+[Speaker 3]
+The rum is kicking in.
+
+[Speaker 1]
+Everyone's happy. We might call it a day here and thank you for your input and supporting my overly clunky PR. And thanks to the ticket NIS, I just saw that.
+
+We'll fix it. And yeah, the other last comment I'll make is that I had a little moment this week when I was writing the content for this PR and stuff that I suddenly felt like the distance to the light at the end of the tunnel was a little bit less than the distance when I look back at the light at the beginning of the tunnel. It just felt like across the halfway mark.
+
+And I don't know what we have, but I felt like that, which made me feel good up to now. It's overwhelming. And I feel like we're making real progress.
+
+[Speaker 7]
+Yeah. Thanks. Thank you, Steve, for your leadership and organization for all of that.
+
+Thank you.
+
+[Speaker 1]
+See you next week. Thanks, Steve.

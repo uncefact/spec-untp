@@ -1,0 +1,408 @@
+[Speaker 1]
+You got it. Cool. Cool.
+
+All right. You gonna stick around? You gonna hang out?
+
+[Speaker 2]
+Or you gonna hang out and listen?
+
+[Speaker 1]
+Cool. All right. I'm gonna let a bunch of people in.
+
+Cool.
+
+[Speaker 2]
+Over to you. Thanks, Zach.
+
+[Speaker 1]
+All right. Thanks. Hello, everyone.
+
+I'm trying to disable the waiting room so people can just come in, but it's not letting me. Oh, well. Steve is on a flight, so I'll be master of ceremony-ing today.
+
+We'll give it a few minutes as folks join. We have a few poll requests to talk through and some stale issues to get assigned and get moving. So just give it a few minutes.
+
+Oh, thanks. Hi, Virginia. Hi, Gerhardt.
+
+For those who have just recently joined, I'm going to give it a few minutes. Steve is on a plane, so I'm going to be master of ceremony-ing today. But we'll give it about two more minutes, and then we'll get started.
+
+Hi, Nancy. Hello. Hi, Nancy.
+
+Feels like we have a quorum. I don't see more people adding the chat, so I do want to get started. I want to make sure we respect everybody's time.
+
+I do want to give a shout-out for the pretty significant Australian contingent here. This is a public holiday in Australia, so I appreciate everybody participating early today. And so we're going to go through, as I mentioned at the top, just in case anybody's joined since then, Steve is on a plane as we speak.
+
+He's heading to China, really, to try and coordinate some supply chain pilot projects in the battery and critical mineral manufacturing process. So fingers crossed on that sort of journey he's on at the minute. And we're going to go through sort of our normal agenda, going through open pull requests, opening and just going through the process of merging them, and then going through most stale open issues and trying to get them assigned, get them moving, and holding each other to account.
+
+The real focus from my perspective today is to get a bunch of those older tickets assigned to folks and really trying to facilitate the broader collaboration around the group. So just really want to start helping build that collaboration and build sort of the muscle of the team to help drive things forward. So that's really what we'll be focusing on as we go through the issues.
+
+I'm going to encourage folks to take discussions offline or into the Slack channels or into the tickets, and only if there's something that becomes pretty sort of mission critical will I sort of try and allocate large amounts of time, because we do need to start getting through a pretty significant body of work in the coming weeks. Is there any comments or questions about that from anybody on the call? I do need to go through the preamble that Steve has done, typically, just to keep everybody aware of the process here.
+
+I am recording this session. We will be publishing this session as part of the minutes of this meeting. Participation in UN work is voluntary and open, so anything you say or contribute to this process becomes part of the UN IP.
+
+And so there are commercial considerations. Please don't bring them forward into this discussion. You're more than welcome to discuss it, but we will need to make sure that we keep the output of this discussion completely open and transparent to everybody.
+
+Any questions or comments about that? All right. I'm going to share my screen.
+
+We do have a few poll requests today. There's three of them. I was hoping there was going to be another bigger one from Steve before he got on the plane, but apparently that didn't get completed, so we won't be merging that one.
+
+So let's start with the poll requests. The first one was a pretty big update to the traceability event. There's more people coming in.
+
+Can people see my screen okay? Yes, yes, we can. Okay, great.
+
+And if people do raise their hands, if somebody could help me by shouting out, I won't be paying much attention to the faces or views because I've got the GitHub elements in front of me, so if there's comments or stuff that I'm missing, just sing out, and I'll sort of recognize that from that conversation. So Steve did a pretty significant refactor to the traceability events schema. So this is one of the three major schemas of the UN transparency protocol, and this is the one that gives the ability to track linked credentials through a trust graph.
+
+And so he's updated that. It's been reviewed by Nis. Let's take a look at the changes just to have a look at what he's done.
+
+So just to give people a sense of kind of how I look at this when I'm having this conversation, is I don't want to review encodes. Oops. That's not what I wanted to do.
+
+This is a different view from the last one that I looked at. Give me a second. So just so that people can view offline if they're doing this themselves, I just want to go through that quickly because I picked the wrong thing.
+
+It can be a little bit confusing. So I clicked the view reviewed changes because that's the final sort of submission. And by clicking that, I can then look at the different changes.
+
+I'm going to load the diff so I can see how it's different. But really what I want to see is the rich difference. So that's a little bit more of a sort of a familiar view for those of us who have used a lot of Word track changes type capability.
+
+So this is a good way to see what's changed from the current version in the online view, and we can get a sense. So basically the big update is this picture. And so this is the underlying schema for the traceability events.
+
+And chatting with Steve about this in advance, what he said is he's done more to align it more closely with the GS1 EPSIS standard, even though this is a standalone sort of version of that. And so if we scroll down, this picture sort of describes what's up here in a little bit more of a user friendly format. And sort of gives a sense of what we're trying to cover in the traceability event details.
+
+And I'll just scroll through this so that folks can see what's here. I'm not expecting everybody to read all of this at this point. But I just want to we should be trying to do the reviews in advance of the meeting.
+
+But this is a pretty big change at a pretty detailed technical level. So if you're interested, what I would suggest is that we approve this pull request. We get it published to the site.
+
+And then if you have any comments, we create new issues and refactor and go for a basis. Gerhard, I see you put your hand up. Yes, I just wanted to mention that the JSON export of the buy, ship, pay reference data model of UNC Effect contains the so-called events of EPSIS already.
+
+And they also have the elements that were already missing or were missing as reported. They have them already in them. The only thing that is new compared to that part in the library compared to the 3.0 of EPCIS is the sensor entities. So what I want to do is to check this library of UN with the proposed data model, what is now on the screen. Is that OK? Absolutely.
+
+So what I'd suggest we do for that, Gerhard, is we create an issue for that comparison. And then we can discuss that analysis that you do in that issue. And as that issue becomes mature and we come to agreement, then we help you create a pull request that then gets incorporated in this.
+
+Does that make sense? Yes. The reason for this is that this traceability events, EPCIS-based traceability events, are already in use or created for animal track and trace in the agricultural domain as well as for textiles.
+
+And this is just the JSON variant, but it still should be aligned to what we already did. So that was my remark. So if I were to label this issue, it would be explore the buy ship pay model?
+
+Yes. Events, let's say traceability events, with those put now here in the model. And see if, as Steve said once, I made a profile of the EPCIS and this profile was remarked as being too short in what has been selected.
+
+So from what UN project, what UN sort of ecosystem was that from that you mentioned? Animal track and trace. It is used and it is used in textiles traceability.
+
+Against the current EPCIS. EPCIS for animal track and trace and textile, animal and textile track and trace. So they're used in animal track and trace and textile and leather.
+
+Yeah. Garrett, can I assign this to you? Yeah, yeah, it's okay.
+
+It looks like we don't have you in GitHub at this point. Yes, I am in GitHub. It is Gerhard.
+
+So we might need to get you added. Let me take that offline. Can you just ping me in Slack your GitHub user identity?
+
+And I'll get this. Yeah, but it's Gerhard H and L. Is it somewhere?
+
+It's not here. So, and I don't want to take time kind of trying to get on with GitHub. Can you just ping me your Slack, your GitHub identity in Slack and I can get you a side of this.
+
+So I'll submit that new issue and we'll go from there. Yeah, yeah, that's okay. So back to this pull requests.
+
+Any other comments or issues? Otherwise, I'm going to merge it and it will become part of the public site. There we go.
+
+No objections. We're going to go for merge. That's done.
+
+Back to the pull request. I think we might run into problems here, but let's give it a go. Because this was my pull request.
+
+It's been approved by Nice, I think. And then we'll see how that goes. So view the review changes.
+
+Basically, there was a conversation on Slack about the collaboration process. And basically, it's this Git pull merge process that we're going through right now. I just put this in a governance section so that we have this detail.
+
+It's going to go into over time as we enhance the governance section. This will kind of be a sub sub page, kind of deep in the guts of it. But it just describes how we're currently working.
+
+And it just grabbed the conversation that Nice published in Slack. And I thought we should put it somewhere a little bit more permanent. Comments or objections?
+
+All right. I'm going to merge this pull request. All right.
+
+Removing an out of place header. So this one I actually think is a little bit more controversial. And it's Nice isn't here.
+
+But I kind of want to talk about what I did to sort of move this forward. So basically, if we look, view the review changes. Nice sort of in his comment said, verifiability doesn't make sense for identifiers.
+
+Now, I'm not sure that's entirely true. And, in fact, I think we should have a conversation about this. And while Nice does a good job of encouraging the rest of us to create issues when we think something should be done, he seems to have missed that step in this case.
+
+So what I did is in my room, so I did a review of this. And I've approved these changes because one of the things we don't want to have is pull requests open for a long time because that creates potential conflicts and conflicts are harder to manage. I created, I'm trying to think.
+
+Oh, yeah, there we go. My mouse has lost its plot. But I created a new ticket.
+
+I created a new ticket, which is to review the verifiability of identifiers, because I think we should talk about if we want to verify identifiers. But I think this is a pretty innocuous change, right? Removing a header is pretty simple.
+
+So I created a new conversation. I signed it to me because actually I'm pretty excited about exploring some identifier issues. And if we do want this back, it'll come back as part of that new ticket that I created, number 75.
+
+Any comments or questions about that? So what does this pull request do? Yeah, basically, Nice's opinion is that verifying an identifier doesn't make sense.
+
+So he's removing an empty header. So the change is trivial, which is part of the reason why it's basically removed this header. It's just markdown.
+
+What? It's just markdown. That's what I'll clarify.
+
+It's not anything else. I'm not so sure it's so untrivial because I think identifiers in many cases do need to be verified. I mean, it's important, for example, to when someone is making a declaration to ensure that they are who they say they are.
+
+Yeah, Virginia, I apologize. I agree. The conceptual thing here underlying this is absolutely not trivial, which is why I created the additional issue.
+
+The change of adding a header and putting it back is the technical aspect of this changes is what I was describing as trivial. I agree with you. The verification of identity is an important part.
+
+The question is, does it belong here or maybe somewhere else? And so I could. So there's two options here.
+
+There's kind of a in terms of our collaboration, a fast forward option where we kind of keep like we can reject changes. Right. But that's a more complex process and create sort of potential.
+
+Our sort of way of working is. Sort of commit forward and then keep updating using the issues and discussion process that I described. So if we go back, the way I did that is I approved but added a ticket to have a more detailed discussion about the topic.
+
+And in that ticket. Well, it seems like here you're proposing a change without having a discussion about the issue first. So I would say this doesn't reflect that process.
+
+And I would raise the question if we think verifying an identifier is important, where else would it live besides the verifying identifier section? So we want to potentially reject this change because we haven't followed process. I'm OK with that.
+
+I don't know how to do that. But Joe, go ahead. Yeah, I think you're right.
+
+I think I think we're probably best off leaving it as it is until we have the discussion. I think the challenge here is that we're talking about verifying and identify is in effect particularly useful because all you're doing is identifying. It's an identifier.
+
+The question is whether, in fact, it's actually attributed or bound to an object. And that that is the process that needs to be needs to be considered as well. So I think that might be the distinction that that needs is trying to trying to trying to make it.
+
+Yeah. And but I think I think the the I agree. And I think what's important here is we need to have this conversation.
+
+We need to go into quite some depth here. And I think the important thing I think that the team highlighted to me is we probably shouldn't have accepted this request because we didn't have the issue discussing it. And so I will figure out how to.
+
+So agreement. Actually, you have your hand up. So it is about the technical verification of an identifier.
+
+For example, if the the setup of the identifier is correct, is that what is meant here or what is meant by Virginia? If the identifier really belongs to the one who says it's my identifier, that's that's not clear from this discussion to me. Yeah.
+
+So I think that's the point. I think that's not clear. And that's why we create tickets to have the discussion.
+
+And so the sort of point of order that I think I'm getting consensus around is the correct process. We haven't had the discussion, so we shouldn't merge it and we should just build that build that muscle, build that operational model and take that forward. So I will figure out how to send this patch back to Nice.
+
+I've already created the issue for him. Then we can have the discussion in the issue and have a poll request, a more robust documentation of what this is, what it means and how how it then applies to the broader UNTP ecosystem. Yeah, great.
+
+Patrick? I just want to point out that this about discussing issues can be a problem just because of the current layout of the meetings, right? Like every week it alternates between different parts of the world for like I'm not able to attend the other meetings.
+
+So this is just something that could create issues if we want to address, you know, these topics in a meeting. But otherwise, I think writing on GitHub issues shouldn't be a problem. Yeah.
+
+So the intent and what we're trying to build the process towards is the discussions are occurring in the issues asynchronously. Consensus is reached in the issue and a pull request emerges from that consensus in the issue. And then just this is the final kind of ceremony of committing that in public, right?
+
+Like that's kind of what's intended as part of this process. We're not there. That maturity isn't there as we kind of articulated as we went through this issue.
+
+But that's what we're trying to get to. And actually, the funny thing is Nice is the one who's doing the most work to help us get there. And he went around his own process in this case.
+
+And so I'm sure he'll resolve it pretty quickly. So let me just quickly put this comment in. It was reached that this didn't have an issue prior to the PR.
+
+Issue 75 has been added to have the conversation. Now, I'm going to have to figure out how to get it out of the approved cycle, but I'll do that offline. All right.
+
+Thank you, everybody. That was really productive. And we're going to move on to the issues.
+
+Unless anybody has any other comments about that process or wants to add anything before we move on in terms of context or discussion. All right. Yeah.
+
+So we're going to sort by least recently updated. So adding page listing referenced standards. I think this is kind of a hygiene one.
+
+I think we'll leave that alone for the minute. And Nice, when he's back next week, I'm sure he'll kind of ‑‑ I'll send Nice a message in Slack just saying hey. His name came up a couple of times, and we'll help him sort of get that.
+
+Digital product passport sample file. I actually ‑‑ let's see here. I'll assign myself, and I will get one from our ag pilot and publish it.
+
+So I'll take that on, and we'll see that by next week. Well, it seems like the issue is that it's using the wrong status list type. Oh.
+
+So he's commenting on the digital product passport file. Sorry. Thanks, Patrick.
+
+I think it's just on the URL of the API VCI kit, credential status, it says revocation list 2020 when it's actually a bit string status list index. To me, this is ‑‑ yeah, it's a bit misleading, but it's not wrong. So it's in the actual URL I think he's referring to of the revocation list credential.
+
+But the good news is we have updated the thing that Steve mentions here. These updates have been done. So I might edit this comment.
+
+And validate current issuing. Yeah. Is correct.
+
+Okay. Should we close the issue? Well, I think we want to make sure we publish something that is updated, right?
+
+So I want to update ‑‑ I want to get a credential, do a pull request that has the cleaned up thing, and then close the issue. Yeah. That sounds good.
+
+Because I don't want it to come back another time. Cool. UNTP extensions methodology.
+
+Let's see. This one, probably going to do it anyway. So this is a big part of what we're describing in governance.
+
+And Steve and I are spending a fair amount of time going through that process as we sort of collaborate in downstream pilot projects of UNTP. And so there's a fair amount of work occurring in this process. So we need to sort of take the governance that we're doing, we need to outline this and bring it back.
+
+So I'll assign myself to this. Unless anybody wants to collaborate on this with us? Yeah.
+
+Like for me, I can say it's still not clear exactly what an extension would look like. So I'd be interested in following the updates as they are made. So one of the things that's interesting about this process from my perspective is it's actually the test architecture.
+
+So it's the governance and the testing that kind of go hand in hand that makes the extension process work. And we need to articulate that. And we're getting pretty close to the point where that's going to be out of incubation.
+
+So I'm hopeful. I'll assign myself for now because it's something I'm spending a lot of time on anyway. Yeah, I'd be interested in that because in the BC Government case, we're doing a very specifically on mines, right?
+
+So the mine sector would be an extension of this. But while drafting this pilot, I'm not too sure exactly what I need to add from the core specification. Or maybe that is actually a good use case to define what would need to be added.
+
+Like what kind of change are you expecting people to add there? I guess there's a few things here with vocabulary and schema and so on. But yeah.
+
+Yeah, and really it's the linking. So the big thing that I think will be added in extensions. And this is probably worth a quick diversion just to bring everybody on the journey.
+
+Is what we anticipate is that ideally the majority of the technical implementation doesn't change in an extension model. So that the technical stuff all stays the same. The second thing is that maybe there's some minor schema adjustments, but we're hopeful that it's 95, 98% consistent.
+
+Because with lots of schema adjustments and you start getting interpretation challenges. And then where we do anticipate quite a lot of changes is in what we describe as the choreography. What does it mean?
+
+So if we use the UN Critical Minerals Project and the British Columbia pilot. What does it mean to get a verified credential from BC government and with the linked trust anchors maybe from org book type of thing? So what is that linking that makes the claim that a mine is making verifiable and verifiable through the trust graph?
+
+And so there will be specific definitions of the links that are true for a specific jurisdiction or a specific commodity or a specific use case. And those validations are the things that are going to be the most robustly extended component of the extension methodology. So if we, yeah, this doesn't describe that.
+
+I think something interesting you mentioned is that you mentioned the word jurisdiction. I see here this extension being more industry based, but to go into the jurisdictions extension is something even more specific than that. So, yeah, like because as more partners are even just the critical raw material, as more partners are in there, they're each going to have their own sort of, you know, thing, how they function.
+
+Especially if you talk about governments and regulatory bodies, they have their own process behind it. And how much of that internal process you want to bring to this specification instead of having it a bit more generic of that? Yeah, so the conceptual model there is that each implementer is going to be 98% consistent, but we can't solve for that last two or 3%.
+
+And we can't solve for that globally. And so we need to have a model for enabling people to reflect their unique ecosystems without breaking interoperability to the UN Transparency Protocol. And so that's where the test architecture and the governance architecture really becomes critical so that people can positively assert that their extensions are non-breaking to the UN Transparency Interoperability component.
+
+And so that's the that's and how we do that is a space we're spending quite a lot of time and energy on at the minute. And we have some pretty strong approaches, but we need to start publishing them in the coming. So I've got a bunch of stuff I was trying to show up on my PowerPoint froze, so I was showing a bunch of stuff I shouldn't have been.
+
+But basically, we have quite a lot of work done in that space. And I've got a bunch of stuff I want to publish here. I was actually waiting for the refactor of the site because it doesn't quite fit the way the site's described.
+
+And so that's that there's kind of a chicken and egg thing that I'm waiting for. And but basically, we have. So basically, as I sort of was describing, we have three tiers of testing.
+
+Tier one is the technical interoperability. Tier two is the schema interoperability. And then tier three is that choreography interoperability.
+
+And choreography is the hard part. And so we've got tier one and tier two MVTPs complete in our descriptions. And tier three we're pushing really hard on at the minute.
+
+Gerhard, you have your hand up? Yes, I just wanted to mention that the whole idea behind this UNTP is to have interoperability. And as Steve said to me yesterday by mail, interoperability you reach by having as small as possible, smallest number of elements.
+
+And it could be done when you have a very concise data model that can go over all different industries. But on this page, the vocabulary extensions, example, industry specific language that tends to tell me that for every industry we make a new vocabulary. But as I heard, it's only 2%.
+
+But this 2%, to my opinion, lies in the fact of creating schemes, for example, for reference standards, especially relevant for the raw materials mining world to have them available. Or specific metrics that only apply to a particular industry. And this way we can make the same technical and semantic interoperable system.
+
+But the only difference is in, let's say, those tables or code lists or schemes as you name them, they make the difference to me when we keep it as simple as possible. When we only talk about metrics, we talk about standards, we talk about regulations, etc. That's just a remark.
+
+So it is now positioned like we create a different language for every industry. And that should not be positioned as such here. And Gerhard, we're not anticipating that the UNTP team is going to curate a language for every industry.
+
+That's actually what we're trying to avoid as much as we possibly can. We're trying to avoid that by design.
+
+[Speaker 2]
+Yes, it could be avoided.
+
+[Speaker 1]
+We're trying to avoid that by design, by sort of articulating this extensions approach. So we're not going to do a critical minerals extension. In fact, we have Nancy on the call who's doing the critical minerals extension.
+
+That's her job. But we're trying to make sure that we're enabling the core to be as simple and lightweight and expressive as possible while enabling the specific requirements that every industry actually does have. And so that tension is what we're trying to validate.
+
+And that's really where the testing approach is designed to allow people to know that their extensions haven't broken the core. I hope it stays at the 2%. Well, the 2% was an arbitrary guess on my part.
+
+I have no idea what the actual percentage is going to be. In some industries, it might be more. But we're trying to build.
+
+Yes. We're just exploring that as we speak. Marcus, I think you had your hand up next.
+
+[Speaker 2]
+It's a question, really, to what extent does the governance cover off the mapping across vocabularies and the profiling of that mapping for a particular, let's for argument's sake, say an industry? And to what extent does testing cater for that type of mapping where there might be different metrics or measures in different jurisdictions that require that mapping?
+
+[Speaker 1]
+So at the UNTP level, what we would anticipate, and I'm going to try and is that we're going to release version 1.0, which we're hoping is good enough for widespread adoption and lots of extensions. Over time, we anticipate that there might be, as people are doing these extensions, there might be things that belong at the UNTP level that we missed. And so there will be a governance process of bringing those in to decrease the variations downstream over time.
+
+And so that's kind of where that sort of industry mapping back to the UNTP governance might live. In terms of a generalized thinking around doing that as part of the UNTP governance process, we need to make sure that the UNTP governance process is as lightweight and manageable as is reasonable for the scope that we're envisaging. And so part of the refactor of the site was to simplify the things that are the core specifications so that we weren't overwhelming this group.
+
+This is a small group of volunteers who are contributing their time. If we make this thing big and unwieldy, and the governance process big and unwieldy, we'll be stopped at the gate. And so there's a real sort of move to make sure that we get that balance right, because we've got to have a manageable governance process.
+
+We can't put a huge governance infrastructure in place and an understandable schema so that it facilitates adoption. And so that's kind of the balancing act we see. So Marcus, I think we want to point to extenders tools and capabilities and reference implementations and patterns that they can use to ensure that their extensions are non-breaking.
+
+But we don't want to in advance say, we need to approve your mapping or your schema type approach, because that governance process just won't work.
+
+[Speaker 2]
+Okay, quick supplementary question. Do you currently have in mind a status and sort of lifecycle for this governance that you can point to that will assist in identifying what is in fact a valid extension and what is an extension that hasn't reached that point yet?
+
+[Speaker 1]
+So the key thing here that we want to do is that it passed, the main thing is that it passed tests so that you can appropriately assert that you're not breaking, non-breaking. And so UNTP will manage the tests that demonstrate that it's compliant with the protocol. The other tests, the extensions, they'll need to just, they'll need to do on their own.
+
+And so that governance and test architecture are the two things that kind of are designed, but we're not going to be in a decentralized approach. It's not our intent that UNTP quote unquote approves extensions. We might list extensions that have validated that they passed the tests, but we're not going to take a position of needing to approve everything.
+
+Because at global scale, that kind of approval, well, this is our thinking at the moment. We've got to put the, we've got tickets in the backlog that we're sort of rooming and adding commentary to. We'll put forward pull requests on this.
+
+So that's the process we're sort of going through. And that's coming in the next few weeks for sure.
+
+[Speaker 2]
+Yeah, I'd love to be involved in that to the extent you can. Thanks, Zach.
+
+[Speaker 1]
+Absolutely. I want everybody here involved. I want to make sure we get this right.
+
+I think, Gerhard, your hand's still up, but I think Virginia was next. Sorry, I have to put it down. Okay.
+
+I think it would help eventually, I don't know, I don't think this exists already, if you were to describe what are the contents of an extension and how it's related to the core data. You say extension methodology there, but I think you don't just need a methodology, you need a structure to say, and maybe the methodology includes the structure, but I think it should be clear that there's also a structure that says the extensions, you know, belong here, as opposed to in this part of the data in order to ensure compatibility. And then, I mean, you also have guidance like these are the codes you want to use for our industry and et cetera.
+
+But I think to describe a bit better how the extensions work and how they fit within the data structures might be helpful. Yeah, I was just trying to look as you were talking, Virginia, I think we have some, so this UNTP implementation guidance, that's going to, some of that's going to sit there. I agree with you, we need to make this real for folks.
+
+So, what I'll do there is I'll add a label here, which is, because this is very related to extensions. So, and just so everybody, I think people know this, but issues can have multiple labels. So, it's not just extensions methodology, but it will be informed by that.
+
+Virginia, I appreciate the feedback and I agree, we're working on that. Okay. All right.
+
+I'm going to continue to sort by least recently updated. Trust Drafts automated policy execution. So, there's kind of two patterns here and actually it's assigned to Nice.
+
+I'll work with him on that because there's two parts of this. One is automated validation of a trust graph. And the second part is, what are we validating against?
+
+And that's part of the test architecture. Let me add the test architecture. Do we not have a test, add a test architecture label.
+
+Okay. So, implementation conformance scope opened by Steve. All right.
+
+So, just looking through this one, this goes through some of the governance stuff that I think we've been talking about. And so, I think there's kind of a, we need to get to a good enough to publish space and then have more of an ongoing conversation. Gerhard, I see you've put your hand up.
+
+Yes. Perhaps you can explain me. I'm not so into this trust graphs and about the automation of it.
+
+I've seen such a trust graph visualizing the whole, let's say traceability and et cetera and the conformity. But are these graphs used by machines to understand something or is it used by humans to look at? It's just a silly question.
+
+Gerhard, not a silly question. And we anticipate that at sort of industrial scale, it will be machines. But the design is intended to support both people and machines.
+
+And so, part of the verifiable credential spec is a rendering specification so that it's not always computers that can understand this stuff. And so, the idea is it's both. In terms of the trust graph validation, that was kind of the last ticket we were talking about.
+
+That validation is probably primarily going to be machines, but it's intended to support both. Okay. But they are more supporting or to create a visualization of the traceability, for example, including the parts that did some supporting about conformity, showing that some kind of documents has been issued, et cetera, in this whole graph at every step in the supply chain.
+
+That's what this graph does show. So, the graph will show. I don't know that we know in advance what the graph will show.
+
+Really, the thinking is so there won't be a centralized graph that anybody could look at. There will be a graph that is published by the seller of the product. So, if I'm selling something to the market, I will publish a graph that is what is valued in the marketplace.
+
+Now, I might publish that graph to a regulator so that I can avoid tax or tariffs. I might share the graph with a consumer to increase the market value of my product. I may share the graph with my internal auditors so that I can meet my due diligence requirements from a supply chain management perspective.
+
+The important thing, though, is that the protocol provides the ability for cross-industry, cross-sector graphs to be shared in a way that can consistently be understood by the downstream consumers of the product. So, that's kind of what we're sort of articulating here. Okay.
+
+There's another way to show relations and data going along every step of the value chain, depending on the party having access to steps back or whatever. And also contextualized for a particular actor or stakeholder. So, the graph can be large, can be small.
+
+Yes. And we may get a graph assertion from a third-party auditor, right? I checked this very large graph.
+
+The important bits are this, and you only need the that. And if that's valuable enough for the consumer, the buyer of the product, that's enough. This assertion means somebody makes a comment on the graph and says there is a gap.
+
+Please fill it. I expect there will be all sorts of ecosystem players that do that kind of work, for sure. Yeah, okay.
+
+And when we're talking about the testing and that third tier of testing, part of that testing is intended to enable an extender to say we expect this type of graph to meet this kind of a requirement. And if that type of graph does not show up, then the test will fail, and that will be an exception that needs to be filled. Yep.
+
+Okay. Thanks. Marcus, I see you put your hand – actually, yeah, go ahead, Marcus.
+
+[Speaker 2]
+Yeah, look, just referring back to that earlier one on governance where we've got extensions, can you say anything about the relationship between a trust graph and a profile of an extension, perhaps?
+
+[Speaker 1]
+Sorry to interrupt, but before you go away from this page, there's a typo that I don't understand. Okay. And just to point it out, in the second sentence here that says there will be different versions, it says we should follow SemVer.
+
+What is SemVer? SemVer, semantic versioning. Okay, I know what semantic versioning is, but SemVer sounds a bit Greek to me.
+
+I would spell it out. Let's see, can I edit this? Let me do that.
+
+Yeah. I had the same question, Virginia, so you're not alone. Okay, thanks.
+
+So, back to Marcus's question, and that's probably where we're going to leave it today, unless anybody has any other topics they want to bring forward. Just before I answer Marcus's question, I do want to kind of point at this diagram, because this is kind of the – when we're talking about governance and version control and how that might work, that was a question about 20 minutes ago. This ticket is intended to start to answer that question, and so we need to start getting this into a pull request going forward.
+
+So, I think we'll leave that open for now, but that's intended to kind of address those questions. So, Marcus, just to recap your question, it was around how does an extension relate – in terms of testing and validation and trust graphs, how does an extension compare to – how does an extension sort of link back to the core? Is that right?
+
+[Speaker 2]
+I think so, and yes, thank you. But also, when I look at a trust graph, there is a reference back to that extension, which, if you like, holds the schema for the trust graph. Is that sort of the right way of thinking about it?
+
+[Speaker 1]
+Well, so what we anticipate a trust graph to be is a series of product passports that have been issued along the supply chain that have been shared forward for the interest of traceability or due diligence requirements or meeting some consumer need. And so, in each of the product passports that are issued, it will include in it its schema definition, which will include the definition of the extension and the version number. So, the product passports themselves will have their own – will be self-describing of the version of their extension.
+
+So, Joe, can you add an issue? I think that's a fair comment. Yeah, it's just obvious from the discussion.
+
+That's absolutely fine. Yep, thank you.
+
+[Speaker 2]
+I appreciate that.
+
+[Speaker 1]
+Yeah, I'll add an issue. So, in terms of the – yeah, so the product passports are going to be self-describing so that the consumer of that product passport can use the definitions inside the product passport to create the trust graph for their own purposes. And we saw an example of this, actually, in our ag project yesterday, and I have a screenshot.
+
+[Speaker 2]
+Let's see. That was a really good description, actually, Zach. Maybe you need to capture that here.
+
+[Speaker 1]
+Well, it's recorded, so it'll be – we'll get it out. But that idea is that – yeah, that's the idea. And we're on time.
+
+Any other comments, questions? All right. Everybody, thank you for your time.
+
+I know it was a little bit of a different approach – well, a little bit different with me leading as opposed to Steve and Nies, but hopefully it was productive, and we'll see you all next week. Good job, Zach. Thank you for taking on the work of leading the meeting, Zach.
+
+Well done, Zach. Great job. Thanks, Zach.
+
+Thank you. Bye-bye. Zach, could you help me with the connection into GitHub, because – Yes.
+
+You can stop the recording. Yes.

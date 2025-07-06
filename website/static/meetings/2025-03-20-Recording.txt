@@ -1,0 +1,659 @@
+[Speaker 8]
+Steve, good morning.
+
+[Speaker 13]
+Good afternoon.
+
+[Speaker 14]
+Hello.
+
+[Speaker 6]
+Nice to see you guys the same.
+
+[Speaker 1]
+Hi Sebastian. Nice to see you again. By the way, it will be a pleasure.
+
+[Speaker 7]
+Hello Phil. Hi everyone. Good afternoon.
+
+I mean, good morning.
+
+[Speaker 9]
+Hello Bertlus. I owe you an email, I know, to which the basic, I'll tell you, I'll do it now. Thank you.
+
+That's very helpful. Yeah, I've done.
+
+[Speaker 7]
+Good, Mr. Archer. Good to see you here as well. Yes, everybody in his dock is now building resolvers.
+
+I have a cool tool. That's nice to hear. Oh no, it's not really.
+
+I can tell you something that, you know, we're a small group here. It irritates me to death, these people coming in there, and I say, we have all the solutions, and then we start looking at them. Then they have ZIP experience.
+
+You know, I look at what you guys are doing, and yes, you actually have the burn marks, the arrows in your backs. You actually have done something real. Okay.
+
+[Speaker 1]
+Yeah, yeah. Feel free to rant away. You are being recorded, by the way, because it started automatically.
+
+[Speaker 7]
+That was why I was careful there, and I was speaking Afrikaans English, so South African English, it's sort of like code, and if I mixed a bit of Australian slang in there, nobody would recognize. Exactly.
+
+[Speaker 2]
+Hello, Bert. It's fancy seeing you here.
+
+[Speaker 7]
+Yeah, hello there. Good.
+
+[Speaker 3]
+I'm gonna have to look at that recording and see what that rant was all about. I feel like I missed something important. I have the phone as well.
+
+[Speaker 7]
+I'm going to stay silent now.
+
+[Speaker 1]
+I'm just an observer. We're all amongst friends here.
+
+[Speaker 13]
+The thing is that it was started by me saying, Bertus, thank you for an email you sent me, and followed a rant. I don't know.
+
+[Speaker 1]
+All right. We'll give it another one minute.
+
+[Speaker 6]
+Good afternoon. Good morning. Good afternoon.
+
+[Speaker 9]
+I was trying to work out what time this call will be once Europe has gone on to daylight saving time, and Australia has stopped doing that. And I can't work it out, so I'll just wait and find out when the time comes.
+
+[Speaker 1]
+Yeah, I might have to, when that happens, cancel the meetings and issue new invitations or something, because, to be honest, I create the meetings in a Google Calendar in my time zone, and I set them for UTC. But what happens when the clocks change? Does it stick to my time zone, or does it stick to UTC?
+
+[Speaker 7]
+It sticks to UTC.
+
+[Speaker 1]
+Yeah, we'll see. I hope, yeah, anyway.
+
+[Speaker 7]
+Well, let's get it proven, because I have quite a bit of fights with everybody in the remote calendars. But if you're choosing Google UTC, it's supposed to stay in UTC and translate to your local time zone. So you're either plus one or plus two.
+
+[Speaker 1]
+Yes. Well, I'm plus 10, of course.
+
+[Speaker 7]
+Are you in Australia, Steve?
+
+[Speaker 1]
+Yes.
+
+[Speaker 7]
+Down in Sydney?
+
+[Speaker 1]
+Canberra.
+
+[Speaker 7]
+Oh, you're in a better place. You can go and climb mountains and ride your bicycle.
+
+[Speaker 1]
+Yeah, yeah, yeah. It's like a little village, really. It's the capital, but it's a small-town feel.
+
+[Speaker 7]
+And some of the best rose gardens in the country. Apparently, yes. Yeah, okay.
+
+[Speaker 1]
+All right, we're three minutes past. We have 18 on the call. Thank you all for joining.
+
+There may be one or two more. I'll go through the usual introduction to remind everyone that this meeting is being recorded and the recording will be posted. If you want me to remove the rant up front, I'm happy to do so.
+
+Not that it was particularly problematic. Also, that this is a UN project, and everyone's welcome to observe and comment and so. But if you make actual contributions, pull requests and the like, please bear in mind that you're contributing your IP to the UN.
+
+So that we can make it freely available. If you don't want to do that, then please don't contribute. So I'll show a few more late arrivals, just to add them.
+
+Before I start, there's 20 or so on the call now. Is there anyone who hasn't joined this call before that would like to introduce themselves?
+
+[Speaker 6]
+I haven't joined before, Steve. I've seen your name a few times.
+
+[Speaker 1]
+Sorry? Yes. I've seen your name quite a bit though.
+
+So why don't you give a quick introduction?
+
+[Speaker 6]
+Yeah. So just a quick intro. So hello, I'm Herman van der Pooy.
+
+My colleague Victor van der Hulst is also on the call. We're from the Netherlands. Actually, we represent a community called FIDES, which is all about digital trust for persons, organizations, and things.
+
+And actually, we've been following UNTP for quite a while from the background. We're super excited about it. And actually, we're trying to involve it in a number of initiatives over here in Europe, and also in some global initiatives.
+
+And one of the projects that we're currently initiating is with the Dutch Ministry of Economic Affairs on biofuels. But there are actually a couple of things that we've done in the past months and years that may be of interest for this community. For instance, about discovery based on decentralized identifiers.
+
+And we're doing some stuff with the invoicing. So maybe later on in this call, I could offer to do a demo in another slot, probably not in this meeting. But yeah, so we're here to listen out and maybe to contribute something.
+
+[Speaker 1]
+Okay. Thank you, Herman. And yes, we're always willing to schedule time for things that are of interest to the group to be presented.
+
+So if you'd like to do that, do let me know. Oh, excuse me.
+
+[Speaker 11]
+Hi, I'm also a new one. I'm Daria.
+
+[Speaker 1]
+I see it comes across. Your hand is... Daria, please go ahead.
+
+[Speaker 11]
+Okay. Thank you. I was nominated by our CEO.
+
+I will start officially on 1st of April as the Chief Sustainability Officer of a small joint venture of big mining and trading companies. And I will be doing traceability and tracking origins of metals. So I'm based now in Germany and the office is based in Netherlands.
+
+So we are like Northern Europe company. It's called Ressos.
+
+[Speaker 1]
+Okay. Thank you and welcome. That's good to know.
+
+In fact, I've got a couple of comments to make after we've had initial comments about looming pilots in particular industry sectors, including critical minerals. But before that, David Jensen's got his hand up.
+
+[Speaker 12]
+Yeah, thanks, Steve. Just wanted to introduce myself. David Jensen.
+
+I'm with the UN Environment Programme. I'm working on the environmental dimensions of digital transformation and very keen to engage in the UNTP and learn more about how it can address some of the environmental issues across supply chains and in the broader issues of transparency and tracing and tracking. Thanks.
+
+[Speaker 1]
+All right. Thank you, David. You're welcome.
+
+Do you have anything to do with the UNEP Global Digital Product Passport blueprint initiative that's being run with ITU?
+
+[Speaker 12]
+Not specifically as another colleague, another section of UNEP is dealing with that. I'm connected to it indirectly, but I'm not leading on it.
+
+[Speaker 1]
+Okay, cool. Yeah, because there's a little bit of today's call that might overlap with that. I'm quite interested to establish.
+
+We have a good relationship with them, but I haven't spoken for a while. So anyway, I think that's all the new people introduced themselves. Allow me to share my screen.
+
+The first thing I would like to do is apologize because I posted meeting minutes. For those of you who have some familiarity with GitHub, the way it works is you make changes in a branch and then you do a thing called a pull request, which is basically a request for someone else to review and approve your changes before they get merged into the public site. That's the normal process.
+
+Unless you do them in the main branch, in which case you push them straight through. Only a few people, including myself, have the permission to do that. I try not to do it, but I've been doing it for meetings because it's not really a consensus thing.
+
+It's just publish the minutes. It didn't seem like something I needed a consensus to do. So the minutes of the last meeting were here, but I forgot to change branch when I was making a small change to the governance section.
+
+And then having realized I'd made the change in the main branch and I don't know, I felt too lazy or something to move them to another branch and then do a pull request and then request. I just pushed it. I shouldn't have done it.
+
+And I think I'm going to exclude myself from that permission to do that because I think it's important we follow a governance process where all changes have a few reviewers before they get merged. Even in this sort of early, not yet 1.0 release. After that, it's even more important.
+
+But having done it and promised not to do it again, I thought I'd better explain what little change has been made to the governance diagram. It's a bit of a busy diagram. Those that haven't seen it before, feel free to read it.
+
+[Speaker 3]
+Before you go into the governance thing, I think it's important that we, I think your commitment to not do this again and do that. But I think we should update the permissions and governance process because I think it's an important piece of the puzzle and we're getting increased scrutiny and I think increased participation, particularly around governance. So how do we formalize that commitment so that we, as a group, can have increased confidence in the governance process?
+
+[Speaker 1]
+Yes, I think the answer to that is that there are roles in GitHub, right? And one of them is the repository owner role. And I have that role, but I want to transfer that role to the UN Secretariat and make myself a maintainer like everyone else.
+
+And that way I can't do this even if I try, right? So that's the change I'll try and make before next week. So...
+
+[Speaker 3]
+And I think it's just important that we formalize that in the minutes and just work to do that and then we can check up on that next week and next meeting and see...
+
+[Speaker 1]
+And I've done it, yes.
+
+[Speaker 3]
+Yeah, and that becomes just part of what we've improved from a governance process on a go forward basis.
+
+[Speaker 1]
+Yeah. Cool. Thanks for picking me up on that.
+
+I picked myself up and you've beat me up as well and it's well deserved. So...
+
+[Speaker 3]
+Well, it's not beating you up, Steve. I know, I know, I know. Everybody...
+
+So I think everybody's super grateful for the sort of brilliance and capability you've brought to bear. But now that it's at this point of maturity, we now need to start making it more robust from a governance perspective so that people can have increased confidence in the quality of work. And so it's a transition, I think, from the early stages where we needed to just get the content out.
+
+And I think everybody... I want to just sort of say you've done the lion's share of the content development and it's been brilliant. And we now need to kind of build the community around the release process and the structures and the governance that will make this thing reliable and stable for the communities we're serving.
+
+[Speaker 1]
+Yes. Yes, I agree. And in fact, this governance change supports that, right?
+
+What has started to happen? So for those of you that are new on the call, a quick reminder that UNTP itself is positioned as a kind of a toolkit that gets any particular industry, vertical or geographic community 80% of the work necessary to define what they need for traceability and transparency within their community. And the reason it's positioned like that is because if we try to be all things to all people across agriculture, critical minerals, automotive, every possible sector, it'll be nightmarishly complicated.
+
+And so what we chose to do instead is to say, what's the reusable common core? Let's call that UNTP core. And then let's define a methodology that another community can follow in order to take UNTP core and turn it into something very specific for them.
+
+So for example, Australian agriculture has done that and electrical and electronic goods through the Responsible Business Alliance have just started doing that and several more communities are emerging. So that's this idea here of UNTP core and this white box here, the UNTP program working group is us on this call and we produce these specifications, but we want to do it in such a way that industry sectors can pick it up and extend it to meet their needs and do that in a particularly consistent way. So that the livestock passport remains interoperable with an automotive passport if you care about the leather in the seats, for example, that's the intent.
+
+But what we were missing in this governance architecture is this blue bit on the left, which is if you're a community that is building on UNTP core and it's a significant commitment, a choice to say, I'm going to hook my whole industry sector with some dependency on this thing, then what we've heard quite reasonably from these extension owners is, well, we'd like a say, a formal say in the ongoing governance of UNTP itself. So if I'm going to invest in doing this extension, then let me have some impact on the ongoing production of this.
+
+So I did this box here called the extensions governance board. This has been discussed with the secretariat. And the idea here is that every extension community has a member on this board.
+
+I don't know, they haven't decided yet, but how they vote a chair. And increasingly over time, what we do as a working group here is respond to the priorities and direction of those that are using UNTP and extending it in various industry and geographical sectors, which sort of makes sense to me, you know, because it's like, well, if you're taking it and building it and using it and deploying it in an industry sector, that's the best source of requirements for what we need to do and maintain in subsequent versions of UNTP core. So that's why that sort of light blue box on the left here has been added. And before I continue, has anybody got any thoughts or comments on that?
+
+[Speaker 3]
+I'll just add to that, Steve, is that that blue box is coming from the folks who are being early adopters of extensions, right? Like they're saying, how can we help? How do we make sure that the investment we're making and the commitment we're bringing our community on is low risk, right?
+
+Like, and so they're sort of, it's been a process of sort of understanding the stakeholders and sort of building this out. So it's a response to a need that's been identified in our community.
+
+[Speaker 1]
+Yes. Anyway, so that's the change that went through of all places in the governance section of the thing without proper governance, which is why I'm making a bit of a song and dance about it here. So to kind of beg forgiveness, but also give everyone an opportunity to comment here and now on what they think about that.
+
+And Michael, you've got your hand up.
+
+[Speaker 5]
+Yeah. Just a quick question, Steve, is the change, the actual change, is it just in the diagram or is there other stuff that was changed as well? Sorry, just wanted to.
+
+Just a paragraph here. The paragraph here. Okay.
+
+All right. Okay. Thanks.
+
+[Speaker 10]
+John. Thanks, Steve. Sorry, I was trying to make my face appear.
+
+All good. Thank you. A necessary addition.
+
+And yes, I fully understand why you would have just done it, but then apologize for the version control. I've put in the comments some thoughts around, Eric, actually, Juri and I were on a call earlier today with the Linux Foundation core team was being discussed at quite some length about their open source software management and care. And it strikes me that what we're trying to do here is similar to what Linux does with the core kernel, the Linux kernel team and the extensions like Ubuntu and others.
+
+And it's something that maybe we can just learn from the kind of mature thinking in the open source software community about how best to manage this sort of process.
+
+[Speaker 1]
+Sure. I think the open source software community is a good reference for this stuff. So, yeah.
+
+Marcus.
+
+[Speaker 2]
+Thanks, Steve. And what a great initiative. And I'm playing catch up, so forgive me.
+
+But I'm working at the moment with a bunch of really quite small groups, like only four local government areas in the food and agribusiness network and Queens. Yeah, in southern Queensland and places like that. And what I noticed, there may be a need for them to endorse their local agriculture approaches with regard to innovation coming through that hasn't yet touched on standards organisations.
+
+And maybe you can speak to that with regard to how this governance board might work and what you're thinking in that regard, really.
+
+[Speaker 1]
+Yeah, well, so I think that over time, assuming this whole thing gains traction and demonstrates success, that there will be more and more extensions and that they'll fall into two types. Those that are registered with the UN and have some secretariat support and sort of participate in the ongoing, through this governance board, through membership of it, in the ongoing direction of UNTP, and those that just pick up UNTP or even pick up a particular extension, and then tweak it further for their needs without kind of global governance architecture, right? So, for example, I don't know, Bigger Cheese might pick up AATP and say, oh, we're going to tweak it a bit.
+
+And it's good enough for our community. And we don't need to participate in global governance and you just do it. Others may feel like it's important to have a seat here and drive some global agenda.
+
+And what's not clear to us yet, I'm going to say us, meaning this group and also the UN secretariat, is what qualifies a particular extension to be an endorsed globally registered extension versus just some group picking up the bits and pieces and doing what they want with it. And I don't have an answer for that yet, other than the usual UN governance for these sort of things requires some sort of member state endorsement. In other words, maybe, and I'm just saying maybe, the criteria for a registered governance, a registered extension that participates in this governance board, is that your member state, at least one member state has to approve it.
+
+And that's just a thought. I don't know.
+
+[Speaker 2]
+Okay, thanks, Steve. Yeah, fair enough. Great.
+
+Thank you. Yeah.
+
+[Speaker 14]
+All right.
+
+[Speaker 1]
+So the next item on the agenda I wanted to discuss is I think we're at a point where I need to make myself increasingly redundant. And also this specific, you know, with the addition of that governance architecture, where we get direction from those that are really using it, which is I think is a good thing, generally. And we get into this kind of maintenance mode and ongoing sustainment.
+
+We probably should group ourselves into some sort of subcommittees or sub teams that are responsible for different parts of this overall work. And so I wanted to collect your thoughts about first, should we do that? Second, if we do that, how granular, right?
+
+I mean, is it a group per page? Probably not. Is it a group per spec?
+
+Or do we group them in some way? Is it, you know, do we separate, for example, the identity and resolver stuff? Because that's a kind of a...
+
+You can sort of group these specifications into sort of logical groupings. And I haven't really defined it yet, but I can imagine we could identify, I don't know, probably four or something like that, subcommittees that are responsible for ongoing maintenance of relevant and related collection of bits and pieces. So that's my feeling.
+
+But has anybody got any thoughts about how we should organize ourselves to delegate more ownership to subcommittees to maintain bits of this? And how to group? Adriana?
+
+[Speaker 4]
+Yep. Thanks, Steve. So yes, I have a couple of ideas.
+
+One is that we could align ourselves into sub-working groups similar to SERPAS. I think that they're quite... Those working groups are...
+
+The nature of the working groups or the types of working groups, I think, are quite applicable. But more importantly, there's one working group that hasn't been... It isn't very active in SERPAS, but I think we should have one here, and that's on standards.
+
+And I say that only because I have immersed myself in reading many of the standards that are available as part of the contributions that I've made to the four SERPAS working groups that I'm involved in. I came into it not knowing very much, except I understand how standards and regulations work, having worked in the food industry for... In the food regulatory area in the food industry for several years across Asia.
+
+So that component wasn't difficult. It was applying how to understand the text. So I didn't know what a standard was for a nameplate.
+
+And luckily, somebody explained it to me within SERPAS. So that was an easy thing to understand. But what I'm saying is that I really believe that we need to have...
+
+I have a spreadsheet with approximately 372 standards across several of the working groups within SERPAS. That's quite a substantial amount. About three quarters of them are probably considered significant, highly significant, or very significant.
+
+So that's quite a number to get through. And I've gotten through a fair amount, perhaps 30 or 40%, which is quite a lot, really. But anyway, so that's my 2 cents or 5 cents with inflation that you might like to consider.
+
+[Speaker 1]
+Yeah. Although we are kind of publishing a standard ourselves. So it's really how we break up what we publish into logical groups for ongoing kind of ownership and maintenance.
+
+So Nick's raised a hand as well, your perspective.
+
+[Speaker 8]
+My perspective is in the subgroups and the working groups, maybe having some groups that are sector-focused and then some that are focused on particular elements that go across different sectors. I've seen that work in other similar activities. So that's probably my 2 cents.
+
+[Speaker 1]
+I wonder on that one whether the sector-specific work groups are the ones that join these extension groups, right? I think so. The UN is just about...
+
+We've been talking for a while, I'll just interject here, about a critical raw materials pilot that started off with Canadian leadership. And I think it was... We were, I think, finding our way with UNTP about how to manage the extensions and kind of picked a category, which is all of global critical raw materials, which was a bit big.
+
+And didn't have a... Other than some UN secretariat, didn't have a logical community leader, right? Because there isn't an industry association called global critical raw materials.
+
+There is one for lithium, another one for copper, and within particular countries that are industry. So I think what we've learned over the last year is that the best way for an extension to be created is that some existing community that represents a band of members owns it, right? So...
+
+Yeah, what we're recommending to the UN now to when we're about to restart these pilots in critical minerals and textiles is don't govern it yourself, UN. UN govern the community of communities and find an owner. So they want to do a lot of pilots in copper, right?
+
+And so I believe there's a copper global industry association, but I'm not that familiar with it. But if we can sell the idea to them to be the owner of the global copper industry UNTP extension, that makes sense to me, right? And so...
+
+[Speaker 8]
+And I think that model, that matrix model works very well for the folks on this call as well, because you have some people here that are both super users across the breadth of the technology that is the UNTP, as well as having a particular sector interest. And then you have some that are just more focused on a sector and some that are more focused on one particular element of the technology. So having the matrix structure allows you to pick and choose which areas you're involved with and get the most value from those groups.
+
+The challenge with that is if you end up with sort of eight or nine working groups and that grows to 15 as you have more sectors, the umbrella bringing it all together becomes a different type of role. So like your role changes significantly and that probably becomes the challenge. It's a real art form to that communication, but I think it actually gets the most out of everyone else.
+
+[Speaker 1]
+And I think, honestly, we're finding our way with this, right? But I suspect we'll see many more extensions here on this list of four. And people on this call are joining this one because there isn't really anywhere else to join, might end up going, oh, no, I'm going to focus on the critical minerals extension and maybe occasionally join the UNTP core because it's a bit technical for me.
+
+You know, so I think we're close to having that kind of architecture where people make their choice. Marcus, you've got your hand up again.
+
+[Speaker 2]
+Thank you, Steve. Yeah, I've been working a fair bit recently with innovators and industry around seaweed production, but also people that are doing terrestrial farming and they're quite innovative. And some of the approaches they're taking towards land management and achieving real outcomes are not covered under existing standards organisations per se, but are verifiable in terms of the support they're receiving from their local organisations and achieving quite significant outcomes in their own right.
+
+So there is always a lag between take up with standards organisations and bringing in the peak bodies that can actually testify as to their outcomes and the evidence of those outcomes and, you know, sort of put their, prepare to stand up and identify themselves in that attestation is quite interesting. So I think that when we look at the structure on the left hand side of this here, that we need to account for innovation and how that's going to work with local body engagement or if when I say local body, I mean with actual producers quite low on the food chain when it comes to vertically integrated supply chains, for example. And there is an area perhaps ready to be dedicated to that.
+
+What's your thoughts on that, Steve?
+
+[Speaker 1]
+I'll be honest, I'm not quite sure I've understood the question. What are you actually proposing?
+
+[Speaker 2]
+So, you know, you've got food and agricultural networks that have subscribers from people that can turn around and say these people are doing innovative things that are yielding good outcomes. And we can testify to that point.
+
+[Speaker 1]
+So it's a question, how do we bring innovation into our work?
+
+[Speaker 2]
+Yes, because that innovation may not actually be caught up by through standards organisations at this moment in time. Yet that innovation is in fact a really important part of their business and their negotiation and price, for example.
+
+[Speaker 1]
+Well, I mean, given that we're trying to make a global standard and we're accommodating industry specific extensions, I think I expect, and I'm seeing this already with the responsible business lines one, that innovation will happen either occasionally from direct members of this group or more likely within a particular extension and then just gets contributed. And for us to go, oh, is that a useful idea for the world or does it stay within your group? I think we need an architecture that accommodates that.
+
+And I think we're getting close to it. I can't say I'm exactly sure how it would work.
+
+[Speaker 3]
+But you kind of mentioned that earlier when you sort of described the different types of extensions, when you described two types, one which was part of the governance structure that we're participating in this strategic sort of guidance and roadmap side. And the other side, which is innovation that happens, right? There's nothing that stops an innovator from taking the core or even an extension of the core and extending it further to meet their specific needs.
+
+In fact, I think that's a core feature of the extensions model that allows for that innovation to occur following a similar sort of robust way of sharing that sort of innovation. So I think that sort of extension on extension, like that sort of pattern is really helpful for enabling that. And to your point, we're starting to see that in some of the work, the real work that's actually being done.
+
+But it will take, I think we need to experiment with how that works in reality. And so Marcus, we'll continue to collaborate on how we make those things real. And the idea is that it's built in.
+
+[Speaker 2]
+Thanks, Zach. Adriana?
+
+[Speaker 4]
+Yes, just going back to your comment on standards, is UNTP going to publish, what, a standard for, an umbrella standard for digital DPPs? And if so, is that what you're thinking? If so, how's that going to fit with JTC24 and ISO?
+
+[Speaker 1]
+Ah, OK. So very quickly, yes, that's what this page is, digital passport standard, right? How does it fit with JTC24?
+
+But JTC24 is obviously mandated under European regulation to produce a specification for, that implements the European regulation. And it's got some features that are regulatory driven that don't necessarily make sense for a global standard like central registries and particular data carriers. And there is obviously some overlap and we have sort of semi-formal, an informal, let's say, liaison with JTC24.
+
+So they can see what we're doing. Other than those of us that are actually on the JTC24 working group can't necessarily see what they're doing. But the European Commission recognizes that for European actors subject to the European regulation and having to issue JTC24 standard digital passports, they need confidence in their upstream data in order to meet that due diligence obligation.
+
+And that there is a synergy, complementarity really, between UN global standard and JTC24 European standard. So it's like two circles in a Venn diagram. There is some overlap and we're working to make that overlap compatible.
+
+And one of the venues for doing that is the other ISO TC154 work, which is a technical committee whose mandate is joint work between UN and ISO. And so joint working group nine under TC154 is a global digital passport project, which is in its very early stages doing research at the moment. And that is jointly governed by UNECE and ISO.
+
+The ISO leadership is joint US and China. And so that's the vehicle for an ISO based global DPP standard, which UNTP will be a contribution to that, obviously, but that's a broader group. So we do maintain a page here, which hasn't been updated for a while.
+
+This one called Relationships to Other Standards and Initiatives. It has some content, including that one, and probably needs a few more things in there. But this is where we document how we relate to others.
+
+[Speaker 4]
+OK, thanks, Steve.
+
+[Speaker 5]
+Michael? Yeah, a couple of questions, Steve. First, I mean, with this moving to defining the governance process, and I think, as you were saying, of making yourself redundant, does this mean we are getting to the point where we're ready to get to a 1.0?
+
+Or is it still a 3.1 status?
+
+[Speaker 1]
+Right now it's 0.5, right? And there are some technical people, not so much me, working on a 0.6, because we have discovered some challenges, not with schema and instances, but with JSON-LD and linked data validity. So some of the artifacts published at 0.5 level fail validation in the JSON-LD playground. And it's because of redefinition of terms and things like that that aren't allowed under JSON-LD. So there's a little bit of work going on to make the tools more robust and the method more robust so that you can't have that sort of bug, if you like, in a release. So 0.6 is a technical release, or it's coming within about two weeks, a technical release that fixes that and will also accommodate some of the comments and feedback we've received so far. So I imagine that will come out in two weeks. Then 0.7 will be what I'd say in six weeks after that, more or less, and would be what we should consider as a kind of 1.0 release candidate, if you like. 0.7 will be, is this good enough to call 1.0? And I'd expect 1.0 June, something like that.
+
+[Speaker 5]
+Okay. So the goal is to have a 1.0 before the plenary?
+
+[Speaker 1]
+Yes.
+
+[Speaker 5]
+Okay. And the second question is around just listening to the conversation around the extensions governance board and the core, moving stuff into the core. It sounds a little bit like the sort of the Linux governance process.
+
+Yeah, I wanted to say that today. Yeah. Yeah.
+
+So on the governance board, is there a limit as to the number of seats or is it if we end up having 50, 100 associations or people making the extensions, is there a set size for that governance board is?
+
+[Speaker 1]
+Yeah. So I think the honest answer to that is, I don't know. But I distinguished before between kind of formally registered extensions that have some sort of member state endorsement under the UN governance architecture, versus perhaps a larger plethora of groups that just pick it up and use it.
+
+And so if we have 100 formal, you know, member state endorsed extensions, in a way, that's a nice problem to have, right? Because it would reflect enormous success. And at that point, you might go, gee, this governance board's getting a bit big and unwieldy and I have to rethink the architecture.
+
+But for now, I think the assumption is that one extension is, yeah, one extension, one member, one vote. Yeah. Yep.
+
+Yep. Okay. All right.
+
+Okay. Thanks. All right.
+
+Well, so what we haven't quite nailed is, well, first of all, do we agree that it's time to create sort of subgroups that take ownership of certain collection of components? Is that a, I think that's a way to scale, right? Otherwise, there's too much dependency on these calls and basically me doing work in between.
+
+And it just, it needs to be more decentralized, I think. So I suppose the first question for the group is, do we agree it's time to do that? And the second one is, I suspect it's not one group, nor is it one for every page.
+
+It's somewhere in between. And I can just right now, imagine a sort of logical grouping, right? If we look at these, you know, where is it, this diagram, right?
+
+There's stuff around conformity, there might be a group, there's stuff around traceability, there might be a group, there's stuff around identity and discovery, there might be a group. I don't know. I could propose, I don't know, three or four groups with, responsible for different bits of this and let you all comment, feedback, criticize, whatever.
+
+Or, you know, we're probably not going to nail it on this call, but I'm just looking for, I suppose, first of all, for, do we agree we should break it up a bit? And that it's, there are logical groupings and that we could have a subcommittee with a subcommittee lead for a logical grouping. And does that make sense to do?
+
+Zach?
+
+[Speaker 3]
+Yeah, so- Looks good to me. Makes sense? It makes sense and it's completely logical.
+
+The challenge, and we've tried a few times in a few different sort of working groups and parties as we've tried to solve certain problems. Harley's not here today, but he's trying to solve the sort of booking claim versus mass balance challenges. So we've started to do that.
+
+I think what it will come down to ultimately is leadership and capacity. This is a volunteer- Yes. And the thing I think we're all thankful of is that you've had both the leadership skills and the capacity to kind of drive this thing.
+
+The question is, how do we get the rest of the community to kind of stump up a little bit to support you on that process?
+
+[Speaker 1]
+I think there's a kind of a catch-22. When it's a young thing with not much uptake, it's hard to get people to contribute voluntary time to build a thing. And there comes some kind of tipping point, I think, when there's more and more interest and therefore more and more willingness to contribute voluntary time.
+
+And what we need is a sufficiently good audience and capability so that when we say, right, there's a subcommittee on this collection of things and it's led by someone both with capacity and capability, then it's a good thing, right? But we've kind of lacked that tipping point. I think we're very nearly there, to be honest, because it's getting more and more attention.
+
+Armin?
+
+[Speaker 6]
+Yes, I think it really makes sense to kind of break up and try to make it more scalable. But in general, one of the things I was kind of really looking for, I would say a little bit maybe, is also we were very much focusing on, I would say, technical interoperability or interoperability in general, and also based on some actual implementation. So that's also the kind of stuff that we are really have been working on in the past.
+
+And also we feel fits to, we would really like to also do kind of examples of implementations that will be integrated with examples from Australia or from Asia. And then that's kind of where I was sometimes looking like, maybe there's, this could be, maybe it should be the architectural working group or the technical working group, which kind of serves as generic technical work that serves all the domain specific use cases. And I'm not sure, maybe that group already exists, but then I didn't know about it.
+
+[Speaker 1]
+Well, that's kind of this group, right? Because I think the domain specific stuff lives in the extensions, but it's a question of whether we break up this group even a bit. I don't think we want to make it too fine grained, otherwise we lose communication and we lose an architectural consistency.
+
+But anyway, we've got another 15 minutes and the other topic I wanted to get to is this bottom box here called understand the data, because we've been having some fun with that in the last couple of weeks. And I wanted to share some thoughts and ideas with you. But Michael, you've got your hand up first.
+
+[Speaker 5]
+Yeah, Steve, I guess it's just putting my hand up. I will need some coaching on GitHub until my brain gets finally wrapped around it, but I'm happy to continue to take on the business case pieces and get stuff to be written and done and end. So if you're looking for a subgroup, I'm happy to pick that back up because I'm also writing about it as well.
+
+[Speaker 1]
+Yeah, and in fact, this page here was added and includes there your articles, right? So I expect this page will grow with more and more UNTP in the media references. So I'm happy, yeah.
+
+All right. So what am I doing?
+
+[Speaker 5]
+I'm happy to take anyone along.
+
+[Speaker 1]
+Okay, so what does the group think if I have a stab at how to break this whole thing into probably not more than three or four subcommittees because you don't want to have too many with some logical grouping and send out an email saying, how about this? And people comment on the right structure. No, this should be here or there, or we need another group or whatever it is.
+
+And then we seek qualified in terms of capable and capacity leaders for each subcommittee. And we might have to do a bit of training then on tooling and stuff like this, but we just gear ourselves up with more capacity and scalability and more group governance. If everyone's happy with that, then I'll make a first stuff, first pass proposal for you all.
+
+And you give me your feedback and then we'll set it up. Okay. Then the last thing is there's a little bit, you see there's a number of specifications here, right?
+
+DPPs, conformity credentials, traceability events, facility records, blah, blah, blah, blah. This last one here is still incomplete. The others are all in draft and they're not complete in the sense that they still got to go from version 6.5 to 0.6 to 0.7 to 1.0. But this last one, the sustainability vocabulary catalog is not even at 0.5 yet because it's missing some stuff. And one of the reasons is because it's one of the most headache ones. So I thought I'd give you two minutes about what this is all about. And share some pain and then seek your feedback.
+
+And we're going to try and have some sort of rough draft for this before the next call. But what this is about is not so much the structure of a digital product passport or a conformity credential or a traceability event or any of that stuff, but actually the content in terms of the sustainability claims that are made, right? So the structure of a digital product passport, and you can see it very high logical model on the left there, is it's about a product or a facility.
+
+And it includes a number of claims about the sustainability performance of that product or facility. You know, carbon intensity, deforestation status, blah, blah, blah, all those sorts of things, their work practices and so on. And the data model just has a fairly abstract structure about claims and references a criteria.
+
+And the idea there is that if you just say, for example, my product is five tons per ton carbon intensity, then you're open to the question of, well, how did you make that assessment? Against what rule set? Does that include scope one and scope three?
+
+There's all kinds of different ways to come out a number, right? So the idea in a product passport is that when you make a claim, you should, not mandatory, but you should reference some well-defined criteria that is the basis for that claim, some sort of standard or scheme, right? Because that gives it credibility and meaning.
+
+And similarly, on the right there, when an auditor comes along and issues a conformity credential about your product or facility, there, in this case, it's a must, not a may. They're obviously doing that against some standard or regulation or sustainability scheme that itself is full of criteria about the basis for the audit. And so an assessment in a digital conformity credential must reference a criteria.
+
+A claim in a digital product passport should reference a criteria. And when they reference the same criteria with some sort of unambiguous reference, then you know that the claim in the passport is supported by an independent assessment, right? Otherwise, you could have a claim about the color of my cat and an assessment about, I don't know, the shape of oranges.
+
+And yes, they're claims and assessments, but they're not about the same thing. So no relationship to each other. So this idea that we need some sort of way to unambiguously reference a sustainability criteria, I think is quite important to the whole architecture.
+
+And so UNTP doesn't define those criteria because there's more than enough of them around the world already. In fact, there's way too many, right? There are literally hundreds of scheme owners that define criteria and then an increasing number of regulators as well, right?
+
+So the gray box in the middle is somebody who has authority, either granted by the industry or by government or whatever, to define a set of rules called criteria that will be referenced, right? And the challenge here is, when you move to the digital world, make that collection of criteria in a scheme sort of link data compatible, right? They've got to have some sort of ID.
+
+And obviously the scheme owner, not us, but the scheme owner needs to publish their scheme, ideally, not just as a gigantic PDF with a lot of paragraphs, but also as kind of referenceable criteria. So you can say, chapter two, section seven, that talks about how you measure carbon intensity of cows. That's got an ID.
+
+And when you refer to it in a passport or a credential, that's what you mean, right? So this light yellow box at the bottom, the idea here is to do three things. One is to maintain a register of these schemes.
+
+So that's not defining the schemes itself. It's just saying, this is a scheme that we've worked with. And the really crude version of that right now is down the bottom here, implementations register.
+
+Where is it? It's called certifiers. It probably should change to scheme owners.
+
+It's the wrong title. But there's a few here already, right? Towards sustainable mining, copper mark, and Australasian structural steel.
+
+But these are scheme owners that define rules for... So this is the earliest. This is an early register.
+
+It's not got much in it, but it'll grow. Of that. And it should grow into a more machine-readable register as it grows, right?
+
+If you've got hundreds or thousands of these. The other thing that's important... Some of them are certifiers as well, though, Steve.
+
+Yes. Okay. Thanks, Brett.
+
+And we need to distinguish between those roles. The other thing is, should we provide some sort of schema or guidance for how a scheme owner publishes their vocabulary of criteria, right? So I've been having a look at a few.
+
+So here, for example, is... What's this one? This is Irma.
+
+This is a certificate from the responsible mining initiative. And these guys demand a spectacular amount of transparency. And this is an actual public.
+
+So I'm not sharing any secret information. Certificate about a particular mining operation somewhere in South America under the Irma scheme. And you can see all these quite fine-grained criteria here somewhere.
+
+Yeah. Principle 3, social responsibility. 3, 1, 2, 1.
+
+Tick. Fully compliant, partially compliant, etc. So how would Irma represent their scheme so that we can have a URI for that thing there, for example?
+
+And then there's others like... This one is towards sustainable mining. This isn't a certificate.
+
+It's a scheme, standard documentation. And you can see here they've got criteria, but they've grouped it under a particular title. In this case, facility climate change management.
+
+But they've grouped their criteria according to the score you get, right? So you get a C if you pretty much don't do anything. You get a B if you do these things.
+
+And you get an A if you do these things on top of that, and so on, right? So there's this idea. And then there's others.
+
+I've looked at half a dozen. And there's certain consistency, but it's going to be tricky to figure out how all of these can move into the digital world by making these referenceable. So I'm trying to come up with some general scheme.
+
+I'm going to have a go at it and use maybe Grok 3 to process all these different schemes and see if I can make something consistent as a guideline. But am I on a fool's errand here? Do we need to do this?
+
+What's the right granularity? This is basically the headache with this particular thing. And the last bit here is imagine we've got a register with, I don't know, 50 schemes in it.
+
+And we've managed to come up with some reasonably flexible but consistent guidance for how you digitally represent the criteria in a scheme and make them referenceable. Now you've got a URI for, I don't know, how the Meat and Livestock Australia scheme owner says you calculate the carbon intensity of a cow and another one for an American and so on. They're all just URIs.
+
+Should we have some sort of classifier scheme category, just a taxonomy, where we recommend every criteria that is owned by a particular scheme owner, they tag their scheme or their criteria with that category so that we know these 20 URIs are all about emissions and these other 20 URIs are all about labour. This is the challenge with all this, right? And I see three hands up.
+
+So I've said what the challenge I'm trying to solve and now you can tell me I'm nuts or whatever, but you're top of the list.
+
+[Speaker 9]
+Three minutes with three hands up. So yes, very much, yeah. But what we need to do here to agree on a set of criteria, I think you've given one already that these terms should be available and addressable publicly, addressable with a URI.
+
+We can help people who don't currently do that and show them how to do it. But alongside that, I'm also keen that we make what I call the semantic mappings between them. So yes, if you're an expert in mining or whatever the expertise is around the table, there's some very interesting cases here.
+
+I don't claim to know anything about mining, but I do know that name is the same everywhere and you can make those semantic mappings and my term will be broader than yours or narrower than those. And I think that including those will provide AI agents with the ground truth they need to be better at what they do already.
+
+[Speaker 1]
+Yes, I can see Marcus smiling because you just said scars without saying scars, right?
+
+[Speaker 9]
+I did indeed say scars without saying scars, yes.
+
+[Speaker 5]
+So Michael. Yeah, just quickly, I guess, and I had put this question in GitHub or an issue, should the facility record actually be a first-class citizen within UNTP? It seems like there's an awful lot of information that gets, it supplies critical information into the whole DPP, but it's not in the overall architecture diagram.
+
+[Speaker 1]
+Yes, it is a first-class record citizen because there is a page for it and you're looking at it now on my screen, but there's an omission on the part of the architect, which is me, but I haven't updated the diagram with the box in it.
+
+[Speaker 5]
+So, yes. Yeah, I figured, I didn't know if it was intentional or if it was oversight. So that was really, yeah, okay.
+
+[Speaker 1]
+It's, yeah, it's oversight. I need to add that box basically. Zach.
+
+[Speaker 3]
+I just wanted to share with the group that as we're doing real projects, the demand for this sort of URI addressable criteria is becoming very obvious in real projects. And so the, I mean, you kind of asked the question, oh, should we, are you on a fool's errand? And is it crazy?
+
+It might be both a fool's errand and crazy, but it has also been what's, it's what we're seeing is required as we deliver real projects. So- I agree. It is something I think we need to work through and figure out how to make true and real as we go through the process.
+
+[Speaker 1]
+Right, okay. So then this is probably going to be the most interesting bit for the next couple of weeks or three weeks of just coming up with this structure, the architecture of how a scheme owner publishes a scheme owner's vocabulary of criteria in such a way that it's reasonably, they're all different and we don't want to force them a square peg in a round hole, but you can see looking at those different schemes that a little bit of guidance from us about how to publish your scheme in a machine readable way might be helpful.
+
+[Speaker 3]
+So- And we might want to think about whether it's a must or a should as we define the requirements, right? Like, so we can be flexible in how we make that usable for our community.
+
+[Speaker 1]
+Yeah, well, I'd have thought that it's kind of up to the scheme owner how granular they go, right? You could, in this Irma one, for example, that I showed you, just have URIs at the principal level if you want, right? I mean, it's not for us to say you must have URIs at these lower levels, but I think the basic requirement, as Phil and others have said, is you've got to be able to reference something unambiguously.
+
+How fine grained you go, whether your vocabulary has a thousand criteria or ten criteria, I think is kind of up to the scheme owner. I wouldn't want to dictate that, but have the flexibility for them to go either way. Anyway, that's the looming challenge and probably one of the most important parts of all this.
+
+Because without this, it's a technical architecture with data carriers and structured data, but you can't necessarily make any sense of it, which is kind of the whole purpose, right? So this is, in my mind, quite an important thing.
+
+[Speaker 4]
+Sorry, you'll also find the same issue will come up with circular performance.
+
+[Speaker 1]
+Yes, that's one of the criteria, yeah.
+
+[Speaker 4]
+Exactly, so it doesn't just fit for sustainability reporting, but also for circular performance that's embedded into really the whole, much of the point of a DPP.
+
+[Speaker 1]
+Yes, exactly. So you won't be surprised that like many, I've been playing with Grok or ChatGPT or whatever your favorite thing is to come up with a taxonomy. And here's one, aligned with OECD and various other things, governance, risk management, transparency, ethics.
+
+You'll see circular performance down here as well. Where is it? Pollution prevention, climate and circularity.
+
+Yeah, I wanted to separate climate and circularity. But anyway, I'm playing with these things. Anyone else has got any ideas about- Yeah, Steve.
+
+Reference vocabularies.
+
+[Speaker 2]
+Yeah, Steve, I've got a bit of an idea and complimentary to what Phil Archer and both Phil and Zach were saying, that it's really interesting how this interacts with the idea of distributed architecture. And when I look at things like vocabularies and profiles of vocabularies, and the idea of rules of memberships to vocabularies, that profiles are really a critical component here. And that we need to look in terms of what that means in regard to core principles and coming back to vocabularies.
+
+But obviously, if we're going to have catalogues, we're going to have to have profiles of catalogues that set those rules. And the catalogues that link back is in many ways, if you like, a structural consideration when we look at sustainability scheme and what that means in terms of the core ideals of the UNTP and distribution. And so if we're going to talk about catalogues, and if that is a relevant approach, then we have to talk about profiles of catalogues.
+
+[Speaker 1]
+We run out of time on this call, but this is the emerging discussion, I think, for the next few calls, because this is probably the most important part of all this. So park the thought, please write your thoughts on the mailing list. That's why we have a mailing list, right?
+
+And I think there's two challenges here. One is what's the right technical architecture to govern all these catalogues, but also who's got experience in looking at all the actual vocabularies around the world. I've had a look at the EU taxonomy, which is a little bit of a mix of impact and topic and various others, and none of them seem complete or, or, I don't know, relevant as a catalogue or taxonomy of assessment criteria.
+
+So I'm struggling a bit with, you know, making the thing on the left there, the typology, the taxonomy, again, which will... So if anybody's got any thoughts on that, write them in the email. Meanwhile, I'm just, you know, have a stab.
+
+But these are the things we'll be discussing, I think, in the next few calls. And we are at time. We're four minutes past time.
+
+So I appreciate... Has anybody got any last comments they want to make before we say thanks and see you in two weeks?
+
+[Speaker 2]
+Good on you, Steve.
+
+[Speaker 1]
+If not, please, you know, write your thoughts, because this is one of the most challenging bits, right? Let's try to get this right. It is exactly a decentralized governance with some sort of central guidance, if you like, about how you develop these taxonomies, because this is what will make interoperability between schemes.
+
+You know, you've got that certificate, but does that satisfy my regulation? You know, this is the biggest challenge with all this. Okay, look, thanks, everyone.
+
+We're a bit over time. I appreciate your time on the call and your contributions. And please be as active as you'd like to be on the Slack channel and the email list.
+
+And we'll see you in two weeks.
+
+[Speaker 3]
+Thanks, everyone. Thanks, Steve.
+
+[Speaker 11]
+Thank you.
+
+[Speaker 1]
+Thank you.
+
+[Speaker 11]
+Thanks, Steve. Bye.

@@ -1,0 +1,386 @@
+[Speaker 9]
+Good morning, although it's not quite morning here, we'll be right when we finish.
+
+[Speaker 10]
+Yes.
+
+[Speaker 8]
+Another minute. Hello, Esther.
+
+[Speaker 1]
+Are we expecting any more from the Canadian side?
+
+[Speaker 2]
+I don't think so. I think I'll be the only one.
+
+[Speaker 1]
+Okay. All right. I got apologies from Phil.
+
+So, it might be a small group and a short meeting today because there's no full request to review in there. So, might be an opportunity for people to just share thoughts and discuss ideas that they've been dwelling on. Anyhow, welcome to the meeting.
+
+Thank you for making the time to join in whatever time zone you're in. The meeting's already started recording and an AI assistant will kindly summarize all this for us. Hopefully it'll get it right.
+
+And remind you this is a UN meeting and any contributions you make are contributing to UN-owned IP. Nancy's joining us. So, with that, our usual process is to review open pull requests and then work through some issues.
+
+I'll just share my screen and note that there aren't any pull requests because I, for one, didn't get around to doing the updates to the registrants section. Which I said I would do last time. It's on my to-do list for this week.
+
+So, you'll see a pull request fairly early in the life cycle of our meetings. But we could go and talk about open issues before we get into that and start working through them. Has anybody got anything in particular they'd like to bring up or discuss?
+
+No? Okay. Might just give a quick update.
+
+There was a meeting with ISO TC154, which is that part of ISO that collaborates with UN on trade data standards. Joint Working Group 9, which is that subpart of TC154 that works on specifically collaborating with UNECE on things like the buy, ship, pay model and EDIFACT and so on. About launching a new project to develop a global digital product passport.
+
+I'm not very familiar with the ISO lifecycle process of how you get a project idea up to become an actual project and how you progress through. So, it's at the very early stages. But it is being pushed by the China National Institute of Standards, which presumably has a bit of weight in ISO.
+
+So, at the moment, all I know is it will be a joint collaboration with UNECE. There will be a joint chair. And it's at the kind of project proposal stage.
+
+That's that update. Nancy, did you have something you wanted to say?
+
+[Speaker 2]
+Yeah, I just – am I – can everyone hear me, first of all?
+
+[Speaker 10]
+Yep.
+
+[Speaker 2]
+Just wanted to let everyone know that we are going through the process of updating the UNTP extension site for the critical raw materials extension. And as we do that, we're coming – yeah, we're getting some insights into, like, how UNTP can be implemented. And one of the things that we've come up with is the idea that for early implementers, instead of them having to build out a large business case, they actually probably don't have the information to do that.
+
+And so, it's – we're actually coming up with, like, a one-page value proposition statement as a template for – and I'm talking about really early adopters, like mining companies that are interested and want to test out some of the reference implementation work that Zach and his group has been doing. And just really kind of get their hands dirty. So, I'm wondering – I saw, Steve, in your list of pull requests, I guess, that there was one there for business case development.
+
+And I just wanted to flag that that is very much – I think that that should very much be work in progress because we're learning a lot about what information implementers have access to at various stages of their implementation and how we can best support them to, like, create that early value proposition. That kind of gets their larger organization on board with piloting. And then at the same time, what we're thinking is that as they're doing their piloting, they should also think about building or populating a business case, like a much more sort of bigger, robust costs and benefits type of document.
+
+The other thing – the reason why we're thinking that is that Esther did quite a bit of research into all of these big pots of funding for sort of digital and sustainable development type projects, like Horizon Europe and Surpass 2. And most of them are only interested in funding post-pilot projects that are a consortium of actors, and they are typically only doing matched funding or, like, funding – partial funding. So, we're thinking that if we flag for early adopters that, okay, maybe you might not have all the information you need to build out a full business case yet, but as you're going through this pilot early implementation process, you should probably be looking to populate this business case template because at the end of it – you should also be thinking about activating your community and getting a consortium together if you want to take that next step to full implementation and get – make funding applications for that work. Anyways, I just – I'm not sure if that's helpful, but I just wanted – those are kind of some of our learnings as we're extending the UNTP.
+
+[Speaker 1]
+Yeah, thanks, Nancy. Yeah, I'll just highlight that these three – yeah, they're not pull requests. Pull requests is when something's ready to commit.
+
+These are just work items, tickets.
+
+[Speaker 10]
+Oh, I see.
+
+[Speaker 1]
+Value assessment framework, community activation, business case. And we spun off a subgroup led by Michael O'Shea.
+
+[Speaker 10]
+Okay.
+
+[Speaker 1]
+And Anne, who's just joined us, is on that subgroup to flesh these out.
+
+[Speaker 10]
+Okay.
+
+[Speaker 1]
+And they've made some reasonable progress. I think Joe's on the call as well, who's done a fair bit of work on it. So we expect to be pushing quite a rich amount of information about how to do this.
+
+You know, what are the business value propositions? Here's a spreadsheet with – where you can put numbers and come up with a metric for yourself and so on by mid-September.
+
+[Speaker 2]
+Oh, that's fantastic. Okay, that's great.
+
+[Speaker 1]
+Yeah. In fact, since Anne and Joe are on the call, I don't know if you want to give a quick update of where you're at with all that business case material.
+
+[Speaker 7]
+I can provide a sort of on-site update because I was sort of in the room listening to it, but not really on the call. John Phillips and I put together a spreadsheet that helps guide participants through the creation of a value case or business case and business justification. Michael, I don't know – you were more probably involved if you were on the call.
+
+Do you want to give a more detailed update?
+
+[Speaker 1]
+Yeah. It's not Michael's time zone, so he's not on the call.
+
+[Speaker 7]
+Oh, so it's not Michael's time zone. Anne was on the call probably. Yeah.
+
+[Speaker 6]
+Yes, Guy was on the call. So, in terms of a spreadsheet, we spent quite a bit of time and discussed all the items. So, basically, we're breaking down – we itemized all the benefits and the costs and descriptions and developed a sort of a model and currently have some of the hypothetical figures on it in which you can adjust it.
+
+And then the time spent in 10 years, and the idea is that we could calculate the costs and the benefits over the span of 10 years and have an ROI for the investment in UNTP. So, we're developing that, and we'll continue to update and add content into the description of the items that we have on the page. So, we'll meet again next week and would improve the Excel sheet, the models that we have, and try to complete as much as possible the content on the front page or descriptions that are related to the business cases.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 2]
+I was just going to say, perhaps, Anne, if you wouldn't mind inviting me to that meeting, I think it would be helpful for me to understand where you're heading with those materials. And maybe someone from my team as well who's been thinking about what this CRM business case could look like, because if we're going to be extending, then, yeah, I would – if you wouldn't mind me being a fly on the wall, that would be very helpful.
+
+[Speaker 6]
+Yeah, of course. I think Steve is writing the email right now because Michael is hosting the meeting. Okay.
+
+[Speaker 7]
+Yeah, Michael's hosting the meeting, so therefore, I think we might have some time zone challenges, but – Oh, okay.
+
+[Speaker 2]
+Okay.
+
+[Speaker 7]
+That's fine. Because Michael and John are driving it.
+
+[Speaker 8]
+Right.
+
+[Speaker 7]
+But – and that might be another night for you, but maybe we can find something that – I notice he's already doing a bit like our meetings.
+
+[Speaker 1]
+He's – when I look at their meetings, they seem to be at two different time zones.
+
+[Speaker 10]
+Good.
+
+[Speaker 1]
+So, there should be one that's comfortable for Nancy. Good.
+
+[Speaker 2]
+Yeah, that'd be great. And I can forward it to some folks on my team as well.
+
+[Speaker 3]
+Cool. I think – I can join you, Nancy. Yeah, I got some insights from the conference this week on the critical meals.
+
+Oh, great. And there is a lot of noncompliance value in terms of the UNTP. Yeah, so there are some movements in the consultancy world in this space.
+
+[Speaker 4]
+Sorry to go backwards, but going back to the ISO TC-154, I'm also not that familiar with how participation in these groups is decided. I mean, I know that UNECE nominates people to participate, but it's like on the other side, how do countries or ISO members decide? But I would really like to see from someone who is familiar what strategies we could encourage to be sure that there's adequate geographic representation.
+
+Because a group that's sort of dominated by the Chinese without a lot of other participation might not result in the best output.
+
+[Speaker 1]
+Yes. And I think that needs a better understanding of the ISO governance process. But I did – I'll share with you – have asked the chair of TC-154, who is also the one proposing this project, to have just a quiet meeting to figure out what the intent is.
+
+And it turns out they had read pretty much the entire website of UNTP, understood it surprisingly well, and were of the opinion that the ISO project is likely – or in their mind, they wanted it not to be just one standard, but actually a program with multiple standards. And very similar in structure and approach to UNTP, possibly the same. That's what they told me.
+
+Now, I think, yeah, there'll be a bit of procedural governance here to, as you say, get suitable geographic representation. I did send an invitation – an introduction to – between the Chinese guys leading the – want to lead the DPP project and the CEN DPP project leadership. So we'll see whether they talk to each other.
+
+Anyway, we'll keep you posted. And at least I was pleasantly surprised the extent to which they'd studied what we're doing and seemed to support it. So that's the only bit of news I can offer.
+
+Just going back to what Nancy was saying, I just probably should make a point, too, that agriculture – I've got too many tabs, as usual. When we started writing these implementation guidance pages here, for which we only have discovery – you may remember we had a brief chat about this – this idea that we should show the way for possible implementers to, if you like, dip their toe in the water at low cost before they make commitments to go further and therefore divided implementation into this kind of crawl, walk and run phase. And I put a few bullets down for crawl, and Nancy was going to have a crack at putting a richer explanation.
+
+But to exactly the same point that Nancy just made, as soon as I started writing something about walk and having to make decisions about – I don't know – strategic decisions about value chains that are going to participate, ESG criteria that are going to matter, and software packages you're going to pick, and so on, it pretty quickly realized that you probably shouldn't really start the alpha phase unless you've already done a community activation.
+
+Because talking with some very proactive organizations like Adidas and others in European textiles, who have also had a look at UNTP and want to move beyond pilots into production, they're very keen, but they don't want to move alone. And so there is a common pattern here, I think, where even major actors want to feel that when they're making their strategic decisions about which standards to support and what software to invest in and so on and so forth, they don't want to be the only one doing it. And so I think community activation is increasingly important and is probably a prerequisite.
+
+Anybody ought to be able to do a crawl phase, dip your toe in the water, low-cost experiment, all this stuff. But the next phase needs a business case for investment, and that, I think, is massively enhanced when you're part of a community activation. So I think that's a general consensus.
+
+And the example that I've got – we've only got two examples of communities so far, which is Australian agriculture and critical minerals. And in Australian agriculture, we were lucky because the community was established before we started through a government grant, and so I didn't have to think about how do we pull the actors together. But I realized that without it, it wouldn't have gone ahead.
+
+So anyway, that's just an observation that we probably need to put in there.
+
+[Speaker 2]
+Yeah, and we should have the recommendation that they're thinking about community activation, business case development, and funding streams while they're doing their crawling.
+
+[Speaker 1]
+Yeah, and that does mean who leads this community activation. The most obvious candidates are whoever leads existing communities, which is generally member associations, like the Mineral Association of Canada or Mining Association of Canada, for example, or perhaps with a bit of government leg up. And that's exactly what happened in Australia, right?
+
+There's a National Farmers Federation, Australian Farm Industry Institute, sorry, getting some funding from Department of Agriculture to create a traceability group. And just for your interest, here's the Australian agriculture traceability protocol. You might sort of – the layout looks a bit familiar, perhaps unsurprisingly, because it's a clone of the UNTP site.
+
+And there's some fairly rich content about governance, because we've got state governments, federal government, various working groups, a hierarchy. There's a fair bit of detail here about how to get government, because this thing started with a group that needed a governance architecture. And you can see some examples of taking UNTP and extending it.
+
+And here's a familiar-looking product passport, except the product is a bovine animal. And everything else looks pretty familiar, but it's got bovine characteristics and health treatments, which are obviously specific to animals and not relevant for things like batteries. So we're beginning to see an example of what happens when you take UNTP and extend it.
+
+And it was quite straightforward to do the hard work. It wasn't all the technical modeling and schema generation of stuff. It was just figuring out what are the right bovine characteristics.
+
+And fortunately, there was a Meat and Livestock Australia standard to follow. It was a PDF document that I had to transpose into something digital. But it's beginning to happen, and similar things happening with critical raw materials.
+
+[Speaker 8]
+So that's kind of cool, I think.
+
+[Speaker 1]
+Anyway, any thoughts or comments on that?
+
+[Speaker 4]
+I had a question. Could you explain what mass fraction is?
+
+[Speaker 1]
+Mass fraction in the model. So that was in the material section. So that means the material little box is a list of material constituents.
+
+So not so much bill of materials, if it's a final assembly, it's raw materials. And mass fraction means what fraction of the finished product or the intermediate product is that material. So if it's a battery and one of the materials is copper, it might be 10% or something.
+
+The battery made of copper.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+Below a certain threshold, you might not care about it. But sometimes even small amounts of materials, particularly if they're hazardous or polluting, can matter.
+
+[Speaker 10]
+Okay.
+
+[Speaker 1]
+There's a ticket there called mass fraction from Gearheart that I haven't looked at recently. So one way to go through open tickets, and we can all decide if we want to cut this short, is to look at the oldest ones that haven't had much attention and see if they need a bit of oomph. So the top one here is sustainability vocabulary design.
+
+I don't think we've got Marcus on the call, but this was a ticket raised a while ago about how do we represent all these different rule sets and have some sort of catalog of rules, right? Because the reason this matters, if we just go back to one of these models, doesn't matter which, you look at a digital product passport again.
+
+[Speaker 8]
+Where did the diagram go? Oh, that's my – sorry. That's my local copy that isn't running.
+
+Let's find project CRM. There we go.
+
+[Speaker 1]
+If we take a look at product passport, it's in some ways a pretty simple structure, right? In fact, some of the feedback I've got so far is it's too simple and doesn't have enough in emissions performance and stuff like this. But the hard bit of this one is this area down here, declarations, right?
+
+Where the thought process was that a digital product passport can have many declarations, like I declare my carbon emissions intensity as X or that this product is deforestation free or so on and so on, right? And these declarations get grouped into a fairly high level and fairly straightforward topic category, like is it about emissions or is it about waste or is it about circularity and so on? But the hard bit is when you start making declarations against particular regulatory criteria or standards criteria, there's an enormous plethora of regulations and standards and criteria within them to reference.
+
+And many of them are published as PDFs. How do you make a meaningful reference? And when you do it, how do others understand it?
+
+And when you've made, let's say, 20 declarations in a passport across three or four different regulations and standards, what does that footprint look like? So this is a simple structure that might be difficult to use if there isn't a sort of a profile, if you like, for a given community of which regulations and which standards and which criteria are relevant for that community, like mining in Canada or agriculture in Australia. And a vocabulary that we don't own because these vocabularies are normally made, you know, they're regulatory or they're some, you know, that we can reference in a meaningful way.
+
+And so we have done a little work with one of the people on the team who's not on this call, Marcus, who's a bit of a semantic web guru, to comb, for example, the published Australian government regulation. And I don't know about other governments regulation, but there is an act in Australia, which is the act about how you write acts, which means that every act has a very consistent structure, which means you can comb an HTML website of Australian government regulation and produce a structured data set from it. And then he started looking at how to profile those, let's say for agriculture, and come up with a kind of a footprint of the subsets of the acts that matter for livestock in Australia, and see if we could group together a bunch of regulatory references and attach basically a URI to that grouping, which is, this is the footprint of livestock in Australia.
+
+So we could group livestock against Australian regulation and call that kind of a profile. It's interesting work, a little bit academic at the moment. And for me, this is one of the fuzziest areas of all this project of all is how do you start to build meaningful libraries of criteria that we don't own, but we need to be digitally referenceable and make them manageable.
+
+So if anyone's interested to participate with Marcus in sort of doing prototypes in that area, let me know. But that's, that's where that ticket of sustainability vocabulary design is at, right, because it needs to go into the page down here, the sustainability vocabulary catalog, where this is the structure bit. So this page is basically saying, expressing just what I said, this is a simple structure, but the hard bit is, what URIs do you put there, and that's going to go in this TBA bit.
+
+This will be basically how you generally catalog stuff. But I think what we'll see is that when you get into the critical raw materials or the Australian agriculture, this bit will get quite important because it's starting to, it's starting to express the language of the rules that are relevant to that domain. So I think we need to experiment with this stuff pretty quick, because it's basically, from an ESG perspective, it's the stuff that matters, right, because it's what claims you're making against what regulation is, and standards is a key question.
+
+[Speaker 3]
+Steve, question. Sorry to interrupt. If we put in information on sustainability credentials, is it going to be as a reference or is it going to be value as an allocation of those metrics per product?
+
+[Speaker 1]
+Both, right. So let's have a quick look. I keep losing my tab.
+
+This one. So if we go back to that little structure we were just looking at, let's expand this. So you see here a declaration.
+
+I can show an example too, but let's imagine it's an emissions intensity declaration or something like that. Maybe this is a structural steel passport, and the declarations are against Australian structural steel standards. So you'd have a declaration that would have a category, so it'd be a material safety, and there might be a link to some third party evidence, and there'd be a topic, and you say yes or no, you're compliant.
+
+Then this is where you have the declared values, right? So not every declaration will have declared values because some things you don't count, right? But here you would say my steel has a tensile strength of 400 kilopascals, or whatever.
+
+I'm not sure what the right size value is. But the reference standard has a criteria which has threshold values, do you see here? It says to be usable for structural buildings in Australia, structural steel must have a minimum tensile strength of X, that would be here, and the actual tensile strength of my product would be here.
+
+Similarly, you could have an industry average emissions intensity, and here you'd have my specific product emissions intensity.
+
+[Speaker 3]
+Yeah, I think this is where the probably biggest complication will come from. So allocation of those emissions, they calculated per basis on the entity, right? So facility, and often it's really hard to convert it into product that's almost non-existent at this stage.
+
+And that's why I think we previously discussed about the importance of the LSA components and how it's going to be converted into allocation of those emissions per product basis. And it's kind of happening in some spaces, but in critical mills, it's kind of moving very slow. And that puts in the perspective of the conversation of having this per product emission credentials, because again, that's going to be valid proposition.
+
+Once you put it in there, it's someone's going to be someone's scope for emission.
+
+[Speaker 1]
+Yes. And the allocation rules are unclear in many cases. So we might need to give some guidance by industry sector.
+
+And you're right, that in most cases, the formal measurement and assessment is done at the facility level, right, which is why we have this facility profile here, which has a remarkably similar structure, except that now it's instead of a product, it's a facility, but we've got exactly the same declaration structure. So it's not inconceivable that a facility would say, here's my facility record profile, and my facility emits 1000 tons a year. And here's the criteria I measured against, etc.
+
+So that's, if you like the, the balance sheet that says that this is the total for a facility, how anyone could then have a view across all shipments. To add up for themselves, you know, only the facility owner sees the totals of everything they're shipping out, only them and an auditor. But it ought to be possible to, it's usually not impossible, even in annual reports to figure out how much volume a particular facility ships, you know, most companies will proudly announce that they produce so many tons of steel from this facility that year.
+
+[Speaker 3]
+That's true. But it works really. So I think like, you know, there is a little insight in terms of allocation, right?
+
+It's really works really clearly, if it's only producing everything about the primary product. But there are specifically in critical aerospace, you're going to have the secondary products and byproducts, and they have the all allocations of the carbon footprint. And those don't get reported in those things, right?
+
+I'd see maybe like one of the, like, you know, at this stage, going the easier route, adding this connection between this facility and that metrics of sustainability we had previously, and have a line there with a box saying, it's up to actor to decide what allocation looks like in this accepted way.
+
+[Speaker 1]
+Yeah, look, I don't know what else we can do at the moment. Yeah, I don't think we can do much. But, you know, as verifiers start to consume facility profiles and product passports, and so on, the resulting database or graph will be drawing lines, right, between a product and a facility because there's a reference in the product passport to the facility where it's made, produced at facility there.
+
+[Speaker 3]
+That's right. Yeah.
+
+[Speaker 1]
+And so you could start to draw pictures and start to look for exceptions, you know, if you know, a given facility produces 1000 tons of steel a year. And you know, they're publicly announced carbon footprint because it's part of regulatory reporting under the, see, most countries don't have product passports, but most countries are having entity and facility level annual disclosures. And so it becomes increasingly public knowledge, what the footprint of a facility is.
+
+So then you can start to look for exceptions and go, wait a minute, you know, there's 1000 tons in this facility, but they reckon all their products are emissions free or, or, you know, two kilograms or something. It doesn't add up, doesn't even close to add up, you know, that there'll be that capability, I think. But it's a tricky one.
+
+And I think you're right, you have to leave it to the, for now, to the reporter to say, I think my allocation is this.
+
+[Speaker 3]
+Yeah, I haven't looked into details. Maybe there is some sort of clue in the GHG protocol for the IPRS by WRI. Okay.
+
+Yeah, maybe there is some allocation rules in there.
+
+[Speaker 1]
+The Pathfinder framework makes some mention of it. Yeah. Anyway, that was a...
+
+[Speaker 8]
+Yeah, yeah.
+
+[Speaker 1]
+So that's probably the remaining biggest uncertainty is this business of how do we reference regulations and criteria? Obviously, it's fairly easy to pick a few and do it manually. It's just, how do you, how do you do it at scale and consistently?
+
+Takes a bit of work. Has anybody else got any issues that they have raised that haven't been addressed yet that they would like to talk to? Otherwise, I'm going to go through some of these and see what I can close.
+
+You're on mute, I think. Virginia, I can see you're...
+
+[Speaker 4]
+Sorry. Just out of curiosity, what is the conflict between counterfeit versus right to repair?
+
+[Speaker 8]
+I'm not sure on this. We can have a look at that.
+
+[Speaker 1]
+DRM laws were passed to prevent piracy and unlawful copying of printout. They have been extended in ways not imagined originally. Now being used to check, to block the use of aftermarket parts.
+
+[Speaker 8]
+Right.
+
+[Speaker 4]
+Oh, so it's like that. I think it's like the Apple repair problem where you have to use an authorized part from the manufacturer in order to keep your warranty.
+
+[Speaker 8]
+I also agree. What's issue 12? Oh, it's back to this one.
+
+[Speaker 9]
+I don't think that...
+
+[Speaker 8]
+I don't think we've got too much to say about this. Do you?
+
+[Speaker 4]
+No, I don't. It's a policy decision. It's a regulatory decision.
+
+If countries are going to allow companies to do that or not. And I don't think the standard has to...
+
+[Speaker 1]
+Yeah, unless there's a data element that we want to put against the product that is a sort of a right to repair flag, you know, or some right to repair code or something. Sorry.
+
+[Speaker 4]
+I was thinking if somehow you could link this to the mass fraction question in the sense of what percentage are parts that are not original manufacturer parts, but maybe not.
+
+[Speaker 1]
+Yeah, I don't know. I think a lot of these, we're at a point where we've got, you know, reasonably good data structures. And we don't know what we don't know in terms of how fit for purpose they are when we actually do real pilots in the next phase of pilots.
+
+And I think that's probably the strongest need right now is to validate all these new experiments.
+
+[Speaker 4]
+Yeah, I also think the best test for this is when you have a use case and you have to implement it.
+
+[Speaker 1]
+Exactly, exactly. So it's a better way of saying what I just said, right, which is, let's, let's actually do some real pilots tested the data structures, we've kind of got the technical underpinnings, I think the right granularity, you know, we can reflect sustainability criteria at facility level or product level, we can add conformity credentials, we can do traceability. But is the data model exactly right?
+
+Is it fit for purpose? Does it make the use cases? We'll find out as we do pilots in various industries.
+
+Nancy's, I think, launching your pilot invitations next week. We're moving, still progressing reasonably well in Australian agriculture, the next round coming soon. And the lessons from European fashion are we need to activate a community before the big players will, will plug in and there's some conversations going on with various groups to achieve that.
+
+So hopefully, we're not far away from testing this. Okay. Look, I'm happy to give people 15 minutes of their day back or their night in the case of Virginia.
+
+And if anyone has anything else, they'd like to discuss what I'll do by next, in the next couple of days, not not just before next week is put an empty structure up for these registrations of commitment to implement. By different categories, so that we can start to see some indications of commitment to uptake. So you'll see that come through shortly.
+
+And maybe some more content on the implementation guide, that kind of community activation before you walk and then what are the walk steps. And looking forward to the business case content that comes from Michael subgroup and Proc and Nancy, I've sent an invitation, your insights will be valuable there. I think it's one of the most important bits.
+
+[Speaker 5]
+Yeah, actually, just a quick update on that for folks. Sorry, I was late this morning. But we had a business case meeting yesterday.
+
+And john Phillips from has put together a pretty interesting business case template. We walked through it talked through a number of different scenarios. One of the hard ones that we discussed is how do you model.
+
+So one of the items Steve on your list of values is due diligence requirements, like, but how do you model the penalty side of that in a sort of DCF or net present value or IR analysis. And sort of what we thought through was potentially like so if the penalties if you're exporting to Europe, the penalties might be 4% of global revenue. But the risk is the likelihood of that is low.
+
+But you can still do build a calculation and put a value. Let's say the we think the risk is less than 1% still 1% times 4% times global revenue is a dollar figure, right? Like you can kind of come up with something.
+
+And we'll build that into a template that people can fill in. Anyway, just working through the things like that to try and figure out how to put real dollars into these business case templates.
+
+[Speaker 1]
+Yeah, it's not easy. But it's, it's quite interesting. And when you really put your head to it, you find all kinds of value propositions that you haven't thought about.
+
+And also costs that you haven't thought about. And I think it's important to demonstrate that we have thought about all that stuff.
+
+[Speaker 5]
+Yep. Thought about maybe not gotten it completely right. But as a model, and if hopefully it's helpful, right, is the idea.
+
+Yeah, and was on that call yesterday, too. So she, I don't know if she maybe gave an update before I joined. She did.
+
+Okay, sorry. Sorry for repeating folks. Okay.
+
+[Speaker 1]
+All right. Would everyone like 15 minutes back then? Any objections?
+
+Okay. Well, thank you for attending. I'll push a couple of requests quite soon, and look forward to seeing you at the next meeting.

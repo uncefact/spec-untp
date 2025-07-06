@@ -16,7 +16,7 @@ Version 1.0 stable release for production implementation is due Jun 2025
 ### Release for Pilot Testing
 
 * Conformity Vocabulary [Schema](https://jargon.sh/user/unece/SustainabilityVocabulary/v/working/artefacts/jsonSchemas/ConformitySchemeVocabulary.json?class=ConformitySchemeVocabulary) and [Documentation](https://jargon.sh/user/unece/SustainabilityVocabulary/v/working/artefacts/readme/render)
-* Conformity Topic Classification [JSON Structure](../../schema/SustainabilityCriteriaTaxonomy_v0.1.json), [JSON-LD vocabulary](../../schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
+* Conformity Topic Classification [JSON Structure](/schema/SustainabilityCriteriaTaxonomy_v0.1.json), [JSON-LD vocabulary](/schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
 * Conformity Scheme [Register](../implementations/SchemeOwners) (simple web page for now)
 
 Note that the vocabulary schema depends on definitions in [UNTP core vocabulary](https://test.uncefact.org/vocabulary/untp/core/0/about)
@@ -285,8 +285,8 @@ This classification is an early draft for discussion **only**. It is likely to e
 
 ### Machine Readable Versions
 
-* [JSON Structure](../../schema/SustainabilityCriteriaTaxonomy_v0.1.json)
-* [JSON-LD vocabulary](../../schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
+* [JSON Structure](/schema/SustainabilityCriteriaTaxonomy_v0.1.json)
+* [JSON-LD vocabulary](/schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
 
 ### Human Readable Version
 

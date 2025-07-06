@@ -1,0 +1,456 @@
+[Speaker 1]
+It's going to be more than two or three hours, and it's clearly not. So anyway, we'll have that for another day. Sorry, Steve.
+
+You've gone yourself on mute, Steve. Thank you. Just while we wait for the others to join, a quick acknowledgement of Brett's request for me to tweak that model this weekend, and so that you can finally put my diagram in your document.
+
+Hello, Virginia. Thanks, Steve. It's all right.
+
+Oh, hello. Hey, it looks like I might be flying on the 3rd and arriving on the 4th in Krakow and making my way to Barcelona for the 5th. So that's a bit earlier than I said I would in the email.
+
+So I wondered if you might have a bit of time. I'm going to really put an effort in next week to populate more of this document, and it would be good then to kind of both have a crack at it and then maybe do some together. Are you talking to me, Steve, or generally?
+
+No, I'm talking to Virginia because I happen to be going to Barcelona, and she lives in Barcelona. And so not only can we have a glass of wine, but we might actually roll our sleeves up a bit on this document. No, that's fine.
+
+[Speaker 2]
+I mean, if you like, my living room table is almost always free.
+
+[Speaker 1]
+So we could come to my place and we could sit and work here where it's kind of quiet. I think that would be a wise idea, right? Because you're used to writing these kind of documents, and you also have a really good empathy, I think, with the policy executive-level readership so that we get the tone right, right?
+
+Because I know what I want to say, but I'm not sure I will say it in the right way for that audience. So I think between the two of us, we'll make some good progress together. No, that's fine.
+
+And I'm here. I don't have any plans to go anywhere until the second half of February. Okay.
+
+All right. I see a few more people have joined. Hello, Peter, John, Zach.
+
+Oh, Olivia, Ash. I didn't send out a reminder for this meeting, so only the diehards are attending, and it's refreshing to see such a competent bunch of diehards call in. So thank you for that.
+
+I think we're okay to start. And for those that have joined since I clicked the record button, a reminder that we are recording this. Hopefully that's okay with you.
+
+I wanted to just remind everyone, too, that a little while ago, because there was becoming kind of a bit too much technical information in this document, we spun off a separate website, which is the main carrier for most of the technical information, so that this document can remain a policy document, although there is a little bit of business language on the website as well. So I thought I'd first take the opportunity, for those that haven't looked at it, to do a super quick walkthrough of the website so that we've got that in our mind, because there ought to be some correlation between the two, and then go back to the document and answer a few questions that were raised and then talk about how we polish this off at least to draft level within a couple of weeks. The breather that we got in December, we've almost consumed.
+
+It's often the way with these documents, you know, you get a bit of a time break, and then it creeps up on you and you have to work on it again. So I'll just quickly screen share, just to walk you through that website. So, I know several…
+
+Can everyone hear me all right? Sometimes I'm supposedly got fiber to the home, but sometimes it just… You'd think it's an old acoustic modem.
+
+All right. Thank you. So, is there anyone here that's not seen this website or not gone through it?
+
+I've only gone through it partially. I haven't…
+
+[Speaker 2]
+Okay.
+
+[Speaker 1]
+Yeah, yeah. And it's a lot of emptiness on this website, but the purpose of it, if you remember, we were talking about how we want to make the recommendation 49, want two things, readable for business people, but also make a call to action in terms of a sustainability pledge, something meaningful. In other words, there is a concrete thing to implement.
+
+And that means you need a kind of a supporting site that has enough details that says this is what it means when you pledge to implement, this is what you're doing. So, that's the purpose of this site. And it's just a very high level.
+
+There's some overview content, and I'll click through a couple of those pages. And then there's the sort of implementable specification itself, which is broken into, I don't know, 10 or 15 chapters, a page each. And then there's some guidance on business case development.
+
+So, slightly different perspective for regulators, industries, industry associations, and so on. So, this is meant to say, if you're thinking about making a pledge, you want to know what is it I'm pledging to? So, that's the specification bit.
+
+And how much is it going to cost me? That's the business case bit. Obviously, we won't know exactly, and everyone's different, but we want to put some reasonably good guidance here and maybe some benchmarks.
+
+And then to try and make the cost side of that business case lower, tools and support. There'll be some words about that. And then there's this thing called an extensions register.
+
+And what we want to do there is recognize that we want to keep the UNTP core protocol as sort of small and simple as possible, and avoid trying to accommodate the needs of every industry and every sector and every jurisdiction, because then it will bloat. And instead say, here's the common core, and here's how you define non-breaking, sort of backwards compatible extensions and register them. And we have a couple already that we want to work with.
+
+One is the UN Critical Raw Materials Project, the one that Nancy's leading, is logically an extension of UNTP. And the other one is Australian Agricultural Traceability Project that we've run here that wants to register itself as an extension. This idea seems to be valid.
+
+And then the implementations register is more a place where, when someone's pledged and then actually built and then tested, it's a place to basically market your successful commitment. So it's part of the incentive to make a pledge. So that's what the website will have.
+
+And the technical stuff goes in this area here. So, for example, in digital product passport, you scroll down a bit, and you start to see really techie stuff like code. So that obviously goes nowhere near the policy document, but it's here for those that are actually doing implementations.
+
+I suppose the two bits that I wanted to draw to your attention today, though, are this bit here, because there's sort of a corresponding bit in the policy document where we talk about each role, each stakeholder type. So here there's a few words. I'm not suggesting we cut and paste these into the policy document, but everyone that's writing the policy document should probably read just this page, if nothing else, and A, give me feedback if you think something's wrong, and B, think about whether there's any words or ideas here that are reusable in the policy document.
+
+So I say a few words about regulators, ESG standards organizations, accreditation, and so this is about obligations and benefits. What does it mean to implement and why would you? Each of these primary producers and manufacturers, brands and retailers, recyclers and refurbishers, environmental and human welfare organizations, consumers, transport and logistics providers, financial institutions.
+
+I started this with thinking three or four, and I ended up with ten or so. It's quite a diverse group of stakeholders that have impacted this. I put in some just random thoughts about what sort of scale do we need in terms of pledges and implementations for this to have any sort of material impact.
+
+Anyway, so I'd encourage you to have a look at that page, and then the other one is just this summary here. Not the details, but at the heading level, there's a one-paragraph summary of each of the components of the specification, and there is a part in the policy document where it's called the specification. The question is, are some of these words reusable there?
+
+So having said all that, that's all I want to show you with this web page and just encourage you to read, if nothing else, just those two sections, audience benefit and goals and specification, and maybe the about page, and that's it. Virginia, you have a question? Actually, I have two questions.
+
+First of all, am I correct in saying that the recommendation is a recommendation meant for all value chains and not specifically for textiles and garments? Correct. Okay.
+
+Because I did a little drafting at the beginning because you really don't want to, actually, I would say even mention textiles and garments because the guy in critical metals, the minute he reads textiles and garments, he's going to say, ah, that's not me. So I took out that reference in the very beginning of the recommendation text. Yep.
+
+And then, there. I changed it to, this is born from the challenges of the UN working to implement, to support sustainability in value chains without mentioning which kind of value chains.
+
+[Speaker 2]
+Okay.
+
+[Speaker 1]
+And then the second thing is the sustainability pledge. There's already a sustainability pledge, which is specifically for textiles and garments. Yes.
+
+And so I think we should put on our thinking caps to think about a different name because you don't want to have the same name for two things that are different. Yeah. So this is a good question to raise, especially with the secretary at Maria Theresa as well, right?
+
+Because the thinking here is you want people to understand the problem, be motivated to participate and implement. And the nice thing about making a pledge is it kind of gives you an upfront look at who's interested. I think the idea is great.
+
+It's just the name that we need to think about. Sorry, I talked too long. I asked Maria and she said, we don't want to make two pledges.
+
+It would be confusing. So do we generalize the existing pledge so that anyone makes it? Really, it is a sustainability pledge, but you can make a sustainability pledge as a textile and leather actor or as a CRM actor or as construction or whatever the industry is.
+
+And do we generalize it that way or what? I don't know the answer to that. I think we agree the idea of pledge and then implement is quite powerful.
+
+But how to avoid confusion or create alignment with the existing textile and leather sustainability pledge? I think we have to discuss with that group, with Maria Theresa and others. And then two small points that I wanted to make for people who are drafting text.
+
+Of course, if you cite something from another publication, you should include the citation. But we need to put that in footnotes because the UN documents use footnotes for the purpose of citations. Because I've had problems when I was working in the UN where people did something and they've got all the citations at the end of the document or at the end of a chapter.
+
+And then you have to go through and manually have somebody cut and paste those citations into footnotes. And that's very painful.
+
+[Speaker 2]
+The other thing I wanted to mention is, please, when you're writing text, think about the fact that it's going to be translated into other languages.
+
+[Speaker 1]
+And so I was just looking this morning before the meeting at the introduction, and I was saying to myself, I got to think about how to reword that.
+
+[Speaker 2]
+We've got hand in glove in the introductory paragraph.
+
+[Speaker 1]
+And I'm not sure, I don't think that hand in glove will translate terribly well. So when you're, as I said, when you're writing text, try to stay away from idiomatic expressions. That's all.
+
+Thanks. Okay. Thank you.
+
+I'm familiar with how Microsoft Word does footnotes. And just while you're talking, did a little experiment here to see if you can add a footnote using Google Docs. And not surprisingly, you can.
+
+There's a little menu function. So you mean like this? Yeah, just put one there.
+
+I mean, obviously, it's an irrelevant and wrong footnote, but just the capability to do it. We should do these references like that. Yes.
+
+All right. So I suppose I thought I'd quickly run through basically some of the comments that people have been posting. Starting with stuff at the top here.
+
+So there was a comment saying we should list all the contributing experts. And I think that's a great idea, but I've not seen it on any other recommendation document. And I have a feeling it's against the UN practice for recommendation documents.
+
+So unless the policy has changed, I have to say, no, sorry, can't do that. Is that still true as far as you're aware, Virginia? Okay.
+
+So that answers that one.
+
+[Speaker 2]
+Yes. I mean, if you publish the guidelines separately on the website, you may be able to put it at the beginning of the guidelines.
+
+[Speaker 1]
+Because I think in some of the white papers, we've been able to put lists of contributors, but definitely not in recommendations or official UN documents. All right. Well, then we could take a little straw poll now and say it's not impossible that we could have a page on this website, which has contributors.
+
+Simple as that. So I don't have very strong feelings about it, but I know that people who volunteer their time on these things would like some recognition of it. So if there's no UN objection, I certainly don't have a problem adding a page to the website with a list of contributors.
+
+Steve, I'm a bit ambivalent. I just feel that as soon as you say that X, Y and Z prepare this document, it sounds like it's more limited. And I just feel it's better to say that it comes from the UN and leave it at that.
+
+That's my personal view. Well, I think we're not only agreed, but we have no choice as far as this document goes. The question is, do we or don't we put a website?
+
+I don't think we have to decide that. It's kind of self-evident in GitHub anyway, through the pull request mechanism about who's contributed content to GitHub. So let's not worry too much about that one.
+
+Let's start working through now. Forward gets written by the UN executive right at the end, so we don't have to worry about that. So we start of recommendation 49.
+
+I think this is some of Virginia's words here. I think the goal we have is that this section one needs to be about five or six pages, so not really very long. And I think we're more or less on the right track here.
+
+This is going to be a paragraph about the target audience that kind of lists all those stakeholders just by name or something. We don't need a lot of detail there. I think I moved this race-to-top, race-to-bottom thing from further down up here because the purpose of this is an anti-greenwashing measure to allow confidence in corporate due diligence reporting and the like.
+
+So I think it comes right up here. We're trying to uplift the value of genuine ESG claims and counter fake claims. It's one of the primary goals and purpose and benefits.
+
+Business challenges. So I added – there were two here, collaboration and coordination. I'm not sure I put that title in there, and I wanted to have a quick chat about that one in a minute.
+
+I added this one here, and I'm not sure if that's the right title either. But the business challenge – one of the key business concerns in the current increasing regulatory environment is noncompliance and the risk that wittingly or unwittingly you contravene due diligence requirements and potentially suffer either a big market backlash or actually quite severe penalties. And is that something we want to put here as a challenge we're seeking to address right up the top?
+
+This is kind of – it's the fear factor of why should I care as an implementer. This collaboration and coordination one, I'd like to get your ideas on this. I hear quite often that if we're going to implement this sort of stuff at scale, everyone has to collaborate and coordinate.
+
+And I wonder whether that's right thinking because it almost feels like a reason not to do anything. And the real challenge to address is how can we implement at scale global traceability and transparency where each actor actually doesn't need to collaborate very much with the other, almost like switching pixels on a television screen one by one and gradually filling up and getting value out of each pixel so that you don't have the kind of, I'm not going to start because nobody else has started, kind of quagmire.
+
+I think the challenge is to do this, to provide a protocol that when implemented delivers value even to one actor that implements it without necessarily needing to coordinate with 100 others or across a community before you start anything. How can we do that? Because if you can do that, then the pixels start to switch on.
+
+That's just my thinking about this section and I value your comments there. Generally speaking, I completely concur with you. Saying that global collaboration is just a way to find a path not to do anything, that's pretty clear.
+
+Maybe what I would put a little bit of emphasis on collaboration though is I think that for any party to get, especially if you look at someone in an industry, for this industry to get value out of traceability, I think at least you need to engage and collaborate with your tier ones, which is feasible, which is almost immediately feasible. Usually you kind of know your tier ones. By feeling that it's rather the right approach is that you don't need global collaboration, but collaboration tier one by tier one.
+
+And that way you can go up into, I mean, go deep into supply chains. Yeah. And so need to collaborate or there is value in collaborating with your tier ones.
+
+But also we want to somehow emphasize that, at least in this solution, that that doesn't mean imposing technical solutions on your tier ones. Absolutely. Agreeing with your tier ones to implement a common protocol.
+
+Yeah. Yeah. Imposing on your tier one is just the path to failure.
+
+Yes. Well, it's the reason we've had so little action, right? Exactly.
+
+Yeah. All right. Thank you for your comment.
+
+Virginia's got her hand up again. John's about first. John, you go first.
+
+Thanks, Steve. Just a thought, as I looked at section 1.4 again, that just from a visualization point of view, it appears as if those three sort of subheadings are a kind of definitive list. These are the business challenges we're concerned about.
+
+But in fact, I think they're more akin to these are some of the key business challenges we see in this area. It's not meant to be an exhaustive or complete list. It's a list of some of the key things.
+
+And I think if we have it structured like it sort of just three subheadings beneath the major heading, it looks like that's the only thing, the three things to think about. So I kind of think maybe an introduction to say, you know, we've expanded some of these key issues in the subsections below or something so that nobody's confused and thinks that it's meant to be exhaustive. And the other thing that struck me, again, it's a bit of a structure question is, are we only concerned about challenges to business?
+
+If we're thinking about greenwashing and the issues to do with ESG, are we actually concerned about other parties, other stakeholders that this causes challenges for? It's not just, yes, of course, it's businesses that we want to implement this and it's them that will become a significant actor in a sort of improved state of things. But does it cause challenges elsewhere?
+
+Government can have a business. Yeah, we've got technical challenges elsewhere. So that was it.
+
+I don't know. You could have challenges. Maybe you could call it challenges.
+
+But it was just struck me that I don't think the intent was to be kind of closed in terms of this. Yeah, so I've made a note to think about that and make sure it's really what you want to address here is you want to say something that resonates and says, yes, I have that problem. That is my challenge.
+
+Right. And whether this is the right three, but the main thing here. That's cool.
+
+That's it. Yeah. Anyway, I'm sorry.
+
+Virginia. I was going to say what has already been said, but a little differently in the solutions that require you to know who grew the cotton going back to textiles. And that the person selling the goods to the customer needs to know who grew the cotton don't work because they're too complex and value chains are too opaque.
+
+So we need to there are important challenges related to the exchange and sharing of data and how to scale up implementation so that it's meaningful. But I'm not sure that collaboration and coordination are exactly the right title. I think we should sort of prepare the track the draft about what are the challenges and the challenge and then afterwards give it a title.
+
+Yes, fair enough. I'll share with you that when we were doing the Australian agriculture pilot, that does take you from a pack of meat back to the farm. You.
+
+It's fairly easy to demonstrate technical feasibility, even in a decentralized architecture with no central database. But you do run into commercial sensitivity problems and also complexity problems. Right.
+
+So if that package of meat is exported from Australia to Europe, let's say, and there's this. Let's imagine there is even if it was accessible or rich traceability graph that takes you all the way back to the farm. There's a lot of Australia specific context there that we have this, for example, a national livestock identification system for cows.
+
+And you have to know what that means and so on. So there's this in our discussions with the Department of Agriculture and government people about how to facilitate Australian exports. There's a kind of a dawning realization that even if you have visibility into a trust graph in a nation, there's a value in some sort of aggregation and endorsement of that.
+
+Right. So, for example, the Department of Agriculture knows how Australian agriculture works. It looks at the traceability data and then adds an attestation at the border that says we've looked at it and we're satisfied.
+
+Here's our guarantee of origin credential. You don't need to look at it. Maybe you can if you insist on an audit, but we're not going to make it generally available, both for privacy reasons, but also just complexity reasons.
+
+So that role of, if you like, trust anchors at various points along the supply chain to add this trustworthy claim that avoids the complexity and the confidentiality issues seems like a good idea. I don't know what you think about that. It's something we could recommend in this recommendation for regulators that they consider doing.
+
+Steve, maybe there's a category which is about the limitations or the prerequisites for success or something in the document, because what you're calling out is it's wonderful that the schema can travel with the data, etc. But the schema may then require interpretation, which comes at a cost as well. But I think we're all very much agreed that it's a lower cost than trying to get the whole world to do everything the same way.
+
+Yes, that's right. The other thing is that business challenge, maybe to John's point, maybe what we're trying to define here is the impediments to what are the historical impediments to achieving traceability and transparency at scale. If we're clear about that, then perhaps there's less chance of this being misinterpreted as an incomplete analysis.
+
+Speaking about it, should we have a section in 1.4 on confidentiality? Yes. As we talked about this, I just realized we've got a little bit of potential duplication or confusion because there's this section called business challenges.
+
+And then further down, when we get into the long text, so remembering that section one has to be about five pages, six pages, and section two can be 30 or something, we get into this area here where we say technical challenges. But really, I'm not sure we want to distinguish between these kind of... I think we need to rethink this a little bit and somehow have section two just really fleshing out and detailing what is summarized in section one, rather than put business challenges up here and technical challenges down there.
+
+Plus confidentiality is not only a technical question, it's really a question of how do you... I mean, if you have full transparency, then you would meet parts of the value chain where people just don't want to be transparent about their suppliers. Absolutely.
+
+So that is one of the... I think as we have this conversation, I'm more convinced that... because the reason for the structure of these recommendations with this five-page early part is that it's kind of like an executive summary, right?
+
+You should be able to read the five pages and go, yeah, I'm not going to bother to read the remaining 30, but I've got the message. I'm going to pass this on to my next level down to read the other 30. You know what I mean?
+
+So you wouldn't want to miss something up here, like how important is confidentiality in supply chains. That risks someone reading it and going, oh, it doesn't address my concern because it doesn't talk about confidentiality, right? So I'm convincing myself here that section 1.4 and section, wherever it is, 2.3 ought to really just one's a detailed...
+
+one's a summary of the other, more or less. Do you think? Yeah, I wanted to make a comment about your note here.
+
+Which note? The note up by the business challenges where you talk about greenwashing. Now greenwashing is called greenwashing because it's referring to environmental issues.
+
+Yeah. But this is actually a larger description of greenwashing because it refers to other issues like slavery in supply chains. Yeah, yeah.
+
+So I think we actually need to have a definition at the beginning that says what we are referring to as greenwashing. Yeah, actually, that's why I changed 14.1 from... it did say greenwashing and now it says ESG due diligence and I'm sure this is not the right heading either, but it's...
+
+yeah, I didn't want to be specific to environmental concerns, but only. So somewhere up here, purpose and benefits. Could it be ESG washing?
+
+There is a term corporate whitewashing. I'm not sure how prevalent that is, but that's an attempt to capture all.
+
+[Speaker 2]
+I mean, greenwashing, as long as we define it, including the E, the S and the G, that should be good enough. I don't think we need to create different terms. I think at least from a consumer perspective, greenwashing is...
+
+it kind of runs the gamut of sustainability. So I don't know if people necessarily just pigeonhole it into environment anymore. It's a bit broader, but I think I did put a comment to that effect somewhere on here saying just to make sure we define it as well.
+
+[Speaker 1]
+Do you think people understand social issue in greenwashing? Yeah, I think they do. Increasingly so.
+
+There's a lot of education to do, of course, but I think it's gone beyond just environment. Okay. Yeah, somebody made a comment about the pledge.
+
+I think words like must, may and should are not going to appear in this document anyway. They're going to be in the associated website in terms of technical implementation. Here it's just recommendations.
+
+We recommend you do this and then make a pledge. That'll be simpler. So there were a bunch of comments here around this business drivers area, particularly from John saying, is this really telling the right story?
+
+There's really only, I think, two things that drive behavior here. One is the threat of problems, the fear. You might get caught out.
+
+You might lose your social license. You might have to pay a huge fine, all this stuff. And the other one is the opportunity, which is about price uplift, market access, these sort of things.
+
+It's the virtuous cycle. So I agree this section can be simplified to focus on those kind of two subheadings. Really 2.1 has two, I think, 2.1.1 and 2.1.2, which is what you should be afraid of and what you can look forward to. That's about it. So we can refactor this section. I'm using, obviously, not the language that's going to go in here.
+
+I don't know if we need this section at all. Or do we? Maybe.
+
+I don't know that the reader is going to want to read it. I think it's useful for us, Steve, for the contributors, for collaborators. It kind of informs those that are working with you or wanting to work with you kind of what the principles are that we're working together on.
+
+It probably evaporates when you actually publish the final. Now that we've got that website, right, it's easy to say somebody might be interested in this, but it's not for this document. And, you know, just to put a link.
+
+Right. So it kind of allows us to make this document shorter. And I think in some ways, the shorter, the better.
+
+Right. So. Good.
+
+Technical challenges. Again, if we've got a five-page intro. And given that in the intro, there's this section here, which we hardly talk about this bit, which is right at the heart of it.
+
+The actual list of recommendations. And I imagine that's going to take a couple of pages. And we write it.
+
+And, you know, by the time we get through this, that's where's one page there. Here's another page of business challenges and impediments. There's two pages of recommendations.
+
+And then there's the sustainability. We're pretty much done. Right.
+
+So we. What is the purpose? I think the rest of it is largely adding more evidence.
+
+And detail behind the stuff in the first pages. Right. And so let's get rid of the principles.
+
+Let's not call this technical challenges, but some word that reflects more detail on the challenges, including. You know. And how to overcome them.
+
+There's ought to be some reasonable correlation between this section and the challenges in the intro. I think there's also a tie between the challenges and. Excuse me, I'm still getting over a respiratory problem I had earlier this month.
+
+Between the design principles and the challenges, because I think. For example, the fact that all actors don't have a high level of technology, maturity is a challenge. Yeah.
+
+And we need to say that this is something that we've tried to address, because that's also something that will come to people's mind when they're thinking about implementing. You know, when, when, when the government of. Oh, I don't know.
+
+Bolivia or even say Kyrgyzstan looks at this. They have to say, well, they're taking into account the fact that lots of our companies aren't very technologically sophisticated. I don't know how to do the cross out.
+
+I'll just. All right. So.
+
+And we will put confidentiality up at the top as well. I think that that previous section should really highlight. Yeah, you've got to be able to read the five pages and resonate.
+
+Right. So I think we'll probably have most of these challenges in the first part, but only as a sentence. And here there are a section and we explain them and we talk about maybe even a little bit how they might be mitigated.
+
+I think that's the way to go. So I wonder. I'm having my doubts about this section as well.
+
+Now, the UN transparency protocol. Do we want in this document these kind of diagrams or are they too techie? You know, this one and this one and somewhere down here, there's things like that one or not.
+
+I'm doubtful as well, Steve, but there might be variations that are more powerful. I'm not sure. Yeah, I mean, so the original intent of this section was to summarize the this UNTP.
+
+You know, this kind of it is a little bit technical because it is about what do you actually do with your systems and data that you exchange to achieve transparency in this game? It certainly doesn't belong in the five page header. One thing we could do is just have a sentence.
+
+It's kind of like, where is it? The purpose of that page was to summarize each, you know, just one paragraph for each component. Is it worth cutting and pasting or something like this?
+
+But as you read this, you know, pick that one, for example, traceability events. I'm imagining a policy executive reading the first bit, getting into maybe they bother to read, you know, they go, all right, I'll read the next 30 pages. And they encounter something like this.
+
+I worry that people switch off because it already sounds too technical. Traceability events are very lightweight collections of identifies. I think the first sentence is OK, but then the rest of it would start to.
+
+Right. So maybe the broader question here is having said something and change these words, but said something about these challenges in more detail and blended these principles kind of into the challenges. So we've had like a sentence in the first section and then we elaborate a bit here.
+
+And we could rather than have a whole section that's kind of describing the UNTP as a technical protocol. We could throughout the challenges instead just just have links and just say, you know, this challenge is addressed by a digital product passport. And please refer to the UNTP website for more details on that.
+
+Right. That's one way to do it. And just limit it so that you come away from this section.
+
+I would have thought the purpose here in the 20 or 30 page extension is we've detailed a bit more of these challenges. So we are reflecting back to the reader. Yeah, you've really understood this problem.
+
+And then we want to convey that there is some solution to that problem. The question is, how much of the solution do you describe in this? I would have thought not much more than a sentence or two.
+
+And for more details, please see the other side. So should this challenges bit be actually a kind of a blend of challenges and links to solutions? So you read through it and you come away with, yeah, these guys have understood the problems that are faced.
+
+And they've put it like one sentence of a solution. And if I want to know more, I can read the link. That could be enough.
+
+In which case, we don't need this whole 2.6 because it's sort of woven into 2.5. I would think in a document like that, you probably need to explain why you need yet another protocol. And why there is no existing tools or existing protocol that actually can fulfill the objective of UNTP. Yeah, it's OK.
+
+Right. So actually make 2.6. But maybe the purpose of 2.6 is more to answer that question that you just articulated and less to say, how does the protocol work? Yeah, I think so.
+
+And maybe just the principles of the protocol would be interesting. But how it works in detail is probably irrelevant. But it's important to articulate why it's really important.
+
+I'm going to agree with Matthew here. What I've realised we've done, Steve, as you've walked through the document again, is that we've been talking about the challenges. We looked at this design principle section.
+
+We kind of thought, well, maybe we don't need that now. And then we kind of drop into the UNTP bit. And if we think about it from a step back and think about what the document's saying, it's saying, here are these challenges, these opportunities.
+
+And then it doesn't do the ta-da bit. Here's how we can solve them with a thing. And so the UN Transparency Protocol is, in a sense, the solution we're proposing to the transparency of scale problem.
+
+What you've just articulated is one way of introducing the solution ideas as we've had each challenge. The other way is to say all the challenges and then say, and to solve those, the best way forward is not to use a platform because that won't work. It could really well go on the same platform, but use a protocol and so on.
+
+So it might be you need that bridging section still between problem articulation and solution presentation. Yeah. The thing is, if you express the problems in a business sense, sometimes different components of the solution combine to solve that problem.
+
+Right. So it may not be a one-to-one, but I think if you read through and you see, yeah, they've understood the challenges this whole industry faces. They provided me a one-sentence business explanation of how we might solve it.
+
+And then there is still the ta-da of, yeah, so all those challenges are addressed by this protocol. This is why, to Christoph's point, we don't want to just launch into what it is. You're right.
+
+People will go, what, really? Another protocol? Haven't we got enough?
+
+I was just thinking, excuse me, let me see if I, that one thing that we haven't actually looked at that we should include, because this is a recommendation to governments, is what are the challenges for governments? Ah. What are the regulatory challenges, and how does this protocol help governments address those challenges?
+
+Yeah, so did we have somewhere down? How does the recommendation help? Yes.
+
+I was exactly thinking the same way, and just to go, to take another step on that. Typically, I was thinking about the strong link that there is between opacity and suppression and an implication of criminal groups. Do you typically, and financing of criminality, do you want to go into that kind of element in the challenges?
+
+Because typically, if you talk to governments, that might be important, but it's on a very different layer than the business challenges that we've been speaking about. So, I think we're touching on, the trouble is you can slice this different ways, right? And how to slice it, because there is this section 2.8, which starts to break down, go into more detail about the different roles and what this means for them, the regulators. And, you know, it's a bit sort of disconnected from the previous bit about challenges and solutions. And I wonder, by breaking the document up like this, are we imposing a kind of, you know, I'm a regulator and I'm reading through this. I see little snippets of things in the challenges and solutions that appeal to me, and then I see myself here.
+
+But should the whole document be more organized, particularly around challenges around the stakeholder group that they apply to? Is there a risk then that we start duplicating the same challenge across different stakeholder groups? That's not what I meant, but I think there's, in the challenges currently, we're not addressing some of the higher level challenges that greenwashing provides to governments.
+
+You know, and the law enforcement challenges that are important to governments, because we want, this recommendation is going to representatives of governments. And if we want them to say, hey, this is really important for us, we should highlight at least a couple of those issues. And they're issues that result in regulation, that result in businesses having to do things to meet that regulation.
+
+But if we highlight that this is a recommendation that will allow businesses to effectively address government's concerns, it will be of more interest to governments. So I think it's important that a government policymaker reading this sees themselves quite clearly in it, and it resonates with them. Because at the end of the day, UN is comprised of member states, and that is who we're writing recommendations to.
+
+But we can also write recommendations to industry here. And they're really recommendations through the proxy lens of governments, like your economy, the industry members in your economy should be doing this. But yeah, I'm finding myself scratching my head a bit about how to articulate generic challenges and solutions and then make them specific to each stakeholder group, without too much duplication.
+
+When we get to this bit, Kevin, you've got something to say. Yes, following up on that, just a mini case study, I was hosting a coordinated border management workshop in Uganda last week. And this conversation came up under the banner of Green Customs, the WCO Green Customs.
+
+[Speaker 2]
+And it appears, and it's happened in a couple of countries that I've been in just recently, where other agencies that have not normally had any interest whatsoever have suddenly stuck their hand up, thinking that there's a way that they can get involved at border checks. And certainly there are the Environmental Protection Agencies and the Standards Bureaus, which previously they were sort of hanging around, but now they've got this Green Customs thing and they're very much involved now.
+
+[Speaker 1]
+And it's almost like there's an opportunity for other agencies to start getting involved in actual inspections at borders and causing chaos when it comes to that. And one of the things that was brought up was that there needs to be, and I see you mention it there, a greater role to play for the National Trade Facilitation Committees to get hold of this and to sort of drive forward with the government and the private sector to say, this is an issue, we understand this, but we need to have a more sensible approach not to make life more complicated for the business environment to try and get stuff into the country.
+
+Thank you. That's actually a challenge that we don't mention in the challenges. Yeah, I think our challenges need some work and need to be more business centric.
+
+So I'm going to have a rethink of that, I'm just gonna make a note of that one, right. So, I see in Australia too, right, still really a depth of confusion about which agency is responsible for what, with regards to this sort of ESG enforcement, right, because it used to be quite clean. Customs collect duty, and they stop drugs getting in the country, and agriculture makes sure biosecurity threats don't get in, and that's about it, right, most countries have that kind of quarantine and customs function and nothing more.
+
+It was very simple. And now, you start to apply, for example, carbon tariffs at the border. Does customs know how to calculate a carbon tariff and figure out whether it's right or is that the Clean Energy Regulator?
+
+This is a real confusion for governments. I don't know if this document, whether it's the role for this to make recommendations there. We can see the challenge, but is it for this document to make some recommendations around that?
+
+Maybe. So, Steve, sorry, one of the things that we've talked about is algorithm, like this protocol enables algorithmic due diligence. And so, I think one of the things that's potentially valuable here in terms of the answer to that question or the answer to that sort of challenge that of sort of increased complexity at the border is this protocol and the transparency and traceability it provides so that algorithmic due diligence can be conducted and different departments can provide their algorithmic requirements to the border and the appropriate legislative response or regulatory response can be implemented. And I think, actually, that benefit is a direct benefit to a government, a regulator or an audience member that we're targeting here. Yeah, I think what you said there is the more transparency of supply chain information that is accessible to regulators, the more you can say, well, each of you does your own thing.
+
+You look at the data and do your own thing with it. We're not going to try to coordinate who does what. Is that what you're saying, basically?
+
+Yeah, well, it becomes a, like, you don't need to put five different agencies at the border. Each agency provides the border organization the algorithmic assessment they want to have done. And that becomes a pretty powerful organizing capability for a government and regulatory environment.
+
+That's some hands up, Steve. Yeah. Jean?
+
+[Speaker 2]
+Hi, Steve. Just two simple comments. So the first one is, I think the 2.8 is really recommendation rather than challenges. I resonate with the recommendation that we should focus on the government challenge. However, this UNTP, as I understand, is more general. If we hope it can receive broader acceptance, I think the challenge part is better to correspond with the 2.8, which is recommendation. And the challenge is better to address the state challenge, industry challenge, even consumer group challenge, because their challenges are different. However, the overall, you know, highlight on the trust, on the transparency, actually, you know, focus on the same thing. So I would say at the challenging part, we can start from government, but it's better also to cover challenges to the industry and also to the individual consumers.
+
+And the second is, just now you mentioned to avoid repetition. And I guess that there will be an executive summary part of this document. So maybe at the executive, you know, part, we can link the challenge and the recommendation, which may help to save some words in terms of either challenge or recommendation.
+
+So the readers know actually these two parts, although they are not together, but actually they supposed to address, support each other. Thank you. Yeah.
+
+[Speaker 1]
+I think I'm more and more convinced that really the body of the document should just be a fleshed out detail and more substance behind the executive summary part of the document. In other words, the 30 pages, they shouldn't worry about repeating what's in the five pages, because they're really exploring in more detail the same concepts. And that way there's a nice easy correlation.
+
+So, yeah, I'm, I found this very useful for rethinking what story this document is telling, particularly in the light of the other website, and we don't need to duplicate what's there, make this less technical and more business centric. And also how really we just need a, just a simpler and clearer line of sight between the summary in the first five pages and the details in the next 30 pages or 20 pages without making them look like two different stories. It's just a nice simplification approach that if we've got consensus here, we'll apply and move on from there.
+
+So we're at time. Has anybody got anything else they'd like to say? Because otherwise, I'm seeking your endorsement that we've had a fairly good discussion today and I think reached some consensus.
+
+And because we've got a short timeframe left, I'm going to get quite serious at hacking this document. And obviously you'll see as it moves, but we can't wait for too much time to discuss every point. I'd rather just based on our discussion today, myself, Virginia, John, others, fresh out a lot of this, and then you get a review opportunity.
+
+I have a technical question. Yes, go ahead, Virginia. Oh, about this, about Google Docs, because I, to be honest, I don't like Google Docs because it, when you get down further into the document preparation, you'll find out that the formatting in Google Docs doesn't work very well.
+
+But often when I'm getting ready to leave Google Docs and close it, it says, if you close this, you can lose all everything that you've entered. And I have actually had that happen to me once or twice when I was working on other documents. And I'm not, I can't find any instructions about how do you be sure that what you've done has been saved?
+
+So this is my question. Okay, I think this, actually, there's might be two questions in there. And I guess I'd like to say the whole purpose of Google Docs really is that we can have this kind of collaborative discussion and collaborative altering.
+
+But we're rapidly approaching a point where there's going to be a little bit more dictatorial altering and get to a point where there's a draft for us to look at. And when you get to that point, and especially when it's relatively complete, and now you really want one editor, who's going to go through the whole thing, clean it up. At that point, I think we should feel quite comfortable to say, right, we're done with Google Docs.
+
+Let's put it in Microsoft Word, and get it ready for handover to the Secretariat, and so on. So I would say it should, now to the technical question, it should save everything you type without you clicking a save button. That's the way it's supposed to work.
+
+If there's fear of that not working, or somebody deleting what you've written, or you mistakenly deleting your own stuff, what I tend to do is download this word every now and again, just to make sure I've got a kind of an archive of where it was at a particular point in time. I'm referring to the message that Google Docs itself gives you when you're getting ready to close the document. And it says, if you close this document, you may lose your changes.
+
+Really? Yes. That's true.
+
+I think there might be a slight lag. I've had it happen as well. I just go back and check whether the last thing I typed had gained traction.
+
+Yeah, as Steve was saying, if you've got a live internet connection, every single keystroke is saved automatically in real time. As you're working, it tells you that there's a little notification on the top of the address bar that says saving. It says where it's saved already.
+
+If it's saying to you that if you leave now, you may lose your edits, it's because it hasn't been connected to the internet. You might be using an offline copy of the document, which is possible, and you may be not connected, or a variety of things. But it can happen in any web-based application, including Office 365.
+
+It's just a collaborative document thing. If you're not connected to the internet, and you're not writing in real time, then you're right, there could be an issue. Yeah, that's true.
+
+Because it's a JavaScript application running in your browser, if you lose your internet connection, you can carry on typing. It's just not saving. Then when you go and close your browser, it probably says, I haven't saved this.
+
+But if you're connected, it shouldn't do that. In any case, I think we're close to the point where a few dictators will take over and then secure review. Then once your review is done, and we've reached some consensus, we're going to have to move it into Word anyway, to get that really fine-grained UNEC secretariat formatting stuff that we're not going to get in Google Docs.
+
+So it may be a transient concern. But look, if nobody's got anything else they'd want to add, then I've benefited from this to rethink how we can make this structure simpler, and shorter, and leverage more the website. And I'm going to have another refactor quite soon.
+
+Maybe just one question to be sure about what you expect from us. Do you expect us to go and modify the website and or the Google Doc? Just to review it, or only one of both?
+
+I think what I'd like to do now, with everyone's permission, is basically anoint myself and Virginia as master editors, and perhaps with a bit of assistance from John, particularly in the intro section, to just knock this whole thing out. So we've had the collective time to review and discuss, and there's not that much content here, but I think we've converged on the right structure. So I think what I'm asking from you is, if you'd like permission to be a dictator for a couple of weeks, thrash stuff out, and then have a round of another review and feedback on a more complete document.
+
+And then, as far as the website goes, that's a more technical thing, and there's a different contribution method. But anyone who feels they want to contribute to that is most welcome to do so, but the way you do it is a little different there. We work through issues, and we do basically a more of a consensus-driven thing called a pull request.
+
+But anyone who's not familiar with it but wants to contribute to that website, I'm very happy to walk you through that. Remember, the website contribution has a much longer lifetime. We've got to get this document done in a few weeks to draft level, and there might be a dictator mode to do that, and then review mode after that.
+
+But we've got another five months, probably, to continuously improve and update and refine the website, because the final publication needs to be synchronous. But the time lag on international translation and all the stuff that the UN has to do with the recommendation document means we've got to finish this in about three weeks, four weeks. Absolute maximum, ready for public review and then translation and so on.
+
+Meanwhile, the website can carry on. So, yeah, I think dictator takes over, gets it drafted, then another round of review from all our collaborators here, and we reach a point after the next call or the one after. Yeah, it'd be two more calls, and then we really got to hand it over for public review.
+
+So I think it's a two-week dictator session, and then another call with more complete content, get your feedback, and then we have two more weeks after that to refine it to the point where we say, okay, public review the UNECE. And then we can move our focus to the website for those that are still keen to do that. Is everyone happy with that?
+
+Godspeed to you, Steve. All right. Thank you very much.
+
+I appreciate it. All right. Then thank you for your attention.
+
+I'm sorry we're eight minutes over time, and we'll see you in two weeks and online. And yeah, Virginia and I are going to hack at this. Thank you.
+
+I'll stop sharing and wish you all a nice weekend. Thank you, Steve. Thank you, Steve.
+
+Thank you all.

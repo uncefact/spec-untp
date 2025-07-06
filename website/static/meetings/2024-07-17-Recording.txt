@@ -1,0 +1,492 @@
+[Speaker 1]
+Morning, Steve. Hello, Jason. Hey, Phil.
+
+Hey, Steve. How you going? Alright, thanks.
+
+Are you still over in Europe? No, no, no. I've been back since Monday lunchtime.
+
+I'm still a bit jet-lagged, though. Yeah, that's fair enough.
+
+[Speaker 2]
+Steve, how are you?
+
+[Speaker 1]
+I'm alright, thanks. Zack?
+
+[Speaker 2]
+It's not working yet. Hold on.
+
+[Speaker 1]
+That's better. Good afternoon, Virginia. Good evening.
+
+Good evening. I think there's something a bit wrong with your sound, Virginia.
+
+[Speaker 2]
+Neither the sound nor the camera on my laptop work, and it takes them as the default.
+
+[Speaker 1]
+And so I have to switch them.
+
+[Speaker 2]
+I was going to ask you, Steve, if maybe you could send a small list of acronyms, because I had a little problem with your last email.
+
+[Speaker 1]
+Oh, all the DPPs, DCCs, and all that?
+
+[Speaker 2]
+Well, the AAHP, and the VC, I know what VCs are, but VCDMs, and then there's another acronym that starts with an I. I am something that you put in parentheses, but there's no definition.
+
+[Speaker 1]
+Alright, okay. Yeah, I should, we need a page on the site or something. You know, something I can print out and paste on the wall, so that when I'm reading the email, I can quickly look it up.
+
+I will make a practice of avoiding acronyms, or at least defining them in every email. Well, alright, it's three minutes past, we might get one or two more joined, but perhaps we should make a start. This session is being recorded.
+
+If anyone has any objections, let me know. As usual, I'll do a text summary and post it to the website. And also, your contributions, if you make them are UNIP, please remember that.
+
+With that, I might just kick off, if that's alright, with a quick review of the forum and plenary, for those of you that weren't there. I think they will have posted all the slides, but we did, I think, four sessions on UNTP during the forum, and I broke it up into one on VCs, one on security, one on language, vocabularies, and one on business models, and so on. I think they were pretty well attended, and got some good questions afterwards, so raised the profile pretty well, I think, and got a few more volunteers to join.
+
+Then there is a group within UNECE called the Team of Specialists on Sustainable Value Chains, particularly focused on textiles, and they're a little bit separate to UNC Fact. Virginia will correct me if I say something wrong here, but we also presented there. And I think, I suspect we'll see a pathway forward where we separate a little bit all that techie work that we've been doing on UNTP from the business use cases and business vocabularies and sustainability criteria and all that, and engage a number of technical, sorry, not technical experts, business experts from the Team of Specialists, so that it becomes a bit of a merged activity.
+
+I think that's a good thing for us, right? And we have to think a little bit about how do we manage these sessions. Maybe we, you know, do we do, is it a completely separate stream, or do we bring business people into this and we all move our focus towards business things, or do we have two separate meetings?
+
+I'm not entirely sure how to run that, so I wouldn't mind your thoughts. As well as the forum session and the Team of Specialists session, which, as I said, raised profile and I think attracted a whole bunch of potential and business contributions, which is where we're a bit lacking in this team. We also had a plenary session, which is the, this is the member states, basically the shareholders of UNCFACT, who decide what their program of work is and so on.
+
+And it got a little bit interesting, because there was a fellow, both in the forum and in the plenary, from SenSenelec, which is the European Standards Body. And they have been anointed by the European Commission to develop a DPP standard for the European DPP. And it turns out that they feel like their toes are being trodden on by the UN, it seems, because they lodged a bit of a concern through their delegation, which was the German delegation, basically saying you shouldn't be duplicating.
+
+And our response was, well, actually, there's not that much duplication, because they're focused on the DPP system, not the big DPP data. And they don't have any concept of traceability or conformity, just the DPP. So, and also not the value proposition.
+
+And so, you know, if you drew a Venn diagram, there is certainly some overlap, but it's not huge, I don't think. And so we had a bit of a robust discussion. And four other member states, which was the USA, Canada, Australia and Singapore, took an alternative position and said, it's important to us that there is a global standard, not just a European standard, particularly for those member states that, you know, want to deal with global markets.
+
+And, I don't know, maybe feel a little bit of coercion from the European states felt more comfortable with the UN standard. So it seems to me that I'm raising this because I'm proposing, we've got to write back to the UN feedback secretariat with a position. And in the meeting, we basically agreed to collaborate with CENELEC to be interoperable.
+
+The wording that they wanted to put in was turned down quite a lot. But it does occur to me that if I'm the European Union, and I want my member states and companies to be issuing European DPPs, yet, I don't know what the percentage is, but 60-70% of goods sold in Europe are made outside of Europe. Then it's really important that organizations outside of Europe provide DPPs to European importers.
+
+And if there's a bit of suspicion around the world about European standards, then there's probably no better way to get the world engaged to providing DPPs into Europe than to make it a UN standard. So it actually seems to me to be an opportunity, not a threat, if you like, to collaborate with CENELEC. It's to the benefit of the European Commission, not a kind of a risk of collision.
+
+So I'm proposing to write back along those lines. Virginia? Just a question.
+
+Do you have a request from Maria Therese or someone in the Secretariat to write back about this? Yeah, so there was a statement from the German delegation, which actually was quite strongly worded. For some reason, maybe it's accidental, because perhaps they misinterpreted REC 49, but they made quite a strong case that REC 49 was biased towards a particular vendor, and it was a technology-specific, vendor-specific solution.
+
+And what they meant by that, I discovered later, was that we put a number of GS1 references in there. Although we did say in REC 49 that there's nothing in REC 49 that forces you towards GS1 if you're not a GS1 customer. But equally, I made the point in the plenary that there are 2 million GS1 customers that have made an investment, and you don't want to design something that says they've wasted their investment, right?
+
+So you've got to navigate that path. Yeah. My personal view, having been there, is that this is the, what you call a bee in the bonnet, of the guy, of the German delegation, and the guy from Sensenler.
+
+And the best way to, the best counterweight for that, is to get the commission lined up strongly in support of what we're doing, because Sensenler answers to the commission. Right.
+
+[Speaker 2]
+Yeah, that's a good idea. You know, going directly, I would sort of, to the extent possible, skirt around having a direct interaction with the Sensenler German delegation. I mean, I would talk to them, of course, and, you know, be nice, but I would focus and discuss with Maria Teresa how to lobby the European Commission, the right people, to identify who are the right people on the commission.
+
+And go to them, because if they tell the people from Sensenler, well, we're happy, lay off, they will.
+
+[Speaker 1]
+Yes, okay, that's a good tip, because we do have a good relationship with the commission, who I think see the value in a global standard for other nations that's interoperable with the European standard, because it's actually to their benefit, like I said.
+
+[Speaker 2]
+Steve, the other ally that you have there, and the kind of path through that might be through SERPAS, where the EU DPP definition is kind of on the right end of the SERPAS slide.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 2]
+And it gives them a place to play, gives them a mandate, and it gives us sort of the structure to get on with what we're doing.
+
+[Speaker 1]
+Yeah, yeah. Well, we got the mandate to get on with it anyway, because four other nations, some quite significant ones, put their hand up and said, you know, get back in your box and carry on, please, UN. Yeah, I'm more talking about as you engage with the commission, doing that with SERPAS gives everybody a collaborative path forward, right, like where it kind of, to Virginia's point, we don't go and navigate or aggravate the bee in the bonnet, we just go around it and say, stay in the bonnet.
+
+Yeah, Virginia's right, it's not actually the commission that has a problem, it's Semsenelik, who feel a little bit at risk maybe, I don't know why, because we're happy to collaborate with them. So yeah, I'm sure we can put it to bed. Just a couple of comments.
+
+[Speaker 2]
+All right. And secondly, I'm being recorded. But, Virginia, thank you very much for your comments.
+
+I think the thing that struck me was you said bee in their bonnet. You're right, those guys have an enormous hornet's nest in their bonnet. And so this is another manifestation of something we see a lot.
+
+[Speaker 1]
+And because the European DPP is such a honeypot for those bees, for what a lot of people perceive as, oh good, here's a way for us to make money.
+
+[Speaker 2]
+The politics around what this group is doing and what Semsenelik is doing and what SERPAS is doing is enormous. And so I've had my wrist slapped for saying too much, which is why I'm being very careful what I say now.
+
+[Speaker 1]
+Thankfully, I have very wise colleagues who are well able to negotiate this path. But as I think you've all recognized, there is a huge amount of politics at play here. And what happened last week in Geneva was not just, it wasn't just the tip of the, it was more than the tip of the iceberg.
+
+[Speaker 2]
+Maybe it was the point of the spear. Maybe that's it. There's a lot going on there.
+
+Right. Thank you, Virginia. I appreciate your comments.
+
+Thank you.
+
+[Speaker 1]
+Yes. But I mean, I think we successfully navigated it. And now we've just got to follow up with the right parties.
+
+Because it is true that when I've been traveling around China and talking to actors in Australia and elsewhere, most would prefer to adopt a UN standard than a European standard. And sort of the higher you go up the political order, the more that's true, I think. Anyway, I think the outcome will be hopefully we'll get a little bit of a peek into what Sam Senelec are doing.
+
+And we will make best intents to remain interoperable. And that will be the outcome. Anyway, so it was fun.
+
+It was interesting. And we got, I think, more and more engagement. And I'm particularly excited, I think, by kind of merging this effort with a team of specialist effort and really ballooning out the business intent and business use cases and sustainability vocabulary stuff with those experts once we get this technical foundation sorted.
+
+So overall, a great outcome, I thought. So any more comments on that before we move on to our first poll request, which is a big one? I think you made the point of how to integrate business in our stream of work.
+
+You have a question, what is the best way to do that? Yes. And my sense would be that once in a while we do invite them to our meeting instead of having a separate stream from the beginning, starting on the opposite and you to interact with them, see how they react, see what they want.
+
+And then we can decide whether we need a second stream or whether we are happy to have them from time to time with us. That would be my sense. But it's just my sense.
+
+You may disagree. Yeah, I suppose. I suspect, too, that we've been quite technical here for some months now.
+
+And I have a feeling that we're reaching the end or reaching a point where we can start to talk about more business content anyway. So it might be good to talk with them in the room. What I would suggest is that you have some meetings that are specifically oriented towards obtaining business input or where you need business input.
+
+And you define in advance what business input we're looking for. And we have special meetings inviting the business experts with the technical experts focused on those topics. Yes.
+
+Okay. Well, I might have a stick. If anybody's got ideas about what we want from a more business focused team of specialists and how we might merge them together, drop me an email or something.
+
+Meanwhile, I'll have a think and maybe write an email to the group saying, you know, we've got this opportunity. And here's a suggestion about how we navigate it. Yeah.
+
+Anyway, what's on the screen now is a pull request that potentially closes, I don't know, 10 or 15 tickets. And I wanted to quickly walk you through it. And I thought maybe the easiest way is to show the, where is it, the rendering on my local site.
+
+Right. So I have a Virginia. Yes, I think I noticed this once before.
+
+But please, so it stops. And I fixed the title. It's sorry.
+
+Digital. Oh my goodness. I will definitely fix that.
+
+That's very annoying, isn't it. How did that happen. Digital is very unprofessional.
+
+Well, okay. So, one of the main things I've changed is to pull out a bunch of this bit too small to see here but a bunch of the, let's call them business objects like declaration attestation endorsement standard regulation facility party etc. Into a separate vocabulary and make them more consistent in the way they're identified, because these are the building blocks of both a digital product passport and the conformity credential and perhaps other things that we, we develop.
+
+And previously I'd kind of duplicated these things in a monolithic passport model and a monolithic conformity credential model. And I've pulled them out and then reuse them in the in the two credential types. There's a couple of reasons for that one is just because it makes kind of obvious sense to define something once and reuse it.
+
+But also because when you start thinking about this whole architecture from the end state in mind, like graphs is a picture. You realize that a digital product passport and a conformity credential are really just carriers or structures that have a bucket load of identifiable objects in them, like facilities parties products declarations and so on. And if you imagine a actor in the supply chain, trying to construct visibility of their upstream supply chain to build a so called transparency graph.
+
+Imagine them sort of receiving a fire hose of product passports conformity credentials various other bits and pieces, sometimes linked to each other sometimes not really the thing that the most important thing that links them is the identifier of the object, whether that's a facility or or or a product or whatever. So if you structure those objects right, then you should be able to empty these objects from the various containers they're in into your bucket called the trust transparency graph. And the connections get made, because, let's say an attestation has an assessment of a product against the criteria, the products identified.
+
+Could be a g team could be some other ID. And similarly a passport has a declaration about a product against similar criteria. And even if the passport and the declaration, don't point at each other.
+
+When you pull them into the graph, the links should be made. Right. And so that that kind of end goal, working backwards, made me rethink this data structure and and make sure that I had a set of well identified common business objects, if you like.
+
+And then when they get assembled into, let's say, a digital product passport. You're just assembling the same objects but in a different hierarchy to conformity credentials as a product passport starts with a product, and says here's a whole bunch of declarations called claims in a product passport about that product. Whereas a conformity credential works, just industry practice comes up the other way around it says, here's a conformity attestation that has a number of assessments about some subjects.
+
+Assess products that they are and assess facilities right against a certain criteria so it's just, it's the same concepts just ordered differently. And so I thought I'd have a go at basically separating the vocabulary assembling these things from the vocabulary. And so that they, they will play nicely together when they're inserted into a graph.
+
+Now, have I made any sense. Yes, but I have a confession and a request. Okay.
+
+My confession is that I don't have. I have not spent as much time on this project as I would like.
+
+[Speaker 2]
+And I need to put blocks of time in my calendar, so that by the time we meet next time I can say hey I wrote this pull request or I did this or I did that. And every time we had these meetings come with another week's combine I haven't done anything. That's my confession.
+
+My request is, this looks really, really, really important. And I would like to understand your data model. And I know that looking at the UML diagram.
+
+I'm not going to understand it and I'm certainly not going to understand your thinking the way you did it I'm not going to be able to. I'm not going to be able to make a useful contribution. Just by looking at the UML.
+
+[Speaker 1]
+Is it possible, either in one of these meetings, or perhaps a separate meeting or something.
+
+[Speaker 2]
+This may be asking too much in which case, accept it. It's up to me to do the work. But this kind of thing comes out of, I mean, you've, I think I heard you understand, I think I understood you to say, you wrote your model.
+
+You've had a think about it. And now you've got a new version, which is better. Great.
+
+In order to help you do that, in order to potentially offer something that might make it better. I hope I'm not the only person that would benefit from you actually describing it from how you came up with it and going through it, just this in detail. If I'm asking too much, I'll shut up and I won't ask anymore.
+
+[Speaker 1]
+I suspect you're not asking too much. What do others on the call think? I think that could be useful.
+
+Yes.
+
+[Speaker 2]
+Well, I'm entirely useful. Okay. Yeah, I totally agree.
+
+Yeah, I think it's a really good idea, Phil.
+
+[Speaker 1]
+I think it's really interesting. One of the, you know, and thanks, Phil. I think one of the things when I look at the data model UML is I always feel the need to understand the associations better.
+
+I can see the attributes. I can see the properties for each class you've got there. But the associations you had in your graph diagram that you put up first.
+
+I think discussions around that will help people understand your thinking behind it a lot better. So you've put a lot of effort into the classes and all of the properties, but those associations really help flesh it out. So those discussions would be useful.
+
+Thanks. Yeah, certainly. All right.
+
+Happy to do that. Maybe just before I get to that, I might mention another update here, which is to the verifiable credential profile page, where I've added this a little bit more on vocabularies, including this diagram that I posted into the Slack channel. And some of you may have seen it, some may not.
+
+And so I thought I might quickly walk through this, because this came out of a fair bit of head scratching and soul searching, really, about how to define a structure like a digital product passport in such a way that it's easy for a large community of implementers who just want to say, show me the JSON schema, and I'll implement, but also leverage the meaning that's derived from JSON-LD context. That's the blue thing. Remember, a context file basically is a set of pointers that says these properties in a passport mean these terms from these vocabularies over here on the right.
+
+And so working out how to create the right instance structure and make a simple schema for it, but also get the contexts right and the references to vocabularies right was a brain teaser for me. And also figuring out what's the right granularity and who governs the vocabularies, who governs the context files, and do you have one big context file, or do you have one schema, and how does it all work, and how contexts build on each other, right? And you can see these blue extends things, where that's an answer to one of your questions, Virginia, what does VCDM mean?
+
+It means the Verifiable Credential Data Model. It defines protected terms like name and credential subject and issue two and so on and so forth, right? And so there's a certain language there that must be complied with if you're going to issue a verifiable credential and can't be confusingly duplicated because they're what's called protected terms in anything that builds on them.
+
+So if you start adding terms to your DPP that already exist in the VCDM, you get collisions, and things don't work properly. So you have to be aware of what's in the VCDM when you're making your DPP context and not duplicate stuff. And similarly, if you're making a Digital Livestock Passport, that's AATP down here, Australian Agricultural Traceability Protocol is one of our first industry extensions.
+
+Similarly, you've got to be aware of what's in here and not duplicate it here and build on it, right? So you've got this kind of hierarchy. And you see that manifested in these kind of little snippets of instance here where you have throughout an actual credential, you have these type fields.
+
+So, you know, a digital product passport might say the type is a verifiable credential and a digital product passport. But when it's extended down here, the type would be it's a verifiable credential and a digital product passport and a digital livestock passport. This is this kind of hierarchy of contextualization.
+
+And similarly, when you get down to inside the product passport and you're referencing a facility, perhaps in the livestock example, the facility is extended with some more attributes to be a farm. And so the instance says type facility farm, you see? Steve, are those arrays ordered?
+
+[Speaker 2]
+So is there an inherent hierarchy? I mean, what you just described there, you described a hierarchy. But is that part of the spec that it's a hierarchy from left to right as you go through the array?
+
+[Speaker 1]
+It's. Yes, it is the way it works is actually their references to a context that I haven't shown context reference in the in the instance. So the thing about a JSON instance that I've learned that makes it different to plain old JSON instance, it looks almost identical.
+
+It's two things. Context references. So at context that are pointers to these blue files.
+
+Yeah, yeah, I got that. And the order of those is what matters, right. So when you define you pointed this one, and then you pointed this one, this one applies.
+
+And then this one. And that right, sorry. I understand your question, and I have to defer to verifiable credentials experts about how that at runtime.
+
+The JSON LD processor interprets that correctly. But so maybe there's someone on the call that can talk about that. But, yeah, you end up with an instance that has these type properties distributed throughout the instance that basically say, you know, this is a facility.
+
+And it's also a farm and it has this identifier. This goes to that normally.
+
+[Speaker 2]
+Normally those if you go if something is a class A and class B, it doesn't matter which order you put things in. But if it looks as if because it's in an array, and this is a JSON LD function rather than an RDF graph function. And I suppose that that's what my head's getting wrapped up.
+
+And I'm, again, probably taking up meeting time. I don't need to. But if you define something as being in RDF, JSON LD as a serialization of that, as being a class A and a class B, there's no order there.
+
+But that because it's in an array, and just the way you described it made me suddenly think, oh, does it matter that the index of the array is zero? So that's the top one. Then is it a subclass?
+
+I guess what I'm getting there, is that a class, subclass, subclass relationship? Or is it just, hey, it's a member of all three classes equally? And I don't know the answer.
+
+Maybe I should go and look it up on the standard.
+
+[Speaker 1]
+I think, and maybe Jason or somebody on the call can speak up. But I think it basically is saying you will find attributes in this node or this object, let's say a farm, that have properties. You'll find properties in this that are defined by both a facility and a farm context.
+
+I'm not sure the order matters. But Jason, is he on the call?
+
+[Speaker 2]
+Yeah, I'm still here. I'm not sure about the details of that. But type is a JSON-LD, kind of a baked in.
+
+That's not defined by this UNTP. And absolutely, yeah, it would relate to some reference, whether that's a vocab or a schema. I'm not sure on the detail on if order matters, those kind of things.
+
+I'm still getting familiar with them.
+
+[Speaker 1]
+Yeah, I think like all of us, one lesson out of this is that it takes a bit of getting your head around. And we have to be careful not to impose too much new learning on a world of implementers. Which is why what we want to try and do is make it such that we've done all the hard thinking here about how, for example, AATP would do a valid extension.
+
+And more than that, these green schema things are structured in such a way that they're a complete picture of what a valid credential looks like, including the context and the type structures. So that an implementer, let's say, I don't know, somebody building a farm software product, doesn't have to go and do a university degree in linked data and JSON-LD. Can just take the schema and implement.
+
+And as long as they put the context reference in, which the schema demands, it'll just work. So it's been a bit of a struggle to make sure that we're leveraging the benefits of linked data so that things expand correctly when they drop into graphs. But not pushing that complexity of deep understanding onto a global implementer community.
+
+And that's not that easy. And looking at examples even made by the W3C and others, it's clear that there's still a lot of uncertainty and confusion about how best to do this. And so, yeah, I think what I'm drawing here is what collectively discussions we've had represent best practice.
+
+It's reasonably well aligned with what you guys are doing at GS1 as well, right? Where it's important to, I think, recognize that a JSON-LD context is really a set of semantic links that describe a particular instance. So it should be governed and versioned with that instance, right?
+
+So it goes, if you've got a UNTP digital product passport version 1.1, then you should have a context version 1.1. It can point at various vocabulary properties that are completely separately governed. That's fine, as long as they're well governed and stable. But, yeah, that's why I put this light gray governance box around this to say you manage this lot in a chunk.
+
+And you manage that lot in a chunk, and it points to this stuff. Joe? Yeah, I can see your concern.
+
+What I would say is, from my understanding, is that these aren't hierarchical. And I think Steve said the same in the chat.
+
+[Speaker 2]
+The business rules, what we don't want to do is embed business rules into the VC definition. So, therefore, if jurisdictional precedence applies, then that's a business rule.
+
+[Speaker 1]
+The context and the linkage to the various different terminology is actually jurisdictionally governed.
+
+[Speaker 2]
+If in using the DPP, you need to understand the jurisdictional precedence so that you actually understand how to use the DPP. You don't want to bake the jurisdictional precedence actually into the credential.
+
+[Speaker 1]
+So I think that's actually something that sits outside of the credential. Does that impact?
+
+[Speaker 2]
+So use the context for what the context is intended to do, which shows the equivalence of terminology.
+
+[Speaker 1]
+Yes, that's all it's for. That's all it's for. And so, therefore, it can point to a number of different jurisdictional definitions, and that's exactly what it's for.
+
+[Speaker 2]
+How the credential is used in the particular instance is determined by the business rules associated with the use of that credential at that point in the process. So the navigation to the various jurisdictional definitions is what the credential is there for.
+
+[Speaker 1]
+It's what the context file is there for. It's what the context file is there for.
+
+[Speaker 2]
+So we shouldn't be building the jurisdictional rules and the use of the credential into the credential itself. It's just purely a linkage to the different definitions.
+
+[Speaker 1]
+Yeah, I think we're agreeing with each other, aren't we?
+
+[Speaker 2]
+I think we are. But the point is that I don't think it's hierarchical in the definition of the credential.
+
+[Speaker 1]
+I don't think the definition actually can do that. Yes, I think all it means, when you see this facility farm, is that this livestock passport has properties in it which are defined here and here. And one is just extending the other, basically.
+
+That's all it means. I might find a schema.org location or something in a facility, and I might find something else to do with Australian farming down here.
+
+[Speaker 2]
+So therefore, the use of the VC or the various different claims is going to be defined by the jurisdiction into which the use of that credential is actually expected to be done. So they should give the operating rules about how to use the credential in this particular case.
+
+[Speaker 1]
+I hear you. I'm not sure if you're telling me I need to change something.
+
+[Speaker 2]
+No, not in this. But I think it's, if you like, the verification rule set of using a credential is actually outside of the credential definition itself.
+
+[Speaker 1]
+So therefore, we need something else to tell, if you like, verifiers to actually understand how to use the credential. Joel, if I'm not mistaken, I think what you're saying is that the first two gray boxes up there are what we want to standardize as a virtual credential.
+
+[Speaker 2]
+And the last part is where currently you have the AATP standard governance example is what's covered, covers the jurisdictional needs.
+
+[Speaker 1]
+And all that we should be doing is sort of saying, how do you add that on top or extend the virtual credential to use it in those contexts?
+
+[Speaker 2]
+I think, Virginia, they're all governed, if you like. It's just they're governed by different responsible regulators, right? Yes.
+
+So when the regulator, when AATP wants to define the use of the UNTP DPP, they say, this is the rules about what you need to do.
+
+[Speaker 1]
+And this is the linked data that needs to be in the credential. That's right. So this is just put here as an example of an extension, obviously, right?
+
+It's not for the UNTP team to tell AATP what they put in there. But what we need to do is, by example, I think show the way, right? Because it's not easy to understand how to make an extension that remains interoperable with the core to meet the original intent of UNTP, right?
+
+So this is meant to be an illustration. Yeah.
+
+[Speaker 2]
+And it's additive only. If you don't need to modify the UNTP one, you just relate back to it.
+
+[Speaker 1]
+Sure. That's right. Right.
+
+All it is, is just a little basket of new definitions that are optionally added to a livestock passport, right? Exactly. And yeah, so obviously, the W3C governs this stuff.
+
+UNTP governs this stuff. Some Australians govern this stuff. And all these gray boxes on the right themselves are separately governed, right?
+
+They're not governed by us. We just pointed them. So there's a whole lot of separate governance here.
+
+And this diagram is just trying to illustrate how it all links up.
+
+[Speaker 2]
+I think it's good. You don't need to worry about it. The only thing that hierarchy that needs to be concerned is what applies to the verifier in the use of the credentials.
+
+And they need to understand the hierarchy. So therefore, they need something to help them understand the hierarchy. And I don't think it's actually in the credential itself that they're going to get that definition.
+
+[Speaker 1]
+Well, I hope that a verifier can choose, even if they receive a digital livestock passport, to not concern itself with the livestock definitions and just concern itself with that subset, which are the UNTP definitions. That should be practical and feasible, right? And yeah, that's…
+
+[Speaker 2]
+But they need to be guided into how to utilize the data within the credentials. Yeah, that is a definition which isn't actually in the credential itself.
+
+[Speaker 1]
+No. I think the point you just made there still makes sense. I mean, it's a general principle on the web that you ignore anything you don't understand.
+
+[Speaker 2]
+Yes.
+
+[Speaker 1]
+So yes, if I only understand the UNTP, DPP, and I don't understand AATP, my system won't break. Exactly right. Yes, that's exactly the intent.
+
+Yeah. Anyway, so what I've done in this PR is basically add this section and a few tweaked words here about what it means for VC issuers. There does seem to be quite a strong opinion to make sure that all terms in a VC are referenced by a context file.
+
+There is this thing in the W3C data model, which is kind of like a catch-all. You put an at vocab, and it's basically saying, if you find anything in your instance that's not defined, just use this undefined. And when we spoke to U.S. Department of Homeland Security, they were pretty adamant that they didn't want to see that. Yeah, I think at vocab, somebody may correct me, I think it's been effectively, if not formally, deprecated. I think they want everything to be specified which namespace it's in. Yeah, and then you've got to help.
+
+So I think it's there in VCDM too. What we're saying here somewhere is don't use it.
+
+[Speaker 2]
+Yeah.
+
+[Speaker 1]
+But if you say don't use it, then you've got to basically help these extension communities do the job right. The challenge here is it's hard enough for us to understand all this. And if we've got 100 extensions, chances are 98 of them won't do it right.
+
+And then if you've got 10,000 implementers of the 100 extensions, you're lost if you expect them all to understand all this. This is why I think the simple schema, this green thing, is targeted at that final implementer that doesn't need to understand all this. And then this architecture and well-governed structure is basically guardrails for extensions to do it right.
+
+Because there's a big risk of stuff-ups in all this. And, yeah, we want to make it easy. Anyway, so, yeah, the PR basically mainly does those two things, right, which is think harder about all this versioning and relationships and granularity and so on.
+
+And reflect that in the context files and so on. And that sort of separation of core. And I'll come back to the data model, but when I read through all the issues, I basically did the PR.
+
+Then I went through all the issues and said, which issues might this close? And I've listed them all here, raised by different people. And if anyone objects, if and when we merge this, we can always reopen an issue that you think isn't satisfactorily closed.
+
+But this one was about maintaining references to standards that are immutable. By the way, one other thing. We've now got a little bit of a deployment pipeline going.
+
+Which isn't quite working yet, but will soon. Where these data models manifest as permalink vocabularies. This is on test.uncfac.org.
+
+But once we reach version 0.5 or something, it'll go to vocabulary.uncfac.org. But you can see here the... Let's go up here.
+
+Vocabularies for digital product passport, the core vocabulary traceability events and so on. And separating out the vocabularies, like an attestation here, from the context files, which are here. So I won't go through them in detail, but the point is to publish them somewhere that is rigorously versioned.
+
+We've applied the same versioning idea that GS1 has, where if you ask for the latest... If you don't specify a version, you get the latest. If you do specify a version, you get that version.
+
+And basically publish them to a stable endpoint. There's still a few tweaks to do in the pipeline, but that's also a change. And I hope makes it all a bit more robust.
+
+Because it's so easy to change something in a context file or change something in a vocabulary. And then, even accidentally, a previously issued verifiable credential will no longer verify. Because the context has changed.
+
+My learning from all this is you need quite a robust governance and good set of tooling to get this stable. Yeah, I'm just jealous of your tooling here.
+
+[Speaker 2]
+I mean, I'm flattered and delighted you're following some of the stuff we've done. And I'm thinking, yeah, I wish we had this level of tooling. This is really good.
+
+I like this.
+
+[Speaker 1]
+Yeah, so the tooling, I mean, I hesitate to push a particular tooling on anyone, right? Because you can just write JSON files, context files, and so on. But I'm still working on a theory that, particularly for the extension communities, if you don't give them simple tooling and rely on them crafting JSON-LD context files and JSON-LD vocabularies and graphs and so on, it's going to fall in a heap of cards.
+
+Yeah. Yeah. Guess what we did?
+
+Yeah, well, we're kind of lucky that there's a set of tools. This web-based vocabulary, it's really data modeling tools. But what you can see here is the idea that in one so-called domain, I can define all these types and link them to other vocabularies.
+
+And then when I go to, let's say, a digital product passport, I can say import reference domains like schema.org, GS1 vocabulary, and UNTP core. And then build models that basically consume and reference those. And you can see there's only, I don't know, ten lines of code here to make a digital product passport because it's just an assembly of classes from elsewhere with a few extensions.
+
+And by some magic behind the scenes, it generates the right non-overlapping JSON-LD context files so that I don't duplicate in DPP what's already in VCDF. But it also generates a complete JSON schema so that an implementer can just say, I see what to do and do that. And it has quite strong versioning and release management.
+
+So if you look at, I think there's three releases here, right? And they all tie into GitHub tags and versioned releases on the vocabulary site. So I won't go into all the details.
+
+Yeah, something to look at. Something to look at and happy to walk you through it because I think anyone that's defining, trying to build these sort of things and do so with some robustness might enjoy having some tooling that puts guardrails in place. Anyway, I've ravaged on a lot here.
+
+Has anyone got any objections? I know it's a huge PR. Actually, it's not that big a PR.
+
+It just seems to touch a lot of issues. If we click merge and effectively rebaseline and perhaps in the next call or in a special call, I'm very happy to walk through the thinking behind all the objects in the data model and get your feedback because I think, yeah, it feels dead right. We need to come to a level playing field in terms of our shared understanding of what does all this stuff mean so that you can effectively criticize it and tell me where I've gone wrong.
+
+That's the wrong, this is the unmerged one.
+
+[Speaker 2]
+Not to merge it, yeah, but if we can go through it in that way sometime in the near future, that would be, I think, very helpful.
+
+[Speaker 1]
+Yeah, OK. Well, then, if you're OK, I'll click merge and we'll maybe focus the next call on really a deep dive into the data model and how it's assembled so that we all reach a level playing field. And then we can move on to what have we missed in terms of actual meaningful data elements.
+
+Yeah. And if you want to look at the tool, I'm sure Alistair will be happy to walk you through it. Phil?
+
+[Speaker 2]
+Yeah, I can see how you play with this and it does look exceptionally useful.
+
+[Speaker 1]
+I will spend time doing that. Thank you. I had heard of it, I just haven't seen it used and so that gives me incentive to spend time in it.
+
+Yeah, if you're defining APIs as well. One of the things I like about it is it separates the complexity of the deployment technology from the simplicity of the reference model. So it's a couple of mouse clicks to define an API path through a data model and it will generate all the various get, post, patch, put methods and including pagination rules and security rules and so on because they're all in an external template of enterprise business rules for best practice APIs for let's say the Department of Home Affairs.
+
+And so it keeps the modeling simple and the generated artifacts have whatever complexity are in them. That's one of the things I like about it. Anyway, I'm not here to sell jargon.
+
+I'm here to explain what we've done in the last few weeks. And I'll merge this then. Has anybody got any other comments because we're two minutes from the end of this call.
+
+I'm going to write the response to the German delegation for you and recommend as you suggested that Maria Theresa engage with the commission before sending it to get their support. And. Yeah.
+
+And any thoughts on how we engage the team of specialists, and we'll have a session on make some spelling mistake corrections and we'll have a session on the data model. Next time. Steve.
+
+If you want me to make it quick.
+
+[Speaker 2]
+Give a quick look at what you write before you send it to Maria. I don't mind spending the time.
+
+[Speaker 1]
+Yeah, I'll write it today and I'll send it to her and copy you and say, Look, you may want Virginia's sage advice before you send it on and why don't we engage the commission and get their support. Yeah. Okay.
+
+Well thanks everyone. It's 759. I'll merge this do spend a bit of time looking through it there's still a few bugs in the tool for generating JSON LD which hopefully resolve today and tomorrow.
+
+So, I'll send out an email when I've additionally done some bug fix merges, and you can have a look at all the stuff. All right, well I'll stop sharing and say thank you for participating. And, yeah, I feel like we're just on the cusp of really quite significant uptake of this, I hope.
+
+Yeah, actually just on the update question we did get a, the Australian building industry articulating their traceability strategy which directly pointed at UNTP yesterday so that was a formal public announcement of adoption and interest, not not implementation
+
+[Speaker 2]
+yet, though we do have a conformity assessment body doing an implementation as well in the structural steel sector so that was a positive reinforcement of the work we're doing.
+
+[Speaker 1]
+And British Columbian government also is is implementing so actually we have a reasonable number of ongoing implementations that we should also publish, so that there's evidence of uptake as quite good to test it. All right. Thank you everyone.
+
+Thank you. Take care. Bye bye.
+
+Bye.

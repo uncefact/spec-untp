@@ -29,7 +29,7 @@ Previous meeting dates, recordings, transcripts, and minutes are summarised belo
 
 |Meeting|Summary|Recording|Transcription|
 |---|---|---|---|
-|2025-05-29| [One sentance meeting summary here](#2025-05-29-meeting-summary)|video (insert link) |[transcript](../../meetings/2025-05-29-Recording.txt)|
+|2025-05-29| [One sentance meeting summary here](#2025-05-29-meeting-summary)|video (insert link) |[transcript](/meetings/2025-05-29-Recording.txt)|
 
 ## Terms of Reference
 

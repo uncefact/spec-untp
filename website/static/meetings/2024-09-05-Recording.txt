@@ -1,0 +1,530 @@
+[Speaker 1]
+Okay.
+
+[Speaker 8]
+With your permission, I'm recording the meeting. Yes. Okay.
+
+Mr. Kepler, sorry for the interruption. Sure, go ahead, Dr. Wang. Mr. Kepler, can you hear me?
+
+[Speaker 1]
+Yes, we can.
+
+[Speaker 8]
+Thank you. Yes, you missed my name on the meeting on the August 28th.
+
+[Speaker 1]
+Yes, and I will fix that. The reason is that you didn't speak, I don't think. And it's an automated recording, and it pulls out the names of people that speak.
+
+So I didn't go through and check, correlate with the attendance with the speakers. So I'll fix that. Is there any other concern you have?
+
+[Speaker 8]
+Not yet. A new information, I have translated some of the UNTP presentation into the Chinese and show it on some of the workshop. It has a very warm feedback for the related information.
+
+That's all. Thank you, Mr. Kepler.
+
+[Speaker 1]
+It has very, what did you say? Very warm?
+
+[Speaker 8]
+Yes. I will translate the UNTP presentation into Chinese and also use it in some of the workshop and get a very warm backup for this topic.
+
+[Speaker 1]
+Okay, good. Well, that's reassuring.
+
+[Speaker 8]
+Thank you, Mr. Kepler.
+
+[Speaker 1]
+Yes, thank you for that. I see you're in TC154 as well. So you may join us with the proposed digital product passport project run under TC154 that is planned for the future.
+
+Hopefully, we'll see you there as well.
+
+[Speaker 2]
+Thank you. Steve, can I ask you if there's time in the meeting, if there's any update on that discussion because I'm really keen to know.
+
+[Speaker 1]
+Okay, not much update, but I can give some. So I'll start with that actually. And before I share screen, I propose we do a quick any news updates.
+
+And then we asked Michael to give us a business case development update. And then we look at a couple of PRs and then get through some issues. There's one particular PR I'm keen to share with you all, which is the registration pages of commitment to implement.
+
+So on TC154, I believe the ISO process, you know, the machine runs slowly. There is a meeting, I think in Korea in October, something like that, maybe sooner, where the decision will be made to, I believe, to launch this project or not. I believe it is separate, that decision from any concerns in the thing known as the Vienna Agreement.
+
+So not dependent on that. I suspect it will probably get legs and would go ahead. I did have a one-on-one with the project lead who seemed to have read in detail every part of the UNTP website.
+
+I was very impressed with their knowledge and seemed to be on the same idea that what's needed really isn't just one standard, it's actually a program in a very similar way to the way we've got a bunch of separate specs. There seemed to be a very good alignment. And the most recent thing is I've just put him in contact with Professor Kanota from SENCENOLEG.
+
+I don't know what discussions they're having there, but that's the third leg in the wheel that needs to ideally be aligned. That's all I know. Anybody else know anything?
+
+[Speaker 2]
+I'm just looking at an email I had from our former liaison, Pier Giorgio Ligiodello, and he tells me that he was on a call of JWG9 and very delighted with the high level of interest from China. So, Dr. Wang, very good to see that. Thank you.
+
+Formerly submitted, two possible alternatives have been discussed, traditional group e-ballot or a vote directly to the next plenary. And my colleague, Pier Giorgio, will be there physically in Korea. Vienna agreement was mentioned, particularly by Sue Probert.
+
+And I wonder whether we should have a chat with her and allay any fears she may have. But, yes, so what we're hearing is all in alignment. And for me, it's a very positive thing.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 2]
+Okay, good.
+
+[Speaker 1]
+So the site is generally under specs, I think, are maturing nicely. I'm going to show a little demo in a minute. But a key part of it, of course, is given this is a voluntary standard, that there's some business incentive to implement.
+
+And I know the subgroup led by Michael has been working away. And we might just request a quick update.
+
+[Speaker 5]
+Okay. I'm on the phone. So I probably won't turn on the video today.
+
+But we met yesterday. And just a lighter crew on the call yesterday. We've got a really nice model that John's been putting together around showing the really more giving a directional guidance to someone who's saying, okay, if I implement UNTP, what is the impact to start building the business case?
+
+In the conversation yesterday, we also talked about that there has been some particular work done from an example standpoint with the battery pass project in the EU, as well as Surpass, which has stuff for textiles. And I think also some areas around the batteries, EV batteries. And use those more as examples to point to.
+
+And who has been part of the Surpass projects. One of the big challenges there on those models is that it's still, to some degree, theoretical. They didn't have access to all actual company data or what's your role in the whole supply chain ecosystem as to what's your justification, building your own business justification.
+
+But I think it's a good start to give the directional guidance. So we're aiming for the middle of the month to have the first pass ready to merge into the main deck or the main site. So no change as of yet on that.
+
+So we're still trying to work towards it. Awesome. Thank you.
+
+[Speaker 1]
+So one thing that came up recently is just, I suppose, how we model the fact that you can make a business case as an individual, let's say a supply chain actor, a manufacturer, whatever. Here's all the benefits, here's all the costs. You've got some metrics and maybe some benchmarks, and there's a number.
+
+But when that actor is part of a community activation program, so there are many value chain actors and you get economies of scale like, for example, 20,000 Australian farmers all use one of six software packages. So if you get those six on board at the community level, you reduce costs and increase benefits. So has there been any thought about how you say, here's a business template for you, dear individual.
+
+But if you're part of a community, here's how that value can be amplified and the cost reduced.
+
+[Speaker 6]
+I can talk to that, Michael, if you like, briefly.
+
+[Speaker 5]
+Great. Thanks. Go ahead.
+
+[Speaker 6]
+Since you're on the phone as well. So it's a very good point, Steve. And I guess the optimistic answer is yes.
+
+We built into the model ways to configure the kind of uptake rates and the way things sort of might fit for one particular instance of an organization in a sort of complex supply mesh chain environment. And the way we're doing that at the moment is considering both their supply side in terms of how many of their suppliers are compliant with UNTP. We're not assuming that that's 100% at the start.
+
+And how many of their customers can consume UNTP-based sort of DPPs at the start? And we're assuming, again, that's an uptake process. So it's not 100% at the start.
+
+And you can obviously change the model parameters so that it's more optimistic. It's a faster uptake. If it's a dictate by a regulator, say, then you can sort of say, okay, actually, from this date, we're all going to be on UNTP.
+
+Or if it's a more organic kind of uptake process, then perhaps there's a slower process that's more of a kind of gradual adoption process. So we can model both in the model we've got at the moment, that sort of process.
+
+[Speaker 1]
+Okay, that's cool. And we've got one more fellow called Luca Brunello who's going to join next week. He's getting married this weekend.
+
+But he's been doing some work on community activation programs with regional development banks and may be able to inject some thoughts, metrics, dimensions of value, which are access to cheaper finance, access to green capital, this sort of stuff that also adds to the proposition. Anyway, this is really important stuff and quite exciting, actually, because it's just a piece of the puzzle that I'd love to be able to point people at to a compelling content and say, here's why you should do this. You know, go read that.
+
+So that's great. Luca was on the call yesterday. Oh, was he?
+
+Okay, cool.
+
+[Speaker 5]
+All right.
+
+[Speaker 1]
+With that, then, I'll move on to screen share and pull requests, unless anyone's got anything else they'd like to say. Actually, just before we get on to the pull requests, I thought I might just show you something. One of the things we've been, let's say, struggling with a bit over the last period is how to build a robust pipeline of vocabularies and credentials that use vocabularies and manage the versions of them and all kinds of different artifacts like reference vocabularies, but also context files that point at vocabularies and also schemas that describe a credential and also sample instances that help you to understand the credential. It's actually four different bits of technical artifact with versions related to each other. And, you know, it's quite complicated.
+
+And so trying to make it simple, I just want to say that we've been playing around with a modeling tool, jargon, but also making sure that we're not dependent on the modeling tool because there's a pipeline that goes through GitHub and that you can manage things in GitHub if you prefer. But what we've got at the output now is, I think, a reasonably robust model, right? So this is the test vocabulary site, not the production one.
+
+And you can see digital product passport core vocabulary, conformity credential, and you can see a little version number in the corner. And if I look at one of these, I can see a full version history, and I can look at the context and schema for each version. And I can look at the classes, you know, product passport and the like, machine readable or human readable, and look at the context file and the schema with the correct references.
+
+Thank you, Nis, for your comment, your bug from last week where the instances didn't reference the right version of the schema. So it's a bit of a, I suppose, standards management, version management, dependency management, delivery pipeline going on here that's beginning to work, I think. So just wanted to raise your awareness of all that because it's, I hope it's valuable to maintaining this stuff in the future and maintaining it at low cost.
+
+Yeah. So we've got a couple of hands up about that. Appreciate your views.
+
+I think, Phil, you've just beaten us to it.
+
+[Speaker 2]
+Just very, very briefly. My colleague, Mark Harrison, who looks after our web vocabulary is now back from holiday and is very engaged with, Martin, isn't it a jargon? Alastair.
+
+Alastair, sorry. Thank you. So that's been very helpful to us, and I think Mark is helping him.
+
+So I'm hoping that the, what I think is an important task of mapping this vocabulary to schema.org and maybe ours, but I'm particularly concerned about schema.org, is something that will be easier to do.
+
+[Speaker 1]
+Yeah, that's, just to quickly answer that one, that is one of the merits, right? We've started to import schema.org, GS1.org and reference them and build in all those kind of validation rules. Have you referenced something that really exists?
+
+Is it the right type? Have you got a property referencing a class or something? It's beginning to, I haven't got enough.
+
+Actually, this is something else I wanted to share, that generally all this stuff, the vocabularies and the context files and the schema and the instances are all a little bit inwardly navel-gazing at the moment, in the sense that there's only a few references to outside things, a little bit of schema.org and a little bit of GS1 and a little bit of GeoJSON. But once we get the dust settled here, I think it's important to go through and maximize use of existing vocabularies wherever possible, rather than reinvent our own, right? And so that's something that isn't done enough yet, but I think the main thing is have we got the right tooling to make it easy and robust and maintainable?
+
+That's what I'm trying to achieve here. Anyway, and Nis, your hand's up?
+
+[Speaker 3]
+Regarding versioning, we talked about that last time, and I love the approach of having all these files referencing the same version. Since then, I will just raise a concern, which is updating contexts very frequently, like the semantic versioning approach that this is taking. I think that's an anti-pattern, and mainly because contexts sometimes need to be registered to allow because you need to call them.
+
+It's an outwards call, and you need to give permission in certain setups, in frequent setups, common setups, you need to permission such calls. So very frequently updating context, I think, is an anti-pattern. Typically, you see, for example, the VC context, it's got a version 1.
+
+Then five years later, it's got a version 2. That is how I think we should ideally approach context versioning, whereas this 0.9, 0.3, and then next week, 0.10, can cause problems, I believe, for importers.
+
+[Speaker 1]
+Yes. So my thoughts on that are that certainly, more than the context, the actual vocabulary reference, it is the thing I would have thought needs to be stable. You don't want to be pointing at a version XYZ of a reference vocabulary and then another different version the next day because that's actually the URI that appears in the expanded term after you've applied the context.
+
+And so the graph you get at the end is basically a representation of the vocabularies you reference, and those should version really slowly. So I've already started to actually version the UNTP core vocabulary at a slow major version only, like 0 and then 1. Good.
+
+And only vary the context files, which are pointers at the vocabulary, are still 10-bit versioned. And maybe you've got a point that the context files could also be more slowly versioned. Yes.
+
+Maybe this is a future discussion. The schema obviously gets frequently versioned, but I would have thought there's less pain, apart from the registration aspect, which you mentioned. And two, by the way, you see a whole heap of versions here too, but this is all test environment, right, because you're ironing bugs out of a pipeline.
+
+One would expect much less frequently versioned things when this gets released, but we should have a discussion about what's the right versioning granularity of these layers of artifact, right? Vocabulary versus context versus schema. And I think more and more fine-grained versions as you get to the left to schema is fine, and much more stable is needed on the right when you're talking about vocabularies, right?
+
+Yeah, anyway.
+
+[Speaker 3]
+Yeah, to be continued. I mean, the point of last week or two weeks ago was the schema and the context would be versioned together. So I think while I agree that it should be more and more granular as you move left, the point was sort of they would go together, especially now that we apparently don't allow for add vocab because that kind of catches all that if you update the schema without updating the context, but certain people don't like that, and so we're kind of stuck with having like they're all together.
+
+[Speaker 1]
+My mental image of this is that what we're trying to achieve is consistency in the graph that you generate at the end, and that's built from the vocabulary you reference. The context file is basically a mapping. It says this key means that thing, right?
+
+And so does it matter?
+
+[Speaker 3]
+I completely agree. I completely agree. The problem is to expand the graph, you need to fetch the context, and if the context changes from yesterday to today, I may need to – that can involve ping to allow for that output call.
+
+[Speaker 1]
+But also – yeah, yeah, yeah. All right, let's continue this discussion. I know, I know, and I really don't want to do that because we've got – yeah, too much technical talk scares off the valuable business people as well, right?
+
+[Speaker 3]
+For sure, 100%.
+
+[Speaker 1]
+So the next quick thing then is pull requests, and there's one here which says update implementations register pages, which NIST reviewed, gave me some comments which were good, I reflected, and this is approved. What this is is something we discussed I think two weeks ago, which is let's put some content. This is just – it's easier to look at a local version already deployed than to try to work through a pull request, right?
+
+So I'm just showing what this will look like if we collectively approve this pull request, is some content on these pages down here called implementations register that previously had nothing. And what this is is the beginning of an invitation to the community to make commitments to – not legally binding commitments, just kind of intent, expression of intent, let's say, to implement UNTP. Even though it's not quite finished yet, we agree that now is probably about the right time to start collecting interest and appetite.
+
+So there's a page that says – basically the homepage of implementations register that says there's several different registers, and the reason for that is the data you ask from an industry actor is slightly different to the data you ask from a software vendor, which is slightly different from the data you ask from a conformity assessment body and so on. So we've broken this down into one, two, three, four, five subpages. They all look very similar, and this is just a guidance page that says, look, okay, there's five types of organization that might choose to implement.
+
+There's some implementation status. You say in terms of reference to the specification which bits you're proposing to implement. There's a bit of a description of a process, which I thought rather than – be difficult or tricky if we open up these pages to pull requests because you might have two or three requests that collide in the same week or something.
+
+So maybe a better way is to use issues as basically a registration request, and then you can have discussions around the issue even until it reaches a point where you say, right, we'll register that, and it can just be an update. So there's an issue template I'll show you in a minute and a few words about when you register your intent. One of the things we'll want from you is some KPI reporting so that we can assess overall impact.
+
+So let's just look at a page. I thought the register would – let's imagine a future success scenario where there's hundreds or even thousands of expressions of intent. That would be nice.
+
+You wouldn't want to scroll through a huge amount of stuff just to find ones you're interested in, so I've structured these pages a bit similar to the meeting page where there's a kind of summary table where there's one line per expression of interest, and then you click on that, and it takes you to a little couple of tables and some words for that particular implementer. So that's a general pattern through all of these, regulators, certifiers, registers. That would be GS1, for example, software solutions.
+
+And so we've got empty content here. First thing, any high-level comments before I show you an example registration because I made one for the UN reference implementation, which is currently an open ticket. We'll look at it in a minute.
+
+But what do you think of the general structure? So if one of you is a software company, that would mean there'd be a line here with your company name, what you plan to implement, and then some words about why, logo, geographic scope, and then each product. This one is already been deployed.
+
+So I think this is an earlier version, but it shows the already deployed UN reference implementation. That won't be in this pull request because there's a separate ticket for that. But it would look something like this, right?
+
+There's some VC software. It's called VC Kit. Oh, no, this is generic.
+
+Sorry, I made it generic. Beg your pardon. So this is not specific.
+
+[Speaker 2]
+Anyway. I think I've got comments, but I'm looking forward to seeing your next bit that you're going to say and then come back.
+
+[Speaker 1]
+Okay. So how you get a record on one of these pages is by raising a ticket. And if we look at open tickets, by the way, if anyone raises a new ticket, by the way, it's now you've got an intermediate page, which says are you raising just a general UNTP issue or are you requesting an implementation?
+
+Nice. So if you're requesting an implementation, you get a template. And when you fill in the template, it would look something like this, right?
+
+So this is UNC fact requesting a registration of the UNTP reference implementation, which has a, you know, VC issuer software and some tests, harnesses and stuff. Some implementation statement, you know, want to support UNTP implementers with a reference implementation comprising open source software, community testing tools. What does the reference implementation include?
+
+Which versions will it support? And then details of each component. So there's a thing called VC kit, ID kit and UNTP tests.
+
+So I hope we'll get a little flurry of these and we'll be reviewing them and adding content to these pages. So that's where we're at with this. Open for comments and thoughts.
+
+Gerhard's got his hand up.
+
+[Speaker 7]
+Yes. Hello. UNTP tests I see on the UN C factor page just shown.
+
+And the other one was about the company implementing standard. And about test, is it not relevant to put the results of the test a company applied to his implementation on that company page? Because I'm not seeing it or I missed it.
+
+[Speaker 1]
+Yeah, actually, I don't know why it doesn't show it, but yeah, it's an excellent point. And yes, I did have in the table, a last column, which for some reason isn't showing here. I'll have to check what's in the pull request, which says evidence, right?
+
+So test results basically.
+
+[Speaker 7]
+It's all about the evidence, but we are doing that. Yes. Yes.
+
+With it. So also for the. Absolutely.
+
+Yeah.
+
+[Speaker 1]
+So obviously the evidence isn't required when you are making a expression of intent as opposed to planned, right? It means it's only when you're saying I've done it, my system, I'm announcing that my piece of software or whatever it is, is conformance. Then you have to provide evidence.
+
+And there is a, there's a, where is it? Somewhere in here. Yeah.
+
+A test suite, which, you know, will link to, and this will get, but there's basically a target about the end of September, I think, where we should have sufficiently stable schema and, you know, context files and all the tech specs, sufficiently stable test suite and all the other bits and pieces so that someone could actually run through a test. All right. There are other hands up, but yes.
+
+It was supposed to be there. I don't know why it's not, but it's, it will be. Cause obviously you have to have evidence.
+
+Yeah. Okay. Thanks.
+
+Who else had their hand up?
+
+[Speaker 3]
+I do. I think I'm the only one again, calls out that there's a very large amount of acronyms, not just on this page, but I would extend it broadly. We are very esoteric.
+
+Can we try and just drop, this is my preference. Either we can link to a vocabulary that explains what they are. My preference is to just try and avoid all these acronyms and be, well, there it is.
+
+Okay. Nonetheless, I think the point is well raised.
+
+[Speaker 1]
+Yeah. So I mean, I, I love and hate them at the same time, right? They're really convenient for referencing things and then you forget what they mean.
+
+So that is okay. Well, that's why I put this right. You can see everyone has expanded.
+
+Would people prefer I didn't put the short form at all and just hyperlink the, the full text?
+
+[Speaker 3]
+That would be my preference. Yes.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 3]
+We can all, it's not just your product. We can just raise the pull request.
+
+[Speaker 2]
+Of course. There's some tooling you can use for that or write your own or whatever. So that every time an acronym appears, the ABBR tag.
+
+So I don't know if people are familiar with this. This is me as an HTML nerd. ABBR tag, the title attribute of which is appears when you hover over and yes, you can make it a hyperlink so that it goes off to the definition or whatever.
+
+The respect tooling has a lot of that built in, but, but I don't know that it fits in well with DocuSource, which you're using, which I think is fantastic. I mean, it's, it's, it's, it's a great thing. So I wouldn't want to break the tooling you're using, but that kind of thing that we're talking about is something that can be automated.
+
+So you can write it quickly and it's just automatically expanded and linked to whatever.
+
+[Speaker 1]
+Well, we should have a look at that, but if, if that automation doesn't work, then just use less acronyms. Yeah. Okay.
+
+Point taken. But what about the just general, first of all, do we still agree that it's about the right time to solicit interest for expressions of intent? Which, and that it probably makes sense to separate them by industry actor, you know, who's not a software provider versus software solutions that they might use versus authoritative registers like Australian business register or GS1 product register or whatever, versus certifiers.
+
+They're all quite different roles, right. And I thought better to separate them and to munch them into one big table. I mean, I could do that with, with a column that says what role you are, but then as soon as I did that, I started going, well, actually we're, the details are slightly different, right?
+
+Because a certifier might want to say what schemes he's offering as digital verifiable credentials. I think it's, I'm sorry, John.
+
+[Speaker 6]
+I've been polite for once, raising hand. I think, although I agree with you, a big munched up table will look really ugly. I think we'll probably, if I were looking at this, I'd like to have a downloadable table that I could then sort of filter and sort and do things myself with, rather than just have a nice visual presentation as you've done by organizing your kind of sensible classification, but somewhere or the other you'd want to download the table too.
+
+[Speaker 1]
+I hope we have enough expressions of interest that people will want to download a table because it's too big to look at on a screen. That's what's called a nice problem to have, right?
+
+[Speaker 2]
+Phil? My thought on this is, why are we doing it? Why are we providing that?
+
+Well, there are, I think, two reasons. One of them is to show to the community that decides what work gets done at UNC fact that yes, this is worth considering and the community is there and everything else. But I think more importantly than that, it's the if I'm somebody in an organization and I've been told to go away and decide whether we should do something or not, if I can look at a page like this and say, aha, these people, these people, hopefully people I recognize it doesn't matter if or not, but there's a community building this.
+
+And I want to be able to tell straight away that this is not fantasy where it's not vaporware. This is something real and we can get involved with. In other words, give me confidence to want to be the next person to implement this in addition to the ones that were there.
+
+[Speaker 1]
+Those are both important reasons. And of course it's a little bit risky when you're just putting it out and it's empty because you need some early, early risk takers, if you like, to, to create the flywheel. And that did cross my mind, right?
+
+That we might publish all this stuff and then just not get enough interest in it. But then in a way that's, this is just quite a key measure, right? Because to the first point, I think one of the challenges UNC fact has as in any standards organization really is how do you assess the impact of your standards?
+
+Who's using them? And by providing a fairly concrete implementable spec and a test harness and a registration page, you get, you sort of close the loop, right? And you get to see who's using them and even maybe ask them for metrics because we've got this kind of, at the last forum, we put a fairly ambit stake in the ground that said by 2030, wouldn't it be nice if 1 million UNTP DPPs were issued every day?
+
+How are you going to know unless you get people to register and then ask them for a really lightweight, once a year anonymized, you know, KPI report, like how many passports did you issue last year? You know, yeah, it's, it's, it's closing the loop. It's risk-taking, but I think it's, I think it's important.
+
+[Speaker 2]
+I don't want to take any more time, but just very, very briefly. If you scroll down on that page, you will see, not just on, on the chat there not just the software that was implemented, that particular standard, but all the tests they have passed, which is all the normative musts and shoulds. Each one is turned into another report and you can see exactly what they have done.
+
+So again, to go back to what Gerhard was saying, you know, the evidence that you have conformed, ideally, that's available as a test report that said, yep, our software, our system or whatever passed all these tests.
+
+[Speaker 1]
+Yeah. It's in the version I thought I had set up and I'll check. And if not, we'll just patch it.
+
+There was definitely that column, which is test results evidence, which is at the moment is a click where, behind this, I've set up a page or a folder on GitHub for every implementer organization. And I expect that's where we'll put test results and link to them by a hyperlink here. Right.
+
+So, you know, it's actually quite a nice example of making a standard of making their conformity criteria and then testing them and then providing the evidence. Maybe we'll even produce the evidence as a verifiable credential. How about that?
+
+[Speaker 4]
+No, you're going too far.
+
+[Speaker 7]
+Gerhard, you've got your hand up. Yes, perhaps we split this column result in, like the results of the test passed or never. And the other one is just the evidence of the results, like errors that occurred because you didn't fail the test, et cetera.
+
+And then I don't know. I don't know if it goes too far to make this transparent, but anyway.
+
+[Speaker 1]
+I think we should be able to, and I think it's a good point. I think it's another page though, right? What I'm imagining is when an implementation goes through a test suite, you get a test report and that test report, we should make it available.
+
+Let's say as Markdown. And it just gets pushed to the GitHub folder for that organization. And then when you click on, imagine, I don't know why this last column is not there, but you know, evidence or test report, you click on it, you get a whole page of, as Phil said, this test, this test, this test pass fail.
+
+Because even when you're in process, you still want to know that, right? I mean, at the end of it, if everything that's mandatory is passed and everything that's optional is either passed or not done. But that would be a detailed page.
+
+That's too much for this page. Cause this is a summary of all software vendors or whoever it is, but we should have a page for each, each one, I think.
+
+[Speaker 2]
+Anybody disagree with that? There's some interesting and I think important questions in the chat. Ah, I haven't looked at the chat.
+
+[Speaker 1]
+It seems there are many acronyms. Okay. Yeah.
+
+Spell out the acronyms. Acronyms seriously suck. All right.
+
+Will we really leave room for an implementer who wants to be confidential? Yeah. So confidential about whether you passed the test or not.
+
+I think anyone can, of course, just grab the specs, do the tests and not publish an intent, not publish a result. You can't stop that, right? It's an open standard.
+
+Anyone can do it. Would we, is there a, is there a case where an implementer who's claiming conformity and when you do claim conformity, let's say against all the musts in VPP, it's not like a secret what those musts are, are they? It's, it's yeah.
+
+What's this? Canon reports.
+
+[Speaker 2]
+It was basically, basically Jean and Brett's exchange I think is worth making sure that you saw that's what I wanted to do.
+
+[Speaker 1]
+Yeah. Okay. Here's an example of quite a nice reference.
+
+RF dataset. Yeah. So the W3C also has some, I think there's a, there's a VCDM 2.0 test suite that does a similar thing, right?
+
+Like green and red traffic lights and so on. I think most software vendors would want to announce all their green ticks. What I'm less certain about is industry actors when they use a particular piece of conformance software and they start to say, yes, we, we're also issuing and receiving passwords.
+
+So it says, I don't know, BMW, Mercedes, pick any names. Will they want to publish that or not? I don't know the answer to that.
+
+Yeah. And I don't think we can ever mandate that you must, right? How could we, in fact, what would be the incentive?
+
+It may be a better question. Software vendors and registry operators and even conformity providers. I can see there's actually a commercial incentive, right?
+
+Cause it's also a little bit of marketing. But the interesting one is the industry actor, the, the mining company or the manufacturer or whatever who probably has to do some configuration or integration of some software package to their business system to get to the point where they can issue and receive passports. Why would they register their intent on the, on this site?
+
+Is there a reason that they would not want to or a reason that they would want to? And what might, how, how might we incentivize them?
+
+[Speaker 5]
+It's an interesting question. What might be from the interest of why they might want to is around some of the compliance type questions, you know, you know, that they're actually serious about it. And so it's almost like it's part of their declaration that they're, you know, I mean, that would be one.
+
+Otherwise I don't know if there's a first mover advantage and you might want to keep it quiet. Yeah. So I don't know.
+
+It's a good, good question.
+
+[Speaker 1]
+Anyhow. I think the answer to Jean's question is the site will expose everything you give to it, but every actor has a choice to not participate. Right.
+
+I mean, because we can't control someone downloading the standards, doing their own tests and just going during a, oh yeah. So yeah. So I think once this site is, if we agree to click the merge button now, then yeah, we've got empty pages and Brett saying we're in a, we're in a little no man's land where we've got empty pages, which isn't a good advert.
+
+So we'll have to do some marketing, right. And try to, I know at least four or five that will software vendors that will put their, their, their intent up. I don't know about conformity assessment bodies or registry operators.
+
+These are, they're a bit more heavyweight and more of a decision-making process.
+
+[Speaker 4]
+We have at least one conformity assessment body that will.
+
+[Speaker 1]
+Yeah, that's true. And I can think of one regulator that will. So yeah, look, I'd imagine Brett in a couple of weeks we'd have, I don't know, half a dozen software packages, one, maybe two regulators, a couple of industry extensions, maybe a conformity assessment body would.
+
+Stefano's got his hand up.
+
+[Speaker 4]
+Yeah. Just in the sense, I mentioned some couple of meetings ago that I was going to have some talk with regulators as well. And now I got the agenda in Brussels, and this would be between say October and December.
+
+So in my view the expression of interest, as you mentioned, as we are mentioning is the first step to say this looks interesting and that I anticipate you without going into details and the verbal expression of interest is already there. So during the meetings, I will dive a bit more. I do have to understand what it means.
+
+I will dive, but there may be some, as you mentioned, early tester that can come out after this talk. So in my eyes, this is one opportunity. And the second is in relation to what you mentioned before, who would be interested?
+
+Michael mentioned compliance, and I would add even voluntary compliance. There is some actor, some industry in some supply chain, like whatever fashion, food, whatever that is already doing, trying to do something. So this kind of tool, I do believe may tease them to go further and try.
+
+So yeah, that's what I view and believe.
+
+[Speaker 1]
+Yeah. I suppose that the question we were arguing or discussing last time was when is the right time to do this, right? Because you can wait until you think you've got final specs and every page is complete.
+
+The business case is there and everything's perfect and then ask for registration or you can start a bit earlier when it's, there's a substantial amount of content, but it's clearly not finished and ask for like, if you like expressions of intent. So we chose to do the latter just because we know we'll get some early names and brands and things up there. And hopefully by the time we work through the next couple of months and you know, the rest of the content stabilizes, there'll be more confidence and we do more pilots, you know, and we advertise those pilots.
+
+He's trying to spin this, spin the flywheel, right? Because the vast majority are not going to be early adopters. They're going to be people going, ah, it looks interesting, but I'll wait and see.
+
+Yeah. That's, that's probably 90% of potential implementers will be in that bucket. So we need to find those 10% of energized people.
+
+[Speaker 4]
+Yeah. And as you mentioned before, Steve, about metrics, right? So this again, first expression of interest.
+
+Yes. Sounds interesting, but I would like to see more ABC already may guide us on prioritization on what we want to get ready before the other topics and the same for the early implementer. So it is a path for, for the improvement of our journey, I believe.
+
+[Speaker 1]
+So with all that, is this good enough to merge?
+
+[Speaker 9]
+Yes. Agreed. All right.
+
+[Speaker 1]
+Then I think this has already approved it. Merge away. I will check that that last column that Geha mentioned does appear.
+
+And if not, I'll do a quick just patch fix to make sure it's there. But okay. And that's engines running the other pull requests.
+
+We, I don't know whether we, it's a bit more recent. I'll just show you what it is. This is just a tidy up of some of these pages.
+
+I think. Oh, wait a minute. Wait a minute.
+
+This is the beauty of GitHub. Two separate pull requests from two separate branches. So I have to switch branch.
+
+And then refresh the page. So this is basically an update to DPP just, just to fix the issue NIST raised last time, schema references. And also the samples had some basically invalid values when, when it was a date time, I forgot to put the time and it didn't validate against the schema.
+
+So I published a schema and a sample that didn't validate, which is a bit, you know, unprofessional.
+
+[Speaker 3]
+Steve, is the schema actually part of this pull request? I didn't see it. So I I'm now confused what you're referring to with this schema reference.
+
+[Speaker 1]
+So because of the pipeline that I showed earlier, that basically has a, an action or a, what'd you call it? A web hook. That pulls into a different repository, which is a, an aggregated publishing repository.
+
+And then it actually does another clever little thing, which is one of the challenges we had is we're publishing all this to a test endpoint, but actually we want to manage as if it was production. And how do you take a, let's say one, let's say you've got, I don't know, 20 different versions in tests and you go, right. That version 3.17.3, we're going to push that to prod. We needed to, there's a bit of logic in the pipeline that goes in and changes the domains so that it goes from test.uncfac.org slash vocabulary to vocabulary.uncfac.org. Right. So, so it basically a lot of stuff happens in the pipeline and the schema are not actually in this repo.
+
+They're just referenced from here. So these, these should point to, if I click on one of these, it should, it should take me to the, it takes you to it. But it's actually, it's not on this repo.
+
+It's on the, you know, the publishing. Yeah.
+
+[Speaker 3]
+Yeah. Yeah. Can we make it the same repo?
+
+I don't. Is there a point, but Ksenia has this, she spreads everything out over 10 different, it's very confusing. I find it very confusing.
+
+[Speaker 1]
+Yeah. Okay. Because you want to be able to clone the repo and get the schema.
+
+Basically.
+
+[Speaker 3]
+Well, I just want to be able to find stuff really.
+
+[Speaker 1]
+Yeah. And you can find it through, through this, these pages.
+
+[Speaker 3]
+Okay. But I actually rejected the pull request, but I'm, this is very, we don't have to merge this one now, but anyway, and Ksenia put some comments.
+
+[Speaker 1]
+I'll just walk you through it. I also went through and updated the conformity credential page with actual, some words and some snippets because it was a bit empty before. So it's looking a bit richer and didn't finish, but made similar progress with traceability events and facility profile.
+
+So it's a, it's basically a fix a few bugs and put more content pull requests without changing any of the models. You don't have to merge it now. I've got more work to do anyway, but I just thought, why don't I address the questions and we'll leave it because Ksenia had some comments and I think you, did you reject it?
+
+[Speaker 3]
+I did, but I just, I'm just, I'm going to approve it now because that was this.
+
+[Speaker 1]
+All right. Okay. Where's the schema question?
+
+Yeah. Yeah. Let's make that a separate question about how we, if we push those schema through this repository, as opposed to the aggregated one that gets, because it's the one Ksenia has been using for the broader vocabulary, right?
+
+The buy, should pay and low codes and all that. They all go through one place and get published into this. I know you've, most of you have seen the page, right?
+
+The, this, that one, this one with buy, should pay and low codes comes from a one repository. And it's the same one that has these, these test artifacts. So it's, it's a pipeline question really.
+
+Anyway, we're five minutes away from the end. There are some tickets that we could sort by label pending close. So I changed the words, Phil to make it clear that I wasn't suggesting you had to have a batch.
+
+If you had a serial number, there's been a long discussion about identifier and identify system with Vladimir. And I think we've resolved that one. And a few others.
+
+Maybe each person who's raised these, if their name is against the pending close ticket, I'd rather the person that raised it agrees to close it. Then I just decide that somehow I've met your concern. Right.
+
+So a good news is I think a bunch of ready to close, but we won't know until the issuer, the creator agrees that they're ready to close. Right. So, let me follow up with each one of you separately and just if so we'll close them during the week, if you all agree.
+
+So by next meeting, I hope we'll have finished the spec pages, you know, that I showed just now. And so we have a complete readable, you know, it may not be right. We'll go through pilots to prove it's right or wrong, but at least it will be a complete set of specs and we'll have some, maybe not next week, the business case, perhaps the week after, but it's all coming together.
+
+I think there's not so much left. Like I said, that the light at the end of the tunnel is now much closer than the one at the entrance, which is quite rewarding. Okay.
+
+Any closing comments? Any thoughts? How are you all feeling?
+
+All right. Okay then. Thank you for your time.
+
+Thanks Steve.
+
+[Speaker 9]
+Bye bye.
+
+[Speaker 1]
+Bye bye.

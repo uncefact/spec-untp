@@ -1,0 +1,496 @@
+[Speaker 1]
+Usual reminder that this is a UN meeting and your contributions are considered UNIP. We now reduce to a meeting every two weeks and each two weeks it alternates between evening and morning European time. So thank you all for attending.
+
+So since last meeting we have published a version 0.5.0 of a collection of UNTP credentials, namely the digital product passport, the digital conformity credential and the digital traceability event and the digital facility record as ready for test. And we have, I'm not sure what the current count is, but something like 13 or 14 software providers committing to implement, which is good, I think, and a couple of conformity assessment bodies and the regulator. So it's beginning to pick up.
+
+I think it's interesting because I think this is the first time the UN has associated with publishing a standard, has also invited commitments to implement the standard and started to track who is implementing, right? Because historically we just say, here's a VRS and here's a schema and we don't know who implements. So it's a bit of an experiment, but I think it's valuable in a way because it gives us an ability to track whether there's any serious interest.
+
+And given its early days, I feel that it's a measure of success that 13 or so software companies agree, commit to implement. So I'm quite pleased about that. We had a couple more since last meeting.
+
+I sent an email about that. So I don't know if we need to talk about it and a couple of conformity assessment bodies.
+
+[Speaker 5]
+Steve, could I come in and ask a question?
+
+[Speaker 1]
+You certainly can.
+
+[Speaker 5]
+Okay, thanks. I have a company in America that's in this space and I share with them about UNTP protocols and they're very interested in exploring more. If they wanted to sign up for it, am I correct to guide them to this and the GitHub and then they can fill out the form and it'll go to you, right?
+
+[Speaker 1]
+Yes, that's right. So on the website, there is a page here called implementation register and identifies one, two, three, four, five different types of it. And then it says, what's the process, which basically is raise an issue.
+
+Click there, right? The one that will pop up in a minute. I'll just link here.
+
+Why isn't that opening? Is it a bad link?
+
+[Speaker 5]
+I got the main page opened. So yeah.
+
+[Speaker 3]
+I guess you're fluent at the moment. Steve, are you at sea? No, no.
+
+[Speaker 1]
+Well, I'm just about to do a yacht race from Malta back to Malta and I'm in some hotel at a crew party for gin and tonics. So I'm not completely.
+
+[Speaker 3]
+No to the hotel. The hotel Wi-Fi is not very good.
+
+[Speaker 8]
+Yep.
+
+[Speaker 3]
+Well, as I was saying.
+
+[Speaker 2]
+We lost him. Darn it.
+
+[Speaker 5]
+Phil, quick question. You were in Surpass before, right Phil?
+
+[Speaker 3]
+Briefly. Yes.
+
+[Speaker 5]
+Yeah. Okay. Sorry.
+
+Because I didn't see you in Surpass too. So that's why it was one of.
+
+[Speaker 3]
+Yes. So colleagues are involved. Yes.
+
+But I'm not personally. Yes. Sorry, Steve.
+
+I was saying that your Wi-Fi is dodgy.
+
+[Speaker 1]
+Well, the hotel Wi-Fi stopped, just decided to abandon me. And so I went to my phone Wi-Fi, but that only has a one bar of 4G. Now I'm back to hotel Wi-Fi and hopefully it survives this meeting.
+
+So I will go back to screen share. Yeah. So to register intent, just click implementation register template, and it'll give you a form to fill in and will result in a ticket that is for us to consider.
+
+And I've basically, let's look at the closed ones. You'll see a few of them. So it'll look something like this one.
+
+This one is for any NGO, but you fill in stuff. We have a look at it as a group. And then it ends up when we agree to publish it.
+
+And most of them is only one we refuse so far that ends up basically as a list in this table. And you can click on anything in the list and it will give you a story about what they plan to implement. So welcome implementations of either software solutions or authoritative registers int to Phil Archer, maybe GS1 wants to, and then certifiers regulators and industry.
+
+So it'll be interesting to see how that goes. So for this particular meeting, I had hoped that I would have taken the stuff on business case template and created a pull request for review. And I haven't had time and we'll do it in the next few days so that there's time to review that content.
+
+But right now, there's only a couple of technical pull requests, some software updates so that we can do diagrams and an update from this. Transmute is the first software company to move from, we commit to implement to we have implemented it. And the thing I wanted to discuss with the group, or get your feedback on is we're actually a couple of weeks away from publishing a formalized test suite, against which you can test and then claim implementation conformance.
+
+So what NIST has done with Transmute in the absence of anything else, and there's no criticism here is have his best guess at what implementation means and implemented on their platform, the four credentials, and then said, here's the link, you can try it yourself, we're claiming implementation. And there's nothing else he could do at the moment, because we don't have a formal test suite published yet. But I think this is one of the things to discuss as a group is what are the criteria to move from I am committing to implement to I have implemented?
+
+Should we say, thank you, NIST, it's fantastic, but can you wait for the test suite? Or should we approve this pull request?
+
+[Speaker 6]
+If the test suite is, how far away is it from being ready?
+
+[Speaker 1]
+Two weeks.
+
+[Speaker 6]
+Then I would have them wait for the test suite, because otherwise you have everyone else who's gone through the test suite and one that hasn't.
+
+[Speaker 1]
+Yes. Yeah. So I was hoping you'd say that because then I got some consensus to return to NIST and say, it's wonderful that you've been the first implementer, but can you wait a couple of weeks and go through the test suite?
+
+But I'm sure they'll pass it very quickly. Because that, you know, Transmute is also actually part of the verifiable credentials profile. But I think it's happening, right, that software companies are committing to implement, they're actually building implementations.
+
+And we're starting to get some, some traction. So, you know, the last thing I want to do is demotivate anyone.
+
+[Speaker 3]
+But with that in mind, I just record a quick plus one to what Virginia said. I think it's absolutely right. Thank you, but please wait.
+
+Yeah.
+
+[Speaker 1]
+Okay, good. Then I'll respond that way as, you know, gently as I can. For the rest of this meeting, the only thing I have that I wanted to talk about is the identity resolution process.
+
+And really kind of walk through it and get your thoughts about it. Because now that we've kind of got, they're not perfect, and there are some bugs, but four credentials to implement and test at a pre-production level, I've moved on to other specs, which is the IDR and the digital identity anchor, and done a little bit of design thinking around there. And one of the things is this, this diagram.
+
+Hang on, let me move the zoom panel, it always seems to want to get in the way of what you want to click on. There we go. So this is not normative, because what would be normative is what does a link resolve a return and things like this, right?
+
+But I started here with the thinking of what are all the different types of identifiers? Or how do you find identifiers? And how do you go through this process of, I found an identifier, then I've resolved an identifier means I've turned an ID into a URL.
+
+And then I've verified an identifier, meaning I've proven that the party claiming ownership of this identifier really owns that identifier. Right? This is the kind of this DRV, discover, resolve, verify sequence is also part of really fundamental to another UNC fact project around identifiers that is about to publish a white paper.
+
+And it uses this language of DRV quite extensively. And it kind of resonates with me, because I think these are basically the important steps, right? How do you find an ID of a thing, given an ID of a thing, how do you turn it into a URL that you can discover more information?
+
+And when you discover more information, how do you verify that it's authoritative information and isn't somebody just claiming things that aren't true? Right? That's the steps.
+
+So what I tried to do with this, and I thought I'd maybe walk you through it with your permission and get your feedback, is think about two kinds of identifiers. Basically, those that come from an authoritative register, whether that's an Australian business register, or a trademark register, or GS1's product register, or whatever it is, it's some organization that operates a register with multiple members. That's the left-hand side of this, which is, at least in the finished product end of the market, it's probably the majority.
+
+But there's also the idea of, well, I don't need to create or join a register if I want to identify a product. Why don't I just create a DID, right? This is where possibly the European JTC24 is going, at least as an option.
+
+What if a company just creates an identifier for a product and doesn't register it? Maybe it's a DID, maybe it isn't. That's the right-hand side of this.
+
+And can you still resolve it and verify it? And what does verifying really mean? These are tricky questions.
+
+And what's not on this diagram is another challenge, which I'll maybe mention after I walk through this, which is, what do you do about bulk products? Because I have to admit, when I started this, my mindset was very much about things with printed barcodes on them, or QR codes, whether they're issued by a registrar or self-issued. But when it's a shipment of hydrogen or a bucket load of iron ore rocks, what is the identifier?
+
+And I don't think that's fairly represented on this diagram. So I wouldn't mind talking about that after this. But if we assume for the moment that this diagram represents something that you could actually print an identifier on it, whether it's a GS11 or some other, or it's a cow's ear, it's an identifiable thing.
+
+Then this top bit is saying, well, how are these identifiers represented? It could be an RFID tag, it could be a 1D or 2D barcode, or it could be an ID you find in a machine-readable document, like a JSON file, or it could be a QR code, which itself is already resolved. And similarly, for self-issued product ID, it could be a QR code or some ID.
+
+I'm not sure whether I should have jumped to dids there. And the first box here is basically, what do you do with this identifier? And clearly, if it's not a QR code, in other words, it's not a resolved thing already, then you've got to go through a step which is resolving it.
+
+So all of these say, I need some app that understands this document in order to extract an identifier, or I need some reader that understands 1D or 2D barcodes, or I need an RFID reader. All of these three boxes up here are going to come up with, read a document, read a barcode, read an RFID tag, whatever, and come up with an identifier, but that identifier is not resolvable. So then you go into this box, which is now resolve it.
+
+And there's a whole, I think, page to write about that box on the left. There's the ISO spec that tells you how to take an identifier and turn it into a URL, but we might need more than that. We might need a register of identifiers to help with that.
+
+And then we get into a, did I manage to resolve it or not? And if not, well, fail. I got an ID, couldn't resolve it, stop there.
+
+Or I did resolve it, now I've got a URL. And in the case of a QR code, you might just go straight there, because it's already resolved. And then I say, well, I called this URL.
+
+Did I get back what I expected to get back, which UNTP would say is a set of links, link types. And if not, well then, yes, it's a resolvable identifier, but it's not giving me back what I expected. So fail.
+
+And then if it does give me back what I expected, then go and get the thing I expected. Oh, sorry. And now we're getting into, let's say I got a digital product passport.
+
+The link type was UNTP digital product passport, and I got back one, and I verified it as a verifiable credential. Now we get into, all right, I found a credential. It's a valid W3C credential, but it could be a W3C credential about a photograph of my cat.
+
+How do I know that this W3C credential that's calling itself a digital product passport is actually about the product that was identified? So this is saying here, does the credential subject ID match resolve ID? In other words, the barcode or QR code or identified thing, I would expect to get back a credential that is about that thing.
+
+Otherwise, I've found a credential that is telling a different story. And so that would error out. If it is about the thing, then the next question is, is the party publishing this credential authorized to say something about this thing?
+
+Do they own that identifier? So did I find a digital identity anchor and is the subject ID of that same as the issuer ID? So I don't know whether this workflow is right, but what I'm trying to get at is, how do you follow a workflow that gets you to the point where you got to one of these green boxes that says, yeah, I found a credential.
+
+It's a valid credential. It's about the thing that I'm holding. And it's issued by somebody who's authorized to say something about the thing I'm holding.
+
+And Gerhard made some good comments that I forgot the yeses and noes, and this was a bit of a last minute scribble. So I don't mean to imply by any means that this is right. I'm just sharing basically some thoughts that we should probably put on this identity resolver page that says, what is all this for and how do you get there?
+
+The stuff on the right is basically much the same, except that the thing you're verifying isn't that the owner of the identifier is a customer of the register. It's that the owner of the identifier, and I've got to put some words around this thing, trusted context. It means, for example, I self-issued an identifier.
+
+Some did or something. And we have confirmed that the identifier is about the thing I discovered. So the ID in that QR code or that JSON document is the ID, which is the subject of the DPP.
+
+But then how do you know whether this DPP issuer is authorized to say something about that identifier? And this box down here is one of the hardest ones, I think. And maybe it's got something to do with some identity anchor or trust anchor like a trademark office.
+
+Interestingly, I should share with you that I did get approached by the EUIPO, the European Intellectual Property Office, which I guess is a European Commission version of most countries' intellectual property agency. They issue trademarks. And the guy that approached us said, we've had a look at your UNTP site, and we think trademark issuers are good trust anchors.
+
+So let's talk. I haven't spoken to him yet. I think the meeting's tomorrow or the next day or something.
+
+But it did occur to me that trademark offices are actually potentially quite useful as trust anchors. Because someone who can prove they are an owner of a trademark can make a claim about a product that is that brand. And the verifier can be confident that the claimant really owns that brand.
+
+So the trademark offices might have some involvement in this bottom right bit, and also the bottom left bit for that matter. You know what we've used?
+
+[Speaker 2]
+In one of my companies, we use just the domain registration as the verifier. It's quick and easy to implement that domain verification. So if they are in fact the domain owner, they can input the DNS information into the system and self-identify in that way without having to go through some kind of a copyright or trademark process.
+
+[Speaker 1]
+So I think you're right there. There are all kinds of ways to link some random identifier that you such as a deed issued by myself to something I do know, which could be a DNS domain. And you're right, I should put this in this.
+
+There's all kinds of details under these little diagrams. When you draw this out, you start thinking exactly that. What kind of trust anchors are there here?
+
+Is it a business register? Is it a trademark register? Is it just my DNS name?
+
+So DNS names are, I think, really quite useful, especially if they're well known. One of the troubles is if they're not well known, then they could be anything, right?
+
+[Speaker 3]
+An issue there where the person who registered the domain name may be a solution provider acting on behalf of a company. So although yes, there are cases where the owner of an internet domain name will be the person who also issued the deed, I think there'll be legitimate instances where that's not true. Which leads me to say that I think this flow diagram is good, and it certainly sets out a number of paths that would work.
+
+I can also imagine that someone could write something a little different that would have similar decision points, but they would have slightly different dependencies, so that you would then have to sort of generalize. What is it you're trying to say? Is the issuer ID from somebody you know?
+
+And I think there, yes, domain name is certainly one, but I think you'd have some kind of validation. For example, the same deed may also be used in the business register of some kind or something else. So a number of possibilities.
+
+And a diagram like this is trying to be generic and cover all cases. It's either going to be massively complicated, or it's going to have some woolly bits around them. I think it's the latter is likely to be the case.
+
+And just on that issue, actually, just one more anecdote. I was talking at W3C TPAC, which I only attended remotely. I wish I'd gone there.
+
+Many of you will know Sinyong Lo from Singapore, IMDA. And he said something that made me roar with laughter, given that I work for GS1. He said, we're always very happy to see deeds because we can prove control, but we don't trust it until we can check that company in a business register, some sort of issued ID.
+
+And he said this in front of the deed community, whose entire existence is about doing away with people like GS1 and their business registers and everything else. To hear him say that, I just roared with laughter.
+
+[Speaker 1]
+But yeah, I know. I've had this discussion as well, right? Where an identifier, if it has no governance behind it, and no process behind it, isn't necessarily something you trust.
+
+All you can confirm is that the deed is, you can confirm that the issuer of the thing is the holder of the private key because they signed it. But that's it, right? And that can be quite useful.
+
+But I don't think it gives you trust. It just gives you confidence of ownership of that deed. And I think this is increasingly understood.
+
+And the challenge is that there's dozens of things that you could link the deed to. And the deed, I think, is a really powerful way to act as a link, right? Because let's say the Australian tax office gives me a verifiable credential that says, I am this Australian business.
+
+They've got to tie it to something that I can subsequently issue signed by myself, because I'm not going to ask the tax office to sign every invoice I send or every DPP I assign, right? So, deeds play a really valuable role, in my opinion. But really, all they are is a link to a key pair and proof of ownership of a self-sovereign identifier.
+
+It means when I sign my invoice or sign my digital product passport, you can be sure it was signed by the holder of that deed. But to have confidence that the holder of that deed is who they say they are, you need another credential, which is from an authority that has some governance around process, you know, like the Australian tax office, when they register a business and maintain the registry of the business. So, I don't think these things are incompatible.
+
+It's not deeds or authoritative registers. Authoritative registers are just going to add more trust and more confidence to deeds. Be aware, Steve, that Gerhard's had his hand up for a while.
+
+Oh, yes, I'm sorry, Gerhard, please.
+
+[Speaker 4]
+Oh, no, no, no, no, no problem. Because you answered already a few of my questions. Of course, as said, we need to know exactly that somebody who says who he is, is really the person.
+
+And in Europe, we have, for example, a VAT ID checker. Everyone that does business or selling stuff or dealing with VAT gets a VAT number. But there is also in Europe, an economic operator registry identifier.
+
+I don't know if there is a checker for this. So, I think there will be some possibilities to have some government controlled IDs that could be checked. And next to this about the trademarks, a lot of products, especially in agriculture, and I guess also in mining, do not have a trademark.
+
+They are quite generic products that are produced and sold to an auction and then goes into the market and the retailer puts a brand on it. So, that's also a part of the supply chain that does not work with trademarks. So, there are some things to solve.
+
+[Speaker 1]
+My feeling is that there isn't a single simple answer to this. In some cases, a trademark adds a lot of value. In other cases, it's totally irrelevant.
+
+And so, how do we write something that says, here's a collection of trust anchor types? So, the little diagram I've got in front of you at the moment is not yet published to UNTP, but it's this really simple credential that is issued by some registrar. Let's say the Australian Tax Office or Meat and Livestock Australia that issues these ear tags on cows or GS1 who issues GTINs.
+
+The issuer of this thing is the register operator and what they're attesting to here, if you look at the really simple model, is that their member, who is this registered ID, let's say Australian Business Number 123, that registrar has verified that this member, Australian Business Such-and-Such, is the owner of this list of dibs. When they requested this credential, they proved ownership of the dibs. So, this is a really simple model where an authority can say, we've authenticated one of our members through whatever authentication process they use, and we've confirmed, because they've signed a thing that proves their ownership, this list of dibs.
+
+So, if you see something signed by one of these dibs, it means it's signed by one of our members. So, this is the link. This could be issued by a trademark authority attesting to the fact that a trademark owner owns this list of dibs, or by a tax office, or by GS1, or anybody that owns and operates an authoritative register.
+
+So, this is the identity glue, is what I'm suggesting, is a key part of this whole puzzle.
+
+[Speaker 2]
+Steve, does the digital identity box there, is that what is assigning the product its identity, or is this still just on the verifier themselves, on the brand?
+
+[Speaker 1]
+So, this is any authoritative register, and using the word authoritative fairly loosely, but any organization that maintains a register of members, such as a company's register in a country, or GS1 list of products, or whatever, and members, stating that the organization who is one of our members, we have confirmed that they own this short list of dibs, that they are the controller of this list of dibs. So, it's the way when you receive a DPP that might be, for example, signed by some dib.
+
+If there's also a digital identity anchor that says, this dib is that Australian business, then you know this DPP was issued by that Australian business, or if it...
+
+[Speaker 2]
+Well, we maybe lost him for a second. I understand what he's saying now, though.
+
+[Speaker 3]
+In the work we do, and I can see that, in our case at GS1, we already have a lot of infrastructure that would do what Steve's saying, which is... Yes. I hadn't thought of it in that way.
+
+[Speaker 4]
+Yes, formerly called GPeer, I guess.
+
+[Speaker 3]
+Yeah, but we would do slightly... Yes, GPeer has been replaced now, but with the links registry, you would get back to our license, and you get a set of links. Well, those links could be dibs.
+
+[Speaker 7]
+Yeah, Steve, I got what you were saying. I got the explanation.
+
+[Speaker 1]
+Yeah, and so it's that little, actually just a textual description, not even a full spec, that triggered the EU IPO office to contact me and say, let's have a chat about trademarks being trust anchors, because the trademark office would issue a credential saying this list of dibs owns this trademark. Whether that's valuable, because like Gerhard said, some products don't have trademarks. I think there's basically a basket of trust anchors, and there isn't a single perfect trust anchor.
+
+There's just, to your point, the DNS record, actually proof of ownership of a DNS record, especially if it's a well-known DNS domain, is quite powerful. It's amazon.com. Everyone knows.
+
+It's really amazon.com, but many other domains are not quite so well-known. Anyway, Gerhard, did you have a, you've got your hand up again. Oh, no, no, it's my old hand.
+
+All right. It's all right. I make that mistake all the time.
+
+[Speaker 2]
+So I had another question just on the product identifier side, on the DPP side. So, yes. You know, and your comment about bulk kind of materials, I guess, is what I was thinking.
+
+So if you have, you know, a mining kind of a product or a bulk agricultural product of some sort, there are, and maybe you go to kind of this concept of registered, I don't know, groups that have registered specific products in specific industries, right? So there will be service providers in many industries that have in fact registered or validated or authenticated product in some way or another. And I'm just wondering if there's a facility that we could create that would allow those service providers to play a role.
+
+You know, if you've got a service provider, you know, in a food product kind of industry that is, I don't know, you know, is capturing batch level information on the production of certain crops. Great. I mean, that's super valuable, you know, to us if they're doing something that we can see, you know, validates or authenticates the legitimacy of the product.
+
+You know, in many industries, food products in particular, there are certificates of analysis, you know, that our tests are performed on every batch. Ideally, at least in the US, there's a certificate of analysis requirement that has to accompany a batch of product. And, you know, that batch can be defined different ways for different kinds of agricultural products.
+
+But the ability to tie kind of that testing documentation to the batch adds a level of authenticity for the product that would be quite useful to capture. So if there's a service provider capturing, validating the certificate of analysis that accompanies the batch of the product, wow, that may be something that moves them towards DPP kind of authorization.
+
+[Speaker 1]
+Yeah. So I'm glad you touched on that, because I had a conversation with the Canadians who are trying to implement a digital product passport for copper concentrate coming out of a mine site. And we realized very quickly that we haven't spoken enough in this whole project about how do you identify that, right?
+
+You can categorize it, because there are some quite really quite impressive, like I just put a link up here, there's I found this site, which is the European chemical database, which has every imaginable, either raw material like Lithium or Lithium hydroxide or copper or cobalt or cobalt, whatever, there as identified categories. But it's a category, right? Not a particular mine sites production, because cobalt is cobalt, it's a, you know, it's an element.
+
+And what's not obvious, or what I wanted to seek you guys input in is this diagram, I admit, started from an assumption that I found a product with a barcode on it, or QR code or a document with an ID. But what if it's a, basically a bulk shipment of iron ore, or copper concentrate? And whilst there are some quite good industry, at degree identifiers, what identifies that particular mine sites output?
+
+[Speaker 6]
+I did some work for IBM on diagram. Sorry, Steve, you were talking about a diagram, but we don't see it.
+
+[Speaker 1]
+Sorry. So this one, am I still sharing screen? This one?
+
+Are you seeing the diagram now?
+
+[Speaker 2]
+No, when you got kicked out, you lost your screen share. Ah, okay.
+
+[Speaker 1]
+Sorry. Thank you. Of course I did.
+
+Screen share. Start again. Yeah, so this diagram we were looking at before that one.
+
+I will admit when I sketched it out, with all its inaccuracies and errors, my context of mind was about a product with some sort of identifier in it, right? Whether it's a cow with a RFID tag in an ear, or a GS1 identified product or something. But what I wasn't thinking about when I did this diagram, and what I think we need to resolve is, what if it's a bulk commodity, like some copper concentrate or a truckload of iron ore, or, you know, that doesn't have an identifier of that particular factory's or mine site's output?
+
+Because there are quite well-established, for these commodity bulk products, quite well-established category schemes. And I think I was talking about a site that I wasn't sharing a screen on, this one. This is a European Union chemical database.
+
+And it has, you know, raw minerals, chemical compounds, almost every imaginable material listed. It's a huge database. So you can say confidently that cobalt is 2311580, or lithium hydroxide, it has an entry as well.
+
+And you can go on and on and on.
+
+[Speaker 2]
+But there would be when you're harvesting bulk material, a lot of that bulk material is just put into a burlap sack and then bagged at a big large mining operation, it'll go into a truck, and that batch of product will be identified. The problem is, though, that all that material usually goes to a smelter. So it's like, you know, milk out of a cow, eventually that goes into a general vat, and is mixed with all the other milk, and you lose the identifier, right?
+
+Yeah, but still, it gets batch numbers. And then, and then coming out of the smelter, coming out of the vat, it gets a different identifier.
+
+[Speaker 4]
+Milk is mixed like wine and etc. So, yeah, but it is registered somewhere by an agricultural organization, mostly.
+
+[Speaker 2]
+So it's traceable. Yeah, there's traceability into the smelter, and then there's traceability out of the smelter, you know, you lose your incoming product identifier when you get to the smelter. And usually coming in, there's a burlap sack with a tag on it, or there's a truckload with an identifier on it for cobalt, for copper, for iron ore, for whatever the mining material might be.
+
+But then, then there's identifier coming out of the smelter. And most electronics companies have kind of turned a bit of a blind eye to what precedes the smelter. Although they're trying to get some identifiers there, because they're worried about conflict minerals, resolutions, kind of items.
+
+But it's hard when you've got a smelter or some kind of bulk processing in the value chain where you lose batch level identity.
+
+[Speaker 1]
+Yeah, so this stupid hotel lost my connection, unless I missed that critical bit of the conversation when I said, yes, we have a category like lithium hydroxide, but how, did you agree? Or did you say something to the effect that the identifier, the only identifier we can use is maybe a shipment ID? Or how does a mine site who's producing a truckload of some bulk commodity?
+
+How do we distinguish this mine site's bulk load of truck commodity from that another mine sites? Is it a shipment ID? A consignment ID?
+
+Or is it something else?
+
+[Speaker 4]
+I have put in the chat a link to a white paper made by you and C-Effect about track and trace and about identifiers. And it also describes how to deal with bulk goods and how this transforms or is dealt with in the context of transport and shipments. So perhaps we can learn from this document.
+
+Yep. So we have worked quite a lot of time with dealing with those different types of goods that I hope I put the correct document in it.
+
+[Speaker 1]
+This is the one. Where would I find the bulk goods stuff? But yeah.
+
+Yeah.
+
+[Speaker 4]
+Perhaps if we look at bulk goods, I'll try it elsewhere.
+
+[Speaker 3]
+This is a question because I don't know what I'm talking about here. I wonder whether if the smelter is the melting pot, everything comes in, would that be a case where you want a facility to identify it? So the smelter itself is identified and attached to that is a bunch of credentials that says that the operator of that smelter follows procedures A, B, C, and D to make sure that its input is not conflict elements or whatever.
+
+[Speaker 2]
+I think the problem with that though is that there's a bunch of wholesale and brokering that happens up above the smelter. I don't know. Maybe if you required field for the smelter operator to know exactly which mine somehow the material is coming from.
+
+And there are some really innovative ways to identify if a piece of material is coming from a mine, X, Y, or Z, but it's kind of very expensive kind of spectroscopy type technology to assign those identifiers.
+
+[Speaker 1]
+Yeah. I think that's more of a verification. If you're in doubt that the claim is true that this came from this area or that area, then you might do that chemical analysis, but you're right.
+
+It's not cheap. It's not something you do on every shipment. It's something you do when you want to verify.
+
+So yeah, what we need is to think about how to confidently identify bulk products.
+
+[Speaker 2]
+That was my comment, I guess, too, is just that there are service providers in these industries that are really pretty good at providing some of this track and trace and identification. I just wondered if what we don't do is create a facility through which we can use those service providers or authorize those service providers and take advantage of the verification or authentication that they're performing. If we can somehow review the service provider.
+
+[Speaker 1]
+I think we can learn from them. We need to find some sort of abstract pattern that we can say is a reasonable specification, right? Because we can't pick a technical winner or a particular organization, but we could say, oh, look, all these service providers take this fairly common approach to solving this problem, so here's how we recommend it.
+
+I don't necessarily know where we'll get answers here. I just wanted to share that that flowchart was very much in the mindset of identified products, and the conversation this morning was all about bulk. I'll read carefully the link that Gerhardt provided.
+
+We need to put something on the Identity Resolver page about bulk products.
+
+[Speaker 2]
+Yeah, great resource there, Gerhardt.
+
+[Speaker 1]
+Anyway, I've reached the limit of what I wanted to talk about today, and we've got 10 minutes left. I'm going to read this and think more and raise a PR for you to review about IDR. Is there anything? Oh, a quick question, and maybe this is targeted at Phil, but to what extent do you think it's useful to specify any standards about the API or interface by which data would get loaded into an Identity Resolver?
+
+I think what's really important is all Identity Resolvers return link sets that everyone can understand. How the data gets into the resolver such that it returns a link set is another question, but I did produce this little link registration model here, and I don't know whether we should just steer away from this or publish it.
+
+[Speaker 3]
+We are in the process of rebuilding our what we call Links Registry, which is the database for the resolver. What you've got on the screen there looks a lot like the old version, so we're in the process of updating ours, but that is not the standard. It's simply our implementation.
+
+So to your point, no, certainly we haven't standardized the input mechanism, only the output protocols that you get a link set.
+
+[Speaker 1]
+I think there's a rational argument to say there's no need to standardize. Every link resolver service might choose to do it differently, and I don't know the answer to whether we should. If we did specify one, I think it certainly shouldn't be a normative specification.
+
+It should just be a suggestion.
+
+[Speaker 3]
+I don't think you'd benefit much from doing that.
+
+[Speaker 2]
+Yeah, just publish your API. People write to it.
+
+[Speaker 1]
+Right.
+
+[Speaker 3]
+Yeah. Yeah.
+
+[Speaker 8]
+Okay.
+
+[Speaker 1]
+So while we're here for the last few minutes then, on this same page, one of the things that occurred to me is, is there value in maintaining a sort of catalog of identifier schemes? A bit like we maintain at the UN a catalog of low codes or classification schemes or all these sort of things, but where you would have a place to go and find, if you knew an identifier scheme, you might find things like how you parse barcodes to get the ID or which pattern they're using to go from ID to resolve link, maybe the public key of the registrar, various things about this identity register.
+
+Is it worth having a catalog of identity registers? A bit like the way I suppose ICAO maintains a catalog of authoritative passport routes. I don't know the answer to that either, but I can see some value in it.
+
+[Speaker 3]
+You can see value. I can also see political dangers because whoever you miss out will call foul. Oh yeah.
+
+[Speaker 1]
+You'd have to have a governance model where it was open to people committing, or a bit like, yeah, you couldn't pick favorites. No, I agree.
+
+[Speaker 3]
+But there is an existing... See, the problem is I'm heading towards the thing that underpins everything GS1 does, which is an ISO standard, ISO IC 15459. And that establishes a framework in which issuing agencies of various types are allocated, issuing authority codes, and the identifiers don't clash and so on.
+
+But even by specifying an ISO IC standards that says, here's a way to, where there is a broad range of different identifiers. So Dunn's numbers, for example, are issued under the same basic framework that GS1 operates in this 15459 thing. But DIDS don't operate in that.
+
+DOIs don't operate in that. And I'm sure there are 101 other identifiers that don't operate in 15459. So even if you go to an existing system that does what you say, you're still going to find some that are outside.
+
+And I think it's a never ending task.
+
+[Speaker 8]
+Yes.
+
+[Speaker 1]
+Where would you find the public keys of registrars? Would you say, do it through DIDS? Would GS1, for example, if it's issuing these digital identity anchors to say, we assert that this is a member, that GS1 digital identity anchor credential is signed by a GS1 DID.
+
+Now I can go and find the public key for that. But how do I know that that GS1 DID, depending on what DID method it is, maybe it's DIDweb and it's GS1.org, in which case it's fairly obvious and it's linked to DNS. How do I know that GS1 DID really is GS1?
+
+[Speaker 3]
+It's this argument. Yes. As you said earlier on, you've proved control, but you haven't proved that you are the person that says you are the controller.
+
+[Speaker 1]
+Yeah. And it goes up a level, right? Proving you are the owner of the member, the GS1's prefix.
+
+And then next level up, proving you are GS1.
+
+[Speaker 3]
+Well, that we have a model for, which we're probably going to simplify and do. But yes, we do have global offices of root of trust that will delegate authority to our 180 member organizations, who then delegate authority to the individual company and so on, in the classic you know, system. So that's something that we do expect to do, subject to decisions being made that won't be made until the end of the year.
+
+[Speaker 1]
+But that's a common pattern, right?
+
+[Speaker 3]
+Of course, yes.
+
+[Speaker 1]
+Regional intellectual property offices rolling up to WIPO or, you know, it's a common thing. So at some point, I don't know the answer to this, but the whole architectural work cleaner if you can, if you minimize the number of roots of trust that you've got to know about.
+
+[Speaker 3]
+Yes, which actually reminds me, I've been trying hard to find your diagram of lots of roots of trust and I can't find it. I spent about half an hour trying to find it. I know I've got it somewhere and I can't find it.
+
+Because your diagram is really good for that.
+
+[Speaker 1]
+Anyway, we've reached the end of the time, but just ruminate on this. I think we've kind of answered the question that it's maybe not even worth talking about link registration APIs, because they'd be so different and doesn't matter really, you're going to pick one and use it. This question of a catalog of identifier schemes seems to have a little bit more legs to me, but does have the worms that you mentioned, right?
+
+Like, got to be careful not to pick favorites, you've got all kinds of issues around it. But if any organization is going to try and do it, it feels like the UN might be a good place to do it. Because you need some sort of governance framework where the owner of all these registrars in various jurisdictions have a channel to update their records.
+
+It's almost like the way we manage locodes, right? You've got this big list of logistics locations and countries that own them and a governance framework for updating it. So, if you had to find a place that could aggregate these sort of records, seems like a fit, right?
+
+But yeah, I don't think we're going to make a decision about this here. I just wanted to share the thought. Feel free to comment asynchronously.
+
+Does anybody got anything else they want to bring up? If not, we'll call it a day. I've got a question to ask you.
+
+[Speaker 3]
+But it's 11 o'clock at night and you've got a race tomorrow. So, what I'm going to say is good luck in your race tomorrow. Indeed.
+
+[Speaker 1]
+All right. You know, ask away in the Slack channel if you've joined it. I do look at that and answer questions whenever they pop up.
+
+So, please use it. Virginia, you're on mute, I think. At least I can't hear you.
+
+[Speaker 6]
+I was going to say break a leg, but only in the abstract sense.
+
+[Speaker 1]
+Yes, thanks. All right. Thank you.
+
+And thanks for your time. I look forward to seeing those of you that are coming to Rome in a couple of months' time. Yep.
+
+All right. Thanks, everyone.
+
+[Speaker 8]
+Thank you.
+
+[Speaker 1]
+Thank you.
+
+[Speaker 3]
+Bye.
