@@ -5,7 +5,7 @@ title: Scheme Owners
 
 ## Implementation Register
 
-Summary list of conformity scheme ownersthat have implemented or plan to implement UNTP specifications to support their customers with verifiable evidence of product or process conformity against relevant standards. 
+Summary list of conformity scheme owners that have implemented or plan to implement UNTP specifications to support their customers with verifiable evidence of product or process conformity against relevant standards.
 
 * Product category is defined by [UN CPC](https://unstats.un.org/unsd/classifications/Econ/cpc)
 * Conformity topic is defined from [UNTP conformity topic](https://test.uncefact.org/vocabulary/untp/core/0/conformityTopicCode)
@@ -13,8 +13,8 @@ Summary list of conformity scheme ownersthat have implemented or plan to impleme
 
 |Organisation Name |Accreditation|Geographic footprint|UNTP Scope|Status|
 |--|--|--|--|--|
-|[ACRS (Australasian Certification Authority for Reinforcing and Structural Steel)](#acrs)|Global MRA|AU, NZ|DPP, DCC|planned| 
-|[The Copper Mark](#the-copper-mark)|Industry|GLobal|DCC|planned| 
+|[ACRS (Australasian Certification Authority for Reinforcing and Structural Steel)](#acrs)|Global MRA|AU, NZ|DPP, DCC|planned|
+|[The Copper Mark](#the-copper-mark)|Industry|GLobal|DCC|planned|
 |[Towards Sustainable Mining](#towards-sustainable-mining)|Industry|Global|DCC v0.5|Implemented|
 
 
