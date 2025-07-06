@@ -34,11 +34,11 @@ A typical IDR workflow is as follows.
 4. A link typed of `dpp` with a format declaration of [`application/vc`](https://www.w3.org/TR/vc-data-model-2.0/#vc-ld-media-type) is a hint that the target URL will yield a UNTP DPP credential which is verified to confirm integrity. The DPP includes several sustainability claims including the emissions footprint of the product, which the manufacturing facility can use to calculate the contribution of the received item to their scope 3 total. Following the DCC link type yields a conformity credential issued by a third party certifier that attests to the carbon intensity of the product. 
 
 ### Working with DIDs
-[Decentralized Identifiers](https://www.w3.org/TR/did-1.1/) (DIDs) have features that match the UNTP requirements in a slightly different way. They are unique, discoverable, resolvable and verifiable, and can be resolved to a set of links to related information. In that regard, the concepts are exactly the same as described above. However, the terminology and methodology differ.
+[Decentralized Identifiers](https://www.w3.org/TR/did-1.1/) (DIDs) have features that match the UNTP requirements in a slightly different way. They are globally unique, discoverable, resolvable and verifiable, and can be resolved to a set of links to related information, such as verifiable credentials. In that regard, the concepts are exactly the same as described above. However, the terminology and methodology differ.
 
-A DID resolves to a DID Document (DID Doc) that contains the cryptographic material necessary to prove control of the identifier. Full details of how this is done are defined in the [W3C standard]( https://www.w3.org/TR/did-resolution/). Importantly from a UNTP perspective, a DID Doc can include 'service endpoints', that is, links to information about the identified thing. Those services themselves are described by a `serviceType` parameter which performs the same function as the `linkType` parameter when querying a linkset through an ISO/IEC 18975-conformant resolver. The DID Doc therefore can perform the same function as a linkset. The DID resolution standard defines how a DID can be resolved and one or more services of the requested service type can be requested.
+A DID resolves to a DID Document (DID Doc) that contains the cryptographic material (public key) necessary to prove control of the identifier. Full details of how this is done are defined in the [W3C standard]( https://www.w3.org/TR/did-resolution/). Importantly from a UNTP perspective, a DID Doc can include 'service endpoints', that is, links to information about the identified thing. Those services themselves are described by a `serviceType` parameter which performs the same function as the `linkType` parameter when querying a linkset through an ISO/IEC 18975-conformant resolver. The DID Doc therefore can perform the same function as a linkset. The DID resolution standard defines how a DID can be resolved and one or more services of the requested service type can be requested. The DID method defines where the DID document is located and how to perform CRUD (create, revoke, update, delete) operations. 
 
-At the time of writing, another very promising method of resolving a DID and accessing a specific type of information about the identified item is close to being standardized. The emerging `[did:webvh]([url](https://identity.foundation/didwebvh/v1.0/))` specification includes the `/whois` feature that can be used to access a Verifiable Presentation of one or more Verifiable Credentials. These may be DPPs, DCCs etc. In the current context, it is therefore expected that a software environment that can process DIDs and VCs will be able to use standardized methods to resolve the DID, locate and verify the DPP(s) and any other data about the identified item.
+Other DID methods can be used to resolve from a DID to associated data such as did:ethr or did:ebsi. In those methods the did:document is stored on a blockchain network (here Ethereum or EBSI) and thus the CRUD methods are implemented in a different way. At the time of writing, another very promising method of resolving a DID and accessing a specific type of information about the identified item is close to being standardized. The emerging `[did:webvh]([url](https://identity.foundation/didwebvh/v1.0/))` specification includes the `/whois` feature that can be used to access a Verifiable Presentation of one or more Verifiable Credentials. These may be DPPs, DCCs etc. In the current context, it is therefore expected that a software environment that can process DIDs and VCs will be able to use standardized methods to resolve the DID, locate and verify the DPP(s) and any other data about the identified item.
 
 Note that, whatever identifier is used for the product, facility, supplier or certifier, the DPP and DCC both include an issuer DID like `did:web:sample-supplier.com` and `did:web:sample-certifier.com` which resolve to DID documents that link to [digital identity anchor](DigitalIdentityAnchor.md) credentials confirming the identity of the supplier and certifier. The DPP also contains the ID of the manufacturing facility which can be resolved in the same way as the product ID and therefore can be used to find facility level credentials such as fair work certificates. In this way a due-diligence [transparency graph](../design-patterns/TrustGraphs.md) can be created by the manufacturer, providing strong evidence of regulatory compliance and sustainability performance.
 
@@ -56,7 +56,7 @@ In this way, a single data carrier, whether a traditional barcode or a QR code, 
 This section defines the formal requirement statements for Identity Resolver implementations. 
 
 * **Scheme** means an identifier scheme such as a national business identifier scheme.
-* **Carrier** means a machine readable device such as a barcode, QR code or RFID tag that encodes an identifier issued under a scheme.
+* **Carrier** means a machine readable device such as a barcode, QR code, RAIN or NFC tag that encodes an identifier issued under a scheme.
 * **Link** means a URL that points to a page or document or credential that contains further information related to the identifier.
 * **Target** means the document or credential that the link references. 
 * **link-set** means a collection of links with meta-data that describe each link.
@@ -139,16 +139,45 @@ When a given identifier scheme uses both URN and URL mechanisms to represent ide
 
 ### Decentralised Identifiers (DID)
 
-Decentralised Identifiers [(DIDs)](https://en.wikipedia.org/wiki/Decentralized_identifier) are a type of URI that are resolvable and verifiable by design.  They are self-issued by any party and do not depend on any central register or issuing authority. The general structure of a DID is defined by the [W3C Decentralised Identifiers recommendation](https://www.w3.org/TR/did-core/) as
+Decentralised Identifiers [(DIDs)](https://en.wikipedia.org/wiki/Decentralized_identifier) are a type of URI that are resolvable and verifiable by design.  They are self-issued by any party and do not depend on any central register or issuing authority. The general structure of a DID is defined by the [W3C Decentralised Identifiers recommendation](https://www.w3.org/TR/did-core/) 
 
-* DID pattern: `did:{did-method}:{did-method-specific-identifier}`
+This section shows how the DID method [did:web](https://w3c-ccg.github.io/did-method-web/) can be used to define a globally unique product, company or facility DID and a discoverable deep link to the data associated with that DID. Every DID is associated with a DID Document. The digital product passport use case is used to show how to resolve from the globally unique product DID to the digital product passport data. 
 
-The allowed structure of the `{did-method-specific-identifier}` depends on the `{did-method}`. There are a number of registered did methods including several blockchain based methods but the most widely used DID method is [did:web](https://w3c-ccg.github.io/did-method-web/)
+Apart from the CRUD operations, the DID method also defines the secure ledger where the DID document is stored and can be discovered. In did:web the DID Doc is stored on the web domain in the `/.well-known` folder.
 
-* DID Web pattern: `did:web:{domain-name}[:{path}]` where `:path` is an optional colon-delimited path to the identifier.
-* examples:
-  * `did:web:sample-company.example` - representing the DID of sample-company.example
-  * `did:web:sample-company.example:products:123456789` - representing the DID of a product made by sample-company.example
+To resolve the DID to the digital product passport, it needs to be combined with a DID `resolver domain` the globally unique `product DID` and optionally a `service endpoint`: 
+* **resolver domain** The DID resolver implements the did method and returns the DID document to the requestor. A free DID resolver is e.g. the [Univeral Resolver](https://dev.uniresolver.io). The DID resolver can be freely chosen by the economic operator or can be built in-house. 
+* **product did** The `product DID` - when using did:web - is a combination of three elements: 1. The DID Method (here did:web), 2. the Economic Operator domain that places the product on the market and where the DID document can be found in the /.well-known folder of that domain, 3. the product identifier unique to that domain. 
+* **service endpoint** The `service endpoint` can lead to different information e.g. a human readable DPP, a service API, or a DPP credential credential store. 
+
+The resulting URL including the `resolver domain` combined with `product DID` and `service endpoint` leads to the deep link of the digital product passport.
+
+The table below shows the ingredients of a DID based DPP deep link URL.
+| Component | Description | Value |
+| :------- | :-------- | :----- |
+| Resolver  | DID resolver domain used to resolve the DID |`https://resolver.io` |
+| DID Method | Method part of the DID – defined CRUD rules |`did:web`|
+|Economic Operator domain|Domain that is under the control of the economic operator and that hosts the DID document|`abc.com`|
+| ID |Identifier that is unique to the product in the economic operator domain |`model4TR`|
+| Product DID | This is the globally unique product identifier in form of a decentralised identifier (DID) |`did:web:abc.com:model4TR`|
+| Service Endpoint | Optional service endpoint parameter specifying what information to retrieve from the DID|`?service=item-dpp`|
+
+
+The deep link URL to the digital product passport is accordingly: 
+`https://resolver.io/did:web:abc.com:model4TR/?service=item-dpp`
+
+It can be then put to different data carriers, such as QR codes, RAIN tags, or NFC tags. Below please find a QR code example carrying the DPP deep link (not resolvable!):
+
+![QR code with DPP deep link](https://github.com/user-attachments/assets/709de8dc-0968-43ce-b894-5d13e58406f4)
+
+The figure below shows the information flow of accessing a digital product passport.
+
+*The DPP deep link is scanned from the QR code, then
+*the DID resolver is called and finds the DID document of the product DID.
+*The DID document includes the human readable Battery Passport website URL under the provided service endpoint which is given back to the user who scanned the QR code.
+*The user can explore the battery passport website.
+<img width="1196" alt="image" src="https://github.com/user-attachments/assets/33608e95-7f50-45df-bf5e-6053945978e6" />
+
  
 ### Universally Unique Identifier (UUID)
 
