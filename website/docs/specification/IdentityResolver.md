@@ -149,7 +149,7 @@ This section shows how the DID method [did:web](https://w3c-ccg.github.io/did-me
 Apart from the CRUD operations, the DID method also defines the secure ledger where the DID document is stored and can be discovered. In did:web the DID Doc is stored on the web domain in the `/.well-known` folder.
 
 To resolve the DID to the digital product passport, it needs to be combined with a DID `resolver domain` the globally unique `product DID` and optionally a `service endpoint`: 
-* **resolver domain** The DID resolver implement the did method and returns the DID document to the requestor. A free DID resolver is e.g. the [Univeral Resolver](https://dev.uniresolver.io). The DID resolver can be freely chosen by the economic operator or can be built in-house. 
+* **resolver domain** The DID resolver implements the did method and returns the DID document to the requestor. A free DID resolver is e.g. the [Univeral Resolver](https://dev.uniresolver.io). The DID resolver can be freely chosen by the economic operator or can be built in-house. 
 * **product did** The `product DID` - when using did:web - is a combination of three elements: 1. The DID Method (here did:web), 2. the Economic Operator domain that places the product on the market and where the DID document can be found in the /.well-known folder of that domain, 3. the product identifier unique to that domain. 
 * **service endpoint** The `service endpoint` can lead to different information e.g. a human readable DPP, a service API, or a DPP credential credential store. 
 
