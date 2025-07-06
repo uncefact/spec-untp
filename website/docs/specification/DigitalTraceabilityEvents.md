@@ -44,7 +44,7 @@ History of releases is available from the **[Version history](https://test.uncef
 
 ### Visualization
 
-A UNTP digital traceability event may be rendered in any format desired by the issuer. However a default **[Visualization](../../samples/DigitalTraceabilityEventRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+A UNTP digital traceability event may be rendered in any format desired by the issuer. However a default **[Visualization](../assets/images/DigitalTraceabilityEventRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
 ### Sample Credential
 

@@ -46,6 +46,11 @@ const config = {
           routeBasePath: '/docs',
           editUrl: ({versionDocsDirPath, docPath}) =>
             `https://github.com/uncefact/spec-untp/edit/main/website/${versionDocsDirPath}/${docPath}`,
+          versions: {
+            current: {
+              label: 'Work in Progress',
+            },
+          },
         },
         blog: false,
         theme: {
@@ -78,6 +83,10 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+          },
           {to: '/docs/about', label: 'About UNTP', position: 'right'},
           {
             to: '/docs/governance',

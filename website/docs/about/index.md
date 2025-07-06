@@ -56,7 +56,7 @@ The UNTP defines a relatively simple architecture comprising standards for [prod
 
 ## Presentations & Videos
 
-* Short UNTP Presentation [PDF](../../files/Short-UNTP-Presentation.pdf) [PPT](../../files/Short-UNTP-Presentation.pptx)
-* Longer UNTP Presentation [PDF](../../files/UNTP-Presentation.pdf) [PPT](../../files/UNTP-Presentation.pptx)
+* Short UNTP Presentation [PDF](../assets/files/Short-UNTP-Presentation.pdf) [PPT](../assets/files/Short-UNTP-Presentation.pptx)
+* Longer UNTP Presentation [PDF](../assets/files/UNTP-Presentation.pdf) [PPT](../assets/files/UNTP-Presentation.pptx)
 * Video presentation (15 mins) [Youtube](https://youtu.be/dJFryZS2UII)
 

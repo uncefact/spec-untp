@@ -44,7 +44,7 @@ History of releases is available from the **[Version history](https://test.uncef
 
 ### Default Render Template
 
-A UNTP digital facility record may be rendered in any format desired by the issuer. However a default **[Template Design](../../samples/DigitalFacilityRecordRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+A UNTP digital facility record may be rendered in any format desired by the issuer. However a default **[Template Design](../assets/images/DigitalFacilityRecordRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
 ### Sample Credential 
 

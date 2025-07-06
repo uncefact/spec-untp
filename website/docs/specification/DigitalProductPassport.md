@@ -44,7 +44,7 @@ History of releases is available from the **[Version history](https://test.uncef
 
 ### Default Render Template
 
-A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Template Design](../../samples/DigitalProductPassportRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
+A UNTP digital product passport may be rendered in any format desired by the issuer. However a default **[Template Design](../assets/images/DigitalProductPassportRender.png)** is provided here and includes mapping of visual rendering elements to the [Logical Data Model](#logical-model).
 
 ### Sample Credential
 
