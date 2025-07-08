@@ -168,7 +168,7 @@ The deep link URL to the digital product passport is accordingly:
 
 It can be then put to different data carriers, such as QR codes, RAIN tags, or NFC tags. Below please find a QR code example carrying the DPP deep link (not resolvable!):
 
-![QR code with DPP deep link](https://github.com/user-attachments/assets/709de8dc-0968-43ce-b894-5d13e58406f4)
+![QR code with DPP deep link](./qr-code-with-dpp-deep-link.png)
 
 The figure below shows the information flow of accessing a digital product passport.
 
@@ -176,7 +176,7 @@ The figure below shows the information flow of accessing a digital product passp
 *the DID resolver is called and finds the DID document of the product DID.
 *The DID document includes the human readable Battery Passport website URL under the provided service endpoint which is given back to the user who scanned the QR code.
 *The user can explore the battery passport website.
-<img width="1196" alt="image" src="https://github.com/user-attachments/assets/33608e95-7f50-45df-bf5e-6053945978e6" />
+![Battery Passport Infographic](./battery-passport-infographic.png)
 
  
 ### Universally Unique Identifier (UUID)
