@@ -1,0 +1,522 @@
+[Speaker 7]
+Good morning or good evening.
+
+[Speaker 4]
+Good morning, Brian.
+
+[Speaker 1]
+Yeah, good evening for me. I'm actually in Europe, even though I'm normally in Australia. You're not wearing a life jacket this time though, Steve.
+
+I'm down in the cabin.
+
+[Speaker 7]
+Where?
+
+[Speaker 1]
+Right now I'm anchored off a little Croatian town called Hvar. It's very nice.
+
+[Speaker 4]
+It is indeed very nice. How is the weather?
+
+[Speaker 1]
+Perfect. We've had nice winds, not too light, not too strong, and sunshine. It's all been perfect.
+
+[Speaker 3]
+It's warmer than usual in the Mediterranean at the moment.
+
+[Speaker 1]
+The water is still pretty cold.
+
+[Speaker 3]
+Are you sailing on the boat?
+
+[Speaker 4]
+I saw a couple of years ago in October and they really liked it.
+
+[Speaker 7]
+It's very pretty. Very pretty. Right.
+
+[Speaker 1]
+Sorry, I'm a little bit drowsy because I set an alarm to wake myself up at 11pm. I'm just coming back to life now.
+
+[Speaker 4]
+We appreciate your service, Steve. It's all right. My privilege.
+
+[Speaker 3]
+It's 11pm here too, in Barcelona.
+
+[Speaker 1]
+I know, I know. I've seen you before. You're a night owl.
+
+[Speaker 3]
+Yes, but I am a night owl, this is true.
+
+[Speaker 1]
+I'm a morning person. It's a struggle for me to do late night stuff.
+
+[Speaker 3]
+It's a struggle for me in the morning.
+
+[Speaker 1]
+The good news for Steve is it is morning by now. It will be in another 50 minutes. It's only 11pm.
+
+I think we've got a quorum. Others may join. Let's make a start, if that's all right with everyone.
+
+Here we go. Nancy is joining. As usual, a quick disclaimer.
+
+First of all, this meeting has been recorded and we'll post the recording. Second, this is a UN meeting where your contributions, should you choose to make them, are contributions to UNIP. If you don't want to contribute your ideas and thoughts to UNIP, then please don't.
+
+Other than that, we're welcome, everybody, and thank you for making the time to join us. The agenda for today is like the agenda every time, to first of all review any outstanding PRs and then work through some of the key tickets and discussions that we've got to have. We agreed last time that I'd go through and assign all the tickets to those that created them.
+
+So we might ask for some updates on that. But let me start by sharing the screen. OK.
+
+And where is this? One pull request. Only one.
+
+This one is to bring if you just pull up the site. Over the last couple of weeks, we've enriched probably the three or four key specification pages, the digital product passport one and the traceability events one and the verifiable credentials one. But what we haven't done yet is added a bit slightly richer content to this conformity credentials one, which currently on the published site has an overview and a diagram and not much else.
+
+The PR that is here is basically doing the same thing but for conformity credentials. Probably the easiest way to look at it would be to look at my branch for now.
+
+[Speaker 6]
+There's actually another way in the pull request, Steve.
+
+[Speaker 1]
+Should we do that?
+
+[Speaker 6]
+Yeah, if you go back to the pull request and go to files changed, instead of getting a markdown on the top right of the file, it's got a rich diff and that'll actually show you in markdown.
+
+[Speaker 7]
+Yeah, there you go.
+
+[Speaker 6]
+It'll show you a diff, so maybe that's too noisy, but it does give you the rich presentation if you like.
+
+[Speaker 1]
+Yeah, so it shows a diff as well. So we've basically added a conceptual picture that tries to give you a high-level idea of what is a conformity credential and some requirement statements, which I'll admit are mostly drawn from Brett's existing business requirement specification for digital product conformity credentials. More or less copied the relevant ones here and then updated the logical model.
+
+And then what I tried to do here is align a little bit to kind of find a path between aligning as closely as I can to the logical model that is in a separate UNC document called the Digital Product Conformity Certificate Exchange Requirement Specification. It has a detailed logical model in it. But also I wanted to align some of these structures around facilities, products, metrics, criteria, etc.
+
+to the digital product passport because in a way a conformity credential is really just an independent statement or assessment of the claims that are made in digital product passports. And so I want to try and use the same language and structures. So it's more or less an attempt at doing this and then there's the data definitions and so on and then a sample.
+
+So I made this PR a couple of days ago and Nis reviewed it and approved it with a proviso that we talk about alignment with the VC data model because he looked at this example down here and I'll show you the bit that troubled him was the somewhere it has issued to and issued by. So issued by and identifiers. There is a part of the standard VC data model which is called issuer and Nis was saying well why have you got issued by with this list of identifiers instead of just using the existing VC data model issuer field.
+
+My response was well because I want a list of identifiers with things like names and scheme and it's a richer thing than just a did that I often see in the issuer field of a VC data model and Nis said yes but you don't have to have just a simple property in the issuer field of a VC data model. You can have a complex object. In other words you can move all of this stuff into the issuer field of the VC data model.
+
+That's right. Up to now basically all these logical models that you see here, all this data I had envisaged as being contained in the credential subject part of a VC and the other stuff that's if you like the header parts of a VC like issuer and various other things where I picture them as enveloping fields and possibly in some cases a little bit duplicative of a few of these things but it just had that separation and so one of the things to talk about today is how do we not duplicate or should we duplicate or if not how do we not duplicate things in the body of a VC that are also part of the enveloping structure of a VC like issuer. So in any case that was Nis' feedback and he's approved this PR for merging on the basis that we so we should see his comment somewhere. There's a whole discussion thread around this where he said why have you got data of issue and issued by?
+
+Shouldn't it be aligned with the VCDM and a few other examples and then there's a discussion here saying well because I need more than one field and then he said yeah but you can do it like this, issuer, organization with all these structures and I said yeah okay and so he's basically raised a separate ticket which is 91 that says let's go and re-examine the DPP data model, the traceability events data model and this new or updated conformity credential data model and think about should we take some of the fields in there and align them more strongly with the VC data model, particularly things like issuer. So it's a good comment and I promised to discuss it today and so I'm doing that now but like he said before he said rather just publish what we've got and fix it rather than build up really big PRs with lots of objections so first question I suppose for the people in the audience is are you happy to merge what's there and then we can separately discuss how we tweak all three of them to answer this question of VC data model alignment. So I see Patrick's got a comment to make.
+
+Do you want to make a comment before we decide on merging or not merging this?
+
+[Speaker 2]
+Yeah you know I can comment to this whole thing. What Nis has mentioned is also something and I've added a comment at the end there is also something that I personally noticed a lot of the information and these conformity credential section are duplicate of already existing features of the VC data model one thing that this could do is you know whenever you have duplicate information what do you happen in a situation where there's two different values you know what if the issued by value is different than the issuer value of the credential what is the verifier to do out of this because if you want to do the VC data model it's very clear that the issue fields what it represents is the entity that issued this credential and then if you have another layer of issued by in the credential what does that exactly mean so this is the kind of you know thing that could happen. One thing that the issuer field does not do in the VC data model is you cannot put a list of issuers what you can do is have a list of proofs what's called parallel signatures so different issuers applying a proof on the same credential but you won't be able to have multiple issuers as value of the credential if you have only one proof that wouldn't really make sense regardless so that's like.
+
+[Speaker 1]
+Yeah so I mean I agree with you why would you duplicate something that exists in the VC data model potentially all it does is lead to confusion and the only reason I did it is because I thought the simple single property value of the issuer isn't really quite adequate when really in the business content you want to say this conformity assessment body issuer has this did, this tax registration number, this name etc.
+
+These are all kind of properties of the issuer but this said the thing that convinced me was particularly in the example in issue 91 which was well you can have a complex object you can put all that in the issuer field so why not.
+
+[Speaker 2]
+And I'd say most of the time that's how it's used and this sort of additional context of the issuer field is often also used by web application to brand the credential right this is where you will get can add an image of your issuer and so on I've put a link in the chat which is you know one of the works so far we're doing around conformity credentials in VC and you can see the issuer field how you can have some interesting sort of meta information about it. One reality we're facing right now is that yes it's issued by the government but at the end of the day it's a specific employee of the government that is responsible for this issuance you know so you can just with the issuer field provide a fair amount of information as long as these terms are defined in the your context.
+
+[Speaker 1]
+Yeah and particularly that ID one right which will be the Yeah this is a Yeah I'm completely happy with this and I will admit it's just simple ignorance of what's possible that led me to separate it because you know every example you look at in the W3C specs and so on basically has issuer as a simple property you'd see issuer and something like that did web so I haven't seen an example like this now that it's there so yeah of course why wouldn't we do that.
+
+[Speaker 2]
+And there's common things like the name image that are common issuer properties that you know verifiers can use to add information. My question for you would be what was the intent of providing a list of issuers because in the conformity credential issued by example it's a list of different identifiers so was there a use case for this that you envision or?
+
+[Speaker 1]
+It's not uncommon to in a business identifier sense not so much a did sense you know say things like this business is that tax registration number and this done's number and that EAN. Right. And so in a logical sense it's a list of identifiers but it's the same entity.
+
+[Speaker 2]
+The goal was to have like one entity but they might be known by different.
+
+[Speaker 1]
+Yes that's right. We don't have to structure it as an array but particularly as I think we very frequently want to declare a did as well as some sort of more public tax registration ID or something like this and possibly have a separate credential from the tax authority that says yeah this did is that entity right. This is part of the trust graph stuff but as long as we can do that in some way using the actual VC data model fields I think that's a desirable thing to do.
+
+[Speaker 2]
+Yeah and I think like my last point there was a similar discussion around the evidence at one point right like do we use the evidence field of the data model to do what we want. So I think this is another example of things that tries to do a thing that is already defined in the credential spec which I believe could be included in that issue as well.
+
+[Speaker 1]
+Yeah yeah no you're right and issue date and if you have a status is another one that I had a little bit of a discussion with this about that as well. Status is a bit more tricky maybe because typically it's used for revoked or not revoked and I know with the bit string status method you can actually have other status values but it does get a bit complex.
+
+[Speaker 2]
+Yeah one thing what's important is for me is the status is managed outside of the credential right like you don't want to put a textual value of the status and the credential like you don't want to put a status the value is active because then you would need to reissue a credential every time you change the status right like the status should always like the bit string status list refer to something outside of the credential that can be verified to the status.
+
+[Speaker 3]
+Okay so Virginia did you want to say something before we get to I just wanted to confirm something that you are talking about the W3C data. Yes. Okay.
+
+[Speaker 1]
+Yes.
+
+[Speaker 3]
+That's all.
+
+[Speaker 1]
+Thank you. Yeah we can find a little example. Let's just Google it.
+
+Yeah we're talking about things in this data model and there's some example down here somewhere where you know there's well defined fields. Yeah like the idea of the credential the type of credential the issue where valid from etc. And there's more where there I'll admit in several of our schema it duplicates that because my previous thinking which I accept wasn't right was that all of these let's find them again.
+
+No that's not it. Where did the site go? Too many tabs.
+
+I always do this. Let's open a new one. Exactly yeah.
+
+Make it worse. Yeah so up to now I'd been thinking that this entire structure everything you see here fits inside this thing called credential subject. Inside there in the previous model you'd have issued by and things like this and this says why have you got issued by inside the credential subject when you have a standard issuer field in the VC data model and my initial response to the wrong one was because it's a simple property like that it's not enough I want to also specify other things and both Nis and as we've just heard from Patrick well you can do that.
+
+So let's align with the VC data model.
+
+[Speaker 2]
+One thing to ask to make sure is the issuer as they define it does it correspond as what you wanted the issued by attribute to be?
+
+[Speaker 7]
+Yes.
+
+[Speaker 2]
+Because sometimes we want to avoid this but there will be times that a field like issuance date might not mean the issuance date as we think it is and what it means in the VC data model. Like for some system maybe within their document the issuance date field refers to something very specific so in this case you might want to keep the issuance date in the credential subject or expiration date or so on. So as long as the issued by field was designed to say who's the issuing entity of that credential it makes sense to use the predefined term.
+
+[Speaker 1]
+I think in all our models when we have issued by we mean the business entity that is the issuer of the credential so it should be a good match and valid from with a VC presumably means in terms of the VC data model means the date from which the claims in the VC are valid not necessarily the date at which the VC itself was issued. I think that aligns also. There's a general exercise here to go through and revisit these three models and say let's fix the data model alignment.
+
+This is issue 91 which hopefully everyone agrees with.
+
+[Speaker 2]
+Doing that also has the benefit that you leave more room for when people will want to extend. We were talking about extensions so by limiting the additional field that you provide in the core specification you leave a bit more room maybe someone will want to extend and have a different use case.
+
+[Speaker 1]
+With the understanding that there is issue 91 that needs to be addressed that will fix all three of these data models to align with VCDN does anybody have any objections to at least merge this pull request so that we get richer content about conformity credentials and then by next time we chat we'll have a pull request on all three of those sections to align with VCDN. Christoph saying go ahead.
+
+[Speaker 7]
+I'm fine with that.
+
+[Speaker 1]
+We'll press merge then. That will run its course while we're talking hopefully. Now we're back to outstanding issues.
+
+There's the one we just spoke about and I think it's more general than issuer it's saying valid from and various things. We don't have an assignee for this one yet. I can't assign it to myself unless anyone wants to take it.
+
+[Speaker 2]
+I'm specifically focused on conformity credentials right now. This is what we're defining at VCGov so I can parallel to that. Have a look there.
+
+Good question. Am I not on there? Maybe if I comment on the issue.
+
+[Speaker 1]
+Did I add you to the group? I'm going to assign it to myself for now and figure out why I can't assign it to you. I changed the group structures to separate maintainers from contributors but I should be able to assign to contributors.
+
+I'll figure it out. And add you to that. For the rest of these there are assignments.
+
+Has anybody got any progress on any ticket that they want to talk about? Somebody's got a hand up. Zoom panel scrolls to the bottom of my screen.
+
+You still got your hand up, Patrick?
+
+[Speaker 2]
+There was a long time an issue around rendering methods and inline render methods. One thing we're investigating is and I pitched that idea but now we're actually trying to look at it is how to use overlay capture architecture which is open standards to the issuer could publish bundles of information relating to each attributes of the credential and provide support for if a let's say a verifier that wants to render this credential and understands OCA could display the attribute names in a different language or it could add description to each of the names. I should probably add a link to the official OCA specifications. Yeah.
+
+There's also work going on to that parallel to defining the schema.
+
+[Speaker 1]
+Yeah. I see you've had a fair bit of discussion here with this and others. Okay.
+
+What we're heading to here is two rendering methods. The basic HTML rendering method which really can only simply show what's there.
+
+[Speaker 2]
+Yeah. I think they both complement each other because the OCA is not like an inline rendering template that you just open with a browser and it will render it. The HTML render template, this is something that you can fill the values with the credential itself as the OCA is more to add additional properties that you could choose to display in a render page.
+
+One use case I could think is you have the simple rendered credential and then you have an advanced view which add a bit of a description to each field or you could support multiple languages. Like one example I was mentioning is if a particular issuer know that one of his clients will be in a certain nationality, well, he could provide language support for that specific nationality. That means for every term provide a...
+
+If they export a lot of goods to Japan, well, maybe they want to offer the Japanese version of each keywords like name or commodity so on so that it could be rendered in that language. And I know like here in Canada, for example, by law we're often required to display accessible information in both French and English. So perhaps OCA bundles could be a way to make this achievable or to at least support this requirement.
+
+[Speaker 1]
+And are you guys able to prepare sort of like a sample multilingual rendering template using OCA for...
+
+[Speaker 2]
+Yeah, so part of this I would make something similar to the visual verifier that was there, like a verifying application that you provided to URL and if the credential has the OCA bundle render method, it would be able to display this. So I will provide examples. So right now the OCA work that's been done with credential is limited to the add-on creds model, which is just a simple...
+
+You have attribute value. So part of this effort is we want to apply OCA to more complex JSON structure which you could have like multiple layer. But the goal is very much to have a full example.
+
+So the pilot that we're working on when we're going to have our credential ready for this will... Well, if I'll go through it we'll have an OCA section that we'll be able to demonstrate and should have a open source library to understand OCA as well that people could stand up. Yeah, okay.
+
+[Speaker 1]
+And we're planning to at least provide a simple HTML rendering template kind of a default one with each credential type. So I've got a design for that somewhere. I'll show it in a moment.
+
+[Speaker 2]
+Yeah, this is why I would like to support both. Ideally I would see in your render method of the VC, it's a list, right? You can have multiple so you would have a HTML render method for just an easy inline template rendering.
+
+And then there's also an OCA bundle available if someone that understands the OCA spec can go get more metadata about the fields. The OCA specification is pretty interesting and there's different categories of feature that you can highlight. I can post the link in the chat here.
+
+Okay.
+
+[Speaker 3]
+In the meantime could you tell me what OCA stands for?
+
+[Speaker 1]
+Why don't you do a quick introduction of OCA while I try and find a rendering template that we've designed.
+
+[Speaker 2]
+OCA stands for Overlays Capture Architecture. So how it works is, let's say you have a set of attributes, right? First name, last name, email.
+
+For these set of attributes you can publish a series of overlays. So you could have overlay that's going to be your information overlay. So if someone wants to have further information on this field, this information overlay would provide, well, first name is the lengthy description of what the term is.
+
+Here it's a bit simple in my use case, but as we get into some more technical field, like for an example here we have the BC tenure credential. Well, maybe there are things about BC tenures that the rest of the world might not know about, like what is a tract, what is a location as we understand it, and so on. So we could provide definitions for these terms.
+
+There's other things like I mentioned, multi-language support, character encoding format information. A lot of these things are sort of included in the JSON linked data specification. So by providing a context to your VC you can ultimately resolve to semantic information about the terms you see in the credential.
+
+So this is another way sort of to provide this, and it also provides other things like language support. So they divide it into three categories. There's like semantic overlays, which goes over character encoding, format, information, labels, standard.
+
+They have inputs overlay, and then transformation overlays. So if a software uses specific codes to represent values, well they could present some transformation overlay like this is how you can render a code to something that might be a bit more meaningful for you. So these are all different uses that you can do.
+
+It's really like you pick and choose which overlays you want to include and provide a list.
+
+[Speaker 3]
+Okay. Thank you.
+
+[Speaker 4]
+John? Yeah, I just wanted to give a quick update on the issue number 78, Steve, the one on trust graphs that I kind of took on from Joe's first comment saying we needed a definition. Nisa and I have been sort of corresponding as Mark Shea on what we might mean by a trust graph, and I don't know if you're familiar with this design squiggle idea where you start something, you think it's going to be very simple, then you go all over the place, and then hopefully at the end you come out with a simple answer again.
+
+I'm in the middle of the design squiggle. So I've realized that you've got currently, we've got currently in the spec, some elements, for example the idea of a trust score and sustainability score. And my logic that I've been expressing in the exploration of the issue is actually arguing against that idea.
+
+I've realized I've argued against the idea of sort of an absolute measure of trustworthiness that can be carried by a protocol. I'm going to be arguing for just the facts, if you like, and the trust decision is in the eye of the beholder. So the score which they associate, various parties or various actions, is up to them.
+
+And it isn't something that the protocol carries as a sort of assertion. And I think what I guess I'm flagging is I've got a little bit of way to go before I come up with what I guess in the discussion what we come up with as a proposed resolution to it, but it might actually affect the data definitions you've got for the digital product possible at the moment.
+
+[Speaker 1]
+Yep, thanks for that. I think that idea of scores in a digital product possible, you know, at first sight it's attractive but it has all kinds of warts all over it, as you said, about well how do you come up with this score, how do you measure it, and how do we know even that the rules are being consistently applied by a self-issued passport and so on and so forth. So I think we definitely should have that discussion.
+
+There is, we did run a as you may or may not know, there is a kind of already an Australian extension of the UNTP called the Australian Agriculture Traceability Protocol, where this issue of trust graphs, in other words traversing a set of linked data to construct a more complete picture is already high on the radar. And one of the contributors to AATP is a fellow from an Australian company called Trust Provenance, and he's done quite an impressive amount of work actually already in drawing out data models, putting them into something like Neo4j and actually defining rules as shackle shapes and executing them over a trust graph. And so I've encouraged him to join our group and contribute that in this thread.
+
+So you might see a fellow called Harley Thomas joining the discussion in this area.
+
+[Speaker 4]
+That would be excellent. And I don't want to make it sound like I'm overcomplicating this. The fundamental theory, the sort of graph theory if you want to call it that, nodes and relationships or arcs and relationships and so on, that's fine.
+
+We all understand that. We all understand how that means. It's easy, I think, to describe how the digital product passport with its associated data and linked data can enable you to define, explore trust graphs.
+
+I think that's cool. It's where we get to further definitions that it's a little bit problematic. But that would be great if he can join in.
+
+[Speaker 1]
+I'll remember to drag him into this discussion and since you might even be in the same city, I think I've got a feeling he's in Melbourne. He's in Adelaide, he's not in Melbourne.
+
+[Speaker 5]
+Marcus? Just a bit of a step backwards into this idea of rendering template. It's really a question and that is when you look at challenges like multilingual or language, different language versions, to what extent does that actually need to be captured within vocabularies then used within, say, rendering templates or other mechanisms versus extracted out into the template or versus defined in the template or other definitions and just a word of caution about that.
+
+When you look at things like the simple knowledge organisation system and related W3 standards, they in fact build into that and you can reflect that in linked JSON linked data as well. The values associated with languages as one instance. So the question is, does that type of information need to be captured in vocabularies, code lists, etc.
+
+versus in rendering templates or other mechanisms such that it can be maintained in one place and be universally applied versus distributed? So I guess that's a question.
+
+[Speaker 1]
+I think I'll leave Patrick St Louis to have a go at answering that question, Marcus. It's a good question.
+
+[Speaker 2]
+Okay, I'm being put on the spot. I was going to bring up something else but I think I can have a go. I think that's a good question.
+
+So if I can rephrase the question is, should these multi-language supported terms be included in the integrity part of the credential? Like they should be protected by a signature. Is that the question I'm hearing here?
+
+[Speaker 5]
+Yeah, sort of Patrick. And potentially there may be some circumstances where it needs to be held separately from existing vocabularies, fine. But where possible we should actually capture things like language versions of concepts within the concept list itself and then use it externally in things like rendering templates and things like that, if that helps.
+
+[Speaker 2]
+Yeah, so I think what you just described is the use case of OCA. So the idea that OCA is that whoever publishes these OCA, there's a sort of governance framework behind it. So the OCA are hints available for parties who want to render the credential and there will be specific to the credential you want to issue.
+
+A problem with out of the gate and the credentials supporting multiple languages is where do you stop, right? Like do you want to support all language with all credentials? I think that's, it's a lot.
+
+The advantage of having something that is independent of the sort of data integrity part of the credential is that it can evolve alongside the credential in itself. Because once the credential is issued, the data that's in there, you know, it cannot be tempered and it's valid according to how long the credential is valid. But you can update the metadata of the terms independently through some other process.
+
+[Speaker 5]
+I accept that might be required. I'm just saying for things like validation where you're using charcoal shapes and things like that, that actually having the translation in the vocabulary itself means that it becomes available to processes like data validation where it might occur across different languages.
+
+[Speaker 1]
+Yeah. If I summarize that, what I think Marcus is saying is we might want to think about governing language translations of terms. But I think what Patrick is saying, that might be true and you can do that with OCA, but let's not put any number of languages in the proof envelope because that's something that doesn't change and makes the VC quite complex.
+
+So it sounds to me like we're reaching a consensus here that if you're going to have multiple language presentations, then put it in a governed presentation layer, but keep the VC probably in English and the proof. Is that where we're going with this? We're not going to actually issue a credential in let's say 50 languages?
+
+[Speaker 2]
+No, definitely not. I think what Marcus you are saying, if I'm correct, is you think there are ways to identify the multi-language support through the use of the context of the verifiable credential?
+
+[Speaker 5]
+Yeah, possibly and it spreads out to other applications where there are multi-language as well, where a concept might be described in one language, but may be made available in another language and that can be made available programmatically. But I won't go into too much here, you've got a fair bit to go through, but just something to consider really and that would be conformant with using the best of OWL or the simple knowledge organisation system.
+
+[Speaker 2]
+Yeah, I think that's a good point. I think putting the angle in the language specifically should be a different issue than rendering. I think it's how to address multi-language support since this is an international initiative, I think it's a fairly important point to be considered.
+
+[Speaker 7]
+Okay.
+
+[Speaker 1]
+I'll just introduce you to Holly, John. Where did we get to? Trustgraphs.
+
+I think you were going to say something about Trustgraphs, Brett?
+
+[Speaker 2]
+Yeah, so what about if there is a... My question is more about do we need to have a score or how would you support a system that you publish just a VC of disclosed information? Let's say you have an initiative that you want an organisation to disclose their gas emissions without saying it's good or bad, it's just like a public self-attested report.
+
+How do you see that fitting with conformity credential and the concept of having a score associated with it? What if an entity wants to just play the role of a... Publish your...
+
+Submit your reports here and we will approve that you've submitted your report this year, you've been good without wanting to lean in as this is good or this is bad or this is...
+
+[Speaker 1]
+Yeah, I think in general they should be able to do exactly that. That generally the digital product passport is a set of statements that are not necessarily rated or ranked or scored. And I kind of expected that this these little elements up here trust score and sustainability score would provoke exactly the discussion it is provoking.
+
+So I think it might well make sense to remove them. And it's probably enough. We had a discussion in another meeting about this question of benchmark values.
+
+And in a way that's a tool by which a verifier can decide on a score that they choose to give. Because what this means is, for example, for emissions intensity of a product like beef, the value might be 5 tons per ton, but a verifier might not know that that's actually pretty good for beef. So having a benchmark value like the industry average for beef is 15, you're 5, that's good.
+
+That's enough information, I think. I'm a bit sympathetic with removing these scores because it does get complicated. And if there is any scoring, it's probably not done by the passport issuer, it'd be done by some independent party that does some ranking.
+
+We make them optional fields in a conformity credential rather than a passport.
+
+[Speaker 2]
+Yeah, like a reseller or someone that wants to sell organic product, well, they will surely define what their score is or their threshold for is this suitable for my market or not. Interesting, because there's also, like I was thinking, you want organization to participate in this. And I think just the fact of having an organization reporting about their sustainability claims is already good.
+
+Without saying it's good or bad, just the fact that they are encouraged to submit it, that's a good first step. If they know in advance that, okay, if I submit this, my score is going to be 2, well, I might just not submit it in that case.
+
+[Speaker 1]
+Do we have more or less a consensus on this, Colin, that we should remove the scoring? For me, yeah. For me, yes.
+
+So that we don't forget, John, could you write a ticket specifically to say let's remove the scoring from the digital product passport?
+
+[Speaker 4]
+Do you want me to write that as an issue or a pull request when you say ticket? Oh, sorry, an issue.
+
+[Speaker 2]
+I could suggest to maybe, instead of removing, make it optional.
+
+[Speaker 1]
+Ah, so actually that brings up another topic, that all of these models so far have not said much about which of these properties are optional and which are mandatory. There's probably another piece of work to do around that.
+
+[Speaker 2]
+Because I think product passport can represent many different products, and a product passport of a shipment of a raw material is very going to be different than a product passport of a good that's ready to sell. And maybe if a product passport wants to sell to a particular audience, well, they will want to put their own score based on a specific benchmark. So, does that make sense?
+
+[Speaker 4]
+It does make sense, Patrick, but I think for me, I'm trying to separate out the idea of the protocol definition of itself defining a kind of absolute quality about score, and the ability of others to make whatever assertions they want. And I think that's for me, that was what troubled me, that the combination of the idea of doing a mathematical calculation of a trust graph, adding up all the scores, and seeing if that number was greater than your risk level or confidence requirement or whatever, that was troublesome because I couldn't see that actually working. I don't mind any of the conformity credentials or others containing elements where assertions can be made by a party about another party, or a self-assertion can be made, that's all fine.
+
+But it's very different to an absolute score.
+
+[Speaker 1]
+It's not uncommon for rankings and scorings to be used, like energy star ratings on appliances you buy, or food health star ratings and things like this. And they're usually backed by some sort of regulatory rule that says this is how you calculate the energy star rate. So let's imagine there's a passport for a washing machine, and there is a need to put an energy star rating, that would still be probably a claim backed by a credential, rather than a score in a product passport header, wouldn't it?
+
+Do you think?
+
+[Speaker 2]
+Yeah, that's very true.
+
+[Speaker 1]
+Yeah, okay.
+
+[Speaker 3]
+And the same score might give you different results in different countries about what's A, B, and C.
+
+[Speaker 4]
+Exactly, Virginia, exactly. That's my problem. Yes.
+
+[Speaker 3]
+And mine too. I think I mentioned this when we had our first discussion.
+
+[Speaker 1]
+Okay, so we're sold on removing those scores, and on aligning with the data model. These are a couple of to-dos. And we're joining forces on trust graphs.
+
+Particularly interesting to look at the Australian agriculture feasibility one, I think, because Harley's done some good work there. These are useful outputs from today. Okay.
+
+[Speaker 4]
+I'm seeing a few other comments. I printed issue number 92 for you, Steve. I'll put some extra details in it after the call.
+
+All right.
+
+[Speaker 1]
+Thank you. Yep, there it is. Remove the trust score.
+
+Okay. Has anybody else got a ticket that they've worked on that they want to ask questions about or share with the group because there's some sort of topic that needs a bit of consensus? If not, then we could say we've made some progress and got some actions.
+
+And if everyone can carry on with their currently assigned tickets, almost everything now has an assignee, then we'll talk about it more next week. We've got three minutes to go. One thing I might just take the time to share is I noticed today that the Australian Government Department of Agriculture has published this paper about enabling agricultural traceability through data interoperability.
+
+And they're asking people to have their say, and they've published this framework consultation paper. And quite interestingly, when you look at it I can open it. Here it is.
+
+There's some familiar looking diagrams and stuff in here. This is from the Australian Government, and they're referencing REV 49, transparency of scale. They're referencing UNTP.
+
+We're starting to have an impact, which I think is quite good. We should be proud of that. So, that's just a bit of good news.
+
+I wasn't even aware they were writing this, but I think it comes from the Australian Agricultural Traceability staff.
+
+[Speaker 2]
+Could you just post a link in the chat for that?
+
+[Speaker 3]
+Don't forget to forward the link for that paper to Maria Teresa.
+
+[Speaker 1]
+Yes, I did send it earlier today, because it's good news for the UN. I'll put a link in the chat as well for everyone. Yeah.
+
+Alright, we're at time. Thanks for your contributions today. I'm particularly pleased with figuring out a way to better align with the VC data model.
+
+It was just a plain misunderstanding of what was possible on my part there. That's a good outcome. With that, I'll thank everyone for their participation.
+
+For those in the right time zone, see you in a week, or in two weeks, depending on where you live.
+
+[Speaker 3]
+Thank you. Goodbye.
+
+[Speaker 1]
+Goodbye. Bye.
+
+[Speaker 3]
+How come I didn't wave?
+
+[Speaker 1]
+Hi, Virginia. Thanks for joining us so late.
+
+[Speaker 3]
+It's no problem. Like you said, I'm a late bird.
+
+[Speaker 1]
+It did occur to me just what one's thought to share with you. If this UNTP thing really gets some legs, it will... I'm thinking, how does the Secretariat even support the potentially overwhelming volume of queries, comments, pilots, etc.
+
+It did occur to me that the model that the Australian Agriculture Traceability Protocol provides is actually a good reference or pattern for how to scale adoption worldwide. UN wouldn't directly support, let's say, an Australian farmer who wants to implement UNTP. There's already 3,500 of them.
+
+UN could be the community of communities where AATP is just the first example of potentially hundreds like this that say, this protocol works for us, we're going to extend it in our economy and our industry, and we've got a governed community for doing that. It's quite a good model that we should perhaps work with Maria-Theresa to flesh out in a UNEC paper that says, this is how we support UNTP. We encourage you to establish your industry jurisdiction-specific communities that may extend but remain conformant, and we will work with the communities that themselves govern hundreds of thousands of members.
+
+[Speaker 3]
+I think it would... I think that will work to a certain point, but I think there will also be a need to probably try to figure out a way to raise funds to have a full-time staff member. You need just one.
+
+[Speaker 1]
+It did occur to me, too, that if you formalize a model of running or governing or supporting the community of communities, then a community that wants that service and support from the UN could pay an annual fee. It needn't be very high, but you only need a few of them to provide...
+
+[Speaker 3]
+The UN won't let you do that.
+
+[Speaker 1]
+Even if it's a not-for-profit.
+
+[Speaker 3]
+You cannot charge for any UN service unless... There used to be, because they changed these rules once in a while, there used to be a permission to charge for something, but only because the International Trade Center has done this in the past. Only if everything that went into the development was extra budgetary and no regular budget staff were involved.
+
+Then you get charged for it. But that's a pretty tough barrier to leap over.
+
+[Speaker 1]
+I wonder how then, because we're facing a situation, or the UNEC is, of tighter and tighter budgets and looking for funding sources, and there are certain funding sources which are, I suppose, fairly straightforward to accept, like a member state pays the UN to run a project. And there are other funding sources that might need a little more creativity, but maybe can still be aligned with UN probity, such as...
+
+[Speaker 3]
+You can have a fund... I forgot there's a specific term for it. You can have a fund that a private sector or anybody puts money into, but then you can't make it an obligation for receiving the service.
+
+And they can't say how it's going to be used. Especially if it's private sector. Governments...
+
+You can have a fund where the terms of reference of the fund say this money is used... The money in this fund is used for this purpose. But you can't have a company put money into it and say this money that I'm putting in from my company will only be used for that.
+
+[Speaker 1]
+No, no. I don't know the answer, but if there is a way that aligns with UN probity rules even if it's voluntary contributions or something.
+
+[Speaker 3]
+I would talk to Maria Theresa about looking into it. There's... At one point I know that one of the programs in the oil and gas...
+
+In the energy division, I think it was related to gas, had a big private sector fund with a lot of money in it from gas companies. But I think they ran into problems with it at some point. But it wasn't my division and I don't know enough of the details to know exactly what problems they had or if it still exists or not.
+
+But it's certainly worth looking into. Because there they had sort of like an advisory board or something like that. The advisory board consisted of donors.
+
+like I said, I didn't... I wasn't sufficiently involved in following that. But if that worked or continues to work, it might be a model to look at.
+
+[Speaker 1]
+An advisory board. Quite often the way a lot of these standards work, right? That's exactly how W3C works.
+
+ISO is a pay-to-read and W3 is a pay-to-write.
+
+[Speaker 3]
+And pay-to-write too. Like Canada where you don't have to pay-to-write but in most of them you do. Most ISO members make you pay.
+
+[Speaker 1]
+In any case, I guess it's for Maria Theresa to figure out whether there's some sort of model that can work. Hello? I think it cut us off.

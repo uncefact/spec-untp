@@ -1,0 +1,491 @@
+[Speaker 1]
+And to you too. Morning, everyone. Happy New Year.
+
+Hi, Happy New Year. Hello. How's it going.
+
+Hi everyone. I should say, but it's not really. Next month.
+
+No, just happy new year. Excellent. Yeah, Christian.
+
+Hello, Peter. We'll give it another couple of minutes, if you don't mind. Hey, Zach.
+
+Hello, Steve. Hello, Kay. A happy 24 to you.
+
+Thank you. The years fly by. Year of life now.
+
+I really should make something of it. Yeah, it's kind of funny. You should say that because I, I just, I just crossed the five, you know, the five zero mark.
+
+So it's, it's a good one because you, you really can't convince yourself anymore that you're less than halfway through your life. Yeah, I know. You've gone over the pinnacle and you're on your way down.
+
+Exactly. It's so sad. I passed that years ago so I don't feel so bad now.
+
+All right, it's three minutes past, we may get a few laggards join. I just like to start by saying welcome everyone hope you had a nice break. Appreciate your attendance, we will keep this to within the hour.
+
+Also mentioned I've just clicked to record. So this meeting is being recorded. If anyone has any objections, please speak up, post it publicly for others who weren't able to attend.
+
+Listen. Before we jump into the agenda for the day, which I like to propose that we split into two teams one writing the policy recommendation and one working on the techie stuff in GitHub, and I wanted to walk through the techie stuff in GitHub. So people understand initial thoughts of the scope of that.
+
+But before we do that, I would like to just bring up the summary. Oh, I've got to share screen first. Share screen.
+
+This list here of people who have expressed an interest in this project, and are registered on the Google group, and therefore have access to the draft document online. And would like to add them to GitHub if they're going to be a contributor. This is just a reconciliation against UNECE registration register of who's actually gone through the registration process so there's a bunch of green stuff, no surprises there.
+
+The yellow stuff means you've registered, but it's not yet finished, either because the head of delegation has approved but there's still some administrative stuff on the UN side, or this pending stuff means UN's received your registration, but your head of delegation has ignored it. So, we can follow up. If there's any parties, anybody that sees themselves in these this row here, and remains interested in the project, we will and I can see a few obvious ones like Benjamin Clare and Jon Pabon and Riho and so on, that we need to ask the secretariat to poke the relevant head of delegation to proceed.
+
+It doesn't prevent you participating and contributing, because by registering you've already agreed to the IP clauses, but it would be convenient to finish it. So really the ones that we I just want to quickly look at are these not registered ones. And in there I can see there's some, like Kay, who I know is registered, and this is actually just a different email address so it didn't reconcile with the one you've registered with.
+
+And similar I think with Christoph. And I think there's a few here inactive, but I haven't seen on any calls that unless someone speaks up and sees their name in this list so I want to bring up, basically, this set here. I think two of them are already registered with another name.
+
+Two of them I know of are active in this project, and if they haven't registered they must, and that would be Steve Curran and Milena Christine Strathman. The others, I'm going to suggest that UNCFAC, we just remove them from the Google group. So any comments there?
+
+Does anybody see a name or something they disagree with? Otherwise, we're done and I'll just update the list accordingly. No?
+
+Okay. That's that then. The...
+
+Save that. So the... We said last time that we would just, we agreed that we wanted a, not just a policy document, but also something fairly concrete and implementable.
+
+So that means some sort of specification that goes with the policy document, and we said that's not, the policy document isn't the place for that. So, a GitHub repository has been set up, and I've been through and had my first stab, and this is not locked in stone. I'm welcoming your feedback on the structure of this repository.
+
+Now, what I would propose to do is quickly walk through it, and then, for two reasons. One, to just explain how it, what all these different bits are, and see who's interested to work on the techie side on these various bits. And also to give you the opportunity to say, oh, you've got too much there or you've missed something or I don't agree with the structure or whatever.
+
+Everyone happy with that? Any comments or questions before I get into this repository? Let's see, there's one, something in the chat as well.
+
+Ah, okay, that's the, some robot. Okay. So, there is a GitHub pages site, that's the homepage.
+
+It's at uncfac.github.io spec.uncp. And it's just generated from Markdown in the GitHub repository. And it's very similar to the critical raw materials project site. And it's basically organized as a bit of intro stuff.
+
+And see here, about the UNTP, where this page has the same stuff that's in the project proposal and terms of reference that race to the top of bottom stuff and the key challenges. I put a section here, which I'd be interested for anyone to comment on and by the way the mechanism to comment is just raise a ticket or write me an email or anything. This is a list of who are the target audience, so regulators, ESG standards organizations, accreditation and certification authorities and so on.
+
+And a little statement about each one and what their interest might be in this specification. And then I've created some kind of high level business requirements to guide, to justify and give rationale for all the specification work. And broken them up into seven chunks.
+
+So governance requirements. How are we going to run this thing, govern it, architecture requirements, traceability and transparency requirements, read them all, trust and integrity requirements, security and confidentiality requirements, compatibility and interoperability requirements, implementation requirements, that's it. Oddly, I went through these and just wrote them all out.
+
+And I got to the end and found I had seven sets of requirements, each with seven requirements in them, except one that had six, which added up to 48. And I thought, how bizarre. So I added one more to make it 49 so that it just matches recommendation 49.
+
+It's pure coincidence, but it's quite interesting. And then there's a little bit of governance about this just refers to standard CPAC governance processes about contributions and vision management and releases and so on. Really, the bit I wanted to work through today is this specification section.
+
+And there's quite a few subheadings here. It looks a bit intimidating at first and I just wanted to quickly walk through them and get your thoughts. So first of all, at this heading level, I've just basically put a paragraph here and you can read through them for each of these subheadings to say what it is.
+
+So you can have a read and understand the intent of each of those. And they just, these headings here on this title page match each of these headings here. And for each of those paragraphs, I've also just copied them to the relevant section.
+
+So that paragraph about vocabularies under the overview subheading in vocabularies is the same paragraph as this one. It's just scaffolding. So let's just quickly walk through each of these and see what we're trying to achieve with each of them.
+
+The first one, architecture, is basically the helicopter view of all of this. What are we trying to do here? And this is where we've seen this familiar diagram about defining a B2B digital product passport, linking it to conformity credentials and traceability events and discovering it from product identifiers.
+
+So there's nothing new here. We've all seen that. And this diagram linking all those things into a supply chain.
+
+I'll add some words to that, but that's really just giving that helicopter understanding of what this protocol is and how it all works together to make traceability work in a decentralized architecture. Just a quick reminder, the key idea is that there is a lightweight digital product passport with every shipment of goods that has the ESG properties of that shipment of goods, how much carbon, whether it's deforestation-free, etc. As ambit claims, really, from the issuer.
+
+Optionally, to give increased trust to those claims, some associated third-party certificates that say, yeah, and somebody else agrees that that claim is true. And then these blue traceability events are what allow us to draw an end-to-end supply chain graph, even when the data is decentralized across all kinds of different locations. And the discovery mechanism, there are lots of different ways you could exchange this, but the one must way is got to be able to discover it from the product batch identifier.
+
+So that's the kind of question. So I understand that the DPP here concept to cover the B2B data exchange. Can we also have a link to the B2C dimension?
+
+Because as you know, most of these DPPs will be covering the B2C business to consumers. So yes. So where do we see that and where do we have that connection?
+
+In the requirements, there is a comment about, in most cases, the B2C digital passports are, I say in most cases, but actually there's only one or two cases in existence at the moment. So it's hard to say most, are governed by local regulation. So it's the EU that says this is the EU digital product passport for goods entering the market.
+
+And so it's not for us to say, no EU, you're wrong, use this one. The positioning is that the value we can add to any domestic regulation about digital product passports is the feedstock, the upstream feedstock. What do you put in the EU digital product passport?
+
+[Speaker 2]
+Yeah. Yeah.
+
+[Speaker 1]
+So that's specified here in the words that govern it. And I don't know if visually we could also get that understanding of how the B2B DPP is going to inform the B2C.
+
+[Speaker 2]
+Nice makes a good point. It's actually, it is kind of articulated in the diagram below that, Steve, on the architecture. Yeah.
+
+[Speaker 1]
+Yeah. Okay. But I'll bring the words out.
+
+I haven't written the words of the architecture yet, but yeah, let's, I think it's important to make that link. And also, I don't know whether if there's an economy that has not yet made any regulation about digital product passports, which is most economies, right? The EU has and some others are starting to.
+
+Would they just pick this one and say, well, we won't regulate. We'll point at this one. Maybe they would.
+
+So we should probably have some words to say, you know, feel free to use it as your domestic B2C digital product passport if you want. But we're not here to conflict with domestic regulation. Right.
+
+We're here to value add with it. So that's right. My point is just really to make clear how this can support domestic regulation on B2C DPPs.
+
+And yeah. Yep. That's a good point.
+
+It does say that somewhere in the requirements and it will say that in the words, but we'll make it really blindingly obvious. So it's an important thing. Also, if we call it a digital passport, then, you know, it must be clear what it is and how it connects and supports other DPPs because otherwise it's confusing.
+
+Right. Yes. Agreed.
+
+And so that'll be very clear in this section, which is the get now getting into what is the digital product passport. So, as you know, we've done a little bit of work here and actually did a pilot project in Australia in agriculture and have and also starting to feed this into the critical raw materials project. So it needs a couple of, you know, on the ground tests to confirm that it's the right structure.
+
+And I've already got some feedback to update and improve this and add some missing bits and so on. But that's basically the data model of the digital product passport, which is a batch oriented thing. You know, this batch of product has this list of sustainability claims and this provenance information.
+
+And it's about that product class. It's quite a simple passport. Right.
+
+And there's a schema and model documentation. This is all not locked in stone. This is just first pass stuff that we need to collaborate on over the next few months and refine and get right until we can say it's version one.
+
+The next one is the conformity credential. Right. So this is the trust, the link to trusted assessments from your passport, which is self-assessed and claims this data model.
+
+There is another project in UNECE called the DPCCE, Digital Product Conformity Certificate Exchange, I think. Get that acronym right. And I've been working, participating in those calls.
+
+And that's one that's led by Brett. And the intent here is that there are not two specifications for conformity credentials. Basically, we work with Brett.
+
+And when Brett's project's finished, this page should basically say this is the UNECE DPCCE conformity credential. So it's basically that project informs this one. And it's the same thing.
+
+We're not making two versions of a conformity credential. Yeah. Which is full of conformity assessment, accreditation and certification people.
+
+So they're genuine business experts. This is 90 percent, at least, reflecting their view of what a third party conformity assessment looks like. So that's good.
+
+Traceability events. This is the other schema. So three schema in this project.
+
+Passport, conformity and traceability. The traceability thing is largely based on GS1. And I think there's no reason to reinvent GS1, EPCIS, only to make a simple and implementable profile of it.
+
+So this particular schema we tested in Australia, it does need a bit more work. And this particular one would benefit from a bit of GS1 participation to pick the right vocabulary terms. You know, they have things called disposition terms and biz steps and things like this that there's a standard vocabulary for.
+
+And I think EPCIS from GS1 is designed for any kind of traceability use case, including very detailed steps inside a manufacturing center. Where, you know, I've moved stuff from this shelf to that shelf and I'm putting it in storage and so on. So from the perspective of a much broader supply chain traceability, there's a lot of stuff we don't need.
+
+So we should make a fully conformant but simpler subset that meets the needs of this project. And so I say this one is probably 70 percent of the way there and needs a bit of GS1 help. The identifiers bit.
+
+So Steve, I might just jump in there. Peter Carter, GS1, most of the time. I think as we start to unpack use cases in different industries, we'll probably find that the simplification will need to be extended quite quickly.
+
+Thinking about some of the processes in building and construction, particularly around commissioning activities where there's real sort of fine grain specification on application. So I think we've got to start simple, but I think everyone's expectations should be set that quite quickly we'll end up extending these as different use cases require. Yeah, yeah.
+
+And one of the challenges with all that is that if you extend the core with this and that and that and that and ongoing use case, you end up with this really quite big thing. And it gets harder and more complex to implement. And you go, well, which bits are for me?
+
+So what I think is the right way to do that. And so I completely agree it's going to happen. But what we're thinking with UNTP is to define the minimum, just enough core.
+
+And then say, right, exactly to your point, right? There's the critical raw materials industry needs these extra things. The Australian agriculture industry needs these extra things.
+
+Specify them in an extensions register and define an extension methodology so that they're non-breaking extensions. And what that means is if Australian agriculture traceability protocol has some extra bits and they issue passports and they find their way into automotive because it's about the skin of a cow or something, then the automotive industry does not need to understand the Australian agriculture traceability protocol. Only the UNTP and he pulls the bits they need.
+
+Right. So it's this idea of an extensible common core. Right.
+
+So and I think if we don't follow that carefully, we'll end up with this complexity monster that is too big.
+
+[Speaker 2]
+And for example, on the traceability events side of things with the critical minerals project that I'm working on, one of the standards that we're going to be mapping against these traceability events is the IRMA standard, which is the responsible mining standard. And they have a chain of custody standard. And so we want to make sure that if the critical minerals industry has adopted this IRMA standard, when we're extending the UNTP for critical minerals, we sort of say, here's how you map your IRMA methods to what we've defined in UNTP.
+
+We don't have all the answers. We're actively working through that as we speak.
+
+[Speaker 1]
+Yeah, I think the thing I would say, guys, is I think you're absolutely right. And it's a really critical thing to sort of get in place before we start. I think we've got an awful lot of it here.
+
+The event has got an event type where you can define multiple different event types and then work out what it is that you need and segregate that sort of event type metadata as well. So I don't think it's in good shape, I would say. Yeah, yeah.
+
+Look, thank you. I believe that the DPP model is 80% or 70% there. Conformity credentials, 90%, 95% there.
+
+And traceability is, I don't know, 70%, 80% there as well. These are not huge steps to do, but I'm just trying to emphasize when we do this to focus on that common subset as opposed to the superset of everything, because we've separately got an extensions method. I also noticed Nis is on the call and he raised a ticket about should we collapse all this into one long page, because that's the way technical specs are written.
+
+And I agree with Nis, that's how technical specs are written. Except that I think, and I'd like to validate this with Nis and others, this isn't one technical spec. It's actually 10 technical specs, and each one is an independently implementable thing.
+
+And it would be quite a confusion to munch these all together. So my suggestion is, yes, one technical spec should be on one page with a clear must, should, may criteria about what conformity means. But these are distinct, quite separate things.
+
+And so let's have a page for each spec. That's my thinking, basically. I'm on board with that.
+
+It might be a little much what we are looking at here still. Since you called me out, just two comments. On the data model of the actual data DPP schema, I think we want to look, I looked a bit at what's been going on in Europe, which is not also still evolving.
+
+I do think that we want to align ourselves and get inspired as much as possible to make it as compatible as possible. And yeah, it's a little bit difficult for me to say how far off it is. I need the actual JSON schema.
+
+I'll dive into that soon. The other thing I'll say is just maybe the 70, 80, 90 percent completion is a little exaggerated. As an anecdote, I once took over a project from Steve, which was 90 percent done and spent two years on it.
+
+OK, yeah, fair enough. Yeah, aligning with well, aligning with and basically leveraging the work already done in the EU around DPP is important. I do notice that they've taken a regulatory approach, which is not to define the data model up front, but actually to throw money at 60 different projects and see what they come up with.
+
+And then distill from that what the common common sense is. And so at the moment, the Surpass program has done. I lost count how many digital product passports come out of Surpass, and they're all a bit different.
+
+And the next intent of the regulator is to say, right, let's look at that and make a harmonized model. So I think there's an opportunity actually to kind of ping pong a bit as they do that, learn from them, extend this and make it. The other thing I've noticed is that in from what I see in the passports that are implemented, they're kind of they express the full aggregate of the entire supply chain in one passport.
+
+And very often. And what we're trying to do here is keep it lightweight B2B. And I'm and also I noticed that they have a lot of terms that are very specific to batteries or specific to textiles.
+
+So somehow we've got to pull back and go, what's the common core for an upstream passport? And how do you extend it when you want it to be a battery passport or a textile passport without overloading this with every language from every domain? So that's the challenge that lies ahead, I think.
+
+I'm sure I'm sure we'll overcome it. You know, smart people on this call. All right.
+
+Just quickly, then moving on, identifiers in a decentralized architecture, it rapidly becomes evident that the identifiers of things are the glue that join together baskets of disconnected things. So if you crawl and discover or get presented with 20 credentials from various parts of a supply chain, how do you pull together the relationship between those credentials, usually through identifiers? And the trouble is, there's a bit of a gap between many.
+
+Very well established and important identifiers throughout the world and what you really need from identifiers in a in a digital trust architecture. Right. So, for example, the Australian Business Register run by the tax office, two million ABMs in there.
+
+Are they globally unique? By themselves? No.
+
+If you prefix them with the ABR, yes, you could make them globally unique. Are they discoverable? Well, if you've got the identifier, you can go and get data about it by looking up in the ABR, but it's not a consistent protocol for doing that.
+
+Are they resolvable? Given an identifier, is there clear rules about how you go and look them up? Not quite.
+
+And the last one, the most important one, are they verifiable? Absolutely not. Right.
+
+The tax office does not yet today issue a credential saying we assert that you are the owner of this identifier. So this section, what I'm imagining here is a bunch of components that say this is what constitutes a valuable digital trust architecture ready identifier. And then allowing each registrar, whether it's the Australian tax office or even GS1 and the GTIN register to go, what's the gap between what I'm doing now and what this needs?
+
+Right. So take GTINs, for example. They're actually probably one of the closest to this because they are discoverable.
+
+You know, they're written all over barcodes. They are globally unique because they're GS1 global already. They are resolvable because digital link resolution provides that.
+
+The only thing is they're not verifiable yet. And GS1 is already talking about issuing verifiable credentials to their customers based on the prefix so that they can present a credential saying I'm the genuine owner of this. So GS1 is very close.
+
+Right. But everybody that runs an important register of identifiers that are a key part of business has some gap between, I think, what we really want them to do and where they're at. Hopefully we can document it clearly and maybe compel them to start, you know, filling the gap.
+
+Steve, can I just add to that? I think we should be also very transparent with respect to many of the credentials that are applied and the focus of anxiety around transparency. When it relates to product, it does require job lot referencing in order for that visibility to be established.
+
+So I think we shouldn't hold back from saying, you know, most of the world, if they're trying to do identification OK, then they're doing it at a skew level. They're doing it at a product type. But between now and GS1, I'm sort of focusing on a sunrise date of 2027.
+
+You know, we're in a global uptake of machine readable codes where job lot referencing is standardized or at least globally. I just think we shouldn't leave people. We could set unrealistic expectations if we suggest this is as easy as turning on the TP and everything's going to work.
+
+There's a massive amount of work to get manufacturers across that line. There could well be, yes. And I just want to repeat that the digital product passport is at the job lot level, not at the skew level.
+
+The heart of it is the product batch, not the product skew. But when we talk about identifiers here, it's all kinds of identifiers. You know, an NLIS ID of a cow in Australia is an identifier that also needs to be discoverable, resolvable, verifiable, etc.
+
+This can all work, even with identifiers that don't meet all these ticks. But what happens is you end up with less trust because you can't verify the integrity of the data. And that's still better than having no data.
+
+So it's not like you can't participate if your identifiers don't tick all these boxes. It just means you might have identifiers that are not verifiable, in which case you just have to believe the claim of ownership. Yeah.
+
+Just one thing, guys. I mean, you're absolutely right. And one of the initiatives that's working in the international space is the Trust over IP Trust Spanning Protocol, which is defining at a high level the use of verifiable identifiers of all sorts of different types, whether they're decentralized identifiers, whether they're self-certifying identifiers, whether they're other types of verifiers.
+
+So there's a lot of good content that we might want to look at in terms of using that. I mean, all of these requirements are very much firmly focused on in that initiative as well. Yes.
+
+One of the troubles there, if I may say, is that if you come at this problem from the technical space and you talk about dids, of course, they are already globally unique, resolvable and verifiable. That's the definition of a did in the first place. But there's an air gap between the technology that says we have this thing called a did and the business that has a well-established register that has governance and authority behind it.
+
+For example, the Australian Business Register. That's exactly right, Steve. Dids are just one type of identifier.
+
+They're not all necessarily like that. But if they're going to be verifiable, then the question is, what's the level of verifiability you're looking for? Whether, in fact, it's cryptographic verifiability.
+
+And that's probably something that we need to have a work through, because sometimes that will be that requirement at that level and sometimes not. Yeah, that's right. So these headings here are very high level, but then it needs to be in this about, well, what if it's an important identifier?
+
+It's heavily used in industry. It will be part of this stuff, but it doesn't tick all these boxes. You know, there's some conformity criteria.
+
+We have to make sure that works, right? If you like different levels of assurance that are required on each. That's right.
+
+That would definitely be part of this. And we may need an identifier registry that says, if it's this identifier type, this is how you resolve it. Well, yes, we're going to have to have methods or whatever it is, the equivalent.
+
+Yeah, kind of. I'll just move on to vocabularies now. So if we imagine we've got credential schema and they've got identifiers in them, now we've got this basket of credentials.
+
+The next challenge is to make meaningful sense of it. And when Irma says carbon neutrality, they mean this. And when somebody else says carbon neutrality, they mean that.
+
+And, you know, bringing together this into a meaningful set of claims across a set of credentials is challenging. And an analogy occurred to me that I'd like to share with you and see what you think, which is. And a few questions have been asked, too, of me to say, well, how does all this transaction shipment level stuff align with my corporate reporting obligations that I do once a year under IFRS?
+
+Right. And that's an excellent question. And we need to answer that.
+
+And I think the answer lies in this vocabulary section. And why? Because my analogy is this.
+
+In financial management, anybody that's had to run a small business and has done general ledger entries knows that a general ledger chart of accounts is what gives you the categorization for every payment, whether it's payroll or income or whatever it is, to aggregate correctly into your profit and loss of your balance sheet. That's what a chart of accounts does. And I think there's an opportunity here to make a IFRS aligned quite simple vocabulary or taxonomy of ESG criteria that every participant uses as a category scheme, as a tagging mechanism.
+
+Right. So I've got a passport, it's got claims in it, and I tag it with the topic, which is a UN standard IFRS aligned sustainability topic. If you can do that, it means that irrespective of which particular criteria this passport is issued under, you know, it's in that category.
+
+And you can aggregate quite easily to align with your corporate reporting obligation. So this vocabulary is to sustainability reporting, what a chart of accounts is to financial reporting is my suggested analogy. Right.
+
+And that's what this bit's about. So to do this, somebody needs to know IFRS sustainability reasonably well, and be able to make a basically a topic map aligned with that. That is a won't be huge, but that's what this thing is about in my mind.
+
+And then there's a question of how that links to particular ESG standards. This verifiable credentials bit I'm imagining is basically an interop profile. And I would suggest rather than invent one, we use what's out there.
+
+For example, the Silicon Valley Innovation Program stuff that Anil John, leading in the US, has already defined a fairly rigorous subset of VCs that everybody's signing up to and saying, yeah, that's a good interop profile. So we should just kind of point at it and say, yeah, that's ours too. And except that we've got some important stakeholders who are in the non-creds hyperledger community.
+
+They are already working with Silicon Valley Innovation and the US, they're in Canada, to make interoperability happen. So I'm proposing we let them do that. And we insert here, whatever they discover.
+
+But this should be straightforward, because we shouldn't be reinventing stuff here. We just want to point at a fairly well documented interop profile and say, we think that's good practice. Data carriers is about the link resolvers and 1D, 2D barcodes, QR codes, and RFID codes, and how they are used to get the identifier that resolves into the data.
+
+And I think there's some sort of stuff to do here about different types of 1D codes and how you resolve them. Trust anchors is about key role of regulators and accreditation authorities and global activist organizations, if I can call them that, like Worldwide Fund for Nature or Greenpeace. These are the guys that are at the end of the trust chain that are the accreditor or authorizer of claims.
+
+And there's stuff here about, well, let's say I'm the Australian tax office, my favorite trust anchor, because they're the anchor for identity of Australian businesses. This would say, what sort of credential would you issue? What would it look like?
+
+And in as generic a form as possible. And if I'm an accreditation authority like NATA, what is my identity credential? The tax office would issue one of these identity credentials and NATA would issue one of these.
+
+But also, I think we don't want to hold all this up until all trust anchors issue verifiable credentials. So I also, you might say it's enough, there's a certain assurance level where if you're registered as a trusted trader on a public website, and you can provide a link to that, okay, it's not a verifiable credential, but it's evidence that that identity is accredited or authorized. So different levels of linking with confidence, cryptographic or not, to some sort of evidence of authority.
+
+That's what this section is about. This gets quite involved when you get into this. I thought I'd have four or five sections and I turned into this many and I can't think how to make it less, although some of these are optional when we get a bit further.
+
+Trust graphs is basically about how do you verify a graph as opposed to a credential? So if I've got a strain in agriculture, and I've scanned the barcode on a piece of meat, and I've found a whole bunch of credentials, they're a linked graph. And I want to establish that the context of relationships is valid.
+
+So for example, if I've got a NATA accreditation for animal health, then the certificate is about animal health and not about motorcycle helmets. So what's this business of validating a graph that you pull out of linked credentials is something at some point we'll have to attack. There is a language for it called Shackle.
+
+Some techie people might want to get into this, and I'm sure Nis has been all over this, and it'd be very interesting what you think, but imagining a way of saying in this industry sector in that, for example, Australian red meat supply chain, I could imagine a Shackle validator that says, if you pulled a bunch of data out of credentials, maybe this is a way to validate it. I don't know. This is a bit bleeding edge.
+
+I just put it there to promote discussion. But at some point, you've got to follow links and validate the context of the links, not just the individual credentials. And how to do that, I'm not sure.
+
+Yeah, it's applying policy on the graph that is being presented to you. That's right. Yeah.
+
+I don't know if Shackle is the right approach. Maybe not. I defer to experts.
+
+But how to apply that policy and validate. And can you have a situation where an authority in that sector, let's say red meat Australia, defines the policy and publishes it so that anyone who doesn't know it can just use it? Because one of the challenges here is I'm following a trust graph and it falls into Australian beef because I've got leather chairs in my Mercedes.
+
+You can't expect the car manufacturer to understand how to verify an Australian agriculture leather industry trust graph, right? Little less the end consumer buying that Mercedes.
+
+[Speaker 2]
+Even less, right. Yeah.
+
+[Speaker 1]
+And I think generally too, one thing I haven't said is that the reality in the world is I think nobody is going to start at the Mercedes end and drill down into a vast explosion of credentials and validate the lot. There will be steps along the way where somebody says, right, I'm at the point of shipping refined leather or maybe even a chair to Mercedes and I take responsibility to look at my trust graph behind me and make an attestation that Mercedes trusts. Maybe a third party who knows that domain adds a guarantee of origin credentials.
+
+So it's like along the steps there, there's actors that can be trusted that know how to assess a graph and say, here's my assertion that you can trust this graph. So says I and I'm trustworthy. So you don't have to.
+
+I think there'll be a fair bit of that happening, right? Anyway, confidentiality is basically how we protect data, everything from stuff that isn't protected because it's just genuine, you know, general open product information that everybody wants to advertise anyway, right down to stuff that you never share, because it's completely private and stuff in between. And this isn't locked in stone, but what I'm imagining here is a little toolkit that says, here's different ways you can protect your data and some patterns.
+
+This is why I got usage patterns about kind of best practice, you know, generally make your skew level product information publicly available. Maybe some traceability stuff is accessible only if you've got a GUID or something that tells you where it is, you know, different patterns here. We experimented with this a bit in the Beats supply chain and came up with these six patterns.
+
+It could be seven, could be five, could be different implementations, but this is about basically the confidentiality toolkit. And a question on the legal section, who's going to draft it? And have you already assigned the drafting of this part?
+
+So the purpose of going through this is what I wanted to say in this call is, shall we split this group into two, one probably slightly larger one, which is more the technical people, each of which has a particular interest or expertise to draft this. So in the next week, after everyone listens to this, I'm hoping somebody will say, yeah, I'm interested in the trust graph bit. And then there's a few people that are not in this at all, because they're really more business policy people and will return focus back to the word document, which is the policy recommendation.
+
+But the policy recommendation started to get some techie stuff in it before that was the wrong place for it. Right. So I wanted to quickly provide a place for the more technical people to add valuable content, so that we can keep the policy recommendation at the policy level, not at the...
+
+Yeah. Anti-counterfeiting. This is a favorite of mine, so I might take this one on.
+
+But obviously, a greenwashing attack vector is if someone's got a good brand with high ESG credibility, but someone copies it, then you've just diluted the value of that ESG credentials. Are there mechanisms to support anti-counterfeiting? And I think there are.
+
+And there's a way to define a public protocol for it, which I was proposing to write here. This thing is a topic by itself, right. But in short, it's about putting access to private keys inside packaging, so that you can change the status of a credential that describes a serialized item and mark it as consumed.
+
+And then every other copy that has used the same public identifier will be marked as consumed, right, is a way to do it. Mass balance. Another interesting challenge is how do you...
+
+At the end of the day, all of this is about making greenwashing harder, right. And so a lot of it is high integrity data, but then some of it is how do you cope with certain attack vectors, right. And by mass balance, I mean the situation where, let's say, a fabric manufacturer buys one ton of very high quality ESG-compliant cotton, nine tons of cheap, poor environmental impact cotton, and then sells 10 tons of manufactured cloth to 10 different customers, representing the credentials of the one ton of input 10 times, right.
+
+It'd look like each one is buying high integrity cloth when actually they're buying 10% high integrity cloth. How do you attack that? And my feeling here is industry association quota managers.
+
+Because each actor... This has happened in Australian whiskey, where one bad actor basically created some cheap shit stuff and damaged their reputation in the whole industry, similar with Monica Honey and all of that. Industry associations are motivated to uplift the reputation of the product group that they represent, and to keep each actor honest.
+
+And each actor wants somebody to keep them honest so that their competitor doesn't undercut them with cheating, right. So there's a pattern here, I think. It's almost like a business model on a plate for industry associations.
+
+Yeah, so ESG rules is about separating data from assessment of data and best practices for one of the challenges with here is somebody says, I've applied a scientific calculation method to calculate the carbon intensity of my beef, but which method and how do I know you calculated it correctly? So this is about verifying calculation rules are applied correctly. And then finally, there's a fair bit of GS1 stuff in the previous sections.
+
+But what I want to make sure I do in the previous sections is although we're leveraging a GS1 idea, like for example, digital link or EPCIS, in these previous sections, we want to make sure that it's broader than GS1 in the sense that I can use EPCIS, even with an Australian NLIS cow ID, I don't need a GS1 EPCIS to use the same construct, similar with digital link. So there's this kind of, it's not really attention, it's just that I need the protocol to make sure that you don't have to be a GS1 customer to use the protocol. But at the same time, particularly in the finished goods end, let's be honest, 98% of stuff on supermarket shelves are GS1 customers.
+
+So they've got a different question. They're going, don't make me do something new. I'm already a GS1 customer.
+
+Tell me how to make use of my existing investment. So this page is all about that. It's really targeted at people who have read through this and go, oh, sounds good.
+
+Sounds a bit like GS1. I'm a GS1 customer. How do I use what I've done already?
+
+So this page is basically there to allow GS1 to say exactly that. Dave, I think there's certainly an advantage in listing all of the ISO recognized globally unique identifiers before this page, because we want to make sure the aviation industries and all of the others that extensively use different, they can see this is for them. But I can provide some content on that if it's helpful.
+
+Yeah. All right. And then the last sections here are, this one is, and Nancy Norris has volunteered to take on this one.
+
+This is template business cases. So basically, I'm an authority and it's saying, oh, you should issue verifiable credentials as a tax authority or something. What's the policy value?
+
+Can I pick up a sort of half done business case and fill it out to quickly make my case to my executive to do this? It's kind of linked to the pledge. We're going to ask people to pledge to implement UNDP.
+
+The first question they'll ask is, what have I got to do and how much will it cost? So the what have I got to do is the specification and the how much will it cost is the business case section. I can't predict exactly what it will cost, but you can give some templates and give some guidance in terms of, well, it costs British Columbia government this much to issue digital mine permits, for example, is a benchmarks.
+
+That's what this section is all about. Yeah, and tools and support are basically what may suggest tools and support. Test cases, test service and so on.
+
+Extensions register is where we will put exemplars of extensions of UNDP. And there are two live candidates right now for this. One is the UN critical raw materials project.
+
+We'll refactor that site to be an extension of UNDP. And the other one is the Australian agriculture thing. There may be more, right?
+
+More the merrier. But we've got two different industry sectors in different countries that we can use as use cases to test extensions methodology. That's this bit.
+
+And then this last bit is implementation register. This is the kind of advertise that you've done the right thing place after making a pledge. And then you go through the tests and you get the tick.
+
+You go, I've done it. I'm conformant. And this could be for software vendors or for industry actors or whoever to publicly list their implementation.
+
+That's part of the business case to be discoverable through this. So I've talked for a long time and what I wanted to propose now is all the people on the team. Should we split into two groups that meet on alternative fortnights?
+
+One more technical group completing this between now and July and one more business centric group completing the policy recommendation literally over the next month. And does that make sense to do that? Because if so, then I'll arrange what will be weekly calls for me, but one week it'll be policy and the next week technical and then one week policy and next week technical and so on.
+
+If you agree that that's a useful thing to do, we will do it. And for the technical people, I would please raise a ticket in the repository and I've put a whole bunch of tags wherever it is. So that you can categorize your tickets.
+
+Why is that not opening? I must have a slow internet. Or GitHub's down or something.
+
+Anyway, to say, here we go. Bunch of labels here. Representing all these different sections.
+
+But I think I invite people to say, here's my thoughts on that section. Before we get into pull requests, I mean, you're welcome to make pull requests, right? Certainly if you find stuff in other pages that are reasonably complete and you disagree with something or you're spelling a mistake, go nuts with pull requests.
+
+But where it's an empty page, I thought maybe we would have a few tickets and discuss the tickets until we reach a consensus that, yeah, that's the right material. Do you think, Nis? Yeah, always good to start on the issue, work out the requirements before heading into solution.
+
+Yeah, so let's use ticket. Read the requirements that I've had a guest at. Write a ticket saying, I think this is how trust graphs should work or this is how trust anchors should work.
+
+We'll have a discussion around the ticket and then we'll start doing pull requests to make content. And that's basically it. So I'm finished and it's taken almost the entire time to walk through that.
+
+I hope it was useful. Any questions? Yes?
+
+I have just one detail that I kind of kept grinding with me is you said DPPs will not be at school level, it will be at batch level. And then later on, you talked about anti-counterfeiting, which was on the serial number level. It's my understanding that DPPs have to kind of span the whole range.
+
+And I would assume that we start, indeed start at school level. And whatever claims can be made about just the organization, manufacturing or selling, that's better than nothing. And then you work, you kind of expand from there, make it more and more detailed into batch, into serial, where it applies.
+
+That's my thinking about that. Yeah, you're probably right. One of the challenges is, so I don't dispute that.
+
+I think one of the key principles throughout all of this is don't make the bar so high that nobody can stop. So you have to accommodate the way the world is. If you want traceability of constituent parts, you almost always have to do it at batch or serial level.
+
+Because you could have a SKU for, I don't know, a T-shirt that runs for a year and uses tons of cotton from three different countries for the same SKU. So when you're actually trying to draw the value chain, you might need to go to batch level. But that shouldn't preclude someone producing a DPP, maybe without the full traceability picture, that makes assertions about SKU level ESG criteria.
+
+Maybe even with attached conformity credentials, that should be perfectly valid and allowed, I think. It's worth less, of course, but it's also a much lighter lift. And there's a chance that manufacturers and industry will actually be able to get started and then collaborate.
+
+That's my point. And it's a good point. And that's one of the key principles.
+
+Keep it simple and make it achievable and grow deeper capability as you go. And I do worry that as I went through this, and I've just had more and more sections here because more and more things came up like vocabularies and shadow accounts and this and that. And I go, there's quite a lot to this.
+
+And what I haven't done yet is exactly to your point. What really is a minimum conformant starting point? And that's a piece of work to do, I think.
+
+Probably down here in this implementations register, when we say what conformity means, there could be levels of conformity, including a really simple, you know, no conformity credentials, no traceability, just a passport. And at SKU level, is that the real kind of bare bones minimum? I don't know.
+
+Right. This is something to discuss because you do that. But what you want to make sure then is that it's clear there's not that much trust associated with it.
+
+But some data with little trust is better than no data because I can't do it yet. So, yeah. Okay.
+
+Anyway, what I want to do is move. Yes. Sorry, Steve.
+
+Yeah, sorry. I raised my hand. I guess you didn't see it.
+
+Just want to do a quick check. When you talked about the business case that's on the screen, you earlier alluded to a Word document that would be where we center our policy level content. Will you be citing the business case within that or that's still a separate?
+
+Yes. No, no, absolutely. It's just that it's meant to be a short document.
+
+So it will say things. There should be a strong correlation between this site and the policy document, which is actually a more urgent delivery. It's just that we've got a lot of team and energy and we know we've got to do this.
+
+So I diverted over Christmas to fleshing out this so that we can spin off that technical team to work on this while we go back to the Word document that will say talk about business case. But it's not you're not going to put an entire business case template in a policy document, especially when you've got different business case templates, one for regulators and one for, you know, different roles. So, yeah, the whole idea is the policy document is a compelling story.
+
+And if you buy the story, you go look at more details on this site, basically. OK, understood. Thanks.
+
+Two hands up, Peter and who else? Me, Joe. Hi, Steve.
+
+Yeah, just very quickly. You mentioned a few times that we'll be leveraging off some of the some of the work being done by others. We just need to make sure that if we're going to do that, then they're obviously represented in the various different groups.
+
+Yes. So Brett may offer his apologies that he couldn't join today because he had a personal issue. And he is the lead of that DPCC project that is defining the conformity credential.
+
+So I attend his things. He attends my things. And yes, it's.
+
+Both the technical and the policy side of things, obviously. Yeah, yeah. But I think to your point, it's more interesting when we start linking to stuff outside of you.
+
+And, for example, we point at Anil John's SVIP profile and we should let him know we're doing that and ask him, does it make sense? How does he want to contribute? You know, there needs to be an open invitation to that sort of stuff.
+
+Yeah. Yeah. Peter, you got a question?
+
+Just a quick one. A lot of thought since the pilot that we've done in Australia is that the secret when it comes to supply chain is the transformation event that provides the linkage between the two identifiers. But I think we might need to describe that in a bit more detail to the extent that the reader might be interested in supply chain.
+
+If they're just interested in credentials associated with an organization of legal entity reference, that's pretty straightforward. And that's probably where we should start. But when it relates to supply chain and there are different identifiers being used, I think we probably really need to call out that event type, which is that sort of the input output linkage.
+
+Typical of a transformation and a manufacturing process. I don't think we can leave it up to the reader to have that background to make that connection. Yeah.
+
+So, look, I think at the architecture page level, we need to sort of start to talk about this kind of minimal implementation and then batch level traceability stuff. Because as soon as you get into traceability, you do get into the batch level and then you do get into transformation events. So it is there, right in the middle of this model, as you can see on the screen now.
+
+But this page currently is just, here's a model with no words. So we've got to flesh it out and say, what are these things for? I also don't really want to repeat a whole lot of rich GS1 documentation around EPCIS.
+
+We should be referring to that and saying, but this is more general than that. And you can use it without GS1 identifiers. This is how he has a profile.
+
+There's just work to do in this section about that, right? Are we done with all the hands and questions? Because we're at the end of the time.
+
+I just want to see, does anybody object to us splitting into two groups? I'll be at a meeting every week. Anyone that wants to can attend both meetings, but I'll have one for policy doc and one for technical.
+
+And then for the technical people to now feel free to go nuts and raise issues in GitHub about your ideas for each of these sections. Including ideas that the structure is wrong and it should be like this or there's something missing or there's too much. I've just tried to put a meaningful scaffolding in place so that we're not sitting with a white sheet of paper.
+
+That's all. And by the way, just for your interest, it seems somehow, even though this is an incomplete document, the REC 49 is not even in draft yet. And this page has got lots of empty content.
+
+The word is getting out. We're being asked to present to the OECD, to GS1 Global Forum, even to the European Commission, Digital Product Passport, Director General Group, etc. about this project.
+
+So somehow, it must be through the esteemed membership, news is getting out and interest is high. So a bit of pressure there. Must be a good thing then, Steve.
+
+Well, I think that's a good thing. That's right. That must be a good thing.
+
+And it's a good thing. And just another confidence inspiring example is the little pilot we did with beef in Australia for a little bit of a shoestring of a budget is now there's strong commitment from government and industry to turn it into a national scale rollout with a much bigger budget. So, you know, we've shown what's feasible and people have said that fits our needs.
+
+Now, let's spend some money and do it on a big scale. So that inspires me a little bit to think that when people actually see it working, get their head around it, they go, yep, that's the right solution. So I'm feeling quite inspired at the moment.
+
+I hope it stays. All right. So I'll send out two separate sets of invitations.
+
+Feel free to decline one that you're not interested in. You'll get both. And if you say I'm a policy person, not a technical person, then decline the technical one, and vice versa.
+
+Or if you want to attend both, then attend both. All right, so that'll happen next. And I'll follow up the just a small number of people in that UN registration list that have not yet registered that should.
+
+But in general, we're in good shape there, I think. So thank you, everyone, for your time. And please feel free to read this site and give me your feedback and raise issues and stuff, particularly all this waffly stuff about actors and their incentives.
+
+Already doing it. All right. Thank you, everyone.
+
+I've taken six minutes over your time. I apologize for that.
+
+[Speaker 2]
+Thanks, all.
+
+[Speaker 1]
+Thanks, guys.
+
+[Speaker 2]
+Thanks, Steve.

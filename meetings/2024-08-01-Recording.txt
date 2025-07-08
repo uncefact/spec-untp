@@ -1,0 +1,500 @@
+[Speaker 4]
+Good morning, good afternoon, good evening, good afternoon.
+
+[Speaker 1]
+All right, three minutes passed. I think those that are going to join have joined. I'll kick off.
+
+Thank you very much everyone for making your time available. And just a reminder, this meeting is being recorded and a summary will be posted. And that any contributions you make are considered to be UNIP, that will be subsequently made freely available to all.
+
+All right, well, there you go, Nancy's joining. Nancy's had a long vacation. Hi, Nancy, Marie.
+
+[Speaker 8]
+Hello. Hey.
+
+[Speaker 1]
+Have we got any new people on the call? When was the last time Martin joined us, Martin Pompery?
+
+[Speaker 2]
+Indeed, that's correct. Good evening or good morning, everyone, depending on your time zone.
+
+[Speaker 1]
+Yeah, do you want to give a quick introduction? Because I think I haven't seen you on the calls before, right?
+
+[Speaker 2]
+That's true indeed. So I'm one of the co-founders of an NGO based in Berlin. We founded the NGO four years ago.
+
+It's called SINA Foundation. We work with global standard setters and standard setting. We established a protocol in the area of carbon transparency with the World Business Council for Sustainable Development recently, doing this with other standard setters as well.
+
+Yeah, and it probably explains my interest in this project here.
+
+[Speaker 1]
+Yes, yes. Have you had anything to do with the Pathfinder framework?
+
+[Speaker 2]
+Yeah, indeed. So the design of the Pathfinder network, as they call it, and the translation of the Pathfinder framework in the digital sphere and to create a product ecosystem, all of that, that's the work we did with the World Business Council.
+
+[Speaker 1]
+Okay, now I understand. Okay. Yeah, so there's some overlap both in content and in, if you like, digitalization strategy.
+
+[Speaker 2]
+Exactly. Yeah. Okay.
+
+[Speaker 1]
+Well, we might have a moment to chat about Pathfinder, both framework and network, because I think it'd be useful for the rest of the members on the team, but let's just get started with the usual processes.
+
+[Speaker 8]
+Share my screen. Is that working? Yeah.
+
+[Speaker 1]
+And we go to... Sorry, I should have set up this page in advance so that I go to the right repository. Right.
+
+So the first new contribution here today is actually from me. And it's an area we haven't spoken about much before. This is an initial contribution to that section of UNTP, which is a business case.
+
+So what I'm going to do, rather than walk through this rather technical looking PR, is just show you what it looks like on my local machine. If I can find it. Where did I put that?
+
+Juliet. So just a quick reminder, the framework has some schema stuff and also some things about how we find it we've spoken about, how we secure it, how we understand it, but also this stuff about how you value it. What is the business case for implementers?
+
+Because this is a voluntary standard. It's not a regulatory mandate. And for anyone to actually implement, there needs to be a good solid reason.
+
+And so we thought we'd put together some kind of boilerplate costs and benefits that can accelerate those potential implementers that want to make a business case for implementation, either at the individual or community level. So initial content, and if you remember, there are three parts to the business case area. One is about the costs and benefits from the perspective of an individual supply chain actor or regulator or whatever the role is.
+
+And then the next one is about the costs and benefits from the perspective of a community and how can we bring together certain actors like development banks and the like to accelerate and achieve some, if you like, some shared cost savings and also some extra investment. And then the last one is about if ever this all takes off and people start implementing, how can we report back the value, cost and value of those implementations so that they can improve the benchmark business case. So just a reminder, these are the three parts.
+
+And in the business case template, what I've done is tweaked slightly the material that was presented in Geneva and said, okay, I think, and this is where your input will be helpful, I've kind of categorized some benefits and costs and benefits of broken into three chunks, basically, either something that potentially helps increase your revenue, or something that helps reduce your costs, or something that perhaps through the combination of those and some other less tangible things, essentially increases your share price, right, increases the value of your business. Those are the areas of benefit. And then in areas of cost, it's, well, things like, what have you got to invest to change your practices to be more sustainable so that you can realize the benefits?
+
+What does it cost to get certification and the like to do that? And then what does it cost to actually implement transparency systems? So there may be more categories of benefit and cost, but that's my first stab at them.
+
+And what I mean by, let's have just a quick look through. So market access benefit is about, oh, and by the way, we don't have any actual implementations with real, it cost me this much, and I realized this benefit yet. So when it comes to quantification, all we could do is just look for general market indicators, right?
+
+So for example, with revenue uplift, and that's that part of revenue uplift called market access, I used, for example, EUDR, CSDVD, USFLP. These are all regulations that say, if you don't comply with this criteria, then you're basically blocked from our market. And so then the question is, well, how big is that market?
+
+And what is the volume of imports that would be targeted under those regulations? So EUDR is about 400 billion, something like that, which is a certain percentage of world trade. So I've just done some kind of high level things to say, well, probably this represents about, this collection of regulation represents about 1% of global trade.
+
+And so there's a kind of rough benchmark for it. Similarly, with price uplift, there's all kinds of stories about the huge proportion, apparently, of consumers that are willing to pay more, a somewhat lower proportion to actually pay more than an even lower portion that continue to pay more. And this one has a lot of variation in it from zero to 10%.
+
+And again, I put a little bit of references and finger in the air, again, about 1% of revenue might be achieved through higher pricing of your products, maybe it's more than that, and anti-counterfeiting and so on. And then into cost reduction, I got started on compliance costs and finance costs, but, and then I kind of ran out of steam and it's not finished yet, but it's a first start to which I'd really be happy if anyone else wants, has got ideas to just contribute. And to do that, you just click edit on the bottom of the page.
+
+There it is, edit this page and add your content, but there's a beginning. And what I thought was, what you realize quite quickly is that obviously that in a real actor, it doesn't make sense to just take these numbers like, well, these market access regulations represent 1% of global revenue. Therefore, that's 1% of my revenue.
+
+In a real actor sense, of course be anything between zero and a hundred percent, because it will depend, are you actually selling, is your primary business selling products into the European market that are subject to deforestation regulation? If so, potentially that's a hundred percent of your revenue at risk, or if it's not, it could be zero. So what we've got to do is when we get down to these actual usable templates is determined for each cost and benefit category, what the key dimensions are.
+
+So that if I'm preparing a business case, I can say, yes, I am, or I'm not impacted by these market access regulations, or I am, I am not making a commodity that has an evidence-based price uplift for more sustainable produce, or I am, when it comes to anti-counterfeiting, it's again, you get into this kind of percentage of global trade with lots of evidence, but really it's largely focused on luxury goods and pharmaceuticals.
+
+So, you know, are you in that sector and so on? So it's just the beginning, but that's where I'm at with it. And so first I might see if anyone's got any comments on just those categories and the general approach to writing some text, describing the category, then coming up with some sort of industry-wide metrics, and then coming up with some way to translate that into what might it mean for an actor.
+
+Any thoughts or comments on that?
+
+[Speaker 4]
+I think your categories looks good to me. I think you captured the main things to be captured. What I'm wondering is what the final product, I mean, what the final writing will be.
+
+Is it more or less of the thing you should evaluate in your specific case? Because as you mentioned, I mean, the automotive industry, the windmill industry, or the textile industry may have very different situations and facing different barriers to entry. And so I guess it having a list of you should evaluate that in your own case, and it does make sense.
+
+And for us as a UN vision, and you're getting more into details, I think it may be difficult.
+
+[Speaker 1]
+Yes, and I think, sorry, Virginia, you go first before you're on mute, Virginia. Hey, Virginia, I think you got the same problem you had last week with your microphone being defaulted to the wrong mic or something. We can't hear you.
+
+[Speaker 5]
+Can you hear me now?
+
+[Speaker 8]
+Much better.
+
+[Speaker 5]
+Okay, good. I've moved. I'm in France this week.
+
+So I have to reconnect everything and then not always reconnected the way it should be. What I'm missing in this are the cost benefit arguments for public authorities and not-for-profit organizations, things that are in organizations like assessment bodies, in particular, and the ones that I think are particularly important are the ones that we want or we need to have implemented as trust anchors.
+
+[Speaker 8]
+Yes.
+
+[Speaker 5]
+So I think it needs to be something that's really focused on them because if they start looking at this, they'll say, well, that's not for me. And yeah, you have conformity assessment buildings and regulators there, but the first part, I don't see very much that's- You're right.
+
+[Speaker 1]
+It's a good point, right? I had this kind of naive idea that I could present a general set of categories of cost of benefit and then say, well, these are the categories that matter to this actor. But actually, you're right.
+
+If I'm a regulator and I look at that, I'll go, oh, well, that's not for me. So there's maybe, I'm not sure how to deal with that. Maybe we restructure this page so that there's kind of the commercial business case and then the regulatory or conformance business case and all this stuff that I've already written goes in the commercial case.
+
+In other words, rather than have this general introduction and then these categories, perhaps we lift these categories up and then put all this content in... These categories probably apply to three of these, right? Buyers, suppliers, industry associations, and software vendors.
+
+You could take a view of this for all of them, perhaps. I don't know, but...
+
+[Speaker 3]
+Yeah, okay. Nancy has her hand up. She might have an insight as a working on the regulatory side.
+
+[Speaker 8]
+Nancy?
+
+[Speaker 6]
+Maybe not insight into that particular question, but the comment that I did want to make was, I think we need to be clear whether or not we're making the business case for pilot participation or longer-term participation, I guess. Because I think those are two important- These are long-term. Yeah, okay.
+
+Okay.
+
+[Speaker 1]
+So that's another question when it comes... If we're making... Where would we put in here?
+
+Is it valuable to have on this site that kind of maturity journey from discovery, pilot, full implementation, and say, well, you don't have to make a business case for a global rollout. You'd make a business case to test and then global rollout. So that's another complexity dimension to this, but yeah.
+
+[Speaker 6]
+It does. And I think there's value either way. Sorry, Zach, you were going to talk?
+
+[Speaker 3]
+I was going to say that the business case for the different phases feels to me more like the community activation program section. Because that's kind of the idea of how do you bring people together to get started. But the business...
+
+Yeah, but I think we need to... My view on this is we need to start getting up here and then keep refining.
+
+[Speaker 6]
+Sure.
+
+[Speaker 1]
+Yeah. So if we put the phase implementation perspective in community activation, but also call that out in business case templates. If you're looking for a business case for a pilot, look over there at community activation.
+
+Then we have a page where we talk more about getting actors together and doing pilots that turn into production here. And then we have this more generic long-term business case. And we refactor it as Virginia suggested to more clearly separate the business case for commercial implementers versus the business case for regulators and the like.
+
+Then that might fit the feedback I've just received.
+
+[Speaker 6]
+Yeah. And Zach, what was the question you wanted me to answer?
+
+[Speaker 3]
+What? So I kind of align with Steve's naive perspective, which is a business case really comes from commercial supply chain actors. And the regulatory business case kind of derives from there in terms of activation of that.
+
+And so I guess the question is, do we really need to separate out the regulatory business case? That's kind of the question I think we're trying to answer. Because ultimately, regulatory bodies are trying to activate commercial outcomes, right?
+
+That's sort of modern trade world, modern commercial world. But yeah.
+
+[Speaker 6]
+I would say that regulators who are seeking compliance for legislation in their own jurisdictions, they would have a business case for adopting this. But then I also agree with you, Zach, that if you are a regulator of an entity that is just one entity along a supply chain, and they happen to be within your jurisdiction, you likely would not be seeking to adopt something like this unless you had industry coming to you saying, we want this, we need this. And then that would be the driver.
+
+[Speaker 4]
+Yeah, I would agree that the driver is from the business side. And then it's a matter of discussion with a regulator and whether regulators are cost or not related to that. Now, where I may see a specific regulatory business case is when the regulator will issue these certificates.
+
+So that's where they may decide to invest in a system which is compatible in terms of, I give you the green light and you can put on your DPP these verified credentials that you are complying. So that's where the public sectors or regulators may have investment to do in order to link to the digital system.
+
+[Speaker 1]
+There's also a value proposition for regulators. There's two roles, I think. There's issuing something, which is their stamp of approval or endorsement or trust.
+
+But there's also, particularly a border authority, receiving firehose of these things with products that are crossing the border and using them to assess compliance in a more automated algorithmic way. Like that storyline that a digital product passport might be to cargo clearance, what a individual passport is to travel clearance. You know, how much that resonates with customs authorities yet?
+
+One or two, it seems to, but it's a long way off. But what order would we put the business cases? Would you go commercial first, then regulatory?
+
+Or would you go regulatory first, then commercial?
+
+[Speaker 5]
+My concern is a little bit the chicken and egg problem. Because many of the benefits that business can derive from DPPs and from this new transparency protocol depend upon having trust anchors, data that's certified by trust anchors. And if you don't have the trust anchors, if the certification bodies aren't issuing verifiable credentials, if no one's issuing the verifiable credentials that they need to make the data reliable, then the value to the business sector is much, much less than if they are.
+
+And so I think it's really important to make that argument to the public sector. Plus, as the EU and the US legislation shows, the public sector deciding they want to have this kind of data is a big motivation for the private sector too.
+
+[Speaker 1]
+Yes, yes. I'm thinking maybe I call out at the beginning of this section, we put commercial first and then regulatory, but we call out the value of the regulatory role to the commercial sector so that it leads the eyes further down to the regulatory stuff and drives the business case for regulatory. But also, hopefully, it leads to the commercial roles actually calling on their regulator to do this.
+
+Right? What exactly is, I think, Christophe or somebody said that what you want is the corporates knocking on the door of the regulator saying, why aren't you issuing me trust anchor credentials?
+
+[Speaker 6]
+Yeah, I think, I agree. And I think that regulators are typically very conservative. And they're not going to take a leap without that sort of drive that, yeah, the drive from the private sector asking for it.
+
+I mean, that's been my experience anyways, trying to work with our regulators to have them issue conformity credentials, essentially.
+
+[Speaker 8]
+Yeah. All right. Phil, have you got anything you'd like to add?
+
+[Speaker 7]
+Yeah, I'm just thinking, a paradigm we use at work a lot is crawl, walk, run. I'm sure other people use it too. So, what's the minimum you have to do to get started?
+
+What's then the next stage and the next stage? If it's the case, I don't think Virginia meant this, but one could read her comments to mean, right, until everyone does it, there's no point anyone doing it. And if you need that big bang, that's not going to work.
+
+And as some of you know, we at GS1 are in the process of assessing what we're going to do in this. I mean, we should, in this paradigm, be one of the trust anchors that Virginia is talking about. And we're deciding what we should do.
+
+And that decision will be made right about the end of the year. But I know that if I go to our higher ups and say, right, you need to invest X million dollars, and everyone's going to do the same thing, they're going to say, no, that's not going to work. It's got to be, what's the small step I can take now?
+
+And how can I measure the impact of that before I take the next step? And what we need for this to work is an ecosystem of multiple trust anchors, multiple issuers and reliant parties using these VCs. But what we see at the moment, and I'd love to be wrong, please tell me I'm wrong.
+
+What we see at the moment is single purpose issuance of a VC that is being received and used by a single purpose. We're not seeing one to many, and an exchange across an ecosystem yet anyway.
+
+[Speaker 1]
+Yeah, that's an excellent point. And we do actually, you know, because of some engagement, we are starting to have already with pilot frameworks, come up with some content about exactly that. But it doesn't call it crawl, walk, run, but it's the kind of discovery alpha beta kind of maybe crawl, walk, run is better language.
+
+I quite like that language, actually. But we'd like to refactor this page and make really clear that opportunity to crawl, walk, run. And ideally, when you're crawling, you're doing it with a community of actors under some sort of industry association, as opposed to just an individual.
+
+So the community activation program is really, maybe I should reverse these two, community activation first, and then business case template. I don't know. But yeah, so just making notes here.
+
+[Speaker 3]
+So I've been doing quite a bit of work over the last kind of week on the community activation program and have kind of started to articulate that kind of crawl, walk, run and what that kind of looks like. So I have a fair amount of content to add to the slide, which I was waiting for this poll request to get accepted. I'll add it next week.
+
+And I've been testing with a number of people who are participating into Phil's point. We can't tell you you're wrong in terms of your request, but we're getting to the point where we're getting to that sort of more multi-party exchange. We're starting to see that kind of happen.
+
+And so there's more coming in this. I guess one of the questions that came up for me as we're talking about the business case templates and this process and how we organize this information is how we think people are going to come into this and what needs to be easy to find versus if once I sort of get my head around it, I go and look for more details. And the business case and the value proposition I think is really important that we make really accessible.
+
+And I think that's part of what we're hearing this and accessible to our different audiences. So the REC 49, the sort of policy paper is targeted at policy and senior regulatory officials. That's kind of one entry point into this protocol because they'll send it to, if they're interested in REC 49, they'll send their teams in to kind of come and look here.
+
+And if we don't have something for those team members kind of pretty quickly and easily, and maybe see this as something we go back to the landing page and add some ways to get deeper into this content. And then the second level is I hear about this through my community I'm engaged in. I hear another implementer or one of us speaking or something like that.
+
+And I come in and I look for what I recognize as my business needs. And those are kind of the two potential entry points here. And I think we need to think about how we answer those questions as people come in.
+
+So we get people looking deeper and then thinking about how they engage. I think that's kind of what this section needs to answer structurally.
+
+[Speaker 1]
+Yeah, I think the site as a whole probably needs, as you said, a little bit more material right on this homepage so that you can go straight to you know, under regulators business case or implement, you know, what next steps or something. So you don't have to go and go, Oh, how do I read this? And what's this about the UNT PR?
+
+But all that, you know, it's a bit intimidating, right? So yeah, there's a there's a case for that. Well, that was quite valuable feedback, I would say we've got some good directions to take with this stuff, which I think if we don't get this stuff right, then you know, we won't see much uptake.
+
+So I think it's quite important. And thank you for your feedback. Do we have one of the questions is, do we need to refactor before we merge this?
+
+Or is do we merge this and then refactor? Are you happy to push what is there now? For now?
+
+Any objections to that?
+
+[Speaker 6]
+I think you should go for it, Steve.
+
+[Speaker 3]
+I agree, because I've got stuff I want to add and refactor on top of this.
+
+[Speaker 6]
+So yeah, I think we need something to start. And then we can refine.
+
+[Speaker 1]
+All right. Click merge pull request. Imagine it's going to the site.
+
+There we go. Right. Well, that's that.
+
+And it's such a relief not to be talking about JSON LD vocabularies for once. No offense, Jason, but you know, to get into some some material content. One other thing I was hoping for your feedback on is a couple of new, some little bit of rethinking of the digital product passport.
+
+And if you remember, let me just pull up. I know not everybody likes these these diagrams, but it's all I've got. Well, it's not all I've got, but I'll just walk through this.
+
+If you remember, a digital product passport is a verifiable credential whose subject is a product. No great surprises there. With some fairly sort of common to be expected properties like serial number, batch number, little picture description, classifications, further information, where it's produced, who produced it, etc.
+
+And then these relationships to other things which give extra information about this product that is useful to include in a product passport. So this is where we get into things like material provenance. What's it made of and where are the materials from?
+
+That obviously goes to things like regulatory compliance. And you can also infer risks around modern slavery and things like that from that. And then there's this thing we have here called a declaration, which is, it's a claim of conformity to sort of, it's a placeholder to construct pretty much any list of conformity claims.
+
+I conform with EUDR regulation, and here's the evidence or I conform with this product safety, construction, steel, tensile strength, and you know, here's the evidence. This is a bit of a generic placeholder. And one of our challenges is to provide guidance on how best to use that generic placeholder for different use cases like battery passports and so on.
+
+But I added this emissions performance and circularity performance, and I wanted to walk you through that a little bit and get your thoughts. Because as far as I can see across the world, leaving aside European regulation, most regulators are starting to enact some sort of sustainability disclosures, annual disclosures for corporates. And in some cases, they're fairly general sustainability, including emissions.
+
+And in other cases, they're only emissions. So in Australia, for example, it's carbon related financial disclosures, full stop, nothing yet about deforestation or other things. And there's a really nice report, which one of our callers will be quite familiar with called the Pathfinder Framework from the World Business Council for Sustainable Development that has a little picture near the top showing for I might just see if I can find it actually.
+
+Pathfinder Framework.
+
+[Speaker 8]
+Put it in the chat, please.
+
+[Speaker 1]
+Yep, I certainly will. Also put it in the email I just sent. This is basically built on the GHG protocol, which many people were familiar with.
+
+But does quite a nice job of looking at carbon reporting, particularly at the product level. And I found this chart kind of interesting, which is an assessment by industry of how much of your emissions are scope one, scope two and scope three, the dark blue being scope one and two and the light green being scope three. And what you see is that apart from a few industrial processes that themselves are highly carbon intensive, like cement, or obviously flying around the world in jets that burn a lot of fuel, almost every industry is mostly scope three.
+
+And scope three in the general definition includes upstream materials you buy. And that's called cradle to cradle to gate. In other words, all the emissions of my input materials, but it also in the general sense includes a downstream.
+
+In other words, what are the emissions over the lifecycle of the product I make. Now that's kind of hard to put in a digital product passport that's issued at the point of release to market. So the Pathfinder framework says, let's exclude that from digital product passports.
+
+It's an important criteria, but it's post sale information. But it's a useful document, but it made me think that for both this, rather than have to drill into this, when I'm receiving a passport, and try to find what's the carbon intensity of this product I've just bought. I thought, just a really lightweight carrier of if you like high level performance.
+
+This product has, let's say 1.5 tons per ton carbon footprint. And a few attributes that help you understand the scope of that. Because a little anecdote, we sat with some industry actors who did some carbon footprint assessment across their industry with different actors.
+
+It was in Taiwan on PCBs. And two major manufacturers who make very similar stuff from very similar materials, came up with wildly different numbers for carbon footprint. And the reason is things like, did you or didn't you include scope three.
+
+And as from the previous diagram, it makes a huge difference. What calculation rules did you use? And what data sources did you use?
+
+And stuff like this, has a big impact. So a little attachment to the product passport that says, here's the carbon footprint. This is the scope it includes.
+
+And we're recommending cradle to gate, meaning scope one and scope two. And that part of scope three, which is everything up to the point you release your passport, but not after the point. It's worth putting a separate placeholder there for that, so that you can always just grab that data if you want.
+
+So that was my rationale for adding that. And I welcome your thoughts and feedback. And I did something very similar for circularity performance.
+
+Also an interesting bit of research, which I may, I think I posted a link in the email I sent out, which is actually how do you measure circularity? There's an idea of something called linear flow index, which is how much of my product is made from raw virgin material, and how much of my product is not recyclable goes to waste. And if you've got 100% linear flow index, it means you basically made your entire product without recycled materials, and everything in your product is going to end up in landfill.
+
+And as your linear flow index goes to zero, it means you're more and more circular. You've got more and more recycled content in your product, plus you've designed your product to be recyclable. And so the two factors go together to create a circularity index.
+
+And then also there's an idea of what they call utility, which is how durable is this product? If I make a product that goes on the scrap heap after a few weeks, it gets a lower score than something that has a long lifetime. So you measure this with things like, for example, number of cycles before a battery will start to degrade and so on.
+
+So these three things come together in a fairly well established, wherever you look at circularity, Ellen MacArthur Foundation, dozens of other sites, they all have this same kind of attitude to how do you measure the performance of circularity by these three dimensions. So I did that as well. So that's enough talking now.
+
+I just wanted to say why those two boxes are there and solicit your input about are they valuable to put there in addition to this generic placeholder for much richer claims and data. That's me. Nancy, did you want to say something?
+
+[Speaker 6]
+Yeah, I think this is really important. I think it's really important, especially I don't know as much about the circularity measurements, but certainly for emissions, as you've indicated, there's so many different ways to calculate and what you include and what you don't and what standard you're using makes a big difference into the kind of numbers that you end up with. So I think having a placeholder for basically to describe how you arrived at the number that you have arrived at for your product at that stage in the supply chain is very important.
+
+The word scorecard isn't intuitive to me. To me, you're just documenting your assumptions and your methodology, your calculation methodology. So I think scorecard is misleading to me, but that could just be the way that I interpret that language.
+
+It's a concept. I think it's really important. And I'm not surprised that you've had to break it out into a separate...
+
+I mean, will this be a separate credential or will this...
+
+[Speaker 1]
+No, no. It's just claims that go with the passport, but for two particular criteria that are almost universally of concern to regulators and parties around the world and just put in such a way that it's always easy to go there and get that data as opposed to this more generic structure down here.
+
+[Speaker 6]
+So this will be in the product passport?
+
+[Speaker 1]
+Yes. Yes. It may or may not be supported by an independent certification.
+
+Right.
+
+[Speaker 8]
+Okay.
+
+[Speaker 1]
+So a hand go up and back down again from our colleague who joined us on this call. Where's he gone? I'm interested in your views because you've been working with the WBSCD.
+
+[Speaker 2]
+Yeah. So let me briefly put in the chat. There's a data model for product carbon footprints already, and I would like to invite you to maybe take a look at that.
+
+The whole carbon footprinting topic, and I'm pretty sure with circularity, it's the same. It's unbelievably complex. And I would really refrain from trying to put something out there to have it in there instead of thinking about, is there something that could be reused already for circularity?
+
+I've never done such research. I guess there might be existing data models worth looking into. But I would just as a cautious tale, this topic is so complex.
+
+Please, Virginia, you want to say something?
+
+[Speaker 5]
+Yeah. I just wanted to say, because I don't think you're as familiar with how these work in CFAC. The idea is more to say, this is which system we're using for classification, not to set up a system, but to say, okay, we're using the Pathfinder system, or we're using system A or system B, and this is the rating inside of that system, and not to set up a new one.
+
+Because there are a lot of systems, these are very complex issues. And one of the issues for business and for government is that there are multiple different frameworks set up, multiple ways to measure circularity and to classify it, and multiple ways to classify emissions. But if you're receiving it, what you need to know is which system is being used, which framework is being used, and what were the results from that.
+
+But the results based on however that framework measures things is not to create new ones.
+
+[Speaker 2]
+Yeah, I got that. My point was to take a look at the existing data models for inspiration for what we have here. So I'm not saying Pathfinder framework should be set in stone, but there's one thing specific about the Pathfinder framework, which is, it is not saying there is a single way to do carbon footprinting, but it is more like a system of systems.
+
+It is about aligning on how do you in general, in principle, calculate carbon footprints in a way that it is universally applicable. And in that regard, I think it does fit the bill, what Virginia was just saying. My point here being, if you want this data to be used by the industry, and I think this is what you want to achieve here in a sense, given the discussions on the business cases that we just saw, I think it does make sense to think about interoperability here and what is being used already in the market, and to make what is already there expressible within the system with as least fraction as possible. That's why I really like to recommend to look into what is already there, to not come up with another data model, because in the carbon emission space, I see this from happening. And I also see that this is detrimental to the cause, I believe, what you want to achieve.
+
+[Speaker 1]
+So can I ask a question on that? I did have a look at the Pathfinder data model, and you're right, it's a complex space, and the data model is much richer than this little box on the screen, and includes things like emissions with or without biogenic land use, and a whole bunch of other criteria that give greater shape and meaning to the aggregate assessment, what is the number? And I found myself asking myself, should I replicate all that?
+
+Obviously, with some permission, I have to talk to you. But also, what's the right balance between what you put at the summary level, because there's a principle here of trying to make things as simple as possible, but not more simple than that makes them unusable, right? So does it make sense to expand this box, for example, with all of those extra data elements that are in the Pathfinder network interface description, and say, well, you can exchange those using the Pathfinder network API, or you can stick them in your verifiable credential with your passport, but they're the same thing, right?
+
+I think that's where you're going. It would be better to say, whether you push this data to the Pathfinder network, or whether you stick it in a credential, it's the same data properties with the same meaning, and that's what's important, right? My question is, do we put that richer Pathfinder model down here in declarations with some guidance about main value pairs, or do we reflect it all up here?
+
+Because the intent of these was kind of this simplified helicopter view that's potentially cheap and easy to implement, and I'm not sure of the answer to that. I fully accept what you say about not reinventing the wheel, and partially that's why we have this very generic declaration thing, because the intent is to say, what does the Global Battery Alliance say about the sustainability performance factors that matter? And you would basically list a whole bunch of declarations referencing the Global Battery Alliance with main value pairs, so you can reflect almost anything with this generic package, including the Pathfinder framework data model.
+
+It's just a question of how much of it you put up here, but that's why I made it deliberately much simpler, but I'm not sure that's the right thing to do.
+
+[Speaker 2]
+I like the simplicity here, don't get me wrong, and if it was possible to have consensus around what the carbon footprint of the product is, we would already be in a better shape. But as you mentioned, it's really strange, but for many very technical and appropriate reasons, I would say, the Pathfinder framework doesn't have one carbon footprint for a product. It has in a way multiple ones, and depending on the product, and so many different other factors that are extremely specific, there's just no such thing as a single product carbon footprint.
+
+[Speaker 1]
+Just to give people an idea, I'll scroll down, there's a part in this stuff. Rather than look at the text bank, it's easier to look at these data.
+
+[Speaker 2]
+So if somebody for instance would be saying, we have the Pathfinder framework and I apply the Pathfinder framework, even then it would be very, it could mean four or five different things when you say carbon footprint. That's a problem. And as you said, depending on which you pick, it really makes a huge difference in practice, depending on all sorts of very complicated details, but you can make it look nice and not so nice in terms of the absolutes and what you pick and what you don't pick, et cetera, et cetera.
+
+Here we go. And the challenge really is, as I said, there's no understanding or there's no majority that says, yeah, this is a product carbon footprint. That's a problem.
+
+And due to that, there's this multitude of values, which makes it so damn complicated to say what's the carbon footprint. So the solution is to say that, okay, we have these four or five different ones. It's just what it is until we have reached consensus.
+
+It is unfortunately very complicated. Just as a cautious tale.
+
+[Speaker 4]
+And you need to reach consensus and then you need the whole world to apply the consensus, which is even a higher complexity. I mean, for me, putting this emission carbon and the circularity and why not the biodiversity index is a political statement. You just want to show that you care about it, but what you will get in it, in my view, as was explained by Martin here, is something which will be very unreliable.
+
+So maybe if you are an expert of the expert and you are a big company with input, you may try to understand what that means. And your small and medium enter your companies may not be able to even get a footprint, at least at a product level. So you may either get things which are not comparable or no sink or greenwashing.
+
+So that's my concern here is that if one DPP to be something that people can trust. And if you incentivize people to put things that maybe would be in good faith from their side, but not something you can trust or compare from your customer side or from the side, you may run into trouble and you may weaken the DPP. Now, on the other hand, I do recognize the value of the political statement to put it.
+
+[Speaker 1]
+Yes, maybe, but also trying to make something simple enough on the basis that something's better than nothing.
+
+[Speaker 4]
+I mean, I'm just showing on the screen here the thing you want, you want to have it because anyone has his own way to do it. So one was starting to do that. They will not change their system just because of the DPP.
+
+And the small ones, they probably don't have the mean to do any of those.
+
+[Speaker 1]
+But are we just moving the problem? Because if we don't have that little box, then you put your emissions data in that declarations repeating section and you're back to, well, what to put, and so if you look here at Pathfinder... You're right.
+
+[Speaker 4]
+I agree with you. But if you have a box, people will want to fill the box. If you have no box, the one who have nothing to say will say nothing.
+
+If you have a box, people will try to fill the box even if they don't have the right data. That's my concern.
+
+[Speaker 8]
+Right.
+
+[Speaker 3]
+And I would add an additional sort of consideration as we consider as we think about this is what is the UNTP governance structure around adding these summary boxes? So you've looked at adding circularity in carbon, but why not biodiversity? Why not anti-slavery?
+
+And where does the boundary for what we create these little boxes... Where does the boundary for what the UNTP team creates these little boxes around sit? And how do we determine that?
+
+And how do we draw that line? To Kristof's point, how many political statements do we want to make? And that gets pretty fraught and pretty challenging for this group to manage.
+
+[Speaker 1]
+Yeah. It's a tricky balance, right? I mean, we said before that it's not for us to reinvent frameworks like the Pathfinder framework only to represent them in a data carrier and give a consistent way to represent them.
+
+So we could, to Martin's point, provide an example of how... I'm trying to find a diagram of how to represent every Pathfinder element in this repeating declaration section. And just say, if you want to use that, then put it here like this.
+
+And then that's not us taking any position. But it does bury the data in a certain amount of complexity. And I don't know.
+
+We're approaching the end of our conversation here. But it's been helpful because we're finally talking about things that business matter. So I don't think we've got a consensus on these boxes or not.
+
+Does putting them there draw that? Because I do try to say things like that operational scope are indicating whether or not scope three is there. What reference standard do you use?
+
+So you could say Pathfinder framework here. Maybe we need a footprint type. I don't know.
+
+But yeah. I also have stakeholders that look at this model and go, yeah, but where's the carbon footprint? Where is the stuff that I care about?
+
+And if it's buried down here, it's hard to understand.
+
+[Speaker 5]
+I think what might be useful is if you could come up with three or four examples and then see, can you put them in there? And what's the result?
+
+[Speaker 8]
+Yeah.
+
+[Speaker 5]
+And where are the problems specifically? Instead of sort of discussing it in an abstract, take some complex examples from a couple.
+
+[Speaker 8]
+Yeah, absolutely.
+
+[Speaker 5]
+And I think that's what you were talking about in your recent conference.
+
+[Speaker 1]
+Yeah, that applies to the whole thing, right? You test it actually works by running some examples through it. And we're hopefully close to doing that.
+
+But anyway, look, has anybody got any last comments before we close? Because we're one minute away from, or we're actually just arrived at the end of the call. I'm taking this that we've got some good feedback for how to restructure the business case section.
+
+And we're still in a kind of deliberation mode about how to represent these increasingly well-established frameworks like Pathfinder in a digital product passport. And this question about separating rich detail from simple helicopter view and whether it's worth having or not. And I think I've heard both sides.
+
+So we don't have a decision yet on that, but maybe we just dwell on it until next call.
+
+[Speaker 3]
+One thing maybe to quickly leave with you, Steve, is it might be the 17 sustainable development goals that are the boxes that we have the helicopter view around, right? Because that sort of lands in UN scope and gives a boundary anyway.
+
+[Speaker 1]
+But yeah, even more difficult to score some of those though, isn't it?
+
+[Speaker 3]
+But that might be a way of framing where our scope begins and ends is just a thought.
+
+[Speaker 4]
+Yeah. All right. I think one of the points we want is to uptake.
+
+The more complicated we will be, the more difficult it will be to people to come and voluntarily apply the framework. So I think that's also one consideration we need to have in everything we are doing here. Make it as simple as possible so that people are happy to volunteer and do it.
+
+And yeah, so we have to balance the level of details we want with how easy it will be for people to comply or to fill, and therefore how easy for people will it be to get on board. On a general point of view, not specifically on this one, but yeah.
+
+[Speaker 1]
+Yeah. So maybe one balance here is generally we've just been looking at the digital passport here and there is the associated conformity credential, which is the independent assessment of the truth of your claims. Sometimes that can be a first party assessment in the sense that you get some endorsement to apply a particular model.
+
+Let's say the Pathfinder one could add to this basically, okay, make a claim, but now give me your calculation evidence. I don't know. We haven't resolved it here, but I have to say thank you very much for joining us, Martin.
+
+I hope it won't be the last time we see you, and hopefully we can resolve this together in a way that is consistent with what I think are really well-written frameworks like the Pathfinder thing and agree a way forward. So we'll leave it as a topic for discussion, but I do like Christoph's point that if you don't make it simple enough, we can make it perfect and nobody implements it, or we can make it simple and we start to get some uptake and then we start to iterate, and finding that line isn't easy. I don't know exactly where it is, to be honest.
+
+Okay. Well, thank you everyone for attending. A very helpful call as far as I'm concerned, and hope to see you again in future.
+
+Yeah.
+
+[Speaker 4]
+Thank you. Nice day to you. Thank you.
+
+[Speaker 1]
+Have a good night.
+
+[Speaker 4]
+Call you how to work. Have a good night.
+
+[Speaker 8]
+Night.

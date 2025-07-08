@@ -1,0 +1,675 @@
+[Speaker 7]
+Hi Steve, how are you all? Hello, I'm well thank you. How are you?
+
+Hello. Good, this time not travelling so... Yeah, unusually, we see you.
+
+Exactly.
+
+[Speaker 1]
+I'll give it two minutes for any more to join.
+
+[Speaker 8]
+I'll keep myself muted unless spoken to because you don't want to hear me crunching breakfast.
+
+[Speaker 1]
+While you're there, Phil, there was a request from Zach for that meeting tomorrow, or it might be today your time on computer tester, which...
+
+[Speaker 8]
+I haven't read my overnight emails yet, but okay. Okay. Yeah, we'll see, sure.
+
+[Speaker 7]
+I think Nis is going to join, I'll give him another minute.
+
+[Speaker 1]
+Did the submission go smoothly, Steve? Yeah, I mean, it was sent to the Secretariat who have forwarded to the Bureau, of which I'm one member. At least one Bureau member has already approved it, another one says he'll approve it today.
+
+And at the very latest, it'll be approved for public release. I'll call it. Yeah, actually, I think today will be a short meeting.
+
+By the way, guys, we haven't got a lot to review. It's kind of like sigh of relief, policy document submitted. Now switch focus to the tech spec.
+
+And Nis did a few PRs, which we'll work through just to kind of practice the process, really, I think. And we'll probably get through those in 15 minutes or so. So we may well finish in half an hour.
+
+And then I'd like to ask, do we want to do these meetings every week or every fortnight?
+
+[Speaker 7]
+Yeah, good question.
+
+[Speaker 1]
+I'm okay with every fortnight if you are, because as long as we keep some Slack activity and GitHub activity in the intervening period, it's okay. Unless we get to the point where we run out of time to work through the issues, right? If the practice is we do content and then we make releases during the meeting, if we run out of time, I'd like to make it longer or more frequent.
+
+[Speaker 2]
+What is our deadline? What are we looking at?
+
+[Speaker 1]
+So now that the policy document is submitted, the trouble we have is that during public review, there are a number of links in the policy document that point to relatively empty pages on UNTP. That's okay, because there's a disclaimer on every page that says it's coming. What our real hard deadline is to make sure UNTP website is at what you might call, I don't know, version 1.0 by the time the plenary approves the recommendation document, which is early July. So basically got between now and end of June. And there's quite a bit to do between now and end of June. So what do you think, Nes, weekly or fortnightly?
+
+[Speaker 2]
+I'd rather do, I think it's more like if we want to make sure we have proper, I'd rather do weekly half hour meetings. I think that is more efficient. I know it's more like, it's more work for all of us.
+
+But the more frequently you have the, oh, I haven't done this. Oh, I need to look at that. Oh, I didn't get my pull request.
+
+Like the more opportunities you have like that, the more work gets done.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+I'm all right with that. I'm quite motivated to get this thing progressed. So look, I'll leave the meeting every week.
+
+And probably those that have done a pull request or, you know, everyone's welcome to attend, but you could also skip it if you've not, you know, not participated in any conversation around an issue or not submitted a pull request or whatever. So at least there's a placeholder every week. And I'll probably do a little more, a little more marketing on the channel.
+
+So with that, first of all, I'd just like to repeat the thanks that I put in an email for everyone's contribution to get the policy document where it is, which is now hopefully about to enter public review next week. As soon as it is, I'll let everyone know, of course. And let's move on.
+
+Do you want to take the screen this and work through your PRs? Would that be a way to do this? I mean, they're relatively uncontroversial, I think, what you put in there, except the one about removing.
+
+And since we've got Phil on the call, GS, I just want to quickly bring this one up. The GS1 bindings bit. It did occur, it occurs to me that a huge proportion of people in organizations implementing this will be GS1 customers and the relationship between UNTP and GS1 standards and identifiers is going to be really important.
+
+But it does also occur to me that perhaps the right place for all that information is a GS1 web page somewhere with a pointer to it from this UNTP site in the implementations where we can say, you know, what do you think, Phil, while you're on the call here? It's probably politically a bit more palatable and also probably more appropriate.
+
+[Speaker 2]
+Let's just look at the pull request, make sure we think it's this one. Yeah, it's this page. And I removed it because we talked about it last time.
+
+It was the exact same content and we did talk about it. So I was like, OK, let's just get it out.
+
+[Speaker 1]
+Well, we took it out of the policy document, which left a question about whether it should stay on the website. And what I'm suggesting is that. Yeah.
+
+So I think the suggestion is that there might be multiple GS1 being the biggest and most obvious, but there might be multiple. This is how my my schemes map to UNTP. And we should be announcing with fanfare when someone does do that mapping and pointing to their own website that claims it.
+
+So, Phil, I'm suggesting that at some point when you feel like this, it makes sense. GS1 might want to have a page somewhere that says this is how we align with UNTP. And then this site can point at it.
+
+[Speaker 3]
+Yes, we can do that. And I'm trying to be as neutral as I can, given that GS1 pays my wages. So we don't I mean, it's nice to see a section that specifically mentions GS1.
+
+But we don't want to insist on it by any means. And certainly we can we can publish something. And GS1 is going to get mentions elsewhere in the document.
+
+And as you've said, Stephen, you know, it's right that, of course, we're not expecting wouldn't have the temerity to ask that. But, you know, somehow some bits of this require GS1. That's never going to happen, nor would we ask for it to.
+
+But, you know, we are a reasonably important player in this. And we want to make sure that it is obvious how you would use GS1 with this. And as long as it is one of the options, then that's perfectly OK.
+
+So, yes, to your suggestions, Steve, we can work on something with Robert on that.
+
+[Speaker 2]
+GS1 is mentioned 47 other times.
+
+[Speaker 3]
+Yeah. So, you know, I think you're right. I think that's a good that's a good shout.
+
+Yes. Yes. So, you know, I really can't complain about that.
+
+[Speaker 7]
+All right. Over to you, Nish, to work through your PRs, which I've already reviewed and approved.
+
+[Speaker 2]
+Yes. So this is it does a few different things. And that's sort of it should have probably been two different pull requests.
+
+So we don't discuss multiple things at once.
+
+[Speaker 4]
+Nish, would you mind making the font a tiny bit bigger? My eyes aren't as good as they used to be.
+
+[Speaker 2]
+Let me just share the chat.
+
+[Speaker 5]
+I just wanted to say maybe you might want to have a section with a heading. This is something like relationship with other standards. And then you could put in, you know, a list of standards with one or two sentences and one or two links.
+
+And then anyone who wants to know about the relationship of W3C with GS1 could, you know, go to that section.
+
+[Speaker 1]
+Yes, I absolutely think we should reference those key organizations from our site. And so there will be links where we put them. Is it in implementations or should we have a new section, which is reference standards, which is probably not a bad place to put it.
+
+Because we are building on GS1 standards and W3C standards and various others. So at some point, somewhere, this site will point to the GS1 page. And that page will say, this is how we map to UNTP.
+
+And I think that works fine.
+
+[Speaker 5]
+I was just thinking that maybe some people who use GS1 a lot or W3C or other standards may want right at the beginning to say, well, how is this related?
+
+[Speaker 9]
+Yes.
+
+[Speaker 5]
+And so if you had a section about relationships to other standards, then they could go there right away.
+
+[Speaker 3]
+Yeah. Yeah, and I think I'm actually, I'm very happy with the idea of us writing a paper on the GS1 website because that's where we can stop being neutral. And we can say, this is how you do it using our system and fit in.
+
+So, yeah. I'm perfectly happy with that.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 2]
+Okay. Great. I made an issue with that comment, Virginia.
+
+We can track that there. It's in the chat. Please feel free to add any comments on issues.
+
+I feel like we skipped the part where we just go through what is the process of a meeting like this. Can we just spend two minutes on that? This is my suggestion that what I've seen work well in other open source projects.
+
+The work is, we don't do work in the meeting. We do work between meetings, all of us. And the way we prioritize work is through GitHub issues.
+
+The way we contribute work is through GitHub pull requests. So, what I suggest we spend the meeting on, these technical meetings, is to run through the pull requests, make sure that there is agreement on what is it that gets contributed in. So, this is where the change happens on the specification.
+
+And it's good that we all sort of see it before we click the big green button. So, what I was just about to do now is go through, look, these are the changes I'm suggesting. If there is objections, we'll talk about them, and I can go back, I can refine the pull request, and then we'll come back to it next week.
+
+Let me just finish up my rant. Go through the pull request in the order they come in, because they can collide, and then it's sort of best practice. And then switch over to issues, go through the issues.
+
+We can debate how much, if we want to go through all the issues every time, that might be a little much. But that's what I suggest we start off with.
+
+[Speaker 1]
+I was just going to say thanks for that, Nis. And, in fact, better go a bit further, because this practice that Nis is going to take us through is quite common in software development or in technical specification development at W3C. But we're going to probably have a number of participants on these calls regularly that are content experts or subject matter experts, but have never touched it out before.
+
+And don't even know what a pull request really means. So perhaps we should give a quick summary of that.
+
+[Speaker 2]
+Actually, I had the same thought. Why don't we go through the pull request that we have here, and then do a practice run where we file an issue, implement the issue, create the pull request, and merge the pull request. We can do all that in five minutes.
+
+But if that's valuable, if there are people that aren't super familiar with these tools, we can do that. We can also do it next time. But I'd be happy to.
+
+[Speaker 1]
+I think if we don't focus too much time on the actual issues, because we've been through them before, and there's not a lot of change. And today is run through your existing pull requests, and then do another one in such a way that anyone who sees a page and wants to add content and goes, shit, I don't know how to do a pull request. What's that?
+
+Knows how to do it. Using, ideally, the web UI. Let's not assume people have got a Git client.
+
+[Speaker 2]
+Yeah. I'm not super familiar with it myself. I never use it.
+
+But we can try. Yeah, we can try to do that. All right.
+
+Anyway, so now let's pretend this is any normal Thursday. And we come in here, we go to pull request, we take the earliest one first. So that's this one.
+
+We see that there are apparently five approvals. I don't know what that means, Steve, but thank you.
+
+[Speaker 1]
+Approving each change individually, because you've got five commits.
+
+[Speaker 2]
+Oh, okay. All right. Okay.
+
+Perfect. Okay. I've never seen that before.
+
+And then what I'll do, you need to describe, this is like metadata describing what does this do. So it removes that section that highlights GS1 that we talked about. It also adds some normative verifiable credential requirements.
+
+So what we'll do now is go and see the actual changes. This is description of the changes in here. You can see what actually changed.
+
+So some of these are very big. This is just some stupid formatting. It removed some, it's irrelevant because it just, like, it changes a star to a dash.
+
+And it's just because my formatter did this for me. And it's actually bad practice that it's in here.
+
+[Speaker 1]
+There's a little icon somewhere near top right there that shows you a kind of a human rendered view of the change, a highlighted view of the change as opposed to the red and green. Have you tried that? Little button.
+
+[Speaker 2]
+It's this one, right?
+
+[Speaker 6]
+No.
+
+[Speaker 1]
+No, what do you mean? I think it's just under reviewing code space. I think it's that button.
+
+Not that one. That one. Display the rich diff if you click on that.
+
+And then you scroll down a bit. You find, because it's sometimes hard to read that.
+
+[Speaker 2]
+Ah, that's nice. I've never used that.
+
+[Speaker 1]
+So I see.
+
+[Speaker 2]
+Yeah, exactly. So this is changing replication list 2020, which is sort of outdated, to bit string status list entry. And I did that also on the type.
+
+At least I should have. I think I missed. I guess the context should also be changed, but it will catch that later.
+
+Bit string status is what used to be called 2021. It's now bit string status. That's the latest and greatest, and I would suggest we go with that.
+
+[Speaker 1]
+This is for replication status. Well, for status.
+
+[Speaker 2]
+And this takes out some, this adds some normative requirements. They don't render very well. This should have been a list.
+
+And replaces these empty sections. These should have definitely been lists. So more work for me there.
+
+[Speaker 1]
+That's right.
+
+[Speaker 2]
+I think that's about it.
+
+[Speaker 1]
+Yep. That's what I saw.
+
+[Speaker 2]
+All right. So then we kind of do the ritual and ask any objections to merging this. And if we don't hear any objections, then we push the green button.
+
+What that does is it tells GitHub to go ahead and implement the changes into, it merges that, it's called a branch, and merges it into our main branch. There's probably, let's not dive into the technical elements. Then we move on.
+
+We have one. It's great. We have another one.
+
+This is a draft pull request. So it's, I'm not suggesting we do any changes. I'm just highlighting something that we might want to change for the, and it's deleting this thing.
+
+Just for the matter of provoking a conversation about it now. And if we agree that what I'm kind of in doubt about should be taken out, then we can convert the draft into a real pull request and merge it. But for now, I'm not suggesting we change it.
+
+So what it is, is in the, where was it?
+
+[Speaker 1]
+It was in the product passport or something, wasn't it?
+
+[Speaker 2]
+Yes. I was just in doubt about what this render part piece is. It's clearly, it's something to do with rendering the schema for the credential.
+
+So like having a credential that's self-describing in HTML, as far as I can tell, may be super smart, but it's also quite heavy. It's a lot of data to carry around. So I'm just curious what.
+
+[Speaker 1]
+So let me try to answer that. I think one of the key strategies of this is that every machine readable thing should also be human readable so that we don't have a dependency on everyone in the supply chain having a technical, certain level of technical maturity. And then you go, well, who's responsible to render this digital credential in a human readable way?
+
+Is it the publisher or should the verifier somehow know how to render it? And what we kind of inherited a bit from the Singapore Trade Trust thing was the idea that the definer of, if you like, the creator of a credential schema also creates a human rendering view of it. And in the Trade Trust case, the Singapore guys, they don't actually embed the HTML template, they link to it.
+
+And one challenge with that is that it's a bit of an attack vector that you can make it look different by subsequently changing what's there. And there's also another get and so on and so forth. And I did read, I did read, yeah, exactly.
+
+There's a call home aspect to it and all that. So I did read somewhere in a W3C community specification where somebody had written something about rendering that was more like this. It was, let's say, let's embed the template in the credential itself so that we avoid the call home and various other advantages.
+
+We thought, oh, that's a good idea. What I'm not sure of is, has this implemented it according to that community spec or not? I mean, there isn't a W3C recommendation for this.
+
+There's only somewhere I thought I saw a community spec. We should at least comply with the community spec if we think it's reasonable and then promote it and say, hey, this is good. Why don't you make it, you know, make its profile?
+
+But so there is somewhere. And we could maybe, rather than merge this one now, why don't we make a ticket for us to investigate the best practice way of rendering credentials?
+
+[Speaker 3]
+This is, for me, an interesting topic. I get asked all the time, OK, so you can link to a VeriPublic credential. What happens if I click that link?
+
+Now, they don't use the term, but what they mean is how does a browser handle a W3C? And we know browsers don't currently understand VeriPublic credentials, and I don't think there's any immediate prospect of them doing so. And I don't think unless someone has otherwise.
+
+[Speaker 1]
+Yeah. So what we've done in the Australian pilot, and again, it's following the example of the guys in Singapore, is that the browser itself, a raw browser, doesn't render, doesn't understand what a W3C is or able to render it. But a hosted verifier does.
+
+So this is kind of like this is a bit of a call home thing, but it's an option for not technically mature organizations. So what we did with the Singapore-Australia trial and with various other things, all of the Australian agricultural stuff we did, is that the links to a W3C link actually to a hosted verifier. And that can be your choice or those with the publisher.
+
+Sorry, I'm not explaining this clearly. When I create a W3C, let's say a carbon credential or something or a digital product passport, I choose a hosted verifier service that a low maturity consumer of the W3C will get directed to. They don't have to.
+
+They could be a high maturity and just take the W3C into their wallet or into their system and do their own verification and completely ignore the hosted verifier suggestion. But basically, because it's there and the parameter of it is the URL of the W3C itself, and inside the W3C is the rendering template, it is just one link. You click on it, takes you to a verifier service and the verifier service says, oh, there's a parameter, which is a W3C location, gets it, shows it.
+
+That's what we're doing every day here.
+
+[Speaker 2]
+I have an example of that. This is an R platform and this is a verifiable credential and it links to the R platform is the verifier and then it passes the credential as input. So the link is to a verifier, then displaying the credential.
+
+[Speaker 1]
+Yes, exactly. That's how Singapore does it. And I think it's a pretty sound way of handling this varying technical maturity.
+
+And in the Australian agriculture example, we actually had three different technology vendors and we used two different hosted verifiers and it all just works.
+
+[Speaker 2]
+Yeah, it's different because this is where we're here. This is like the HTML page. It's peculiar.
+
+[Speaker 1]
+Yes. The trouble is, there isn't really a good standard for how a verifier will consume that rendering. Because if we drop this credential into this app, it'll go, I don't know what that is.
+
+Won't know what to do with it. So this is why we just raised a ticket to say, let's look at a best practice way that we can actually use as a bit of a standard for how you reference hosted verifiers and how those hosted verifiers will consume rendering templates if they didn't create it themselves. You know what I mean?
+
+Because that's the scalable pattern.
+
+[Speaker 3]
+Yeah, I mean, I see why it's done. It's an elegant solution in terms of presenting things to people. It just introduces a dependency on a company that the user may have never heard of.
+
+So if you know who Transmute is, and if you know Transmute, you're going to trust them because they sure know what they're talking about, then great. But if you're the average man and woman in the street, you won't know who Transmute is.
+
+[Speaker 1]
+And this is it. So that actually is an interesting example of this, right? Where in Australia, the border force is about finally, after two years, to release a digital verification platform, which is also a hosted verifier.
+
+And there have been discussions about, okay, if a chamber of commerce issues a credential and they want to allow a human verifier, then can they use the ABF hosted verifier when they issue a credential? And the answer is, unless the ABF puts some sort of blacklist or something. Yes, they can.
+
+So you can issue it because there's a counter risk here. One is, I haven't heard of Transmute. The other one is, I'm a nobody, and I've published a credential, and I've put abf.gov.au as the hosted verifier. And all it's doing is consuming a credential and saying, yes, it's valid. But it might be casting an impression that somehow ABF says that the context is valid, if you know what I mean, right? So there are all kinds of walks on this hosted verifier thing that I think deserves some discussion, but I can't see a way forward without it.
+
+[Speaker 2]
+Keep in mind, though, also, that it's true that you're routed to a verifier that you may not know or trust, but you still have the data. You can take this to your own verifier.
+
+[Speaker 3]
+Oh, yes. I see that.
+
+[Speaker 2]
+We need somewhere to go.
+
+[Speaker 1]
+Yeah. Anyway. This is an interesting topic, and I think we do need to solve it because we do need human rendering.
+
+[Speaker 7]
+No, no, it's not.
+
+[Speaker 1]
+But I think we're getting closer to at least a shared understanding of why we need it, what the shape of the solution looks like, and what some of the concerns are about call home and whether you trust the verifier or not. And we'll get there quite soon, I think. Yes.
+
+[Speaker 3]
+But, Nis, are you really worried about the size of the payload, if you include some HTML and CSS? And that doesn't look huge to me.
+
+[Speaker 7]
+It's a long…
+
+[Speaker 2]
+Well, no, okay. It's not huge. It's fine.
+
+It's fine. No, I'm not worried about that. Let me say that.
+
+My worry is that I've never seen it before, and I don't know how to deal with it. And if it's not a standard, then it's kind of… And are we making it a standard?
+
+And so that's just… I'm not worried. It's just pointing it out.
+
+[Speaker 1]
+All right. Now, I vaguely remember seeing a community spec for it, and I appointed a Vietnam team that made this, the idea of embedding it. And I'm just, to be honest, I'm not entirely sure they followed the spec.
+
+And if not, well, fix it. We'll follow the spec. And maybe if two or three of us follow the spec, it becomes a bit more serious, right?
+
+[Speaker 6]
+Yeah.
+
+[Speaker 1]
+I'm happy to follow any spec that we agree on, basically.
+
+[Speaker 2]
+There is also a lighter weight, which is including or referencing a JSON schema rather than HTML that renders. This is, I assume, a rendering of a JSON schema. Yeah.
+
+Well, I don't know.
+
+[Speaker 1]
+You could do it the Singapore style, but with a hash link. Then there is a call home, but at least you're confident that the thing you're calling hasn't changed. Lots of different solutions to this.
+
+And I'm not trying to dictate one. I'm just saying let's figure out how we do it. Excellent.
+
+[Speaker 2]
+I'm going to close this. We have an issue for it now. Let's just close this pull request.
+
+No point in keeping it around, I think.
+
+[Speaker 4]
+How do I close it? Here.
+
+[Speaker 2]
+The issue still references it, so we're good. All right. That's what we had.
+
+We have issues. We could go through issues now, but we decided not to do that. I would just encourage, like, pick these up.
+
+Actually, we probably would want to go through and assign other people, except mainly me. So we just can shame each other. Every time we meet, we're like, oh, I didn't have time to do that.
+
+And that's where we want to go or want to be. Today, though, let's rather try and go through the process and find some typo or something. Make an issue to register that, oh, this needs fixing, and then actually go and fix it.
+
+So I didn't kind of prepare for anything. But let's just say these principles, we need to actually add a principle on the principle section.
+
+[Speaker 1]
+You could cut and paste them out of the REC49 and just stick them in here.
+
+[Speaker 2]
+Oh, do we have that?
+
+[Speaker 1]
+Yes, in the REC49 document.
+
+[Speaker 2]
+But you're skipping ahead. The first thing is make an issue that says add principles, and then a reference to it's this page, add content. I'm just making something up here.
+
+All right. Now we have an issue, and someone gets assigned. Let's just say that I'm assigned.
+
+That means next time we meet, it will have my face on it. It will be, oh, yeah, I need to do that. Okay.
+
+The way I would go about this is I would make a — well, let's try and do this in the editor. Steve, you need to help me with the online editor. I don't know it very well.
+
+[Speaker 1]
+Yeah, so just for people's understanding, Git is a distributed version control system, and that means that if you use it locally on your desktop, there's Git clients that are quite friendly to use. You've got an entire copy of the repository on your desktop, and you can make local changes, test local changes, and decide that those local changes are good enough, and then say request to add these changes. You're making those changes in your, if you like, offline copy, and then you're saying, I think my changes are ready to submit back to the master.
+
+You can do that by just pushing it like a dictator, or you can make something called a pull request, which is I'd like to share these changes and have someone else review them, accept them, and then they get automatically merged. That's what a pull request is. It's a protection against dictators, effectively.
+
+NIST will be, as a developer, is much more comfortable with his own offline Git client, maybe even the command line interface, and others may not want to do that and may prefer just use the web interface, which you can do.
+
+[Speaker 2]
+Yeah, well, let me do it my way. Because then I feel very comfortable about it. The first thing I do is I make a branch.
+
+So a branch is my kind of working, something I can work on without anyone else seeing it, or even unless I share it. Now we have this branch, and I would go to GitHub Desktop. That's a quite user-friendly way of working.
+
+Oops, that was wrong. There. So that branch I just made turns up here, and this is now a version of the code that I can work on at my own time.
+
+So then we go, if you look in here, the structure of the website, it takes a little getting used to. So that's actually a little scary, I would say.
+
+[Speaker 1]
+There is, I think, on every page an edit this page button on the rendered website, and that's because DocuSource gives you a way to find. So if you scroll down somewhere, yeah, edit this page. I'm not sure whether that will trigger a pull request.
+
+[Speaker 2]
+Oh, that is clever. That is very clever. Okay, great.
+
+So actually, that's all it takes.
+
+[Speaker 4]
+That is a lifesaver because, honestly, if you're not familiar with all of this, everyone's going to throw up their hands and say, forget it.
+
+[Speaker 1]
+Yes, I think so too, right? So just click on edit the page, write your changes. I don't know what happens with the commit changes now in terms of does it make a pull request or let's see.
+
+[Speaker 2]
+So this now creates a – we could say this is issue 26, just to reference that. And it takes you right – oh, my God, this is beautiful. It takes you right to the pull request.
+
+I addressed issue 26.
+
+[Speaker 3]
+If you put a hash in front of issue 26, I think it will create a link to it. Right, yes. It does a W3C version.
+
+And it will actually pull up a list. If you write hash issue, it pulls up a list of all the open issues. You put 26 in and, you know, done it.
+
+[Speaker 2]
+Yes. Thank you. Great point.
+
+And if you put closes, it automatically closes the issue when you merge the pull request also.
+
+[Speaker 3]
+Yeah.
+
+[Speaker 1]
+Yeah, so the people on the call are apparently staggeringly overwhelmed with technology. I think the simple answer is click that edit the page button. That was amazing.
+
+Follow the links. Right? And you'll be creating a pull request which somebody else will need to review and merge, and that will be Nis or myself.
+
+[Speaker 2]
+No, no, no. No, no. We will review it, but we will merge it all together in the next meeting.
+
+[Speaker 7]
+Yes. Okay.
+
+[Speaker 4]
+Nis, could you just walk through the edit this page process again?
+
+[Speaker 6]
+And if you get stuck, just put comments in the Slack channel, and those of us who have a little bit more experience will also help anybody who's stuck. Because what we want to be doing is activating everybody's contributions to this process, not letting people get stuck. So I'll be monitoring that, and I think other folks will be as well.
+
+[Speaker 2]
+Absolutely. Good shout out. So if you see somewhere you need to change, at the bottom, you'll edit this page.
+
+[Speaker 4]
+Yep.
+
+[Speaker 2]
+Click it.
+
+[Speaker 4]
+You are taken into editor like this. Are you familiar with it? Yeah, no, I'm familiar.
+
+If you hit the preview button.
+
+[Speaker 1]
+It shows you a rendered version.
+
+[Speaker 4]
+So the – You can't edit. I'm just trying to compare it to like HackMD, where you have the markdown and you have the visual render. Yes, that's exactly it.
+
+[Speaker 2]
+If you have something interim here, you can see that previewed, but it has not affected the web page yet. That's only when you go through the request.
+
+[Speaker 4]
+Yep. Okay. All right.
+
+That's it. You can cancel. Yeah.
+
+I just wanted to see if it had that similar capability as a HackMD, where you could see both. You could either, if you're comfortable working your markdown, or you can have the render.
+
+[Speaker 2]
+Oh, right, right, right. Okay, yeah. I don't know if you could do that.
+
+Can you edit here?
+
+[Speaker 1]
+No, I don't think you can edit, no. You have to write markdown, but you can just click and see the impact of your markdown. So really, you can always ask.
+
+There's quite a good online, lots of online guidance about markdown, but there's really only very few hashes or headings, stars or bullets. It's not that hard. And then if you're not sure you got it right, just click preview.
+
+[Speaker 4]
+Or just put your content in, and it could be tweaked up anyways for rendering. Exactly. The content is more important than making it look pretty.
+
+[Speaker 1]
+Correct. And someone else can make it look pretty, who's more familiar with markdown. It's no problem.
+
+[Speaker 7]
+This is amazing. It's so much simpler.
+
+[Speaker 1]
+Yeah, that's a docusaurus feature.
+
+[Speaker 7]
+That's super cool.
+
+[Speaker 1]
+Now, I think you've got to have the right GitHub permissions, which NIST has, and some of you may not. So shout out on Slack.
+
+[Speaker 2]
+But we did just make a pull request. It was not, I didn't follow the, no, actually, we did just follow this process.
+
+[Speaker 7]
+We did.
+
+[Speaker 2]
+All right. So now let's imagine it's next week. We come through this.
+
+I need to request a review from an editor. So Steve, if you would go and approve it, because what we've done is we've blocked merging before we have at least two approvals. And that's to avoid the dictatorship.
+
+And also just to keep ourselves not making too many mistakes. I could bypass it, but I'm not going to do that. We want a green button, not a red button.
+
+In here, you can see the changes that we just did. We added these two excellent principles. Steve, are you approving?
+
+[Speaker 1]
+Sorry, I am just.
+
+[Speaker 2]
+And here you, these are some automated checks. This is what's called continuous integration. So there is code that checks that what we are about to merge.
+
+Thank you. What we're about to merge won't mess up everything. That's just a good principle.
+
+All right. So now we have green tick marks and we can merge the pull request. So we do that here, just like we did before.
+
+And there is another script running now that actually merges the branch in. And we should see the change.
+
+[Speaker 1]
+I don't know how long it takes. Just click on the actions button and wait for it to complete.
+
+[Speaker 2]
+I was kind of avoiding going there. It's somewhat nerdy.
+
+[Speaker 1]
+This is still merging it. It takes a minute or so.
+
+[Speaker 7]
+It's rebuilding the whole website.
+
+[Speaker 1]
+But as far as you guys go, it's just click the edit this page button, write your content, preview it to make sure it looks how you thought it might look, and then submit pull request. That's it. Yes.
+
+Not too hard.
+
+[Speaker 2]
+This will take another minute or so.
+
+[Speaker 1]
+It's deploying now. So it's built in now. It's deploying.
+
+[Speaker 7]
+It's deployed. So you should see it now. Refresh.
+
+[Speaker 2]
+That's weird.
+
+[Speaker 8]
+I think it takes a while for GitHub pages to update.
+
+[Speaker 2]
+There we go.
+
+[Speaker 1]
+Is there?
+
+[Speaker 7]
+Yep.
+
+[Speaker 1]
+There it is. Be good, be friendly. Yeah, okay.
+
+[Speaker 7]
+All right.
+
+[Speaker 1]
+So is everyone at least comfortable with the idea of clicking edit this page, typing some markdown, experimenting with it, previewing it, changing the markdown if it's not right, and then submitting a pull request, which is a push button.
+
+[Speaker 9]
+Yep.
+
+[Speaker 1]
+All right.
+
+[Speaker 7]
+Excellent.
+
+[Speaker 1]
+Let's try it. I think that's it for today, right? We've reviewed your pull request, merged them.
+
+We've shown everyone else how to do one. And what we need to do is start assigning tickets. And people can self-assign tickets.
+
+So you can also go through the tickets and go, oh, that one, I'll take that one, and assign it to yourself. And if you have any permission problems, just call out Slack, and we'll sort them out.
+
+[Speaker 2]
+Yep. All right. Let's leave it at that and clean back our 15 minutes.
+
+[Speaker 9]
+Yep. Thank you.
+
+[Speaker 6]
+Phil, are you good on a separate topic? We were talking about having a meeting in a while. Was that time good for you or not good?
+
+[Speaker 3]
+I think so. Your 8 a.m. tomorrow, I think, is my this evening. And the Village Pub quiz will not be the same if I'm not there.
+
+So, no, sorry.
+
+[Speaker 6]
+Fair enough. I wouldn't want to keep you from the quiz.
+
+[Speaker 3]
+But I will find another alternative for you.
+
+[Speaker 6]
+Okay.
+
+[Speaker 3]
+Excellent. I appreciate it. Thank you.
+
+[Speaker 6]
+Cheers. All right.
+
+[Speaker 3]
+Thanks.
+
+[Speaker 6]
+See you next time.
+
+[Speaker 4]
+Yep. Cheers. Bye.
+
+Bye. Bye. Bye.
+
+Bye.

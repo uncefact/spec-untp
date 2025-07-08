@@ -1,0 +1,588 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The credential type.  Must include the string \"VerifiableCredential\" and additionally the specific credential type (eg \"UNTPDigitalProductPassport\")"
+    },
+    "@context": {
+      "type": "string",
+      "description": "A list of JSON-LD contect URIs that define the seamntic meaning of prperties within the credential. "
+    },
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "A unique identifier (URI) assigned to the product passport."
+    },
+    "issuer": {
+      "type": "string",
+      "format": "uri",
+      "description": "The W3C DID of the Party that issued the verifiable credential."
+    },
+    "validFrom": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time from which the credential is valid."
+    },
+    "validUntil": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The expiry date (if applicable) of this verifiable credential."
+    },
+    "credentialStatus": {
+      "type": "string",
+      "description": "The status of the verifiable credential - must be an object that conforms to the W3C VCDM 2.0 Status object - https://www.w3.org/TR/vc-data-model-2.0/#status "
+    },
+    "credentialSubject": {
+      "$ref": "#/$defs/Product",
+      "description": "The subject of a digital product passport credential is the identified product."
+    }
+  },
+  "description": "The ProductPassport is a comprehensive data structure that encapsulates various details pertaining to a product, including its identification details, who issued it, batch information, provernance information, circularity information and a set of verifable product confomrity & sistainability claims.  ",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "Product": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Product",
+          "enum": [
+            "Product"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327"
+        },
+        "idScheme": {
+          "type": "string",
+          "format": "uri",
+          "description": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+        },
+        "idSchemeName": {
+          "type": "string",
+          "description": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
+        },
+        "idValue": {
+          "type": "string",
+          "description": "The value of the identifier within the scheme (eg 90664869327)"
+        },
+        "productName": {
+          "type": "string",
+          "description": "The model name or number of the product, represented as text."
+        },
+        "productImage": {
+          "$ref": "#/$defs/BinaryFile",
+          "description": "A unique identifier (URI) pointing to an image of the product."
+        },
+        "description": {
+          "type": "string",
+          "description": "A textual description providing details about the product."
+        },
+        "productCategory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Classification"
+          },
+          "description": "A code representing the product's class, typically using the UN CPC (United Nations Central Product Classification) https://unstats.un.org/unsd/classifications/Econ/cpc"
+        },
+        "furtherInformation": {
+          "type": "string",
+          "format": "uri",
+          "description": "A URL pointing to further human readable information about the product."
+        },
+        "producedBy": {
+          "$ref": "#/$defs/Organisation",
+          "description": "The Party entity that manufactured the product."
+        },
+        "serialNumber": {
+          "type": "string",
+          "description": "An array of identifiers representing a specific serialised item of the product."
+        },
+        "batchNumber": {
+          "type": "string",
+          "description": "Information regarding the specific production batch of the product."
+        },
+        "productionDate": {
+          "type": "string",
+          "format": "date",
+          "description": "The ISO 8601 date on which the product batch was manufactured."
+        },
+        "countryOfProduction": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
+          "description": "The country in which this item was produced / manufactured.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+        },
+        "dimensions": {
+          "$ref": "#/$defs/Dimension",
+          "description": "The physical dimensions of the product. Not every dimension is relevant to every products.  For example bulk materials may have wieght and volume but not length, with, or height."
+        },
+        "characteristics": {
+          "$ref": "#/$defs/Characteristic",
+          "description": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity."
+        },
+        "manufacturedAt": {
+          "$ref": "#/$defs/Facility",
+          "description": "The Facility where the product batch was manufactured."
+        },
+        "materialsProvenance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Material"
+          },
+          "description": "An array of Provenance objects providing details on the origin and mass fraction of components or ingredients of the product batch."
+        },
+        "conformityInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "description": "An array of claim objects representing various product conformity claims about the product / batch.  These can be sustainability claims, circularity claims, or any other claim type within the conformity topic list."
+        },
+        "circularityInformation": {
+          "$ref": "#/$defs/Circularity",
+          "description": "A URI pointing to information regarding the recycling aspects of the product."
+        },
+        "traceabilityInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/TraceabilityEvent"
+          },
+          "description": "An array of TraceabilityEvent objects detailing EPCIS events related to the traceability of the product batch. SHOULD be provided for any product passport issued at batch or item level."
+        }
+      },
+      "description": "The ProductInformation class encapsulates detailed information regarding a specific product, including its identification details, manufacturer, and other pertinent details."
+    },
+    "BinaryFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "BinaryFile",
+          "enum": [
+            "BinaryFile"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "GLobally unique ID for the binary file - usually it's location as a URL."
+        },
+        "fileName": {
+          "type": "string",
+          "description": "A name for referenced binary file"
+        },
+        "fileType": {
+          "type": "string",
+          "x-external-enumeration": "https://mimetype.io/all-types",
+          "description": "The type of file, represented as a MIME type.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://mimetype.io/all-types\n    "
+        }
+      },
+      "description": "A file representing a data snapshot that is used to infomr the conformity assessment."
+    },
+    "Classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Classification",
+          "enum": [
+            "Classification"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "The globally unique URI representing the specific classifier value - for example https://vocabulary.uncefact.org/unlocode?country=au#AUSYD is the gloabl URI representing the UN/LOCODE for Sydney Australia."
+        },
+        "classificationSchemeID": {
+          "type": "string",
+          "format": "uri",
+          "description": "Classification scheme  - eg https://unstats.un.org/unsd/classifications/Econ/cpc "
+        },
+        "classificationSchemeName": {
+          "type": "string",
+          "description": "The name of the classificaiotn schema - eg United Nations Central Product Classification"
+        },
+        "classifierValue": {
+          "type": "string",
+          "description": "classifier value within the scheme - eg \"01211\" in UN CPC"
+        },
+        "classifierName": {
+          "type": "string",
+          "description": "Name of the classifier - eg \"Asparagus\" for code \"01211\" in UNCPC"
+        }
+      },
+      "description": "A classification scheme and code / name representing a category value for a product, entity, or facility."
+    },
+    "Organisation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Organisation",
+          "enum": [
+            "Organisation"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327"
+        },
+        "idScheme": {
+          "type": "string",
+          "format": "uri",
+          "description": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+        },
+        "idSchemeName": {
+          "type": "string",
+          "description": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
+        },
+        "idValue": {
+          "type": "string",
+          "description": "The value of the identifier within the scheme (eg 90664869327)"
+        },
+        "organisationName": {
+          "type": "string",
+          "description": "The name of the organization or company, represented as a text string."
+        },
+        "registrationCOuntry": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
+          "description": "the country in which this organisation is registered\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+        },
+        "organisationWebsite": {
+          "type": "string",
+          "format": "uri",
+          "description": "Website for this organisation"
+        },
+        "industryCategory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Classification"
+          },
+          "description": "The industry categories for this organisations.  Recommend use of UNCPC as the category scheme."
+        },
+        "otherIdentifiers": {
+          "$ref": "#/$defs/Identifier",
+          "description": "An optional lsit of other registered identifiers for this organisations"
+        }
+      },
+      "description": "The Party class represents an entity such as an organization, or a company that manufactured the product."
+    },
+    "Identifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Identifier",
+          "enum": [
+            "Identifier"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327"
+        },
+        "idScheme": {
+          "type": "string",
+          "format": "uri",
+          "description": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+        },
+        "idSchemeName": {
+          "type": "string",
+          "description": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
+        },
+        "idValue": {
+          "type": "string",
+          "description": "The value of the identifier within the scheme (eg 90664869327)"
+        }
+      },
+      "description": "An identifier of a party, product, or facility that is defined by an identifier scheme and idenfier value and, optinally, verification evidence "
+    },
+    "Dimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "weight": {
+          "$ref": "#/$defs/Measure",
+          "description": "the weight of the product"
+        },
+        "length": {
+          "$ref": "#/$defs/Measure",
+          "description": "The length of the product or packaging"
+        },
+        "width": {
+          "$ref": "#/$defs/Measure",
+          "description": "The width of the product or packaging"
+        },
+        "height": {
+          "$ref": "#/$defs/Measure",
+          "description": "The height of the product or packaging"
+        },
+        "volume": {
+          "$ref": "#/$defs/Measure",
+          "description": "The displacement volume of the product."
+        }
+      },
+      "description": "Overall (length, width, height) dimensions and weight/volume of an item."
+    },
+    "Measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "description": "The numeric value of the measure"
+        },
+        "unit": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode",
+          "description": "Unit of measure drawn from the UNECE rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode\n    "
+        }
+      },
+      "description": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG)."
+    },
+    "Characteristic": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {},
+      "description": "Product specific characteristics.  This class is an extension point for industry specific product characteristics or performance information such as clothing size or battery capacity."
+    },
+    "Facility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "default": "Facility",
+          "enum": [
+            "Facility"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "A linked data URL for the entity (product, facility, or organisation) that is identified by this identifier - eg https://abr.business.gov.au/ABN/View?abn=90664869327"
+        },
+        "idScheme": {
+          "type": "string",
+          "format": "uri",
+          "description": "the identifier scheme as defined by the registrar that manages the identifier registry. Eg abr.busines.gov.au If the identifier scheme is registered with UNTP then this URI can use used to dicsover the resolution method (to get more data) and the verification method (to prove ownership)."
+        },
+        "idSchemeName": {
+          "type": "string",
+          "description": "The identifier scheme name (eg Australian Business Number or GS1 Global Trade Item Number))"
+        },
+        "idValue": {
+          "type": "string",
+          "description": "The value of the identifier within the scheme (eg 90664869327)"
+        },
+        "facilityName": {
+          "type": "string",
+          "description": "The name of the facility, represented as a text string."
+        },
+        "countryOfOperation": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
+          "description": "The country in which this facility is operating.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+        },
+        "processCategory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Classification"
+          },
+          "description": "The idustrial or production processes performed by this facility.  "
+        },
+        "operatedBy": {
+          "$ref": "#/$defs/Organisation",
+          "description": "The Party entity responsible for operating the facility."
+        },
+        "otherIdentifiers": {
+          "$ref": "#/$defs/Identifier",
+          "description": "An optional list of other registered identifiers for this facility"
+        }
+      },
+      "description": "The physical site (eg farm or factory) where the product or materials was produced."
+    },
+    "Material": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "originCountry": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/CountryId",
+          "description": "A ISO 3166-1 code representing the country of origin of the component or ingredient.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/CountryId\n    "
+        },
+        "materialType": {
+          "$ref": "#/$defs/Classification",
+          "description": "The type of this material - as a value drawn from a controlled vocabulary eg textileexchange.org/materials/rm01014 - representing organic cotton."
+        },
+        "massFraction": {
+          "type": "number",
+          "description": "A numeric value representing the mass fraction of the product represented by this material. The sum of all mass fraction values for a given passport should be 100."
+        },
+        "recycled": {
+          "type": "boolean",
+          "description": "Indicator is true if this material input is from a recycled source."
+        },
+        "hazardous": {
+          "type": "boolean",
+          "description": "Indicates whether this material is hazardous. If true then "
+        }
+      },
+      "description": "The material class encapsulates details about the origin or source of raw materials in a product, including the country of origin and the mass fraction."
+    },
+    "Claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "topic": {
+          "type": "string",
+          "enum": [
+            "environment.energy",
+            "environment.emissions",
+            "environment.water",
+            "environment.waste",
+            "environment.deforestation",
+            "environment.biodiversity",
+            "circularity.content",
+            "circularity.design",
+            "social.labour",
+            "social.rights",
+            "social.community",
+            "social.safety",
+            "governance.ethics",
+            "governance.compliance",
+            "governance.transparency"
+          ],
+          "example": "environment.energy",
+          "description": "A code representing the topic of the sustainability claim. E.g. environment.deforestation, environment.ghg-emission-intensity, etc..  Drawn from a standard code list.  "
+        },
+        "standardOrRegulation": {
+          "type": "string",
+          "format": "uri",
+          "description": "The standard or regulation against which this conformity claim is made. Expressed as a URI and should match a value in the UN catalogue of reference vocabularies. "
+        },
+        "criteriaReference": {
+          "type": "string",
+          "format": "uri",
+          "description": "A URI pointing to the specific criteria within the standard or regulation against which this claim is made."
+        },
+        "criteriaName": {
+          "type": "string",
+          "description": "A human readable display name that describes this confomrity criteria"
+        },
+        "claimedValues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Metric"
+          },
+          "description": "One or more actual measures supporting the claim. For example for GHG emissions there may be a metric for total emissions intensity and also a metric for amount of offsets included."
+        },
+        "benchmarkValue": {
+          "$ref": "#/$defs/Metric",
+          "description": "A benchmark value against which the claimed value can be assessed. THis could be a value specified by a standard or regulation or could be an industry benchmark."
+        },
+        "benchmarkReference": {
+          "type": "string",
+          "format": "uri",
+          "description": "A refernce to evidence to support the benchmark value."
+        },
+        "conformance": {
+          "type": "boolean",
+          "description": "and indicator (boolean) that expresses whether or not this product has achieved compliance against the criteria.  for example, if the topic is environment.deforstation and the criteria is EU.2023.1115 then the product is conformant if it has not touched any facility throughout it's lifecycle that is not deforestation free since dec 2020."
+        },
+        "conformityEvidence": {
+          "type": "string",
+          "format": "uri",
+          "description": "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital COnformity Credential (DCC)"
+        }
+      },
+      "description": "The SustainabilityClaim class represents specific claims regarding the sustainability of a product, providing details about the metrics, thresholds, and evidences supporting the claim."
+    },
+    "Metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "metricName": {
+          "type": "string",
+          "description": "A human readable name for this metric (for example \"Tensile strength\")"
+        },
+        "metricValue": {
+          "$ref": "#/$defs/Measure",
+          "description": "A numeric value and unit of measure for this metric. Could be a measured value or a specified threshold."
+        },
+        "accuracy": {
+          "type": "number",
+          "description": "A percentage represented as a numeric between 0 and 1 indicating the rage of accuracy of the claimed value (eg 0.05 means that the actual value is within 5% of the claimed value.)"
+        }
+      },
+      "description": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of emasure) / value (ie the actual numeric value) pairs.  "
+    },
+    "Circularity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "recyclingInformation": {
+          "type": "string",
+          "format": "uri",
+          "description": "A URI pointing to recycling information for the product."
+        },
+        "repairInformation": {
+          "type": "string",
+          "format": "uri",
+          "description": "A URI pointing to repair instructions for this product."
+        },
+        "recyclableContent": {
+          "type": "number",
+          "format": "float",
+          "description": "The percentage of the this product (my mass) that has been designed to be recyclable."
+        },
+        "recyecledContent": {
+          "type": "number",
+          "format": "float",
+          "description": "The percentage (by mass) of recycled content in this product"
+        }
+      },
+      "description": "High level corcularity information about this product.  Note that this doens not substitute for detailed product circularity data sheet (PCDS) criteria which would be represented as a set of conformity claims against individual ISO PCDS criteria."
+    },
+    "TraceabilityEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "eventReference": {
+          "type": "string",
+          "format": "uri",
+          "description": "A URI pointing to the detailed information about the EPCIS event. SHOULD be a URL lik to a UNTP Digital Traceability Event (DTE)"
+        },
+        "eventType": {
+          "type": "string",
+          "enum": [
+            "aggregation",
+            "transformation",
+            "object",
+            "transaction",
+            "association"
+          ],
+          "example": "aggregation",
+          "description": "A code representing the type of EPCIS event. ObjectEvent, AggregationEvent, TransactionEvent, TransformationEvent, ObjectEvent."
+        }
+      },
+      "description": "The TraceabilityEvent class represents a specific EPCIS event in the traceability chain of a product, including details about the event type and reference."
+    }
+  }
+}

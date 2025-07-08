@@ -1,0 +1,640 @@
+[Speaker 5]
+Good morning, Steve. Good morning. So I'm just getting my systems all set up.
+
+And my camera is not plugged in. There you go. Look at that.
+
+Oh, it is now. Hello, Patrick.
+
+[Speaker 3]
+It's the morning for some, the evening for others.
+
+[Speaker 1]
+It's very late for people in Europe. This is the one designed mostly to be friendly to our Canadian and American colleagues.
+
+[Speaker 5]
+Susanna, are you in Europe right now? Oh, she's still connecting. Virginia is, but she's a late worker, I notice.
+
+I tend to be a morning person. I was up at... In fact, you're very much a morning person, Steve, I've noticed.
+
+Yes, I prefer mornings. I was going to say, if Susan joins, that I was listening to her podcast with Darrell O'Donnell just recently on the Untrustables, which is the way he's called his podcast. Oh, yeah.
+
+[Speaker 1]
+You should post a link to that podcast in the Slack channel.
+
+[Speaker 5]
+I'll do it right now.
+
+[Speaker 1]
+I'll start finding it.
+
+[Speaker 7]
+Hi, everyone. I'm going to change it right now, so I'm not going to put the video on.
+
+[Speaker 2]
+Hi, everyone.
+
+[Speaker 1]
+Hello, Susan. Pleased to see you. Are you in Europe?
+
+What time is it for you?
+
+[Speaker 2]
+It's 11pm.
+
+[Speaker 1]
+Oh, I'm so sorry. We're having these every alternating times each week, so that one of them is friendly to US and one is friendly to Europe, so you've joined the US-friendly one. But that's quite a commitment.
+
+[Speaker 8]
+Virginia, you're on mute. In Barcelona, too.
+
+[Speaker 5]
+I was just saying, Susan, I was listening to your podcast with Darrell O'Donnell just yesterday, and I'll just share the link now for the group. He's grooming myself and Joe for a podcast with him on Friday. Super.
+
+[Speaker 2]
+Everyone should have a podcast with him.
+
+[Speaker 5]
+He's a nice guy.
+
+[Speaker 2]
+Hey, Becky. Hey, Susan. How are you doing?
+
+I'm good. And what about you? I'm well, thanks.
+
+Yeah. It's really nice weather here today. It actually feels like springtime.
+
+It is springtime. Yeah. Very warm weather.
+
+Everything's blooming. It's beautiful.
+
+[Speaker 1]
+All right. I might give it another one minute and see who joins.
+
+[Speaker 5]
+I'm just finishing my breakfast, hence going off audio and video. That's all right.
+
+[Speaker 1]
+All right. Well, we'll see if anyone else joins. But the usual starting disclaimer.
+
+This is a U.N. meeting where your contributions, should you choose to make them, are contributions to U.N. IP. So if you don't want to give something away, please don't don't don't do it. This meeting is being recorded if and it will be posted for others that haven't managed to attend to watch.
+
+If you object, then please leave the meeting. And that's about it for the formalities. The usual process is to look at open pull requests.
+
+So basically things that have been are ready to merge and approve them collectively and then move on to issues and and discuss them. Today, I also wanted to make a bit of time, especially since Suzanne is here, actually, it's coincidental to have a quick chat about the next phase of DPP development, which I think needs to start looking at industry use cases and existing significant passport efforts and testing our ability to map to them. And that would include the obviously the GBA digital product battery passport and also some work going on here around circularity and the ISO standard for digital product circularity.
+
+I get what it's called, but it's it's it's basically the certificate about circularity features. So I think it's an interesting opportunity to test. Can we accommodate these things with non-breaking extensions?
+
+[Speaker 2]
+What what is it? What's the ISO certificate? Is it a regulation from some?
+
+[Speaker 1]
+No, no, it's an ISO standard for product circularity data sheet.
+
+[Speaker 2]
+Ah, this one. Yeah, I know it.
+
+[Speaker 1]
+All right, so I'll share my screen. And if you remember the we spent pretty much the whole meeting last time talking about product passport and agreed a bunch of changes that I would prepare as an update, which is now ready to to merge. And so the first thing to do is just to seek consensus that this won't be the final product passport, but at least we we collect a whole bunch of issues and merge them so that we've re-baselined and then we can start discussing what else is missing.
+
+So those of you that have been watching the thread, I know some of you aren't here, so let me just pull up. There's this product passport data model ticket. That has quite a long discussion on it about skew level stuff or product level stuff versus batch versus instance and whole bunch of other questions.
+
+And you can see here quite long discussions and the outcome of all this long discussion, which I won't repeat because most of you have been through it before, is this pull request to re-baseline. So I'm just seeking approval now. Does anyone object to me merging this pull request so that we can have a look at the updated spec and then close that ticket and start afresh with any issues and gaps.
+
+If no objections, I'm going to push the button. No objections. Push the button.
+
+Confirm merge. So that should update the site now. Right.
+
+So open issues. Sort them usually by least recently updated so that we don't have too many dead ones lying around.
+
+[Speaker 2]
+Can I post a general question as I'm here for the first time? I saw that Gerhard had sent some use cases around. Those are the use cases for Surpass, meaning that the use cases that we also will be using in JTC24 to build the digital passport system.
+
+So what are the use cases or what are the requirements that we have for this activity in particular? Yeah.
+
+[Speaker 1]
+So remembering that our goal is to produce potentially a collection of specifications of which only one is the digital product passport. And in our case, we're aiming very explicitly to be a simple, common, extensible and interoperable core that can cross borders and cross industries. So deliberately not putting in our passport things like battery capacity rating and things like that.
+
+That's for things like the GBA passport, not for us. And our goal is to basically support high integrity supply chain evidence crossing borders and crossing industry boundaries in such a way that it can be extended to meet this industry requirements or that jurisdiction requirements and still remain interoperable.
+
+[Speaker 2]
+I find this is a necessary exercise, but are we focusing on some use case that we want to test this against? Yes.
+
+[Speaker 1]
+Yeah. So we have a number of industry specific pilots that will test this. And I think there's two kinds of use cases or two kinds of tests.
+
+One is paper tests, like let's have a look at the GBA data model and can we apply it to the UN passport? And similarly with the circularity stuff from ISO, we'll be doing that quite soon. But we're also running pilots in agriculture and critical raw materials to test the feasibility and value of this work.
+
+[Speaker 2]
+Who would use this technology then? Because we're building something very specific in Europe for digital passports for batteries. And then what I do with it is I need to issue it as a battery passport to comply to the battery regulation.
+
+So why would I use this UNTP technology stack?
+
+[Speaker 1]
+It's for the upstream supply chain, mostly. Right. So the challenge that any party that is facing a regulatory due diligence requirement, like in Europe, is getting high integrity data from their upstream supply chain.
+
+So the use case is, there's a slide somewhere that will help explain this, prepared by Surpass, actually, that shows.
+
+[Speaker 2]
+That's fine. I see what you mean. I mean, that's what we're also kind of, you know, I've always been trying to do with the TSM certifications and the Mines Permit, you know, British Columbia.
+
+[Speaker 1]
+So this picture maybe explains it. There is a slightly different looking picture that's issued by Surpass that shows the value chain from, in this case, in their case, I think it was a textile value chain, but starting with farming and finishing up with a fashion good product. And it shows basically a point of market entry where the EU DPP applies, sort of towards the sort of finished goods end of the value chain, and then shows the upstream data that's needed to have confidence about that market entry passport using UNTP.
+
+So the positioning is UNTP is a cross-border, upstream, cross-industry, common core that provides the information confidence necessary to make the claims in a particular jurisdiction.
+
+[Speaker 2]
+Steve, I have that slide. I have that slide up on my screen if you want to give me...
+
+[Speaker 1]
+Do you want to pop it up for Carolyn?
+
+[Speaker 2]
+I can share it.
+
+[Speaker 1]
+Do I need to give you share rights? Or is it...
+
+[Speaker 7]
+I don't know.
+
+[Speaker 1]
+I think you have share rights, do you?
+
+[Speaker 7]
+I think so. I think you just have to stop sharing.
+
+[Speaker 1]
+Ah, okay.
+
+[Speaker 7]
+I think.
+
+[Speaker 1]
+Done. Okay.
+
+[Speaker 2]
+Can you see? Yes, I see. Thank you.
+
+[Speaker 1]
+Yeah, so we're actually... I'll probably give you a quick briefing. We're working with, or will be working with Carolyn at Surpass to, if you like, plug in to some of her 13 pilots for Surpass 2 to prove this point.
+
+And probably one in textile, at least one in textiles, and at least one in consumer electronics or batteries. So far, we have had some interest from offshore companies to test this theory. So I've been invited to a battery manufacturers event in Chongqing, China week after next to talk about exactly how they do this.
+
+[Speaker 2]
+Okay. Okay, let's keep it at this. So it's basically a very general model.
+
+And if you say you're concentrating on upstream, so there are a lot of other kind of activities that also target this. I'm very happy that we have this here that we can refer to, because the other one, the big one, probably also for the passport is CatenaX. Whereas CatenaX is using EDCs for data as kind of the APIs to exchange data, which I'm not happy with, because I believe it should be, you know, at least wallet to wallet communication, or even, you know, some something even more or less complicated.
+
+But they're putting the EDC in front of everything. And I think that's an overkill to exchange data on the upstream. So I'm glad that we can maybe refer to this activity here.
+
+By the way, I'm doing the same for a particular use case in the track and trace working group of the GBA, where we have defined now guidelines, how to exchange the CO2 footprint between the different actors in the supply chain, and how to aggregate them. So it's a combination of, you know, how do I actually aggregate CO2 footprints from primary and secondary data? How do I calculate percentage of secondary data, and so forth?
+
+And then how do I exchange the information between all the different vendors? That's also targeting this is it's using credentials, it doesn't even use, you know, a credential exchange protocol yet. Yes, it's probably going into this direction more than CatenaX.
+
+[Speaker 1]
+Do you want to go down one slide, Nancy, just to share with. So, by the way, for everyone on the call, if who hasn't met Dr. Suzanne. She's from the World Economic Forum project, Global Battery Alliance.
+
+And so quite an important connection into our project. But, and hasn't really been plugged in up till now. Right.
+
+So there's a little bit of catching up to do. So I just on this issue of credential exchange. One of our lessons from previous projects is as soon as you have an, you know, an on the wire exchange model that depends on, for example, two systems exchanging data via API, or even two wallets exchanging data, you have a discovery and endpoint and a technical integration and kind of project coordination challenge.
+
+And that tends to...
+
+[Speaker 2]
+To wallet communication? Not necessarily, do you?
+
+[Speaker 1]
+Well, not necessarily, except you do have a technical maturity problem where you need a wallet. Right. And so our one of our principles is that people should be able to discover and verify data without any technical maturity.
+
+And also that we shouldn't, we need to be able to discover and verify data, maybe seven years after the product was produced, perhaps at the point of recycling, or through value chain steps like a distributor who aggregates but doesn't do anything particularly in terms of the environmental impact on the product. And so we've opted for what you see here, which is, there is no wallet to wallet exchange, there is no system to system exchange, there is only a publish and discover model. Right.
+
+And that doesn't preclude wallet to wallet exchange. Of course, if two people have a wallet, they can exchange passports, no problem. But the general framework says, you always discover data through the resolvable identifier of the thing.
+
+And so that each actor publishes a passport, and exactly the same value case we encountered a lot, which is how do I do my scope three emissions, the whole purpose of the passport is to carry data at the granularity of the shipment, so that the consumer has the necessary data at the right granularity with the right supporting evidence to just aggregate for their corporate disclosures. And that's basically the few architectural principles here that we think, make the framework more scalable. Right.
+
+[Speaker 2]
+So this idea that when when I met Nancy in Brussels, I showed her what we did with the 30 at that time, where you basically have a verifier that is part of the website, or you can even, you know, integrate a third party verifier to then, you know, verify the credential even on the website, so you don't, you don't actually need anything.
+
+[Speaker 1]
+Yes, that's right. And that's what this is showing here, right. So when the human scans the barcode, they go to a link resolver, it says, look over there for a credential, it says the website, the endpoint is a verifier.
+
+So it shows a verified credential on the phone, but the same credential, of course, has an underlying data model, which the machine on the bottom there can also read. So it means the publisher of a credential doesn't do anything different for humans or machines. And that's also an important scalability feature.
+
+Of course.
+
+[Speaker 2]
+Yeah, super. Okay. Yeah, we're all on the same page on the same on the same path, more importantly.
+
+[Speaker 1]
+Yeah, I think you're right. Yeah, I mean, we've all been through painful lessons. And we've all come out with, maybe it would be better like this.
+
+And I do sense a general convergence toward, particularly for the long supply value chains, this kind of publish and discover model. And this, you know, human and machine interoperability model. So I'm comfortable that we're, we're not doing something wildly different.
+
+Anyway.
+
+[Speaker 2]
+Sorry for the delay.
+
+[Speaker 1]
+No. Yeah, so I take the screen back then Nancy.
+
+[Speaker 7]
+Yes, sir.
+
+[Speaker 1]
+So back to. Yeah, so our general protocol is the team raises discussion points as GitHub tickets, we discuss them, we reach some consensus about what that means for an update to the site, which is here, right, so conformity credentials digital product passports. And then we push updates.
+
+And our goal is to keep this discussion going keep the intensity going so that we have a reasonably complete site by the end of June.
+
+[Speaker 2]
+Can I access the site? Is it public?
+
+[Speaker 1]
+Yes.
+
+[Speaker 2]
+Okay, super. Maybe someone can send me the link.
+
+[Speaker 1]
+Yep. Post a link in the chat. Every page has a disclaimer, right, that says, this is a public site, but don't try implementing yet.
+
+[Speaker 9]
+Okay.
+
+[Speaker 1]
+The blue stuff up here. Because it's under development right but it's it's, I think it's useful to attract thinking and contributions to have it public. Right.
+
+So back to our issues list. This is in I think in reverse order of discussion. Zach, are you on the call?
+
+Do we Yeah, I'm here. This is your ticket. Create UNTP implementation guide.
+
+Last commented February the 5th. Yep. Is it assigned to me?
+
+No, but it's your ticket. Shall I sign it to you?
+
+[Speaker 7]
+Assign it to me and I actually have been involved in some of our pilot projects. So I actually have a couple of, it's pretty high on my list. So I'll put a pull request by next meeting.
+
+[Speaker 1]
+Okay. I mean, in a way, the whole site is a UNTP implementation guide, right? Clarify depth.
+
+We talked about that last time. So you do a little pull request for that one. Oh, this is resorted itself.
+
+But actually, that's useful because I did want to ask Pat and Louis. Are you on the call? Yeah, yep.
+
+[Speaker 3]
+I'm here.
+
+[Speaker 1]
+Yes. So there's a point of discussion here about exchange protocols and that we've kind of touched on just now, right? Where we spoke about wallet to wallet or API to API or publish and discover models.
+
+There has been a document that's just come out from the US Department of Homeland Security with their colleagues in Customs and Border Protection, talking about how US Customs wants to receive supply chain data as verifiable credentials. But they're very much in the verifiable presentation to a wallet or an API exchange mindset, which is a little bit in conflict with our thinking, which is you get an identifier and you discover it. And Pat had a look through that and had some comments about the difference between proof models that are better for data at rest versus data on the move.
+
+And I thought I wanted to hand over to you to talk about that and also this and to see if we can reach some consensus about what we should be saying in the verifiable credentials part of this aspect, right? How to support our model best. Do you want to talk through your ticket and maybe something about the US CBP thing?
+
+[Speaker 3]
+Yeah, I can start with this ticket. So I was looking at verifiable credentials solution and actually what led me to this particular project was the conversation about rendering credential and making them visual. And I ended up finding the learner credentials wallet, which is available on the Play Store.
+
+It's a wallet. You scan a QR code that has a URL leading to a VC and it will store it in the wallet. So it's very much you fetch a public credential to store it in the wallet and then you can move to another website and present it or so on.
+
+But what I found interesting was the model that you fetch a VC issue to a public URL, which was very similar to what we are thinking for. Of course, we are mostly focused on the conformity credential, but from a point of view, when you have your digital product passport, you will have a URL where you can go fetch a conformity credential in some cases. Now, this pilot, like I said, it was made scope to education use case, but I think the intent of this was to also just apply principles with a specific use case.
+
+And the set of technologies that they use, they're very, very similar to what the technology, the UNTP specification wants to use. And one interesting topic that I don't see much reflected on the UNTP, but it's the concept of trust registries and how to know that the issuing entity, you can trust them. You will ultimately have a DID.
+
+I think DID web was selected as the way to represent entities. And how do you know if the DID of that credential is trustable? There's a few ways to do this.
+
+Here, they maintain a simple JSON list of, there's someone that maintains a list of DIDs that they trust with some information about what is the entity. I know that Stephane Curren had proposed something that he will talk about soon, the sort of who is principle that DID would have a way from that DID to resolve identity credentials that have been issued to this DID. So if an entity claims to be able to issue certification, well, someone else would have given them that permission.
+
+So this could be also discoverable. So those are the two things I found interesting from that project, the way that they deal with public credentials. Like you go fetch a public URL of a credential to get that verifiable credential.
+
+So it's been pre-issued. It's not issued directly to a wallet, but it's pre-issued and available on the web. And the way that they tackle the trust registry, at least it's one method that they've worked.
+
+And they also have some open source software that could be potentially used for demos and so on.
+
+[Speaker 1]
+Let's have a quick diversion, if you don't mind, on this idea of trust registries. Not the first time I've heard about it. Because I think there's two kind of architectural approaches to the same problem, which is, how do I know I can trust the issuer of this VC?
+
+It's just a DID. It could be a DID Ether with some meaningless GUID. And so this is very much a UNTP concern.
+
+And our approach so far is to think about solving it in terms of linked credentials and trust anchors. So if we take an example, the Australian Business Register, the tax office run list of all Australian businesses. It's about 2 million entries.
+
+And if we wanted a verifiable credential, or sorry, if we wanted evidence, let's say an Australian business issues a passport. And they use their DID Ether or DID something, or a hosted DID web might not even be on their domain. There's no cryptographic or confident way to say, this passport issued by this DID really is that Australian business.
+
+So two ways to solve that. One is the Australian Business Register could update its public register with the DIDs of Australian businesses that they verify really belong to that business. So it essentially becomes a trust register.
+
+Or the other option is the Australian Business Register issues a verifiable credential to the business where the subject is the DID of that business. So that the business now has a credential issued by the tax office. That's a trust anchor that says this DID is that ABN.
+
+And that's the UNTP approach, which doesn't require public registers of DIDs. So I'm not saying one is right, and one isn't. But I think the approach that says, just issue evidence to the party that is being identified or being trusted, seems to me to be a bit more scalable and also avoid the risk of maybe exposing DIDs publicly that maybe the owner doesn't want to expose.
+
+I don't know. Does the collection here have any thoughts about the best way to solve this trust problem?
+
+[Speaker 5]
+There's a body of work, I think you probably know about Steve, the body of work that Glyph has been doing on this sort of, you chose the Australian Business Registry kind of issue. The Global Legal Entity Identifier framework has a VLI, Verifiable Legal Entity Identifier. And it's got exactly that problem sort of to solve.
+
+How do we provide sort of transportable, presentable proof of companies on a global scale? And I think it's almost like you can sort of have your cake and eat it in this sense. They're basing their approach on the kind of carry infrastructure, which is fundamentally decentralized.
+
+But and still relies upon centers of authority to provide the initial kind of informature, if you like, that this company is in fact a registered Australian company. So it does rely on the AB and ABR sort of systems in Australia to allow a company to ask for an LEI and then a VLI. But once you've got that, you're completely independent, if you like, in terms of your proofs.
+
+I'll stop there with hands up. Stephen?
+
+[Speaker 4]
+Yeah, I think the idea of trust registry versus issuing a credential is really the same thing with a slight implementation difference. Ultimately, the issuer of that credential or the manager of that trust registry has to find a way to determine that is the did of that business. And whether they publish it as a trust registry or issue it as a VC, it's still the same problem.
+
+I agree with you and am very strong advocate of the idea of publishing credentials for that. And that's what I would like to see. But it's still you still have the same problem.
+
+I think just to throw a little shade on the VLI issue. Yes, it's the right type of solution, but I don't know that we want to go into that amount of overhead that gets introduced by the VLI concept. I think just having an issuer issue a verifiable credential that's sort of aligned with all of the other credentials we got would be sufficient.
+
+I think the concepts are right. It's just the implementation at the life is very complex, shall we say.
+
+[Speaker 1]
+That's because of Cary. Suzanne? Yes.
+
+Yes.
+
+[Speaker 2]
+But there's a way around Cary, which we're doing in Germany with the Bundesanzeiger. And Nancy knows about it because every issuer agency of Gleiw is allowed to issue the lies in the way that they want to. And with the German Bundesanzeiger, formerly Sferity, my former company, they've actually built a service with them, which goes live.
+
+I don't know, very soon, where you can issue a credential to your wallet and then others can discover for the use case that Steve was describing. No Cary involved, but the protocols that we're using here. So I'm a big fan of that way to do it.
+
+And I wanted to generally ask, why do we need or where do we need in the digital product passport, the use case that was just described, where I go somewhere where the credential is publicly issued and then I fetch it, I put it into my wallet and then show it somewhere else. Do we have that use case in the digital product passport or what was it for?
+
+[Speaker 1]
+Our use case is for a linked credentials. So a passport is an ambit set of claims by the manufacturer. It's supported by a conformity credential from a third party.
+
+And so to achieve trust that the claims are true, you need to not only verify the passport technically, but also find the conformity credential and confirm that the subject of the conformity credential is the subject of the passport, if you know what I mean. That's one example of two linked credentials. Another one is identity, right?
+
+The issuer of the passport is a did and it could be any did that has no proof that they are this particular business. So a business identity credential attached or discoverable from the passport lets you confirm that, yes, it's a valid passport and it has conformity evidence. And it really was issued by a German company such and such or Australian business such and such.
+
+So says the Bundestag.
+
+[Speaker 2]
+I mean, you know, I think linked credentials are clear, but how I think Joe was it? I'm not sure. I was presenting this use case here that we have on the screen was that it's publicly issued.
+
+And I, you know, I go there and put it into my wallet. Why would I want to do that? So I'm not sure why we're talking, we're talking about that use case and where we need it.
+
+[Speaker 1]
+So the public discovery is important because that's how any verifier, given the identifier of a product, finds the passport, right? Part of UNTP is the link resolution protocol, right? Given an identifier of a thing, I can resolve it to a URL to get more data about a thing.
+
+That's a general principle. And so the passports, at least the public information part of them, are stored in a public location. It may not be searchable.
+
+You know, you probably need the product identifier in order to find it. It's not like it's a website that you can search, but the passport is sitting at a discoverable location. And given the identifier of the thing, I can always go and get the passport.
+
+What I do with it then, whether I stick it in my wallet or I look at it through a hosted resolver or I suck it into my business system, is entirely up to the verifier, right? So this use case on the screen is just one example of what I might do with a passport when I've resolved it. But there's no mandate for that.
+
+You don't have to, you know.
+
+[Speaker 8]
+Susan, I think this was an example of something in the Homeland Security document. It wasn't necessarily a suggestion that it should be included in.
+
+[Speaker 2]
+No, that's right. It sounded a bit like, you know, a human identity point where you can issue a credential such as a certificate for a person. You can download it to your wallet and then you can show it, I don't know, when you cross the border.
+
+So I wasn't sure why we needed it, but maybe I also misunderstood it. So I don't want to hold up the discussion.
+
+[Speaker 1]
+I think, who put this here, Pat? I think it was really just as an example of another ecosystem that is using the idea of publicly discoverable credentials. It happens to be education and going into a wallet, but that's not the important bit.
+
+The important bit is supporting this discussion about, do you always exchange credentials wallet-to-wallet by knowing the other party or API-to-API? Or do you put them somewhere discoverable and make them resolvable from the identifier of the thing? And of course, you can do any of these things, right?
+
+But in terms of recommending a scalable approach to supply chain transparency, our thinking is that the default model is always to make them discoverable from the identifier. What you do with it then, whether you stick it in a wallet, is your problem. Joe, you were next.
+
+[Speaker 6]
+Yeah, thanks very much. And I think we've landed where I was trying to get us to. Actually, there are going to be multiple different presentation models, and some of them will be appropriate to upchain the provenance of supply chains up at the front of that process.
+
+And some of them are going to be, as we go through the process, we're going to actually need to do presentation into other ecosystems as well. But I would say is that whatever we do with verification of the issuer, we would say it says who. There still needs to be that situation where you can actually sort of go back to a trusted trust anchor and say, this is the issuer of this credential, as says someone that I trust.
+
+Now, who gets to say that that is someone I trust? You can use trust registries for that, or you can actually just naturally, historically know that information. But you still need to be able to link it back to a trust anchor.
+
+And that's the important point. Yep.
+
+[Speaker 3]
+Patrick? Yeah, just to close this. So yeah, the reason, you know, I've seen many system for verifiable credential and many things.
+
+And the reason why I decided to pose this one was because there was a lot of similarities. It's not exact match of what happens, but this project was a internationally scoped project. There was many different countries.
+
+And the model in which they published a credential didn't involve the presentation. You know, it involved publishing a credential. So the reason why I brought this up was because there was enough similarity for me to assume that there might be some lessons learned from that project.
+
+Because they started with the idea and they ended up with a working solution. And there was a lot of decision making in the process. So since this specification here is fairly at the beginning, I always value to benefit and exploration that's been made by other parties.
+
+And since in this case, there was a lot of similarities, I thought maybe a few of them would be able to transverse over. And it could also generate discussions like the one we have today, which I think is very valuable.
+
+[Speaker 1]
+All right. So I've assigned it to you. Instead, maybe just write a little summary of lessons that might be relevant for us.
+
+Particularly if it impacts any or it leads to any change thinking. Should we do something different or is it really just supporting what we're already thinking? And then we'll close the ticket.
+
+Is that all right? Yes, sounds good. Thank you.
+
+Okay. Remarkable how much time we spend discussing things. We might need to do a little bit more.
+
+I can't move this. I think I might like one of those pressing problems at the moment is for us to sort out for an imminent Australian pilot. And one coming up in critical minerals is this linked credentials question.
+
+When I've got a identity credential that says did X, Y, Z is a B and such and such. And I've got another passport credential that did such and such issued a passport. How do we do that consistently to pull data out of both of those credentials to create what I'm calling a trust graph?
+
+I think Suzanne likes that term as well. And then how do we verify that trust graph? But there's cases where there are lots of identity credentials for the same entity.
+
+And we had a little bit of a discussion about a little bit of formalizing. Well, how could this look? How are we going to test this in our next pilot?
+
+And I think Stephen Curran had some thoughts about it. And I wouldn't mind giving him a chance to present them. Patrick, you've got your hand up.
+
+[Speaker 3]
+One thing I was reflecting was exactly this recently in the case of the Mines Act permit. So you have a entity that will create a digital product passport. And this entity will also, in some cases, be the subject of a conformity credential.
+
+So if a producer would make a digital product passport for some raw material that they're shipping, then BCGov would have issued to them a BC Mines Act permit. And one of the credentials of this entity will be the issuer. And the other credential would be the subject.
+
+My thought was, when we have this entity as the subject, do we want a mandate that they are displayed as a did, that they have a did associated with them? Because the subject ID of a credential does not necessarily need to be a did. It could be a URL that resolves to an endpoint where information about that subject can be identified.
+
+So the idea of the subject is just this entity that I'm making a claim about. So in the example of the Mines Act permit, if you want to get concrete, every identity that is issued a Mines Act permit, they will have a legal registration on the BC org book presently. And they have a unique URL, including the registration that will link there.
+
+Do we want to enable to use these type of URL as identifiers, or we always want to use a did that this entity will be able to use subsequently when signing credentials?
+
+[Speaker 1]
+Well, I expect we should lift ourselves up to what what are we trying to achieve, which is trust in the identity of the party issuing the thing. Right. And we know there are multiple ways to do that.
+
+And I think we should be open to either picking the best one or actually listing two or three that are quite feasible and practical ways of achieving it. But I think the reality is somehow you've got to correlate the claim of the passport issuer, where you can cryptographically verify this issuer did really issue this passport, right? Because it's a public private key thing.
+
+And in the passport, there will probably be some claim by the issuer that I am this Canadian business or Australian business. That's just a claim, right? What you do know is it definitely came from that did.
+
+You don't know if it really was that business. So then you need some way to go somewhere else and go, yes, that issuer is that business. So says somebody I trust, whether you look up in an org book or whether it's a credential.
+
+Or I think these are the things we need to start experimenting with now and come up with one or more best practice ways of achieving it. Because you're right that there's nothing in the VC spec that says you must put a did in the subject. And maybe that's one of the recommendations we make.
+
+These are, let's say, two or three patterns for how you solve this problem. And in this pattern, the proposed approach is you put the did of the subject in the subject. And in this other approach, you provide a resolvable way to go and discover the did because it's posted on org book, for example.
+
+These are different alternatives. So let's work on those, again, business requirements and options and test them. And perhaps Stephen would like to.
+
+I'm not sure which hands are in which order here. Suzanne was first.
+
+[Speaker 2]
+So the one with the hand at the top was faster. No, I just want to say, I mean, generally, I always support that this should be a did. Simply because, as you said, you know, you can also attach other information to that identifier.
+
+So I would strongly prefer to have a did. I also understand that maybe in a phase where we are moving towards verified credentials, it's not possible immediately. We can also talk about GTINs.
+
+And the product has a GTIN or SGTIN that should identify the product. So GS1 currently doesn't like to use dids as product identifiers. And the whole industry, with products that go over the counter, use GTINs because all the cashier systems use GTINs and so forth.
+
+But, you know, the reality is we cannot change this from until tomorrow. This probably needs some time. But if we can decide it from scratch or if we can, you know, build our pink future, then I would also always wish for it.
+
+[Speaker 1]
+Yes, we do need to recognize today's realities, right? Which is why we support GTINs. And then the did bit comes into the evidence of ownership of the GTIN, right?
+
+So GS1 can issue a credential that says this customer owns this set of GTINs. And that way you have some more confidence about really when a claim is made about a product, is the claimant really the owner of that product? But let's listen to what Stephen has to say.
+
+[Speaker 4]
+Yeah, I mean, I'm somewhat echoing. But I mean, it's got to be a did, or I think it strongly should be a did, because you've got to be able to prove control over it. You can't just make a claim and then say, oh, yeah, I'm IBM.
+
+So there you go. You've got to be able to provide evidence you're IBM, and therefore you've got to have some way of both somebody attesting to your identifier and for you to be able to prove control over that identifier. And the combination of keys with dids is the crucial piece there.
+
+Otherwise, you're leaving everyone to do KYC. We've just been hearing about a product that uses a platform to do this. And basically they do KYC on everyone coming on the platform and don't have some sort of automated, easy way to do it.
+
+So strongly in favor of dids. But it is challenging because now you need somebody to attest that somebody controls a did, which is a KYC event hopefully done once. But, you know, the legal entity is the way to do it.
+
+GTINs and so on make sense. As I understand them, again, I don't know enough about it, but for products, but not necessarily for the creator of the products. And then we're strongly of the idea, this idea that if you have a did, then you should be able to have an easy way to investigate what attestations, what credentials are available that have that did as a subject.
+
+And that's where our slash who is idea comes in, which is we want to make it so that it becomes part of dids just inherently that as soon as you get a did, you can do a slash who is on it and get back a verifiable presentation of a set of credentials where the did is the subject. And it's signed by the did. And that gives you if we had that one more step in dids, it would be make it massively easier to do these types of things.
+
+Patrick's next, I guess.
+
+[Speaker 1]
+Oh, go ahead, Steve. No, I was just going to create a ticket, actually, for you, Stephen, to say, why don't we, because we do have a ticket about verifying linked data graphs, but it's a bit kind of all encompassing. And we should start, I think, with just the very simple use case of somebody's issued a passport.
+
+And there's a some separate credential or register that verifies that that passport issuer is this trusted party. And just focus on that really simple use case and work out whether there's one preferred pattern or two preferred patterns and write up how we do that. Yeah.
+
+Could I create that ticket or even you create it for yourself?
+
+[Speaker 4]
+I'll think about it.
+
+[Speaker 1]
+Yes. Fair enough. Okay.
+
+[Speaker 9]
+Yeah.
+
+[Speaker 1]
+Well, we're going to have a crack at that here as well. So why don't we have a, let's wake up Slack a little bit. We don't use it that much.
+
+And we probably should because we need to have more offline discussions between these weekly meetings to resolve things. So let's have exactly this discussion between Australia and Canada and anyone else that's welcome. We'll do it publicly on Slack to resolve just to knock up a prototype of this most basic two linked credentials identity verification scenario.
+
+[Speaker 9]
+Yeah. Yeah. Okay.
+
+[Speaker 4]
+I've got an idea for that ticket, Steve. Suzanne.
+
+[Speaker 1]
+Yeah. If you click on the homepage of UNTP, there's a big button that says join Slack.
+
+[Speaker 9]
+Right. Thank you.
+
+[Speaker 1]
+Yeah. That one there. Join our chat channel.
+
+[Speaker 9]
+Thank you.
+
+[Speaker 3]
+Patrick. Yeah, just another. So with DID, especially with DID web, one thing that concerns me, it's less the case for a DID based on the ledger technology, but it's the concept of a entity might not have the infrastructure to host their own DID web and they might ask for an external service that would host their DID web for them.
+
+Once they're on board and into that service and there's a lot of credential issuance, they become sort of locked into that service because you cannot just change your DID. And all of a sudden, all the credential you've issued that DID won't be resolvable anymore because you stop service with that platform. So this is like one concern that I see strictly for DID web because DID web are endpoints.
+
+And as we know, I can take a website down or I can take an account down and that end point is not going to be resolvable as with a ledger. Well, most of the time, maybe not with ND for so long, but when a transaction or a DID is written, it will remain active. So that's like one possible concern I would have with relating using DID web, less for like government entities and authority, but for private sector, smaller companies that don't have the infrastructure to maintain their own DID web infrastructure.
+
+[Speaker 1]
+Yes. No, it's a good point. We have discussed before the idea that DID web is actually probably an ideal when you are a large entity or a trust anchor, for example, the Australian tax office.
+
+But when you're any number of small businesses, you're exactly right that you tend to borrow somebody else's web. And so the domain name is no longer yours and you get locked in. And so we do need some recommendations, I think, about DID methods that are appropriate for different use cases.
+
+I have a sympathy for IPLD, actually, but I'd welcome maybe somebody who's interested in this, creates a ticket to suggest different use cases and recommended practices for which DID method to use for what purpose. Because there's another DID method for products, right? Back to Suzanne's point, at some point in here, we'll be talking about, even if you do have a GTIN, I think the transition is not to switch from GTINs to DIDs, but to start adding DIDs to GTINs.
+
+And in that case, we're talking about products now, not small businesses. So what's the right DID method for that? Is it DID Key or is it DID IPLD or what?
+
+So who wants to take on that kind of DID method recommendation per use case?
+
+[Speaker 4]
+We just created the best DID method there is, and we're going to talk about it at IAW next week, and it's much better than anything else. So I think we would have the best way to talk about it.
+
+[Speaker 2]
+What is it? How do you call it? Give it a name.
+
+[Speaker 4]
+Trusted Web. Trusted Web. Wonderful.
+
+Trusted Web. Or if you say it fast, Trusted Web.
+
+[Speaker 1]
+All right. We've only got three minutes left. Why don't you give us a teaser, Stephen?
+
+On what a DID TDW is.
+
+[Speaker 4]
+It is a... Basically, what we wanted was... We started down the path of the Cary features, but for a DID.
+
+And that became extraordinarily complex and not really getting to our goal. So we've replicated a bunch of the features of... Or the concepts in Cary in a DID web method that has a history, enables full access to the history of it, requires authentication, has a chain of events so that all DID docs are connected, portable so that you can move it from at least website to website.
+
+So if you have a Google DID service that you have your DID on, you can move it to the Yahoo service later. So a bunch of features like that. And you can publish a DID web in parallel to it, and it's sitting in the exact same place.
+
+So from a conversion of a DID to the HTTP address, it's the same as DID web. So we've been working on it. We have a couple of implementations, and that's fed into some pretty cool ideas that some folks have come up with.
+
+So I have a link, if you want.
+
+[Speaker 2]
+I think I've already heard about it. I think Carsten Specker had involved himself a little bit in it as well. I don't know if you know him.
+
+[Speaker 4]
+Who's that?
+
+[Speaker 2]
+Carsten Specker is the CEO of Swerdy. And at least he told me about it. Maybe he was picking up some ads.
+
+But it had a different working name, right, or project name before. It wasn't trusted that all the time.
+
+[Speaker 4]
+Are you thinking of DID Web S?
+
+[Speaker 9]
+Yeah.
+
+[Speaker 4]
+Yeah, this is different. Ah, it's different. We kind of started on DID Web S and then bailed out because of the carry complexity.
+
+And so this is sort of conceptually similar but very DID-centric as opposed to carry-centric. So a little different.
+
+[Speaker 1]
+We have run out of time. That was an interesting teaser right at the end.
+
+[Speaker 4]
+My apologies for that pitch, Steve. I didn't mean to take this out.
+
+[Speaker 1]
+No, no, no. Look, I'm also interested whether you think DID Trust Web would work for product-level stuff. I absolutely do.
+
+[Speaker 4]
+I absolutely do.
+
+[Speaker 1]
+Yes. All right. Yes.
+
+So let's create a ticket on this issue of DID Web recommendations and try to be balanced, even though you obviously have a favorite. But it may well be the right one. I don't want to discount that.
+
+And let's continue discussions a bit more actively in Slack, I think, as a team. Otherwise, we're not going to get through our tickets and progress stuff. So thank you very much, everyone, for your time.
+
+And thank you, Suzanne, for joining us today.
+
+[Speaker 2]
+Do I already have an invite to the next meeting, Steve?
+
+[Speaker 1]
+You should do. Everyone should have an invite every week. But it's alternating.
+
+So next week's one will be on Thursday for you. Thursday morning, which is my Thursday afternoon, evening. If you haven't let me know, just write to me.
+
+[Speaker 2]
+No, I do have it. Thank you. Perfect.
+
+[Speaker 1]
+Okay. All right. Well, see you all.
+
+Thank you for joining. It was nice meeting you. Bye.
+
+Bye.

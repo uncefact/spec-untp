@@ -1,0 +1,753 @@
+[Speaker 5]
+Good morning. Morning in Australia. It's evening for Phil.
+
+I always prefer the good day thing.
+
+[Speaker 3]
+G'day Phil.
+
+[Speaker 6]
+G'day. That way it's like ubiquitous. It doesn't matter what time it is, just g'day.
+
+[Speaker 4]
+Yeah, I have no idea. All I know is that you aren't and I am having a brandy. Because if you're having a brandy at your time of day, you've got a problem.
+
+[Speaker 6]
+Or I'm solving my problem.
+
+[Speaker 4]
+It could be, yeah.
+
+[Speaker 1]
+Good morning, everyone. Good morning.
+
+[Speaker 8]
+Here we go.
+
+[Speaker 1]
+I think we've collapsed down to a hardcore technical team on these calls. Hopefully we can get through the techie stuff and move on to the actual business content stuff soon.
+
+[Speaker 5]
+All right, well, shall we make a start?
+
+[Speaker 1]
+We might be able to do this more quickly than usual. So, yeah, our usual disclaimer. Don't contribute anything that you don't want to give as IP to the UN.
+
+And this meeting is being recorded and will be posted with minutes online. I'll start by sharing my screen and looking at our PR page. Where is it?
+
+Not that one. Yeah.
+
+[Speaker 5]
+Okay. Okay. Well, we've got six to get through.
+
+[Speaker 1]
+First one is from Zach. I will show the files changed.
+
+[Speaker 5]
+This is just a short list of things on the implementation tooling.
+
+[Speaker 1]
+There was a discussion about whether this should really be called a reference implementation or just implementation tools. And if they're implementation tools, why these ones and these have to be all UNCFAT ones, don't they?
+
+[Speaker 5]
+Yeah.
+
+[Speaker 1]
+Which is different to commercial implementations, which we'll list on another page. Any comments on this one?
+
+[Speaker 2]
+I think it looks good. And I know I haven't replied, but, Zach, you were curious to know, like, what would be a difference. And I think for me it would be, do you see these as components that someone could use to build their solution?
+
+Or are these more things that people should, you know, make sure that their solution can interact with?
+
+[Speaker 3]
+So there's kind of two scenarios. And as we get into kind of implementation guidance, we'll talk about that. But the answer is, yes, people could use these to build solutions.
+
+And potentially we want this to be a toolkit for people to interact with, particularly around testing extensions. So one of the things that we're kind of working through, and that's the fourth component, the test suite component, is how do we provide an implementer with a fast way to start experimenting with the issuing of credentials and potentially understanding if and how they need to extend UNTP to meet their specific business needs. And as they extend, how are they ensuring that they're maintaining interoperability with UNTP?
+
+And that's the test suite stuff. And so we anticipate lots of folks will implement lots of different componentry to meet those needs. But we want to have a consistent way of them demonstrating that they're maintaining interoperability.
+
+And that's really sort of what this package will probably be primarily early on. How it evolves, I think it's too early to tell. And I don't know the answer to that question.
+
+[Speaker 2]
+Interesting. So these could very well be used as part of a test suite, sort of test clients or components.
+
+[Speaker 3]
+Test components. In fact, I got working a Docker compose up of these four components yesterday, so that we can very quickly go from, hey, I want to try this thing out, run a test suite, see a bunch of green checks, make a change, run the test suite again, see a bunch of red checks, add some tests, see some bunch of green tests. Like that whole workflow process is something that I'm keen to get right.
+
+[Speaker 4]
+Phil? It's great to see test suites and all that kind of stuff. It's obviously really important.
+
+Are these funded? I'm thinking what's going through my mind is that Digital Bazaar has provided all the test suites so far for a lot of the W3C stuff. And they're now feeling a bit burdened by it, in that they really want other people to do it.
+
+Why should it always be them? It's basically a community effort, but actually the community is Digital Bazaar. So I wonder is there foreseen to be a long-term funding for this?
+
+Because it looks really important and very valuable and fantastic and essential. But would it be there in five years' time?
+
+[Speaker 3]
+It's a very important question, Phil. And no, it's not funded yet. And part of the reason we're doing this in the open and leaving room for other implementations is what's important from our perspective is that the pattern is developed.
+
+How it evolves and gets funded is an open question. And actually, it's something I've been thinking about quite a lot. And we don't have a good answer for it yet.
+
+[Speaker 1]
+We have had some interest from others to broaden the scope of the open source development team. So that in itself is a kind of in-kind funding, right? Like Golda's team and some others, right?
+
+So I think there are two sources by which this will gain legs. One is a bigger team of developers that isn't just us. And the other one is a different part of UNTP where we're talking about a community activation model that has a really repeatable pattern of funding for new communities, a part of which would always go to this.
+
+So, yeah, we're developing a model for funding. And in the meantime, it's a voluntary effort, but not just from us.
+
+[Speaker 2]
+Yeah, and I think I can say for myself, like part of, you know, I'm participating here on behalf of BCGov. You know, we're working to integrate their infrastructure with this specification so that credentials issued within BCGov governance framework can be used by actors and the UNTP spec. So it goes without saying that part of this work, well, I'm more than happy to contribute to these test suites.
+
+We're quite not to the point of testing, but once we're going to start to want testing, I'll definitely not hesitate to contribute to this. So there's always this sort of collateral investment, you know, people that are funded to work on an implementation of this could allocate some of their time to work on this, even though if it's not the main focus. One question I have, and so let's say we want to test with this and there's a bit of a hiccup, right?
+
+Like it doesn't quite align. How do you see this adjustment being made? Is it going to be something like what we'll want to discuss?
+
+Like, oh, we tried to test it, we had this issue. Is it us that need to change or is it this reference implementation? Because that's why I'm always a bit skeptical with the term reference implementation, because it sort of implies that is the implementation that does it all right and you need to comply with it.
+
+When in reality interoperability is you have the specification and you have people try to talk around the table with this specification. So that's one. My question would be, if these are used for test components, how do you, how are we going to address when there's a clash, you know, with someone's implementation in this?
+
+Do we just tell them like, well, you know, you need to make it work. This is how it is. Or are we going to...
+
+[Speaker 1]
+In the short term, I think. Yeah.
+
+[Speaker 3]
+But actually, that goes to sort of our extensions model. And so the idea is the UNTP reference implementation and test suite should be pretty reliable and robust once we get to it. And there will be things, Patrick, to your point, but that needs to kind of go through a relatively slow release cycle.
+
+Because if we're changing things at the UNTP level frequently, we're kind of moving the world and we won't get adoption. People will go, it's too hard to keep up. And so the reference implementation, part of the reason why I did choose reference implementation for the UNTP side of things is because we do need something that's relatively stable eventually.
+
+Like, and to Steve's point, that's not yet, but we need to be pushing for that. Now, on the other side, on the extension side, we do expect quite a lot of variability and clashes in the global marketplace. Like, that's kind of what is exciting about the approach.
+
+And over time, though, we would expect those to roll through the UNTP governance process into UNTP, where it adds value to the global community in sort of major release cycles over time.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 3]
+And that's kind of what we're trying to sort of rationalize around the right language and the description of this so that we get that right. So I think these are important feedbacks.
+
+[Speaker 2]
+Yeah. And I think this question comes just at this stage. Like, once there'll be, like, re-implementation that can all adhere around this, I think that it'll be in a better position to say, like, well, yeah, you know, this works.
+
+It's something. So try to adjust to this.
+
+[Speaker 1]
+Yeah. In the short term, it'll be a collaborative effort to figure out is the test suite wrong or is something else wrong? Absolutely.
+
+There's no position to say it's rock solid yet.
+
+[Speaker 3]
+It's not. In fact, we can say definitively it's not rock solid, right?
+
+[Speaker 1]
+All right. Are we happy to merge this file for now, just so there's some links on the page?
+
+[Speaker 6]
+I'm good with it.
+
+[Speaker 1]
+Okay.
+
+[Speaker 5]
+Where's the merge button? I always lose it.
+
+[Speaker 3]
+I think you have to go back to the last page, right?
+
+[Speaker 6]
+Yeah, you go back in conversation. Yeah.
+
+[Speaker 1]
+What's going on now?
+
+[Speaker 6]
+You're clicking or you're ranking us?
+
+[Speaker 5]
+I'm trying to click and it's not doing anything. That's weird. It's just a browser page.
+
+Huh.
+
+[Speaker 3]
+I can click, Steve, if you want.
+
+[Speaker 5]
+Okay, you merge it. I don't know what's going on.
+
+[Speaker 2]
+Too many tabs.
+
+[Speaker 1]
+You spotted that, have you? All right.
+
+[Speaker 3]
+I've hit merge on that.
+
+[Speaker 5]
+I've been writing proposals about fire ants. All right. Have you merged it?
+
+I have, yes.
+
+[Speaker 8]
+Purple.
+
+[Speaker 1]
+That's just really slow. All right. Okay, and this isn't on this call, but he objected to the must implement a rendering method and asked for may implement a rendering method.
+
+And then I said, I think it's a bit more important than may for us because of the kind of need to accommodate verifiers who are not technically mature. And we settled on a should. Any comments on this one?
+
+Let me open it.
+
+[Speaker 2]
+I feel like his main problem was that it said must implement this specific render method. I think that's where the disagreement came from. Like I said, must implement the HTML template render method.
+
+And this is a good question. You know, do we want to recommend a specific render method? It could be probably a good idea.
+
+[Speaker 1]
+I don't think we should demand only one rendering method. I can't open this either. Something.
+
+[Speaker 6]
+Maybe Zach can take over that. Yeah, do you want me to?
+
+[Speaker 5]
+Yeah, do you want to take the screen?
+
+[Speaker 6]
+Yeah.
+
+[Speaker 3]
+Share screen. I'll make it bigger.
+
+[Speaker 5]
+People can see that. We see your second screen. Hit the wrong one, huh?
+
+There we go. So what was his wording at the end?
+
+[Speaker 1]
+You can click on files change and have a look and see what it settles at.
+
+[Speaker 2]
+I think like his first comment, that's what it says, right? Demanding a particular rendering method was the problem here.
+
+[Speaker 5]
+Yeah.
+
+[Speaker 1]
+So he's changed it to should implement a consumer oriented rendering method such as HTML, SVG, PDF. So he's basically broadened it to use whatever rendering method you like as long as you do one. You should do one.
+
+I mean, that's opening up to risk of some verifiers not understanding that rendering method, but.
+
+[Speaker 4]
+Yeah. I think he's gone a bit too wooly there. I think if you're going to have that flexibility, which I'm not sure is a good thing, then I think you can make it a must.
+
+But how would you test it? I think a must in a tech spec, you should be able to include in the test suite. How would you?
+
+You'd have to test all of them. You'd test all of them.
+
+[Speaker 1]
+I don't think you can have it such as, right? If you want more than one, you'd have to enumerate more than one.
+
+[Speaker 2]
+So that's a good example of like one of the reference implementation we're seeing. If an implementation can understand the HTML render template method, well, you can test it with that.
+
+[Speaker 3]
+So is it a must implement a testable render method, including test suites?
+
+[Speaker 1]
+Well, I think when we're writing a spec, we have to be precise. So if we want to demand more than one rendering method, we should explicitly enumerate them and not sort of have a hand-waving such as, you know, like any one of 20 that you can dream up. So I think there are two questions here.
+
+How important do we think a rendering method is for UNTP? Or the credentials should be renderable? Is that a must or is it a should?
+
+[Speaker 2]
+So I think it should be a should. I think if you make it a must, it's like yet another thing that implementers will need to do before implementing. And I think a should with a specific method could make it testable.
+
+It's a better thing like in the WC test suites, you know, there are must statements and then there are should. So you have like, these are the required feature that is a yes or no if you're compliant. And these should are like optional fields that we strongly encourage you to do.
+
+And you could still test the should statement and would be like how you score on the optional features. And the idea is that the more optional feature you have, the more interpretable your solution would be.
+
+[Speaker 1]
+All right. So I'm happy with a should if everyone else is. Then the question is, which method?
+
+Is it one or two?
+
+[Speaker 4]
+Well, I think then you get into possibly a second should. So there should be a rendering method, period. It should be HTML or you might decide it should be HTML or SVG or something, but have a very limited.
+
+Now, if you have two shoulds, that list of possible rendering methods can be extremely short, can be one or at most two, which gives you a little bit of wiggle room.
+
+[Speaker 1]
+So why don't we suggest a change to that to say exactly that, then there should be a rendering method and it should be the HTML rendering method.
+
+[Speaker 2]
+Yeah. Well, there should be any one that we have something to test it with, which I think starting with HTML.
+
+[Speaker 1]
+And we can add a comment that says as other rendering methods become ubiquitous, we will add test suites and so on.
+
+[Speaker 2]
+Like for an example, I know in BC we're looking at adding like an OCA bundle render method, but we will also have the HTML one. So, you know, we will have one. We'll add the HTML and then we'll add the OCA one to also be there.
+
+So, you know, I think because render method, you can have more than one on your credential. That's not a problem.
+
+[Speaker 4]
+The alternative to that, which I'm not saying is the right thing, but just something we've done similar is we've said you must do A, but you may do B, C and D if you want as well. So, you have a common denominator, which would probably be the HTML.
+
+[Speaker 1]
+Actually, that's quite good, isn't it?
+
+[Speaker 4]
+But that doesn't stop you also making it available in other formats as well.
+
+[Speaker 1]
+Yeah. So, the overall directive is assured. But if you follow the should, you must implement at least the HTML rendering method.
+
+[Speaker 2]
+I like that a lot, actually.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 2]
+So, you should have a render method. If you have a render method, you need to at least have the HTML render method and you may have additional render method.
+
+[Speaker 1]
+Okay. Do you want to write that in there, Zach, and let Nis update it? All right.
+
+We've had a couple more join us. Dr. Wang from China. Hello.
+
+[Speaker 5]
+And Juliet, I think somewhere in Europe, are you?
+
+[Speaker 6]
+I'm in Vancouver. I'm sorry for calling so late.
+
+[Speaker 1]
+Oh, you're in Vancouver. I know. That's all right.
+
+So, we're in the depths of fairly technical stuff at the moment. And like I said at the intro of this call, we're hopefully we'll move on to, well, we will need to move on to content of digital product passports, business content, and stuff like that from the next call. But we've got a few technical issues to get through.
+
+[Speaker 5]
+All right. We're good with that. Can we move on to the next PR, Zach?
+
+[Speaker 3]
+Sure. Yep. If people have improved commentary, they can add it to the comments.
+
+[Speaker 5]
+Yep. So, this one is from Pat. Do you want to talk to your PR, Pat?
+
+[Speaker 2]
+Yeah. So, there's a few things going on here. So, the main thing was the discussion about aligning the conformity credential with the data model.
+
+So, there was a lot of sort of repeated fields that seemed to convey concepts that were already present in the verifiable credential data model. The first example was the issued by part of the conformity attestation, which represents the issuer of the attestation. One suggestion is to get rid of the issued by property of the attestation and use just the issuer field of the credential.
+
+If there's use case where there might be different values, I think that's a bit confusing. And the issuer field can carry all the information that was in the issued by entity. Like the issuer field of the VC would become a party, the equivalent of a party, as well as an issuer in there.
+
+I wanted to talk about status and evidence before getting into the issue two. So, there is a status field inside of the VC of the conformity attestation right now, which is a string. I would be inclined to manage the status outside of the credential itself, because otherwise you will have to just reissue a new credential every time you change the status.
+
+And we already mentioned we want to use this string status list. So, I would be curious if the purpose of having a status field within the attestation with a value like active or revoke, what does that make the credential, right? Is this something we want to have?
+
+Or should we make the status more use the credential status feature of the credential instead? So, that's my second point. The other thing was about the evidence.
+
+So, in the attestation, there's an evidence field that is there to provide evidence about the attestation. And I think we could very well use the evidence field as described in the VCDM. Because when you have these evidence, the same way as when you have a render method, you can specify a type of render method, you can specify a type of evidence.
+
+So, we could just use this field, but do a conformity attestation evidence, which has the exact same content. That would be my suggestion. Yeah.
+
+[Speaker 1]
+So, my view is absolutely wherever it, I think the principle should be that if there is a VCDM field that serves the same purpose, we should use it and not repeat it inside the subject, right? That's a principle we all agree with. And so, that means changing the models.
+
+We spoke about this before. And we'll do that before the next call to do that. And then we get into maybe some blurry areas where is the intent of that field in the conformity credential digital product passport, even though it's named the same or looks the same, actually the same as the one in the VCDM?
+
+And when it gets to status, it probably is because it's really about revocation. And I think the principle here is if you need something like a completely different kind of status or something like that, right, then don't overload the VCDM. Do put it inside the credential, but don't call it the same thing.
+
+[Speaker 2]
+Yeah. Just a small detail for that. So, I'm currently working on the BitString status list test suite.
+
+And there's a feature of BitString status list. You can have revocation, suspension, and message. Message is to give arbitrary status codes that could be used for that.
+
+So, let's say you have a specific status that there's four different states, right? So, you give the first state, I don't know, awaiting order, order process, invoice sent, and so on. And these four states, they are either true or false.
+
+It's a little bit complicated, technically. But it is possible in the BitString status list. However, I think just enabling people to just put it in the VC as also in the credential subject could simplify the job.
+
+Because maintaining a BitString status list is like yet another technical component you need to maintain.
+
+[Speaker 1]
+Yeah. But, yeah, there's that decision to make, right? But I think the principle is don't call it the same thing if you want to use it for a different purpose.
+
+Yeah. And the last thing in your PR here is about the subject, isn't it? There was a comment Phil made earlier that said, isn't the subject of a digital product passport verifiable credential actually the product, not the passport?
+
+And you're saying, isn't the subject of a conformity credential essentially the issue to the party that is given the conformity credential?
+
+[Speaker 2]
+It's a suggestion I'm making because the digital product passport is issued by the producer, right? In most cases, from what I understand, the conformity credential is the producer wants to show an attestation about their product, right? So technically it's been issued to them.
+
+So in this way, the credential subject would become the producer. And there's a field that says has attestation. And then we put the conformity attestation as is in there.
+
+[Speaker 3]
+Yeah. Well, it depends. So I'm thinking about the structural steel use case we're working through.
+
+The conformity credential is actually issued. Well, there's two types of conformity credentials we're working. One is issued to the entity, and the second is issued to the product, that the actual product has been tested for structural integrity.
+
+And so I think we need to be able to accommodate both scenarios.
+
+[Speaker 1]
+Well, the challenge with this conformity credential, it's based on the work from another UN team that aimed to make a generic data structure that supports several different use cases, including declarations. In other words, where the credential is issued by the party that makes the product. There's no third party.
+
+In which case, in that model, the issuer and the subject would be the same. I'm issuing it to myself. There is a kind of a logical argument that says any product conformity credential is kind of about a product, isn't it?
+
+Although sometimes they're about a facility. They're rarely, at least in our world, about the entity themselves. Sometimes you're certifying an entity as, say, let's say ISO 9000 compliant with their processes.
+
+But I'm not sure that's likely to come into our supply chain use cases. So, yeah.
+
+[Speaker 3]
+I actually think we will see those come into our supply chain use cases. I'm thinking about 27,001 for cybersecurity and digital supply chains.
+
+[Speaker 2]
+So, suppose one differentiation I'm making here is that the attestation is about a product. But the credential is a proof that an attestation has been given to a product or an entity. And the credential subject here doesn't need to always be a party.
+
+It could very well be a product if you so decide so. The goal is that it's going to keep the same structure that regardless if it's a party or a product, it will have an attestation as a property. And this makes it that their credential subject.id can be commonly used as a…
+
+[Speaker 1]
+Yeah, except that. So, in this conformity assessment world, you can get an attestation, which is… And that closely maps to a paper certificate, right?
+
+That can actually list 20 or 30 products.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 1]
+And so, if you flip the order and say the subject is a product that has attestation, you're going to have 20 subjects, each with the same attestation but with a different assessment against them. And, you know, it gets quite messy.
+
+[Speaker 2]
+In this scenario, what would the IssuedTo value be?
+
+[Speaker 1]
+Yeah. So, at the moment, the IssuedTo in the credential would be the manufacturer or the business that makes the products, right? So, I think we have a choice here to say, will we always use the IssuedTo field to mean…
+
+Sorry, will we always… Will we stop using IssuedTo and instead say the party to whom the credential is issued is the subject? Or do we just say the subject is an attestation and inside the attestation is an IssuedTo like it is now?
+
+This is one of those fuzzy areas, right? The other stuff about alignment with VCDM was pretty, I think, fairly obvious and uncontroversial. This one makes my head spin a bit more.
+
+[Speaker 7]
+I apologize, guys. I'm having battery issues at the end of the day, so I'm missing some of that.
+
+[Speaker 3]
+Can I suggest from here that we approve this PR, we experiment with the conformity credential issuing process, and the fuzzy area that Steve has just articulated, we create as a new ticket and move that conversation down the line as we experiment a little more.
+
+[Speaker 5]
+Okay.
+
+[Speaker 3]
+Any objections to that? Because I imagine we could spend another 20 minutes here, and I think we need more time even than that to really get this right.
+
+[Speaker 1]
+Yeah, we're going to get into quite deep detail, so let's just… I'm happy with that because I also mentioned that, for me, all these PRs that are saying is how I think the example should look are guidance for me to update the model, to reflect all your wise input, at least the uncontroversial bits. So there's not much harm in releasing this one.
+
+[Speaker 5]
+Okay?
+
+[Speaker 3]
+Okay. Any objections? Okay.
+
+Going. Confirm the merge.
+
+[Speaker 1]
+Next one. I think the next one's similar. Yeah, that's fairly uncontroversial, isn't it?
+
+Or did Ness have a comment on it? This is you as well, Pat. Do you want to quickly summarize so we can move on?
+
+This is your alphabetical ordering thing. I think Pat's… While Pat's not there, let's move on to the next PR.
+
+[Speaker 8]
+Okay.
+
+[Speaker 1]
+This is Phil's one. Do you want to show the changes?
+
+[Speaker 8]
+Yeah.
+
+[Speaker 4]
+It looks like a lot of changes, but they were… A lot of them were things like typos and capitalization of things. So it isn't as much of a change as it looks.
+
+At least I hope not. The… Excuse me, coughing.
+
+The main thing that I wanted to pick up on was this business about a, quote, digital link resolver, unquote. The term GS1 digital link is one that we use at GS1. And actually, we've stopped using it in terms of resolver.
+
+We talk about a thing called the GS1 conformant resolver, which happens to have a GS1 digital link URI as an input, separated out the two things. You can't just drop the GS1. You can't just call it a digital link resolver because it…
+
+GS1 digital link is kind of a marketing term that we use. It's not… There's no such thing as a digital link in that sense.
+
+And if you start using that, you might get a phone call from Panasonic's lawyers because they actually have a trademark on that particular term. So I suggested the alternative name of identity resolver, which I know is more woolly. Actually, in some ways, it means, for example, that a did resolver would fall under that category.
+
+If you needed or if you wanted to specify the kind of resolver you meant, well, then you probably invoke 18.975, this ISO IEC standard, which, by the way, last week was recommended to go to FDIS, which, for those familiar with the ISO process, is final draft international standard, which I think it basically means it's all over by the shouting. It just needs to be voted through to become a final thing. So that standard which talks about taking identifiers and putting them into a URI structure is now very, very close to being finished.
+
+So identity resolver is my suggested term rather than digital link resolver. Apart from that, I think all my changes were more or less all clarifications, editorial changes rather than anything substantive.
+
+[Speaker 1]
+Yes. Yeah. And by the way, just for the record, I actually prefer the term identity resolver to digital link resolver anyway because it's kind of what it's doing, right?
+
+It's taking an identity and resolving it to further information. And so I not only have no objections, I actually think it's a better term. Yep.
+
+[Speaker 3]
+We've already changed the name of the project and we're- I saw that. Yeah. Yeah.
+
+[Speaker 1]
+So then- Okay.
+
+[Speaker 3]
+Any objections? All right. Done.
+
+[Speaker 8]
+Okay. All right.
+
+[Speaker 3]
+Yeah. Let's keep moving forward. Oh, yeah.
+
+[Speaker 1]
+So this one actually changes an awful lot of files, but none of them substantively. It's basically a slight site restructure to align with that five-pillar architecture model and the name of the boxes. So rather than just a woolly term like the identity spec, it's now the identity resolver.
+
+And so there's a clean alignment between the language of the components and the specifications in the architecture diagram and the sections. That's largely what this thing does. I haven't actually changed anything other than that, but it's a lot of files because it's shuffling stuff around.
+
+I also lifted the business case right to the top under about, because I think it's going to get a lot of attention soon for information of those on the core where the UN is in discussions with various member associations like Sustainable Markets Initiative, Responsible Business Alliance, and so on, and regional development banks who, many of them, the European Regional Development Bank included, have essentially bucket loads of funding for sustainable supply chains, but they struggle to allocate it.
+
+I got the money, but who do I give it to? And talking something like at least a billion dollars a year. And this isn't grant funding.
+
+This is trade finance services, right? So it's actually a banking product, but it's an innovative one where small suppliers who struggle to get trade finance on their own terms because of the risks in their balance sheet can leverage the buyer's balance sheet. And basically it's an incentive that is very cheap trade finance terms, but also grants and other things to kickstart the flywheel of a community.
+
+And then there's other, there's this whole sort of repeatable pattern emerging to kickstart communities with funding and with the right member associations leading their big buyers and so on and so forth. It's quite exciting actually. And there's a little subgroup that are going to work feverishly on the thing called a community activation program, which will sort of flesh out the economics of activating a community and so on.
+
+So little aside, but that's why I lifted the business case up because without that, nothing happens anyway, right? We can have the most wonderful technical spec, but if there's no commercial incentive to implement it, well then yeah, it's shop.
+
+[Speaker 3]
+And Phil, that goes a little bit to the question about funding some of these, this tooling and that side of things.
+
+[Speaker 1]
+It doesn't solve it completely, but if nobody's got objections it's, it'll just make the site look a little slightly different, but no material substantive changes. Are we good to merge? I really good.
+
+[Speaker 3]
+Okay. No objections. All right.
+
+[Speaker 1]
+All right.
+
+[Speaker 3]
+So Patrick asked to go back quickly to hit the conversation we're on Patrick. What we said, where we landed that conversation just, just so you're aware is we did merge to the pull request with the idea that we'll open additional tickets, particularly as Steve is refactoring some of the schema or in the coming weeks, week and potentially where the in these cases, running experiments, building test cases, actually running this a little bit will help us help inform where we need to land this thing. And that's kind of what we agreed in the conversation that I think you missed. Is there anything else you want to add to that?
+
+Yeah, that's okay.
+
+[Speaker 2]
+I think that's fine with me and the yeah, like I made this pull request mostly to have discussion. And this was based on, you know, some of the minds act permit credential we've been looking at and try to find where is the middle that we can meet.
+
+[Speaker 3]
+Yep. Cool. I also, I also wrote in the comments that I, and I'll add a ticket and do a pull request to add the guidance around the VC DM as the, like that we talked about in the call into the governance section, just so that we have that articulated and repeated and we can kind of put back to it on a regular basis.
+
+[Speaker 2]
+Sounds good. We can go back on one 13. I know we kind of skipped it.
+
+I had the microphone issues. Yep. Yep.
+
+Batteries. So I was working on some context and then NIST put this context file and I thought they were going in the same direction. So I was happy to see that on the vocabulary website, they are separate contexts for all the conformity credential, digital product passport.
+
+And it seems like we are on the same page that we want to converge them in the core UNTP context, right? That would cover traceability events, digital product passport and conformity credential, and then have another context for whichever extension that's going to extend this. So at least me and this seems to agree on this.
+
+I don't know if there's any thoughts for this by other people.
+
+[Speaker 1]
+I would ask a question there. Right. In my mind, the purpose of a context file is to give meaning to the thing to which the context is attached, right?
+
+So digital product passport or conformity credential or whatever it is, but by linking the terms in that thing to some well-established vocabulary, that's the purpose.
+
+[Speaker 7]
+Yes.
+
+[Speaker 1]
+And when I look, for example, and so that goes to the question of, well, should you have one context file per thing that you're trying to define meaning for? Or do you have one context file for a bigger collection? You can get too big as we can all see from the W3C trace vocabulary, right?
+
+One context file for something like 40 credentials across government, private sector, everything it's ungovernable. And if I think about it from the purpose of not the context file producer, not the devs, but the consumer, right? So I'm US border protection or something like this.
+
+And I'm essentially outsourcing the mapping of meaning, right? And therefore I need to trust the context file that it's been done right. And when it changes, I might even want to review the changes.
+
+And so, and as if we're going to version, let's say, a digital product passport separately from a conformity credential, what is the rationale for not having a simple one-to-one between a credential type and a context file? I'm not sure I understand why it's better to have one context file for all of UNTP. Not that it's that big, it's much smaller than trace vocab, for example, but I just don't get the logic.
+
+It seems to me that you version a product passport at a certain pace and you'd version the context file with it. And it's there to describe that thing. Why isn't there a one-to-one?
+
+[Speaker 2]
+I think that's a very good point actually to, you know, sort of make sure that the context file matches the versioning of the credential type itself. Like the big credential categories that we've defined, you know, we have got product passport, conformity credential, traceability event, and maybe some kind of anchoring identity credential eventually. Yeah.
+
+I mean I was not strongly opposed to that idea. In my head it would be, which is like might as well have one context that represents the UNTP spec as a whole, you know, the, at least the base component. But I think having a different one per each of the core data credential type that we've defined is also makes sense.
+
+[Speaker 1]
+Because we would probably, as you drilled, you know, we've got this context, semantic hierarchy, right? Where you issue a credential and the type field will typically have, it's a, it's a W3C verifiable credential. They all are that.
+
+And then it's a digital product passport and then it's a Australian livestock passport, you know, this kind of layering of context, right? So when the Australians get into the game of making their livestock passport as a digital UN digital product passport extension, they'll make a context file with the stuff about, I don't know, animal species and I don't know, fat content or whatever it is that, that is important in a, in a passport about a cow. And it'll probably be at that granularity.
+
+So yeah.
+
+[Speaker 2]
+I like the argument that it will probably make it easier to maintain.
+
+[Speaker 1]
+Yeah. And it's easier for someone who has some rules about trusting it. Like say a border authority starts using conformity credentials to, to trust or not trust importing shipments.
+
+And if we have a big context file and something on the left-hand corner has changed, does that mean the board, but which the border authority is not using, do they have to reassess the whole thing? Anyway, that's my thoughts. Phil's got a contribution.
+
+It's always wise.
+
+[Speaker 4]
+Not always. It may possibly be relevant to this conversation to point out briefly the way we do. We've managed context file versioning.
+
+So, cause I'm obsessed with not deleting stuff. So this is just a, just where I do this very, very quickly. This URL is the latest version.
+
+This follows the way the W3C publishes its standards. So that URL is the latest version. And that can change over time because it can be something else.
+
+If you want version 1.0.0 that is immutable and will never change, well include the version number in the URL. In fact, we've had two versions of that particular file. There's version 1.1. So whether you want the latest version, which can change or you want an immutable one, you've got that choice in the way that they're hosted. People seem to like the fact that we did that.
+
+[Speaker 2]
+Yeah. And I think to go back with the different version of the item, if for some reason the traceability event goes through a lot more changes because there's more iteration that needs to happen, why should, by consequence, the versioning of the whole thing change? So I think that is a good argument here.
+
+If the conformity credential never changes, well, why does this context go through all these changes? Because of the traceability event credential. So I think that's a great idea, actually.
+
+[Speaker 3]
+Yeah. And I think to Steve's point, the customer of these context files is going to be what drives adoption of this approach or not. And if we make it too hard for the user of these passports to understand, then, well, we're dead in the water.
+
+[Speaker 8]
+Yeah. Okay.
+
+[Speaker 1]
+All right. So what is that reference, Phil? Yeah.
+
+I'd like to agree that pending any other impacts from testing, something we learn, the basic principle is we version data models and schemas and context files all together at the granularity of the thing, in this case, the credential. So digital product passport or whatever. I mean, implementation lessons may teach us a requirement for something different, but that feels to me like a really simple and sensible start, if nobody disagrees.
+
+All right. Well, has anybody got anything else they'd like to raise about open tickets before we finish this? Do you want to merge this one or do you want to merge that one?
+
+[Speaker 2]
+Well, so this one currently, the context.
+
+[Speaker 1]
+Is one big context.
+
+[Speaker 2]
+Yeah. So maybe I can close my change. I suggested some change.
+
+I need to remember how it is and maybe open a new one for, because what I'm personally interested in is the conformity credential. And all I was trying to do here was to add the conformity credential stuff in there. So it sounds like it might be favorable to have a different context.
+
+There were a few questions by NIS about why do we define ID and type everywhere that I'm going to wait. I'd like to leave this open. So maybe you can reply to those questions.
+
+I'm curious to have this point of view.
+
+[Speaker 1]
+Let's leave that one open then.
+
+[Speaker 2]
+Yeah. Because I found a citizenship vocab is pretty interesting because it is an extendable vocab, the same way, right? So they have VCDM citizenship and then a jurisdiction would add their citizenship slash jurisdiction specific thing that they need for binding identity.
+
+So it's a bit similar and it's pretty simple to read. So yeah, I couldn't get into much detail. Like I like using types for object.
+
+I think it allows people to extend objects in the same way that a object that is of type conformity at this station, while all of a sudden you could add another type being a mindset permit, or so it sort of refined, it allows you in this conformity at this station object. Well then all of a sudden I can add a few fields that are specific to a mindset permit while maintaining the at this station side. So I think types are good for that because it's only not only the credential that has a type of the object can also have their own types and so on.
+
+[Speaker 8]
+Yeah.
+
+[Speaker 3]
+Okay. Yeah. I added a couple of comments there and we'll leave it open.
+
+[Speaker 7]
+Sounds good.
+
+[Speaker 5]
+Right. Yeah.
+
+[Speaker 1]
+If nobody's got any other things.
+
+[Speaker 2]
+Last comments. So this was labeled V one. Is it a bit, should this be V zero or zero point something?
+
+[Speaker 1]
+Yeah. Not V one. I think we need to aim for V one around end of July or something like that.
+
+When we're going to build some real implementations.
+
+[Speaker 7]
+Yeah. I'm like a good, good time zone. Perfect.
+
+[Speaker 1]
+I think I brought this up in the previous session, which wasn't very friendly time for Canada, but we've got this kind of collision of methodologies here where we're using a particular tool, which I've got no strong allegiance to, but a web-based data modeling tool called jargon. That's where you draw these nice pictures. And from there we generate a schema and context files.
+
+And part of this whole discussion was triggered by the fact that the context files it generated didn't seem that high quality. And so this put some stuff in there that said you should make them like this. But if we carry on with the model generating, it means that whatever you do with your context files at the UNTP level will get overwritten by whatever the model generates until we say now let's stop using models and just handcraft context files.
+
+That might be a better approach. I don't know, but, but for now, we've got a little bit of a collision, right? So it's not just the context files.
+
+It's also the schema and also the, all the definitions on the page and the diagram, everything comes from that model.
+
+[Speaker 2]
+Is this model a, like a tool or is it like been made specifically for this? Like this jargon tool, is it like an existing open source tool that you use for this or was it made, was it developed for this and catered? Like, is it a custom built tool or?
+
+[Speaker 1]
+It's a tool that you can have a look at it. I'll send you a link and we can have a chat about it. It's a tool that's made primarily for the idea of modeling semantics as more like object relationship models, but has its initial intent really was to be able to design high quality APIs, domain, domain driven APIs.
+
+[Speaker 2]
+Is this, this rip, this different thing, something that is just a matter of configuring it differently.
+
+[Speaker 1]
+That's right.
+
+[Speaker 2]
+Maybe we could still use it, but just configure it. So it outputs the context.
+
+[Speaker 1]
+Yes. Yes, absolutely. So if it can't output context files that are meet NIS and Pat's expectations, then we won't use it.
+
+Right. Basically. So I'm not saying we're going to be governed by what the tool kind of can't do.
+
+I'm just saying at the moment we're using a tool and if it can generate the stuff of a high quality, it might make the hundreds of extensions simpler to manage.
+
+[Speaker 2]
+Jargon. Okay. I'll definitely read into that.
+
+Cause I did like some of the things were interesting about this. It's just a matter of, can it do what we want? Seems like it's probably fairly configurable.
+
+[Speaker 1]
+Yeah. Some of it's configurable others. You ask the developer and he makes changes in a day or two.
+
+So. It's.
+
+[Speaker 2]
+You know, the developer. Yeah.
+
+[Speaker 1]
+He's the guy that wrote the API design guide for the Australian government. And he made this tool to support some Australian government projects where they were trying to improve their quality really of their restful APIs. Cause they're easy to say and hard to do.
+
+Right. Good quality. Resource centric APIs.
+
+Hey, well, one of the things I like about it is it keeps the data model simple and injects other contexts to make rich technical things. So you don't have to actually model. You don't have to have a knowledge of the target technology to make a high quality API from a simple data model.
+
+[Speaker 2]
+Yeah. And it probably keeps everything aligned in a pretty nice.
+
+[Speaker 1]
+Yeah. It does a very good job of versioning and all that stuff like that. Yeah.
+
+Anyway. I have no shares in it and I'm I just find it quite convenient. Right.
+
+So feel free to assess it.
+
+[Speaker 2]
+So we're looking at BC gov. Like, so they have a governance team. So they have a repo where they keep governance document and we want to use that as our vocabulary resource.
+
+So they would publish a GitHub page and our context would live into that governance repository. So we would have like a context for the mines act. We'd have a context for the petroleum and natural gas and so on.
+
+But maybe I'll look at this and see what we could do with this.
+
+[Speaker 1]
+Yeah. I mean, there's no mandate. There's nothing that says you must use this tool.
+
+Right. Especially for extensions. We certainly can't dictate that everybody use whatever tool they want for extensions.
+
+But anyway, we are end of time and I just wanted to open the floor to anybody who has any, any comments or thoughts to add before we say, thank you. See you next week. By which time we will have updated the data models and regenerated the context files.
+
+Well then with that, thank you for your attendance and hopefully we get into less technical and more business focused stuff soon. Thanks everyone. Yes.
+
+[Speaker 3]
+Thanks guys. Bye.

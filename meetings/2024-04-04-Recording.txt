@@ -1,0 +1,590 @@
+[Speaker 1]
+I will post a recording so that those who didn't make it can watch it. Secondly, a reminder, this is a UN meeting. Everybody's contributing voluntary time and contributing their ideas, and when they do so, they're contributing the IP to the UN.
+
+If you don't want to do that, don't do it. That's conditions of participation. And with that, I'll hand over to Nisht to work through things.
+
+I sent a little email just before this with some of the interesting tickets and some excuses as to why I haven't got a PR to update the passport model, because there's one or two questions I still wanted to ask you all, and if Nisht, at some time during your management, you could allow 10 minutes just for a bit more discussion on digital product passport, that would be great.
+
+[Speaker 2]
+You got it. Let's just go through the normal order, and we can, as we dive into issues, we can take them in better order than how they're automatically sorted. So we have a single pull request from SAC.
+
+[Speaker 8]
+Same one as last week. Yeah, so that was rejected last week, and I haven't updated it since then. I wasn't sure about the process, so I've just been busy.
+
+So I need to clarify what... So from the conversation last week, I need to clarify what I meant by depth of the supply chain, so this was off of a question from Michael Shea, and then I tried to sort of clean it up and provide examples, but I'll try again based on the feedback last week, but I haven't gotten to it this week. Yeah, you need to update the PR, basically.
+
+[Speaker 2]
+I would not object to merging it and clarifying depth in a subsequent PR. I think that's a better approach, but...
+
+[Speaker 1]
+Okay, I'm fine with that.
+
+[Speaker 2]
+It's a step in the right direction. We want steps in the right direction. Okay, cool.
+
+[Speaker 8]
+I'll create a ticket while you're sort of going through it with clarifying depth as a follow-up.
+
+[Speaker 2]
+All right, any objections to merging?
+
+[Speaker 9]
+Let's do it. Yeah, let's get it out the way.
+
+[Speaker 2]
+Two smalls easier than one big. They just tend to grow and collide and keep it light. All right, that's it for pull requests.
+
+That was fast, a little too fast, perhaps. Let's look at least recently updated issues. However, this is already the time where we can deviate and focus on specific issues.
+
+If you have any to point out, Steve, I might have your list in front of me here. The ones you highlighted in your email, we can certainly start with those. If you could help us on the numbers.
+
+[Speaker 1]
+Yeah, my apologies. So, the one I was most interested in is the DPP one again, which is number...
+
+[Speaker 9]
+I think it's 32. Yeah.
+
+[Speaker 2]
+I think it's 38.
+
+[Speaker 1]
+Yes, 38. I'm sorry. There you go.
+
+You're correct, 38. So, this has had quite a rich discussion. And as of last meeting, we had a discussion about seven points.
+
+And then I wrote a ticket saying what I would do to reflect those seven points, which I have done, by the way, in the model. But I haven't made a PR. Because as I did it, a bunch more questions came up.
+
+And I haven't put them in the ticket. So, I might just do that now. Because they're in the email I wrote.
+
+Let me pull the email.
+
+[Speaker 2]
+Is this related to the data model you shared here?
+
+[Speaker 9]
+Yes. So, where's the email that I just wrote? I can pull it out also.
+
+[Speaker 2]
+Let me see. Is it safe for me to share my email? I guess this is fine.
+
+[Speaker 9]
+Yeah.
+
+[Speaker 2]
+Yeah.
+
+[Speaker 9]
+I'll just paste them in now. Yeah. So, as I paste these, I'll just not waste your time.
+
+[Speaker 1]
+Multiple identifiers for a thing. We all know that a particular entity, let's say a facility can have a GLN, an ABN, and a DID, and all kinds of things. And I didn't really reflect that in the data model.
+
+And so, we probably should. Particularly, I think, in the future, if we're going to have the ability to verify things like that ABN is that DID, then somebody who owns the DID ought to be declaring they are that ABN and vice versa, so that you've got things to compare. In other words, you may well need, both because it's interesting to have more than one identifier for a thing, but also because you want to verify a declaration that these two identifiers are the same thing, you need to change it from, I thought, from one ID for each thing in the model to a list of identifiers for the thing.
+
+So, which screen are you showing? Oh, yeah. Okay.
+
+So, that's why, in there, I created that little identifier class, and in product and facility, you see identifiers, and it's a list of identifiers. Because the other thing that occurred to me, and this is maybe, I don't know if anyone from GS1 is on the call, but if you have an identifier of a thing, and it's resolvable to information about the thing, let's say a product to a product passport, but then the product passport changes over time because you've got more sustainability information that you want to attach to that product, not the product instance but the product category or class, then if you've put a URI or URL in a document, are you, are we losing the opportunity to go through a link resolution process to find the right current version as opposed to the version that happened to be in a thing a while ago, right?
+
+So, should we be putting URLs to reference things in passports or identifiers of things and using a link resolution process, or allowing either, and if so, what does that mean for the structure of identifier? These are the things that got my head scratching. So, that's the reason for that little box in the bottom right that says, that's basically a type, and you can see it used in product there.
+
+The first thing, the first property of products is identifiers, and it's in a list of, it's a list of identifier. So, you could put in there a did, and or a, and a GTIN, and whatever else, and well, to be precise, you can put in a digital link because it's a URI, right? Yeah, so you could put a digital link, or you could put, let's say, a scheme URI, and then an identity.
+
+Yeah, so the reason that breakup there is to point three that I've just posted to the ticket, which says, should we put resolvable URLs as identifiers, or should we put the identifier, and then the consumer follows a link resolution process to find the, because what if I put a URL in a passport that, I don't know, five years later, it's about structural steel, and meanwhile, the identifier is still valid, but whoever owns that identifier has used to change their website, change the location of credentials, or whatever, right? You are going to be fragile over time.
+
+[Speaker 2]
+Yeah, we have a bunch of questions I overlooked. Virginia?
+
+[Speaker 5]
+Yeah, I somehow don't think that it should be allowed in most cases to have product identifiers where the claims will change over time, because this would allow a manufacturer to manufacture 95,000 products with a low level of sustainability, and then 5,000 with a high level, and apply the high level to all the 95,000 that were produced with a low level of sustainability. So for me, the claims have need to be the claims that are relevant for that product when it was manufactured, where it was manufactured, and not some higher level class that allows you to cheat.
+
+[Speaker 1]
+Yeah, yeah, so you're right, there's a tricky balance, isn't there, between what's practical to implement, and what's robust from an integrity perspective. So we had an earlier discussion, I don't know, some weeks ago now, about whether claims can be at the product class level. I used the word SKU, and that caused all kinds of confusion.
+
+I didn't really mean SKU as an internal stockkeeping unit. I meant, let's say, iPhone 14, as a generic iPhone 14, has some characteristics that Apple wants to assert in a bunch of claims that are relevant for all iPhone 14s. And now, halfway through the different factory with a different process, and they have better characteristics, how do you cope with the likelihood?
+
+Well, first of all, there are many things that are not serialized. So they are just, the only identifier you've got is that product class level, that kind of trousers, or suit, or Adidas shoe class, right? They're not serialized products.
+
+So you can only make claims at the product level, at the class level.
+
+[Speaker 5]
+No, but you have to be able to, for example, just for export, import, you have to be able to indicate origin, for certificates of origin. And those shoes or that iPhone might have been manufactured in two different countries.
+
+[Speaker 9]
+It might.
+
+[Speaker 5]
+So there has to be an ID beyond just the style number of the product.
+
+[Speaker 1]
+Well, the reality is, though, that those are maybe internal batch numbers, right? And I'm sure that they're discoverable on the product, but yeah.
+
+[Speaker 5]
+Once people start having product passports, maybe they will need to be discoverable on the product.
+
+[Speaker 10]
+Exactly. I completely concur with Virginia. I mean, that's the difference between product and items or assets.
+
+I mean, we cannot stay at the product level. Otherwise, all the claims are going to be fake. It's not going to make a difference from today.
+
+We've got to get down to batch numbers, possibly serialized numbers when it exists, but I concur that it doesn't exist often, very often. That batch number, it's almost always present everywhere, or it has to be. Otherwise, you don't know what you're speaking about.
+
+[Speaker 1]
+Yeah. So often the batch number might exist, but it's an internal reference number that's not shipped with the product, right? So when you're holding those Adidas shoes in your hand, you don't know what batch number they came from.
+
+Well, as a bulk buyer, not as a consumer.
+
+[Speaker 10]
+Yeah, but that's a change that needs to happen.
+
+[Speaker 9]
+So look, I don't think...
+
+[Speaker 10]
+And in many industries, you have them. Like in food, you have them. Okay.
+
+So yeah.
+
+[Speaker 2]
+Gerhard has had his, and Brett also has had his hand up for a while. Gerhard, maybe inject your thoughts.
+
+[Speaker 3]
+Yes. I tend to imply or to use those granularity level, which they have used in Europe for the digital product passport. And that's a model, what's named here class.
+
+That's item that's in fact, for them, or here, a serialized thing, and we have the batch. And how to identify them. When I have, let's say a model of a product class, normally in GS1 environment, it is a GTIN.
+
+And this GTIN is not a specific item that is uniquely created. It stands for a group of products that have been made. And even when this group of product have been made in a particular production cycle, then it gets a batch number for those who are interested in it.
+
+And that's why you see a GTIN combined with a batch number. So that makes it a lot easier. But of course, there are products that have characteristics and that can change in time.
+
+And I experienced this in the flower industry. That's where you have living plants, et cetera. When they are in stock, they have a particular size.
+
+And the moment they are going to be sold and transported, they have grown 5 or 10 centimeters. And the discussion came up, this is not the product. And so what they made by GS1, it has been created by GS1 is a implementation guidelines for GTIN for the, in this case, the flower industry.
+
+And there they made rules for assigning a GTIN when particular characteristics of this product would change. And mostly it were the so-called commercial relevant characteristics. If they would change, then it was needed to assign a new GTIN to a product.
+
+And now we come here to the same problem. When a product gets a, let's say, sustainability characteristics, and that changes in favor of the view of a consumer or in view of commercial purchasing aspects, then the question should it get another product ID, or in this case, in GS1 context, a GTIN. And that's a question we should ask how GS1 would look at this, but also how they would look at this in Europe.
+
+Yes.
+
+[Speaker 1]
+I have sat through various GS1 conversations about how they name things, but how they, yes, how they assign GTINs. It is a complicated thing, but Brett, sorry.
+
+[Speaker 7]
+Steve, you'd be well aware of where I'm coming from. I just wonder whether identifier is even the right term. It seems to me that identifier is a subset of a wider group of classifications.
+
+So identifiers tend to be producer specific and that's all good and well, but often we need something that's more generic than particular to an individual producer. And so we're thinking of product classes with whichever provider, whether it's the UN or other providers of product class descriptors. And I'm thinking particularly here of the building product sector, which has developed its own quite sophisticated nomenclature for different product types, which goes down to quite granular levels.
+
+And I don't know that they refer to them as identifiers as such. They tend to think of them as classifications. So I just wonder really whether you've zoned in on a, or zoomed in on a particular subset of a wider category of descriptors.
+
+[Speaker 6]
+That's a great point.
+
+[Speaker 1]
+I do distinguish between category schemes with that product class, which admittedly is a bit too constrained at the moment to UN CPC. It needs to be more general than that, but there is a product class and that's probably a repeating thing as well. But the difference between, I think a category scheme and an identifier is a category scheme is what the name suggests.
+
+It's a way of grouping similar things. An identifier is for a specific thing, right? So a class would say it's sports shoes.
+
+An identifier would say it's this Reebok or Puma model, right? And so they're both very valid. What we've been talking about is the identifier being not a category.
+
+It's a specific thing that has information about it from the manufacturer. But the question is, how do we treat sustainability claims and other product conformity claims when they're made at the product level? So that Nike shoe versus the item level, the particular Nike shoe pair that has a unique identity that I bought at that shop, right?
+
+[Speaker 9]
+At the moment, I've just got a list of... Is category scheme, I don't see it on here, right?
+
+[Speaker 3]
+Yeah, it is product class and that's... It's a little bit confusing. I would suggest to like we did in, how do you call it?
+
+The product conformity project, we use classification. Classification is used by GS1 for the GPC. It's used by customs, et cetera.
+
+So it's confusing to use product class. It is in fact not a class of the product, but a class for the group of... Yes, yes, yes.
+
+I'm happy to change that.
+
+[Speaker 1]
+Happy to change that. The name for these properties, we'll have to change soon to align with certain vocabularies and common use, right? So don't worry too much about that yet.
+
+We will do that. I'm more concerned about how do we manage the fact that some product conformity information in general is at the product, at the G10 level, like motorcycle helmets and safety tests or steel, tensile strength or whatever, right? It's usually not declared at the particular bar of steel, but in that class of steel, right?
+
+So it's quite valid to attach, I think, product conformity claims at the model level, if you like. But when you get into traceability, and Virginia is perfectly right, that same pair of shoes could be made in three different countries. The same, not the same physical individual pair, but the same model could be made in three different countries, right?
+
+So we've always got this multiple granularity to deal with.
+
+[Speaker 3]
+Yes, that's why certifications are issued mostly in textiles, like GOTS certifications for a particular region, even. So it depends sometimes on the region where they are issued for, even a country. And I don't know if, like, Coca-Cola has in my country, a particular G10.
+
+But when you go to another country, it has another G10. But it's still the Coca-Cola. So this whole assigning of G10s, there is something behind it that makes it differ in the identifier, though it is the same product.
+
+[Speaker 5]
+I wanted to...
+
+[Speaker 3]
+It's where they are made, because they are bottled in the location where they are bottled. And there they get the G10, as I know. And the discussion here is also about the location.
+
+And as you have shoes of Nike or Adidas, it can be made in Bangladesh, it can be made in India. And then there is one G10. And you have this conformity related data.
+
+And how does that work, then? That's the whole question, I guess.
+
+[Speaker 2]
+Virginia, you had your hand up for a while.
+
+[Speaker 5]
+Yeah, I wanted to mention that I don't think we can disqualify data requirements, because that data currently does not travel all the way down to the consumer. Because if, for example, in Europe, the data product passports require certain sustainability information that's only available at a batch level, then the product passports that travel with the product to the consumer are going to have to have batch level information, even though today they do not have that information. And this is, I think, going to cause a lot of issues in implementation.
+
+But when you look at the reality of what has to be in a product passport, in order for it to pass the regulatory requirements, I don't think you could limit yourself to only what's currently with the product.
+
+[Speaker 2]
+That's a great point. Look, we've been talking about this for half an hour now. Can we focus on how we drive this to, if not close, then at least a pull request and have something to baseline the discussion from?
+
+Steve, I sort of assume it requires a pull request from you, and we can take it from there. Does that make sense?
+
+[Speaker 1]
+Yeah, look, I'm going to do what I did last week and write a little summary of this discussion and a proposal in the ticket, and then prepare a pull request. And at least we then re-baseline, right? It might not be final, and people can still argue about stuff.
+
+But let me just have my best stab at reflecting the discussion. I will do a pull request, probably tomorrow. And next time we chat, we'll close the ticket and then reopen a new ticket about the next phase.
+
+Otherwise, we've got too much in one pull request. I'm happy with that, if everyone else is.
+
+[Speaker 9]
+Yeah.
+
+[Speaker 2]
+Great. Thank you for that. There were some other issues in your email.
+
+What was... I think I still have that open here. Oh, the technical one on...
+
+[Speaker 1]
+Yeah, there was a little robust discussion there, too, about... Yeah.
+
+[Speaker 2]
+And it came from something not really related. So, thanks, Michael, for that. And I referenced some requirements that I had thrown in, which, of course, is also still up for debate.
+
+And they're also pretty poorly formatted. And then that turned into what types of verifiable credentials is it we are recommending? And even further, are we making recommendations?
+
+And then that becomes a technical discussion of pros and cons of various formats. And also a more theoretical discussion of what does it mean to make a recommendation? Is it our job to make this sort of recommendation?
+
+Do you see where it leads, if we do? It's my personal... And you can see that from my comments.
+
+I think it brings a tremendous amount of value to make recommendations, because that promotes interoperability. But, of course, it comes with the cost of rejecting people that have made their choices, maybe invested time and effort into implementing certain of these competing standards. Do we want to repel the ones that have and might not agree with our recommendations?
+
+So, I suggest we start from there. What is our ambition with this? Will we make technical recommendations?
+
+Or are we more of a conceptual... The idea of a three-party model is great, and you should all adopt it. But we'll leave it to someone else or the market to see how it plays out.
+
+[Speaker 1]
+Well, my view is we shouldn't be creating technical specifications, but when there are, let's say, four or five different existing technical specifications that we can point at as a way to implement, then we can either say, use anyone you like, or we can say, we recommend this one or these two for these reasons, right? And there's this trade-off that Nis just mentioned. The more precise you are, the easier it is to be interoperable, because to comply, you just implement one of them.
+
+And it doesn't mean it's locked in stone forever either way, by the way. If this work is successful, one measure of success will be that we're running this project team, perhaps with different people, product team, for years, because we'll be up to version 5 and 5.5, and, you know, so it's really just what's good enough for a version 1.0. And I do like the idea of being as specific as possible. My only challenge with this is we're generally, apart from some deep technical expertise on this call, we're generally a bunch of business analysts and not technical people, and there is a risk when business people make technical decisions, right?
+
+Which is why I said we should probably inform our recommendations by the experience of pilots when there is dispute or doubt about the, you know, if we all agree, yeah, this is clearly the way to go, then we can go, all right, let's recommend that then. But if there's some argument, then let's test them, test the options in a pilot, and then make a, I still prefer to make as narrow a recommendation as possible. I think most product vendors, if they want to maximize their market, will generally be quite specific about what they issue, but very wide about what they accept.
+
+You know, I'll verify any kind of credentials, but I'm going to issue this type, usually, right? It's a way to, so it's not the end of the world. But yeah, I prefer to be more specific if possible.
+
+Joe's got his hand up. I saw you wrote some stuff about trust over IP.
+
+[Speaker 4]
+Yeah, no, that's absolutely fine. And I do agree, Steve, and guys, look, it might well be the situation that we have to provide something like implementation guidelines that allow us to say, these are the sort of attributes, these are the sort of things that we need to think about specifically for these type of scenarios. Because it's not appropriate that all protocols, all technical solutions are appropriate for this.
+
+You know, we have to decide what's important for it to make it work properly, and allow it to change, and allow it to evolve, and all those sort of good things. What I would say is that it's fair enough to say, you know, for this proof of concept or pilot, we want to use this, but we've got to understand why we're making that choice. And what that means for the technical implications of the solution, which are typically things like longevity, you know, all the non-functional sort of capabilities that we need to deliver.
+
+So I would say, implementation guidelines is probably where I would go. We're not building specific protocols. But, you know, I would also say that there are some great things happening in and around this space that we should be able to leverage.
+
+[Speaker 9]
+Agreed.
+
+[Speaker 2]
+Okay. So what is, what will our implementation guideline, like what is the next step for this pull request, for this issue? Sorry.
+
+Is that a pull request that makes recommendations about implementation guidelines?
+
+[Speaker 4]
+That can happen. Yeah, absolutely. Yeah.
+
+[Speaker 2]
+Yeah.
+
+[Speaker 4]
+From a technical perspective, we have to sort of make sure that we understand what the nuances are that we need in protocols, and the technical basis for our, you know, our choices.
+
+[Speaker 1]
+Yes. There's a general pattern here in our UNTP website, right, where we've got these very general, almost architectural requirements on one page. But then for each more detailed bit, we, at least for product passport, I put a few down, right, that I said, I think the product passport needs to meet these business requirements.
+
+Why don't we say, the way to address this is to lift the little bit and say, what do we want out of a technology, a verifiable technology architecture for this? Things like, you know, what, some conversations in the thread, right, about inanimate objects don't do verifiable presentations, you know, that we're really about discovering credentials, and those credentials could be represented in various ways. We do need to be able to follow, to be able to draw verifiable graphs out of multiple credentials.
+
+And so we recommend linked data. And I'll note your comment, Nis, that doesn't, separate question about how we assign these things and what technology to use.
+
+[Speaker 9]
+Yeah.
+
+[Speaker 1]
+So I'd maybe look at some of the comments I've put and decide whether they make sense to list as sort of business requirements for our use of verifiable credentials technology. And put a little list of those at the top of that page, and then say, it appears now that these, this is one or these two or three technical options align with these business requirements and do a pull request. And then we, again, it's a rebase line to say, you know, yeah, if it's just come to think of it, that's actually what started this discussion.
+
+[Speaker 2]
+I threw this in, like I said, it's poorly formatted, but it's something tangible and concrete and this is what triggered the reaction.
+
+[Speaker 1]
+And that's good, right? That's the purpose of this. You put something, you trigger a discussion, then you fix the updated.
+
+So maybe those requirements though, rather than saying things like must implement the VC data model or that, the requirements are more at a business level. And I can send you some thoughts as a bullet list and you can add to them if you want. And then the consequence of those requirements would be, well, we recommend the VCDM 2.0 and we recommend, you know, a certain list of technical specifications that are basically the recommended best technical choices to meet these business requirements. That would be the way I'd structure this section.
+
+[Speaker 4]
+Yeah. The challenge we have guys is that we're going to get multiple different credentials using different frameworks and the rest of it, and we've got to be able to support it. And that's fine.
+
+That's fine. So therefore, in that case, what that means is that the verification framework needs to be able to consume those and understand what it means to have multiple credentials in different formats for different reasons and so forth.
+
+[Speaker 9]
+That's right.
+
+[Speaker 4]
+And that's whether it's some organizational identity, as well as credentials, which are digital project, product passports. And that's what Nancy's doing with the stuff that she's doing in VCGov. They're using, I think, non-creds for the VC stuff, but they're using Keri Gleif V-Lines for organizations.
+
+I didn't even know that.
+
+[Speaker 2]
+Oh my God. I'd never heard of that, but it makes sense, I guess.
+
+[Speaker 4]
+Only invent it if you don't have to.
+
+[Speaker 9]
+Yeah. Yeah.
+
+[Speaker 1]
+And that's a whole separate discussion about business identifiers, right? And I think some people may choose to use V-Lines, but the reality is the world is full of business identifiers, like Australian business numbers. They're ubiquitous, and we have to be able to accept them.
+
+[Speaker 4]
+Of course. By the way, the ABN is also in a V-Line, but that's okay. Yeah, but not issued by the tax office.
+
+I know, but it's issued by the government.
+
+[Speaker 2]
+So I'm just trying to picture what will this look like? What does success look like? A list of recommended verifiers.
+
+We recommend verifiers support the following, and it's, let's just make it really bad. MDocs, Keri, and on-creds, and then the standard ones, dots and linked data proofs. That list of five, is that what we consider success?
+
+It's not what I consider success. No, I don't think that's right.
+
+[Speaker 4]
+I don't think that's right. I think what Steve was suggesting is we lift it up slightly and sort of say, to be able to support the adoption of the protocol, these are the sort of aspects to the protocol which make it critical that we are predominantly decentralized. Support multi-credential presentation, support multiple credential type definitions over time.
+
+And those sort of types of capability definitions. And then, okay, then to test this out, we would look to use a proof of concept which actually does do that, and looks to use credentials from different sources using different protocols, or different technologies, I should say.
+
+[Speaker 5]
+From a best practices standpoint, if you look at a recommendation as being sort of a softer form of a regulation or something like that, the best practice in legislation is to give performance criteria. So, performance criteria are the same as business requirements in this context. And then say, these are the standards that currently meet these business requirements, but you can use other standards as they're developed in the future if they meet these performance requirements.
+
+That's the approach, Stephen.
+
+[Speaker 1]
+Yes. Here's a proposed way for us to close this. I take an action to write a stab at what I think are real business requirements, so not technical choices.
+
+But what do we want out of this verifiable architecture? And I'll write a list in the ticket. And then this goes, right, I think these are currently a list of technical protocols that meet those business requirements.
+
+And then that becomes a pull request. And it's a rebaseline. It gives us a rationale for the choice of technical protocols, right?
+
+Because we'll get asked that anyway, right? Why BCM 2.0 and not MDL or whatever, right? So, it still won't be right, but it's another baseline, right?
+
+It's getting us... No? No?
+
+[Speaker 2]
+It doesn't feel like we're not really solving... We're not solving the problem. The problem is there are at least a handful of ways to do the same thing.
+
+And we're the United Nations, we're the whole world. So that means everyone is represented here, even Kerry now. And either we make choices and repel the others, or we make it open and we are not helping interoperability.
+
+I think you haven't addressed that.
+
+[Speaker 1]
+I'm missing... I'm saying we do make some choices, but we guide those choices by some requirements that are understandable in a business sense about why those choices. So, I'll try and write some requirements and then...
+
+Because I don't think we should be... I think we should make some specific choices that meet the shape of supply chain traceability verification, right? And as somebody said, not every technology is the right thing here.
+
+I think Kerry has a very niche use case, right? For long-term digs associated with entities. And I wouldn't be going down there in this recommendation when we're mostly talking about product identifiers, facility identifiers, and digs that are transient.
+
+So, if I write some requirements that lead us towards... That we can all look at and go, those make sense for supply chain transparency, integrity. And then we suggest some mostly W3C and maybe IETF related things that meet those requirements.
+
+Then we've got a baseline that says, right, here's why we recommended these particular few. Sorry, here's the particular few we recommended and here's why we recommended them, right? Let's try that.
+
+[Speaker 5]
+And this... You can make interoperability... You can say, is interoperability a business requirement that we need to include?
+
+[Speaker 2]
+Yeah. That's exactly the question. I don't...
+
+We can choose not to take the hot discussion.
+
+[Speaker 1]
+No, no. I think we will. Because at the end of the day, what we need, even though things can change, is something implementable.
+
+And when 20 parties in a supply chain implement it, that it works, right? And if we say, oh, you can implement any dig method, any... Then that's not going to happen, is it?
+
+We do have to be reasonably specific, I think. But we just need some... To protect ourselves from criticism, from those that perhaps have a particular agenda.
+
+If we can trace those technical choices to business rationale, then we're in better shape. That's all I'm saying.
+
+[Speaker 4]
+All right. All right. Just one thing before we finish.
+
+I would just say, supply chains and long-lived, well, relatively long-lived interactions actually do require an ability to evolve the technology without having to make everyone have to change at the same time. So therefore, that's... We can't expect everyone to only be on the same solution.
+
+It always has to change, whether it's a point in time of adopting new technology or not, right?
+
+[Speaker 2]
+I think that's a great point. And already, the period of time I've been in this realm, this has changed. That's why this discussion is happening.
+
+Some people move on, others are kind of tied to where they are. Yes.
+
+[Speaker 4]
+Not everyone will change at the same time. We can't expect... No, of course.
+
+So again, that's one of your requirements, Steve, I would say.
+
+[Speaker 9]
+Yes, absolutely.
+
+[Speaker 2]
+All right. This is a little too tensious for me to just throw in comments. So let me just leave that here and we can comment after the meeting.
+
+[Speaker 4]
+I'm happy to feed into the process. That's right.
+
+[Speaker 1]
+I've already started. I'll post requirements to this ticket and then you respond to that with, and here's the technical recommendations for now, right?
+
+[Speaker 2]
+Okay. All right. It's on the issue.
+
+[Speaker 1]
+Yep. Yep. And then create a PR.
+
+All right.
+
+[Speaker 2]
+I think there was one more. Oh yeah. This thing with templates.
+
+Oh, there's an example. Thanks, Ashley. I hadn't seen this.
+
+And by the way, anyone can do this. We're going out of order, but it's because it was suggested before the meeting. Please don't hesitate to do that if others feel like these are important issues, we can bring those up and we still have time also today to do that.
+
+Okay. I think, Ashley, you're on the call. Would you care to introduce what we're looking at here?
+
+[Speaker 6]
+Hi, everyone. Hey. So what we're looking at here is a verifiable credential that contains a render template.
+
+And that render template is basically being fed into something called handlebars, which takes the information contained within the credential that you see here and populates the template with the information and then displays that as you see here. Sorry, that might have been a very crude explanation.
+
+[Speaker 2]
+It's very helpful. It is not at all what... It's funny how words just...
+
+When I heard template, I had something completely different in mind. It was like a form. How do you fill this in?
+
+That's where I'm coming from. So this is super helpful. This obviously makes sense.
+
+[Speaker 6]
+Yep. The difference here between the... Well, there's really only one other method that I'm aware of that's being proposed is that here we're actually embedding the template within the credential itself as opposed to fetching it from an external source and then displaying it.
+
+[Speaker 2]
+Yes. That's where it started the conversation. Is it also in here?
+
+I guess it is. Yeah, here, right? That's correct.
+
+And how is... When is this used? Who picks this up and does the rendering?
+
+[Speaker 6]
+Yep. It's the... So it's the client.
+
+So the application that you see here, that is using a library that... Yeah. And we pass the credential into that library.
+
+And then it does the template mapping and then returns what you see here.
+
+[Speaker 1]
+Basically, any VC verifier ought to follow a standard protocol or a spec for showing a human-readable version of its data. And we're just trying to pick the one that we think works best. One of the challenges of putting the full so-called template in the credential is it leaves it outside, then you risk an attack where someone can change the rendering credential and make the original signed digital thing look different.
+
+And that's, of course, use a hash link to the external thing. So that's also an option. So this is basically just a discussion about...
+
+And an opportunity to feed that discussion into some existing credentials community group work draft specifications. They exist, but they've kind of stalled, I think, for lack of use. And so this is our window to say, hey, here's a working one.
+
+We should recommend you do this. So for the techies in the room, is it better to embed the HTML or the style sheets or whatever it is that is used to render the digital data in the credential or better to leave it outside and link it? And if it's linked, must it be a hash link or could it be a URL?
+
+[Speaker 2]
+And there's a privacy aspect also. Privacy-wise, it's always better to include everything. So I don't have to make a call out and reveal who I am, where I'm from, all that stuff.
+
+And from a size perspective, that just plays right back to the discussion we had before about not all formats are equally performant and doesn't scale linearly. So depending on those choices, it affects this as well.
+
+[Speaker 1]
+And size and performance of verification kind of does matter a bit. Although I suppose, because I'm thinking in some ideal future, the other side of the Grand Canyon, actually, it's the graph of 100 linked credentials is really what you're verifying, not in a business sense. Obviously, you're verifying each credential.
+
+But if you're doing that for one product, you better have very performant verifiers. Or maybe you cache things. So the call home thing and the privacy thing, I mean, if most verifiers...
+
+So rendering templates would be the same for every credential of the same type. In other words, I could have 100 meat passports for 100 different packaged meats, but it'll be rendered the same way. So it's a very cacheable thing, which means you may not always call home to get the latest template.
+
+You might have cached it. So the data changes, but the way you present it doesn't for a given credential.
+
+[Speaker 2]
+It's up to the verifier application whether or not to use this.
+
+[Speaker 9]
+Yes.
+
+[Speaker 2]
+Right? It may not fit in everywhere. And you could absolutely verify the data without rendering it in this particular way.
+
+[Speaker 1]
+I'm sympathetic to a hash link to an external source, because it preserves the integrity with the hash. So somebody can't fiddle with the rendering template to show you something different after the event. But it also means you're not signing potentially a big blob.
+
+And it's cacheable, so you're probably not always calling home for performance reasons.
+
+[Speaker 9]
+But I'm not a... Anyway.
+
+[Speaker 2]
+Oh, sorry. Do we have a hand? Yeah.
+
+Yeah.
+
+[Speaker 3]
+Just popped into my mind about the work that conformity assessment bodies will have when they get a request to verify a particular product. But normally, they will issue attestations, in my view, on the level of a classification of a product classification. So how do we know that without sending the product classification with the product itself to the conformity assessment body, that he will find the proper attestation belonging to this product?
+
+[Speaker 1]
+Yeah. So that's a different question now, right? Not on this topic, but it's a...
+
+[Speaker 3]
+Yeah. It was just popping up.
+
+[Speaker 1]
+Yeah. So this goes to quite a headache question about in future, when really what matters isn't so much that an individual credential is valid, because that's quite easy to test, right? But it doesn't answer questions like, is the issue of credential really who they say they are?
+
+Is the claim that's supported by evidence, is the evidence really supporting the claim? Is it about the same thing? Is the context aligned?
+
+These sort of questions require us to look at verifying linked sets of credentials. And then you've got to have comparable things. In the short term, I think that comparable assessment is human eyeballs looking at PDFs probably, right?
+
+But in the medium and longer term, you want to automate more of that, which means conformity credentials have to say, this is a test of that batch or that product against this criteria, where the criteria is a well-defined identifier like a URI. And it's the same criteria in the password claim so that you can compare. This business of making context aware verifications across different issued credentials is another ticket here about trust graphs and how we verify them and how we represent them.
+
+It's not easy. I think we need to keep it as simple as possible to start with, but not do something that is walking down the wrong path. How do you get to the other side of the Grand Canyon without a giant leap, but where every step is taking you more or less in the right direction, is what I've been banging my head against in this identifier question for a while.
+
+So I understand the question. I'm not sure I know the best answer.
+
+[Speaker 4]
+The equivalence of credentials and their status as part of the verification process is actually the challenge and the rules that actually define their equivalence need to be accessible.
+
+[Speaker 9]
+Yes, yes. Anyway, I think that's a topic for another course.
+
+[Speaker 2]
+Ashley, you are assigned to this. Does this make sense? Suggesting a pull request, how to introduce the solution in conjunction with requirements and why is this introduced?
+
+Why are we recommending it and how does it work? Does that make sense? Yep.
+
+Excellent. All right, then let's leave the discussion for today and stop at time. Any closing remarks, anyone?
+
+[Speaker 1]
+Not from me. Thank you for your time. We've got three actions to actually do three pull requests to close three tickets, so that's a big win.
+
+[Speaker 2]
+Awesome. Yes. Thank you.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 2]
+All right. See you next time.
+
+[Speaker 1]
+Bye.

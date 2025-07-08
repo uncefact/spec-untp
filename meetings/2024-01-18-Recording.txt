@@ -1,0 +1,550 @@
+[Speaker 1]
+Good morning, Steve, or good evening. Hello, Virginia. As you can hear, my voice is still not recovered.
+
+I'm still the last two weeks kind of out of it. Oh, what is it? COVID or flu or something?
+
+Some sort of respiratory. Here we go again. Good morning.
+
+Good morning. Hello, hello. Virginia, it's been a while.
+
+Yes. I so appreciate those pictures you snapped of me on stage. I used that in an article.
+
+I really appreciate that. Thank you once again for that.
+
+[Speaker 2]
+You're welcome.
+
+[Speaker 1]
+All right, we'll give it a couple, a minute or so. Or we just keep it to the hardcore and go ahead and make all the decisions. Well, we've got nine issues.
+
+There's Nancy. And some of them we should get through quickly. Some of them we might not even get to.
+
+We'll see. So the thing I'm going to show you guys is a verifier experience that makes it clear that there is a trust graph behind what you're looking at. Yeah, looking forward to that.
+
+I thought I'd work from the ticket number one upwards, and that one is number four or something. And the first three are a very short discussion, I think, just to make sure we're all on the same page. Okay.
+
+I don't know if we are on the same page. I'm going to just take the screen first, right? And demo.
+
+It's not related to anything specific. It's related to everything specifically. Isn't it related to the ticket about how do you verify a trust graph?
+
+Yes. Okay. Sure.
+
+All right. We can do that. All right.
+
+Is anybody waiting? No. I think that's it.
+
+Let's get started, shall we? I'm going to give you the screen in about three minutes, Nis. I just want to say a couple of things.
+
+First of all, just to remind everyone that this is a fortnightly meeting, and it alternates with the other meeting that is more focused on the policy document. So there will be a meeting every week on REC 49. This one is to work through GitHub issues and develop the GitHub site.
+
+The other one is to drive forward the policy document, REC 49. They're related, obviously, but they're a different audience. This is a slightly more technical meeting.
+
+All right? That's what we agreed last time. And also to remind everyone that the IPR policy of UNC FACT is any contributions you make to this project, you are granting that IP to the UN, who in turn wants that so that they can make it free.
+
+All right? I don't mean your software products or anything like that. I just mean any documented standards or specifications that become part of UNTP, other than those already specified somewhere else.
+
+For example, if UNTP points at W3C specs, obviously those are W3C specs. But the material we contribute to this GitHub site is UN property. If you're not happy with that, then don't contribute it.
+
+Okay? That's it. So the agenda for this meeting is basically to work through open issues because, as NIST correctly pointed out, here we go.
+
+A few more people joining. As NIST pointed out last time, we should have an editorial process that is collaborative for contributing content. So the more technical people in the room will understand what I mean when I say we raise a GitHub issue, we discuss it, we reach some conclusion about somebody who's going to action that conclusion, and then that party makes a pull request, and then that gets reviewed and merged.
+
+And this is just a practice that we'll go through over the next period. And even NIST is experiencing this at the W3C and on another UN meeting. He's volunteered to be an editor.
+
+So he's got maintained rights on this repository, which means you can review and merge pull requests. So can I. But that's the way we'll go.
+
+And that means everybody has an opportunity to have their say, have their say reviewed, and there isn't a single dictator. Right? So with that in mind, let me just quickly share screen and have a look at the open issues on the GitHub site.
+
+Remember that we're developing content on this site, which you've mostly seen and had a look at. And the way we're doing that, because I've had some questions during the week about how does this GitHub thing work, right? So I know there are some people on the call intimately familiar with it and others not so much.
+
+So the process is to raise tickets, for example, this one, verifying linked datagraphs that NIST is going to talk about shortly, have a discussion in the ticket, and the discussion might get resolved entirely within the ticket and dealt with offline between calls, or we might discuss it in a call. But having got some record, really, of discussion and consensus through a conversation on a ticket like this, it's kind of evidence of consensus, right? And when we reach a certain point, somebody will then submit candidate content.
+
+That's called a pull request. If you don't know how to do that, don't worry about it too much. Just participate in the conversations on issues and then satisfy yourself that the content written meets your expectations and raise another ticket if it doesn't.
+
+And those that really want to actively contribute a lot of direct content and you're not familiar with GitHub, we could perhaps have a training session on it, but not today. All right? So with that in mind, this first ticket, very briefly, is basically NIST saying, please explain how I can make a local copy of this site so that I can test my changes before I submit them back for review.
+
+And this is an open ticket, and I spoke to Ilya, who will add a readme for exactly that. It's not done yet, but I expect it will be done well before the next meeting, and I'll harass him until it's done. So imagine a day or two.
+
+DPP schema context. This is the one that said... I wanted to have a quick chat about this.
+
+Let me just... Because I wouldn't mind some thoughts on this one. Let me just open a browsable model.
+
+So the reason I raised this was... I think I saw in the example. Yeah, this one.
+
+And it looked quite weird. It looked like we were inventing something new. But then Alistair shared the actual schema, and it looked different.
+
+So it might have solved itself, this thing, but let's see. Yeah, yeah. So the intent...
+
+So one of the challenges is this, right? This should buy. That's what I'm...
+
+Yeah, yeah, yeah. So the issue we have is that for most of these messages or documents, we're going to issue them as verifiable credentials. But what I'm unclear about is, will they only be verifiable credentials?
+
+What if someone issues a, I don't know, a message a bit more traditionally, that is a digital product passport, and it's not wrapped in a verifiable credential envelope? Do we need a different schema for that? Because issued by is part of the...
+
+Almost like the metadata envelope of a verifiable credential? Yes, no? That's one question.
+
+The other one is, do we mean different things by issued by at the envelope level and the content level? So, for example, issued by a did might be didwebabf.gov.au or something. Or it might be the envelope issued by, but really that did is probably representing some ABN or business or something, right?
+
+And is the issued by in the payload a business identifier and the issued by at the envelope level a did? I'm only asking these questions, not necessarily an answer, but I wouldn't mind provoking a bit of a discussion about this so that we can refine it a little bit and say, okay, yeah, this is how we make models which may be used in a VC or may not. And when they are, maybe they're a bit different or maybe it's a technical envelope and a business content.
+
+If you've got any thoughts, I'll say a few words now, but I just want to provoke an offline discussion on this on the ticket. Yeah, the one thing that I also mentioned is there's other ways than W3C. And ideally we would be agnostic.
+
+Ideally we wouldn't. That's another ticket, yeah? So yeah, there's this challenge.
+
+So I'll leave DPP schema context open and dev instructions hopefully will be closed in the next few days. Context open, let's have a discussion on it. Make spec verifiable document generic.
+
+So this one is what you're talking about, Nis, where there is a page in the technical specification here. Where is it? Called verifiable credentials.
+
+And there's a heading there that says VC interoperability profile, as if we're going to get right down into the weeds of technical VC interoperability in what is mostly a business-centric project. And Nis makes a point that we should focus on business stuff and let the real techies focus on the technical stuff. And I couldn't agree more, except that somehow, and these are probably the wrong headings, but somehow we want to make sure that whatever we do is implemented.
+
+Could you go on? No, let me just go on mute. So maybe we do that by not reinventing any profile, but just pointing at existing ones, right?
+
+So for example, the SPIP or whatever comes out of the work that I know Canada and US are doing now to try and figure out how to bring a non-creds into this. But there's a bunch of techie work going on, and I'm not suggesting we work in duplicate or in parallel here, but rather we recognize it, point to it, and say, we think this is a good interoperability profile. Go look over there and make sure your implementation conforms, right?
+
+That's my suggestion of what we do with this section. If you're happy with that, then let's refactor this page to, and maybe this would be a good candidate to put some references there, right? About how can we point to other work that has been through years of interrupt testing, right?
+
+So why reinvent it? But make sure that there's something concrete, yeah? So that's that one.
+
+Now we're up to, if nobody disagrees, we're... So I'll maybe... What you can do there is you can assign owners to tickets, and if, you know, let's just try and...
+
+Yeah, why don't I... If I volunteer to do this, then you would tag me on as an assignee, or I'll tag myself. Always good to have someone to then point at and shame when I haven't done my homework.
+
+Exactly. All right. So you've just been assigned this one, make spec verifiable document generic.
+
+This kind of question of how do we leverage all the good practice out there from the tech community to make sure that our business implementation is technically interoperable, right? That's really the goal, isn't it? All right.
+
+So this is the one where Nitz is going to show us something, but just to recap, maybe, the challenge here is a supply chain is made up of a bag full of credentials, typically, right? Or discovered snippets of information, right? And for example, a digital product passport points to a conformity credential, and both the digital product passport and the conformity credential individually could be perfectly valid credentials, you know, digitally verifiable.
+
+But maybe the conformity credential is about motorcycle helmet safety, and the digital product passport is about carbon intensity, right? So how do we collect together a bunch of discovered credentials and ensure that or make some sort of assessment that the relationships between them make sense, right? So that you're visualizing and verifying the collection as a graph.
+
+I'm not sure how to do that. There's some ideas floating around, and this is one of the more complex bits of the spec. And again, we should probably, when we figure it out, point to something more technical.
+
+But, you know, the trust over IP community has a thing called machine-readable governance. Maybe that's something that can help. I don't know.
+
+But we do know that in a business sense, it doesn't make sense to say, yeah, that's a... I can be confident of that carbon intensity claim because I found a valid conformity credential if that conformity credential is about something completely different, right? So how do we do this?
+
+Maybe it's only eyes look at it, but I'd just like to hand over now to Nes to give us some thoughts about how to look at a graph of data. Yep. Do you see my screen?
+
+Yep. This is pretty much what you just... It's a different example.
+
+It looks like what we have on the document, and it's basically what you just said. There's a product with a passport associated to it. There's IPR aspects to it.
+
+There's design, warranty, reseller downstream in the supply chain. And then there's upstream into the production realm. And this particular product has aluminum parts.
+
+It's got carbon fiber parts, and it's got some assembly organization level credentials to it. And you can sort of follow this from the product itself. You scan.
+
+This is your entry point. So as you scan the product, this is where you get. Through there, you have an assembly.
+
+That's the factory that manufactured the product. And it would then point to a mill test report that's about the quality of the aluminum being used, which would be made up of alumina from a refinement facility, which came from an excavation, which has a mining purpose. So it's just an example of...
+
+It's probably a wrong one. I saw Brett was on the call. I'm sure you kind of roll your eyes on my naivety here.
+
+But something along these lines is what I was aiming for. So if we look at what that kind of passport... And by the way, there is also getting to the passport.
+
+There's a different element to that, but let's not go there now. I could demo that some other day. I've done some thinking on that as well.
+
+But getting from that code to here is also something we need to have a recommendation on. But once you are here, you have basic information about the product, and you have these links. And these represent the links we looked at before.
+
+So each of these... I didn't do them all, but they represent a bunch of them. So we can click through here.
+
+And this link relationship, this is what the standard needs to define. What does that look like? You can click through here, and this would take you to one of those associated upstream.
+
+So this is the assembly event. If you remember that comprised of three, so that's these three, we can keep digging, and we get to the mill test certificate, and onwards up of the supply chain. And all along, obviously, you verify the data, you verify what you're looking at.
+
+Just to take a quick glance behind the scenes, because we're nerds around here. This is a W3C verifiable credential. And the way I did this, Ashley, you asked this on the chat the other day.
+
+I used related links for this. And then I define a digital product passport relationship type. And that could be the policy that says, if you're looking for...
+
+There could be tons of other links in here, but if you're traversing a graph, you should look for these sorts of relationships. It's just an idea I'm floating. And then I build a traverser that kind of does that.
+
+So just to clarify, you use the link role and link relationship type basically to decide whether to follow the link, because it could have thousands of links, and which ones do you care about? And then having decided which ones to follow, you're grabbing the data and sticking it in, in this case, it looks like a graph database or something. And now we're looking at the result of your decisions to follow X set of links and dumping the content of that in one view, right?
+
+That's right. Here, the highlighted one is the starting point. So that same one here that we were just looking at.
+
+And then the other one. So this here is the aluminum, follows the aluminum. And if you notice the changes from blue to green, that's when the verification is successful.
+
+And if it was expired or whatever, you probably wouldn't... Your policy would be not to follow a credential that's not verified, that fails to verify. So that you're welcome to try this out yourself.
+
+And I think that the interesting discussion here is how do we cross some of these boundaries where data is not publicly shareable? All of this, all of these are publicly available to feature a platform you can just make public. And it's a shareable, which is fine for like this, the main product passport will definitely be public.
+
+Others will too, but not everything will be. Already here, the assembly, you get into this problem of, I don't wanna expose, I don't wanna show the world who my manufacturer is because my competitors are gonna go or my... Already that is sensitive information.
+
+And that's gonna be the case throughout, like along the graph. And that's what we need to get. Yeah, so we had crossed exactly the same issue, of course, in the Australian agricultural supply chain and we all will in any supply chain.
+
+And there is a whole separate discussion about confidentiality and how you hide data and so on. But for this one, what I'm interested in is, what I can see, I think has happened here is you followed some preferred link types. You've grabbed the JSON-LD content and stuck it in a graph.
+
+And you've found... There's no link data here at all. It's all just basic web stuff.
+
+Okay, but you've found some linked terms, right? So just to be able to draw that connection... I'll follow the link, right?
+
+So the question I've got in my head is, let's say at the end of that link, let's say it's a link to the mill test certificate. And what you find is a... I don't know, like I said, a motorcycle test, a helmet test certificate.
+
+In other words, it's... You started an entry point in a product that's a steel product or an aluminium product. And you find a...
+
+And there's a link, so you can follow that link and draw it here in this picture. And the thing you find is also technically valid, but it's not contextually valid. So how to...
+
+express some rules, I suppose, about the graph that says, in the Australian agriculture sector, a passport about an animal should always have a linked national livestock identifier or something which is really rules that are really about the meaning of the graph. We can make sense of it because we're humans looking at this and see, oh, it's about aluminium. And look, there's the mill test certificate that is about aluminium.
+
+Good, makes sense. But how would a machine verify that? And what would the rule set look like?
+
+And can you... Would it be an industry group that makes the rule set? You know, for example, there's a rule set for Australian red meat.
+
+There's another rule set for US and Canadian steel construction. You know what I mean? That when you...
+
+Maybe this is too much to ask, and it's enough to say, there's a graph, you can follow it. And if you get all green dots, it's probably good. And if someone later on finds out that that certificate was completely unrelated, then that's a human audit thing.
+
+I don't know, right? This is just to provoke that discussion. Let's distinguish audit from human audit.
+
+There's... So I completely agree with this direction of the conversation. And before...
+
+Actually, I thought we would be entering into redaction conversation. But I think that's unnecessary. But the audit element, I think, is interesting.
+
+Because... Okay. You could take kind of responsibility for some point of the graph upstream and just say, I've audited all this.
+
+You don't have to see it. As long as you trust me, you trust my processes for doing the auditing. And then we...
+
+Potentially, we could bypass that confidentiality problem by entrusting an auditor, which is what the world does all the time on financial elements, reporting anyway. So, and then... But then you wouldn't see the graph.
+
+You'd just stop here. You'd see some brand or someone that have something at stake to not cheat on their auditing. And that's what you'd see here and just say, okay, it's good.
+
+And that would be context specific to carbon fiber or Australian... Yeah. Whatever.
+
+Yeah. So I think there's that element. That could be automated.
+
+Auditing could be a workflow that says, in this context, we have in Trace vocab, we have this aspect of workflows. And workflows are a particular set of credentials that have to be passed. It's pretty basic still, but we're still working on it.
+
+But it's a particular set of types of credentials that have to be presented in a given business context. That business context is some policy today, but it could certainly be for Australian. These are the credentials that have to be presented.
+
+So that might be a way. That could be completely automated. You could just trust the workflow, see how it works.
+
+So that... Yeah. So I think you're right when you say that we're unlikely to verify an entire graph or even see an entire graph.
+
+And that very often, some, let's say, trusted intermediary will take a branch with a few leads on it and verify it and then add an attestation or a credential. So for example, the Australian government at the point of export of red meat might verify the domestic value chain and add a credential that says, here's a guarantee of origin from the Department of Agriculture. We've verified everything and confirmed that this shipment conforms to these criteria.
+
+So that adds trust and reduces complexity for the next stage who doesn't have to know how to navigate the Australian red meat graph. But so that's true. And I think certainly we should have something in the spec about how that practice is best achieved.
+
+And that's a guidance for regulators and trust anchors and the like. But now put yourself in the position of the Australian Department of Agriculture, who's trying to do this in an algorithmic automated way. So they're not looking at the entire graph all the way to Europe and packaged in a hamburger or something.
+
+They're just at the point of export and they do understand. But how would we automate? How would they, let's say if it's the Australian government or some other trusted entity who understands a sort of a sub part of the graph, right?
+
+But wants to automate that. Do we say, well, you figure it out and write some code or is there a framework where we could say, look, here's a, for example, a shackle rule set or something where we say, these are the credentials that exist. These are the relationships we expect.
+
+This is the content, you know, that target accreditation type must be one of these. Yeah, this is about any ways to automate that due diligence, right? Because if you can't, then you rely on occasional manual audits, which get more expensive.
+
+[Speaker 2]
+Steve, taking the example that you gave of a company ID and then a validation of the registration of that company.
+
+[Speaker 1]
+Yes. Where you've got the, where the registration that's linked, the verifiable credentials, not actually for that company, it's for another company.
+
+[Speaker 2]
+Yeah. And see, and those are based around the registration ID. And is it possible to set up rules that say in the credential, this field must match X?
+
+[Speaker 1]
+Yeah. I think there are all kinds of ways of expressing rules over values in a graph. Right.
+
+And whether we take on that, you know, this could be a rabbit hole you never come out of, but are there any best practices? Are there something, you know, we can learn from other communities, a bit like the other. You could, you could identify how, how you mark fields is having to match.
+
+You know, how do you mark in the original credential that this field, which is the registration ID must match the business registration ID in the linked credential? Yeah. I think there'll be some very common verification types, right?
+
+Some more complex ones, maybe they're just human audits from time to time on an auditable record, but some are really common. Like is the issuer of this passport about this product authorized because they are the owner of that ID? You know, that could, that'll be a common thing, like easily done by, for example, GS1 issuing a credential saying, yes, that did.
+
+Who is this issue? Is the authorized owner of that GS1 prefix? Very similar to business identities.
+
+You're acting as someone you aren't, you know, this is an empty greenwashing measure. and we're part of this discussion is about identifying attack vectors and deciding to what extent we can mitigate them. Right.
+
+And pretending to be something you're not, or someone you're not is one attack vector. I noticed Joe briefly put his hand up. I don't know if you want to say something.
+
+[Speaker 2]
+Yeah, I did. And thanks. Thanks for that, Steve.
+
+Look, I think you're absolutely right that there's a distinction between the graph within the credential and what the credential expects to be used for.
+
+[Speaker 1]
+And then there's the governance graph that sort of sits over the top of it. This sort of says at one point in the, in the supply chain point in the supply chain, I'm looking to do something.
+
+[Speaker 2]
+I'm looking to understand, you know, what it is that I'm being presented with and the rules around what it is that I'm going to use of those credentials and what else I need to sort of decide. So it's not the same as a credential graph, but it's a governance graph that needs to be defined at each point in the supply chain. And it understands what credentials I need, what potentially other external information I need to actually be able to do whatever I need to do.
+
+[Speaker 1]
+So I think we need to be very careful that we talk about the actual credential definitions and that's really important.
+
+[Speaker 2]
+But the fundamental point is the credentials are created for a particular purpose and the supply chain nodes or the particular point in the supply chain needs to define what it needs and, and how it needs to react based on the information that's provided.
+
+[Speaker 1]
+Now that, that becomes down to what we talk about in trust or IOP in terms of governance graph.
+
+[Speaker 2]
+Does that make sense?
+
+[Speaker 1]
+Yeah. So, so how to progress this ticket is what I'm wondering. So, so this showed an example of structural steel or, well, actually aluminum.
+
+I think it was, we were about to do an exactly very similar thing in Australia with structural steel, but we've just done one with me. So we got two or three use cases in which we could plausibly try to write some, let's call them business rules, nevermind the language or the technology. Just this is the data set.
+
+And as a business person, these are the relationships that I care about. If we could do that for two or three graphs with real data, or well, mock days, mock data, but you know, who could put their hand up to say, I'll try and write a validation. What, what, what, what can we learn by attempting to validate the graph?
+
+It's like rules logic that we need to define. Yeah. As part of, as part of that point in that, that supply chain that sort of says, if I've got one of these or, you know, that in combination with other, other credentials, does that provide me the state of being able to actually progress this or not?
+
+You know, and it comes down to rules definition, sort of a bit like, you know, rules, normal stuff we're used to. Yeah. So someone here who said that, Matthew Hogg.
+
+Yeah. So rules might be grouped. I think rules would be grouped at a national level or an industry level or a subset.
+
+It's about a specific branch and automating that. And, you know, maybe, maybe we're, we're sort of trying to go a bit too far with this, but, but I think it's worth a bit of experiment with some reasonable mock data to see what we learn from it and see if any, any guidance that useful guidance emerges or whether we just say, well, this problem exists and each actor needs to figure out how they verify graphs without any guidance on how to do that. Right.
+
+So I don't know. It's complicated. Shouldn't we like.
+
+Sorry. Sorry. Go ahead, Matthew.
+
+Yeah. No, my point was, shouldn't we add some kind of typing on the, on the links? I mean, instead of having a graph with many different links, which are all.
+
+Titles for the passport, which wouldn't be like groups. I mean, like small categories, like everything related to like country regulations, everything related to incoterms, everything related to, to certificates. Sure.
+
+And I think this was hinting at the fact that this group should figure out what some of those link types are in a business sense. But even if I issue a credential and I put all the right link types in me issuing the credentials, my passport, and I say, this is a mil test report link type. And at the other end of it.
+
+The machine finds a credential and verifies it and it's green. But how does it know it is? What is it comparing in the target thing to go?
+
+Oh, yes, that is a mil test report. And oh, yes, it is issued by somebody who is sort of authorized or accredited to issue it. Right.
+
+It's, it's that kind of, there's a claim in one at the source of the link and there's a target. And the target should match the substance of the claim. Right.
+
+Now, maybe this is, there aren't any general patents for this. And everybody has to write some validation code from scratch for each graph. Or maybe not.
+
+And that's, that's the purpose of this chat. Nish, you've got your hand up. I may have a point of view from, from Europe, but typically in Europe, my understanding is that what you're going to do, I think that the, the, the responsibility on, on the document itself on the origin itself relied on the market.
+
+So it seems to me that we shouldn't really. Validated the content of the documents, but rather. First, Make sure that we've got everything related, everything quiet for, for a given product.
+
+That's already, I think a pretty important step. So it simplifies the rules. If you see what I mean, just like.
+
+This thing is monetary or not. Do I have it or not? Verifying it to me.
+
+It sounds like a very different, very different thing. I'm just wondering how you express that in a machine readable way so that the machine knows it's got the things it needs as opposed to things that look like the things they need, but they're not relevant. Right.
+
+So. This is not about assuming good behavior. But assuming bad behavior and detecting it.
+
+Right. Anyway, and this you. Yeah, I just made a.
+
+Issue 16 about this for making a rock demo on, on this. I think. I think.
+
+I think I agree with. Kind of pushing way out there and we're, we're left a lot of discussions behind, but we. There's no doubt in my mind that we need to go here.
+
+That. Policy execution is a. A natural by-product of, of this.
+
+I I'd be happy to volunteer to do that. I would also, well, I guess the actual rules don't really matter as long as it's something that can be. Imagine it.
+
+You can imagine this being this actually executing something industry specific or product. Sector specific and geography specific. That should be good enough, I guess.
+
+So that's something I. Be happy to kind of try this out. Okay.
+
+Don't be shy to add. Hints and good ideas or anything on issue 60. Yeah.
+
+So let's, let's use. Issue 16 as then a discussion forum. Without a need for an immediate resolution on, on.
+
+And I think it's a good name for it. Automated policy. Yeah.
+
+I have a hand up.
+
+[Speaker 2]
+I'm sorry. It's okay. I wanted to, to suggest.
+
+That it's not sort of been. It's not an all or nothing. Option in the sense that you could have two different.
+
+Layers of rules. One set that always applies, for example.
+
+[Speaker 1]
+The business ID in the. In the. Should always match the business ID and the credential.
+
+You know, the thing that's being verified. Match.
+
+[Speaker 2]
+And then there are other rules that are more geography and business. Context dependent. And you could have a way to have rules that always apply.
+
+Like the business IDs must match. And then have other. Rule.
+
+And then have some way to express additional rules. That depend on the business context.
+
+[Speaker 1]
+Yes. Quite possibly. Some sort of rules.
+
+Layered architecture, but I think. I'm satisfied that we've discussed the issue to the point where we understand the. The concern.
+
+And we've got a ticket raised, which is a discussion forum for it. And I'd suggest we go. Yeah, that's a problem.
+
+Let's discuss on that ticket. Possible strategies to solve it. And we've got some reference data sets that we can play with to test.
+
+And, and move on to the next ticket. If that's all right with everyone, because there's a couple of, I particularly want to get to, to get your thoughts. All right.
+
+Where are we doing for time? 43, not too long. We won't get through all of these.
+
+So implementing editorial process. I think we'll skip that one. We talked about it at the beginning and we can.
+
+We'll close it soon, but that's. That's the process by which you make updates. What I did was I protected the main branch.
+
+I saw that. And a pull request. Just very basic stuff.
+
+Yeah. So let's use the tickets for, for lots of discussion. And then, then we'll say, all right, you're assigned.
+
+Please make a pull request. So this one. Sustainability vocabulary design.
+
+I wanted to share some little thoughts here. So. The premise here is that.
+
+Someone wants to be admitted. That. Throughout a value chain.
+
+There's all kinds of ESG claims. Carbon intensity, deforestation, whatever, whatever. Against all kinds of products against actually all kinds of different methods of assessing.
+
+And you need to know how that carbon intensity of that cow or that piece of steel or whatever it was, was measured. And the rules for it are probably quite specific, but. It's quite likely that if you were to pull all that together into a bundle, you've got a.
+
+You really need a lot of knowledge to understand how to. Use that and aggregate it up into something meaningful across a value chain or within a company's spectrum of products that it inputs. It buys.
+
+Right. So there's, there's a thinking that says. Is it, could it be true that a.
+
+Sustainability vocabulary. And by that, I mean, a sort of a taxonomy or, or a category scheme. Is to product passports with ESG data in them.
+
+What a general ledger shot of accounts is to financial transactions. In other words, by tagging. Data in product passports.
+
+With a category value. From a fairly straightforward. Book classification scheme.
+
+It becomes quite easy to. Aggregate to get. Entity level or facility level.
+
+Metrics, right? Because what I hear a lot, because I've been listening in on some IFRS and SASB and ASB meetings. These are all accounting standards bodies that are defining sustainability reporting standards, but at the annual report level, not at a shipment level.
+
+Right. And the biggest problem they seem to have is things like scope three and dealing with supply chains. And here we are dealing with supply chains and ESG data.
+
+Right. And when I showed the representative from the Australian government. Accounting standards board.
+
+The demos we've done on this side and the thing he said, Oh, that solves the problem we've been grappling with. And some feedback I'm getting is that if we can tie. The, what we're doing at the transaction and shipment level up to the corporate due diligence and.
+
+Sustainability reporting. You can differentiate the link to, to differentiate us from everybody. Sorry.
+
+Is that somebody talking to us or somebody not, not on mute? Yeah. Sorry.
+
+Sorry, Steve is a, is myself and I not immune. Apologies. All right.
+
+Okay. Yeah. So, so I did some digging.
+
+So the, the, the thinking is. If we had a Jason LD vocabulary or something that we can tag. Data elements in, in passports with.
+
+And that vocabulary was naturally aligned with the reporting obligations at an entity level. We'd get a whole new community of interest. To adopt this.
+
+Right. So I had, I see someone's got their hand up. I'll get to him in a minute.
+
+So I had a quick look through global reporting, GRI, SASB, IFRS, ESRS. And it's actually not that. There's a lot of variation there, but there is.
+
+Quite a bit of work already done. We don't need to reinvent, but it's, it's represented in PDFs and spreadsheets. And so in our world, we might need to just represent that in, in something that's machine consumable.
+
+So my suggestion is I might have, if people think it's valid, have a look at some, something like this topic mapping spreadsheet from UNEP and produce a draft vocabulary from it and see if we can use it where we would use it to tag elements. Somebody's got their hand up. Let's see who it is.
+
+Oh, it's there's a couple of people. Dr. Wang. Thank you, Mr. Steven. And thank you, Carlos. For this, this issue, I have prepared a PPT that I show what's the briefly about the source for solving this issue. Okay.
+
+You want to take the screen?
+
+[Speaker 2]
+Yeah. Thank you.
+
+[Speaker 1]
+Okay. I'll stop share and you take it. Have you got screen sharing right?
+
+I think you do. Yeah. Carlos, could you see my...
+
+I'm starting. Is my PPT can be... Yeah, yeah, yeah.
+
+Okay. It's true that the, the ESG has been adopted by the, the financial market and the global wide, many of the market has restricted to use the ESG, the norms. It's true about the issue.
+
+We have to adopt to the hundreds or maybe thousands of the, the, the norms about disclosure standard and the, the rating standard, but we cannot follow each, to follow every of the standard.
+
+[Speaker 2]
+Could we trace back?
+
+[Speaker 1]
+Currently, for example, it's a, it's a standard from one standard institution, but because we, from the UNCE, can we trace back to the SDGs?
+
+[Speaker 2]
+That means that we, whenever you are standard, you should trace back to the SDG, the standard, and we can then let the other standard to market for us, for the ESG.
+
+[Speaker 1]
+And with that, we can also add a little more about the standard, add a little more disclosure information. For example, currently we have the carbon, and then we have the H2O, and maybe next we have the N and P. And if we, because we, we are the recommendation from UNCE, so we can use the BSP model and the ES model to, to projection for the different of the data element that only used in the E, in bar, the E in shape, I mean, the E in payment, and follow the UNCE and the ISO standard.
+
+That's all my sharing information. And later I will send a copy to Mr. Stephen. Thank you.
+
+Thank you, colleagues. Yeah. Thank you, Dr. Wang. I think that kind of aligns with the thinking and the ticket, right? That there are key, fairly high level category schemes defined by GRI, ESRS, and indeed the UN in the sustainable development goals, that it would be nice to be able to consistently map any one of these. I think Dr. Wang had a slide there that had something like 400 corporate reporting standards and thousands of measurement standards. So, you know, expecting people to know and understand all of those is a bit beyond the pale, right? So having some category scheme that works across these boundaries seems like a valuable thing. Gregory, you want to say something?
+
+[Speaker 2]
+Yeah. Thanks a lot, Steve. That's really interesting.
+
+And it does speak to the work, you know, that we've been doing on the ITC standards map. And we've actually wrote a paper, which I will share in the discussion, where we actually map SDGs and their criterias and sub-criterias to the 300 plus standards that are referenced in the standards map. So if the UN development goals was to be kind of the framework that we wanted to leverage to report against, you know, we could run some of the analysis that we've done in our back end, you know, against the UN SDGs.
+
+So I'll be very happy to contribute to some of this discussion. I'll also talk to my colleagues who are developing a classification of standards with OECD to identify whether a standard, you know, or a norm or certification may be private, public. Is it national, international?
+
+Is it sector focused along multiple dimensions? So I'll be very happy to contribute to this discussion along with the team.
+
+[Speaker 1]
+That sounds great. I know you guys have done a lot of work on standards mapping. It's probably the most exhausted mapping anywhere on the planet.
+
+I'm proposing at this stage to just produce the category scheme and let the issuers of passports tag, right? But I think, yeah, please just put your thoughts against this ticket, right? All you do is write some lines here and say comment.
+
+And we develop a bit of a conversation here on issue 12 about what we should and shouldn't do at this level. So for the more technical people, what I'm thinking is this is probably not the final digital product passport schema, right? But I'm imagining a passport contains this list of sustainability claims, right?
+
+So here's some metric. For example, scope three emissions intensity, six tons per ton, for example. And the sustainability claim would say this is measured against, I don't know, Meat and Livestock Australia calculation rules details over here in this sustainability credential and metric.
+
+But how do I classify that? Right up in a kind of, in that GL account sense, that irrespective of which rule set and which commodity that I might not understand, I do know that this number is a scope three emission. That's what I was thinking this topic thing was for.
+
+And I'm imagining the first pass of our vocabulary is just a vocabulary for that topic and that it's traceable to these due diligence reporting requirements. If we just did that, I think it's probably quite a valuable step to do. So I'm seeking consensus here, I suppose, that we have a bit of a discussion in this ticket and then I'll just publish a draft.
+
+Here's a first stab at a classification that maps to these various important reporting criteria. Does anybody feel like this? All right, good.
+
+Well, then I'll take that as consensus that it's not on completely the wrong track. We're running close to being out of time. Selective disclosure is an interesting one that takes a longer discussion.
+
+I might just leave that for now and come back to it. I wanted to get your thoughts on this one. If we're writing something that is implementable, it's inevitable that it will get versioned and that some versions might be breaking versions.
+
+We obviously try not to make them breaking. It's the whole point of this semi-versioning. But actually what we're talking about here is potentially a group of specifications, some of which aren't even ours.
+
+For example, in the verifiable credentials thing, we might be pointing at the stuff that's done in the US and Canada about Interop. It probably has a version. What we've got here is a collection of specifications, some from us, some third parties, each going through versions.
+
+And how does that map to a version of UNTP? Do we even try to do that? Or do you claim implementation at the granular level?
+
+Or do we group them? This is just a suggestion I've done here that said actually these kind of group into a collection of things that are about discovering and rendering data and a collection of things that are about how much can I trust that data? Does it make sense to group them like that and claim implementation at that level?
+
+And then even within those things, we're probably going to use words like must, may, should. And that implies different kind of implementation levels. Some people might implement only the musts and not the shoulds and the mays.
+
+And some might implement more. And then there are some parts of this UNTP that are particularly applicable to like accreditation authorities and almost nobody else. So it doesn't make sense for all roles to implement all bits.
+
+So how do you describe an implementation profile of a version? So again, this isn't meant to be the answer. It's just a drawing to provoke discussion that says is it meaningful to say I've implemented UNTP core, recommended scope as a manufacturer, meaning that I haven't done this yet, this trust stuff, but I've done all these core things.
+
+I comply with them. And I comply with the must and the should, but not the may. And I'm a manufacturer.
+
+So some of the things that don't apply to me, I haven't implemented. And is this a simple language with which to express conformity? Because otherwise you could end up with a real chaos of, yes, you've got a fairly tight spec, but with what, with 10 different components with different versions and must, may, shoulds in them.
+
+And it'd be quite hard to know if one party's implementation is interoperable with another party's if we don't have some fairly clear way to group and specify these. So that's the purpose of this ticket. I just wanted to sort of say what I was thinking and invite your comments.
+
+Given that we're almost out of time, the other one here that I'm interested in, and the reason I'm interested in this is because we've actually got two live projects which want to be extensions of UNTP, right? The premise here is that there's industries, sectors, and geographic sectors that all have their special needs. And if we try to accommodate all those special needs in the core UNTP specification, we'll be still having this discussion 10 years' time and never get there.
+
+And the principle here is UNTP is the simplest possible common core. And that if you need to extend it in your industry or geographic sector, then please do. And here's a rule set for how you make ideally non-breaking extensions.
+
+For example, you add extra properties to a schema, but you don't break the schema. And we need to do this actually for Australian agriculture and for critical raw materials fairly soon. And we could use those as guinea pigs to learn how to specify what constitutes a non-breaking extension and what really makes sense in a core.
+
+So that's this other ticket which I'm interested in people's thoughts on. So given that we're almost at time, I'll invite some closing comments, but really I'll ask everyone to just really use these tickets as a discussion forum. Give your comments because we want to get some tempo going here of reaching some sort of consensus and it doesn't have to be in these meetings.
+
+It can be in the tickets and then actually publishing stuff. So any closing comments or questions from anyone because we're at time? I'm pleased we more or less got through the tickets.
+
+Seems not. Okay. One thing I did say to somebody who couldn't come today because the timing was wrong is everyone happy with this timing or an hour earlier or an hour later or alternating time zones?
+
+Like every second one is in a completely different time zone. So it's easier for North America. Any thoughts on how we should do this?
+
+Dr. Wang? Thank you, Mr. Steven. Can you share the connection screen about this extension for the UNTP?
+
+All right. I would say yes, but I would invite, because we're at time. Just a brief speaking.
+
+I don't share. Maybe we can reference to the WCO data model for the extension mechanics or the WCO data model extension methodology. Okay.
+
+Why don't you feel free to write a comment with suggestions about references or how other groups have defined non-breaking extensions. We'll just write them here, right? And we'll have a first stab.
+
+I will do something to the WeChat or email to you. Thank you, Mr. Steven. All right.
+
+Thank you. All right. If no one else has got any comments, thank you for your time today.
+
+Quite a few robust discussions. I appreciate it. And let's get busy with these tickets and use the Slack channels because in two weeks' time, I want to be having at least done two or three pull requests of merging something or at least have pull requests ready to discuss and merge.
+
+All right. Thank you so much. Thanks, Dave.
+
+Bye, all.

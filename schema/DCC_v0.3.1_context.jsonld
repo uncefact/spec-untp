@@ -1,0 +1,535 @@
+{
+  "@context": {
+    "untp-dcc": "https://test.uncefact.org/vocabulary/untp/dcc/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@protected": true,
+    "@version": 1.1,
+    "Entity": {
+      "@protected": true,
+      "@id": "untp-core:Entity",
+      "@context": {
+        "idValue": {
+          "@id": "untp-core:idValue",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-core:idScheme",
+          "@type": "xsd:string"
+        },
+        "idSchemeName": {
+          "@id": "untp-core:idSchemeName",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "CredentialIssuer": {
+      "@protected": true,
+      "@id": "untp-core:CredentialIssuer",
+      "@context": {
+        "otherIdentifiers": {
+          "@id": "untp-dcc:otherIdentifiers",
+          "@type": "@id"
+        }
+      }
+    },
+    "Endorsement": {
+      "@protected": true,
+      "@id": "untp-core:Endorsement",
+      "@context": {
+        "trustmark": {
+          "@protected": true,
+          "@id": "untp-core:trustmark",
+          "@context": {
+            "fileName": {
+              "@id": "untp-core:fileName",
+              "@type": "xsd:string"
+            },
+            "fileType": {
+              "@id": "untp-core:fileType",
+              "@type": "@vocab",
+              "@context": {
+                "@protected": true,
+                "@vocab": "undefinedmimeType#"
+              }
+            },
+            "file": {
+              "@id": "untp-core:file",
+              "@type": "xsd:string"
+            }
+          }
+        },
+        "issuingAuthority": {
+          "@id": "untp-dcc:issuingAuthority",
+          "@type": "@id"
+        },
+        "accreditationCertificate": {
+          "@id": "untp-core:accreditationCertificate",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "SecureLink": {
+      "@protected": true,
+      "@id": "untp-core:SecureLink",
+      "@context": {
+        "linkName": {
+          "@id": "untp-core:linkName",
+          "@type": "xsd:string"
+        },
+        "linkType": {
+          "@id": "untp-core:linkType",
+          "@type": "xsd:string"
+        },
+        "targetType": {
+          "@id": "untp-core:targetType",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedmimeType#"
+          }
+        },
+        "targetHash": {
+          "@id": "untp-core:targetHash",
+          "@type": "xsd:string"
+        },
+        "hashMethod": {
+          "@id": "untp-core:hashMethod",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedhashMethodCode#"
+          }
+        },
+        "encryptionMethod": {
+          "@id": "untp-core:encryptionMethod",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedencryptionMethodCode#"
+          }
+        }
+      }
+    },
+    "ConformityAssessmentScheme": {
+      "@protected": true,
+      "@id": "untp-dcc:ConformityAssessmentScheme",
+      "@context": {
+        "name": {
+          "@id": "untp-dcc:name",
+          "@type": "xsd:string"
+        },
+        "issuingParty": {
+          "@id": "untp-dcc:issuingParty",
+          "@type": "@id"
+        },
+        "issueDate": {
+          "@id": "untp-dcc:issueDate",
+          "@type": "xsd:string"
+        },
+        "trustmark": "untp-core:trustmark"
+      }
+    },
+    "Standard": {
+      "@protected": true,
+      "@id": "untp-core:Standard",
+      "@context": {
+        "name": {
+          "@id": "untp-core:name",
+          "@type": "xsd:string"
+        },
+        "issuingParty": {
+          "@id": "untp-dcc:issuingParty",
+          "@type": "@id"
+        },
+        "issueDate": {
+          "@id": "untp-core:issueDate",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Regulation": {
+      "@protected": true,
+      "@id": "untp-core:Regulation",
+      "@context": {
+        "name": {
+          "@id": "untp-core:name",
+          "@type": "xsd:string"
+        },
+        "jurisdictionCountry": {
+          "@id": "untp-core:jurisdictionCountry",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedcountryCode#"
+          }
+        },
+        "administeredBy": {
+          "@id": "untp-dcc:administeredBy",
+          "@type": "@id"
+        },
+        "effectiveDate": {
+          "@id": "untp-core:effectiveDate",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    "Criteria": {
+      "@protected": true,
+      "@id": "untp-core:Criteria",
+      "@context": {
+        "thresholdValues": {
+          "@protected": true,
+          "@id": "untp-core:thresholdValues",
+          "@context": {
+            "metricName": {
+              "@id": "untp-core:metricName",
+              "@type": "xsd:string"
+            },
+            "metricValue": {
+              "@protected": true,
+              "@id": "untp-core:metricValue",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "undefinedunitOfMeasure#"
+                  }
+                }
+              }
+            },
+            "accuracy": {
+              "@id": "untp-core:accuracy",
+              "@type": "xsd:decimal"
+            }
+          }
+        }
+      }
+    },
+    "Product": {
+      "@protected": true,
+      "@id": "untp-dcc:Product",
+      "@context": {
+        "idValue": {
+          "@id": "untp-dcc:idValue",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-dcc:idScheme",
+          "@type": "xsd:string"
+        },
+        "idSchemeName": {
+          "@id": "untp-dcc:idSchemeName",
+          "@type": "xsd:string"
+        },
+        "verfifiedByCAB": {
+          "@id": "untp-dcc:verfifiedByCAB",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+    "Facility": {
+      "@protected": true,
+      "@id": "untp-dcc:Facility",
+      "@context": {
+        "idValue": {
+          "@id": "untp-dcc:idValue",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-dcc:idScheme",
+          "@type": "xsd:string"
+        },
+        "idSchemeName": {
+          "@id": "untp-dcc:idSchemeName",
+          "@type": "xsd:string"
+        },
+        "verfifiedByCAB": {
+          "@id": "untp-dcc:verfifiedByCAB",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+    "ConformityAssessment": {
+      "@protected": true,
+      "@id": "untp-dcc:ConformityAssessment",
+      "@context": {
+        "referenceStandard": {
+          "@id": "untp-dcc:referenceStandard",
+          "@type": "@id"
+        },
+        "referenceRegulation": {
+          "@id": "untp-dcc:referenceRegulation",
+          "@type": "@id"
+        },
+        "assessmentCriterion": {
+          "@id": "untp-dcc:assessmentCriterion",
+          "@type": "@id"
+        },
+        "declaredValues": {
+          "@protected": true,
+          "@id": "untp-core:declaredValues",
+          "@context": {
+            "metricName": {
+              "@id": "untp-core:metricName",
+              "@type": "xsd:string"
+            },
+            "metricValue": {
+              "@protected": true,
+              "@id": "untp-core:metricValue",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "undefinedunitOfMeasure#"
+                  }
+                }
+              }
+            },
+            "accuracy": {
+              "@id": "untp-core:accuracy",
+              "@type": "xsd:decimal"
+            }
+          }
+        },
+        "compliance": {
+          "@id": "untp-dcc:compliance",
+          "@type": "xsd:boolean"
+        },
+        "conformityTopic": {
+          "@id": "untp-dcc:conformityTopic",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dcc/conformityTopicCode#"
+          }
+        },
+        "assessedProducts": {
+          "@id": "untp-dcc:assessedProducts",
+          "@type": "@id"
+        },
+        "assessedFacilities": {
+          "@id": "untp-dcc:assessedFacilities",
+          "@type": "@id"
+        }
+      }
+    },
+    "ConformityAttestation": {
+      "@protected": true,
+      "@id": "untp-dcc:ConformityAttestation",
+      "@context": {
+        "assessorLevel": {
+          "@id": "untp-dcc:assessorLevel",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dcc/assessorLevelCode#"
+          }
+        },
+        "assessmentLevel": {
+          "@id": "untp-dcc:assessmentLevel",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dcc/assessmentLevelCode#"
+          }
+        },
+        "attestationType": {
+          "@id": "untp-dcc:attestationType",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://test.uncefact.org/vocabulary/untp/dcc/attestationTypeCode#"
+          }
+        },
+        "issuedToParty": {
+          "@id": "untp-dcc:issuedToParty",
+          "@type": "@id"
+        },
+        "authorisation": {
+          "@id": "untp-dcc:authorisation",
+          "@type": "@id"
+        },
+        "conformityCertificate": {
+          "@id": "untp-dcc:conformityCertificate",
+          "@type": "@id"
+        },
+        "auditableEvidence": {
+          "@id": "untp-dcc:auditableEvidence",
+          "@type": "@id"
+        },
+        "scope": {
+          "@id": "untp-dcc:scope",
+          "@type": "@id"
+        },
+        "assessments": {
+          "@id": "untp-dcc:assessments",
+          "@type": "@id"
+        }
+      }
+    },
+    "DigitalConformityCredential": {
+      "@protected": true,
+      "@id": "untp-dcc:DigitalConformityCredential",
+      "@context": {
+        "issuer": {
+          "@id": "untp-dcc:issuer",
+          "@type": "@id"
+        },
+        "validFrom": {
+          "@id": "untp-dcc:validFrom",
+          "@type": "xsd:string"
+        },
+        "validUntil": {
+          "@id": "untp-dcc:validUntil",
+          "@type": "xsd:string"
+        },
+        "credentialSubject": {
+          "@id": "untp-dcc:credentialSubject",
+          "@type": "@id"
+        }
+      }
+    },
+    "Attestation": {
+      "@protected": true,
+      "@id": "untp-core:Attestation",
+      "@context": {
+        "assessorLevel": {
+          "@id": "untp-core:assessorLevel",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedassessorLevelCode#"
+          }
+        },
+        "assessmentLevel": {
+          "@id": "untp-core:assessmentLevel",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedassessmentLevelCode#"
+          }
+        },
+        "attestationType": {
+          "@id": "untp-core:attestationType",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedattestationTypeCode#"
+          }
+        },
+        "issuedToParty": {
+          "@id": "untp-dcc:issuedToParty",
+          "@type": "@id"
+        },
+        "authorisation": {
+          "@id": "untp-dcc:authorisation",
+          "@type": "@id"
+        },
+        "conformityCertificate": {
+          "@id": "untp-dcc:conformityCertificate",
+          "@type": "@id"
+        },
+        "auditableEvidence": {
+          "@id": "untp-dcc:auditableEvidence",
+          "@type": "@id"
+        }
+      }
+    },
+    "Link": {
+      "@protected": true,
+      "@id": "untp-core:Link",
+      "@context": {
+        "linkName": {
+          "@id": "untp-core:linkName",
+          "@type": "xsd:string"
+        },
+        "linkType": {
+          "@id": "untp-core:linkType",
+          "@type": "xsd:string"
+        },
+        "targetType": {
+          "@id": "untp-core:targetType",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedmimeType#"
+          }
+        }
+      }
+    },
+    "Declaration": {
+      "@protected": true,
+      "@id": "untp-core:Declaration",
+      "@context": {
+        "referenceStandard": {
+          "@id": "untp-dcc:referenceStandard",
+          "@type": "@id"
+        },
+        "referenceRegulation": {
+          "@id": "untp-dcc:referenceRegulation",
+          "@type": "@id"
+        },
+        "assessmentCriterion": {
+          "@id": "untp-dcc:assessmentCriterion",
+          "@type": "@id"
+        },
+        "declaredValues": {
+          "@protected": true,
+          "@id": "untp-core:declaredValues",
+          "@context": {
+            "metricName": {
+              "@id": "untp-core:metricName",
+              "@type": "xsd:string"
+            },
+            "metricValue": {
+              "@protected": true,
+              "@id": "untp-core:metricValue",
+              "@context": {
+                "value": {
+                  "@id": "untp-core:value",
+                  "@type": "xsd:decimal"
+                },
+                "unit": {
+                  "@id": "untp-core:unit",
+                  "@type": "@vocab",
+                  "@context": {
+                    "@protected": true,
+                    "@vocab": "undefinedunitOfMeasure#"
+                  }
+                }
+              }
+            },
+            "accuracy": {
+              "@id": "untp-core:accuracy",
+              "@type": "xsd:decimal"
+            }
+          }
+        },
+        "compliance": {
+          "@id": "untp-core:compliance",
+          "@type": "xsd:boolean"
+        },
+        "conformityTopic": {
+          "@id": "untp-core:conformityTopic",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "undefinedconformityTopicCode#"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,617 @@
+[Speaker 12]
+Hello. Hello, Stephen. Very nice to see you.
+
+[Speaker 1]
+Good to see you. What time is it in Europe now? Because this is the one that we scheduled for a pleasant time for you guys.
+
+[Speaker 14]
+Yeah, it's nine o'clock, nine p.m. in Europe.
+
+[Speaker 2]
+8 p.m. in Norway, so I'm tired, I'm just off to the North Coast, but this time next week it will be 9 p.m. It depends what part of Europe, I guess, I always use Central Europe. Which is a sensible thing to do, absolutely, I'm just one hour off that.
+
+[Speaker 6]
+Yes, you are, because I was about to say, it's eight hours this week and nine next for Central Europe.
+
+[Speaker 2]
+That's right, yeah. Finally, we get our time zones offsets back to normal next week.
+
+[Speaker 6]
+Yeah, three weeks this time.
+
+[Speaker 2]
+Yeah, crazy.
+
+[Speaker 1]
+All right, there's people joining, we'll give another two minutes.
+
+[Speaker 13]
+It's 10 p.m. here in Greece, Steve, it's past my bedtime.
+
+[Speaker 1]
+Yes, I'm surprised and appreciate your presence, Kevin, because, like I said in the email, we really had to do something to facilitate people like Stephen Curran and others from Canada and the U.S. joining, so that's why we're alternating these meetings.
+
+[Speaker 13]
+I fully appreciate it. No, I don't mind, I fully appreciate the situation, and I've got a feeling that I might be leaving early once you start talking TechSpeak anyway.
+
+[Speaker 1]
+Well, actually, hopefully, there might be a bit of TechSpeak today, but I'm quite keen to pick brains, get thoughts on these business questions about the use cases for digital product passport. So, we're coming, we're a decent number of participants. Hello, Nancy and Zach.
+
+[Speaker 12]
+Hi, Steve. Morning, Steve. Morning, John.
+
+[Speaker 1]
+All right, well, it's three minutes past. If others join, I'll let them in, of course.
+
+[Speaker 12]
+Here we go, Christophe. It's on. Alan Peter Carter, Virginia.
+
+[Speaker 1]
+Thank you for joining us late in your day, Virginia. All right, let me make a start. Just first, a couple of things to mention.
+
+This meeting is being recorded. If anyone has any objections, state them now or leave the meeting. And the second comment I'd like to make is to borrow from GS1 best practice and remind everyone that this is a standards development meeting.
+
+We shouldn't be talking about commercial products or anything like that. And also, any contributions you make via tickets or pull requests or content are considered to be contributions to the United Nations Intellectual Property Library. You're granting ownership to the UN when you do that.
+
+So, if there's something you don't want to share, then don't share it. And that's probably enough of the upfront rules and procedures. So, first of all, welcome to some new participants who live in the Canadian and American time zones.
+
+We've changed this meeting time every second week to accommodate their valuable contributions. So, I might just give two minutes for Stephen and Nancy to say hello before we move on to the agenda for the day.
+
+[Speaker 5]
+Sure, yeah. I think I've met some of you. For those who I haven't met yet, hello, I'm Nancy Norris.
+
+I work for the government of British Columbia and have been for the past couple of years leading a project that's also using verifiable credentials for exchanging sustainability information. About mines and natural gas operators. So, very much supportive of this work and hoping to just join now that the time zone is a little bit more accommodating for us North Americans.
+
+I'll pass it to Stephen. Oh, you're muted, Stephen.
+
+[Speaker 14]
+There we go, the red button.
+
+[Speaker 6]
+I've been involved in verifiable credentials for six years or so, mostly in the personal credential space, humans presenting credentials about themselves in Hyperledger, but I have worked a lot in DIDS, DIDD docs and various privacy preserving credential models. So, that's my background. I'll pass to Jason, who is also a member of the team.
+
+Oh, I'm a member of the BCGov team working beside, mostly beside what Nancy has been doing, but I've been recently joining more of Nancy's efforts.
+
+[Speaker 7]
+Yeah, I'm also with Nancy's team. Sorry. That's.
+
+[Speaker 5]
+Jason has a puppy, a new dog.
+
+[Speaker 7]
+That's like the loudest I've heard her bark at the door. Okay. Apologies for that.
+
+Yes, I've been looking at the mining specific use cases, but again, also working kind of closely with Stephen's team on some of the more other infrastructure pieces that they've been working on. So, we have some services around, yeah, mostly Anon creds and other SSI model stuff, so getting into W3C and transparency stuff has been very cool. So, welcome.
+
+Thanks for having me on.
+
+[Speaker 1]
+Well, thank you and for your introduction. Also, just to point out that we're mostly a business design standards organization here and lean heavily on the smart work from people in technical standards working groups like W3C and try very hard not to reinvent that. So, we welcome your presence and guidance about how best to use existing technology and not reinvent it.
+
+So, the usual agenda is to work through open pull requests and then work through tickets. We might deal with one pull request that's sitting there, should be quite quick. And then I really like to move on to a bit of a focus on digital product passport specifically.
+
+And the reason for that is of all the things in the UNTP scope, I feel like it's the one that needs the most business attention because the conformity credential has already seen a lot of collaborative work through Brett's project, another member of UNCFACT with a whole bunch of conformity assessment bodies and accreditation authorities. So, we have some confidence that that's been through a fair bit of business analysis due diligence. And of course, the traceability credential has been through even more business analysis and due diligence because it's pretty much straight out of the GS1 playbook and has had years of implementation.
+
+So, if you like, we've got two fairly confident structures and one where we're kind of really doing a bit more invention. And so, that's the one where I feel like we need consensus and collaboration to give us confidence that what we're proposing in a passport structure is fit for purpose. So, and we've got a bit of pressure looming with another round of pilots in Australia and potentially some critical raw materials ones and participation in EU surpass projects that kick off in 1st of May.
+
+So, we've really got a few weeks to... I'm sure it won't be right and finalized by May, but we've got a few weeks to get that digital product passport structure representing our best efforts and our collaborative consensus, right? So, that's the reason to talk about it today.
+
+With that, I'll share my screen and find...
+
+[Speaker 12]
+Where is it?
+
+[Speaker 1]
+There we go. Just quickly, that PR. There's one open pull request.
+
+It's from Zach, which, from what I can see, adds some words around three goals that are how we measure success. And I read them and I have no... I think they're quite good.
+
+So, if anyone...
+
+[Speaker 4]
+And this was in response to a issue that Michael Shea opened about asking the question, what level of depth does UNTP apply to? And we had some commentary in the ticket saying, well, it's any depth, but so I sort of asked myself, where in the documentation should that show up so that that question doesn't, as new people come into this ecosystem, that question is answered kind of quickly. And so, I kind of went to the top and said, well, it's pretty fundamental.
+
+So, I added it there. So, that was kind of my thinking there.
+
+[Speaker 1]
+Has anyone got any objections to Virginia? You've got your hand up.
+
+[Speaker 3]
+Yeah, I'm just wondering if somewhere earlier you have described what is meant by depth. I think I know it's like what tier level, but will all the other readers know? So, that was just my question.
+
+[Speaker 1]
+It's not a bad comment. You mean depth in terms of distance along the value chain, right? From primary...
+
+[Speaker 3]
+Yeah, it says in complex supply chains, this means that each step at every depth. So, if the step, this means that the depth is not the step. It says that each step and at every depth.
+
+So...
+
+[Speaker 4]
+Yeah, so what I was trying to convey there, and this is kind of a hard thing, is that when you have a supply chain transaction, if you're selling a complex product, you may have lots of depth that you're sharing at that transaction. So, there's kind of, it is multidimensional in that conceptual model, and I was trying to convey that, but I'm not sure that...
+
+[Speaker 3]
+So, you just used that word depth again. What do you mean by depth when you say every transaction, you're sharing a lot of depth?
+
+[Speaker 4]
+So, the depth is, I'm selling an iPhone, and 13 steps back in the supply chain is the mining of critical minerals. And so, the depth is the fact that I want information about the minerals, as well as the assembly and the chips and all the... So, it's sort of looking back in the supply chain, and the depth is how many steps back you're looking.
+
+So, I think Virginia's point is, you say...
+
+[Speaker 3]
+That's what I thought what you meant, but I don't understand the difference between that and a step in the supply chain, because the mining is just a lot of steps back.
+
+[Speaker 4]
+Well, so, when you're taking a step, you may share lots of steps back. And so, that's kind of the... Yeah, so...
+
+And so...
+
+[Speaker 1]
+Why don't we just reword it a bit? Because I think the confusion is simply that we say each step and every depth, as if a step in a supply chain and depth in a supply chain are different things. And what you really mean is, we need to find wording that indicates reaching back up the value chain, right?
+
+But so, just quickly, Phil?
+
+[Speaker 3]
+I'll think about that for you.
+
+[Speaker 2]
+All right. I just wanted very quickly to say that when Zach explained it, I understood it. But until Zach explained it, I didn't.
+
+So, thank you, Zach, for explaining what you mean by depth. I sure as heck wouldn't have got that without somebody explaining it. So, I hope somewhere in the document, that will be explained.
+
+Thank you. Because, yeah, for me, depth sounds like steps, just like Virginia's saying.
+
+[Speaker 1]
+Yeah. So, then, we won't merge this yet. We'll just update to get more clarity.
+
+And anyone can feel free to comment on the pull request. Right. Moving on.
+
+Let me pull up... So, since last meeting... Wrong.
+
+Where is it? Hang on.
+
+[Speaker 12]
+There we go.
+
+[Speaker 1]
+Since last meeting, there has been an update to this page and then some questions in a ticket about this page. And I wanted to spend just five minutes walking you through this page and those questions. And then we have a just collect opinions and thoughts about it.
+
+So, one discussion we had a while back was that the original version, let's say 0.1 of a passport, all the claims and evidence were attached to a batch. And this made a good point that, well, a lot of passports won't have batch information. They're just SKU.
+
+So, I want to recognize that it's important that passports can work at both levels, SKU or batch. That the more I look into regulations, there's an increasing amount of concern about having specifying, even in law, certain thresholds of where materials come from, raw materials, and where things are made. So, this made in and materials from stuff is meant to represent that.
+
+And then, by the way, in the UNTP website, there's a section called requirements, but they're really general architectural requirements. So, we probably should consistently have a little section in each more focused area, like digital passports, about what do we think the requirements are for this passport. So, this table is just my first stab at that.
+
+And I'm sure it's not right. And welcome your input. But we also, people want to know where a thing was made.
+
+So, this is where the product represented by the passport was made, not necessarily where all the components in it were made. That's through traceability. This is the bit that says we should allow batch information.
+
+And that, optionally, through the batch, we can trace back with traceability information. That there should be some minimum product information. That is what we think is the common subset across all industries and jurisdictions, trying to avoid putting things in our core data model, like, I don't know, battery capacity or something like that, because it's clearly industry specific.
+
+Started to think about how we, also this idea that parties, we just not only need to say who they are, but provide a way to verify their identity, optionally, to add integrity. And then, claims and conformity topic. There was a bit of a discussion about, I had the word sustainability claims, and people said, well, actually, there could be more than sustainability claims in a passport.
+
+Things like safety claims, or other product conformity claims. So, generalized it and put the variability into the vocabulary.
+
+[Speaker 15]
+Origin.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 3]
+Origin.
+
+[Speaker 1]
+Sorry?
+
+[Speaker 3]
+Origin. Which is not a sustainability claim. It's an important claim that goes with the product.
+
+[Speaker 1]
+Yes, yes. Yes, okay. So, that, we should look at the conformity topic code to make sure we cover that then.
+
+Then, there was a bit of talk, and this is an interesting one. This is one of the questions about, what does a claim value mean? If I say, my shipment of beef is, has, is 10 tons per ton carbon intensity.
+
+Is that good or bad? Compared to other products, like textiles, it's terrible. But, compared to the range of values that beef has, between five and 30, it's actually slightly better than average.
+
+So, is it useful to put some sort of benchmark into the passport that says, my shipment of beef is three tons per ton, the industry average is 15 tons per ton, because it brings meaning, comparative meaning. But, when we do that, then there's a question of, well, what benchmark? Of course, everyone's going to claim they're better than industry average, and how do you verify it?
+
+But, is the concept important? Christophe?
+
+[Speaker 11]
+Yeah, I understand the idea, but I think it's beyond what we can really do. There will be a lot of discussions on what it is. It could be differing also from one country to another.
+
+So, I would leave that away from the passport. On the other hand, the UN has built a kind of database of what is the usual amount of carbon somewhere. That could be an interesting idea, which could go hand-in-hand with the passport or the product itself, and another way to benchmark.
+
+[Speaker 1]
+Yeah, I suppose the question is, people will want to benchmark, but do you allow people to claim it in the passport, or do you make it a verifier job? I mean, in the data model, I'll just scroll down a bit. It's a bit hard to see.
+
+I did add this benchmark reference. The idea there is exactly, as you say, to point at something credible that supports the benchmark value. But, again, I don't know if the passport's the right place to do that, but two more hands are up.
+
+This is a good topic. Who's first? I think Stephen had your hand up.
+
+[Speaker 6]
+Yes, yeah. It seems to me that these would be, since this data would be an extension, presumably, because it would be specific to the product, one would think that the benchmark and other information would be tied to the vocabulary of that. So one would think that whatever criteria you're using would have that information related to it, I would think, and that's where we should push to have that information placed, as opposed to a separate reference.
+
+Does that make sense?
+
+[Speaker 1]
+Yeah, let's look at that again when we get down to the actual model and see. It's more at this level. It's really the question of, is the passport as a set of ambit claims issued by a manufacturer the place or not for that manufacturer to also state some sort of benchmark against which his value should be compared?
+
+Or is that really just totally out of scope of the passport and the verifier should know already what the benchmark is?
+
+[Speaker 6]
+Yeah, I would think at most totally out of scope, but an extension might have it included, but that would be out of scope of our work. So that's what I was trying to say.
+
+[Speaker 1]
+Okay, and Virginia?
+
+[Speaker 3]
+Yeah, in my mind, it's out of scope because the comparator or the benchmark is going to be in conformity certificates or inspection certificates, and it will change from one country and one industry to another. And this is supposed to be a common set of data, but in particular, because it should be in the certificates, the clearances, the conformity certificates. I don't think it should be in here.
+
+[Speaker 1]
+I can sympathize with the idea that it's a third party that should be making assessments of performance versus benchmarks and not the producer, but yeah. So that's quite a few hands saying, get rid of it. There's another hand.
+
+Who have we got? Phil?
+
+[Speaker 2]
+I agree that there are many people who I don't know, so I may be about to say something I'll regret. I get the sense that this is not the group that has the domain expertise to decide what a benchmark is, and therefore, I think it is out of scope. However, I really like the fact that you've got that term in the data model.
+
+We don't have to be the people to decide what the benchmark is, but I think it is a good thing that we say, saying that this beef is relatively good in terms of its carbon footprint is meaningless unless you tie it to some sort of benchmark for beef, which is, as you said, Steve, completely different from the benchmark for textiles. So I think having the placeholder for it means that we recognize it's needed, but it doesn't mean that we are going down a road that I agree completely. I don't think we can go down, which is to set the scope of what that actually would be for a particular domain.
+
+[Speaker 1]
+All right. Yeah, absolutely. So just to clarify, it was never an intent to actually for us to say the benchmark for beef is 10, only to ask, should there be a property in the passport where somebody can claim a benchmark and provide a reference to validate that benchmark?
+
+Yes or no? That's really the question.
+
+[Speaker 2]
+So I personally think it's valuable to have it there, because I think to leave it out completely, say, oh, we're not doing that, would be to allow you to say, oh, all beef is wonderful compared with making fridges.
+
+[Speaker 1]
+Although Virginia makes a point that maybe the place for that benchmark comparison is the conformity credential. But then I'm putting myself in the position of a certifying body whose customer is paying them for the credential. And if my beef is measured at 20 and the conformity assessment body knows the benchmark is 10, as the buyer of that service, will I say, leave that out, mate?
+
+But then the same argument would apply to, if I'm selling beef at 20 tons per ton and the benchmark is 10, I'm probably going to choose not to put that benchmark in my product passport. And so I suppose that, yeah.
+
+[Speaker 5]
+Steve, to address this, instead of having benchmark value, have methodology used?
+
+[Speaker 1]
+Yeah, that's what benchmark reference means.
+
+[Speaker 5]
+Yeah, no, I mean, instead of have benchmark, just have methodology for whatever conformity claim you're making. Include the methodology that, if you're making some sort of claim about carbon emissions intensity, you have to use the methodology. Oh, OK, you got there.
+
+That's the standard of regulation that you're...
+
+[Speaker 1]
+And the criteria reference, yeah. So this would say, I'm making a carbon intensity statement about beef, the standard of regulation might be Australian Department of Agriculture rules that reference the Meat and Livestock Association calculation method, that would be here. This one would say, Meat and Livestock Australia has assessed that the average intensity of cows is 20 or something, or 15.
+
+Yeah, this is quite a hot topic. There's a few more hands up, just to make sure. Peter, I think you're next.
+
+[Speaker 8]
+Yeah, just to call out, I think it would be a pity to remove it at the moment. But it goes to all sorts of issues around equivalence. And it was raised in Brett's group on digital product conformity, when the discussion started moving towards how much information should be in the payload for a technical credential.
+
+And I think it sort of goes into the same space. I'd say it would be... I don't think we should eliminate it at the moment, because I think I really feel it provides a mechanism to go deeper.
+
+But at the moment, it just sort of... Where do you stop? Yeah, if you're going to have the benchmark, do you need the technical credential to support?
+
+And I think that's where it becomes a bit hairy.
+
+[Speaker 1]
+Jason, you've got your hand up.
+
+[Speaker 7]
+Thanks, Steve. Yeah, at some point, I kind of considered this. We had a discussion around importers and exporters that are experts in that domain, right?
+
+Not necessarily the buyer of the raw materials might not know the regulations of the mining operation itself, right? And I kind of considered, well, that verification of... It's somebody putting a stamp saying, like, we understand this industry and all claim that this criteria is met, whether that's a kind of yes, no test.
+
+And I kind of considered that in my head, I was like, well, that's a traceability event, because that's an analysis made at a single point in time through the supply chain. And in my head, I was curious if that made sense. And this almost has the same kind of thing, where it's almost a type of event where you're going to trace, well, at this point, looking at everything behind that has happened to this product previously, I, as the expert, have analyzed the traceability graph, and I'm going to add my stamp to it saying that it meets this criteria, whether that's a yes, no.
+
+So I'm not sure how this fits at the product passport level, but what it means is that somebody else that comes along only has to trace the graph back to the last person that put their stamp on it, right? Because then you could either trust or retrace it from there. I'm not sure that really fits, but it did cross my mind, and this kind of reminded me of that thought.
+
+So I'm not sure it's that appropriate of an idea.
+
+[Speaker 1]
+One thing to clarify is that the passport is always about the thing being shipped, not about the components that made the thing being shipped. You would, if you wanted to find, you know, for example, the passport for the cow that was cut up, and I have to stop talking about cows. They just come from that project, and I'm a vegetarian, and if you wanted to, this might, if this is a passport about a battery, then you'd have to follow traceability events back to find a passport about lithium.
+
+There's kind of an obligation on the manufacturer of the passport for the goods being shipped to do that assessment and make an informed claim here, because this is the manufacturer saying, this is my assertions or claims about this thing I'm shipping, right? So the traceability events give you that graph to verify the manufacturer's claim, and so does the conformity credentials, if you trust that someone else has done it. I don't know if that...
+
+[Speaker 4]
+That kind of leads to the comment I wanted to add to this conversation, which is the purpose of the claims and the digital product passport and the project overall is to help the sellers of goods add high-quality claims to their products so that they're getting either commercial advantage through market access or commercial advantage through value associated with the claims that they're making. And so from my perspective, adding the benchmark gives the product producer the ability to say, hey, this is a high-quality product, and my view is we're way ahead of benchmark. And so it sort of reinforces the purpose of the product passport and the design and the intent of the project overall.
+
+So from my perspective, it's a really important addition to the value proposition of the whole program. And so from my perspective, that means it should stay. And then we can talk about from a conformity and traceability event, conformity credential and traceability credential, how that claim gets supported becomes pretty important.
+
+But I think in terms of intent, it's a key piece of the puzzle.
+
+[Speaker 1]
+Yeah. Okay. So that's interesting.
+
+So Zach's looking at this from the perspective of business incentives for passport issuers to actually issue passports, right? Because this whole architecture holds in a heap if the business incentives aren't there to do it. And you can look at it from one side, which is the verifier side saying, give me only truth and don't tell me your lies.
+
+But from the issuer side, do we want to give them as much canvas as possible to make the best claim they can, even auditable? So if you don't trust it, you've got evidence to follow up with. That basically lifts incentive to issue these things in the first place.
+
+How important is that? I suspect it might be quite important. So yeah, we have a balanced opinion here about whether this stuff should stay or go.
+
+It sounds like. That doesn't resolve whether it stays or goes. Some say remove it.
+
+Some say keep it. We could try a vote.
+
+[Speaker 11]
+At this point in time, you can still keep it in case off, even if we don't activate it right now.
+
+[Speaker 6]
+Okay. All right. What are you asking about whether we keep the benchmark?
+
+[Speaker 1]
+The property in the model. This benchmark value and benchmark reference, these two properties in the claim are recently added, right? Because this one here, claim value is my beef is 10 tons per ton.
+
+Criteria reference is according to Australian regulation. The benchmark and the industry average is 15 tons per ton. So basically, I'm better than industry average.
+
+[Speaker 6]
+I would vote that we keep the fact in whatever the claim is, but we don't put in the reference to the benchmarks that those are part of conformity. So anyway, I just wanted to be clear on what we were voting on, because I think it's actually possibly two different things. One is the fact, and that should be put in.
+
+But the reference to a benchmark against that shouldn't be.
+
+[Speaker 1]
+So that's interesting, because the benchmark reference would... Presumably, if someone's measured an industry average, they've published it somewhere. Meat and Livestock Australia has done a report.
+
+And for example, in 2023, the assessment was on some public website somewhere that the industry average for carbon intensity of Australian beef is 15 tons per ton. So that benchmark reference, URI would point to that, which would give credibility to the number. Right.
+
+[Speaker 6]
+But as Virginia says, I'm picking the benchmark that I'm going to publish with it, as opposed to a conformity or some third party reference to it.
+
+[Speaker 1]
+Yeah. So pick your own benchmark. Yes.
+
+But I mean, all of this is pick your own, right? It's only until you get to evidence that it's somebody else saying, I agree with you. Yeah.
+
+Okay. I want to move on to a few more questions, but we have another hand up. Would you like to go ahead, Michael?
+
+[Speaker 10]
+Yeah. Maybe a silly question, but I'll ask it anyways. Are all the attributes in each of these in the claim, are they all mandatory?
+
+[Speaker 1]
+No. So we haven't, I haven't, this is something for us to discuss, to go through and go, what's mandatory. We haven't done that work yet.
+
+But I would, when I say no, I'm speaking for the group and saying, probably I think the consensus would be that not all those are mandatory.
+
+[Speaker 10]
+Okay. All right. Just wanted to, I just want to get the clarification on that, Steve.
+
+Thanks.
+
+[Speaker 2]
+Yeah. I feel you. I wasn't going to say any more.
+
+I thought I'd said my piece on this. It's just that I don't think I agree with Steven. So I think either we keep benchmark value and benchmark reference, or we get rid of them both.
+
+I personally would like to keep them both, but I'm personally, I'm hearing strong arguments for getting rid of, well, I would say them, but I certainly wouldn't want to keep a benchmark value that says I'm better than average without a reference to what the heck that means. So either both or neither for me.
+
+[Speaker 1]
+Okay. Well, I'd encourage everybody to have a conversation in the ticket then before we, at the moment, I'm tempted to make them very clearly optional and leave them in to provoke further discussion. What ticket number is that, Steve?
+
+Just so we all can find out. Sorry. Let me pull that up.
+
+[Speaker 12]
+It's one about DPP data model. Where is it? 38.
+
+38, Steve? Yeah, sorry. Yep.
+
+Okay.
+
+[Speaker 1]
+Yeah. So this PR41 was done in intercession and it's led to this updated model that we were just looking at. And then on top of that, there's all these questions, right?
+
+And so we've had quite a robust discussion about benchmarks and it's not quite resolved, but it's been a valuable for me. What one of the other questions, one of the first ones here is this skew versus batch or serialized item difference. So if we go back to this model, you'll see that at the moment, these claims and that little square bracket means multiple claims, right?
+
+So one passport for a thing can have any number of claims grouped under some conformity topic. And this is things like environment emissions, environment, energy, social wages, things like that. But they're attached to their passport.
+
+So how do I know when a claim is about a skew at the product level or about a batch or even about a facility, right? Because sometimes, and this is the reason for that mass balance thing, which actually I'm kind of keen to take out now. There was a discussion to say, well, a claim of carbon...
+
+I mean, sorry, not a claim, a evidence about carbon intensity might be an annual emission certificate for a mine site or a farm. In fact, very often will be, right? That's the thing you audit.
+
+That's the thing that you can justify paying for once a year. Certainly can't pay for an auditor for every shipment, right? So the evidence might well be farm level or facility level carbon emissions for a year.
+
+But the claim is the carbon intensity in this shipment, because that's the thing the next guy needs to add their scope three, right? So how do you reconcile a claim here that says there's a ton of carbon in this shipment and evidence that says there's 1,000 tons of carbon emitted by your facility in a year? Should we, A, more clearly link the claim to the thing it's claimed about?
+
+But then actually the claim would always has to be at the level of the shipment, because that's the value proposition to the next person, even if the evidence is at the facility level. So that's one problem, this mismatch in granularity of evidence and granularity of claim. And the other one is the SKU product question.
+
+So let's start with the granularity question. How best to treat or acknowledge or recognize that the reality in the world is that somebody will have a certificate from a third party at the level of a facility 1,000 tons a year, but is making a claim in a passport at the level of a shipment, and who verifies that mass balance allocation? So Virginia's got her hand up.
+
+[Speaker 3]
+Yeah, I think a little bit more clear cut, but still related to facilities, everything related to social issues like employment practices, no slavery, et cetera. That all, I think, goes back to a facility level, and you can link a product to a facility. The problem with the CO2 is you almost have to have the evidence about how much is produced, because CO2 per item is going to be total CO2 divided by number of items.
+
+[Speaker 1]
+Yes, yes, you're dead right. There's no difference between the facility claim and the product claim, like modern slavery or forced labor at your site. But some of them, water usage, anything you quantify, water usage, carbon intensity, et cetera.
+
+Yeah, there's this allocation challenge, and it becomes quite important, right? Because it's an obvious greenwashing vector. If I'm providing evidence at farm level and I've basically got a free form to claim whatever I about the cow I'm shipping, and nobody can really verify whether I've got 10,000 cows or 1,000 cows on my farm, at least not through this passport, how do we bring integrity to that?
+
+So, Peter, you got your hand up?
+
+[Speaker 8]
+Yes, just to call out that, again, through the conformity assessment work, there are plenty of scenarios where a claim, or particularly around audits, are applied at a facility and a product level. In other words, this factory is audited to produce tomatoes. So just to add levels of complexity is that there are many schemes that involve certification where the subject is more than just the product.
+
+[Speaker 1]
+Yeah, okay. So the auditor looking at the mine site who says, you're 10,000 tons a year, in the same audit could say, and that means the emissions intensity of your shipped copper concentrate is x tons per ton. In which case, there is evidence, even though it's a once a year facility audit, there is evidence that says that means the intensity is this, and so it is quite feasible, actually.
+
+Okay, that's a good point, if I understood you right. Christophe?
+
+[Speaker 11]
+Yes, I was going to the same direction. That is possible, that is workable. So I'm fine with what you just said, Stephen, completely in line with that.
+
+[Speaker 1]
+Okay, I think I'll get rid of this mass balance evidence thing and just say the evidence for the claim is here. And if you don't find product level evidence in there, then the claim is less trustworthy, that's all. Okay, I'm happy with that.
+
+No other hands up for this topic. I've got another topic, which is...
+
+[Speaker 5]
+Wait, I have a hand up, I have a hand up, sorry.
+
+[Speaker 1]
+Oh, sorry, go on, go on.
+
+[Speaker 5]
+I couldn't find my hand. Okay, I wanted to maybe push back a little bit on that. I don't think that the world is set up right now for these kinds of claims at the product level.
+
+You know, as we've been saying, most of the certification is done at the site level or the company level. I still think it's okay to have a self-issued claim about the carbon intensity, say, of the product. But I think that there maybe should be a place for methodology.
+
+So that can be... It can be queried, you know?
+
+[Speaker 1]
+Yeah. Yeah, that's meant to be the criteria reference. But I think, you know, the next step after we've had this discussion, I think, is to test the data model by pushing scenarios through it, right?
+
+And testing its alignment with battery use cases and mining use cases and so on. And saying, well, how would we actually issue a passport with this real data in it? And at that point, we'll probably encounter those sort of things.
+
+You know, does that criteria reference really tell me that this is a verified product level or facility level thing or what?
+
+[Speaker 5]
+Yeah.
+
+[Speaker 1]
+But yeah.
+
+[Speaker 5]
+Yeah. Just for example, in BC, we have regulation that says that companies over a certain threshold have to report their carbon emissions on an annual basis to the government. There's also regulation that says they have to report their output production on an annual basis.
+
+But there's a caveat that says that the government is not allowed to say what the carbon intensity of those products is for a whole bunch of political reasons. But you can go to these two websites and divide one number by the other. So, and I imagine that that sort of thing, these kind of, those kind of wrinkles are going to exist in all jurisdictions.
+
+So, if it's the product passport issuer can say, point to those two pieces of evidence and then also say that the claim that they're making is, you know, or gives the methodology for the claim that they're making. That could add some more validity to the claim.
+
+[Speaker 1]
+Yes. I agree. So, sometimes that standard or regulation is a regulatory reference.
+
+And sometimes it's a, you know, ISO standard or an industry standard or something like Irma.
+
+[Speaker 5]
+Okay.
+
+[Speaker 1]
+Yeah. I think we test it with your use case and create a sample certificate and see, sorry, passport and will it work? Who's got more hands up?
+
+Let's go in order. Michael? Oh, no.
+
+Phil was first.
+
+[Speaker 2]
+Phil was first. Sorry. Just briefly, Peter and Christophe made arguments that you can apply analysis of the facility to the products that come out of that facility.
+
+I still think that's dangerous. And I think if I understood Nancy correctly, and I think if I understood Peter and Christophe correctly, I may not have done. I think if you say that this thing has a carbon intensity of X and it was produced in a factory that itself has a carbon intensity of Y, you are able to show that the facility has good, bad or moderate carbon intensity, for example.
+
+And you can say the product has carbon intensity without trying to create an average of the two or divide one by the other. And I don't think it's beyond the understanding of the humans at the end who have to understand this stuff to recognize that the carbon intensity of a product is one thing, the carbon intensity of part of the process is another. And if you keep them separate and display them and present them as separate things, you keep integrity of both.
+
+[Speaker 1]
+Yes, I think, before I comment, Michael.
+
+[Speaker 10]
+Yeah, I think, well, one, I like the concept that Nancy was saying on methodology, because one of the questions that's coming up in my head as I'm listening to this conversation is that when you have a complex product or a facility is manufacturing hundreds of different products, so it's some sort of electronics manufacturing or whatever, where the lines are changing constantly, it sounds like we're getting into almost like a fractional accounting on how you would allocate that out to, okay, the factory is producing product X for 15% of the time and product Y for 45% of the time and the rest of the time is split between 200 products, right? I think having the methodology or something of that nature, how it's going to be broken back down is potentially a real challenge, right?
+
+[Speaker 1]
+Right. Yeah. And I think you're right.
+
+Some factories will need to take a life cycle analysis approach to that for different products with different composition and so on. And others like a one function facility, like a cattle farm or a mine site.
+
+[Speaker 10]
+Mine site that's producing one mineral sort of thing.
+
+[Speaker 1]
+Yeah. It might be able to take a mass balance approach, but it's not for us to dictate which approach is right in which context. So yeah.
+
+Okay. Look, I think I've got enough takeaway here about what we should and shouldn't do to tweak this a bit and write some comments. If possible, the last thing I wouldn't mind chatting about is some scenarios around this product and batch thing, right?
+
+So if we accept that it's not uncommon that a particular manufacturer might have a SKU, meaning a product, and make a million individual items of that product, right? Like iPhone 14 or something like that. And over time, there are things that are important to track at the batch level or product level.
+
+Then you could envision a scenario where there are a million passports for the same thing, but they're different serialized items. And that's not irrational, nothing wrong with that. But what's the best architecture here?
+
+Should the manufacturer say, here's my product passport at the SKU level. Oh, and here's my separate batch passport that maybe points to the product passport, or is it just one passport? Because I really want to find product information and batch information in the same passport.
+
+And what happens when I change my product criteria? Because over time, through a thousand batches, I'm gradually improving things. So my claims get better.
+
+And now, so I need a new version of my product passport. And now I've got a version history of them. And should that version history be discoverable for audit purposes?
+
+All this sort of question, cascading set of questions that come out of this thinking about how to manage SKU level versus batch level claims in the same passport. And I'm glad Phil's put his hand up because this is right up GS1's territory.
+
+[Speaker 2]
+The other thing that comes about, yes, I mean, talking about whether it's a product level identifier or a batch of that product or a serialized or whatever is indeed our absolute bread and butter. But I think some of the features of the DPP are going to apply at different levels. If you're talking about repairability and recyclability, then that is likely to apply at the product level.
+
+But I would, sorry, I call it a G10 level, I know you call it a SKU level, same thing. Whereas individual traceability may well vary at batch level. It ain't going to vary at serial level.
+
+So then you get into inheriting. So there's a bunch of stuff up here and attached to one class and there's a subclass of that, which is the batch of that. And you inherit all that other information.
+
+So I would, in my world, it's easier to think about inherited information at the batch level inheriting from higher up.
+
+[Speaker 1]
+Yes, in a logical data model sense, absolutely, that the product batch is an instance of a product SKU. But yeah, what does that mean for a product passport data structure and best practices about managing, like I said, version histories? Or would you expect to find, if it exists, batch level and product level in the same passport that is issued about a particular batch or serial?
+
+Because increasingly, even in the textile industry, people are talking about serialized handbags with individual passports for that handbag. And in which case, would I want to see, I know this is finished product end and we're more upstream, but the argument still applies, I think. As a consumer of that passport, would I want to see both in one place or start to follow links?
+
+John, got a comment?
+
+[Speaker 9]
+I guess I need to explain myself, Steve. I'll put a comment in the chat. I'll just verbalize now.
+
+The discussion of the last few minutes and some of the issues in the repository, to my mind, represent our exploration of the sort of meaning of things, the taxonomy and ontology of stuff we're discussing. And I know you've got a section already laid out ready in the spec that stands for vocabulary, and it says there will be a taxonomy. But I kind of think we need a space to think about this stuff that's slightly more rigorous than I can see at the moment, at least.
+
+I'm proposing another UML-type language, but onto UML, which is for ontologies and sort of to be more rigorous about batches and product passports and SKUs and everything else, exactly how they all hang together. And there's some really good work by a guy called Giancarlo Giazzardi recently that's been attracting my attention on how to express that stuff very well. So that's my explanation, what's in the comments.
+
+And that's what I think we've been doing the last few minutes is thinking about how does this stuff all hang together?
+
+[Speaker 12]
+Yes.
+
+[Speaker 1]
+Okay. The vocabulary section of this was thinking was the place we'd try to manage the language of claims. So things, is it a sustained emissions claim or an energy claim or whatever, and how the different existing vocabularies from UNEP and ESRS and GRI and so on and so forth all map to each other.
+
+And that shouldn't, that should be outside of this. This is really a schema or a data model, as opposed to a link data vocabulary. There's obvious overlap and maybe there's got to think more carefully about do we model the passport also as an ontology or can we just keep it as a data model and manage the ontology being the vocabulary of the semantics of sustainability?
+
+[Speaker 9]
+I'm not sure. I think whether we want to or not, whether we declare it or not, we are creating ontology by describing what's inside a digital product passport and how it's it is an ontology whether we use that formality of expression.
+
+[Speaker 1]
+That's true. All right. Virginia, did you have some comment?
+
+We've got a few minutes left.
+
+[Speaker 3]
+I'm sort of thinking out loud, but I think the, whether you, I wouldn't put batch information necessarily inside of a product passport, but I think it depends on the claim. And if a claim, for example, is related to chemical use or water use where the evidence for the claim comes from a batch, because that kind of information isn't individual product information, it's, I think that in the trace of the data going backwards, you would go back to maybe a batch passport or the batch data without necessarily including that in the data passport. I don't know if I'm expressing that.
+
+[Speaker 1]
+Yeah. Well, so the European Union and others said, and actually several of the manufacturers we spoke to are sort of, it depends where you are on the spectrum of thinking in this, but the more sort of leading ones are trying to move towards storytelling at the instance or batch level, not only for marketing purposes, but also because that's basically where you can do traceability, right? Because the same SKU might one day use cotton purchased from Argentina and another day from Australia.
+
+So you can really only, unless your strategy of SKU naming or naming changes when you use a different material, which is I think not common practice, then there are things that exist at batch level. And I would suggest that back to Michael's earlier question about what's optional and what's not, that whole product batch structure with the traceability events linked is an optional structure because maybe you just don't have that information. But if you are going to do traceability, and this is a good one for Phil, can you do it outside of the batch?
+
+Because the EPCIS events are about, I thought about, you know, if it's a transformation event, you're putting the identifiers of the things that were consumed to produce the product. Have we got that traceability event connected to the wrong thing? Or?
+
+[Speaker 2]
+It's going to vary. If you do the same thing all the time, then you could put it at the higher level. If you've got a product that is made in several different factories by different subcontractors, things are going to vary quite enormously.
+
+I'm sorry. I don't think there can be a single answer.
+
+[Speaker 1]
+Right. But in the way this data model is drawn at the moment, you can't specify a number of traceability events unless you specify them through the batch structure. Is that wrong?
+
+[Speaker 2]
+To be honest, I don't know is the honest answer. I can guess, but I honestly don't have the knowledge to tell you. Sorry.
+
+I wish I did. I can find out. I don't know who to ask.
+
+[Speaker 15]
+Yeah.
+
+[Speaker 1]
+Okay. That's all right. If you don't mind.
+
+Because we want it to be implementable, right? We're more or less at time. I don't see any other hands up.
+
+I have recorded this. I might have to replay some of it to remember some of the things we said. I'm going to update the ticket with what I think is our consensus and then do another pull request to do another update to this model and ask you to review it, basically.
+
+It's been helpful for me. Some of these are tricky questions. I hope you've felt some value in this conversation.
+
+But I'm very keen to stick to time limits so that everybody can enjoy their other commitments. So, thank you very much for your contributions.
+
+[Speaker 9]
+Thanks, Steve. Thank you. Good night.
+
+Thank you. Bye. Have a good day.
+
+[Speaker 12]
+See you.

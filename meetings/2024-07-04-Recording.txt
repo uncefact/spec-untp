@@ -1,0 +1,475 @@
+[Speaker 1]
+You've always got that interesting underwater scene behind you, Marcus.
+
+[Speaker 4]
+Yeah, that's from down the road where I live, Steve, it's a spearfishing expedition where I had lots of company. Is that a tiger shark or a black tip?
+
+[Speaker 1]
+Bronze Whaler. Nice. Hello, everyone.
+
+We'll give it one more minute. Okay, well, let us kick off. Quick note, this meeting is being recorded and will be transcribed and published.
+
+If anyone objects, please speak now. Also, the usual reminder that your contributions, should they find their way into this webinar, the UNDP specification, become UN IP, so don't contribute things that you don't want to become UN IP. And with that, we'll move on to today's agenda, which is, as usual, just to look at pull requests and open issues and make progress.
+
+First of all, just a quick reminder that next week is the UNC fact forum and plenary, where there are, I don't know if anyone's seen the link, something like five sessions that in some way or another involve some part or other of UNTP. So it's got quite a high profile there. And the updated, thanks, Zach, Recommendation 49 will be presented to member states for review, not for approval.
+
+And I expect another round of comments and updates after that. So things are progressing, and there are a number of parties attending the forum that don't usually go there, like people from the European Commission and various, SEN, SENELEC, and other places that are starting to see connections between UNTP and what they're doing. So I think these are all good signs for the interest in our work.
+
+Right. So any comments or questions on that? If not, I'll just get on with the business of the day.
+
+Let me share screen and look at, by the way, did I see we've got a couple of new people on the call?
+
+[Speaker 6]
+Yeah, we were messaging on Slack yesterday, the day before.
+
+[Speaker 1]
+Ah, yes. OK. So you're a potential implementer.
+
+[Speaker 6]
+Yes. Yeah, Rocky and Tomas are also from our team. So we've been, yeah, just looking at UNTP.
+
+It's funny because we were recommending, I mentioned in the general chat that we were recommended to look at UNTP by Spherity because we've been closely talking to their team. And funny enough, we on our side had been talking about bringing together DPPs and EPSIS, and we were talking to Spherity about it and we were thinking about doing this ourselves. And then they're like, well, have you looked at UNTP?
+
+We're like, what's that? And then we saw it. I was like, oh, wow, you guys are doing exactly what we sort of talked about putting together.
+
+I was like, well, this will be far easier to contribute to this and participate with you all than doing it ourselves. So it's really it's great to see that this has been organized. Yeah, that's how we heard this and fantastic.
+
+So we're hoping to be an implementer for this in the plastics value chain in Canada.
+
+[Speaker 1]
+OK, well, thanks for your participation. And that does give us some comfort that completely independent trains of thought arrive at a similar conclusion that maybe we're doing something right. Pat, you've got your hand up.
+
+[Speaker 2]
+Yeah, I just wanted to tell Mark, welcome and just say I'm helping BCGov on their pilot implementation. So if you would like to have like a Canadian chat about sort of what I've experienced so far. Yeah.
+
+And I'd be curious to learn more about your use case around plastic. I think that's obviously a very relevant topic. And yeah, if you want to have a chat, we can connect out of bound here.
+
+I can reach out to you on Slack.
+
+[Speaker 6]
+Yeah, it's very similar. It's kind of like, I mean, we're doing a digital trust in Alberta. But, you know, you did the Energy and Mines digital trust.
+
+So there's a lot of similarities like credentials, UNTP. Yeah, there's just overlap. We should talk.
+
+[Speaker 2]
+Yeah, let's let's have a chat. Yeah, that'd be great.
+
+[Speaker 1]
+All right. And I also note Anne and Dow is with us. You haven't joined the meeting before, have you either?
+
+And would you like to say hello?
+
+[Speaker 5]
+I'd love to. Hi. So first time here and funny from Canada and surprisingly also working on digital product passport, working on digital product passport.
+
+And I was through that, came across the UNTP and it finds that the purpose are very similar. So I'm here tonight to meet everyone.
+
+[Speaker 1]
+Right. Well, thank you, Anne. You're welcome.
+
+As you may know, we do weekly sessions, but at different times to and this is basically the one that accommodates our colleagues in the American time zones, American and Canadian, which is why we've got so many people from Canada on the call. The one next week, we tend to have more Europeans. All right.
+
+So I wouldn't mind getting through a couple of PRs and then maybe sharing some inspiration that I've arrived at around JSON-LD and Schema, hopefully the last time we talk about it. But with a lot of help from Pat, I think we're actually arrived at a way to manage vocabularies and credentials and extensions in a nice, consistent way. So we might have a bit of an overview of that.
+
+But on to, how do I get rid of? There we go. Are we now looking at?
+
+So there's only two PRs. One is a little update to digital product passport. The submitter of these PRs is not on this call because she's in European time zone.
+
+We could leave them until next week and let her talk to them or we could do a quick review. And if we decide to merge, then merge. What do you think?
+
+[Speaker 2]
+I would like if we could at least discuss it, maybe not merge it, but discuss it, make her comments. And then next week. All right.
+
+[Speaker 1]
+So let's do that. So the first one is an update. So Suzanne, by the way, she comes from the Global Battery Alliance and has been also very close to, I think she used to work for Sparit.
+
+So quite deep in this space. Let's look at the changes she's proposing to make. It's to the digital product passport page where basically we still have at least published on the website an older model of the digital product passport, which has subsequently been updating.
+
+I'll talk you through that in a minute. And she's correctly, in my view, saying here that you can't have an entity like a product that doesn't have a single unique identifier. It could have other identifiers, but there's one that has to position it in the graph.
+
+And so she's saying it's not an array of unique identifiers of a serialized product. It's one identifier. And that's a change I don't mind accepting because I've tweaked the model already anyway to have a VCDM aligned unique identifier for every entity with an optional list of other known as.
+
+Patrick?
+
+[Speaker 2]
+Yeah, first thing I would remove the S and the actual property name. It looks like the S identifiers was also just left there. So I would remove it just to align with the fact that it's one.
+
+My question would be, is this identifier a string or is it the identifier object like we see on other things?
+
+[Speaker 1]
+So it will be if we go to. The updated model, an issuer, where is an issuer? What we've got here is the idea that the issuer of a credential.
+
+So first of all, every identified type, whether it's a declaration, a standard, a regulation, an organization, a product or a facility has a VCDM aligned single ID with some extra stuff about where's the ID scheme from and so on. Because not everything will be a DID except the issuer of a verifiable credential, which will be a DID. But yeah, so when it comes to identifiers of things, let's say a product here, we've got a single ID and.
+
+In some cases where it makes sense, like organizations, list of other identifiers. You can see here, but that separates the how is it positioned on the graph from other information about how this part is known. And there's better, that's more VCDM aligned.
+
+The whole point of all this is, we'll talk about it in a second, is that so.
+
+[Speaker 2]
+I would also, just a comment for the issuer. I don't know if we should assume it's always going to be an organization. I know, like in BC, what we're exploring, so the actual issuer, it's a role.
+
+So it's going to be like a minister, which is part of an organization, but it's not the organization in itself. And I feel that's an important legal distinction that needs to be made. So the actual DID that will sign is assigned to a member of an organization, like the director or the minister.
+
+It's not a person, it's a role filled by a person in a given time.
+
+[Speaker 1]
+Okay, so, yeah, I must admit, I changed party to organization to align with schema.org, but maybe we should go back to party.
+
+[Speaker 2]
+I think party is great, entity, party. That party could be an organization or it could be, you know, I think assuming it's an organization. Might not always be true, especially for like conformity credentials and so on.
+
+[Speaker 1]
+Okay, we'll take that action before I update the revised credential models then. But in terms of sort of, I'm tempted to just merge this pull request because we're basically reflecting back to Suzanne that, yeah, she's right. Each product needs a single unique identifier and it may have others, but for VCDM alignment, this is the way it should be.
+
+It'll get overwritten shortly anyway by something that basically says the same thing.
+
+[Speaker 2]
+I would just like item identifier, remove the S at the end of the property. And the same thing for model identifier on the column on the left, right? Like in the property, just, yeah, it's now a single identifier, right?
+
+[Speaker 1]
+In fact, it'll change its name from product identifiers to just the VCDM aligned ID, right? Because we want to use the same part of VCDM alignment.
+
+[Speaker 2]
+It depends if, so the ID needs to be a URI, absolutely. So if you want to allow like just string identifier, I would just put identifier, like the full identifier string because ID, it should be a URI, right? It needs to be like a URI.
+
+So it could be a urn or a HTTP or a date or something. Yes.
+
+[Speaker 1]
+Well, that'll bring us to another discussion about how, if we want data models of credentials, which can be the source of nodes in a transparency graph, then we're going to face this issue of what do I put for URIs of identifiers of all these things that will become nodes in the graph? So, yes, I mean, the collection here means that you can have an ID scheme like Australian business number and a value like the ABN and the name ABN. But how do you universally identify in a graph?
+
+There's another question we'll get to in a minute.
+
+[Speaker 2]
+Because it could be just the schema.org identifier, right? They have the identifier property, which could be used for this.
+
+[Speaker 7]
+Yeah.
+
+[Speaker 1]
+But I'm tempted to decide whether to merge this or not, given that we're about to overwrite it with what we're about to discuss. Does anybody have a, this is just a reflection back to Suzanne, that she's right, that we can't have an array as the identifier. What do you think?
+
+[Speaker 7]
+I'm OK. I think that's a good idea. I also think it's important to, well, yes, yes.
+
+Go. All right. OK.
+
+[Speaker 1]
+OK, it's doing its checks. All right. I'll merge it in a minute.
+
+I can do that in the background, too. OK. The other pull request is this one, which I do have a bit more of a problem with, right?
+
+So she started to populate the section called Trust Graphs and is talking a lot about presentations from wallets. And one of our architecture principles is to try to avoid that technical dependency on all the actors in the supply chain by making, having a slightly different way of verifying identity. And so I've commented on this one and suggested that we have a discussion with Suzanne probably next week to see if we can reach alignment on how identity integrity works without wallets.
+
+Patrick?
+
+[Speaker 2]
+I think this is a big change. Obviously, removing the need for a wallet, you sort of remove the holder from the equation, right? Because the issuer will host the credential at a public endpoint and the verifier will go fetch the resource directly.
+
+However, this doesn't technically stop the, so let's say BCGov issues a title VC that is issued to an organization. Nothing stops that organization from fetching that credential and putting it in their wallet, right? And then presenting it to other people.
+
+If they have specific business use case that they need, like a direct party to party interaction, they can go fetch that public credential and just put it in a wallet and send it in a presentation request. I think the question is, do we want to encourage this as something we want to sort of cover in the spec or should this better be left to individual's business use case? Like, I think the UNTP should stop at where it designs this model of discovery.
+
+These credentials are hosted publicly, but the fact that they're hosted publicly, it means that anyone can just take it and do whatever they want with it. Or at least there's no mechanism that stops that right now. I would need to read this a bit more.
+
+[Speaker 1]
+I think what it reveals though is here's someone with deep experience in the domain, comes from Sparity, works for Global Battery Alliance, and is part of the project team. But we haven't managed to quite align on this publish and discover architecture rather than wallet exchange architecture. I mean, I don't think we want to preclude wallet exchange.
+
+It's nothing, we shouldn't say you can't use wallets. We just don't want to depend on them. It means we've got a little bit of consensus building within the team.
+
+Really, this is what this tells me to do.
+
+[Speaker 2]
+But also, when you get a wallet involved, you add a party that can change that. Once it's in their wallet, they can then send it somewhere else and they could change the data or they could do things with it. So I think when the UNTP is going to describe a verification process, which they should, they're going to say, well, there's a product passport and then you go fetch the confirmity credential.
+
+I don't think they should say we can also do presentation exchange from wallet to wallet because then you sort of take on the responsibility to provide clear guidance around how this should be done. And I think, you know, focusing on the discovery model should be where the UNTP stops taking accountability for what happens. Yes.
+
+[Speaker 1]
+I don't think we want to get into what, you know, VC APIs and wallet exchange protocol. That's W3C territory. We can just say put it in a wallet and exchange it via wallet if you want.
+
+But this is how the discovery works. Yeah. OK, so I think we agree on that.
+
+Which means I won't merge that pull request. We'll reserve it for a discussion with Suzanne.
+
+[Speaker 2]
+And separate note, like we haven't talked about this for a while, but everything about selective disclosure. Right. So if there is use case in the supply chain, there is sensitive data.
+
+Obviously, this won't be exposed publicly and will require some form of either authentication or disclosure. So, yeah, something to keep in mind.
+
+[Speaker 1]
+Yes, that's an important one. The use cases at the moment seem more like not so much selective disclosure of a property inside a credential, but rather just encrypting and making available or not available an entire credential or file. Right.
+
+But that's an easier pathway. It doesn't preclude selective disclosure, but it forces you to use a proof method that supports it in the first place. Anyway, so that's the PRs done.
+
+May I beg five minutes of your time to share some thoughts about the intent of JSON-LD, the intent of JSON Schema, and how that's driven some thinking about refactoring the UNTP core and credential models? Just wouldn't mind presenting it to everyone and getting your thoughts on it. So I'll admit that when I started on this journey, I was pretty familiar with JSON Schema and APIs and how all that works.
+
+And I was a complete numpty on linked data and JSON-LD. It has taken me some time to get my head around it. And I think I have.
+
+And I think I can see value in it. But I think one of the lessons from it is that if we imagine success of UNTP and what does that look like? It looks like probably maybe 100 extensions like the Australian Agriculture Traceability Protocol or the Canadian Critical Minerals and so on around the world.
+
+And each of those extensions need to be done in such a way that they remain interoperable. So now we're talking about 100 communities like us doing things consistently. And that's challenging if you've got to learn a new technology at the same time.
+
+And then worse than that, you've got potentially tens of thousands of implementers of either UNTP core or various industry specific or geography specific extensions. And if they need to learn a lot of new things, then we may as well pack up and go home. So I've come to the realization that if you don't want to impose a big learning curve, you need to give one of those tens of thousands of implementers a simple and familiar model to implement, which basically means here's a JSON schema, make a credential that conforms with the schema.
+
+And yes, stick this thing called context at the top and do insert these type properties in this way. And look, Google does similar things with their Maps API. It's not so unfamiliar, but kind of limit the need for knowledge to that.
+
+And so I see a schema as the purpose of a schema that supports a credential really as tooling to help implementers make valid credentials. On the other hand, the purpose of a JSON-LD context is at the other end of the chain. It's the verifier wanting to understand how to interpret data from multiple different credentials and build meaningful transparency graphs.
+
+That's the way I think about this. So let me show you an example of what I mean by a transparency graph. So first of all, Jason and others, do you think that's fair positioning, that the purpose of a schema is to help an implementer create a valid credential?
+
+The purpose of vocabularies and context files is to help verifiers consume data and construct meaningful and valuable graphs. Is that a fair statement?
+
+[Speaker 2]
+I think so.
+
+[Speaker 1]
+Right.
+
+[Speaker 2]
+Yeah, I would agree. Yep. Cool.
+
+The only caveat I would say, the verifier must know in advance, must have a clue of what they are about to ingest, right? They're not going into this blind and following this train blind, right?
+
+[Speaker 7]
+That's right.
+
+[Speaker 2]
+What they might be blind to is some of the extension they will meet along the way, right? But at least there should be a core that they can expect to find, the conformity credential. They can expect that.
+
+But a verifier, like a digital product passport could potentially have, you know, 50 conformity credential linked to it. That's a bit extreme. But like if you calculate the sum, so thinking that everybody will know every extension and look for them is a lot.
+
+But assuming that everybody will know what their core is and to get the minimum information needed to conduct their business, that's more realistic.
+
+[Speaker 1]
+So yes, I'd agree. All right. So I think we looked at this picture last week that said there's hundreds of these extensions of a core.
+
+Everybody should know what the core is. They may choose to know something about the extensions, but within the sector that makes an extension farming, livestock, those extensions will be important. Across sectors, they may be less important.
+
+But if you start with the end in mind when thinking about the credential model in the context files and you say, well, my goal is in some ideal future state, whether I'm US Customs and Border Protection or I'm just a large corporate that wants to be satisfied about the integrity of my supply chain through transparency graphs. What am I doing? I'm pulling in snippets of data from all kinds of sources, multiple different credentials.
+
+Credentials are really a structure that carries multiple important snippets of data. So inside a product passport, you will find products, facilities, organizations, standards, things like that. And similarly, inside conformity credentials and traceability events.
+
+So I'm imagining there's literally millions of credentials pouring in that are instances of potentially 20, 30, 40 different extensions. And I'm trying to suck all that data in and construct a meaningful transparency graph. And here you see, for example, a product has a conformity claim, but it also has an attestation from a certifier about it.
+
+And this may not be exactly right, but I'm trying to draw like an ontology here. If I use that word carefully, being that Marcus is on the call, I don't want to offend him. A picture of what things we expect to populate a graph.
+
+Then it makes you think about, all right, this is basically a collection of types with identifiers, right? So I expect to find a product with an identifier and it's a little snippet of data. It looks like a product with an identifier and I stick it in the graph here.
+
+I've also got a serialized item or I've got an attestation or I've got a certifier and so on. So when you think about it with the end in mind and you go back, well, what does that mean? How does that mean I should construct the credential?
+
+It made me think that really what I need to do is, let me show you, define in a kind of a core vocabulary. Still room to link this to schema.org and so on. But this is more conceptually that a core vocabulary that says, I've got things like facility, organization, product, declaration, regulation.
+
+And these are all identified things that represent those blobs on a graph. In other words, I'm going to find these things somewhere in various credentials. Could be a conformity credential, could be a UNTP digital product passport or an AATP livestock passport.
+
+But I'm going to find these things in there and I'm going to drop them into a graph. So I want to have for all of them, an ID and a type that makes that work. And then I want to say that, I think I want to say anyway, that having defined all those types, now my purpose for creating things like, let's say, a product passport is basically to assemble those types into a carrier called a product passport.
+
+And this could get extended to be a livestock passport, but they all identify things that fall into the graph and they're all BCDM aligned. So I'm sharing this because I think what I want to be able to do is generate from this a context file that is, looks more like what a context file should look like. I've got one somewhere, I'll put it in the chat, I think recently.
+
+Yeah, that basically is a list of these entity types, identifier, credential issuer, organization, facility, and a facility has a coordinate and so on, right, that represent the blobs that I'm going to suck out of my credential and stick in the graph. So I've basically not really changed the intent of a digital product passport or the meaning of the content in it, but restructured it in such a way that it's basically an assembly of identified objects that will drop into a graph. So, and that way, I think I can make a schema for a digital product passport that includes BCDM properties and IDs and types, because it's an instruction to a developer to make something valid, but a context file that doesn't redefine stuff from higher level contexts.
+
+And so kind of get the best of both worlds where I can make simple models and I can generate context files that are meaningful for verifiers to suck data elements out and stick them in a graph, and schemas that are useful for implementers to give us basically a simple instruction set to make credentials. So this is where I've been thinking, right, and that means that in the instance, you will often see things like this kind of, this is a type that have verifiable credential, which is a digital product passport, which is also a livestock passport, and so on, right, and down at lower levels as well. So I might find in an Australian digital livestock passport, a thing called a farm, which is a type of facility, but they'll, in the underlying model, the farm will be an extension of a facility, and the JSON-LD type will say it's a facility and a farm, so that someone who doesn't care about farms still knows it's a facility.
+
+Anyway, this is my journey I've been on, and I think I see a light ahead about how to make life easy for the tens of thousands of implementers, just use the schema, and also easy for the hundreds of communities that will extend, use some tooling that basically enforces the methodology so that you don't have to think too hard about how to get it exactly right. So this is where I've arrived over the last two weeks. I welcome your comments on this.
+
+[Speaker 2]
+Well, I've been part of the discussions, and I think it's good. The transparency graph, I think, what is really interesting about it, if you can just go to the slide just below the conceptual model, I think the link between these entities is what matters, right? The relationship between these entities, an organization could be an issuing body, accreditation body, a manufacturer, producer, it could be many things, and depending on which credential and where they appear in the credential, this organization will play a different role and will have a different relationship.
+
+I think that took me a bit to understand, because at first, there's a lot of lines crossing over, but once you understand what this is trying to depict, I think it makes a lot of sense.
+
+[Speaker 1]
+Yeah. I think the names on the lines are basically properties in the object model that themselves point to another node, right? So if you have in product, manufacturer, and it points to organization.
+
+So that means I should be able to go to the credential, pull out a product, find a property which is assessed product, and say, ah, that's not a primitive type, like text, or it actually points to another node called organization, right? So basically, consuming the objects in the credential, you should just be able to drop them in a graph database, and it will create a valid graph.
+
+[Speaker 2]
+Yeah. And with the ID, the identifier, it will then tell you, well, what exactly is this organization? It won't become a bland organization anymore.
+
+It will have a specific identifier in it, which enables you to- That's important, right?
+
+[Speaker 1]
+Because if you want a product defined in a product passport that has a conformity claim associated with it, that'll draw this part of the graph, product to claim, right? But then you find a conformity credential that is making some third-party assessment of that product, this attestation here. It needs to identify the product with the same URI, right?
+
+Which is why I think this structure of saying, well, this idea that we do need a URI for the thing, we also do need, particularly for things like facilities and locations and entities that can have multiple identifiers, at some point, you need information that says, ah, that's the same node object as that one. Either because it's got exactly the same URI or because its identifier appears in the list of also known as, right? Yeah.
+
+So does anyone have any- Joe has his hand up.
+
+[Speaker 3]
+Oh, yeah. Joe, I see. Hi, guys.
+
+Look, I think you're absolutely right, Steve. The scheme is obviously really important. I think you're just about coming around to obviously discussing the equivalence of passport or credential content so that when they're actually doing the verification of the product passport, that consumers should be able to actually sort of work out what is the equivalence to what it is that they need.
+
+That has to be defined by the local jurisdiction under which the verifier is actually sort of working. So whilst the scheme is important, the rule sets around what's the equivalence in this jurisdiction and what's the verification business rules that I need to apply in this case are contextually sensitive to the jurisdiction under which the verification is actually occurring. So the important thing here is, yes, schemas need to be consumable.
+
+They need to be well defined. They need to be equivalence defined. And I think you got to that in the last content.
+
+And plus the jurisdiction and the, if you like, the organizational regulation needs to be able to identify the business rules under which you're expected to verify and use the data within the various different credentials. Yeah.
+
+[Speaker 1]
+So I think there will always be, you're right, large and competent verifiers, you know, government agencies and the like, or particular local jurisdictions will have their local rules that they put on top of the graph that they draw out of consuming a bunch of credentials. But our job still is, why do we include a JSON-LD context file as opposed to just the JSON schema? It's precisely to do as much of that equivalence and graph construction at credential design time that makes the job of the verifier much easier.
+
+So by saying, yes, I've got a schema, it's structured like this, but inside the schema, you'll find all these identified objects and they have these types and they're drawn from this UN vocabulary or schema.org or some other global standard, takes you kind of like at least halfway towards making this meaningful graph. And then when you add a community context on top of that and say, well, it's Australian agriculture and we care about some Australian government agriculture stuff and some international animal stuff. Now I'm making a graph, I'm helping a verifier in the agriculture space get another 25% towards the 100% journey so that the gap that they've got left to make sense and assess the graph is smaller and smaller.
+
+[Speaker 3]
+That's right. That's exactly right. We're trying to take people as far as you can without actually doing their role for them.
+
+That's right. So giving them the tools to be able to do what it is simply. So therefore, it's important that we define, if you like, implementation guides for consumers of verifiable credentials in this way.
+
+Yeah. And that's the trust graph, right? It's trust graph and the- Sorry, transparency graph.
+
+Transparency graph and the role that they take and what they have to then do on top of this. Yeah. Patrick, you've got your hand up?
+
+[Speaker 2]
+I just wanted to add a bit to what Joe was saying. This is also true for the issuers, right? Issuers that are bound to strong regulation or governance.
+
+They also need a way to be able to express this information to achieve this goal of having some somewhat well understood format at the top. And I think the UNTP plays this bridge. I think only saying it's only good for the verifier to simplify their role.
+
+It's also true for issuers, right? Because issuers, again, when we're talking about governance or organizations that are bound to strong regulations, they have very specific way that their data come into existence. They have the process and having this way for them to map it to something that can be commonly understood, it's like a translation.
+
+And then the verifiers, well, they can translate this back to their sort of understanding. So, yeah, I think it's got a good use case there.
+
+[Speaker 1]
+Yeah, I think there's almost two kinds of issuers in a given community, right? There's the ones that are very close to the definition of the community extension itself, like Australian Government Department of Agriculture for AATP, because they issue some very specific, they're the only issuer of a certain kind of authority credentials. And then there's the thousands of farmers and hundreds of on-farm apps that are just conforming with AATP and issuing a farm credential or an animal credential.
+
+Those are the ones you want to protect from a deep understanding, whether it's the Canadian government regulator or the Australian government regulator or whatever. They're really almost part of the community extension definition community. And you want to give them a method that allows them to express their rules as a community extension.
+
+Anyway, I'm feeling like I've seen the light and I'm comfortable about a way forward to make all this work at scale. And I'm just looking for critical feedback or support or disagreement or whatever, because hopefully by next week, I'll have republished these digital product passport conformity credential and traceability event pages to align with this model. Joe?
+
+[Speaker 3]
+Just very quickly, and I think you're absolutely spot on, Steve. I think the challenge that we've got to do is we've got to try and make it possible for the various different parties involved in the supply chain, whether the issuer or the verifiers, to do exactly what they do today, but using the tool sets and the frameworks that we provide for them. Now, that might mean that the regulators or the jurisdictional controllers need to do a bit of work to actually enable this to happen, but that's okay.
+
+That's their role. That's their responsibility. The minute we start trying to create new roles or new entities or give people things that they're not comfortable with doing, then that's going to be a struggle.
+
+[Speaker 1]
+Yeah, I agree. So this is one of the core principles of UNTP that says, this is really just a way to digitize with trust what you're already doing today. Exactly.
+
+So if I'm the Australian tax office issuing business registration certificates, do the same thing, but do it digitally and verifiably.
+
+[Speaker 3]
+So issuers may not know how the stuff that they create is going to be used, and that's the challenge. You can't give them the responsibility to actually understand that, and that's the critical thing in that. Yeah.
+
+[Speaker 1]
+And similar with identifiers, and this is why we're a little bit avoiding wallets, right? The world is full of existing, for example, GS1, GTINs, identifying products. If we say, oh, no, you've got to throw all those away and use DIDS, then we're not going anywhere, right?
+
+So really building on top of existing practices across the world in regulators and supply chains, but making it digital and scalable is our mission, right, and verifiable. So, yeah, that's a key principle. Marcus?
+
+[Speaker 4]
+Yeah, thanks. Could you just click on the transparency graph slide there? I like this, Steve.
+
+You've made a strong attempt at starting to look at the object properties there. And when I say object properties, I mean separate from actual data properties. These are the linkages between things, particularly the annotations you've got on the arrows or links there.
+
+But I do see a challenge that you've made yourself, and that is you've got basically two models there. You've got the one that you've got in jargon and this conceptual model here. Of course, one of the key aspects of linked data is the meaning behind these linkages, and it gets quite detailed.
+
+And initially, I note that in the jargon model, you haven't yet got to the point where you've got cardinality, for instance, determined. And then, yeah, and back on that other model, back on the conceptual model, you're going to have to think about a little bit more than just cardinality for structural validation. And I'm kind of thinking where my thing is a question, where do you think that's at and where will that be maintained?
+
+I'm guessing that you're looking at maintaining this model here in front of us and extending that out to include things like cardinality. And then you'll come back to the conceptual model and work that in. Is that the approach you're taking?
+
+[Speaker 1]
+Something like that. I use the conceptual model just to get my mind in order about what objects I wanted to model in jargon. Just so we understand, I'm imagining that, for example, here, produced by organization ID.
+
+When a consumer consumes this product passport, this is a type of product, and it's got an identifier. And some of these properties are just value objects like name, serial number, and so on. But some of them point to other objects like this produced by organization.
+
+So that will end up as a link in a graph where the name of the link is produced by and the target is the identified organization. And these curly brackets are cardinality, meaning there's a list of material provenance and there's a list of classification schemes. And we can also define in jargon whether it's mandatory or not.
+
+Actually, there are ways, but it complicates the model to say that you should have exactly three of these. But we can say it's optional, it's mandatory, or it's an array, which I thought is probably enough. Do you think?
+
+I'm not saying jargon is going to be an ontology modeling tool.
+
+[Speaker 4]
+No, no, no, no, no, no. I get what you're doing, and I'm not thinking in my head that you're saying anything like that. Yeah, it'll probably turn around and bite you and become more complex further down the track.
+
+But right now, I'm really simple.
+
+[Speaker 1]
+Yeah, I'm trying to give, particularly the extension communities, right, the tools to make things simple.
+
+[Speaker 4]
+Yes, I appreciate that.
+
+[Speaker 1]
+Make their job simple. Patrick, you got your hand up?
+
+[Speaker 4]
+No, no, it wasn't a criticism.
+
+[Speaker 1]
+Well, I'm leery of going down a path that I think has got a light at the end of the tunnel, only to find that there's a crevasse I've got to jump across that I hadn't thought about. So your experience in this stuff will matter. Patrick, you got your hand up?
+
+[Speaker 2]
+Yeah, it'd be interesting discussing more with you, Marcus, what you foresee the problem could be down the line to try to get a better understanding. Because I also think what has been made so far makes a lot of sense. But there are also things that I could just not be aware of due to maybe my lack of experience and international scheme with many regulations.
+
+So yeah, I'd be interested in digging a little deeper into that aspect. Other thing like for technical feedback, I would probably before publishing just do a review of the, you know, just make sure there's no typos, letter capitalization and things like this, making sure all properties start with lowercase and classes start with an uppercase. Because what you put in there, people are forced to use these properties as is.
+
+So yeah, just be careful. And the last thing was about, we had a discussion earlier to, well, someone made a comment that it's about, you know, making existing process digital. And I think the difference between saying we're making process like business process digital instead of just saying we're making physical documents digital is two different things, right?
+
+And this really addresses to making the overall process in a digital fashion. It's more than just taking a document and making it into a verifiable credential. There's a lot more going on here to that.
+
+[Speaker 7]
+Yes.
+
+[Speaker 4]
+Yeah, I'd be happy to link up Patrick. I'm just reading through all of the EU DCAT profiling and all that sort of stuff. And I know that there's been a lot of work done in this space at the moment around modeling and approaches.
+
+And I'm just getting my head into it at this point. So I'm not actually raising any flags. I'm just learning as we go.
+
+[Speaker 2]
+Yeah, it's just that balance between, you know, sometimes you need to go a direction. You can't just always try to, you know, cover every single ground in the long term, you know, because it's never going to end. So I think I'd be curious to know like how far down the line you want to try to see that it's going to cause an issue.
+
+And if it can be like demonstrated fairly early on. Yeah, because I think at some point you need to make decisions and, you know, go.
+
+[Speaker 4]
+I agree. I love the KISS principle. Anne, you have your hand up.
+
+[Speaker 5]
+Yeah, just a generic comment more than a technical, but I absolutely agree with what Patrick just said here that to a certain degree, it has to be future proof. And I know I hate that term. But if we stick to certain protocol technologies or whatever we want to call it, so, so detail for now, which is obviously helping with roll out a lot faster and easier.
+
+But then in the future, if things coming up or, you know, change, how do we kind of hedge that situation as well, right? Yeah, that is one of the situation where we always need to balance that. We want to leave rooms for change and innovation, but we don't want it to be so loose that it becomes so difficult to implement quickly and easily.
+
+[Speaker 1]
+That's right. That is a narrow ridge to walk, right? Where you say, what is it I'm going to stay out of?
+
+So things like wallets and how they exchange stuff. What am I in and how specific and narrow should I be? Generally, the more specific you are, the easier and cheaper and more interoperable your implementations are.
+
+So that's a desirable thing. But at the same time, we don't know what's coming next year or the year after or the year after that in terms of something cool and useful. So I think the answer to that, my suggestion is that we make quite specific and implementable and testable specifications.
+
+But we accept that this is not a project that has an end date. It's a product that goes through versions and version two of UNTP might accommodate things that we don't know about yet. And that's how we maintain flexibility for it to evolve, to continue, to meet best practice and market demands.
+
+[Speaker 2]
+Yeah. And I just want to add, I think also like we're at a stage now that there's a lot of systems that are due to be upgraded. And a lot of processes that, you know, they need to at least be the next step now.
+
+So I wouldn't be too shy in going with an approach because, you know, in some cases there are systems that haven't been updated in 30, 40 years. And, you know, doing this globally interoperable, like digital supply chain effort, I think is a big milestone in itself. And yeah, like keep in mind for future version to try to not be too super specific in one set of technologies.
+
+But I think just adopting open standards and open technology does play in that favor. That you're not locking yourself in one very specific niche set of technologies.
+
+[Speaker 1]
+Yeah. Okay. Look, thank you.
+
+I see we're at 7.55 now. Normally we would start to go through open tickets, but I think we've run out of time. And I want to just get your endorsement to raise a pull request after, as Patrick said, spell checking and case and changing organization back to party and a few other things.
+
+To raise some pull requests to update the models on the actual site to align with our discussion today. That'll be my job for next week. So you'll see them come through and your review and comment.
+
+And if you're happy with them, approval would be great because then we can baseline all this and move on to some of these other issues that are in this issue list. Has anybody got any final comments? We're at 56, four minutes to go.
+
+I might otherwise call it a day.
+
+[Speaker 2]
+Good job.
+
+[Speaker 1]
+Okay, well, yeah, I wasn't looking for plaudits, but I just realized I'm sitting down. Everybody can see just the top of my head. Sorry about that.
+
+All right, then. Look, thanks everyone for participating. I'll do a bunch of pull requests and we'll get hopefully re-baselined to something we can all build on and extend on particularly, right?
+
+Because the next thing we really want to do is say, all right, we've got a core here. Now let's test it. It can be extended to critical minerals in Canada, agriculture in Australia, and make sure that works and close the loop from core, extension, instance.
+
+Instance populates graph. Graph makes sense, you know, that things validate in the JSON-LD playground and so on. So as soon as we can get that done, then we've got a real sort of foundational model to say, all right, now let's get other communities engaged and really start to drive adoption and start to implement this, such as new colleagues on this call.
+
+There's a few others too. And I actually have something to build on because I think the foundations are still a little bit too flaky as published now and implemented to invest. Hopefully we're only weeks away from the point where there's sufficient stability to justify a early implementation.
+
+That's the real goal I want to get to as soon as I can. So thanks all. Appreciate your time and see you next time.
+
+Thanks, Steve.
+
+[Speaker 5]
+Thank you, Steve. Good night.
+
+[Speaker 1]
+Thank you. Good night.
