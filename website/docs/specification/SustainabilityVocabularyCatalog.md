@@ -290,8 +290,8 @@ This classification is an early draft for discussion **only**. It is likely to e
 
 ### Machine Readable Versions
 
-* [JSON Structure](../../schema/SustainabilityCriteriaTaxonomy_v0.1.json)
-* [JSON-LD vocabulary](../../schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
+* [JSON Structure](/schema/SustainabilityCriteriaTaxonomy_v0.1.json)
+* [JSON-LD vocabulary](/schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
 
 ### Human Readable Version
 
