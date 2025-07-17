@@ -1,3 +1,13 @@
+<div align="center" style="border: 2px solid #f39c12; border-radius: 8px; background: #fffbe6; padding: 1.5em 1em; margin: 1.5em 0; font-size: 1.15em;">
+  <strong style="color: #e67e22; font-size: 1.3em;">🚨 Project Moved! 🚨</strong><br><br>
+  <span style="color: #333;">
+    The <b>spec-untp</b> project has a new home on GitLab.<br>
+    <a href="https://opensource.unicc.org/un/unece/uncefact/spec-untp" style="color: #2980b9; font-weight: bold; text-decoration: underline;">
+      Visit the new repository here
+    </a>
+  </span>
+</div>
+
 # spec-untp
 
 UN Transparency Protocol (UNTP) documentation website.
