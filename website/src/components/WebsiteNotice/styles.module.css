@@ -1,0 +1,153 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dialog {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+.logoContainer {
+  margin-bottom: 32px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+}
+
+.content {
+  color: #333;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #009edb;
+}
+
+.message {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.newUrl {
+  margin-bottom: 32px;
+}
+
+.link {
+  display: inline-block;
+  font-size: 1.125rem;
+  color: #009edb;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  word-break: break-all;
+}
+
+.actions {
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #009edb;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 12px 32px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #007ab8;
+  text-decoration: none;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 158, 219, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dialog {
+    padding: 24px;
+    margin: 16px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dialog {
+    padding: 20px;
+    margin: 12px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .message {
+    font-size: 0.875rem;
+  }
+
+  .link {
+    font-size: 0.875rem;
+    padding: 6px 12px;
+  }
+
+  .button {
+    font-size: 0.875rem;
+    padding: 8px 20px;
+  }
+}
