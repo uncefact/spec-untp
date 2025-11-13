@@ -16,12 +16,12 @@ const WebsiteNotice: React.FC = () => {
           </p>
           <div className={styles.newUrl}>
             <span className={styles.link}>
-              https://spec-untp-fbb45f.opensource.unicc.org
+              untp.unece.org
             </span>
           </div>
           <div className={styles.actions}>
             <a
-              href="https://spec-untp-fbb45f.opensource.unicc.org"
+              href="https://untp.unece.org"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.button}
