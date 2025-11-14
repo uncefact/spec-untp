@@ -444,6 +444,23 @@
         }
       }
     },
+    "Link": {
+      "@protected": true,
+      "@id": "untp-core:Link",
+      "@context": {
+        "@protected": true,
+        "name": {
+          "@id": "schema:name"
+        },
+        "digestMultibase": {
+          "@id": "https://w3id.org/security#digestMultibase",
+          "@type": "https://w3id.org/security#multibase"
+        },
+        "mediaType": {
+          "@id": "https://schema.org/encodingFormat"
+        }
+      }
+    },
     "Claim": {
       "@protected": true,
       "@id": "untp-core:Claim",
@@ -515,46 +532,170 @@
           }
         },
         "conformityEvidence": {
-          "@protected": true,
           "@id": "untp-core:conformityEvidence",
-          "@context": {
-            "@protected": true,
-            "linkURL": {
-              "@id": "untp-core:linkURL",
-              "@type": "xsd:string"
-            },
-            "linkName": {
-              "@id": "untp-core:linkName",
-              "@type": "xsd:string"
-            },
-            "linkType": {
-              "@id": "untp-core:linkType",
-              "@type": "xsd:string"
-            },
-            "hashDigest": {
-              "@id": "untp-core:hashDigest",
-              "@type": "xsd:string"
-            },
-            "hashMethod": {
-              "@id": "untp-core:hashMethod",
-              "@type": "@vocab",
-              "@context": {
-                "@protected": true,
-                "@vocab": "https://test.uncefact.org/vocabulary/untp/core/working/hashMethodCode#"
-              }
-            }
-          }
+          "@type": "@id"
         }
       }
     },
     "FacilityRecord": {
       "@protected": true,
-      "@id": "untp-dfr:FacilityRecord",
+      "@id": "untp:Facility",
       "@context": {
         "@protected": true,
-        "facility": {
-          "@id": "untp-core:facility",
+        "name": {
+          "@id": "schema:name"
+        },
+        "registeredId": {
+          "@id": "untp-core:registeredId",
+          "@type": "xsd:string"
+        },
+        "idScheme": {
+          "@id": "untp-core:idScheme",
           "@type": "@id"
+        },
+        "description": {
+          "@id": "schema:description"
+        },
+        "countryOfOperation": {
+          "@id": "untp-core:countryOfOperation",
+          "@type": "@vocab",
+          "@context": {
+            "@protected": true,
+            "@vocab": "https://vocabulary.uncefact.org/CountryId#"
+          }
+        },
+        "processCategory": {
+          "@id": "untp-core:processCategory",
+          "@type": "@id"
+        },
+        "operatedByParty": {
+          "@id": "untp-core:Party",
+          "@type": "@id",
+          "@context": {
+            "@protected": true,
+            "name": {
+              "@id": "schema:name"
+            },
+            "registeredId": {
+              "@id": "untp-core:registeredId",
+              "@type": "xsd:string"
+            },
+            "idScheme": {
+              "@id": "untp-core:idScheme",
+              "@type": "@id"
+            }
+          }
+        },
+        "facilityAlsoKnownAs": {
+          "@id": "untp-core:Facility",
+          "@type": "@id",
+          "@context": {
+            "@protected": true,
+            "name": {
+              "@id": "schema:name"
+            },
+            "registeredId": {
+              "@id": "untp-core:registeredId",
+              "@type": "xsd:string"
+            },
+            "idScheme": {
+              "@id": "untp-core:idScheme",
+              "@type": "@id"
+            }
+          }
+        },
+        "locationInformation": {
+          "@protected": true,
+          "@id": "untp-core:locationInformation",
+          "@context": {
+            "@protected": true,
+            "plusCode": {
+              "@id": "untp-core:plusCode",
+              "@type": "xsd:string"
+            },
+            "geoLocation": {
+              "@protected": true,
+              "@id": "geojson:geoLocation",
+              "@context": {
+                "@protected": true,
+                "type": {
+                  "@id": "geojson:type",
+                  "@type": "xsd:string"
+                },
+                "coordinates": {
+                  "@protected": true,
+                  "@id": "geojson:coordinates",
+                  "@context": {
+                    "@protected": true,
+                    "data": {
+                      "@id": "geojson:data",
+                      "@type": "xsd:double"
+                    }
+                  }
+                }
+              }
+            },
+            "geoBoundary": {
+              "@protected": true,
+              "@id": "geojson:geoBoundary",
+              "@context": {
+                "@protected": true,
+                "type": {
+                  "@id": "geojson:type",
+                  "@type": "xsd:string"
+                },
+                "coordinates": {
+                  "@protected": true,
+                  "@id": "geojson:coordinates",
+                  "@context": {
+                    "@protected": true,
+                    "data": {
+                      "@protected": true,
+                      "@id": "geojson:data",
+                      "@context": {
+                        "@protected": true,
+                        "data": {
+                          "@id": "geojson:data",
+                          "@type": "xsd:double"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "address": {
+          "@protected": true,
+          "@id": "untp-core:address",
+          "@context": {
+            "@protected": true,
+            "streetAddress": {
+              "@id": "untp-core:streetAddress",
+              "@type": "xsd:string"
+            },
+            "postalCode": {
+              "@id": "untp-core:postalCode",
+              "@type": "xsd:string"
+            },
+            "addressLocality": {
+              "@id": "untp-core:addressLocality",
+              "@type": "xsd:string"
+            },
+            "addressRegion": {
+              "@id": "untp-core:addressRegion",
+              "@type": "xsd:string"
+            },
+            "addressCountry": {
+              "@id": "untp-core:addressCountry",
+              "@type": "@vocab",
+              "@context": {
+                "@protected": true,
+                "@vocab": "https://vocabulary.uncefact.org/CountryId#"
+              }
+            }
+          }
         },
         "conformityClaim": {
           "@id": "untp-core:conformityClaim",

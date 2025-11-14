@@ -51,12 +51,153 @@
         }
       ],
       "rdfs:comment": [
-        "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
+        "The globally unique ID of the facility as URI, ideally as a resolvable URL."
       ],
       "rdfs:label": "id"
     },
     {
-      "@id": "untp-dfr:facility",
+      "@id": "untp-dfr:name",
+      "schema:rangeIncludes": {
+        "@id": "schema:name"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        },
+        {
+          "@id": "untp-dfr:RenderTemplate2024"
+        },
+        {
+          "@id": "untp-dfr:WebRenderingTemplate2022"
+        }
+      ],
+      "rdfs:comment": [
+        "The registered name of the facility within the identifier scheme.  ",
+        "Human facing display name for selection",
+        "Human facing display name for template"
+      ],
+      "rdfs:label": "name"
+    },
+    {
+      "@id": "untp-dfr:registeredId",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The registration number (alphanumeric) of the facility within the identifier scheme. Unique within the register."
+      ],
+      "rdfs:label": "registeredId"
+    },
+    {
+      "@id": "untp-dfr:idScheme",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:IdentifierScheme"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The ID scheme of the facility. eg a GS1 GLN or a National land registry scheme. If self issued then use the party ID of the facility owner. "
+      ],
+      "rdfs:label": "idScheme"
+    },
+    {
+      "@id": "untp-dfr:description",
+      "schema:rangeIncludes": {
+        "@id": "schema:description"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "An optional short description of the facility"
+      ],
+      "rdfs:label": "description"
+    },
+    {
+      "@id": "untp-dfr:countryOfOperation",
+      "schema:rangeIncludes": {
+        "@id": "untp-dfr:countryCode"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The country in which this facility is operating."
+      ],
+      "rdfs:label": "countryOfOperation"
+    },
+    {
+      "@id": "untp-dfr:processCategory",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Classification"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The industrial or production processes performed by this facility. Example unstats.un.org/isic/1030."
+      ],
+      "rdfs:label": "processCategory"
+    },
+    {
+      "@id": "untp-dfr:operatedByParty",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Party"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The Party entity responsible for operating the facility.An object structure that uniquely identifies the party within a known party identification scheme. "
+      ],
+      "rdfs:label": "operatedByParty"
+    },
+    {
+      "@id": "untp-dfr:facilityAlsoKnownAs",
       "schema:rangeIncludes": {
         "@id": "untp-core:Facility"
       },
@@ -70,9 +211,47 @@
         }
       ],
       "rdfs:comment": [
-        "The physical site (eg farm or factory) where the product or materials was produced."
+        "An optional list of other registered identifiers for this facility - eg GLNs or other schemes."
       ],
-      "rdfs:label": "facility"
+      "rdfs:label": "facilityAlsoKnownAs"
+    },
+    {
+      "@id": "untp-dfr:locationInformation",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Location"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "Geo-location information for this facility as a resolvable geographic area (a Plus Code), and/or a geo-located point (latitude / longitude), and/or a defined boundary (GeoJSON Polygon)."
+      ],
+      "rdfs:label": "locationInformation"
+    },
+    {
+      "@id": "untp-dfr:address",
+      "schema:rangeIncludes": {
+        "@id": "untp-core:Address"
+      },
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "schema:domainIncludes": [
+        {
+          "@id": "untp-dfr:FacilityRecord"
+        }
+      ],
+      "rdfs:comment": [
+        "The Postal address of the location."
+      ],
+      "rdfs:label": "address"
     },
     {
       "@id": "untp-dfr:conformityClaim",
@@ -92,29 +271,6 @@
         "A list of conformity declarations against specific criteria from recognised standards or regulations. "
       ],
       "rdfs:label": "conformityClaim"
-    },
-    {
-      "@id": "untp-dfr:name",
-      "schema:rangeIncludes": {
-        "@id": "schema:name"
-      },
-      "@type": [
-        "rdf:Property",
-        "owl:ObjectProperty"
-      ],
-      "schema:domainIncludes": [
-        {
-          "@id": "untp-dfr:RenderTemplate2024"
-        },
-        {
-          "@id": "untp-dfr:WebRenderingTemplate2022"
-        }
-      ],
-      "rdfs:comment": [
-        "Human facing display name for selection",
-        "Human facing display name for template"
-      ],
-      "rdfs:label": "name"
     },
     {
       "@id": "untp-dfr:mediaQuery",

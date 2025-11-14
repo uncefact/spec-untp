@@ -47,48 +47,57 @@
     "type": [
       "FacilityRecord"
     ],
-    "facility": {
+    "id": "https://sample-facility-register.com/1234567",
+    "name": "Greenacres battery factory",
+    "registeredId": "1234567",
+    "idScheme": {
       "type": [
-        "Facility"
+        "IdentifierScheme"
       ],
-      "id": "https://sample-facility-register.com/1234567",
-      "name": "Greenacres battery factory",
-      "registeredId": "1234567",
+      "id": "https://id.gs1.org/01/",
+      "name": "Global Trade Identification Number (GTIN)"
+    },
+    "description": "Manufacturing site for advanced electric vehicle batteries.",
+    "countryOfOperation": "AU",
+    "processCategory": [
+      {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
+      },
+      {
+        "type": [
+          "Classification"
+        ],
+        "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
+      }
+    ],
+    "operatedByParty": {
+      "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
+      "name": "Sample Company Pty Ltd.",
+      "registeredId": "90664869327",
       "idScheme": {
         "type": [
           "IdentifierScheme"
         ],
         "id": "https://id.gs1.org/01/",
         "name": "Global Trade Identification Number (GTIN)"
-      },
-      "description": "Manufacturing site for advanced electric vehicle batteries.",
-      "countryOfOperation": "AU",
-      "processCategory": [
-        {
-          "type": [
-            "Classification"
-          ],
-          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-          "code": "46410",
-          "name": "Primary cells and primary batteries",
-          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-          "schemeName": "UN Central Product Classification (CPC)"
-        },
-        {
-          "type": [
-            "Classification"
-          ],
-          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-          "code": "46410",
-          "name": "Primary cells and primary batteries",
-          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-          "schemeName": "UN Central Product Classification (CPC)"
-        }
-      ],
-      "operatedByParty": {
-        "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-        "name": "Sample Company Pty Ltd.",
-        "registeredId": "90664869327",
+      }
+    },
+    "facilityAlsoKnownAs": [
+      {
+        "id": "https://sample-facility-register.com/1234567",
+        "name": "Greenacres battery factory",
+        "registeredId": "1234567",
         "idScheme": {
           "type": [
             "IdentifierScheme"
@@ -97,60 +106,46 @@
           "name": "Global Trade Identification Number (GTIN)"
         }
       },
-      "facilityAlsoKnownAs": [
-        {
-          "id": "https://sample-facility-register.com/1234567",
-          "name": "Greenacres battery factory",
-          "registeredId": "1234567",
-          "idScheme": {
-            "type": [
-              "IdentifierScheme"
-            ],
-            "id": "https://id.gs1.org/01/",
-            "name": "Global Trade Identification Number (GTIN)"
-          }
-        },
-        {
-          "id": "https://sample-facility-register.com/1234567",
-          "name": "Greenacres battery factory",
-          "registeredId": "1234567",
-          "idScheme": {
-            "type": [
-              "IdentifierScheme"
-            ],
-            "id": "https://id.gs1.org/01/",
-            "name": "Global Trade Identification Number (GTIN)"
-          }
+      {
+        "id": "https://sample-facility-register.com/1234567",
+        "name": "Greenacres battery factory",
+        "registeredId": "1234567",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.gs1.org/01/",
+          "name": "Global Trade Identification Number (GTIN)"
         }
-      ],
-      "locationInformation": {
-        "plusCode": "https://plus.codes/8CGRC78W+MM",
-        "geoLocation": {
-          "type": "Point",
-          "coordinates": [
-            3.141579,
-            3.141579
-          ]
-        },
-        "geoBoundary": {
-          "type": "Polygon",
-          "coordinates": [
+      }
+    ],
+    "locationInformation": {
+      "plusCode": "https://plus.codes/8CGRC78W+MM",
+      "geoLocation": {
+        "type": "Point",
+        "coordinates": [
+          3.141579,
+          3.141579
+        ]
+      },
+      "geoBoundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
             [
-              [
-                3.141579,
-                3.141579
-              ]
+              3.141579,
+              3.141579
             ]
           ]
-        }
-      },
-      "address": {
-        "streetAddress": "level 11, 15 London Circuit",
-        "postalCode": "2601",
-        "addressLocality": "Acton",
-        "addressRegion": "ACT",
-        "addressCountry": "AU"
+        ]
       }
+    },
+    "address": {
+      "streetAddress": "level 11, 15 London Circuit",
+      "postalCode": "2601",
+      "addressLocality": "Acton",
+      "addressRegion": "ACT",
+      "addressCountry": "AU"
     },
     "conformityClaim": [
       {
@@ -320,11 +315,13 @@
         ],
         "conformityTopic": "environment.emissions",
         "conformityEvidence": {
-          "linkURL": "https://files.example-certifier.com/1234567.json",
-          "linkName": "GBA rule book conformity certificate",
-          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-          "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-          "hashMethod": "SHA-256"
+          "type": [
+            "Link"
+          ],
+          "id": "https://files.example-certifier.com/1234567.json",
+          "name": "GBA rule book conformity certificate",
+          "digestMultibase": "abc123-example-digest-invalid",
+          "mediaType": "application/ld+json"
         }
       },
       {
@@ -494,11 +491,13 @@
         ],
         "conformityTopic": "environment.emissions",
         "conformityEvidence": {
-          "linkURL": "https://files.example-certifier.com/1234567.json",
-          "linkName": "GBA rule book conformity certificate",
-          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
-          "hashDigest": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
-          "hashMethod": "SHA-256"
+          "type": [
+            "Link"
+          ],
+          "id": "https://files.example-certifier.com/1234567.json",
+          "name": "GBA rule book conformity certificate",
+          "digestMultibase": "abc123-example-digest-invalid",
+          "mediaType": "application/ld+json"
         }
       }
     ]

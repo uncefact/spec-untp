@@ -184,47 +184,6 @@
           ]
         },
         "id": {
-          "type": "string",
-          "format": "uri",
-          "description": "An id is not required in the data but jargon requires for blue class which won't redefine credentialSubject"
-        },
-        "facility": {
-          "$ref": "#/$defs/Facility",
-          "description": "The physical site (eg farm or factory) where the product or materials was produced."
-        },
-        "conformityClaim": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/Claim"
-          },
-          "description": "A list of conformity declarations against specific criteria from recognised standards or regulations. "
-        }
-      },
-      "description": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record."
-    },
-    "Facility": {
-      "type": "object",
-      "additionalProperties": true,
-      "properties": {
-        "type": {
-          "type": "array",
-          "readOnly": true,
-          "default": [
-            "Facility"
-          ],
-          "items": {
-            "type": "string"
-          },
-          "allOf": [
-            {
-              "contains": {
-                "const": "Facility",
-                "minContains": 1
-              }
-            }
-          ]
-        },
-        "id": {
           "example": "https://sample-facility-register.com/1234567",
           "type": "string",
           "format": "uri",
@@ -323,9 +282,16 @@
         "address": {
           "$ref": "#/$defs/Address",
           "description": "The Postal address of the location."
+        },
+        "conformityClaim": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "description": "A list of conformity declarations against specific criteria from recognised standards or regulations. "
         }
       },
-      "description": "The physical site (eg farm or factory) where the product or materials was produced.",
+      "description": "The physical site (eg farm or factory) where the product or materials was produced. Including the facility sustainability performance record.",
       "required": [
         "id",
         "name"
@@ -711,7 +677,7 @@
           "description": "The conformity topic category for this assessment (eg vocabulary.uncefact.org/sustainability/emissions)"
         },
         "conformityEvidence": {
-          "$ref": "#/$defs/SecureLink",
+          "$ref": "#/$defs/Link",
           "description": "A URI pointing to the evidence supporting the claim. SHOULD be a URL to a UNTP Digital Conformity Credential (DCC)"
         }
       },
@@ -1020,7 +986,7 @@
           "description": "A percentage represented as a numeric between 0 and 1 indicating the rage of accuracy of the claimed value (eg 0.05 means that the actual value is within 5% of the claimed value.)"
         }
       },
-      "description": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of measure) / value (ie the actual numeric value) pairs.  ",
+      "description": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of measure) / value (ie the actual numeric value) pairs.",
       "required": [
         "metricName",
         "metricValue"
@@ -1065,7 +1031,7 @@
         "unit"
       ]
     },
-    "SecureLink": {
+    "Link": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -1073,7 +1039,6 @@
           "type": "array",
           "readOnly": true,
           "default": [
-            "SecureLink",
             "Link"
           ],
           "items": {
@@ -1082,50 +1047,35 @@
           "allOf": [
             {
               "contains": {
-                "const": "SecureLink",
-                "minContains": 1
-              }
-            },
-            {
-              "contains": {
                 "const": "Link",
                 "minContains": 1
               }
             }
           ]
         },
-        "linkURL": {
+        "id": {
           "example": "https://files.example-certifier.com/1234567.json",
           "type": "string",
           "format": "uri",
           "description": "The URL of the target resource. "
         },
-        "linkName": {
+        "name": {
           "example": "GBA rule book conformity certificate",
           "type": "string",
           "description": "A display name for the target resource "
         },
-        "linkType": {
-          "example": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+        "digestMultibase": {
+          "example": "abc123-example-digest-invalid",
           "type": "string",
-          "description": "The type of the target resource - drawn from a controlled vocabulary "
+          "description": "An optional multi-base encoded digest to ensure the content of the link has not changed. See https://www.w3.org/TR/vc-data-integrity/#resource-integrity for more information."
         },
-        "hashDigest": {
-          "example": "6239119dda5bd4c8a6ffb832fe16feaa5c27b7dba154d24c53d4470a2c69adc2",
+        "mediaType": {
+          "example": "application/ld+json",
           "type": "string",
-          "description": "The hash of the file."
-        },
-        "hashMethod": {
-          "type": "string",
-          "enum": [
-            "SHA-256",
-            "SHA-1"
-          ],
-          "example": "SHA-256",
-          "description": "The hashing algorithm used to create the target hash.  SHA-265 is the recommended standard"
+          "description": "The media type of the target resource."
         }
       },
-      "description": "A binary file that is hashed ()for tamper evidence) and optionally encrypted (for confidentiality)."
+      "description": "A structure to provide a URL link plus metadata associated with the link."
     }
   }
 }
